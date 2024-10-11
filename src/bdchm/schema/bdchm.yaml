@@ -431,6 +431,60 @@ classes:
         range: Participant
         description: A reference to the Participant to which the Condition is attributed.
       associated_visit:
+        description: A reference to the Visit during which this Condition was recorded.
+        range: Visit
+    slots:
+      - identity
+
+  DrugExposure:
+    is_a: Entity
+    description: >-
+       DrugExposures are records of a Person suggesting the presence of a disease or medical condition stated as a diagnosis, a sign or a symptom, which is either observed by a Provider or reported by the patient. DrugExposures are recorded in different sources and levels of standardization. 
+    attributes:
+      drug_concept:
+        range: DrugExposureConceptEnum
+        description: The coded value for the presence of a disease or medical condition stated as a diagnosis, a sign or a symptom, coded to the Human Phenotype Ontology or MONDO.
+      age_at_exposure_start:
+        range: integer
+        description: The Participant's age (expressed in days) when the condition was first recorded.
+        unit:
+          ucum_code: d
+      age_at_exposure_end:
+        range: integer
+        description: The Participant's age (expressed in days) when the condition was recorded as having been resolved.
+        unit:
+          ucum_code: d
+      exposure_provenance:
+        range: DrugExposureProvenanceEnum
+        description: A value representing the provenance of the DrugExposure record
+      exposure_status:
+        range: DrugExposureStatusEnum
+        description: A value indicating whether the medical condition described in this record is present, absent, or unknown for this individual patient.
+      refills:
+        description: Intended refills at time of the prescription.
+        range: integer
+        required: false
+      quantity:
+        description: To find the dose form of a drug the RELATIONSHIP table can be used where the relationship_id is ‘Has dose form’. If liquid, quantity stands for the total amount dispensed or ordered of ingredient in the units given by the drug_strength table. If the unit from the source data does not align with the unit in the DRUG_STRENGTH table the quantity should be converted to the correct unit given in DRUG_STRENGTH. For clinical drugs with fixed dose forms (tablets etc.) the quantity is the number of units/tablets/capsules prescribed or dispensed (can be partial, but then only 1/2 or 1/3, not 0.01). Clinical drugs with divisible dose forms (injections) the quantity is the amount of ingredient the patient got. For example, if the injection is 2mg/mL but the patient got 80mL then quantity is reported as 160. Quantified clinical drugs with divisible dose forms (prefilled syringes), the quantity is the amount of ingredient similar to clinical drugs. Please see [how to calculate drug dose](https://ohdsi.github.io/CommonDataModel/drug_dose.html) for more information.
+        range: float
+        required: false
+      days_supply:
+        description: The number of days of supply of the medication as recorded in the original prescription or dispensing record. Days supply can differ from actual drug duration (i.e. prescribed days supply vs actual exposure).
+        comments: The field should be left empty if the source data does not contain a verbatim days_supply, and should not be calculated from other fields.  Negative values are not allowed. If the source has negative days supply the record should be dropped as it is unknown if the patient actually took the drug. Several actions are possible -- record is not trustworthy and we remove the record entirely; we trust the record and leave days_supply empty; or record needs to be combined with other record (e.g. reversal of prescription). High values (>365 days) should be investigated. If considered an error in the source data (e.g. typo), the value needs to be excluded to prevent creation of unrealistic long eras.
+        range: integer
+        required: false
+      sig:
+        description: This is the verbatim instruction for the drug as written by the provider.
+        comments: Put the written out instructions for the drug as it is verbatim in the source, if available.
+        range: string
+        required: false
+      route_concept:
+        description: Route of drug administration.
+        range: DrugRouteEnum
+      associated_participant:
+        range: Participant
+        description: A reference to the Participant to which the Condition is attributed.
+      associated_visit:
         description: A reference to the Visit during which this QuestionnaireResponse was captured.
         range: Visit
     slots:
