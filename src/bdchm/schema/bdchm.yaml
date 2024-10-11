@@ -442,7 +442,8 @@ classes:
        DrugExposures are records of a Person suggesting the presence of a disease or medical condition stated as a diagnosis, a sign or a symptom, which is either observed by a Provider or reported by the patient. DrugExposures are recorded in different sources and levels of standardization. 
     attributes:
       drug_concept:
-        range: DrugExposureConceptEnum
+        range: string
+        comments: need to make range DrugExposureConceptEnum
         description: The coded value for the presence of a disease or medical condition stated as a diagnosis, a sign or a symptom, coded to the Human Phenotype Ontology or MONDO.
       age_at_exposure_start:
         range: integer
@@ -455,10 +456,12 @@ classes:
         unit:
           ucum_code: d
       exposure_provenance:
-        range: DrugExposureProvenanceEnum
+        range: string
+        comments: need to make range DrugExposureProvenanceEnum
         description: A value representing the provenance of the DrugExposure record
       exposure_status:
-        range: DrugExposureStatusEnum
+        range: string
+        comments: need to make range DrugExposureStatusEnum
         description: A value indicating whether the medical condition described in this record is present, absent, or unknown for this individual patient.
       refills:
         range: integer
