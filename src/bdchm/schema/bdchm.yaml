@@ -1983,6 +1983,13 @@ enums:
       UNKNOWN:
         description: The condition is/was of unknown status in the patient.
 
+  DrugRouteEnum:
+    description: Routes of drug administration.
+    comments: OMOP contains 369 values (165 standard); `select * from concept where domain_id = 'Route'` from SNOMED and Nebraska Lexicon. Just providing a couple example values. Will give complete list if these are decided appropriate:
+    permissible_values:
+      ORAL:
+        text
+
   SpecimenTypeEnum:
     name: SpecimenTypeEnum
     description: A high-level type of specimen, based on its derivation provenance
