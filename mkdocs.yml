@@ -16,7 +16,7 @@ nav:
   - Index: index.md
   - About: about.md
 site_url: https://bfurner.github.io/bdchm
-repo_url: https://github.com/bfurner/bdchm
+repo_url: https://github.com/RTIInternational/NHLBI-BDC-DMC-HM
 
 # Uncomment this block to enable use of Google Analytics.
 # Replace the property value with your own ID.
