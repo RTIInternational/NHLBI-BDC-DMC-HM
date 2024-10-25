@@ -6,7 +6,7 @@ description: |-
   This is the harmonized data model for use in the BioData Catalyst project.
 license: MIT
 see_also:
-  - https://bfurner.github.io/bdchm
+  - https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/
 
 prefixes:
   bdchm: https://w3id.org/nhlbidatastage/bdchm/
