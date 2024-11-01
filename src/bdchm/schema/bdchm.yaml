@@ -30,7 +30,7 @@ classes:
   Entity:
     abstract: true
     description: >-
-      Any resource that has its own identifier
+      Any new resource that has its own identifier
     slots:
       id
     class_uri: schema:Thing
