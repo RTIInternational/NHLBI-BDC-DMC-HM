@@ -1456,30 +1456,34 @@ classes:
     description: A course of action intended to capture observations about a study participant.
     is_a: Entity
     attributes:
-      Procedure:
+      title:
         name: title
-          description: Common name or acronym used to identify the procedure
-          comment: this may be an enum?
+        description: Common name or acronym used to identify the procedure
+        comment: this may be an enum?
+      summary:
         name: summary
-          description: Brief summary of steps involved and intended 
-          multivalued: false
-          range: string
-          required: true
+        description: Brief summary of steps involved and intended 
+        multivalued: false
+        range: string
+        required: true
+      performed_by:
         name: performed_by
-          description: Name of the individual who performed the procedure
-          multivalued: false
-          range: string
-          required: true
+        description: Name of the individual who performed the procedure
+        multivalued: false
+        range: string
+        required: true
+      date_started:
         name: date_started
-          description: Date when the procedure on an individual was started 
-          multivalued: false
-          range: TimePoint
-          required: true
+        description: Date when the procedure on an individual was started 
+        multivalued: false
+        range: TimePoint
+        required: true
+      date_ended:
         name: date_ended
-          description: Date when the procedure on an individual was completed 
-          multivalued: false
-          range: TimePoint
-          required: true
+        description: Date when the procedure on an individual was completed 
+        multivalued: false
+        range: TimePoint
+        required: true
     
 
     
