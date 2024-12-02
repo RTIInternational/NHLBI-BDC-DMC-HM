@@ -210,8 +210,7 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
 <h1 id="class-specimenstorageactivity">Class: SpecimenStorageActivity</h1>
-<p>_An activity in which a specimen is stored or maintained in a particular location, container, or state. Unlike 'processing' activities, storage does not alter the _</p>
-<p><em>intrinsic physical nature of a specimen.</em></p>
+<p><em>An activity in which a specimen is stored or maintained in a particular location, container, or state. Unlike 'processing' activities, storage does not alter the \nintrinsic physical nature of a specimen.</em></p>
 <p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/SpecimenStorageActivity">bdchm:SpecimenStorageActivity</a></p>
 <div class="mermaid"> classDiagram
     class SpecimenStorageActivity
@@ -347,9 +346,9 @@
 <h3 id="direct">Direct</h3>
 <details>
 <pre><code class="language-yaml">name: SpecimenStorageActivity
-description: "An activity in which a specimen is stored or maintained in a particular\
-  \ location, container, or state. Unlike 'processing' activities, storage does not\
-  \ alter the \nintrinsic physical nature of a specimen."
+description: An activity in which a specimen is stored or maintained in a particular
+  location, container, or state. Unlike 'processing' activities, storage does not
+  alter the \nintrinsic physical nature of a specimen.
 comments:
 - Think of the StorageActivity as being one of many possible periods when the specimen
   was stored at some location and in some state or condition.  We may want to capture
@@ -423,9 +422,9 @@ attributes:
 <h3 id="induced">Induced</h3>
 <details>
 <pre><code class="language-yaml">name: SpecimenStorageActivity
-description: "An activity in which a specimen is stored or maintained in a particular\
-  \ location, container, or state. Unlike 'processing' activities, storage does not\
-  \ alter the \nintrinsic physical nature of a specimen."
+description: An activity in which a specimen is stored or maintained in a particular
+  location, container, or state. Unlike 'processing' activities, storage does not
+  alter the \nintrinsic physical nature of a specimen.
 comments:
 - Think of the StorageActivity as being one of many possible periods when the specimen
   was stored at some location and in some state or condition.  We may want to capture
@@ -506,12 +505,10 @@ attributes:
     alias: method_type
     owner: SpecimenStorageActivity
     domain_of:
-    - DimensionalObservation
-    - DimensionalObservationSet
-    - SpecimenQualityObservation
-    - SpecimenQuantityObservation
     - SpecimenProcessingActivity
     - SpecimenStorageActivity
+    - ObservationSet
+    - Observation
     range: string
     required: false
   container:

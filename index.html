@@ -417,16 +417,32 @@
 <td>Demographics about an individual or animal receiving care or other health-related services.</td>
 </tr>
 <tr>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="DimensionalObservation/">DimensionalObservation</a></td>
-<td>A structured object that describes a single data item about the physical dimensions  of an entity (e.g. length width, area), as generated through a point-in-time observation or measurement.</td>
-</tr>
-<tr>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="DimensionalObservationSet/">DimensionalObservationSet</a></td>
-<td>A set of one or more discrete observations about the physical dimensions of an object (e.g. length, width, area).</td>
-</tr>
-<tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Document/">Document</a></td>
 <td>A collection of information intented to be understood together as a whole, and codified in human-readable form.</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Observation/">Observation</a></td>
+<td>A data structure with key (observation_type) and value (value) attributes that represents a single observation, such as the hematocrit component of a complete blood count panel.</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="DimensionalObservation/">DimensionalObservation</a></td>
+<td>A structured object that describes a single data item about the physical dimensions of an entity (e.g. length width, area), as generated through a point-in-time observation or measurement.</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="SpecimenQualityObservation/">SpecimenQualityObservation</a></td>
+<td>A structured object that describes a characteristic of a specimen indicative of its quality or suitability for use, as generated through a point-in-time observation or measurement.</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="SpecimenQuantityObservation/">SpecimenQuantityObservation</a></td>
+<td>A structured object that describes a single data item about the quantity of a Specimen, as generated through a point-in-time observation or measurement.</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ObservationSet/">ObservationSet</a></td>
+<td>A structured object to hold related Observations in a set.</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="DimensionalObservationSet/">DimensionalObservationSet</a></td>
+<td>A set of one or more discrete observations about the physical dimensions of an object (e.g. length, width, area).</td>
 </tr>
 <tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Organization/">Organization</a></td>
@@ -477,20 +493,8 @@
 <td>An activity that modifies the physical structure, composition, or state of a specimen. Unlike SpecimenCreation, SpecimenProcessing activities do not result in the generation of new entities - they take a single specimen as input, and output that same specimen.</td>
 </tr>
 <tr>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="SpecimenQualityObservation/">SpecimenQualityObservation</a></td>
-<td>A structured object that describes a characteristic of a specimen indicative of its quality or suitability for use, as generated through a point-in-time observation or measurement.</td>
-</tr>
-<tr>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="SpecimenQuantityObservation/">SpecimenQuantityObservation</a></td>
-<td>A structured object that describes a single data item about the quantity of an entity, as generated through a point-in-time observation or measurement.</td>
-</tr>
-<tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="SpecimenStorageActivity/">SpecimenStorageActivity</a></td>
-<td>An activity in which a specimen is stored or maintained in a particular location, container, or state. Unlike 'processing' activities, storage does not alter the</td>
-</tr>
-<tr>
-<td>intrinsic physical nature of a specimen.</td>
-<td></td>
+<td>An activity in which a specimen is stored or maintained in a particular location, container, or state. Unlike 'processing' activities, storage does not alter the \nintrinsic physical nature of a specimen.</td>
 </tr>
 <tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="SpecimenTransportActivity/">SpecimenTransportActivity</a></td>
@@ -498,7 +502,7 @@
 </tr>
 <tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Substance/">Substance</a></td>
-<td>A type of material substance, or instance thereof,  as used in a particular application. May include information about the role the substance played in a particular application.</td>
+<td>A type of material substance, or instance thereof, as used in a particular application. May include information about the role the substance played in a particular application.</td>
 </tr>
 <tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="TimePoint/">TimePoint</a></td>
@@ -511,6 +515,30 @@
 <tr>
 <td><a href="Identifier/">Identifier</a></td>
 <td>An Identifier is associated with a unique object or entity within a given system.</td>
+</tr>
+<tr>
+<td><a href="ObservationValue/">ObservationValue</a></td>
+<td>Single-valued observation valueholiding slot</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ObservationValueBoolean/">ObservationValueBoolean</a></td>
+<td>Single-valued boolean observation</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ObservationValueDecimal/">ObservationValueDecimal</a></td>
+<td>Single-valued decimal observation</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ObservationValueInteger/">ObservationValueInteger</a></td>
+<td>Single-valued integer observation</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ObservationValueQuantity/">ObservationValueQuantity</a></td>
+<td>Single-valued Quantity observation</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ObservationValueString/">ObservationValueString</a></td>
+<td>Single-valued string observation</td>
 </tr>
 <tr>
 <td><a href="QuestionnaireResponseItem/">QuestionnaireResponseItem</a></td>
@@ -529,8 +557,16 @@
 <td>Single-valued decimal answer to the question</td>
 </tr>
 <tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="QuestionnaireResponseValueInteger/">QuestionnaireResponseValueInteger</a></td>
+<td>Single-valued integer answer to the question</td>
+</tr>
+<tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="QuestionnaireResponseValueString/">QuestionnaireResponseValueString</a></td>
 <td>Single-valued string answer to the question</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="QuestionnaireResponseValueTimePoint/">QuestionnaireResponseValueTimePoint</a></td>
+<td>Single-valued TimePoint answer to the question</td>
 </tr>
 <tr>
 <td><a href="ResearchStudyCollection/">ResearchStudyCollection</a></td>
@@ -617,7 +653,7 @@
 </tr>
 <tr>
 <td><a href="category/">category</a></td>
-<td>The general category of observation described</td>
+<td>The general category of observation set described</td>
 </tr>
 <tr>
 <td><a href="cause_of_death/">cause_of_death</a></td>
@@ -781,7 +817,7 @@
 </tr>
 <tr>
 <td><a href="method_type/">method_type</a></td>
-<td>A type of method used in generating the Observation result</td>
+<td>A specific type of method or procedure performed to process the specimen</td>
 </tr>
 <tr>
 <td><a href="name/">name</a></td>
@@ -793,11 +829,11 @@
 </tr>
 <tr>
 <td><a href="observation_type/">observation_type</a></td>
-<td>The specific type of observation made - i</td>
+<td>The type of Observation being represented (e</td>
 </tr>
 <tr>
 <td><a href="observations/">observations</a></td>
-<td>A set of one or more more atomic observations that are conceptually or logica...</td>
+<td>A set of one or more observations</td>
 </tr>
 <tr>
 <td><a href="offset_from_index/">offset_from_index</a></td>
@@ -1002,10 +1038,6 @@
 <tr>
 <td><a href="value_decimal/">value_decimal</a></td>
 <td>An amount, in the given units (if specified)</td>
-</tr>
-<tr>
-<td><a href="value_quantity/">value_quantity</a></td>
-<td>The result of the observation, encoded as a free-text Quantity</td>
 </tr>
 <tr>
 <td><a href="version/">version</a></td>

@@ -5,10 +5,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/SpecimenQualityObservation/" rel="canonical"/>
+<link href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/Observation/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.5.3, mkdocs-material-8.5.10" name="generator"/>
-<title>Class: SpecimenQualityObservation - BioData Catalyst Harmonized Model</title>
+<title>Class: Observation - BioData Catalyst Harmonized Model</title>
 <link href="../assets/stylesheets/main.975780f9.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -21,7 +21,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#class-specimenqualityobservation">
+<a class="md-skip" href="#class-observation">
           Skip to content
         </a>
 </div>
@@ -45,7 +45,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Class: SpecimenQualityObservation
+              Class: Observation
             
           </span>
 </div>
@@ -201,47 +201,55 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/edit/master/docs/SpecimenQualityObservation.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/edit/master/docs/Observation.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
-<h1 id="class-specimenqualityobservation">Class: SpecimenQualityObservation</h1>
-<p><em>A structured object that describes a characteristic of a specimen indicative of its quality or suitability for use, as generated through a point-in-time observation or measurement.</em></p>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/SpecimenQualityObservation">bdchm:SpecimenQualityObservation</a></p>
+<h1 id="class-observation">Class: Observation</h1>
+<p><em>A data structure with key (observation_type) and value (value) attributes that represents a single observation, such as the hematocrit component of a complete blood count panel.</em></p>
+<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/Observation">bdchm:Observation</a></p>
 <div class="mermaid"> classDiagram
-    class SpecimenQualityObservation
+    class Observation
+      Entity &lt;|-- Observation
+
+
+      Observation &lt;|-- DimensionalObservation
       Observation &lt;|-- SpecimenQualityObservation
+      Observation &lt;|-- SpecimenQuantityObservation
 
-      SpecimenQualityObservation : associated_participant
 
-          SpecimenQualityObservation --&gt; Participant : associated_participant
+      Observation : associated_participant
 
-      SpecimenQualityObservation : category
+          Observation --&gt; Participant : associated_participant
 
-      SpecimenQualityObservation : focus
+      Observation : category
 
-          SpecimenQualityObservation --&gt; Entity : focus
+      Observation : focus
 
-      SpecimenQualityObservation : id
+          Observation --&gt; Entity : focus
 
-      SpecimenQualityObservation : method_type
+      Observation : id
 
-      SpecimenQualityObservation : observation_type
+      Observation : method_type
 
-      SpecimenQualityObservation : performed_by
+      Observation : observation_type
 
-          SpecimenQualityObservation --&gt; Organization : performed_by
+      Observation : performed_by
 
-      SpecimenQualityObservation : value
+          Observation --&gt; Organization : performed_by
 
-          SpecimenQualityObservation --&gt; ObservationValueString : value
+      Observation : value
+
+          Observation --&gt; ObservationValue : value
 
 
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
 <li><a href="../Entity/">Entity</a><ul>
-<li><a href="../Observation/">Observation</a><ul>
-<li><strong>SpecimenQualityObservation</strong></li>
+<li><strong>Observation</strong><ul>
+<li><a href="../DimensionalObservation/">DimensionalObservation</a></li>
+<li><a href="../SpecimenQualityObservation/">SpecimenQualityObservation</a></li>
+<li><a href="../SpecimenQuantityObservation/">SpecimenQuantityObservation</a></li>
 </ul>
 </li>
 </ul>
@@ -262,43 +270,43 @@
 <td><a href="../category/">category</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The general category of observation described</td>
-<td><a href="../Observation/">Observation</a></td>
+<td>direct</td>
 </tr>
 <tr>
 <td><a href="../observation_type/">observation_type</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td>The type of Observation being represented (e</td>
-<td><a href="../Observation/">Observation</a></td>
+<td>direct</td>
 </tr>
 <tr>
 <td><a href="../method_type/">method_type</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>A type of method used in generating the Observation result</td>
-<td><a href="../Observation/">Observation</a></td>
+<td>direct</td>
 </tr>
 <tr>
 <td><a href="../focus/">focus</a></td>
 <td>0..1 <br/> <a href="../Entity/">Entity</a></td>
 <td>The entity or entities directly observed/measured in generating an observatio...</td>
-<td><a href="../Observation/">Observation</a></td>
+<td>direct</td>
 </tr>
 <tr>
 <td><a href="../associated_participant/">associated_participant</a></td>
 <td>0..1 <br/> <a href="../Participant/">Participant</a></td>
 <td>The patient that the observation is about (if not the direct focus)</td>
-<td><a href="../Observation/">Observation</a></td>
+<td>direct</td>
 </tr>
 <tr>
 <td><a href="../performed_by/">performed_by</a></td>
 <td>0..1 <br/> <a href="../Organization/">Organization</a></td>
 <td>The organization or group that performed the observation activity</td>
-<td><a href="../Observation/">Observation</a></td>
+<td>direct</td>
 </tr>
 <tr>
 <td><a href="../value/">value</a></td>
-<td>1..1 <br/> <a href="../ObservationValueString/">ObservationValueString</a></td>
-<td>The result of the observation, encoded as a free-text Quantity</td>
-<td><a href="../Observation/">Observation</a></td>
+<td>1..1 <br/> <a href="../ObservationValue/">ObservationValue</a></td>
+<td>The value for an Observation</td>
+<td>direct</td>
 </tr>
 <tr>
 <td><a href="../id/">id</a></td>
@@ -320,10 +328,10 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../Specimen/">Specimen</a></td>
-<td><a href="../quality_measure/">quality_measure</a></td>
+<td><a href="../ObservationSet/">ObservationSet</a></td>
+<td><a href="../observations/">observations</a></td>
 <td>range</td>
-<td><a href="./">SpecimenQualityObservation</a></td>
+<td><a href="./">Observation</a></td>
 </tr>
 </tbody>
 </table>
@@ -343,11 +351,11 @@
 <tbody>
 <tr>
 <td>self</td>
-<td>bdchm:SpecimenQualityObservation</td>
+<td>bdchm:Observation</td>
 </tr>
 <tr>
 <td>native</td>
-<td>bdchm:SpecimenQualityObservation</td>
+<td>bdchm:Observation</td>
 </tr>
 </tbody>
 </table>
@@ -355,51 +363,103 @@
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
 <h3 id="direct">Direct</h3>
 <details>
-<pre><code class="language-yaml">name: SpecimenQualityObservation
-description: A structured object that describes a characteristic of a specimen indicative
-  of its quality or suitability for use, as generated through a point-in-time observation
-  or measurement.
+<pre><code class="language-yaml">name: Observation
+description: A data structure with key (observation_type) and value (value) attributes
+  that represents a single observation, such as the hematocrit component of a complete
+  blood count panel.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
-is_a: Observation
-slot_usage:
+is_a: Entity
+attributes:
+  category:
+    name: category
+    description: The general category of observation described
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    values_from:
+    - crdch:enum_CRDCH_Observation_category
+    multivalued: false
+    range: string
+    required: false
+  observation_type:
+    name: observation_type
+    description: The type of Observation being represented (e.g. 'diastolic blood
+      pressure')
+    comments:
+    - This field holds the "key" in the core key-value pair comprised of the observation_type
+      field and the relevant value(s) field.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    values_from:
+    - crdch:enum_CRDCH_Observation_observation_type
+    multivalued: false
+    range: string
+    required: true
+  method_type:
+    name: method_type
+    description: A type of method used in generating the Observation result.
+    comments:
+    - This may be a type of observational, measurement, experimental, or computational
+      method specifying how to generate data (e.g. "manual counting", "bright field
+      microscopy",). Or a Guideline or SOP specifying how to interpret data and/or
+      encode the result of an  Observation (e.g. a Cancer Staging system such as that
+      defined by the AJCC, or variant interpretation guideline such as that provided
+      by the ACMG).
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    values_from:
+    - crdch:enum_CRDCH_Observation_method_type
+    multivalued: false
+    range: string
+    required: false
+  focus:
+    name: focus
+    description: The entity or entities directly observed/measured in generating an
+      observation result.
+    comments:
+    - The "focus", "subject", and "specimen" fields are useful when data creators
+      want an Observation object to stand on its own, so it can point back to the
+      entities it is about.  These fields are not needed when an Observation is embedded
+      in a Specimen or other entity, where focus, subject, and specimen can be determined
+      from context.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    multivalued: false
+    range: Entity
+    required: false
+  associated_participant:
+    name: associated_participant
+    description: The patient that the observation is about (if not the direct focus).  e.g.
+      observations are often made on specimens derived from a patient, or other entities
+      related to a patient, that ultimately tell us something about the patient of
+      interest.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    multivalued: false
+    range: Participant
+    required: false
+  performed_by:
+    name: performed_by
+    description: The organization or group that performed the observation activity.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    multivalued: false
+    range: Organization
+    required: false
   value:
     name: value
-    description: The result of the observation, encoded as a free-text Quantity.
+    description: The value for an Observation.
     comments:
     - One and only one of the value(x) fields must be populated.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
     multivalued: false
-    domain_of:
-    - Identifier
-    - QuestionnaireResponseValue
-    - Observation
-    - ObservationValue
-    range: ObservationValueString
+    range: ObservationValue
     required: true
 
 </code></pre>
 </details>
 <h3 id="induced">Induced</h3>
 <details>
-<pre><code class="language-yaml">name: SpecimenQualityObservation
-description: A structured object that describes a characteristic of a specimen indicative
-  of its quality or suitability for use, as generated through a point-in-time observation
-  or measurement.
+<pre><code class="language-yaml">name: Observation
+description: A data structure with key (observation_type) and value (value) attributes
+  that represents a single observation, such as the hematocrit component of a complete
+  blood count panel.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
-is_a: Observation
-slot_usage:
-  value:
-    name: value
-    description: The result of the observation, encoded as a free-text Quantity.
-    comments:
-    - One and only one of the value(x) fields must be populated.
-    multivalued: false
-    domain_of:
-    - Identifier
-    - QuestionnaireResponseValue
-    - Observation
-    - ObservationValue
-    range: ObservationValueString
-    required: true
+is_a: Entity
 attributes:
   category:
     name: category
@@ -409,7 +469,7 @@ attributes:
     - crdch:enum_CRDCH_Observation_category
     multivalued: false
     alias: category
-    owner: SpecimenQualityObservation
+    owner: Observation
     domain_of:
     - ObservationSet
     - Observation
@@ -428,7 +488,7 @@ attributes:
     - crdch:enum_CRDCH_Observation_observation_type
     multivalued: false
     alias: observation_type
-    owner: SpecimenQualityObservation
+    owner: Observation
     domain_of:
     - Observation
     range: string
@@ -448,7 +508,7 @@ attributes:
     - crdch:enum_CRDCH_Observation_method_type
     multivalued: false
     alias: method_type
-    owner: SpecimenQualityObservation
+    owner: Observation
     domain_of:
     - SpecimenProcessingActivity
     - SpecimenStorageActivity
@@ -469,7 +529,7 @@ attributes:
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     multivalued: false
     alias: focus
-    owner: SpecimenQualityObservation
+    owner: Observation
     domain_of:
     - Document
     - ObservationSet
@@ -485,7 +545,7 @@ attributes:
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     multivalued: false
     alias: associated_participant
-    owner: SpecimenQualityObservation
+    owner: Observation
     domain_of:
     - Demography
     - Visit
@@ -500,7 +560,7 @@ attributes:
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     multivalued: false
     alias: performed_by
-    owner: SpecimenQualityObservation
+    owner: Observation
     domain_of:
     - SpecimenCreationActivity
     - ObservationSet
@@ -509,19 +569,19 @@ attributes:
     required: false
   value:
     name: value
-    description: The result of the observation, encoded as a free-text Quantity.
+    description: The value for an Observation.
     comments:
     - One and only one of the value(x) fields must be populated.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     multivalued: false
     alias: value
-    owner: SpecimenQualityObservation
+    owner: Observation
     domain_of:
     - Identifier
     - QuestionnaireResponseValue
     - Observation
     - ObservationValue
-    range: ObservationValueString
+    range: ObservationValue
     required: true
   id:
     name: id
@@ -540,7 +600,7 @@ attributes:
     slot_uri: schema:identifier
     identifier: true
     alias: id
-    owner: SpecimenQualityObservation
+    owner: Observation
     domain_of:
     - Entity
     range: uriorcurie

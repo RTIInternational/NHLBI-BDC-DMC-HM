@@ -282,26 +282,8 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../DimensionalObservation/">DimensionalObservation</a></td>
-<td><a href="../value_quantity/">value_quantity</a></td>
-<td>range</td>
-<td><a href="./">Quantity</a></td>
-</tr>
-<tr>
 <td><a href="../SpecimenCreationActivity/">SpecimenCreationActivity</a></td>
 <td><a href="../quantity_collected/">quantity_collected</a></td>
-<td>range</td>
-<td><a href="./">Quantity</a></td>
-</tr>
-<tr>
-<td><a href="../SpecimenQualityObservation/">SpecimenQualityObservation</a></td>
-<td><a href="../value_quantity/">value_quantity</a></td>
-<td>range</td>
-<td><a href="./">Quantity</a></td>
-</tr>
-<tr>
-<td><a href="../SpecimenQuantityObservation/">SpecimenQuantityObservation</a></td>
-<td><a href="../value_quantity/">value_quantity</a></td>
 <td>range</td>
 <td><a href="./">Quantity</a></td>
 </tr>
@@ -323,11 +305,17 @@
 <td>range</td>
 <td><a href="./">Quantity</a></td>
 </tr>
+<tr>
+<td><a href="../ObservationValueQuantity/">ObservationValueQuantity</a></td>
+<td><a href="../value/">value</a></td>
+<td>range</td>
+<td><a href="./">Quantity</a></td>
+</tr>
 </tbody>
 </table>
 <h2 id="comments">Comments</h2>
 <ul>
-<li>QuantityMeasure' may be implemented as an Observation-like object that will let us capture any type of measure of the amount of some substance (e.g. weight, volume, maybe even concentration?), with distinct timestamps and methods associated.  It could be implemented as a "simple" observation (one measurement per instance, where the 'code' fields is bound to a value set describing the different types of quantity measures allowed -  e.g. 'weight', 'volume', 'concentration'),  or as "composite" observation (multiple measurements possible in a single instance, each captured as a component defined to hold a specific type of quantity measure - e.g.  'weight', 'volume', 'concentration').  The number of different quantity measures we anticipate needed to support, and the potential for data sparseness, are factors that determine whether a simple or composite Observation would be most appropriate.</li>
+<li>QuantityMeasure may be implemented as an Observation-like object that will let us capture any type of measure of the amount of some substance (e.g. "weight", "volume"), with distinct timestamps and methods associated.  It could be implemented as a "simple" observation (one measurement per instance, where the "code" fields is bound to a value set describing the different types of quantity measures allowed -  e.g. "weight", "volume", "concentration"),  or as "composite" observation (multiple measurements possible in a single instance, each captured as a component defined to hold a specific type of quantity measure - e.g.  "weight", "volume", "concentration").  The number of different quantity measures we anticipate needed to support, and the potential for data sparseness, are factors that determine whether a simple or composite Observation would be most appropriate.</li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
@@ -361,17 +349,17 @@
 description: A structured object to represent an amount of something (e.g., weight,
   mass, length, duration of time) - including a value and unit.
 comments:
-- QuantityMeasure' may be implemented as an Observation-like object that will let
-  us capture any type of measure of the amount of some substance (e.g. weight, volume,
-  maybe even concentration?), with distinct timestamps and methods associated.  It
-  could be implemented as a "simple" observation (one measurement per instance, where
-  the 'code' fields is bound to a value set describing the different types of quantity
-  measures allowed -  e.g. 'weight', 'volume', 'concentration'),  or as "composite"
-  observation (multiple measurements possible in a single instance, each captured
-  as a component defined to hold a specific type of quantity measure - e.g.  'weight',
-  'volume', 'concentration').  The number of different quantity measures we anticipate
-  needed to support, and the potential for data sparseness, are factors that determine
-  whether a simple or composite Observation would be most appropriate.
+- QuantityMeasure may be implemented as an Observation-like object that will let us
+  capture any type of measure of the amount of some substance (e.g. "weight", "volume"),
+  with distinct timestamps and methods associated.  It could be implemented as a "simple"
+  observation (one measurement per instance, where the "code" fields is bound to a
+  value set describing the different types of quantity measures allowed -  e.g. "weight",
+  "volume", "concentration"),  or as "composite" observation (multiple measurements
+  possible in a single instance, each captured as a component defined to hold a specific
+  type of quantity measure - e.g.  "weight", "volume", "concentration").  The number
+  of different quantity measures we anticipate needed to support, and the potential
+  for data sparseness, are factors that determine whether a simple or composite Observation
+  would be most appropriate.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 is_a: Entity
 attributes:
@@ -412,17 +400,17 @@ attributes:
 description: A structured object to represent an amount of something (e.g., weight,
   mass, length, duration of time) - including a value and unit.
 comments:
-- QuantityMeasure' may be implemented as an Observation-like object that will let
-  us capture any type of measure of the amount of some substance (e.g. weight, volume,
-  maybe even concentration?), with distinct timestamps and methods associated.  It
-  could be implemented as a "simple" observation (one measurement per instance, where
-  the 'code' fields is bound to a value set describing the different types of quantity
-  measures allowed -  e.g. 'weight', 'volume', 'concentration'),  or as "composite"
-  observation (multiple measurements possible in a single instance, each captured
-  as a component defined to hold a specific type of quantity measure - e.g.  'weight',
-  'volume', 'concentration').  The number of different quantity measures we anticipate
-  needed to support, and the potential for data sparseness, are factors that determine
-  whether a simple or composite Observation would be most appropriate.
+- QuantityMeasure may be implemented as an Observation-like object that will let us
+  capture any type of measure of the amount of some substance (e.g. "weight", "volume"),
+  with distinct timestamps and methods associated.  It could be implemented as a "simple"
+  observation (one measurement per instance, where the "code" fields is bound to a
+  value set describing the different types of quantity measures allowed -  e.g. "weight",
+  "volume", "concentration"),  or as "composite" observation (multiple measurements
+  possible in a single instance, each captured as a component defined to hold a specific
+  type of quantity measure - e.g.  "weight", "volume", "concentration").  The number
+  of different quantity measures we anticipate needed to support, and the potential
+  for data sparseness, are factors that determine whether a simple or composite Observation
+  would be most appropriate.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 is_a: Entity
 attributes:

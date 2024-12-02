@@ -210,15 +210,21 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
 <h1 id="class-specimenquantityobservation">Class: SpecimenQuantityObservation</h1>
-<p><em>A structured object that describes a single data item about the quantity of an entity, as generated through a point-in-time observation or measurement.</em></p>
+<p><em>A structured object that describes a single data item about the quantity of a Specimen, as generated through a point-in-time observation or measurement.</em></p>
 <p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/SpecimenQuantityObservation">bdchm:SpecimenQuantityObservation</a></p>
 <div class="mermaid"> classDiagram
     class SpecimenQuantityObservation
-      Entity &lt;|-- SpecimenQuantityObservation
+      Observation &lt;|-- SpecimenQuantityObservation
+
+      SpecimenQuantityObservation : associated_participant
+
+          SpecimenQuantityObservation --&gt; Participant : associated_participant
+
+      SpecimenQuantityObservation : category
 
       SpecimenQuantityObservation : focus
 
-          SpecimenQuantityObservation --&gt; Specimen : focus
+          SpecimenQuantityObservation --&gt; Entity : focus
 
       SpecimenQuantityObservation : id
 
@@ -226,18 +232,23 @@
 
       SpecimenQuantityObservation : observation_type
 
-          SpecimenQuantityObservation --&gt; SpecimenQuantityObservationTypeEnum : observation_type
+      SpecimenQuantityObservation : performed_by
 
-      SpecimenQuantityObservation : value_quantity
+          SpecimenQuantityObservation --&gt; Organization : performed_by
 
-          SpecimenQuantityObservation --&gt; Quantity : value_quantity
+      SpecimenQuantityObservation : value
+
+          SpecimenQuantityObservation --&gt; ObservationValueQuantity : value
 
 
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
 <li><a href="../Entity/">Entity</a><ul>
+<li><a href="../Observation/">Observation</a><ul>
 <li><strong>SpecimenQuantityObservation</strong></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -253,28 +264,46 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="../category/">category</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>The general category of observation described</td>
+<td><a href="../Observation/">Observation</a></td>
+</tr>
+<tr>
 <td><a href="../observation_type/">observation_type</a></td>
-<td>1..1 <br/> <a href="../SpecimenQuantityObservationTypeEnum/">SpecimenQuantityObservationTypeEnum</a></td>
-<td>The specific type of observation made - i</td>
-<td>direct</td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>The type of Observation being represented (e</td>
+<td><a href="../Observation/">Observation</a></td>
 </tr>
 <tr>
 <td><a href="../method_type/">method_type</a></td>
-<td>0..* <br/> <a href="../String/">String</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
 <td>A type of method used in generating the Observation result</td>
-<td>direct</td>
+<td><a href="../Observation/">Observation</a></td>
 </tr>
 <tr>
 <td><a href="../focus/">focus</a></td>
-<td>0..* <br/> <a href="../Specimen/">Specimen</a></td>
+<td>0..1 <br/> <a href="../Entity/">Entity</a></td>
 <td>The entity or entities directly observed/measured in generating an observatio...</td>
-<td>direct</td>
+<td><a href="../Observation/">Observation</a></td>
 </tr>
 <tr>
-<td><a href="../value_quantity/">value_quantity</a></td>
-<td>1..1 <br/> <a href="../Quantity/">Quantity</a></td>
-<td>The result of the observation, encoded as a free-text Quantity</td>
-<td>direct</td>
+<td><a href="../associated_participant/">associated_participant</a></td>
+<td>0..1 <br/> <a href="../Participant/">Participant</a></td>
+<td>The patient that the observation is about (if not the direct focus)</td>
+<td><a href="../Observation/">Observation</a></td>
+</tr>
+<tr>
+<td><a href="../performed_by/">performed_by</a></td>
+<td>0..1 <br/> <a href="../Organization/">Organization</a></td>
+<td>The organization or group that performed the observation activity</td>
+<td><a href="../Observation/">Observation</a></td>
+</tr>
+<tr>
+<td><a href="../value/">value</a></td>
+<td>1..1 <br/> <a href="../ObservationValueQuantity/">ObservationValueQuantity</a></td>
+<td>The result of the observation, encoded as a Quantity</td>
+<td><a href="../Observation/">Observation</a></td>
 </tr>
 <tr>
 <td><a href="../id/">id</a></td>
@@ -305,7 +334,7 @@
 </table>
 <h2 id="comments">Comments</h2>
 <ul>
-<li>At the core of an Observation is a flexible key-value pair (or a structured collection of key-value pairs), where a 'key' field defines the type of observation made, and the 'value' field describes the value or outcome of the observation. The fact that the type of observation captured is defined in the data allow Observation to convey a broad range of observation data.</li>
+<li>At the core of an Observation is a flexible key-value pair (or a structured collection of key-value pairs), where a "key" field defines the type of observation made, and the "value" field describes the value or outcome of the observation. The fact that the type of observation captured is defined in the data allow Observation to convey a broad range of observation data.</li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
@@ -337,67 +366,28 @@
 <details>
 <pre><code class="language-yaml">name: SpecimenQuantityObservation
 description: A structured object that describes a single data item about the quantity
-  of an entity, as generated through a point-in-time observation or measurement.
+  of a Specimen, as generated through a point-in-time observation or measurement.
 comments:
 - At the core of an Observation is a flexible key-value pair (or a structured collection
-  of key-value pairs), where a 'key' field defines the type of observation made, and
-  the 'value' field describes the value or outcome of the observation. The fact that
+  of key-value pairs), where a "key" field defines the type of observation made, and
+  the "value" field describes the value or outcome of the observation. The fact that
   the type of observation captured is defined in the data allow Observation to convey
   a broad range of observation data.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
-is_a: Entity
-attributes:
-  observation_type:
-    name: observation_type
-    description: The specific type of observation made - i.e. the feature or characteristic
-      that was observed, measured, estimated, etc..
-    comments:
-    - This field holds the 'key' in the core key-value pair comprised of the observation_type
-      field and the relevant value(s) field.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    multivalued: false
-    range: SpecimenQuantityObservationTypeEnum
-    required: true
-  method_type:
-    name: method_type
-    description: A type of method used in generating the Observation result.
-    comments:
-    - This may be a type of observational, measurement, experimental, or computational
-      method specifying how to generate data (e.g. 'manual counting', 'bright field
-      microscopy',). Or a Guideline or SOP specifying how to interpret data and/or
-      encode the result of an  Observation (e.g. a Cancer Staging system such as that
-      defined by the AJCC, or variant interpretation guideline such as that provided
-      by the ACMG).
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    values_from:
-    - crdch:enum_CRDCH_SpecimenQuantityObservation_method_type
-    multivalued: true
-    range: string
-    required: false
-  focus:
-    name: focus
-    description: The entity or entities directly observed/measured in generating an
-      observation result.
-    comments:
-    - 'The ''focus'', ''subject'', and ''specimen'' fields are useful when data creators
-      want an Observation object to stand on its own, so it can point back to the
-      entities it is about.  These fields are not needed when an Observation is embedded
-      in a Specimen or other entity, where focus, subject, and specimen can be determined
-      from context. '
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    multivalued: true
-    range: Specimen
-    required: false
-    inlined: true
-    inlined_as_list: true
-  value_quantity:
-    name: value_quantity
-    description: The result of the observation, encoded as a free-text Quantity.
+is_a: Observation
+slot_usage:
+  value:
+    name: value
+    description: The result of the observation, encoded as a Quantity.
     comments:
     - One and only one of the value(x) fields must be populated.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
     multivalued: false
-    range: Quantity
+    domain_of:
+    - Identifier
+    - QuestionnaireResponseValue
+    - Observation
+    - ObservationValue
+    range: ObservationValueQuantity
     required: true
 
 </code></pre>
@@ -406,56 +396,83 @@ attributes:
 <details>
 <pre><code class="language-yaml">name: SpecimenQuantityObservation
 description: A structured object that describes a single data item about the quantity
-  of an entity, as generated through a point-in-time observation or measurement.
+  of a Specimen, as generated through a point-in-time observation or measurement.
 comments:
 - At the core of an Observation is a flexible key-value pair (or a structured collection
-  of key-value pairs), where a 'key' field defines the type of observation made, and
-  the 'value' field describes the value or outcome of the observation. The fact that
+  of key-value pairs), where a "key" field defines the type of observation made, and
+  the "value" field describes the value or outcome of the observation. The fact that
   the type of observation captured is defined in the data allow Observation to convey
   a broad range of observation data.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
-is_a: Entity
+is_a: Observation
+slot_usage:
+  value:
+    name: value
+    description: The result of the observation, encoded as a Quantity.
+    comments:
+    - One and only one of the value(x) fields must be populated.
+    multivalued: false
+    domain_of:
+    - Identifier
+    - QuestionnaireResponseValue
+    - Observation
+    - ObservationValue
+    range: ObservationValueQuantity
+    required: true
 attributes:
+  category:
+    name: category
+    description: The general category of observation described
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    values_from:
+    - crdch:enum_CRDCH_Observation_category
+    multivalued: false
+    alias: category
+    owner: SpecimenQuantityObservation
+    domain_of:
+    - ObservationSet
+    - Observation
+    range: string
+    required: false
   observation_type:
     name: observation_type
-    description: The specific type of observation made - i.e. the feature or characteristic
-      that was observed, measured, estimated, etc..
+    description: The type of Observation being represented (e.g. 'diastolic blood
+      pressure')
     comments:
-    - This field holds the 'key' in the core key-value pair comprised of the observation_type
+    - This field holds the "key" in the core key-value pair comprised of the observation_type
       field and the relevant value(s) field.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    values_from:
+    - crdch:enum_CRDCH_Observation_observation_type
     multivalued: false
     alias: observation_type
     owner: SpecimenQuantityObservation
     domain_of:
-    - DimensionalObservation
-    - SpecimenQualityObservation
-    - SpecimenQuantityObservation
-    range: SpecimenQuantityObservationTypeEnum
+    - Observation
+    range: string
     required: true
   method_type:
     name: method_type
     description: A type of method used in generating the Observation result.
     comments:
     - This may be a type of observational, measurement, experimental, or computational
-      method specifying how to generate data (e.g. 'manual counting', 'bright field
-      microscopy',). Or a Guideline or SOP specifying how to interpret data and/or
+      method specifying how to generate data (e.g. "manual counting", "bright field
+      microscopy",). Or a Guideline or SOP specifying how to interpret data and/or
       encode the result of an  Observation (e.g. a Cancer Staging system such as that
       defined by the AJCC, or variant interpretation guideline such as that provided
       by the ACMG).
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     values_from:
-    - crdch:enum_CRDCH_SpecimenQuantityObservation_method_type
-    multivalued: true
+    - crdch:enum_CRDCH_Observation_method_type
+    multivalued: false
     alias: method_type
     owner: SpecimenQuantityObservation
     domain_of:
-    - DimensionalObservation
-    - DimensionalObservationSet
-    - SpecimenQualityObservation
-    - SpecimenQuantityObservation
     - SpecimenProcessingActivity
     - SpecimenStorageActivity
+    - ObservationSet
+    - Observation
     range: string
     required: false
   focus:
@@ -463,37 +480,67 @@ attributes:
     description: The entity or entities directly observed/measured in generating an
       observation result.
     comments:
-    - 'The ''focus'', ''subject'', and ''specimen'' fields are useful when data creators
+    - The "focus", "subject", and "specimen" fields are useful when data creators
       want an Observation object to stand on its own, so it can point back to the
       entities it is about.  These fields are not needed when an Observation is embedded
       in a Specimen or other entity, where focus, subject, and specimen can be determined
-      from context. '
+      from context.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
-    multivalued: true
+    multivalued: false
     alias: focus
     owner: SpecimenQuantityObservation
     domain_of:
     - Document
-    - SpecimenQualityObservation
-    - SpecimenQuantityObservation
-    range: Specimen
+    - ObservationSet
+    - Observation
+    range: Entity
     required: false
-    inlined: true
-    inlined_as_list: true
-  value_quantity:
-    name: value_quantity
-    description: The result of the observation, encoded as a free-text Quantity.
+  associated_participant:
+    name: associated_participant
+    description: The patient that the observation is about (if not the direct focus).  e.g.
+      observations are often made on specimens derived from a patient, or other entities
+      related to a patient, that ultimately tell us something about the patient of
+      interest.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    multivalued: false
+    alias: associated_participant
+    owner: SpecimenQuantityObservation
+    domain_of:
+    - Demography
+    - Visit
+    - Condition
+    - ObservationSet
+    - Observation
+    range: Participant
+    required: false
+  performed_by:
+    name: performed_by
+    description: The organization or group that performed the observation activity.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    multivalued: false
+    alias: performed_by
+    owner: SpecimenQuantityObservation
+    domain_of:
+    - SpecimenCreationActivity
+    - ObservationSet
+    - Observation
+    range: Organization
+    required: false
+  value:
+    name: value
+    description: The result of the observation, encoded as a Quantity.
     comments:
     - One and only one of the value(x) fields must be populated.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     multivalued: false
-    alias: value_quantity
+    alias: value
     owner: SpecimenQuantityObservation
     domain_of:
-    - DimensionalObservation
-    - SpecimenQualityObservation
-    - SpecimenQuantityObservation
-    range: Quantity
+    - Identifier
+    - QuestionnaireResponseValue
+    - Observation
+    - ObservationValue
+    range: ObservationValueQuantity
     required: true
   id:
     name: id

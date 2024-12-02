@@ -337,6 +337,11 @@
 <td>no</td>
 </tr>
 <tr>
+<td><a href="../ObservationValue/">ObservationValue</a></td>
+<td>Single-valued observation valueholiding slot</td>
+<td>no</td>
+</tr>
+<tr>
 <td><a href="../Identifier/">Identifier</a></td>
 <td>An Identifier is associated with a unique object or entity within a given sys...</td>
 <td>no</td>
@@ -352,8 +357,63 @@
 <td>yes</td>
 </tr>
 <tr>
+<td><a href="../QuestionnaireResponseValueInteger/">QuestionnaireResponseValueInteger</a></td>
+<td>Single-valued integer answer to the question</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../QuestionnaireResponseValueTimePoint/">QuestionnaireResponseValueTimePoint</a></td>
+<td>Single-valued TimePoint answer to the question</td>
+<td>yes</td>
+</tr>
+<tr>
 <td><a href="../QuestionnaireResponseValueString/">QuestionnaireResponseValueString</a></td>
 <td>Single-valued string answer to the question</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../DimensionalObservation/">DimensionalObservation</a></td>
+<td>A structured object that describes a single data item about the physical dime...</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../SpecimenQualityObservation/">SpecimenQualityObservation</a></td>
+<td>A structured object that describes a characteristic of a specimen indicative ...</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../SpecimenQuantityObservation/">SpecimenQuantityObservation</a></td>
+<td>A structured object that describes a single data item about the quantity of a...</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../Observation/">Observation</a></td>
+<td>A data structure with key (observation_type) and value (value) attributes tha...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../ObservationValueDecimal/">ObservationValueDecimal</a></td>
+<td>Single-valued decimal observation</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../ObservationValueInteger/">ObservationValueInteger</a></td>
+<td>Single-valued integer observation</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../ObservationValueBoolean/">ObservationValueBoolean</a></td>
+<td>Single-valued boolean observation</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../ObservationValueString/">ObservationValueString</a></td>
+<td>Single-valued string observation</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../ObservationValueQuantity/">ObservationValueQuantity</a></td>
+<td>Single-valued Quantity observation</td>
 <td>yes</td>
 </tr>
 </tbody>
@@ -378,6 +438,8 @@ alias: value
 domain_of:
 - Identifier
 - QuestionnaireResponseValue
+- Observation
+- ObservationValue
 range: string
 
 </code></pre>

@@ -444,18 +444,6 @@
 <td>range</td>
 <td><a href="./">Specimen</a></td>
 </tr>
-<tr>
-<td><a href="../SpecimenQualityObservation/">SpecimenQualityObservation</a></td>
-<td><a href="../focus/">focus</a></td>
-<td>range</td>
-<td><a href="./">Specimen</a></td>
-</tr>
-<tr>
-<td><a href="../SpecimenQuantityObservation/">SpecimenQuantityObservation</a></td>
-<td><a href="../focus/">focus</a></td>
-<td>range</td>
-<td><a href="./">Specimen</a></td>
-</tr>
 </tbody>
 </table>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
@@ -614,9 +602,9 @@ attributes:
     description: An activity that results in the storage or maintenance of a specimen
       in a particular location, container, or state.
     comments:
-    - 'The 0..m cardinality of this attribute reflects the fact that a given specimen
+    - The 0..m cardinality of this attribute reflects the fact that a given specimen
       may undergo many separate periods of storage, in different locations and/or
-      under different conditions '
+      under different conditions
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     multivalued: true
@@ -639,9 +627,9 @@ attributes:
       -  as storage for future use,  a substrate for growth (e.g. a cell culture dish),
       or a vessel to enable analysis (e.g. a microscope slide or 96-well plate)
     comments:
-    - 'The 0..1 cardinality on this attribute means that you cannot directly references
+    - The 0..1 cardinality on this attribute means that you cannot directly references
       multiple nested containers holding a sample. To capture this scenario, use the
-      ''parent_container'' attribute of the Container entity.  '
+      "parent_container" attribute of the Container entity.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     multivalued: false
@@ -915,9 +903,9 @@ attributes:
     description: An activity that results in the storage or maintenance of a specimen
       in a particular location, container, or state.
     comments:
-    - 'The 0..m cardinality of this attribute reflects the fact that a given specimen
+    - The 0..m cardinality of this attribute reflects the fact that a given specimen
       may undergo many separate periods of storage, in different locations and/or
-      under different conditions '
+      under different conditions
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     multivalued: true
@@ -948,9 +936,9 @@ attributes:
       -  as storage for future use,  a substrate for growth (e.g. a cell culture dish),
       or a vessel to enable analysis (e.g. a microscope slide or 96-well plate)
     comments:
-    - 'The 0..1 cardinality on this attribute means that you cannot directly references
+    - The 0..1 cardinality on this attribute means that you cannot directly references
       multiple nested containers holding a sample. To capture this scenario, use the
-      ''parent_container'' attribute of the Container entity.  '
+      "parent_container" attribute of the Container entity.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     multivalued: false

@@ -363,7 +363,7 @@
 </table>
 <h2 id="comments">Comments</h2>
 <ul>
-<li>A creation' activity represents the entire process up to the point where the specimen is physically modified, stored, or transported.</li>
+<li>A creation activity represents the entire process up to the point where the specimen is physically modified, stored, or transported.</li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
@@ -398,7 +398,7 @@ description: The process of creating a specimen. This may occur through observin
   and/or collecting material from an biological source or natural setting, or through
   derivation from an existing specimen (e.g. via portioning or aliquoting).
 comments:
-- A creation' activity represents the entire process up to the point where the specimen
+- A creation activity represents the entire process up to the point where the specimen
   is physically modified, stored, or transported.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 is_a: Entity
@@ -545,7 +545,7 @@ description: The process of creating a specimen. This may occur through observin
   and/or collecting material from an biological source or natural setting, or through
   derivation from an existing specimen (e.g. via portioning or aliquoting).
 comments:
-- A creation' activity represents the entire process up to the point where the specimen
+- A creation activity represents the entire process up to the point where the specimen
   is physically modified, stored, or transported.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 is_a: Entity
@@ -622,6 +622,8 @@ attributes:
     owner: SpecimenCreationActivity
     domain_of:
     - SpecimenCreationActivity
+    - ObservationSet
+    - Observation
     range: Organization
     required: false
   collection_method_type:

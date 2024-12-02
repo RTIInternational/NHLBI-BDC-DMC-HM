@@ -224,14 +224,10 @@
       Entity &lt;|-- QuestionnaireItem
       Entity &lt;|-- QuestionnaireResponse
       Entity &lt;|-- Condition
-      Entity &lt;|-- DimensionalObservation
-      Entity &lt;|-- DimensionalObservationSet
       Entity &lt;|-- Document
       Entity &lt;|-- Specimen
       Entity &lt;|-- SpecimenContainer
       Entity &lt;|-- SpecimenCreationActivity
-      Entity &lt;|-- SpecimenQualityObservation
-      Entity &lt;|-- SpecimenQuantityObservation
       Entity &lt;|-- SpecimenProcessingActivity
       Entity &lt;|-- SpecimenStorageActivity
       Entity &lt;|-- SpecimenTransportActivity
@@ -239,6 +235,8 @@
       Entity &lt;|-- Substance
       Entity &lt;|-- Quantity
       Entity &lt;|-- BodySite
+      Entity &lt;|-- ObservationSet
+      Entity &lt;|-- Observation
 
       Entity : id
 
@@ -259,14 +257,10 @@
 <li><a href="../QuestionnaireItem/">QuestionnaireItem</a></li>
 <li><a href="../QuestionnaireResponse/">QuestionnaireResponse</a></li>
 <li><a href="../Condition/">Condition</a></li>
-<li><a href="../DimensionalObservation/">DimensionalObservation</a></li>
-<li><a href="../DimensionalObservationSet/">DimensionalObservationSet</a></li>
 <li><a href="../Document/">Document</a></li>
 <li><a href="../Specimen/">Specimen</a></li>
 <li><a href="../SpecimenContainer/">SpecimenContainer</a></li>
 <li><a href="../SpecimenCreationActivity/">SpecimenCreationActivity</a></li>
-<li><a href="../SpecimenQualityObservation/">SpecimenQualityObservation</a></li>
-<li><a href="../SpecimenQuantityObservation/">SpecimenQuantityObservation</a></li>
 <li><a href="../SpecimenProcessingActivity/">SpecimenProcessingActivity</a></li>
 <li><a href="../SpecimenStorageActivity/">SpecimenStorageActivity</a></li>
 <li><a href="../SpecimenTransportActivity/">SpecimenTransportActivity</a></li>
@@ -274,6 +268,8 @@
 <li><a href="../Substance/">Substance</a></li>
 <li><a href="../Quantity/">Quantity</a></li>
 <li><a href="../BodySite/">BodySite</a></li>
+<li><a href="../ObservationSet/">ObservationSet</a></li>
+<li><a href="../Observation/">Observation</a></li>
 </ul>
 </li>
 </ul>
@@ -308,7 +304,43 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="../DimensionalObservation/">DimensionalObservation</a></td>
+<td><a href="../focus/">focus</a></td>
+<td>range</td>
+<td><a href="./">Entity</a></td>
+</tr>
+<tr>
+<td><a href="../DimensionalObservationSet/">DimensionalObservationSet</a></td>
+<td><a href="../focus/">focus</a></td>
+<td>range</td>
+<td><a href="./">Entity</a></td>
+</tr>
+<tr>
 <td><a href="../Document/">Document</a></td>
+<td><a href="../focus/">focus</a></td>
+<td>range</td>
+<td><a href="./">Entity</a></td>
+</tr>
+<tr>
+<td><a href="../SpecimenQualityObservation/">SpecimenQualityObservation</a></td>
+<td><a href="../focus/">focus</a></td>
+<td>range</td>
+<td><a href="./">Entity</a></td>
+</tr>
+<tr>
+<td><a href="../SpecimenQuantityObservation/">SpecimenQuantityObservation</a></td>
+<td><a href="../focus/">focus</a></td>
+<td>range</td>
+<td><a href="./">Entity</a></td>
+</tr>
+<tr>
+<td><a href="../ObservationSet/">ObservationSet</a></td>
+<td><a href="../focus/">focus</a></td>
+<td>range</td>
+<td><a href="./">Entity</a></td>
+</tr>
+<tr>
+<td><a href="../Observation/">Observation</a></td>
 <td><a href="../focus/">focus</a></td>
 <td>range</td>
 <td><a href="./">Entity</a></td>

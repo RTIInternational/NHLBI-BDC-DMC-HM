@@ -211,6 +211,8 @@
     class QuestionnaireResponseValue
       QuestionnaireResponseValue &lt;|-- QuestionnaireResponseValueDecimal
       QuestionnaireResponseValue &lt;|-- QuestionnaireResponseValueBoolean
+      QuestionnaireResponseValue &lt;|-- QuestionnaireResponseValueInteger
+      QuestionnaireResponseValue &lt;|-- QuestionnaireResponseValueTimePoint
       QuestionnaireResponseValue &lt;|-- QuestionnaireResponseValueString
 
       QuestionnaireResponseValue : name
@@ -226,6 +228,8 @@
 <li><strong>QuestionnaireResponseValue</strong><ul>
 <li><a href="../QuestionnaireResponseValueDecimal/">QuestionnaireResponseValueDecimal</a></li>
 <li><a href="../QuestionnaireResponseValueBoolean/">QuestionnaireResponseValueBoolean</a></li>
+<li><a href="../QuestionnaireResponseValueInteger/">QuestionnaireResponseValueInteger</a></li>
+<li><a href="../QuestionnaireResponseValueTimePoint/">QuestionnaireResponseValueTimePoint</a></li>
 <li><a href="../QuestionnaireResponseValueString/">QuestionnaireResponseValueString</a></li>
 </ul>
 </li>
@@ -342,6 +346,7 @@ attributes:
     owner: QuestionnaireResponseValue
     domain_of:
     - QuestionnaireResponseValue
+    - ObservationValue
     range: string
   name:
     name: name
@@ -353,6 +358,7 @@ attributes:
     - Organization
     - Questionnaire
     - QuestionnaireResponseValue
+    - ObservationValue
     range: string
   value:
     name: value
@@ -364,6 +370,8 @@ attributes:
     domain_of:
     - Identifier
     - QuestionnaireResponseValue
+    - Observation
+    - ObservationValue
     range: string
 
 </code></pre>

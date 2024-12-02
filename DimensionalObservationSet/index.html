@@ -209,9 +209,17 @@
 <p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/DimensionalObservationSet">bdchm:DimensionalObservationSet</a></p>
 <div class="mermaid"> classDiagram
     class DimensionalObservationSet
-      Entity &lt;|-- DimensionalObservationSet
+      ObservationSet &lt;|-- DimensionalObservationSet
+
+      DimensionalObservationSet : associated_participant
+
+          DimensionalObservationSet --&gt; Participant : associated_participant
 
       DimensionalObservationSet : category
+
+      DimensionalObservationSet : focus
+
+          DimensionalObservationSet --&gt; Entity : focus
 
       DimensionalObservationSet : id
 
@@ -221,12 +229,19 @@
 
           DimensionalObservationSet --&gt; DimensionalObservation : observations
 
+      DimensionalObservationSet : performed_by
+
+          DimensionalObservationSet --&gt; Organization : performed_by
+
 
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
 <li><a href="../Entity/">Entity</a><ul>
+<li><a href="../ObservationSet/">ObservationSet</a><ul>
 <li><strong>DimensionalObservationSet</strong></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -245,19 +260,37 @@
 <td><a href="../category/">category</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The general category of observation set described</td>
-<td>direct</td>
+<td><a href="../ObservationSet/">ObservationSet</a></td>
+</tr>
+<tr>
+<td><a href="../focus/">focus</a></td>
+<td>0..* <br/> <a href="../Entity/">Entity</a></td>
+<td>The entity or entities directly observed/measured in generating an observatio...</td>
+<td><a href="../ObservationSet/">ObservationSet</a></td>
+</tr>
+<tr>
+<td><a href="../associated_participant/">associated_participant</a></td>
+<td>0..1 <br/> <a href="../Participant/">Participant</a></td>
+<td>The Participant that the observation is about (if not the direct focus)</td>
+<td><a href="../ObservationSet/">ObservationSet</a></td>
 </tr>
 <tr>
 <td><a href="../method_type/">method_type</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
-<td>A type of method used in generating each of the Observations bundled in the s...</td>
-<td>direct</td>
+<td>The type of method used in generating the ObservationSet</td>
+<td><a href="../ObservationSet/">ObservationSet</a></td>
+</tr>
+<tr>
+<td><a href="../performed_by/">performed_by</a></td>
+<td>0..1 <br/> <a href="../Organization/">Organization</a></td>
+<td>The organization or group that performed the observation activity</td>
+<td><a href="../ObservationSet/">ObservationSet</a></td>
 </tr>
 <tr>
 <td><a href="../observations/">observations</a></td>
 <td>0..* <br/> <a href="../DimensionalObservation/">DimensionalObservation</a></td>
-<td>A set of one or more more atomic observations that are conceptually or logica...</td>
-<td>direct</td>
+<td>A set of one or more observations</td>
+<td><a href="../ObservationSet/">ObservationSet</a></td>
 </tr>
 <tr>
 <td><a href="../id/">id</a></td>
@@ -318,54 +351,13 @@
 description: A set of one or more discrete observations about the physical dimensions
   of an object (e.g. length, width, area).
 from_schema: https://w3id.org/nhlbidatastage/bdchm
-is_a: Entity
-attributes:
-  category:
-    name: category
-    description: The general category of observation set described
-    comments:
-    - FHIR naming conventions are followed here, where 'id' is used for logical identifiers
-      which are unique only within a given system, and 'identifier' for business identifiers,
-      which are used to connect entities or share content across systems.  The complex
-      'Identifier' data type is used  to capture the identifier itself, along with
-      metadata about its source.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    values_from:
-    - crdch:enum_CRDCH_DimensionalObservationSet_category
-    multivalued: false
-    range: string
-    required: false
-  method_type:
-    name: method_type
-    description: A type of method used in generating each of the Observations bundled
-      in the set.
-    comments:
-    - This may be a type of observational, measurement, experimental, or computational
-      method specifying how to generate data (e.g. 'manual counting', 'bright field
-      microscopy'). Or a Guideline or SOP specifying how to interpret data and/or
-      encode the result of an  Observation (e.g. a Cancer Staging system such as that
-      defined by the AJCC, or variant interpretation guideline such as that provided
-      by the ACMG).
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    values_from:
-    - crdch:enum_CRDCH_DimensionalObservationSet_method_type
-    multivalued: true
-    range: string
-    required: false
+is_a: ObservationSet
+slot_usage:
   observations:
     name: observations
-    description: A set of one or more more atomic observations that are conceptually
-      or logically related - e.g. two components of some compound measurement (e.g.
-      the systolic and diastolic components of a blood pressure measurement), or a
-      panel of related measurements run and interpreted together on the same subject/specimen
-      (e.g. a blood panel, or separate dimensional measurements of a specimen).
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    multivalued: true
+    domain_of:
+    - ObservationSet
     range: DimensionalObservation
-    required: false
-    inlined: true
-    inlined_as_list: true
 
 </code></pre>
 </details>
@@ -375,68 +367,114 @@ attributes:
 description: A set of one or more discrete observations about the physical dimensions
   of an object (e.g. length, width, area).
 from_schema: https://w3id.org/nhlbidatastage/bdchm
-is_a: Entity
+is_a: ObservationSet
+slot_usage:
+  observations:
+    name: observations
+    domain_of:
+    - ObservationSet
+    range: DimensionalObservation
 attributes:
   category:
     name: category
     description: The general category of observation set described
-    comments:
-    - FHIR naming conventions are followed here, where 'id' is used for logical identifiers
-      which are unique only within a given system, and 'identifier' for business identifiers,
-      which are used to connect entities or share content across systems.  The complex
-      'Identifier' data type is used  to capture the identifier itself, along with
-      metadata about its source.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
     values_from:
-    - crdch:enum_CRDCH_DimensionalObservationSet_category
+    - crdch:enum_CRDCH_ObservationSet_category
     multivalued: false
     alias: category
     owner: DimensionalObservationSet
     domain_of:
-    - DimensionalObservation
-    - DimensionalObservationSet
+    - ObservationSet
+    - Observation
     range: string
+    required: false
+  focus:
+    name: focus
+    description: The entity or entities directly observed/measured in generating an
+      observation result.
+    comments:
+    - The "focus", and "associated_participant" fields are useful when data creators
+      want an Observation object to stand on its own, so it can point back to the
+      entities it is about. These fields are not needed when an Observation is embedded
+      in an entity, where focus, subject, and specimen can be determined from context.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    multivalued: true
+    alias: focus
+    owner: DimensionalObservationSet
+    domain_of:
+    - Document
+    - ObservationSet
+    - Observation
+    range: Entity
+    required: false
+    inlined: true
+    inlined_as_list: true
+  associated_participant:
+    name: associated_participant
+    description: The Participant that the observation is about (if not the direct
+      focus).  Observations are often made on specimens derived from a patient, or
+      other entities related to a patient, that ultimately tell us something about
+      the patient of interest.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    multivalued: false
+    alias: associated_participant
+    owner: DimensionalObservationSet
+    domain_of:
+    - Demography
+    - Visit
+    - Condition
+    - ObservationSet
+    - Observation
+    range: Participant
     required: false
   method_type:
     name: method_type
-    description: A type of method used in generating each of the Observations bundled
-      in the set.
+    description: The type of method used in generating the ObservationSet
     comments:
     - This may be a type of observational, measurement, experimental, or computational
-      method specifying how to generate data (e.g. 'manual counting', 'bright field
-      microscopy'). Or a Guideline or SOP specifying how to interpret data and/or
+      method specifying how to generate data (e.g. "manual counting", "bright field
+      microscopy"). Or a Guideline or SOP specifying how to interpret data and/or
       encode the result of an  Observation (e.g. a Cancer Staging system such as that
       defined by the AJCC, or variant interpretation guideline such as that provided
       by the ACMG).
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     values_from:
-    - crdch:enum_CRDCH_DimensionalObservationSet_method_type
+    - crdch:enum_CRDCH_ObservationSet_method_type
     multivalued: true
     alias: method_type
     owner: DimensionalObservationSet
     domain_of:
-    - DimensionalObservation
-    - DimensionalObservationSet
-    - SpecimenQualityObservation
-    - SpecimenQuantityObservation
     - SpecimenProcessingActivity
     - SpecimenStorageActivity
+    - ObservationSet
+    - Observation
     range: string
+    required: false
+  performed_by:
+    name: performed_by
+    description: The organization or group that performed the observation activity.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    multivalued: false
+    alias: performed_by
+    owner: DimensionalObservationSet
+    domain_of:
+    - SpecimenCreationActivity
+    - ObservationSet
+    - Observation
+    range: Organization
     required: false
   observations:
     name: observations
-    description: A set of one or more more atomic observations that are conceptually
-      or logically related - e.g. two components of some compound measurement (e.g.
-      the systolic and diastolic components of a blood pressure measurement), or a
-      panel of related measurements run and interpreted together on the same subject/specimen
-      (e.g. a blood panel, or separate dimensional measurements of a specimen).
+    description: A set of one or more observations.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     multivalued: true
     alias: observations
     owner: DimensionalObservationSet
     domain_of:
-    - DimensionalObservationSet
+    - ObservationSet
     range: DimensionalObservation
     required: false
     inlined: true
