@@ -439,30 +439,26 @@ classes:
   DrugExposure:
     is_a: Entity
     description: >-
-       DrugExposures are records of a Person suggesting the presence of a disease or medical condition stated as a diagnosis, a sign or a symptom, which is either observed by a Provider or reported by the patient. DrugExposures are recorded in different sources and levels of standardization. 
+       DrugExposures are records of a Person suggesting exposure to a medication. The source could be prescription, dispensing, medication administration records (MARs), or patient medication list.
     attributes:
       drug_concept:
         range: string
         comments: need to make range DrugExposureConceptEnum
-        description: The coded value for the presence of a disease or medical condition stated as a diagnosis, a sign or a symptom, coded to the Human Phenotype Ontology or MONDO.
+        description: The coded value for a drug. The enum has not been created yet. Should it come from OMOP standard (RxNorm) concepts? 
       age_at_exposure_start:
         range: integer
-        description: The Participant's age (expressed in days) when the condition was first recorded.
+        description: The Participant's age (expressed in days) at the exposure start date.
         unit:
           ucum_code: d
       age_at_exposure_end:
         range: integer
-        description: The Participant's age (expressed in days) when the condition was recorded as having been resolved.
+        description: The Participant's age (expressed in days) at the exposure end date, if available. Otherwise equal to age_at_exposure_start.
         unit:
           ucum_code: d
       exposure_provenance:
         range: string
         comments: need to make range DrugExposureProvenanceEnum
-        description: A value representing the provenance of the DrugExposure record
-      exposure_status:
-        range: string
-        comments: need to make range DrugExposureStatusEnum
-        description: A value indicating whether the medical condition described in this record is present, absent, or unknown for this individual patient.
+        description: A value representing the provenance of the DrugExposure record The enum has not been created yet. Should it come from OMOP Drug Types?
       refills:
         range: integer
         description: Intended refills at time of the prescription.
@@ -486,10 +482,11 @@ classes:
         description: Route of drug administration.
       associated_participant:
         range: Participant
-        description: A reference to the Participant to which the Condition is attributed.
+        description: A reference to the Participant to which the exposure is attributed.
       associated_visit:
-        description: A reference to the Visit during which this QuestionnaireResponse was captured.
+        description: A reference to the Visit the exposure is associated with, if any.
         range: Visit
+        required: false
     slots:
       - identity
 
