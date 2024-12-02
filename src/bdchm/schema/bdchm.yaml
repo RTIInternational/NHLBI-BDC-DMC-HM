@@ -391,6 +391,22 @@ classes:
         range: boolean
         required: true
 
+  QuestionnaireResponseValueInteger:
+    is_a: QuestionnaireResponseValue
+    description: Single-valued integer answer to the question
+    slot_usage:
+      value:
+        range: integer
+        required: true
+
+  QuestionnaireResponseValueTimePoint:
+    is_a: QuestionnaireResponseValue
+    description: Single-valued TimePoint answer to the question
+    slot_usage:
+      value:
+        range: TimePoint
+        required: true
+
   QuestionnaireResponseValueString:
     is_a: QuestionnaireResponseValue
     description: Single-valued string answer to the question
@@ -398,7 +414,7 @@ classes:
       value:
         range: string
         required: true
-
+              
   Condition:
     is_a: Entity
     description: >-
@@ -436,103 +452,45 @@ classes:
       - identity
 
   DimensionalObservation:
-    name: DimensionalObservation
-    description: A structured object that describes a single data item about the physical dimensions  of an entity (e.g. length width, area), as generated through a point-in-time observation or measurement.
+    is_a: Observation
+    description: A structured object that describes a single data item about the physical dimensions of an entity (e.g. length width, area), as generated through a point-in-time observation or measurement.
     comments:
-    - At the core of an Observation is a flexible key-value pair (or a structured collection of key-value pairs), where a 'key' field defines the type of observation made, and the 'value' field describes the value or outcome of the observation. The fact that the type of observation captured is defined in the data allow Observation to convey a broad range of observation data.
-    is_a: Entity
-    attributes:
-      category:
-        name: category
-        description: The general category of observation described
-        comments:
-        - Use only if we don't define named subtypes of Observation for specific categories.
-        values_from: crdch:enum_CRDCH_DimensionalObservation_category
+    - At the core of an Observation is a flexible key-value pair (or a structured collection of key-value pairs), where a "key" field defines the type of observation made, and the "value" field describes the value or outcome of the observation. The fact that the type of observation captured is defined in the data allow Observation to convey a broad range of observation data.
+    slot_usage:
+      value:
+        description: The result of the observation, encoded as a Quantity.
         multivalued: false
-        range: string
-        required: false
-      observation_type:
-        name: observation_type
-        description: The specific type of observation made - i.e. the feature or characteristic that was observed, measured, estimated, etc.
-        comments:
-        - This field holds the 'key' in the core key-value pair comprised of the observation_type field and the relevant value(s) field.
-        values_from: crdch:enum_CRDCH_DimensionalObservation_observation_type
-        multivalued: false
-        range: string
-        required: true
-      method_type:
-        name: method_type
-        description: A type of method used in generating the Observation result.
-        comments:
-        - This may be a type of observational, measurement, experimental, or computational method specifying how to generate data (e.g. 'manual counting', 'bright field microscopy',). Or a Guideline or SOP specifying how to interpret data and/or encode the result of an  Observation (e.g. a Cancer Staging system such as that defined by the AJCC, or variant interpretation guideline such as that provided by the ACMG).
-        values_from: crdch:enum_CRDCH_DimensionalObservation_method_type
-        multivalued: true
-        range: string
-        required: false
-      value_quantity:
-        name: value_quantity
-        description: The result of the observation, encoded as a free-text Quantity.
-        multivalued: false
-        range: Quantity
+        range: ObservationValueQuantity
         required: true
 
   DimensionalObservationSet:
-    name: DimensionalObservationSet
+    is_a: ObservationSet
     description: A set of one or more discrete observations about the physical dimensions of an object (e.g. length, width, area).
-    is_a: Entity
-    attributes:
-      category:
-        name: category
-        description: The general category of observation set described
-        comments:
-        - FHIR naming conventions are followed here, where 'id' is used for logical identifiers which are unique only within a given system, and 'identifier' for business identifiers, which are used to connect entities or share content across systems.  The complex 'Identifier' data type is used  to capture the identifier itself, along with metadata about its source.
-        values_from: crdch:enum_CRDCH_DimensionalObservationSet_category
-        multivalued: false
-        range: string
-        required: false
-      method_type:
-        name: method_type
-        description: A type of method used in generating each of the Observations bundled in the set.
-        comments:
-        - This may be a type of observational, measurement, experimental, or computational method specifying how to generate data (e.g. 'manual counting', 'bright field microscopy'). Or a Guideline or SOP specifying how to interpret data and/or encode the result of an  Observation (e.g. a Cancer Staging system such as that defined by the AJCC, or variant interpretation guideline such as that provided by the ACMG).
-        values_from: crdch:enum_CRDCH_DimensionalObservationSet_method_type
-        multivalued: true
-        range: string
-        required: false
+    slot_usage:
       observations:
-        name: observations
-        description: A set of one or more more atomic observations that are conceptually or logically related - e.g. two components of some compound measurement (e.g. the systolic and diastolic components of a blood pressure measurement), or a panel of related measurements run and interpreted together on the same subject/specimen (e.g. a blood panel, or separate dimensional measurements of a specimen).
-        multivalued: true
-        inlined_as_list: true
         range: DimensionalObservation
-        required: false
 
   Document:
-    name: Document
-    description: A collection of information intented to be understood together as a whole, and codified in human-readable form.
     is_a: Entity
+    description: A collection of information intented to be understood together as a whole, and codified in human-readable form.
     attributes:
       document_type:
-        name: document_type
         description: The high-level type of the document (e.g.  'publication', 'pathology report')
         values_from: crdch:enum_CRDCH_Document_document_type
         multivalued: false
         range: string
         required: false
       description:
-        name: description
         description: A free text description or summary of the report.
         multivalued: false
         range: string
         required: false
       focus:
-        name: focus
         description: The entity that the report is primarily about
         multivalued: false
         range: Entity
         required: false
       url:
-        name: url
         description: A URL/web address where the document can be accessed.
         multivalued: true
         inlined_as_list: true
@@ -542,18 +500,15 @@ classes:
       - identity
 
   Specimen:
-    name: Specimen
-    description: Any material taken as a sample from a biological entity (living or dead), or from a physical object or the environment. Specimens are usually collected as an example of their kind, often for use in some investigation.
     is_a: Entity
+    description: Any material taken as a sample from a biological entity (living or dead), or from a physical object or the environment. Specimens are usually collected as an example of their kind, often for use in some investigation.
     attributes:
       description:
-        name: description
         description: A free text field to capture additional information or explanation about the specimen.
         multivalued: false
         range: string
         required: false
       specimen_type:
-        name: specimen_type
         description: The high-level type of the specimen, based on its derivation provenance (i.e. how far removed it is from the original sample extracted from a source).
         examples:
         - value: Fresh Specimen
@@ -566,7 +521,6 @@ classes:
         range: SpecimenTypeEnum
         required: false
       analyte_type:
-        name: analyte_type
         description: For specimens of type 'analyte' (or an 'aliquot' derived from an analyte), this is the category of chemcial the analyte of interest represents (e.g. DNA, RNA)
         examples:
         - value: DNA
@@ -580,7 +534,6 @@ classes:
         range: AnalyteTypeEnum
         required: false
       source_material_type:
-        name: source_material_type
         description: The general kind of material from which the specimen was derived.
         comments:
         - Values captured here may describe the type of molecular mixture, cell, tissue, organ, body fluid, embryo, excretory substance, or experimental system from which a specimen was derived.
@@ -596,7 +549,6 @@ classes:
         range: SourceMaterialTypeEnum
         required: false
       parent_specimen:
-        name: parent_specimen
         description: An existing specimen from which the specimen of interest was directly derived (i.e its immediate parent specimen).
         comments:
         - This property indicates only the direct parent specimen(s).  Cardinality is 0..m to account for specimens derived from pooling of multiple specimens.
@@ -605,13 +557,11 @@ classes:
         range: Specimen
         required: false
       source_participant:
-        name: source_participant
         description: A specific Subject from which the specimen was directly or indirectly derived.
         multivalued: false
         range: Participant
         required: false
       creation_activity:
-        name: creation_activity
         description: The activity through which a specimen was created, by removing material from an biological subject, or deriving material from an existing specimen.
         comments:
         - Note that a given specimen is the result of only one and only one SpecimenCreationActivity, but may be subject to many processing events that subsequently modify or derive new specimens from it.
@@ -619,7 +569,6 @@ classes:
         range: SpecimenCreationActivity
         required: false
       processing_activity:
-        name: processing_activity
         description: An activity that modifies the physical structure, composition, or state of a specimen.
         comments:
         - Note that a given specimen may undergo more than one distinct processing activity, through application of different methodologies that modify its physical state. However, if an activity generates a new specimen (e.g. via portioning, slicing) it is considered a SpeciemnCreationActivity.
@@ -627,15 +576,13 @@ classes:
         range: SpecimenProcessingActivity
         required: false
       storage_activity:
-        name: storage_activity
         description: An activity that results in the storage or maintenance of a specimen in a particular location, container, or state.
         comments:
-        - 'The 0..m cardinality of this attribute reflects the fact that a given specimen may undergo many separate periods of storage, in different locations and/or under different conditions '
+        - The 0..m cardinality of this attribute reflects the fact that a given specimen may undergo many separate periods of storage, in different locations and/or under different conditions
         multivalued: true
         range: SpecimenStorageActivity
         required: false
       transport_activity:
-        name: transport_activity
         description: An activity through which the specimen is transported between locations.
         comments:
         - The 0..m cardinality of this attribute reflects the fact that a given specimen may undergo many separate transport processes at different periods of time.
@@ -643,24 +590,20 @@ classes:
         range: SpecimenTransportActivity
         required: false
       contained_in:
-        name: contained_in
         description: A physical container in which a specimen is presently held or attached -  as storage for future use,  a substrate for growth (e.g. a cell culture dish), or a vessel to enable analysis (e.g. a microscope slide or 96-well plate)
         comments:
-        - 'The 0..1 cardinality on this attribute means that you cannot directly references multiple nested containers holding a sample. To capture this scenario, use the ''parent_container'' attribute of the Container entity.  ' 
+        - The 0..1 cardinality on this attribute means that you cannot directly references multiple nested containers holding a sample. To capture this scenario, use the "parent_container" attribute of the Container entity.
         multivalued: false
         range: SpecimenContainer
         required: false
       dimensional_measures:
-        name: dimensional_measures
-        description: Observations about the current physical dimensions of an object
-          (e.g. length, width, area).
+        description: Observations about the current physical dimensions of an object (e.g. length, width, area).
         comments:
         - Observations are flexible containers for capturing a specific type of observation/measurement data about an object, along with metadata about how it was generated. The specific type of observation made is captured as data in the Observation object.
         multivalued: false
         range: DimensionalObservationSet
         required: false
       quantity_measure:
-        name: quantity_measure
         description: An observation related to the present quantity of a specimen - e.g. its weight, volume, or analyte concentration.
         comments:
         - Observations are flexible containers for capturing a specific type of observation/measurement data about an object, along with metadata about how it was generated. The specific type of observation made is captured as data in the Observation object.
@@ -668,7 +611,6 @@ classes:
         range: SpecimenQuantityObservation
         required: false
       quality_measure:
-        name: quality_measure
         description: An observation about characteristics of a specimen that are indicative of its quality or suitability for use.
         comments:
         - Observations are flexible containers for capturing a specific type of observation/measurement data about an object, along with metadata about how it was generated. The specific type of observation made is captured as data in the Observation object.
@@ -676,7 +618,6 @@ classes:
         range: SpecimenQualityObservation
         required: false
       cellular_composition_type:
-        name: cellular_composition_type
         description: A term describing the type of cell or cellular material comprising a specimen.
         examples:
         - value: 2D Classical Conditionally Reprogrammed Cells
@@ -694,13 +635,11 @@ classes:
         range: string
         required: false
       related_document:
-        name: related_document
         description: A reference to an external document that is about or related to the specimen (e.g. a publication related to the study it is a part of, pathology report containing additional details about it, protocol describing how it was collected)
         multivalued: true
         range: Document
         required: false
       section_location:
-        name: section_location
         description: The location in a parent specimen from which a section/portion was excised (e.g. top, middle, bottom)
         comments:
         - This attribute applies only to Specimens that are of type 'portion' or 'slide'.
@@ -713,7 +652,6 @@ classes:
         range: SectionLocationEnum
         required: false
       derived_product:
-        name: derived_product
         description: A 'living' biologically active product that was derived from the specimen (e.g. a cell culture, tissue culture, or organoid)
         multivalued: true
         inlined_as_list: true
@@ -723,12 +661,10 @@ classes:
       - identity
 
   SpecimenContainer:
-    name: SpecimenContainer
-    description: A vessel in which a specimen is held or to which it is attached - for storage or as a substrate for growth (e.g. a cell culture dish) or analysis (e.g. a microscope slide or 96-well plate)
     is_a: Entity
+    description: A vessel in which a specimen is held or to which it is attached - for storage or as a substrate for growth (e.g. a cell culture dish) or analysis (e.g. a microscope slide or 96-well plate)
     attributes:
       container_type:
-        name: container_type
         description: The kind of the container.
         examples:
         - value: Capillary blood collection tube
@@ -740,13 +676,11 @@ classes:
         range: string
         required: false
       container_number:
-        name: container_number
         description: Informal number by which the container is referenced  or identified (e.g. a slide number, or a well number in a plate)
         multivalued: false
         range: string
         required: false
       additive:
-        name: additive
         description: A material substance added to the container (typically to support the primary contained object - e.g. culture media to support cell growth)
         examples:
         - value: DMEM
@@ -757,21 +691,18 @@ classes:
         range: Substance
         required: false
       parent_container:
-        name: parent_container
         description: A larger container of which this container is a part (e.g. the complete 96-well plate of which a single well is a part)
         multivalued: false
         range: SpecimenContainer
         required: false
 
   SpecimenCreationActivity:
-    name: SpecimenCreationActivity
+    is_a: Entity
     description: The process of creating a specimen. This may occur through observing and/or collecting material from an biological source or natural setting, or through derivation from an existing specimen (e.g. via portioning or aliquoting).
     comments:
-    - A creation' activity represents the entire process up to the point where the specimen is physically modified, stored, or transported.
-    is_a: Entity
+    - A creation activity represents the entire process up to the point where the specimen is physically modified, stored, or transported.
     attributes:
       activity_type:
-        name: activity_type
         description: The high-level type of creation activity.
         comments:
         - At present our model collapses two types of processes through which specimens are created (initial collection from source, and derivation from an existing specimen).  The 'category' is a flag to indicate which applies to a given instance, so that more specific recommendations about data entry in certain fields can be specified.
@@ -782,7 +713,6 @@ classes:
         range: SpecimenCreationActivityTypeEnum
         required: false
       date_started:
-        name: date_started
         description: The date when the activity began (in this case, a specimen creation event).
         comments:
         - To allow for more precise specification of dates when an activity was performed, we provide date_started and date_ended attributes.  If source data only provides a single date, it SHOULD be entered as both the date_started and date_ended.
@@ -790,7 +720,6 @@ classes:
         range: TimePoint
         required: false
       date_ended:
-        name: date_ended
         description: The date when the activity ended (in this case, a specimen creation event).
         comments:
         - To allow for more precise specification of dates when an activity was performed, we provide date_started and date_ended attributes.  If source data only provides a single date, it SHOULD be entered as both the date_started and date_ended.
@@ -798,13 +727,11 @@ classes:
         range: TimePoint
         required: false
       performed_by:
-        name: performed_by
         description: The organization or group that performed the activity.
         multivalued: false
         range: Organization
         required: false
       collection_method_type:
-        name: collection_method_type
         description: The type of method applied in collecting a sample from its original source.
         comments:
         - This attribute applies only when the Specimen.category = 'original'.
@@ -817,7 +744,6 @@ classes:
         range: SpecimenCollectionMethodType
         required: false
       derivation_method_type:
-        name: derivation_method_type
         description: The type of method applied to derive a new specimen from an existing one.
         comments:
         - This attribute applies only when Specimen.category = 'portion', 'aliquot', 'analyte', or 'slide'.
@@ -835,13 +761,11 @@ classes:
         range: string
         required: false
       additive:
-        name: additive
         description: A type of material or reagent used applied as input when creating a specimen.
         multivalued: true
         range: Substance
         required: false
       collection_site:
-        name: collection_site
         description: The anatomic site from which a specimen was collected.
         comments:
         - This attribute is used when SpecimenCreationActivity.activity_type = 'Collection from Source'.
@@ -853,7 +777,6 @@ classes:
         range: BodySite
         required: false
       quantity_collected:
-        name: quantity_collected
         description: The quantity of material in the specimen as originally collected from its original source material (prior to downstream portioning or processing)
         comments:
         - This attribute applies only when Specimen.category='initial sample'.
@@ -861,90 +784,35 @@ classes:
         range: Quantity
         required: false
       specimen_order:
-        name: specimen_order
         description: A numeric value that represents the sequential order of this creation activity relative to those producing other specimens from the same source material or parent specimen.
         multivalued: false
         range: integer
         required: false
 
   SpecimenQualityObservation:
-    name: SpecimenQualityObservation
+    is_a: Observation
     description: A structured object that describes a characteristic of a specimen indicative of its quality or suitability for use, as generated through a point-in-time observation or measurement.
-    is_a: Entity
-    attributes:
-      observation_type:
-        name: observation_type
-        description: The specific type of observation made - i.e. the feature or characteristic that was observed, measured, estimated, etc..
-        comments:
-        - This field holds the 'key' in the core key-value pair comprised of the observation_type field and the relevant value(s) field.
-        multivalued: false
-        range: SpecimenQualityObservationTypeEnum
-        required: true
-      method_type:
-        name: method_type
-        description: A type of method used in generating the Observation result.
-        comments:
-        - This may be a type of observational, measurement, experimental, or computational method specifying how to generate data (e.g. 'manual counting', 'bright field microscopy',). Or a Guideline or SOP specifying how to interpret data and/or encode the result of an  Observation (e.g. a Cancer Staging system such as that defined by the AJCC, or variant interpretation guideline such as that provided by the ACMG).
-        multivalued: true
-        range: SpecimenQualityObservationMethodEnum
-        required: false
-      focus:
-        name: focus
-        description: The entity or entities directly observed/measured in generating an observation result.
-        comments:
-        - 'The ''focus'', ''subject'', and ''specimen'' fields are useful when data creators want an Observation object to stand on its own, so it can point back to the entities it is about.  These fields are not needed when an Observation is embedded in a Specimen or other entity, where focus, subject, and specimen can be determined from context. '
-        multivalued: true
-        range: Specimen
-        required: false
-      value_quantity:
-        name: value_quantity
+    slot_usage:
+      value:
         description: The result of the observation, encoded as a free-text Quantity.
         comments:
         - One and only one of the value(x) fields must be populated.
         multivalued: false
-        range: Quantity
+        range: ObservationValueString
         required: true
 
   SpecimenQuantityObservation:
-    name: SpecimenQuantityObservation
-    description: A structured object that describes a single data item about the quantity of an entity, as generated through a point-in-time observation or measurement.
+    is_a: Observation
+    description: A structured object that describes a single data item about the quantity of a Specimen, as generated through a point-in-time observation or measurement.
     comments:
-    - At the core of an Observation is a flexible key-value pair (or a structured collection of key-value pairs), where a 'key' field defines the type of observation made, and the 'value' field describes the value or outcome of the observation. The fact that the type of observation captured is defined in the data allow Observation to convey a broad range of observation data.
-    is_a: Entity
-    attributes:
-      observation_type:
-        name: observation_type
-        description: The specific type of observation made - i.e. the feature or characteristic that was observed, measured, estimated, etc..
-        comments:
-        - This field holds the 'key' in the core key-value pair comprised of the observation_type field and the relevant value(s) field.
-        multivalued: false
-        range: SpecimenQuantityObservationTypeEnum
-        required: true
-      method_type:
-        name: method_type
-        description: A type of method used in generating the Observation result.
-        comments:
-        - This may be a type of observational, measurement, experimental, or computational method specifying how to generate data (e.g. 'manual counting', 'bright field microscopy',). Or a Guideline or SOP specifying how to interpret data and/or encode the result of an  Observation (e.g. a Cancer Staging system such as that defined by the AJCC, or variant interpretation guideline such as that provided by the ACMG).
-        values_from: crdch:enum_CRDCH_SpecimenQuantityObservation_method_type
-        multivalued: true
-        range: string
-        required: false
-      focus:
-        name: focus
-        description: The entity or entities directly observed/measured in generating an observation result.
-        comments:
-        - 'The ''focus'', ''subject'', and ''specimen'' fields are useful when data creators want an Observation object to stand on its own, so it can point back to the entities it is about.  These fields are not needed when an Observation is embedded in a Specimen or other entity, where focus, subject, and specimen can be determined from context. '
-        multivalued: true
-        inlined_as_list: true
-        range: Specimen
-        required: false
-      value_quantity:
-        name: value_quantity
-        description: The result of the observation, encoded as a free-text Quantity.
+    - At the core of an Observation is a flexible key-value pair (or a structured collection of key-value pairs), where a "key" field defines the type of observation made, and the "value" field describes the value or outcome of the observation. The fact that the type of observation captured is defined in the data allow Observation to convey a broad range of observation data.
+    slot_usage:
+      value:
+        description: The result of the observation, encoded as a Quantity.
         comments:
         - One and only one of the value(x) fields must be populated.
         multivalued: false
-        range: Quantity
+        range: ObservationValueQuantity
         required: true
 
   SpecimenProcessingActivity:
@@ -1186,27 +1054,23 @@ classes:
         required: false
 
   Quantity:
-    name: Quantity
+    is_a: Entity
     description: A structured object to represent an amount of something (e.g., weight, mass, length, duration of time) - including a value and unit.
     comments:
-    - QuantityMeasure' may be implemented as an Observation-like object that will let us capture any type of measure of the amount of some substance (e.g. weight, volume, maybe even concentration?), with distinct timestamps and methods associated.  It could be implemented as a "simple" observation (one measurement per instance, where the 'code' fields is bound to a value set describing the different types of quantity measures allowed -  e.g. 'weight', 'volume', 'concentration'),  or as "composite" observation (multiple measurements possible in a single instance, each captured as a component defined to hold a specific type of quantity measure - e.g.  'weight', 'volume', 'concentration').  The number of different quantity measures we anticipate needed to support, and the potential for data sparseness, are factors that determine whether a simple or composite Observation would be most appropriate.
-    is_a: Entity
+    - QuantityMeasure may be implemented as an Observation-like object that will let us capture any type of measure of the amount of some substance (e.g. "weight", "volume"), with distinct timestamps and methods associated.  It could be implemented as a "simple" observation (one measurement per instance, where the "code" fields is bound to a value set describing the different types of quantity measures allowed -  e.g. "weight", "volume", "concentration"),  or as "composite" observation (multiple measurements possible in a single instance, each captured as a component defined to hold a specific type of quantity measure - e.g.  "weight", "volume", "concentration").  The number of different quantity measures we anticipate needed to support, and the potential for data sparseness, are factors that determine whether a simple or composite Observation would be most appropriate.
     attributes:
       value_decimal:
-        name: value_decimal
         description: An amount, in the given units (if specified)
         multivalued: false
         range: decimal
         required: false
       value_concept:
-        name: value_concept
         description: A coded value representing a quantity (e.g. "Adjacent (< or = 2cm)")
         values_from: crdch:enum_CRDCH_Quantity_value_codeable_concept
         multivalued: false
         range: string
         required: false
       unit:
-        name: unit
         description: A coded or free text (in the .text field) representation of the unit.
         values_from: crdch:enum_CRDCH_Quantity_unit
         multivalued: false
@@ -1214,12 +1078,10 @@ classes:
         required: false
 
   BodySite:
-    name: BodySite
-    description: A site in the body of an organism, typically described in terms of an anatomical concept and optional qualifiers (e.g. left/right, upper/lower). But body sites as defined here may include non-canonical sites, such as an implanted medical device.
     is_a: Entity
+    description: A site in the body of an organism, typically described in terms of an anatomical concept and optional qualifiers (e.g. left/right, upper/lower). But body sites as defined here may include non-canonical sites, such as an implanted medical device.
     attributes:
       site:
-        name: site
         description: A term describing any site in the body.
         examples:
         - value: Adenoid
@@ -1230,7 +1092,6 @@ classes:
         range: string
         required: true
       qualifier:
-        name: qualifier
         description: A qualifier that further refines or specifies the location of the body site - e.g. to indicate laterality, upper v. lower, containment in some other anatomical structure (e.g. 'blood' contained in the 'hepatic vein')
         examples:
         - value: left
@@ -1240,6 +1101,151 @@ classes:
         multivalued: true
         range: string
         required: false
+
+  ObservationSet:
+    is_a: Entity
+    description: A structured object to hold related Observations in a set.
+    attributes:
+      category:
+        description: The general category of observation set described
+        values_from: crdch:enum_CRDCH_ObservationSet_category
+        multivalued: false
+        range: string
+        required: false
+      focus:
+        description: The entity or entities directly observed/measured in generating an observation result.
+        comments:
+        - The "focus", and "associated_participant" fields are useful when data creators want an Observation object to stand on its own, so it can point back to the entities it is about. These fields are not needed when an Observation is embedded in an entity, where focus, subject, and specimen can be determined from context.
+        multivalued: true
+        inlined_as_list: true
+        range: Entity
+        required: false
+      associated_participant:
+        description: The Participant that the observation is about (if not the direct focus).  Observations are often made on specimens derived from a patient, or other entities related to a patient, that ultimately tell us something about the patient of interest.
+        multivalued: false
+        range: Participant
+        required: false
+      method_type:
+        description: The type of method used in generating the ObservationSet
+        comments:
+        - This may be a type of observational, measurement, experimental, or computational method specifying how to generate data (e.g. "manual counting", "bright field microscopy"). Or a Guideline or SOP specifying how to interpret data and/or encode the result of an  Observation (e.g. a Cancer Staging system such as that defined by the AJCC, or variant interpretation guideline such as that provided by the ACMG).
+        values_from: crdch:enum_CRDCH_ObservationSet_method_type
+        multivalued: true
+        range: string
+        required: false
+      performed_by:
+        description: The organization or group that performed the observation activity.
+        multivalued: false
+        range: Organization
+        required: false
+      observations:
+        description: A set of one or more observations.
+        multivalued: true
+        inlined_as_list: true
+        range: Observation
+        required: false
+
+  Observation:
+    is_a: Entity
+    description: A data structure with key (observation_type) and value (value) attributes that represents a single observation, such as the hematocrit component of a complete blood count panel.
+    attributes:
+      category:
+        description: The general category of observation described
+        values_from: crdch:enum_CRDCH_Observation_category
+        multivalued: false
+        range: string
+        required: false
+      observation_type:
+        description: The type of Observation being represented (e.g. 'diastolic blood pressure')
+        comments: This field holds the "key" in the core key-value pair comprised of the observation_type field and the relevant value(s) field.  
+        values_from: crdch:enum_CRDCH_Observation_observation_type
+        multivalued: false
+        range: string
+        required: true
+      method_type:
+        description: A type of method used in generating the Observation result.
+        comments:
+        - This may be a type of observational, measurement, experimental, or computational method specifying how to generate data (e.g. "manual counting", "bright field microscopy",). Or a Guideline or SOP specifying how to interpret data and/or encode the result of an  Observation (e.g. a Cancer Staging system such as that defined by the AJCC, or variant interpretation guideline such as that provided by the ACMG).
+        values_from: crdch:enum_CRDCH_Observation_method_type
+        multivalued: false
+        range: string
+        required: false
+      focus:
+        description: The entity or entities directly observed/measured in generating an observation result.
+        comments:
+        - The "focus", "subject", and "specimen" fields are useful when data creators want an Observation object to stand on its own, so it can point back to the entities it is about.  These fields are not needed when an Observation is embedded in a Specimen or other entity, where focus, subject, and specimen can be determined from context.
+        multivalued: false
+        range: Entity
+        required: false
+      associated_participant:
+        description: The patient that the observation is about (if not the direct focus).  e.g. observations are often made on specimens derived from a patient, or other entities related to a patient, that ultimately tell us something about the patient of interest.
+        multivalued: false
+        range: Participant
+        required: false
+      performed_by:
+        description: The organization or group that performed the observation activity.
+        multivalued: false
+        range: Organization
+        required: false
+      value:
+        description: The value for an Observation.
+        comments:
+        - One and only one of the value(x) fields must be populated.
+        multivalued: false
+        range: ObservationValue
+        required: true
+
+  ObservationValue:
+    description: Single-valued observation valueholiding slot
+    attributes:
+      type:
+        range: string
+        designates_type: true
+      name:
+        range: string
+    slots:
+      - value
+
+  ObservationValueDecimal:
+    is_a: ObservationValue
+    description: Single-valued decimal observation
+    slot_usage:
+      value:
+        range: decimal
+        required: true
+
+  ObservationValueInteger:
+    is_a: ObservationValue
+    description: Single-valued integer observation
+    slot_usage:
+      value:
+        range: integer
+        required: true
+
+  ObservationValueBoolean:
+    is_a: ObservationValue
+    description: Single-valued boolean observation
+    slot_usage:
+      value:
+        range: boolean
+        required: true
+
+  ObservationValueString:
+    is_a: ObservationValue
+    description: Single-valued string observation
+    slot_usage:
+      value:
+        range: string
+        required: true
+
+  ObservationValueQuantity:
+    is_a: ObservationValue
+    description: Single-valued Quantity observation
+    slot_usage:
+      value:
+        range: Quantity
+        required: true
+
 
 slots:
   id:
