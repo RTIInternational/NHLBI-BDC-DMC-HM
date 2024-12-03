@@ -446,8 +446,60 @@ classes:
         range: Participant
         description: A reference to the Participant to which the Condition is attributed.
       associated_visit:
-        description: A reference to the Visit during which this Condition was reported.
+        description: A reference to the Visit during which this Condition was recorded.
         range: Visit
+    slots:
+      - identity
+
+  DrugExposure:
+    is_a: Entity
+    description: >-
+       DrugExposures are records of a Person suggesting exposure to a medication. The source could be prescription, dispensing, medication administration records (MARs), or patient medication list.
+    attributes:
+      drug_concept:
+        range: DrugExposureConceptEnum
+        description: The coded value for a drug. From RxNorm. The syntax for the enum may need work.
+      age_at_exposure_start:
+        range: integer
+        description: The Participant's age (expressed in days) at the exposure start date.
+        unit:
+          ucum_code: d
+      age_at_exposure_end:
+        range: integer
+        description: The Participant's age (expressed in days) at the exposure end date, if available. Otherwise equal to age_at_exposure_start.
+        unit:
+          ucum_code: d
+      exposure_provenance:
+        range: DrugExposureProvenanceEnum
+        description: A value representing the provenance of the DrugExposure record. From OMOP Drug Types.
+      refills:
+        range: integer
+        description: Intended refills at time of the prescription.
+        required: false
+      quantity:
+        range: float
+        description: To find the dose form of a drug the RELATIONSHIP table can be used where the relationship_id is ‘Has dose form’. If liquid, quantity stands for the total amount dispensed or ordered of ingredient in the units given by the drug_strength table. If the unit from the source data does not align with the unit in the DRUG_STRENGTH table the quantity should be converted to the correct unit given in DRUG_STRENGTH. For clinical drugs with fixed dose forms (tablets etc.) the quantity is the number of units/tablets/capsules prescribed or dispensed (can be partial, but then only 1/2 or 1/3, not 0.01). Clinical drugs with divisible dose forms (injections) the quantity is the amount of ingredient the patient got. For example, if the injection is 2mg/mL but the patient got 80mL then quantity is reported as 160. Quantified clinical drugs with divisible dose forms (prefilled syringes), the quantity is the amount of ingredient similar to clinical drugs. Please see [how to calculate drug dose](https://ohdsi.github.io/CommonDataModel/drug_dose.html) for more information.
+        required: false
+      days_supply:
+        range: integer
+        description: The number of days of supply of the medication as recorded in the original prescription or dispensing record. Days supply can differ from actual drug duration (i.e. prescribed days supply vs actual exposure).
+        comments: The field should be left empty if the source data does not contain a verbatim days_supply, and should not be calculated from other fields.  Negative values are not allowed. If the source has negative days supply the record should be dropped as it is unknown if the patient actually took the drug. Several actions are possible -- record is not trustworthy and we remove the record entirely; we trust the record and leave days_supply empty; or record needs to be combined with other record (e.g. reversal of prescription). High values (>365 days) should be investigated. If considered an error in the source data (e.g. typo), the value needs to be excluded to prevent creation of unrealistic long eras.
+        required: false
+      sig:
+        range: string
+        description: This is the verbatim instruction for the drug as written by the provider.
+        comments: Put the written out instructions for the drug as it is verbatim in the source, if available.
+        required: false
+      route_concept:
+        range: DrugRouteEnum
+        description: Route of drug administration.
+      associated_participant:
+        range: Participant
+        description: A reference to the Participant to which the exposure is attributed.
+      associated_visit:
+        description: A reference to the Visit the exposure is associated with, if any.
+        range: Visit
+        required: false
     slots:
       - identity
 
@@ -1724,6 +1776,568 @@ enums:
         description: The condition is/was absent in the patient.
       UNKNOWN:
         description: The condition is/was of unknown status in the patient.
+
+  DrugExposureConceptEnum:
+    description: A constrained set of enumerative values containing RxNorm concepts.
+    see_also:
+      - https://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html
+      - http://www.nlm.nih.gov/research/umls/rxnorm
+      - urn:oid:2.16.840.1.113883.6.88
+    reachable_from:
+      source_ontology: rxnorm
+
+  DrugExposureProvenanceEnum:
+    description: Source of drug exposure record
+    comments: Taken from OMOP Drug Type values; "select * from concept where vocabulary_id = 'Drug Type';" Do we need descriptions beyond the name?
+    permissible_values:
+      RANDOMIZED DRUG:
+        description: Randomized Drug
+        meaning: OMOP:44777970                                                                                              
+      PATIENT SELF-REPORTED MEDICATION:
+        description: Patient Self-Reported Medication
+        meaning: OMOP:44787730                                                            
+      NLP DERIVED:
+        description: NLP derived
+        meaning: OMOP:32426                                                                                                         
+      PRESCRIPTION DISPENSED IN PHARMACY:
+        description: Prescription dispensed in pharmacy
+        meaning: OMOP:38000175                                                        
+      PHYSICIAN ADMINISTERED DRUG (IDENTIFIED FROM EHR ORDER):
+        description: Physician administered drug (identified from EHR order)
+        meaning: OMOP:581373                
+      DISPENSED IN OUTPATIENT OFFICE:
+        description: Dispensed in Outpatient office
+        meaning: OMOP:581452                                                                  
+      PRESCRIPTION DISPENSED THROUGH MAIL ORDER:
+        description: Prescription dispensed through mail order
+        meaning: OMOP:38000176                                          
+      PRESCRIPTION WRITTEN:
+        description: Prescription written
+        meaning: OMOP:38000177                                                                                    
+      MEDICATION LIST ENTRY:
+        description: Medication list entry
+        meaning: OMOP:38000178                                                                                  
+      PHYSICIAN ADMINISTERED DRUG (IDENTIFIED AS PROCEDURE):
+        description: Physician administered drug (identified as procedure)
+        meaning: OMOP:38000179                  
+      INPATIENT ADMINISTRATION:
+        description: Inpatient administration
+        meaning: OMOP:38000180                                                                            
+      DRUG ERA - 0 DAYS PERSISTENCE WINDOW:
+        description: Drug era - 0 days persistence window
+        meaning: OMOP:38000181                                                    
+      DRUG ERA - 30 DAYS PERSISTENCE WINDOW:
+        description: Drug era - 30 days persistence window
+        meaning: OMOP:38000182                                                  
+      PHYSICIAN ADMINISTERED DRUG (IDENTIFIED FROM EHR PROBLEM LIST):
+        description: Physician administered drug (identified from EHR problem list)
+        meaning: OMOP:43542356
+      PHYSICIAN ADMINISTERED DRUG (IDENTIFIED FROM REFERRAL RECORD):
+        description: Physician administered drug (identified from referral record)
+        meaning: OMOP:43542357  
+      PHYSICIAN ADMINISTERED DRUG (IDENTIFIED FROM EHR OBSERVATION):
+        description: Physician administered drug (identified from EHR observation)
+        meaning: OMOP:43542358  
+
+  DrugRouteEnum:
+    description: Routes of drug administration.
+    comments: OMOP contains 165 standard values; `select * from concept where domain_id = 'Route' and invalid_reason is null and standard_concept is not null;` from SNOMED. Do we need descriptions beyond the name?
+    permissible_values:
+      ARTERIOVENOUS FISTULA:
+        description: Arteriovenous fistula
+        meaning: OMOP:44783786                     
+      HAEMODIAFILTRATION:
+        description: Haemodiafiltration
+        meaning: OMOP:44801748                           
+      SUBLESIONAL:
+        description: Sublesional
+        meaning: OMOP:46270168                                         
+      INTRANEURAL:
+        description: Intraneural
+        meaning: OMOP:46272911                                         
+      INTRAMURAL:
+        description: Intramural
+        meaning: OMOP:46272926                                           
+      INTRACATHETER INSTILLATION:
+        description: Intracatheter instillation
+        meaning: OMOP:605428             
+      SUBLABIAL:
+        description: Sublabial
+        meaning: OMOP:600817                                               
+      INTRA-ARTICULAR:
+        description: Intra-articular
+        meaning: OMOP:4006860                                  
+      INTRADIALYTIC:
+        description: Intradialytic
+        meaning: OMOP:618805                                       
+      ARTERIOVENOUS GRAFT:
+        description: Arteriovenous graft
+        meaning: OMOP:762840                           
+      OTIC:
+        description: Otic
+        meaning: OMOP:4023156                                                        
+      ORAL:
+        description: Oral
+        meaning: OMOP:4132161                                                        
+      VAGINAL:
+        description: Vaginal
+        meaning: OMOP:4057765                                                  
+      ROUTE OF ADMINISTRATION VALUE:
+        description: Route of administration value
+        meaning: OMOP:4106215      
+      GASTROSTOMY:
+        description: Gastrostomy
+        meaning: OMOP:4132254                                          
+      NASOGASTRIC:
+        description: Nasogastric
+        meaning: OMOP:4132711                                          
+      JEJUNOSTOMY:
+        description: Jejunostomy
+        meaning: OMOP:4133177                                          
+      SUBCUTANEOUS:
+        description: Subcutaneous
+        meaning: OMOP:4142048                                        
+      GINGIVAL:
+        description: Gingival
+        meaning: OMOP:4156704                                                
+      INTRACARDIAC:
+        description: Intracardiac
+        meaning: OMOP:4156705                                        
+      INTRADERMAL:
+        description: Intradermal
+        meaning: OMOP:4156706                                          
+      INTRAPLEURAL:
+        description: Intrapleural
+        meaning: OMOP:4156707                                        
+      PERIARTICULAR:
+        description: Periarticular
+        meaning: OMOP:4156708                                      
+      ENDOSINUSIAL:
+        description: Endosinusial
+        meaning: OMOP:4157756                                        
+      INTRACAVERNOUS:
+        description: Intracavernous
+        meaning: OMOP:4157757                                    
+      INTRALESIONAL:
+        description: Intralesional
+        meaning: OMOP:4157758                                      
+      INTRALYMPHATIC:
+        description: Intralymphatic
+        meaning: OMOP:4157759                                    
+      INTRAOCULAR:
+        description: Intraocular
+        meaning: OMOP:4157760                                          
+      PERINEURAL:
+        description: Perineural
+        meaning: OMOP:4157761                                            
+      INTRACRANIAL:
+        description: Intracranial
+        meaning: OMOP:4171079                                        
+      DENTAL:
+        description: Dental
+        meaning: OMOP:4163765                                                    
+      INTRAAMNIOTIC:
+        description: Intraamniotic
+        meaning: OMOP:4163767                                      
+      INTRABURSAL:
+        description: Intrabursal
+        meaning: OMOP:4163768                                          
+      INTRADISCAL:
+        description: Intradiscal
+        meaning: OMOP:4163769                                          
+      SUBCONJUNCTIVAL:
+        description: Subconjunctival
+        meaning: OMOP:4163770                                  
+      MUCOUS FISTULA:
+        description: Mucous fistula
+        meaning: OMOP:4171243                                    
+      INTRAPROSTATIC:
+        description: Intraprostatic
+        meaning: OMOP:4171725                                    
+      INTRAVENOUS PERIPHERAL:
+        description: Intravenous peripheral
+        meaning: OMOP:4171884                    
+      PERIOSTEAL:
+        description: Periosteal
+        meaning: OMOP:4171893                                            
+      ESOPHAGOSTOMY:
+        description: Esophagostomy
+        meaning: OMOP:4172191                                      
+      NASODUODENAL:
+        description: Nasoduodenal
+        meaning: OMOP:4172316                                        
+      PERCUTANEOUS:
+        description: Percutaneous
+        meaning: OMOP:4177987                                        
+      SUBORBITAL:
+        description: Suborbital
+        meaning: OMOP:4166865                                            
+      INTRATHORACIC:
+        description: Intrathoracic
+        meaning: OMOP:4167393                                      
+      ENTERAL:
+        description: Enteral
+        meaning: OMOP:4167540                                                  
+      INTRAMYOMETRIAL:
+        description: Intramyometrial
+        meaning: OMOP:4168038                                  
+      COLOSTOMY:
+        description: Colostomy
+        meaning: OMOP:4168047                                              
+      INTRATYMPANIC:
+        description: Intratympanic
+        meaning: OMOP:4168656                                      
+      GASTRO-INTESTINAL STOMA:
+        description: Gastro-intestinal stoma
+        meaning: OMOP:4168665                  
+      INTRAPULMONARY:
+        description: Intrapulmonary
+        meaning: OMOP:4169270                                    
+      INTRASINAL:
+        description: Intrasinal
+        meaning: OMOP:4169440                                            
+      TUMOR CAVITY:
+        description: Tumor cavity
+        meaning: OMOP:4169472                                        
+      SUBMUCOSAL:
+        description: Submucosal
+        meaning: OMOP:4169634                                            
+      INTRADUCTAL:
+        description: Intraductal
+        meaning: OMOP:4170083                                          
+      INTRAVENOUS CENTRAL:
+        description: Intravenous central
+        meaning: OMOP:4170113                          
+      PARAVERTEBRAL:
+        description: Paravertebral
+        meaning: OMOP:4170267                                      
+      UROSTOMY:
+        description: Urostomy
+        meaning: OMOP:4170435                                                
+      LARYNGEAL:
+        description: Laryngeal
+        meaning: OMOP:4170440                                              
+      SURGICAL CAVITY:
+        description: Surgical cavity
+        meaning: OMOP:4170771                                  
+      INTRAVENOUS:
+        description: Intravenous
+        meaning: OMOP:4171047                                          
+      INTRATESTICULAR:
+        description: Intratesticular
+        meaning: OMOP:4171067                                  
+      ENDOCERVICAL:
+        description: Endocervical
+        meaning: OMOP:4186831                                        
+      ENDOTRACHEOPULMONARY:
+        description: Endotracheopulmonary
+        meaning: OMOP:4186832                        
+      EXTRA-AMNIOTIC:
+        description: Extra-amniotic
+        meaning: OMOP:4186833                                    
+      GASTROENTERAL:
+        description: Gastroenteral
+        meaning: OMOP:4186834                                      
+      INTRACERVICAL:
+        description: Intracervical
+        meaning: OMOP:4186835                                      
+      INTRACORONARY:
+        description: Intracoronary
+        meaning: OMOP:4186836                                      
+      INTRASTERNAL:
+        description: Intrasternal
+        meaning: OMOP:4186837                                        
+      INTRAVESICAL:
+        description: Intravesical
+        meaning: OMOP:4186838                                        
+      OROMUCOSAL:
+        description: Oromucosal
+        meaning: OMOP:4186839                                            
+      CAUDAL:
+        description: Caudal
+        meaning: OMOP:4220455                                                    
+      BUCCAL:
+        description: Buccal
+        meaning: OMOP:4181897                                                    
+      OPHTHALMIC:
+        description: Ophthalmic
+        meaning: OMOP:4184451                                            
+      BODY CAVITY:
+        description: Body cavity
+        meaning: OMOP:4222254                                          
+      INTRAOSSEOUS:
+        description: Intraosseous
+        meaning: OMOP:4213522                                        
+      INTRAVENTRICULAR ROUTE - CARDIAC:
+        description: Intraventricular route - cardiac
+        meaning: OMOP:4222259
+      INTRABILIARY:
+        description: Intrabiliary
+        meaning: OMOP:4223965                                        
+      INTRACEREBROVENTRICULAR:
+        description: Intracerebroventricular
+        meaning: OMOP:4224886                  
+      INTRATHECAL:
+        description: Intrathecal
+        meaning: OMOP:4217202                                          
+      EPIDURAL:
+        description: Epidural
+        meaning: OMOP:4225555                                                
+      INTRATRACHEAL:
+        description: Intratracheal
+        meaning: OMOP:4229543                                      
+      URETHRAL:
+        description: Urethral
+        meaning: OMOP:4233974                                                
+      TRANSMUCOSAL:
+        description: Transmucosal
+        meaning: OMOP:4232601                                        
+      TRANSDERMAL:
+        description: Transdermal
+        meaning: OMOP:4262099                                          
+      INTRA-ARTERIAL:
+        description: Intra-arterial
+        meaning: OMOP:4240824                                    
+      INTRAPERITONEAL:
+        description: Intraperitoneal
+        meaning: OMOP:4243022                                  
+      INTRAMEDULLARY:
+        description: Intramedullary
+        meaning: OMOP:4246511                                    
+      INTRAUTERINE:
+        description: Intrauterine
+        meaning: OMOP:4269621                                        
+      NASAL:
+        description: Nasal
+        meaning: OMOP:4262914                                                      
+      TOPICAL:
+        description: Topical
+        meaning: OMOP:4263689                                                  
+      RECTAL:
+        description: Rectal
+        meaning: OMOP:4290759                                                    
+      SUBLINGUAL:
+        description: Sublingual
+        meaning: OMOP:4292110                                            
+      INTRALUMINAL:
+        description: Intraluminal
+        meaning: OMOP:4292410                                        
+      TRANSCERVICAL:
+        description: Transcervical
+        meaning: OMOP:4304730                                      
+      INTRAABDOMINAL:
+        description: Intraabdominal
+        meaning: OMOP:4304882                                    
+      TRANSURETHRAL:
+        description: Transurethral
+        meaning: OMOP:4305382                                      
+      PERITENDINOUS:
+        description: Peritendinous
+        meaning: OMOP:4305564                                      
+      ILEOSTOMY:
+        description: Ileostomy
+        meaning: OMOP:4305679                                              
+      INTRACORNEAL:
+        description: Intracorneal
+        meaning: OMOP:4305690                                        
+      NASOJEJUNAL:
+        description: Nasojejunal
+        meaning: OMOP:4305834                                          
+      INTRACISTERNAL:
+        description: Intracisternal
+        meaning: OMOP:4305993                                    
+      SUBGINGIVAL:
+        description: Subgingival
+        meaning: OMOP:4306649                                          
+      INTRAOVARIAN:
+        description: Intraovarian
+        meaning: OMOP:4306657                                        
+      INTERSTITIAL:
+        description: Interstitial
+        meaning: OMOP:4327128                                        
+      INTRASYNOVIAL:
+        description: Intrasynovial
+        meaning: OMOP:4302352                                      
+      INTRADUODENAL:
+        description: Intraduodenal
+        meaning: OMOP:4302354                                      
+      SUBTENDINOUS:
+        description: Subtendinous
+        meaning: OMOP:4302493                                        
+      INTRAMUSCULAR:
+        description: Intramuscular
+        meaning: OMOP:4302612                                      
+      INTRAVITREAL:
+        description: Intravitreal
+        meaning: OMOP:4302785                                        
+      INTRASPINAL:
+        description: Intraspinal
+        meaning: OMOP:4302788                                          
+      INTRABRONCHIAL:
+        description: Intrabronchial
+        meaning: OMOP:4303263                                    
+      OROPHARYNGEAL:
+        description: Oropharyngeal
+        meaning: OMOP:4303277                                      
+      INTRACAMERAL:
+        description: Intracameral
+        meaning: OMOP:4303409                                        
+      PARACERVICAL:
+        description: Paracervical
+        meaning: OMOP:4303515                                        
+      PERIURETHRAL:
+        description: Periurethral
+        meaning: OMOP:4303646                                        
+      INTRACORONAL:
+        description: Intracoronal
+        meaning: OMOP:4303667                                        
+      RETROBULBAR:
+        description: Retrobulbar
+        meaning: OMOP:4303673                                          
+      INTRACARTILAGINOUS:
+        description: Intracartilaginous
+        meaning: OMOP:4303676                            
+      OROGASTRIC:
+        description: Orogastric
+        meaning: OMOP:4303795                                            
+      INTRATENDINOUS:
+        description: Intratendinous
+        meaning: OMOP:4303939                                    
+      PERIBULBAR:
+        description: Peribulbar
+        meaning: OMOP:4304274                                            
+      FISTULA:
+        description: Fistula
+        meaning: OMOP:4304277                                                  
+      SURGICAL DRAIN:
+        description: Surgical drain
+        meaning: OMOP:4304412                                    
+      URETERAL:
+        description: Ureteral
+        meaning: OMOP:4304571                                                
+      EPILESIONAL:
+        description: Epilesional
+        meaning: OMOP:35608078                                         
+      EXTRACORPOREAL HEMODIALYSIS:
+        description: Extracorporeal hemodialysis
+        meaning: OMOP:35624178         
+      SUPRACHOROIDAL:
+        description: Suprachoroidal
+        meaning: OMOP:37174548                                   
+      EXTRACORPOREAL:
+        description: Extracorporeal
+        meaning: OMOP:37018288                                   
+      INTRACORPORUS CAVERNOSUM:
+        description: Intracorporus cavernosum
+        meaning: OMOP:37174549               
+      INTRAGLANDULAR:
+        description: Intraglandular
+        meaning: OMOP:37207460                                   
+      INTRACHOLANGIOPANCREATIC:
+        description: Intracholangiopancreatic
+        meaning: OMOP:37207461               
+      INTRAPORTAL:
+        description: Intraportal
+        meaning: OMOP:37207462                                         
+      PERITUMORAL:
+        description: Peritumoral
+        meaning: OMOP:37207463                                         
+      POSTERIOR JUXTASCLERAL:
+        description: Posterior juxtascleral
+        meaning: OMOP:37207464                   
+      SUBRETINAL:
+        description: Subretinal
+        meaning: OMOP:37207465                                           
+      INFILTRATION:
+        description: Infiltration
+        meaning: OMOP:37397638                                       
+      TRANSENDOCARDIAL:
+        description: Transendocardial
+        meaning: OMOP:40487850                               
+      TRANSPLACENTAL:
+        description: Transplacental
+        meaning: OMOP:40487858                                   
+      INTRAEPIDERMAL:
+        description: Intraepidermal
+        meaning: OMOP:40487983                                   
+      INTRACEREBRAL:
+        description: Intracerebral
+        meaning: OMOP:40488317                                     
+      INTRAJEJUNAL:
+        description: Intrajejunal
+        meaning: OMOP:40489989                                       
+      INTRACOLONIC:
+        description: Intracolonic
+        meaning: OMOP:40489990                                       
+      CUTANEOUS:
+        description: Cutaneous
+        meaning: OMOP:40490507                                             
+      INTRAILEAL:
+        description: Intraileal
+        meaning: OMOP:40490837                                           
+      PERIODONTAL:
+        description: Periodontal
+        meaning: OMOP:40490866                                         
+      PERIDURAL:
+        description: Peridural
+        meaning: OMOP:40490896                                             
+      LOWER RESPIRATORY TRACT:
+        description: Lower respiratory tract
+        meaning: OMOP:40490898                 
+      INTRAMAMMARY:
+        description: Intramammary
+        meaning: OMOP:40491321                                       
+      INTRATUMOR:
+        description: Intratumor
+        meaning: OMOP:40491322                                           
+      TRANSTYMPANIC:
+        description: Transtympanic
+        meaning: OMOP:40491830                                     
+      TRANSTRACHEAL:
+        description: Transtracheal
+        meaning: OMOP:40491832                                     
+      INTRAESOPHAGEAL:
+        description: Intraesophageal
+        meaning: OMOP:40492284                                 
+      INTRAGINGIVAL:
+        description: Intragingival
+        meaning: OMOP:40492286                                     
+      INTRAVASCULAR:
+        description: Intravascular
+        meaning: OMOP:40492287                                     
+      INTRADURAL:
+        description: Intradural
+        meaning: OMOP:40492288                                           
+      INTRAMENINGEAL:
+        description: Intrameningeal
+        meaning: OMOP:40492300                                   
+      INTRAGASTRIC:
+        description: Intragastric
+        meaning: OMOP:40492301                                       
+      INTRAPERICARDIAL:
+        description: Intrapericardial
+        meaning: OMOP:40492305                               
+      INTRALINGUAL:
+        description: Intralingual
+        meaning: OMOP:40493227                                       
+      RESPIRATORY TRACT:
+        description: Respiratory tract
+        meaning: OMOP:40486069                             
+      INTRAHEPATIC:
+        description: Intrahepatic
+        meaning: OMOP:40493258                                       
+      CONJUNCTIVAL:
+        description: Conjunctival
+        meaning: OMOP:40486444                                       
+      INTRAEPICARDIAL:
+        description: Intraepicardial
+        meaning: OMOP:40487473                                 
+      DIGESTIVE TRACT:
+        description: Digestive tract
+        meaning: OMOP:40487501                                 
+      OCULAR:
+        description: Ocular
+        meaning: OMOP:40549429                                                   
 
   SpecimenTypeEnum:
     name: SpecimenTypeEnum
