@@ -1779,7 +1779,7 @@ enums:
 
   DrugExposureConceptEnum:
     description: Drug codes from RxNorm.
-    comment: Not sure best way to access, but found the following at HL7.
+    comments: Not sure best way to access, but found the following at HL7.
     see_also:
       - https://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html
       - http://www.nlm.nih.gov/research/umls/rxnorm
