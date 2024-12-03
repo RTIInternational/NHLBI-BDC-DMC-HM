@@ -309,7 +309,7 @@
 <tr>
 <td><a href="../associated_visit/">associated_visit</a></td>
 <td>0..1 <br/> <a href="../Visit/">Visit</a></td>
-<td>A reference to the Visit during which this Condition was reported</td>
+<td>A reference to the Visit during which this Condition was recorded</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -415,7 +415,7 @@ attributes:
     range: Participant
   associated_visit:
     name: associated_visit
-    description: A reference to the Visit during which this Condition was reported.
+    description: A reference to the Visit during which this Condition was recorded.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     range: Visit
 
@@ -515,18 +515,20 @@ attributes:
     - Demography
     - Visit
     - Condition
+    - DrugExposure
     - ObservationSet
     - Observation
     range: Participant
   associated_visit:
     name: associated_visit
-    description: A reference to the Visit during which this Condition was reported.
+    description: A reference to the Visit during which this Condition was recorded.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     alias: associated_visit
     owner: Condition
     domain_of:
     - QuestionnaireResponse
     - Condition
+    - DrugExposure
     range: Visit
   identity:
     name: identity
@@ -554,6 +556,7 @@ attributes:
     - Questionnaire
     - QuestionnaireItem
     - Condition
+    - DrugExposure
     - Document
     - Specimen
     - BiologicProduct

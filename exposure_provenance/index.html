@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/identity/">
+        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/exposure_provenance/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-8.5.10">
     
     
       
-        <title>Slot: identity - BioData Catalyst Harmonized Model</title>
+        <title>Slot: exposure_provenance - BioData Catalyst Harmonized Model</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-identity" class="md-skip">
+        <a href="#slot-exposure_provenance" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: identity
+              Slot: exposure_provenance
             
           </span>
         </div>
@@ -310,15 +310,15 @@
                 
                   
 
-  <a href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/edit/master/docs/identity.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/edit/master/docs/exposure_provenance.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="slot-identity">Slot: identity</h1>
-<p><em>A 'business' identifier or accession number for the entity, typically as provided by an external system or authority, that are globally unique and persist across implementing systems. Also, since these identifiers are created outside the information system through a specific business process, the Identifier type has additional attributes to capture this additional metadata so the actual identifier values are qualified by the context that created those values. This additional context allows "identifier" instances to be transmitted as business data across systems while still being able to trace them back to the system of origin.</em></p>
-<p>URI: <a href="http://schema.org/identifier">schema:identifier</a></p>
+<h1 id="slot-exposure_provenance">Slot: exposure_provenance</h1>
+<p><em>A value representing the provenance of the DrugExposure record. From OMOP Drug Types.</em></p>
+<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/exposure_provenance">bdchm:exposure_provenance</a></p>
 <!-- no inheritance hierarchy -->
 
 <h2 id="applicable-classes">Applicable Classes</h2>
@@ -332,75 +332,15 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../Person/">Person</a></td>
-<td>Administrative information about an individual or animal receiving care or ot...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Demography/">Demography</a></td>
-<td>Demographics about an individual or animal receiving care or other health-rel...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Participant/">Participant</a></td>
-<td>A Participant is the entity of interest in a research study, typically a huma...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../ResearchStudy/">ResearchStudy</a></td>
-<td>A process where a researcher or organization plans and then executes a series...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Organization/">Organization</a></td>
-<td>A grouping of people or organizations with a common purpose such as a data co...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Questionnaire/">Questionnaire</a></td>
-<td>A Questionnaire is an organized collection of questions intended to solicit i...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../QuestionnaireItem/">QuestionnaireItem</a></td>
-<td>QuestionnaireItem defines a question or section within the Questionnaire</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Condition/">Condition</a></td>
-<td>Conditions are records of a Person suggesting the presence of a disease or me...</td>
-<td>no</td>
-</tr>
-<tr>
 <td><a href="../DrugExposure/">DrugExposure</a></td>
 <td>DrugExposures are records of a Person suggesting exposure to a medication</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Document/">Document</a></td>
-<td>A collection of information intented to be understood together as a whole, an...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Specimen/">Specimen</a></td>
-<td>Any material taken as a sample from a biological entity (living or dead), or ...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../BiologicProduct/">BiologicProduct</a></td>
-<td>A living organism, or a metabolically active biological system such as a cell...</td>
 <td>no</td>
 </tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>
-<p>Range: <a href="../Identifier/">Identifier</a></p>
-</li>
-<li>
-<p>Multivalued: True</p>
-</li>
+<li>Range: <a href="../DrugExposureProvenanceEnum/">DrugExposureProvenanceEnum</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
@@ -410,34 +350,16 @@
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: identity
-description: A 'business' identifier or accession number for the entity, typically
-  as provided by an external system or authority, that are globally unique and persist
-  across implementing systems. Also, since these identifiers are created outside the
-  information system through a specific business process, the Identifier type has
-  additional attributes to capture this additional metadata so the actual identifier
-  values are qualified by the context that created those values. This additional context
-  allows &quot;identifier&quot; instances to be transmitted as business data across systems
-  while still being able to trace them back to the system of origin.
+<pre><code class="language-yaml">name: exposure_provenance
+description: A value representing the provenance of the DrugExposure record. From
+  OMOP Drug Types.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 rank: 1000
-slot_uri: schema:identifier
-multivalued: true
-alias: identity
+alias: exposure_provenance
+owner: DrugExposure
 domain_of:
-- Person
-- Demography
-- Participant
-- ResearchStudy
-- Organization
-- Questionnaire
-- QuestionnaireItem
-- Condition
 - DrugExposure
-- Document
-- Specimen
-- BiologicProduct
-range: Identifier
+range: DrugExposureProvenanceEnum
 
 </code></pre>
 

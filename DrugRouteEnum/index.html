@@ -1,0 +1,1913 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/DrugRouteEnum/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Enum: DrugRouteEnum - BioData Catalyst Harmonized Model</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#enum-drugrouteenum" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="BioData Catalyst Harmonized Model" class="md-header__button md-logo" aria-label="BioData Catalyst Harmonized Model" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BioData Catalyst Harmonized Model
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Enum: DrugRouteEnum
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HM" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="BioData Catalyst Harmonized Model" class="md-nav__button md-logo" aria-label="BioData Catalyst Harmonized Model" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    BioData Catalyst Harmonized Model
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HM" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#permissible-values" class="md-nav__link">
+    Permissible Values
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slots" class="md-nav__link">
+    Slots
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comments" class="md-nav__link">
+    Comments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identifier-and-mapping-information" class="md-nav__link">
+    Identifier and Mapping Information
+  </a>
+  
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
+    Schema Source
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linkml-source" class="md-nav__link">
+    LinkML Source
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <a href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/edit/master/docs/DrugRouteEnum.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="enum-drugrouteenum">Enum: DrugRouteEnum</h1>
+<p><em>Routes of drug administration.</em></p>
+<p>URI: <a href="./">DrugRouteEnum</a></p>
+<h2 id="permissible-values">Permissible Values</h2>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ARTERIOVENOUS FISTULA</td>
+<td>OMOP:44783786</td>
+<td>Arteriovenous fistula</td>
+</tr>
+<tr>
+<td>HAEMODIAFILTRATION</td>
+<td>OMOP:44801748</td>
+<td>Haemodiafiltration</td>
+</tr>
+<tr>
+<td>SUBLESIONAL</td>
+<td>OMOP:46270168</td>
+<td>Sublesional</td>
+</tr>
+<tr>
+<td>INTRANEURAL</td>
+<td>OMOP:46272911</td>
+<td>Intraneural</td>
+</tr>
+<tr>
+<td>INTRAMURAL</td>
+<td>OMOP:46272926</td>
+<td>Intramural</td>
+</tr>
+<tr>
+<td>INTRACATHETER INSTILLATION</td>
+<td>OMOP:605428</td>
+<td>Intracatheter instillation</td>
+</tr>
+<tr>
+<td>SUBLABIAL</td>
+<td>OMOP:600817</td>
+<td>Sublabial</td>
+</tr>
+<tr>
+<td>INTRA-ARTICULAR</td>
+<td>OMOP:4006860</td>
+<td>Intra-articular</td>
+</tr>
+<tr>
+<td>INTRADIALYTIC</td>
+<td>OMOP:618805</td>
+<td>Intradialytic</td>
+</tr>
+<tr>
+<td>ARTERIOVENOUS GRAFT</td>
+<td>OMOP:762840</td>
+<td>Arteriovenous graft</td>
+</tr>
+<tr>
+<td>OTIC</td>
+<td>OMOP:4023156</td>
+<td>Otic</td>
+</tr>
+<tr>
+<td>ORAL</td>
+<td>OMOP:4132161</td>
+<td>Oral</td>
+</tr>
+<tr>
+<td>VAGINAL</td>
+<td>OMOP:4057765</td>
+<td>Vaginal</td>
+</tr>
+<tr>
+<td>ROUTE OF ADMINISTRATION VALUE</td>
+<td>OMOP:4106215</td>
+<td>Route of administration value</td>
+</tr>
+<tr>
+<td>GASTROSTOMY</td>
+<td>OMOP:4132254</td>
+<td>Gastrostomy</td>
+</tr>
+<tr>
+<td>NASOGASTRIC</td>
+<td>OMOP:4132711</td>
+<td>Nasogastric</td>
+</tr>
+<tr>
+<td>JEJUNOSTOMY</td>
+<td>OMOP:4133177</td>
+<td>Jejunostomy</td>
+</tr>
+<tr>
+<td>SUBCUTANEOUS</td>
+<td>OMOP:4142048</td>
+<td>Subcutaneous</td>
+</tr>
+<tr>
+<td>GINGIVAL</td>
+<td>OMOP:4156704</td>
+<td>Gingival</td>
+</tr>
+<tr>
+<td>INTRACARDIAC</td>
+<td>OMOP:4156705</td>
+<td>Intracardiac</td>
+</tr>
+<tr>
+<td>INTRADERMAL</td>
+<td>OMOP:4156706</td>
+<td>Intradermal</td>
+</tr>
+<tr>
+<td>INTRAPLEURAL</td>
+<td>OMOP:4156707</td>
+<td>Intrapleural</td>
+</tr>
+<tr>
+<td>PERIARTICULAR</td>
+<td>OMOP:4156708</td>
+<td>Periarticular</td>
+</tr>
+<tr>
+<td>ENDOSINUSIAL</td>
+<td>OMOP:4157756</td>
+<td>Endosinusial</td>
+</tr>
+<tr>
+<td>INTRACAVERNOUS</td>
+<td>OMOP:4157757</td>
+<td>Intracavernous</td>
+</tr>
+<tr>
+<td>INTRALESIONAL</td>
+<td>OMOP:4157758</td>
+<td>Intralesional</td>
+</tr>
+<tr>
+<td>INTRALYMPHATIC</td>
+<td>OMOP:4157759</td>
+<td>Intralymphatic</td>
+</tr>
+<tr>
+<td>INTRAOCULAR</td>
+<td>OMOP:4157760</td>
+<td>Intraocular</td>
+</tr>
+<tr>
+<td>PERINEURAL</td>
+<td>OMOP:4157761</td>
+<td>Perineural</td>
+</tr>
+<tr>
+<td>INTRACRANIAL</td>
+<td>OMOP:4171079</td>
+<td>Intracranial</td>
+</tr>
+<tr>
+<td>DENTAL</td>
+<td>OMOP:4163765</td>
+<td>Dental</td>
+</tr>
+<tr>
+<td>INTRAAMNIOTIC</td>
+<td>OMOP:4163767</td>
+<td>Intraamniotic</td>
+</tr>
+<tr>
+<td>INTRABURSAL</td>
+<td>OMOP:4163768</td>
+<td>Intrabursal</td>
+</tr>
+<tr>
+<td>INTRADISCAL</td>
+<td>OMOP:4163769</td>
+<td>Intradiscal</td>
+</tr>
+<tr>
+<td>SUBCONJUNCTIVAL</td>
+<td>OMOP:4163770</td>
+<td>Subconjunctival</td>
+</tr>
+<tr>
+<td>MUCOUS FISTULA</td>
+<td>OMOP:4171243</td>
+<td>Mucous fistula</td>
+</tr>
+<tr>
+<td>INTRAPROSTATIC</td>
+<td>OMOP:4171725</td>
+<td>Intraprostatic</td>
+</tr>
+<tr>
+<td>INTRAVENOUS PERIPHERAL</td>
+<td>OMOP:4171884</td>
+<td>Intravenous peripheral</td>
+</tr>
+<tr>
+<td>PERIOSTEAL</td>
+<td>OMOP:4171893</td>
+<td>Periosteal</td>
+</tr>
+<tr>
+<td>ESOPHAGOSTOMY</td>
+<td>OMOP:4172191</td>
+<td>Esophagostomy</td>
+</tr>
+<tr>
+<td>NASODUODENAL</td>
+<td>OMOP:4172316</td>
+<td>Nasoduodenal</td>
+</tr>
+<tr>
+<td>PERCUTANEOUS</td>
+<td>OMOP:4177987</td>
+<td>Percutaneous</td>
+</tr>
+<tr>
+<td>SUBORBITAL</td>
+<td>OMOP:4166865</td>
+<td>Suborbital</td>
+</tr>
+<tr>
+<td>INTRATHORACIC</td>
+<td>OMOP:4167393</td>
+<td>Intrathoracic</td>
+</tr>
+<tr>
+<td>ENTERAL</td>
+<td>OMOP:4167540</td>
+<td>Enteral</td>
+</tr>
+<tr>
+<td>INTRAMYOMETRIAL</td>
+<td>OMOP:4168038</td>
+<td>Intramyometrial</td>
+</tr>
+<tr>
+<td>COLOSTOMY</td>
+<td>OMOP:4168047</td>
+<td>Colostomy</td>
+</tr>
+<tr>
+<td>INTRATYMPANIC</td>
+<td>OMOP:4168656</td>
+<td>Intratympanic</td>
+</tr>
+<tr>
+<td>GASTRO-INTESTINAL STOMA</td>
+<td>OMOP:4168665</td>
+<td>Gastro-intestinal stoma</td>
+</tr>
+<tr>
+<td>INTRAPULMONARY</td>
+<td>OMOP:4169270</td>
+<td>Intrapulmonary</td>
+</tr>
+<tr>
+<td>INTRASINAL</td>
+<td>OMOP:4169440</td>
+<td>Intrasinal</td>
+</tr>
+<tr>
+<td>TUMOR CAVITY</td>
+<td>OMOP:4169472</td>
+<td>Tumor cavity</td>
+</tr>
+<tr>
+<td>SUBMUCOSAL</td>
+<td>OMOP:4169634</td>
+<td>Submucosal</td>
+</tr>
+<tr>
+<td>INTRADUCTAL</td>
+<td>OMOP:4170083</td>
+<td>Intraductal</td>
+</tr>
+<tr>
+<td>INTRAVENOUS CENTRAL</td>
+<td>OMOP:4170113</td>
+<td>Intravenous central</td>
+</tr>
+<tr>
+<td>PARAVERTEBRAL</td>
+<td>OMOP:4170267</td>
+<td>Paravertebral</td>
+</tr>
+<tr>
+<td>UROSTOMY</td>
+<td>OMOP:4170435</td>
+<td>Urostomy</td>
+</tr>
+<tr>
+<td>LARYNGEAL</td>
+<td>OMOP:4170440</td>
+<td>Laryngeal</td>
+</tr>
+<tr>
+<td>SURGICAL CAVITY</td>
+<td>OMOP:4170771</td>
+<td>Surgical cavity</td>
+</tr>
+<tr>
+<td>INTRAVENOUS</td>
+<td>OMOP:4171047</td>
+<td>Intravenous</td>
+</tr>
+<tr>
+<td>INTRATESTICULAR</td>
+<td>OMOP:4171067</td>
+<td>Intratesticular</td>
+</tr>
+<tr>
+<td>ENDOCERVICAL</td>
+<td>OMOP:4186831</td>
+<td>Endocervical</td>
+</tr>
+<tr>
+<td>ENDOTRACHEOPULMONARY</td>
+<td>OMOP:4186832</td>
+<td>Endotracheopulmonary</td>
+</tr>
+<tr>
+<td>EXTRA-AMNIOTIC</td>
+<td>OMOP:4186833</td>
+<td>Extra-amniotic</td>
+</tr>
+<tr>
+<td>GASTROENTERAL</td>
+<td>OMOP:4186834</td>
+<td>Gastroenteral</td>
+</tr>
+<tr>
+<td>INTRACERVICAL</td>
+<td>OMOP:4186835</td>
+<td>Intracervical</td>
+</tr>
+<tr>
+<td>INTRACORONARY</td>
+<td>OMOP:4186836</td>
+<td>Intracoronary</td>
+</tr>
+<tr>
+<td>INTRASTERNAL</td>
+<td>OMOP:4186837</td>
+<td>Intrasternal</td>
+</tr>
+<tr>
+<td>INTRAVESICAL</td>
+<td>OMOP:4186838</td>
+<td>Intravesical</td>
+</tr>
+<tr>
+<td>OROMUCOSAL</td>
+<td>OMOP:4186839</td>
+<td>Oromucosal</td>
+</tr>
+<tr>
+<td>CAUDAL</td>
+<td>OMOP:4220455</td>
+<td>Caudal</td>
+</tr>
+<tr>
+<td>BUCCAL</td>
+<td>OMOP:4181897</td>
+<td>Buccal</td>
+</tr>
+<tr>
+<td>OPHTHALMIC</td>
+<td>OMOP:4184451</td>
+<td>Ophthalmic</td>
+</tr>
+<tr>
+<td>BODY CAVITY</td>
+<td>OMOP:4222254</td>
+<td>Body cavity</td>
+</tr>
+<tr>
+<td>INTRAOSSEOUS</td>
+<td>OMOP:4213522</td>
+<td>Intraosseous</td>
+</tr>
+<tr>
+<td>INTRAVENTRICULAR ROUTE - CARDIAC</td>
+<td>OMOP:4222259</td>
+<td>Intraventricular route - cardiac</td>
+</tr>
+<tr>
+<td>INTRABILIARY</td>
+<td>OMOP:4223965</td>
+<td>Intrabiliary</td>
+</tr>
+<tr>
+<td>INTRACEREBROVENTRICULAR</td>
+<td>OMOP:4224886</td>
+<td>Intracerebroventricular</td>
+</tr>
+<tr>
+<td>INTRATHECAL</td>
+<td>OMOP:4217202</td>
+<td>Intrathecal</td>
+</tr>
+<tr>
+<td>EPIDURAL</td>
+<td>OMOP:4225555</td>
+<td>Epidural</td>
+</tr>
+<tr>
+<td>INTRATRACHEAL</td>
+<td>OMOP:4229543</td>
+<td>Intratracheal</td>
+</tr>
+<tr>
+<td>URETHRAL</td>
+<td>OMOP:4233974</td>
+<td>Urethral</td>
+</tr>
+<tr>
+<td>TRANSMUCOSAL</td>
+<td>OMOP:4232601</td>
+<td>Transmucosal</td>
+</tr>
+<tr>
+<td>TRANSDERMAL</td>
+<td>OMOP:4262099</td>
+<td>Transdermal</td>
+</tr>
+<tr>
+<td>INTRA-ARTERIAL</td>
+<td>OMOP:4240824</td>
+<td>Intra-arterial</td>
+</tr>
+<tr>
+<td>INTRAPERITONEAL</td>
+<td>OMOP:4243022</td>
+<td>Intraperitoneal</td>
+</tr>
+<tr>
+<td>INTRAMEDULLARY</td>
+<td>OMOP:4246511</td>
+<td>Intramedullary</td>
+</tr>
+<tr>
+<td>INTRAUTERINE</td>
+<td>OMOP:4269621</td>
+<td>Intrauterine</td>
+</tr>
+<tr>
+<td>NASAL</td>
+<td>OMOP:4262914</td>
+<td>Nasal</td>
+</tr>
+<tr>
+<td>TOPICAL</td>
+<td>OMOP:4263689</td>
+<td>Topical</td>
+</tr>
+<tr>
+<td>RECTAL</td>
+<td>OMOP:4290759</td>
+<td>Rectal</td>
+</tr>
+<tr>
+<td>SUBLINGUAL</td>
+<td>OMOP:4292110</td>
+<td>Sublingual</td>
+</tr>
+<tr>
+<td>INTRALUMINAL</td>
+<td>OMOP:4292410</td>
+<td>Intraluminal</td>
+</tr>
+<tr>
+<td>TRANSCERVICAL</td>
+<td>OMOP:4304730</td>
+<td>Transcervical</td>
+</tr>
+<tr>
+<td>INTRAABDOMINAL</td>
+<td>OMOP:4304882</td>
+<td>Intraabdominal</td>
+</tr>
+<tr>
+<td>TRANSURETHRAL</td>
+<td>OMOP:4305382</td>
+<td>Transurethral</td>
+</tr>
+<tr>
+<td>PERITENDINOUS</td>
+<td>OMOP:4305564</td>
+<td>Peritendinous</td>
+</tr>
+<tr>
+<td>ILEOSTOMY</td>
+<td>OMOP:4305679</td>
+<td>Ileostomy</td>
+</tr>
+<tr>
+<td>INTRACORNEAL</td>
+<td>OMOP:4305690</td>
+<td>Intracorneal</td>
+</tr>
+<tr>
+<td>NASOJEJUNAL</td>
+<td>OMOP:4305834</td>
+<td>Nasojejunal</td>
+</tr>
+<tr>
+<td>INTRACISTERNAL</td>
+<td>OMOP:4305993</td>
+<td>Intracisternal</td>
+</tr>
+<tr>
+<td>SUBGINGIVAL</td>
+<td>OMOP:4306649</td>
+<td>Subgingival</td>
+</tr>
+<tr>
+<td>INTRAOVARIAN</td>
+<td>OMOP:4306657</td>
+<td>Intraovarian</td>
+</tr>
+<tr>
+<td>INTERSTITIAL</td>
+<td>OMOP:4327128</td>
+<td>Interstitial</td>
+</tr>
+<tr>
+<td>INTRASYNOVIAL</td>
+<td>OMOP:4302352</td>
+<td>Intrasynovial</td>
+</tr>
+<tr>
+<td>INTRADUODENAL</td>
+<td>OMOP:4302354</td>
+<td>Intraduodenal</td>
+</tr>
+<tr>
+<td>SUBTENDINOUS</td>
+<td>OMOP:4302493</td>
+<td>Subtendinous</td>
+</tr>
+<tr>
+<td>INTRAMUSCULAR</td>
+<td>OMOP:4302612</td>
+<td>Intramuscular</td>
+</tr>
+<tr>
+<td>INTRAVITREAL</td>
+<td>OMOP:4302785</td>
+<td>Intravitreal</td>
+</tr>
+<tr>
+<td>INTRASPINAL</td>
+<td>OMOP:4302788</td>
+<td>Intraspinal</td>
+</tr>
+<tr>
+<td>INTRABRONCHIAL</td>
+<td>OMOP:4303263</td>
+<td>Intrabronchial</td>
+</tr>
+<tr>
+<td>OROPHARYNGEAL</td>
+<td>OMOP:4303277</td>
+<td>Oropharyngeal</td>
+</tr>
+<tr>
+<td>INTRACAMERAL</td>
+<td>OMOP:4303409</td>
+<td>Intracameral</td>
+</tr>
+<tr>
+<td>PARACERVICAL</td>
+<td>OMOP:4303515</td>
+<td>Paracervical</td>
+</tr>
+<tr>
+<td>PERIURETHRAL</td>
+<td>OMOP:4303646</td>
+<td>Periurethral</td>
+</tr>
+<tr>
+<td>INTRACORONAL</td>
+<td>OMOP:4303667</td>
+<td>Intracoronal</td>
+</tr>
+<tr>
+<td>RETROBULBAR</td>
+<td>OMOP:4303673</td>
+<td>Retrobulbar</td>
+</tr>
+<tr>
+<td>INTRACARTILAGINOUS</td>
+<td>OMOP:4303676</td>
+<td>Intracartilaginous</td>
+</tr>
+<tr>
+<td>OROGASTRIC</td>
+<td>OMOP:4303795</td>
+<td>Orogastric</td>
+</tr>
+<tr>
+<td>INTRATENDINOUS</td>
+<td>OMOP:4303939</td>
+<td>Intratendinous</td>
+</tr>
+<tr>
+<td>PERIBULBAR</td>
+<td>OMOP:4304274</td>
+<td>Peribulbar</td>
+</tr>
+<tr>
+<td>FISTULA</td>
+<td>OMOP:4304277</td>
+<td>Fistula</td>
+</tr>
+<tr>
+<td>SURGICAL DRAIN</td>
+<td>OMOP:4304412</td>
+<td>Surgical drain</td>
+</tr>
+<tr>
+<td>URETERAL</td>
+<td>OMOP:4304571</td>
+<td>Ureteral</td>
+</tr>
+<tr>
+<td>EPILESIONAL</td>
+<td>OMOP:35608078</td>
+<td>Epilesional</td>
+</tr>
+<tr>
+<td>EXTRACORPOREAL HEMODIALYSIS</td>
+<td>OMOP:35624178</td>
+<td>Extracorporeal hemodialysis</td>
+</tr>
+<tr>
+<td>SUPRACHOROIDAL</td>
+<td>OMOP:37174548</td>
+<td>Suprachoroidal</td>
+</tr>
+<tr>
+<td>EXTRACORPOREAL</td>
+<td>OMOP:37018288</td>
+<td>Extracorporeal</td>
+</tr>
+<tr>
+<td>INTRACORPORUS CAVERNOSUM</td>
+<td>OMOP:37174549</td>
+<td>Intracorporus cavernosum</td>
+</tr>
+<tr>
+<td>INTRAGLANDULAR</td>
+<td>OMOP:37207460</td>
+<td>Intraglandular</td>
+</tr>
+<tr>
+<td>INTRACHOLANGIOPANCREATIC</td>
+<td>OMOP:37207461</td>
+<td>Intracholangiopancreatic</td>
+</tr>
+<tr>
+<td>INTRAPORTAL</td>
+<td>OMOP:37207462</td>
+<td>Intraportal</td>
+</tr>
+<tr>
+<td>PERITUMORAL</td>
+<td>OMOP:37207463</td>
+<td>Peritumoral</td>
+</tr>
+<tr>
+<td>POSTERIOR JUXTASCLERAL</td>
+<td>OMOP:37207464</td>
+<td>Posterior juxtascleral</td>
+</tr>
+<tr>
+<td>SUBRETINAL</td>
+<td>OMOP:37207465</td>
+<td>Subretinal</td>
+</tr>
+<tr>
+<td>INFILTRATION</td>
+<td>OMOP:37397638</td>
+<td>Infiltration</td>
+</tr>
+<tr>
+<td>TRANSENDOCARDIAL</td>
+<td>OMOP:40487850</td>
+<td>Transendocardial</td>
+</tr>
+<tr>
+<td>TRANSPLACENTAL</td>
+<td>OMOP:40487858</td>
+<td>Transplacental</td>
+</tr>
+<tr>
+<td>INTRAEPIDERMAL</td>
+<td>OMOP:40487983</td>
+<td>Intraepidermal</td>
+</tr>
+<tr>
+<td>INTRACEREBRAL</td>
+<td>OMOP:40488317</td>
+<td>Intracerebral</td>
+</tr>
+<tr>
+<td>INTRAJEJUNAL</td>
+<td>OMOP:40489989</td>
+<td>Intrajejunal</td>
+</tr>
+<tr>
+<td>INTRACOLONIC</td>
+<td>OMOP:40489990</td>
+<td>Intracolonic</td>
+</tr>
+<tr>
+<td>CUTANEOUS</td>
+<td>OMOP:40490507</td>
+<td>Cutaneous</td>
+</tr>
+<tr>
+<td>INTRAILEAL</td>
+<td>OMOP:40490837</td>
+<td>Intraileal</td>
+</tr>
+<tr>
+<td>PERIODONTAL</td>
+<td>OMOP:40490866</td>
+<td>Periodontal</td>
+</tr>
+<tr>
+<td>PERIDURAL</td>
+<td>OMOP:40490896</td>
+<td>Peridural</td>
+</tr>
+<tr>
+<td>LOWER RESPIRATORY TRACT</td>
+<td>OMOP:40490898</td>
+<td>Lower respiratory tract</td>
+</tr>
+<tr>
+<td>INTRAMAMMARY</td>
+<td>OMOP:40491321</td>
+<td>Intramammary</td>
+</tr>
+<tr>
+<td>INTRATUMOR</td>
+<td>OMOP:40491322</td>
+<td>Intratumor</td>
+</tr>
+<tr>
+<td>TRANSTYMPANIC</td>
+<td>OMOP:40491830</td>
+<td>Transtympanic</td>
+</tr>
+<tr>
+<td>TRANSTRACHEAL</td>
+<td>OMOP:40491832</td>
+<td>Transtracheal</td>
+</tr>
+<tr>
+<td>INTRAESOPHAGEAL</td>
+<td>OMOP:40492284</td>
+<td>Intraesophageal</td>
+</tr>
+<tr>
+<td>INTRAGINGIVAL</td>
+<td>OMOP:40492286</td>
+<td>Intragingival</td>
+</tr>
+<tr>
+<td>INTRAVASCULAR</td>
+<td>OMOP:40492287</td>
+<td>Intravascular</td>
+</tr>
+<tr>
+<td>INTRADURAL</td>
+<td>OMOP:40492288</td>
+<td>Intradural</td>
+</tr>
+<tr>
+<td>INTRAMENINGEAL</td>
+<td>OMOP:40492300</td>
+<td>Intrameningeal</td>
+</tr>
+<tr>
+<td>INTRAGASTRIC</td>
+<td>OMOP:40492301</td>
+<td>Intragastric</td>
+</tr>
+<tr>
+<td>INTRAPERICARDIAL</td>
+<td>OMOP:40492305</td>
+<td>Intrapericardial</td>
+</tr>
+<tr>
+<td>INTRALINGUAL</td>
+<td>OMOP:40493227</td>
+<td>Intralingual</td>
+</tr>
+<tr>
+<td>RESPIRATORY TRACT</td>
+<td>OMOP:40486069</td>
+<td>Respiratory tract</td>
+</tr>
+<tr>
+<td>INTRAHEPATIC</td>
+<td>OMOP:40493258</td>
+<td>Intrahepatic</td>
+</tr>
+<tr>
+<td>CONJUNCTIVAL</td>
+<td>OMOP:40486444</td>
+<td>Conjunctival</td>
+</tr>
+<tr>
+<td>INTRAEPICARDIAL</td>
+<td>OMOP:40487473</td>
+<td>Intraepicardial</td>
+</tr>
+<tr>
+<td>DIGESTIVE TRACT</td>
+<td>OMOP:40487501</td>
+<td>Digestive tract</td>
+</tr>
+<tr>
+<td>OCULAR</td>
+<td>OMOP:40549429</td>
+<td>Ocular</td>
+</tr>
+</tbody>
+</table>
+<h2 id="slots">Slots</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../route_concept/">route_concept</a></td>
+<td>Route of drug administration</td>
+</tr>
+</tbody>
+</table>
+<h2 id="comments">Comments</h2>
+<ul>
+<li>OMOP contains 165 standard values; <code>select * from concept where domain_id = 'Route' and invalid_reason is null and standard_concept is not null;</code> from SNOMED. Do we need descriptions beyond the name?</li>
+</ul>
+<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+</ul>
+<h2 id="linkml-source">LinkML Source</h2>
+<details>
+
+<pre><code class="language-yaml">name: DrugRouteEnum
+description: Routes of drug administration.
+comments:
+- OMOP contains 165 standard values; `select * from concept where domain_id = 'Route'
+  and invalid_reason is null and standard_concept is not null;` from SNOMED. Do we
+  need descriptions beyond the name?
+from_schema: https://w3id.org/nhlbidatastage/bdchm
+rank: 1000
+permissible_values:
+  ARTERIOVENOUS FISTULA:
+    text: ARTERIOVENOUS FISTULA
+    description: Arteriovenous fistula
+    meaning: OMOP:44783786
+  HAEMODIAFILTRATION:
+    text: HAEMODIAFILTRATION
+    description: Haemodiafiltration
+    meaning: OMOP:44801748
+  SUBLESIONAL:
+    text: SUBLESIONAL
+    description: Sublesional
+    meaning: OMOP:46270168
+  INTRANEURAL:
+    text: INTRANEURAL
+    description: Intraneural
+    meaning: OMOP:46272911
+  INTRAMURAL:
+    text: INTRAMURAL
+    description: Intramural
+    meaning: OMOP:46272926
+  INTRACATHETER INSTILLATION:
+    text: INTRACATHETER INSTILLATION
+    description: Intracatheter instillation
+    meaning: OMOP:605428
+  SUBLABIAL:
+    text: SUBLABIAL
+    description: Sublabial
+    meaning: OMOP:600817
+  INTRA-ARTICULAR:
+    text: INTRA-ARTICULAR
+    description: Intra-articular
+    meaning: OMOP:4006860
+  INTRADIALYTIC:
+    text: INTRADIALYTIC
+    description: Intradialytic
+    meaning: OMOP:618805
+  ARTERIOVENOUS GRAFT:
+    text: ARTERIOVENOUS GRAFT
+    description: Arteriovenous graft
+    meaning: OMOP:762840
+  OTIC:
+    text: OTIC
+    description: Otic
+    meaning: OMOP:4023156
+  ORAL:
+    text: ORAL
+    description: Oral
+    meaning: OMOP:4132161
+  VAGINAL:
+    text: VAGINAL
+    description: Vaginal
+    meaning: OMOP:4057765
+  ROUTE OF ADMINISTRATION VALUE:
+    text: ROUTE OF ADMINISTRATION VALUE
+    description: Route of administration value
+    meaning: OMOP:4106215
+  GASTROSTOMY:
+    text: GASTROSTOMY
+    description: Gastrostomy
+    meaning: OMOP:4132254
+  NASOGASTRIC:
+    text: NASOGASTRIC
+    description: Nasogastric
+    meaning: OMOP:4132711
+  JEJUNOSTOMY:
+    text: JEJUNOSTOMY
+    description: Jejunostomy
+    meaning: OMOP:4133177
+  SUBCUTANEOUS:
+    text: SUBCUTANEOUS
+    description: Subcutaneous
+    meaning: OMOP:4142048
+  GINGIVAL:
+    text: GINGIVAL
+    description: Gingival
+    meaning: OMOP:4156704
+  INTRACARDIAC:
+    text: INTRACARDIAC
+    description: Intracardiac
+    meaning: OMOP:4156705
+  INTRADERMAL:
+    text: INTRADERMAL
+    description: Intradermal
+    meaning: OMOP:4156706
+  INTRAPLEURAL:
+    text: INTRAPLEURAL
+    description: Intrapleural
+    meaning: OMOP:4156707
+  PERIARTICULAR:
+    text: PERIARTICULAR
+    description: Periarticular
+    meaning: OMOP:4156708
+  ENDOSINUSIAL:
+    text: ENDOSINUSIAL
+    description: Endosinusial
+    meaning: OMOP:4157756
+  INTRACAVERNOUS:
+    text: INTRACAVERNOUS
+    description: Intracavernous
+    meaning: OMOP:4157757
+  INTRALESIONAL:
+    text: INTRALESIONAL
+    description: Intralesional
+    meaning: OMOP:4157758
+  INTRALYMPHATIC:
+    text: INTRALYMPHATIC
+    description: Intralymphatic
+    meaning: OMOP:4157759
+  INTRAOCULAR:
+    text: INTRAOCULAR
+    description: Intraocular
+    meaning: OMOP:4157760
+  PERINEURAL:
+    text: PERINEURAL
+    description: Perineural
+    meaning: OMOP:4157761
+  INTRACRANIAL:
+    text: INTRACRANIAL
+    description: Intracranial
+    meaning: OMOP:4171079
+  DENTAL:
+    text: DENTAL
+    description: Dental
+    meaning: OMOP:4163765
+  INTRAAMNIOTIC:
+    text: INTRAAMNIOTIC
+    description: Intraamniotic
+    meaning: OMOP:4163767
+  INTRABURSAL:
+    text: INTRABURSAL
+    description: Intrabursal
+    meaning: OMOP:4163768
+  INTRADISCAL:
+    text: INTRADISCAL
+    description: Intradiscal
+    meaning: OMOP:4163769
+  SUBCONJUNCTIVAL:
+    text: SUBCONJUNCTIVAL
+    description: Subconjunctival
+    meaning: OMOP:4163770
+  MUCOUS FISTULA:
+    text: MUCOUS FISTULA
+    description: Mucous fistula
+    meaning: OMOP:4171243
+  INTRAPROSTATIC:
+    text: INTRAPROSTATIC
+    description: Intraprostatic
+    meaning: OMOP:4171725
+  INTRAVENOUS PERIPHERAL:
+    text: INTRAVENOUS PERIPHERAL
+    description: Intravenous peripheral
+    meaning: OMOP:4171884
+  PERIOSTEAL:
+    text: PERIOSTEAL
+    description: Periosteal
+    meaning: OMOP:4171893
+  ESOPHAGOSTOMY:
+    text: ESOPHAGOSTOMY
+    description: Esophagostomy
+    meaning: OMOP:4172191
+  NASODUODENAL:
+    text: NASODUODENAL
+    description: Nasoduodenal
+    meaning: OMOP:4172316
+  PERCUTANEOUS:
+    text: PERCUTANEOUS
+    description: Percutaneous
+    meaning: OMOP:4177987
+  SUBORBITAL:
+    text: SUBORBITAL
+    description: Suborbital
+    meaning: OMOP:4166865
+  INTRATHORACIC:
+    text: INTRATHORACIC
+    description: Intrathoracic
+    meaning: OMOP:4167393
+  ENTERAL:
+    text: ENTERAL
+    description: Enteral
+    meaning: OMOP:4167540
+  INTRAMYOMETRIAL:
+    text: INTRAMYOMETRIAL
+    description: Intramyometrial
+    meaning: OMOP:4168038
+  COLOSTOMY:
+    text: COLOSTOMY
+    description: Colostomy
+    meaning: OMOP:4168047
+  INTRATYMPANIC:
+    text: INTRATYMPANIC
+    description: Intratympanic
+    meaning: OMOP:4168656
+  GASTRO-INTESTINAL STOMA:
+    text: GASTRO-INTESTINAL STOMA
+    description: Gastro-intestinal stoma
+    meaning: OMOP:4168665
+  INTRAPULMONARY:
+    text: INTRAPULMONARY
+    description: Intrapulmonary
+    meaning: OMOP:4169270
+  INTRASINAL:
+    text: INTRASINAL
+    description: Intrasinal
+    meaning: OMOP:4169440
+  TUMOR CAVITY:
+    text: TUMOR CAVITY
+    description: Tumor cavity
+    meaning: OMOP:4169472
+  SUBMUCOSAL:
+    text: SUBMUCOSAL
+    description: Submucosal
+    meaning: OMOP:4169634
+  INTRADUCTAL:
+    text: INTRADUCTAL
+    description: Intraductal
+    meaning: OMOP:4170083
+  INTRAVENOUS CENTRAL:
+    text: INTRAVENOUS CENTRAL
+    description: Intravenous central
+    meaning: OMOP:4170113
+  PARAVERTEBRAL:
+    text: PARAVERTEBRAL
+    description: Paravertebral
+    meaning: OMOP:4170267
+  UROSTOMY:
+    text: UROSTOMY
+    description: Urostomy
+    meaning: OMOP:4170435
+  LARYNGEAL:
+    text: LARYNGEAL
+    description: Laryngeal
+    meaning: OMOP:4170440
+  SURGICAL CAVITY:
+    text: SURGICAL CAVITY
+    description: Surgical cavity
+    meaning: OMOP:4170771
+  INTRAVENOUS:
+    text: INTRAVENOUS
+    description: Intravenous
+    meaning: OMOP:4171047
+  INTRATESTICULAR:
+    text: INTRATESTICULAR
+    description: Intratesticular
+    meaning: OMOP:4171067
+  ENDOCERVICAL:
+    text: ENDOCERVICAL
+    description: Endocervical
+    meaning: OMOP:4186831
+  ENDOTRACHEOPULMONARY:
+    text: ENDOTRACHEOPULMONARY
+    description: Endotracheopulmonary
+    meaning: OMOP:4186832
+  EXTRA-AMNIOTIC:
+    text: EXTRA-AMNIOTIC
+    description: Extra-amniotic
+    meaning: OMOP:4186833
+  GASTROENTERAL:
+    text: GASTROENTERAL
+    description: Gastroenteral
+    meaning: OMOP:4186834
+  INTRACERVICAL:
+    text: INTRACERVICAL
+    description: Intracervical
+    meaning: OMOP:4186835
+  INTRACORONARY:
+    text: INTRACORONARY
+    description: Intracoronary
+    meaning: OMOP:4186836
+  INTRASTERNAL:
+    text: INTRASTERNAL
+    description: Intrasternal
+    meaning: OMOP:4186837
+  INTRAVESICAL:
+    text: INTRAVESICAL
+    description: Intravesical
+    meaning: OMOP:4186838
+  OROMUCOSAL:
+    text: OROMUCOSAL
+    description: Oromucosal
+    meaning: OMOP:4186839
+  CAUDAL:
+    text: CAUDAL
+    description: Caudal
+    meaning: OMOP:4220455
+  BUCCAL:
+    text: BUCCAL
+    description: Buccal
+    meaning: OMOP:4181897
+  OPHTHALMIC:
+    text: OPHTHALMIC
+    description: Ophthalmic
+    meaning: OMOP:4184451
+  BODY CAVITY:
+    text: BODY CAVITY
+    description: Body cavity
+    meaning: OMOP:4222254
+  INTRAOSSEOUS:
+    text: INTRAOSSEOUS
+    description: Intraosseous
+    meaning: OMOP:4213522
+  INTRAVENTRICULAR ROUTE - CARDIAC:
+    text: INTRAVENTRICULAR ROUTE - CARDIAC
+    description: Intraventricular route - cardiac
+    meaning: OMOP:4222259
+  INTRABILIARY:
+    text: INTRABILIARY
+    description: Intrabiliary
+    meaning: OMOP:4223965
+  INTRACEREBROVENTRICULAR:
+    text: INTRACEREBROVENTRICULAR
+    description: Intracerebroventricular
+    meaning: OMOP:4224886
+  INTRATHECAL:
+    text: INTRATHECAL
+    description: Intrathecal
+    meaning: OMOP:4217202
+  EPIDURAL:
+    text: EPIDURAL
+    description: Epidural
+    meaning: OMOP:4225555
+  INTRATRACHEAL:
+    text: INTRATRACHEAL
+    description: Intratracheal
+    meaning: OMOP:4229543
+  URETHRAL:
+    text: URETHRAL
+    description: Urethral
+    meaning: OMOP:4233974
+  TRANSMUCOSAL:
+    text: TRANSMUCOSAL
+    description: Transmucosal
+    meaning: OMOP:4232601
+  TRANSDERMAL:
+    text: TRANSDERMAL
+    description: Transdermal
+    meaning: OMOP:4262099
+  INTRA-ARTERIAL:
+    text: INTRA-ARTERIAL
+    description: Intra-arterial
+    meaning: OMOP:4240824
+  INTRAPERITONEAL:
+    text: INTRAPERITONEAL
+    description: Intraperitoneal
+    meaning: OMOP:4243022
+  INTRAMEDULLARY:
+    text: INTRAMEDULLARY
+    description: Intramedullary
+    meaning: OMOP:4246511
+  INTRAUTERINE:
+    text: INTRAUTERINE
+    description: Intrauterine
+    meaning: OMOP:4269621
+  NASAL:
+    text: NASAL
+    description: Nasal
+    meaning: OMOP:4262914
+  TOPICAL:
+    text: TOPICAL
+    description: Topical
+    meaning: OMOP:4263689
+  RECTAL:
+    text: RECTAL
+    description: Rectal
+    meaning: OMOP:4290759
+  SUBLINGUAL:
+    text: SUBLINGUAL
+    description: Sublingual
+    meaning: OMOP:4292110
+  INTRALUMINAL:
+    text: INTRALUMINAL
+    description: Intraluminal
+    meaning: OMOP:4292410
+  TRANSCERVICAL:
+    text: TRANSCERVICAL
+    description: Transcervical
+    meaning: OMOP:4304730
+  INTRAABDOMINAL:
+    text: INTRAABDOMINAL
+    description: Intraabdominal
+    meaning: OMOP:4304882
+  TRANSURETHRAL:
+    text: TRANSURETHRAL
+    description: Transurethral
+    meaning: OMOP:4305382
+  PERITENDINOUS:
+    text: PERITENDINOUS
+    description: Peritendinous
+    meaning: OMOP:4305564
+  ILEOSTOMY:
+    text: ILEOSTOMY
+    description: Ileostomy
+    meaning: OMOP:4305679
+  INTRACORNEAL:
+    text: INTRACORNEAL
+    description: Intracorneal
+    meaning: OMOP:4305690
+  NASOJEJUNAL:
+    text: NASOJEJUNAL
+    description: Nasojejunal
+    meaning: OMOP:4305834
+  INTRACISTERNAL:
+    text: INTRACISTERNAL
+    description: Intracisternal
+    meaning: OMOP:4305993
+  SUBGINGIVAL:
+    text: SUBGINGIVAL
+    description: Subgingival
+    meaning: OMOP:4306649
+  INTRAOVARIAN:
+    text: INTRAOVARIAN
+    description: Intraovarian
+    meaning: OMOP:4306657
+  INTERSTITIAL:
+    text: INTERSTITIAL
+    description: Interstitial
+    meaning: OMOP:4327128
+  INTRASYNOVIAL:
+    text: INTRASYNOVIAL
+    description: Intrasynovial
+    meaning: OMOP:4302352
+  INTRADUODENAL:
+    text: INTRADUODENAL
+    description: Intraduodenal
+    meaning: OMOP:4302354
+  SUBTENDINOUS:
+    text: SUBTENDINOUS
+    description: Subtendinous
+    meaning: OMOP:4302493
+  INTRAMUSCULAR:
+    text: INTRAMUSCULAR
+    description: Intramuscular
+    meaning: OMOP:4302612
+  INTRAVITREAL:
+    text: INTRAVITREAL
+    description: Intravitreal
+    meaning: OMOP:4302785
+  INTRASPINAL:
+    text: INTRASPINAL
+    description: Intraspinal
+    meaning: OMOP:4302788
+  INTRABRONCHIAL:
+    text: INTRABRONCHIAL
+    description: Intrabronchial
+    meaning: OMOP:4303263
+  OROPHARYNGEAL:
+    text: OROPHARYNGEAL
+    description: Oropharyngeal
+    meaning: OMOP:4303277
+  INTRACAMERAL:
+    text: INTRACAMERAL
+    description: Intracameral
+    meaning: OMOP:4303409
+  PARACERVICAL:
+    text: PARACERVICAL
+    description: Paracervical
+    meaning: OMOP:4303515
+  PERIURETHRAL:
+    text: PERIURETHRAL
+    description: Periurethral
+    meaning: OMOP:4303646
+  INTRACORONAL:
+    text: INTRACORONAL
+    description: Intracoronal
+    meaning: OMOP:4303667
+  RETROBULBAR:
+    text: RETROBULBAR
+    description: Retrobulbar
+    meaning: OMOP:4303673
+  INTRACARTILAGINOUS:
+    text: INTRACARTILAGINOUS
+    description: Intracartilaginous
+    meaning: OMOP:4303676
+  OROGASTRIC:
+    text: OROGASTRIC
+    description: Orogastric
+    meaning: OMOP:4303795
+  INTRATENDINOUS:
+    text: INTRATENDINOUS
+    description: Intratendinous
+    meaning: OMOP:4303939
+  PERIBULBAR:
+    text: PERIBULBAR
+    description: Peribulbar
+    meaning: OMOP:4304274
+  FISTULA:
+    text: FISTULA
+    description: Fistula
+    meaning: OMOP:4304277
+  SURGICAL DRAIN:
+    text: SURGICAL DRAIN
+    description: Surgical drain
+    meaning: OMOP:4304412
+  URETERAL:
+    text: URETERAL
+    description: Ureteral
+    meaning: OMOP:4304571
+  EPILESIONAL:
+    text: EPILESIONAL
+    description: Epilesional
+    meaning: OMOP:35608078
+  EXTRACORPOREAL HEMODIALYSIS:
+    text: EXTRACORPOREAL HEMODIALYSIS
+    description: Extracorporeal hemodialysis
+    meaning: OMOP:35624178
+  SUPRACHOROIDAL:
+    text: SUPRACHOROIDAL
+    description: Suprachoroidal
+    meaning: OMOP:37174548
+  EXTRACORPOREAL:
+    text: EXTRACORPOREAL
+    description: Extracorporeal
+    meaning: OMOP:37018288
+  INTRACORPORUS CAVERNOSUM:
+    text: INTRACORPORUS CAVERNOSUM
+    description: Intracorporus cavernosum
+    meaning: OMOP:37174549
+  INTRAGLANDULAR:
+    text: INTRAGLANDULAR
+    description: Intraglandular
+    meaning: OMOP:37207460
+  INTRACHOLANGIOPANCREATIC:
+    text: INTRACHOLANGIOPANCREATIC
+    description: Intracholangiopancreatic
+    meaning: OMOP:37207461
+  INTRAPORTAL:
+    text: INTRAPORTAL
+    description: Intraportal
+    meaning: OMOP:37207462
+  PERITUMORAL:
+    text: PERITUMORAL
+    description: Peritumoral
+    meaning: OMOP:37207463
+  POSTERIOR JUXTASCLERAL:
+    text: POSTERIOR JUXTASCLERAL
+    description: Posterior juxtascleral
+    meaning: OMOP:37207464
+  SUBRETINAL:
+    text: SUBRETINAL
+    description: Subretinal
+    meaning: OMOP:37207465
+  INFILTRATION:
+    text: INFILTRATION
+    description: Infiltration
+    meaning: OMOP:37397638
+  TRANSENDOCARDIAL:
+    text: TRANSENDOCARDIAL
+    description: Transendocardial
+    meaning: OMOP:40487850
+  TRANSPLACENTAL:
+    text: TRANSPLACENTAL
+    description: Transplacental
+    meaning: OMOP:40487858
+  INTRAEPIDERMAL:
+    text: INTRAEPIDERMAL
+    description: Intraepidermal
+    meaning: OMOP:40487983
+  INTRACEREBRAL:
+    text: INTRACEREBRAL
+    description: Intracerebral
+    meaning: OMOP:40488317
+  INTRAJEJUNAL:
+    text: INTRAJEJUNAL
+    description: Intrajejunal
+    meaning: OMOP:40489989
+  INTRACOLONIC:
+    text: INTRACOLONIC
+    description: Intracolonic
+    meaning: OMOP:40489990
+  CUTANEOUS:
+    text: CUTANEOUS
+    description: Cutaneous
+    meaning: OMOP:40490507
+  INTRAILEAL:
+    text: INTRAILEAL
+    description: Intraileal
+    meaning: OMOP:40490837
+  PERIODONTAL:
+    text: PERIODONTAL
+    description: Periodontal
+    meaning: OMOP:40490866
+  PERIDURAL:
+    text: PERIDURAL
+    description: Peridural
+    meaning: OMOP:40490896
+  LOWER RESPIRATORY TRACT:
+    text: LOWER RESPIRATORY TRACT
+    description: Lower respiratory tract
+    meaning: OMOP:40490898
+  INTRAMAMMARY:
+    text: INTRAMAMMARY
+    description: Intramammary
+    meaning: OMOP:40491321
+  INTRATUMOR:
+    text: INTRATUMOR
+    description: Intratumor
+    meaning: OMOP:40491322
+  TRANSTYMPANIC:
+    text: TRANSTYMPANIC
+    description: Transtympanic
+    meaning: OMOP:40491830
+  TRANSTRACHEAL:
+    text: TRANSTRACHEAL
+    description: Transtracheal
+    meaning: OMOP:40491832
+  INTRAESOPHAGEAL:
+    text: INTRAESOPHAGEAL
+    description: Intraesophageal
+    meaning: OMOP:40492284
+  INTRAGINGIVAL:
+    text: INTRAGINGIVAL
+    description: Intragingival
+    meaning: OMOP:40492286
+  INTRAVASCULAR:
+    text: INTRAVASCULAR
+    description: Intravascular
+    meaning: OMOP:40492287
+  INTRADURAL:
+    text: INTRADURAL
+    description: Intradural
+    meaning: OMOP:40492288
+  INTRAMENINGEAL:
+    text: INTRAMENINGEAL
+    description: Intrameningeal
+    meaning: OMOP:40492300
+  INTRAGASTRIC:
+    text: INTRAGASTRIC
+    description: Intragastric
+    meaning: OMOP:40492301
+  INTRAPERICARDIAL:
+    text: INTRAPERICARDIAL
+    description: Intrapericardial
+    meaning: OMOP:40492305
+  INTRALINGUAL:
+    text: INTRALINGUAL
+    description: Intralingual
+    meaning: OMOP:40493227
+  RESPIRATORY TRACT:
+    text: RESPIRATORY TRACT
+    description: Respiratory tract
+    meaning: OMOP:40486069
+  INTRAHEPATIC:
+    text: INTRAHEPATIC
+    description: Intrahepatic
+    meaning: OMOP:40493258
+  CONJUNCTIVAL:
+    text: CONJUNCTIVAL
+    description: Conjunctival
+    meaning: OMOP:40486444
+  INTRAEPICARDIAL:
+    text: INTRAEPICARDIAL
+    description: Intraepicardial
+    meaning: OMOP:40487473
+  DIGESTIVE TRACT:
+    text: DIGESTIVE TRACT
+    description: Digestive tract
+    meaning: OMOP:40487501
+  OCULAR:
+    text: OCULAR
+    description: Ocular
+    meaning: OMOP:40549429
+
+</code></pre>
+
+</details>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+    
+    
+  </body>
+</html>

@@ -5,10 +5,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/Document/" rel="canonical"/>
+<link href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/DrugExposure/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.5.3, mkdocs-material-8.5.10" name="generator"/>
-<title>Class: Document - BioData Catalyst Harmonized Model</title>
+<title>Class: DrugExposure - BioData Catalyst Harmonized Model</title>
 <link href="../assets/stylesheets/main.975780f9.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -21,7 +21,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#class-document">
+<a class="md-skip" href="#class-drugexposure">
           Skip to content
         </a>
 </div>
@@ -45,7 +45,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Class: Document
+              Class: DrugExposure
             
           </span>
 </div>
@@ -152,11 +152,6 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#usages">
-    Usages
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#identifier-and-mapping-information">
     Identifier and Mapping Information
   </a>
@@ -201,38 +196,60 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/edit/master/docs/Document.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/edit/master/docs/DrugExposure.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
-<h1 id="class-document">Class: Document</h1>
-<p><em>A collection of information intented to be understood together as a whole, and codified in human-readable form.</em></p>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/Document">bdchm:Document</a></p>
+<h1 id="class-drugexposure">Class: DrugExposure</h1>
+<p><em>DrugExposures are records of a Person suggesting exposure to a medication. The source could be prescription, dispensing, medication administration records (MARs), or patient medication list.</em></p>
+<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/DrugExposure">bdchm:DrugExposure</a></p>
 <div class="mermaid"> classDiagram
-    class Document
-      Entity &lt;|-- Document
+    class DrugExposure
+      Entity &lt;|-- DrugExposure
 
-      Document : description
+      DrugExposure : age_at_exposure_end
 
-      Document : document_type
+      DrugExposure : age_at_exposure_start
 
-      Document : focus
+      DrugExposure : associated_participant
 
-          Document --&gt; Entity : focus
+          DrugExposure --&gt; Participant : associated_participant
 
-      Document : id
+      DrugExposure : associated_visit
 
-      Document : identity
+          DrugExposure --&gt; Visit : associated_visit
 
-          Document --&gt; Identifier : identity
+      DrugExposure : days_supply
 
-      Document : url
+      DrugExposure : drug_concept
+
+          DrugExposure --&gt; DrugExposureConceptEnum : drug_concept
+
+      DrugExposure : exposure_provenance
+
+          DrugExposure --&gt; DrugExposureProvenanceEnum : exposure_provenance
+
+      DrugExposure : id
+
+      DrugExposure : identity
+
+          DrugExposure --&gt; Identifier : identity
+
+      DrugExposure : quantity
+
+      DrugExposure : refills
+
+      DrugExposure : route_concept
+
+          DrugExposure --&gt; DrugRouteEnum : route_concept
+
+      DrugExposure : sig
 
 
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
 <li><a href="../Entity/">Entity</a><ul>
-<li><strong>Document</strong></li>
+<li><strong>DrugExposure</strong></li>
 </ul>
 </li>
 </ul>
@@ -254,27 +271,69 @@
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../document_type/">document_type</a></td>
+<td><a href="../drug_concept/">drug_concept</a></td>
+<td>0..1 <br/> <a href="../DrugExposureConceptEnum/">DrugExposureConceptEnum</a></td>
+<td>The coded value for a drug</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../age_at_exposure_start/">age_at_exposure_start</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>The Participant's age (expressed in days) at the exposure start date</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../age_at_exposure_end/">age_at_exposure_end</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>The Participant's age (expressed in days) at the exposure end date, if availa...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../exposure_provenance/">exposure_provenance</a></td>
+<td>0..1 <br/> <a href="../DrugExposureProvenanceEnum/">DrugExposureProvenanceEnum</a></td>
+<td>A value representing the provenance of the DrugExposure record</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../refills/">refills</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>Intended refills at time of the prescription</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../quantity/">quantity</a></td>
+<td>0..1 <br/> <a href="../Float/">Float</a></td>
+<td>To find the dose form of a drug the RELATIONSHIP table can be used where the ...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../days_supply/">days_supply</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>The number of days of supply of the medication as recorded in the original pr...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sig/">sig</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td>The high-level type of the document (e</td>
+<td>This is the verbatim instruction for the drug as written by the provider</td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../description/">description</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>A free text description or summary of the report</td>
+<td><a href="../route_concept/">route_concept</a></td>
+<td>0..1 <br/> <a href="../DrugRouteEnum/">DrugRouteEnum</a></td>
+<td>Route of drug administration</td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../focus/">focus</a></td>
-<td>0..1 <br/> <a href="../Entity/">Entity</a></td>
-<td>The entity that the report is primarily about</td>
+<td><a href="../associated_participant/">associated_participant</a></td>
+<td>0..1 <br/> <a href="../Participant/">Participant</a></td>
+<td>A reference to the Participant to which the exposure is attributed</td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../url/">url</a></td>
-<td>0..* <br/> <a href="../String/">String</a></td>
-<td>A URL/web address where the document can be accessed</td>
+<td><a href="../associated_visit/">associated_visit</a></td>
+<td>0..1 <br/> <a href="../Visit/">Visit</a></td>
+<td>A reference to the Visit the exposure is associated with, if any</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -282,25 +341,6 @@
 <td>1..1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
 <td>The 'logical' identifier of the entity within the system of record</td>
 <td><a href="../Entity/">Entity</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="usages">Usages</h2>
-<table>
-<thead>
-<tr>
-<th>used by</th>
-<th>used in</th>
-<th>type</th>
-<th>used</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../Specimen/">Specimen</a></td>
-<td><a href="../related_document/">related_document</a></td>
-<td>range</td>
-<td><a href="./">Document</a></td>
 </tr>
 </tbody>
 </table>
@@ -320,11 +360,11 @@
 <tbody>
 <tr>
 <td>self</td>
-<td>bdchm:Document</td>
+<td>bdchm:DrugExposure</td>
 </tr>
 <tr>
 <td>native</td>
-<td>bdchm:Document</td>
+<td>bdchm:DrugExposure</td>
 </tr>
 </tbody>
 </table>
@@ -332,120 +372,286 @@
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
 <h3 id="direct">Direct</h3>
 <details>
-<pre><code class="language-yaml">name: Document
-description: A collection of information intented to be understood together as a whole,
-  and codified in human-readable form.
+<pre><code class="language-yaml">name: DrugExposure
+description: DrugExposures are records of a Person suggesting exposure to a medication.
+  The source could be prescription, dispensing, medication administration records
+  (MARs), or patient medication list.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 is_a: Entity
 slots:
 - identity
 attributes:
-  document_type:
-    name: document_type
-    description: The high-level type of the document (e.g.  'publication', 'pathology
-      report')
+  drug_concept:
+    name: drug_concept
+    description: The coded value for a drug. From RxNorm. The syntax for the enum
+      may need work.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    values_from:
-    - crdch:enum_CRDCH_Document_document_type
-    multivalued: false
-    range: string
-    required: false
-  description:
-    name: description
-    description: A free text description or summary of the report.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    multivalued: false
-    range: string
-    required: false
-  focus:
-    name: focus
-    description: The entity that the report is primarily about
+    range: DrugExposureConceptEnum
+  age_at_exposure_start:
+    name: age_at_exposure_start
+    description: The Participant's age (expressed in days) at the exposure start date.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: false
-    range: Entity
-    required: false
-  url:
-    name: url
-    description: A URL/web address where the document can be accessed.
+    range: integer
+    unit:
+      ucum_code: d
+  age_at_exposure_end:
+    name: age_at_exposure_end
+    description: The Participant's age (expressed in days) at the exposure end date,
+      if available. Otherwise equal to age_at_exposure_start.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
-    multivalued: true
+    rank: 1000
+    range: integer
+    unit:
+      ucum_code: d
+  exposure_provenance:
+    name: exposure_provenance
+    description: A value representing the provenance of the DrugExposure record. From
+      OMOP Drug Types.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    range: DrugExposureProvenanceEnum
+  refills:
+    name: refills
+    description: Intended refills at time of the prescription.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    range: integer
+    required: false
+  quantity:
+    name: quantity
+    description: To find the dose form of a drug the RELATIONSHIP table can be used
+      where the relationship_id is ‘Has dose form’. If liquid, quantity stands for
+      the total amount dispensed or ordered of ingredient in the units given by the
+      drug_strength table. If the unit from the source data does not align with the
+      unit in the DRUG_STRENGTH table the quantity should be converted to the correct
+      unit given in DRUG_STRENGTH. For clinical drugs with fixed dose forms (tablets
+      etc.) the quantity is the number of units/tablets/capsules prescribed or dispensed
+      (can be partial, but then only 1/2 or 1/3, not 0.01). Clinical drugs with divisible
+      dose forms (injections) the quantity is the amount of ingredient the patient
+      got. For example, if the injection is 2mg/mL but the patient got 80mL then quantity
+      is reported as 160. Quantified clinical drugs with divisible dose forms (prefilled
+      syringes), the quantity is the amount of ingredient similar to clinical drugs.
+      Please see [how to calculate drug dose](https://ohdsi.github.io/CommonDataModel/drug_dose.html)
+      for more information.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    range: float
+    required: false
+  days_supply:
+    name: days_supply
+    description: The number of days of supply of the medication as recorded in the
+      original prescription or dispensing record. Days supply can differ from actual
+      drug duration (i.e. prescribed days supply vs actual exposure).
+    comments:
+    - The field should be left empty if the source data does not contain a verbatim
+      days_supply, and should not be calculated from other fields.  Negative values
+      are not allowed. If the source has negative days supply the record should be
+      dropped as it is unknown if the patient actually took the drug. Several actions
+      are possible -- record is not trustworthy and we remove the record entirely;
+      we trust the record and leave days_supply empty; or record needs to be combined
+      with other record (e.g. reversal of prescription). High values (&gt;365 days) should
+      be investigated. If considered an error in the source data (e.g. typo), the
+      value needs to be excluded to prevent creation of unrealistic long eras.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    range: integer
+    required: false
+  sig:
+    name: sig
+    description: This is the verbatim instruction for the drug as written by the provider.
+    comments:
+    - Put the written out instructions for the drug as it is verbatim in the source,
+      if available.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
     range: string
     required: false
-    inlined: true
-    inlined_as_list: true
+  route_concept:
+    name: route_concept
+    description: Route of drug administration.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    range: DrugRouteEnum
+  associated_participant:
+    name: associated_participant
+    description: A reference to the Participant to which the exposure is attributed.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    range: Participant
+  associated_visit:
+    name: associated_visit
+    description: A reference to the Visit the exposure is associated with, if any.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    range: Visit
+    required: false
 
 </code></pre>
 </details>
 <h3 id="induced">Induced</h3>
 <details>
-<pre><code class="language-yaml">name: Document
-description: A collection of information intented to be understood together as a whole,
-  and codified in human-readable form.
+<pre><code class="language-yaml">name: DrugExposure
+description: DrugExposures are records of a Person suggesting exposure to a medication.
+  The source could be prescription, dispensing, medication administration records
+  (MARs), or patient medication list.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 is_a: Entity
 attributes:
-  document_type:
-    name: document_type
-    description: The high-level type of the document (e.g.  'publication', 'pathology
-      report')
+  drug_concept:
+    name: drug_concept
+    description: The coded value for a drug. From RxNorm. The syntax for the enum
+      may need work.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    values_from:
-    - crdch:enum_CRDCH_Document_document_type
-    multivalued: false
-    alias: document_type
-    owner: Document
+    alias: drug_concept
+    owner: DrugExposure
     domain_of:
-    - Document
-    range: string
-    required: false
-  description:
-    name: description
-    description: A free text description or summary of the report.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    multivalued: false
-    alias: description
-    owner: Document
-    domain_of:
-    - Participant
-    - ResearchStudy
-    - Questionnaire
-    - Document
-    - Specimen
-    - BiologicProduct
-    range: string
-    required: false
-  focus:
-    name: focus
-    description: The entity that the report is primarily about
+    - DrugExposure
+    range: DrugExposureConceptEnum
+  age_at_exposure_start:
+    name: age_at_exposure_start
+    description: The Participant's age (expressed in days) at the exposure start date.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: false
-    alias: focus
-    owner: Document
+    alias: age_at_exposure_start
+    owner: DrugExposure
     domain_of:
-    - Document
+    - DrugExposure
+    range: integer
+    unit:
+      ucum_code: d
+  age_at_exposure_end:
+    name: age_at_exposure_end
+    description: The Participant's age (expressed in days) at the exposure end date,
+      if available. Otherwise equal to age_at_exposure_start.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: age_at_exposure_end
+    owner: DrugExposure
+    domain_of:
+    - DrugExposure
+    range: integer
+    unit:
+      ucum_code: d
+  exposure_provenance:
+    name: exposure_provenance
+    description: A value representing the provenance of the DrugExposure record. From
+      OMOP Drug Types.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: exposure_provenance
+    owner: DrugExposure
+    domain_of:
+    - DrugExposure
+    range: DrugExposureProvenanceEnum
+  refills:
+    name: refills
+    description: Intended refills at time of the prescription.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: refills
+    owner: DrugExposure
+    domain_of:
+    - DrugExposure
+    range: integer
+    required: false
+  quantity:
+    name: quantity
+    description: To find the dose form of a drug the RELATIONSHIP table can be used
+      where the relationship_id is ‘Has dose form’. If liquid, quantity stands for
+      the total amount dispensed or ordered of ingredient in the units given by the
+      drug_strength table. If the unit from the source data does not align with the
+      unit in the DRUG_STRENGTH table the quantity should be converted to the correct
+      unit given in DRUG_STRENGTH. For clinical drugs with fixed dose forms (tablets
+      etc.) the quantity is the number of units/tablets/capsules prescribed or dispensed
+      (can be partial, but then only 1/2 or 1/3, not 0.01). Clinical drugs with divisible
+      dose forms (injections) the quantity is the amount of ingredient the patient
+      got. For example, if the injection is 2mg/mL but the patient got 80mL then quantity
+      is reported as 160. Quantified clinical drugs with divisible dose forms (prefilled
+      syringes), the quantity is the amount of ingredient similar to clinical drugs.
+      Please see [how to calculate drug dose](https://ohdsi.github.io/CommonDataModel/drug_dose.html)
+      for more information.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: quantity
+    owner: DrugExposure
+    domain_of:
+    - DrugExposure
+    range: float
+    required: false
+  days_supply:
+    name: days_supply
+    description: The number of days of supply of the medication as recorded in the
+      original prescription or dispensing record. Days supply can differ from actual
+      drug duration (i.e. prescribed days supply vs actual exposure).
+    comments:
+    - The field should be left empty if the source data does not contain a verbatim
+      days_supply, and should not be calculated from other fields.  Negative values
+      are not allowed. If the source has negative days supply the record should be
+      dropped as it is unknown if the patient actually took the drug. Several actions
+      are possible -- record is not trustworthy and we remove the record entirely;
+      we trust the record and leave days_supply empty; or record needs to be combined
+      with other record (e.g. reversal of prescription). High values (&gt;365 days) should
+      be investigated. If considered an error in the source data (e.g. typo), the
+      value needs to be excluded to prevent creation of unrealistic long eras.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: days_supply
+    owner: DrugExposure
+    domain_of:
+    - DrugExposure
+    range: integer
+    required: false
+  sig:
+    name: sig
+    description: This is the verbatim instruction for the drug as written by the provider.
+    comments:
+    - Put the written out instructions for the drug as it is verbatim in the source,
+      if available.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: sig
+    owner: DrugExposure
+    domain_of:
+    - DrugExposure
+    range: string
+    required: false
+  route_concept:
+    name: route_concept
+    description: Route of drug administration.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: route_concept
+    owner: DrugExposure
+    domain_of:
+    - DrugExposure
+    range: DrugRouteEnum
+  associated_participant:
+    name: associated_participant
+    description: A reference to the Participant to which the exposure is attributed.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    alias: associated_participant
+    owner: DrugExposure
+    domain_of:
+    - Demography
+    - Visit
+    - Condition
+    - DrugExposure
     - ObservationSet
     - Observation
-    range: Entity
-    required: false
-  url:
-    name: url
-    description: A URL/web address where the document can be accessed.
+    range: Participant
+  associated_visit:
+    name: associated_visit
+    description: A reference to the Visit the exposure is associated with, if any.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
-    multivalued: true
-    alias: url
-    owner: Document
+    alias: associated_visit
+    owner: DrugExposure
     domain_of:
-    - ResearchStudy
-    - Questionnaire
-    - Document
-    range: string
+    - QuestionnaireResponse
+    - Condition
+    - DrugExposure
+    range: Visit
     required: false
-    inlined: true
-    inlined_as_list: true
   identity:
     name: identity
     description: A 'business' identifier or accession number for the entity, typically
@@ -462,7 +668,7 @@ attributes:
     slot_uri: schema:identifier
     multivalued: true
     alias: identity
-    owner: Document
+    owner: DrugExposure
     domain_of:
     - Person
     - Demography
@@ -494,7 +700,7 @@ attributes:
     slot_uri: schema:identifier
     identifier: true
     alias: id
-    owner: Document
+    owner: DrugExposure
     domain_of:
     - Entity
     range: uriorcurie
