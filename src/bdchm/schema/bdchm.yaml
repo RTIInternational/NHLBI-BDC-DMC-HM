@@ -18,6 +18,7 @@ prefixes:
   ncbitaxon: http://purl.obolibrary.org/obo/NCBITaxon_
   MONDO: http://purl.obolibrary.org/obo/MONDO_
   HP: http://purl.obolibrary.org/obo/HP_
+  rxnorm: https://bioregistry.io/rxnorm:/
 
 default_prefix: bdchm
 default_range: string
@@ -1400,6 +1401,7 @@ enums:
       include_self: false
       relationship_types:
         - rdfs:subClassOf
+    pv_formula: LABEL
 
   VitalStatusEnum:
     description: >-
@@ -1422,6 +1424,7 @@ enums:
       include_self: false
       relationship_types:
         - rdfs:subClassOf
+    pv_formula: LABEL
 
   VisitCategoryEnum:
     description: >-
@@ -1716,6 +1719,7 @@ enums:
       include_self: false
       relationship_types:
         - rdfs:subClassOf
+    pv_formula: LABEL
 
   HpoPhenotypicAbnormalityEnum:
     description: >-
@@ -1727,6 +1731,7 @@ enums:
       include_self: false
       relationship_types:
         - rdfs:subClassOf
+    pv_formula: LABEL
 
   ConditionConceptEnum:
     description: >-
@@ -1779,13 +1784,14 @@ enums:
 
   DrugExposureConceptEnum:
     description: Drug codes from RxNorm.
-    comment: Not sure best way to access, but found the following at HL7.
     see_also:
+      - https://bioregistry.io/registry/rxnorm
       - https://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html
       - http://www.nlm.nih.gov/research/umls/rxnorm
       - urn:oid:2.16.840.1.113883.6.88
     reachable_from:
-      source_ontology: rxnorm
+      source_ontology: bioregistry:rxnorm
+    pv_formula: LABEL
 
   DrugExposureProvenanceEnum:
     description: Source of drug exposure record
