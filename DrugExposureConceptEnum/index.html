@@ -317,7 +317,7 @@
 
 
 <h1 id="enum-drugexposureconceptenum">Enum: DrugExposureConceptEnum</h1>
-<p><em>A constrained set of enumerative values containing RxNorm concepts.</em></p>
+<p><em>Drug codes from RxNorm.</em></p>
 <p>URI: <a href="./">DrugExposureConceptEnum</a></p>
 <p><em>This is a dynamic enum</em></p>
 <h2 id="slots">Slots</h2>
@@ -337,6 +337,7 @@
 </table>
 <h2 id="see-also">See Also</h2>
 <ul>
+<li><a href="https://bioregistry.io/registry/rxnorm">https://bioregistry.io/registry/rxnorm</a></li>
 <li><a href="https://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html">https://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html</a></li>
 <li><a href="http://www.nlm.nih.gov/research/umls/rxnorm">http://www.nlm.nih.gov/research/umls/rxnorm</a></li>
 <li><a href="urn:oid:2.16.840.1.113883.6.88">urn:oid:2.16.840.1.113883.6.88</a></li>
@@ -350,15 +351,17 @@
 <details>
 
 <pre><code class="language-yaml">name: DrugExposureConceptEnum
-description: A constrained set of enumerative values containing RxNorm concepts.
+description: Drug codes from RxNorm.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 see_also:
+- https://bioregistry.io/registry/rxnorm
 - https://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html
 - http://www.nlm.nih.gov/research/umls/rxnorm
 - urn:oid:2.16.840.1.113883.6.88
 rank: 1000
+pv_formula: LABEL
 reachable_from:
-  source_ontology: rxnorm
+  source_ontology: bioregistry:rxnorm
 
 </code></pre>
 
