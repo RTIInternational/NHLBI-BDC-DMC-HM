@@ -1459,7 +1459,7 @@ classes:
       title:
         name: title
         description: Common name or acronym used to identify the procedure
-        comment: this may be an enum?
+        comments: this may be an enum?
       summary:
         name: summary
         description: Brief summary of steps involved and intended 
@@ -1484,10 +1484,15 @@ classes:
         multivalued: false
         range: TimePoint
         required: true
-    
 
+  SurgicalProcedure:
+    is_a: Procedure
+    description: Procedure that uses manual and instrumental techniques to diagnose or treat pathological conditions or improve aesthetics and appearance of the body by the physical removal, repair, or readjustment of organs and tissues, often involving cutting into the body.
+    slot_usage:
+      value:
+        range: decimal
+        required: true
     
-
 slots:
   id:
     identifier: true
