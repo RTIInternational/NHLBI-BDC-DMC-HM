@@ -15,6 +15,10 @@ Please read the [Collaboration Guide](CONTRIBUTING.md) before contributing.
     * [datamodel](src/bdchm/datamodel) -- generated
       Python datamodel
 * [tests/](tests/) - Python tests
+* [resources/](resources/)
+  * [map-topmed-raw-to-harmonized/](resources/map-topmed-raw-to-harmonized/)
+    * -- script for generating mapping from TopMed raw variables
+      to TopMed harmonized variables
 
 ## Developer Documentation
 
