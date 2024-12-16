@@ -274,19 +274,6 @@
     Identifier and Mapping Information
   </a>
   
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    Schema Source
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -317,7 +304,6 @@
 
 
 <h1 id="slot-exposure_provenance">Slot: exposure_provenance</h1>
-<p><em>A value representing the provenance of the DrugExposure record. From OMOP Drug Types.</em></p>
 <p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/exposure_provenance">bdchm:exposure_provenance</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -336,30 +322,27 @@
 <td>DrugExposures are records of a Person suggesting exposure to a medication</td>
 <td>no</td>
 </tr>
+<tr>
+<td><a href="../DeviceExposure/">DeviceExposure</a></td>
+<td>DeviceExposures are records of a Person suggesting exposure to a foreign obje...</td>
+<td>no</td>
+</tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../DrugExposureProvenanceEnum/">DrugExposureProvenanceEnum</a></li>
+<li>Range: <a href="../String/">String</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
-</ul>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
 <pre><code class="language-yaml">name: exposure_provenance
-description: A value representing the provenance of the DrugExposure record. From
-  OMOP Drug Types.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
-rank: 1000
 alias: exposure_provenance
-owner: DrugExposure
 domain_of:
 - DrugExposure
-range: DrugExposureProvenanceEnum
+- DeviceExposure
+range: string
 
 </code></pre>
 

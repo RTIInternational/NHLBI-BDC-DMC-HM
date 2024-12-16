@@ -5,10 +5,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/ResearchStudy/" rel="canonical"/>
+<link href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/DeviceExposure/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.5.3, mkdocs-material-8.5.10" name="generator"/>
-<title>Class: ResearchStudy - BioData Catalyst Harmonized Model</title>
+<title>Class: DeviceExposure - BioData Catalyst Harmonized Model</title>
 <link href="../assets/stylesheets/main.975780f9.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -21,7 +21,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#class-researchstudy">
+<a class="md-skip" href="#class-deviceexposure">
           Skip to content
         </a>
 </div>
@@ -45,7 +45,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Class: ResearchStudy
+              Class: DeviceExposure
             
           </span>
 </div>
@@ -152,11 +152,6 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#usages">
-    Usages
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#identifier-and-mapping-information">
     Identifier and Mapping Information
   </a>
@@ -201,64 +196,50 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/edit/master/docs/ResearchStudy.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/edit/master/docs/DeviceExposure.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
-<h1 id="class-researchstudy">Class: ResearchStudy</h1>
-<p><em>A process where a researcher or organization plans and then executes a series of steps intended to increase the field of healthcare-related knowledge. This includes studies of safety, efficacy, comparative effectiveness and other information about medications, devices, therapies and other interventional and investigative techniques. A ResearchStudy involves the gathering of information about human or animal subjects.</em></p>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/ResearchStudy">bdchm:ResearchStudy</a></p>
+<h1 id="class-deviceexposure">Class: DeviceExposure</h1>
+<p><em>DeviceExposures are records of a Person suggesting exposure to a foreign object. The source is typically physical objects used in procedures, measurements, or observations.</em></p>
+<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/DeviceExposure">bdchm:DeviceExposure</a></p>
 <div class="mermaid"> classDiagram
-    class ResearchStudy
-      Entity &lt;|-- ResearchStudy
+    class DeviceExposure
+      Entity &lt;|-- DeviceExposure
 
-      ResearchStudy : associated_timepoint
+      DeviceExposure : age_at_exposure_end
 
-          ResearchStudy --&gt; TimePoint : associated_timepoint
+      DeviceExposure : age_at_exposure_start
 
-      ResearchStudy : consents
+      DeviceExposure : associated_participant
 
-          ResearchStudy --&gt; Consent : consents
+          DeviceExposure --&gt; Participant : associated_participant
 
-      ResearchStudy : date_ended
+      DeviceExposure : associated_visit
 
-          ResearchStudy --&gt; TimePoint : date_ended
+          DeviceExposure --&gt; Visit : associated_visit
 
-      ResearchStudy : date_started
+      DeviceExposure : device_concept
 
-          ResearchStudy --&gt; TimePoint : date_started
+          DeviceExposure --&gt; DeviceExposureConceptEnum : device_concept
 
-      ResearchStudy : description
+      DeviceExposure : exposure_provenance
 
-      ResearchStudy : description_shortened
+          DeviceExposure --&gt; DeviceExposureProvenanceEnum : exposure_provenance
 
-      ResearchStudy : id
+      DeviceExposure : id
 
-      ResearchStudy : identity
+      DeviceExposure : identity
 
-          ResearchStudy --&gt; Identifier : identity
+          DeviceExposure --&gt; Identifier : identity
 
-      ResearchStudy : name
-
-      ResearchStudy : name_shortened
-
-      ResearchStudy : part_of
-
-          ResearchStudy --&gt; ResearchStudy : part_of
-
-      ResearchStudy : principal_investigator
-
-      ResearchStudy : research_project_type
-
-      ResearchStudy : sponsor
-
-      ResearchStudy : url
+      DeviceExposure : quantity
 
 
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
 <li><a href="../Entity/">Entity</a><ul>
-<li><strong>ResearchStudy</strong></li>
+<li><strong>DeviceExposure</strong></li>
 </ul>
 </li>
 </ul>
@@ -280,81 +261,45 @@
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../name/">name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>An unabridged name of a research program, project, or study</td>
+<td><a href="../device_concept/">device_concept</a></td>
+<td>0..1 <br/> <a href="../DeviceExposureConceptEnum/">DeviceExposureConceptEnum</a></td>
+<td>The coded value for a device</td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../name_shortened/">name_shortened</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>An abbreviated name of a research program, project, or study</td>
+<td><a href="../age_at_exposure_start/">age_at_exposure_start</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>The Participant's age (expressed in days) at the exposure start date</td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../description/">description</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>An unabridged description of a research program, project, or study</td>
+<td><a href="../age_at_exposure_end/">age_at_exposure_end</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>The Participant's age (expressed in days) at the exposure end date, if availa...</td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../description_shortened/">description_shortened</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>An abbreviated description of a research program, project, or study</td>
+<td><a href="../exposure_provenance/">exposure_provenance</a></td>
+<td>0..1 <br/> <a href="../DeviceExposureProvenanceEnum/">DeviceExposureProvenanceEnum</a></td>
+<td>A value representing the provenance of the DeviceExposure record</td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../sponsor/">sponsor</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>An entity that is responsible for the initiation, management, and/or financin...</td>
+<td><a href="../quantity/">quantity</a></td>
+<td>0..1 <br/> <a href="../Float/">Float</a></td>
+<td>Amount of device used</td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../date_started/">date_started</a></td>
-<td>0..1 <br/> <a href="../TimePoint/">TimePoint</a></td>
-<td>The date when the research project began</td>
+<td><a href="../associated_participant/">associated_participant</a></td>
+<td>0..1 <br/> <a href="../Participant/">Participant</a></td>
+<td>A reference to the Participant to which the exposure is attributed</td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../date_ended/">date_ended</a></td>
-<td>0..1 <br/> <a href="../TimePoint/">TimePoint</a></td>
-<td>The date when the research project ended</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../url/">url</a></td>
-<td>0..1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
-<td>A URL address for a resource that provides information about a research progr...</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../part_of/">part_of</a></td>
-<td>0..1 <br/> <a href="./">ResearchStudy</a></td>
-<td>A reference to a parent ResearchStudy (e</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../research_project_type/">research_project_type</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>The 'type' of ResearchStudy represented (e</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../associated_timepoint/">associated_timepoint</a></td>
-<td>0..* <br/> <a href="../TimePoint/">TimePoint</a></td>
-<td>A collection of timepoint observations that are relevant to research projects...</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../principal_investigator/">principal_investigator</a></td>
-<td>0..* <br/> <a href="../String/">String</a></td>
-<td>The investigator or investigators leading a project</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../consents/">consents</a></td>
-<td>0..* <br/> <a href="../Consent/">Consent</a></td>
-<td>Data Use Restrictions that are used to indicate permissions/restrictions for ...</td>
+<td><a href="../associated_visit/">associated_visit</a></td>
+<td>0..1 <br/> <a href="../Visit/">Visit</a></td>
+<td>A reference to the Visit the exposure is associated with, if any</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -362,37 +307,6 @@
 <td>1..1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
 <td>The 'logical' identifier of the entity within the system of record</td>
 <td><a href="../Entity/">Entity</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="usages">Usages</h2>
-<table>
-<thead>
-<tr>
-<th>used by</th>
-<th>used in</th>
-<th>type</th>
-<th>used</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../Participant/">Participant</a></td>
-<td><a href="../member_of_research_study/">member_of_research_study</a></td>
-<td>range</td>
-<td><a href="./">ResearchStudy</a></td>
-</tr>
-<tr>
-<td><a href="./">ResearchStudy</a></td>
-<td><a href="../part_of/">part_of</a></td>
-<td>range</td>
-<td><a href="./">ResearchStudy</a></td>
-</tr>
-<tr>
-<td><a href="../ResearchStudyCollection/">ResearchStudyCollection</a></td>
-<td><a href="../entries/">entries</a></td>
-<td>range</td>
-<td><a href="./">ResearchStudy</a></td>
 </tr>
 </tbody>
 </table>
@@ -412,11 +326,11 @@
 <tbody>
 <tr>
 <td>self</td>
-<td>bdchm:ResearchStudy</td>
+<td>bdchm:DeviceExposure</td>
 </tr>
 <tr>
 <td>native</td>
-<td>bdchm:ResearchStudy</td>
+<td>bdchm:DeviceExposure</td>
 </tr>
 </tbody>
 </table>
@@ -424,282 +338,158 @@
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
 <h3 id="direct">Direct</h3>
 <details>
-<pre><code class="language-yaml">name: ResearchStudy
-description: A process where a researcher or organization plans and then executes
-  a series of steps intended to increase the field of healthcare-related knowledge.
-  This includes studies of safety, efficacy, comparative effectiveness and other information
-  about medications, devices, therapies and other interventional and investigative
-  techniques. A ResearchStudy involves the gathering of information about human or
-  animal subjects.
+<pre><code class="language-yaml">name: DeviceExposure
+description: DeviceExposures are records of a Person suggesting exposure to a foreign
+  object. The source is typically physical objects used in procedures, measurements,
+  or observations.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 is_a: Entity
 slots:
 - identity
 attributes:
-  name:
-    name: name
-    description: An unabridged name of a research program, project, or study.
+  device_concept:
+    name: device_concept
+    description: The coded value for a device. Primarily SNOMED. The syntax for the
+      enum may need work.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    range: string
-  name_shortened:
-    name: name_shortened
-    description: An abbreviated name of a research program, project, or study.
+    range: DeviceExposureConceptEnum
+  age_at_exposure_start:
+    name: age_at_exposure_start
+    description: The Participant's age (expressed in days) at the exposure start date.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    range: string
-  description:
-    name: description
-    description: An unabridged description of a research program, project, or study.
+    range: integer
+    unit:
+      ucum_code: d
+  age_at_exposure_end:
+    name: age_at_exposure_end
+    description: The Participant's age (expressed in days) at the exposure end date,
+      if available. Otherwise equal to age_at_exposure_start.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
-    range: string
-  description_shortened:
-    name: description_shortened
-    description: An abbreviated description of a research program, project, or study.
+    range: integer
+    unit:
+      ucum_code: d
+  exposure_provenance:
+    name: exposure_provenance
+    description: A value representing the provenance of the DeviceExposure record.
+      From OMOP Device Types.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    range: string
-  sponsor:
-    name: sponsor
-    description: An entity that is responsible for the initiation, management, and/or
-      financing of a research project.
+    range: DeviceExposureProvenanceEnum
+  quantity:
+    name: quantity
+    description: Amount of device used. If not present in source, default to 1.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    range: string
-  date_started:
-    name: date_started
-    description: The date when the research project began.
+    range: float
+    required: false
+  associated_participant:
+    name: associated_participant
+    description: A reference to the Participant to which the exposure is attributed.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    range: TimePoint
-  date_ended:
-    name: date_ended
-    description: The date when the research project ended.
+    range: Participant
+  associated_visit:
+    name: associated_visit
+    description: A reference to the Visit the exposure is associated with, if any.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    range: TimePoint
-  url:
-    name: url
-    description: A URL address for a resource that provides information about a research
-      program, project, or study.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    range: uriorcurie
-  part_of:
-    name: part_of
-    description: A reference to a parent ResearchStudy (e.g. a link to the overarching
-      CPTAC ResearchStudy from a substudy of CPTAC)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    range: ResearchStudy
-  research_project_type:
-    name: research_project_type
-    description: The 'type' of ResearchStudy represented (e.g. a broad-based Program
-      like 'CPTAC' or a more focused Project like 'CPTAC PDAC Discovery Study')
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    range: string
-  associated_timepoint:
-    name: associated_timepoint
-    description: A collection of timepoint observations that are relevant to research
-      projects (e.g. date of IACUC approval, date of IRB approval, date of embargo
-      end, etc.)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    multivalued: true
-    range: TimePoint
-  principal_investigator:
-    name: principal_investigator
-    description: The investigator or investigators leading a project.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    multivalued: true
-    range: string
-  consents:
-    name: consents
-    description: 'Data Use Restrictions that are used to indicate permissions/restrictions
-      for datasets and/or materials, and relates to the purposes for which datasets
-      and/or material might be removed, stored or used. Based on the Data Use Ontology
-      : see http://www.obofoundry.org/ontology/duo.html'
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    multivalued: true
-    range: Consent
+    range: Visit
+    required: false
 
 </code></pre>
 </details>
 <h3 id="induced">Induced</h3>
 <details>
-<pre><code class="language-yaml">name: ResearchStudy
-description: A process where a researcher or organization plans and then executes
-  a series of steps intended to increase the field of healthcare-related knowledge.
-  This includes studies of safety, efficacy, comparative effectiveness and other information
-  about medications, devices, therapies and other interventional and investigative
-  techniques. A ResearchStudy involves the gathering of information about human or
-  animal subjects.
+<pre><code class="language-yaml">name: DeviceExposure
+description: DeviceExposures are records of a Person suggesting exposure to a foreign
+  object. The source is typically physical objects used in procedures, measurements,
+  or observations.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 is_a: Entity
 attributes:
-  name:
-    name: name
-    description: An unabridged name of a research program, project, or study.
+  device_concept:
+    name: device_concept
+    description: The coded value for a device. Primarily SNOMED. The syntax for the
+      enum may need work.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    alias: name
-    owner: ResearchStudy
+    alias: device_concept
+    owner: DeviceExposure
     domain_of:
-    - ResearchStudy
-    - Organization
-    - Questionnaire
-    - QuestionnaireResponseValue
-    - ObservationValue
-    range: string
-  name_shortened:
-    name: name_shortened
-    description: An abbreviated name of a research program, project, or study.
+    - DeviceExposure
+    range: DeviceExposureConceptEnum
+  age_at_exposure_start:
+    name: age_at_exposure_start
+    description: The Participant's age (expressed in days) at the exposure start date.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    alias: name_shortened
-    owner: ResearchStudy
+    alias: age_at_exposure_start
+    owner: DeviceExposure
     domain_of:
-    - ResearchStudy
-    range: string
-  description:
-    name: description
-    description: An unabridged description of a research program, project, or study.
+    - DrugExposure
+    - DeviceExposure
+    range: integer
+    unit:
+      ucum_code: d
+  age_at_exposure_end:
+    name: age_at_exposure_end
+    description: The Participant's age (expressed in days) at the exposure end date,
+      if available. Otherwise equal to age_at_exposure_start.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
-    alias: description
-    owner: ResearchStudy
+    alias: age_at_exposure_end
+    owner: DeviceExposure
     domain_of:
-    - Participant
-    - ResearchStudy
-    - Questionnaire
-    - Document
-    - Specimen
-    - BiologicProduct
-    range: string
-  description_shortened:
-    name: description_shortened
-    description: An abbreviated description of a research program, project, or study.
+    - DrugExposure
+    - DeviceExposure
+    range: integer
+    unit:
+      ucum_code: d
+  exposure_provenance:
+    name: exposure_provenance
+    description: A value representing the provenance of the DeviceExposure record.
+      From OMOP Device Types.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    alias: description_shortened
-    owner: ResearchStudy
+    alias: exposure_provenance
+    owner: DeviceExposure
     domain_of:
-    - ResearchStudy
-    range: string
-  sponsor:
-    name: sponsor
-    description: An entity that is responsible for the initiation, management, and/or
-      financing of a research project.
+    - DrugExposure
+    - DeviceExposure
+    range: DeviceExposureProvenanceEnum
+  quantity:
+    name: quantity
+    description: Amount of device used. If not present in source, default to 1.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    alias: sponsor
-    owner: ResearchStudy
+    alias: quantity
+    owner: DeviceExposure
     domain_of:
-    - ResearchStudy
-    range: string
-  date_started:
-    name: date_started
-    description: The date when the research project began.
+    - DrugExposure
+    - DeviceExposure
+    range: float
+    required: false
+  associated_participant:
+    name: associated_participant
+    description: A reference to the Participant to which the exposure is attributed.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    alias: date_started
-    owner: ResearchStudy
+    alias: associated_participant
+    owner: DeviceExposure
     domain_of:
-    - ResearchStudy
-    - SpecimenCreationActivity
-    - SpecimenProcessingActivity
-    - SpecimenStorageActivity
-    - SpecimenTransportActivity
-    range: TimePoint
-  date_ended:
-    name: date_ended
-    description: The date when the research project ended.
+    - Demography
+    - Visit
+    - Condition
+    - DrugExposure
+    - DeviceExposure
+    - ObservationSet
+    - Observation
+    range: Participant
+  associated_visit:
+    name: associated_visit
+    description: A reference to the Visit the exposure is associated with, if any.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    alias: date_ended
-    owner: ResearchStudy
+    alias: associated_visit
+    owner: DeviceExposure
     domain_of:
-    - ResearchStudy
-    - SpecimenCreationActivity
-    - SpecimenProcessingActivity
-    - SpecimenStorageActivity
-    - SpecimenTransportActivity
-    range: TimePoint
-  url:
-    name: url
-    description: A URL address for a resource that provides information about a research
-      program, project, or study.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    alias: url
-    owner: ResearchStudy
-    domain_of:
-    - ResearchStudy
-    - Questionnaire
-    - Document
-    range: uriorcurie
-  part_of:
-    name: part_of
-    description: A reference to a parent ResearchStudy (e.g. a link to the overarching
-      CPTAC ResearchStudy from a substudy of CPTAC)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    alias: part_of
-    owner: ResearchStudy
-    domain_of:
-    - ResearchStudy
-    - QuestionnaireItem
-    range: ResearchStudy
-  research_project_type:
-    name: research_project_type
-    description: The 'type' of ResearchStudy represented (e.g. a broad-based Program
-      like 'CPTAC' or a more focused Project like 'CPTAC PDAC Discovery Study')
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    alias: research_project_type
-    owner: ResearchStudy
-    domain_of:
-    - ResearchStudy
-    range: string
-  associated_timepoint:
-    name: associated_timepoint
-    description: A collection of timepoint observations that are relevant to research
-      projects (e.g. date of IACUC approval, date of IRB approval, date of embargo
-      end, etc.)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    multivalued: true
-    alias: associated_timepoint
-    owner: ResearchStudy
-    domain_of:
-    - ResearchStudy
-    range: TimePoint
-  principal_investigator:
-    name: principal_investigator
-    description: The investigator or investigators leading a project.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    multivalued: true
-    alias: principal_investigator
-    owner: ResearchStudy
-    domain_of:
-    - ResearchStudy
-    range: string
-  consents:
-    name: consents
-    description: 'Data Use Restrictions that are used to indicate permissions/restrictions
-      for datasets and/or materials, and relates to the purposes for which datasets
-      and/or material might be removed, stored or used. Based on the Data Use Ontology
-      : see http://www.obofoundry.org/ontology/duo.html'
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    multivalued: true
-    alias: consents
-    owner: ResearchStudy
-    domain_of:
-    - Participant
-    - ResearchStudy
-    range: Consent
+    - QuestionnaireResponse
+    - Condition
+    - DrugExposure
+    - DeviceExposure
+    range: Visit
+    required: false
   identity:
     name: identity
     description: A 'business' identifier or accession number for the entity, typically
@@ -716,7 +506,7 @@ attributes:
     slot_uri: schema:identifier
     multivalued: true
     alias: identity
-    owner: ResearchStudy
+    owner: DeviceExposure
     domain_of:
     - Person
     - Demography
@@ -749,7 +539,7 @@ attributes:
     slot_uri: schema:identifier
     identifier: true
     alias: id
-    owner: ResearchStudy
+    owner: DeviceExposure
     domain_of:
     - Entity
     range: uriorcurie
