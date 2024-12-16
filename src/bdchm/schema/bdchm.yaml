@@ -504,6 +504,41 @@ classes:
     slots:
       - identity
 
+  DeviceExposure:
+    is_a: Entity
+    description: >-
+       DeviceExposures are records of a Person suggesting exposure to a foreign object. The source is typically physical objects used in procedures, measurements, or observations.
+    attributes:
+      device_concept:
+        range: DeviceExposureConceptEnum
+        description: The coded value for a device. Primarily SNOMED. The syntax for the enum may need work.
+      age_at_exposure_start:
+        range: integer
+        description: The Participant's age (expressed in days) at the exposure start date.
+        unit:
+          ucum_code: d
+      age_at_exposure_end:
+        range: integer
+        description: The Participant's age (expressed in days) at the exposure end date, if available. Otherwise equal to age_at_exposure_start.
+        unit:
+          ucum_code: d
+      exposure_provenance:
+        range: DeviceExposureProvenanceEnum
+        description: A value representing the provenance of the DeviceExposure record. From OMOP Device Types.
+      quantity:
+        range: float
+        description: Amount of device used. If not present in source, default to 1.
+        required: false
+      associated_participant:
+        range: Participant
+        description: A reference to the Participant to which the exposure is attributed.
+      associated_visit:
+        description: A reference to the Visit the exposure is associated with, if any.
+        range: Visit
+        required: false
+    slots:
+      - identity
+
   DimensionalObservation:
     is_a: Observation
     description: A structured object that describes a single data item about the physical dimensions of an entity (e.g. length width, area), as generated through a point-in-time observation or measurement.
@@ -2345,6 +2380,262 @@ enums:
       OCULAR:
         description: Ocular
         meaning: OMOP:40549429                                                   
+
+  DeviceExposureConceptEnum:
+    description: Device codes from SNOMED.
+    see_also:
+      - https://bioregistry.io/registry/snomedct
+      - https://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html
+      - https://www.nlm.nih.gov/healthit/snomedct/index.html
+      - urn:oid:2.16.840.1.113883.6.96
+    reachable_from:
+      source_ontology: bioregistry:snomedct
+    pv_formula: LABEL
+
+  DeviceExposureProvenanceEnum:
+    description: Source of device exposure record
+    comments: Taken from OMOP Type Concept Domain
+    permissible_values:
+      CASE REPORT FORM:
+        description: Case Report Form
+        meaning: OMOP:32809
+      CLAIM:
+        description: Claim
+        meaning: OMOP:32810
+      CLAIM AUTHORIZATION:
+        description: Claim authorization
+        meaning: OMOP:32811
+      CLAIM DISCHARGE RECORD:
+        description: Claim discharge record
+        meaning: OMOP:32812
+      CLAIM ENROLMENT RECORD:
+        description: Claim enrolment record
+        meaning: OMOP:32813
+      COST RECORD:
+        description: Cost record
+        meaning: OMOP:32814
+      DEATH CERTIFICATE:
+        description: Death Certificate
+        meaning: OMOP:32815
+      DENTAL CLAIM:
+        description: Dental claim
+        meaning: OMOP:32816
+      EHR:
+        description: EHR
+        meaning: OMOP:32817
+      EHR ADMINISTRATION RECORD:
+        description: EHR administration record
+        meaning: OMOP:32818
+      EHR ADMISSION NOTE:
+        description: EHR admission note
+        meaning: OMOP:32819
+      EHR ANCILLARY REPORT:
+        description: EHR ancillary report
+        meaning: OMOP:32820
+      EHR BILLING RECORD:
+        description: EHR billing record
+        meaning: OMOP:32821
+      EHR CHIEF COMPLAINT:
+        description: EHR chief complaint
+        meaning: OMOP:32822
+      EHR DISCHARGE RECORD:
+        description: EHR discharge record
+        meaning: OMOP:32823
+      EHR DISCHARGE SUMMARY:
+        description: EHR discharge summary
+        meaning: OMOP:32824
+      EHR DISPENSING RECORD:
+        description: EHR dispensing record
+        meaning: OMOP:32825
+      EHR EMERGENCY ROOM NOTE:
+        description: EHR emergency room note
+        meaning: OMOP:32826
+      EHR ENCOUNTER RECORD:
+        description: EHR encounter record
+        meaning: OMOP:32827
+      EHR EPISODE RECORD:
+        description: EHR episode record
+        meaning: OMOP:32828
+      EHR INPATIENT NOTE:
+        description: EHR inpatient note
+        meaning: OMOP:32829
+      EHR MEDICATION LIST:
+        description: EHR medication list
+        meaning: OMOP:32830
+      EHR NOTE:
+        description: EHR note
+        meaning: OMOP:32831
+      EHR NURSING REPORT:
+        description: EHR nursing report
+        meaning: OMOP:32832
+      EHR ORDER:
+        description: EHR order
+        meaning: OMOP:32833
+      EHR OUTPATIENT NOTE:
+        description: EHR outpatient note
+        meaning: OMOP:32834
+      EHR PATHOLOGY REPORT:
+        description: EHR Pathology report
+        meaning: OMOP:32835
+      EHR PHYSICAL EXAMINATION:
+        description: EHR physical examination
+        meaning: OMOP:32836
+      EHR PLANNED DISPENSING RECORD:
+        description: EHR planned dispensing record
+        meaning: OMOP:32837
+      EHR PERSCRIPTION:
+        description: EHR prescription
+        meaning: OMOP:32838
+      EHR PERSCRIPTION ISSUE RECORD:
+        description: EHR prescription issue record
+        meaning: OMOP:32839
+      EHR PROBLEM LIST:
+        description: EHR problem list
+        meaning: OMOP:32840
+      EHR RADIOLOGY REPORT:
+        description: EHR radiology report
+        meaning: OMOP:32841
+      EHR REFERRAL RECORD:
+        description: EHR referral record
+        meaning: OMOP:32842
+      EXTERNAL CDM INSTANCE:
+        description: External CDM instance
+        meaning: OMOP:32843
+      FACILITY CLAIM:
+        description: Facility claim
+        meaning: OMOP:32844
+      FACILITY CLAIM DETAIL:
+        description: Facility claim detail
+        meaning: OMOP:32845
+      FACILITY CLAIM HEADER:
+        description: Facility claim header
+        meaning: OMOP:32846
+      GEOGRAPHIC ISOLATION RECORD:
+        description: Geographic isolation record
+        meaning: OMOP:32847
+      GOVERNMENT REPORT:
+        description: Government report
+        meaning: OMOP:32848
+      HEALTH INFORMATION EXCHANGE RECORD:
+        description: Health Information Exchange record
+        meaning: OMOP:32849
+      HEALTH RISK ASSESSMENT:
+        description: Health Risk Assessment
+        meaning: OMOP:32850
+      HEALTHCARE PROFESSIONAL FILLED SURVEY:
+        description: Healthcare professional filled survey
+        meaning: OMOP:32851
+      HOSPITAL COST:
+        description: Hospital cost
+        meaning: OMOP:32852
+      INPATIENT CLAIM:
+        description: Inpatient claim
+        meaning: OMOP:32853
+      INPATIENT CLAIM DETAIL:
+        description: Inpatient claim detail
+        meaning: OMOP:32854
+      INPATIENT CLAIM HEADER:
+        description: Inpatient claim header
+        meaning: OMOP:32855
+      LAB:
+        description: Lab
+        meaning: OMOP:32856
+      MAIL ORDER RECORD:
+        description: Mail order record
+        meaning: OMOP:32857
+      NLP:
+        description: NLP
+        meaning: OMOP:32858
+      OUTPATIENT CLAIM:
+        description: Outpatient claim
+        meaning: OMOP:32859
+      OUTPATIENT CLAIM DETAIL:
+        description: Outpatient claim detail
+        meaning: OMOP:32860
+      OUTPATIENT CLAIM HEADER:
+        description: Outpatient claim header
+        meaning: OMOP:32861
+      PATIENT FILLED SURVEY:
+        description: Patient filled survey
+        meaning: OMOP:32862
+      PATIENT OR PAYER PAID RECORD:
+        description: Patient or payer paid record
+        meaning: OMOP:32863
+      PATIENT REPORTED COST:
+        description: Patient reported cost
+        meaning: OMOP:32864
+      PATIENT SELF-REPORT:
+        description: Patient self-report
+        meaning: OMOP:32865
+      PATIENT SELF-TESTED:
+        description: Patient self-tested
+        meaning: OMOP:705183
+      PAYER SYSTEM RECORD (PAID PREMIUM):
+        description: Payer system record (paid premium)
+        meaning: OMOP:32866
+      PAYER SYSTEM RECORD (PRIMARY PAYER):
+        description: Payer system record (primary payer)
+        meaning: OMOP:32867
+      PAYER SYSTEM RECORD (SECONDARY PAYER):
+        description: Payer system record (secondary payer)
+        meaning: OMOP:32868
+      PHARMACY CLAIM:
+        description: Pharmacy claim
+        meaning: OMOP:32869
+      POINT OF CARE/EXPRESS LAB:
+        description: Point of care/express lab
+        meaning: OMOP:703249
+      PRE-QUALIFICATION TIME PERIOD:
+        description: Pre-qualification time period
+        meaning: OMOP:32870
+      PROFESSIONAL CLAIM:
+        description: Professional claim
+        meaning: OMOP:32871
+      PROFESSIONAL CLAIM DETAIL:
+        description: Professional claim detail
+        meaning: OMOP:32872
+      PROFESSIONAL CLAIM HEADER:
+        description: Professional claim header
+        meaning: OMOP:32873
+      PROVIDER CHARGE LIST PRICE:
+        description: Provider charge list price
+        meaning: OMOP:32874
+      PROVIDER FINANCIAL SYSTEM:
+        description: Provider financial system
+        meaning: OMOP:32875
+      PROVIDER INCURRED COST RECORD:
+        description: Provider incurred cost record
+        meaning: OMOP:32876
+      RANDOMIZATION RECORD:
+        description: Randomization record
+        meaning: OMOP:32877
+      REFERENCE LAB:
+        description: Reference lab
+        meaning: OMOP:32878
+      REGISTRY:
+        description: Registry
+        meaning: OMOP:32879
+      STANDARD ALGORITHM:
+        description: Standard algorithm
+        meaning: OMOP:32880
+      STANDARD ALGORITHM FROM CLAIMS:
+        description: Standard algorithm from claims
+        meaning: OMOP:32881
+      STANDARD ALGORITHM FROM EHR:
+        description: Standard algorithm from EHR
+        meaning: OMOP:32882
+      SURVEY:
+        description: Survey
+        meaning: OMOP:32883
+      URGENT LAB:
+        description: Urgent lab
+        meaning: OMOP:32884
+      US SOCIAL SECURITY DEATH MASTER FILE:
+        description: US Social Security Death Master File
+        meaning: OMOP:32885
+      VISION CLAIM:
+        description: Vision claim
+        meaning: OMOP:32886
 
   SpecimenTypeEnum:
     name: SpecimenTypeEnum
