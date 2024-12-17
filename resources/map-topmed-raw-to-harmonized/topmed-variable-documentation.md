@@ -24,7 +24,7 @@
 * [cimt_2](#cimt_2)
 
 <a id="cac_score_1"></a>
-## **cac_score_1** (cac_score)
+## atherosclerosis: **cac_score_1** (cac_score)
   Coronary artery calcification (CAC) score using Agatston scoring of CT scan(s) of coronary arteries
   * **Harmonization Units**:
     * [Amish](#cac_score_1-amish)
@@ -61,7 +61,7 @@
     
     
 <a id="cac_score_1-amish"></a>
-  * ### **Amish**:
+  * ### atherosclerosis/cac_score_1 -- **Amish**:
     * Variables: `phs000956.v2.pht005002.v1.phv00252986.v1`, `phs000956.v2.pht005002.v1.phv00252987.v1`
     * Function:
       ```r
@@ -87,7 +87,7 @@
       }
       ```
 <a id="cac_score_1-chs"></a>
-  * ### **CHS**:
+  * ### atherosclerosis/cac_score_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001459.v1.phv00100691.v1`, `phs000287.v6.pht001475.v1.phv00102583.v1`
     * Function:
       ```r
@@ -118,7 +118,7 @@
       }
       ```
 <a id="cac_score_1-fhs_gen3"></a>
-  * ### **FHS_Gen3**:
+  * ### atherosclerosis/cac_score_1 -- **FHS_Gen3**:
     * Variables: `phs000007.v29.pht000144.v4.phv00023194.v3`, `phs000007.v29.pht000144.v4.phv00023195.v3`, `phs000007.v29.pht000144.v4.phv00023197.v3`, `phs000007.v29.pht003099.v4.phv00177930.v4`
     * Function:
       ```r
@@ -154,7 +154,7 @@
       }
       ```
 <a id="cac_score_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### atherosclerosis/cac_score_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht000145.v4.phv00023200.v3`, `phs000007.v29.pht000145.v4.phv00023201.v3`, `phs000007.v29.pht000145.v4.phv00023203.v3`, `phs000007.v29.pht003099.v4.phv00177930.v4`
     * Function:
       ```r
@@ -190,7 +190,7 @@
       }
       ```
 <a id="cac_score_1-fhs_omnis"></a>
-  * ### **FHS_Omnis**:
+  * ### atherosclerosis/cac_score_1 -- **FHS_Omnis**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht005161.v1.phv00257669.v1`, `phs000007.v29.pht005161.v1.phv00257670.v1`, `phs000007.v29.pht005161.v1.phv00257672.v1`
     * Function:
       ```r
@@ -222,7 +222,7 @@
       }
       ```
 <a id="cac_score_1-genoa"></a>
-  * ### **GENOA**:
+  * ### atherosclerosis/cac_score_1 -- **GENOA**:
     * Variables: `phs001238.v1.pht006034.v1.phv00277327.v1`, `phs001238.v1.pht006034.v1.phv00277347.v1`
     * Function:
       ```r
@@ -246,7 +246,7 @@
       }
       ```
 <a id="cac_score_1-jhs"></a>
-  * ### **JHS**:
+  * ### atherosclerosis/cac_score_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001948.v1.phv00126002.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
     * Function:
       ```r
@@ -275,7 +275,7 @@
       }
       ```
 <a id="cac_score_1-mesa_airnr"></a>
-  * ### **MESA_AirNR**:
+  * ### atherosclerosis/cac_score_1 -- **MESA_AirNR**:
     * Variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082660.v1`
     * Function:
       ```r
@@ -299,7 +299,7 @@
       }
       ```
 <a id="cac_score_1-mesa_classic"></a>
-  * ### **MESA_Classic**:
+  * ### atherosclerosis/cac_score_1 -- **MESA_Classic**:
     * Variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084521.v2`
     * Function:
       ```r
@@ -323,7 +323,7 @@
       }
       ```
 <a id="cac_score_1-mesa_family"></a>
-  * ### **MESA_Family**:
+  * ### atherosclerosis/cac_score_1 -- **MESA_Family**:
     * Variables: `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087105.v1`
     * Function:
       ```r
@@ -347,7 +347,7 @@
       }
       ```
 <a id="cac_volume_1"></a>
-## **cac_volume_1** (cac_volume)
+## atherosclerosis: **cac_volume_1** (cac_volume)
   Coronary artery calcium volume using CT scan(s) of coronary arteries
   * **Harmonization Units**:
     * [FHS](#cac_volume_1-fhs)
@@ -375,7 +375,7 @@
     
     Please note that the study component calcium volume variables for FHS sub-cohorts "Offspring" and "Generation 3" were measured at a later time than the component study variables used for harmonized `cac_score`.
 <a id="cac_volume_1-fhs"></a>
-  * ### **FHS**:
+  * ### atherosclerosis/cac_volume_1 -- **FHS**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht005161.v1.phv00257671.v1`, `phs000007.v29.pht005161.v1.phv00257672.v1`
     * Function:
       ```r
@@ -406,7 +406,7 @@
       }
       ```
 <a id="cac_volume_1-mesa_airnr"></a>
-  * ### **MESA_AirNR**:
+  * ### atherosclerosis/cac_volume_1 -- **MESA_AirNR**:
     * Variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082663.v1`
     * Function:
       ```r
@@ -430,7 +430,7 @@
       }
       ```
 <a id="cac_volume_1-mesa_classic"></a>
-  * ### **MESA_Classic**:
+  * ### atherosclerosis/cac_volume_1 -- **MESA_Classic**:
     * Variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084524.v2`
     * Function:
       ```r
@@ -454,7 +454,7 @@
       }
       ```
 <a id="cac_volume_1-mesa_family"></a>
-  * ### **MESA_Family**:
+  * ### atherosclerosis/cac_volume_1 -- **MESA_Family**:
     * Variables: `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087108.v1`
     * Function:
       ```r
@@ -478,7 +478,7 @@
       }
       ```
 <a id="carotid_plaque_1"></a>
-## **carotid_plaque_1** (carotid_plaque)
+## atherosclerosis: **carotid_plaque_1** (carotid_plaque)
   Presence or absence of carotid plaque.
   * **Harmonization Units**:
     * [Amish](#carotid_plaque_1-amish)
@@ -524,7 +524,7 @@
     [^1]:[Documentation Without Data Collection Forms phd002779.1](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/document.cgi?study_id=phs000287.v6.p1&phd=2779)
     
 <a id="carotid_plaque_1-amish"></a>
-  * ### **Amish**:
+  * ### atherosclerosis/carotid_plaque_1 -- **Amish**:
     * Variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00252989.v1`
     * Function:
       ```r
@@ -552,7 +552,7 @@
       }
       ```
 <a id="carotid_plaque_1-aric"></a>
-  * ### **ARIC**:
+  * ### atherosclerosis/carotid_plaque_1 -- **ARIC**:
     * Variables: `phs000280.v3.pht004063.v1.phv00204712.v1`, `phs000280.v3.pht004063.v1.phv00204791.v1`
     * Function:
       ```r
@@ -578,7 +578,7 @@
       }
       ```
 <a id="carotid_plaque_1-chs"></a>
-  * ### **CHS**:
+  * ### atherosclerosis/carotid_plaque_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100290.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001473.v1.phv00101306.v1`, `phs000287.v6.pht001473.v1.phv00101307.v1`, `phs000287.v6.pht001473.v1.phv00101317.v1`, `phs000287.v6.pht001473.v1.phv00101318.v1`
     * Function:
       ```r
@@ -642,7 +642,7 @@
       }
       ```
 <a id="carotid_plaque_1-jhs"></a>
-  * ### **JHS**:
+  * ### atherosclerosis/carotid_plaque_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001978.v1.phv00128573.v1`
     * Function:
       ```r
@@ -669,7 +669,7 @@
       }
       ```
 <a id="carotid_plaque_1-mesa"></a>
-  * ### **MESA**:
+  * ### atherosclerosis/carotid_plaque_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084797.v2`, `phs000209.v13.pht001116.v10.phv00084802.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`
     * Function:
       ```r
@@ -695,7 +695,7 @@
       }
       ```
 <a id="carotid_stenosis_1"></a>
-## **carotid_stenosis_1** (carotid_stenosis)
+## atherosclerosis: **carotid_stenosis_1** (carotid_stenosis)
   Extent of narrowing of the carotid artery.
   * **Harmonization Units**:
     * [CHS](#carotid_stenosis_1-chs)
@@ -737,7 +737,7 @@
     [^1]:[Documentation Without Data Collection Forms phd002779.1](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/document.cgi?study_id=phs000287.v6.p1&phd=2779)
     
 <a id="carotid_stenosis_1-chs"></a>
-  * ### **CHS**:
+  * ### atherosclerosis/carotid_stenosis_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100290.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001473.v1.phv00101302.v1`, `phs000287.v6.pht001473.v1.phv00101303.v1`, `phs000287.v6.pht001473.v1.phv00101313.v1`, `phs000287.v6.pht001473.v1.phv00101314.v1`
     * Function:
       ```r
@@ -827,7 +827,7 @@
       }
       ```
 <a id="carotid_stenosis_1-fhs"></a>
-  * ### **FHS**:
+  * ### atherosclerosis/carotid_stenosis_1 -- **FHS**:
     * Variables: `phs000007.v29.pht000083.v6.phv00021700.v5`, `phs000007.v29.pht000083.v6.phv00021702.v5`, `phs000007.v29.pht003099.v4.phv00177940.v4`
     * Function:
       ```r
@@ -852,7 +852,7 @@
       }
       ```
 <a id="carotid_stenosis_1-mesa"></a>
-  * ### **MESA**:
+  * ### atherosclerosis/carotid_stenosis_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084798.v2`, `phs000209.v13.pht001116.v10.phv00084803.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`
     * Function:
       ```r
@@ -876,7 +876,7 @@
       }
       ```
 <a id="cimt_1"></a>
-## **cimt_1** (cimt)
+## atherosclerosis: **cimt_1** (cimt)
   Common carotid intima-media thickness, calculated as the mean of two values: mean of multiple thickness estimates from the left far wall and from the right far wall.
   * **Harmonization Units**:
     * [Amish](#cimt_1-amish)
@@ -913,7 +913,7 @@
     | MESA  | GE Logiq 700               |
     
 <a id="cimt_1-amish"></a>
-  * ### **Amish**:
+  * ### atherosclerosis/cimt_1 -- **Amish**:
     * Variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00252988.v1`
     * Function:
       ```r
@@ -941,7 +941,7 @@
       }
       ```
 <a id="cimt_1-aric"></a>
-  * ### **ARIC**:
+  * ### atherosclerosis/cimt_1 -- **ARIC**:
     * Variables: `phs000280.v3.pht004063.v1.phv00204712.v1`, `phs000280.v3.pht004207.v1.phv00211095.v1`, `phs000280.v3.pht004207.v1.phv00211096.v1`, `phs000280.v3.pht004207.v1.phv00211097.v1`, `phs000280.v3.pht004207.v1.phv00211101.v1`, `phs000280.v3.pht004207.v1.phv00211102.v1`, `phs000280.v3.pht004207.v1.phv00211103.v1`
     * Function:
       ```r
@@ -987,7 +987,7 @@
       }
       ```
 <a id="cimt_1-chs"></a>
-  * ### **CHS**:
+  * ### atherosclerosis/cimt_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001468.v1.phv00100864.v1`
     * Function:
       ```r
@@ -1010,7 +1010,7 @@
       }
       ```
 <a id="cimt_1-fhs"></a>
-  * ### **FHS**:
+  * ### atherosclerosis/cimt_1 -- **FHS**:
     * Variables: `phs000007.v29.pht000907.v5.phv00076366.v4`, `phs000007.v29.pht003099.v4.phv00177940.v4`
     * Function:
       ```r
@@ -1030,7 +1030,7 @@
       }
       ```
 <a id="cimt_1-jhs"></a>
-  * ### **JHS**:
+  * ### atherosclerosis/cimt_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001978.v1.phv00128531.v1`, `phs000286.v5.pht001978.v1.phv00128532.v1`, `phs000286.v5.pht001978.v1.phv00128533.v1`, `phs000286.v5.pht001978.v1.phv00128534.v1`, `phs000286.v5.pht001978.v1.phv00128535.v1`, `phs000286.v5.pht001978.v1.phv00128536.v1`
     * Function:
       ```r
@@ -1077,7 +1077,7 @@
       }
       ```
 <a id="cimt_1-mesa_airnr"></a>
-  * ### **MESA_AirNR**:
+  * ### atherosclerosis/cimt_1 -- **MESA_AirNR**:
     * Variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001528.v1.phv00111973.v1`, `phs000209.v13.pht001528.v1.phv00112049.v1`
     * Function:
       ```r
@@ -1101,7 +1101,7 @@
       }
       ```
 <a id="cimt_1-mesa_classic_family"></a>
-  * ### **MESA_classic_family**:
+  * ### atherosclerosis/cimt_1 -- **MESA_classic_family**:
     * Variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084879.v2`, `phs000209.v13.pht001116.v10.phv00084958.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00128698.v1`
     * Function:
       ```r
@@ -1126,7 +1126,7 @@
       }
       ```
 <a id="cimt_2"></a>
-## **cimt_2** (cimt)
+## atherosclerosis: **cimt_2** (cimt)
   Common carotid intima-media thickness, calculated as the mean of four values: maximum of multiple thickness estimates from the left far wall, left near wall, right far wall, and right near wall.
   * **Harmonization Units**:
     * [ARIC](#cimt_2-aric)
@@ -1167,7 +1167,7 @@
     [^1]:[Documentation Without Data Collection Forms phd002779.1](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/document.cgi?study_id=phs000287.v6.p1&phd=2779)
     
 <a id="cimt_2-aric"></a>
-  * ### **ARIC**:
+  * ### atherosclerosis/cimt_2 -- **ARIC**:
     * Variables: `phs000280.v3.pht004063.v1.phv00204712.v1`, `phs000280.v3.pht004207.v1.phv00211053.v1`, `phs000280.v3.pht004207.v1.phv00211054.v1`, `phs000280.v3.pht004207.v1.phv00211055.v1`, `phs000280.v3.pht004207.v1.phv00211059.v1`, `phs000280.v3.pht004207.v1.phv00211060.v1`, `phs000280.v3.pht004207.v1.phv00211061.v1`, `phs000280.v3.pht004207.v1.phv00211081.v1`, `phs000280.v3.pht004207.v1.phv00211082.v1`, `phs000280.v3.pht004207.v1.phv00211083.v1`, `phs000280.v3.pht004207.v1.phv00211087.v1`, `phs000280.v3.pht004207.v1.phv00211088.v1`, `phs000280.v3.pht004207.v1.phv00211089.v1`
     * Function:
       ```r
@@ -1231,7 +1231,7 @@
       }
       ```
 <a id="cimt_2-chs"></a>
-  * ### **CHS**:
+  * ### atherosclerosis/cimt_2 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100290.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001473.v1.phv00101238.v1`, `phs000287.v6.pht001473.v1.phv00101239.v1`, `phs000287.v6.pht001473.v1.phv00101250.v1`, `phs000287.v6.pht001473.v1.phv00101251.v1`, `phs000287.v6.pht001473.v1.phv00101264.v1`, `phs000287.v6.pht001473.v1.phv00101265.v1`, `phs000287.v6.pht001473.v1.phv00101276.v1`, `phs000287.v6.pht001473.v1.phv00101277.v1`
     * Function:
       ```r
@@ -1296,7 +1296,7 @@
       }
       ```
 <a id="cimt_2-fhs"></a>
-  * ### **FHS**:
+  * ### atherosclerosis/cimt_2 -- **FHS**:
     * Variables: `phs000007.v29.pht000083.v6.phv00021728.v5`, `phs000007.v29.pht003099.v4.phv00177940.v4`
     * Function:
       ```r
@@ -1313,7 +1313,7 @@
       }
       ```
 <a id="cimt_2-jhs"></a>
-  * ### **JHS**:
+  * ### atherosclerosis/cimt_2 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001978.v1.phv00128541.v1`, `phs000286.v5.pht001978.v1.phv00128542.v1`, `phs000286.v5.pht001978.v1.phv00128543.v1`, `phs000286.v5.pht001978.v1.phv00128544.v1`, `phs000286.v5.pht001978.v1.phv00128545.v1`, `phs000286.v5.pht001978.v1.phv00128546.v1`, `phs000286.v5.pht001978.v1.phv00128561.v1`, `phs000286.v5.pht001978.v1.phv00128562.v1`, `phs000286.v5.pht001978.v1.phv00128563.v1`, `phs000286.v5.pht001978.v1.phv00128564.v1`, `phs000286.v5.pht001978.v1.phv00128565.v1`, `phs000286.v5.pht001978.v1.phv00128566.v1`
     * Function:
       ```r
@@ -1390,7 +1390,7 @@
       }
       ```
 <a id="cimt_2-mesa_airnr"></a>
-  * ### **MESA_airnr**:
+  * ### atherosclerosis/cimt_2 -- **MESA_airnr**:
     * Variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001528.v1.phv00111971.v1`, `phs000209.v13.pht001528.v1.phv00111975.v1`, `phs000209.v13.pht001528.v1.phv00112047.v1`, `phs000209.v13.pht001528.v1.phv00112051.v1`
     * Function:
       ```r
@@ -1413,7 +1413,7 @@
       }
       ```
 <a id="cimt_2-mesa_classic_family"></a>
-  * ### **MESA_classic_family**:
+  * ### atherosclerosis/cimt_2 -- **MESA_classic_family**:
     * Variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084877.v2`, `phs000209.v13.pht001116.v10.phv00084881.v2`, `phs000209.v13.pht001116.v10.phv00084956.v2`, `phs000209.v13.pht001116.v10.phv00084959.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087557.v1`, `phs000209.v13.pht001121.v3.phv00087558.v1`, `phs000209.v13.pht001121.v3.phv00087559.v1`, `phs000209.v13.pht001121.v3.phv00087560.v1`
     * Function:
       ```r
@@ -1452,7 +1452,7 @@
 * [pad_incident_1](#pad_incident_1)
 
 <a id="angina_incident_1"></a>
-## **angina_incident_1** (angina_incident)
+## atherosclerosis_events_incident: **angina_incident_1** (angina_incident)
   An indicator of whether a subject had an angina event (that was verified by adjudication or by medical professionals) during the follow-up period.
   * **Harmonization Units**:
     * [FHS](#angina_incident_1-fhs)
@@ -1473,7 +1473,7 @@
     
     
 <a id="angina_incident_1-fhs"></a>
-  * ### **FHS**:
+  * ### atherosclerosis_events_incident/angina_incident_1 -- **FHS**:
     * Variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
     * Function:
       ```r
@@ -1559,7 +1559,7 @@
       }
       ```
 <a id="angina_incident_1-whi"></a>
-  * ### **WHI**:
+  * ### atherosclerosis_events_incident/angina_incident_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003407.v3.phv00193145.v3`, `phs000200.v11.pht003407.v3.phv00193146.v3`, `phs000200.v11.pht003407.v3.phv00193504.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`
     * Function:
       ```r
@@ -1585,7 +1585,7 @@
       }
       ```
 <a id="cabg_incident_1"></a>
-## **cabg_incident_1** (cabg_incident)
+## atherosclerosis_events_incident: **cabg_incident_1** (cabg_incident)
   An indicator of whether a subject had a coronary artery bypass graft (CABG) procedure (that was verified by adjudication or by medical professionals) during the follow-up period.
   * **Harmonization Units**:
     * [FHS](#cabg_incident_1-fhs)
@@ -1607,7 +1607,7 @@
     
     
 <a id="cabg_incident_1-fhs"></a>
-  * ### **FHS**:
+  * ### atherosclerosis_events_incident/cabg_incident_1 -- **FHS**:
     * Variables: `phs000007.v30.pht000389.v10.phv00054697.v8`, `phs000007.v30.pht000389.v10.phv00163410.v7`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
     * Function:
       ```r
@@ -1684,7 +1684,7 @@
       }
       ```
 <a id="cabg_incident_1-whi"></a>
-  * ### **WHI**:
+  * ### atherosclerosis_events_incident/cabg_incident_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003407.v3.phv00193157.v3`, `phs000200.v11.pht003407.v3.phv00193158.v3`, `phs000200.v11.pht003407.v3.phv00193504.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`
     * Function:
       ```r
@@ -1708,7 +1708,7 @@
       }
       ```
 <a id="cad_followup_start_age_1"></a>
-## **cad_followup_start_age_1** (cad_followup_start_age)
+## atherosclerosis_events_incident: **cad_followup_start_age_1** (cad_followup_start_age)
   Age of subject at the start of the follow-up period during which atherosclerosis events were reviewed and adjudicated.
   * **Harmonization Units**:
     * [FHS](#cad_followup_start_age_1-fhs)
@@ -1727,7 +1727,7 @@
     
     
 <a id="cad_followup_start_age_1-fhs"></a>
-  * ### **FHS**:
+  * ### atherosclerosis_events_incident/cad_followup_start_age_1 -- **FHS**:
     * Variables: `phs000007.v30.pht003099.v5.phv00177930.v5`
     * Function:
       ```r
@@ -1742,7 +1742,7 @@
       }
       ```
 <a id="cad_followup_start_age_1-whi"></a>
-  * ### **WHI**:
+  * ### atherosclerosis_events_incident/cad_followup_start_age_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078437.v6`
     * Function:
       ```r
@@ -1757,7 +1757,7 @@
       }
       ```
 <a id="chd_death_definite_1"></a>
-## **chd_death_definite_1** (chd_death_definite)
+## atherosclerosis_events_incident: **chd_death_definite_1** (chd_death_definite)
   An indicator of whether the cause of death was determined by medical professionals or technicians to be "definite" coronary heart disease for subjects who died during the follow-up period.
   * **Harmonization Units**:
     * [FHS](#chd_death_definite_1-fhs)
@@ -1774,7 +1774,7 @@
     
     
 <a id="chd_death_definite_1-fhs"></a>
-  * ### **FHS**:
+  * ### atherosclerosis_events_incident/chd_death_definite_1 -- **FHS**:
     * Variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
     * Function:
       ```r
@@ -1873,7 +1873,7 @@
       }
       ```
 <a id="chd_death_definite_1-whi"></a>
-  * ### **WHI**:
+  * ### atherosclerosis_events_incident/chd_death_definite_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003407.v3.phv00193498.v3`, `phs000200.v11.pht003407.v3.phv00193504.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`, `phs000200.v11.pht003409.v3.phv00193531.v2`, `phs000200.v11.pht003409.v3.phv00193532.v2`
     * Function:
       ```r
@@ -1898,7 +1898,7 @@
       }
       ```
 <a id="chd_death_probable_1"></a>
-## **chd_death_probable_1** (chd_death_probable)
+## atherosclerosis_events_incident: **chd_death_probable_1** (chd_death_probable)
   An indicator of whether the cause of death was determined by medical professionals or technicians to be "probable" or "definite" coronary heart disease for subjects who died during the follow-up period.
   * **Harmonization Units**:
     * [FHS](#chd_death_probable_1-fhs)
@@ -1915,7 +1915,7 @@
     
     
 <a id="chd_death_probable_1-fhs"></a>
-  * ### **FHS**:
+  * ### atherosclerosis_events_incident/chd_death_probable_1 -- **FHS**:
     * Variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
     * Function:
       ```r
@@ -2014,7 +2014,7 @@
       }
       ```
 <a id="chd_death_probable_1-whi"></a>
-  * ### **WHI**:
+  * ### atherosclerosis_events_incident/chd_death_probable_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003407.v3.phv00193498.v3`, `phs000200.v11.pht003407.v3.phv00193504.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`, `phs000200.v11.pht003409.v3.phv00193531.v2`, `phs000200.v11.pht003409.v3.phv00193532.v2`
     * Function:
       ```r
@@ -2040,7 +2040,7 @@
       }
       ```
 <a id="coronary_angioplasty_incident_1"></a>
-## **coronary_angioplasty_incident_1** (coronary_angioplasty_incident)
+## atherosclerosis_events_incident: **coronary_angioplasty_incident_1** (coronary_angioplasty_incident)
   An indicator of whether a subject had a coronary angioplasty procedure (that was verified by adjudication or by medical professionals) during the follow-up period.
   * **Harmonization Units**:
     * [WHI](#coronary_angioplasty_incident_1-whi)
@@ -2053,7 +2053,7 @@
     This variable was harmonized by appropriately converting component variables to a binary variable indicating the occurrence of a coronary angioplasty procedure during follow-up. If a study recorded multiple events, the DCC harmonized only the earliest event after the start of follow-up, and the corresponding age at event was used for the accompanying age variable. Unless otherwise stated, the age variable accompanying this variable represents the study participants' age when the coronary angioplasty procedure occurred or the age at last follow-up or death for those participants who did not have a coronary angioplasty procedure.
     
 <a id="coronary_angioplasty_incident_1-whi"></a>
-  * ### **WHI**:
+  * ### atherosclerosis_events_incident/coronary_angioplasty_incident_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003407.v3.phv00193199.v3`, `phs000200.v11.pht003407.v3.phv00193200.v3`, `phs000200.v11.pht003407.v3.phv00193504.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`
     * Function:
       ```r
@@ -2077,7 +2077,7 @@
       }
       ```
 <a id="mi_incident_1"></a>
-## **mi_incident_1** (mi_incident)
+## atherosclerosis_events_incident: **mi_incident_1** (mi_incident)
   An indicator of whether a subject had a myocardial infarction (MI) event (that was verified by adjudication or by medical professionals) during the follow-up period.
   * **Harmonization Units**:
     * [FHS](#mi_incident_1-fhs)
@@ -2098,7 +2098,7 @@
     The data available for MI includes events through December 2016. The data available for participants who did not have an MI event is through December 2014. Therefore, the age at censorship for participants who did not have an MI event is recorded through 2014, while participants who did have an MI event have their age recorded through 2016.
     
 <a id="mi_incident_1-fhs"></a>
-  * ### **FHS**:
+  * ### atherosclerosis_events_incident/mi_incident_1 -- **FHS**:
     * Variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
     * Function:
       ```r
@@ -2184,7 +2184,7 @@
       }
       ```
 <a id="mi_incident_1-whi"></a>
-  * ### **WHI**:
+  * ### atherosclerosis_events_incident/mi_incident_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003407.v3.phv00193169.v3`, `phs000200.v11.pht003407.v3.phv00193170.v3`, `phs000200.v11.pht003407.v3.phv00193504.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`
     * Function:
       ```r
@@ -2208,7 +2208,7 @@
       }
       ```
 <a id="pad_incident_1"></a>
-## **pad_incident_1** (pad_incident)
+## atherosclerosis_events_incident: **pad_incident_1** (pad_incident)
   An indicator of whether a subject had peripheral arterial disease (that was verified by adjudication or by medical professionals) during the follow-up period.
   * **Harmonization Units**:
     * [FHS](#pad_incident_1-fhs)
@@ -2233,7 +2233,7 @@
     
     
 <a id="pad_incident_1-fhs"></a>
-  * ### **FHS**:
+  * ### atherosclerosis_events_incident/pad_incident_1 -- **FHS**:
     * Variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
     * Function:
       ```r
@@ -2321,7 +2321,7 @@
       }
       ```
 <a id="pad_incident_1-whi"></a>
-  * ### **WHI**:
+  * ### atherosclerosis_events_incident/pad_incident_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003406.v3.phv00193101.v3`, `phs000200.v11.pht003406.v3.phv00193102.v3`, `phs000200.v11.pht003406.v3.phv00193103.v3`, `phs000200.v11.pht003406.v3.phv00193104.v3`, `phs000200.v11.pht003406.v3.phv00193105.v3`, `phs000200.v11.pht003406.v3.phv00193106.v3`, `phs000200.v11.pht003406.v3.phv00193107.v3`, `phs000200.v11.pht003407.v3.phv00193190.v3`, `phs000200.v11.pht003407.v3.phv00193191.v3`, `phs000200.v11.pht003407.v3.phv00193504.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`
     * Function:
       ```r
@@ -2377,7 +2377,7 @@
 * [pad_prior_1](#pad_prior_1)
 
 <a id="angina_prior_1"></a>
-## **angina_prior_1** (angina_prior)
+## atherosclerosis_events_prior: **angina_prior_1** (angina_prior)
   An indicator of whether a subject had an angina event prior to the baseline visit.
   * **Harmonization Units**:
     * [CHS](#angina_prior_1-chs)
@@ -2413,7 +2413,7 @@
     
     
 <a id="angina_prior_1-chs"></a>
-  * ### **CHS**:
+  * ### atherosclerosis_events_prior/angina_prior_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100504.v1`
     * Function:
       ```r
@@ -2427,7 +2427,7 @@
       }
       ```
 <a id="angina_prior_1-copdgene"></a>
-  * ### **COPDGene**:
+  * ### atherosclerosis_events_prior/angina_prior_1 -- **COPDGene**:
     * Variables: `phs000179.v5.pht002239.v4.phv00159608.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
     * Function:
       ```r
@@ -2449,7 +2449,7 @@
       }
       ```
 <a id="angina_prior_1-fhs"></a>
-  * ### **FHS**:
+  * ### atherosclerosis_events_prior/angina_prior_1 -- **FHS**:
     * Variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
     * Function:
       ```r
@@ -2536,7 +2536,7 @@
       }
       ```
 <a id="angina_prior_1-mesa"></a>
-  * ### **MESA**:
+  * ### atherosclerosis_events_prior/angina_prior_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001116.v10.phv00084442.v3`
     * Function:
       ```r
@@ -2548,7 +2548,7 @@
       }
       ```
 <a id="angina_prior_1-whi"></a>
-  * ### **WHI**:
+  * ### atherosclerosis_events_prior/angina_prior_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht000999.v6.phv00078507.v6`, `phs000200.v11.pht000999.v6.phv00078560.v6`
     * Function:
       ```r
@@ -2567,7 +2567,7 @@
       }
       ```
 <a id="cabg_prior_1"></a>
-## **cabg_prior_1** (cabg_prior)
+## atherosclerosis_events_prior: **cabg_prior_1** (cabg_prior)
   An indicator of whether a subject had a coronary artery bypass graft (CABG) procedure prior to the start of the baseline visit.
   * **Harmonization Units**:
     * [ARIC](#cabg_prior_1-aric)
@@ -2607,7 +2607,7 @@
     
     
 <a id="cabg_prior_1-aric"></a>
-  * ### **ARIC**:
+  * ### atherosclerosis_events_prior/cabg_prior_1 -- **ARIC**:
     * Variables: `phs000280.v5.pht004063.v2.phv00204712.v1`, `phs000280.v5.pht004143.v2.phv00208845.v1`, `phs000280.v5.pht004143.v2.phv00208846.v1`, `phs000280.v5.pht004143.v2.phv00208853.v1`
     * Function:
       ```r
@@ -2649,7 +2649,7 @@
       }
       ```
 <a id="cabg_prior_1-chs"></a>
-  * ### **CHS**:
+  * ### atherosclerosis_events_prior/cabg_prior_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001464.v1.phv00100785.v1`
     * Function:
       ```r
@@ -2666,7 +2666,7 @@
       }
       ```
 <a id="cabg_prior_1-copdgene"></a>
-  * ### **COPDGene**:
+  * ### atherosclerosis_events_prior/cabg_prior_1 -- **COPDGene**:
     * Variables: `phs000179.v5.pht002239.v4.phv00159631.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
     * Function:
       ```r
@@ -2680,7 +2680,7 @@
       }
       ```
 <a id="cabg_prior_1-fhs"></a>
-  * ### **FHS**:
+  * ### atherosclerosis_events_prior/cabg_prior_1 -- **FHS**:
     * Variables: `phs000007.v30.pht000389.v10.phv00054697.v8`, `phs000007.v30.pht000389.v10.phv00163410.v7`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
     * Function:
       ```r
@@ -2755,7 +2755,7 @@
       }
       ```
 <a id="cabg_prior_1-jhs"></a>
-  * ### **JHS**:
+  * ### atherosclerosis_events_prior/cabg_prior_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001963.v1.phv00127727.v1`, `phs000286.v5.pht001963.v1.phv00127728.v1`, `phs000286.v5.pht001963.v1.phv00127731.v1`, `phs000286.v5.pht001963.v1.phv00127733.v1`, `phs000286.v5.pht001963.v1.phv00127740.v1`
     * Function:
       ```r
@@ -2795,7 +2795,7 @@
       }
       ```
 <a id="cabg_prior_1-mesa"></a>
-  * ### **MESA**:
+  * ### atherosclerosis_events_prior/cabg_prior_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001116.v10.phv00084442.v3`
     * Function:
       ```r
@@ -2807,7 +2807,7 @@
       }
       ```
 <a id="cabg_prior_1-whi"></a>
-  * ### **WHI**:
+  * ### atherosclerosis_events_prior/cabg_prior_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht000999.v6.phv00078507.v6`, `phs000200.v11.pht000999.v6.phv00078535.v6`
     * Function:
       ```r
@@ -2826,7 +2826,7 @@
       }
       ```
 <a id="coronary_angioplasty_prior_1"></a>
-## **coronary_angioplasty_prior_1** (coronary_angioplasty_prior)
+## atherosclerosis_events_prior: **coronary_angioplasty_prior_1** (coronary_angioplasty_prior)
   An indicator of whether a subject had a coronary angioplasty procedure prior to the start of the baseline visit.
   * **Harmonization Units**:
     * [ARIC](#coronary_angioplasty_prior_1-aric)
@@ -2859,7 +2859,7 @@
     
     
 <a id="coronary_angioplasty_prior_1-aric"></a>
-  * ### **ARIC**:
+  * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **ARIC**:
     * Variables: `phs000280.v5.pht004063.v2.phv00204712.v1`, `phs000280.v5.pht004143.v2.phv00208845.v1`, `phs000280.v5.pht004143.v2.phv00208853.v1`, `phs000280.v5.pht004143.v2.phv00208854.v1`
     * Function:
       ```r
@@ -2898,7 +2898,7 @@
       }
       ```
 <a id="coronary_angioplasty_prior_1-chs"></a>
-  * ### **CHS**:
+  * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100322.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
@@ -2913,7 +2913,7 @@
       }
       ```
 <a id="coronary_angioplasty_prior_1-copdgene"></a>
-  * ### **COPDGene**:
+  * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **COPDGene**:
     * Variables: `phs000179.v5.pht002239.v4.phv00159632.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
     * Function:
       ```r
@@ -2928,7 +2928,7 @@
       }
       ```
 <a id="coronary_angioplasty_prior_1-jhs"></a>
-  * ### **JHS**:
+  * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001963.v1.phv00127727.v1`, `phs000286.v5.pht001963.v1.phv00127731.v1`, `phs000286.v5.pht001963.v1.phv00127733.v1`, `phs000286.v5.pht001963.v1.phv00127737.v1`, `phs000286.v5.pht001963.v1.phv00127740.v1`
     * Function:
       ```r
@@ -2964,7 +2964,7 @@
       }
       ```
 <a id="coronary_angioplasty_prior_1-mesa"></a>
-  * ### **MESA**:
+  * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001116.v10.phv00084442.v3`
     * Function:
       ```r
@@ -2976,7 +2976,7 @@
       }
       ```
 <a id="coronary_angioplasty_prior_1-whi"></a>
-  * ### **WHI**:
+  * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht000999.v6.phv00078507.v6`, `phs000200.v11.pht000999.v6.phv00078536.v6`
     * Function:
       ```r
@@ -2996,7 +2996,7 @@
       }
       ```
 <a id="coronary_revascularization_prior_1"></a>
-## **coronary_revascularization_prior_1** (coronary_revascularization_prior)
+## atherosclerosis_events_prior: **coronary_revascularization_prior_1** (coronary_revascularization_prior)
   An indicator of whether a subject had a coronary revascularization procedure prior to the start of the baseline visit. This includes angioplasty, CABG, and other coronary revascularization procedures.
   * **Harmonization Units**:
     * [GENOA](#coronary_revascularization_prior_1-genoa)
@@ -3018,7 +3018,7 @@
     
     
 <a id="coronary_revascularization_prior_1-genoa"></a>
-  * ### **GENOA**:
+  * ### atherosclerosis_events_prior/coronary_revascularization_prior_1 -- **GENOA**:
     * Variables: `phs001238.v2.pht006039.v1.phv00277507.v1`, `phs001238.v2.pht006043.v1.phv00277602.v1`, `phs001238.v2.pht006653.v1.phv00307788.v1`, `phs001238.v2.pht006657.v1.phv00307883.v1`
     * Function:
       ```r
@@ -3063,7 +3063,7 @@
       }
       ```
 <a id="mi_prior_1"></a>
-## **mi_prior_1** (mi_prior)
+## atherosclerosis_events_prior: **mi_prior_1** (mi_prior)
   An indicator of whether a subject had a myocardial infarction (MI) prior to the start of the baseline visit.
   * **Harmonization Units**:
     * [Amish](#mi_prior_1-amish)
@@ -3104,7 +3104,7 @@
     | WHI | Self-report |
     
 <a id="mi_prior_1-amish"></a>
-  * ### **Amish**:
+  * ### atherosclerosis_events_prior/mi_prior_1 -- **Amish**:
     * Variables: `phs000956.v3.pht005002.v1.phv00252976.v1`, `phs000956.v3.pht005002.v1.phv00252984.v1`
     * Function:
       ```r
@@ -3121,7 +3121,7 @@
       }
       ```
 <a id="mi_prior_1-aric"></a>
-  * ### **ARIC**:
+  * ### atherosclerosis_events_prior/mi_prior_1 -- **ARIC**:
     * Variables: `phs000280.v5.pht004063.v2.phv00204705.v1`, `phs000280.v5.pht004063.v2.phv00204712.v1`
     * Function:
       ```r
@@ -3148,7 +3148,7 @@
       }
       ```
 <a id="mi_prior_1-chs"></a>
-  * ### **CHS**:
+  * ### atherosclerosis_events_prior/mi_prior_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100508.v1`
     * Function:
       ```r
@@ -3163,7 +3163,7 @@
       }
       ```
 <a id="mi_prior_1-copdgene"></a>
-  * ### **COPDGene**:
+  * ### atherosclerosis_events_prior/mi_prior_1 -- **COPDGene**:
     * Variables: `phs000179.v5.pht002239.v4.phv00159615.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
     * Function:
       ```r
@@ -3185,7 +3185,7 @@
       }
       ```
 <a id="mi_prior_1-fhs"></a>
-  * ### **FHS**:
+  * ### atherosclerosis_events_prior/mi_prior_1 -- **FHS**:
     * Variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
     * Function:
       ```r
@@ -3271,7 +3271,7 @@
       }
       ```
 <a id="mi_prior_1-genoa"></a>
-  * ### **GENOA**:
+  * ### atherosclerosis_events_prior/mi_prior_1 -- **GENOA**:
     * Variables: `phs001238.v2.pht006039.v1.phv00277507.v1`, `phs001238.v2.pht006043.v1.phv00277598.v1`, `phs001238.v2.pht006653.v1.phv00307788.v1`, `phs001238.v2.pht006657.v1.phv00307879.v1`
     * Function:
       ```r
@@ -3316,7 +3316,7 @@
       }
       ```
 <a id="mi_prior_1-jhs"></a>
-  * ### **JHS**:
+  * ### atherosclerosis_events_prior/mi_prior_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001949.v1.phv00126088.v1`
     * Function:
       ```r
@@ -3341,7 +3341,7 @@
       }
       ```
 <a id="mi_prior_1-mesa"></a>
-  * ### **MESA**:
+  * ### atherosclerosis_events_prior/mi_prior_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001116.v10.phv00084442.v3`
     * Function:
       ```r
@@ -3353,7 +3353,7 @@
       }
       ```
 <a id="mi_prior_1-whi"></a>
-  * ### **WHI**:
+  * ### atherosclerosis_events_prior/mi_prior_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht000998.v6.phv00078482.v6`
     * Function:
       ```r
@@ -3371,7 +3371,7 @@
       }
       ```
 <a id="pad_prior_1"></a>
-## **pad_prior_1** (pad_prior)
+## atherosclerosis_events_prior: **pad_prior_1** (pad_prior)
   An indicator of whether a subject had peripheral arterial disease prior to the baseline visit.
   * **Harmonization Units**:
     * [ARIC](#pad_prior_1-aric)
@@ -3413,7 +3413,7 @@
     
     
 <a id="pad_prior_1-aric"></a>
-  * ### **ARIC**:
+  * ### atherosclerosis_events_prior/pad_prior_1 -- **ARIC**:
     * Variables: `phs000280.v5.pht004063.v2.phv00204712.v1`, `phs000280.v5.pht004063.v2.phv00204795.v1`
     * Function:
       ```r
@@ -3436,7 +3436,7 @@
       }
       ```
 <a id="pad_prior_1-chs"></a>
-  * ### **CHS**:
+  * ### atherosclerosis_events_prior/pad_prior_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100330.v1`, `phs000287.v6.pht001452.v1.phv00100333.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100507.v1`
     * Function:
       ```r
@@ -3459,7 +3459,7 @@
       }
       ```
 <a id="pad_prior_1-copdgene"></a>
-  * ### **COPDGene**:
+  * ### atherosclerosis_events_prior/pad_prior_1 -- **COPDGene**:
     * Variables: `phs000179.v5.pht002239.v4.phv00159618.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
     * Function:
       ```r
@@ -3481,7 +3481,7 @@
       }
       ```
 <a id="pad_prior_1-fhs"></a>
-  * ### **FHS**:
+  * ### atherosclerosis_events_prior/pad_prior_1 -- **FHS**:
     * Variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
     * Function:
       ```r
@@ -3568,7 +3568,7 @@
       }
       ```
 <a id="pad_prior_1-jhs"></a>
-  * ### **JHS**:
+  * ### atherosclerosis_events_prior/pad_prior_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001921.v1.phv00124562.v1`, `phs000286.v5.pht001921.v1.phv00124563.v1`, `phs000286.v5.pht001921.v1.phv00124564.v1`, `phs000286.v5.pht001921.v1.phv00124565.v1`, `phs000286.v5.pht001921.v1.phv00124566.v1`, `phs000286.v5.pht001921.v1.phv00124567.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
     * Function:
       ```r
@@ -3616,7 +3616,7 @@
       }
       ```
 <a id="pad_prior_1-mesa"></a>
-  * ### **MESA**:
+  * ### atherosclerosis_events_prior/pad_prior_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001116.v10.phv00084442.v3`
     * Function:
       ```r
@@ -3628,7 +3628,7 @@
       }
       ```
 <a id="pad_prior_1-whi"></a>
-  * ### **WHI**:
+  * ### atherosclerosis_events_prior/pad_prior_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht000999.v6.phv00078507.v6`, `phs000200.v11.pht000999.v6.phv00078562.v6`
     * Function:
       ```r
@@ -3657,7 +3657,7 @@
 * [weight_baseline_1](#weight_baseline_1)
 
 <a id="bmi_baseline_1"></a>
-## **bmi_baseline_1** (bmi_baseline)
+## baseline_common_covariates: **bmi_baseline_1** (bmi_baseline)
   Body mass index calculated at baseline.
   * **Harmonization Units**:
     * [DCC_harmonized](#bmi_baseline_1-dcc_harmonized)
@@ -3732,7 +3732,7 @@
     
     
 <a id="bmi_baseline_1-dcc_harmonized"></a>
-  * ### **DCC_harmonized**:
+  * ### baseline_common_covariates/bmi_baseline_1 -- **DCC_harmonized**:
     * Harmonized Variables: `{'dcc_harmonization_id': 151, 'name': 'height_baseline_1', 'version': 5}`, `{'dcc_harmonization_id': 152, 'name': 'weight_baseline_1', 'version': 4}`
     * Function:
       ```r
@@ -3763,7 +3763,7 @@
       }
       ```
 <a id="bmi_baseline_1-galaii"></a>
-  * ### **GALAII**:
+  * ### baseline_common_covariates/bmi_baseline_1 -- **GALAII**:
     * Variables: `phs001180.v1.pht006991.v1.phv00320630.v1`, `phs001180.v1.pht006991.v1.phv00320633.v1`
     * Function:
       ```r
@@ -3780,7 +3780,7 @@
       }
       ```
 <a id="bmi_baseline_1-goldn"></a>
-  * ### **GOLDN**:
+  * ### baseline_common_covariates/bmi_baseline_1 -- **GOLDN**:
     * Variables: `phs000741.v2.pht003918.v2.phv00202104.v2`, `phs000741.v2.pht003918.v2.phv00259051.v1`
     * Function:
       ```r
@@ -3795,7 +3795,7 @@
       }
       ```
 <a id="bmi_baseline_1-sage"></a>
-  * ### **SAGE**:
+  * ### baseline_common_covariates/bmi_baseline_1 -- **SAGE**:
     * Variables: `phs000921.v3.pht004883.v3.phv00252283.v3`, `phs000921.v3.pht004883.v3.phv00252286.v3`
     * Function:
       ```r
@@ -3815,7 +3815,7 @@
       }
       ```
 <a id="current_smoker_baseline_1"></a>
-## **current_smoker_baseline_1** (current_smoker_baseline)
+## baseline_common_covariates: **current_smoker_baseline_1** (current_smoker_baseline)
   Indicates whether subject currently smokes cigarettes.
   * **Harmonization Units**:
     * [Amish](#current_smoker_baseline_1-amish)
@@ -3894,7 +3894,7 @@
     
     
 <a id="current_smoker_baseline_1-amish"></a>
-  * ### **Amish**:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **Amish**:
     * Variables: `phs000956.v3.pht005002.v1.phv00252976.v1`, `phs000956.v3.pht005002.v1.phv00252990.v1`
     * Function:
       ```r
@@ -3913,7 +3913,7 @@
       }
       ```
 <a id="current_smoker_baseline_1-aric"></a>
-  * ### **ARIC**:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **ARIC**:
     * Variables: `phs000280.v5.pht004063.v2.phv00204712.v1`, `phs000280.v5.pht004111.v2.phv00207368.v1`, `phs000280.v5.pht004111.v2.phv00207370.v1`, `phs000280.v5.pht004111.v2.phv00207372.v1`
     * Function:
       ```r
@@ -3943,7 +3943,7 @@
       }
       ```
 <a id="current_smoker_baseline_1-bags"></a>
-  * ### **BAGS**:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **BAGS**:
     * Variables: `phs001143.v2.pht005905.v2.phv00273211.v2`, `phs001143.v2.pht005905.v2.phv00375339.v1`, `phs001143.v2.pht005905.v2.phv00375341.v1`, `phs001143.v2.pht005905.v2.phv00375343.v1`
     * Function:
       ```r
@@ -3975,7 +3975,7 @@
       }
       ```
 <a id="current_smoker_baseline_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001572.v2.phv00113168.v2`, `phs000285.v3.pht001573.v2.phv00113213.v2`
     * Function:
       ```r
@@ -4003,7 +4003,7 @@
       }
       ```
 <a id="current_smoker_baseline_1-cfs"></a>
-  * ### **CFS**:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **CFS**:
     * Variables: `phs000284.v2.pht001902.v1.phv00122012.v1`, `phs000284.v2.pht001902.v1.phv00122015.v1`, `phs000284.v2.pht001902.v1.phv00122343.v1`, `phs000284.v2.pht001902.v1.phv00122344.v1`
     * Function:
       ```r
@@ -4034,7 +4034,7 @@
       }
       ```
 <a id="current_smoker_baseline_1-chs"></a>
-  * ### **CHS**:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001450.v1.phv00098844.v1`, `phs000287.v6.pht001450.v1.phv00098845.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001490.v1.phv00105143.v1`, `phs000287.v6.pht001490.v1.phv00105144.v1`
     * Function:
       ```r
@@ -4062,7 +4062,7 @@
       }
       ```
 <a id="current_smoker_baseline_1-copdgene"></a>
-  * ### **COPDGene**:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **COPDGene**:
     * Variables: `phs000179.v5.pht002239.v4.phv00159636.v4`, `phs000179.v5.pht002239.v4.phv00159637.v4`, `phs000179.v5.pht002239.v4.phv00159640.v4`, `phs000179.v5.pht002239.v4.phv00159749.v4`, `phs000179.v5.pht002239.v4.phv00159750.v4`, `phs000179.v5.pht002239.v4.phv00159754.v4`, `phs000179.v5.pht002239.v4.phv00159755.v4`, `phs000179.v5.pht002239.v4.phv00159756.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
     * Function:
       ```r
@@ -4091,7 +4091,7 @@
       }
       ```
 <a id="current_smoker_baseline_1-cra"></a>
-  * ### **CRA**:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **CRA**:
     * Variables: `phs000988.v2.pht005248.v2.phv00258650.v2`, `phs000988.v2.pht005248.v2.phv00267375.v2`, `phs000988.v2.pht005248.v2.phv00267378.v2`
     * Function:
       ```r
@@ -4115,7 +4115,7 @@
       }
       ```
 <a id="current_smoker_baseline_1-fhs_nos_gen3_omni2"></a>
-  * ### **FHS_NOS_Gen3_Omni2**:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **FHS_NOS_Gen3_Omni2**:
     * Variables: `phs000007.v30.pht000074.v11.phv00020926.v5`, `phs000007.v30.pht000074.v11.phv00020927.v5`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht006005.v1.phv00273760.v1`, `phs000007.v30.pht006005.v1.phv00273761.v1`, `phs000007.v30.pht006006.v2.phv00274253.v2`, `phs000007.v30.pht006006.v2.phv00274254.v2`
     * Function:
       ```r
@@ -4155,7 +4155,7 @@
       }
       ```
 <a id="current_smoker_baseline_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v30.pht000030.v8.phv00007612.v6`, `phs000007.v30.pht003099.v5.phv00177930.v5`
     * Function:
       ```r
@@ -4178,7 +4178,7 @@
       }
       ```
 <a id="current_smoker_baseline_1-fhs_omni1"></a>
-  * ### **FHS_Omni1**:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **FHS_Omni1**:
     * Variables: `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht004813.v1.phv00250452.v1`
     * Function:
       ```r
@@ -4196,7 +4196,7 @@
       }
       ```
 <a id="current_smoker_baseline_1-fhs_original"></a>
-  * ### **FHS_Original**:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **FHS_Original**:
     * Variables: `phs000007.v30.pht000009.v2.phv00000543.v1`, `phs000007.v30.pht003099.v5.phv00177930.v5`
     * Function:
       ```r
@@ -4220,7 +4220,7 @@
       }
       ```
 <a id="current_smoker_baseline_1-galaii"></a>
-  * ### **GALAII**:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **GALAII**:
     * Variables: `phs001180.v1.pht006991.v1.phv00320630.v1`, `phs001180.v1.pht006991.v1.phv00320635.v1`
     * Function:
       ```r
@@ -4238,7 +4238,7 @@
       }
       ```
 <a id="current_smoker_baseline_1-genestar"></a>
-  * ### **GeneSTAR**:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **GeneSTAR**:
     * Variables: `phs001218.v1.pht007766.v1.phv00369267.v1`, `phs001218.v1.pht007766.v1.phv00369268.v1`, `phs001218.v1.pht007766.v1.phv00369293.v1`, `phs001218.v1.pht007766.v1.phv00369294.v1`
     * Function:
       ```r
@@ -4281,7 +4281,7 @@
       }
       ```
 <a id="current_smoker_baseline_1-genoa"></a>
-  * ### **GENOA**:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **GENOA**:
     * Variables: `phs001238.v2.pht006039.v1.phv00277507.v1`, `phs001238.v2.pht006043.v1.phv00277618.v1`, `phs001238.v2.pht006043.v1.phv00277621.v1`, `phs001238.v2.pht006653.v1.phv00307788.v1`, `phs001238.v2.pht006657.v1.phv00307899.v1`, `phs001238.v2.pht006657.v1.phv00307902.v1`
     * Function:
       ```r
@@ -4315,7 +4315,7 @@
       }
       ```
 <a id="current_smoker_baseline_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00258106.v1`, `phs000810.v1.pht004715.v1.phv00258107.v1`, `phs000810.v1.pht004715.v1.phv00258108.v1`, `phs000810.v1.pht004715.v1.phv00258110.v1`
     * Function:
       ```r
@@ -4345,7 +4345,7 @@
       }
       ```
 <a id="current_smoker_baseline_1-hvh"></a>
-  * ### **HVH**:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **HVH**:
     * Variables: `phs001013.v3.pht005311.v2.phv00259376.v2`, `phs001013.v3.pht005311.v2.phv00259377.v2`, `phs001013.v3.pht005311.v2.phv00259378.v2`, `phs001013.v3.pht005311.v2.phv00259394.v2`
     * Function:
       ```r
@@ -4375,7 +4375,7 @@
       }
       ```
 <a id="current_smoker_baseline_1-jhs"></a>
-  * ### **JHS**:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001977.v1.phv00128496.v1`, `phs000286.v5.pht001977.v1.phv00128498.v1`
     * Function:
       ```r
@@ -4396,7 +4396,7 @@
       }
       ```
 <a id="current_smoker_baseline_1-mayo_vte_geneva"></a>
-  * ### **Mayo_VTE_GENEVA**:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **Mayo_VTE_GENEVA**:
     * Variables: `phs000289.v2.pht001886.v2.phv00121846.v1`, `phs000289.v2.pht001886.v2.phv00121874.v2`
     * Function:
       ```r
@@ -4422,7 +4422,7 @@
       }
       ```
 <a id="current_smoker_baseline_1-mayo_vte_olmsted"></a>
-  * ### **Mayo_VTE_Olmsted**:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **Mayo_VTE_Olmsted**:
     * Variables: `phs001402.v1.pht008239.v1.phv00389902.v1`, `phs001402.v1.pht008239.v1.phv00389930.v1`
     * Function:
       ```r
@@ -4447,7 +4447,7 @@
       }
       ```
 <a id="current_smoker_baseline_1-mesa"></a>
-  * ### **MESA**:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00083243.v1`, `phs000209.v13.pht001111.v4.phv00083245.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085570.v2`, `phs000209.v13.pht001116.v10.phv00085572.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087252.v1`, `phs000209.v13.pht001121.v3.phv00087254.v1`
     * Function:
       ```r
@@ -4475,7 +4475,7 @@
       }
       ```
 <a id="current_smoker_baseline_1-sage"></a>
-  * ### **SAGE**:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **SAGE**:
     * Variables: `phs000921.v3.pht004883.v3.phv00252283.v3`, `phs000921.v3.pht004883.v3.phv00347787.v2`
     * Function:
       ```r
@@ -4499,7 +4499,7 @@
       }
       ```
 <a id="current_smoker_baseline_1-sas"></a>
-  * ### **SAS**:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **SAS**:
     * Variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258705.v1`
     * Function:
       ```r
@@ -4522,7 +4522,7 @@
       }
       ```
 <a id="current_smoker_baseline_1-wghs"></a>
-  * ### **WGHS**:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **WGHS**:
     * Variables: `phs001040.v3.pht005682.v3.phv00265848.v3`, `phs001040.v3.pht005682.v3.phv00375260.v1`
     * Function:
       ```r
@@ -4547,7 +4547,7 @@
       }
       ```
 <a id="current_smoker_baseline_1-whi"></a>
-  * ### **WHI**:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001003.v6.phv00078773.v6`, `phs000200.v11.pht001003.v6.phv00078774.v6`, `phs000200.v11.pht001003.v6.phv00078776.v6`
     * Function:
       ```r
@@ -4574,7 +4574,7 @@
       }
       ```
 <a id="ever_smoker_baseline_1"></a>
-## **ever_smoker_baseline_1** (ever_smoker_baseline)
+## baseline_common_covariates: **ever_smoker_baseline_1** (ever_smoker_baseline)
   Indicates whether subject ever regularly smoked cigarettes.
   * **Harmonization Units**:
     * [ARIC](#ever_smoker_baseline_1-aric)
@@ -4657,7 +4657,7 @@
     | WHI | Screening, Year 0 |
     
 <a id="ever_smoker_baseline_1-aric"></a>
-  * ### **ARIC**:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **ARIC**:
     * Variables: `phs000280.v5.pht004063.v2.phv00204712.v1`, `phs000280.v5.pht004111.v2.phv00207368.v1`, `phs000280.v5.pht004111.v2.phv00207369.v1`, `phs000280.v5.pht004111.v2.phv00207370.v1`, `phs000280.v5.pht004111.v2.phv00207375.v1`, `phs000280.v5.pht004111.v2.phv00207376.v1`
     * Function:
       ```r
@@ -4687,7 +4687,7 @@
       }
       ```
 <a id="ever_smoker_baseline_1-bags"></a>
-  * ### **BAGS**:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **BAGS**:
     * Variables: `phs001143.v2.pht005905.v2.phv00273211.v2`, `phs001143.v2.pht005905.v2.phv00375339.v1`, `phs001143.v2.pht005905.v2.phv00375343.v1`
     * Function:
       ```r
@@ -4713,7 +4713,7 @@
       }
       ```
 <a id="ever_smoker_baseline_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001573.v2.phv00113213.v2`
     * Function:
       ```r
@@ -4738,7 +4738,7 @@
       }
       ```
 <a id="ever_smoker_baseline_1-cfs"></a>
-  * ### **CFS**:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **CFS**:
     * Variables: `phs000284.v2.pht001902.v1.phv00122012.v1`, `phs000284.v2.pht001902.v1.phv00122015.v1`, `phs000284.v2.pht001902.v1.phv00122340.v1`, `phs000284.v2.pht001902.v1.phv00122341.v1`, `phs000284.v2.pht001902.v1.phv00122342.v1`, `phs000284.v2.pht001902.v1.phv00122343.v1`, `phs000284.v2.pht001902.v1.phv00122344.v1`
     * Function:
       ```r
@@ -4770,7 +4770,7 @@
       }
       ```
 <a id="ever_smoker_baseline_1-chs"></a>
-  * ### **CHS**:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001450.v1.phv00098844.v1`, `phs000287.v6.pht001450.v1.phv00098845.v1`, `phs000287.v6.pht001450.v1.phv00099157.v1`, `phs000287.v6.pht001450.v1.phv00099159.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001490.v1.phv00105143.v1`, `phs000287.v6.pht001490.v1.phv00105144.v1`, `phs000287.v6.pht001490.v1.phv00106198.v1`, `phs000287.v6.pht001490.v1.phv00106200.v1`
     * Function:
       ```r
@@ -4814,7 +4814,7 @@
       }
       ```
 <a id="ever_smoker_baseline_1-copdgene"></a>
-  * ### **COPDGene**:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **COPDGene**:
     * Variables: `phs000179.v5.pht002239.v4.phv00159636.v4`, `phs000179.v5.pht002239.v4.phv00159637.v4`, `phs000179.v5.pht002239.v4.phv00159638.v4`, `phs000179.v5.pht002239.v4.phv00159639.v4`, `phs000179.v5.pht002239.v4.phv00159640.v4`, `phs000179.v5.pht002239.v4.phv00159641.v4`, `phs000179.v5.pht002239.v4.phv00159747.v4`, `phs000179.v5.pht002239.v4.phv00159748.v4`, `phs000179.v5.pht002239.v4.phv00159749.v4`, `phs000179.v5.pht002239.v4.phv00159750.v4`, `phs000179.v5.pht002239.v4.phv00159752.v4`, `phs000179.v5.pht002239.v4.phv00159754.v4`, `phs000179.v5.pht002239.v4.phv00159755.v4`, `phs000179.v5.pht002239.v4.phv00159756.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`, `phs000179.v5.pht002239.v4.phv00169388.v3`
     * Function:
       ```r
@@ -4838,7 +4838,7 @@
       }
       ```
 <a id="ever_smoker_baseline_1-cra"></a>
-  * ### **CRA**:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **CRA**:
     * Variables: `phs000988.v2.pht005248.v2.phv00258650.v2`, `phs000988.v2.pht005248.v2.phv00267374.v2`, `phs000988.v2.pht005248.v2.phv00267375.v2`, `phs000988.v2.pht005248.v2.phv00267376.v2`, `phs000988.v2.pht005248.v2.phv00267378.v2`, `phs000988.v2.pht005248.v2.phv00267379.v2`
     * Function:
       ```r
@@ -4868,7 +4868,7 @@
       }
       ```
 <a id="ever_smoker_baseline_1-fhs_nos_gen3_omni2"></a>
-  * ### **FHS_NOS_Gen3_Omni2**:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **FHS_NOS_Gen3_Omni2**:
     * Variables: `phs000007.v30.pht000074.v11.phv00020925.v5`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht006005.v1.phv00273759.v1`, `phs000007.v30.pht006006.v2.phv00274252.v2`
     * Function:
       ```r
@@ -4893,7 +4893,7 @@
       }
       ```
 <a id="ever_smoker_baseline_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v30.pht000030.v8.phv00007612.v6`, `phs000007.v30.pht003099.v5.phv00177930.v5`
     * Function:
       ```r
@@ -4912,7 +4912,7 @@
       }
       ```
 <a id="ever_smoker_baseline_1-fhs_omni1"></a>
-  * ### **FHS_Omni1**:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **FHS_Omni1**:
     * Variables: `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht004813.v1.phv00250452.v1`, `phs000007.v30.pht004814.v1.phv00251240.v1`, `phs000007.v30.pht004814.v1.phv00251241.v1`, `phs000007.v30.pht004814.v1.phv00251242.v1`
     * Function:
       ```r
@@ -4951,7 +4951,7 @@
       }
       ```
 <a id="ever_smoker_baseline_1-fhs_original"></a>
-  * ### **FHS_Original**:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **FHS_Original**:
     * Variables: `phs000007.v30.pht000009.v2.phv00000543.v1`, `phs000007.v30.pht003099.v5.phv00177930.v5`
     * Function:
       ```r
@@ -4971,7 +4971,7 @@
       }
       ```
 <a id="ever_smoker_baseline_1-genestar"></a>
-  * ### **GeneSTAR**:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **GeneSTAR**:
     * Variables: `phs001218.v1.pht007766.v1.phv00369267.v1`, `phs001218.v1.pht007766.v1.phv00369268.v1`, `phs001218.v1.pht007766.v1.phv00369293.v1`, `phs001218.v1.pht007766.v1.phv00369296.v1`
     * Function:
       ```r
@@ -5015,7 +5015,7 @@
       }
       ```
 <a id="ever_smoker_baseline_1-genoa"></a>
-  * ### **GENOA**:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **GENOA**:
     * Variables: `phs001238.v2.pht006039.v1.phv00277507.v1`, `phs001238.v2.pht006043.v1.phv00277618.v1`, `phs001238.v2.pht006043.v1.phv00277621.v1`, `phs001238.v2.pht006043.v1.phv00277624.v1`, `phs001238.v2.pht006653.v1.phv00307788.v1`, `phs001238.v2.pht006657.v1.phv00307899.v1`, `phs001238.v2.pht006657.v1.phv00307902.v1`, `phs001238.v2.pht006657.v1.phv00307905.v1`
     * Function:
       ```r
@@ -5061,7 +5061,7 @@
       }
       ```
 <a id="ever_smoker_baseline_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00258106.v1`, `phs000810.v1.pht004715.v1.phv00258107.v1`, `phs000810.v1.pht004715.v1.phv00258108.v1`, `phs000810.v1.pht004715.v1.phv00258110.v1`
     * Function:
       ```r
@@ -5093,7 +5093,7 @@
       }
       ```
 <a id="ever_smoker_baseline_1-hvh"></a>
-  * ### **HVH**:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **HVH**:
     * Variables: `phs001013.v3.pht005311.v2.phv00259376.v2`, `phs001013.v3.pht005311.v2.phv00259377.v2`, `phs001013.v3.pht005311.v2.phv00259378.v2`, `phs001013.v3.pht005311.v2.phv00259394.v2`
     * Function:
       ```r
@@ -5122,7 +5122,7 @@
       }
       ```
 <a id="ever_smoker_baseline_1-jhs"></a>
-  * ### **JHS**:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001977.v1.phv00128496.v1`, `phs000286.v5.pht001977.v1.phv00128498.v1`, `phs000286.v5.pht001977.v1.phv00128502.v1`, `phs000286.v5.pht001977.v1.phv00128503.v1`, `phs000286.v5.pht001977.v1.phv00128506.v1`, `phs000286.v5.pht001977.v1.phv00128507.v1`
     * Function:
       ```r
@@ -5156,7 +5156,7 @@
       }
       ```
 <a id="ever_smoker_baseline_1-mayo_vte_geneva"></a>
-  * ### **Mayo_VTE_GENEVA**:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **Mayo_VTE_GENEVA**:
     * Variables: `phs000289.v2.pht001886.v2.phv00121846.v1`, `phs000289.v2.pht001886.v2.phv00121874.v2`
     * Function:
       ```r
@@ -5182,7 +5182,7 @@
       }
       ```
 <a id="ever_smoker_baseline_1-mayo_vte_olmsted"></a>
-  * ### **Mayo_VTE_Olmsted**:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **Mayo_VTE_Olmsted**:
     * Variables: `phs001402.v1.pht008239.v1.phv00389902.v1`, `phs001402.v1.pht008239.v1.phv00389930.v1`
     * Function:
       ```r
@@ -5207,7 +5207,7 @@
       }
       ```
 <a id="ever_smoker_baseline_1-mesa"></a>
-  * ### **MESA**:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00083243.v1`, `phs000209.v13.pht001111.v4.phv00083245.v1`, `phs000209.v13.pht001111.v4.phv00083247.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085570.v2`, `phs000209.v13.pht001116.v10.phv00085572.v2`, `phs000209.v13.pht001116.v10.phv00085574.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087252.v1`, `phs000209.v13.pht001121.v3.phv00087254.v1`, `phs000209.v13.pht001121.v3.phv00087256.v1`
     * Function:
       ```r
@@ -5242,7 +5242,7 @@
       }
       ```
 <a id="ever_smoker_baseline_1-sas"></a>
-  * ### **SAS**:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **SAS**:
     * Variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258705.v1`, `phs000914.v1.pht005253.v1.phv00258713.v1`
     * Function:
       ```r
@@ -5265,7 +5265,7 @@
       }
       ```
 <a id="ever_smoker_baseline_1-wghs"></a>
-  * ### **WGHS**:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **WGHS**:
     * Variables: `phs001040.v3.pht005682.v3.phv00265848.v3`, `phs001040.v3.pht005682.v3.phv00375260.v1`
     * Function:
       ```r
@@ -5291,7 +5291,7 @@
       }
       ```
 <a id="ever_smoker_baseline_1-whi"></a>
-  * ### **WHI**:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001003.v6.phv00078773.v6`, `phs000200.v11.pht001003.v6.phv00078774.v6`
     * Function:
       ```r
@@ -5315,7 +5315,7 @@
       }
       ```
 <a id="height_baseline_1"></a>
-## **height_baseline_1** (height_baseline)
+## baseline_common_covariates: **height_baseline_1** (height_baseline)
   Body height at baseline.
   * **Harmonization Units**:
     * [Amish](#height_baseline_1-amish)
@@ -5408,7 +5408,7 @@
     
     
 <a id="height_baseline_1-amish"></a>
-  * ### **Amish**:
+  * ### baseline_common_covariates/height_baseline_1 -- **Amish**:
     * Variables: `phs000956.v3.pht005002.v1.phv00252976.v1`, `phs000956.v3.pht005002.v1.phv00252982.v1`
     * Function:
       ```r
@@ -5430,7 +5430,7 @@
       }
       ```
 <a id="height_baseline_1-aric"></a>
-  * ### **ARIC**:
+  * ### baseline_common_covariates/height_baseline_1 -- **ARIC**:
     * Variables: `phs000280.v5.pht004032.v2.phv00203151.v1`, `phs000280.v5.pht004063.v2.phv00204712.v1`
     * Function:
       ```r
@@ -5452,7 +5452,7 @@
       }
       ```
 <a id="height_baseline_1-bags"></a>
-  * ### **BAGS**:
+  * ### baseline_common_covariates/height_baseline_1 -- **BAGS**:
     * Variables: `phs001143.v2.pht005905.v2.phv00273211.v2`, `phs001143.v2.pht005905.v2.phv00375338.v1`
     * Function:
       ```r
@@ -5474,7 +5474,7 @@
       }
       ```
 <a id="height_baseline_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### baseline_common_covariates/height_baseline_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001583.v2.phv00113634.v2`
     * Function:
       ```r
@@ -5491,7 +5491,7 @@
       }
       ```
 <a id="height_baseline_1-ccaf"></a>
-  * ### **CCAF**:
+  * ### baseline_common_covariates/height_baseline_1 -- **CCAF**:
     * Variables: `phs001189.v2.pht005979.v2.phv00273546.v2`, `phs001189.v2.pht005979.v2.phv00273551.v2`
     * Function:
       ```r
@@ -5519,7 +5519,7 @@
       }
       ```
 <a id="height_baseline_1-cfs"></a>
-  * ### **CFS**:
+  * ### baseline_common_covariates/height_baseline_1 -- **CFS**:
     * Variables: `phs000284.v2.pht001902.v1.phv00122012.v1`, `phs000284.v2.pht001902.v1.phv00122015.v1`, `phs000284.v2.pht001902.v1.phv00122640.v1`
     * Function:
       ```r
@@ -5545,7 +5545,7 @@
       }
       ```
 <a id="height_baseline_1-chs"></a>
-  * ### **CHS**:
+  * ### baseline_common_covariates/height_baseline_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100382.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
@@ -5564,7 +5564,7 @@
       }
       ```
 <a id="height_baseline_1-copdgene"></a>
-  * ### **COPDGene**:
+  * ### baseline_common_covariates/height_baseline_1 -- **COPDGene**:
     * Variables: `phs000179.v5.pht002239.v4.phv00159592.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
     * Function:
       ```r
@@ -5582,7 +5582,7 @@
       }
       ```
 <a id="height_baseline_1-cra"></a>
-  * ### **CRA**:
+  * ### baseline_common_covariates/height_baseline_1 -- **CRA**:
     * Variables: `phs000988.v2.pht005248.v2.phv00258650.v2`, `phs000988.v2.pht005248.v2.phv00267371.v2`
     * Function:
       ```r
@@ -5598,7 +5598,7 @@
       }
       ```
 <a id="height_baseline_1-dhs"></a>
-  * ### **DHS**:
+  * ### baseline_common_covariates/height_baseline_1 -- **DHS**:
     * Variables: `phs001412.v1.pht006746.v1.phv00310016.v1`, `phs001412.v1.pht006746.v1.phv00310030.v1`
     * Function:
       ```r
@@ -5614,7 +5614,7 @@
       }
       ```
 <a id="height_baseline_1-fhs_omni1"></a>
-  * ### **FHS_Omni1**:
+  * ### baseline_common_covariates/height_baseline_1 -- **FHS_Omni1**:
     * Variables: `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht004813.v1.phv00250288.v1`
     * Function:
       ```r
@@ -5638,7 +5638,7 @@
       }
       ```
 <a id="height_baseline_1-fhs_original"></a>
-  * ### **FHS_Original**:
+  * ### baseline_common_covariates/height_baseline_1 -- **FHS_Original**:
     * Variables: `phs000007.v30.pht000009.v2.phv00000539.v1`, `phs000007.v30.pht000009.v2.phv00000540.v1`, `phs000007.v30.pht003099.v5.phv00177930.v5`
     * Function:
       ```r
@@ -5664,7 +5664,7 @@
       }
       ```
 <a id="height_baseline_1-fhs_workthru"></a>
-  * ### **FHS_Workthru**:
+  * ### baseline_common_covariates/height_baseline_1 -- **FHS_Workthru**:
     * Variables: `phs000007.v30.pht006026.v2.phv00277020.v2`, `phs000007.v30.pht006026.v2.phv00277042.v2`, `phs000007.v30.pht006027.v2.phv00277077.v2`, `phs000007.v30.pht006027.v2.phv00277171.v2`
     * Function:
       ```r
@@ -5683,7 +5683,7 @@
       }
       ```
 <a id="height_baseline_1-genestar"></a>
-  * ### **GeneSTAR**:
+  * ### baseline_common_covariates/height_baseline_1 -- **GeneSTAR**:
     * Variables: `phs001218.v1.pht007766.v1.phv00369267.v1`, `phs001218.v1.pht007766.v1.phv00369268.v1`, `phs001218.v1.pht007766.v1.phv00369271.v1`
     * Function:
       ```r
@@ -5723,7 +5723,7 @@
       }
       ```
 <a id="height_baseline_1-genoa"></a>
-  * ### **GENOA**:
+  * ### baseline_common_covariates/height_baseline_1 -- **GENOA**:
     * Variables: `phs001238.v2.pht006039.v1.phv00277507.v1`, `phs001238.v2.pht006039.v1.phv00277514.v1`, `phs001238.v2.pht006653.v1.phv00307788.v1`, `phs001238.v2.pht006653.v1.phv00307795.v1`
     * Function:
       ```r
@@ -5741,7 +5741,7 @@
       }
       ```
 <a id="height_baseline_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### baseline_common_covariates/height_baseline_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226281.v1`
     * Function:
       ```r
@@ -5758,7 +5758,7 @@
       }
       ```
 <a id="height_baseline_1-hvh"></a>
-  * ### **HVH**:
+  * ### baseline_common_covariates/height_baseline_1 -- **HVH**:
     * Variables: `phs001013.v3.pht005311.v2.phv00259376.v2`, `phs001013.v3.pht005311.v2.phv00259377.v2`, `phs001013.v3.pht005311.v2.phv00259378.v2`, `phs001013.v3.pht005311.v2.phv00259392.v2`
     * Function:
       ```r
@@ -5789,7 +5789,7 @@
       }
       ```
 <a id="height_baseline_1-jhs"></a>
-  * ### **JHS**:
+  * ### baseline_common_covariates/height_baseline_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001940.v1.phv00125860.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
     * Function:
       ```r
@@ -5811,7 +5811,7 @@
       }
       ```
 <a id="height_baseline_1-mayo_vte_geneva"></a>
-  * ### **Mayo_VTE_GENEVA**:
+  * ### baseline_common_covariates/height_baseline_1 -- **Mayo_VTE_GENEVA**:
     * Variables: `phs000289.v2.pht001886.v2.phv00121846.v1`, `phs000289.v2.pht001886.v2.phv00121872.v2`
     * Function:
       ```r
@@ -5828,7 +5828,7 @@
       }
       ```
 <a id="height_baseline_1-mayo_vte_olmsted"></a>
-  * ### **Mayo_VTE_Olmsted**:
+  * ### baseline_common_covariates/height_baseline_1 -- **Mayo_VTE_Olmsted**:
     * Variables: `phs001402.v1.pht008239.v1.phv00389902.v1`, `phs001402.v1.pht008239.v1.phv00389928.v1`
     * Function:
       ```r
@@ -5851,7 +5851,7 @@
       }
       ```
 <a id="height_baseline_1-mesa"></a>
-  * ### **MESA**:
+  * ### baseline_common_covariates/height_baseline_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082683.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084482.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087078.v1`
     * Function:
       ```r
@@ -5876,7 +5876,7 @@
       }
       ```
 <a id="height_baseline_1-mgh_af"></a>
-  * ### **MGH_AF**:
+  * ### baseline_common_covariates/height_baseline_1 -- **MGH_AF**:
     * Variables: `phs001001.v1.pht005655.v1.phv00354560.v1`, `phs001001.v1.pht005655.v1.phv00354564.v1`
     * Function:
       ```r
@@ -5902,7 +5902,7 @@
       }
       ```
 <a id="height_baseline_1-partners"></a>
-  * ### **Partners**:
+  * ### baseline_common_covariates/height_baseline_1 -- **Partners**:
     * Variables: `phs001024.v3.pht005693.v1.phv00265978.v1`, `phs001024.v3.pht005693.v1.phv00265982.v1`
     * Function:
       ```r
@@ -5929,7 +5929,7 @@
       }
       ```
 <a id="height_baseline_1-sas"></a>
-  * ### **SAS**:
+  * ### baseline_common_covariates/height_baseline_1 -- **SAS**:
     * Variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258683.v1`
     * Function:
       ```r
@@ -5948,7 +5948,7 @@
       }
       ```
 <a id="height_baseline_1-vafar"></a>
-  * ### **VAFAR**:
+  * ### baseline_common_covariates/height_baseline_1 -- **VAFAR**:
     * Variables: `phs000997.v3.pht005688.v3.phv00265921.v3`, `phs000997.v3.pht005688.v3.phv00265926.v3`
     * Function:
       ```r
@@ -5976,7 +5976,7 @@
       }
       ```
 <a id="height_baseline_1-vu_af"></a>
-  * ### **VU_AF**:
+  * ### baseline_common_covariates/height_baseline_1 -- **VU_AF**:
     * Variables: `phs001032.v4.pht005675.v3.phv00265805.v2`, `phs001032.v4.pht005675.v3.phv00265810.v2`
     * Function:
       ```r
@@ -6003,7 +6003,7 @@
       }
       ```
 <a id="height_baseline_1-wghs"></a>
-  * ### **WGHS**:
+  * ### baseline_common_covariates/height_baseline_1 -- **WGHS**:
     * Variables: `phs001040.v3.pht005682.v3.phv00265848.v3`, `phs001040.v3.pht005682.v3.phv00375254.v1`
     * Function:
       ```r
@@ -6028,7 +6028,7 @@
       }
       ```
 <a id="height_baseline_1-whi"></a>
-  * ### **WHI**:
+  * ### baseline_common_covariates/height_baseline_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001019.v6.phv00079851.v6`, `phs000200.v11.pht001019.v6.phv00079852.v6`, `phs000200.v11.pht001019.v6.phv00079858.v6`
     * Function:
       ```r
@@ -6058,7 +6058,7 @@
       }
       ```
 <a id="weight_baseline_1"></a>
-## **weight_baseline_1** (weight_baseline)
+## baseline_common_covariates: **weight_baseline_1** (weight_baseline)
   Body weight at baseline.
   * **Harmonization Units**:
     * [Amish](#weight_baseline_1-amish)
@@ -6157,7 +6157,7 @@
     
     
 <a id="weight_baseline_1-amish"></a>
-  * ### **Amish**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **Amish**:
     * Variables: `phs000956.v3.pht005002.v1.phv00252976.v1`, `phs000956.v3.pht005002.v1.phv00252979.v1`
     * Function:
       ```r
@@ -6180,7 +6180,7 @@
       }
       ```
 <a id="weight_baseline_1-aric"></a>
-  * ### **ARIC**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **ARIC**:
     * Variables: `phs000280.v5.pht004032.v2.phv00203154.v1`, `phs000280.v5.pht004063.v2.phv00204712.v1`
     * Function:
       ```r
@@ -6204,7 +6204,7 @@
       }
       ```
 <a id="weight_baseline_1-bags"></a>
-  * ### **BAGS**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **BAGS**:
     * Variables: `phs001143.v2.pht005905.v2.phv00273211.v2`, `phs001143.v2.pht005905.v2.phv00375337.v1`
     * Function:
       ```r
@@ -6226,7 +6226,7 @@
       }
       ```
 <a id="weight_baseline_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001583.v2.phv00113635.v2`
     * Function:
       ```r
@@ -6242,7 +6242,7 @@
       }
       ```
 <a id="weight_baseline_1-ccaf"></a>
-  * ### **CCAF**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **CCAF**:
     * Variables: `phs001189.v2.pht005979.v2.phv00273546.v2`, `phs001189.v2.pht005979.v2.phv00273552.v2`
     * Function:
       ```r
@@ -6270,7 +6270,7 @@
       }
       ```
 <a id="weight_baseline_1-cfs"></a>
-  * ### **CFS**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **CFS**:
     * Variables: `phs000284.v2.pht001902.v1.phv00122012.v1`, `phs000284.v2.pht001902.v1.phv00122015.v1`, `phs000284.v2.pht001902.v1.phv00122639.v1`
     * Function:
       ```r
@@ -6295,7 +6295,7 @@
       }
       ```
 <a id="weight_baseline_1-chs"></a>
-  * ### **CHS**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100383.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
@@ -6313,7 +6313,7 @@
       }
       ```
 <a id="weight_baseline_1-copdgene"></a>
-  * ### **COPDGene**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **COPDGene**:
     * Variables: `phs000179.v5.pht002239.v4.phv00159591.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
     * Function:
       ```r
@@ -6332,7 +6332,7 @@
       }
       ```
 <a id="weight_baseline_1-cra"></a>
-  * ### **CRA**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **CRA**:
     * Variables: `phs000988.v2.pht005248.v2.phv00258650.v2`, `phs000988.v2.pht005248.v2.phv00267372.v2`
     * Function:
       ```r
@@ -6349,7 +6349,7 @@
       }
       ```
 <a id="weight_baseline_1-dhs"></a>
-  * ### **DHS**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **DHS**:
     * Variables: `phs001412.v1.pht006746.v1.phv00310016.v1`, `phs001412.v1.pht006746.v1.phv00310029.v1`
     * Function:
       ```r
@@ -6365,7 +6365,7 @@
       }
       ```
 <a id="weight_baseline_1-fhs_original_omni1"></a>
-  * ### **FHS_Original_Omni1**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **FHS_Original_Omni1**:
     * Variables: `phs000007.v30.pht000009.v2.phv00000541.v1`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht004813.v1.phv00250287.v1`
     * Function:
       ```r
@@ -6395,7 +6395,7 @@
       }
       ```
 <a id="weight_baseline_1-fhs_workthru"></a>
-  * ### **FHS_Workthru**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **FHS_Workthru**:
     * Variables: `phs000007.v30.pht006026.v2.phv00277020.v2`, `phs000007.v30.pht006026.v2.phv00277055.v2`, `phs000007.v30.pht006027.v2.phv00277077.v2`, `phs000007.v30.pht006027.v2.phv00277227.v2`
     * Function:
       ```r
@@ -6413,7 +6413,7 @@
       }
       ```
 <a id="weight_baseline_1-genestar"></a>
-  * ### **GeneSTAR**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **GeneSTAR**:
     * Variables: `phs001218.v1.pht007766.v1.phv00369267.v1`, `phs001218.v1.pht007766.v1.phv00369268.v1`, `phs001218.v1.pht007766.v1.phv00369271.v1`, `phs001218.v1.pht007766.v1.phv00369272.v1`
     * Function:
       ```r
@@ -6455,7 +6455,7 @@
       }
       ```
 <a id="weight_baseline_1-genoa"></a>
-  * ### **GENOA**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **GENOA**:
     * Variables: `phs001238.v2.pht006039.v1.phv00277507.v1`, `phs001238.v2.pht006039.v1.phv00277515.v1`, `phs001238.v2.pht006653.v1.phv00307788.v1`, `phs001238.v2.pht006653.v1.phv00307796.v1`
     * Function:
       ```r
@@ -6473,7 +6473,7 @@
       }
       ```
 <a id="weight_baseline_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00253218.v1`
     * Function:
       ```r
@@ -6490,7 +6490,7 @@
       }
       ```
 <a id="weight_baseline_1-hvh"></a>
-  * ### **HVH**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **HVH**:
     * Variables: `phs001013.v3.pht005311.v2.phv00259376.v2`, `phs001013.v3.pht005311.v2.phv00259377.v2`, `phs001013.v3.pht005311.v2.phv00259378.v2`, `phs001013.v3.pht005311.v2.phv00259393.v2`
     * Function:
       ```r
@@ -6519,7 +6519,7 @@
       }
       ```
 <a id="weight_baseline_1-jhs"></a>
-  * ### **JHS**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001940.v1.phv00125861.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
     * Function:
       ```r
@@ -6541,7 +6541,7 @@
       }
       ```
 <a id="weight_baseline_1-mayo_vte_geneva"></a>
-  * ### **Mayo_VTE_GENEVA**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **Mayo_VTE_GENEVA**:
     * Variables: `phs000289.v2.pht001886.v2.phv00121846.v1`, `phs000289.v2.pht001886.v2.phv00121873.v2`
     * Function:
       ```r
@@ -6558,7 +6558,7 @@
       }
       ```
 <a id="weight_baseline_1-mayo_vte_olmsted"></a>
-  * ### **Mayo_VTE_Olmsted**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **Mayo_VTE_Olmsted**:
     * Variables: `phs001402.v1.pht008239.v1.phv00389902.v1`, `phs001402.v1.pht008239.v1.phv00389929.v1`
     * Function:
       ```r
@@ -6581,7 +6581,7 @@
       }
       ```
 <a id="weight_baseline_1-mesa"></a>
-  * ### **MESA**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082685.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084484.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087079.v1`
     * Function:
       ```r
@@ -6605,7 +6605,7 @@
       }
       ```
 <a id="weight_baseline_1-mgh_af"></a>
-  * ### **MGH_AF**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **MGH_AF**:
     * Variables: `phs001001.v1.pht005655.v1.phv00354560.v1`, `phs001001.v1.pht005655.v1.phv00354565.v1`
     * Function:
       ```r
@@ -6631,7 +6631,7 @@
       }
       ```
 <a id="weight_baseline_1-partners"></a>
-  * ### **Partners**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **Partners**:
     * Variables: `phs001024.v3.pht005693.v1.phv00265978.v1`, `phs001024.v3.pht005693.v1.phv00265983.v1`
     * Function:
       ```r
@@ -6660,7 +6660,7 @@
       }
       ```
 <a id="weight_baseline_1-sas"></a>
-  * ### **SAS**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **SAS**:
     * Variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258684.v1`
     * Function:
       ```r
@@ -6680,7 +6680,7 @@
       }
       ```
 <a id="weight_baseline_1-vafar"></a>
-  * ### **VAFAR**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **VAFAR**:
     * Variables: `phs000997.v3.pht005688.v3.phv00265921.v3`, `phs000997.v3.pht005688.v3.phv00265927.v3`
     * Function:
       ```r
@@ -6708,7 +6708,7 @@
       }
       ```
 <a id="weight_baseline_1-vu_af"></a>
-  * ### **VU_AF**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **VU_AF**:
     * Variables: `phs001032.v4.pht005675.v3.phv00265805.v2`, `phs001032.v4.pht005675.v3.phv00265811.v2`
     * Function:
       ```r
@@ -6735,7 +6735,7 @@
       }
       ```
 <a id="weight_baseline_1-wghs"></a>
-  * ### **WGHS**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **WGHS**:
     * Variables: `phs001040.v3.pht005682.v3.phv00265848.v3`, `phs001040.v3.pht005682.v3.phv00375261.v1`
     * Function:
       ```r
@@ -6760,7 +6760,7 @@
       }
       ```
 <a id="weight_baseline_1-whi"></a>
-  * ### **WHI**:
+  * ### baseline_common_covariates/weight_baseline_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001019.v6.phv00079851.v6`, `phs000200.v11.pht001019.v6.phv00079852.v6`, `phs000200.v11.pht001019.v6.phv00079859.v6`
     * Function:
       ```r
@@ -6810,7 +6810,7 @@
 * [wbc_ncnc_bld_1](#wbc_ncnc_bld_1)
 
 <a id="basophil_ncnc_bld_1"></a>
-## **basophil_ncnc_bld_1** (basophil_ncnc_bld)
+## blood_cell_count: **basophil_ncnc_bld_1** (basophil_ncnc_bld)
   Count by volume, or number concentration (ncnc), of basophils in the blood (bld).
   * **Harmonization Units**:
     * [Amish](#basophil_ncnc_bld_1-amish)
@@ -6860,7 +6860,7 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values for WBC, basophils, and other WBC subtype differentials may not be from the same visit, so the harmonized subtype differential counts may not sum to the WBC count.
     
 <a id="basophil_ncnc_bld_1-amish"></a>
-  * ### **Amish**:
+  * ### blood_cell_count/basophil_ncnc_bld_1 -- **Amish**:
     * Variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253015.v1`
     * Function:
       ```r
@@ -6886,7 +6886,7 @@
       }
       ```
 <a id="basophil_ncnc_bld_1-aric"></a>
-  * ### **ARIC**:
+  * ### blood_cell_count/basophil_ncnc_bld_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004107.v2.phv00207264.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004108.v2.phv00207279.v1`
     * Function:
       ```r
@@ -6954,7 +6954,7 @@
       }
       ```
 <a id="basophil_ncnc_bld_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### blood_cell_count/basophil_ncnc_bld_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112686.v2`, `phs000285.v3.pht001563.v2.phv00112696.v2`
     * Function:
       ```r
@@ -6981,7 +6981,7 @@
       }
       ```
 <a id="basophil_ncnc_bld_1-fhs_gen3nosomni2"></a>
-  * ### **FHS_Gen3NOSOmni2**:
+  * ### blood_cell_count/basophil_ncnc_bld_1 -- **FHS_Gen3NOSOmni2**:
     * Variables: `phs000007.v29.pht002889.v2.phv00172178.v2`, `phs000007.v29.pht002889.v2.phv00172192.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
@@ -7013,7 +7013,7 @@
       }
       ```
 <a id="basophil_ncnc_bld_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### blood_cell_count/basophil_ncnc_bld_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227039.v1`
     * Function:
       ```r
@@ -7049,7 +7049,7 @@
       }
       ```
 <a id="basophil_ncnc_bld_1-fhs_omni1"></a>
-  * ### **FHS_Omni1**:
+  * ### blood_cell_count/basophil_ncnc_bld_1 -- **FHS_Omni1**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227039.v1`
     * Function:
       ```r
@@ -7085,7 +7085,7 @@
       }
       ```
 <a id="basophil_ncnc_bld_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### blood_cell_count/basophil_ncnc_bld_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`, `phs000810.v1.pht004715.v1.phv00226288.v1`
     * Function:
       ```r
@@ -7105,7 +7105,7 @@
       }
       ```
 <a id="basophil_ncnc_bld_1-jhs"></a>
-  * ### **JHS**:
+  * ### blood_cell_count/basophil_ncnc_bld_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127620.v1`, `phs000286.v5.pht001959.v1.phv00127631.v1`
     * Function:
       ```r
@@ -7139,7 +7139,7 @@
       }
       ```
 <a id="basophil_ncnc_bld_1-mesa"></a>
-  * ### **MESA**:
+  * ### blood_cell_count/basophil_ncnc_bld_1 -- **MESA**:
     * Variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00219002.v1`
     * Function:
       ```r
@@ -7165,7 +7165,7 @@
       }
       ```
 <a id="eosinophil_ncnc_bld_1"></a>
-## **eosinophil_ncnc_bld_1** (eosinophil_ncnc_bld)
+## blood_cell_count: **eosinophil_ncnc_bld_1** (eosinophil_ncnc_bld)
   Count by volume, or number concentration (ncnc), of eosinophils in the blood (bld).
   * **Harmonization Units**:
     * [Amish](#eosinophil_ncnc_bld_1-amish)
@@ -7215,7 +7215,7 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values for WBC, eosinophils, and other WBC subtype differentials may not be from the same visit, so the harmonized subtype differential counts may not sum to the WBC count.
     
 <a id="eosinophil_ncnc_bld_1-amish"></a>
-  * ### **Amish**:
+  * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **Amish**:
     * Variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253014.v1`
     * Function:
       ```r
@@ -7241,7 +7241,7 @@
       }
       ```
 <a id="eosinophil_ncnc_bld_1-aric"></a>
-  * ### **ARIC**:
+  * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004107.v2.phv00207263.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004108.v2.phv00207278.v1`
     * Function:
       ```r
@@ -7309,7 +7309,7 @@
       }
       ```
 <a id="eosinophil_ncnc_bld_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112686.v2`, `phs000285.v3.pht001563.v2.phv00112693.v2`
     * Function:
       ```r
@@ -7336,7 +7336,7 @@
       }
       ```
 <a id="eosinophil_ncnc_bld_1-fhs_gen3nosomni2"></a>
-  * ### **FHS_Gen3NOSOmni2**:
+  * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **FHS_Gen3NOSOmni2**:
     * Variables: `phs000007.v29.pht002889.v2.phv00172178.v2`, `phs000007.v29.pht002889.v2.phv00172191.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
@@ -7368,7 +7368,7 @@
       }
       ```
 <a id="eosinophil_ncnc_bld_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227038.v1`
     * Function:
       ```r
@@ -7404,7 +7404,7 @@
       }
       ```
 <a id="eosinophil_ncnc_bld_1-fhs_omni1"></a>
-  * ### **FHS_Omni1**:
+  * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **FHS_Omni1**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227038.v1`
     * Function:
       ```r
@@ -7440,7 +7440,7 @@
       }
       ```
 <a id="eosinophil_ncnc_bld_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`, `phs000810.v1.pht004715.v1.phv00226287.v1`
     * Function:
       ```r
@@ -7460,7 +7460,7 @@
       }
       ```
 <a id="eosinophil_ncnc_bld_1-jhs"></a>
-  * ### **JHS**:
+  * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127621.v1`, `phs000286.v5.pht001959.v1.phv00127631.v1`
     * Function:
       ```r
@@ -7494,7 +7494,7 @@
       }
       ```
 <a id="eosinophil_ncnc_bld_1-mesa"></a>
-  * ### **MESA**:
+  * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **MESA**:
     * Variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00219001.v1`
     * Function:
       ```r
@@ -7520,7 +7520,7 @@
       }
       ```
 <a id="hematocrit_vfr_bld_1"></a>
-## **hematocrit_vfr_bld_1** (hematocrit_vfr_bld)
+## blood_cell_count: **hematocrit_vfr_bld_1** (hematocrit_vfr_bld)
   Measurement of hematocrit, the fraction of volume (vfr) of blood (bld) that is composed of red blood cells.
   * **Harmonization Units**:
     * [Amish](#hematocrit_vfr_bld_1-amish)
@@ -7561,7 +7561,7 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject.
     
 <a id="hematocrit_vfr_bld_1-amish"></a>
-  * ### **Amish**:
+  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **Amish**:
     * Variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253008.v1`
     * Function:
       ```r
@@ -7586,7 +7586,7 @@
       }
       ```
 <a id="hematocrit_vfr_bld_1-aric"></a>
-  * ### **ARIC**:
+  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004107.v2.phv00207255.v1`, `phs000280.v4.pht004108.v2.phv00207270.v1`, `phs000280.v4.pht004109.v2.phv00207289.v1`, `phs000280.v4.pht004110.v2.phv00207301.v1`, `phs000280.v4.pht006422.v1.phv00294957.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
     * Function:
       ```r
@@ -7659,7 +7659,7 @@
       }
       ```
 <a id="hematocrit_vfr_bld_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112689.v2`
     * Function:
       ```r
@@ -7684,7 +7684,7 @@
       }
       ```
 <a id="hematocrit_vfr_bld_1-chs"></a>
-  * ### **CHS**:
+  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100413.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
@@ -7703,7 +7703,7 @@
       }
       ```
 <a id="hematocrit_vfr_bld_1-fhs_gen3nosomni2"></a>
-  * ### **FHS_Gen3NOSOmni2**:
+  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **FHS_Gen3NOSOmni2**:
     * Variables: `phs000007.v29.pht002889.v2.phv00172181.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
@@ -7733,7 +7733,7 @@
       }
       ```
 <a id="hematocrit_vfr_bld_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht000030.v7.phv00007555.v5`, `phs000007.v29.pht000031.v7.phv00008111.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227028.v1`
     * Function:
       ```r
@@ -7805,7 +7805,7 @@
       }
       ```
 <a id="hematocrit_vfr_bld_1-fhs_omni1"></a>
-  * ### **FHS_Omni1**:
+  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **FHS_Omni1**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227028.v1`
     * Function:
       ```r
@@ -7838,7 +7838,7 @@
       }
       ```
 <a id="hematocrit_vfr_bld_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226303.v1`
     * Function:
       ```r
@@ -7857,7 +7857,7 @@
       }
       ```
 <a id="hematocrit_vfr_bld_1-jhs"></a>
-  * ### **JHS**:
+  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127614.v1`
     * Function:
       ```r
@@ -7886,7 +7886,7 @@
       }
       ```
 <a id="hematocrit_vfr_bld_1-mesa"></a>
-  * ### **MESA**:
+  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **MESA**:
     * Variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218992.v1`
     * Function:
       ```r
@@ -7910,7 +7910,7 @@
       }
       ```
 <a id="hematocrit_vfr_bld_1-whi"></a>
-  * ### **WHI**:
+  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000986.v6.phv00077362.v6`, `phs000200.v11.pht000986.v6.phv00077363.v6`, `phs000200.v11.pht000986.v6.phv00077365.v6`, `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`
     * Function:
       ```r
@@ -7943,7 +7943,7 @@
       }
       ```
 <a id="hemoglobin_mcnc_bld_1"></a>
-## **hemoglobin_mcnc_bld_1** (hemoglobin_mcnc_bld)
+## blood_cell_count: **hemoglobin_mcnc_bld_1** (hemoglobin_mcnc_bld)
   Measurement of mass per volume, or mass concentration (mcnc), of hemoglobin in the blood (bld).
   * **Harmonization Units**:
     * [Amish](#hemoglobin_mcnc_bld_1-amish)
@@ -7983,7 +7983,7 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject.
     
 <a id="hemoglobin_mcnc_bld_1-amish"></a>
-  * ### **Amish**:
+  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **Amish**:
     * Variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253007.v1`
     * Function:
       ```r
@@ -8008,7 +8008,7 @@
       }
       ```
 <a id="hemoglobin_mcnc_bld_1-aric"></a>
-  * ### **ARIC**:
+  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004107.v2.phv00207256.v1`, `phs000280.v4.pht004108.v2.phv00207271.v1`, `phs000280.v4.pht004109.v2.phv00207288.v1`, `phs000280.v4.pht004110.v2.phv00207300.v1`, `phs000280.v4.pht006422.v1.phv00294956.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
     * Function:
       ```r
@@ -8081,7 +8081,7 @@
       }
       ```
 <a id="hemoglobin_mcnc_bld_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112688.v2`
     * Function:
       ```r
@@ -8106,7 +8106,7 @@
       }
       ```
 <a id="hemoglobin_mcnc_bld_1-chs"></a>
-  * ### **CHS**:
+  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100412.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
@@ -8123,7 +8123,7 @@
       }
       ```
 <a id="hemoglobin_mcnc_bld_1-fhs_gen3nosomni2"></a>
-  * ### **FHS_Gen3NOSOmni2**:
+  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **FHS_Gen3NOSOmni2**:
     * Variables: `phs000007.v29.pht002889.v2.phv00172180.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
@@ -8152,7 +8152,7 @@
       }
       ```
 <a id="hemoglobin_mcnc_bld_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht000030.v7.phv00007642.v5`, `phs000007.v29.pht000031.v7.phv00008110.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227027.v1`
     * Function:
       ```r
@@ -8230,7 +8230,7 @@
       }
       ```
 <a id="hemoglobin_mcnc_bld_1-fhs_omni1"></a>
-  * ### **FHS_Omni1**:
+  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **FHS_Omni1**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227027.v1`
     * Function:
       ```r
@@ -8263,7 +8263,7 @@
       }
       ```
 <a id="hemoglobin_mcnc_bld_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226302.v1`
     * Function:
       ```r
@@ -8282,7 +8282,7 @@
       }
       ```
 <a id="hemoglobin_mcnc_bld_1-jhs"></a>
-  * ### **JHS**:
+  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127615.v1`
     * Function:
       ```r
@@ -8311,7 +8311,7 @@
       }
       ```
 <a id="hemoglobin_mcnc_bld_1-mesa"></a>
-  * ### **MESA**:
+  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **MESA**:
     * Variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218993.v1`
     * Function:
       ```r
@@ -8334,7 +8334,7 @@
       }
       ```
 <a id="hemoglobin_mcnc_bld_1-whi"></a>
-  * ### **WHI**:
+  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000986.v6.phv00077362.v6`, `phs000200.v11.pht000986.v6.phv00077363.v6`, `phs000200.v11.pht000986.v6.phv00077366.v6`, `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`
     * Function:
       ```r
@@ -8369,7 +8369,7 @@
       }
       ```
 <a id="lymphocyte_ncnc_bld_1"></a>
-## **lymphocyte_ncnc_bld_1** (lymphocyte_ncnc_bld)
+## blood_cell_count: **lymphocyte_ncnc_bld_1** (lymphocyte_ncnc_bld)
   Count by volume, or number concentration (ncnc), of lymphocytes in the blood (bld).
   * **Harmonization Units**:
     * [Amish](#lymphocyte_ncnc_bld_1-amish)
@@ -8419,7 +8419,7 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values for WBC, lymphocytes, and other WBC subtype differentials may not be from the same visit, so the harmonized subtype differential counts may not sum to the WBC count.
     
 <a id="lymphocyte_ncnc_bld_1-amish"></a>
-  * ### **Amish**:
+  * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **Amish**:
     * Variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253013.v1`
     * Function:
       ```r
@@ -8446,7 +8446,7 @@
       }
       ```
 <a id="lymphocyte_ncnc_bld_1-aric"></a>
-  * ### **ARIC**:
+  * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004107.v2.phv00207261.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004108.v2.phv00207276.v1`, `phs000280.v4.pht006422.v1.phv00294954.v1`, `phs000280.v4.pht006422.v1.phv00294964.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
     * Function:
       ```r
@@ -8522,7 +8522,7 @@
       }
       ```
 <a id="lymphocyte_ncnc_bld_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112686.v2`, `phs000285.v3.pht001563.v2.phv00112691.v2`
     * Function:
       ```r
@@ -8550,7 +8550,7 @@
       }
       ```
 <a id="lymphocyte_ncnc_bld_1-fhs_gen3nosomni2"></a>
-  * ### **FHS_Gen3NOSOmni2**:
+  * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **FHS_Gen3NOSOmni2**:
     * Variables: `phs000007.v29.pht002889.v2.phv00172178.v2`, `phs000007.v29.pht002889.v2.phv00172189.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
@@ -8582,7 +8582,7 @@
       }
       ```
 <a id="lymphocyte_ncnc_bld_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227036.v1`
     * Function:
       ```r
@@ -8618,7 +8618,7 @@
       }
       ```
 <a id="lymphocyte_ncnc_bld_1-fhs_omni1"></a>
-  * ### **FHS_Omni1**:
+  * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **FHS_Omni1**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227036.v1`
     * Function:
       ```r
@@ -8654,7 +8654,7 @@
       }
       ```
 <a id="lymphocyte_ncnc_bld_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`, `phs000810.v1.pht004715.v1.phv00226285.v1`
     * Function:
       ```r
@@ -8674,7 +8674,7 @@
       }
       ```
 <a id="lymphocyte_ncnc_bld_1-jhs"></a>
-  * ### **JHS**:
+  * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127622.v1`, `phs000286.v5.pht001959.v1.phv00127631.v1`
     * Function:
       ```r
@@ -8708,7 +8708,7 @@
       }
       ```
 <a id="lymphocyte_ncnc_bld_1-mesa"></a>
-  * ### **MESA**:
+  * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **MESA**:
     * Variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218998.v1`
     * Function:
       ```r
@@ -8733,7 +8733,7 @@
       }
       ```
 <a id="mch_entmass_rbc_1"></a>
-## **mch_entmass_rbc_1** (mch_entmass_rbc)
+## blood_cell_count: **mch_entmass_rbc_1** (mch_entmass_rbc)
   Measurement of the average mass (entmass) of hemoglobin per red blood cell(rbc), known as mean corpuscular hemoglobin (MCH).
   * **Harmonization Units**:
     * [Amish](#mch_entmass_rbc_1-amish)
@@ -8779,7 +8779,7 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values for hemoglobin, red blood cell count, and MCH may not be from the same visit.
     
 <a id="mch_entmass_rbc_1-amish"></a>
-  * ### **Amish**:
+  * ### blood_cell_count/mch_entmass_rbc_1 -- **Amish**:
     * Variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253007.v1`, `phs000956.v2.pht005002.v1.phv00253010.v1`
     * Function:
       ```r
@@ -8807,7 +8807,7 @@
       }
       ```
 <a id="mch_entmass_rbc_1-aric"></a>
-  * ### **ARIC**:
+  * ### blood_cell_count/mch_entmass_rbc_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004109.v2.phv00207290.v1`, `phs000280.v4.pht004110.v2.phv00207302.v1`, `phs000280.v4.pht006422.v1.phv00294960.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
     * Function:
       ```r
@@ -8870,7 +8870,7 @@
       }
       ```
 <a id="mch_entmass_rbc_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### blood_cell_count/mch_entmass_rbc_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112687.v2`, `phs000285.v3.pht001563.v2.phv00112688.v2`
     * Function:
       ```r
@@ -8897,7 +8897,7 @@
       }
       ```
 <a id="mch_entmass_rbc_1-fhs_gen3nosomni2"></a>
-  * ### **FHS_Gen3NOSOmni2**:
+  * ### blood_cell_count/mch_entmass_rbc_1 -- **FHS_Gen3NOSOmni2**:
     * Variables: `phs000007.v29.pht002889.v2.phv00172183.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
@@ -8926,7 +8926,7 @@
       }
       ```
 <a id="mch_entmass_rbc_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### blood_cell_count/mch_entmass_rbc_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht000030.v7.phv00007645.v5`, `phs000007.v29.pht000031.v7.phv00008113.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227030.v1`
     * Function:
       ```r
@@ -9003,7 +9003,7 @@
       }
       ```
 <a id="mch_entmass_rbc_1-fhs_omni1"></a>
-  * ### **FHS_Omni1**:
+  * ### blood_cell_count/mch_entmass_rbc_1 -- **FHS_Omni1**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227030.v1`
     * Function:
       ```r
@@ -9036,7 +9036,7 @@
       }
       ```
 <a id="mch_entmass_rbc_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### blood_cell_count/mch_entmass_rbc_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226305.v1`
     * Function:
       ```r
@@ -9056,7 +9056,7 @@
       }
       ```
 <a id="mch_entmass_rbc_1-jhs"></a>
-  * ### **JHS**:
+  * ### blood_cell_count/mch_entmass_rbc_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127623.v1`
     * Function:
       ```r
@@ -9085,7 +9085,7 @@
       }
       ```
 <a id="mch_entmass_rbc_1-mesa"></a>
-  * ### **MESA**:
+  * ### blood_cell_count/mch_entmass_rbc_1 -- **MESA**:
     * Variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218990.v1`, `phs000209.v13.pht004319.v1.phv00218993.v1`
     * Function:
       ```r
@@ -9117,7 +9117,7 @@
       }
       ```
 <a id="mchc_mcnc_rbc_1"></a>
-## **mchc_mcnc_rbc_1** (mchc_mcnc_rbc)
+## blood_cell_count: **mchc_mcnc_rbc_1** (mchc_mcnc_rbc)
   Measurement of the mass concentration (mcnc) of hemoglobin in a given volume of packed red blood cells (rbc), known as mean corpuscular hemoglobin concentration (MCHC).
   * **Harmonization Units**:
     * [Amish](#mchc_mcnc_rbc_1-amish)
@@ -9169,7 +9169,7 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values for hemoglobin, hematocrit, and MCHC may not be from the same visit.
     
 <a id="mchc_mcnc_rbc_1-amish"></a>
-  * ### **Amish**:
+  * ### blood_cell_count/mchc_mcnc_rbc_1 -- **Amish**:
     * Variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253007.v1`, `phs000956.v2.pht005002.v1.phv00253008.v1`
     * Function:
       ```r
@@ -9199,7 +9199,7 @@
       }
       ```
 <a id="mchc_mcnc_rbc_1-aric"></a>
-  * ### **ARIC**:
+  * ### blood_cell_count/mchc_mcnc_rbc_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004107.v2.phv00207255.v1`, `phs000280.v4.pht004107.v2.phv00207256.v1`, `phs000280.v4.pht004108.v2.phv00207270.v1`, `phs000280.v4.pht004108.v2.phv00207271.v1`, `phs000280.v4.pht004109.v2.phv00207288.v1`, `phs000280.v4.pht004109.v2.phv00207289.v1`, `phs000280.v4.pht004110.v2.phv00207300.v1`, `phs000280.v4.pht004110.v2.phv00207301.v1`, `phs000280.v4.pht006422.v1.phv00294956.v1`, `phs000280.v4.pht006422.v1.phv00294957.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
     * Function:
       ```r
@@ -9281,7 +9281,7 @@
       }
       ```
 <a id="mchc_mcnc_rbc_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### blood_cell_count/mchc_mcnc_rbc_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112688.v2`, `phs000285.v3.pht001563.v2.phv00112689.v2`
     * Function:
       ```r
@@ -9308,7 +9308,7 @@
       }
       ```
 <a id="mchc_mcnc_rbc_1-chs"></a>
-  * ### **CHS**:
+  * ### blood_cell_count/mchc_mcnc_rbc_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100412.v1`, `phs000287.v6.pht001452.v1.phv00100413.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
@@ -9329,7 +9329,7 @@
       }
       ```
 <a id="mchc_mcnc_rbc_1-fhs_gen3nosomni2"></a>
-  * ### **FHS_Gen3NOSOmni2**:
+  * ### blood_cell_count/mchc_mcnc_rbc_1 -- **FHS_Gen3NOSOmni2**:
     * Variables: `phs000007.v29.pht002889.v2.phv00172184.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
@@ -9358,7 +9358,7 @@
       }
       ```
 <a id="mchc_mcnc_rbc_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### blood_cell_count/mchc_mcnc_rbc_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht000030.v7.phv00007646.v5`, `phs000007.v29.pht000031.v7.phv00008114.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227031.v1`
     * Function:
       ```r
@@ -9436,7 +9436,7 @@
       }
       ```
 <a id="mchc_mcnc_rbc_1-fhs_omni1"></a>
-  * ### **FHS_Omni1**:
+  * ### blood_cell_count/mchc_mcnc_rbc_1 -- **FHS_Omni1**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227031.v1`
     * Function:
       ```r
@@ -9469,7 +9469,7 @@
       }
       ```
 <a id="mchc_mcnc_rbc_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### blood_cell_count/mchc_mcnc_rbc_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226306.v1`
     * Function:
       ```r
@@ -9489,7 +9489,7 @@
       }
       ```
 <a id="mchc_mcnc_rbc_1-jhs"></a>
-  * ### **JHS**:
+  * ### blood_cell_count/mchc_mcnc_rbc_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127624.v1`
     * Function:
       ```r
@@ -9518,7 +9518,7 @@
       }
       ```
 <a id="mchc_mcnc_rbc_1-mesa"></a>
-  * ### **MESA**:
+  * ### blood_cell_count/mchc_mcnc_rbc_1 -- **MESA**:
     * Variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218992.v1`, `phs000209.v13.pht004319.v1.phv00218993.v1`
     * Function:
       ```r
@@ -9551,7 +9551,7 @@
       }
       ```
 <a id="mcv_entvol_rbc_1"></a>
-## **mcv_entvol_rbc_1** (mcv_entvol_rbc)
+## blood_cell_count: **mcv_entvol_rbc_1** (mcv_entvol_rbc)
   Measurement of the average volume (entvol) of red blood cells (rbc), known as mean corpuscular volume (MCV).
   * **Harmonization Units**:
     * [Amish](#mcv_entvol_rbc_1-amish)
@@ -9597,7 +9597,7 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values for hematocrit, red blood cell count, and MCV may not be from the same visit.
     
 <a id="mcv_entvol_rbc_1-amish"></a>
-  * ### **Amish**:
+  * ### blood_cell_count/mcv_entvol_rbc_1 -- **Amish**:
     * Variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253008.v1`, `phs000956.v2.pht005002.v1.phv00253010.v1`
     * Function:
       ```r
@@ -9625,7 +9625,7 @@
       }
       ```
 <a id="mcv_entvol_rbc_1-aric"></a>
-  * ### **ARIC**:
+  * ### blood_cell_count/mcv_entvol_rbc_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004108.v2.phv00207282.v1`, `phs000280.v4.pht004109.v2.phv00207293.v1`, `phs000280.v4.pht004110.v2.phv00207305.v1`, `phs000280.v4.pht006422.v1.phv00294959.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
     * Function:
       ```r
@@ -9693,7 +9693,7 @@
       }
       ```
 <a id="mcv_entvol_rbc_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### blood_cell_count/mcv_entvol_rbc_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112687.v2`, `phs000285.v3.pht001563.v2.phv00112689.v2`
     * Function:
       ```r
@@ -9720,7 +9720,7 @@
       }
       ```
 <a id="mcv_entvol_rbc_1-fhs_gen3nosomni2"></a>
-  * ### **FHS_Gen3NOSOmni2**:
+  * ### blood_cell_count/mcv_entvol_rbc_1 -- **FHS_Gen3NOSOmni2**:
     * Variables: `phs000007.v29.pht002889.v2.phv00172182.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
@@ -9749,7 +9749,7 @@
       }
       ```
 <a id="mcv_entvol_rbc_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### blood_cell_count/mcv_entvol_rbc_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht000030.v7.phv00007644.v5`, `phs000007.v29.pht000031.v7.phv00008112.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227029.v1`
     * Function:
       ```r
@@ -9821,7 +9821,7 @@
       }
       ```
 <a id="mcv_entvol_rbc_1-fhs_omni1"></a>
-  * ### **FHS_Omni1**:
+  * ### blood_cell_count/mcv_entvol_rbc_1 -- **FHS_Omni1**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227029.v1`
     * Function:
       ```r
@@ -9854,7 +9854,7 @@
       }
       ```
 <a id="mcv_entvol_rbc_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### blood_cell_count/mcv_entvol_rbc_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226304.v1`
     * Function:
       ```r
@@ -9874,7 +9874,7 @@
       }
       ```
 <a id="mcv_entvol_rbc_1-jhs"></a>
-  * ### **JHS**:
+  * ### blood_cell_count/mcv_entvol_rbc_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127625.v1`
     * Function:
       ```r
@@ -9903,7 +9903,7 @@
       }
       ```
 <a id="mcv_entvol_rbc_1-mesa"></a>
-  * ### **MESA**:
+  * ### blood_cell_count/mcv_entvol_rbc_1 -- **MESA**:
     * Variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218990.v1`, `phs000209.v13.pht004319.v1.phv00218992.v1`
     * Function:
       ```r
@@ -9937,7 +9937,7 @@
       }
       ```
 <a id="monocyte_ncnc_bld_1"></a>
-## **monocyte_ncnc_bld_1** (monocyte_ncnc_bld)
+## blood_cell_count: **monocyte_ncnc_bld_1** (monocyte_ncnc_bld)
   Count by volume, or number concentration (ncnc), of monocytes in the blood (bld).
   * **Harmonization Units**:
     * [Amish](#monocyte_ncnc_bld_1-amish)
@@ -9987,7 +9987,7 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values for WBC, monocytes, and other WBC subtype differentials may not be from the same visit, so the harmonized subtype differential counts may not sum to the WBC count.
     
 <a id="monocyte_ncnc_bld_1-amish"></a>
-  * ### **Amish**:
+  * ### blood_cell_count/monocyte_ncnc_bld_1 -- **Amish**:
     * Variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253012.v1`
     * Function:
       ```r
@@ -10013,7 +10013,7 @@
       }
       ```
 <a id="monocyte_ncnc_bld_1-aric"></a>
-  * ### **ARIC**:
+  * ### blood_cell_count/monocyte_ncnc_bld_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004107.v2.phv00207262.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004108.v2.phv00207277.v1`, `phs000280.v4.pht006422.v1.phv00294954.v1`, `phs000280.v4.pht006422.v1.phv00294965.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
     * Function:
       ```r
@@ -10089,7 +10089,7 @@
       }
       ```
 <a id="monocyte_ncnc_bld_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### blood_cell_count/monocyte_ncnc_bld_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112686.v2`, `phs000285.v3.pht001563.v2.phv00112692.v2`
     * Function:
       ```r
@@ -10116,7 +10116,7 @@
       }
       ```
 <a id="monocyte_ncnc_bld_1-fhs_gen3nosomni2"></a>
-  * ### **FHS_Gen3NOSOmni2**:
+  * ### blood_cell_count/monocyte_ncnc_bld_1 -- **FHS_Gen3NOSOmni2**:
     * Variables: `phs000007.v29.pht002889.v2.phv00172178.v2`, `phs000007.v29.pht002889.v2.phv00172190.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
@@ -10148,7 +10148,7 @@
       }
       ```
 <a id="monocyte_ncnc_bld_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### blood_cell_count/monocyte_ncnc_bld_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227037.v1`
     * Function:
       ```r
@@ -10184,7 +10184,7 @@
       }
       ```
 <a id="monocyte_ncnc_bld_1-fhs_omni1"></a>
-  * ### **FHS_Omni1**:
+  * ### blood_cell_count/monocyte_ncnc_bld_1 -- **FHS_Omni1**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227037.v1`
     * Function:
       ```r
@@ -10220,7 +10220,7 @@
       }
       ```
 <a id="monocyte_ncnc_bld_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### blood_cell_count/monocyte_ncnc_bld_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`, `phs000810.v1.pht004715.v1.phv00226286.v1`
     * Function:
       ```r
@@ -10240,7 +10240,7 @@
       }
       ```
 <a id="monocyte_ncnc_bld_1-jhs"></a>
-  * ### **JHS**:
+  * ### blood_cell_count/monocyte_ncnc_bld_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127626.v1`, `phs000286.v5.pht001959.v1.phv00127631.v1`
     * Function:
       ```r
@@ -10274,7 +10274,7 @@
       }
       ```
 <a id="monocyte_ncnc_bld_1-mesa"></a>
-  * ### **MESA**:
+  * ### blood_cell_count/monocyte_ncnc_bld_1 -- **MESA**:
     * Variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00219000.v1`
     * Function:
       ```r
@@ -10299,7 +10299,7 @@
       }
       ```
 <a id="neutrophil_ncnc_bld_1"></a>
-## **neutrophil_ncnc_bld_1** (neutrophil_ncnc_bld)
+## blood_cell_count: **neutrophil_ncnc_bld_1** (neutrophil_ncnc_bld)
   Count by volume, or number concentration (ncnc), of neutrophils in the blood (bld).
   * **Harmonization Units**:
     * [Amish](#neutrophil_ncnc_bld_1-amish)
@@ -10355,7 +10355,7 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values for WBC, neutrophils, and other WBC subtype differentials may not be from the same visit, so the harmonized subtype differential counts may not sum to the WBC count.
     
 <a id="neutrophil_ncnc_bld_1-amish"></a>
-  * ### **Amish**:
+  * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **Amish**:
     * Variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253011.v1`
     * Function:
       ```r
@@ -10381,7 +10381,7 @@
       }
       ```
 <a id="neutrophil_ncnc_bld_1-aric"></a>
-  * ### **ARIC**:
+  * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004107.v2.phv00207259.v1`, `phs000280.v4.pht004107.v2.phv00207260.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004108.v2.phv00207274.v1`, `phs000280.v4.pht004108.v2.phv00207275.v1`
     * Function:
       ```r
@@ -10455,7 +10455,7 @@
       }
       ```
 <a id="neutrophil_ncnc_bld_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112686.v2`, `phs000285.v3.pht001563.v2.phv00112694.v2`, `phs000285.v3.pht001563.v2.phv00112695.v2`, `phs000285.v3.pht001563.v2.phv00112697.v2`, `phs000285.v3.pht001563.v2.phv00112698.v2`
     * Function:
       ```r
@@ -10496,7 +10496,7 @@
       }
       ```
 <a id="neutrophil_ncnc_bld_1-fhs_gen3nosomni2"></a>
-  * ### **FHS_Gen3NOSOmni2**:
+  * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **FHS_Gen3NOSOmni2**:
     * Variables: `phs000007.v29.pht002889.v2.phv00172178.v2`, `phs000007.v29.pht002889.v2.phv00172188.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
@@ -10528,7 +10528,7 @@
       }
       ```
 <a id="neutrophil_ncnc_bld_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227035.v1`
     * Function:
       ```r
@@ -10564,7 +10564,7 @@
       }
       ```
 <a id="neutrophil_ncnc_bld_1-fhs_omni1"></a>
-  * ### **FHS_Omni1**:
+  * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **FHS_Omni1**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227035.v1`
     * Function:
       ```r
@@ -10600,7 +10600,7 @@
       }
       ```
 <a id="neutrophil_ncnc_bld_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`, `phs000810.v1.pht004715.v1.phv00226284.v1`
     * Function:
       ```r
@@ -10620,7 +10620,7 @@
       }
       ```
 <a id="neutrophil_ncnc_bld_1-jhs"></a>
-  * ### **JHS**:
+  * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127630.v1`, `phs000286.v5.pht001959.v1.phv00127631.v1`, `phs000286.v5.pht001959.v1.phv00127632.v1`
     * Function:
       ```r
@@ -10660,7 +10660,7 @@
       }
       ```
 <a id="neutrophil_ncnc_bld_1-mesa"></a>
-  * ### **MESA**:
+  * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **MESA**:
     * Variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218999.v1`
     * Function:
       ```r
@@ -10686,7 +10686,7 @@
       }
       ```
 <a id="platelet_ncnc_bld_1"></a>
-## **platelet_ncnc_bld_1** (platelet_ncnc_bld)
+## blood_cell_count: **platelet_ncnc_bld_1** (platelet_ncnc_bld)
   Count by volume, or number concentration (ncnc), of platelets in the blood (bld).
   * **Harmonization Units**:
     * [Amish](#platelet_ncnc_bld_1-amish)
@@ -10723,7 +10723,7 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. 
     
 <a id="platelet_ncnc_bld_1-amish"></a>
-  * ### **Amish**:
+  * ### blood_cell_count/platelet_ncnc_bld_1 -- **Amish**:
     * Variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253009.v1`
     * Function:
       ```r
@@ -10748,7 +10748,7 @@
       }
       ```
 <a id="platelet_ncnc_bld_1-aric"></a>
-  * ### **ARIC**:
+  * ### blood_cell_count/platelet_ncnc_bld_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004107.v2.phv00207258.v1`, `phs000280.v4.pht004108.v2.phv00207273.v1`, `phs000280.v4.pht004109.v2.phv00207294.v1`, `phs000280.v4.pht004110.v2.phv00207306.v1`, `phs000280.v4.pht006422.v1.phv00294958.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
     * Function:
       ```r
@@ -10821,7 +10821,7 @@
       }
       ```
 <a id="platelet_ncnc_bld_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### blood_cell_count/platelet_ncnc_bld_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112690.v2`
     * Function:
       ```r
@@ -10847,7 +10847,7 @@
       }
       ```
 <a id="platelet_ncnc_bld_1-chs"></a>
-  * ### **CHS**:
+  * ### blood_cell_count/platelet_ncnc_bld_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100414.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
@@ -10865,7 +10865,7 @@
       }
       ```
 <a id="platelet_ncnc_bld_1-fhs_gen3nosomni2"></a>
-  * ### **FHS_Gen3NOSOmni2**:
+  * ### blood_cell_count/platelet_ncnc_bld_1 -- **FHS_Gen3NOSOmni2**:
     * Variables: `phs000007.v29.pht002889.v2.phv00172186.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
@@ -10894,7 +10894,7 @@
       }
       ```
 <a id="platelet_ncnc_bld_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### blood_cell_count/platelet_ncnc_bld_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227033.v1`
     * Function:
       ```r
@@ -10927,7 +10927,7 @@
       }
       ```
 <a id="platelet_ncnc_bld_1-fhs_omni1"></a>
-  * ### **FHS_Omni1**:
+  * ### blood_cell_count/platelet_ncnc_bld_1 -- **FHS_Omni1**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227033.v1`
     * Function:
       ```r
@@ -10960,7 +10960,7 @@
       }
       ```
 <a id="platelet_ncnc_bld_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### blood_cell_count/platelet_ncnc_bld_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226310.v1`
     * Function:
       ```r
@@ -10980,7 +10980,7 @@
       }
       ```
 <a id="platelet_ncnc_bld_1-jhs"></a>
-  * ### **JHS**:
+  * ### blood_cell_count/platelet_ncnc_bld_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127616.v1`
     * Function:
       ```r
@@ -11009,7 +11009,7 @@
       }
       ```
 <a id="platelet_ncnc_bld_1-mesa"></a>
-  * ### **MESA**:
+  * ### blood_cell_count/platelet_ncnc_bld_1 -- **MESA**:
     * Variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218991.v1`
     * Function:
       ```r
@@ -11034,7 +11034,7 @@
       }
       ```
 <a id="platelet_ncnc_bld_1-whi"></a>
-  * ### **WHI**:
+  * ### blood_cell_count/platelet_ncnc_bld_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000986.v6.phv00077362.v6`, `phs000200.v11.pht000986.v6.phv00077363.v6`, `phs000200.v11.pht000986.v6.phv00077367.v6`, `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`
     * Function:
       ```r
@@ -11066,7 +11066,7 @@
       }
       ```
 <a id="pmv_entvol_bld_1"></a>
-## **pmv_entvol_bld_1** (pmv_entvol_bld)
+## blood_cell_count: **pmv_entvol_bld_1** (pmv_entvol_bld)
   Measurement of the mean volume (entvol) of platelets in the blood (bld), known as mean platelet volume (MPV or PMV).
   * **Harmonization Units**:
     * [ARIC](#pmv_entvol_bld_1-aric)
@@ -11087,7 +11087,7 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values for mean platelet volume and platelet count may not be from the same visit.
     
 <a id="pmv_entvol_bld_1-aric"></a>
-  * ### **ARIC**:
+  * ### blood_cell_count/pmv_entvol_bld_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht006422.v1.phv00294963.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
     * Function:
       ```r
@@ -11115,7 +11115,7 @@
       }
       ```
 <a id="pmv_entvol_bld_1-fhs_gen3nosomni2"></a>
-  * ### **FHS_Gen3NOSOmni2**:
+  * ### blood_cell_count/pmv_entvol_bld_1 -- **FHS_Gen3NOSOmni2**:
     * Variables: `phs000007.v29.pht002889.v2.phv00172187.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
@@ -11144,7 +11144,7 @@
       }
       ```
 <a id="pmv_entvol_bld_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### blood_cell_count/pmv_entvol_bld_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227034.v1`
     * Function:
       ```r
@@ -11177,7 +11177,7 @@
       }
       ```
 <a id="pmv_entvol_bld_1-fhs_omni1"></a>
-  * ### **FHS_Omni1**:
+  * ### blood_cell_count/pmv_entvol_bld_1 -- **FHS_Omni1**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227034.v1`
     * Function:
       ```r
@@ -11210,7 +11210,7 @@
       }
       ```
 <a id="pmv_entvol_bld_1-jhs"></a>
-  * ### **JHS**:
+  * ### blood_cell_count/pmv_entvol_bld_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127627.v1`
     * Function:
       ```r
@@ -11239,7 +11239,7 @@
       }
       ```
 <a id="rbc_ncnc_bld_1"></a>
-## **rbc_ncnc_bld_1** (rbc_ncnc_bld)
+## blood_cell_count: **rbc_ncnc_bld_1** (rbc_ncnc_bld)
   Count by volume, or number concentration (ncnc), of red blood cells in the blood (bld).
   * **Harmonization Units**:
     * [Amish](#rbc_ncnc_bld_1-amish)
@@ -11275,7 +11275,7 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values of red blood cell count (RBC) and other red blood cell phenotypes may not be from the same visit.
     
 <a id="rbc_ncnc_bld_1-amish"></a>
-  * ### **Amish**:
+  * ### blood_cell_count/rbc_ncnc_bld_1 -- **Amish**:
     * Variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253010.v1`
     * Function:
       ```r
@@ -11300,7 +11300,7 @@
       }
       ```
 <a id="rbc_ncnc_bld_1-aric"></a>
-  * ### **ARIC**:
+  * ### blood_cell_count/rbc_ncnc_bld_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004109.v2.phv00207287.v1`, `phs000280.v4.pht004110.v2.phv00207299.v1`, `phs000280.v4.pht006422.v1.phv00294955.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
     * Function:
       ```r
@@ -11363,7 +11363,7 @@
       }
       ```
 <a id="rbc_ncnc_bld_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### blood_cell_count/rbc_ncnc_bld_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112687.v2`
     * Function:
       ```r
@@ -11388,7 +11388,7 @@
       }
       ```
 <a id="rbc_ncnc_bld_1-fhs_gen3nosomni2"></a>
-  * ### **FHS_Gen3NOSOmni2**:
+  * ### blood_cell_count/rbc_ncnc_bld_1 -- **FHS_Gen3NOSOmni2**:
     * Variables: `phs000007.v29.pht002889.v2.phv00172179.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
@@ -11417,7 +11417,7 @@
       }
       ```
 <a id="rbc_ncnc_bld_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### blood_cell_count/rbc_ncnc_bld_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht000030.v7.phv00007641.v5`, `phs000007.v29.pht000031.v7.phv00008109.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227026.v1`
     * Function:
       ```r
@@ -11495,7 +11495,7 @@
       }
       ```
 <a id="rbc_ncnc_bld_1-fhs_omni1"></a>
-  * ### **FHS_Omni1**:
+  * ### blood_cell_count/rbc_ncnc_bld_1 -- **FHS_Omni1**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227026.v1`
     * Function:
       ```r
@@ -11528,7 +11528,7 @@
       }
       ```
 <a id="rbc_ncnc_bld_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### blood_cell_count/rbc_ncnc_bld_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226294.v1`
     * Function:
       ```r
@@ -11548,7 +11548,7 @@
       }
       ```
 <a id="rbc_ncnc_bld_1-jhs"></a>
-  * ### **JHS**:
+  * ### blood_cell_count/rbc_ncnc_bld_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127629.v1`
     * Function:
       ```r
@@ -11577,7 +11577,7 @@
       }
       ```
 <a id="rbc_ncnc_bld_1-mesa"></a>
-  * ### **MESA**:
+  * ### blood_cell_count/rbc_ncnc_bld_1 -- **MESA**:
     * Variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218990.v1`
     * Function:
       ```r
@@ -11600,7 +11600,7 @@
       }
       ```
 <a id="rdw_ratio_rbc_1"></a>
-## **rdw_ratio_rbc_1** (rdw_ratio_rbc)
+## blood_cell_count: **rdw_ratio_rbc_1** (rdw_ratio_rbc)
   Measurement of the ratio of variation in width to the mean width of the red blood cell (rbc) volume distribution curve taken at +/- 1 CV, known as red cell distribution width (RDW).
   * **Harmonization Units**:
     * [ARIC](#rdw_ratio_rbc_1-aric)
@@ -11627,7 +11627,7 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values of red cell distribution width and other red blood cell phenotypes may not be from the same visit.
     
 <a id="rdw_ratio_rbc_1-aric"></a>
-  * ### **ARIC**:
+  * ### blood_cell_count/rdw_ratio_rbc_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004109.v2.phv00207292.v1`, `phs000280.v4.pht004110.v2.phv00207304.v1`, `phs000280.v4.pht006422.v1.phv00294962.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
     * Function:
       ```r
@@ -11690,7 +11690,7 @@
       }
       ```
 <a id="rdw_ratio_rbc_1-fhs_gen3nosomni2"></a>
-  * ### **FHS_Gen3NOSOmni2**:
+  * ### blood_cell_count/rdw_ratio_rbc_1 -- **FHS_Gen3NOSOmni2**:
     * Variables: `phs000007.v29.pht002889.v2.phv00172185.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
@@ -11720,7 +11720,7 @@
       }
       ```
 <a id="rdw_ratio_rbc_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### blood_cell_count/rdw_ratio_rbc_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227032.v1`
     * Function:
       ```r
@@ -11753,7 +11753,7 @@
       }
       ```
 <a id="rdw_ratio_rbc_1-fhs_omni1"></a>
-  * ### **FHS_Omni1**:
+  * ### blood_cell_count/rdw_ratio_rbc_1 -- **FHS_Omni1**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227032.v1`
     * Function:
       ```r
@@ -11787,7 +11787,7 @@
       }
       ```
 <a id="rdw_ratio_rbc_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### blood_cell_count/rdw_ratio_rbc_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226308.v1`
     * Function:
       ```r
@@ -11807,7 +11807,7 @@
       }
       ```
 <a id="rdw_ratio_rbc_1-jhs"></a>
-  * ### **JHS**:
+  * ### blood_cell_count/rdw_ratio_rbc_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127628.v1`
     * Function:
       ```r
@@ -11837,7 +11837,7 @@
       }
       ```
 <a id="wbc_ncnc_bld_1"></a>
-## **wbc_ncnc_bld_1** (wbc_ncnc_bld)
+## blood_cell_count: **wbc_ncnc_bld_1** (wbc_ncnc_bld)
   Count by volume, or number concentration (ncnc), of white blood cells in the blood (bld).
   * **Harmonization Units**:
     * [Amish](#wbc_ncnc_bld_1-amish)
@@ -11880,7 +11880,7 @@
     
     
 <a id="wbc_ncnc_bld_1-amish"></a>
-  * ### **Amish**:
+  * ### blood_cell_count/wbc_ncnc_bld_1 -- **Amish**:
     * Variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253006.v1`
     * Function:
       ```r
@@ -11905,7 +11905,7 @@
       }
       ```
 <a id="wbc_ncnc_bld_1-aric"></a>
-  * ### **ARIC**:
+  * ### blood_cell_count/wbc_ncnc_bld_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004109.v2.phv00207286.v1`, `phs000280.v4.pht004110.v2.phv00207298.v1`, `phs000280.v4.pht006422.v1.phv00294954.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
     * Function:
       ```r
@@ -11978,7 +11978,7 @@
       }
       ```
 <a id="wbc_ncnc_bld_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### blood_cell_count/wbc_ncnc_bld_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112686.v2`
     * Function:
       ```r
@@ -12003,7 +12003,7 @@
       }
       ```
 <a id="wbc_ncnc_bld_1-chs"></a>
-  * ### **CHS**:
+  * ### blood_cell_count/wbc_ncnc_bld_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100411.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
@@ -12021,7 +12021,7 @@
       }
       ```
 <a id="wbc_ncnc_bld_1-fhs_gen3nosomni2"></a>
-  * ### **FHS_Gen3NOSOmni2**:
+  * ### blood_cell_count/wbc_ncnc_bld_1 -- **FHS_Gen3NOSOmni2**:
     * Variables: `phs000007.v29.pht002889.v2.phv00172178.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
@@ -12050,7 +12050,7 @@
       }
       ```
 <a id="wbc_ncnc_bld_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### blood_cell_count/wbc_ncnc_bld_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht000030.v7.phv00007640.v5`, `phs000007.v29.pht000031.v7.phv00008108.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`
     * Function:
       ```r
@@ -12128,7 +12128,7 @@
       }
       ```
 <a id="wbc_ncnc_bld_1-fhs_omni1"></a>
-  * ### **FHS_Omni1**:
+  * ### blood_cell_count/wbc_ncnc_bld_1 -- **FHS_Omni1**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`
     * Function:
       ```r
@@ -12161,7 +12161,7 @@
       }
       ```
 <a id="wbc_ncnc_bld_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### blood_cell_count/wbc_ncnc_bld_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`
     * Function:
       ```r
@@ -12181,7 +12181,7 @@
       }
       ```
 <a id="wbc_ncnc_bld_1-jhs"></a>
-  * ### **JHS**:
+  * ### blood_cell_count/wbc_ncnc_bld_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127631.v1`
     * Function:
       ```r
@@ -12210,7 +12210,7 @@
       }
       ```
 <a id="wbc_ncnc_bld_1-mesa"></a>
-  * ### **MESA**:
+  * ### blood_cell_count/wbc_ncnc_bld_1 -- **MESA**:
     * Variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218997.v1`
     * Function:
       ```r
@@ -12234,7 +12234,7 @@
       }
       ```
 <a id="wbc_ncnc_bld_1-whi"></a>
-  * ### **WHI**:
+  * ### blood_cell_count/wbc_ncnc_bld_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000986.v6.phv00077362.v6`, `phs000200.v11.pht000986.v6.phv00077363.v6`, `phs000200.v11.pht000986.v6.phv00077368.v6`, `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`
     * Function:
       ```r
@@ -12275,7 +12275,7 @@
 * [bp_systolic_1](#bp_systolic_1)
 
 <a id="antihypertensive_meds_1"></a>
-## **antihypertensive_meds_1** (antihypertensive_meds)
+## blood_pressure: **antihypertensive_meds_1** (antihypertensive_meds)
   Indicator for use of antihypertensive medication at the time of blood pressure measurement.
   * **Harmonization Units**:
     * [Amish](#antihypertensive_meds_1-amish)
@@ -12314,7 +12314,7 @@
     There was no study variable to indicate whether a subject was taking antihypertensive medication at the time of blood pressure measurement. Therefore, all *_GOLDN_* subjects have missing values for this harmonized variable. 
     
 <a id="antihypertensive_meds_1-amish"></a>
-  * ### **Amish**:
+  * ### blood_pressure/antihypertensive_meds_1 -- **Amish**:
     * Variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00252997.v1`
     * Function:
       ```r
@@ -12338,7 +12338,7 @@
       }
       ```
 <a id="antihypertensive_meds_1-aric"></a>
-  * ### **ARIC**:
+  * ### blood_pressure/antihypertensive_meds_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004063.v2.phv00204754.v1`
     * Function:
       ```r
@@ -12363,7 +12363,7 @@
       }
       ```
 <a id="antihypertensive_meds_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### blood_pressure/antihypertensive_meds_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001569.v2.phv00113012.v2`, `phs000285.v3.pht001571.v2.phv00113154.v2`, `phs000285.v3.pht001571.v2.phv00113155.v2`, `phs000285.v3.pht001645.v2.phv00115119.v2`
     * Function:
       ```r
@@ -12430,7 +12430,7 @@
       }
       ```
 <a id="antihypertensive_meds_1-cfs"></a>
-  * ### **CFS**:
+  * ### blood_pressure/antihypertensive_meds_1 -- **CFS**:
     * Variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123029.v1`
     * Function:
       ```r
@@ -12453,7 +12453,7 @@
       }
       ```
 <a id="antihypertensive_meds_1-chs"></a>
-  * ### **CHS**:
+  * ### blood_pressure/antihypertensive_meds_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100595.v1`
     * Function:
       ```r
@@ -12472,7 +12472,7 @@
       }
       ```
 <a id="antihypertensive_meds_1-fhs_gen3_nos_omni2"></a>
-  * ### **FHS_Gen3_NOS_Omni2**:
+  * ### blood_pressure/antihypertensive_meds_1 -- **FHS_Gen3_NOS_Omni2**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006026.v1.phv00277059.v1`
     * Function:
       ```r
@@ -12493,7 +12493,7 @@
       }
       ```
 <a id="antihypertensive_meds_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### blood_pressure/antihypertensive_meds_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006027.v1.phv00277245.v1`
     * Function:
       ```r
@@ -12514,7 +12514,7 @@
       }
       ```
 <a id="antihypertensive_meds_1-fhs_omni1"></a>
-  * ### **FHS_Omni1**:
+  * ### blood_pressure/antihypertensive_meds_1 -- **FHS_Omni1**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht004813.v1.phv00250358.v1`
     * Function:
       ```r
@@ -12533,7 +12533,7 @@
       }
       ```
 <a id="antihypertensive_meds_1-fhs_original"></a>
-  * ### **FHS_Original**:
+  * ### blood_pressure/antihypertensive_meds_1 -- **FHS_Original**:
     * Variables: `phs000007.v29.pht000009.v2.phv00000705.v1`, `phs000007.v29.pht003099.v4.phv00177936.v4`
     * Function:
       ```r
@@ -12555,7 +12555,7 @@
       }
       ```
 <a id="antihypertensive_meds_1-genoa"></a>
-  * ### **GENOA**:
+  * ### blood_pressure/antihypertensive_meds_1 -- **GENOA**:
     * Variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006042.v1.phv00277585.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006656.v1.phv00307866.v1`
     * Function:
       ```r
@@ -12588,7 +12588,7 @@
       }
       ```
 <a id="antihypertensive_meds_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### blood_pressure/antihypertensive_meds_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226324.v1`
     * Function:
       ```r
@@ -12606,7 +12606,7 @@
       }
       ```
 <a id="antihypertensive_meds_1-jhs"></a>
-  * ### **JHS**:
+  * ### blood_pressure/antihypertensive_meds_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001949.v1.phv00126038.v1`
     * Function:
       ```r
@@ -12628,7 +12628,7 @@
       }
       ```
 <a id="antihypertensive_meds_1-mesa"></a>
-  * ### **MESA**:
+  * ### blood_pressure/antihypertensive_meds_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00083163.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085324.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087093.v1`
     * Function:
       ```r
@@ -12655,7 +12655,7 @@
       }
       ```
 <a id="antihypertensive_meds_1-sas"></a>
-  * ### **SAS**:
+  * ### blood_pressure/antihypertensive_meds_1 -- **SAS**:
     * Variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258749.v1`
     * Function:
       ```r
@@ -12673,7 +12673,7 @@
       }
       ```
 <a id="antihypertensive_meds_1-whi"></a>
-  * ### **WHI**:
+  * ### blood_pressure/antihypertensive_meds_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001019.v6.phv00079850.v6`, `phs000200.v11.pht001019.v6.phv00079852.v6`, `phs000200.v11.pht002754.v4.phv00169603.v4`, `phs000200.v11.pht002754.v4.phv00169605.v4`, `phs000200.v11.pht002754.v4.phv00169608.v4`, `phs000200.v11.pht002754.v4.phv00169611.v4`
     * Function:
       ```r
@@ -12803,7 +12803,7 @@
       }
       ```
 <a id="bp_diastolic_1"></a>
-## **bp_diastolic_1** (bp_diastolic)
+## blood_pressure: **bp_diastolic_1** (bp_diastolic)
   Resting diastolic blood pressure from the upper arm in a clinical setting.
   * **Harmonization Units**:
     * [Amish](#bp_diastolic_1-amish)
@@ -12852,7 +12852,7 @@
     The instruments used for BP measurements were different among studies, including standard manual sphygmomanometers, random-zero sphygmomanometers, and automated digital blood pressure monitors.
     
 <a id="bp_diastolic_1-amish"></a>
-  * ### **Amish**:
+  * ### blood_pressure/bp_diastolic_1 -- **Amish**:
     * Variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00252995.v1`, `phs000956.v2.pht005002.v1.phv00252996.v1`
     * Function:
       ```r
@@ -12877,7 +12877,7 @@
       }
       ```
 <a id="bp_diastolic_1-aric"></a>
-  * ### **ARIC**:
+  * ### blood_pressure/bp_diastolic_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004192.v2.phv00210284.v1`, `phs000280.v4.pht004192.v2.phv00210285.v1`, `phs000280.v4.pht004192.v2.phv00210286.v1`, `phs000280.v4.pht004192.v2.phv00210287.v1`, `phs000280.v4.pht004192.v2.phv00210288.v1`, `phs000280.v4.pht004192.v2.phv00210289.v1`
     * Function:
       ```r
@@ -12943,7 +12943,7 @@
       }
       ```
 <a id="bp_diastolic_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### blood_pressure/bp_diastolic_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001560.v2.phv00112481.v2`, `phs000285.v3.pht001560.v2.phv00112482.v2`, `phs000285.v3.pht001560.v2.phv00112483.v2`, `phs000285.v3.pht001560.v2.phv00112484.v2`, `phs000285.v3.pht001560.v2.phv00112487.v2`, `phs000285.v3.pht001560.v2.phv00112488.v2`, `phs000285.v3.pht001560.v2.phv00112489.v2`, `phs000285.v3.pht001560.v2.phv00112490.v2`, `phs000285.v3.pht001645.v2.phv00115119.v2`
     * Function:
       ```r
@@ -12993,7 +12993,7 @@
       }
       ```
 <a id="bp_diastolic_1-cfs"></a>
-  * ### **CFS**:
+  * ### blood_pressure/bp_diastolic_1 -- **CFS**:
     * Variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123001.v1`, `phs000284.v1.pht001902.v1.phv00123002.v1`
     * Function:
       ```r
@@ -13018,7 +13018,7 @@
       }
       ```
 <a id="bp_diastolic_1-chs"></a>
-  * ### **CHS**:
+  * ### blood_pressure/bp_diastolic_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100435.v1`, `phs000287.v6.pht001452.v1.phv00100436.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
@@ -13046,7 +13046,7 @@
       }
       ```
 <a id="bp_diastolic_1-copdgene"></a>
-  * ### **COPDGene**:
+  * ### blood_pressure/bp_diastolic_1 -- **COPDGene**:
     * Variables: `phs000179.v5.pht002239.v4.phv00159583.v4`, `phs000179.v5.pht002239.v4.phv00159590.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
     * Function:
       ```r
@@ -13076,7 +13076,7 @@
       }
       ```
 <a id="bp_diastolic_1-fhs_gen3_nos_omni2"></a>
-  * ### **FHS_Gen3_NOS_Omni2**:
+  * ### blood_pressure/bp_diastolic_1 -- **FHS_Gen3_NOS_Omni2**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006026.v1.phv00277034.v1`, `phs000007.v29.pht006026.v1.phv00277045.v1`
     * Function:
       ```r
@@ -13106,7 +13106,7 @@
       }
       ```
 <a id="bp_diastolic_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### blood_pressure/bp_diastolic_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006027.v1.phv00277137.v1`, `phs000007.v29.pht006027.v1.phv00277185.v1`
     * Function:
       ```r
@@ -13136,7 +13136,7 @@
       }
       ```
 <a id="bp_diastolic_1-fhs_omni1"></a>
-  * ### **FHS_Omni1**:
+  * ### blood_pressure/bp_diastolic_1 -- **FHS_Omni1**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht004813.v1.phv00250561.v1`, `phs000007.v29.pht004813.v1.phv00250562.v1`, `phs000007.v29.pht004813.v1.phv00250652.v1`, `phs000007.v29.pht004813.v1.phv00250653.v1`
     * Function:
       ```r
@@ -13175,7 +13175,7 @@
       }
       ```
 <a id="bp_diastolic_1-fhs_original"></a>
-  * ### **FHS_Original**:
+  * ### blood_pressure/bp_diastolic_1 -- **FHS_Original**:
     * Variables: `phs000007.v29.pht000009.v2.phv00000719.v1`, `phs000007.v29.pht000009.v2.phv00000720.v1`, `phs000007.v29.pht000009.v2.phv00000721.v1`, `phs000007.v29.pht000009.v2.phv00000722.v1`, `phs000007.v29.pht003099.v4.phv00177936.v4`
     * Function:
       ```r
@@ -13214,7 +13214,7 @@
       }
       ```
 <a id="bp_diastolic_1-genoa"></a>
-  * ### **GENOA**:
+  * ### blood_pressure/bp_diastolic_1 -- **GENOA**:
     * Variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006039.v1.phv00277520.v1`, `phs001238.v1.pht006039.v1.phv00277521.v1`, `phs001238.v1.pht006039.v1.phv00277522.v1`, `phs001238.v1.pht006039.v1.phv00277523.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006653.v1.phv00307801.v1`, `phs001238.v1.pht006653.v1.phv00307802.v1`, `phs001238.v1.pht006653.v1.phv00307803.v1`, `phs001238.v1.pht006653.v1.phv00307804.v1`
     * Function:
       ```r
@@ -13251,7 +13251,7 @@
       }
       ```
 <a id="bp_diastolic_1-goldn"></a>
-  * ### **GOLDN**:
+  * ### blood_pressure/bp_diastolic_1 -- **GOLDN**:
     * Variables: `phs000741.v2.pht003918.v2.phv00202104.v2`, `phs000741.v2.pht003918.v2.phv00259052.v1`, `phs000741.v2.pht003918.v2.phv00259053.v1`
     * Function:
       ```r
@@ -13276,7 +13276,7 @@
       }
       ```
 <a id="bp_diastolic_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### blood_pressure/bp_diastolic_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226390.v1`, `phs000810.v1.pht004715.v1.phv00226391.v1`
     * Function:
       ```r
@@ -13295,7 +13295,7 @@
       }
       ```
 <a id="bp_diastolic_1-jhs"></a>
-  * ### **JHS**:
+  * ### blood_pressure/bp_diastolic_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001974.v1.phv00128370.v1`, `phs000286.v5.pht001974.v1.phv00128371.v1`, `phs000286.v5.pht001974.v1.phv00128372.v1`, `phs000286.v5.pht001974.v1.phv00128373.v1`, `phs000286.v5.pht001974.v1.phv00128374.v1`, `phs000286.v5.pht001974.v1.phv00128375.v1`
     * Function:
       ```r
@@ -13343,7 +13343,7 @@
       }
       ```
 <a id="bp_diastolic_1-mesa"></a>
-  * ### **MESA**:
+  * ### blood_pressure/bp_diastolic_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00083403.v1`, `phs000209.v13.pht001111.v4.phv00083404.v1`, `phs000209.v13.pht001111.v4.phv00083406.v1`, `phs000209.v13.pht001111.v4.phv00083407.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085735.v2`, `phs000209.v13.pht001116.v10.phv00085736.v2`, `phs000209.v13.pht001116.v10.phv00085737.v2`, `phs000209.v13.pht001116.v10.phv00085738.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087509.v1`, `phs000209.v13.pht001121.v3.phv00087510.v1`, `phs000209.v13.pht001121.v3.phv00087512.v1`, `phs000209.v13.pht001121.v3.phv00087513.v1`
     * Function:
       ```r
@@ -13394,7 +13394,7 @@
       }
       ```
 <a id="bp_diastolic_1-sas"></a>
-  * ### **SAS**:
+  * ### blood_pressure/bp_diastolic_1 -- **SAS**:
     * Variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258701.v1`, `phs000914.v1.pht005253.v1.phv00258703.v1`
     * Function:
       ```r
@@ -13416,7 +13416,7 @@
       }
       ```
 <a id="bp_diastolic_1-whi"></a>
-  * ### **WHI**:
+  * ### blood_pressure/bp_diastolic_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001019.v6.phv00079850.v6`, `phs000200.v11.pht001019.v6.phv00079852.v6`, `phs000200.v11.pht001019.v6.phv00079854.v6`, `phs000200.v11.pht001019.v6.phv00079855.v6`, `phs000200.v11.pht001019.v6.phv00079856.v6`, `phs000200.v11.pht001019.v6.phv00079857.v6`
     * Function:
       ```r
@@ -13477,7 +13477,7 @@
       }
       ```
 <a id="bp_systolic_1"></a>
-## **bp_systolic_1** (bp_systolic)
+## blood_pressure: **bp_systolic_1** (bp_systolic)
   Resting systolic blood pressure from the upper arm in a clinical setting.
   * **Harmonization Units**:
     * [Amish](#bp_systolic_1-amish)
@@ -13522,7 +13522,7 @@
     The instruments used for BP measurements were different among studies, including standard manual sphygmomanometers, random-zero sphygmomanometers, and automated digital blood pressure monitors.
     
 <a id="bp_systolic_1-amish"></a>
-  * ### **Amish**:
+  * ### blood_pressure/bp_systolic_1 -- **Amish**:
     * Variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00252995.v1`, `phs000956.v2.pht005002.v1.phv00252996.v1`
     * Function:
       ```r
@@ -13547,7 +13547,7 @@
       }
       ```
 <a id="bp_systolic_1-aric"></a>
-  * ### **ARIC**:
+  * ### blood_pressure/bp_systolic_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004192.v2.phv00210284.v1`, `phs000280.v4.pht004192.v2.phv00210285.v1`, `phs000280.v4.pht004192.v2.phv00210286.v1`, `phs000280.v4.pht004192.v2.phv00210287.v1`, `phs000280.v4.pht004192.v2.phv00210288.v1`, `phs000280.v4.pht004192.v2.phv00210289.v1`
     * Function:
       ```r
@@ -13613,7 +13613,7 @@
       }
       ```
 <a id="bp_systolic_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### blood_pressure/bp_systolic_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001560.v2.phv00112481.v2`, `phs000285.v3.pht001560.v2.phv00112482.v2`, `phs000285.v3.pht001560.v2.phv00112483.v2`, `phs000285.v3.pht001560.v2.phv00112484.v2`, `phs000285.v3.pht001560.v2.phv00112487.v2`, `phs000285.v3.pht001560.v2.phv00112488.v2`, `phs000285.v3.pht001560.v2.phv00112489.v2`, `phs000285.v3.pht001560.v2.phv00112490.v2`, `phs000285.v3.pht001645.v2.phv00115119.v2`
     * Function:
       ```r
@@ -13663,7 +13663,7 @@
       }
       ```
 <a id="bp_systolic_1-cfs"></a>
-  * ### **CFS**:
+  * ### blood_pressure/bp_systolic_1 -- **CFS**:
     * Variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123001.v1`, `phs000284.v1.pht001902.v1.phv00123002.v1`
     * Function:
       ```r
@@ -13688,7 +13688,7 @@
       }
       ```
 <a id="bp_systolic_1-chs"></a>
-  * ### **CHS**:
+  * ### blood_pressure/bp_systolic_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100435.v1`, `phs000287.v6.pht001452.v1.phv00100436.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
@@ -13716,7 +13716,7 @@
       }
       ```
 <a id="bp_systolic_1-copdgene"></a>
-  * ### **COPDGene**:
+  * ### blood_pressure/bp_systolic_1 -- **COPDGene**:
     * Variables: `phs000179.v5.pht002239.v4.phv00159583.v4`, `phs000179.v5.pht002239.v4.phv00159590.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
     * Function:
       ```r
@@ -13746,7 +13746,7 @@
       }
       ```
 <a id="bp_systolic_1-fhs_gen3_nos_omni2"></a>
-  * ### **FHS_Gen3_NOS_Omni2**:
+  * ### blood_pressure/bp_systolic_1 -- **FHS_Gen3_NOS_Omni2**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006026.v1.phv00277034.v1`, `phs000007.v29.pht006026.v1.phv00277045.v1`
     * Function:
       ```r
@@ -13776,7 +13776,7 @@
       }
       ```
 <a id="bp_systolic_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### blood_pressure/bp_systolic_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006027.v1.phv00277137.v1`, `phs000007.v29.pht006027.v1.phv00277185.v1`
     * Function:
       ```r
@@ -13806,7 +13806,7 @@
       }
       ```
 <a id="bp_systolic_1-fhs_omni1"></a>
-  * ### **FHS_Omni1**:
+  * ### blood_pressure/bp_systolic_1 -- **FHS_Omni1**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht004813.v1.phv00250561.v1`, `phs000007.v29.pht004813.v1.phv00250562.v1`, `phs000007.v29.pht004813.v1.phv00250652.v1`, `phs000007.v29.pht004813.v1.phv00250653.v1`
     * Function:
       ```r
@@ -13845,7 +13845,7 @@
       }
       ```
 <a id="bp_systolic_1-fhs_original"></a>
-  * ### **FHS_Original**:
+  * ### blood_pressure/bp_systolic_1 -- **FHS_Original**:
     * Variables: `phs000007.v29.pht000009.v2.phv00000719.v1`, `phs000007.v29.pht000009.v2.phv00000720.v1`, `phs000007.v29.pht000009.v2.phv00000721.v1`, `phs000007.v29.pht000009.v2.phv00000722.v1`, `phs000007.v29.pht003099.v4.phv00177936.v4`
     * Function:
       ```r
@@ -13884,7 +13884,7 @@
       }
       ```
 <a id="bp_systolic_1-genoa"></a>
-  * ### **GENOA**:
+  * ### blood_pressure/bp_systolic_1 -- **GENOA**:
     * Variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006039.v1.phv00277520.v1`, `phs001238.v1.pht006039.v1.phv00277521.v1`, `phs001238.v1.pht006039.v1.phv00277522.v1`, `phs001238.v1.pht006039.v1.phv00277523.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006653.v1.phv00307801.v1`, `phs001238.v1.pht006653.v1.phv00307802.v1`, `phs001238.v1.pht006653.v1.phv00307803.v1`, `phs001238.v1.pht006653.v1.phv00307804.v1`
     * Function:
       ```r
@@ -13921,7 +13921,7 @@
       }
       ```
 <a id="bp_systolic_1-goldn"></a>
-  * ### **GOLDN**:
+  * ### blood_pressure/bp_systolic_1 -- **GOLDN**:
     * Variables: `phs000741.v2.pht003918.v2.phv00202104.v2`, `phs000741.v2.pht003918.v2.phv00259052.v1`, `phs000741.v2.pht003918.v2.phv00259053.v1`
     * Function:
       ```r
@@ -13946,7 +13946,7 @@
       }
       ```
 <a id="bp_systolic_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### blood_pressure/bp_systolic_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226390.v1`, `phs000810.v1.pht004715.v1.phv00226391.v1`
     * Function:
       ```r
@@ -13965,7 +13965,7 @@
       }
       ```
 <a id="bp_systolic_1-jhs"></a>
-  * ### **JHS**:
+  * ### blood_pressure/bp_systolic_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001974.v1.phv00128370.v1`, `phs000286.v5.pht001974.v1.phv00128371.v1`, `phs000286.v5.pht001974.v1.phv00128372.v1`, `phs000286.v5.pht001974.v1.phv00128373.v1`, `phs000286.v5.pht001974.v1.phv00128374.v1`, `phs000286.v5.pht001974.v1.phv00128375.v1`
     * Function:
       ```r
@@ -14013,7 +14013,7 @@
       }
       ```
 <a id="bp_systolic_1-mesa"></a>
-  * ### **MESA**:
+  * ### blood_pressure/bp_systolic_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00083403.v1`, `phs000209.v13.pht001111.v4.phv00083404.v1`, `phs000209.v13.pht001111.v4.phv00083406.v1`, `phs000209.v13.pht001111.v4.phv00083407.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085735.v2`, `phs000209.v13.pht001116.v10.phv00085736.v2`, `phs000209.v13.pht001116.v10.phv00085737.v2`, `phs000209.v13.pht001116.v10.phv00085738.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087509.v1`, `phs000209.v13.pht001121.v3.phv00087510.v1`, `phs000209.v13.pht001121.v3.phv00087512.v1`, `phs000209.v13.pht001121.v3.phv00087513.v1`
     * Function:
       ```r
@@ -14064,7 +14064,7 @@
       }
       ```
 <a id="bp_systolic_1-sas"></a>
-  * ### **SAS**:
+  * ### blood_pressure/bp_systolic_1 -- **SAS**:
     * Variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258701.v1`, `phs000914.v1.pht005253.v1.phv00258703.v1`
     * Function:
       ```r
@@ -14086,7 +14086,7 @@
       }
       ```
 <a id="bp_systolic_1-whi"></a>
-  * ### **WHI**:
+  * ### blood_pressure/bp_systolic_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001019.v6.phv00079850.v6`, `phs000200.v11.pht001019.v6.phv00079852.v6`, `phs000200.v11.pht001019.v6.phv00079854.v6`, `phs000200.v11.pht001019.v6.phv00079855.v6`, `phs000200.v11.pht001019.v6.phv00079856.v6`, `phs000200.v11.pht001019.v6.phv00079857.v6`
     * Function:
       ```r
@@ -14158,7 +14158,7 @@
 * [subcohort_1](#subcohort_1)
 
 <a id="annotated_sex_1"></a>
-## **annotated_sex_1** (annotated_sex)
+## demographic: **annotated_sex_1** (annotated_sex)
   Subject sex, as recorded by the study.
   * **Harmonization Units**:
     * [Amish](#annotated_sex_1-amish)
@@ -14211,7 +14211,7 @@
     *WHI* is an all female study, so all consented subjects were assigned the value "`female`" for this harmonized variable.
     
 <a id="annotated_sex_1-amish"></a>
-  * ### **Amish**:
+  * ### demographic/annotated_sex_1 -- **Amish**:
     * Variables: `phs000956.v3.pht005002.v1.phv00252975.v1`
     * Function:
       ```r
@@ -14232,7 +14232,7 @@
       }
       ```
 <a id="annotated_sex_1-aric"></a>
-  * ### **ARIC**:
+  * ### demographic/annotated_sex_1 -- **ARIC**:
     * Variables: `phs000280.v5.pht004063.v2.phv00204711.v1`
     * Function:
       ```r
@@ -14257,7 +14257,7 @@
       }
       ```
 <a id="annotated_sex_1-bags"></a>
-  * ### **BAGS**:
+  * ### demographic/annotated_sex_1 -- **BAGS**:
     * Variables: `phs001143.v2.pht005905.v2.phv00273212.v2`
     * Function:
       ```r
@@ -14277,7 +14277,7 @@
       }
       ```
 <a id="annotated_sex_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### demographic/annotated_sex_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001645.v2.phv00115114.v2`
     * Function:
       ```r
@@ -14298,7 +14298,7 @@
       }
       ```
 <a id="annotated_sex_1-ccaf"></a>
-  * ### **CCAF**:
+  * ### demographic/annotated_sex_1 -- **CCAF**:
     * Variables: `phs001189.v2.pht005979.v2.phv00273548.v2`
     * Function:
       ```r
@@ -14319,7 +14319,7 @@
       }
       ```
 <a id="annotated_sex_1-cfs"></a>
-  * ### **CFS**:
+  * ### demographic/annotated_sex_1 -- **CFS**:
     * Variables: `phs000284.v2.pht001902.v1.phv00122012.v1`, `phs000284.v2.pht001902.v1.phv00122989.v1`
     * Function:
       ```r
@@ -14350,7 +14350,7 @@
       }
       ```
 <a id="annotated_sex_1-chs"></a>
-  * ### **CHS**:
+  * ### demographic/annotated_sex_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100302.v1`
     * Function:
       ```r
@@ -14374,7 +14374,7 @@
       }
       ```
 <a id="annotated_sex_1-copdgene"></a>
-  * ### **COPDGene**:
+  * ### demographic/annotated_sex_1 -- **COPDGene**:
     * Variables: `phs000179.v5.pht002239.v4.phv00159571.v4`
     * Function:
       ```r
@@ -14395,7 +14395,7 @@
       }
       ```
 <a id="annotated_sex_1-cra"></a>
-  * ### **CRA**:
+  * ### demographic/annotated_sex_1 -- **CRA**:
     * Variables: `phs000988.v2.pht005248.v2.phv00258649.v2`
     * Function:
       ```r
@@ -14417,7 +14417,7 @@
       }
       ```
 <a id="annotated_sex_1-dhs"></a>
-  * ### **DHS**:
+  * ### demographic/annotated_sex_1 -- **DHS**:
     * Variables: `phs001412.v1.pht006746.v1.phv00310017.v1`
     * Function:
       ```r
@@ -14437,7 +14437,7 @@
       }
       ```
 <a id="annotated_sex_1-fhs"></a>
-  * ### **FHS**:
+  * ### demographic/annotated_sex_1 -- **FHS**:
     * Variables: `phs000007.v30.pht003099.v5.phv00177929.v5`
     * Function:
       ```r
@@ -14462,7 +14462,7 @@
       }
       ```
 <a id="annotated_sex_1-galaii"></a>
-  * ### **GALAII**:
+  * ### demographic/annotated_sex_1 -- **GALAII**:
     * Variables: `phs001180.v1.pht006991.v1.phv00320631.v1`
     * Function:
       ```r
@@ -14481,7 +14481,7 @@
       }
       ```
 <a id="annotated_sex_1-genestar"></a>
-  * ### **GeneSTAR**:
+  * ### demographic/annotated_sex_1 -- **GeneSTAR**:
     * Variables: `phs001218.v1.pht007766.v1.phv00369267.v1`, `phs001218.v1.pht007766.v1.phv00369269.v1`
     * Function:
       ```r
@@ -14514,7 +14514,7 @@
       }
       ```
 <a id="annotated_sex_1-genoa"></a>
-  * ### **GENOA**:
+  * ### demographic/annotated_sex_1 -- **GENOA**:
     * Variables: `phs001238.v2.pht006039.v1.phv00277506.v1`, `phs001238.v2.pht006653.v1.phv00307787.v1`
     * Function:
       ```r
@@ -14542,7 +14542,7 @@
       }
       ```
 <a id="annotated_sex_1-goldn"></a>
-  * ### **GOLDN**:
+  * ### demographic/annotated_sex_1 -- **GOLDN**:
     * Variables: `phs000741.v2.pht003918.v2.phv00202103.v2`
     * Function:
       ```r
@@ -14565,7 +14565,7 @@
       }
       ```
 <a id="annotated_sex_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### demographic/annotated_sex_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226279.v1`
     * Function:
       ```r
@@ -14584,7 +14584,7 @@
       }
       ```
 <a id="annotated_sex_1-hvh"></a>
-  * ### **HVH**:
+  * ### demographic/annotated_sex_1 -- **HVH**:
     * Variables: `phs001013.v3.pht005311.v2.phv00259379.v2`
     * Function:
       ```r
@@ -14604,7 +14604,7 @@
       }
       ```
 <a id="annotated_sex_1-jhs"></a>
-  * ### **JHS**:
+  * ### demographic/annotated_sex_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126012.v1`
     * Function:
       ```r
@@ -14627,7 +14627,7 @@
       }
       ```
 <a id="annotated_sex_1-mayo_vte_geneva"></a>
-  * ### **Mayo_VTE_GENEVA**:
+  * ### demographic/annotated_sex_1 -- **Mayo_VTE_GENEVA**:
     * Variables: `phs000289.v2.pht001886.v2.phv00121845.v1`
     * Function:
       ```r
@@ -14645,7 +14645,7 @@
       }
       ```
 <a id="annotated_sex_1-mayo_vte_olmsted"></a>
-  * ### **Mayo_VTE_Olmsted**:
+  * ### demographic/annotated_sex_1 -- **Mayo_VTE_Olmsted**:
     * Variables: `phs001402.v1.pht008239.v1.phv00389901.v1`
     * Function:
       ```r
@@ -14662,7 +14662,7 @@
       }
       ```
 <a id="annotated_sex_1-mesa_airnr"></a>
-  * ### **MESA_AirNR**:
+  * ### demographic/annotated_sex_1 -- **MESA_AirNR**:
     * Variables: `phs000209.v13.pht001111.v4.phv00082643.v1`
     * Function:
       ```r
@@ -14687,7 +14687,7 @@
       }
       ```
 <a id="annotated_sex_1-mesa_classic"></a>
-  * ### **MESA_Classic**:
+  * ### demographic/annotated_sex_1 -- **MESA_Classic**:
     * Variables: `phs000209.v13.pht001116.v10.phv00084446.v2`
     * Function:
       ```r
@@ -14712,7 +14712,7 @@
       }
       ```
 <a id="annotated_sex_1-mesa_family"></a>
-  * ### **MESA_Family**:
+  * ### demographic/annotated_sex_1 -- **MESA_Family**:
     * Variables: `phs000209.v13.pht001121.v3.phv00087073.v1`
     * Function:
       ```r
@@ -14735,7 +14735,7 @@
       }
       ```
 <a id="annotated_sex_1-mgh_af"></a>
-  * ### **MGH_AF**:
+  * ### demographic/annotated_sex_1 -- **MGH_AF**:
     * Variables: `phs001001.v1.pht005655.v1.phv00354562.v1`
     * Function:
       ```r
@@ -14749,7 +14749,7 @@
       }
       ```
 <a id="annotated_sex_1-partners"></a>
-  * ### **Partners**:
+  * ### demographic/annotated_sex_1 -- **Partners**:
     * Variables: `phs001024.v3.pht005693.v1.phv00265979.v1`
     * Function:
       ```r
@@ -14764,7 +14764,7 @@
       }
       ```
 <a id="annotated_sex_1-sage"></a>
-  * ### **SAGE**:
+  * ### demographic/annotated_sex_1 -- **SAGE**:
     * Variables: `phs000921.v3.pht004883.v3.phv00252284.v3`
     * Function:
       ```r
@@ -14787,7 +14787,7 @@
       }
       ```
 <a id="annotated_sex_1-sas"></a>
-  * ### **SAS**:
+  * ### demographic/annotated_sex_1 -- **SAS**:
     * Variables: `phs000914.v1.pht005253.v1.phv00258679.v1`
     * Function:
       ```r
@@ -14808,7 +14808,7 @@
       }
       ```
 <a id="annotated_sex_1-vafar"></a>
-  * ### **VAFAR**:
+  * ### demographic/annotated_sex_1 -- **VAFAR**:
     * Variables: `phs000997.v3.pht005688.v3.phv00265923.v3`
     * Function:
       ```r
@@ -14829,7 +14829,7 @@
       }
       ```
 <a id="annotated_sex_1-vu_af"></a>
-  * ### **VU_AF**:
+  * ### demographic/annotated_sex_1 -- **VU_AF**:
     * Variables: `phs001032.v4.pht005675.v3.phv00265807.v2`
     * Function:
       ```r
@@ -14850,7 +14850,7 @@
       }
       ```
 <a id="annotated_sex_1-wghs"></a>
-  * ### **WGHS**:
+  * ### demographic/annotated_sex_1 -- **WGHS**:
     * Variables: `phs001040.v3.pht005682.v3.phv00265850.v3`
     * Function:
       ```r
@@ -14865,7 +14865,7 @@
       }
       ```
 <a id="annotated_sex_1-whi"></a>
-  * ### **WHI**:
+  * ### demographic/annotated_sex_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000982.v8.phv00077315.v8`
     * Function:
       ```r
@@ -14889,7 +14889,7 @@
       }
       ```
 <a id="geographic_site_1"></a>
-## **geographic_site_1** (geographic_site)
+## demographic: **geographic_site_1** (geographic_site)
   Recruitment/field center, baseline clinic, or geographic region.
   * **Harmonization Units**:
     * [ARIC](#geographic_site_1-aric)
@@ -14924,7 +14924,7 @@
     This study was removed from this harmonized variable version to maintain consistency with the other harmonized studies and variable definition. All subjects were recruited and had baseline measurements at Mayo Clinic Rochester although their home residence may have been located in a different state or country.
     
 <a id="geographic_site_1-aric"></a>
-  * ### **ARIC**:
+  * ### demographic/geographic_site_1 -- **ARIC**:
     * Variables: `phs000280.v5.pht004063.v2.phv00204813.v1`
     * Function:
       ```r
@@ -14957,7 +14957,7 @@
       }
       ```
 <a id="geographic_site_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### demographic/geographic_site_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001700.v2.phv00116398.v2`
     * Function:
       ```r
@@ -14988,7 +14988,7 @@
       }
       ```
 <a id="geographic_site_1-chs"></a>
-  * ### **CHS**:
+  * ### demographic/geographic_site_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100291.v1`
     * Function:
       ```r
@@ -15026,7 +15026,7 @@
       }
       ```
 <a id="geographic_site_1-copdgene"></a>
-  * ### **COPDGene**:
+  * ### demographic/geographic_site_1 -- **COPDGene**:
     * Variables: `phs000179.v5.pht002239.v4.phv00159569.v4`
     * Function:
       ```r
@@ -15052,7 +15052,7 @@
       }
       ```
 <a id="geographic_site_1-genoa"></a>
-  * ### **GENOA**:
+  * ### demographic/geographic_site_1 -- **GENOA**:
     * Variables: `phs001238.v2.pht006039.v1.phv00277506.v1`, `phs001238.v2.pht006653.v1.phv00307787.v1`
     * Function:
       ```r
@@ -15080,7 +15080,7 @@
       }
       ```
 <a id="geographic_site_1-goldn"></a>
-  * ### **GOLDN**:
+  * ### demographic/geographic_site_1 -- **GOLDN**:
     * Variables: `phs000741.v2.pht003918.v2.phv00202105.v2`
     * Function:
       ```r
@@ -15113,7 +15113,7 @@
       }
       ```
 <a id="geographic_site_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### demographic/geographic_site_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226256.v1`
     * Function:
       ```r
@@ -15149,7 +15149,7 @@
       }
       ```
 <a id="geographic_site_1-jhs"></a>
-  * ### **JHS**:
+  * ### demographic/geographic_site_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126005.v1`
     * Function:
       ```r
@@ -15178,7 +15178,7 @@
       }
       ```
 <a id="geographic_site_1-mesa_airnr"></a>
-  * ### **MESA_AirNR**:
+  * ### demographic/geographic_site_1 -- **MESA_AirNR**:
     * Variables: `phs000209.v13.pht001111.v4.phv00082644.v1`
     * Function:
       ```r
@@ -15220,7 +15220,7 @@
       }
       ```
 <a id="geographic_site_1-mesa_classic"></a>
-  * ### **MESA_Classic**:
+  * ### demographic/geographic_site_1 -- **MESA_Classic**:
     * Variables: `phs000209.v13.pht001116.v10.phv00084447.v2`
     * Function:
       ```r
@@ -15262,7 +15262,7 @@
       }
       ```
 <a id="geographic_site_1-mesa_family"></a>
-  * ### **MESA_Family**:
+  * ### demographic/geographic_site_1 -- **MESA_Family**:
     * Variables: `phs000209.v13.pht001121.v3.phv00087075.v1`
     * Function:
       ```r
@@ -15303,7 +15303,7 @@
       }
       ```
 <a id="geographic_site_1-sas"></a>
-  * ### **SAS**:
+  * ### demographic/geographic_site_1 -- **SAS**:
     * Variables: `phs000914.v1.pht005253.v1.phv00258677.v1`
     * Function:
       ```r
@@ -15338,7 +15338,7 @@
       }
       ```
 <a id="geographic_site_1-whi"></a>
-  * ### **WHI**:
+  * ### demographic/geographic_site_1 -- **WHI**:
     * Variables: `phs000200.v11.pht001031.v6.phv00080435.v6`
     * Function:
       ```r
@@ -15376,7 +15376,7 @@
       }
       ```
 <a id="hispanic_or_latino_1"></a>
-## **hispanic_or_latino_1** (hispanic_or_latino)
+## demographic: **hispanic_or_latino_1** (hispanic_or_latino)
   Indicator of reported Hispanic or Latino ethnicity.
   * **Harmonization Units**:
     * [BAGS](#hispanic_or_latino_1-bags)
@@ -15454,7 +15454,7 @@
     
     
 <a id="hispanic_or_latino_1-bags"></a>
-  * ### **BAGS**:
+  * ### demographic/hispanic_or_latino_1 -- **BAGS**:
     * Variables: `phs001143.v2.pht005902.v1.phv00273200.v1`
     * Function:
       ```r
@@ -15471,7 +15471,7 @@
       }
       ```
 <a id="hispanic_or_latino_1-ccaf"></a>
-  * ### **CCAF**:
+  * ### demographic/hispanic_or_latino_1 -- **CCAF**:
     * Variables: `phs001189.v2.pht005979.v2.phv00273550.v2`
     * Function:
       ```r
@@ -15496,7 +15496,7 @@
       }
       ```
 <a id="hispanic_or_latino_1-cfs"></a>
-  * ### **CFS**:
+  * ### demographic/hispanic_or_latino_1 -- **CFS**:
     * Variables: `phs000284.v2.pht001902.v1.phv00122991.v1`, `phs000284.v2.pht001902.v1.phv00122992.v1`
     * Function:
       ```r
@@ -15538,7 +15538,7 @@
       }
       ```
 <a id="hispanic_or_latino_1-chs_africanamerican"></a>
-  * ### **CHS_AfricanAmerican**:
+  * ### demographic/hispanic_or_latino_1 -- **CHS_AfricanAmerican**:
     * Variables: `phs000287.v6.pht001490.v1.phv00105652.v1`
     * Function:
       ```r
@@ -15561,7 +15561,7 @@
       }
       ```
 <a id="hispanic_or_latino_1-chs_original"></a>
-  * ### **CHS_Original**:
+  * ### demographic/hispanic_or_latino_1 -- **CHS_Original**:
     * Variables: `phs000287.v6.pht001450.v1.phv00099434.v1`
     * Function:
       ```r
@@ -15584,7 +15584,7 @@
       }
       ```
 <a id="hispanic_or_latino_1-copdgene"></a>
-  * ### **COPDGene**:
+  * ### demographic/hispanic_or_latino_1 -- **COPDGene**:
     * Variables: `phs000179.v5.pht002239.v4.phv00159573.v4`
     * Function:
       ```r
@@ -15606,7 +15606,7 @@
       }
       ```
 <a id="hispanic_or_latino_1-cra"></a>
-  * ### **CRA**:
+  * ### demographic/hispanic_or_latino_1 -- **CRA**:
     * Variables: `phs000988.v2.pht005248.v2.phv00258651.v2`
     * Function:
       ```r
@@ -15627,7 +15627,7 @@
       }
       ```
 <a id="hispanic_or_latino_1-fhs_gen3"></a>
-  * ### **FHS_Gen3**:
+  * ### demographic/hispanic_or_latino_1 -- **FHS_Gen3**:
     * Variables: `phs000007.v30.pht000074.v11.phv00021245.v5`, `phs000007.v30.pht000074.v11.phv00021398.v5`, `phs000007.v30.pht003094.v5.phv00177238.v3`, `phs000007.v30.pht003094.v5.phv00177597.v3`
     * Function:
       ```r
@@ -15695,7 +15695,7 @@
       }
       ```
 <a id="hispanic_or_latino_1-fhs_newoffspringspouse"></a>
-  * ### **FHS_NewOffspringSpouse**:
+  * ### demographic/hispanic_or_latino_1 -- **FHS_NewOffspringSpouse**:
     * Variables: `phs000007.v30.pht003094.v5.phv00177238.v3`, `phs000007.v30.pht003094.v5.phv00177597.v3`, `phs000007.v30.pht006005.v1.phv00273701.v1`, `phs000007.v30.pht006005.v1.phv00274067.v1`
     * Function:
       ```r
@@ -15761,7 +15761,7 @@
       }
       ```
 <a id="hispanic_or_latino_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### demographic/hispanic_or_latino_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v30.pht000747.v6.phv00072044.v5`, `phs000007.v30.pht000747.v6.phv00072538.v5`, `phs000007.v30.pht000747.v6.phv00072539.v5`
     * Function:
       ```r
@@ -15799,7 +15799,7 @@
       }
       ```
 <a id="hispanic_or_latino_1-fhs_omni1"></a>
-  * ### **FHS_Omni1**:
+  * ### demographic/hispanic_or_latino_1 -- **FHS_Omni1**:
     * Variables: `phs000007.v30.pht004815.v1.phv00251263.v1`, `phs000007.v30.pht004815.v1.phv00251746.v1`, `phs000007.v30.pht004815.v1.phv00251747.v1`
     * Function:
       ```r
@@ -15837,7 +15837,7 @@
       }
       ```
 <a id="hispanic_or_latino_1-fhs_omni2"></a>
-  * ### **FHS_Omni2**:
+  * ### demographic/hispanic_or_latino_1 -- **FHS_Omni2**:
     * Variables: `phs000007.v30.pht003094.v5.phv00177238.v3`, `phs000007.v30.pht003094.v5.phv00177597.v3`, `phs000007.v30.pht006006.v2.phv00274194.v2`, `phs000007.v30.pht006006.v2.phv00274558.v2`
     * Function:
       ```r
@@ -15903,7 +15903,7 @@
       }
       ```
 <a id="hispanic_or_latino_1-galaii"></a>
-  * ### **GALAII**:
+  * ### demographic/hispanic_or_latino_1 -- **GALAII**:
     * Variables: `phs001180.v1.pht006988.v1.phv00320615.v1`
     * Function:
       ```r
@@ -15921,7 +15921,7 @@
       }
       ```
 <a id="hispanic_or_latino_1-genoa"></a>
-  * ### **GENOA**:
+  * ### demographic/hispanic_or_latino_1 -- **GENOA**:
     * Variables: `phs001238.v2.pht006039.v1.phv00277509.v1`, `phs001238.v2.pht006653.v1.phv00307790.v1`
     * Function:
       ```r
@@ -15950,7 +15950,7 @@
       }
       ```
 <a id="hispanic_or_latino_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### demographic/hispanic_or_latino_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004713.v1.phv00226241.v1`
     * Function:
       ```r
@@ -15974,7 +15974,7 @@
       }
       ```
 <a id="hispanic_or_latino_1-hvh"></a>
-  * ### **HVH**:
+  * ### demographic/hispanic_or_latino_1 -- **HVH**:
     * Variables: `phs001013.v3.pht005311.v2.phv00259381.v2`
     * Function:
       ```r
@@ -15992,7 +15992,7 @@
       }
       ```
 <a id="hispanic_or_latino_1-mayo_vte_geneva"></a>
-  * ### **Mayo_VTE_GENEVA**:
+  * ### demographic/hispanic_or_latino_1 -- **Mayo_VTE_GENEVA**:
     * Variables: `phs000289.v2.pht001886.v2.phv00121875.v2`
     * Function:
       ```r
@@ -16011,7 +16011,7 @@
       }
       ```
 <a id="hispanic_or_latino_1-mayo_vte_olmsted"></a>
-  * ### **Mayo_VTE_Olmsted**:
+  * ### demographic/hispanic_or_latino_1 -- **Mayo_VTE_Olmsted**:
     * Variables: `phs001402.v1.pht008239.v1.phv00389931.v1`
     * Function:
       ```r
@@ -16030,7 +16030,7 @@
       }
       ```
 <a id="hispanic_or_latino_1-mesa_airnr"></a>
-  * ### **MESA_AirNR**:
+  * ### demographic/hispanic_or_latino_1 -- **MESA_AirNR**:
     * Variables: `phs000209.v13.pht001111.v4.phv00082641.v1`, `phs000209.v13.pht003086.v3.phv00174585.v1`
     * Function:
       ```r
@@ -16069,7 +16069,7 @@
       }
       ```
 <a id="hispanic_or_latino_1-mesa_classic"></a>
-  * ### **MESA_Classic**:
+  * ### demographic/hispanic_or_latino_1 -- **MESA_Classic**:
     * Variables: `phs000209.v13.pht001116.v10.phv00084444.v2`, `phs000209.v13.pht001118.v8.phv00085775.v2`, `phs000209.v13.pht001119.v8.phv00086261.v2`, `phs000209.v13.pht001120.v10.phv00086729.v2`, `phs000209.v13.pht003091.v3.phv00176008.v1`
     * Function:
       ```r
@@ -16117,7 +16117,7 @@
       }
       ```
 <a id="hispanic_or_latino_1-mesa_family"></a>
-  * ### **MESA_Family**:
+  * ### demographic/hispanic_or_latino_1 -- **MESA_Family**:
     * Variables: `phs000209.v13.pht001121.v3.phv00087074.v1`, `phs000209.v13.pht001121.v3.phv00087659.v1`
     * Function:
       ```r
@@ -16151,7 +16151,7 @@
       }
       ```
 <a id="hispanic_or_latino_1-mgh_af"></a>
-  * ### **MGH_AF**:
+  * ### demographic/hispanic_or_latino_1 -- **MGH_AF**:
     * Variables: `phs001001.v1.pht005655.v1.phv00354563.v1`
     * Function:
       ```r
@@ -16169,7 +16169,7 @@
       }
       ```
 <a id="hispanic_or_latino_1-partners"></a>
-  * ### **Partners**:
+  * ### demographic/hispanic_or_latino_1 -- **Partners**:
     * Variables: `phs001024.v3.pht005693.v1.phv00265981.v1`
     * Function:
       ```r
@@ -16191,7 +16191,7 @@
       }
       ```
 <a id="hispanic_or_latino_1-vafar"></a>
-  * ### **VAFAR**:
+  * ### demographic/hispanic_or_latino_1 -- **VAFAR**:
     * Variables: `phs000997.v3.pht005688.v3.phv00265925.v3`
     * Function:
       ```r
@@ -16216,7 +16216,7 @@
       }
       ```
 <a id="hispanic_or_latino_1-vu_af"></a>
-  * ### **VU_AF**:
+  * ### demographic/hispanic_or_latino_1 -- **VU_AF**:
     * Variables: `phs001032.v4.pht005675.v3.phv00265809.v2`
     * Function:
       ```r
@@ -16241,7 +16241,7 @@
       }
       ```
 <a id="hispanic_or_latino_1-whi"></a>
-  * ### **WHI**:
+  * ### demographic/hispanic_or_latino_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078450.v6`
     * Function:
       ```r
@@ -16272,7 +16272,7 @@
       }
       ```
 <a id="hispanic_subgroup_1"></a>
-## **hispanic_subgroup_1** (hispanic_subgroup)
+## demographic: **hispanic_subgroup_1** (hispanic_subgroup)
   classification of Hispanic/Latino background for Hispanic/Latino subjects where country or region of origin information is available
   * **Harmonization Units**:
     * [CRA](#hispanic_subgroup_1-cra)
@@ -16290,7 +16290,7 @@
     No additional summary information for this trait.
     
 <a id="hispanic_subgroup_1-cra"></a>
-  * ### **CRA**:
+  * ### demographic/hispanic_subgroup_1 -- **CRA**:
     * Variables: `phs000988.v2.pht005248.v2.phv00258651.v2`
     * Function:
       ```r
@@ -16311,7 +16311,7 @@
       }
       ```
 <a id="hispanic_subgroup_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### demographic/hispanic_subgroup_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226254.v1`
     * Function:
       ```r
@@ -16339,7 +16339,7 @@
       }
       ```
 <a id="hispanic_subgroup_1-mesa_airnr"></a>
-  * ### **MESA_AirNR**:
+  * ### demographic/hispanic_subgroup_1 -- **MESA_AirNR**:
     * Variables: `phs000209.v13.pht001111.v4.phv00083215.v1`
     * Function:
       ```r
@@ -16372,7 +16372,7 @@
       }
       ```
 <a id="hispanic_subgroup_1-mesa_classic"></a>
-  * ### **MESA_Classic**:
+  * ### demographic/hispanic_subgroup_1 -- **MESA_Classic**:
     * Variables: `phs000209.v13.pht001116.v10.phv00085543.v2`
     * Function:
       ```r
@@ -16405,7 +16405,7 @@
       }
       ```
 <a id="hispanic_subgroup_1-mesa_family"></a>
-  * ### **MESA_Family**:
+  * ### demographic/hispanic_subgroup_1 -- **MESA_Family**:
     * Variables: `phs000209.v13.pht001121.v3.phv00087228.v1`
     * Function:
       ```r
@@ -16438,7 +16438,7 @@
       }
       ```
 <a id="hispanic_subgroup_1-whi"></a>
-  * ### **WHI**:
+  * ### demographic/hispanic_subgroup_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078450.v6`, `phs000200.v11.pht001009.v6.phv00079316.v6`
     * Function:
       ```r
@@ -16472,7 +16472,7 @@
       }
       ```
 <a id="race_us_1"></a>
-## **race_us_1** (race_us)
+## demographic: **race_us_1** (race_us)
   Reported race of participant according to the United States administrative definition of race.
   * **Harmonization Units**:
     * [Amish](#race_us_1-amish)
@@ -16578,7 +16578,7 @@
     
     
 <a id="race_us_1-amish"></a>
-  * ### **Amish**:
+  * ### demographic/race_us_1 -- **Amish**:
     * Variables: `phs000956.v3.pht005000.v1.phv00252969.v1`
     * Function:
       ```r
@@ -16600,7 +16600,7 @@
       }
       ```
 <a id="race_us_1-aric"></a>
-  * ### **ARIC**:
+  * ### demographic/race_us_1 -- **ARIC**:
     * Variables: `phs000280.v5.pht004062.v2.phv00204633.v1`, `phs000280.v5.pht004063.v2.phv00204710.v1`, `phs000280.v5.pht004065.v2.phv00204962.v1`
     * Function:
       ```r
@@ -16652,7 +16652,7 @@
       }
       ```
 <a id="race_us_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### demographic/race_us_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001645.v2.phv00115113.v2`
     * Function:
       ```r
@@ -16688,7 +16688,7 @@
       }
       ```
 <a id="race_us_1-ccaf"></a>
-  * ### **CCAF**:
+  * ### demographic/race_us_1 -- **CCAF**:
     * Variables: `phs001189.v2.pht005979.v2.phv00273549.v2`
     * Function:
       ```r
@@ -16712,7 +16712,7 @@
       }
       ```
 <a id="race_us_1-cfs"></a>
-  * ### **CFS**:
+  * ### demographic/race_us_1 -- **CFS**:
     * Variables: `phs000284.v2.pht001902.v1.phv00122991.v1`
     * Function:
       ```r
@@ -16767,7 +16767,7 @@
       }
       ```
 <a id="race_us_1-chs_africanamerican"></a>
-  * ### **CHS_AfricanAmerican**:
+  * ### demographic/race_us_1 -- **CHS_AfricanAmerican**:
     * Variables: `phs000287.v6.pht001490.v1.phv00105645.v1`
     * Function:
       ```r
@@ -16794,7 +16794,7 @@
       }
       ```
 <a id="race_us_1-chs_original"></a>
-  * ### **CHS_Original**:
+  * ### demographic/race_us_1 -- **CHS_Original**:
     * Variables: `phs000287.v6.pht001450.v1.phv00099569.v1`
     * Function:
       ```r
@@ -16821,7 +16821,7 @@
       }
       ```
 <a id="race_us_1-copdgene"></a>
-  * ### **COPDGene**:
+  * ### demographic/race_us_1 -- **COPDGene**:
     * Variables: `phs000179.v5.pht002239.v4.phv00159572.v4`
     * Function:
       ```r
@@ -16846,7 +16846,7 @@
       }
       ```
 <a id="race_us_1-dhs"></a>
-  * ### **DHS**:
+  * ### demographic/race_us_1 -- **DHS**:
     * Variables: `phs001412.v1.pht006746.v1.phv00310019.v1`
     * Function:
       ```r
@@ -16863,7 +16863,7 @@
       }
       ```
 <a id="race_us_1-fhs_gen3"></a>
-  * ### **FHS_Gen3**:
+  * ### demographic/race_us_1 -- **FHS_Gen3**:
     * Variables: `phs000007.v30.pht000074.v11.phv00021244.v5`, `phs000007.v30.pht000074.v11.phv00021245.v5`, `phs000007.v30.pht000074.v11.phv00021246.v5`, `phs000007.v30.pht000074.v11.phv00021247.v5`, `phs000007.v30.pht000074.v11.phv00021248.v5`, `phs000007.v30.pht000074.v11.phv00021249.v5`, `phs000007.v30.pht000074.v11.phv00021250.v5`, `phs000007.v30.pht000074.v11.phv00021251.v5`, `phs000007.v30.pht000074.v11.phv00021398.v5`, `phs000007.v30.pht003094.v5.phv00177238.v3`, `phs000007.v30.pht003094.v5.phv00177597.v3`, `phs000007.v30.pht003094.v5.phv00177598.v3`, `phs000007.v30.pht003094.v5.phv00177599.v3`, `phs000007.v30.pht003094.v5.phv00177600.v3`, `phs000007.v30.pht003094.v5.phv00177601.v3`, `phs000007.v30.pht003094.v5.phv00177602.v3`, `phs000007.v30.pht003094.v5.phv00177603.v3`
     * Function:
       ```r
@@ -16998,7 +16998,7 @@
       }
       ```
 <a id="race_us_1-fhs_newoffspringspouse"></a>
-  * ### **FHS_NewOffspringSpouse**:
+  * ### demographic/race_us_1 -- **FHS_NewOffspringSpouse**:
     * Variables: `phs000007.v30.pht003094.v5.phv00177238.v3`, `phs000007.v30.pht003094.v5.phv00177597.v3`, `phs000007.v30.pht003094.v5.phv00177598.v3`, `phs000007.v30.pht003094.v5.phv00177599.v3`, `phs000007.v30.pht003094.v5.phv00177600.v3`, `phs000007.v30.pht003094.v5.phv00177601.v3`, `phs000007.v30.pht003094.v5.phv00177602.v3`, `phs000007.v30.pht003094.v5.phv00177603.v3`, `phs000007.v30.pht006005.v1.phv00273701.v1`, `phs000007.v30.pht006005.v1.phv00274066.v1`, `phs000007.v30.pht006005.v1.phv00274067.v1`, `phs000007.v30.pht006005.v1.phv00274068.v1`, `phs000007.v30.pht006005.v1.phv00274069.v1`, `phs000007.v30.pht006005.v1.phv00274070.v1`, `phs000007.v30.pht006005.v1.phv00274071.v1`, `phs000007.v30.pht006005.v1.phv00274072.v1`, `phs000007.v30.pht006005.v1.phv00274073.v1`
     * Function:
       ```r
@@ -17132,7 +17132,7 @@
       }
       ```
 <a id="race_us_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### demographic/race_us_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v30.pht000747.v6.phv00072044.v5`, `phs000007.v30.pht000747.v6.phv00072530.v5`, `phs000007.v30.pht000747.v6.phv00072531.v5`, `phs000007.v30.pht000747.v6.phv00072532.v5`, `phs000007.v30.pht000747.v6.phv00072533.v5`, `phs000007.v30.pht000747.v6.phv00072534.v5`, `phs000007.v30.pht000747.v6.phv00072537.v5`
     * Function:
       ```r
@@ -17191,7 +17191,7 @@
       }
       ```
 <a id="race_us_1-fhs_omni1"></a>
-  * ### **FHS_Omni1**:
+  * ### demographic/race_us_1 -- **FHS_Omni1**:
     * Variables: `phs000007.v30.pht004815.v1.phv00251263.v1`, `phs000007.v30.pht004815.v1.phv00251748.v1`, `phs000007.v30.pht004815.v1.phv00251749.v1`, `phs000007.v30.pht004815.v1.phv00251750.v1`, `phs000007.v30.pht004815.v1.phv00251751.v1`, `phs000007.v30.pht004815.v1.phv00251752.v1`, `phs000007.v30.pht004815.v1.phv00251753.v1`
     * Function:
       ```r
@@ -17251,7 +17251,7 @@
       }
       ```
 <a id="race_us_1-fhs_omni2"></a>
-  * ### **FHS_Omni2**:
+  * ### demographic/race_us_1 -- **FHS_Omni2**:
     * Variables: `phs000007.v30.pht003094.v5.phv00177238.v3`, `phs000007.v30.pht003094.v5.phv00177597.v3`, `phs000007.v30.pht003094.v5.phv00177598.v3`, `phs000007.v30.pht003094.v5.phv00177599.v3`, `phs000007.v30.pht003094.v5.phv00177600.v3`, `phs000007.v30.pht003094.v5.phv00177601.v3`, `phs000007.v30.pht003094.v5.phv00177602.v3`, `phs000007.v30.pht003094.v5.phv00177603.v3`, `phs000007.v30.pht006006.v2.phv00274194.v2`, `phs000007.v30.pht006006.v2.phv00274557.v2`, `phs000007.v30.pht006006.v2.phv00274558.v2`, `phs000007.v30.pht006006.v2.phv00274559.v2`, `phs000007.v30.pht006006.v2.phv00274560.v2`, `phs000007.v30.pht006006.v2.phv00274561.v2`, `phs000007.v30.pht006006.v2.phv00274562.v2`, `phs000007.v30.pht006006.v2.phv00274563.v2`, `phs000007.v30.pht006006.v2.phv00274564.v2`
     * Function:
       ```r
@@ -17385,7 +17385,7 @@
       }
       ```
 <a id="race_us_1-fhs_original"></a>
-  * ### **FHS_Original**:
+  * ### demographic/race_us_1 -- **FHS_Original**:
     * Variables: `phs000007.v30.pht003099.v5.phv00177928.v5`
     * Function:
       ```r
@@ -17412,7 +17412,7 @@
       }
       ```
 <a id="race_us_1-galaii"></a>
-  * ### **GALAII**:
+  * ### demographic/race_us_1 -- **GALAII**:
     * Variables: `phs001180.v1.pht006988.v1.phv00320615.v1`
     * Function:
       ```r
@@ -17430,7 +17430,7 @@
       }
       ```
 <a id="race_us_1-genestar"></a>
-  * ### **GeneSTAR**:
+  * ### demographic/race_us_1 -- **GeneSTAR**:
     * Variables: `phs001218.v1.pht007766.v1.phv00369267.v1`, `phs001218.v1.pht007766.v1.phv00369270.v1`
     * Function:
       ```r
@@ -17463,7 +17463,7 @@
       }
       ```
 <a id="race_us_1-genoa"></a>
-  * ### **GENOA**:
+  * ### demographic/race_us_1 -- **GENOA**:
     * Variables: `phs001238.v2.pht006039.v1.phv00277509.v1`, `phs001238.v2.pht006653.v1.phv00307790.v1`
     * Function:
       ```r
@@ -17491,7 +17491,7 @@
       }
       ```
 <a id="race_us_1-goldn"></a>
-  * ### **GOLDN**:
+  * ### demographic/race_us_1 -- **GOLDN**:
     * Variables: `phs000741.v2.pht003915.v2.phv00202090.v2`
     * Function:
       ```r
@@ -17513,7 +17513,7 @@
       }
       ```
 <a id="race_us_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### demographic/race_us_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004713.v1.phv00226241.v1`
     * Function:
       ```r
@@ -17537,7 +17537,7 @@
       }
       ```
 <a id="race_us_1-hvh"></a>
-  * ### **HVH**:
+  * ### demographic/race_us_1 -- **HVH**:
     * Variables: `phs001013.v3.pht005311.v2.phv00259380.v2`
     * Function:
       ```r
@@ -17559,7 +17559,7 @@
       }
       ```
 <a id="race_us_1-jhs"></a>
-  * ### **JHS**:
+  * ### demographic/race_us_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001920.v4.phv00124546.v3`
     * Function:
       ```r
@@ -17582,7 +17582,7 @@
       }
       ```
 <a id="race_us_1-mayo_vte_geneva"></a>
-  * ### **Mayo_VTE_GENEVA**:
+  * ### demographic/race_us_1 -- **Mayo_VTE_GENEVA**:
     * Variables: `phs000289.v2.pht001886.v2.phv00121876.v2`, `phs000289.v2.pht001886.v2.phv00121877.v2`, `phs000289.v2.pht001886.v2.phv00121878.v2`, `phs000289.v2.pht001886.v2.phv00121879.v2`, `phs000289.v2.pht001886.v2.phv00121880.v2`, `phs000289.v2.pht001886.v2.phv00121881.v2`
     * Function:
       ```r
@@ -17624,7 +17624,7 @@
       }
       ```
 <a id="race_us_1-mayo_vte_olmsted"></a>
-  * ### **Mayo_VTE_Olmsted**:
+  * ### demographic/race_us_1 -- **Mayo_VTE_Olmsted**:
     * Variables: `phs001402.v1.pht008239.v1.phv00389932.v1`, `phs001402.v1.pht008239.v1.phv00389933.v1`, `phs001402.v1.pht008239.v1.phv00389934.v1`, `phs001402.v1.pht008239.v1.phv00389935.v1`, `phs001402.v1.pht008239.v1.phv00389936.v1`, `phs001402.v1.pht008239.v1.phv00389937.v1`
     * Function:
       ```r
@@ -17646,7 +17646,7 @@
       }
       ```
 <a id="race_us_1-mesa_airnr"></a>
-  * ### **MESA_AirNR**:
+  * ### demographic/race_us_1 -- **MESA_AirNR**:
     * Variables: `phs000209.v13.pht001111.v4.phv00082641.v1`, `phs000209.v13.pht003086.v3.phv00174585.v1`
     * Function:
       ```r
@@ -17702,7 +17702,7 @@
       }
       ```
 <a id="race_us_1-mesa_classic"></a>
-  * ### **MESA_Classic**:
+  * ### demographic/race_us_1 -- **MESA_Classic**:
     * Variables: `phs000209.v13.pht001116.v10.phv00084444.v2`, `phs000209.v13.pht001118.v8.phv00085775.v2`, `phs000209.v13.pht001119.v8.phv00086261.v2`, `phs000209.v13.pht001120.v10.phv00086729.v2`, `phs000209.v13.pht003091.v3.phv00176008.v1`
     * Function:
       ```r
@@ -17770,7 +17770,7 @@
       }
       ```
 <a id="race_us_1-mesa_family"></a>
-  * ### **MESA_Family**:
+  * ### demographic/race_us_1 -- **MESA_Family**:
     * Variables: `phs000209.v13.pht001121.v3.phv00087074.v1`
     * Function:
       ```r
@@ -17799,7 +17799,7 @@
       }
       ```
 <a id="race_us_1-mgh_af"></a>
-  * ### **MGH_AF**:
+  * ### demographic/race_us_1 -- **MGH_AF**:
     * Variables: `phs001001.v1.pht005655.v1.phv00265713.v1`
     * Function:
       ```r
@@ -17823,7 +17823,7 @@
       }
       ```
 <a id="race_us_1-partners"></a>
-  * ### **Partners**:
+  * ### demographic/race_us_1 -- **Partners**:
     * Variables: `phs001024.v3.pht005693.v1.phv00265980.v1`
     * Function:
       ```r
@@ -17848,7 +17848,7 @@
       }
       ```
 <a id="race_us_1-sage"></a>
-  * ### **SAGE**:
+  * ### demographic/race_us_1 -- **SAGE**:
     * Variables: `phs000921.v3.pht004883.v3.phv00252285.v3`
     * Function:
       ```r
@@ -17865,7 +17865,7 @@
       }
       ```
 <a id="race_us_1-vafar"></a>
-  * ### **VAFAR**:
+  * ### demographic/race_us_1 -- **VAFAR**:
     * Variables: `phs000997.v3.pht005688.v3.phv00265924.v3`
     * Function:
       ```r
@@ -17889,7 +17889,7 @@
       }
       ```
 <a id="race_us_1-vu_af"></a>
-  * ### **VU_AF**:
+  * ### demographic/race_us_1 -- **VU_AF**:
     * Variables: `phs001032.v4.pht005675.v3.phv00265808.v2`
     * Function:
       ```r
@@ -17916,7 +17916,7 @@
       }
       ```
 <a id="race_us_1-wghs"></a>
-  * ### **WGHS**:
+  * ### demographic/race_us_1 -- **WGHS**:
     * Variables: `phs001040.v3.pht005682.v3.phv00328556.v2`
     * Function:
       ```r
@@ -17933,7 +17933,7 @@
       }
       ```
 <a id="race_us_1-whi"></a>
-  * ### **WHI**:
+  * ### demographic/race_us_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078450.v6`, `phs000200.v11.pht001009.v6.phv00079317.v6`, `phs000200.v11.pht001009.v6.phv00079318.v6`, `phs000200.v11.pht001009.v6.phv00079319.v6`, `phs000200.v11.pht001009.v6.phv00079320.v6`, `phs000200.v11.pht001009.v6.phv00079321.v6`, `phs000200.v11.pht001009.v6.phv00079322.v6`, `phs000200.v11.pht001009.v6.phv00079323.v6`, `phs000200.v11.pht001009.v6.phv00079324.v6`, `phs000200.v11.pht001009.v6.phv00079325.v6`, `phs000200.v11.pht001009.v6.phv00079326.v6`, `phs000200.v11.pht001009.v6.phv00079327.v6`, `phs000200.v11.pht001009.v6.phv00079328.v6`, `phs000200.v11.pht001009.v6.phv00079329.v6`, `phs000200.v11.pht001009.v6.phv00079330.v6`, `phs000200.v11.pht001009.v6.phv00079331.v6`
     * Function:
       ```r
@@ -18071,7 +18071,7 @@
       }
       ```
 <a id="subcohort_1"></a>
-## **subcohort_1** (subcohort)
+## demographic: **subcohort_1** (subcohort)
   A distinct subgroup within a study, generally indicating subjects who share similar characteristics due to study design. Subjects may belong to only one subcohort.
   * **Harmonization Units**:
     * [Amish](#subcohort_1-amish)
@@ -18117,7 +18117,7 @@
     If available, we recoded component study variables indicating subcohort membership. In instances where there was no variable indicating subcohort membership, we assigned the corresponding harmonized subcohort codes to the set of subject IDs included in subcohort-specific datasets. All consented subjects in studies with no subcohort structure were assigned a code of the form "`TOPMed_abbreviation_NoSubcohortStructure`" (e.g. "`JHS_NoSubcohortStructure`").
     
 <a id="subcohort_1-amish"></a>
-  * ### **Amish**:
+  * ### demographic/subcohort_1 -- **Amish**:
     * Variables: `phs000956.v3.pht005002.v1.phv00252974.v1`
     * Function:
       ```r
@@ -18135,7 +18135,7 @@
       }
       ```
 <a id="subcohort_1-aric"></a>
-  * ### **ARIC**:
+  * ### demographic/subcohort_1 -- **ARIC**:
     * Variables: `phs000280.v5.pht001440.v5.phv00098580.v4`
     * Function:
       ```r
@@ -18149,7 +18149,7 @@
       }
       ```
 <a id="subcohort_1-bags"></a>
-  * ### **BAGS**:
+  * ### demographic/subcohort_1 -- **BAGS**:
     * Variables: `phs001143.v2.pht005902.v1.phv00273200.v1`
     * Function:
       ```r
@@ -18166,7 +18166,7 @@
       }
       ```
 <a id="subcohort_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### demographic/subcohort_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001554.v3.phv00112395.v2`
     * Function:
       ```r
@@ -18180,7 +18180,7 @@
       }
       ```
 <a id="subcohort_1-ccaf"></a>
-  * ### **CCAF**:
+  * ### demographic/subcohort_1 -- **CCAF**:
     * Variables: `phs001189.v2.pht005977.v2.phv00273537.v2`
     * Function:
       ```r
@@ -18203,7 +18203,7 @@
       }
       ```
 <a id="subcohort_1-cfs"></a>
-  * ### **CFS**:
+  * ### demographic/subcohort_1 -- **CFS**:
     * Variables: `phs000284.v2.pht001899.v2.phv00122002.v2`, `phs000284.v2.pht001902.v1.phv00122012.v1`
     * Function:
       ```r
@@ -18217,7 +18217,7 @@
       }
       ```
 <a id="subcohort_1-chs"></a>
-  * ### **CHS**:
+  * ### demographic/subcohort_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100290.v1`
     * Function:
       ```r
@@ -18236,7 +18236,7 @@
       }
       ```
 <a id="subcohort_1-copdgene"></a>
-  * ### **COPDGene**:
+  * ### demographic/subcohort_1 -- **COPDGene**:
     * Variables: `phs000179.v5.pht002237.v3.phv00159560.v3`
     * Function:
       ```r
@@ -18250,7 +18250,7 @@
       }
       ```
 <a id="subcohort_1-cra"></a>
-  * ### **CRA**:
+  * ### demographic/subcohort_1 -- **CRA**:
     * Variables: `phs000988.v2.pht005245.v2.phv00258637.v2`
     * Function:
       ```r
@@ -18264,7 +18264,7 @@
       }
       ```
 <a id="subcohort_1-dhs"></a>
-  * ### **DHS**:
+  * ### demographic/subcohort_1 -- **DHS**:
     * Variables: `phs001412.v1.pht006743.v1.phv00310005.v1`
     * Function:
       ```r
@@ -18284,7 +18284,7 @@
       }
       ```
 <a id="subcohort_1-fhs"></a>
-  * ### **FHS**:
+  * ### demographic/subcohort_1 -- **FHS**:
     * Variables: `phs000007.v30.pht003099.v5.phv00177928.v5`
     * Function:
       ```r
@@ -18306,7 +18306,7 @@
       }
       ```
 <a id="subcohort_1-galaii"></a>
-  * ### **GALAII**:
+  * ### demographic/subcohort_1 -- **GALAII**:
     * Variables: `phs001180.v1.pht006988.v1.phv00320615.v1`
     * Function:
       ```r
@@ -18323,7 +18323,7 @@
       }
       ```
 <a id="subcohort_1-genestar"></a>
-  * ### **GeneSTAR**:
+  * ### demographic/subcohort_1 -- **GeneSTAR**:
     * Variables: `phs001218.v1.pht007766.v1.phv00369267.v1`
     * Function:
       ```r
@@ -18358,7 +18358,7 @@
       }
       ```
 <a id="subcohort_1-genoa_africanamerican"></a>
-  * ### **GENOA_AfricanAmerican**:
+  * ### demographic/subcohort_1 -- **GENOA_AfricanAmerican**:
     * Variables: `phs001238.v2.pht006039.v1.phv00277508.v1`
     * Function:
       ```r
@@ -18371,7 +18371,7 @@
       }
       ```
 <a id="subcohort_1-genoa_europeanamerican"></a>
-  * ### **GENOA_EuropeanAmerican**:
+  * ### demographic/subcohort_1 -- **GENOA_EuropeanAmerican**:
     * Variables: `phs001238.v2.pht006649.v1.phv00307741.v1`, `phs001238.v2.pht006653.v1.phv00307789.v1`, `phs001238.v2.pht006659.v1.phv00307950.v1`
     * Function:
       ```r
@@ -18389,7 +18389,7 @@
       }
       ```
 <a id="subcohort_1-goldn"></a>
-  * ### **GOLDN**:
+  * ### demographic/subcohort_1 -- **GOLDN**:
     * Variables: `phs000741.v2.pht003915.v2.phv00202090.v2`
     * Function:
       ```r
@@ -18403,7 +18403,7 @@
       }
       ```
 <a id="subcohort_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### demographic/subcohort_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004713.v1.phv00226241.v1`
     * Function:
       ```r
@@ -18417,7 +18417,7 @@
       }
       ```
 <a id="subcohort_1-hvh"></a>
-  * ### **HVH**:
+  * ### demographic/subcohort_1 -- **HVH**:
     * Variables: `phs001013.v3.pht005309.v3.phv00259370.v3`, `phs001013.v3.pht005311.v2.phv00259376.v2`, `phs001013.v3.pht005311.v2.phv00259377.v2`
     * Function:
       ```r
@@ -18431,7 +18431,7 @@
       }
       ```
 <a id="subcohort_1-jhs"></a>
-  * ### **JHS**:
+  * ### demographic/subcohort_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001920.v4.phv00124546.v3`
     * Function:
       ```r
@@ -18445,7 +18445,7 @@
       }
       ```
 <a id="subcohort_1-mayo_vte_geneva"></a>
-  * ### **Mayo_VTE_GENEVA**:
+  * ### demographic/subcohort_1 -- **Mayo_VTE_GENEVA**:
     * Variables: `phs000289.v2.pht001883.v1.phv00121830.v1`
     * Function:
       ```r
@@ -18459,7 +18459,7 @@
       }
       ```
 <a id="subcohort_1-mayo_vte_olmsted"></a>
-  * ### **Mayo_VTE_Olmsted**:
+  * ### demographic/subcohort_1 -- **Mayo_VTE_Olmsted**:
     * Variables: `phs001402.v1.pht008239.v1.phv00389900.v1`
     * Function:
       ```r
@@ -18473,7 +18473,7 @@
       }
       ```
 <a id="subcohort_1-mesa_airnr"></a>
-  * ### **MESA_airnr**:
+  * ### demographic/subcohort_1 -- **MESA_airnr**:
     * Variables: `phs000209.v13.pht001111.v4.phv00082644.v1`
     * Function:
       ```r
@@ -18486,7 +18486,7 @@
       }
       ```
 <a id="subcohort_1-mesa_classic"></a>
-  * ### **MESA_classic**:
+  * ### demographic/subcohort_1 -- **MESA_classic**:
     * Variables: `phs000209.v13.pht001116.v10.phv00084447.v2`
     * Function:
       ```r
@@ -18499,7 +18499,7 @@
       }
       ```
 <a id="subcohort_1-mesa_family"></a>
-  * ### **MESA_family**:
+  * ### demographic/subcohort_1 -- **MESA_family**:
     * Variables: `phs000209.v13.pht001121.v3.phv00087075.v1`
     * Function:
       ```r
@@ -18512,7 +18512,7 @@
       }
       ```
 <a id="subcohort_1-mgh_af"></a>
-  * ### **MGH_AF**:
+  * ### demographic/subcohort_1 -- **MGH_AF**:
     * Variables: `phs001001.v1.pht005653.v1.phv00265704.v1`
     * Function:
       ```r
@@ -18529,7 +18529,7 @@
       }
       ```
 <a id="subcohort_1-partners"></a>
-  * ### **Partners**:
+  * ### demographic/subcohort_1 -- **Partners**:
     * Variables: `phs001024.v3.pht005116.v2.phv00253774.v1`
     * Function:
       ```r
@@ -18543,7 +18543,7 @@
       }
       ```
 <a id="subcohort_1-sage"></a>
-  * ### **SAGE**:
+  * ### demographic/subcohort_1 -- **SAGE**:
     * Variables: `phs000921.v3.pht004881.v3.phv00252275.v3`
     * Function:
       ```r
@@ -18557,7 +18557,7 @@
       }
       ```
 <a id="subcohort_1-sas"></a>
-  * ### **SAS**:
+  * ### demographic/subcohort_1 -- **SAS**:
     * Variables: `phs000914.v1.pht005251.v1.phv00258664.v1`
     * Function:
       ```r
@@ -18571,7 +18571,7 @@
       }
       ```
 <a id="subcohort_1-vafar"></a>
-  * ### **VAFAR**:
+  * ### demographic/subcohort_1 -- **VAFAR**:
     * Variables: `phs000997.v3.pht005087.v3.phv00253604.v3`
     * Function:
       ```r
@@ -18594,7 +18594,7 @@
       }
       ```
 <a id="subcohort_1-vu_af"></a>
-  * ### **VU_AF**:
+  * ### demographic/subcohort_1 -- **VU_AF**:
     * Variables: `phs001032.v4.pht005098.v2.phv00253678.v2`
     * Function:
       ```r
@@ -18617,7 +18617,7 @@
       }
       ```
 <a id="subcohort_1-wghs"></a>
-  * ### **WGHS**:
+  * ### demographic/subcohort_1 -- **WGHS**:
     * Variables: `phs001040.v3.pht005203.v2.phv00258321.v2`
     * Function:
       ```r
@@ -18633,7 +18633,7 @@
       }
       ```
 <a id="subcohort_1-whi"></a>
-  * ### **WHI**:
+  * ### demographic/subcohort_1 -- **WHI**:
     * Variables: `phs000200.v11.pht001031.v6.phv00080424.v6`, `phs000200.v11.pht001031.v6.phv00080425.v6`
     * Function:
       ```r
@@ -18675,7 +18675,7 @@
 * [tnfr2_1](#tnfr2_1)
 
 <a id="cd40_1"></a>
-## **cd40_1** (cd40)
+## inflammation: **cd40_1** (cd40)
   Cluster of differentiation 40 ligand (CD40) concentration in blood.
   * **Harmonization Units**:
     * [FHS](#cd40_1-fhs)
@@ -18724,7 +18724,7 @@
     | MESA | Serum |
     
 <a id="cd40_1-fhs"></a>
-  * ### **FHS**:
+  * ### inflammation/cd40_1 -- **FHS**:
     * Variables: `phs000007.v29.pht000079.v6.phv00021687.v5`, `phs000007.v29.pht003099.v4.phv00177942.v4`
     * Function:
       ```r
@@ -18747,7 +18747,7 @@
       }
       ```
 <a id="cd40_1-mesa"></a>
-  * ### **MESA**:
+  * ### inflammation/cd40_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085021.v2`
     * Function:
       ```r
@@ -18769,7 +18769,7 @@
       }
       ```
 <a id="crp_1"></a>
-## **crp_1** (crp)
+## inflammation: **crp_1** (crp)
   C-reactive protein (CRP) concentration in blood.
   * **Harmonization Units**:
     * [Amish](#crp_1-amish)
@@ -18874,7 +18874,7 @@
     | GENOA | Serum |
     
 <a id="crp_1-amish"></a>
-  * ### **Amish**:
+  * ### inflammation/crp_1 -- **Amish**:
     * Variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00252992.v1`
     * Function:
       ```r
@@ -18902,7 +18902,7 @@
       }
       ```
 <a id="crp_1-aric"></a>
-  * ### **ARIC**:
+  * ### inflammation/crp_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht006431.v1.phv00295623.v1`, `phs000280.v4.pht006444.v1.phv00296696.v1`
     * Function:
       ```r
@@ -18932,7 +18932,7 @@
       }
       ```
 <a id="crp_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### inflammation/crp_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001851.v2.phv00120748.v2`, `phs000285.v3.pht001853.v2.phv00120759.v2`
     * Function:
       ```r
@@ -18959,7 +18959,7 @@
       }
       ```
 <a id="crp_1-cfs"></a>
-  * ### **CFS**:
+  * ### inflammation/crp_1 -- **CFS**:
     * Variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123990.v1`
     * Function:
       ```r
@@ -18991,7 +18991,7 @@
       }
       ```
 <a id="crp_1-chs"></a>
-  * ### **CHS**:
+  * ### inflammation/crp_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100499.v1`
     * Function:
       ```r
@@ -19015,7 +19015,7 @@
       }
       ```
 <a id="crp_1-fhs_gen3_offspring"></a>
-  * ### **FHS_Gen3_Offspring**:
+  * ### inflammation/crp_1 -- **FHS_Gen3_Offspring**:
     * Variables: `phs000007.v29.pht000082.v6.phv00021697.v5`, `phs000007.v29.pht000298.v5.phv00036343.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
     * Function:
       ```r
@@ -19047,7 +19047,7 @@
       }
       ```
 <a id="crp_1-fhs_newoffspringspouse_omni2"></a>
-  * ### **FHS_NewOffspringSpouse_Omni2**:
+  * ### inflammation/crp_1 -- **FHS_NewOffspringSpouse_Omni2**:
     * Variables: `phs000007.v29.pht002889.v2.phv00172177.v2`, `phs000007.v29.pht002889.v2.phv00172203.v2`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
@@ -19079,7 +19079,7 @@
       }
       ```
 <a id="crp_1-fhs_omni1"></a>
-  * ### **FHS_Omni1**:
+  * ### inflammation/crp_1 -- **FHS_Omni1**:
     * Variables: `phs000007.v29.pht002888.v4.phv00172158.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`
     * Function:
       ```r
@@ -19106,7 +19106,7 @@
       }
       ```
 <a id="crp_1-genoa"></a>
-  * ### **GENOA**:
+  * ### inflammation/crp_1 -- **GENOA**:
     * Variables: `phs001238.v1.pht006046.v1.phv00277758.v1`, `phs001238.v1.pht006048.v1.phv00277841.v1`, `phs001238.v1.pht006659.v1.phv00307949.v1`, `phs001238.v1.pht006661.v1.phv00308034.v1`
     * Function:
       ```r
@@ -19142,7 +19142,7 @@
       }
       ```
 <a id="crp_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### inflammation/crp_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00258066.v1`
     * Function:
       ```r
@@ -19166,7 +19166,7 @@
       }
       ```
 <a id="crp_1-jhs"></a>
-  * ### **JHS**:
+  * ### inflammation/crp_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001945.v1.phv00125940.v1`, `phs000286.v5.pht001945.v1.phv00125941.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
     * Function:
       ```r
@@ -19207,7 +19207,7 @@
       }
       ```
 <a id="crp_1-mesa_airnr"></a>
-  * ### **MESA_AirNR**:
+  * ### inflammation/crp_1 -- **MESA_AirNR**:
     * Variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082967.v1`, `phs000209.v13.pht001111.v4.phv00082968.v1`
     * Function:
       ```r
@@ -19238,7 +19238,7 @@
       }
       ```
 <a id="crp_1-mesa_classic_family"></a>
-  * ### **MESA_Classic_Family**:
+  * ### inflammation/crp_1 -- **MESA_Classic_Family**:
     * Variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085015.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087661.v1`
     * Function:
       ```r
@@ -19272,7 +19272,7 @@
       }
       ```
 <a id="eselectin_1"></a>
-## **eselectin_1** (eselectin)
+## inflammation: **eselectin_1** (eselectin)
   E-selectin concentration in blood.
   * **Harmonization Units**:
     * [MESA](#eselectin_1-mesa)
@@ -19314,7 +19314,7 @@
     | MESA | Serum |
     
 <a id="eselectin_1-mesa"></a>
-  * ### **MESA**:
+  * ### inflammation/eselectin_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082969.v1`, `phs000209.v13.pht001111.v4.phv00082970.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085022.v2`
     * Function:
       ```r
@@ -19347,7 +19347,7 @@
       }
       ```
 <a id="icam1_1"></a>
-## **icam1_1** (icam1)
+## inflammation: **icam1_1** (icam1)
   Intercellular adhesion molecule 1 (ICAM1) concentration in blood.
   * **Harmonization Units**:
     * [CARDIA](#icam1_1-cardia)
@@ -19417,7 +19417,7 @@
     | MESA | Plasma |
     
 <a id="icam1_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### inflammation/icam1_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001697.v2.phv00116390.v2`, `phs000285.v3.pht001699.v2.phv00116396.v2`
     * Function:
       ```r
@@ -19443,7 +19443,7 @@
       }
       ```
 <a id="icam1_1-cfs"></a>
-  * ### **CFS**:
+  * ### inflammation/icam1_1 -- **CFS**:
     * Variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00124095.v1`, `phs000284.v1.pht001902.v1.phv00124097.v1`, `phs000284.v1.pht001902.v1.phv00124098.v1`
     * Function:
       ```r
@@ -19475,7 +19475,7 @@
       }
       ```
 <a id="icam1_1-chs"></a>
-  * ### **CHS**:
+  * ### inflammation/icam1_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001449.v1.phv00098764.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
@@ -19500,7 +19500,7 @@
       }
       ```
 <a id="icam1_1-fhs_gen3_offspring"></a>
-  * ### **FHS_Gen3_Offspring**:
+  * ### inflammation/icam1_1 -- **FHS_Gen3_Offspring**:
     * Variables: `phs000007.v29.pht000093.v6.phv00021939.v5`, `phs000007.v29.pht000303.v5.phv00036405.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
     * Function:
       ```r
@@ -19530,7 +19530,7 @@
       }
       ```
 <a id="icam1_1-fhs_newoffspringspouse_omni1"></a>
-  * ### **FHS_NewOffspringSpouse_Omni1**:
+  * ### inflammation/icam1_1 -- **FHS_NewOffspringSpouse_Omni1**:
     * Variables: `phs000007.v29.pht002890.v4.phv00172215.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`
     * Function:
       ```r
@@ -19560,7 +19560,7 @@
       }
       ```
 <a id="icam1_1-mesa_airnr"></a>
-  * ### **MESA_AirNR**:
+  * ### inflammation/icam1_1 -- **MESA_AirNR**:
     * Variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082963.v1`, `phs000209.v13.pht001111.v4.phv00082964.v1`
     * Function:
       ```r
@@ -19587,7 +19587,7 @@
       }
       ```
 <a id="icam1_1-mesa_classic"></a>
-  * ### **MESA_Classic**:
+  * ### inflammation/icam1_1 -- **MESA_Classic**:
     * Variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085117.v2`, `phs000209.v13.pht001116.v10.phv00085118.v2`
     * Function:
       ```r
@@ -19615,7 +19615,7 @@
       }
       ```
 <a id="il10_1"></a>
-## **il10_1** (il10)
+## inflammation: **il10_1** (il10)
   Interleukin 10 (IL10) concentration in blood.
   * **Harmonization Units**:
     * [CFS](#il10_1-cfs)
@@ -19654,7 +19654,7 @@
     1. The study included information indicating which measurements were below or above the limit of detection. If "Yes", measurements outside the LOD can be identified using component study or subcohort variables.
     
 <a id="il10_1-cfs"></a>
-  * ### **CFS**:
+  * ### inflammation/il10_1 -- **CFS**:
     * Variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00124072.v1`, `phs000284.v1.pht001902.v1.phv00124075.v1`
     * Function:
       ```r
@@ -19682,7 +19682,7 @@
       }
       ```
 <a id="il10_1-mesa"></a>
-  * ### **MESA**:
+  * ### inflammation/il10_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht002099.v2.phv00142666.v2`, `phs000209.v13.pht002099.v2.phv00142667.v2`
     * Function:
       ```r
@@ -19713,7 +19713,7 @@
       }
       ```
 <a id="il18_1"></a>
-## **il18_1** (il18)
+## inflammation: **il18_1** (il18)
   Interleukin 18 (IL18) concentration in blood.
   * **Harmonization Units**:
     * [FHS](#il18_1-fhs)
@@ -19752,7 +19752,7 @@
     | FHS | Serum |
     
 <a id="il18_1-fhs"></a>
-  * ### **FHS**:
+  * ### inflammation/il18_1 -- **FHS**:
     * Variables: `phs000007.v29.pht000671.v5.phv00066686.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
     * Function:
       ```r
@@ -19775,7 +19775,7 @@
       }
       ```
 <a id="il1_beta_1"></a>
-## **il1_beta_1** (il1_beta)
+## inflammation: **il1_beta_1** (il1_beta)
   Interleukin 1 beta (IL1b) concentration in blood.
   * **Harmonization Units**:
     * [CFS](#il1_beta_1-cfs)
@@ -19806,7 +19806,7 @@
     1. The study included information indicating which measurements were below or above the limit of detection. If "Yes", measurements outside the LOD can be identified using component study or subcohort variables.
     
 <a id="il1_beta_1-cfs"></a>
-  * ### **CFS**:
+  * ### inflammation/il1_beta_1 -- **CFS**:
     * Variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00124068.v1`, `phs000284.v1.pht001902.v1.phv00124071.v1`
     * Function:
       ```r
@@ -19835,7 +19835,7 @@
       }
       ```
 <a id="il6_1"></a>
-## **il6_1** (il6)
+## inflammation: **il6_1** (il6)
   Interleukin 6 (IL6) concentration in blood.
   * **Harmonization Units**:
     * [CARDIA](#il6_1-cardia)
@@ -19902,7 +19902,7 @@
     | FHS | Serum |
     
 <a id="il6_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### inflammation/il6_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001851.v2.phv00120748.v2`, `phs000285.v3.pht001862.v2.phv00121064.v2`, `phs000285.v3.pht001862.v2.phv00121065.v2`
     * Function:
       ```r
@@ -19935,7 +19935,7 @@
       }
       ```
 <a id="il6_1-cfs"></a>
-  * ### **CFS**:
+  * ### inflammation/il6_1 -- **CFS**:
     * Variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00124021.v1`
     * Function:
       ```r
@@ -19964,7 +19964,7 @@
       }
       ```
 <a id="il6_1-chs"></a>
-  * ### **CHS**:
+  * ### inflammation/il6_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100500.v1`
     * Function:
       ```r
@@ -19988,7 +19988,7 @@
       }
       ```
 <a id="il6_1-fhs_gen3"></a>
-  * ### **FHS_Gen3**:
+  * ### inflammation/il6_1 -- **FHS_Gen3**:
     * Variables: `phs000007.v29.pht001043.v4.phv00080999.v3`, `phs000007.v29.pht001043.v4.phv00081000.v3`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`
     * Function:
       ```r
@@ -20014,7 +20014,7 @@
       }
       ```
 <a id="il6_1-fhs_newoffspringspouse_omni1"></a>
-  * ### **FHS_NewOffspringSpouse_Omni1**:
+  * ### inflammation/il6_1 -- **FHS_NewOffspringSpouse_Omni1**:
     * Variables: `phs000007.v29.pht002891.v4.phv00172223.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`
     * Function:
       ```r
@@ -20042,7 +20042,7 @@
       }
       ```
 <a id="il6_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### inflammation/il6_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht000161.v6.phv00023796.v5`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
     * Function:
       ```r
@@ -20067,7 +20067,7 @@
       }
       ```
 <a id="il6_1-mesa"></a>
-  * ### **MESA**:
+  * ### inflammation/il6_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085009.v2`, `phs000209.v13.pht001116.v10.phv00085010.v2`
     * Function:
       ```r
@@ -20103,7 +20103,7 @@
       }
       ```
 <a id="isoprostane_8_epi_pgf2a_1"></a>
-## **isoprostane_8_epi_pgf2a_1** (isoprostane_8_epi_pgf2a)
+## inflammation: **isoprostane_8_epi_pgf2a_1** (isoprostane_8_epi_pgf2a)
   Isoprostane 8-epi-prostaglandin F2 alpha (8-epi-PGF2a) concentration in urine.
   * **Harmonization Units**:
     * [FHS](#isoprostane_8_epi_pgf2a_1-fhs)
@@ -20151,7 +20151,7 @@
     | FHS | Urine |
     
 <a id="isoprostane_8_epi_pgf2a_1-fhs"></a>
-  * ### **FHS**:
+  * ### inflammation/isoprostane_8_epi_pgf2a_1 -- **FHS**:
     * Variables: `phs000007.v29.pht000162.v6.phv00023800.v5`, `phs000007.v29.pht002852.v2.phv00171864.v2`, `phs000007.v29.pht002853.v4.phv00171873.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
     * Function:
       ```r
@@ -20192,7 +20192,7 @@
       }
       ```
 <a id="lppla2_act_1"></a>
-## **lppla2_act_1** (lppla2_act)
+## inflammation: **lppla2_act_1** (lppla2_act)
   Activity of lipoprotein-associated phospholipase A2 (LP-PLA2), also known as platelet-activating factor acetylhydrolase, measured in blood.
   * **Harmonization Units**:
     * [CHS](#lppla2_act_1-chs)
@@ -20249,7 +20249,7 @@
     | MESA | Serum |
     
 <a id="lppla2_act_1-chs"></a>
-  * ### **CHS**:
+  * ### inflammation/lppla2_act_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001449.v1.phv00098770.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
@@ -20273,7 +20273,7 @@
       }
       ```
 <a id="lppla2_act_1-fhs"></a>
-  * ### **FHS**:
+  * ### inflammation/lppla2_act_1 -- **FHS**:
     * Variables: `phs000007.v29.pht000164.v6.phv00023808.v5`, `phs000007.v29.pht000304.v5.phv00036408.v4`, `phs000007.v29.pht002892.v4.phv00172229.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
     * Function:
       ```r
@@ -20314,7 +20314,7 @@
       }
       ```
 <a id="lppla2_act_1-mesa"></a>
-  * ### **MESA**:
+  * ### inflammation/lppla2_act_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht002512.v1.phv00165052.v1`
     * Function:
       ```r
@@ -20339,7 +20339,7 @@
       }
       ```
 <a id="lppla2_mass_1"></a>
-## **lppla2_mass_1** (lppla2_mass)
+## inflammation: **lppla2_mass_1** (lppla2_mass)
   Mass of lipoprotein-associated phospholipase A2 (LP-PLA2), also known as platelet-activating factor acetylhydrolase, measured in blood.
   * **Harmonization Units**:
     * [CHS](#lppla2_mass_1-chs)
@@ -20397,7 +20397,7 @@
     | MESA | Serum |
     
 <a id="lppla2_mass_1-chs"></a>
-  * ### **CHS**:
+  * ### inflammation/lppla2_mass_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001449.v1.phv00098769.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
@@ -20421,7 +20421,7 @@
       }
       ```
 <a id="lppla2_mass_1-fhs"></a>
-  * ### **FHS**:
+  * ### inflammation/lppla2_mass_1 -- **FHS**:
     * Variables: `phs000007.v29.pht000095.v6.phv00021963.v5`, `phs000007.v29.pht000305.v5.phv00036411.v4`, `phs000007.v29.pht002892.v4.phv00172227.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
     * Function:
       ```r
@@ -20462,7 +20462,7 @@
       }
       ```
 <a id="lppla2_mass_1-mesa"></a>
-  * ### **MESA**:
+  * ### inflammation/lppla2_mass_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht002512.v1.phv00165050.v1`
     * Function:
       ```r
@@ -20486,7 +20486,7 @@
       }
       ```
 <a id="mcp1_1"></a>
-## **mcp1_1** (mcp1)
+## inflammation: **mcp1_1** (mcp1)
   Monocyte chemoattractant protein-1 (MCP1), also known as C-C motif chemokine ligand 2, concentration in blood.
   * **Harmonization Units**:
     * [FHS_Gen3_Offspring](#mcp1_1-fhs_gen3_offspring)
@@ -20531,7 +20531,7 @@
     | FHS | Serum |
     
 <a id="mcp1_1-fhs_gen3_offspring"></a>
-  * ### **FHS_Gen3_Offspring**:
+  * ### inflammation/mcp1_1 -- **FHS_Gen3_Offspring**:
     * Variables: `phs000007.v29.pht000165.v6.phv00023811.v5`, `phs000007.v29.pht000306.v6.phv00036415.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
     * Function:
       ```r
@@ -20562,7 +20562,7 @@
       }
       ```
 <a id="mcp1_1-fhs_newoffspringspouse_omni1"></a>
-  * ### **FHS_NewOffspringSpouse_Omni1**:
+  * ### inflammation/mcp1_1 -- **FHS_NewOffspringSpouse_Omni1**:
     * Variables: `phs000007.v29.pht002893.v4.phv00172239.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`
     * Function:
       ```r
@@ -20593,7 +20593,7 @@
       }
       ```
 <a id="mmp9_1"></a>
-## **mmp9_1** (mmp9)
+## inflammation: **mmp9_1** (mmp9)
   Matrix metalloproteinase 9 (MMP9) concentration in blood.
   * **Harmonization Units**:
     * [MESA](#mmp9_1-mesa)
@@ -20625,7 +20625,7 @@
     2. The study included information indicating which measurements were below or above the limit of detection. If "Yes", measurements outside the LOD can be identified using component study or subcohort variables.
     
 <a id="mmp9_1-mesa"></a>
-  * ### **MESA**:
+  * ### inflammation/mmp9_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085027.v2`
     * Function:
       ```r
@@ -20646,7 +20646,7 @@
       }
       ```
 <a id="mpo_1"></a>
-## **mpo_1** (mpo)
+## inflammation: **mpo_1** (mpo)
   Myeloperoxidase (MPO) concentration in blood.
   * **Harmonization Units**:
     * [FHS](#mpo_1-fhs)
@@ -20687,7 +20687,7 @@
     | FHS | Serum |
     
 <a id="mpo_1-fhs"></a>
-  * ### **FHS**:
+  * ### inflammation/mpo_1 -- **FHS**:
     * Variables: `phs000007.v29.pht000167.v6.phv00023854.v5`, `phs000007.v29.pht003099.v4.phv00177942.v4`
     * Function:
       ```r
@@ -20710,7 +20710,7 @@
       }
       ```
 <a id="opg_1"></a>
-## **opg_1** (opg)
+## inflammation: **opg_1** (opg)
   Osteoprotegerin (OPG) concentration in blood.
   * **Harmonization Units**:
     * [FHS_Gen3_Omni2](#opg_1-fhs_gen3_omni2)
@@ -20761,7 +20761,7 @@
     | FHS_Omni2 | Plasma |
     
 <a id="opg_1-fhs_gen3_omni2"></a>
-  * ### **FHS_Gen3_Omni2**:
+  * ### inflammation/opg_1 -- **FHS_Gen3_Omni2**:
     * Variables: `phs000007.v29.pht002144.v3.phv00156665.v3`, `phs000007.v29.pht002144.v3.phv00156666.v3`, `phs000007.v29.pht003099.v4.phv00177930.v4`
     * Function:
       ```r
@@ -20793,7 +20793,7 @@
       }
       ```
 <a id="opg_1-fhs_offspring_omni1"></a>
-  * ### **FHS_Offspring_Omni1**:
+  * ### inflammation/opg_1 -- **FHS_Offspring_Omni1**:
     * Variables: `phs000007.v29.pht002896.v4.phv00172364.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`, `phs000007.v29.pht003099.v4.phv00177944.v4`
     * Function:
       ```r
@@ -20821,7 +20821,7 @@
       }
       ```
 <a id="pselectin_1"></a>
-## **pselectin_1** (pselectin)
+## inflammation: **pselectin_1** (pselectin)
   P-selectin concentration in blood.
   * **Harmonization Units**:
     * [FHS_Gen3_Omni2](#pselectin_1-fhs_gen3_omni2)
@@ -20871,7 +20871,7 @@
     | FHS | Plasma |
     
 <a id="pselectin_1-fhs_gen3_omni2"></a>
-  * ### **FHS_Gen3_Omni2**:
+  * ### inflammation/pselectin_1 -- **FHS_Gen3_Omni2**:
     * Variables: `phs000007.v29.pht002145.v3.phv00156677.v3`, `phs000007.v29.pht002145.v3.phv00156678.v3`, `phs000007.v29.pht003099.v4.phv00177930.v4`
     * Function:
       ```r
@@ -20900,7 +20900,7 @@
       }
       ```
 <a id="pselectin_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### inflammation/pselectin_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht000171.v6.phv00023892.v5`, `phs000007.v29.pht003099.v4.phv00177942.v4`
     * Function:
       ```r
@@ -20921,7 +20921,7 @@
       }
       ```
 <a id="pselectin_1-fhs_omni1"></a>
-  * ### **FHS_Omni1**:
+  * ### inflammation/pselectin_1 -- **FHS_Omni1**:
     * Variables: `phs000007.v29.pht002897.v4.phv00172372.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`
     * Function:
       ```r
@@ -20948,7 +20948,7 @@
       }
       ```
 <a id="tnfa_1"></a>
-## **tnfa_1** (tnfa)
+## inflammation: **tnfa_1** (tnfa)
   Tumor necrosis factor alpha (TNFa) concentration in blood.
   * **Harmonization Units**:
     * [CFS](#tnfa_1-cfs)
@@ -21008,7 +21008,7 @@
     | MESA | Serum |
     
 <a id="tnfa_1-cfs"></a>
-  * ### **CFS**:
+  * ### inflammation/tnfa_1 -- **CFS**:
     * Variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00124076.v1`, `phs000284.v1.pht001902.v1.phv00124079.v1`
     * Function:
       ```r
@@ -21037,7 +21037,7 @@
       }
       ```
 <a id="tnfa_1-fhs"></a>
-  * ### **FHS**:
+  * ### inflammation/tnfa_1 -- **FHS**:
     * Variables: `phs000007.v29.pht000111.v5.phv00022779.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
     * Function:
       ```r
@@ -21060,7 +21060,7 @@
       }
       ```
 <a id="tnfa_1-mesa"></a>
-  * ### **MESA**:
+  * ### inflammation/tnfa_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001118.v8.phv00085773.v3`, `phs000209.v13.pht001119.v8.phv00086259.v4`, `phs000209.v13.pht002198.v2.phv00160529.v1`, `phs000209.v13.pht002198.v2.phv00160540.v1`, `phs000209.v13.pht002198.v2.phv00160541.v1`
     * Function:
       ```r
@@ -21105,7 +21105,7 @@
       }
       ```
 <a id="tnfa_r1_1"></a>
-## **tnfa_r1_1** (tnfa_r1)
+## inflammation: **tnfa_r1_1** (tnfa_r1)
   Tumor necrosis factor alpha receptor 1 (TNFa-R1) concentration in blood.
   * **Harmonization Units**:
     * [MESA](#tnfa_r1_1-mesa)
@@ -21147,7 +21147,7 @@
     | MESA | Serum |
     
 <a id="tnfa_r1_1-mesa"></a>
-  * ### **MESA**:
+  * ### inflammation/tnfa_r1_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085029.v3`
     * Function:
       ```r
@@ -21174,7 +21174,7 @@
       }
       ```
 <a id="tnfr2_1"></a>
-## **tnfr2_1** (tnfr2)
+## inflammation: **tnfr2_1** (tnfr2)
   Tumor necrosis factor receptor 2 (TNFR2) concentration in blood.
   * **Harmonization Units**:
     * [FHS](#tnfr2_1-fhs)
@@ -21221,7 +21221,7 @@
     | FHS | Plasma |
     
 <a id="tnfr2_1-fhs"></a>
-  * ### **FHS**:
+  * ### inflammation/tnfr2_1 -- **FHS**:
     * Variables: `phs000007.v29.pht000175.v6.phv00023913.v5`, `phs000007.v29.pht002898.v2.phv00172383.v2`, `phs000007.v29.pht002899.v4.phv00172391.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
     * Function:
       ```r
@@ -21273,7 +21273,7 @@
 * [triglycerides_1](#triglycerides_1)
 
 <a id="fasting_lipids_1"></a>
-## **fasting_lipids_1** (fasting_lipids)
+## lipids: **fasting_lipids_1** (fasting_lipids)
   Indicates whether participant fasted for at least eight hours prior to blood draw to measure lipids phenotypes.
   * **Harmonization Units**:
     * [Amish](#fasting_lipids_1-amish)
@@ -21318,7 +21318,7 @@
     
     
 <a id="fasting_lipids_1-amish"></a>
-  * ### **Amish**:
+  * ### lipids/fasting_lipids_1 -- **Amish**:
     * Variables: `phs000956.v2.pht005002.v1.phv00252976.v1`
     * Function:
       ```r
@@ -21348,7 +21348,7 @@
       }
       ```
 <a id="fasting_lipids_1-aric"></a>
-  * ### **ARIC**:
+  * ### lipids/fasting_lipids_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004063.v2.phv00204732.v1`
     * Function:
       ```r
@@ -21368,7 +21368,7 @@
       }
       ```
 <a id="fasting_lipids_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### lipids/fasting_lipids_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112661.v2`
     * Function:
       ```r
@@ -21389,7 +21389,7 @@
       }
       ```
 <a id="fasting_lipids_1-cfs"></a>
-  * ### **CFS**:
+  * ### lipids/fasting_lipids_1 -- **CFS**:
     * Variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`
     * Function:
       ```r
@@ -21406,7 +21406,7 @@
       }
       ```
 <a id="fasting_lipids_1-chs"></a>
-  * ### **CHS**:
+  * ### lipids/fasting_lipids_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001451.v1.phv00099923.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
@@ -21428,7 +21428,7 @@
       }
       ```
 <a id="fasting_lipids_1-fhs_gen3"></a>
-  * ### **FHS_Gen3**:
+  * ### lipids/fasting_lipids_1 -- **FHS_Gen3**:
     * Variables: `phs000007.v29.pht000074.v10.phv00021237.v4`, `phs000007.v29.pht006026.v1.phv00277020.v1`
     * Function:
       ```r
@@ -21452,7 +21452,7 @@
       }
       ```
 <a id="fasting_lipids_1-fhs_newoffspringspouse_omni2"></a>
-  * ### **FHS_NewOffspringSpouse_Omni2**:
+  * ### lipids/fasting_lipids_1 -- **FHS_NewOffspringSpouse_Omni2**:
     * Variables: `phs000007.v29.pht005143.v1.phv00255347.v1`, `phs000007.v29.pht006026.v1.phv00277020.v1`
     * Function:
       ```r
@@ -21474,7 +21474,7 @@
       }
       ```
 <a id="fasting_lipids_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### lipids/fasting_lipids_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht000030.v7.phv00007550.v5`, `phs000007.v29.pht006027.v1.phv00277077.v1`
     * Function:
       ```r
@@ -21497,7 +21497,7 @@
       }
       ```
 <a id="fasting_lipids_1-genoa"></a>
-  * ### **GENOA**:
+  * ### lipids/fasting_lipids_1 -- **GENOA**:
     * Variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006041.v1.phv00277572.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006655.v1.phv00307853.v1`
     * Function:
       ```r
@@ -21529,7 +21529,7 @@
       }
       ```
 <a id="fasting_lipids_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### lipids/fasting_lipids_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00253225.v1`
     * Function:
       ```r
@@ -21547,7 +21547,7 @@
       }
       ```
 <a id="fasting_lipids_1-jhs"></a>
-  * ### **JHS**:
+  * ### lipids/fasting_lipids_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001949.v1.phv00126044.v1`
     * Function:
       ```r
@@ -21571,7 +21571,7 @@
       }
       ```
 <a id="fasting_lipids_1-mesa"></a>
-  * ### **MESA**:
+  * ### lipids/fasting_lipids_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00083303.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084980.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087524.v1`
     * Function:
       ```r
@@ -21597,7 +21597,7 @@
       }
       ```
 <a id="fasting_lipids_1-sas"></a>
-  * ### **SAS**:
+  * ### lipids/fasting_lipids_1 -- **SAS**:
     * Variables: `phs000914.v1.pht005253.v1.phv00258680.v1`
     * Function:
       ```r
@@ -21615,7 +21615,7 @@
       }
       ```
 <a id="hdl_1"></a>
-## **hdl_1** (hdl)
+## lipids: **hdl_1** (hdl)
   Blood mass concentration of high-density lipoprotein cholesterol
   * **Harmonization Units**:
     * [Amish](#hdl_1-amish)
@@ -21664,7 +21664,7 @@
     
     
 <a id="hdl_1-amish"></a>
-  * ### **Amish**:
+  * ### lipids/hdl_1 -- **Amish**:
     * Variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253018.v1`
     * Function:
       ```r
@@ -21692,7 +21692,7 @@
       }
       ```
 <a id="hdl_1-aric"></a>
-  * ### **ARIC**:
+  * ### lipids/hdl_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004063.v2.phv00204761.v1`
     * Function:
       ```r
@@ -21708,7 +21708,7 @@
       }
       ```
 <a id="hdl_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### lipids/hdl_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001588.v2.phv00113702.v2`
     * Function:
       ```r
@@ -21725,7 +21725,7 @@
       }
       ```
 <a id="hdl_1-cfs"></a>
-  * ### **CFS**:
+  * ### lipids/hdl_1 -- **CFS**:
     * Variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123968.v1`
     * Function:
       ```r
@@ -21743,7 +21743,7 @@
       }
       ```
 <a id="hdl_1-chs"></a>
-  * ### **CHS**:
+  * ### lipids/hdl_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100426.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
@@ -21759,7 +21759,7 @@
       }
       ```
 <a id="hdl_1-fhs_gen3_newoffspringspouse_omni2"></a>
-  * ### **FHS_Gen3_NewOffspringSpouse_Omni2**:
+  * ### lipids/hdl_1 -- **FHS_Gen3_NewOffspringSpouse_Omni2**:
     * Variables: `phs000007.v29.pht006026.v1.phv00277020.v1`, `phs000007.v29.pht006026.v1.phv00277040.v1`
     * Function:
       ```r
@@ -21776,7 +21776,7 @@
       }
       ```
 <a id="hdl_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### lipids/hdl_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht006027.v1.phv00277077.v1`, `phs000007.v29.pht006027.v1.phv00277162.v1`
     * Function:
       ```r
@@ -21793,7 +21793,7 @@
       }
       ```
 <a id="hdl_1-genoa"></a>
-  * ### **GENOA**:
+  * ### lipids/hdl_1 -- **GENOA**:
     * Variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006041.v1.phv00277575.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006655.v1.phv00307856.v1`
     * Function:
       ```r
@@ -21827,7 +21827,7 @@
       }
       ```
 <a id="hdl_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### lipids/hdl_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00253239.v1`
     * Function:
       ```r
@@ -21842,7 +21842,7 @@
       }
       ```
 <a id="hdl_1-jhs"></a>
-  * ### **JHS**:
+  * ### lipids/hdl_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001945.v1.phv00125930.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
     * Function:
       ```r
@@ -21869,7 +21869,7 @@
       }
       ```
 <a id="hdl_1-mesa"></a>
-  * ### **MESA**:
+  * ### lipids/hdl_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082952.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084972.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087099.v1`
     * Function:
       ```r
@@ -21891,7 +21891,7 @@
       }
       ```
 <a id="hdl_1-sas"></a>
-  * ### **SAS**:
+  * ### lipids/hdl_1 -- **SAS**:
     * Variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258743.v1`
     * Function:
       ```r
@@ -21911,7 +21911,7 @@
       }
       ```
 <a id="ldl_1"></a>
-## **ldl_1** (ldl)
+## lipids: **ldl_1** (ldl)
   Blood mass concentration of low-density lipoprotein cholesterol
   * **Harmonization Units**:
     * [DCC_harmonized](#ldl_1-dcc_harmonized)
@@ -21962,7 +21962,7 @@
     
     
 <a id="ldl_1-dcc_harmonized"></a>
-  * ### **DCC_harmonized**:
+  * ### lipids/ldl_1 -- **DCC_harmonized**:
     * Harmonized Variables: `{'dcc_harmonization_id': 124, 'name': 'total_cholesterol_1', 'version': 3}`, `{'dcc_harmonization_id': 125, 'name': 'triglycerides_1', 'version': 3}`, `{'dcc_harmonization_id': 123, 'name': 'hdl_1', 'version': 3}`
     * Function:
       ```r
@@ -22003,7 +22003,7 @@
       }
       ```
 <a id="lipid_lowering_medication_1"></a>
-## **lipid_lowering_medication_1** (lipid_lowering_medication)
+## lipids: **lipid_lowering_medication_1** (lipid_lowering_medication)
   Indicates whether participant was taking any lipid-lowering medication at blood draw to measure lipids phenotypes
   * **Harmonization Units**:
     * [Amish](#lipid_lowering_medication_1-amish)
@@ -22038,7 +22038,7 @@
     
     
 <a id="lipid_lowering_medication_1-amish"></a>
-  * ### **Amish**:
+  * ### lipids/lipid_lowering_medication_1 -- **Amish**:
     * Variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253021.v1`
     * Function:
       ```r
@@ -22066,7 +22066,7 @@
       }
       ```
 <a id="lipid_lowering_medication_1-aric"></a>
-  * ### **ARIC**:
+  * ### lipids/lipid_lowering_medication_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004063.v2.phv00204802.v1`
     * Function:
       ```r
@@ -22088,7 +22088,7 @@
       }
       ```
 <a id="lipid_lowering_medication_1-cfs"></a>
-  * ### **CFS**:
+  * ### lipids/lipid_lowering_medication_1 -- **CFS**:
     * Variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123030.v1`
     * Function:
       ```r
@@ -22106,7 +22106,7 @@
       }
       ```
 <a id="lipid_lowering_medication_1-chs"></a>
-  * ### **CHS**:
+  * ### lipids/lipid_lowering_medication_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100594.v1`
     * Function:
       ```r
@@ -22124,7 +22124,7 @@
       }
       ```
 <a id="lipid_lowering_medication_1-fhs_gen3_newoffspringspouse_omni2"></a>
-  * ### **FHS_Gen3_NewOffspringSpouse_Omni2**:
+  * ### lipids/lipid_lowering_medication_1 -- **FHS_Gen3_NewOffspringSpouse_Omni2**:
     * Variables: `phs000007.v29.pht006026.v1.phv00277020.v1`, `phs000007.v29.pht006026.v1.phv00277061.v1`
     * Function:
       ```r
@@ -22141,7 +22141,7 @@
       }
       ```
 <a id="lipid_lowering_medication_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### lipids/lipid_lowering_medication_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht006027.v1.phv00277077.v1`, `phs000007.v29.pht006027.v1.phv00277254.v1`
     * Function:
       ```r
@@ -22158,7 +22158,7 @@
       }
       ```
 <a id="lipid_lowering_medication_1-genoa"></a>
-  * ### **GENOA**:
+  * ### lipids/lipid_lowering_medication_1 -- **GENOA**:
     * Variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006042.v1.phv00277586.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006656.v1.phv00307867.v1`
     * Function:
       ```r
@@ -22193,7 +22193,7 @@
       }
       ```
 <a id="lipid_lowering_medication_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### lipids/lipid_lowering_medication_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226349.v1`
     * Function:
       ```r
@@ -22209,7 +22209,7 @@
       }
       ```
 <a id="lipid_lowering_medication_1-jhs"></a>
-  * ### **JHS**:
+  * ### lipids/lipid_lowering_medication_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001949.v1.phv00126053.v1`
     * Function:
       ```r
@@ -22233,7 +22233,7 @@
       }
       ```
 <a id="lipid_lowering_medication_1-mesa"></a>
-  * ### **MESA**:
+  * ### lipids/lipid_lowering_medication_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00083162.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085407.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087104.v1`
     * Function:
       ```r
@@ -22256,7 +22256,7 @@
       }
       ```
 <a id="total_cholesterol_1"></a>
-## **total_cholesterol_1** (total_cholesterol)
+## lipids: **total_cholesterol_1** (total_cholesterol)
   Blood mass concentration of total cholesterol
   * **Harmonization Units**:
     * [Amish](#total_cholesterol_1-amish)
@@ -22318,7 +22318,7 @@
     
     
 <a id="total_cholesterol_1-amish"></a>
-  * ### **Amish**:
+  * ### lipids/total_cholesterol_1 -- **Amish**:
     * Variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253020.v1`
     * Function:
       ```r
@@ -22346,7 +22346,7 @@
       }
       ```
 <a id="total_cholesterol_1-aric"></a>
-  * ### **ARIC**:
+  * ### lipids/total_cholesterol_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004063.v2.phv00204735.v1`
     * Function:
       ```r
@@ -22371,7 +22371,7 @@
       }
       ```
 <a id="total_cholesterol_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### lipids/total_cholesterol_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001588.v2.phv00113700.v2`
     * Function:
       ```r
@@ -22389,7 +22389,7 @@
       }
       ```
 <a id="total_cholesterol_1-cfs"></a>
-  * ### **CFS**:
+  * ### lipids/total_cholesterol_1 -- **CFS**:
     * Variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123953.v1`
     * Function:
       ```r
@@ -22407,7 +22407,7 @@
       }
       ```
 <a id="total_cholesterol_1-chs"></a>
-  * ### **CHS**:
+  * ### lipids/total_cholesterol_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100491.v1`
     * Function:
       ```r
@@ -22423,7 +22423,7 @@
       }
       ```
 <a id="total_cholesterol_1-fhs_gen3_newoffspringspouse_omni2"></a>
-  * ### **FHS_Gen3_NewOffspringSpouse_Omni2**:
+  * ### lipids/total_cholesterol_1 -- **FHS_Gen3_NewOffspringSpouse_Omni2**:
     * Variables: `phs000007.v29.pht006026.v1.phv00277020.v1`, `phs000007.v29.pht006026.v1.phv00277047.v1`
     * Function:
       ```r
@@ -22440,7 +22440,7 @@
       }
       ```
 <a id="total_cholesterol_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### lipids/total_cholesterol_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht006027.v1.phv00277077.v1`, `phs000007.v29.pht006027.v1.phv00277194.v1`
     * Function:
       ```r
@@ -22457,7 +22457,7 @@
       }
       ```
 <a id="total_cholesterol_1-genoa"></a>
-  * ### **GENOA**:
+  * ### lipids/total_cholesterol_1 -- **GENOA**:
     * Variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006041.v1.phv00277573.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006655.v1.phv00307854.v1`
     * Function:
       ```r
@@ -22491,7 +22491,7 @@
       }
       ```
 <a id="total_cholesterol_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### lipids/total_cholesterol_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00253238.v1`
     * Function:
       ```r
@@ -22507,7 +22507,7 @@
       }
       ```
 <a id="total_cholesterol_1-jhs"></a>
-  * ### **JHS**:
+  * ### lipids/total_cholesterol_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001945.v1.phv00125927.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
     * Function:
       ```r
@@ -22534,7 +22534,7 @@
       }
       ```
 <a id="total_cholesterol_1-mesa"></a>
-  * ### **MESA**:
+  * ### lipids/total_cholesterol_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082956.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084974.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087100.v1`
     * Function:
       ```r
@@ -22557,7 +22557,7 @@
       }
       ```
 <a id="total_cholesterol_1-sas"></a>
-  * ### **SAS**:
+  * ### lipids/total_cholesterol_1 -- **SAS**:
     * Variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258733.v1`
     * Function:
       ```r
@@ -22577,7 +22577,7 @@
       }
       ```
 <a id="triglycerides_1"></a>
-## **triglycerides_1** (triglycerides)
+## lipids: **triglycerides_1** (triglycerides)
   Blood mass concentration of triglycerides
   * **Harmonization Units**:
     * [Amish](#triglycerides_1-amish)
@@ -22627,7 +22627,7 @@
     
     
 <a id="triglycerides_1-amish"></a>
-  * ### **Amish**:
+  * ### lipids/triglycerides_1 -- **Amish**:
     * Variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253019.v1`
     * Function:
       ```r
@@ -22655,7 +22655,7 @@
       }
       ```
 <a id="triglycerides_1-aric"></a>
-  * ### **ARIC**:
+  * ### lipids/triglycerides_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004063.v2.phv00204738.v1`
     * Function:
       ```r
@@ -22682,7 +22682,7 @@
       }
       ```
 <a id="triglycerides_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### lipids/triglycerides_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001588.v2.phv00113701.v2`
     * Function:
       ```r
@@ -22700,7 +22700,7 @@
       }
       ```
 <a id="triglycerides_1-cfs"></a>
-  * ### **CFS**:
+  * ### lipids/triglycerides_1 -- **CFS**:
     * Variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123974.v1`
     * Function:
       ```r
@@ -22718,7 +22718,7 @@
       }
       ```
 <a id="triglycerides_1-chs"></a>
-  * ### **CHS**:
+  * ### lipids/triglycerides_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100425.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
@@ -22734,7 +22734,7 @@
       }
       ```
 <a id="triglycerides_1-fhs_gen3_newoffspringspouse_omni2"></a>
-  * ### **FHS_Gen3_NewOffspringSpouse_Omni2**:
+  * ### lipids/triglycerides_1 -- **FHS_Gen3_NewOffspringSpouse_Omni2**:
     * Variables: `phs000007.v29.pht006026.v1.phv00277020.v1`, `phs000007.v29.pht006026.v1.phv00277049.v1`
     * Function:
       ```r
@@ -22751,7 +22751,7 @@
       }
       ```
 <a id="triglycerides_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### lipids/triglycerides_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht006027.v1.phv00277077.v1`, `phs000007.v29.pht006027.v1.phv00277203.v1`
     * Function:
       ```r
@@ -22768,7 +22768,7 @@
       }
       ```
 <a id="triglycerides_1-genoa"></a>
-  * ### **GENOA**:
+  * ### lipids/triglycerides_1 -- **GENOA**:
     * Variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006041.v1.phv00277574.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006655.v1.phv00307855.v1`
     * Function:
       ```r
@@ -22802,7 +22802,7 @@
       }
       ```
 <a id="triglycerides_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### lipids/triglycerides_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00253240.v1`
     * Function:
       ```r
@@ -22817,7 +22817,7 @@
       }
       ```
 <a id="triglycerides_1-jhs"></a>
-  * ### **JHS**:
+  * ### lipids/triglycerides_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001945.v1.phv00125933.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
     * Function:
       ```r
@@ -22844,7 +22844,7 @@
       }
       ```
 <a id="triglycerides_1-mesa"></a>
-  * ### **MESA**:
+  * ### lipids/triglycerides_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082950.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084968.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087101.v1`
     * Function:
       ```r
@@ -22868,7 +22868,7 @@
       }
       ```
 <a id="triglycerides_1-sas"></a>
-  * ### **SAS**:
+  * ### lipids/triglycerides_1 -- **SAS**:
     * Variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258736.v1`
     * Function:
       ```r
@@ -22894,7 +22894,7 @@
 * [sleep_duration_1](#sleep_duration_1)
 
 <a id="sleep_duration_1"></a>
-## **sleep_duration_1** (sleep_duration)
+## sleep: **sleep_duration_1** (sleep_duration)
   Usual amount of time slept per day.
   * **Harmonization Units**:
     * [ARIC](#sleep_duration_1-aric)
@@ -22958,7 +22958,7 @@
     Some subjects in *_CARDIA_*, *_CHS_*, *_FHS_* Original Cohort, *_HCHS/SOL_* and *_MESA_* reported usual sleep duration of zero or greater than 24 hours per day and were removed from the harmonized dataset.
     
 <a id="sleep_duration_1-aric"></a>
-  * ### **ARIC**:
+  * ### sleep/sleep_duration_1 -- **ARIC**:
     * Variables: `phs000280.v5.pht004228.v2.phv00214261.v1`, `phs000280.v5.pht004228.v2.phv00214262.v1`, `phs000280.v5.pht004228.v2.phv00214263.v1`, `phs000280.v5.pht004228.v2.phv00214268.v1`, `phs000280.v5.pht004228.v2.phv00214269.v1`, `phs000280.v5.pht004228.v2.phv00214270.v1`, `phs000280.v5.pht004228.v2.phv00214274.v1`, `phs000280.v5.pht004228.v2.phv00215388.v1`, `phs000280.v5.pht006431.v1.phv00295623.v1`, `phs000280.v5.pht006479.v1.phv00298019.v1`
     * Function:
       ```r
@@ -23019,7 +23019,7 @@
       }
       ```
 <a id="sleep_duration_1-cardia"></a>
-  * ### **CARDIA**:
+  * ### sleep/sleep_duration_1 -- **CARDIA**:
     * Variables: `phs000285.v3.pht001839.v2.phv00120534.v2`, `phs000285.v3.pht001851.v2.phv00120748.v2`
     * Function:
       ```r
@@ -23040,7 +23040,7 @@
       }
       ```
 <a id="sleep_duration_1-cfs"></a>
-  * ### **CFS**:
+  * ### sleep/sleep_duration_1 -- **CFS**:
     * Variables: `phs000284.v2.pht001902.v1.phv00122012.v1`, `phs000284.v2.pht001902.v1.phv00122015.v1`, `phs000284.v2.pht001902.v1.phv00122084.v1`, `phs000284.v2.pht001902.v1.phv00122088.v1`, `phs000284.v2.pht001902.v1.phv00122371.v1`, `phs000284.v2.pht001902.v1.phv00122372.v1`
     * Function:
       ```r
@@ -23097,7 +23097,7 @@
       }
       ```
 <a id="sleep_duration_1-chs"></a>
-  * ### **CHS**:
+  * ### sleep/sleep_duration_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001460.v1.phv00100694.v1`, `phs000287.v6.pht001460.v1.phv00100712.v1`
     * Function:
       ```r
@@ -23116,7 +23116,7 @@
       }
       ```
 <a id="sleep_duration_1-fhs_gen3"></a>
-  * ### **FHS_Gen3**:
+  * ### sleep/sleep_duration_1 -- **FHS_Gen3**:
     * Variables: `phs000007.v30.pht000074.v11.phv00021348.v5`, `phs000007.v30.pht003099.v5.phv00177930.v5`
     * Function:
       ```r
@@ -23135,7 +23135,7 @@
       }
       ```
 <a id="sleep_duration_1-fhs_offspring_omni1"></a>
-  * ### **FHS_Offspring_Omni1**:
+  * ### sleep/sleep_duration_1 -- **FHS_Offspring_Omni1**:
     * Variables: `phs000007.v30.pht000031.v8.phv00007754.v6`, `phs000007.v30.pht000033.v9.phv00009109.v6`, `phs000007.v30.pht000036.v9.phv00010680.v6`, `phs000007.v30.pht000098.v7.phv00022090.v6`, `phs000007.v30.pht000395.v9.phv00055458.v6`, `phs000007.v30.pht000395.v9.phv00055459.v6`, `phs000007.v30.pht000395.v9.phv00055460.v6`, `phs000007.v30.pht000395.v9.phv00055465.v6`, `phs000007.v30.pht000395.v9.phv00055466.v5`, `phs000007.v30.pht000395.v9.phv00055467.v5`, `phs000007.v30.pht000395.v9.phv00055471.v6`, `phs000007.v30.pht000395.v9.phv00056587.v6`, `phs000007.v30.pht000747.v6.phv00072369.v5`, `phs000007.v30.pht000747.v6.phv00072556.v5`, `phs000007.v30.pht003099.v5.phv00177932.v5`, `phs000007.v30.pht003099.v5.phv00177936.v5`, `phs000007.v30.pht003099.v5.phv00177940.v5`, `phs000007.v30.pht003099.v5.phv00177942.v5`, `phs000007.v30.pht003099.v5.phv00177944.v5`, `phs000007.v30.pht003099.v5.phv00177946.v5`, `phs000007.v30.pht005140.v2.phv00254011.v2`, `phs000007.v30.pht005140.v2.phv00254343.v2`, `phs000007.v30.pht005140.v2.phv00254561.v2`, `phs000007.v30.pht005140.v2.phv00254562.v2`, `phs000007.v30.pht005140.v2.phv00254563.v2`, `phs000007.v30.pht005140.v2.phv00254566.v2`, `phs000007.v30.pht005140.v2.phv00254567.v2`, `phs000007.v30.pht005140.v2.phv00254568.v2`, `phs000007.v30.pht005140.v2.phv00254569.v2`, `phs000007.v30.pht005140.v2.phv00254570.v2`
     * Function:
       ```r
@@ -23286,7 +23286,7 @@
       }
       ```
 <a id="sleep_duration_1-fhs_original"></a>
-  * ### **FHS_Original**:
+  * ### sleep/sleep_duration_1 -- **FHS_Original**:
     * Variables: `phs000007.v30.pht000014.v3.phv00001902.v1`, `phs000007.v30.pht000022.v4.phv00004158.v1`, `phs000007.v30.pht003099.v5.phv00177930.v5`
     * Function:
       ```r
@@ -23340,7 +23340,7 @@
       }
       ```
 <a id="sleep_duration_1-hchs_sol"></a>
-  * ### **HCHS_SOL**:
+  * ### sleep/sleep_duration_1 -- **HCHS_SOL**:
     * Variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00258046.v1`
     * Function:
       ```r
@@ -23359,7 +23359,7 @@
       }
       ```
 <a id="sleep_duration_1-jhs"></a>
-  * ### **JHS**:
+  * ### sleep/sleep_duration_1 -- **JHS**:
     * Variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001963.v1.phv00127678.v1`
     * Function:
       ```r
@@ -23375,7 +23375,7 @@
       }
       ```
 <a id="sleep_duration_1-mesa"></a>
-  * ### **MESA**:
+  * ### sleep/sleep_duration_1 -- **MESA**:
     * Variables: `phs000209.v13.pht001120.v10.phv00086727.v3`, `phs000209.v13.pht001120.v10.phv00087048.v2`
     * Function:
       ```r
@@ -23394,7 +23394,7 @@
       }
       ```
 <a id="sleep_duration_1-whi"></a>
-  * ### **WHI**:
+  * ### sleep/sleep_duration_1 -- **WHI**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001005.v6.phv00078869.v6`, `phs000200.v11.pht001005.v6.phv00078870.v6`, `phs000200.v11.pht001005.v6.phv00079041.v6`
     * Function:
       ```r
@@ -23426,7 +23426,7 @@
 * [vte_prior_history_1](#vte_prior_history_1)
 
 <a id="vte_case_status_1"></a>
-## **vte_case_status_1** (vte_case_status)
+## vte: **vte_case_status_1** (vte_case_status)
   An indicator of whether a subject experienced a venous thromboembolism event (VTE) that was verified by adjudication or by medical professionals.
   * **Harmonization Units**:
     * [ARIC](#vte_case_status_1-aric)
@@ -23562,7 +23562,7 @@
     [^3]: Germain, M et al (2015). Meta-analysis of 65,734 individuals identifies TSPAN15 and SLC44A2 as two susceptibility loci for venous thromboembolism. Am J Hum Genet, 96(4) 532-542.
     
 <a id="vte_case_status_1-aric"></a>
-  * ### **ARIC**:
+  * ### vte/vte_case_status_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht006485.v1.phv00298125.v1`, `phs000280.v4.pht006485.v1.phv00298126.v1`
     * Function:
       ```r
@@ -23602,7 +23602,7 @@
       }
       ```
 <a id="vte_case_status_1-chs"></a>
-  * ### **CHS**:
+  * ### vte/vte_case_status_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht005981.v1.phv00273565.v1`, `phs000287.v6.pht005981.v1.phv00273566.v1`, `phs000287.v6.pht005981.v1.phv00273567.v1`
     * Function:
       ```r
@@ -23642,7 +23642,7 @@
       }
       ```
 <a id="vte_case_status_1-fhs_g3nosom12"></a>
-  * ### **FHS_G3NOSOm12**:
+  * ### vte/vte_case_status_1 -- **FHS_G3NOSOm12**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177927.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177931.v4`, `phs000007.v29.pht003099.v4.phv00177933.v4`, `phs000007.v29.pht003099.v4.phv00177935.v4`, `phs000007.v29.pht003099.v4.phv00177985.v4`, `phs000007.v29.pht003099.v4.phv00177986.v4`, `phs000007.v29.pht003099.v4.phv00177987.v4`, `phs000007.v29.pht006025.v1.phv00276977.v1`, `phs000007.v29.pht006025.v1.phv00277005.v1`
     * Harmonized Variables: `{'dcc_harmonization_id': 120, 'name': 'vte_prior_history_1', 'version': 1}`
     * Function:
@@ -23715,7 +23715,7 @@
       }
       ```
 <a id="vte_case_status_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### vte/vte_case_status_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177927.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177931.v4`, `phs000007.v29.pht003099.v4.phv00177933.v4`, `phs000007.v29.pht003099.v4.phv00177935.v4`, `phs000007.v29.pht003099.v4.phv00177937.v4`, `phs000007.v29.pht003099.v4.phv00177939.v4`, `phs000007.v29.pht003099.v4.phv00177941.v4`, `phs000007.v29.pht003099.v4.phv00177943.v4`, `phs000007.v29.pht003099.v4.phv00177945.v4`, `phs000007.v29.pht003099.v4.phv00177985.v4`, `phs000007.v29.pht003099.v4.phv00177986.v4`, `phs000007.v29.pht003099.v4.phv00177987.v4`, `phs000007.v29.pht003099.v4.phv00177988.v4`, `phs000007.v29.pht003099.v4.phv00177989.v4`, `phs000007.v29.pht003099.v4.phv00177990.v4`, `phs000007.v29.pht003099.v4.phv00177991.v4`, `phs000007.v29.pht003099.v4.phv00177992.v4`, `phs000007.v29.pht006025.v1.phv00276977.v1`, `phs000007.v29.pht006025.v1.phv00277005.v1`
     * Harmonized Variables: `{'dcc_harmonization_id': 120, 'name': 'vte_prior_history_1', 'version': 1}`
     * Function:
@@ -23811,7 +23811,7 @@
       }
       ```
 <a id="vte_case_status_1-fhs_original"></a>
-  * ### **FHS_Original**:
+  * ### vte/vte_case_status_1 -- **FHS_Original**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177927.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177931.v4`, `phs000007.v29.pht003099.v4.phv00177933.v4`, `phs000007.v29.pht003099.v4.phv00177935.v4`, `phs000007.v29.pht003099.v4.phv00177937.v4`, `phs000007.v29.pht003099.v4.phv00177939.v4`, `phs000007.v29.pht003099.v4.phv00177941.v4`, `phs000007.v29.pht003099.v4.phv00177943.v4`, `phs000007.v29.pht003099.v4.phv00177945.v4`, `phs000007.v29.pht003099.v4.phv00177947.v4`, `phs000007.v29.pht003099.v4.phv00177949.v4`, `phs000007.v29.pht003099.v4.phv00177951.v4`, `phs000007.v29.pht003099.v4.phv00177953.v4`, `phs000007.v29.pht003099.v4.phv00177955.v4`, `phs000007.v29.pht003099.v4.phv00177957.v4`, `phs000007.v29.pht003099.v4.phv00177959.v4`, `phs000007.v29.pht003099.v4.phv00177961.v4`, `phs000007.v29.pht003099.v4.phv00177963.v4`, `phs000007.v29.pht003099.v4.phv00177965.v4`, `phs000007.v29.pht003099.v4.phv00177967.v4`, `phs000007.v29.pht003099.v4.phv00177969.v4`, `phs000007.v29.pht003099.v4.phv00177971.v4`, `phs000007.v29.pht003099.v4.phv00177973.v4`, `phs000007.v29.pht003099.v4.phv00177975.v4`, `phs000007.v29.pht003099.v4.phv00177977.v4`, `phs000007.v29.pht003099.v4.phv00177979.v4`, `phs000007.v29.pht003099.v4.phv00177981.v4`, `phs000007.v29.pht003099.v4.phv00177983.v4`, `phs000007.v29.pht003099.v4.phv00177985.v4`, `phs000007.v29.pht003099.v4.phv00177986.v4`, `phs000007.v29.pht003099.v4.phv00177987.v4`, `phs000007.v29.pht003099.v4.phv00177988.v4`, `phs000007.v29.pht003099.v4.phv00177989.v4`, `phs000007.v29.pht003099.v4.phv00177990.v4`, `phs000007.v29.pht003099.v4.phv00177991.v4`, `phs000007.v29.pht003099.v4.phv00177992.v4`, `phs000007.v29.pht003099.v4.phv00177993.v4`, `phs000007.v29.pht003099.v4.phv00177994.v4`, `phs000007.v29.pht003099.v4.phv00177995.v4`, `phs000007.v29.pht003099.v4.phv00177996.v4`, `phs000007.v29.pht003099.v4.phv00177997.v4`, `phs000007.v29.pht003099.v4.phv00177998.v4`, `phs000007.v29.pht003099.v4.phv00177999.v4`, `phs000007.v29.pht003099.v4.phv00178000.v4`, `phs000007.v29.pht003099.v4.phv00178001.v4`, `phs000007.v29.pht003099.v4.phv00178002.v4`, `phs000007.v29.pht003099.v4.phv00178003.v4`, `phs000007.v29.pht003099.v4.phv00178004.v4`, `phs000007.v29.pht003099.v4.phv00178005.v4`, `phs000007.v29.pht003099.v4.phv00178006.v4`, `phs000007.v29.pht003099.v4.phv00178007.v4`, `phs000007.v29.pht003099.v4.phv00178008.v4`, `phs000007.v29.pht003099.v4.phv00178009.v4`, `phs000007.v29.pht003099.v4.phv00178010.v4`, `phs000007.v29.pht003099.v4.phv00178011.v4`, `phs000007.v29.pht003099.v4.phv00226997.v1`, `phs000007.v29.pht003099.v4.phv00226998.v1`, `phs000007.v29.pht003099.v4.phv00227000.v1`, `phs000007.v29.pht003099.v4.phv00227001.v1`, `phs000007.v29.pht003099.v4.phv00227003.v1`, `phs000007.v29.pht003099.v4.phv00227004.v1`, `phs000007.v29.pht003099.v4.phv00227006.v1`, `phs000007.v29.pht003099.v4.phv00227007.v1`, `phs000007.v29.pht006025.v1.phv00276977.v1`, `phs000007.v29.pht006025.v1.phv00277005.v1`
     * Harmonized Variables: `{'dcc_harmonization_id': 120, 'name': 'vte_prior_history_1', 'version': 1}`
     * Function:
@@ -23907,7 +23907,7 @@
       }
       ```
 <a id="vte_case_status_1-hvh"></a>
-  * ### **HVH**:
+  * ### vte/vte_case_status_1 -- **HVH**:
     * Variables: `phs001013.v3.pht005311.v2.phv00259376.v2`, `phs001013.v3.pht005311.v2.phv00259377.v2`, `phs001013.v3.pht005311.v2.phv00259378.v2`, `phs001013.v3.pht005311.v2.phv00259384.v2`
     * Function:
       ```r
@@ -23952,7 +23952,7 @@
       }
       ```
 <a id="vte_case_status_1-mayo_geneva"></a>
-  * ### **Mayo_GENEVA**:
+  * ### vte/vte_case_status_1 -- **Mayo_GENEVA**:
     * Variables: `phs000289.v2.pht001886.v2.phv00121844.v1`, `phs000289.v2.pht001886.v2.phv00121846.v1`, `phs000289.v2.pht001886.v2.phv00121861.v2`
     * Function:
       ```r
@@ -23982,7 +23982,7 @@
       }
       ```
 <a id="vte_case_status_1-mayo_oc"></a>
-  * ### **Mayo_OC**:
+  * ### vte/vte_case_status_1 -- **Mayo_OC**:
     * Variables: `phs001402.v1.pht008239.v1.phv00389900.v1`, `phs001402.v1.pht008239.v1.phv00389902.v1`, `phs001402.v1.pht008239.v1.phv00389917.v1`
     * Function:
       ```r
@@ -24015,7 +24015,7 @@
       }
       ```
 <a id="vte_case_status_1-whi_hrt"></a>
-  * ### **WHI_HRT**:
+  * ### vte/vte_case_status_1 -- **WHI_HRT**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001031.v6.phv00080426.v6`, `phs000200.v11.pht003407.v3.phv00193178.v3`, `phs000200.v11.pht003407.v3.phv00193179.v3`, `phs000200.v11.pht003407.v3.phv00193193.v3`, `phs000200.v11.pht003407.v3.phv00193194.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`
     * Harmonized Variables: `{'dcc_harmonization_id': 120, 'name': 'vte_prior_history_1', 'version': 1}`
     * Function:
@@ -24083,7 +24083,7 @@
       }
       ```
 <a id="vte_case_status_1-whi_mrcnonhrt"></a>
-  * ### **WHI_MRCnonHRT**:
+  * ### vte/vte_case_status_1 -- **WHI_MRCnonHRT**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001031.v6.phv00080426.v6`, `phs000200.v11.pht003395.v3.phv00192301.v3`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003407.v3.phv00193178.v3`, `phs000200.v11.pht003407.v3.phv00193179.v3`, `phs000200.v11.pht003407.v3.phv00193193.v3`, `phs000200.v11.pht003407.v3.phv00193194.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`
     * Harmonized Variables: `{'dcc_harmonization_id': 120, 'name': 'vte_prior_history_1', 'version': 1}`
     * Function:
@@ -24160,7 +24160,7 @@
       }
       ```
 <a id="vte_followup_start_age_1"></a>
-## **vte_followup_start_age_1** (vte_followup_start_age)
+## vte: **vte_followup_start_age_1** (vte_followup_start_age)
   Age of subject at the start of the follow up period during which venous thromboembolism (VTE) events were reviewed and adjudicated.
   * **Harmonization Units**:
     * [ARIC](#vte_followup_start_age_1-aric)
@@ -24198,7 +24198,7 @@
     (Note that for the Generation 3, New Offspring Spouse, Omni1 and Omni2 cohorts, adjudication started at Exam 1 so the harmonized variable was set to the age at Exam 1.)
     
 <a id="vte_followup_start_age_1-aric"></a>
-  * ### **ARIC**:
+  * ### vte/vte_followup_start_age_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht006485.v1.phv00298125.v1`
     * Function:
       ```r
@@ -24227,7 +24227,7 @@
       }
       ```
 <a id="vte_followup_start_age_1-chs"></a>
-  * ### **CHS**:
+  * ### vte/vte_followup_start_age_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
@@ -24252,7 +24252,7 @@
       }
       ```
 <a id="vte_followup_start_age_1-fhs_g3nosom12"></a>
-  * ### **FHS_G3NOSOm12**:
+  * ### vte/vte_followup_start_age_1 -- **FHS_G3NOSOm12**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`
     * Function:
       ```r
@@ -24277,7 +24277,7 @@
       }
       ```
 <a id="vte_followup_start_age_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### vte/vte_followup_start_age_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177937.v4`, `phs000007.v29.pht003099.v4.phv00177939.v4`, `phs000007.v29.pht003099.v4.phv00177941.v4`, `phs000007.v29.pht003099.v4.phv00177988.v4`, `phs000007.v29.pht003099.v4.phv00177989.v4`, `phs000007.v29.pht003099.v4.phv00177990.v4`
     * Function:
       ```r
@@ -24339,7 +24339,7 @@
       }
       ```
 <a id="vte_followup_start_age_1-fhs_original"></a>
-  * ### **FHS_Original**:
+  * ### vte/vte_followup_start_age_1 -- **FHS_Original**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177973.v4`, `phs000007.v29.pht003099.v4.phv00177975.v4`, `phs000007.v29.pht003099.v4.phv00177977.v4`, `phs000007.v29.pht003099.v4.phv00178006.v4`, `phs000007.v29.pht003099.v4.phv00178007.v4`, `phs000007.v29.pht003099.v4.phv00178008.v4`
     * Function:
       ```r
@@ -24401,7 +24401,7 @@
       }
       ```
 <a id="vte_followup_start_age_1-whi_hrt"></a>
-  * ### **WHI_HRT**:
+  * ### vte/vte_followup_start_age_1 -- **WHI_HRT**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001031.v6.phv00080426.v6`
     * Function:
       ```r
@@ -24437,7 +24437,7 @@
       }
       ```
 <a id="vte_followup_start_age_1-whi_mrcnonhrt"></a>
-  * ### **WHI_MRCnonHRT**:
+  * ### vte/vte_followup_start_age_1 -- **WHI_MRCnonHRT**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001031.v6.phv00080426.v6`, `phs000200.v11.pht003395.v3.phv00192301.v3`, `phs000200.v11.pht003395.v3.phv00192302.v3`
     * Function:
       ```r
@@ -24482,7 +24482,7 @@
       }
       ```
 <a id="vte_prior_history_1"></a>
-## **vte_prior_history_1** (vte_prior_history)
+## vte: **vte_prior_history_1** (vte_prior_history)
   An indicator of whether a subject had a venous thromboembolism (VTE) event prior to the start of the medical review process (including self-reported events).
   * **Harmonization Units**:
     * [ARIC](#vte_prior_history_1-aric)
@@ -24547,7 +24547,7 @@
     
     
 <a id="vte_prior_history_1-aric"></a>
-  * ### **ARIC**:
+  * ### vte/vte_prior_history_1 -- **ARIC**:
     * Variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht006485.v1.phv00298125.v1`
     * Function:
       ```r
@@ -24579,7 +24579,7 @@
       }
       ```
 <a id="vte_prior_history_1-chs"></a>
-  * ### **CHS**:
+  * ### vte/vte_prior_history_1 -- **CHS**:
     * Variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht005981.v1.phv00273567.v1`
     * Function:
       ```r
@@ -24610,7 +24610,7 @@
       }
       ```
 <a id="vte_prior_history_1-fhs_g3nosom12"></a>
-  * ### **FHS_G3NOSOm12**:
+  * ### vte/vte_prior_history_1 -- **FHS_G3NOSOm12**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006025.v1.phv00276977.v1`, `phs000007.v29.pht006025.v1.phv00277005.v1`
     * Function:
       ```r
@@ -24650,7 +24650,7 @@
       }
       ```
 <a id="vte_prior_history_1-fhs_offspring"></a>
-  * ### **FHS_Offspring**:
+  * ### vte/vte_prior_history_1 -- **FHS_Offspring**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177988.v4`, `phs000007.v29.pht003099.v4.phv00177989.v4`, `phs000007.v29.pht003099.v4.phv00177990.v4`, `phs000007.v29.pht006025.v1.phv00276977.v1`, `phs000007.v29.pht006025.v1.phv00277005.v1`
     * Harmonized Variables: `{'dcc_harmonization_id': 119, 'name': 'vte_followup_start_age_1', 'version': 1}`
     * Function:
@@ -24738,7 +24738,7 @@
       }
       ```
 <a id="vte_prior_history_1-fhs_original"></a>
-  * ### **FHS_Original**:
+  * ### vte/vte_prior_history_1 -- **FHS_Original**:
     * Variables: `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00178006.v4`, `phs000007.v29.pht003099.v4.phv00178007.v4`, `phs000007.v29.pht003099.v4.phv00178008.v4`, `phs000007.v29.pht006025.v1.phv00276977.v1`, `phs000007.v29.pht006025.v1.phv00277005.v1`
     * Harmonized Variables: `{'dcc_harmonization_id': 119, 'name': 'vte_followup_start_age_1', 'version': 1}`
     * Function:
@@ -24826,7 +24826,7 @@
       }
       ```
 <a id="vte_prior_history_1-hvh"></a>
-  * ### **HVH**:
+  * ### vte/vte_prior_history_1 -- **HVH**:
     * Variables: `phs001013.v3.pht005311.v2.phv00259376.v2`, `phs001013.v3.pht005311.v2.phv00259377.v2`, `phs001013.v3.pht005311.v2.phv00259378.v2`, `phs001013.v3.pht005311.v2.phv00259384.v2`
     * Function:
       ```r
@@ -24869,7 +24869,7 @@
       }
       ```
 <a id="vte_prior_history_1-whi_hrt"></a>
-  * ### **WHI_HRT**:
+  * ### vte/vte_prior_history_1 -- **WHI_HRT**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht000998.v6.phv00078472.v6`, `phs000200.v11.pht000998.v6.phv00078475.v6`, `phs000200.v11.pht001031.v6.phv00080426.v6`
     * Function:
       ```r
@@ -24902,7 +24902,7 @@
       }
       ```
 <a id="vte_prior_history_1-whi_mrcnonhrt"></a>
-  * ### **WHI_MRCnonHRT**:
+  * ### vte/vte_prior_history_1 -- **WHI_MRCnonHRT**:
     * Variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht000998.v6.phv00078472.v6`, `phs000200.v11.pht000998.v6.phv00078475.v6`, `phs000200.v11.pht001031.v6.phv00080426.v6`, `phs000200.v11.pht002770.v4.phv00170649.v4`, `phs000200.v11.pht002770.v4.phv00170650.v4`, `phs000200.v11.pht002770.v4.phv00170651.v4`, `phs000200.v11.pht002770.v4.phv00170652.v4`, `phs000200.v11.pht003395.v3.phv00192301.v3`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003407.v3.phv00193179.v3`, `phs000200.v11.pht003407.v3.phv00193194.v3`
     * Function:
       ```r

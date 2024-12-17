@@ -57,7 +57,7 @@ def generate_markdown(root_dir, output_file):
         section.append(f'<a id="{var_anchor}"></a>')
 
         # Variable name, concept and description
-        var_heading = f"## **{data['name']}** ({data.get('phenotype_concept', 'N/A')})"
+        var_heading = f"## {directory}: **{data['name']}** ({data.get('phenotype_concept', 'N/A')})"
         section.append(var_heading)
         section.append(f"  {data.get('description', 'N/A')}")
 
@@ -98,7 +98,7 @@ def generate_markdown(root_dir, output_file):
         # Harmonization units
         if data.get('harmonization_units'):
             for unit in data['harmonization_units']:
-                unit_heading = f"  * ### **{unit['name']}**:"
+                unit_heading = f"  * ### {directory}/{data['name']} -- **{unit['name']}**:"
                 unit_anchor = create_anchor(f"{data['name']}-{unit['name']}")
                 section.append(f'<a id="{unit_anchor}"></a>')
                 section.append(unit_heading)
