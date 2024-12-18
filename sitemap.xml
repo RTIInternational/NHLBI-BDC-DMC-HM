@@ -146,11 +146,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/DublinCoreFile/</loc>
-         <lastmod>2024-12-18</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/Entity/</loc>
          <lastmod>2024-12-18</lastmod>
          <changefreq>daily</changefreq>
@@ -1157,6 +1152,11 @@
     </url>
     <url>
          <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/unit/</loc>
+         <lastmod>2024-12-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/uri/</loc>
          <lastmod>2024-12-18</lastmod>
          <changefreq>daily</changefreq>
     </url>

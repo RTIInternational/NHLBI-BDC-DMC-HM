@@ -270,6 +270,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#comments" class="md-nav__link">
+    Comments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#identifier-and-mapping-information" class="md-nav__link">
     Identifier and Mapping Information
   </a>
@@ -332,8 +339,8 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../DublinCoreFile/">DublinCoreFile</a></td>
-<td>A file with Dublin Core metadata elements</td>
+<td><a href="../File/">File</a></td>
+<td>Abstract class for various kinds of files</td>
 <td>no</td>
 </tr>
 </tbody>
@@ -341,6 +348,11 @@
 <h2 id="properties">Properties</h2>
 <ul>
 <li>Range: <a href="../String/">String</a></li>
+</ul>
+<h2 id="comments">Comments</h2>
+<ul>
+<li>From <a href="http://purl.org/dc/elements/1.1/identifier">Dublin Core identifier</a></li>
+<li>Not included in the Gen3 Core Metadata.</li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
@@ -353,12 +365,15 @@
 <pre><code class="language-yaml">name: identifier
 description: An unambiguous reference to the file within a given context. Recommended
   best practice is to identify using a formal identification system.
+comments:
+- From [Dublin Core identifier](http://purl.org/dc/elements/1.1/identifier)
+- Not included in the Gen3 Core Metadata.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 rank: 1000
 alias: identifier
-owner: DublinCoreFile
+owner: File
 domain_of:
-- DublinCoreFile
+- File
 range: string
 
 </code></pre>

@@ -205,7 +205,7 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
 <h1 id="class-file">Class: File</h1>
-<p><em>Abstract class for various kinds of files.</em></p>
+<p><em>Abstract class for various kinds of files. Subclasses will be defined for specific file types.</em></p>
 <p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/File">bdchm:File</a></p>
 <div class="mermaid"> classDiagram
     class File
@@ -223,9 +223,13 @@
 
       File : description
 
+      File : file_path
+
       File : format
 
       File : id
+
+      File : identifier
 
       File : language
 
@@ -247,6 +251,8 @@
 
       File : type
 
+      File : uri
+
 
 </div>
 <h2 id="inheritance">Inheritance</h2>
@@ -267,6 +273,24 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><a href="../identifier/">identifier</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>An unambiguous reference to the file within a given context</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../file_path/">file_path</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>The location or path where the file can be accessed</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../uri/">uri</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>A unique identifier or url for identifying or locating the file</td>
+<td>direct</td>
+</tr>
 <tr>
 <td><a href="../type/">type</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
@@ -379,10 +403,13 @@
 </table>
 <h2 id="comments">Comments</h2>
 <ul>
-<li>This is taken largely from the Gen3 Core Metadata Collection definition, and we can/will define subclasses accordingly.</li>
-<li>Should Document also be a subclass of file?</li>
-<li>Unlike Document, which has a url property, the Gen3 Core Metadata things don't have a file location. Do we want to allow for some kind of location in the abstract File class?</li>
-<li>I (Sigfried) was asking some advice from Claude.ai about this and it let me know that the attributes seemed like they were based on Dublin Core metadata elements, so I'm adding another implementation below that we might want to consider.</li>
+<li>This is taken largely from the <a href="https://gen3.biodatacatalyst.nhlbi.nih.gov/DD">Gen3 Core Metadata Collection</a> definition.</li>
+<li>Gen3 apparently took most of the attributes listed here from the <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-3">Dublin Core /elements/1.1/ namespace</a>.</li>
+<li>Attributes different from those in Dublin Core are noted as such in the comments.</li>
+<li>The Document entity was defined in this model prior to defining this File entity. Should it be modified to be a subclass of this?</li>
+<li>Unlike Document, which has a url property, the Gen3 Core Metadata definition doesn't have a file location or unique identifier. Should that be left to specific File subclasses or defined here?</li>
+<li>Tentatively including three attribute for addressing this -- identifier, file_path, and uri.</li>
+<li>There appear to be 11 specific file types defined in Gen3, 8 types classified as Data Files and 3 classified as Index Files.</li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
@@ -413,25 +440,59 @@
 <h3 id="direct">Direct</h3>
 <details>
 <pre><code class="language-yaml">name: File
-description: Abstract class for various kinds of files.
+description: Abstract class for various kinds of files. Subclasses will be defined
+  for specific file types.
 comments:
-- This is taken largely from the Gen3 Core Metadata Collection definition, and we
-  can/will define subclasses accordingly.
-- Should Document also be a subclass of file?
-- Unlike Document, which has a url property, the Gen3 Core Metadata things don't have
-  a file location. Do we want to allow for some kind of location in the abstract File
-  class?
-- I (Sigfried) was asking some advice from Claude.ai about this and it let me know
-  that the attributes seemed like they were based on Dublin Core metadata elements,
-  so I'm adding another implementation below that we might want to consider.
+- This is taken largely from the [Gen3 Core Metadata Collection](https://gen3.biodatacatalyst.nhlbi.nih.gov/DD)
+  definition.
+- Gen3 apparently took most of the attributes listed here from the [Dublin Core /elements/1.1/
+  namespace](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-3).
+- Attributes different from those in Dublin Core are noted as such in the comments.
+- The Document entity was defined in this model prior to defining this File entity.
+  Should it be modified to be a subclass of this?
+- Unlike Document, which has a url property, the Gen3 Core Metadata definition doesn't
+  have a file location or unique identifier. Should that be left to specific File
+  subclasses or defined here?
+- Tentatively including three attribute for addressing this -- identifier, file_path,
+  and uri.
+- There appear to be 11 specific file types defined in Gen3, 8 types classified as
+  Data Files and 3 classified as Index Files.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 is_a: Entity
 attributes:
+  identifier:
+    name: identifier
+    description: An unambiguous reference to the file within a given context. Recommended
+      best practice is to identify using a formal identification system.
+    comments:
+    - From [Dublin Core identifier](http://purl.org/dc/elements/1.1/identifier)
+    - Not included in the Gen3 Core Metadata.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    range: string
+  file_path:
+    name: file_path
+    description: The location or path where the file can be accessed.
+    comments:
+    - Not included in the Gen3 Core Metadata or Dublin Core.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    range: string
+  uri:
+    name: uri
+    description: A unique identifier or url for identifying or locating the file.
+    comments:
+    - Not included in the Gen3 Core Metadata or Dublin Core.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    range: string
   type:
     name: type
     description: No description
     comments:
-    - Gen3 shows 'No description'
+    - Gen3 shows 'No description'. It also contains a data_type attribute (included
+      below) taken from Dublin Core. It's unclear what this type attribute is used
+      for in Gen3.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     range: string
     required: true
@@ -440,6 +501,8 @@ attributes:
     description: "A project-specific identifier for a node. This property is the calling\
       \ card/nickname/alias for a unit of submission. It can be used in place of the\
       \ UUID for identifying or recalling a node.\t"
+    comments:
+    - From Gen3 but not from DublinCore. Unclear if it is appropriate for this model.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     range: string
@@ -450,6 +513,7 @@ attributes:
     comments:
     - Gen3 shows 'No description'. It gives the 'type' as an array of objects but
       doesn't say what the objects are like.
+    - Not part of DublinCore.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     multivalued: true
@@ -489,15 +553,19 @@ attributes:
   data_type:
     name: data_type
     description: The nature or genre of the resource. Recommended best practice is
-      to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE].
+      to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMI-TYPE](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7).
       To describe the file format, physical medium, or dimensions of the resource,
       use the Format element.
+    comments:
+    - Called 'type' in Dublin Core.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     range: string
   date:
     name: date
     description: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+    comments:
+    - Different from [Dublin Core date definition](http://purl.org/dc/elements/1.1/date)
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     range: string
@@ -521,6 +589,9 @@ attributes:
     name: language
     description: A language of the resource. Recommended best practice is to use a
       controlled vocabulary such as RFC 4646 (http://www.ietf.org/rfc/rfc4646.txt).
+    comments:
+    - The [Dublin Core language](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/elements11/language/)
+      definition mentions ISO 639-2 and ISO 639-3 rather than RFC 4646.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     range: string
   publisher:
@@ -575,32 +646,77 @@ attributes:
 <h3 id="induced">Induced</h3>
 <details>
 <pre><code class="language-yaml">name: File
-description: Abstract class for various kinds of files.
+description: Abstract class for various kinds of files. Subclasses will be defined
+  for specific file types.
 comments:
-- This is taken largely from the Gen3 Core Metadata Collection definition, and we
-  can/will define subclasses accordingly.
-- Should Document also be a subclass of file?
-- Unlike Document, which has a url property, the Gen3 Core Metadata things don't have
-  a file location. Do we want to allow for some kind of location in the abstract File
-  class?
-- I (Sigfried) was asking some advice from Claude.ai about this and it let me know
-  that the attributes seemed like they were based on Dublin Core metadata elements,
-  so I'm adding another implementation below that we might want to consider.
+- This is taken largely from the [Gen3 Core Metadata Collection](https://gen3.biodatacatalyst.nhlbi.nih.gov/DD)
+  definition.
+- Gen3 apparently took most of the attributes listed here from the [Dublin Core /elements/1.1/
+  namespace](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-3).
+- Attributes different from those in Dublin Core are noted as such in the comments.
+- The Document entity was defined in this model prior to defining this File entity.
+  Should it be modified to be a subclass of this?
+- Unlike Document, which has a url property, the Gen3 Core Metadata definition doesn't
+  have a file location or unique identifier. Should that be left to specific File
+  subclasses or defined here?
+- Tentatively including three attribute for addressing this -- identifier, file_path,
+  and uri.
+- There appear to be 11 specific file types defined in Gen3, 8 types classified as
+  Data Files and 3 classified as Index Files.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 is_a: Entity
 attributes:
+  identifier:
+    name: identifier
+    description: An unambiguous reference to the file within a given context. Recommended
+      best practice is to identify using a formal identification system.
+    comments:
+    - From [Dublin Core identifier](http://purl.org/dc/elements/1.1/identifier)
+    - Not included in the Gen3 Core Metadata.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: identifier
+    owner: File
+    domain_of:
+    - File
+    range: string
+  file_path:
+    name: file_path
+    description: The location or path where the file can be accessed.
+    comments:
+    - Not included in the Gen3 Core Metadata or Dublin Core.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: file_path
+    owner: File
+    domain_of:
+    - File
+    range: string
+  uri:
+    name: uri
+    description: A unique identifier or url for identifying or locating the file.
+    comments:
+    - Not included in the Gen3 Core Metadata or Dublin Core.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: uri
+    owner: File
+    domain_of:
+    - File
+    range: string
   type:
     name: type
     description: No description
     comments:
-    - Gen3 shows 'No description'
+    - Gen3 shows 'No description'. It also contains a data_type attribute (included
+      below) taken from Dublin Core. It's unclear what this type attribute is used
+      for in Gen3.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     alias: type
     owner: File
     domain_of:
     - QuestionnaireResponseValue
     - File
-    - DublinCoreFile
     - ObservationValue
     range: string
     required: true
@@ -609,6 +725,8 @@ attributes:
     description: "A project-specific identifier for a node. This property is the calling\
       \ card/nickname/alias for a unit of submission. It can be used in place of the\
       \ UUID for identifying or recalling a node.\t"
+    comments:
+    - From Gen3 but not from DublinCore. Unclear if it is appropriate for this model.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     alias: submitter_id
@@ -623,6 +741,7 @@ attributes:
     comments:
     - Gen3 shows 'No description'. It gives the 'type' as an array of objects but
       doesn't say what the objects are like.
+    - Not part of DublinCore.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     multivalued: true
@@ -643,7 +762,6 @@ attributes:
     owner: File
     domain_of:
     - File
-    - DublinCoreFile
     range: string
   coverage:
     name: coverage
@@ -663,7 +781,6 @@ attributes:
     owner: File
     domain_of:
     - File
-    - DublinCoreFile
     range: string
   creator:
     name: creator
@@ -676,14 +793,15 @@ attributes:
     owner: File
     domain_of:
     - File
-    - DublinCoreFile
     range: string
   data_type:
     name: data_type
     description: The nature or genre of the resource. Recommended best practice is
-      to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE].
+      to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMI-TYPE](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7).
       To describe the file format, physical medium, or dimensions of the resource,
       use the Format element.
+    comments:
+    - Called 'type' in Dublin Core.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     alias: data_type
@@ -694,13 +812,14 @@ attributes:
   date:
     name: date
     description: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+    comments:
+    - Different from [Dublin Core date definition](http://purl.org/dc/elements/1.1/date)
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     alias: date
     owner: File
     domain_of:
     - File
-    - DublinCoreFile
     range: string
   description:
     name: description
@@ -715,7 +834,6 @@ attributes:
     - ResearchStudy
     - Questionnaire
     - File
-    - DublinCoreFile
     - Document
     - Specimen
     - BiologicProduct
@@ -732,19 +850,20 @@ attributes:
     owner: File
     domain_of:
     - File
-    - DublinCoreFile
     range: string
   language:
     name: language
     description: A language of the resource. Recommended best practice is to use a
       controlled vocabulary such as RFC 4646 (http://www.ietf.org/rfc/rfc4646.txt).
+    comments:
+    - The [Dublin Core language](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/elements11/language/)
+      definition mentions ISO 639-2 and ISO 639-3 rather than RFC 4646.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     alias: language
     owner: File
     domain_of:
     - Questionnaire
     - File
-    - DublinCoreFile
     range: string
   publisher:
     name: publisher
@@ -757,7 +876,6 @@ attributes:
     domain_of:
     - Questionnaire
     - File
-    - DublinCoreFile
     range: string
   relation:
     name: relation
@@ -770,7 +888,6 @@ attributes:
     owner: File
     domain_of:
     - File
-    - DublinCoreFile
     range: string
   rights:
     name: rights
@@ -783,7 +900,6 @@ attributes:
     owner: File
     domain_of:
     - File
-    - DublinCoreFile
     range: string
   source:
     name: source
@@ -797,7 +913,6 @@ attributes:
     owner: File
     domain_of:
     - File
-    - DublinCoreFile
     range: string
   subject:
     name: subject
@@ -810,7 +925,6 @@ attributes:
     owner: File
     domain_of:
     - File
-    - DublinCoreFile
     range: string
   title:
     name: title
@@ -822,7 +936,6 @@ attributes:
     domain_of:
     - Questionnaire
     - File
-    - DublinCoreFile
     range: string
   id:
     name: id

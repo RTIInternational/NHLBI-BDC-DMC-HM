@@ -274,6 +274,19 @@
     Identifier and Mapping Information
   </a>
   
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
+    Schema Source
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -304,6 +317,7 @@
 
 
 <h1 id="slot-subject">Slot: subject</h1>
+<p><em>The topic of the resource. Typically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary.</em></p>
 <p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/subject">bdchm:subject</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -322,11 +336,6 @@
 <td>Abstract class for various kinds of files</td>
 <td>no</td>
 </tr>
-<tr>
-<td><a href="../DublinCoreFile/">DublinCoreFile</a></td>
-<td>A file with Dublin Core metadata elements</td>
-<td>no</td>
-</tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
@@ -334,14 +343,23 @@
 <li>Range: <a href="../String/">String</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+</ul>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
 <pre><code class="language-yaml">name: subject
+description: The topic of the resource. Typically, the subject will be represented
+  using keywords, key phrases, or classification codes. Recommended best practice
+  is to use a controlled vocabulary.
+from_schema: https://w3id.org/nhlbidatastage/bdchm
+rank: 1000
 alias: subject
+owner: File
 domain_of:
 - File
-- DublinCoreFile
 range: string
 
 </code></pre>

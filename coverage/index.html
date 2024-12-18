@@ -274,6 +274,19 @@
     Identifier and Mapping Information
   </a>
   
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
+    Schema Source
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -304,6 +317,7 @@
 
 
 <h1 id="slot-coverage">Slot: coverage</h1>
+<p>_The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant. Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a controlled vocabulary such as the Thesaurus of Geographic Names [TGN] (http://www.getty.edu/research/tools/vocabulary/tgn/index.html). Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges.  _</p>
 <p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/coverage">bdchm:coverage</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -322,11 +336,6 @@
 <td>Abstract class for various kinds of files</td>
 <td>no</td>
 </tr>
-<tr>
-<td><a href="../DublinCoreFile/">DublinCoreFile</a></td>
-<td>A file with Dublin Core metadata elements</td>
-<td>no</td>
-</tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
@@ -334,14 +343,29 @@
 <li>Range: <a href="../String/">String</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+</ul>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
 <pre><code class="language-yaml">name: coverage
+description: &quot;The spatial or temporal topic of the resource, the spatial applicability\
+  \ of the resource, or the jurisdiction under which the resource is relevant. Spatial\
+  \ topic and spatial applicability may be a named place or a location specified by\
+  \ its geographic coordinates. Temporal topic may be a named period, date, or date\
+  \ range. A jurisdiction may be a named administrative entity or a geographic place\
+  \ to which the resource applies. Recommended best practice is to use a controlled\
+  \ vocabulary such as the Thesaurus of Geographic Names [TGN] (http://www.getty.edu/research/tools/vocabulary/tgn/index.html).\
+  \ Where appropriate, named places or time periods can be used in preference to numeric\
+  \ identifiers such as sets of coordinates or date ranges.\t&quot;
+from_schema: https://w3id.org/nhlbidatastage/bdchm
+rank: 1000
 alias: coverage
+owner: File
 domain_of:
 - File
-- DublinCoreFile
 range: string
 
 </code></pre>

@@ -274,6 +274,19 @@
     Identifier and Mapping Information
   </a>
   
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
+    Schema Source
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -304,6 +317,7 @@
 
 
 <h1 id="slot-format">Slot: format</h1>
+<p><em>The file format, physical medium, or dimensions of the resource. Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME] (http://www.iana.org/assignments/media-types/).</em></p>
 <p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/format">bdchm:format</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -322,11 +336,6 @@
 <td>Abstract class for various kinds of files</td>
 <td>no</td>
 </tr>
-<tr>
-<td><a href="../DublinCoreFile/">DublinCoreFile</a></td>
-<td>A file with Dublin Core metadata elements</td>
-<td>no</td>
-</tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
@@ -334,14 +343,23 @@
 <li>Range: <a href="../String/">String</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+</ul>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
 <pre><code class="language-yaml">name: format
+description: The file format, physical medium, or dimensions of the resource. Examples
+  of dimensions include size and duration. Recommended best practice is to use a controlled
+  vocabulary such as the list of Internet Media Types [MIME] (http://www.iana.org/assignments/media-types/).
+from_schema: https://w3id.org/nhlbidatastage/bdchm
+rank: 1000
 alias: format
+owner: File
 domain_of:
 - File
-- DublinCoreFile
 range: string
 
 </code></pre>

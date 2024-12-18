@@ -270,6 +270,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#comments" class="md-nav__link">
+    Comments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#identifier-and-mapping-information" class="md-nav__link">
     Identifier and Mapping Information
   </a>
@@ -317,7 +324,7 @@
 
 
 <h1 id="slot-data_type">Slot: data_type</h1>
-<p><em>The nature or genre of the resource. Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element.</em></p>
+<p><em>The nature or genre of the resource. Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7">DCMI-TYPE</a>. To describe the file format, physical medium, or dimensions of the resource, use the Format element.</em></p>
 <p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/data_type">bdchm:data_type</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -342,6 +349,10 @@
 <ul>
 <li>Range: <a href="../String/">String</a></li>
 </ul>
+<h2 id="comments">Comments</h2>
+<ul>
+<li>Called 'type' in Dublin Core.</li>
+</ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
@@ -352,9 +363,11 @@
 
 <pre><code class="language-yaml">name: data_type
 description: The nature or genre of the resource. Recommended best practice is to
-  use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe
-  the file format, physical medium, or dimensions of the resource, use the Format
-  element.
+  use a controlled vocabulary such as the DCMI Type Vocabulary [DCMI-TYPE](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7).
+  To describe the file format, physical medium, or dimensions of the resource, use
+  the Format element.
+comments:
+- Called 'type' in Dublin Core.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 rank: 1000
 alias: data_type

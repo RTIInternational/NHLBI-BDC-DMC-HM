@@ -429,12 +429,8 @@
 <td>DrugExposures are records of a Person suggesting exposure to a medication. The source could be prescription, dispensing, medication administration records (MARs), or patient medication list.</td>
 </tr>
 <tr>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="DublinCoreFile/">DublinCoreFile</a></td>
-<td>A file with Dublin Core metadata elements</td>
-</tr>
-<tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="File/">File</a></td>
-<td>Abstract class for various kinds of files.</td>
+<td>Abstract class for various kinds of files. Subclasses will be defined for specific file types.</td>
 </tr>
 <tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Observation/">Observation</a></td>
@@ -1126,6 +1122,10 @@
 <tr>
 <td><a href="unit/">unit</a></td>
 <td>A coded or free text (in the</td>
+</tr>
+<tr>
+<td><a href="uri/">uri</a></td>
+<td>A unique identifier or url for identifying or locating the file</td>
 </tr>
 <tr>
 <td><a href="url/">url</a></td>
