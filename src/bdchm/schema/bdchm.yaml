@@ -560,23 +560,48 @@ classes:
 
   File:
     is_a: Entity
+    description: >-
+      Abstract class for various kinds of files. Subclasses will be defined
+      for specific file types.
     comments:
       - This is taken largely from the Gen3 Core Metadata Collection definition,
-        and we can/will define subclasses accordingly.
-      - Should Document also be a subclass of file?
+      - Gen3 apparently took most of the attributes listed here from the
+        [Dublin Core /elements/1.1/ namespace](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-3).
+      - Attributes different from those in Dublin Core are noted as such in the comments.
+      - The Document entity was defined in this model prior to defining this File entity.
+        Should it be modified to be a subclass of this?
       - Unlike Document, which has a url property, the Gen3 Core Metadata
-        things don't have a file location. Do we want to allow for some
-        kind of location in the abstract File class?
-      - I (Sigfried) was asking some advice from Claude.ai about this and it
-        let me know that the attributes seemed like they were based on Dublin
-        Core metadata elements, so I'm adding another implementation below
-        that we might want to consider.
-    description: Abstract class for various kinds of files.
+        definition doesn't have a file location or unique identifier.
+        Should that be left to specific File subclasses or defined here?
+      - Tentatively including three attribute for addressing this --
+        identifier, file_path, and uri.
     attributes:
+      identifier:
+        range: string
+        description: >-
+          An unambiguous reference to the file within a given context.
+          Recommended best practice is to identify using a formal identification system.
+        comments:
+          - From [Dublin Core identifier](http://purl.org/dc/elements/1.1/identifier)
+          - Not included in the Gen3 Core Metadata.
+      file_path:
+        range: string
+        description: >-
+          The location or path where the file can be accessed.
+        comments:
+          - Not included in the Gen3 Core Metadata or Dublin Core.
+      uri:
+        range: string
+        description: >-
+          A unique identifier or url for identifying or locating the file.
+        comments:
+          - Not included in the Gen3 Core Metadata or Dublin Core.
       type:
         description: No description
         comments:
-          - Gen3 shows 'No description'
+          - Gen3 shows 'No description'. It also contains a data_type
+            attribute (included below) taken from Dublin Core. It's unclear
+            what this type attribute is used for in Gen3.
         range: string
         required: true
       submitter_id:
@@ -584,6 +609,9 @@ classes:
           A project-specific identifier for a node. This property is the
           calling card/nickname/alias for a unit of submission. It can be used
           in place of the UUID for identifying or recalling a node.	
+        comments:
+          - From Gen3 but not from DublinCore. Unclear if it is appropriate
+            for this model.
         range: string
         required: true
       projects:
@@ -591,6 +619,7 @@ classes:
         comments:
           - Gen3 shows 'No description'. It gives the 'type' as an array
             of objects but doesn't say what the objects are like.
+          - Not part of DublinCore.
         range: string
         multivalued: true
         required: true
@@ -627,13 +656,18 @@ classes:
         description: >-
           The nature or genre of the resource. Recommended best practice is to
           use a controlled vocabulary such as the DCMI Type Vocabulary
-          [DCMITYPE]. To describe the file format, physical medium, or
-          dimensions of the resource, use the Format element.
+          [DCMI-TYPE](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7).
+          To describe the file format, physical medium, or dimensions of the
+          resource, use the Format element.
+        comments:
+          - Called 'type' in Dublin Core.
       date:
         range: string
         description: >-
           A combination of date and time of day in the form
           [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+        comments:
+          - Different from [Dublin Core date definition](http://purl.org/dc/elements/1.1/date)
       description:
         range: string
         description: >-
@@ -654,6 +688,9 @@ classes:
           A language of the resource. Recommended best practice is to use a
           controlled vocabulary such as RFC 4646
           (http://www.ietf.org/rfc/rfc4646.txt).
+        comments:
+          - [Dublin Core language](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/elements11/language/)
+            mentions ISO 639-2 and ISO 639-3 rather than RFC 4646.
       publisher:
         range: string
         description: >-
@@ -692,100 +729,6 @@ classes:
         description: >-
           A name given to the resource. Typically, a Title will be a name by
           which the resource is formally known.
-        
-  DublinCoreFile:
-    comments:
-      - See last comment on File entity above.
-    description: A file with Dublin Core metadata elements
-    is_a: Entity  # Assuming same parent as your original File class
-    attributes:
-      title:
-        range: string
-        description: >-
-          The name given to the file. Typically, a Title will be a name
-          by which the resource is formally known.
-      creator:
-        range: string
-        multivalued: true
-        description: >-
-          An entity primarily responsible for making the file. Examples include
-          a person, organization, or service. Typically the name of the Creator
-          should be used to indicate the entity.
-      subject:
-        range: string
-        multivalued: true
-        description: >-
-          The topic of the file. Typically represented using keywords or key phrases,
-          or classification codes. Recommended best practice is to use a controlled vocabulary.
-      description:
-        range: string
-        description: >-
-          An account of the file. May include but is not limited to: an abstract,
-          a table of contents, a graphical representation, or a free-text account.
-      publisher:
-        range: string
-        multivalued: true
-        description: >-
-          An entity responsible for making the file available. Examples include
-          a person, organization, or service.
-      contributor:
-        range: string
-        multivalued: true
-        description: >-
-          An entity responsible for making contributions to the file. Examples include
-          a person, organization, or service.
-      date:
-        range: string  # Could be refined to specific datetime format
-        description: >-
-          A date associated with an event in the life cycle of the file.
-          Recommended best practice is to use ISO 8601 format.
-      type:
-        range: string
-        description: >-
-          The nature or genre of the file. Recommended best practice is to use
-          a controlled vocabulary such as the DCMI Type Vocabulary.
-      format:
-        range: string
-        description: >-
-          The file format, physical medium, or dimensions. Examples include size
-          and duration. Recommended best practice is to use a controlled vocabulary
-          such as MIME types.
-      identifier:
-        range: string
-        description: >-
-          An unambiguous reference to the file within a given context.
-          Recommended best practice is to identify using a formal identification system.
-      source:
-        range: string
-        description: >-
-          A reference to a file from which the present file is derived.
-      language:
-        range: string
-        description: >-
-          The language of the file. Recommended best practice is to use
-          RFC 5646 language tags.
-      relation:
-        range: string
-        multivalued: true
-        description: >-
-          A reference to a related file or resource.
-      coverage:
-        range: string
-        description: >-
-          The spatial or temporal topic of the file. Spatial coverage may be
-          a named place or geographic coordinates. Temporal coverage may be
-          a named period, date, or date range.
-      rights:
-        range: string
-        description: >-
-          Information about rights held in and over the file. Typically
-          includes intellectual property rights, copyright, and various
-          property rights.
-      file_path:
-        range: string
-        description: >-
-          The location or path where the file can be accessed. This extends
-          beyond basic Dublin Core but is essential for file management.
 
   Document:
     is_a: Entity
