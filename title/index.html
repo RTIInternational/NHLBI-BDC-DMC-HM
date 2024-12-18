@@ -274,19 +274,6 @@
     Identifier and Mapping Information
   </a>
   
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    Schema Source
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -317,7 +304,6 @@
 
 
 <h1 id="slot-title">Slot: title</h1>
-<p><em>Name for this Questionnaire (human friendly)</em></p>
 <p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/title">bdchm:title</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -336,6 +322,16 @@
 <td>A Questionnaire is an organized collection of questions intended to solicit i...</td>
 <td>no</td>
 </tr>
+<tr>
+<td><a href="../File/">File</a></td>
+<td>Abstract class for various kinds of files</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../DublinCoreFile/">DublinCoreFile</a></td>
+<td>A file with Dublin Core metadata elements</td>
+<td>no</td>
+</tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
@@ -343,21 +339,15 @@
 <li>Range: <a href="../String/">String</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
-</ul>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
 <pre><code class="language-yaml">name: title
-description: Name for this Questionnaire (human friendly)
-from_schema: https://w3id.org/nhlbidatastage/bdchm
-rank: 1000
 alias: title
-owner: Questionnaire
 domain_of:
 - Questionnaire
+- File
+- DublinCoreFile
 range: string
 
 </code></pre>

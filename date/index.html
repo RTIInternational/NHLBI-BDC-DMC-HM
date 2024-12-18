@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/id/">
+        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/date/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-8.5.10">
     
     
       
-        <title>Slot: id - BioData Catalyst Harmonized Model</title>
+        <title>Slot: date - BioData Catalyst Harmonized Model</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-id" class="md-skip">
+        <a href="#slot-date" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: id
+              Slot: date
             
           </span>
         </div>
@@ -274,19 +274,6 @@
     Identifier and Mapping Information
   </a>
   
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    Schema Source
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -310,15 +297,14 @@
                 
                   
 
-  <a href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/edit/master/docs/id.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/edit/master/docs/date.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="slot-id">Slot: id</h1>
-<p><em>The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different "id" in the new system since "id" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the "identifier" field. The "id" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.</em></p>
-<p>URI: <a href="http://schema.org/identifier">schema:identifier</a></p>
+<h1 id="slot-date">Slot: date</h1>
+<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/date">bdchm:date</a></p>
 <!-- no inheritance hierarchy -->
 
 <h2 id="applicable-classes">Applicable Classes</h2>
@@ -332,91 +318,6 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../Entity/">Entity</a></td>
-<td>Any resource that has its own identifier</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Person/">Person</a></td>
-<td>Administrative information about an individual or animal receiving care or ot...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Demography/">Demography</a></td>
-<td>Demographics about an individual or animal receiving care or other health-rel...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Participant/">Participant</a></td>
-<td>A Participant is the entity of interest in a research study, typically a huma...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../ResearchStudy/">ResearchStudy</a></td>
-<td>A process where a researcher or organization plans and then executes a series...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Consent/">Consent</a></td>
-<td>An entity that can be used to capture consent code and other relevant data ab...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Visit/">Visit</a></td>
-<td>Events where Persons engage with the healthcare system for a duration of time</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Organization/">Organization</a></td>
-<td>A grouping of people or organizations with a common purpose such as a data co...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../TimePoint/">TimePoint</a></td>
-<td>A structured representation of a single point in time that allows direct/expl...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Questionnaire/">Questionnaire</a></td>
-<td>A Questionnaire is an organized collection of questions intended to solicit i...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../QuestionnaireItem/">QuestionnaireItem</a></td>
-<td>QuestionnaireItem defines a question or section within the Questionnaire</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../QuestionnaireResponse/">QuestionnaireResponse</a></td>
-<td>QuestionnaireResponse provides a complete or partial list of answers to a set...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Condition/">Condition</a></td>
-<td>Conditions are records of a Person suggesting the presence of a disease or me...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../DrugExposure/">DrugExposure</a></td>
-<td>DrugExposures are records of a Person suggesting exposure to a medication</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../DeviceExposure/">DeviceExposure</a></td>
-<td>DeviceExposures are records of a Person suggesting exposure to a foreign obje...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../DimensionalObservation/">DimensionalObservation</a></td>
-<td>A structured object that describes a single data item about the physical dime...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../DimensionalObservationSet/">DimensionalObservationSet</a></td>
-<td>A set of one or more discrete observations about the physical dimensions of a...</td>
-<td>no</td>
-</tr>
-<tr>
 <td><a href="../File/">File</a></td>
 <td>Abstract class for various kinds of files</td>
 <td>no</td>
@@ -426,120 +327,22 @@
 <td>A file with Dublin Core metadata elements</td>
 <td>no</td>
 </tr>
-<tr>
-<td><a href="../Document/">Document</a></td>
-<td>A collection of information intented to be understood together as a whole, an...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Specimen/">Specimen</a></td>
-<td>Any material taken as a sample from a biological entity (living or dead), or ...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../SpecimenContainer/">SpecimenContainer</a></td>
-<td>A vessel in which a specimen is held or to which it is attached - for storage...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../SpecimenCreationActivity/">SpecimenCreationActivity</a></td>
-<td>The process of creating a specimen</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../SpecimenQualityObservation/">SpecimenQualityObservation</a></td>
-<td>A structured object that describes a characteristic of a specimen indicative ...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../SpecimenQuantityObservation/">SpecimenQuantityObservation</a></td>
-<td>A structured object that describes a single data item about the quantity of a...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../SpecimenProcessingActivity/">SpecimenProcessingActivity</a></td>
-<td>An activity that modifies the physical structure, composition, or state of a ...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../SpecimenStorageActivity/">SpecimenStorageActivity</a></td>
-<td>An activity in which a specimen is stored or maintained in a particular locat...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../SpecimenTransportActivity/">SpecimenTransportActivity</a></td>
-<td>An activity through which a specimen is transported between locations or orga...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../BiologicProduct/">BiologicProduct</a></td>
-<td>A living organism, or a metabolically active biological system such as a cell...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Substance/">Substance</a></td>
-<td>A type of material substance, or instance thereof, as used in a particular ap...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Quantity/">Quantity</a></td>
-<td>A structured object to represent an amount of something (e</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../BodySite/">BodySite</a></td>
-<td>A site in the body of an organism, typically described in terms of an anatomi...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../ObservationSet/">ObservationSet</a></td>
-<td>A structured object to hold related Observations in a set</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Observation/">Observation</a></td>
-<td>A data structure with key (observation_type) and value (value) attributes tha...</td>
-<td>no</td>
-</tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>
-<p>Range: <a href="../Uriorcurie/">Uriorcurie</a></p>
-</li>
-<li>
-<p>Required: True</p>
-</li>
+<li>Range: <a href="../String/">String</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
-</ul>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: id
-description: The 'logical' identifier of the entity within the system of record.  The
-  simple value of this attribute stands for an identifier of this data object within
-  the system, it can be used as a reference from other objects within the same system
-  (i.e. primary and foreign keys), and it should be unique per type of object. The
-  same data object copied to a different system will likely have a different &quot;id&quot;
-  in the new system since &quot;id&quot; values are system specific and do not represent persistent
-  business identifiers. Business identifiers are assigned outside the information
-  system and are captured in the &quot;identifier&quot; field. The &quot;id&quot; field is more likely
-  to be a serially or randomly generated value that is assigned to the data object
-  as it is created in a system.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
-rank: 1000
-slot_uri: schema:identifier
-identifier: true
-alias: id
+<pre><code class="language-yaml">name: date
+alias: date
 domain_of:
-- Entity
-range: uriorcurie
-required: true
+- File
+- DublinCoreFile
+range: string
 
 </code></pre>
 
