@@ -564,7 +564,9 @@ classes:
       Abstract class for various kinds of files. Subclasses will be defined
       for specific file types.
     comments:
-      - This is taken largely from the Gen3 Core Metadata Collection definition,
+      - This is taken largely from the 
+        [Gen3 Core Metadata Collection](https://gen3.biodatacatalyst.nhlbi.nih.gov/DD)
+        definition.
       - Gen3 apparently took most of the attributes listed here from the
         [Dublin Core /elements/1.1/ namespace](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-3).
       - Attributes different from those in Dublin Core are noted as such in the comments.
@@ -575,6 +577,8 @@ classes:
         Should that be left to specific File subclasses or defined here?
       - Tentatively including three attribute for addressing this --
         identifier, file_path, and uri.
+      - There appear to be 11 specific file types defined in Gen3, 8 types
+        classified as Data Files and 3 classified as Index Files.
     attributes:
       identifier:
         range: string
