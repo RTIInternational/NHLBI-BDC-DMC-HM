@@ -693,8 +693,8 @@ classes:
           controlled vocabulary such as RFC 4646
           (http://www.ietf.org/rfc/rfc4646.txt).
         comments:
-          - [Dublin Core language](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/elements11/language/)
-            mentions ISO 639-2 and ISO 639-3 rather than RFC 4646.
+          - The [Dublin Core language](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/elements11/language/)
+            definition mentions ISO 639-2 and ISO 639-3 rather than RFC 4646.
       publisher:
         range: string
         description: >-
