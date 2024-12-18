@@ -558,6 +558,235 @@ classes:
       observations:
         range: DimensionalObservation
 
+  File:
+    is_a: Entity
+    comments:
+      - This is taken largely from the Gen3 Core Metadata Collection definition,
+        and we can/will define subclasses accordingly.
+      - Should Document also be a subclass of file?
+      - Unlike Document, which has a url property, the Gen3 Core Metadata
+        things don't have a file location. Do we want to allow for some
+        kind of location in the abstract File class?
+      - I (Sigfried) was asking some advice from Claude.ai about this and it
+        let me know that the attributes seemed like they were based on Dublin
+        Core metadata elements, so I'm adding another implementation below
+        that we might want to consider.
+    description: Abstract class for various kinds of files.
+    attributes:
+      type:
+        description: No description
+        comments:
+          - Gen3 shows 'No description'
+        range: string
+        required: true
+      submitter_id:
+        description: >-
+          A project-specific identifier for a node. This property is the
+          calling card/nickname/alias for a unit of submission. It can be used
+          in place of the UUID for identifying or recalling a node.	
+        range: string
+        required: true
+      projects:
+        description: No description
+        comments:
+          - Gen3 shows 'No description'. It gives the 'type' as an array
+            of objects but doesn't say what the objects are like.
+        range: string
+        multivalued: true
+        required: true
+      contributor:
+        range: string
+        description: >-
+          An entity responsible for making contributions to the resource.
+          Examples of a Contributor include a person, an organization, or a
+          service. Typically, the name of a Contributor should be used to
+          indicate the entity.	
+      coverage:
+        range: string
+        description: >-
+          The spatial or temporal topic of the resource, the spatial
+          applicability of the resource, or the jurisdiction under which the
+          resource is relevant. Spatial topic and spatial applicability may be
+          a named place or a location specified by its geographic coordinates.
+          Temporal topic may be a named period, date, or date range. A
+          jurisdiction may be a named administrative entity or a geographic
+          place to which the resource applies. Recommended best practice is to
+          use a controlled vocabulary such as the Thesaurus of Geographic Names
+          [TGN] (http://www.getty.edu/research/tools/vocabulary/tgn/index.html).
+          Where appropriate, named places or time periods can be used in
+          preference to numeric identifiers such as sets of coordinates or date
+          ranges.	
+      creator:
+        range: string
+        description: >-
+          An entity primarily responsible for making the resource. Examples of
+          a Creator include a person, an organization, or a service. Typically,
+          the name of a Creator should be used to indicate the entity.
+      data_type:
+        range: string
+        description: >-
+          The nature or genre of the resource. Recommended best practice is to
+          use a controlled vocabulary such as the DCMI Type Vocabulary
+          [DCMITYPE]. To describe the file format, physical medium, or
+          dimensions of the resource, use the Format element.
+      date:
+        range: string
+        description: >-
+          A combination of date and time of day in the form
+          [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+      description:
+        range: string
+        description: >-
+          An account of the resource. Description may include but is not
+          limited to: an abstract, a table of contents, a graphical
+          representation, or a free-text account of the resource.
+      format:
+        range: string
+        description: >-
+          The file format, physical medium, or dimensions of the resource.
+          Examples of dimensions include size and duration. Recommended best
+          practice is to use a controlled vocabulary such as the list of
+          Internet Media Types [MIME]
+          (http://www.iana.org/assignments/media-types/).
+      language:
+        range: string
+        description: >-
+          A language of the resource. Recommended best practice is to use a
+          controlled vocabulary such as RFC 4646
+          (http://www.ietf.org/rfc/rfc4646.txt).
+      publisher:
+        range: string
+        description: >-
+          An entity responsible for making the resource available. Examples of
+          a Publisher include a person, an organization, or a service.
+          Typically, the name of a Publisher should be used to indicate the
+          entity.
+      relation:
+        range: string
+        description: >-
+          A related resource. Recommended best practice is to identify the
+          related resource by means of a string conforming to a formal
+          identification system. 
+      rights:
+        range: string
+        description: >-
+          Information about rights held in and over the resource. Typically,
+          rights information includes a statement about various property rights
+          associated with the resource, including intellectual property rights.
+      source:
+        range: string
+        description: >-
+          A related resource from which the described resource is derived. The
+          described resource may be derived from the related resource in whole
+          or in part. Recommended best practice is to identify the related
+          resource by means of a string conforming to a formal identification
+          system.
+      subject:
+        range: string
+        description: >-
+          The topic of the resource. Typically, the subject will be represented
+          using keywords, key phrases, or classification codes. Recommended
+          best practice is to use a controlled vocabulary.
+      title:
+        range: string
+        description: >-
+          A name given to the resource. Typically, a Title will be a name by
+          which the resource is formally known.
+        
+  DublinCoreFile:
+    comments:
+      - See last comment on File entity above.
+    description: A file with Dublin Core metadata elements
+    is_a: Entity  # Assuming same parent as your original File class
+    attributes:
+      title:
+        range: string
+        description: >-
+          The name given to the file. Typically, a Title will be a name
+          by which the resource is formally known.
+      creator:
+        range: string
+        multivalued: true
+        description: >-
+          An entity primarily responsible for making the file. Examples include
+          a person, organization, or service. Typically the name of the Creator
+          should be used to indicate the entity.
+      subject:
+        range: string
+        multivalued: true
+        description: >-
+          The topic of the file. Typically represented using keywords or key phrases,
+          or classification codes. Recommended best practice is to use a controlled vocabulary.
+      description:
+        range: string
+        description: >-
+          An account of the file. May include but is not limited to: an abstract,
+          a table of contents, a graphical representation, or a free-text account.
+      publisher:
+        range: string
+        multivalued: true
+        description: >-
+          An entity responsible for making the file available. Examples include
+          a person, organization, or service.
+      contributor:
+        range: string
+        multivalued: true
+        description: >-
+          An entity responsible for making contributions to the file. Examples include
+          a person, organization, or service.
+      date:
+        range: string  # Could be refined to specific datetime format
+        description: >-
+          A date associated with an event in the life cycle of the file.
+          Recommended best practice is to use ISO 8601 format.
+      type:
+        range: string
+        description: >-
+          The nature or genre of the file. Recommended best practice is to use
+          a controlled vocabulary such as the DCMI Type Vocabulary.
+      format:
+        range: string
+        description: >-
+          The file format, physical medium, or dimensions. Examples include size
+          and duration. Recommended best practice is to use a controlled vocabulary
+          such as MIME types.
+      identifier:
+        range: string
+        description: >-
+          An unambiguous reference to the file within a given context.
+          Recommended best practice is to identify using a formal identification system.
+      source:
+        range: string
+        description: >-
+          A reference to a file from which the present file is derived.
+      language:
+        range: string
+        description: >-
+          The language of the file. Recommended best practice is to use
+          RFC 5646 language tags.
+      relation:
+        range: string
+        multivalued: true
+        description: >-
+          A reference to a related file or resource.
+      coverage:
+        range: string
+        description: >-
+          The spatial or temporal topic of the file. Spatial coverage may be
+          a named place or geographic coordinates. Temporal coverage may be
+          a named period, date, or date range.
+      rights:
+        range: string
+        description: >-
+          Information about rights held in and over the file. Typically
+          includes intellectual property rights, copyright, and various
+          property rights.
+      file_path:
+        range: string
+        description: >-
+          The location or path where the file can be accessed. This extends
+          beyond basic Dublin Core but is essential for file management.
+
   Document:
     is_a: Entity
     description: A collection of information intented to be understood together as a whole, and codified in human-readable form.
