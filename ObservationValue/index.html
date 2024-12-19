@@ -206,6 +206,9 @@
 </a>
 <h1 id="class-observationvalue">Class: ObservationValue</h1>
 <p><em>Single-valued observation valueholiding slot</em></p>
+<ul>
+<li><strong>NOTE</strong>: this is an abstract class and should not be instantiated directly</li>
+</ul>
 <p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/ObservationValue">bdchm:ObservationValue</a></p>
 <div class="mermaid"> classDiagram
     class ObservationValue
@@ -315,6 +318,7 @@
 <pre><code class="language-yaml">name: ObservationValue
 description: Single-valued observation valueholiding slot
 from_schema: https://w3id.org/nhlbidatastage/bdchm
+abstract: true
 slots:
 - value
 attributes:
@@ -335,6 +339,7 @@ attributes:
 <pre><code class="language-yaml">name: ObservationValue
 description: Single-valued observation valueholiding slot
 from_schema: https://w3id.org/nhlbidatastage/bdchm
+abstract: true
 attributes:
   type:
     name: type
@@ -344,7 +349,6 @@ attributes:
     owner: ObservationValue
     domain_of:
     - QuestionnaireResponseValue
-    - File
     - ObservationValue
     range: string
   name:
@@ -367,7 +371,6 @@ attributes:
     alias: value
     owner: ObservationValue
     domain_of:
-    - Identifier
     - QuestionnaireResponseValue
     - Observation
     - ObservationValue

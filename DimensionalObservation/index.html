@@ -382,7 +382,6 @@ slot_usage:
     description: The result of the observation, encoded as a Quantity.
     multivalued: false
     domain_of:
-    - Identifier
     - QuestionnaireResponseValue
     - Observation
     - ObservationValue
@@ -411,7 +410,6 @@ slot_usage:
     description: The result of the observation, encoded as a Quantity.
     multivalued: false
     domain_of:
-    - Identifier
     - QuestionnaireResponseValue
     - Observation
     - ObservationValue
@@ -509,6 +507,7 @@ attributes:
     - Condition
     - DrugExposure
     - DeviceExposure
+    - File
     - ObservationSet
     - Observation
     range: Participant
@@ -534,7 +533,6 @@ attributes:
     alias: value
     owner: DimensionalObservation
     domain_of:
-    - Identifier
     - QuestionnaireResponseValue
     - Observation
     - ObservationValue

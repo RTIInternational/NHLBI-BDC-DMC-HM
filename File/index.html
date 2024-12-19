@@ -211,45 +211,25 @@
     class File
       Entity &lt;|-- File
 
-      File : contributor
+      File : associated_participant
 
-      File : coverage
+          File --&gt; Participant : associated_participant
 
-      File : creator
+      File : data_category
 
       File : data_type
 
-      File : date
-
       File : description
 
-      File : file_path
+      File : file_name
+
+      File : file_size
 
       File : format
 
       File : id
 
-      File : identifier
-
-      File : language
-
-      File : projects
-
-      File : publisher
-
-      File : relation
-
-      File : rights
-
-      File : source
-
-      File : subject
-
-      File : submitter_id
-
-      File : title
-
-      File : type
+      File : identity
 
       File : uri
 
@@ -274,57 +254,27 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../identifier/">identifier</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>An unambiguous reference to the file within a given context</td>
+<td><a href="../identity/">identity</a></td>
+<td>0..* <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
+<td>A 'business' identifier or accession number for the entity, typically as prov...</td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../file_path/">file_path</a></td>
+<td><a href="../file_name/">file_name</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td>The location or path where the file can be accessed</td>
+<td>The name (or part of a name) of a file (of any type)</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../file_size/">file_size</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>The size of the data file (object) in bytes</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../uri/">uri</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>0..1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
 <td>A unique identifier or url for identifying or locating the file</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../type/">type</a></td>
-<td>1..1 <br/> <a href="../String/">String</a></td>
-<td>No description</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../submitter_id/">submitter_id</a></td>
-<td>1..1 <br/> <a href="../String/">String</a></td>
-<td>A project-specific identifier for a node</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../projects/">projects</a></td>
-<td>1..* <br/> <a href="../String/">String</a></td>
-<td>No description</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../contributor/">contributor</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>An entity responsible for making contributions to the resource</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../coverage/">coverage</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>The spatial or temporal topic of the resource, the spatial applicability of t...</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../creator/">creator</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>An entity primarily responsible for making the resource</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -334,15 +284,9 @@
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../date/">date</a></td>
+<td><a href="../data_category/">data_category</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td>A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z</td>
-<td>(+...</td>
-</tr>
-<tr>
-<td><a href="../description/">description</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>An account of the resource</td>
+<td>A broad categorization of the contents of the data file</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -352,45 +296,15 @@
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../language/">language</a></td>
+<td><a href="../description/">description</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td>A language of the resource</td>
+<td>An account of the resource</td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../publisher/">publisher</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>An entity responsible for making the resource available</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../relation/">relation</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>A related resource</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../rights/">rights</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Information about rights held in and over the resource</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../source/">source</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>A related resource from which the described resource is derived</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../subject/">subject</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>The topic of the resource</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../title/">title</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>A name given to the resource</td>
+<td><a href="../associated_participant/">associated_participant</a></td>
+<td>0..1 <br/> <a href="../Participant/">Participant</a></td>
+<td>A reference to the Participant to which this file relates</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -459,25 +373,21 @@ comments:
   Data Files and 3 classified as Index Files.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 is_a: Entity
+slots:
+- identity
 attributes:
-  identifier:
-    name: identifier
-    description: An unambiguous reference to the file within a given context. Recommended
-      best practice is to identify using a formal identification system.
-    comments:
-    - From [Dublin Core identifier](http://purl.org/dc/elements/1.1/identifier)
-    - Not included in the Gen3 Core Metadata.
+  file_name:
+    name: file_name
+    description: The name (or part of a name) of a file (of any type).
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     range: string
-  file_path:
-    name: file_path
-    description: The location or path where the file can be accessed.
-    comments:
-    - Not included in the Gen3 Core Metadata or Dublin Core.
+  file_size:
+    name: file_size
+    description: The size of the data file (object) in bytes.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    range: string
+    range: integer
   uri:
     name: uri
     description: A unique identifier or url for identifying or locating the file.
@@ -485,71 +395,7 @@ attributes:
     - Not included in the Gen3 Core Metadata or Dublin Core.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    range: string
-  type:
-    name: type
-    description: No description
-    comments:
-    - Gen3 shows 'No description'. It also contains a data_type attribute (included
-      below) taken from Dublin Core. It's unclear what this type attribute is used
-      for in Gen3.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    range: string
-    required: true
-  submitter_id:
-    name: submitter_id
-    description: "A project-specific identifier for a node. This property is the calling\
-      \ card/nickname/alias for a unit of submission. It can be used in place of the\
-      \ UUID for identifying or recalling a node.\t"
-    comments:
-    - From Gen3 but not from DublinCore. Unclear if it is appropriate for this model.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    range: string
-    required: true
-  projects:
-    name: projects
-    description: No description
-    comments:
-    - Gen3 shows 'No description'. It gives the 'type' as an array of objects but
-      doesn't say what the objects are like.
-    - Not part of DublinCore.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    multivalued: true
-    range: string
-    required: true
-  contributor:
-    name: contributor
-    description: "An entity responsible for making contributions to the resource.\
-      \ Examples of a Contributor include a person, an organization, or a service.\
-      \ Typically, the name of a Contributor should be used to indicate the entity.\t"
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    range: string
-  coverage:
-    name: coverage
-    description: "The spatial or temporal topic of the resource, the spatial applicability\
-      \ of the resource, or the jurisdiction under which the resource is relevant.\
-      \ Spatial topic and spatial applicability may be a named place or a location\
-      \ specified by its geographic coordinates. Temporal topic may be a named period,\
-      \ date, or date range. A jurisdiction may be a named administrative entity or\
-      \ a geographic place to which the resource applies. Recommended best practice\
-      \ is to use a controlled vocabulary such as the Thesaurus of Geographic Names\
-      \ [TGN] (http://www.getty.edu/research/tools/vocabulary/tgn/index.html). Where\
-      \ appropriate, named places or time periods can be used in preference to numeric\
-      \ identifiers such as sets of coordinates or date ranges.\t"
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    range: string
-  creator:
-    name: creator
-    description: An entity primarily responsible for making the resource. Examples
-      of a Creator include a person, an organization, or a service. Typically, the
-      name of a Creator should be used to indicate the entity.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    range: string
+    range: uriorcurie
   data_type:
     name: data_type
     description: The nature or genre of the resource. Recommended best practice is
@@ -561,20 +407,11 @@ attributes:
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     range: string
-  date:
-    name: date
-    description: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-    comments:
-    - Different from [Dublin Core date definition](http://purl.org/dc/elements/1.1/date)
+  data_category:
+    name: data_category
+    description: A broad categorization of the contents of the data file.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    range: string
-  description:
-    name: description
-    description: 'An account of the resource. Description may include but is not limited
-      to: an abstract, a table of contents, a graphical representation, or a free-text
-      account of the resource.'
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
     range: string
   format:
     name: format
@@ -585,61 +422,18 @@ attributes:
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     range: string
-  language:
-    name: language
-    description: A language of the resource. Recommended best practice is to use a
-      controlled vocabulary such as RFC 4646 (http://www.ietf.org/rfc/rfc4646.txt).
-    comments:
-    - The [Dublin Core language](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/elements11/language/)
-      definition mentions ISO 639-2 and ISO 639-3 rather than RFC 4646.
+  description:
+    name: description
+    description: 'An account of the resource. Description may include but is not limited
+      to: an abstract, a table of contents, a graphical representation, or a free-text
+      account of the resource.'
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     range: string
-  publisher:
-    name: publisher
-    description: An entity responsible for making the resource available. Examples
-      of a Publisher include a person, an organization, or a service. Typically, the
-      name of a Publisher should be used to indicate the entity.
+  associated_participant:
+    name: associated_participant
+    description: A reference to the Participant to which this file relates.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
-    range: string
-  relation:
-    name: relation
-    description: 'A related resource. Recommended best practice is to identify the
-      related resource by means of a string conforming to a formal identification
-      system. '
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    range: string
-  rights:
-    name: rights
-    description: Information about rights held in and over the resource. Typically,
-      rights information includes a statement about various property rights associated
-      with the resource, including intellectual property rights.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    range: string
-  source:
-    name: source
-    description: A related resource from which the described resource is derived.
-      The described resource may be derived from the related resource in whole or
-      in part. Recommended best practice is to identify the related resource by means
-      of a string conforming to a formal identification system.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    range: string
-  subject:
-    name: subject
-    description: The topic of the resource. Typically, the subject will be represented
-      using keywords, key phrases, or classification codes. Recommended best practice
-      is to use a controlled vocabulary.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    range: string
-  title:
-    name: title
-    description: A name given to the resource. Typically, a Title will be a name by
-      which the resource is formally known.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    range: string
+    range: Participant
 
 </code></pre>
 </details>
@@ -666,32 +460,26 @@ comments:
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 is_a: Entity
 attributes:
-  identifier:
-    name: identifier
-    description: An unambiguous reference to the file within a given context. Recommended
-      best practice is to identify using a formal identification system.
-    comments:
-    - From [Dublin Core identifier](http://purl.org/dc/elements/1.1/identifier)
-    - Not included in the Gen3 Core Metadata.
+  file_name:
+    name: file_name
+    description: The name (or part of a name) of a file (of any type).
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    alias: identifier
+    alias: file_name
     owner: File
     domain_of:
     - File
     range: string
-  file_path:
-    name: file_path
-    description: The location or path where the file can be accessed.
-    comments:
-    - Not included in the Gen3 Core Metadata or Dublin Core.
+  file_size:
+    name: file_size
+    description: The size of the data file (object) in bytes.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    alias: file_path
+    alias: file_size
     owner: File
     domain_of:
     - File
-    range: string
+    range: integer
   uri:
     name: uri
     description: A unique identifier or url for identifying or locating the file.
@@ -703,97 +491,7 @@ attributes:
     owner: File
     domain_of:
     - File
-    range: string
-  type:
-    name: type
-    description: No description
-    comments:
-    - Gen3 shows 'No description'. It also contains a data_type attribute (included
-      below) taken from Dublin Core. It's unclear what this type attribute is used
-      for in Gen3.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    alias: type
-    owner: File
-    domain_of:
-    - QuestionnaireResponseValue
-    - File
-    - ObservationValue
-    range: string
-    required: true
-  submitter_id:
-    name: submitter_id
-    description: "A project-specific identifier for a node. This property is the calling\
-      \ card/nickname/alias for a unit of submission. It can be used in place of the\
-      \ UUID for identifying or recalling a node.\t"
-    comments:
-    - From Gen3 but not from DublinCore. Unclear if it is appropriate for this model.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    alias: submitter_id
-    owner: File
-    domain_of:
-    - File
-    range: string
-    required: true
-  projects:
-    name: projects
-    description: No description
-    comments:
-    - Gen3 shows 'No description'. It gives the 'type' as an array of objects but
-      doesn't say what the objects are like.
-    - Not part of DublinCore.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    multivalued: true
-    alias: projects
-    owner: File
-    domain_of:
-    - File
-    range: string
-    required: true
-  contributor:
-    name: contributor
-    description: "An entity responsible for making contributions to the resource.\
-      \ Examples of a Contributor include a person, an organization, or a service.\
-      \ Typically, the name of a Contributor should be used to indicate the entity.\t"
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    alias: contributor
-    owner: File
-    domain_of:
-    - File
-    range: string
-  coverage:
-    name: coverage
-    description: "The spatial or temporal topic of the resource, the spatial applicability\
-      \ of the resource, or the jurisdiction under which the resource is relevant.\
-      \ Spatial topic and spatial applicability may be a named place or a location\
-      \ specified by its geographic coordinates. Temporal topic may be a named period,\
-      \ date, or date range. A jurisdiction may be a named administrative entity or\
-      \ a geographic place to which the resource applies. Recommended best practice\
-      \ is to use a controlled vocabulary such as the Thesaurus of Geographic Names\
-      \ [TGN] (http://www.getty.edu/research/tools/vocabulary/tgn/index.html). Where\
-      \ appropriate, named places or time periods can be used in preference to numeric\
-      \ identifiers such as sets of coordinates or date ranges.\t"
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    alias: coverage
-    owner: File
-    domain_of:
-    - File
-    range: string
-  creator:
-    name: creator
-    description: An entity primarily responsible for making the resource. Examples
-      of a Creator include a person, an organization, or a service. Typically, the
-      name of a Creator should be used to indicate the entity.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    alias: creator
-    owner: File
-    domain_of:
-    - File
-    range: string
+    range: uriorcurie
   data_type:
     name: data_type
     description: The nature or genre of the resource. Recommended best practice is
@@ -809,14 +507,25 @@ attributes:
     domain_of:
     - File
     range: string
-  date:
-    name: date
-    description: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-    comments:
-    - Different from [Dublin Core date definition](http://purl.org/dc/elements/1.1/date)
+  data_category:
+    name: data_category
+    description: A broad categorization of the contents of the data file.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    alias: date
+    alias: data_category
+    owner: File
+    domain_of:
+    - File
+    range: string
+  format:
+    name: format
+    description: The file format, physical medium, or dimensions of the resource.
+      Examples of dimensions include size and duration. Recommended best practice
+      is to use a controlled vocabulary such as the list of Internet Media Types [MIME]
+      (http://www.iana.org/assignments/media-types/).
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: format
     owner: File
     domain_of:
     - File
@@ -838,105 +547,55 @@ attributes:
     - Specimen
     - BiologicProduct
     range: string
-  format:
-    name: format
-    description: The file format, physical medium, or dimensions of the resource.
-      Examples of dimensions include size and duration. Recommended best practice
-      is to use a controlled vocabulary such as the list of Internet Media Types [MIME]
-      (http://www.iana.org/assignments/media-types/).
+  associated_participant:
+    name: associated_participant
+    description: A reference to the Participant to which this file relates.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    alias: associated_participant
+    owner: File
+    domain_of:
+    - Demography
+    - Visit
+    - Condition
+    - DrugExposure
+    - DeviceExposure
+    - File
+    - ObservationSet
+    - Observation
+    range: Participant
+  identity:
+    name: identity
+    description: A 'business' identifier or accession number for the entity, typically
+      as provided by an external system or authority, that are globally unique and
+      persist across implementing systems. Also, since these identifiers are created
+      outside the information system through a specific business process, the Identifier
+      type has additional attributes to capture this additional metadata so the actual
+      identifier values are qualified by the context that created those values. This
+      additional context allows "identifier" instances to be transmitted as business
+      data across systems while still being able to trace them back to the system
+      of origin.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    alias: format
+    slot_uri: schema:identifier
+    multivalued: true
+    alias: identity
     owner: File
     domain_of:
-    - File
-    range: string
-  language:
-    name: language
-    description: A language of the resource. Recommended best practice is to use a
-      controlled vocabulary such as RFC 4646 (http://www.ietf.org/rfc/rfc4646.txt).
-    comments:
-    - The [Dublin Core language](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/elements11/language/)
-      definition mentions ISO 639-2 and ISO 639-3 rather than RFC 4646.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    alias: language
-    owner: File
-    domain_of:
+    - Person
+    - Demography
+    - Participant
+    - ResearchStudy
+    - Organization
     - Questionnaire
+    - QuestionnaireItem
+    - Condition
+    - DrugExposure
+    - DeviceExposure
     - File
-    range: string
-  publisher:
-    name: publisher
-    description: An entity responsible for making the resource available. Examples
-      of a Publisher include a person, an organization, or a service. Typically, the
-      name of a Publisher should be used to indicate the entity.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    alias: publisher
-    owner: File
-    domain_of:
-    - Questionnaire
-    - File
-    range: string
-  relation:
-    name: relation
-    description: 'A related resource. Recommended best practice is to identify the
-      related resource by means of a string conforming to a formal identification
-      system. '
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    alias: relation
-    owner: File
-    domain_of:
-    - File
-    range: string
-  rights:
-    name: rights
-    description: Information about rights held in and over the resource. Typically,
-      rights information includes a statement about various property rights associated
-      with the resource, including intellectual property rights.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    alias: rights
-    owner: File
-    domain_of:
-    - File
-    range: string
-  source:
-    name: source
-    description: A related resource from which the described resource is derived.
-      The described resource may be derived from the related resource in whole or
-      in part. Recommended best practice is to identify the related resource by means
-      of a string conforming to a formal identification system.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    alias: source
-    owner: File
-    domain_of:
-    - File
-    range: string
-  subject:
-    name: subject
-    description: The topic of the resource. Typically, the subject will be represented
-      using keywords, key phrases, or classification codes. Recommended best practice
-      is to use a controlled vocabulary.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    alias: subject
-    owner: File
-    domain_of:
-    - File
-    range: string
-  title:
-    name: title
-    description: A name given to the resource. Typically, a Title will be a name by
-      which the resource is formally known.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    alias: title
-    owner: File
-    domain_of:
-    - Questionnaire
-    - File
-    range: string
+    - Document
+    - Specimen
+    - BiologicProduct
+    range: uriorcurie
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The

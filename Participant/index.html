@@ -227,8 +227,6 @@
 
       Participant : identity
 
-          Participant --&gt; Identifier : identity
-
       Participant : index_timepoint
 
       Participant : member_of_research_study
@@ -269,7 +267,7 @@
 </tr>
 <tr>
 <td><a href="../identity/">identity</a></td>
-<td>0..* <br/> <a href="../Identifier/">Identifier</a></td>
+<td>0..* <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
 <td>A 'business' identifier or accession number for the entity, typically as prov...</td>
 <td>direct</td>
 </tr>
@@ -372,6 +370,12 @@
 </tr>
 <tr>
 <td><a href="../DimensionalObservationSet/">DimensionalObservationSet</a></td>
+<td><a href="../associated_participant/">associated_participant</a></td>
+<td>range</td>
+<td><a href="./">Participant</a></td>
+</tr>
+<tr>
+<td><a href="../File/">File</a></td>
 <td><a href="../associated_participant/">associated_participant</a></td>
 <td>range</td>
 <td><a href="./">Participant</a></td>
@@ -637,10 +641,11 @@ attributes:
     - Condition
     - DrugExposure
     - DeviceExposure
+    - File
     - Document
     - Specimen
     - BiologicProduct
-    range: Identifier
+    range: uriorcurie
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The

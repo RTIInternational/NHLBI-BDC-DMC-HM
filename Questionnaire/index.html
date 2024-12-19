@@ -216,8 +216,6 @@
 
       Questionnaire : identity
 
-          Questionnaire --&gt; Identifier : identity
-
       Questionnaire : items
 
           Questionnaire --&gt; QuestionnaireItem : items
@@ -256,7 +254,7 @@
 <tbody>
 <tr>
 <td><a href="../identity/">identity</a></td>
-<td>0..* <br/> <a href="../Identifier/">Identifier</a></td>
+<td>0..* <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
 <td>A 'business' identifier or accession number for the entity, typically as prov...</td>
 <td>direct</td>
 </tr>
@@ -475,7 +473,6 @@ attributes:
     owner: Questionnaire
     domain_of:
     - Questionnaire
-    - File
     range: string
   description:
     name: description
@@ -529,7 +526,6 @@ attributes:
     owner: Questionnaire
     domain_of:
     - Questionnaire
-    - File
     range: string
   copyright:
     name: copyright
@@ -561,7 +557,6 @@ attributes:
     owner: Questionnaire
     domain_of:
     - Questionnaire
-    - File
     range: string
   items:
     name: items
@@ -605,10 +600,11 @@ attributes:
     - Condition
     - DrugExposure
     - DeviceExposure
+    - File
     - Document
     - Specimen
     - BiologicProduct
-    range: Identifier
+    range: uriorcurie
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The

@@ -206,6 +206,9 @@
 </a>
 <h1 id="class-questionnaireresponsevalue">Class: QuestionnaireResponseValue</h1>
 <p><em>Single-valued answer to the question. (FHIR)</em></p>
+<ul>
+<li><strong>NOTE</strong>: this is an abstract class and should not be instantiated directly</li>
+</ul>
 <p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/QuestionnaireResponseValue">bdchm:QuestionnaireResponseValue</a></p>
 <div class="mermaid"> classDiagram
     class QuestionnaireResponseValue
@@ -315,6 +318,7 @@
 <pre><code class="language-yaml">name: QuestionnaireResponseValue
 description: Single-valued answer to the question. (FHIR)
 from_schema: https://w3id.org/nhlbidatastage/bdchm
+abstract: true
 slots:
 - value
 attributes:
@@ -336,6 +340,7 @@ attributes:
 <pre><code class="language-yaml">name: QuestionnaireResponseValue
 description: Single-valued answer to the question. (FHIR)
 from_schema: https://w3id.org/nhlbidatastage/bdchm
+abstract: true
 attributes:
   type:
     name: type
@@ -346,7 +351,6 @@ attributes:
     owner: QuestionnaireResponseValue
     domain_of:
     - QuestionnaireResponseValue
-    - File
     - ObservationValue
     range: string
   name:
@@ -369,7 +373,6 @@ attributes:
     alias: value
     owner: QuestionnaireResponseValue
     domain_of:
-    - Identifier
     - QuestionnaireResponseValue
     - Observation
     - ObservationValue

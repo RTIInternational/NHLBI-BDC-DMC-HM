@@ -217,8 +217,6 @@
 
       QuestionnaireItem : identity
 
-          QuestionnaireItem --&gt; Identifier : identity
-
       QuestionnaireItem : part_of
 
           QuestionnaireItem --&gt; QuestionnaireItem : part_of
@@ -247,7 +245,7 @@
 <tbody>
 <tr>
 <td><a href="../identity/">identity</a></td>
-<td>0..* <br/> <a href="../Identifier/">Identifier</a></td>
+<td>0..* <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
 <td>A 'business' identifier or accession number for the entity, typically as prov...</td>
 <td>direct</td>
 </tr>
@@ -429,10 +427,11 @@ attributes:
     - Condition
     - DrugExposure
     - DeviceExposure
+    - File
     - Document
     - Specimen
     - BiologicProduct
-    range: Identifier
+    range: uriorcurie
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The

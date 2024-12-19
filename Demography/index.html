@@ -218,8 +218,6 @@
 
       Demography : identity
 
-          Demography --&gt; Identifier : identity
-
       Demography : race
 
           Demography --&gt; RaceEnum : race
@@ -250,7 +248,7 @@
 <tbody>
 <tr>
 <td><a href="../identity/">identity</a></td>
-<td>0..* <br/> <a href="../Identifier/">Identifier</a></td>
+<td>0..* <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
 <td>A 'business' identifier or accession number for the entity, typically as prov...</td>
 <td>direct</td>
 </tr>
@@ -430,10 +428,11 @@ attributes:
     - Condition
     - DrugExposure
     - DeviceExposure
+    - File
     - Document
     - Specimen
     - BiologicProduct
-    range: Identifier
+    range: uriorcurie
   associated_participant:
     name: associated_participant
     description: A reference to the Participant that is associated with this record.
@@ -447,6 +446,7 @@ attributes:
     - Condition
     - DrugExposure
     - DeviceExposure
+    - File
     - ObservationSet
     - Observation
     range: Participant
