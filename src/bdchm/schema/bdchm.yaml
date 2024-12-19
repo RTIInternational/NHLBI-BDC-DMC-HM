@@ -256,18 +256,6 @@ classes:
           range: TimePoint
           description: When a period of time ended.
 
-  Identifier:
-    description: >-
-      An Identifier is associated with a unique object or entity within a given system.
-    attributes:
-      - value:
-          range: string
-          required: true
-          description: The value of the identifier, as defined by the system.
-      - system:
-          range: string
-          description: The system or namespace that defines the identifier.
-
   ResearchStudyCollection:
     tree_root: true
     description: >-
@@ -367,6 +355,7 @@ classes:
 
   QuestionnaireResponseValue:
     description: Single-valued answer to the question. (FHIR)
+    abstract: true
     attributes:
       type:
         range: string
@@ -580,81 +569,18 @@ classes:
       - There appear to be 11 specific file types defined in Gen3, 8 types
         classified as Data Files and 3 classified as Index Files.
     attributes:
-      identifier:
+      file_name:
         range: string
-        description: >-
-          An unambiguous reference to the file within a given context.
-          Recommended best practice is to identify using a formal identification system.
-        comments:
-          - From [Dublin Core identifier](http://purl.org/dc/elements/1.1/identifier)
-          - Not included in the Gen3 Core Metadata.
-      file_path:
-        range: string
-        description: >-
-          The location or path where the file can be accessed.
-        comments:
-          - Not included in the Gen3 Core Metadata or Dublin Core.
+        description: The name (or part of a name) of a file (of any type).
+      file_size:
+        range: integer
+        description: The size of the data file (object) in bytes.
       uri:
-        range: string
+        range: uriorcurie
         description: >-
           A unique identifier or url for identifying or locating the file.
         comments:
           - Not included in the Gen3 Core Metadata or Dublin Core.
-      type:
-        description: No description
-        comments:
-          - Gen3 shows 'No description'. It also contains a data_type
-            attribute (included below) taken from Dublin Core. It's unclear
-            what this type attribute is used for in Gen3.
-        range: string
-        required: true
-      submitter_id:
-        description: >-
-          A project-specific identifier for a node. This property is the
-          calling card/nickname/alias for a unit of submission. It can be used
-          in place of the UUID for identifying or recalling a node.	
-        comments:
-          - From Gen3 but not from DublinCore. Unclear if it is appropriate
-            for this model.
-        range: string
-        required: true
-      projects:
-        description: No description
-        comments:
-          - Gen3 shows 'No description'. It gives the 'type' as an array
-            of objects but doesn't say what the objects are like.
-          - Not part of DublinCore.
-        range: string
-        multivalued: true
-        required: true
-      contributor:
-        range: string
-        description: >-
-          An entity responsible for making contributions to the resource.
-          Examples of a Contributor include a person, an organization, or a
-          service. Typically, the name of a Contributor should be used to
-          indicate the entity.	
-      coverage:
-        range: string
-        description: >-
-          The spatial or temporal topic of the resource, the spatial
-          applicability of the resource, or the jurisdiction under which the
-          resource is relevant. Spatial topic and spatial applicability may be
-          a named place or a location specified by its geographic coordinates.
-          Temporal topic may be a named period, date, or date range. A
-          jurisdiction may be a named administrative entity or a geographic
-          place to which the resource applies. Recommended best practice is to
-          use a controlled vocabulary such as the Thesaurus of Geographic Names
-          [TGN] (http://www.getty.edu/research/tools/vocabulary/tgn/index.html).
-          Where appropriate, named places or time periods can be used in
-          preference to numeric identifiers such as sets of coordinates or date
-          ranges.	
-      creator:
-        range: string
-        description: >-
-          An entity primarily responsible for making the resource. Examples of
-          a Creator include a person, an organization, or a service. Typically,
-          the name of a Creator should be used to indicate the entity.
       data_type:
         range: string
         description: >-
@@ -665,19 +591,9 @@ classes:
           resource, use the Format element.
         comments:
           - Called 'type' in Dublin Core.
-      date:
+      data_category:
         range: string
-        description: >-
-          A combination of date and time of day in the form
-          [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-        comments:
-          - Different from [Dublin Core date definition](http://purl.org/dc/elements/1.1/date)
-      description:
-        range: string
-        description: >-
-          An account of the resource. Description may include but is not
-          limited to: an abstract, a table of contents, a graphical
-          representation, or a free-text account of the resource.
+        description: A broad categorization of the contents of the data file.
       format:
         range: string
         description: >-
@@ -686,53 +602,18 @@ classes:
           practice is to use a controlled vocabulary such as the list of
           Internet Media Types [MIME]
           (http://www.iana.org/assignments/media-types/).
-      language:
+      description:
         range: string
         description: >-
-          A language of the resource. Recommended best practice is to use a
-          controlled vocabulary such as RFC 4646
-          (http://www.ietf.org/rfc/rfc4646.txt).
-        comments:
-          - The [Dublin Core language](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/elements11/language/)
-            definition mentions ISO 639-2 and ISO 639-3 rather than RFC 4646.
-      publisher:
-        range: string
-        description: >-
-          An entity responsible for making the resource available. Examples of
-          a Publisher include a person, an organization, or a service.
-          Typically, the name of a Publisher should be used to indicate the
-          entity.
-      relation:
-        range: string
-        description: >-
-          A related resource. Recommended best practice is to identify the
-          related resource by means of a string conforming to a formal
-          identification system. 
-      rights:
-        range: string
-        description: >-
-          Information about rights held in and over the resource. Typically,
-          rights information includes a statement about various property rights
-          associated with the resource, including intellectual property rights.
-      source:
-        range: string
-        description: >-
-          A related resource from which the described resource is derived. The
-          described resource may be derived from the related resource in whole
-          or in part. Recommended best practice is to identify the related
-          resource by means of a string conforming to a formal identification
-          system.
-      subject:
-        range: string
-        description: >-
-          The topic of the resource. Typically, the subject will be represented
-          using keywords, key phrases, or classification codes. Recommended
-          best practice is to use a controlled vocabulary.
-      title:
-        range: string
-        description: >-
-          A name given to the resource. Typically, a Title will be a name by
-          which the resource is formally known.
+          An account of the resource. Description may include but is not
+          limited to: an abstract, a table of contents, a graphical
+          representation, or a free-text account of the resource.
+      associated_participant:
+        range: Participant
+        description: A reference to the Participant to which this file relates.
+    slots:
+      - identity
+
 
   Document:
     is_a: Entity
@@ -1461,6 +1342,7 @@ classes:
 
   ObservationValue:
     description: Single-valued observation valueholiding slot
+    abstract: true
     attributes:
       type:
         range: string
@@ -1519,7 +1401,7 @@ slots:
     description: The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different "id" in the new system since "id" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the "identifier" field. The "id" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.
   identity:
     slot_uri: schema:identifier
-    range: Identifier
+    range: uriorcurie
     description: A 'business' identifier or accession number for the entity, typically as provided by an external system or authority, that are globally unique and persist across implementing systems. Also, since these identifiers are created outside the information system through a specific business process, the Identifier type has additional attributes to capture this additional metadata so the actual identifier values are qualified by the context that created those values. This additional context allows "identifier" instances to be transmitted as business data across systems while still being able to trace them back to the system of origin.
     multivalued: true
   associated_person:
