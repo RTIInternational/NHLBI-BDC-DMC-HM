@@ -19,6 +19,7 @@ prefixes:
   MONDO: http://purl.obolibrary.org/obo/MONDO_
   HP: http://purl.obolibrary.org/obo/HP_
   rxnorm: https://bioregistry.io/rxnorm:/
+  UOM: https://units-of-measurement.org/
 
 default_prefix: bdchm
 default_range: string
@@ -613,7 +614,6 @@ classes:
         description: A reference to the Participant to which this file relates.
     slots:
       - identity
-
 
   Document:
     is_a: Entity
@@ -1217,9 +1217,8 @@ classes:
         required: false
       unit:
         description: A coded or free text (in the .text field) representation of the unit.
-        values_from: crdch:enum_CRDCH_Quantity_unit
         multivalued: false
-        range: string
+        range: UnitOfMeasurementEnum
         required: false
 
   BodySite:
@@ -3145,3 +3144,8 @@ enums:
         text: PRESERVATION
         description: A processing activity that aims to preserve a specimen.
         
+  UnitOfMeasurementEnum:
+    description: Standard units of measurement from the [Units of Measurement (UOM) ontology](https://units-of-measurement.org/). Units-of-measurement (UOM) provides URLs for Unified Code for Units of Measure (UCUM) codes, and mappings to a number of units ontologies and systems, in human- and machine-readable linked data formats.
+    reachable_from:
+      source_ontology: UOM
+    pv_formula: LABEL
