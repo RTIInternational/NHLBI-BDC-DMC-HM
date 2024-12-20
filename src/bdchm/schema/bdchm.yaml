@@ -27,8 +27,8 @@ default_range: string
 imports:
   - linkml:types
 
-classes:
 
+classes:
   Entity:
     abstract: true
     description: >-
