@@ -220,6 +220,8 @@
 
       Quantity : unit
 
+          Quantity --&gt; UnitOfMeasurementEnum : unit
+
       Quantity : value_concept
 
       Quantity : value_decimal
@@ -258,7 +260,7 @@
 </tr>
 <tr>
 <td><a href="../unit/">unit</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>0..1 <br/> <a href="../UnitOfMeasurementEnum/">UnitOfMeasurementEnum</a></td>
 <td>A coded or free text (in the</td>
 <td>direct</td>
 </tr>
@@ -386,10 +388,8 @@ attributes:
     description: A coded or free text (in the .text field) representation of the unit.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    values_from:
-    - crdch:enum_CRDCH_Quantity_unit
     multivalued: false
-    range: string
+    range: UnitOfMeasurementEnum
     required: false
 
 </code></pre>
@@ -445,14 +445,12 @@ attributes:
     description: A coded or free text (in the .text field) representation of the unit.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    values_from:
-    - crdch:enum_CRDCH_Quantity_unit
     multivalued: false
     alias: unit
     owner: Quantity
     domain_of:
     - Quantity
-    range: string
+    range: UnitOfMeasurementEnum
     required: false
   id:
     name: id
