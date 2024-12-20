@@ -425,7 +425,7 @@ classes:
         unit:
           ucum_code: d
       condition_provenance:
-        range: ConditionProvenanceEnum
+        range: ProvenanceEnum
         description: A value representing the provenance of the Condition record
       condition_status:
         range: ConditionStatusEnum
@@ -438,6 +438,34 @@ classes:
         description: A reference to the Participant to which the Condition is attributed.
       associated_visit:
         description: A reference to the Visit during which this Condition was recorded.
+        range: Visit
+    slots:
+      - identity
+
+  Procedure:
+    is_a: Entity
+    description: >-
+       Procedure contains records of activities or processes ordered by, or carried out by, a healthcare provider on the patient to have a diagnostic or therapeutic purpose. Procedures are present in various data sources in different forms with varying levels of standardization. [Derived from OMOP]
+    attributes:
+      procedure_concept:
+        range: ProcedureConceptEnum
+        description: The coded value that describes the procedure, derived from OMOP codes.
+      age_at_procedure:
+        range: integer
+        description: The Participant's age (expressed in days) when the procedure was performed.
+        unit:
+          ucum_code: d
+      procedure_provenance:
+        range: ProvenanceEnum
+        description: A value representing the provenance of the Procedure record
+      quantity:
+        range: Quantity
+        description: 	The quantity of procedures ordered or administered.
+      associated_participant:
+        range: Participant
+        description: A reference to the Participant on which the Procedure was performed.
+      associated_visit:
+        description: A reference to the Visit during which this Procedure was performed.
         range: Visit
     slots:
       - identity
@@ -1832,9 +1860,9 @@ enums:
       - MondoHumanDiseaseEnum
       - HpoPhenotypicAbnormalityEnum
   
-  ConditionProvenanceEnum:
+  ProvenanceEnum:
     description: >-
-      A constrained set of enumerative values containing the OMOP values for visit provenance.
+      A constrained set of enumerative values containing the OMOP values for provenance.
     permissible_values:
       EHR_BILLING_DIAGNOSIS:
         meaning: OMOP:4822159
@@ -1873,6 +1901,12 @@ enums:
         description: The condition is/was absent in the patient.
       UNKNOWN:
         description: The condition is/was of unknown status in the patient.
+
+  ProcedureConceptEnum:
+    description: Procedure codes from OMOP.
+    reachable_from:
+      source_ontology: OMOP
+    pv_formula: LABEL
 
   DrugExposureConceptEnum:
     description: Drug codes from RxNorm.
