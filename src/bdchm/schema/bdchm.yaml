@@ -460,7 +460,7 @@ classes:
         description: A value representing the provenance of the Procedure record
       quantity:
         range: Quantity
-        description: 	The quantity of procedures ordered or administered.
+        description: The quantity of procedures ordered or administered.
       associated_participant:
         range: Participant
         description: A reference to the Participant on which the Procedure was performed.
