@@ -257,6 +257,12 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="../observations/">observations</a></td>
+<td>0..* <br/> <a href="../DimensionalObservation/">DimensionalObservation</a></td>
+<td>A set of one or more observations</td>
+<td><a href="../ObservationSet/">ObservationSet</a></td>
+</tr>
+<tr>
 <td><a href="../category/">category</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The general category of observation set described</td>
@@ -284,12 +290,6 @@
 <td><a href="../performed_by/">performed_by</a></td>
 <td>0..1 <br/> <a href="../Organization/">Organization</a></td>
 <td>The organization or group that performed the observation activity</td>
-<td><a href="../ObservationSet/">ObservationSet</a></td>
-</tr>
-<tr>
-<td><a href="../observations/">observations</a></td>
-<td>0..* <br/> <a href="../DimensionalObservation/">DimensionalObservation</a></td>
-<td>A set of one or more observations</td>
 <td><a href="../ObservationSet/">ObservationSet</a></td>
 </tr>
 <tr>
@@ -375,6 +375,17 @@ slot_usage:
     - ObservationSet
     range: DimensionalObservation
 attributes:
+  observations:
+    name: observations
+    description: A set of one or more observations.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    multivalued: true
+    alias: observations
+    owner: DimensionalObservationSet
+    domain_of:
+    - ObservationSet
+    range: DimensionalObservation
   category:
     name: category
     description: The general category of observation set described
@@ -469,20 +480,6 @@ attributes:
     - Observation
     range: Organization
     required: false
-  observations:
-    name: observations
-    description: A set of one or more observations.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    multivalued: true
-    alias: observations
-    owner: DimensionalObservationSet
-    domain_of:
-    - ObservationSet
-    range: DimensionalObservation
-    required: false
-    inlined: true
-    inlined_as_list: true
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The
