@@ -469,6 +469,10 @@
 <td>Administrative information about an individual or animal receiving care or other health-related services.</td>
 </tr>
 <tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Procedure/">Procedure</a></td>
+<td>Procedure contains records of activities or processes ordered by, or carried out by, a healthcare provider on the patient to have a diagnostic or therapeutic purpose. Procedures are present in various data sources in different forms with varying levels of standardization. [Derived from OMOP]</td>
+</tr>
+<tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Quantity/">Quantity</a></td>
 <td>A structured object to represent an amount of something (e.g., weight, mass, length, duration of time) - including a value and unit.</td>
 </tr>
@@ -626,6 +630,10 @@
 <tr>
 <td><a href="age_at_exposure_start/">age_at_exposure_start</a></td>
 <td>The Participant's age (expressed in days) at the exposure start date</td>
+</tr>
+<tr>
+<td><a href="age_at_procedure/">age_at_procedure</a></td>
+<td>The Participant's age (expressed in days) when the procedure was performed</td>
 </tr>
 <tr>
 <td><a href="age_at_response/">age_at_response</a></td>
@@ -932,6 +940,14 @@
 <td>The investigator or investigators leading a project</td>
 </tr>
 <tr>
+<td><a href="procedure_concept/">procedure_concept</a></td>
+<td>The coded value that describes the procedure, derived from OMOP codes</td>
+</tr>
+<tr>
+<td><a href="procedure_provenance/">procedure_provenance</a></td>
+<td>A value representing the provenance of the Procedure record</td>
+</tr>
+<tr>
 <td><a href="processing_activity/">processing_activity</a></td>
 <td>An activity that modifies the physical structure, composition, or state of a ...</td>
 </tr>
@@ -953,7 +969,7 @@
 </tr>
 <tr>
 <td><a href="quantity/">quantity</a></td>
-<td>To find the dose form of a drug the RELATIONSHIP table can be used where the ...</td>
+<td>The quantity of procedures ordered or administered</td>
 </tr>
 <tr>
 <td><a href="quantity_collected/">quantity_collected</a></td>
@@ -1155,10 +1171,6 @@
 <td>A constrained set of enumerative values containing both the MONDO values for ...</td>
 </tr>
 <tr>
-<td><a href="ConditionProvenanceEnum/">ConditionProvenanceEnum</a></td>
-<td>A constrained set of enumerative values containing the OMOP values for visit ...</td>
-</tr>
-<tr>
 <td><a href="ConditionStatusEnum/">ConditionStatusEnum</a></td>
 <td>A constrained set of enumerative values indicating whether a Condition is pre...</td>
 </tr>
@@ -1197,6 +1209,14 @@
 <tr>
 <td><a href="MondoHumanDiseaseEnum/">MondoHumanDiseaseEnum</a></td>
 <td>A constrained set of enumerative values containing the MONDO values for human...</td>
+</tr>
+<tr>
+<td><a href="ProcedureConceptEnum/">ProcedureConceptEnum</a></td>
+<td>Procedure codes from OMOP</td>
+</tr>
+<tr>
+<td><a href="ProvenanceEnum/">ProvenanceEnum</a></td>
+<td>A constrained set of enumerative values containing the OMOP values for proven...</td>
 </tr>
 <tr>
 <td><a href="RaceEnum/">RaceEnum</a></td>

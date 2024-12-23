@@ -224,7 +224,7 @@
 
       Condition : condition_provenance
 
-          Condition --&gt; ConditionProvenanceEnum : condition_provenance
+          Condition --&gt; ProvenanceEnum : condition_provenance
 
       Condition : condition_status
 
@@ -282,7 +282,7 @@
 </tr>
 <tr>
 <td><a href="../condition_provenance/">condition_provenance</a></td>
-<td>0..1 <br/> <a href="../ConditionProvenanceEnum/">ConditionProvenanceEnum</a></td>
+<td>0..1 <br/> <a href="../ProvenanceEnum/">ProvenanceEnum</a></td>
 <td>A value representing the provenance of the Condition record</td>
 <td>direct</td>
 </tr>
@@ -387,7 +387,7 @@ attributes:
     description: A value representing the provenance of the Condition record
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    range: ConditionProvenanceEnum
+    range: ProvenanceEnum
   condition_status:
     name: condition_status
     description: A value indicating whether the medical condition described in this
@@ -476,7 +476,7 @@ attributes:
     owner: Condition
     domain_of:
     - Condition
-    range: ConditionProvenanceEnum
+    range: ProvenanceEnum
   condition_status:
     name: condition_status
     description: A value indicating whether the medical condition described in this
@@ -513,6 +513,7 @@ attributes:
     - Demography
     - Visit
     - Condition
+    - Procedure
     - DrugExposure
     - DeviceExposure
     - File
@@ -528,6 +529,7 @@ attributes:
     domain_of:
     - QuestionnaireResponse
     - Condition
+    - Procedure
     - DrugExposure
     - DeviceExposure
     range: Visit
@@ -557,6 +559,7 @@ attributes:
     - Questionnaire
     - QuestionnaireItem
     - Condition
+    - Procedure
     - DrugExposure
     - DeviceExposure
     - File

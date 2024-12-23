@@ -434,7 +434,6 @@ attributes:
       Please see [how to calculate drug dose](https://ohdsi.github.io/CommonDataModel/drug_dose.html)
       for more information.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
     range: float
     required: false
   days_supply:
@@ -573,10 +572,10 @@ attributes:
       Please see [how to calculate drug dose](https://ohdsi.github.io/CommonDataModel/drug_dose.html)
       for more information.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
     alias: quantity
     owner: DrugExposure
     domain_of:
+    - Procedure
     - DrugExposure
     - DeviceExposure
     range: float
@@ -638,6 +637,7 @@ attributes:
     - Demography
     - Visit
     - Condition
+    - Procedure
     - DrugExposure
     - DeviceExposure
     - File
@@ -653,6 +653,7 @@ attributes:
     domain_of:
     - QuestionnaireResponse
     - Condition
+    - Procedure
     - DrugExposure
     - DeviceExposure
     range: Visit
@@ -683,6 +684,7 @@ attributes:
     - Questionnaire
     - QuestionnaireItem
     - Condition
+    - Procedure
     - DrugExposure
     - DeviceExposure
     - File
