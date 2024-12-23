@@ -1310,13 +1310,9 @@ classes:
         multivalued: false
         range: Organization
         required: false
-      observations:
-        description: A set of one or more observations.
-        multivalued: true
-        inlined_as_list: true
-        range: Observation
-        required: false
-
+    slots:
+      - observations
+      
   Observation:
     is_a: Entity
     description: A data structure with key (observation_type) and value (value) attributes that represents a single observation, such as the hematocrit component of a complete blood count panel.
@@ -1440,6 +1436,10 @@ slots:
   associated_participant:
     range: Participant
     description: A reference to the Participant that is associated with this record.
+  observations:
+    range: Observation
+    description: A set of one or more observations.
+    multivalued: true
 
 
 enums:
@@ -1521,7 +1521,6 @@ enums:
       include_self: false
       relationship_types:
         - rdfs:subClassOf
-    pv_formula: LABEL
 
   VitalStatusEnum:
     description: >-
@@ -1544,7 +1543,6 @@ enums:
       include_self: false
       relationship_types:
         - rdfs:subClassOf
-    pv_formula: LABEL
 
   VisitCategoryEnum:
     description: >-
@@ -1839,7 +1837,6 @@ enums:
       include_self: false
       relationship_types:
         - rdfs:subClassOf
-    pv_formula: LABEL
 
   HpoPhenotypicAbnormalityEnum:
     description: >-
@@ -1851,7 +1848,6 @@ enums:
       include_self: false
       relationship_types:
         - rdfs:subClassOf
-    pv_formula: LABEL
 
   ConditionConceptEnum:
     description: >-
@@ -1906,7 +1902,6 @@ enums:
     description: Procedure codes from OMOP.
     reachable_from:
       source_ontology: OMOP
-    pv_formula: LABEL
 
   DrugExposureConceptEnum:
     description: Drug codes from RxNorm.
@@ -1917,7 +1912,6 @@ enums:
       - urn:oid:2.16.840.1.113883.6.88
     reachable_from:
       source_ontology: bioregistry:rxnorm
-    pv_formula: LABEL
 
   DrugExposureProvenanceEnum:
     description: Source of drug exposure record
@@ -2481,7 +2475,6 @@ enums:
       - urn:oid:2.16.840.1.113883.6.96
     reachable_from:
       source_ontology: bioregistry:snomedct
-    pv_formula: LABEL
 
   DeviceExposureProvenanceEnum:
     description: Source of device exposure record
@@ -3182,4 +3175,3 @@ enums:
     description: Standard units of measurement from the [Units of Measurement (UOM) ontology](https://units-of-measurement.org/). Units-of-measurement (UOM) provides URLs for Unified Code for Units of Measure (UCUM) codes, and mappings to a number of units ontologies and systems, in human- and machine-readable linked data formats.
     reachable_from:
       source_ontology: UOM
-    pv_formula: LABEL
