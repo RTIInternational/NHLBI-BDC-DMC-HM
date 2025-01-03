@@ -579,7 +579,7 @@ classes:
   File:
     is_a: Entity
     description: >-
-      Abstract class for various kinds of files. Subclasses will be defined
+      Abstract class for various kinds of files. Subclasses may be defined
       for specific file types.
     comments:
       - This is taken largely from the 
@@ -604,12 +604,13 @@ classes:
       file_size:
         range: integer
         description: The size of the data file (object) in bytes.
-      uri:
+      file_location:
         range: uriorcurie
-        description: >-
-          A unique identifier or url for identifying or locating the file.
-        comments:
-          - Not included in the Gen3 Core Metadata or Dublin Core.
+        description: A unique identifier or url for identifying or locating the file.
+        multivalued: true
+      md5sum:
+        range: string
+        description: The 128-bit hash value expressed as a 32 digit hexadecimal number used as a file's digital fingerprint.
       data_type:
         range: string
         description: >-
@@ -640,6 +641,9 @@ classes:
       associated_participant:
         range: Participant
         description: A reference to the Participant to which this file relates.
+      derived_from:
+        range: File
+        description: A File from which this File is derived.  A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.
     slots:
       - identity
 
