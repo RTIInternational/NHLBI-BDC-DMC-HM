@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/associated_visit/">
+        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/age_at_observation/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-8.5.10">
     
     
       
-        <title>Slot: associated_visit - BioData Catalyst Harmonized Model</title>
+        <title>Slot: age_at_observation - BioData Catalyst Harmonized Model</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-associated_visit" class="md-skip">
+        <a href="#slot-age_at_observation" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: associated_visit
+              Slot: age_at_observation
             
           </span>
         </div>
@@ -274,6 +274,19 @@
     Identifier and Mapping Information
   </a>
   
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
+    Schema Source
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -297,14 +310,15 @@
                 
                   
 
-  <a href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/edit/master/docs/associated_visit.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/edit/master/docs/age_at_observation.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="slot-associated_visit">Slot: associated_visit</h1>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/associated_visit">bdchm:associated_visit</a></p>
+<h1 id="slot-age_at_observation">Slot: age_at_observation</h1>
+<p><em>The Participant's age (expressed in days) when the Observation was made.</em></p>
+<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/age_at_observation">bdchm:age_at_observation</a></p>
 <!-- no inheritance hierarchy -->
 
 <h2 id="applicable-classes">Applicable Classes</h2>
@@ -317,31 +331,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><a href="../QuestionnaireResponse/">QuestionnaireResponse</a></td>
-<td>QuestionnaireResponse provides a complete or partial list of answers to a set...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Condition/">Condition</a></td>
-<td>Conditions are records of a Person suggesting the presence of a disease or me...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Procedure/">Procedure</a></td>
-<td>Procedure contains records of activities or processes ordered by, or carried ...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../DrugExposure/">DrugExposure</a></td>
-<td>DrugExposures are records of a Person suggesting exposure to a medication</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../DeviceExposure/">DeviceExposure</a></td>
-<td>DeviceExposures are records of a Person suggesting exposure to a foreign obje...</td>
-<td>no</td>
-</tr>
 <tr>
 <td><a href="../DimensionalObservation/">DimensionalObservation</a></td>
 <td>A structured object that describes a single data item about the physical dime...</td>
@@ -366,22 +355,27 @@
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../String/">String</a></li>
+<li>Range: <a href="../Integer/">Integer</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+</ul>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: associated_visit
-alias: associated_visit
+<pre><code class="language-yaml">name: age_at_observation
+description: The Participant's age (expressed in days) when the Observation was made.
+from_schema: https://w3id.org/nhlbidatastage/bdchm
+rank: 1000
+alias: age_at_observation
+owner: Observation
 domain_of:
-- QuestionnaireResponse
-- Condition
-- Procedure
-- DrugExposure
-- DeviceExposure
 - Observation
-range: string
+range: integer
+unit:
+  ucum_code: d
 
 </code></pre>
 

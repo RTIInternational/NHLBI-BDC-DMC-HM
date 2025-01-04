@@ -216,9 +216,15 @@
     class DimensionalObservation
       Observation &lt;|-- DimensionalObservation
 
+      DimensionalObservation : age_at_observation
+
       DimensionalObservation : associated_participant
 
           DimensionalObservation --&gt; Participant : associated_participant
+
+      DimensionalObservation : associated_visit
+
+          DimensionalObservation --&gt; Visit : associated_visit
 
       DimensionalObservation : category
 
@@ -264,6 +270,12 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="../age_at_observation/">age_at_observation</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>The Participant's age (expressed in days) when the Observation was made</td>
+<td><a href="../Observation/">Observation</a></td>
+</tr>
+<tr>
 <td><a href="../category/">category</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The general category of observation described</td>
@@ -291,6 +303,12 @@
 <td><a href="../associated_participant/">associated_participant</a></td>
 <td>0..1 <br/> <a href="../Participant/">Participant</a></td>
 <td>The patient that the observation is about (if not the direct focus)</td>
+<td><a href="../Observation/">Observation</a></td>
+</tr>
+<tr>
+<td><a href="../associated_visit/">associated_visit</a></td>
+<td>0..1 <br/> <a href="../Visit/">Visit</a></td>
+<td>A reference to the Visit during which this Observation was recorded</td>
 <td><a href="../Observation/">Observation</a></td>
 </tr>
 <tr>
@@ -416,6 +434,19 @@ slot_usage:
     range: ObservationValueQuantity
     required: true
 attributes:
+  age_at_observation:
+    name: age_at_observation
+    description: The Participant's age (expressed in days) when the Observation was
+      made.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: age_at_observation
+    owner: DimensionalObservation
+    domain_of:
+    - Observation
+    range: integer
+    unit:
+      ucum_code: d
   category:
     name: category
     description: The general category of observation described
@@ -513,6 +544,20 @@ attributes:
     - Observation
     range: Participant
     required: false
+  associated_visit:
+    name: associated_visit
+    description: A reference to the Visit during which this Observation was recorded.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    alias: associated_visit
+    owner: DimensionalObservation
+    domain_of:
+    - QuestionnaireResponse
+    - Condition
+    - Procedure
+    - DrugExposure
+    - DeviceExposure
+    - Observation
+    range: Visit
   performed_by:
     name: performed_by
     description: The organization or group that performed the observation activity.
