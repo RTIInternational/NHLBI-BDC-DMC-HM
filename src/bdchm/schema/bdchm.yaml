@@ -1317,6 +1317,11 @@ classes:
     is_a: Entity
     description: A data structure with key (observation_type) and value (value) attributes that represents a single observation, such as the hematocrit component of a complete blood count panel.
     attributes:
+      age_at_observation:
+        range: integer
+        description: The Participant's age (expressed in days) when the Observation was made.
+        unit:
+          ucum_code: d
       category:
         description: The general category of observation described
         values_from: crdch:enum_CRDCH_Observation_category
@@ -1350,6 +1355,9 @@ classes:
         multivalued: false
         range: Participant
         required: false
+      associated_visit:
+        description: A reference to the Visit during which this Observation was recorded.
+        range: Visit
       performed_by:
         description: The organization or group that performed the observation activity.
         multivalued: false
