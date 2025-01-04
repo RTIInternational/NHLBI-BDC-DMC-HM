@@ -736,6 +736,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/derived_from/</loc>
+         <lastmod>2025-01-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/derived_product/</loc>
          <lastmod>2025-01-04</lastmod>
          <changefreq>daily</changefreq>
@@ -796,6 +801,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/file_location/</loc>
+         <lastmod>2025-01-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/file_name/</loc>
          <lastmod>2025-01-04</lastmod>
          <changefreq>daily</changefreq>
@@ -852,6 +862,11 @@
     </url>
     <url>
          <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/language/</loc>
+         <lastmod>2025-01-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/md5sum/</loc>
          <lastmod>2025-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1132,11 +1147,6 @@
     </url>
     <url>
          <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/unit/</loc>
-         <lastmod>2025-01-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/uri/</loc>
          <lastmod>2025-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
