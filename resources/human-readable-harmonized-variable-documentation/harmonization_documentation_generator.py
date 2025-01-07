@@ -105,11 +105,11 @@ def generate_markdown(root_dir, output_file):
 
                 if unit.get('component_study_variables'):
                     vars_text = ", ".join(f"`{var}`" for var in unit['component_study_variables'])
-                    section.append(f"    * Variables: {vars_text}")
+                    section.append(f"    * component_study_variables: {vars_text}")
 
                 if unit.get('component_harmonized_variables'):
                     harm_vars_text = ", ".join(f"`{var}`" for var in unit['component_harmonized_variables'])
-                    section.append(f"    * Harmonized Variables: {harm_vars_text}")
+                    section.append(f"    * component_harmonized_variables: {harm_vars_text}")
 
                 if unit.get('harmonization_function'):
                     section.append("    * Function:")
