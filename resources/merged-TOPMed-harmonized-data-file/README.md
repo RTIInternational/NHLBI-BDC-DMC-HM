@@ -11,7 +11,7 @@ using the PHS and PHV ID’s (Exclude the version numbers if needed).
 Extracted just phv values (without version) into
 
   * [phv-names-dbgap](phv-names-dbgap) (170,729 values)
-  * [phv-names-raw-to-harmonized](phv-names-raw-to-harmonized) (2,289 values)
+  * [phv-names-raw-to-harmonized](phv-names-raw-to-harmonized) (2,289 values, 1,162 distinct)
 
 The two files had only 773 values in common.
 

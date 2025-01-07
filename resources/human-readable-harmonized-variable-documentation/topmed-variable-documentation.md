@@ -62,7 +62,7 @@
     
 <a id="cac_score_1-amish"></a>
   * ### atherosclerosis/cac_score_1 -- **Amish**:
-    * component_study_variables: `phs000956.v2.pht005002.v1.phv00252986.v1`, `phs000956.v2.pht005002.v1.phv00252987.v1`
+    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252986.v1`, `phs000956.v2.pht005002.v1.phv00252987.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -88,7 +88,7 @@
       ```
 <a id="cac_score_1-chs"></a>
   * ### atherosclerosis/cac_score_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001459.v1.phv00100691.v1`, `phs000287.v6.pht001475.v1.phv00102583.v1`
+    * 2 component_study_variables: `phs000287.v6.pht001459.v1.phv00100691.v1`, `phs000287.v6.pht001475.v1.phv00102583.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -119,7 +119,7 @@
       ```
 <a id="cac_score_1-fhs_gen3"></a>
   * ### atherosclerosis/cac_score_1 -- **FHS_Gen3**:
-    * component_study_variables: `phs000007.v29.pht000144.v4.phv00023194.v3`, `phs000007.v29.pht000144.v4.phv00023195.v3`, `phs000007.v29.pht000144.v4.phv00023197.v3`, `phs000007.v29.pht003099.v4.phv00177930.v4`
+    * 4 component_study_variables: `phs000007.v29.pht000144.v4.phv00023194.v3`, `phs000007.v29.pht000144.v4.phv00023195.v3`, `phs000007.v29.pht000144.v4.phv00023197.v3`, `phs000007.v29.pht003099.v4.phv00177930.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -155,7 +155,7 @@
       ```
 <a id="cac_score_1-fhs_offspring"></a>
   * ### atherosclerosis/cac_score_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht000145.v4.phv00023200.v3`, `phs000007.v29.pht000145.v4.phv00023201.v3`, `phs000007.v29.pht000145.v4.phv00023203.v3`, `phs000007.v29.pht003099.v4.phv00177930.v4`
+    * 4 component_study_variables: `phs000007.v29.pht000145.v4.phv00023200.v3`, `phs000007.v29.pht000145.v4.phv00023201.v3`, `phs000007.v29.pht000145.v4.phv00023203.v3`, `phs000007.v29.pht003099.v4.phv00177930.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -191,7 +191,7 @@
       ```
 <a id="cac_score_1-fhs_omnis"></a>
   * ### atherosclerosis/cac_score_1 -- **FHS_Omnis**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht005161.v1.phv00257669.v1`, `phs000007.v29.pht005161.v1.phv00257670.v1`, `phs000007.v29.pht005161.v1.phv00257672.v1`
+    * 4 component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht005161.v1.phv00257669.v1`, `phs000007.v29.pht005161.v1.phv00257670.v1`, `phs000007.v29.pht005161.v1.phv00257672.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -223,7 +223,7 @@
       ```
 <a id="cac_score_1-genoa"></a>
   * ### atherosclerosis/cac_score_1 -- **GENOA**:
-    * component_study_variables: `phs001238.v1.pht006034.v1.phv00277327.v1`, `phs001238.v1.pht006034.v1.phv00277347.v1`
+    * 2 component_study_variables: `phs001238.v1.pht006034.v1.phv00277327.v1`, `phs001238.v1.pht006034.v1.phv00277347.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -247,7 +247,7 @@
       ```
 <a id="cac_score_1-jhs"></a>
   * ### atherosclerosis/cac_score_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001948.v1.phv00126002.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
+    * 2 component_study_variables: `phs000286.v5.pht001948.v1.phv00126002.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -276,7 +276,7 @@
       ```
 <a id="cac_score_1-mesa_airnr"></a>
   * ### atherosclerosis/cac_score_1 -- **MESA_AirNR**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082660.v1`
+    * 2 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082660.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -300,7 +300,7 @@
       ```
 <a id="cac_score_1-mesa_classic"></a>
   * ### atherosclerosis/cac_score_1 -- **MESA_Classic**:
-    * component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084521.v2`
+    * 2 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084521.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -324,7 +324,7 @@
       ```
 <a id="cac_score_1-mesa_family"></a>
   * ### atherosclerosis/cac_score_1 -- **MESA_Family**:
-    * component_study_variables: `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087105.v1`
+    * 2 component_study_variables: `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087105.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -376,7 +376,7 @@
     Please note that the study component calcium volume variables for FHS sub-cohorts "Offspring" and "Generation 3" were measured at a later time than the component study variables used for harmonized `cac_score`.
 <a id="cac_volume_1-fhs"></a>
   * ### atherosclerosis/cac_volume_1 -- **FHS**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht005161.v1.phv00257671.v1`, `phs000007.v29.pht005161.v1.phv00257672.v1`
+    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht005161.v1.phv00257671.v1`, `phs000007.v29.pht005161.v1.phv00257672.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -407,7 +407,7 @@
       ```
 <a id="cac_volume_1-mesa_airnr"></a>
   * ### atherosclerosis/cac_volume_1 -- **MESA_AirNR**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082663.v1`
+    * 2 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082663.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -431,7 +431,7 @@
       ```
 <a id="cac_volume_1-mesa_classic"></a>
   * ### atherosclerosis/cac_volume_1 -- **MESA_Classic**:
-    * component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084524.v2`
+    * 2 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084524.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -455,7 +455,7 @@
       ```
 <a id="cac_volume_1-mesa_family"></a>
   * ### atherosclerosis/cac_volume_1 -- **MESA_Family**:
-    * component_study_variables: `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087108.v1`
+    * 2 component_study_variables: `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087108.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -525,7 +525,7 @@
     
 <a id="carotid_plaque_1-amish"></a>
   * ### atherosclerosis/carotid_plaque_1 -- **Amish**:
-    * component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00252989.v1`
+    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00252989.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -553,7 +553,7 @@
       ```
 <a id="carotid_plaque_1-aric"></a>
   * ### atherosclerosis/carotid_plaque_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v3.pht004063.v1.phv00204712.v1`, `phs000280.v3.pht004063.v1.phv00204791.v1`
+    * 2 component_study_variables: `phs000280.v3.pht004063.v1.phv00204712.v1`, `phs000280.v3.pht004063.v1.phv00204791.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -579,7 +579,7 @@
       ```
 <a id="carotid_plaque_1-chs"></a>
   * ### atherosclerosis/carotid_plaque_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100290.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001473.v1.phv00101306.v1`, `phs000287.v6.pht001473.v1.phv00101307.v1`, `phs000287.v6.pht001473.v1.phv00101317.v1`, `phs000287.v6.pht001473.v1.phv00101318.v1`
+    * 6 component_study_variables: `phs000287.v6.pht001452.v1.phv00100290.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001473.v1.phv00101306.v1`, `phs000287.v6.pht001473.v1.phv00101307.v1`, `phs000287.v6.pht001473.v1.phv00101317.v1`, `phs000287.v6.pht001473.v1.phv00101318.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -643,7 +643,7 @@
       ```
 <a id="carotid_plaque_1-jhs"></a>
   * ### atherosclerosis/carotid_plaque_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001978.v1.phv00128573.v1`
+    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001978.v1.phv00128573.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -670,7 +670,7 @@
       ```
 <a id="carotid_plaque_1-mesa"></a>
   * ### atherosclerosis/carotid_plaque_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084797.v2`, `phs000209.v13.pht001116.v10.phv00084802.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`
+    * 5 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084797.v2`, `phs000209.v13.pht001116.v10.phv00084802.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -738,7 +738,7 @@
     
 <a id="carotid_stenosis_1-chs"></a>
   * ### atherosclerosis/carotid_stenosis_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100290.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001473.v1.phv00101302.v1`, `phs000287.v6.pht001473.v1.phv00101303.v1`, `phs000287.v6.pht001473.v1.phv00101313.v1`, `phs000287.v6.pht001473.v1.phv00101314.v1`
+    * 6 component_study_variables: `phs000287.v6.pht001452.v1.phv00100290.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001473.v1.phv00101302.v1`, `phs000287.v6.pht001473.v1.phv00101303.v1`, `phs000287.v6.pht001473.v1.phv00101313.v1`, `phs000287.v6.pht001473.v1.phv00101314.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -828,7 +828,7 @@
       ```
 <a id="carotid_stenosis_1-fhs"></a>
   * ### atherosclerosis/carotid_stenosis_1 -- **FHS**:
-    * component_study_variables: `phs000007.v29.pht000083.v6.phv00021700.v5`, `phs000007.v29.pht000083.v6.phv00021702.v5`, `phs000007.v29.pht003099.v4.phv00177940.v4`
+    * 3 component_study_variables: `phs000007.v29.pht000083.v6.phv00021700.v5`, `phs000007.v29.pht000083.v6.phv00021702.v5`, `phs000007.v29.pht003099.v4.phv00177940.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -853,7 +853,7 @@
       ```
 <a id="carotid_stenosis_1-mesa"></a>
   * ### atherosclerosis/carotid_stenosis_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084798.v2`, `phs000209.v13.pht001116.v10.phv00084803.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`
+    * 5 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084798.v2`, `phs000209.v13.pht001116.v10.phv00084803.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -914,7 +914,7 @@
     
 <a id="cimt_1-amish"></a>
   * ### atherosclerosis/cimt_1 -- **Amish**:
-    * component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00252988.v1`
+    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00252988.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -942,7 +942,7 @@
       ```
 <a id="cimt_1-aric"></a>
   * ### atherosclerosis/cimt_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v3.pht004063.v1.phv00204712.v1`, `phs000280.v3.pht004207.v1.phv00211095.v1`, `phs000280.v3.pht004207.v1.phv00211096.v1`, `phs000280.v3.pht004207.v1.phv00211097.v1`, `phs000280.v3.pht004207.v1.phv00211101.v1`, `phs000280.v3.pht004207.v1.phv00211102.v1`, `phs000280.v3.pht004207.v1.phv00211103.v1`
+    * 7 component_study_variables: `phs000280.v3.pht004063.v1.phv00204712.v1`, `phs000280.v3.pht004207.v1.phv00211095.v1`, `phs000280.v3.pht004207.v1.phv00211096.v1`, `phs000280.v3.pht004207.v1.phv00211097.v1`, `phs000280.v3.pht004207.v1.phv00211101.v1`, `phs000280.v3.pht004207.v1.phv00211102.v1`, `phs000280.v3.pht004207.v1.phv00211103.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -988,7 +988,7 @@
       ```
 <a id="cimt_1-chs"></a>
   * ### atherosclerosis/cimt_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001468.v1.phv00100864.v1`
+    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001468.v1.phv00100864.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -1011,7 +1011,7 @@
       ```
 <a id="cimt_1-fhs"></a>
   * ### atherosclerosis/cimt_1 -- **FHS**:
-    * component_study_variables: `phs000007.v29.pht000907.v5.phv00076366.v4`, `phs000007.v29.pht003099.v4.phv00177940.v4`
+    * 2 component_study_variables: `phs000007.v29.pht000907.v5.phv00076366.v4`, `phs000007.v29.pht003099.v4.phv00177940.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -1031,7 +1031,7 @@
       ```
 <a id="cimt_1-jhs"></a>
   * ### atherosclerosis/cimt_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001978.v1.phv00128531.v1`, `phs000286.v5.pht001978.v1.phv00128532.v1`, `phs000286.v5.pht001978.v1.phv00128533.v1`, `phs000286.v5.pht001978.v1.phv00128534.v1`, `phs000286.v5.pht001978.v1.phv00128535.v1`, `phs000286.v5.pht001978.v1.phv00128536.v1`
+    * 7 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001978.v1.phv00128531.v1`, `phs000286.v5.pht001978.v1.phv00128532.v1`, `phs000286.v5.pht001978.v1.phv00128533.v1`, `phs000286.v5.pht001978.v1.phv00128534.v1`, `phs000286.v5.pht001978.v1.phv00128535.v1`, `phs000286.v5.pht001978.v1.phv00128536.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -1078,7 +1078,7 @@
       ```
 <a id="cimt_1-mesa_airnr"></a>
   * ### atherosclerosis/cimt_1 -- **MESA_AirNR**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001528.v1.phv00111973.v1`, `phs000209.v13.pht001528.v1.phv00112049.v1`
+    * 3 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001528.v1.phv00111973.v1`, `phs000209.v13.pht001528.v1.phv00112049.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -1102,7 +1102,7 @@
       ```
 <a id="cimt_1-mesa_classic_family"></a>
   * ### atherosclerosis/cimt_1 -- **MESA_classic_family**:
-    * component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084879.v2`, `phs000209.v13.pht001116.v10.phv00084958.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00128698.v1`
+    * 5 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084879.v2`, `phs000209.v13.pht001116.v10.phv00084958.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00128698.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -1168,7 +1168,7 @@
     
 <a id="cimt_2-aric"></a>
   * ### atherosclerosis/cimt_2 -- **ARIC**:
-    * component_study_variables: `phs000280.v3.pht004063.v1.phv00204712.v1`, `phs000280.v3.pht004207.v1.phv00211053.v1`, `phs000280.v3.pht004207.v1.phv00211054.v1`, `phs000280.v3.pht004207.v1.phv00211055.v1`, `phs000280.v3.pht004207.v1.phv00211059.v1`, `phs000280.v3.pht004207.v1.phv00211060.v1`, `phs000280.v3.pht004207.v1.phv00211061.v1`, `phs000280.v3.pht004207.v1.phv00211081.v1`, `phs000280.v3.pht004207.v1.phv00211082.v1`, `phs000280.v3.pht004207.v1.phv00211083.v1`, `phs000280.v3.pht004207.v1.phv00211087.v1`, `phs000280.v3.pht004207.v1.phv00211088.v1`, `phs000280.v3.pht004207.v1.phv00211089.v1`
+    * 13 component_study_variables: `phs000280.v3.pht004063.v1.phv00204712.v1`, `phs000280.v3.pht004207.v1.phv00211053.v1`, `phs000280.v3.pht004207.v1.phv00211054.v1`, `phs000280.v3.pht004207.v1.phv00211055.v1`, `phs000280.v3.pht004207.v1.phv00211059.v1`, `phs000280.v3.pht004207.v1.phv00211060.v1`, `phs000280.v3.pht004207.v1.phv00211061.v1`, `phs000280.v3.pht004207.v1.phv00211081.v1`, `phs000280.v3.pht004207.v1.phv00211082.v1`, `phs000280.v3.pht004207.v1.phv00211083.v1`, `phs000280.v3.pht004207.v1.phv00211087.v1`, `phs000280.v3.pht004207.v1.phv00211088.v1`, `phs000280.v3.pht004207.v1.phv00211089.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -1232,7 +1232,7 @@
       ```
 <a id="cimt_2-chs"></a>
   * ### atherosclerosis/cimt_2 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100290.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001473.v1.phv00101238.v1`, `phs000287.v6.pht001473.v1.phv00101239.v1`, `phs000287.v6.pht001473.v1.phv00101250.v1`, `phs000287.v6.pht001473.v1.phv00101251.v1`, `phs000287.v6.pht001473.v1.phv00101264.v1`, `phs000287.v6.pht001473.v1.phv00101265.v1`, `phs000287.v6.pht001473.v1.phv00101276.v1`, `phs000287.v6.pht001473.v1.phv00101277.v1`
+    * 10 component_study_variables: `phs000287.v6.pht001452.v1.phv00100290.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001473.v1.phv00101238.v1`, `phs000287.v6.pht001473.v1.phv00101239.v1`, `phs000287.v6.pht001473.v1.phv00101250.v1`, `phs000287.v6.pht001473.v1.phv00101251.v1`, `phs000287.v6.pht001473.v1.phv00101264.v1`, `phs000287.v6.pht001473.v1.phv00101265.v1`, `phs000287.v6.pht001473.v1.phv00101276.v1`, `phs000287.v6.pht001473.v1.phv00101277.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -1297,7 +1297,7 @@
       ```
 <a id="cimt_2-fhs"></a>
   * ### atherosclerosis/cimt_2 -- **FHS**:
-    * component_study_variables: `phs000007.v29.pht000083.v6.phv00021728.v5`, `phs000007.v29.pht003099.v4.phv00177940.v4`
+    * 2 component_study_variables: `phs000007.v29.pht000083.v6.phv00021728.v5`, `phs000007.v29.pht003099.v4.phv00177940.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -1314,7 +1314,7 @@
       ```
 <a id="cimt_2-jhs"></a>
   * ### atherosclerosis/cimt_2 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001978.v1.phv00128541.v1`, `phs000286.v5.pht001978.v1.phv00128542.v1`, `phs000286.v5.pht001978.v1.phv00128543.v1`, `phs000286.v5.pht001978.v1.phv00128544.v1`, `phs000286.v5.pht001978.v1.phv00128545.v1`, `phs000286.v5.pht001978.v1.phv00128546.v1`, `phs000286.v5.pht001978.v1.phv00128561.v1`, `phs000286.v5.pht001978.v1.phv00128562.v1`, `phs000286.v5.pht001978.v1.phv00128563.v1`, `phs000286.v5.pht001978.v1.phv00128564.v1`, `phs000286.v5.pht001978.v1.phv00128565.v1`, `phs000286.v5.pht001978.v1.phv00128566.v1`
+    * 13 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001978.v1.phv00128541.v1`, `phs000286.v5.pht001978.v1.phv00128542.v1`, `phs000286.v5.pht001978.v1.phv00128543.v1`, `phs000286.v5.pht001978.v1.phv00128544.v1`, `phs000286.v5.pht001978.v1.phv00128545.v1`, `phs000286.v5.pht001978.v1.phv00128546.v1`, `phs000286.v5.pht001978.v1.phv00128561.v1`, `phs000286.v5.pht001978.v1.phv00128562.v1`, `phs000286.v5.pht001978.v1.phv00128563.v1`, `phs000286.v5.pht001978.v1.phv00128564.v1`, `phs000286.v5.pht001978.v1.phv00128565.v1`, `phs000286.v5.pht001978.v1.phv00128566.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -1391,7 +1391,7 @@
       ```
 <a id="cimt_2-mesa_airnr"></a>
   * ### atherosclerosis/cimt_2 -- **MESA_airnr**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001528.v1.phv00111971.v1`, `phs000209.v13.pht001528.v1.phv00111975.v1`, `phs000209.v13.pht001528.v1.phv00112047.v1`, `phs000209.v13.pht001528.v1.phv00112051.v1`
+    * 5 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001528.v1.phv00111971.v1`, `phs000209.v13.pht001528.v1.phv00111975.v1`, `phs000209.v13.pht001528.v1.phv00112047.v1`, `phs000209.v13.pht001528.v1.phv00112051.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -1414,7 +1414,7 @@
       ```
 <a id="cimt_2-mesa_classic_family"></a>
   * ### atherosclerosis/cimt_2 -- **MESA_classic_family**:
-    * component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084877.v2`, `phs000209.v13.pht001116.v10.phv00084881.v2`, `phs000209.v13.pht001116.v10.phv00084956.v2`, `phs000209.v13.pht001116.v10.phv00084959.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087557.v1`, `phs000209.v13.pht001121.v3.phv00087558.v1`, `phs000209.v13.pht001121.v3.phv00087559.v1`, `phs000209.v13.pht001121.v3.phv00087560.v1`
+    * 10 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084877.v2`, `phs000209.v13.pht001116.v10.phv00084881.v2`, `phs000209.v13.pht001116.v10.phv00084956.v2`, `phs000209.v13.pht001116.v10.phv00084959.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087557.v1`, `phs000209.v13.pht001121.v3.phv00087558.v1`, `phs000209.v13.pht001121.v3.phv00087559.v1`, `phs000209.v13.pht001121.v3.phv00087560.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -1474,7 +1474,7 @@
     
 <a id="angina_incident_1-fhs"></a>
   * ### atherosclerosis_events_incident/angina_incident_1 -- **FHS**:
-    * component_study_variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
+    * 5 component_study_variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -1560,7 +1560,7 @@
       ```
 <a id="angina_incident_1-whi"></a>
   * ### atherosclerosis_events_incident/angina_incident_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003407.v3.phv00193145.v3`, `phs000200.v11.pht003407.v3.phv00193146.v3`, `phs000200.v11.pht003407.v3.phv00193504.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`
+    * 7 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003407.v3.phv00193145.v3`, `phs000200.v11.pht003407.v3.phv00193146.v3`, `phs000200.v11.pht003407.v3.phv00193504.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -1608,7 +1608,7 @@
     
 <a id="cabg_incident_1-fhs"></a>
   * ### atherosclerosis_events_incident/cabg_incident_1 -- **FHS**:
-    * component_study_variables: `phs000007.v30.pht000389.v10.phv00054697.v8`, `phs000007.v30.pht000389.v10.phv00163410.v7`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
+    * 5 component_study_variables: `phs000007.v30.pht000389.v10.phv00054697.v8`, `phs000007.v30.pht000389.v10.phv00163410.v7`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -1685,7 +1685,7 @@
       ```
 <a id="cabg_incident_1-whi"></a>
   * ### atherosclerosis_events_incident/cabg_incident_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003407.v3.phv00193157.v3`, `phs000200.v11.pht003407.v3.phv00193158.v3`, `phs000200.v11.pht003407.v3.phv00193504.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`
+    * 7 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003407.v3.phv00193157.v3`, `phs000200.v11.pht003407.v3.phv00193158.v3`, `phs000200.v11.pht003407.v3.phv00193504.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -1728,7 +1728,7 @@
     
 <a id="cad_followup_start_age_1-fhs"></a>
   * ### atherosclerosis_events_incident/cad_followup_start_age_1 -- **FHS**:
-    * component_study_variables: `phs000007.v30.pht003099.v5.phv00177930.v5`
+    * 1 component_study_variables: `phs000007.v30.pht003099.v5.phv00177930.v5`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -1743,7 +1743,7 @@
       ```
 <a id="cad_followup_start_age_1-whi"></a>
   * ### atherosclerosis_events_incident/cad_followup_start_age_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078437.v6`
+    * 1 component_study_variables: `phs000200.v11.pht000998.v6.phv00078437.v6`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -1775,7 +1775,7 @@
     
 <a id="chd_death_definite_1-fhs"></a>
   * ### atherosclerosis_events_incident/chd_death_definite_1 -- **FHS**:
-    * component_study_variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
+    * 5 component_study_variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -1874,7 +1874,7 @@
       ```
 <a id="chd_death_definite_1-whi"></a>
   * ### atherosclerosis_events_incident/chd_death_definite_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003407.v3.phv00193498.v3`, `phs000200.v11.pht003407.v3.phv00193504.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`, `phs000200.v11.pht003409.v3.phv00193531.v2`, `phs000200.v11.pht003409.v3.phv00193532.v2`
+    * 8 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003407.v3.phv00193498.v3`, `phs000200.v11.pht003407.v3.phv00193504.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`, `phs000200.v11.pht003409.v3.phv00193531.v2`, `phs000200.v11.pht003409.v3.phv00193532.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -1916,7 +1916,7 @@
     
 <a id="chd_death_probable_1-fhs"></a>
   * ### atherosclerosis_events_incident/chd_death_probable_1 -- **FHS**:
-    * component_study_variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
+    * 5 component_study_variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -2015,7 +2015,7 @@
       ```
 <a id="chd_death_probable_1-whi"></a>
   * ### atherosclerosis_events_incident/chd_death_probable_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003407.v3.phv00193498.v3`, `phs000200.v11.pht003407.v3.phv00193504.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`, `phs000200.v11.pht003409.v3.phv00193531.v2`, `phs000200.v11.pht003409.v3.phv00193532.v2`
+    * 8 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003407.v3.phv00193498.v3`, `phs000200.v11.pht003407.v3.phv00193504.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`, `phs000200.v11.pht003409.v3.phv00193531.v2`, `phs000200.v11.pht003409.v3.phv00193532.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -2054,7 +2054,7 @@
     
 <a id="coronary_angioplasty_incident_1-whi"></a>
   * ### atherosclerosis_events_incident/coronary_angioplasty_incident_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003407.v3.phv00193199.v3`, `phs000200.v11.pht003407.v3.phv00193200.v3`, `phs000200.v11.pht003407.v3.phv00193504.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`
+    * 7 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003407.v3.phv00193199.v3`, `phs000200.v11.pht003407.v3.phv00193200.v3`, `phs000200.v11.pht003407.v3.phv00193504.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -2099,7 +2099,7 @@
     
 <a id="mi_incident_1-fhs"></a>
   * ### atherosclerosis_events_incident/mi_incident_1 -- **FHS**:
-    * component_study_variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
+    * 5 component_study_variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -2185,7 +2185,7 @@
       ```
 <a id="mi_incident_1-whi"></a>
   * ### atherosclerosis_events_incident/mi_incident_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003407.v3.phv00193169.v3`, `phs000200.v11.pht003407.v3.phv00193170.v3`, `phs000200.v11.pht003407.v3.phv00193504.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`
+    * 7 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003407.v3.phv00193169.v3`, `phs000200.v11.pht003407.v3.phv00193170.v3`, `phs000200.v11.pht003407.v3.phv00193504.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -2234,7 +2234,7 @@
     
 <a id="pad_incident_1-fhs"></a>
   * ### atherosclerosis_events_incident/pad_incident_1 -- **FHS**:
-    * component_study_variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
+    * 5 component_study_variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -2322,7 +2322,7 @@
       ```
 <a id="pad_incident_1-whi"></a>
   * ### atherosclerosis_events_incident/pad_incident_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003406.v3.phv00193101.v3`, `phs000200.v11.pht003406.v3.phv00193102.v3`, `phs000200.v11.pht003406.v3.phv00193103.v3`, `phs000200.v11.pht003406.v3.phv00193104.v3`, `phs000200.v11.pht003406.v3.phv00193105.v3`, `phs000200.v11.pht003406.v3.phv00193106.v3`, `phs000200.v11.pht003406.v3.phv00193107.v3`, `phs000200.v11.pht003407.v3.phv00193190.v3`, `phs000200.v11.pht003407.v3.phv00193191.v3`, `phs000200.v11.pht003407.v3.phv00193504.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`
+    * 14 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003406.v3.phv00193101.v3`, `phs000200.v11.pht003406.v3.phv00193102.v3`, `phs000200.v11.pht003406.v3.phv00193103.v3`, `phs000200.v11.pht003406.v3.phv00193104.v3`, `phs000200.v11.pht003406.v3.phv00193105.v3`, `phs000200.v11.pht003406.v3.phv00193106.v3`, `phs000200.v11.pht003406.v3.phv00193107.v3`, `phs000200.v11.pht003407.v3.phv00193190.v3`, `phs000200.v11.pht003407.v3.phv00193191.v3`, `phs000200.v11.pht003407.v3.phv00193504.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -2414,7 +2414,7 @@
     
 <a id="angina_prior_1-chs"></a>
   * ### atherosclerosis_events_prior/angina_prior_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100504.v1`
+    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100504.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -2428,7 +2428,7 @@
       ```
 <a id="angina_prior_1-copdgene"></a>
   * ### atherosclerosis_events_prior/angina_prior_1 -- **COPDGene**:
-    * component_study_variables: `phs000179.v5.pht002239.v4.phv00159608.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
+    * 2 component_study_variables: `phs000179.v5.pht002239.v4.phv00159608.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -2450,7 +2450,7 @@
       ```
 <a id="angina_prior_1-fhs"></a>
   * ### atherosclerosis_events_prior/angina_prior_1 -- **FHS**:
-    * component_study_variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
+    * 5 component_study_variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -2537,7 +2537,7 @@
       ```
 <a id="angina_prior_1-mesa"></a>
   * ### atherosclerosis_events_prior/angina_prior_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`
+    * 1 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -2549,7 +2549,7 @@
       ```
 <a id="angina_prior_1-whi"></a>
   * ### atherosclerosis_events_prior/angina_prior_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht000999.v6.phv00078507.v6`, `phs000200.v11.pht000999.v6.phv00078560.v6`
+    * 4 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht000999.v6.phv00078507.v6`, `phs000200.v11.pht000999.v6.phv00078560.v6`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -2608,7 +2608,7 @@
     
 <a id="cabg_prior_1-aric"></a>
   * ### atherosclerosis_events_prior/cabg_prior_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v5.pht004063.v2.phv00204712.v1`, `phs000280.v5.pht004143.v2.phv00208845.v1`, `phs000280.v5.pht004143.v2.phv00208846.v1`, `phs000280.v5.pht004143.v2.phv00208853.v1`
+    * 4 component_study_variables: `phs000280.v5.pht004063.v2.phv00204712.v1`, `phs000280.v5.pht004143.v2.phv00208845.v1`, `phs000280.v5.pht004143.v2.phv00208846.v1`, `phs000280.v5.pht004143.v2.phv00208853.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -2650,7 +2650,7 @@
       ```
 <a id="cabg_prior_1-chs"></a>
   * ### atherosclerosis_events_prior/cabg_prior_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001464.v1.phv00100785.v1`
+    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001464.v1.phv00100785.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -2667,7 +2667,7 @@
       ```
 <a id="cabg_prior_1-copdgene"></a>
   * ### atherosclerosis_events_prior/cabg_prior_1 -- **COPDGene**:
-    * component_study_variables: `phs000179.v5.pht002239.v4.phv00159631.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
+    * 2 component_study_variables: `phs000179.v5.pht002239.v4.phv00159631.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -2681,7 +2681,7 @@
       ```
 <a id="cabg_prior_1-fhs"></a>
   * ### atherosclerosis_events_prior/cabg_prior_1 -- **FHS**:
-    * component_study_variables: `phs000007.v30.pht000389.v10.phv00054697.v8`, `phs000007.v30.pht000389.v10.phv00163410.v7`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
+    * 5 component_study_variables: `phs000007.v30.pht000389.v10.phv00054697.v8`, `phs000007.v30.pht000389.v10.phv00163410.v7`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -2756,7 +2756,7 @@
       ```
 <a id="cabg_prior_1-jhs"></a>
   * ### atherosclerosis_events_prior/cabg_prior_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001963.v1.phv00127727.v1`, `phs000286.v5.pht001963.v1.phv00127728.v1`, `phs000286.v5.pht001963.v1.phv00127731.v1`, `phs000286.v5.pht001963.v1.phv00127733.v1`, `phs000286.v5.pht001963.v1.phv00127740.v1`
+    * 6 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001963.v1.phv00127727.v1`, `phs000286.v5.pht001963.v1.phv00127728.v1`, `phs000286.v5.pht001963.v1.phv00127731.v1`, `phs000286.v5.pht001963.v1.phv00127733.v1`, `phs000286.v5.pht001963.v1.phv00127740.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -2796,7 +2796,7 @@
       ```
 <a id="cabg_prior_1-mesa"></a>
   * ### atherosclerosis_events_prior/cabg_prior_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`
+    * 1 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -2808,7 +2808,7 @@
       ```
 <a id="cabg_prior_1-whi"></a>
   * ### atherosclerosis_events_prior/cabg_prior_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht000999.v6.phv00078507.v6`, `phs000200.v11.pht000999.v6.phv00078535.v6`
+    * 4 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht000999.v6.phv00078507.v6`, `phs000200.v11.pht000999.v6.phv00078535.v6`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -2860,7 +2860,7 @@
     
 <a id="coronary_angioplasty_prior_1-aric"></a>
   * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v5.pht004063.v2.phv00204712.v1`, `phs000280.v5.pht004143.v2.phv00208845.v1`, `phs000280.v5.pht004143.v2.phv00208853.v1`, `phs000280.v5.pht004143.v2.phv00208854.v1`
+    * 4 component_study_variables: `phs000280.v5.pht004063.v2.phv00204712.v1`, `phs000280.v5.pht004143.v2.phv00208845.v1`, `phs000280.v5.pht004143.v2.phv00208853.v1`, `phs000280.v5.pht004143.v2.phv00208854.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -2899,7 +2899,7 @@
       ```
 <a id="coronary_angioplasty_prior_1-chs"></a>
   * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100322.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
+    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100322.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -2914,7 +2914,7 @@
       ```
 <a id="coronary_angioplasty_prior_1-copdgene"></a>
   * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **COPDGene**:
-    * component_study_variables: `phs000179.v5.pht002239.v4.phv00159632.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
+    * 2 component_study_variables: `phs000179.v5.pht002239.v4.phv00159632.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -2929,7 +2929,7 @@
       ```
 <a id="coronary_angioplasty_prior_1-jhs"></a>
   * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001963.v1.phv00127727.v1`, `phs000286.v5.pht001963.v1.phv00127731.v1`, `phs000286.v5.pht001963.v1.phv00127733.v1`, `phs000286.v5.pht001963.v1.phv00127737.v1`, `phs000286.v5.pht001963.v1.phv00127740.v1`
+    * 6 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001963.v1.phv00127727.v1`, `phs000286.v5.pht001963.v1.phv00127731.v1`, `phs000286.v5.pht001963.v1.phv00127733.v1`, `phs000286.v5.pht001963.v1.phv00127737.v1`, `phs000286.v5.pht001963.v1.phv00127740.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -2965,7 +2965,7 @@
       ```
 <a id="coronary_angioplasty_prior_1-mesa"></a>
   * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`
+    * 1 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -2977,7 +2977,7 @@
       ```
 <a id="coronary_angioplasty_prior_1-whi"></a>
   * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht000999.v6.phv00078507.v6`, `phs000200.v11.pht000999.v6.phv00078536.v6`
+    * 4 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht000999.v6.phv00078507.v6`, `phs000200.v11.pht000999.v6.phv00078536.v6`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -3019,7 +3019,7 @@
     
 <a id="coronary_revascularization_prior_1-genoa"></a>
   * ### atherosclerosis_events_prior/coronary_revascularization_prior_1 -- **GENOA**:
-    * component_study_variables: `phs001238.v2.pht006039.v1.phv00277507.v1`, `phs001238.v2.pht006043.v1.phv00277602.v1`, `phs001238.v2.pht006653.v1.phv00307788.v1`, `phs001238.v2.pht006657.v1.phv00307883.v1`
+    * 4 component_study_variables: `phs001238.v2.pht006039.v1.phv00277507.v1`, `phs001238.v2.pht006043.v1.phv00277602.v1`, `phs001238.v2.pht006653.v1.phv00307788.v1`, `phs001238.v2.pht006657.v1.phv00307883.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -3105,7 +3105,7 @@
     
 <a id="mi_prior_1-amish"></a>
   * ### atherosclerosis_events_prior/mi_prior_1 -- **Amish**:
-    * component_study_variables: `phs000956.v3.pht005002.v1.phv00252976.v1`, `phs000956.v3.pht005002.v1.phv00252984.v1`
+    * 2 component_study_variables: `phs000956.v3.pht005002.v1.phv00252976.v1`, `phs000956.v3.pht005002.v1.phv00252984.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -3122,7 +3122,7 @@
       ```
 <a id="mi_prior_1-aric"></a>
   * ### atherosclerosis_events_prior/mi_prior_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v5.pht004063.v2.phv00204705.v1`, `phs000280.v5.pht004063.v2.phv00204712.v1`
+    * 2 component_study_variables: `phs000280.v5.pht004063.v2.phv00204705.v1`, `phs000280.v5.pht004063.v2.phv00204712.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -3149,7 +3149,7 @@
       ```
 <a id="mi_prior_1-chs"></a>
   * ### atherosclerosis_events_prior/mi_prior_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100508.v1`
+    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100508.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -3164,7 +3164,7 @@
       ```
 <a id="mi_prior_1-copdgene"></a>
   * ### atherosclerosis_events_prior/mi_prior_1 -- **COPDGene**:
-    * component_study_variables: `phs000179.v5.pht002239.v4.phv00159615.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
+    * 2 component_study_variables: `phs000179.v5.pht002239.v4.phv00159615.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -3186,7 +3186,7 @@
       ```
 <a id="mi_prior_1-fhs"></a>
   * ### atherosclerosis_events_prior/mi_prior_1 -- **FHS**:
-    * component_study_variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
+    * 5 component_study_variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -3272,7 +3272,7 @@
       ```
 <a id="mi_prior_1-genoa"></a>
   * ### atherosclerosis_events_prior/mi_prior_1 -- **GENOA**:
-    * component_study_variables: `phs001238.v2.pht006039.v1.phv00277507.v1`, `phs001238.v2.pht006043.v1.phv00277598.v1`, `phs001238.v2.pht006653.v1.phv00307788.v1`, `phs001238.v2.pht006657.v1.phv00307879.v1`
+    * 4 component_study_variables: `phs001238.v2.pht006039.v1.phv00277507.v1`, `phs001238.v2.pht006043.v1.phv00277598.v1`, `phs001238.v2.pht006653.v1.phv00307788.v1`, `phs001238.v2.pht006657.v1.phv00307879.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -3317,7 +3317,7 @@
       ```
 <a id="mi_prior_1-jhs"></a>
   * ### atherosclerosis_events_prior/mi_prior_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001949.v1.phv00126088.v1`
+    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001949.v1.phv00126088.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -3342,7 +3342,7 @@
       ```
 <a id="mi_prior_1-mesa"></a>
   * ### atherosclerosis_events_prior/mi_prior_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`
+    * 1 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -3354,7 +3354,7 @@
       ```
 <a id="mi_prior_1-whi"></a>
   * ### atherosclerosis_events_prior/mi_prior_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht000998.v6.phv00078482.v6`
+    * 3 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht000998.v6.phv00078482.v6`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -3414,7 +3414,7 @@
     
 <a id="pad_prior_1-aric"></a>
   * ### atherosclerosis_events_prior/pad_prior_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v5.pht004063.v2.phv00204712.v1`, `phs000280.v5.pht004063.v2.phv00204795.v1`
+    * 2 component_study_variables: `phs000280.v5.pht004063.v2.phv00204712.v1`, `phs000280.v5.pht004063.v2.phv00204795.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -3437,7 +3437,7 @@
       ```
 <a id="pad_prior_1-chs"></a>
   * ### atherosclerosis_events_prior/pad_prior_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100330.v1`, `phs000287.v6.pht001452.v1.phv00100333.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100507.v1`
+    * 4 component_study_variables: `phs000287.v6.pht001452.v1.phv00100330.v1`, `phs000287.v6.pht001452.v1.phv00100333.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100507.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -3460,7 +3460,7 @@
       ```
 <a id="pad_prior_1-copdgene"></a>
   * ### atherosclerosis_events_prior/pad_prior_1 -- **COPDGene**:
-    * component_study_variables: `phs000179.v5.pht002239.v4.phv00159618.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
+    * 2 component_study_variables: `phs000179.v5.pht002239.v4.phv00159618.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -3482,7 +3482,7 @@
       ```
 <a id="pad_prior_1-fhs"></a>
   * ### atherosclerosis_events_prior/pad_prior_1 -- **FHS**:
-    * component_study_variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
+    * 5 component_study_variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -3569,7 +3569,7 @@
       ```
 <a id="pad_prior_1-jhs"></a>
   * ### atherosclerosis_events_prior/pad_prior_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001921.v1.phv00124562.v1`, `phs000286.v5.pht001921.v1.phv00124563.v1`, `phs000286.v5.pht001921.v1.phv00124564.v1`, `phs000286.v5.pht001921.v1.phv00124565.v1`, `phs000286.v5.pht001921.v1.phv00124566.v1`, `phs000286.v5.pht001921.v1.phv00124567.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
+    * 7 component_study_variables: `phs000286.v5.pht001921.v1.phv00124562.v1`, `phs000286.v5.pht001921.v1.phv00124563.v1`, `phs000286.v5.pht001921.v1.phv00124564.v1`, `phs000286.v5.pht001921.v1.phv00124565.v1`, `phs000286.v5.pht001921.v1.phv00124566.v1`, `phs000286.v5.pht001921.v1.phv00124567.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -3617,7 +3617,7 @@
       ```
 <a id="pad_prior_1-mesa"></a>
   * ### atherosclerosis_events_prior/pad_prior_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`
+    * 1 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -3629,7 +3629,7 @@
       ```
 <a id="pad_prior_1-whi"></a>
   * ### atherosclerosis_events_prior/pad_prior_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht000999.v6.phv00078507.v6`, `phs000200.v11.pht000999.v6.phv00078562.v6`
+    * 4 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht000999.v6.phv00078507.v6`, `phs000200.v11.pht000999.v6.phv00078562.v6`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -3733,7 +3733,7 @@
     
 <a id="bmi_baseline_1-dcc_harmonized"></a>
   * ### baseline_common_covariates/bmi_baseline_1 -- **DCC_harmonized**:
-    * component_harmonized_variables: `{'dcc_harmonization_id': 151, 'name': 'height_baseline_1', 'version': 5}`, `{'dcc_harmonization_id': 152, 'name': 'weight_baseline_1', 'version': 4}`
+    * 2 component_harmonized_variables: `height_baseline_1`, `weight_baseline_1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -3764,7 +3764,7 @@
       ```
 <a id="bmi_baseline_1-galaii"></a>
   * ### baseline_common_covariates/bmi_baseline_1 -- **GALAII**:
-    * component_study_variables: `phs001180.v1.pht006991.v1.phv00320630.v1`, `phs001180.v1.pht006991.v1.phv00320633.v1`
+    * 2 component_study_variables: `phs001180.v1.pht006991.v1.phv00320630.v1`, `phs001180.v1.pht006991.v1.phv00320633.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -3781,7 +3781,7 @@
       ```
 <a id="bmi_baseline_1-goldn"></a>
   * ### baseline_common_covariates/bmi_baseline_1 -- **GOLDN**:
-    * component_study_variables: `phs000741.v2.pht003918.v2.phv00202104.v2`, `phs000741.v2.pht003918.v2.phv00259051.v1`
+    * 2 component_study_variables: `phs000741.v2.pht003918.v2.phv00202104.v2`, `phs000741.v2.pht003918.v2.phv00259051.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -3796,7 +3796,7 @@
       ```
 <a id="bmi_baseline_1-sage"></a>
   * ### baseline_common_covariates/bmi_baseline_1 -- **SAGE**:
-    * component_study_variables: `phs000921.v3.pht004883.v3.phv00252283.v3`, `phs000921.v3.pht004883.v3.phv00252286.v3`
+    * 2 component_study_variables: `phs000921.v3.pht004883.v3.phv00252283.v3`, `phs000921.v3.pht004883.v3.phv00252286.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -3895,7 +3895,7 @@
     
 <a id="current_smoker_baseline_1-amish"></a>
   * ### baseline_common_covariates/current_smoker_baseline_1 -- **Amish**:
-    * component_study_variables: `phs000956.v3.pht005002.v1.phv00252976.v1`, `phs000956.v3.pht005002.v1.phv00252990.v1`
+    * 2 component_study_variables: `phs000956.v3.pht005002.v1.phv00252976.v1`, `phs000956.v3.pht005002.v1.phv00252990.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -3914,7 +3914,7 @@
       ```
 <a id="current_smoker_baseline_1-aric"></a>
   * ### baseline_common_covariates/current_smoker_baseline_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v5.pht004063.v2.phv00204712.v1`, `phs000280.v5.pht004111.v2.phv00207368.v1`, `phs000280.v5.pht004111.v2.phv00207370.v1`, `phs000280.v5.pht004111.v2.phv00207372.v1`
+    * 4 component_study_variables: `phs000280.v5.pht004063.v2.phv00204712.v1`, `phs000280.v5.pht004111.v2.phv00207368.v1`, `phs000280.v5.pht004111.v2.phv00207370.v1`, `phs000280.v5.pht004111.v2.phv00207372.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -3944,7 +3944,7 @@
       ```
 <a id="current_smoker_baseline_1-bags"></a>
   * ### baseline_common_covariates/current_smoker_baseline_1 -- **BAGS**:
-    * component_study_variables: `phs001143.v2.pht005905.v2.phv00273211.v2`, `phs001143.v2.pht005905.v2.phv00375339.v1`, `phs001143.v2.pht005905.v2.phv00375341.v1`, `phs001143.v2.pht005905.v2.phv00375343.v1`
+    * 4 component_study_variables: `phs001143.v2.pht005905.v2.phv00273211.v2`, `phs001143.v2.pht005905.v2.phv00375339.v1`, `phs001143.v2.pht005905.v2.phv00375341.v1`, `phs001143.v2.pht005905.v2.phv00375343.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -3976,7 +3976,7 @@
       ```
 <a id="current_smoker_baseline_1-cardia"></a>
   * ### baseline_common_covariates/current_smoker_baseline_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001572.v2.phv00113168.v2`, `phs000285.v3.pht001573.v2.phv00113213.v2`
+    * 3 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001572.v2.phv00113168.v2`, `phs000285.v3.pht001573.v2.phv00113213.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4004,7 +4004,7 @@
       ```
 <a id="current_smoker_baseline_1-cfs"></a>
   * ### baseline_common_covariates/current_smoker_baseline_1 -- **CFS**:
-    * component_study_variables: `phs000284.v2.pht001902.v1.phv00122012.v1`, `phs000284.v2.pht001902.v1.phv00122015.v1`, `phs000284.v2.pht001902.v1.phv00122343.v1`, `phs000284.v2.pht001902.v1.phv00122344.v1`
+    * 4 component_study_variables: `phs000284.v2.pht001902.v1.phv00122012.v1`, `phs000284.v2.pht001902.v1.phv00122015.v1`, `phs000284.v2.pht001902.v1.phv00122343.v1`, `phs000284.v2.pht001902.v1.phv00122344.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4035,7 +4035,7 @@
       ```
 <a id="current_smoker_baseline_1-chs"></a>
   * ### baseline_common_covariates/current_smoker_baseline_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001450.v1.phv00098844.v1`, `phs000287.v6.pht001450.v1.phv00098845.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001490.v1.phv00105143.v1`, `phs000287.v6.pht001490.v1.phv00105144.v1`
+    * 5 component_study_variables: `phs000287.v6.pht001450.v1.phv00098844.v1`, `phs000287.v6.pht001450.v1.phv00098845.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001490.v1.phv00105143.v1`, `phs000287.v6.pht001490.v1.phv00105144.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4063,7 +4063,7 @@
       ```
 <a id="current_smoker_baseline_1-copdgene"></a>
   * ### baseline_common_covariates/current_smoker_baseline_1 -- **COPDGene**:
-    * component_study_variables: `phs000179.v5.pht002239.v4.phv00159636.v4`, `phs000179.v5.pht002239.v4.phv00159637.v4`, `phs000179.v5.pht002239.v4.phv00159640.v4`, `phs000179.v5.pht002239.v4.phv00159749.v4`, `phs000179.v5.pht002239.v4.phv00159750.v4`, `phs000179.v5.pht002239.v4.phv00159754.v4`, `phs000179.v5.pht002239.v4.phv00159755.v4`, `phs000179.v5.pht002239.v4.phv00159756.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
+    * 9 component_study_variables: `phs000179.v5.pht002239.v4.phv00159636.v4`, `phs000179.v5.pht002239.v4.phv00159637.v4`, `phs000179.v5.pht002239.v4.phv00159640.v4`, `phs000179.v5.pht002239.v4.phv00159749.v4`, `phs000179.v5.pht002239.v4.phv00159750.v4`, `phs000179.v5.pht002239.v4.phv00159754.v4`, `phs000179.v5.pht002239.v4.phv00159755.v4`, `phs000179.v5.pht002239.v4.phv00159756.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4092,7 +4092,7 @@
       ```
 <a id="current_smoker_baseline_1-cra"></a>
   * ### baseline_common_covariates/current_smoker_baseline_1 -- **CRA**:
-    * component_study_variables: `phs000988.v2.pht005248.v2.phv00258650.v2`, `phs000988.v2.pht005248.v2.phv00267375.v2`, `phs000988.v2.pht005248.v2.phv00267378.v2`
+    * 3 component_study_variables: `phs000988.v2.pht005248.v2.phv00258650.v2`, `phs000988.v2.pht005248.v2.phv00267375.v2`, `phs000988.v2.pht005248.v2.phv00267378.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4116,7 +4116,7 @@
       ```
 <a id="current_smoker_baseline_1-fhs_nos_gen3_omni2"></a>
   * ### baseline_common_covariates/current_smoker_baseline_1 -- **FHS_NOS_Gen3_Omni2**:
-    * component_study_variables: `phs000007.v30.pht000074.v11.phv00020926.v5`, `phs000007.v30.pht000074.v11.phv00020927.v5`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht006005.v1.phv00273760.v1`, `phs000007.v30.pht006005.v1.phv00273761.v1`, `phs000007.v30.pht006006.v2.phv00274253.v2`, `phs000007.v30.pht006006.v2.phv00274254.v2`
+    * 7 component_study_variables: `phs000007.v30.pht000074.v11.phv00020926.v5`, `phs000007.v30.pht000074.v11.phv00020927.v5`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht006005.v1.phv00273760.v1`, `phs000007.v30.pht006005.v1.phv00273761.v1`, `phs000007.v30.pht006006.v2.phv00274253.v2`, `phs000007.v30.pht006006.v2.phv00274254.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4156,7 +4156,7 @@
       ```
 <a id="current_smoker_baseline_1-fhs_offspring"></a>
   * ### baseline_common_covariates/current_smoker_baseline_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v30.pht000030.v8.phv00007612.v6`, `phs000007.v30.pht003099.v5.phv00177930.v5`
+    * 2 component_study_variables: `phs000007.v30.pht000030.v8.phv00007612.v6`, `phs000007.v30.pht003099.v5.phv00177930.v5`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4179,7 +4179,7 @@
       ```
 <a id="current_smoker_baseline_1-fhs_omni1"></a>
   * ### baseline_common_covariates/current_smoker_baseline_1 -- **FHS_Omni1**:
-    * component_study_variables: `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht004813.v1.phv00250452.v1`
+    * 2 component_study_variables: `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht004813.v1.phv00250452.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4197,7 +4197,7 @@
       ```
 <a id="current_smoker_baseline_1-fhs_original"></a>
   * ### baseline_common_covariates/current_smoker_baseline_1 -- **FHS_Original**:
-    * component_study_variables: `phs000007.v30.pht000009.v2.phv00000543.v1`, `phs000007.v30.pht003099.v5.phv00177930.v5`
+    * 2 component_study_variables: `phs000007.v30.pht000009.v2.phv00000543.v1`, `phs000007.v30.pht003099.v5.phv00177930.v5`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4221,7 +4221,7 @@
       ```
 <a id="current_smoker_baseline_1-galaii"></a>
   * ### baseline_common_covariates/current_smoker_baseline_1 -- **GALAII**:
-    * component_study_variables: `phs001180.v1.pht006991.v1.phv00320630.v1`, `phs001180.v1.pht006991.v1.phv00320635.v1`
+    * 2 component_study_variables: `phs001180.v1.pht006991.v1.phv00320630.v1`, `phs001180.v1.pht006991.v1.phv00320635.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4239,7 +4239,7 @@
       ```
 <a id="current_smoker_baseline_1-genestar"></a>
   * ### baseline_common_covariates/current_smoker_baseline_1 -- **GeneSTAR**:
-    * component_study_variables: `phs001218.v1.pht007766.v1.phv00369267.v1`, `phs001218.v1.pht007766.v1.phv00369268.v1`, `phs001218.v1.pht007766.v1.phv00369293.v1`, `phs001218.v1.pht007766.v1.phv00369294.v1`
+    * 4 component_study_variables: `phs001218.v1.pht007766.v1.phv00369267.v1`, `phs001218.v1.pht007766.v1.phv00369268.v1`, `phs001218.v1.pht007766.v1.phv00369293.v1`, `phs001218.v1.pht007766.v1.phv00369294.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4282,7 +4282,7 @@
       ```
 <a id="current_smoker_baseline_1-genoa"></a>
   * ### baseline_common_covariates/current_smoker_baseline_1 -- **GENOA**:
-    * component_study_variables: `phs001238.v2.pht006039.v1.phv00277507.v1`, `phs001238.v2.pht006043.v1.phv00277618.v1`, `phs001238.v2.pht006043.v1.phv00277621.v1`, `phs001238.v2.pht006653.v1.phv00307788.v1`, `phs001238.v2.pht006657.v1.phv00307899.v1`, `phs001238.v2.pht006657.v1.phv00307902.v1`
+    * 6 component_study_variables: `phs001238.v2.pht006039.v1.phv00277507.v1`, `phs001238.v2.pht006043.v1.phv00277618.v1`, `phs001238.v2.pht006043.v1.phv00277621.v1`, `phs001238.v2.pht006653.v1.phv00307788.v1`, `phs001238.v2.pht006657.v1.phv00307899.v1`, `phs001238.v2.pht006657.v1.phv00307902.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4316,7 +4316,7 @@
       ```
 <a id="current_smoker_baseline_1-hchs_sol"></a>
   * ### baseline_common_covariates/current_smoker_baseline_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00258106.v1`, `phs000810.v1.pht004715.v1.phv00258107.v1`, `phs000810.v1.pht004715.v1.phv00258108.v1`, `phs000810.v1.pht004715.v1.phv00258110.v1`
+    * 5 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00258106.v1`, `phs000810.v1.pht004715.v1.phv00258107.v1`, `phs000810.v1.pht004715.v1.phv00258108.v1`, `phs000810.v1.pht004715.v1.phv00258110.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4346,7 +4346,7 @@
       ```
 <a id="current_smoker_baseline_1-hvh"></a>
   * ### baseline_common_covariates/current_smoker_baseline_1 -- **HVH**:
-    * component_study_variables: `phs001013.v3.pht005311.v2.phv00259376.v2`, `phs001013.v3.pht005311.v2.phv00259377.v2`, `phs001013.v3.pht005311.v2.phv00259378.v2`, `phs001013.v3.pht005311.v2.phv00259394.v2`
+    * 4 component_study_variables: `phs001013.v3.pht005311.v2.phv00259376.v2`, `phs001013.v3.pht005311.v2.phv00259377.v2`, `phs001013.v3.pht005311.v2.phv00259378.v2`, `phs001013.v3.pht005311.v2.phv00259394.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4376,7 +4376,7 @@
       ```
 <a id="current_smoker_baseline_1-jhs"></a>
   * ### baseline_common_covariates/current_smoker_baseline_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001977.v1.phv00128496.v1`, `phs000286.v5.pht001977.v1.phv00128498.v1`
+    * 3 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001977.v1.phv00128496.v1`, `phs000286.v5.pht001977.v1.phv00128498.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4397,7 +4397,7 @@
       ```
 <a id="current_smoker_baseline_1-mayo_vte_geneva"></a>
   * ### baseline_common_covariates/current_smoker_baseline_1 -- **Mayo_VTE_GENEVA**:
-    * component_study_variables: `phs000289.v2.pht001886.v2.phv00121846.v1`, `phs000289.v2.pht001886.v2.phv00121874.v2`
+    * 2 component_study_variables: `phs000289.v2.pht001886.v2.phv00121846.v1`, `phs000289.v2.pht001886.v2.phv00121874.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4423,7 +4423,7 @@
       ```
 <a id="current_smoker_baseline_1-mayo_vte_olmsted"></a>
   * ### baseline_common_covariates/current_smoker_baseline_1 -- **Mayo_VTE_Olmsted**:
-    * component_study_variables: `phs001402.v1.pht008239.v1.phv00389902.v1`, `phs001402.v1.pht008239.v1.phv00389930.v1`
+    * 2 component_study_variables: `phs001402.v1.pht008239.v1.phv00389902.v1`, `phs001402.v1.pht008239.v1.phv00389930.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4448,7 +4448,7 @@
       ```
 <a id="current_smoker_baseline_1-mesa"></a>
   * ### baseline_common_covariates/current_smoker_baseline_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00083243.v1`, `phs000209.v13.pht001111.v4.phv00083245.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085570.v2`, `phs000209.v13.pht001116.v10.phv00085572.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087252.v1`, `phs000209.v13.pht001121.v3.phv00087254.v1`
+    * 9 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00083243.v1`, `phs000209.v13.pht001111.v4.phv00083245.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085570.v2`, `phs000209.v13.pht001116.v10.phv00085572.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087252.v1`, `phs000209.v13.pht001121.v3.phv00087254.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4476,7 +4476,7 @@
       ```
 <a id="current_smoker_baseline_1-sage"></a>
   * ### baseline_common_covariates/current_smoker_baseline_1 -- **SAGE**:
-    * component_study_variables: `phs000921.v3.pht004883.v3.phv00252283.v3`, `phs000921.v3.pht004883.v3.phv00347787.v2`
+    * 2 component_study_variables: `phs000921.v3.pht004883.v3.phv00252283.v3`, `phs000921.v3.pht004883.v3.phv00347787.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4500,7 +4500,7 @@
       ```
 <a id="current_smoker_baseline_1-sas"></a>
   * ### baseline_common_covariates/current_smoker_baseline_1 -- **SAS**:
-    * component_study_variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258705.v1`
+    * 2 component_study_variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258705.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -4523,7 +4523,7 @@
       ```
 <a id="current_smoker_baseline_1-wghs"></a>
   * ### baseline_common_covariates/current_smoker_baseline_1 -- **WGHS**:
-    * component_study_variables: `phs001040.v3.pht005682.v3.phv00265848.v3`, `phs001040.v3.pht005682.v3.phv00375260.v1`
+    * 2 component_study_variables: `phs001040.v3.pht005682.v3.phv00265848.v3`, `phs001040.v3.pht005682.v3.phv00375260.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4548,7 +4548,7 @@
       ```
 <a id="current_smoker_baseline_1-whi"></a>
   * ### baseline_common_covariates/current_smoker_baseline_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001003.v6.phv00078773.v6`, `phs000200.v11.pht001003.v6.phv00078774.v6`, `phs000200.v11.pht001003.v6.phv00078776.v6`
+    * 5 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001003.v6.phv00078773.v6`, `phs000200.v11.pht001003.v6.phv00078774.v6`, `phs000200.v11.pht001003.v6.phv00078776.v6`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4658,7 +4658,7 @@
     
 <a id="ever_smoker_baseline_1-aric"></a>
   * ### baseline_common_covariates/ever_smoker_baseline_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v5.pht004063.v2.phv00204712.v1`, `phs000280.v5.pht004111.v2.phv00207368.v1`, `phs000280.v5.pht004111.v2.phv00207369.v1`, `phs000280.v5.pht004111.v2.phv00207370.v1`, `phs000280.v5.pht004111.v2.phv00207375.v1`, `phs000280.v5.pht004111.v2.phv00207376.v1`
+    * 6 component_study_variables: `phs000280.v5.pht004063.v2.phv00204712.v1`, `phs000280.v5.pht004111.v2.phv00207368.v1`, `phs000280.v5.pht004111.v2.phv00207369.v1`, `phs000280.v5.pht004111.v2.phv00207370.v1`, `phs000280.v5.pht004111.v2.phv00207375.v1`, `phs000280.v5.pht004111.v2.phv00207376.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4688,7 +4688,7 @@
       ```
 <a id="ever_smoker_baseline_1-bags"></a>
   * ### baseline_common_covariates/ever_smoker_baseline_1 -- **BAGS**:
-    * component_study_variables: `phs001143.v2.pht005905.v2.phv00273211.v2`, `phs001143.v2.pht005905.v2.phv00375339.v1`, `phs001143.v2.pht005905.v2.phv00375343.v1`
+    * 3 component_study_variables: `phs001143.v2.pht005905.v2.phv00273211.v2`, `phs001143.v2.pht005905.v2.phv00375339.v1`, `phs001143.v2.pht005905.v2.phv00375343.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4714,7 +4714,7 @@
       ```
 <a id="ever_smoker_baseline_1-cardia"></a>
   * ### baseline_common_covariates/ever_smoker_baseline_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001573.v2.phv00113213.v2`
+    * 2 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001573.v2.phv00113213.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4739,7 +4739,7 @@
       ```
 <a id="ever_smoker_baseline_1-cfs"></a>
   * ### baseline_common_covariates/ever_smoker_baseline_1 -- **CFS**:
-    * component_study_variables: `phs000284.v2.pht001902.v1.phv00122012.v1`, `phs000284.v2.pht001902.v1.phv00122015.v1`, `phs000284.v2.pht001902.v1.phv00122340.v1`, `phs000284.v2.pht001902.v1.phv00122341.v1`, `phs000284.v2.pht001902.v1.phv00122342.v1`, `phs000284.v2.pht001902.v1.phv00122343.v1`, `phs000284.v2.pht001902.v1.phv00122344.v1`
+    * 7 component_study_variables: `phs000284.v2.pht001902.v1.phv00122012.v1`, `phs000284.v2.pht001902.v1.phv00122015.v1`, `phs000284.v2.pht001902.v1.phv00122340.v1`, `phs000284.v2.pht001902.v1.phv00122341.v1`, `phs000284.v2.pht001902.v1.phv00122342.v1`, `phs000284.v2.pht001902.v1.phv00122343.v1`, `phs000284.v2.pht001902.v1.phv00122344.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4771,7 +4771,7 @@
       ```
 <a id="ever_smoker_baseline_1-chs"></a>
   * ### baseline_common_covariates/ever_smoker_baseline_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001450.v1.phv00098844.v1`, `phs000287.v6.pht001450.v1.phv00098845.v1`, `phs000287.v6.pht001450.v1.phv00099157.v1`, `phs000287.v6.pht001450.v1.phv00099159.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001490.v1.phv00105143.v1`, `phs000287.v6.pht001490.v1.phv00105144.v1`, `phs000287.v6.pht001490.v1.phv00106198.v1`, `phs000287.v6.pht001490.v1.phv00106200.v1`
+    * 9 component_study_variables: `phs000287.v6.pht001450.v1.phv00098844.v1`, `phs000287.v6.pht001450.v1.phv00098845.v1`, `phs000287.v6.pht001450.v1.phv00099157.v1`, `phs000287.v6.pht001450.v1.phv00099159.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001490.v1.phv00105143.v1`, `phs000287.v6.pht001490.v1.phv00105144.v1`, `phs000287.v6.pht001490.v1.phv00106198.v1`, `phs000287.v6.pht001490.v1.phv00106200.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4815,7 +4815,7 @@
       ```
 <a id="ever_smoker_baseline_1-copdgene"></a>
   * ### baseline_common_covariates/ever_smoker_baseline_1 -- **COPDGene**:
-    * component_study_variables: `phs000179.v5.pht002239.v4.phv00159636.v4`, `phs000179.v5.pht002239.v4.phv00159637.v4`, `phs000179.v5.pht002239.v4.phv00159638.v4`, `phs000179.v5.pht002239.v4.phv00159639.v4`, `phs000179.v5.pht002239.v4.phv00159640.v4`, `phs000179.v5.pht002239.v4.phv00159641.v4`, `phs000179.v5.pht002239.v4.phv00159747.v4`, `phs000179.v5.pht002239.v4.phv00159748.v4`, `phs000179.v5.pht002239.v4.phv00159749.v4`, `phs000179.v5.pht002239.v4.phv00159750.v4`, `phs000179.v5.pht002239.v4.phv00159752.v4`, `phs000179.v5.pht002239.v4.phv00159754.v4`, `phs000179.v5.pht002239.v4.phv00159755.v4`, `phs000179.v5.pht002239.v4.phv00159756.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`, `phs000179.v5.pht002239.v4.phv00169388.v3`
+    * 16 component_study_variables: `phs000179.v5.pht002239.v4.phv00159636.v4`, `phs000179.v5.pht002239.v4.phv00159637.v4`, `phs000179.v5.pht002239.v4.phv00159638.v4`, `phs000179.v5.pht002239.v4.phv00159639.v4`, `phs000179.v5.pht002239.v4.phv00159640.v4`, `phs000179.v5.pht002239.v4.phv00159641.v4`, `phs000179.v5.pht002239.v4.phv00159747.v4`, `phs000179.v5.pht002239.v4.phv00159748.v4`, `phs000179.v5.pht002239.v4.phv00159749.v4`, `phs000179.v5.pht002239.v4.phv00159750.v4`, `phs000179.v5.pht002239.v4.phv00159752.v4`, `phs000179.v5.pht002239.v4.phv00159754.v4`, `phs000179.v5.pht002239.v4.phv00159755.v4`, `phs000179.v5.pht002239.v4.phv00159756.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`, `phs000179.v5.pht002239.v4.phv00169388.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4839,7 +4839,7 @@
       ```
 <a id="ever_smoker_baseline_1-cra"></a>
   * ### baseline_common_covariates/ever_smoker_baseline_1 -- **CRA**:
-    * component_study_variables: `phs000988.v2.pht005248.v2.phv00258650.v2`, `phs000988.v2.pht005248.v2.phv00267374.v2`, `phs000988.v2.pht005248.v2.phv00267375.v2`, `phs000988.v2.pht005248.v2.phv00267376.v2`, `phs000988.v2.pht005248.v2.phv00267378.v2`, `phs000988.v2.pht005248.v2.phv00267379.v2`
+    * 6 component_study_variables: `phs000988.v2.pht005248.v2.phv00258650.v2`, `phs000988.v2.pht005248.v2.phv00267374.v2`, `phs000988.v2.pht005248.v2.phv00267375.v2`, `phs000988.v2.pht005248.v2.phv00267376.v2`, `phs000988.v2.pht005248.v2.phv00267378.v2`, `phs000988.v2.pht005248.v2.phv00267379.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4869,7 +4869,7 @@
       ```
 <a id="ever_smoker_baseline_1-fhs_nos_gen3_omni2"></a>
   * ### baseline_common_covariates/ever_smoker_baseline_1 -- **FHS_NOS_Gen3_Omni2**:
-    * component_study_variables: `phs000007.v30.pht000074.v11.phv00020925.v5`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht006005.v1.phv00273759.v1`, `phs000007.v30.pht006006.v2.phv00274252.v2`
+    * 4 component_study_variables: `phs000007.v30.pht000074.v11.phv00020925.v5`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht006005.v1.phv00273759.v1`, `phs000007.v30.pht006006.v2.phv00274252.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4894,7 +4894,7 @@
       ```
 <a id="ever_smoker_baseline_1-fhs_offspring"></a>
   * ### baseline_common_covariates/ever_smoker_baseline_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v30.pht000030.v8.phv00007612.v6`, `phs000007.v30.pht003099.v5.phv00177930.v5`
+    * 2 component_study_variables: `phs000007.v30.pht000030.v8.phv00007612.v6`, `phs000007.v30.pht003099.v5.phv00177930.v5`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4913,7 +4913,7 @@
       ```
 <a id="ever_smoker_baseline_1-fhs_omni1"></a>
   * ### baseline_common_covariates/ever_smoker_baseline_1 -- **FHS_Omni1**:
-    * component_study_variables: `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht004813.v1.phv00250452.v1`, `phs000007.v30.pht004814.v1.phv00251240.v1`, `phs000007.v30.pht004814.v1.phv00251241.v1`, `phs000007.v30.pht004814.v1.phv00251242.v1`
+    * 5 component_study_variables: `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht004813.v1.phv00250452.v1`, `phs000007.v30.pht004814.v1.phv00251240.v1`, `phs000007.v30.pht004814.v1.phv00251241.v1`, `phs000007.v30.pht004814.v1.phv00251242.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4952,7 +4952,7 @@
       ```
 <a id="ever_smoker_baseline_1-fhs_original"></a>
   * ### baseline_common_covariates/ever_smoker_baseline_1 -- **FHS_Original**:
-    * component_study_variables: `phs000007.v30.pht000009.v2.phv00000543.v1`, `phs000007.v30.pht003099.v5.phv00177930.v5`
+    * 2 component_study_variables: `phs000007.v30.pht000009.v2.phv00000543.v1`, `phs000007.v30.pht003099.v5.phv00177930.v5`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -4972,7 +4972,7 @@
       ```
 <a id="ever_smoker_baseline_1-genestar"></a>
   * ### baseline_common_covariates/ever_smoker_baseline_1 -- **GeneSTAR**:
-    * component_study_variables: `phs001218.v1.pht007766.v1.phv00369267.v1`, `phs001218.v1.pht007766.v1.phv00369268.v1`, `phs001218.v1.pht007766.v1.phv00369293.v1`, `phs001218.v1.pht007766.v1.phv00369296.v1`
+    * 4 component_study_variables: `phs001218.v1.pht007766.v1.phv00369267.v1`, `phs001218.v1.pht007766.v1.phv00369268.v1`, `phs001218.v1.pht007766.v1.phv00369293.v1`, `phs001218.v1.pht007766.v1.phv00369296.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5016,7 +5016,7 @@
       ```
 <a id="ever_smoker_baseline_1-genoa"></a>
   * ### baseline_common_covariates/ever_smoker_baseline_1 -- **GENOA**:
-    * component_study_variables: `phs001238.v2.pht006039.v1.phv00277507.v1`, `phs001238.v2.pht006043.v1.phv00277618.v1`, `phs001238.v2.pht006043.v1.phv00277621.v1`, `phs001238.v2.pht006043.v1.phv00277624.v1`, `phs001238.v2.pht006653.v1.phv00307788.v1`, `phs001238.v2.pht006657.v1.phv00307899.v1`, `phs001238.v2.pht006657.v1.phv00307902.v1`, `phs001238.v2.pht006657.v1.phv00307905.v1`
+    * 8 component_study_variables: `phs001238.v2.pht006039.v1.phv00277507.v1`, `phs001238.v2.pht006043.v1.phv00277618.v1`, `phs001238.v2.pht006043.v1.phv00277621.v1`, `phs001238.v2.pht006043.v1.phv00277624.v1`, `phs001238.v2.pht006653.v1.phv00307788.v1`, `phs001238.v2.pht006657.v1.phv00307899.v1`, `phs001238.v2.pht006657.v1.phv00307902.v1`, `phs001238.v2.pht006657.v1.phv00307905.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5062,7 +5062,7 @@
       ```
 <a id="ever_smoker_baseline_1-hchs_sol"></a>
   * ### baseline_common_covariates/ever_smoker_baseline_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00258106.v1`, `phs000810.v1.pht004715.v1.phv00258107.v1`, `phs000810.v1.pht004715.v1.phv00258108.v1`, `phs000810.v1.pht004715.v1.phv00258110.v1`
+    * 5 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00258106.v1`, `phs000810.v1.pht004715.v1.phv00258107.v1`, `phs000810.v1.pht004715.v1.phv00258108.v1`, `phs000810.v1.pht004715.v1.phv00258110.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5094,7 +5094,7 @@
       ```
 <a id="ever_smoker_baseline_1-hvh"></a>
   * ### baseline_common_covariates/ever_smoker_baseline_1 -- **HVH**:
-    * component_study_variables: `phs001013.v3.pht005311.v2.phv00259376.v2`, `phs001013.v3.pht005311.v2.phv00259377.v2`, `phs001013.v3.pht005311.v2.phv00259378.v2`, `phs001013.v3.pht005311.v2.phv00259394.v2`
+    * 4 component_study_variables: `phs001013.v3.pht005311.v2.phv00259376.v2`, `phs001013.v3.pht005311.v2.phv00259377.v2`, `phs001013.v3.pht005311.v2.phv00259378.v2`, `phs001013.v3.pht005311.v2.phv00259394.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5123,7 +5123,7 @@
       ```
 <a id="ever_smoker_baseline_1-jhs"></a>
   * ### baseline_common_covariates/ever_smoker_baseline_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001977.v1.phv00128496.v1`, `phs000286.v5.pht001977.v1.phv00128498.v1`, `phs000286.v5.pht001977.v1.phv00128502.v1`, `phs000286.v5.pht001977.v1.phv00128503.v1`, `phs000286.v5.pht001977.v1.phv00128506.v1`, `phs000286.v5.pht001977.v1.phv00128507.v1`
+    * 7 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001977.v1.phv00128496.v1`, `phs000286.v5.pht001977.v1.phv00128498.v1`, `phs000286.v5.pht001977.v1.phv00128502.v1`, `phs000286.v5.pht001977.v1.phv00128503.v1`, `phs000286.v5.pht001977.v1.phv00128506.v1`, `phs000286.v5.pht001977.v1.phv00128507.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5157,7 +5157,7 @@
       ```
 <a id="ever_smoker_baseline_1-mayo_vte_geneva"></a>
   * ### baseline_common_covariates/ever_smoker_baseline_1 -- **Mayo_VTE_GENEVA**:
-    * component_study_variables: `phs000289.v2.pht001886.v2.phv00121846.v1`, `phs000289.v2.pht001886.v2.phv00121874.v2`
+    * 2 component_study_variables: `phs000289.v2.pht001886.v2.phv00121846.v1`, `phs000289.v2.pht001886.v2.phv00121874.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5183,7 +5183,7 @@
       ```
 <a id="ever_smoker_baseline_1-mayo_vte_olmsted"></a>
   * ### baseline_common_covariates/ever_smoker_baseline_1 -- **Mayo_VTE_Olmsted**:
-    * component_study_variables: `phs001402.v1.pht008239.v1.phv00389902.v1`, `phs001402.v1.pht008239.v1.phv00389930.v1`
+    * 2 component_study_variables: `phs001402.v1.pht008239.v1.phv00389902.v1`, `phs001402.v1.pht008239.v1.phv00389930.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5208,7 +5208,7 @@
       ```
 <a id="ever_smoker_baseline_1-mesa"></a>
   * ### baseline_common_covariates/ever_smoker_baseline_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00083243.v1`, `phs000209.v13.pht001111.v4.phv00083245.v1`, `phs000209.v13.pht001111.v4.phv00083247.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085570.v2`, `phs000209.v13.pht001116.v10.phv00085572.v2`, `phs000209.v13.pht001116.v10.phv00085574.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087252.v1`, `phs000209.v13.pht001121.v3.phv00087254.v1`, `phs000209.v13.pht001121.v3.phv00087256.v1`
+    * 12 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00083243.v1`, `phs000209.v13.pht001111.v4.phv00083245.v1`, `phs000209.v13.pht001111.v4.phv00083247.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085570.v2`, `phs000209.v13.pht001116.v10.phv00085572.v2`, `phs000209.v13.pht001116.v10.phv00085574.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087252.v1`, `phs000209.v13.pht001121.v3.phv00087254.v1`, `phs000209.v13.pht001121.v3.phv00087256.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5243,7 +5243,7 @@
       ```
 <a id="ever_smoker_baseline_1-sas"></a>
   * ### baseline_common_covariates/ever_smoker_baseline_1 -- **SAS**:
-    * component_study_variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258705.v1`, `phs000914.v1.pht005253.v1.phv00258713.v1`
+    * 3 component_study_variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258705.v1`, `phs000914.v1.pht005253.v1.phv00258713.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -5266,7 +5266,7 @@
       ```
 <a id="ever_smoker_baseline_1-wghs"></a>
   * ### baseline_common_covariates/ever_smoker_baseline_1 -- **WGHS**:
-    * component_study_variables: `phs001040.v3.pht005682.v3.phv00265848.v3`, `phs001040.v3.pht005682.v3.phv00375260.v1`
+    * 2 component_study_variables: `phs001040.v3.pht005682.v3.phv00265848.v3`, `phs001040.v3.pht005682.v3.phv00375260.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5292,7 +5292,7 @@
       ```
 <a id="ever_smoker_baseline_1-whi"></a>
   * ### baseline_common_covariates/ever_smoker_baseline_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001003.v6.phv00078773.v6`, `phs000200.v11.pht001003.v6.phv00078774.v6`
+    * 4 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001003.v6.phv00078773.v6`, `phs000200.v11.pht001003.v6.phv00078774.v6`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5409,7 +5409,7 @@
     
 <a id="height_baseline_1-amish"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **Amish**:
-    * component_study_variables: `phs000956.v3.pht005002.v1.phv00252976.v1`, `phs000956.v3.pht005002.v1.phv00252982.v1`
+    * 2 component_study_variables: `phs000956.v3.pht005002.v1.phv00252976.v1`, `phs000956.v3.pht005002.v1.phv00252982.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5431,7 +5431,7 @@
       ```
 <a id="height_baseline_1-aric"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v5.pht004032.v2.phv00203151.v1`, `phs000280.v5.pht004063.v2.phv00204712.v1`
+    * 2 component_study_variables: `phs000280.v5.pht004032.v2.phv00203151.v1`, `phs000280.v5.pht004063.v2.phv00204712.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5453,7 +5453,7 @@
       ```
 <a id="height_baseline_1-bags"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **BAGS**:
-    * component_study_variables: `phs001143.v2.pht005905.v2.phv00273211.v2`, `phs001143.v2.pht005905.v2.phv00375338.v1`
+    * 2 component_study_variables: `phs001143.v2.pht005905.v2.phv00273211.v2`, `phs001143.v2.pht005905.v2.phv00375338.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5475,7 +5475,7 @@
       ```
 <a id="height_baseline_1-cardia"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001583.v2.phv00113634.v2`
+    * 2 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001583.v2.phv00113634.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5492,7 +5492,7 @@
       ```
 <a id="height_baseline_1-ccaf"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **CCAF**:
-    * component_study_variables: `phs001189.v2.pht005979.v2.phv00273546.v2`, `phs001189.v2.pht005979.v2.phv00273551.v2`
+    * 2 component_study_variables: `phs001189.v2.pht005979.v2.phv00273546.v2`, `phs001189.v2.pht005979.v2.phv00273551.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5520,7 +5520,7 @@
       ```
 <a id="height_baseline_1-cfs"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **CFS**:
-    * component_study_variables: `phs000284.v2.pht001902.v1.phv00122012.v1`, `phs000284.v2.pht001902.v1.phv00122015.v1`, `phs000284.v2.pht001902.v1.phv00122640.v1`
+    * 3 component_study_variables: `phs000284.v2.pht001902.v1.phv00122012.v1`, `phs000284.v2.pht001902.v1.phv00122015.v1`, `phs000284.v2.pht001902.v1.phv00122640.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5546,7 +5546,7 @@
       ```
 <a id="height_baseline_1-chs"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100382.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
+    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100382.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5565,7 +5565,7 @@
       ```
 <a id="height_baseline_1-copdgene"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **COPDGene**:
-    * component_study_variables: `phs000179.v5.pht002239.v4.phv00159592.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
+    * 2 component_study_variables: `phs000179.v5.pht002239.v4.phv00159592.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5583,7 +5583,7 @@
       ```
 <a id="height_baseline_1-cra"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **CRA**:
-    * component_study_variables: `phs000988.v2.pht005248.v2.phv00258650.v2`, `phs000988.v2.pht005248.v2.phv00267371.v2`
+    * 2 component_study_variables: `phs000988.v2.pht005248.v2.phv00258650.v2`, `phs000988.v2.pht005248.v2.phv00267371.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5599,7 +5599,7 @@
       ```
 <a id="height_baseline_1-dhs"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **DHS**:
-    * component_study_variables: `phs001412.v1.pht006746.v1.phv00310016.v1`, `phs001412.v1.pht006746.v1.phv00310030.v1`
+    * 2 component_study_variables: `phs001412.v1.pht006746.v1.phv00310016.v1`, `phs001412.v1.pht006746.v1.phv00310030.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5615,7 +5615,7 @@
       ```
 <a id="height_baseline_1-fhs_omni1"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **FHS_Omni1**:
-    * component_study_variables: `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht004813.v1.phv00250288.v1`
+    * 2 component_study_variables: `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht004813.v1.phv00250288.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5639,7 +5639,7 @@
       ```
 <a id="height_baseline_1-fhs_original"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **FHS_Original**:
-    * component_study_variables: `phs000007.v30.pht000009.v2.phv00000539.v1`, `phs000007.v30.pht000009.v2.phv00000540.v1`, `phs000007.v30.pht003099.v5.phv00177930.v5`
+    * 3 component_study_variables: `phs000007.v30.pht000009.v2.phv00000539.v1`, `phs000007.v30.pht000009.v2.phv00000540.v1`, `phs000007.v30.pht003099.v5.phv00177930.v5`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5665,7 +5665,7 @@
       ```
 <a id="height_baseline_1-fhs_workthru"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **FHS_Workthru**:
-    * component_study_variables: `phs000007.v30.pht006026.v2.phv00277020.v2`, `phs000007.v30.pht006026.v2.phv00277042.v2`, `phs000007.v30.pht006027.v2.phv00277077.v2`, `phs000007.v30.pht006027.v2.phv00277171.v2`
+    * 4 component_study_variables: `phs000007.v30.pht006026.v2.phv00277020.v2`, `phs000007.v30.pht006026.v2.phv00277042.v2`, `phs000007.v30.pht006027.v2.phv00277077.v2`, `phs000007.v30.pht006027.v2.phv00277171.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5684,7 +5684,7 @@
       ```
 <a id="height_baseline_1-genestar"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **GeneSTAR**:
-    * component_study_variables: `phs001218.v1.pht007766.v1.phv00369267.v1`, `phs001218.v1.pht007766.v1.phv00369268.v1`, `phs001218.v1.pht007766.v1.phv00369271.v1`
+    * 3 component_study_variables: `phs001218.v1.pht007766.v1.phv00369267.v1`, `phs001218.v1.pht007766.v1.phv00369268.v1`, `phs001218.v1.pht007766.v1.phv00369271.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5724,7 +5724,7 @@
       ```
 <a id="height_baseline_1-genoa"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **GENOA**:
-    * component_study_variables: `phs001238.v2.pht006039.v1.phv00277507.v1`, `phs001238.v2.pht006039.v1.phv00277514.v1`, `phs001238.v2.pht006653.v1.phv00307788.v1`, `phs001238.v2.pht006653.v1.phv00307795.v1`
+    * 4 component_study_variables: `phs001238.v2.pht006039.v1.phv00277507.v1`, `phs001238.v2.pht006039.v1.phv00277514.v1`, `phs001238.v2.pht006653.v1.phv00307788.v1`, `phs001238.v2.pht006653.v1.phv00307795.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5742,7 +5742,7 @@
       ```
 <a id="height_baseline_1-hchs_sol"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226281.v1`
+    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226281.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5759,7 +5759,7 @@
       ```
 <a id="height_baseline_1-hvh"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **HVH**:
-    * component_study_variables: `phs001013.v3.pht005311.v2.phv00259376.v2`, `phs001013.v3.pht005311.v2.phv00259377.v2`, `phs001013.v3.pht005311.v2.phv00259378.v2`, `phs001013.v3.pht005311.v2.phv00259392.v2`
+    * 4 component_study_variables: `phs001013.v3.pht005311.v2.phv00259376.v2`, `phs001013.v3.pht005311.v2.phv00259377.v2`, `phs001013.v3.pht005311.v2.phv00259378.v2`, `phs001013.v3.pht005311.v2.phv00259392.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5790,7 +5790,7 @@
       ```
 <a id="height_baseline_1-jhs"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001940.v1.phv00125860.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
+    * 2 component_study_variables: `phs000286.v5.pht001940.v1.phv00125860.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5812,7 +5812,7 @@
       ```
 <a id="height_baseline_1-mayo_vte_geneva"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **Mayo_VTE_GENEVA**:
-    * component_study_variables: `phs000289.v2.pht001886.v2.phv00121846.v1`, `phs000289.v2.pht001886.v2.phv00121872.v2`
+    * 2 component_study_variables: `phs000289.v2.pht001886.v2.phv00121846.v1`, `phs000289.v2.pht001886.v2.phv00121872.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5829,7 +5829,7 @@
       ```
 <a id="height_baseline_1-mayo_vte_olmsted"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **Mayo_VTE_Olmsted**:
-    * component_study_variables: `phs001402.v1.pht008239.v1.phv00389902.v1`, `phs001402.v1.pht008239.v1.phv00389928.v1`
+    * 2 component_study_variables: `phs001402.v1.pht008239.v1.phv00389902.v1`, `phs001402.v1.pht008239.v1.phv00389928.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5852,7 +5852,7 @@
       ```
 <a id="height_baseline_1-mesa"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082683.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084482.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087078.v1`
+    * 6 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082683.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084482.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087078.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5877,7 +5877,7 @@
       ```
 <a id="height_baseline_1-mgh_af"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **MGH_AF**:
-    * component_study_variables: `phs001001.v1.pht005655.v1.phv00354560.v1`, `phs001001.v1.pht005655.v1.phv00354564.v1`
+    * 2 component_study_variables: `phs001001.v1.pht005655.v1.phv00354560.v1`, `phs001001.v1.pht005655.v1.phv00354564.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5903,7 +5903,7 @@
       ```
 <a id="height_baseline_1-partners"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **Partners**:
-    * component_study_variables: `phs001024.v3.pht005693.v1.phv00265978.v1`, `phs001024.v3.pht005693.v1.phv00265982.v1`
+    * 2 component_study_variables: `phs001024.v3.pht005693.v1.phv00265978.v1`, `phs001024.v3.pht005693.v1.phv00265982.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5930,7 +5930,7 @@
       ```
 <a id="height_baseline_1-sas"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **SAS**:
-    * component_study_variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258683.v1`
+    * 2 component_study_variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258683.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5949,7 +5949,7 @@
       ```
 <a id="height_baseline_1-vafar"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **VAFAR**:
-    * component_study_variables: `phs000997.v3.pht005688.v3.phv00265921.v3`, `phs000997.v3.pht005688.v3.phv00265926.v3`
+    * 2 component_study_variables: `phs000997.v3.pht005688.v3.phv00265921.v3`, `phs000997.v3.pht005688.v3.phv00265926.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -5977,7 +5977,7 @@
       ```
 <a id="height_baseline_1-vu_af"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **VU_AF**:
-    * component_study_variables: `phs001032.v4.pht005675.v3.phv00265805.v2`, `phs001032.v4.pht005675.v3.phv00265810.v2`
+    * 2 component_study_variables: `phs001032.v4.pht005675.v3.phv00265805.v2`, `phs001032.v4.pht005675.v3.phv00265810.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6004,7 +6004,7 @@
       ```
 <a id="height_baseline_1-wghs"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **WGHS**:
-    * component_study_variables: `phs001040.v3.pht005682.v3.phv00265848.v3`, `phs001040.v3.pht005682.v3.phv00375254.v1`
+    * 2 component_study_variables: `phs001040.v3.pht005682.v3.phv00265848.v3`, `phs001040.v3.pht005682.v3.phv00375254.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6029,7 +6029,7 @@
       ```
 <a id="height_baseline_1-whi"></a>
   * ### baseline_common_covariates/height_baseline_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001019.v6.phv00079851.v6`, `phs000200.v11.pht001019.v6.phv00079852.v6`, `phs000200.v11.pht001019.v6.phv00079858.v6`
+    * 5 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001019.v6.phv00079851.v6`, `phs000200.v11.pht001019.v6.phv00079852.v6`, `phs000200.v11.pht001019.v6.phv00079858.v6`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6158,7 +6158,7 @@
     
 <a id="weight_baseline_1-amish"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **Amish**:
-    * component_study_variables: `phs000956.v3.pht005002.v1.phv00252976.v1`, `phs000956.v3.pht005002.v1.phv00252979.v1`
+    * 2 component_study_variables: `phs000956.v3.pht005002.v1.phv00252976.v1`, `phs000956.v3.pht005002.v1.phv00252979.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6181,7 +6181,7 @@
       ```
 <a id="weight_baseline_1-aric"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v5.pht004032.v2.phv00203154.v1`, `phs000280.v5.pht004063.v2.phv00204712.v1`
+    * 2 component_study_variables: `phs000280.v5.pht004032.v2.phv00203154.v1`, `phs000280.v5.pht004063.v2.phv00204712.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6205,7 +6205,7 @@
       ```
 <a id="weight_baseline_1-bags"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **BAGS**:
-    * component_study_variables: `phs001143.v2.pht005905.v2.phv00273211.v2`, `phs001143.v2.pht005905.v2.phv00375337.v1`
+    * 2 component_study_variables: `phs001143.v2.pht005905.v2.phv00273211.v2`, `phs001143.v2.pht005905.v2.phv00375337.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6227,7 +6227,7 @@
       ```
 <a id="weight_baseline_1-cardia"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001583.v2.phv00113635.v2`
+    * 2 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001583.v2.phv00113635.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6243,7 +6243,7 @@
       ```
 <a id="weight_baseline_1-ccaf"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **CCAF**:
-    * component_study_variables: `phs001189.v2.pht005979.v2.phv00273546.v2`, `phs001189.v2.pht005979.v2.phv00273552.v2`
+    * 2 component_study_variables: `phs001189.v2.pht005979.v2.phv00273546.v2`, `phs001189.v2.pht005979.v2.phv00273552.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6271,7 +6271,7 @@
       ```
 <a id="weight_baseline_1-cfs"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **CFS**:
-    * component_study_variables: `phs000284.v2.pht001902.v1.phv00122012.v1`, `phs000284.v2.pht001902.v1.phv00122015.v1`, `phs000284.v2.pht001902.v1.phv00122639.v1`
+    * 3 component_study_variables: `phs000284.v2.pht001902.v1.phv00122012.v1`, `phs000284.v2.pht001902.v1.phv00122015.v1`, `phs000284.v2.pht001902.v1.phv00122639.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6296,7 +6296,7 @@
       ```
 <a id="weight_baseline_1-chs"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100383.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
+    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100383.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6314,7 +6314,7 @@
       ```
 <a id="weight_baseline_1-copdgene"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **COPDGene**:
-    * component_study_variables: `phs000179.v5.pht002239.v4.phv00159591.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
+    * 2 component_study_variables: `phs000179.v5.pht002239.v4.phv00159591.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6333,7 +6333,7 @@
       ```
 <a id="weight_baseline_1-cra"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **CRA**:
-    * component_study_variables: `phs000988.v2.pht005248.v2.phv00258650.v2`, `phs000988.v2.pht005248.v2.phv00267372.v2`
+    * 2 component_study_variables: `phs000988.v2.pht005248.v2.phv00258650.v2`, `phs000988.v2.pht005248.v2.phv00267372.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6350,7 +6350,7 @@
       ```
 <a id="weight_baseline_1-dhs"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **DHS**:
-    * component_study_variables: `phs001412.v1.pht006746.v1.phv00310016.v1`, `phs001412.v1.pht006746.v1.phv00310029.v1`
+    * 2 component_study_variables: `phs001412.v1.pht006746.v1.phv00310016.v1`, `phs001412.v1.pht006746.v1.phv00310029.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6366,7 +6366,7 @@
       ```
 <a id="weight_baseline_1-fhs_original_omni1"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **FHS_Original_Omni1**:
-    * component_study_variables: `phs000007.v30.pht000009.v2.phv00000541.v1`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht004813.v1.phv00250287.v1`
+    * 3 component_study_variables: `phs000007.v30.pht000009.v2.phv00000541.v1`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht004813.v1.phv00250287.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6396,7 +6396,7 @@
       ```
 <a id="weight_baseline_1-fhs_workthru"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **FHS_Workthru**:
-    * component_study_variables: `phs000007.v30.pht006026.v2.phv00277020.v2`, `phs000007.v30.pht006026.v2.phv00277055.v2`, `phs000007.v30.pht006027.v2.phv00277077.v2`, `phs000007.v30.pht006027.v2.phv00277227.v2`
+    * 4 component_study_variables: `phs000007.v30.pht006026.v2.phv00277020.v2`, `phs000007.v30.pht006026.v2.phv00277055.v2`, `phs000007.v30.pht006027.v2.phv00277077.v2`, `phs000007.v30.pht006027.v2.phv00277227.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6414,7 +6414,7 @@
       ```
 <a id="weight_baseline_1-genestar"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **GeneSTAR**:
-    * component_study_variables: `phs001218.v1.pht007766.v1.phv00369267.v1`, `phs001218.v1.pht007766.v1.phv00369268.v1`, `phs001218.v1.pht007766.v1.phv00369271.v1`, `phs001218.v1.pht007766.v1.phv00369272.v1`
+    * 4 component_study_variables: `phs001218.v1.pht007766.v1.phv00369267.v1`, `phs001218.v1.pht007766.v1.phv00369268.v1`, `phs001218.v1.pht007766.v1.phv00369271.v1`, `phs001218.v1.pht007766.v1.phv00369272.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6456,7 +6456,7 @@
       ```
 <a id="weight_baseline_1-genoa"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **GENOA**:
-    * component_study_variables: `phs001238.v2.pht006039.v1.phv00277507.v1`, `phs001238.v2.pht006039.v1.phv00277515.v1`, `phs001238.v2.pht006653.v1.phv00307788.v1`, `phs001238.v2.pht006653.v1.phv00307796.v1`
+    * 4 component_study_variables: `phs001238.v2.pht006039.v1.phv00277507.v1`, `phs001238.v2.pht006039.v1.phv00277515.v1`, `phs001238.v2.pht006653.v1.phv00307788.v1`, `phs001238.v2.pht006653.v1.phv00307796.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6474,7 +6474,7 @@
       ```
 <a id="weight_baseline_1-hchs_sol"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00253218.v1`
+    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00253218.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6491,7 +6491,7 @@
       ```
 <a id="weight_baseline_1-hvh"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **HVH**:
-    * component_study_variables: `phs001013.v3.pht005311.v2.phv00259376.v2`, `phs001013.v3.pht005311.v2.phv00259377.v2`, `phs001013.v3.pht005311.v2.phv00259378.v2`, `phs001013.v3.pht005311.v2.phv00259393.v2`
+    * 4 component_study_variables: `phs001013.v3.pht005311.v2.phv00259376.v2`, `phs001013.v3.pht005311.v2.phv00259377.v2`, `phs001013.v3.pht005311.v2.phv00259378.v2`, `phs001013.v3.pht005311.v2.phv00259393.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6520,7 +6520,7 @@
       ```
 <a id="weight_baseline_1-jhs"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001940.v1.phv00125861.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
+    * 2 component_study_variables: `phs000286.v5.pht001940.v1.phv00125861.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6542,7 +6542,7 @@
       ```
 <a id="weight_baseline_1-mayo_vte_geneva"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **Mayo_VTE_GENEVA**:
-    * component_study_variables: `phs000289.v2.pht001886.v2.phv00121846.v1`, `phs000289.v2.pht001886.v2.phv00121873.v2`
+    * 2 component_study_variables: `phs000289.v2.pht001886.v2.phv00121846.v1`, `phs000289.v2.pht001886.v2.phv00121873.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6559,7 +6559,7 @@
       ```
 <a id="weight_baseline_1-mayo_vte_olmsted"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **Mayo_VTE_Olmsted**:
-    * component_study_variables: `phs001402.v1.pht008239.v1.phv00389902.v1`, `phs001402.v1.pht008239.v1.phv00389929.v1`
+    * 2 component_study_variables: `phs001402.v1.pht008239.v1.phv00389902.v1`, `phs001402.v1.pht008239.v1.phv00389929.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6582,7 +6582,7 @@
       ```
 <a id="weight_baseline_1-mesa"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082685.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084484.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087079.v1`
+    * 6 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082685.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084484.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087079.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6606,7 +6606,7 @@
       ```
 <a id="weight_baseline_1-mgh_af"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **MGH_AF**:
-    * component_study_variables: `phs001001.v1.pht005655.v1.phv00354560.v1`, `phs001001.v1.pht005655.v1.phv00354565.v1`
+    * 2 component_study_variables: `phs001001.v1.pht005655.v1.phv00354560.v1`, `phs001001.v1.pht005655.v1.phv00354565.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6632,7 +6632,7 @@
       ```
 <a id="weight_baseline_1-partners"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **Partners**:
-    * component_study_variables: `phs001024.v3.pht005693.v1.phv00265978.v1`, `phs001024.v3.pht005693.v1.phv00265983.v1`
+    * 2 component_study_variables: `phs001024.v3.pht005693.v1.phv00265978.v1`, `phs001024.v3.pht005693.v1.phv00265983.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6661,7 +6661,7 @@
       ```
 <a id="weight_baseline_1-sas"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **SAS**:
-    * component_study_variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258684.v1`
+    * 2 component_study_variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258684.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6681,7 +6681,7 @@
       ```
 <a id="weight_baseline_1-vafar"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **VAFAR**:
-    * component_study_variables: `phs000997.v3.pht005688.v3.phv00265921.v3`, `phs000997.v3.pht005688.v3.phv00265927.v3`
+    * 2 component_study_variables: `phs000997.v3.pht005688.v3.phv00265921.v3`, `phs000997.v3.pht005688.v3.phv00265927.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6709,7 +6709,7 @@
       ```
 <a id="weight_baseline_1-vu_af"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **VU_AF**:
-    * component_study_variables: `phs001032.v4.pht005675.v3.phv00265805.v2`, `phs001032.v4.pht005675.v3.phv00265811.v2`
+    * 2 component_study_variables: `phs001032.v4.pht005675.v3.phv00265805.v2`, `phs001032.v4.pht005675.v3.phv00265811.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6736,7 +6736,7 @@
       ```
 <a id="weight_baseline_1-wghs"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **WGHS**:
-    * component_study_variables: `phs001040.v3.pht005682.v3.phv00265848.v3`, `phs001040.v3.pht005682.v3.phv00375261.v1`
+    * 2 component_study_variables: `phs001040.v3.pht005682.v3.phv00265848.v3`, `phs001040.v3.pht005682.v3.phv00375261.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6761,7 +6761,7 @@
       ```
 <a id="weight_baseline_1-whi"></a>
   * ### baseline_common_covariates/weight_baseline_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001019.v6.phv00079851.v6`, `phs000200.v11.pht001019.v6.phv00079852.v6`, `phs000200.v11.pht001019.v6.phv00079859.v6`
+    * 5 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001019.v6.phv00079851.v6`, `phs000200.v11.pht001019.v6.phv00079852.v6`, `phs000200.v11.pht001019.v6.phv00079859.v6`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6861,7 +6861,7 @@
     
 <a id="basophil_ncnc_bld_1-amish"></a>
   * ### blood_cell_count/basophil_ncnc_bld_1 -- **Amish**:
-    * component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253015.v1`
+    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253015.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -6887,7 +6887,7 @@
       ```
 <a id="basophil_ncnc_bld_1-aric"></a>
   * ### blood_cell_count/basophil_ncnc_bld_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004107.v2.phv00207264.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004108.v2.phv00207279.v1`
+    * 6 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004107.v2.phv00207264.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004108.v2.phv00207279.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6955,7 +6955,7 @@
       ```
 <a id="basophil_ncnc_bld_1-cardia"></a>
   * ### blood_cell_count/basophil_ncnc_bld_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112686.v2`, `phs000285.v3.pht001563.v2.phv00112696.v2`
+    * 3 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112686.v2`, `phs000285.v3.pht001563.v2.phv00112696.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -6982,7 +6982,7 @@
       ```
 <a id="basophil_ncnc_bld_1-fhs_gen3nosomni2"></a>
   * ### blood_cell_count/basophil_ncnc_bld_1 -- **FHS_Gen3NOSOmni2**:
-    * component_study_variables: `phs000007.v29.pht002889.v2.phv00172178.v2`, `phs000007.v29.pht002889.v2.phv00172192.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
+    * 3 component_study_variables: `phs000007.v29.pht002889.v2.phv00172178.v2`, `phs000007.v29.pht002889.v2.phv00172192.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -7014,7 +7014,7 @@
       ```
 <a id="basophil_ncnc_bld_1-fhs_offspring"></a>
   * ### blood_cell_count/basophil_ncnc_bld_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227039.v1`
+    * 4 component_study_variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227039.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -7050,7 +7050,7 @@
       ```
 <a id="basophil_ncnc_bld_1-fhs_omni1"></a>
   * ### blood_cell_count/basophil_ncnc_bld_1 -- **FHS_Omni1**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227039.v1`
+    * 4 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227039.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -7086,7 +7086,7 @@
       ```
 <a id="basophil_ncnc_bld_1-hchs_sol"></a>
   * ### blood_cell_count/basophil_ncnc_bld_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`, `phs000810.v1.pht004715.v1.phv00226288.v1`
+    * 3 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`, `phs000810.v1.pht004715.v1.phv00226288.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -7106,7 +7106,7 @@
       ```
 <a id="basophil_ncnc_bld_1-jhs"></a>
   * ### blood_cell_count/basophil_ncnc_bld_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127620.v1`, `phs000286.v5.pht001959.v1.phv00127631.v1`
+    * 3 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127620.v1`, `phs000286.v5.pht001959.v1.phv00127631.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -7140,7 +7140,7 @@
       ```
 <a id="basophil_ncnc_bld_1-mesa"></a>
   * ### blood_cell_count/basophil_ncnc_bld_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00219002.v1`
+    * 2 component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00219002.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -7216,7 +7216,7 @@
     
 <a id="eosinophil_ncnc_bld_1-amish"></a>
   * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **Amish**:
-    * component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253014.v1`
+    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253014.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -7242,7 +7242,7 @@
       ```
 <a id="eosinophil_ncnc_bld_1-aric"></a>
   * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004107.v2.phv00207263.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004108.v2.phv00207278.v1`
+    * 6 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004107.v2.phv00207263.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004108.v2.phv00207278.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -7310,7 +7310,7 @@
       ```
 <a id="eosinophil_ncnc_bld_1-cardia"></a>
   * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112686.v2`, `phs000285.v3.pht001563.v2.phv00112693.v2`
+    * 3 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112686.v2`, `phs000285.v3.pht001563.v2.phv00112693.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -7337,7 +7337,7 @@
       ```
 <a id="eosinophil_ncnc_bld_1-fhs_gen3nosomni2"></a>
   * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **FHS_Gen3NOSOmni2**:
-    * component_study_variables: `phs000007.v29.pht002889.v2.phv00172178.v2`, `phs000007.v29.pht002889.v2.phv00172191.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
+    * 3 component_study_variables: `phs000007.v29.pht002889.v2.phv00172178.v2`, `phs000007.v29.pht002889.v2.phv00172191.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -7369,7 +7369,7 @@
       ```
 <a id="eosinophil_ncnc_bld_1-fhs_offspring"></a>
   * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227038.v1`
+    * 4 component_study_variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227038.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -7405,7 +7405,7 @@
       ```
 <a id="eosinophil_ncnc_bld_1-fhs_omni1"></a>
   * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **FHS_Omni1**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227038.v1`
+    * 4 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227038.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -7441,7 +7441,7 @@
       ```
 <a id="eosinophil_ncnc_bld_1-hchs_sol"></a>
   * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`, `phs000810.v1.pht004715.v1.phv00226287.v1`
+    * 3 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`, `phs000810.v1.pht004715.v1.phv00226287.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -7461,7 +7461,7 @@
       ```
 <a id="eosinophil_ncnc_bld_1-jhs"></a>
   * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127621.v1`, `phs000286.v5.pht001959.v1.phv00127631.v1`
+    * 3 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127621.v1`, `phs000286.v5.pht001959.v1.phv00127631.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -7495,7 +7495,7 @@
       ```
 <a id="eosinophil_ncnc_bld_1-mesa"></a>
   * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00219001.v1`
+    * 2 component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00219001.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -7562,7 +7562,7 @@
     
 <a id="hematocrit_vfr_bld_1-amish"></a>
   * ### blood_cell_count/hematocrit_vfr_bld_1 -- **Amish**:
-    * component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253008.v1`
+    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253008.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -7587,7 +7587,7 @@
       ```
 <a id="hematocrit_vfr_bld_1-aric"></a>
   * ### blood_cell_count/hematocrit_vfr_bld_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004107.v2.phv00207255.v1`, `phs000280.v4.pht004108.v2.phv00207270.v1`, `phs000280.v4.pht004109.v2.phv00207289.v1`, `phs000280.v4.pht004110.v2.phv00207301.v1`, `phs000280.v4.pht006422.v1.phv00294957.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
+    * 10 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004107.v2.phv00207255.v1`, `phs000280.v4.pht004108.v2.phv00207270.v1`, `phs000280.v4.pht004109.v2.phv00207289.v1`, `phs000280.v4.pht004110.v2.phv00207301.v1`, `phs000280.v4.pht006422.v1.phv00294957.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -7660,7 +7660,7 @@
       ```
 <a id="hematocrit_vfr_bld_1-cardia"></a>
   * ### blood_cell_count/hematocrit_vfr_bld_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112689.v2`
+    * 2 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112689.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -7685,7 +7685,7 @@
       ```
 <a id="hematocrit_vfr_bld_1-chs"></a>
   * ### blood_cell_count/hematocrit_vfr_bld_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100413.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
+    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100413.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -7704,7 +7704,7 @@
       ```
 <a id="hematocrit_vfr_bld_1-fhs_gen3nosomni2"></a>
   * ### blood_cell_count/hematocrit_vfr_bld_1 -- **FHS_Gen3NOSOmni2**:
-    * component_study_variables: `phs000007.v29.pht002889.v2.phv00172181.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
+    * 2 component_study_variables: `phs000007.v29.pht002889.v2.phv00172181.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -7734,7 +7734,7 @@
       ```
 <a id="hematocrit_vfr_bld_1-fhs_offspring"></a>
   * ### blood_cell_count/hematocrit_vfr_bld_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht000030.v7.phv00007555.v5`, `phs000007.v29.pht000031.v7.phv00008111.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227028.v1`
+    * 7 component_study_variables: `phs000007.v29.pht000030.v7.phv00007555.v5`, `phs000007.v29.pht000031.v7.phv00008111.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227028.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -7806,7 +7806,7 @@
       ```
 <a id="hematocrit_vfr_bld_1-fhs_omni1"></a>
   * ### blood_cell_count/hematocrit_vfr_bld_1 -- **FHS_Omni1**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227028.v1`
+    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227028.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -7839,7 +7839,7 @@
       ```
 <a id="hematocrit_vfr_bld_1-hchs_sol"></a>
   * ### blood_cell_count/hematocrit_vfr_bld_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226303.v1`
+    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226303.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -7858,7 +7858,7 @@
       ```
 <a id="hematocrit_vfr_bld_1-jhs"></a>
   * ### blood_cell_count/hematocrit_vfr_bld_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127614.v1`
+    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127614.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -7887,7 +7887,7 @@
       ```
 <a id="hematocrit_vfr_bld_1-mesa"></a>
   * ### blood_cell_count/hematocrit_vfr_bld_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218992.v1`
+    * 2 component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218992.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -7911,7 +7911,7 @@
       ```
 <a id="hematocrit_vfr_bld_1-whi"></a>
   * ### blood_cell_count/hematocrit_vfr_bld_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000986.v6.phv00077362.v6`, `phs000200.v11.pht000986.v6.phv00077363.v6`, `phs000200.v11.pht000986.v6.phv00077365.v6`, `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`
+    * 5 component_study_variables: `phs000200.v11.pht000986.v6.phv00077362.v6`, `phs000200.v11.pht000986.v6.phv00077363.v6`, `phs000200.v11.pht000986.v6.phv00077365.v6`, `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -7984,7 +7984,7 @@
     
 <a id="hemoglobin_mcnc_bld_1-amish"></a>
   * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **Amish**:
-    * component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253007.v1`
+    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253007.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -8009,7 +8009,7 @@
       ```
 <a id="hemoglobin_mcnc_bld_1-aric"></a>
   * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004107.v2.phv00207256.v1`, `phs000280.v4.pht004108.v2.phv00207271.v1`, `phs000280.v4.pht004109.v2.phv00207288.v1`, `phs000280.v4.pht004110.v2.phv00207300.v1`, `phs000280.v4.pht006422.v1.phv00294956.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
+    * 10 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004107.v2.phv00207256.v1`, `phs000280.v4.pht004108.v2.phv00207271.v1`, `phs000280.v4.pht004109.v2.phv00207288.v1`, `phs000280.v4.pht004110.v2.phv00207300.v1`, `phs000280.v4.pht006422.v1.phv00294956.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -8082,7 +8082,7 @@
       ```
 <a id="hemoglobin_mcnc_bld_1-cardia"></a>
   * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112688.v2`
+    * 2 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112688.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -8107,7 +8107,7 @@
       ```
 <a id="hemoglobin_mcnc_bld_1-chs"></a>
   * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100412.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
+    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100412.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -8124,7 +8124,7 @@
       ```
 <a id="hemoglobin_mcnc_bld_1-fhs_gen3nosomni2"></a>
   * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **FHS_Gen3NOSOmni2**:
-    * component_study_variables: `phs000007.v29.pht002889.v2.phv00172180.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
+    * 2 component_study_variables: `phs000007.v29.pht002889.v2.phv00172180.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -8153,7 +8153,7 @@
       ```
 <a id="hemoglobin_mcnc_bld_1-fhs_offspring"></a>
   * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht000030.v7.phv00007642.v5`, `phs000007.v29.pht000031.v7.phv00008110.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227027.v1`
+    * 7 component_study_variables: `phs000007.v29.pht000030.v7.phv00007642.v5`, `phs000007.v29.pht000031.v7.phv00008110.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227027.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -8231,7 +8231,7 @@
       ```
 <a id="hemoglobin_mcnc_bld_1-fhs_omni1"></a>
   * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **FHS_Omni1**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227027.v1`
+    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227027.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -8264,7 +8264,7 @@
       ```
 <a id="hemoglobin_mcnc_bld_1-hchs_sol"></a>
   * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226302.v1`
+    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226302.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -8283,7 +8283,7 @@
       ```
 <a id="hemoglobin_mcnc_bld_1-jhs"></a>
   * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127615.v1`
+    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127615.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -8312,7 +8312,7 @@
       ```
 <a id="hemoglobin_mcnc_bld_1-mesa"></a>
   * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218993.v1`
+    * 2 component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218993.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -8335,7 +8335,7 @@
       ```
 <a id="hemoglobin_mcnc_bld_1-whi"></a>
   * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000986.v6.phv00077362.v6`, `phs000200.v11.pht000986.v6.phv00077363.v6`, `phs000200.v11.pht000986.v6.phv00077366.v6`, `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`
+    * 5 component_study_variables: `phs000200.v11.pht000986.v6.phv00077362.v6`, `phs000200.v11.pht000986.v6.phv00077363.v6`, `phs000200.v11.pht000986.v6.phv00077366.v6`, `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -8420,7 +8420,7 @@
     
 <a id="lymphocyte_ncnc_bld_1-amish"></a>
   * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **Amish**:
-    * component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253013.v1`
+    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253013.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -8447,7 +8447,7 @@
       ```
 <a id="lymphocyte_ncnc_bld_1-aric"></a>
   * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004107.v2.phv00207261.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004108.v2.phv00207276.v1`, `phs000280.v4.pht006422.v1.phv00294954.v1`, `phs000280.v4.pht006422.v1.phv00294964.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
+    * 9 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004107.v2.phv00207261.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004108.v2.phv00207276.v1`, `phs000280.v4.pht006422.v1.phv00294954.v1`, `phs000280.v4.pht006422.v1.phv00294964.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -8523,7 +8523,7 @@
       ```
 <a id="lymphocyte_ncnc_bld_1-cardia"></a>
   * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112686.v2`, `phs000285.v3.pht001563.v2.phv00112691.v2`
+    * 3 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112686.v2`, `phs000285.v3.pht001563.v2.phv00112691.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -8551,7 +8551,7 @@
       ```
 <a id="lymphocyte_ncnc_bld_1-fhs_gen3nosomni2"></a>
   * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **FHS_Gen3NOSOmni2**:
-    * component_study_variables: `phs000007.v29.pht002889.v2.phv00172178.v2`, `phs000007.v29.pht002889.v2.phv00172189.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
+    * 3 component_study_variables: `phs000007.v29.pht002889.v2.phv00172178.v2`, `phs000007.v29.pht002889.v2.phv00172189.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -8583,7 +8583,7 @@
       ```
 <a id="lymphocyte_ncnc_bld_1-fhs_offspring"></a>
   * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227036.v1`
+    * 4 component_study_variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227036.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -8619,7 +8619,7 @@
       ```
 <a id="lymphocyte_ncnc_bld_1-fhs_omni1"></a>
   * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **FHS_Omni1**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227036.v1`
+    * 4 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227036.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -8655,7 +8655,7 @@
       ```
 <a id="lymphocyte_ncnc_bld_1-hchs_sol"></a>
   * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`, `phs000810.v1.pht004715.v1.phv00226285.v1`
+    * 3 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`, `phs000810.v1.pht004715.v1.phv00226285.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -8675,7 +8675,7 @@
       ```
 <a id="lymphocyte_ncnc_bld_1-jhs"></a>
   * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127622.v1`, `phs000286.v5.pht001959.v1.phv00127631.v1`
+    * 3 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127622.v1`, `phs000286.v5.pht001959.v1.phv00127631.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -8709,7 +8709,7 @@
       ```
 <a id="lymphocyte_ncnc_bld_1-mesa"></a>
   * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218998.v1`
+    * 2 component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218998.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -8780,7 +8780,7 @@
     
 <a id="mch_entmass_rbc_1-amish"></a>
   * ### blood_cell_count/mch_entmass_rbc_1 -- **Amish**:
-    * component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253007.v1`, `phs000956.v2.pht005002.v1.phv00253010.v1`
+    * 3 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253007.v1`, `phs000956.v2.pht005002.v1.phv00253010.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -8808,7 +8808,7 @@
       ```
 <a id="mch_entmass_rbc_1-aric"></a>
   * ### blood_cell_count/mch_entmass_rbc_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004109.v2.phv00207290.v1`, `phs000280.v4.pht004110.v2.phv00207302.v1`, `phs000280.v4.pht006422.v1.phv00294960.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
+    * 6 component_study_variables: `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004109.v2.phv00207290.v1`, `phs000280.v4.pht004110.v2.phv00207302.v1`, `phs000280.v4.pht006422.v1.phv00294960.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -8871,7 +8871,7 @@
       ```
 <a id="mch_entmass_rbc_1-cardia"></a>
   * ### blood_cell_count/mch_entmass_rbc_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112687.v2`, `phs000285.v3.pht001563.v2.phv00112688.v2`
+    * 3 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112687.v2`, `phs000285.v3.pht001563.v2.phv00112688.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -8898,7 +8898,7 @@
       ```
 <a id="mch_entmass_rbc_1-fhs_gen3nosomni2"></a>
   * ### blood_cell_count/mch_entmass_rbc_1 -- **FHS_Gen3NOSOmni2**:
-    * component_study_variables: `phs000007.v29.pht002889.v2.phv00172183.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
+    * 2 component_study_variables: `phs000007.v29.pht002889.v2.phv00172183.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -8927,7 +8927,7 @@
       ```
 <a id="mch_entmass_rbc_1-fhs_offspring"></a>
   * ### blood_cell_count/mch_entmass_rbc_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht000030.v7.phv00007645.v5`, `phs000007.v29.pht000031.v7.phv00008113.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227030.v1`
+    * 7 component_study_variables: `phs000007.v29.pht000030.v7.phv00007645.v5`, `phs000007.v29.pht000031.v7.phv00008113.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227030.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -9004,7 +9004,7 @@
       ```
 <a id="mch_entmass_rbc_1-fhs_omni1"></a>
   * ### blood_cell_count/mch_entmass_rbc_1 -- **FHS_Omni1**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227030.v1`
+    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227030.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -9037,7 +9037,7 @@
       ```
 <a id="mch_entmass_rbc_1-hchs_sol"></a>
   * ### blood_cell_count/mch_entmass_rbc_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226305.v1`
+    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226305.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -9057,7 +9057,7 @@
       ```
 <a id="mch_entmass_rbc_1-jhs"></a>
   * ### blood_cell_count/mch_entmass_rbc_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127623.v1`
+    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127623.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -9086,7 +9086,7 @@
       ```
 <a id="mch_entmass_rbc_1-mesa"></a>
   * ### blood_cell_count/mch_entmass_rbc_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218990.v1`, `phs000209.v13.pht004319.v1.phv00218993.v1`
+    * 3 component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218990.v1`, `phs000209.v13.pht004319.v1.phv00218993.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -9170,7 +9170,7 @@
     
 <a id="mchc_mcnc_rbc_1-amish"></a>
   * ### blood_cell_count/mchc_mcnc_rbc_1 -- **Amish**:
-    * component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253007.v1`, `phs000956.v2.pht005002.v1.phv00253008.v1`
+    * 3 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253007.v1`, `phs000956.v2.pht005002.v1.phv00253008.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -9200,7 +9200,7 @@
       ```
 <a id="mchc_mcnc_rbc_1-aric"></a>
   * ### blood_cell_count/mchc_mcnc_rbc_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004107.v2.phv00207255.v1`, `phs000280.v4.pht004107.v2.phv00207256.v1`, `phs000280.v4.pht004108.v2.phv00207270.v1`, `phs000280.v4.pht004108.v2.phv00207271.v1`, `phs000280.v4.pht004109.v2.phv00207288.v1`, `phs000280.v4.pht004109.v2.phv00207289.v1`, `phs000280.v4.pht004110.v2.phv00207300.v1`, `phs000280.v4.pht004110.v2.phv00207301.v1`, `phs000280.v4.pht006422.v1.phv00294956.v1`, `phs000280.v4.pht006422.v1.phv00294957.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
+    * 15 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004107.v2.phv00207255.v1`, `phs000280.v4.pht004107.v2.phv00207256.v1`, `phs000280.v4.pht004108.v2.phv00207270.v1`, `phs000280.v4.pht004108.v2.phv00207271.v1`, `phs000280.v4.pht004109.v2.phv00207288.v1`, `phs000280.v4.pht004109.v2.phv00207289.v1`, `phs000280.v4.pht004110.v2.phv00207300.v1`, `phs000280.v4.pht004110.v2.phv00207301.v1`, `phs000280.v4.pht006422.v1.phv00294956.v1`, `phs000280.v4.pht006422.v1.phv00294957.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -9282,7 +9282,7 @@
       ```
 <a id="mchc_mcnc_rbc_1-cardia"></a>
   * ### blood_cell_count/mchc_mcnc_rbc_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112688.v2`, `phs000285.v3.pht001563.v2.phv00112689.v2`
+    * 3 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112688.v2`, `phs000285.v3.pht001563.v2.phv00112689.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -9309,7 +9309,7 @@
       ```
 <a id="mchc_mcnc_rbc_1-chs"></a>
   * ### blood_cell_count/mchc_mcnc_rbc_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100412.v1`, `phs000287.v6.pht001452.v1.phv00100413.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
+    * 3 component_study_variables: `phs000287.v6.pht001452.v1.phv00100412.v1`, `phs000287.v6.pht001452.v1.phv00100413.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -9330,7 +9330,7 @@
       ```
 <a id="mchc_mcnc_rbc_1-fhs_gen3nosomni2"></a>
   * ### blood_cell_count/mchc_mcnc_rbc_1 -- **FHS_Gen3NOSOmni2**:
-    * component_study_variables: `phs000007.v29.pht002889.v2.phv00172184.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
+    * 2 component_study_variables: `phs000007.v29.pht002889.v2.phv00172184.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -9359,7 +9359,7 @@
       ```
 <a id="mchc_mcnc_rbc_1-fhs_offspring"></a>
   * ### blood_cell_count/mchc_mcnc_rbc_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht000030.v7.phv00007646.v5`, `phs000007.v29.pht000031.v7.phv00008114.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227031.v1`
+    * 7 component_study_variables: `phs000007.v29.pht000030.v7.phv00007646.v5`, `phs000007.v29.pht000031.v7.phv00008114.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227031.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -9437,7 +9437,7 @@
       ```
 <a id="mchc_mcnc_rbc_1-fhs_omni1"></a>
   * ### blood_cell_count/mchc_mcnc_rbc_1 -- **FHS_Omni1**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227031.v1`
+    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227031.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -9470,7 +9470,7 @@
       ```
 <a id="mchc_mcnc_rbc_1-hchs_sol"></a>
   * ### blood_cell_count/mchc_mcnc_rbc_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226306.v1`
+    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226306.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -9490,7 +9490,7 @@
       ```
 <a id="mchc_mcnc_rbc_1-jhs"></a>
   * ### blood_cell_count/mchc_mcnc_rbc_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127624.v1`
+    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127624.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -9519,7 +9519,7 @@
       ```
 <a id="mchc_mcnc_rbc_1-mesa"></a>
   * ### blood_cell_count/mchc_mcnc_rbc_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218992.v1`, `phs000209.v13.pht004319.v1.phv00218993.v1`
+    * 3 component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218992.v1`, `phs000209.v13.pht004319.v1.phv00218993.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -9598,7 +9598,7 @@
     
 <a id="mcv_entvol_rbc_1-amish"></a>
   * ### blood_cell_count/mcv_entvol_rbc_1 -- **Amish**:
-    * component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253008.v1`, `phs000956.v2.pht005002.v1.phv00253010.v1`
+    * 3 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253008.v1`, `phs000956.v2.pht005002.v1.phv00253010.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -9626,7 +9626,7 @@
       ```
 <a id="mcv_entvol_rbc_1-aric"></a>
   * ### blood_cell_count/mcv_entvol_rbc_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004108.v2.phv00207282.v1`, `phs000280.v4.pht004109.v2.phv00207293.v1`, `phs000280.v4.pht004110.v2.phv00207305.v1`, `phs000280.v4.pht006422.v1.phv00294959.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
+    * 8 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004108.v2.phv00207282.v1`, `phs000280.v4.pht004109.v2.phv00207293.v1`, `phs000280.v4.pht004110.v2.phv00207305.v1`, `phs000280.v4.pht006422.v1.phv00294959.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -9694,7 +9694,7 @@
       ```
 <a id="mcv_entvol_rbc_1-cardia"></a>
   * ### blood_cell_count/mcv_entvol_rbc_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112687.v2`, `phs000285.v3.pht001563.v2.phv00112689.v2`
+    * 3 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112687.v2`, `phs000285.v3.pht001563.v2.phv00112689.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -9721,7 +9721,7 @@
       ```
 <a id="mcv_entvol_rbc_1-fhs_gen3nosomni2"></a>
   * ### blood_cell_count/mcv_entvol_rbc_1 -- **FHS_Gen3NOSOmni2**:
-    * component_study_variables: `phs000007.v29.pht002889.v2.phv00172182.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
+    * 2 component_study_variables: `phs000007.v29.pht002889.v2.phv00172182.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -9750,7 +9750,7 @@
       ```
 <a id="mcv_entvol_rbc_1-fhs_offspring"></a>
   * ### blood_cell_count/mcv_entvol_rbc_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht000030.v7.phv00007644.v5`, `phs000007.v29.pht000031.v7.phv00008112.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227029.v1`
+    * 7 component_study_variables: `phs000007.v29.pht000030.v7.phv00007644.v5`, `phs000007.v29.pht000031.v7.phv00008112.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227029.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -9822,7 +9822,7 @@
       ```
 <a id="mcv_entvol_rbc_1-fhs_omni1"></a>
   * ### blood_cell_count/mcv_entvol_rbc_1 -- **FHS_Omni1**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227029.v1`
+    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227029.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -9855,7 +9855,7 @@
       ```
 <a id="mcv_entvol_rbc_1-hchs_sol"></a>
   * ### blood_cell_count/mcv_entvol_rbc_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226304.v1`
+    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226304.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -9875,7 +9875,7 @@
       ```
 <a id="mcv_entvol_rbc_1-jhs"></a>
   * ### blood_cell_count/mcv_entvol_rbc_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127625.v1`
+    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127625.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -9904,7 +9904,7 @@
       ```
 <a id="mcv_entvol_rbc_1-mesa"></a>
   * ### blood_cell_count/mcv_entvol_rbc_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218990.v1`, `phs000209.v13.pht004319.v1.phv00218992.v1`
+    * 3 component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218990.v1`, `phs000209.v13.pht004319.v1.phv00218992.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -9988,7 +9988,7 @@
     
 <a id="monocyte_ncnc_bld_1-amish"></a>
   * ### blood_cell_count/monocyte_ncnc_bld_1 -- **Amish**:
-    * component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253012.v1`
+    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253012.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -10014,7 +10014,7 @@
       ```
 <a id="monocyte_ncnc_bld_1-aric"></a>
   * ### blood_cell_count/monocyte_ncnc_bld_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004107.v2.phv00207262.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004108.v2.phv00207277.v1`, `phs000280.v4.pht006422.v1.phv00294954.v1`, `phs000280.v4.pht006422.v1.phv00294965.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
+    * 9 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004107.v2.phv00207262.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004108.v2.phv00207277.v1`, `phs000280.v4.pht006422.v1.phv00294954.v1`, `phs000280.v4.pht006422.v1.phv00294965.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -10090,7 +10090,7 @@
       ```
 <a id="monocyte_ncnc_bld_1-cardia"></a>
   * ### blood_cell_count/monocyte_ncnc_bld_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112686.v2`, `phs000285.v3.pht001563.v2.phv00112692.v2`
+    * 3 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112686.v2`, `phs000285.v3.pht001563.v2.phv00112692.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -10117,7 +10117,7 @@
       ```
 <a id="monocyte_ncnc_bld_1-fhs_gen3nosomni2"></a>
   * ### blood_cell_count/monocyte_ncnc_bld_1 -- **FHS_Gen3NOSOmni2**:
-    * component_study_variables: `phs000007.v29.pht002889.v2.phv00172178.v2`, `phs000007.v29.pht002889.v2.phv00172190.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
+    * 3 component_study_variables: `phs000007.v29.pht002889.v2.phv00172178.v2`, `phs000007.v29.pht002889.v2.phv00172190.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -10149,7 +10149,7 @@
       ```
 <a id="monocyte_ncnc_bld_1-fhs_offspring"></a>
   * ### blood_cell_count/monocyte_ncnc_bld_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227037.v1`
+    * 4 component_study_variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227037.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -10185,7 +10185,7 @@
       ```
 <a id="monocyte_ncnc_bld_1-fhs_omni1"></a>
   * ### blood_cell_count/monocyte_ncnc_bld_1 -- **FHS_Omni1**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227037.v1`
+    * 4 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227037.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -10221,7 +10221,7 @@
       ```
 <a id="monocyte_ncnc_bld_1-hchs_sol"></a>
   * ### blood_cell_count/monocyte_ncnc_bld_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`, `phs000810.v1.pht004715.v1.phv00226286.v1`
+    * 3 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`, `phs000810.v1.pht004715.v1.phv00226286.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -10241,7 +10241,7 @@
       ```
 <a id="monocyte_ncnc_bld_1-jhs"></a>
   * ### blood_cell_count/monocyte_ncnc_bld_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127626.v1`, `phs000286.v5.pht001959.v1.phv00127631.v1`
+    * 3 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127626.v1`, `phs000286.v5.pht001959.v1.phv00127631.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -10275,7 +10275,7 @@
       ```
 <a id="monocyte_ncnc_bld_1-mesa"></a>
   * ### blood_cell_count/monocyte_ncnc_bld_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00219000.v1`
+    * 2 component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00219000.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -10356,7 +10356,7 @@
     
 <a id="neutrophil_ncnc_bld_1-amish"></a>
   * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **Amish**:
-    * component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253011.v1`
+    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253011.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -10382,7 +10382,7 @@
       ```
 <a id="neutrophil_ncnc_bld_1-aric"></a>
   * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004107.v2.phv00207259.v1`, `phs000280.v4.pht004107.v2.phv00207260.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004108.v2.phv00207274.v1`, `phs000280.v4.pht004108.v2.phv00207275.v1`
+    * 8 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004107.v2.phv00207259.v1`, `phs000280.v4.pht004107.v2.phv00207260.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004108.v2.phv00207274.v1`, `phs000280.v4.pht004108.v2.phv00207275.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -10456,7 +10456,7 @@
       ```
 <a id="neutrophil_ncnc_bld_1-cardia"></a>
   * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112686.v2`, `phs000285.v3.pht001563.v2.phv00112694.v2`, `phs000285.v3.pht001563.v2.phv00112695.v2`, `phs000285.v3.pht001563.v2.phv00112697.v2`, `phs000285.v3.pht001563.v2.phv00112698.v2`
+    * 6 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112686.v2`, `phs000285.v3.pht001563.v2.phv00112694.v2`, `phs000285.v3.pht001563.v2.phv00112695.v2`, `phs000285.v3.pht001563.v2.phv00112697.v2`, `phs000285.v3.pht001563.v2.phv00112698.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -10497,7 +10497,7 @@
       ```
 <a id="neutrophil_ncnc_bld_1-fhs_gen3nosomni2"></a>
   * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **FHS_Gen3NOSOmni2**:
-    * component_study_variables: `phs000007.v29.pht002889.v2.phv00172178.v2`, `phs000007.v29.pht002889.v2.phv00172188.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
+    * 3 component_study_variables: `phs000007.v29.pht002889.v2.phv00172178.v2`, `phs000007.v29.pht002889.v2.phv00172188.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -10529,7 +10529,7 @@
       ```
 <a id="neutrophil_ncnc_bld_1-fhs_offspring"></a>
   * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227035.v1`
+    * 4 component_study_variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227035.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -10565,7 +10565,7 @@
       ```
 <a id="neutrophil_ncnc_bld_1-fhs_omni1"></a>
   * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **FHS_Omni1**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227035.v1`
+    * 4 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227035.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -10601,7 +10601,7 @@
       ```
 <a id="neutrophil_ncnc_bld_1-hchs_sol"></a>
   * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`, `phs000810.v1.pht004715.v1.phv00226284.v1`
+    * 3 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`, `phs000810.v1.pht004715.v1.phv00226284.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -10621,7 +10621,7 @@
       ```
 <a id="neutrophil_ncnc_bld_1-jhs"></a>
   * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127630.v1`, `phs000286.v5.pht001959.v1.phv00127631.v1`, `phs000286.v5.pht001959.v1.phv00127632.v1`
+    * 4 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127630.v1`, `phs000286.v5.pht001959.v1.phv00127631.v1`, `phs000286.v5.pht001959.v1.phv00127632.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -10661,7 +10661,7 @@
       ```
 <a id="neutrophil_ncnc_bld_1-mesa"></a>
   * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218999.v1`
+    * 2 component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218999.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -10724,7 +10724,7 @@
     
 <a id="platelet_ncnc_bld_1-amish"></a>
   * ### blood_cell_count/platelet_ncnc_bld_1 -- **Amish**:
-    * component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253009.v1`
+    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253009.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -10749,7 +10749,7 @@
       ```
 <a id="platelet_ncnc_bld_1-aric"></a>
   * ### blood_cell_count/platelet_ncnc_bld_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004107.v2.phv00207258.v1`, `phs000280.v4.pht004108.v2.phv00207273.v1`, `phs000280.v4.pht004109.v2.phv00207294.v1`, `phs000280.v4.pht004110.v2.phv00207306.v1`, `phs000280.v4.pht006422.v1.phv00294958.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
+    * 10 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004107.v2.phv00207258.v1`, `phs000280.v4.pht004108.v2.phv00207273.v1`, `phs000280.v4.pht004109.v2.phv00207294.v1`, `phs000280.v4.pht004110.v2.phv00207306.v1`, `phs000280.v4.pht006422.v1.phv00294958.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -10822,7 +10822,7 @@
       ```
 <a id="platelet_ncnc_bld_1-cardia"></a>
   * ### blood_cell_count/platelet_ncnc_bld_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112690.v2`
+    * 2 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112690.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -10848,7 +10848,7 @@
       ```
 <a id="platelet_ncnc_bld_1-chs"></a>
   * ### blood_cell_count/platelet_ncnc_bld_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100414.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
+    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100414.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -10866,7 +10866,7 @@
       ```
 <a id="platelet_ncnc_bld_1-fhs_gen3nosomni2"></a>
   * ### blood_cell_count/platelet_ncnc_bld_1 -- **FHS_Gen3NOSOmni2**:
-    * component_study_variables: `phs000007.v29.pht002889.v2.phv00172186.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
+    * 2 component_study_variables: `phs000007.v29.pht002889.v2.phv00172186.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -10895,7 +10895,7 @@
       ```
 <a id="platelet_ncnc_bld_1-fhs_offspring"></a>
   * ### blood_cell_count/platelet_ncnc_bld_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227033.v1`
+    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227033.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -10928,7 +10928,7 @@
       ```
 <a id="platelet_ncnc_bld_1-fhs_omni1"></a>
   * ### blood_cell_count/platelet_ncnc_bld_1 -- **FHS_Omni1**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227033.v1`
+    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227033.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -10961,7 +10961,7 @@
       ```
 <a id="platelet_ncnc_bld_1-hchs_sol"></a>
   * ### blood_cell_count/platelet_ncnc_bld_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226310.v1`
+    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226310.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -10981,7 +10981,7 @@
       ```
 <a id="platelet_ncnc_bld_1-jhs"></a>
   * ### blood_cell_count/platelet_ncnc_bld_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127616.v1`
+    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127616.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -11010,7 +11010,7 @@
       ```
 <a id="platelet_ncnc_bld_1-mesa"></a>
   * ### blood_cell_count/platelet_ncnc_bld_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218991.v1`
+    * 2 component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218991.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -11035,7 +11035,7 @@
       ```
 <a id="platelet_ncnc_bld_1-whi"></a>
   * ### blood_cell_count/platelet_ncnc_bld_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000986.v6.phv00077362.v6`, `phs000200.v11.pht000986.v6.phv00077363.v6`, `phs000200.v11.pht000986.v6.phv00077367.v6`, `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`
+    * 5 component_study_variables: `phs000200.v11.pht000986.v6.phv00077362.v6`, `phs000200.v11.pht000986.v6.phv00077363.v6`, `phs000200.v11.pht000986.v6.phv00077367.v6`, `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -11088,7 +11088,7 @@
     
 <a id="pmv_entvol_bld_1-aric"></a>
   * ### blood_cell_count/pmv_entvol_bld_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht006422.v1.phv00294963.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
+    * 2 component_study_variables: `phs000280.v4.pht006422.v1.phv00294963.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -11116,7 +11116,7 @@
       ```
 <a id="pmv_entvol_bld_1-fhs_gen3nosomni2"></a>
   * ### blood_cell_count/pmv_entvol_bld_1 -- **FHS_Gen3NOSOmni2**:
-    * component_study_variables: `phs000007.v29.pht002889.v2.phv00172187.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
+    * 2 component_study_variables: `phs000007.v29.pht002889.v2.phv00172187.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -11145,7 +11145,7 @@
       ```
 <a id="pmv_entvol_bld_1-fhs_offspring"></a>
   * ### blood_cell_count/pmv_entvol_bld_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227034.v1`
+    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227034.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -11178,7 +11178,7 @@
       ```
 <a id="pmv_entvol_bld_1-fhs_omni1"></a>
   * ### blood_cell_count/pmv_entvol_bld_1 -- **FHS_Omni1**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227034.v1`
+    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227034.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -11211,7 +11211,7 @@
       ```
 <a id="pmv_entvol_bld_1-jhs"></a>
   * ### blood_cell_count/pmv_entvol_bld_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127627.v1`
+    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127627.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -11276,7 +11276,7 @@
     
 <a id="rbc_ncnc_bld_1-amish"></a>
   * ### blood_cell_count/rbc_ncnc_bld_1 -- **Amish**:
-    * component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253010.v1`
+    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253010.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -11301,7 +11301,7 @@
       ```
 <a id="rbc_ncnc_bld_1-aric"></a>
   * ### blood_cell_count/rbc_ncnc_bld_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004109.v2.phv00207287.v1`, `phs000280.v4.pht004110.v2.phv00207299.v1`, `phs000280.v4.pht006422.v1.phv00294955.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
+    * 6 component_study_variables: `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004109.v2.phv00207287.v1`, `phs000280.v4.pht004110.v2.phv00207299.v1`, `phs000280.v4.pht006422.v1.phv00294955.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -11364,7 +11364,7 @@
       ```
 <a id="rbc_ncnc_bld_1-cardia"></a>
   * ### blood_cell_count/rbc_ncnc_bld_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112687.v2`
+    * 2 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112687.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -11389,7 +11389,7 @@
       ```
 <a id="rbc_ncnc_bld_1-fhs_gen3nosomni2"></a>
   * ### blood_cell_count/rbc_ncnc_bld_1 -- **FHS_Gen3NOSOmni2**:
-    * component_study_variables: `phs000007.v29.pht002889.v2.phv00172179.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
+    * 2 component_study_variables: `phs000007.v29.pht002889.v2.phv00172179.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -11418,7 +11418,7 @@
       ```
 <a id="rbc_ncnc_bld_1-fhs_offspring"></a>
   * ### blood_cell_count/rbc_ncnc_bld_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht000030.v7.phv00007641.v5`, `phs000007.v29.pht000031.v7.phv00008109.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227026.v1`
+    * 7 component_study_variables: `phs000007.v29.pht000030.v7.phv00007641.v5`, `phs000007.v29.pht000031.v7.phv00008109.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227026.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -11496,7 +11496,7 @@
       ```
 <a id="rbc_ncnc_bld_1-fhs_omni1"></a>
   * ### blood_cell_count/rbc_ncnc_bld_1 -- **FHS_Omni1**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227026.v1`
+    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227026.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -11529,7 +11529,7 @@
       ```
 <a id="rbc_ncnc_bld_1-hchs_sol"></a>
   * ### blood_cell_count/rbc_ncnc_bld_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226294.v1`
+    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226294.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -11549,7 +11549,7 @@
       ```
 <a id="rbc_ncnc_bld_1-jhs"></a>
   * ### blood_cell_count/rbc_ncnc_bld_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127629.v1`
+    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127629.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -11578,7 +11578,7 @@
       ```
 <a id="rbc_ncnc_bld_1-mesa"></a>
   * ### blood_cell_count/rbc_ncnc_bld_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218990.v1`
+    * 2 component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218990.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -11628,7 +11628,7 @@
     
 <a id="rdw_ratio_rbc_1-aric"></a>
   * ### blood_cell_count/rdw_ratio_rbc_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004109.v2.phv00207292.v1`, `phs000280.v4.pht004110.v2.phv00207304.v1`, `phs000280.v4.pht006422.v1.phv00294962.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
+    * 6 component_study_variables: `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004109.v2.phv00207292.v1`, `phs000280.v4.pht004110.v2.phv00207304.v1`, `phs000280.v4.pht006422.v1.phv00294962.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -11691,7 +11691,7 @@
       ```
 <a id="rdw_ratio_rbc_1-fhs_gen3nosomni2"></a>
   * ### blood_cell_count/rdw_ratio_rbc_1 -- **FHS_Gen3NOSOmni2**:
-    * component_study_variables: `phs000007.v29.pht002889.v2.phv00172185.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
+    * 2 component_study_variables: `phs000007.v29.pht002889.v2.phv00172185.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -11721,7 +11721,7 @@
       ```
 <a id="rdw_ratio_rbc_1-fhs_offspring"></a>
   * ### blood_cell_count/rdw_ratio_rbc_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227032.v1`
+    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227032.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -11754,7 +11754,7 @@
       ```
 <a id="rdw_ratio_rbc_1-fhs_omni1"></a>
   * ### blood_cell_count/rdw_ratio_rbc_1 -- **FHS_Omni1**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227032.v1`
+    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227032.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -11788,7 +11788,7 @@
       ```
 <a id="rdw_ratio_rbc_1-hchs_sol"></a>
   * ### blood_cell_count/rdw_ratio_rbc_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226308.v1`
+    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226308.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -11808,7 +11808,7 @@
       ```
 <a id="rdw_ratio_rbc_1-jhs"></a>
   * ### blood_cell_count/rdw_ratio_rbc_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127628.v1`
+    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127628.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -11881,7 +11881,7 @@
     
 <a id="wbc_ncnc_bld_1-amish"></a>
   * ### blood_cell_count/wbc_ncnc_bld_1 -- **Amish**:
-    * component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253006.v1`
+    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253006.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -11906,7 +11906,7 @@
       ```
 <a id="wbc_ncnc_bld_1-aric"></a>
   * ### blood_cell_count/wbc_ncnc_bld_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004109.v2.phv00207286.v1`, `phs000280.v4.pht004110.v2.phv00207298.v1`, `phs000280.v4.pht006422.v1.phv00294954.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
+    * 10 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004109.v2.phv00207286.v1`, `phs000280.v4.pht004110.v2.phv00207298.v1`, `phs000280.v4.pht006422.v1.phv00294954.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -11979,7 +11979,7 @@
       ```
 <a id="wbc_ncnc_bld_1-cardia"></a>
   * ### blood_cell_count/wbc_ncnc_bld_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112686.v2`
+    * 2 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112686.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -12004,7 +12004,7 @@
       ```
 <a id="wbc_ncnc_bld_1-chs"></a>
   * ### blood_cell_count/wbc_ncnc_bld_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100411.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
+    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100411.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -12022,7 +12022,7 @@
       ```
 <a id="wbc_ncnc_bld_1-fhs_gen3nosomni2"></a>
   * ### blood_cell_count/wbc_ncnc_bld_1 -- **FHS_Gen3NOSOmni2**:
-    * component_study_variables: `phs000007.v29.pht002889.v2.phv00172178.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
+    * 2 component_study_variables: `phs000007.v29.pht002889.v2.phv00172178.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -12051,7 +12051,7 @@
       ```
 <a id="wbc_ncnc_bld_1-fhs_offspring"></a>
   * ### blood_cell_count/wbc_ncnc_bld_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht000030.v7.phv00007640.v5`, `phs000007.v29.pht000031.v7.phv00008108.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`
+    * 7 component_study_variables: `phs000007.v29.pht000030.v7.phv00007640.v5`, `phs000007.v29.pht000031.v7.phv00008108.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -12129,7 +12129,7 @@
       ```
 <a id="wbc_ncnc_bld_1-fhs_omni1"></a>
   * ### blood_cell_count/wbc_ncnc_bld_1 -- **FHS_Omni1**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`
+    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -12162,7 +12162,7 @@
       ```
 <a id="wbc_ncnc_bld_1-hchs_sol"></a>
   * ### blood_cell_count/wbc_ncnc_bld_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`
+    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -12182,7 +12182,7 @@
       ```
 <a id="wbc_ncnc_bld_1-jhs"></a>
   * ### blood_cell_count/wbc_ncnc_bld_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127631.v1`
+    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127631.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -12211,7 +12211,7 @@
       ```
 <a id="wbc_ncnc_bld_1-mesa"></a>
   * ### blood_cell_count/wbc_ncnc_bld_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218997.v1`
+    * 2 component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218997.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -12235,7 +12235,7 @@
       ```
 <a id="wbc_ncnc_bld_1-whi"></a>
   * ### blood_cell_count/wbc_ncnc_bld_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000986.v6.phv00077362.v6`, `phs000200.v11.pht000986.v6.phv00077363.v6`, `phs000200.v11.pht000986.v6.phv00077368.v6`, `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`
+    * 5 component_study_variables: `phs000200.v11.pht000986.v6.phv00077362.v6`, `phs000200.v11.pht000986.v6.phv00077363.v6`, `phs000200.v11.pht000986.v6.phv00077368.v6`, `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -12315,7 +12315,7 @@
     
 <a id="antihypertensive_meds_1-amish"></a>
   * ### blood_pressure/antihypertensive_meds_1 -- **Amish**:
-    * component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00252997.v1`
+    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00252997.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -12339,7 +12339,7 @@
       ```
 <a id="antihypertensive_meds_1-aric"></a>
   * ### blood_pressure/antihypertensive_meds_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004063.v2.phv00204754.v1`
+    * 2 component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004063.v2.phv00204754.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -12364,7 +12364,7 @@
       ```
 <a id="antihypertensive_meds_1-cardia"></a>
   * ### blood_pressure/antihypertensive_meds_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001569.v2.phv00113012.v2`, `phs000285.v3.pht001571.v2.phv00113154.v2`, `phs000285.v3.pht001571.v2.phv00113155.v2`, `phs000285.v3.pht001645.v2.phv00115119.v2`
+    * 4 component_study_variables: `phs000285.v3.pht001569.v2.phv00113012.v2`, `phs000285.v3.pht001571.v2.phv00113154.v2`, `phs000285.v3.pht001571.v2.phv00113155.v2`, `phs000285.v3.pht001645.v2.phv00115119.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -12431,7 +12431,7 @@
       ```
 <a id="antihypertensive_meds_1-cfs"></a>
   * ### blood_pressure/antihypertensive_meds_1 -- **CFS**:
-    * component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123029.v1`
+    * 3 component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123029.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -12454,7 +12454,7 @@
       ```
 <a id="antihypertensive_meds_1-chs"></a>
   * ### blood_pressure/antihypertensive_meds_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100595.v1`
+    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100595.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -12473,7 +12473,7 @@
       ```
 <a id="antihypertensive_meds_1-fhs_gen3_nos_omni2"></a>
   * ### blood_pressure/antihypertensive_meds_1 -- **FHS_Gen3_NOS_Omni2**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006026.v1.phv00277059.v1`
+    * 2 component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006026.v1.phv00277059.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -12494,7 +12494,7 @@
       ```
 <a id="antihypertensive_meds_1-fhs_offspring"></a>
   * ### blood_pressure/antihypertensive_meds_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006027.v1.phv00277245.v1`
+    * 2 component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006027.v1.phv00277245.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -12515,7 +12515,7 @@
       ```
 <a id="antihypertensive_meds_1-fhs_omni1"></a>
   * ### blood_pressure/antihypertensive_meds_1 -- **FHS_Omni1**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht004813.v1.phv00250358.v1`
+    * 2 component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht004813.v1.phv00250358.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -12534,7 +12534,7 @@
       ```
 <a id="antihypertensive_meds_1-fhs_original"></a>
   * ### blood_pressure/antihypertensive_meds_1 -- **FHS_Original**:
-    * component_study_variables: `phs000007.v29.pht000009.v2.phv00000705.v1`, `phs000007.v29.pht003099.v4.phv00177936.v4`
+    * 2 component_study_variables: `phs000007.v29.pht000009.v2.phv00000705.v1`, `phs000007.v29.pht003099.v4.phv00177936.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -12556,7 +12556,7 @@
       ```
 <a id="antihypertensive_meds_1-genoa"></a>
   * ### blood_pressure/antihypertensive_meds_1 -- **GENOA**:
-    * component_study_variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006042.v1.phv00277585.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006656.v1.phv00307866.v1`
+    * 4 component_study_variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006042.v1.phv00277585.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006656.v1.phv00307866.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -12589,7 +12589,7 @@
       ```
 <a id="antihypertensive_meds_1-hchs_sol"></a>
   * ### blood_pressure/antihypertensive_meds_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226324.v1`
+    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226324.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -12607,7 +12607,7 @@
       ```
 <a id="antihypertensive_meds_1-jhs"></a>
   * ### blood_pressure/antihypertensive_meds_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001949.v1.phv00126038.v1`
+    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001949.v1.phv00126038.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -12629,7 +12629,7 @@
       ```
 <a id="antihypertensive_meds_1-mesa"></a>
   * ### blood_pressure/antihypertensive_meds_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00083163.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085324.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087093.v1`
+    * 6 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00083163.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085324.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087093.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -12656,7 +12656,7 @@
       ```
 <a id="antihypertensive_meds_1-sas"></a>
   * ### blood_pressure/antihypertensive_meds_1 -- **SAS**:
-    * component_study_variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258749.v1`
+    * 2 component_study_variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258749.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -12674,7 +12674,7 @@
       ```
 <a id="antihypertensive_meds_1-whi"></a>
   * ### blood_pressure/antihypertensive_meds_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001019.v6.phv00079850.v6`, `phs000200.v11.pht001019.v6.phv00079852.v6`, `phs000200.v11.pht002754.v4.phv00169603.v4`, `phs000200.v11.pht002754.v4.phv00169605.v4`, `phs000200.v11.pht002754.v4.phv00169608.v4`, `phs000200.v11.pht002754.v4.phv00169611.v4`
+    * 8 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001019.v6.phv00079850.v6`, `phs000200.v11.pht001019.v6.phv00079852.v6`, `phs000200.v11.pht002754.v4.phv00169603.v4`, `phs000200.v11.pht002754.v4.phv00169605.v4`, `phs000200.v11.pht002754.v4.phv00169608.v4`, `phs000200.v11.pht002754.v4.phv00169611.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -12853,7 +12853,7 @@
     
 <a id="bp_diastolic_1-amish"></a>
   * ### blood_pressure/bp_diastolic_1 -- **Amish**:
-    * component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00252995.v1`, `phs000956.v2.pht005002.v1.phv00252996.v1`
+    * 3 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00252995.v1`, `phs000956.v2.pht005002.v1.phv00252996.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -12878,7 +12878,7 @@
       ```
 <a id="bp_diastolic_1-aric"></a>
   * ### blood_pressure/bp_diastolic_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004192.v2.phv00210284.v1`, `phs000280.v4.pht004192.v2.phv00210285.v1`, `phs000280.v4.pht004192.v2.phv00210286.v1`, `phs000280.v4.pht004192.v2.phv00210287.v1`, `phs000280.v4.pht004192.v2.phv00210288.v1`, `phs000280.v4.pht004192.v2.phv00210289.v1`
+    * 7 component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004192.v2.phv00210284.v1`, `phs000280.v4.pht004192.v2.phv00210285.v1`, `phs000280.v4.pht004192.v2.phv00210286.v1`, `phs000280.v4.pht004192.v2.phv00210287.v1`, `phs000280.v4.pht004192.v2.phv00210288.v1`, `phs000280.v4.pht004192.v2.phv00210289.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -12944,7 +12944,7 @@
       ```
 <a id="bp_diastolic_1-cardia"></a>
   * ### blood_pressure/bp_diastolic_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001560.v2.phv00112481.v2`, `phs000285.v3.pht001560.v2.phv00112482.v2`, `phs000285.v3.pht001560.v2.phv00112483.v2`, `phs000285.v3.pht001560.v2.phv00112484.v2`, `phs000285.v3.pht001560.v2.phv00112487.v2`, `phs000285.v3.pht001560.v2.phv00112488.v2`, `phs000285.v3.pht001560.v2.phv00112489.v2`, `phs000285.v3.pht001560.v2.phv00112490.v2`, `phs000285.v3.pht001645.v2.phv00115119.v2`
+    * 9 component_study_variables: `phs000285.v3.pht001560.v2.phv00112481.v2`, `phs000285.v3.pht001560.v2.phv00112482.v2`, `phs000285.v3.pht001560.v2.phv00112483.v2`, `phs000285.v3.pht001560.v2.phv00112484.v2`, `phs000285.v3.pht001560.v2.phv00112487.v2`, `phs000285.v3.pht001560.v2.phv00112488.v2`, `phs000285.v3.pht001560.v2.phv00112489.v2`, `phs000285.v3.pht001560.v2.phv00112490.v2`, `phs000285.v3.pht001645.v2.phv00115119.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -12994,7 +12994,7 @@
       ```
 <a id="bp_diastolic_1-cfs"></a>
   * ### blood_pressure/bp_diastolic_1 -- **CFS**:
-    * component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123001.v1`, `phs000284.v1.pht001902.v1.phv00123002.v1`
+    * 4 component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123001.v1`, `phs000284.v1.pht001902.v1.phv00123002.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13019,7 +13019,7 @@
       ```
 <a id="bp_diastolic_1-chs"></a>
   * ### blood_pressure/bp_diastolic_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100435.v1`, `phs000287.v6.pht001452.v1.phv00100436.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
+    * 3 component_study_variables: `phs000287.v6.pht001452.v1.phv00100435.v1`, `phs000287.v6.pht001452.v1.phv00100436.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13047,7 +13047,7 @@
       ```
 <a id="bp_diastolic_1-copdgene"></a>
   * ### blood_pressure/bp_diastolic_1 -- **COPDGene**:
-    * component_study_variables: `phs000179.v5.pht002239.v4.phv00159583.v4`, `phs000179.v5.pht002239.v4.phv00159590.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
+    * 3 component_study_variables: `phs000179.v5.pht002239.v4.phv00159583.v4`, `phs000179.v5.pht002239.v4.phv00159590.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13077,7 +13077,7 @@
       ```
 <a id="bp_diastolic_1-fhs_gen3_nos_omni2"></a>
   * ### blood_pressure/bp_diastolic_1 -- **FHS_Gen3_NOS_Omni2**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006026.v1.phv00277034.v1`, `phs000007.v29.pht006026.v1.phv00277045.v1`
+    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006026.v1.phv00277034.v1`, `phs000007.v29.pht006026.v1.phv00277045.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13107,7 +13107,7 @@
       ```
 <a id="bp_diastolic_1-fhs_offspring"></a>
   * ### blood_pressure/bp_diastolic_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006027.v1.phv00277137.v1`, `phs000007.v29.pht006027.v1.phv00277185.v1`
+    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006027.v1.phv00277137.v1`, `phs000007.v29.pht006027.v1.phv00277185.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13137,7 +13137,7 @@
       ```
 <a id="bp_diastolic_1-fhs_omni1"></a>
   * ### blood_pressure/bp_diastolic_1 -- **FHS_Omni1**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht004813.v1.phv00250561.v1`, `phs000007.v29.pht004813.v1.phv00250562.v1`, `phs000007.v29.pht004813.v1.phv00250652.v1`, `phs000007.v29.pht004813.v1.phv00250653.v1`
+    * 5 component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht004813.v1.phv00250561.v1`, `phs000007.v29.pht004813.v1.phv00250562.v1`, `phs000007.v29.pht004813.v1.phv00250652.v1`, `phs000007.v29.pht004813.v1.phv00250653.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13176,7 +13176,7 @@
       ```
 <a id="bp_diastolic_1-fhs_original"></a>
   * ### blood_pressure/bp_diastolic_1 -- **FHS_Original**:
-    * component_study_variables: `phs000007.v29.pht000009.v2.phv00000719.v1`, `phs000007.v29.pht000009.v2.phv00000720.v1`, `phs000007.v29.pht000009.v2.phv00000721.v1`, `phs000007.v29.pht000009.v2.phv00000722.v1`, `phs000007.v29.pht003099.v4.phv00177936.v4`
+    * 5 component_study_variables: `phs000007.v29.pht000009.v2.phv00000719.v1`, `phs000007.v29.pht000009.v2.phv00000720.v1`, `phs000007.v29.pht000009.v2.phv00000721.v1`, `phs000007.v29.pht000009.v2.phv00000722.v1`, `phs000007.v29.pht003099.v4.phv00177936.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13215,7 +13215,7 @@
       ```
 <a id="bp_diastolic_1-genoa"></a>
   * ### blood_pressure/bp_diastolic_1 -- **GENOA**:
-    * component_study_variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006039.v1.phv00277520.v1`, `phs001238.v1.pht006039.v1.phv00277521.v1`, `phs001238.v1.pht006039.v1.phv00277522.v1`, `phs001238.v1.pht006039.v1.phv00277523.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006653.v1.phv00307801.v1`, `phs001238.v1.pht006653.v1.phv00307802.v1`, `phs001238.v1.pht006653.v1.phv00307803.v1`, `phs001238.v1.pht006653.v1.phv00307804.v1`
+    * 10 component_study_variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006039.v1.phv00277520.v1`, `phs001238.v1.pht006039.v1.phv00277521.v1`, `phs001238.v1.pht006039.v1.phv00277522.v1`, `phs001238.v1.pht006039.v1.phv00277523.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006653.v1.phv00307801.v1`, `phs001238.v1.pht006653.v1.phv00307802.v1`, `phs001238.v1.pht006653.v1.phv00307803.v1`, `phs001238.v1.pht006653.v1.phv00307804.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13252,7 +13252,7 @@
       ```
 <a id="bp_diastolic_1-goldn"></a>
   * ### blood_pressure/bp_diastolic_1 -- **GOLDN**:
-    * component_study_variables: `phs000741.v2.pht003918.v2.phv00202104.v2`, `phs000741.v2.pht003918.v2.phv00259052.v1`, `phs000741.v2.pht003918.v2.phv00259053.v1`
+    * 3 component_study_variables: `phs000741.v2.pht003918.v2.phv00202104.v2`, `phs000741.v2.pht003918.v2.phv00259052.v1`, `phs000741.v2.pht003918.v2.phv00259053.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13277,7 +13277,7 @@
       ```
 <a id="bp_diastolic_1-hchs_sol"></a>
   * ### blood_pressure/bp_diastolic_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226390.v1`, `phs000810.v1.pht004715.v1.phv00226391.v1`
+    * 3 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226390.v1`, `phs000810.v1.pht004715.v1.phv00226391.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13296,7 +13296,7 @@
       ```
 <a id="bp_diastolic_1-jhs"></a>
   * ### blood_pressure/bp_diastolic_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001974.v1.phv00128370.v1`, `phs000286.v5.pht001974.v1.phv00128371.v1`, `phs000286.v5.pht001974.v1.phv00128372.v1`, `phs000286.v5.pht001974.v1.phv00128373.v1`, `phs000286.v5.pht001974.v1.phv00128374.v1`, `phs000286.v5.pht001974.v1.phv00128375.v1`
+    * 7 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001974.v1.phv00128370.v1`, `phs000286.v5.pht001974.v1.phv00128371.v1`, `phs000286.v5.pht001974.v1.phv00128372.v1`, `phs000286.v5.pht001974.v1.phv00128373.v1`, `phs000286.v5.pht001974.v1.phv00128374.v1`, `phs000286.v5.pht001974.v1.phv00128375.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13344,7 +13344,7 @@
       ```
 <a id="bp_diastolic_1-mesa"></a>
   * ### blood_pressure/bp_diastolic_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00083403.v1`, `phs000209.v13.pht001111.v4.phv00083404.v1`, `phs000209.v13.pht001111.v4.phv00083406.v1`, `phs000209.v13.pht001111.v4.phv00083407.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085735.v2`, `phs000209.v13.pht001116.v10.phv00085736.v2`, `phs000209.v13.pht001116.v10.phv00085737.v2`, `phs000209.v13.pht001116.v10.phv00085738.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087509.v1`, `phs000209.v13.pht001121.v3.phv00087510.v1`, `phs000209.v13.pht001121.v3.phv00087512.v1`, `phs000209.v13.pht001121.v3.phv00087513.v1`
+    * 15 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00083403.v1`, `phs000209.v13.pht001111.v4.phv00083404.v1`, `phs000209.v13.pht001111.v4.phv00083406.v1`, `phs000209.v13.pht001111.v4.phv00083407.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085735.v2`, `phs000209.v13.pht001116.v10.phv00085736.v2`, `phs000209.v13.pht001116.v10.phv00085737.v2`, `phs000209.v13.pht001116.v10.phv00085738.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087509.v1`, `phs000209.v13.pht001121.v3.phv00087510.v1`, `phs000209.v13.pht001121.v3.phv00087512.v1`, `phs000209.v13.pht001121.v3.phv00087513.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13395,7 +13395,7 @@
       ```
 <a id="bp_diastolic_1-sas"></a>
   * ### blood_pressure/bp_diastolic_1 -- **SAS**:
-    * component_study_variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258701.v1`, `phs000914.v1.pht005253.v1.phv00258703.v1`
+    * 3 component_study_variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258701.v1`, `phs000914.v1.pht005253.v1.phv00258703.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13417,7 +13417,7 @@
       ```
 <a id="bp_diastolic_1-whi"></a>
   * ### blood_pressure/bp_diastolic_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001019.v6.phv00079850.v6`, `phs000200.v11.pht001019.v6.phv00079852.v6`, `phs000200.v11.pht001019.v6.phv00079854.v6`, `phs000200.v11.pht001019.v6.phv00079855.v6`, `phs000200.v11.pht001019.v6.phv00079856.v6`, `phs000200.v11.pht001019.v6.phv00079857.v6`
+    * 8 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001019.v6.phv00079850.v6`, `phs000200.v11.pht001019.v6.phv00079852.v6`, `phs000200.v11.pht001019.v6.phv00079854.v6`, `phs000200.v11.pht001019.v6.phv00079855.v6`, `phs000200.v11.pht001019.v6.phv00079856.v6`, `phs000200.v11.pht001019.v6.phv00079857.v6`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13523,7 +13523,7 @@
     
 <a id="bp_systolic_1-amish"></a>
   * ### blood_pressure/bp_systolic_1 -- **Amish**:
-    * component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00252995.v1`, `phs000956.v2.pht005002.v1.phv00252996.v1`
+    * 3 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00252995.v1`, `phs000956.v2.pht005002.v1.phv00252996.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13548,7 +13548,7 @@
       ```
 <a id="bp_systolic_1-aric"></a>
   * ### blood_pressure/bp_systolic_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004192.v2.phv00210284.v1`, `phs000280.v4.pht004192.v2.phv00210285.v1`, `phs000280.v4.pht004192.v2.phv00210286.v1`, `phs000280.v4.pht004192.v2.phv00210287.v1`, `phs000280.v4.pht004192.v2.phv00210288.v1`, `phs000280.v4.pht004192.v2.phv00210289.v1`
+    * 7 component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004192.v2.phv00210284.v1`, `phs000280.v4.pht004192.v2.phv00210285.v1`, `phs000280.v4.pht004192.v2.phv00210286.v1`, `phs000280.v4.pht004192.v2.phv00210287.v1`, `phs000280.v4.pht004192.v2.phv00210288.v1`, `phs000280.v4.pht004192.v2.phv00210289.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13614,7 +13614,7 @@
       ```
 <a id="bp_systolic_1-cardia"></a>
   * ### blood_pressure/bp_systolic_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001560.v2.phv00112481.v2`, `phs000285.v3.pht001560.v2.phv00112482.v2`, `phs000285.v3.pht001560.v2.phv00112483.v2`, `phs000285.v3.pht001560.v2.phv00112484.v2`, `phs000285.v3.pht001560.v2.phv00112487.v2`, `phs000285.v3.pht001560.v2.phv00112488.v2`, `phs000285.v3.pht001560.v2.phv00112489.v2`, `phs000285.v3.pht001560.v2.phv00112490.v2`, `phs000285.v3.pht001645.v2.phv00115119.v2`
+    * 9 component_study_variables: `phs000285.v3.pht001560.v2.phv00112481.v2`, `phs000285.v3.pht001560.v2.phv00112482.v2`, `phs000285.v3.pht001560.v2.phv00112483.v2`, `phs000285.v3.pht001560.v2.phv00112484.v2`, `phs000285.v3.pht001560.v2.phv00112487.v2`, `phs000285.v3.pht001560.v2.phv00112488.v2`, `phs000285.v3.pht001560.v2.phv00112489.v2`, `phs000285.v3.pht001560.v2.phv00112490.v2`, `phs000285.v3.pht001645.v2.phv00115119.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13664,7 +13664,7 @@
       ```
 <a id="bp_systolic_1-cfs"></a>
   * ### blood_pressure/bp_systolic_1 -- **CFS**:
-    * component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123001.v1`, `phs000284.v1.pht001902.v1.phv00123002.v1`
+    * 4 component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123001.v1`, `phs000284.v1.pht001902.v1.phv00123002.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13689,7 +13689,7 @@
       ```
 <a id="bp_systolic_1-chs"></a>
   * ### blood_pressure/bp_systolic_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100435.v1`, `phs000287.v6.pht001452.v1.phv00100436.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
+    * 3 component_study_variables: `phs000287.v6.pht001452.v1.phv00100435.v1`, `phs000287.v6.pht001452.v1.phv00100436.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13717,7 +13717,7 @@
       ```
 <a id="bp_systolic_1-copdgene"></a>
   * ### blood_pressure/bp_systolic_1 -- **COPDGene**:
-    * component_study_variables: `phs000179.v5.pht002239.v4.phv00159583.v4`, `phs000179.v5.pht002239.v4.phv00159590.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
+    * 3 component_study_variables: `phs000179.v5.pht002239.v4.phv00159583.v4`, `phs000179.v5.pht002239.v4.phv00159590.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13747,7 +13747,7 @@
       ```
 <a id="bp_systolic_1-fhs_gen3_nos_omni2"></a>
   * ### blood_pressure/bp_systolic_1 -- **FHS_Gen3_NOS_Omni2**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006026.v1.phv00277034.v1`, `phs000007.v29.pht006026.v1.phv00277045.v1`
+    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006026.v1.phv00277034.v1`, `phs000007.v29.pht006026.v1.phv00277045.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13777,7 +13777,7 @@
       ```
 <a id="bp_systolic_1-fhs_offspring"></a>
   * ### blood_pressure/bp_systolic_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006027.v1.phv00277137.v1`, `phs000007.v29.pht006027.v1.phv00277185.v1`
+    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006027.v1.phv00277137.v1`, `phs000007.v29.pht006027.v1.phv00277185.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13807,7 +13807,7 @@
       ```
 <a id="bp_systolic_1-fhs_omni1"></a>
   * ### blood_pressure/bp_systolic_1 -- **FHS_Omni1**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht004813.v1.phv00250561.v1`, `phs000007.v29.pht004813.v1.phv00250562.v1`, `phs000007.v29.pht004813.v1.phv00250652.v1`, `phs000007.v29.pht004813.v1.phv00250653.v1`
+    * 5 component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht004813.v1.phv00250561.v1`, `phs000007.v29.pht004813.v1.phv00250562.v1`, `phs000007.v29.pht004813.v1.phv00250652.v1`, `phs000007.v29.pht004813.v1.phv00250653.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13846,7 +13846,7 @@
       ```
 <a id="bp_systolic_1-fhs_original"></a>
   * ### blood_pressure/bp_systolic_1 -- **FHS_Original**:
-    * component_study_variables: `phs000007.v29.pht000009.v2.phv00000719.v1`, `phs000007.v29.pht000009.v2.phv00000720.v1`, `phs000007.v29.pht000009.v2.phv00000721.v1`, `phs000007.v29.pht000009.v2.phv00000722.v1`, `phs000007.v29.pht003099.v4.phv00177936.v4`
+    * 5 component_study_variables: `phs000007.v29.pht000009.v2.phv00000719.v1`, `phs000007.v29.pht000009.v2.phv00000720.v1`, `phs000007.v29.pht000009.v2.phv00000721.v1`, `phs000007.v29.pht000009.v2.phv00000722.v1`, `phs000007.v29.pht003099.v4.phv00177936.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13885,7 +13885,7 @@
       ```
 <a id="bp_systolic_1-genoa"></a>
   * ### blood_pressure/bp_systolic_1 -- **GENOA**:
-    * component_study_variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006039.v1.phv00277520.v1`, `phs001238.v1.pht006039.v1.phv00277521.v1`, `phs001238.v1.pht006039.v1.phv00277522.v1`, `phs001238.v1.pht006039.v1.phv00277523.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006653.v1.phv00307801.v1`, `phs001238.v1.pht006653.v1.phv00307802.v1`, `phs001238.v1.pht006653.v1.phv00307803.v1`, `phs001238.v1.pht006653.v1.phv00307804.v1`
+    * 10 component_study_variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006039.v1.phv00277520.v1`, `phs001238.v1.pht006039.v1.phv00277521.v1`, `phs001238.v1.pht006039.v1.phv00277522.v1`, `phs001238.v1.pht006039.v1.phv00277523.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006653.v1.phv00307801.v1`, `phs001238.v1.pht006653.v1.phv00307802.v1`, `phs001238.v1.pht006653.v1.phv00307803.v1`, `phs001238.v1.pht006653.v1.phv00307804.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13922,7 +13922,7 @@
       ```
 <a id="bp_systolic_1-goldn"></a>
   * ### blood_pressure/bp_systolic_1 -- **GOLDN**:
-    * component_study_variables: `phs000741.v2.pht003918.v2.phv00202104.v2`, `phs000741.v2.pht003918.v2.phv00259052.v1`, `phs000741.v2.pht003918.v2.phv00259053.v1`
+    * 3 component_study_variables: `phs000741.v2.pht003918.v2.phv00202104.v2`, `phs000741.v2.pht003918.v2.phv00259052.v1`, `phs000741.v2.pht003918.v2.phv00259053.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13947,7 +13947,7 @@
       ```
 <a id="bp_systolic_1-hchs_sol"></a>
   * ### blood_pressure/bp_systolic_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226390.v1`, `phs000810.v1.pht004715.v1.phv00226391.v1`
+    * 3 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226390.v1`, `phs000810.v1.pht004715.v1.phv00226391.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -13966,7 +13966,7 @@
       ```
 <a id="bp_systolic_1-jhs"></a>
   * ### blood_pressure/bp_systolic_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001974.v1.phv00128370.v1`, `phs000286.v5.pht001974.v1.phv00128371.v1`, `phs000286.v5.pht001974.v1.phv00128372.v1`, `phs000286.v5.pht001974.v1.phv00128373.v1`, `phs000286.v5.pht001974.v1.phv00128374.v1`, `phs000286.v5.pht001974.v1.phv00128375.v1`
+    * 7 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001974.v1.phv00128370.v1`, `phs000286.v5.pht001974.v1.phv00128371.v1`, `phs000286.v5.pht001974.v1.phv00128372.v1`, `phs000286.v5.pht001974.v1.phv00128373.v1`, `phs000286.v5.pht001974.v1.phv00128374.v1`, `phs000286.v5.pht001974.v1.phv00128375.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14014,7 +14014,7 @@
       ```
 <a id="bp_systolic_1-mesa"></a>
   * ### blood_pressure/bp_systolic_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00083403.v1`, `phs000209.v13.pht001111.v4.phv00083404.v1`, `phs000209.v13.pht001111.v4.phv00083406.v1`, `phs000209.v13.pht001111.v4.phv00083407.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085735.v2`, `phs000209.v13.pht001116.v10.phv00085736.v2`, `phs000209.v13.pht001116.v10.phv00085737.v2`, `phs000209.v13.pht001116.v10.phv00085738.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087509.v1`, `phs000209.v13.pht001121.v3.phv00087510.v1`, `phs000209.v13.pht001121.v3.phv00087512.v1`, `phs000209.v13.pht001121.v3.phv00087513.v1`
+    * 15 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00083403.v1`, `phs000209.v13.pht001111.v4.phv00083404.v1`, `phs000209.v13.pht001111.v4.phv00083406.v1`, `phs000209.v13.pht001111.v4.phv00083407.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085735.v2`, `phs000209.v13.pht001116.v10.phv00085736.v2`, `phs000209.v13.pht001116.v10.phv00085737.v2`, `phs000209.v13.pht001116.v10.phv00085738.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087509.v1`, `phs000209.v13.pht001121.v3.phv00087510.v1`, `phs000209.v13.pht001121.v3.phv00087512.v1`, `phs000209.v13.pht001121.v3.phv00087513.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14065,7 +14065,7 @@
       ```
 <a id="bp_systolic_1-sas"></a>
   * ### blood_pressure/bp_systolic_1 -- **SAS**:
-    * component_study_variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258701.v1`, `phs000914.v1.pht005253.v1.phv00258703.v1`
+    * 3 component_study_variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258701.v1`, `phs000914.v1.pht005253.v1.phv00258703.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14087,7 +14087,7 @@
       ```
 <a id="bp_systolic_1-whi"></a>
   * ### blood_pressure/bp_systolic_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001019.v6.phv00079850.v6`, `phs000200.v11.pht001019.v6.phv00079852.v6`, `phs000200.v11.pht001019.v6.phv00079854.v6`, `phs000200.v11.pht001019.v6.phv00079855.v6`, `phs000200.v11.pht001019.v6.phv00079856.v6`, `phs000200.v11.pht001019.v6.phv00079857.v6`
+    * 8 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001019.v6.phv00079850.v6`, `phs000200.v11.pht001019.v6.phv00079852.v6`, `phs000200.v11.pht001019.v6.phv00079854.v6`, `phs000200.v11.pht001019.v6.phv00079855.v6`, `phs000200.v11.pht001019.v6.phv00079856.v6`, `phs000200.v11.pht001019.v6.phv00079857.v6`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14212,7 +14212,7 @@
     
 <a id="annotated_sex_1-amish"></a>
   * ### demographic/annotated_sex_1 -- **Amish**:
-    * component_study_variables: `phs000956.v3.pht005002.v1.phv00252975.v1`
+    * 1 component_study_variables: `phs000956.v3.pht005002.v1.phv00252975.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14233,7 +14233,7 @@
       ```
 <a id="annotated_sex_1-aric"></a>
   * ### demographic/annotated_sex_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v5.pht004063.v2.phv00204711.v1`
+    * 1 component_study_variables: `phs000280.v5.pht004063.v2.phv00204711.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14258,7 +14258,7 @@
       ```
 <a id="annotated_sex_1-bags"></a>
   * ### demographic/annotated_sex_1 -- **BAGS**:
-    * component_study_variables: `phs001143.v2.pht005905.v2.phv00273212.v2`
+    * 1 component_study_variables: `phs001143.v2.pht005905.v2.phv00273212.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14278,7 +14278,7 @@
       ```
 <a id="annotated_sex_1-cardia"></a>
   * ### demographic/annotated_sex_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001645.v2.phv00115114.v2`
+    * 1 component_study_variables: `phs000285.v3.pht001645.v2.phv00115114.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14299,7 +14299,7 @@
       ```
 <a id="annotated_sex_1-ccaf"></a>
   * ### demographic/annotated_sex_1 -- **CCAF**:
-    * component_study_variables: `phs001189.v2.pht005979.v2.phv00273548.v2`
+    * 1 component_study_variables: `phs001189.v2.pht005979.v2.phv00273548.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14320,7 +14320,7 @@
       ```
 <a id="annotated_sex_1-cfs"></a>
   * ### demographic/annotated_sex_1 -- **CFS**:
-    * component_study_variables: `phs000284.v2.pht001902.v1.phv00122012.v1`, `phs000284.v2.pht001902.v1.phv00122989.v1`
+    * 2 component_study_variables: `phs000284.v2.pht001902.v1.phv00122012.v1`, `phs000284.v2.pht001902.v1.phv00122989.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14351,7 +14351,7 @@
       ```
 <a id="annotated_sex_1-chs"></a>
   * ### demographic/annotated_sex_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100302.v1`
+    * 1 component_study_variables: `phs000287.v6.pht001452.v1.phv00100302.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14375,7 +14375,7 @@
       ```
 <a id="annotated_sex_1-copdgene"></a>
   * ### demographic/annotated_sex_1 -- **COPDGene**:
-    * component_study_variables: `phs000179.v5.pht002239.v4.phv00159571.v4`
+    * 1 component_study_variables: `phs000179.v5.pht002239.v4.phv00159571.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14396,7 +14396,7 @@
       ```
 <a id="annotated_sex_1-cra"></a>
   * ### demographic/annotated_sex_1 -- **CRA**:
-    * component_study_variables: `phs000988.v2.pht005248.v2.phv00258649.v2`
+    * 1 component_study_variables: `phs000988.v2.pht005248.v2.phv00258649.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14418,7 +14418,7 @@
       ```
 <a id="annotated_sex_1-dhs"></a>
   * ### demographic/annotated_sex_1 -- **DHS**:
-    * component_study_variables: `phs001412.v1.pht006746.v1.phv00310017.v1`
+    * 1 component_study_variables: `phs001412.v1.pht006746.v1.phv00310017.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14438,7 +14438,7 @@
       ```
 <a id="annotated_sex_1-fhs"></a>
   * ### demographic/annotated_sex_1 -- **FHS**:
-    * component_study_variables: `phs000007.v30.pht003099.v5.phv00177929.v5`
+    * 1 component_study_variables: `phs000007.v30.pht003099.v5.phv00177929.v5`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14463,7 +14463,7 @@
       ```
 <a id="annotated_sex_1-galaii"></a>
   * ### demographic/annotated_sex_1 -- **GALAII**:
-    * component_study_variables: `phs001180.v1.pht006991.v1.phv00320631.v1`
+    * 1 component_study_variables: `phs001180.v1.pht006991.v1.phv00320631.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14482,7 +14482,7 @@
       ```
 <a id="annotated_sex_1-genestar"></a>
   * ### demographic/annotated_sex_1 -- **GeneSTAR**:
-    * component_study_variables: `phs001218.v1.pht007766.v1.phv00369267.v1`, `phs001218.v1.pht007766.v1.phv00369269.v1`
+    * 2 component_study_variables: `phs001218.v1.pht007766.v1.phv00369267.v1`, `phs001218.v1.pht007766.v1.phv00369269.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14515,7 +14515,7 @@
       ```
 <a id="annotated_sex_1-genoa"></a>
   * ### demographic/annotated_sex_1 -- **GENOA**:
-    * component_study_variables: `phs001238.v2.pht006039.v1.phv00277506.v1`, `phs001238.v2.pht006653.v1.phv00307787.v1`
+    * 2 component_study_variables: `phs001238.v2.pht006039.v1.phv00277506.v1`, `phs001238.v2.pht006653.v1.phv00307787.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14543,7 +14543,7 @@
       ```
 <a id="annotated_sex_1-goldn"></a>
   * ### demographic/annotated_sex_1 -- **GOLDN**:
-    * component_study_variables: `phs000741.v2.pht003918.v2.phv00202103.v2`
+    * 1 component_study_variables: `phs000741.v2.pht003918.v2.phv00202103.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14566,7 +14566,7 @@
       ```
 <a id="annotated_sex_1-hchs_sol"></a>
   * ### demographic/annotated_sex_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226279.v1`
+    * 1 component_study_variables: `phs000810.v1.pht004715.v1.phv00226279.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14585,7 +14585,7 @@
       ```
 <a id="annotated_sex_1-hvh"></a>
   * ### demographic/annotated_sex_1 -- **HVH**:
-    * component_study_variables: `phs001013.v3.pht005311.v2.phv00259379.v2`
+    * 1 component_study_variables: `phs001013.v3.pht005311.v2.phv00259379.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14605,7 +14605,7 @@
       ```
 <a id="annotated_sex_1-jhs"></a>
   * ### demographic/annotated_sex_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126012.v1`
+    * 1 component_study_variables: `phs000286.v5.pht001949.v1.phv00126012.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14628,7 +14628,7 @@
       ```
 <a id="annotated_sex_1-mayo_vte_geneva"></a>
   * ### demographic/annotated_sex_1 -- **Mayo_VTE_GENEVA**:
-    * component_study_variables: `phs000289.v2.pht001886.v2.phv00121845.v1`
+    * 1 component_study_variables: `phs000289.v2.pht001886.v2.phv00121845.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14646,7 +14646,7 @@
       ```
 <a id="annotated_sex_1-mayo_vte_olmsted"></a>
   * ### demographic/annotated_sex_1 -- **Mayo_VTE_Olmsted**:
-    * component_study_variables: `phs001402.v1.pht008239.v1.phv00389901.v1`
+    * 1 component_study_variables: `phs001402.v1.pht008239.v1.phv00389901.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14663,7 +14663,7 @@
       ```
 <a id="annotated_sex_1-mesa_airnr"></a>
   * ### demographic/annotated_sex_1 -- **MESA_AirNR**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00082643.v1`
+    * 1 component_study_variables: `phs000209.v13.pht001111.v4.phv00082643.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14688,7 +14688,7 @@
       ```
 <a id="annotated_sex_1-mesa_classic"></a>
   * ### demographic/annotated_sex_1 -- **MESA_Classic**:
-    * component_study_variables: `phs000209.v13.pht001116.v10.phv00084446.v2`
+    * 1 component_study_variables: `phs000209.v13.pht001116.v10.phv00084446.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14713,7 +14713,7 @@
       ```
 <a id="annotated_sex_1-mesa_family"></a>
   * ### demographic/annotated_sex_1 -- **MESA_Family**:
-    * component_study_variables: `phs000209.v13.pht001121.v3.phv00087073.v1`
+    * 1 component_study_variables: `phs000209.v13.pht001121.v3.phv00087073.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14736,7 +14736,7 @@
       ```
 <a id="annotated_sex_1-mgh_af"></a>
   * ### demographic/annotated_sex_1 -- **MGH_AF**:
-    * component_study_variables: `phs001001.v1.pht005655.v1.phv00354562.v1`
+    * 1 component_study_variables: `phs001001.v1.pht005655.v1.phv00354562.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14750,7 +14750,7 @@
       ```
 <a id="annotated_sex_1-partners"></a>
   * ### demographic/annotated_sex_1 -- **Partners**:
-    * component_study_variables: `phs001024.v3.pht005693.v1.phv00265979.v1`
+    * 1 component_study_variables: `phs001024.v3.pht005693.v1.phv00265979.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14765,7 +14765,7 @@
       ```
 <a id="annotated_sex_1-sage"></a>
   * ### demographic/annotated_sex_1 -- **SAGE**:
-    * component_study_variables: `phs000921.v3.pht004883.v3.phv00252284.v3`
+    * 1 component_study_variables: `phs000921.v3.pht004883.v3.phv00252284.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14788,7 +14788,7 @@
       ```
 <a id="annotated_sex_1-sas"></a>
   * ### demographic/annotated_sex_1 -- **SAS**:
-    * component_study_variables: `phs000914.v1.pht005253.v1.phv00258679.v1`
+    * 1 component_study_variables: `phs000914.v1.pht005253.v1.phv00258679.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14809,7 +14809,7 @@
       ```
 <a id="annotated_sex_1-vafar"></a>
   * ### demographic/annotated_sex_1 -- **VAFAR**:
-    * component_study_variables: `phs000997.v3.pht005688.v3.phv00265923.v3`
+    * 1 component_study_variables: `phs000997.v3.pht005688.v3.phv00265923.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14830,7 +14830,7 @@
       ```
 <a id="annotated_sex_1-vu_af"></a>
   * ### demographic/annotated_sex_1 -- **VU_AF**:
-    * component_study_variables: `phs001032.v4.pht005675.v3.phv00265807.v2`
+    * 1 component_study_variables: `phs001032.v4.pht005675.v3.phv00265807.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14851,7 +14851,7 @@
       ```
 <a id="annotated_sex_1-wghs"></a>
   * ### demographic/annotated_sex_1 -- **WGHS**:
-    * component_study_variables: `phs001040.v3.pht005682.v3.phv00265850.v3`
+    * 1 component_study_variables: `phs001040.v3.pht005682.v3.phv00265850.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14866,7 +14866,7 @@
       ```
 <a id="annotated_sex_1-whi"></a>
   * ### demographic/annotated_sex_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000982.v8.phv00077315.v8`
+    * 1 component_study_variables: `phs000200.v11.pht000982.v8.phv00077315.v8`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14925,7 +14925,7 @@
     
 <a id="geographic_site_1-aric"></a>
   * ### demographic/geographic_site_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v5.pht004063.v2.phv00204813.v1`
+    * 1 component_study_variables: `phs000280.v5.pht004063.v2.phv00204813.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14958,7 +14958,7 @@
       ```
 <a id="geographic_site_1-cardia"></a>
   * ### demographic/geographic_site_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001700.v2.phv00116398.v2`
+    * 1 component_study_variables: `phs000285.v3.pht001700.v2.phv00116398.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -14989,7 +14989,7 @@
       ```
 <a id="geographic_site_1-chs"></a>
   * ### demographic/geographic_site_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100291.v1`
+    * 1 component_study_variables: `phs000287.v6.pht001452.v1.phv00100291.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15027,7 +15027,7 @@
       ```
 <a id="geographic_site_1-copdgene"></a>
   * ### demographic/geographic_site_1 -- **COPDGene**:
-    * component_study_variables: `phs000179.v5.pht002239.v4.phv00159569.v4`
+    * 1 component_study_variables: `phs000179.v5.pht002239.v4.phv00159569.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15053,7 +15053,7 @@
       ```
 <a id="geographic_site_1-genoa"></a>
   * ### demographic/geographic_site_1 -- **GENOA**:
-    * component_study_variables: `phs001238.v2.pht006039.v1.phv00277506.v1`, `phs001238.v2.pht006653.v1.phv00307787.v1`
+    * 2 component_study_variables: `phs001238.v2.pht006039.v1.phv00277506.v1`, `phs001238.v2.pht006653.v1.phv00307787.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15081,7 +15081,7 @@
       ```
 <a id="geographic_site_1-goldn"></a>
   * ### demographic/geographic_site_1 -- **GOLDN**:
-    * component_study_variables: `phs000741.v2.pht003918.v2.phv00202105.v2`
+    * 1 component_study_variables: `phs000741.v2.pht003918.v2.phv00202105.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15114,7 +15114,7 @@
       ```
 <a id="geographic_site_1-hchs_sol"></a>
   * ### demographic/geographic_site_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226256.v1`
+    * 1 component_study_variables: `phs000810.v1.pht004715.v1.phv00226256.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15150,7 +15150,7 @@
       ```
 <a id="geographic_site_1-jhs"></a>
   * ### demographic/geographic_site_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126005.v1`
+    * 1 component_study_variables: `phs000286.v5.pht001949.v1.phv00126005.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15179,7 +15179,7 @@
       ```
 <a id="geographic_site_1-mesa_airnr"></a>
   * ### demographic/geographic_site_1 -- **MESA_AirNR**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00082644.v1`
+    * 1 component_study_variables: `phs000209.v13.pht001111.v4.phv00082644.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15221,7 +15221,7 @@
       ```
 <a id="geographic_site_1-mesa_classic"></a>
   * ### demographic/geographic_site_1 -- **MESA_Classic**:
-    * component_study_variables: `phs000209.v13.pht001116.v10.phv00084447.v2`
+    * 1 component_study_variables: `phs000209.v13.pht001116.v10.phv00084447.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15263,7 +15263,7 @@
       ```
 <a id="geographic_site_1-mesa_family"></a>
   * ### demographic/geographic_site_1 -- **MESA_Family**:
-    * component_study_variables: `phs000209.v13.pht001121.v3.phv00087075.v1`
+    * 1 component_study_variables: `phs000209.v13.pht001121.v3.phv00087075.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15304,7 +15304,7 @@
       ```
 <a id="geographic_site_1-sas"></a>
   * ### demographic/geographic_site_1 -- **SAS**:
-    * component_study_variables: `phs000914.v1.pht005253.v1.phv00258677.v1`
+    * 1 component_study_variables: `phs000914.v1.pht005253.v1.phv00258677.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15339,7 +15339,7 @@
       ```
 <a id="geographic_site_1-whi"></a>
   * ### demographic/geographic_site_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht001031.v6.phv00080435.v6`
+    * 1 component_study_variables: `phs000200.v11.pht001031.v6.phv00080435.v6`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15455,7 +15455,7 @@
     
 <a id="hispanic_or_latino_1-bags"></a>
   * ### demographic/hispanic_or_latino_1 -- **BAGS**:
-    * component_study_variables: `phs001143.v2.pht005902.v1.phv00273200.v1`
+    * 1 component_study_variables: `phs001143.v2.pht005902.v1.phv00273200.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15472,7 +15472,7 @@
       ```
 <a id="hispanic_or_latino_1-ccaf"></a>
   * ### demographic/hispanic_or_latino_1 -- **CCAF**:
-    * component_study_variables: `phs001189.v2.pht005979.v2.phv00273550.v2`
+    * 1 component_study_variables: `phs001189.v2.pht005979.v2.phv00273550.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15497,7 +15497,7 @@
       ```
 <a id="hispanic_or_latino_1-cfs"></a>
   * ### demographic/hispanic_or_latino_1 -- **CFS**:
-    * component_study_variables: `phs000284.v2.pht001902.v1.phv00122991.v1`, `phs000284.v2.pht001902.v1.phv00122992.v1`
+    * 2 component_study_variables: `phs000284.v2.pht001902.v1.phv00122991.v1`, `phs000284.v2.pht001902.v1.phv00122992.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15539,7 +15539,7 @@
       ```
 <a id="hispanic_or_latino_1-chs_africanamerican"></a>
   * ### demographic/hispanic_or_latino_1 -- **CHS_AfricanAmerican**:
-    * component_study_variables: `phs000287.v6.pht001490.v1.phv00105652.v1`
+    * 1 component_study_variables: `phs000287.v6.pht001490.v1.phv00105652.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15562,7 +15562,7 @@
       ```
 <a id="hispanic_or_latino_1-chs_original"></a>
   * ### demographic/hispanic_or_latino_1 -- **CHS_Original**:
-    * component_study_variables: `phs000287.v6.pht001450.v1.phv00099434.v1`
+    * 1 component_study_variables: `phs000287.v6.pht001450.v1.phv00099434.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15585,7 +15585,7 @@
       ```
 <a id="hispanic_or_latino_1-copdgene"></a>
   * ### demographic/hispanic_or_latino_1 -- **COPDGene**:
-    * component_study_variables: `phs000179.v5.pht002239.v4.phv00159573.v4`
+    * 1 component_study_variables: `phs000179.v5.pht002239.v4.phv00159573.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15607,7 +15607,7 @@
       ```
 <a id="hispanic_or_latino_1-cra"></a>
   * ### demographic/hispanic_or_latino_1 -- **CRA**:
-    * component_study_variables: `phs000988.v2.pht005248.v2.phv00258651.v2`
+    * 1 component_study_variables: `phs000988.v2.pht005248.v2.phv00258651.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15628,7 +15628,7 @@
       ```
 <a id="hispanic_or_latino_1-fhs_gen3"></a>
   * ### demographic/hispanic_or_latino_1 -- **FHS_Gen3**:
-    * component_study_variables: `phs000007.v30.pht000074.v11.phv00021245.v5`, `phs000007.v30.pht000074.v11.phv00021398.v5`, `phs000007.v30.pht003094.v5.phv00177238.v3`, `phs000007.v30.pht003094.v5.phv00177597.v3`
+    * 4 component_study_variables: `phs000007.v30.pht000074.v11.phv00021245.v5`, `phs000007.v30.pht000074.v11.phv00021398.v5`, `phs000007.v30.pht003094.v5.phv00177238.v3`, `phs000007.v30.pht003094.v5.phv00177597.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15696,7 +15696,7 @@
       ```
 <a id="hispanic_or_latino_1-fhs_newoffspringspouse"></a>
   * ### demographic/hispanic_or_latino_1 -- **FHS_NewOffspringSpouse**:
-    * component_study_variables: `phs000007.v30.pht003094.v5.phv00177238.v3`, `phs000007.v30.pht003094.v5.phv00177597.v3`, `phs000007.v30.pht006005.v1.phv00273701.v1`, `phs000007.v30.pht006005.v1.phv00274067.v1`
+    * 4 component_study_variables: `phs000007.v30.pht003094.v5.phv00177238.v3`, `phs000007.v30.pht003094.v5.phv00177597.v3`, `phs000007.v30.pht006005.v1.phv00273701.v1`, `phs000007.v30.pht006005.v1.phv00274067.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15762,7 +15762,7 @@
       ```
 <a id="hispanic_or_latino_1-fhs_offspring"></a>
   * ### demographic/hispanic_or_latino_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v30.pht000747.v6.phv00072044.v5`, `phs000007.v30.pht000747.v6.phv00072538.v5`, `phs000007.v30.pht000747.v6.phv00072539.v5`
+    * 3 component_study_variables: `phs000007.v30.pht000747.v6.phv00072044.v5`, `phs000007.v30.pht000747.v6.phv00072538.v5`, `phs000007.v30.pht000747.v6.phv00072539.v5`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15800,7 +15800,7 @@
       ```
 <a id="hispanic_or_latino_1-fhs_omni1"></a>
   * ### demographic/hispanic_or_latino_1 -- **FHS_Omni1**:
-    * component_study_variables: `phs000007.v30.pht004815.v1.phv00251263.v1`, `phs000007.v30.pht004815.v1.phv00251746.v1`, `phs000007.v30.pht004815.v1.phv00251747.v1`
+    * 3 component_study_variables: `phs000007.v30.pht004815.v1.phv00251263.v1`, `phs000007.v30.pht004815.v1.phv00251746.v1`, `phs000007.v30.pht004815.v1.phv00251747.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15838,7 +15838,7 @@
       ```
 <a id="hispanic_or_latino_1-fhs_omni2"></a>
   * ### demographic/hispanic_or_latino_1 -- **FHS_Omni2**:
-    * component_study_variables: `phs000007.v30.pht003094.v5.phv00177238.v3`, `phs000007.v30.pht003094.v5.phv00177597.v3`, `phs000007.v30.pht006006.v2.phv00274194.v2`, `phs000007.v30.pht006006.v2.phv00274558.v2`
+    * 4 component_study_variables: `phs000007.v30.pht003094.v5.phv00177238.v3`, `phs000007.v30.pht003094.v5.phv00177597.v3`, `phs000007.v30.pht006006.v2.phv00274194.v2`, `phs000007.v30.pht006006.v2.phv00274558.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15904,7 +15904,7 @@
       ```
 <a id="hispanic_or_latino_1-galaii"></a>
   * ### demographic/hispanic_or_latino_1 -- **GALAII**:
-    * component_study_variables: `phs001180.v1.pht006988.v1.phv00320615.v1`
+    * 1 component_study_variables: `phs001180.v1.pht006988.v1.phv00320615.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15922,7 +15922,7 @@
       ```
 <a id="hispanic_or_latino_1-genoa"></a>
   * ### demographic/hispanic_or_latino_1 -- **GENOA**:
-    * component_study_variables: `phs001238.v2.pht006039.v1.phv00277509.v1`, `phs001238.v2.pht006653.v1.phv00307790.v1`
+    * 2 component_study_variables: `phs001238.v2.pht006039.v1.phv00277509.v1`, `phs001238.v2.pht006653.v1.phv00307790.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15951,7 +15951,7 @@
       ```
 <a id="hispanic_or_latino_1-hchs_sol"></a>
   * ### demographic/hispanic_or_latino_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004713.v1.phv00226241.v1`
+    * 1 component_study_variables: `phs000810.v1.pht004713.v1.phv00226241.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15975,7 +15975,7 @@
       ```
 <a id="hispanic_or_latino_1-hvh"></a>
   * ### demographic/hispanic_or_latino_1 -- **HVH**:
-    * component_study_variables: `phs001013.v3.pht005311.v2.phv00259381.v2`
+    * 1 component_study_variables: `phs001013.v3.pht005311.v2.phv00259381.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -15993,7 +15993,7 @@
       ```
 <a id="hispanic_or_latino_1-mayo_vte_geneva"></a>
   * ### demographic/hispanic_or_latino_1 -- **Mayo_VTE_GENEVA**:
-    * component_study_variables: `phs000289.v2.pht001886.v2.phv00121875.v2`
+    * 1 component_study_variables: `phs000289.v2.pht001886.v2.phv00121875.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -16012,7 +16012,7 @@
       ```
 <a id="hispanic_or_latino_1-mayo_vte_olmsted"></a>
   * ### demographic/hispanic_or_latino_1 -- **Mayo_VTE_Olmsted**:
-    * component_study_variables: `phs001402.v1.pht008239.v1.phv00389931.v1`
+    * 1 component_study_variables: `phs001402.v1.pht008239.v1.phv00389931.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -16031,7 +16031,7 @@
       ```
 <a id="hispanic_or_latino_1-mesa_airnr"></a>
   * ### demographic/hispanic_or_latino_1 -- **MESA_AirNR**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00082641.v1`, `phs000209.v13.pht003086.v3.phv00174585.v1`
+    * 2 component_study_variables: `phs000209.v13.pht001111.v4.phv00082641.v1`, `phs000209.v13.pht003086.v3.phv00174585.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -16070,7 +16070,7 @@
       ```
 <a id="hispanic_or_latino_1-mesa_classic"></a>
   * ### demographic/hispanic_or_latino_1 -- **MESA_Classic**:
-    * component_study_variables: `phs000209.v13.pht001116.v10.phv00084444.v2`, `phs000209.v13.pht001118.v8.phv00085775.v2`, `phs000209.v13.pht001119.v8.phv00086261.v2`, `phs000209.v13.pht001120.v10.phv00086729.v2`, `phs000209.v13.pht003091.v3.phv00176008.v1`
+    * 5 component_study_variables: `phs000209.v13.pht001116.v10.phv00084444.v2`, `phs000209.v13.pht001118.v8.phv00085775.v2`, `phs000209.v13.pht001119.v8.phv00086261.v2`, `phs000209.v13.pht001120.v10.phv00086729.v2`, `phs000209.v13.pht003091.v3.phv00176008.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -16118,7 +16118,7 @@
       ```
 <a id="hispanic_or_latino_1-mesa_family"></a>
   * ### demographic/hispanic_or_latino_1 -- **MESA_Family**:
-    * component_study_variables: `phs000209.v13.pht001121.v3.phv00087074.v1`, `phs000209.v13.pht001121.v3.phv00087659.v1`
+    * 2 component_study_variables: `phs000209.v13.pht001121.v3.phv00087074.v1`, `phs000209.v13.pht001121.v3.phv00087659.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -16152,7 +16152,7 @@
       ```
 <a id="hispanic_or_latino_1-mgh_af"></a>
   * ### demographic/hispanic_or_latino_1 -- **MGH_AF**:
-    * component_study_variables: `phs001001.v1.pht005655.v1.phv00354563.v1`
+    * 1 component_study_variables: `phs001001.v1.pht005655.v1.phv00354563.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -16170,7 +16170,7 @@
       ```
 <a id="hispanic_or_latino_1-partners"></a>
   * ### demographic/hispanic_or_latino_1 -- **Partners**:
-    * component_study_variables: `phs001024.v3.pht005693.v1.phv00265981.v1`
+    * 1 component_study_variables: `phs001024.v3.pht005693.v1.phv00265981.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -16192,7 +16192,7 @@
       ```
 <a id="hispanic_or_latino_1-vafar"></a>
   * ### demographic/hispanic_or_latino_1 -- **VAFAR**:
-    * component_study_variables: `phs000997.v3.pht005688.v3.phv00265925.v3`
+    * 1 component_study_variables: `phs000997.v3.pht005688.v3.phv00265925.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -16217,7 +16217,7 @@
       ```
 <a id="hispanic_or_latino_1-vu_af"></a>
   * ### demographic/hispanic_or_latino_1 -- **VU_AF**:
-    * component_study_variables: `phs001032.v4.pht005675.v3.phv00265809.v2`
+    * 1 component_study_variables: `phs001032.v4.pht005675.v3.phv00265809.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -16242,7 +16242,7 @@
       ```
 <a id="hispanic_or_latino_1-whi"></a>
   * ### demographic/hispanic_or_latino_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078450.v6`
+    * 1 component_study_variables: `phs000200.v11.pht000998.v6.phv00078450.v6`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -16291,7 +16291,7 @@
     
 <a id="hispanic_subgroup_1-cra"></a>
   * ### demographic/hispanic_subgroup_1 -- **CRA**:
-    * component_study_variables: `phs000988.v2.pht005248.v2.phv00258651.v2`
+    * 1 component_study_variables: `phs000988.v2.pht005248.v2.phv00258651.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -16312,7 +16312,7 @@
       ```
 <a id="hispanic_subgroup_1-hchs_sol"></a>
   * ### demographic/hispanic_subgroup_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226254.v1`
+    * 1 component_study_variables: `phs000810.v1.pht004715.v1.phv00226254.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -16340,7 +16340,7 @@
       ```
 <a id="hispanic_subgroup_1-mesa_airnr"></a>
   * ### demographic/hispanic_subgroup_1 -- **MESA_AirNR**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00083215.v1`
+    * 1 component_study_variables: `phs000209.v13.pht001111.v4.phv00083215.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -16373,7 +16373,7 @@
       ```
 <a id="hispanic_subgroup_1-mesa_classic"></a>
   * ### demographic/hispanic_subgroup_1 -- **MESA_Classic**:
-    * component_study_variables: `phs000209.v13.pht001116.v10.phv00085543.v2`
+    * 1 component_study_variables: `phs000209.v13.pht001116.v10.phv00085543.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -16406,7 +16406,7 @@
       ```
 <a id="hispanic_subgroup_1-mesa_family"></a>
   * ### demographic/hispanic_subgroup_1 -- **MESA_Family**:
-    * component_study_variables: `phs000209.v13.pht001121.v3.phv00087228.v1`
+    * 1 component_study_variables: `phs000209.v13.pht001121.v3.phv00087228.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -16439,7 +16439,7 @@
       ```
 <a id="hispanic_subgroup_1-whi"></a>
   * ### demographic/hispanic_subgroup_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078450.v6`, `phs000200.v11.pht001009.v6.phv00079316.v6`
+    * 2 component_study_variables: `phs000200.v11.pht000998.v6.phv00078450.v6`, `phs000200.v11.pht001009.v6.phv00079316.v6`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -16579,7 +16579,7 @@
     
 <a id="race_us_1-amish"></a>
   * ### demographic/race_us_1 -- **Amish**:
-    * component_study_variables: `phs000956.v3.pht005000.v1.phv00252969.v1`
+    * 1 component_study_variables: `phs000956.v3.pht005000.v1.phv00252969.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -16601,7 +16601,7 @@
       ```
 <a id="race_us_1-aric"></a>
   * ### demographic/race_us_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v5.pht004062.v2.phv00204633.v1`, `phs000280.v5.pht004063.v2.phv00204710.v1`, `phs000280.v5.pht004065.v2.phv00204962.v1`
+    * 3 component_study_variables: `phs000280.v5.pht004062.v2.phv00204633.v1`, `phs000280.v5.pht004063.v2.phv00204710.v1`, `phs000280.v5.pht004065.v2.phv00204962.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -16653,7 +16653,7 @@
       ```
 <a id="race_us_1-cardia"></a>
   * ### demographic/race_us_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001645.v2.phv00115113.v2`
+    * 1 component_study_variables: `phs000285.v3.pht001645.v2.phv00115113.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -16689,7 +16689,7 @@
       ```
 <a id="race_us_1-ccaf"></a>
   * ### demographic/race_us_1 -- **CCAF**:
-    * component_study_variables: `phs001189.v2.pht005979.v2.phv00273549.v2`
+    * 1 component_study_variables: `phs001189.v2.pht005979.v2.phv00273549.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -16713,7 +16713,7 @@
       ```
 <a id="race_us_1-cfs"></a>
   * ### demographic/race_us_1 -- **CFS**:
-    * component_study_variables: `phs000284.v2.pht001902.v1.phv00122991.v1`
+    * 1 component_study_variables: `phs000284.v2.pht001902.v1.phv00122991.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -16768,7 +16768,7 @@
       ```
 <a id="race_us_1-chs_africanamerican"></a>
   * ### demographic/race_us_1 -- **CHS_AfricanAmerican**:
-    * component_study_variables: `phs000287.v6.pht001490.v1.phv00105645.v1`
+    * 1 component_study_variables: `phs000287.v6.pht001490.v1.phv00105645.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -16795,7 +16795,7 @@
       ```
 <a id="race_us_1-chs_original"></a>
   * ### demographic/race_us_1 -- **CHS_Original**:
-    * component_study_variables: `phs000287.v6.pht001450.v1.phv00099569.v1`
+    * 1 component_study_variables: `phs000287.v6.pht001450.v1.phv00099569.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -16822,7 +16822,7 @@
       ```
 <a id="race_us_1-copdgene"></a>
   * ### demographic/race_us_1 -- **COPDGene**:
-    * component_study_variables: `phs000179.v5.pht002239.v4.phv00159572.v4`
+    * 1 component_study_variables: `phs000179.v5.pht002239.v4.phv00159572.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -16847,7 +16847,7 @@
       ```
 <a id="race_us_1-dhs"></a>
   * ### demographic/race_us_1 -- **DHS**:
-    * component_study_variables: `phs001412.v1.pht006746.v1.phv00310019.v1`
+    * 1 component_study_variables: `phs001412.v1.pht006746.v1.phv00310019.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -16864,7 +16864,7 @@
       ```
 <a id="race_us_1-fhs_gen3"></a>
   * ### demographic/race_us_1 -- **FHS_Gen3**:
-    * component_study_variables: `phs000007.v30.pht000074.v11.phv00021244.v5`, `phs000007.v30.pht000074.v11.phv00021245.v5`, `phs000007.v30.pht000074.v11.phv00021246.v5`, `phs000007.v30.pht000074.v11.phv00021247.v5`, `phs000007.v30.pht000074.v11.phv00021248.v5`, `phs000007.v30.pht000074.v11.phv00021249.v5`, `phs000007.v30.pht000074.v11.phv00021250.v5`, `phs000007.v30.pht000074.v11.phv00021251.v5`, `phs000007.v30.pht000074.v11.phv00021398.v5`, `phs000007.v30.pht003094.v5.phv00177238.v3`, `phs000007.v30.pht003094.v5.phv00177597.v3`, `phs000007.v30.pht003094.v5.phv00177598.v3`, `phs000007.v30.pht003094.v5.phv00177599.v3`, `phs000007.v30.pht003094.v5.phv00177600.v3`, `phs000007.v30.pht003094.v5.phv00177601.v3`, `phs000007.v30.pht003094.v5.phv00177602.v3`, `phs000007.v30.pht003094.v5.phv00177603.v3`
+    * 17 component_study_variables: `phs000007.v30.pht000074.v11.phv00021244.v5`, `phs000007.v30.pht000074.v11.phv00021245.v5`, `phs000007.v30.pht000074.v11.phv00021246.v5`, `phs000007.v30.pht000074.v11.phv00021247.v5`, `phs000007.v30.pht000074.v11.phv00021248.v5`, `phs000007.v30.pht000074.v11.phv00021249.v5`, `phs000007.v30.pht000074.v11.phv00021250.v5`, `phs000007.v30.pht000074.v11.phv00021251.v5`, `phs000007.v30.pht000074.v11.phv00021398.v5`, `phs000007.v30.pht003094.v5.phv00177238.v3`, `phs000007.v30.pht003094.v5.phv00177597.v3`, `phs000007.v30.pht003094.v5.phv00177598.v3`, `phs000007.v30.pht003094.v5.phv00177599.v3`, `phs000007.v30.pht003094.v5.phv00177600.v3`, `phs000007.v30.pht003094.v5.phv00177601.v3`, `phs000007.v30.pht003094.v5.phv00177602.v3`, `phs000007.v30.pht003094.v5.phv00177603.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -16999,7 +16999,7 @@
       ```
 <a id="race_us_1-fhs_newoffspringspouse"></a>
   * ### demographic/race_us_1 -- **FHS_NewOffspringSpouse**:
-    * component_study_variables: `phs000007.v30.pht003094.v5.phv00177238.v3`, `phs000007.v30.pht003094.v5.phv00177597.v3`, `phs000007.v30.pht003094.v5.phv00177598.v3`, `phs000007.v30.pht003094.v5.phv00177599.v3`, `phs000007.v30.pht003094.v5.phv00177600.v3`, `phs000007.v30.pht003094.v5.phv00177601.v3`, `phs000007.v30.pht003094.v5.phv00177602.v3`, `phs000007.v30.pht003094.v5.phv00177603.v3`, `phs000007.v30.pht006005.v1.phv00273701.v1`, `phs000007.v30.pht006005.v1.phv00274066.v1`, `phs000007.v30.pht006005.v1.phv00274067.v1`, `phs000007.v30.pht006005.v1.phv00274068.v1`, `phs000007.v30.pht006005.v1.phv00274069.v1`, `phs000007.v30.pht006005.v1.phv00274070.v1`, `phs000007.v30.pht006005.v1.phv00274071.v1`, `phs000007.v30.pht006005.v1.phv00274072.v1`, `phs000007.v30.pht006005.v1.phv00274073.v1`
+    * 17 component_study_variables: `phs000007.v30.pht003094.v5.phv00177238.v3`, `phs000007.v30.pht003094.v5.phv00177597.v3`, `phs000007.v30.pht003094.v5.phv00177598.v3`, `phs000007.v30.pht003094.v5.phv00177599.v3`, `phs000007.v30.pht003094.v5.phv00177600.v3`, `phs000007.v30.pht003094.v5.phv00177601.v3`, `phs000007.v30.pht003094.v5.phv00177602.v3`, `phs000007.v30.pht003094.v5.phv00177603.v3`, `phs000007.v30.pht006005.v1.phv00273701.v1`, `phs000007.v30.pht006005.v1.phv00274066.v1`, `phs000007.v30.pht006005.v1.phv00274067.v1`, `phs000007.v30.pht006005.v1.phv00274068.v1`, `phs000007.v30.pht006005.v1.phv00274069.v1`, `phs000007.v30.pht006005.v1.phv00274070.v1`, `phs000007.v30.pht006005.v1.phv00274071.v1`, `phs000007.v30.pht006005.v1.phv00274072.v1`, `phs000007.v30.pht006005.v1.phv00274073.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -17133,7 +17133,7 @@
       ```
 <a id="race_us_1-fhs_offspring"></a>
   * ### demographic/race_us_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v30.pht000747.v6.phv00072044.v5`, `phs000007.v30.pht000747.v6.phv00072530.v5`, `phs000007.v30.pht000747.v6.phv00072531.v5`, `phs000007.v30.pht000747.v6.phv00072532.v5`, `phs000007.v30.pht000747.v6.phv00072533.v5`, `phs000007.v30.pht000747.v6.phv00072534.v5`, `phs000007.v30.pht000747.v6.phv00072537.v5`
+    * 7 component_study_variables: `phs000007.v30.pht000747.v6.phv00072044.v5`, `phs000007.v30.pht000747.v6.phv00072530.v5`, `phs000007.v30.pht000747.v6.phv00072531.v5`, `phs000007.v30.pht000747.v6.phv00072532.v5`, `phs000007.v30.pht000747.v6.phv00072533.v5`, `phs000007.v30.pht000747.v6.phv00072534.v5`, `phs000007.v30.pht000747.v6.phv00072537.v5`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -17192,7 +17192,7 @@
       ```
 <a id="race_us_1-fhs_omni1"></a>
   * ### demographic/race_us_1 -- **FHS_Omni1**:
-    * component_study_variables: `phs000007.v30.pht004815.v1.phv00251263.v1`, `phs000007.v30.pht004815.v1.phv00251748.v1`, `phs000007.v30.pht004815.v1.phv00251749.v1`, `phs000007.v30.pht004815.v1.phv00251750.v1`, `phs000007.v30.pht004815.v1.phv00251751.v1`, `phs000007.v30.pht004815.v1.phv00251752.v1`, `phs000007.v30.pht004815.v1.phv00251753.v1`
+    * 7 component_study_variables: `phs000007.v30.pht004815.v1.phv00251263.v1`, `phs000007.v30.pht004815.v1.phv00251748.v1`, `phs000007.v30.pht004815.v1.phv00251749.v1`, `phs000007.v30.pht004815.v1.phv00251750.v1`, `phs000007.v30.pht004815.v1.phv00251751.v1`, `phs000007.v30.pht004815.v1.phv00251752.v1`, `phs000007.v30.pht004815.v1.phv00251753.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -17252,7 +17252,7 @@
       ```
 <a id="race_us_1-fhs_omni2"></a>
   * ### demographic/race_us_1 -- **FHS_Omni2**:
-    * component_study_variables: `phs000007.v30.pht003094.v5.phv00177238.v3`, `phs000007.v30.pht003094.v5.phv00177597.v3`, `phs000007.v30.pht003094.v5.phv00177598.v3`, `phs000007.v30.pht003094.v5.phv00177599.v3`, `phs000007.v30.pht003094.v5.phv00177600.v3`, `phs000007.v30.pht003094.v5.phv00177601.v3`, `phs000007.v30.pht003094.v5.phv00177602.v3`, `phs000007.v30.pht003094.v5.phv00177603.v3`, `phs000007.v30.pht006006.v2.phv00274194.v2`, `phs000007.v30.pht006006.v2.phv00274557.v2`, `phs000007.v30.pht006006.v2.phv00274558.v2`, `phs000007.v30.pht006006.v2.phv00274559.v2`, `phs000007.v30.pht006006.v2.phv00274560.v2`, `phs000007.v30.pht006006.v2.phv00274561.v2`, `phs000007.v30.pht006006.v2.phv00274562.v2`, `phs000007.v30.pht006006.v2.phv00274563.v2`, `phs000007.v30.pht006006.v2.phv00274564.v2`
+    * 17 component_study_variables: `phs000007.v30.pht003094.v5.phv00177238.v3`, `phs000007.v30.pht003094.v5.phv00177597.v3`, `phs000007.v30.pht003094.v5.phv00177598.v3`, `phs000007.v30.pht003094.v5.phv00177599.v3`, `phs000007.v30.pht003094.v5.phv00177600.v3`, `phs000007.v30.pht003094.v5.phv00177601.v3`, `phs000007.v30.pht003094.v5.phv00177602.v3`, `phs000007.v30.pht003094.v5.phv00177603.v3`, `phs000007.v30.pht006006.v2.phv00274194.v2`, `phs000007.v30.pht006006.v2.phv00274557.v2`, `phs000007.v30.pht006006.v2.phv00274558.v2`, `phs000007.v30.pht006006.v2.phv00274559.v2`, `phs000007.v30.pht006006.v2.phv00274560.v2`, `phs000007.v30.pht006006.v2.phv00274561.v2`, `phs000007.v30.pht006006.v2.phv00274562.v2`, `phs000007.v30.pht006006.v2.phv00274563.v2`, `phs000007.v30.pht006006.v2.phv00274564.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -17386,7 +17386,7 @@
       ```
 <a id="race_us_1-fhs_original"></a>
   * ### demographic/race_us_1 -- **FHS_Original**:
-    * component_study_variables: `phs000007.v30.pht003099.v5.phv00177928.v5`
+    * 1 component_study_variables: `phs000007.v30.pht003099.v5.phv00177928.v5`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -17413,7 +17413,7 @@
       ```
 <a id="race_us_1-galaii"></a>
   * ### demographic/race_us_1 -- **GALAII**:
-    * component_study_variables: `phs001180.v1.pht006988.v1.phv00320615.v1`
+    * 1 component_study_variables: `phs001180.v1.pht006988.v1.phv00320615.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -17431,7 +17431,7 @@
       ```
 <a id="race_us_1-genestar"></a>
   * ### demographic/race_us_1 -- **GeneSTAR**:
-    * component_study_variables: `phs001218.v1.pht007766.v1.phv00369267.v1`, `phs001218.v1.pht007766.v1.phv00369270.v1`
+    * 2 component_study_variables: `phs001218.v1.pht007766.v1.phv00369267.v1`, `phs001218.v1.pht007766.v1.phv00369270.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -17464,7 +17464,7 @@
       ```
 <a id="race_us_1-genoa"></a>
   * ### demographic/race_us_1 -- **GENOA**:
-    * component_study_variables: `phs001238.v2.pht006039.v1.phv00277509.v1`, `phs001238.v2.pht006653.v1.phv00307790.v1`
+    * 2 component_study_variables: `phs001238.v2.pht006039.v1.phv00277509.v1`, `phs001238.v2.pht006653.v1.phv00307790.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -17492,7 +17492,7 @@
       ```
 <a id="race_us_1-goldn"></a>
   * ### demographic/race_us_1 -- **GOLDN**:
-    * component_study_variables: `phs000741.v2.pht003915.v2.phv00202090.v2`
+    * 1 component_study_variables: `phs000741.v2.pht003915.v2.phv00202090.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -17514,7 +17514,7 @@
       ```
 <a id="race_us_1-hchs_sol"></a>
   * ### demographic/race_us_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004713.v1.phv00226241.v1`
+    * 1 component_study_variables: `phs000810.v1.pht004713.v1.phv00226241.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -17538,7 +17538,7 @@
       ```
 <a id="race_us_1-hvh"></a>
   * ### demographic/race_us_1 -- **HVH**:
-    * component_study_variables: `phs001013.v3.pht005311.v2.phv00259380.v2`
+    * 1 component_study_variables: `phs001013.v3.pht005311.v2.phv00259380.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -17560,7 +17560,7 @@
       ```
 <a id="race_us_1-jhs"></a>
   * ### demographic/race_us_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001920.v4.phv00124546.v3`
+    * 1 component_study_variables: `phs000286.v5.pht001920.v4.phv00124546.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -17583,7 +17583,7 @@
       ```
 <a id="race_us_1-mayo_vte_geneva"></a>
   * ### demographic/race_us_1 -- **Mayo_VTE_GENEVA**:
-    * component_study_variables: `phs000289.v2.pht001886.v2.phv00121876.v2`, `phs000289.v2.pht001886.v2.phv00121877.v2`, `phs000289.v2.pht001886.v2.phv00121878.v2`, `phs000289.v2.pht001886.v2.phv00121879.v2`, `phs000289.v2.pht001886.v2.phv00121880.v2`, `phs000289.v2.pht001886.v2.phv00121881.v2`
+    * 6 component_study_variables: `phs000289.v2.pht001886.v2.phv00121876.v2`, `phs000289.v2.pht001886.v2.phv00121877.v2`, `phs000289.v2.pht001886.v2.phv00121878.v2`, `phs000289.v2.pht001886.v2.phv00121879.v2`, `phs000289.v2.pht001886.v2.phv00121880.v2`, `phs000289.v2.pht001886.v2.phv00121881.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -17625,7 +17625,7 @@
       ```
 <a id="race_us_1-mayo_vte_olmsted"></a>
   * ### demographic/race_us_1 -- **Mayo_VTE_Olmsted**:
-    * component_study_variables: `phs001402.v1.pht008239.v1.phv00389932.v1`, `phs001402.v1.pht008239.v1.phv00389933.v1`, `phs001402.v1.pht008239.v1.phv00389934.v1`, `phs001402.v1.pht008239.v1.phv00389935.v1`, `phs001402.v1.pht008239.v1.phv00389936.v1`, `phs001402.v1.pht008239.v1.phv00389937.v1`
+    * 6 component_study_variables: `phs001402.v1.pht008239.v1.phv00389932.v1`, `phs001402.v1.pht008239.v1.phv00389933.v1`, `phs001402.v1.pht008239.v1.phv00389934.v1`, `phs001402.v1.pht008239.v1.phv00389935.v1`, `phs001402.v1.pht008239.v1.phv00389936.v1`, `phs001402.v1.pht008239.v1.phv00389937.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -17647,7 +17647,7 @@
       ```
 <a id="race_us_1-mesa_airnr"></a>
   * ### demographic/race_us_1 -- **MESA_AirNR**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00082641.v1`, `phs000209.v13.pht003086.v3.phv00174585.v1`
+    * 2 component_study_variables: `phs000209.v13.pht001111.v4.phv00082641.v1`, `phs000209.v13.pht003086.v3.phv00174585.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -17703,7 +17703,7 @@
       ```
 <a id="race_us_1-mesa_classic"></a>
   * ### demographic/race_us_1 -- **MESA_Classic**:
-    * component_study_variables: `phs000209.v13.pht001116.v10.phv00084444.v2`, `phs000209.v13.pht001118.v8.phv00085775.v2`, `phs000209.v13.pht001119.v8.phv00086261.v2`, `phs000209.v13.pht001120.v10.phv00086729.v2`, `phs000209.v13.pht003091.v3.phv00176008.v1`
+    * 5 component_study_variables: `phs000209.v13.pht001116.v10.phv00084444.v2`, `phs000209.v13.pht001118.v8.phv00085775.v2`, `phs000209.v13.pht001119.v8.phv00086261.v2`, `phs000209.v13.pht001120.v10.phv00086729.v2`, `phs000209.v13.pht003091.v3.phv00176008.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -17771,7 +17771,7 @@
       ```
 <a id="race_us_1-mesa_family"></a>
   * ### demographic/race_us_1 -- **MESA_Family**:
-    * component_study_variables: `phs000209.v13.pht001121.v3.phv00087074.v1`
+    * 1 component_study_variables: `phs000209.v13.pht001121.v3.phv00087074.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -17800,7 +17800,7 @@
       ```
 <a id="race_us_1-mgh_af"></a>
   * ### demographic/race_us_1 -- **MGH_AF**:
-    * component_study_variables: `phs001001.v1.pht005655.v1.phv00265713.v1`
+    * 1 component_study_variables: `phs001001.v1.pht005655.v1.phv00265713.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -17824,7 +17824,7 @@
       ```
 <a id="race_us_1-partners"></a>
   * ### demographic/race_us_1 -- **Partners**:
-    * component_study_variables: `phs001024.v3.pht005693.v1.phv00265980.v1`
+    * 1 component_study_variables: `phs001024.v3.pht005693.v1.phv00265980.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -17849,7 +17849,7 @@
       ```
 <a id="race_us_1-sage"></a>
   * ### demographic/race_us_1 -- **SAGE**:
-    * component_study_variables: `phs000921.v3.pht004883.v3.phv00252285.v3`
+    * 1 component_study_variables: `phs000921.v3.pht004883.v3.phv00252285.v3`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -17866,7 +17866,7 @@
       ```
 <a id="race_us_1-vafar"></a>
   * ### demographic/race_us_1 -- **VAFAR**:
-    * component_study_variables: `phs000997.v3.pht005688.v3.phv00265924.v3`
+    * 1 component_study_variables: `phs000997.v3.pht005688.v3.phv00265924.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -17890,7 +17890,7 @@
       ```
 <a id="race_us_1-vu_af"></a>
   * ### demographic/race_us_1 -- **VU_AF**:
-    * component_study_variables: `phs001032.v4.pht005675.v3.phv00265808.v2`
+    * 1 component_study_variables: `phs001032.v4.pht005675.v3.phv00265808.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -17917,7 +17917,7 @@
       ```
 <a id="race_us_1-wghs"></a>
   * ### demographic/race_us_1 -- **WGHS**:
-    * component_study_variables: `phs001040.v3.pht005682.v3.phv00328556.v2`
+    * 1 component_study_variables: `phs001040.v3.pht005682.v3.phv00328556.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -17934,7 +17934,7 @@
       ```
 <a id="race_us_1-whi"></a>
   * ### demographic/race_us_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078450.v6`, `phs000200.v11.pht001009.v6.phv00079317.v6`, `phs000200.v11.pht001009.v6.phv00079318.v6`, `phs000200.v11.pht001009.v6.phv00079319.v6`, `phs000200.v11.pht001009.v6.phv00079320.v6`, `phs000200.v11.pht001009.v6.phv00079321.v6`, `phs000200.v11.pht001009.v6.phv00079322.v6`, `phs000200.v11.pht001009.v6.phv00079323.v6`, `phs000200.v11.pht001009.v6.phv00079324.v6`, `phs000200.v11.pht001009.v6.phv00079325.v6`, `phs000200.v11.pht001009.v6.phv00079326.v6`, `phs000200.v11.pht001009.v6.phv00079327.v6`, `phs000200.v11.pht001009.v6.phv00079328.v6`, `phs000200.v11.pht001009.v6.phv00079329.v6`, `phs000200.v11.pht001009.v6.phv00079330.v6`, `phs000200.v11.pht001009.v6.phv00079331.v6`
+    * 16 component_study_variables: `phs000200.v11.pht000998.v6.phv00078450.v6`, `phs000200.v11.pht001009.v6.phv00079317.v6`, `phs000200.v11.pht001009.v6.phv00079318.v6`, `phs000200.v11.pht001009.v6.phv00079319.v6`, `phs000200.v11.pht001009.v6.phv00079320.v6`, `phs000200.v11.pht001009.v6.phv00079321.v6`, `phs000200.v11.pht001009.v6.phv00079322.v6`, `phs000200.v11.pht001009.v6.phv00079323.v6`, `phs000200.v11.pht001009.v6.phv00079324.v6`, `phs000200.v11.pht001009.v6.phv00079325.v6`, `phs000200.v11.pht001009.v6.phv00079326.v6`, `phs000200.v11.pht001009.v6.phv00079327.v6`, `phs000200.v11.pht001009.v6.phv00079328.v6`, `phs000200.v11.pht001009.v6.phv00079329.v6`, `phs000200.v11.pht001009.v6.phv00079330.v6`, `phs000200.v11.pht001009.v6.phv00079331.v6`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18118,7 +18118,7 @@
     
 <a id="subcohort_1-amish"></a>
   * ### demographic/subcohort_1 -- **Amish**:
-    * component_study_variables: `phs000956.v3.pht005002.v1.phv00252974.v1`
+    * 1 component_study_variables: `phs000956.v3.pht005002.v1.phv00252974.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18136,7 +18136,7 @@
       ```
 <a id="subcohort_1-aric"></a>
   * ### demographic/subcohort_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v5.pht001440.v5.phv00098580.v4`
+    * 1 component_study_variables: `phs000280.v5.pht001440.v5.phv00098580.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18150,7 +18150,7 @@
       ```
 <a id="subcohort_1-bags"></a>
   * ### demographic/subcohort_1 -- **BAGS**:
-    * component_study_variables: `phs001143.v2.pht005902.v1.phv00273200.v1`
+    * 1 component_study_variables: `phs001143.v2.pht005902.v1.phv00273200.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18167,7 +18167,7 @@
       ```
 <a id="subcohort_1-cardia"></a>
   * ### demographic/subcohort_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001554.v3.phv00112395.v2`
+    * 1 component_study_variables: `phs000285.v3.pht001554.v3.phv00112395.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18181,7 +18181,7 @@
       ```
 <a id="subcohort_1-ccaf"></a>
   * ### demographic/subcohort_1 -- **CCAF**:
-    * component_study_variables: `phs001189.v2.pht005977.v2.phv00273537.v2`
+    * 1 component_study_variables: `phs001189.v2.pht005977.v2.phv00273537.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18204,7 +18204,7 @@
       ```
 <a id="subcohort_1-cfs"></a>
   * ### demographic/subcohort_1 -- **CFS**:
-    * component_study_variables: `phs000284.v2.pht001899.v2.phv00122002.v2`, `phs000284.v2.pht001902.v1.phv00122012.v1`
+    * 2 component_study_variables: `phs000284.v2.pht001899.v2.phv00122002.v2`, `phs000284.v2.pht001902.v1.phv00122012.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18218,7 +18218,7 @@
       ```
 <a id="subcohort_1-chs"></a>
   * ### demographic/subcohort_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100290.v1`
+    * 1 component_study_variables: `phs000287.v6.pht001452.v1.phv00100290.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18237,7 +18237,7 @@
       ```
 <a id="subcohort_1-copdgene"></a>
   * ### demographic/subcohort_1 -- **COPDGene**:
-    * component_study_variables: `phs000179.v5.pht002237.v3.phv00159560.v3`
+    * 1 component_study_variables: `phs000179.v5.pht002237.v3.phv00159560.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18251,7 +18251,7 @@
       ```
 <a id="subcohort_1-cra"></a>
   * ### demographic/subcohort_1 -- **CRA**:
-    * component_study_variables: `phs000988.v2.pht005245.v2.phv00258637.v2`
+    * 1 component_study_variables: `phs000988.v2.pht005245.v2.phv00258637.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18265,7 +18265,7 @@
       ```
 <a id="subcohort_1-dhs"></a>
   * ### demographic/subcohort_1 -- **DHS**:
-    * component_study_variables: `phs001412.v1.pht006743.v1.phv00310005.v1`
+    * 1 component_study_variables: `phs001412.v1.pht006743.v1.phv00310005.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18285,7 +18285,7 @@
       ```
 <a id="subcohort_1-fhs"></a>
   * ### demographic/subcohort_1 -- **FHS**:
-    * component_study_variables: `phs000007.v30.pht003099.v5.phv00177928.v5`
+    * 1 component_study_variables: `phs000007.v30.pht003099.v5.phv00177928.v5`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18307,7 +18307,7 @@
       ```
 <a id="subcohort_1-galaii"></a>
   * ### demographic/subcohort_1 -- **GALAII**:
-    * component_study_variables: `phs001180.v1.pht006988.v1.phv00320615.v1`
+    * 1 component_study_variables: `phs001180.v1.pht006988.v1.phv00320615.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18324,7 +18324,7 @@
       ```
 <a id="subcohort_1-genestar"></a>
   * ### demographic/subcohort_1 -- **GeneSTAR**:
-    * component_study_variables: `phs001218.v1.pht007766.v1.phv00369267.v1`
+    * 1 component_study_variables: `phs001218.v1.pht007766.v1.phv00369267.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18359,7 +18359,7 @@
       ```
 <a id="subcohort_1-genoa_africanamerican"></a>
   * ### demographic/subcohort_1 -- **GENOA_AfricanAmerican**:
-    * component_study_variables: `phs001238.v2.pht006039.v1.phv00277508.v1`
+    * 1 component_study_variables: `phs001238.v2.pht006039.v1.phv00277508.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18372,7 +18372,7 @@
       ```
 <a id="subcohort_1-genoa_europeanamerican"></a>
   * ### demographic/subcohort_1 -- **GENOA_EuropeanAmerican**:
-    * component_study_variables: `phs001238.v2.pht006649.v1.phv00307741.v1`, `phs001238.v2.pht006653.v1.phv00307789.v1`, `phs001238.v2.pht006659.v1.phv00307950.v1`
+    * 3 component_study_variables: `phs001238.v2.pht006649.v1.phv00307741.v1`, `phs001238.v2.pht006653.v1.phv00307789.v1`, `phs001238.v2.pht006659.v1.phv00307950.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18390,7 +18390,7 @@
       ```
 <a id="subcohort_1-goldn"></a>
   * ### demographic/subcohort_1 -- **GOLDN**:
-    * component_study_variables: `phs000741.v2.pht003915.v2.phv00202090.v2`
+    * 1 component_study_variables: `phs000741.v2.pht003915.v2.phv00202090.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18404,7 +18404,7 @@
       ```
 <a id="subcohort_1-hchs_sol"></a>
   * ### demographic/subcohort_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004713.v1.phv00226241.v1`
+    * 1 component_study_variables: `phs000810.v1.pht004713.v1.phv00226241.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18418,7 +18418,7 @@
       ```
 <a id="subcohort_1-hvh"></a>
   * ### demographic/subcohort_1 -- **HVH**:
-    * component_study_variables: `phs001013.v3.pht005309.v3.phv00259370.v3`, `phs001013.v3.pht005311.v2.phv00259376.v2`, `phs001013.v3.pht005311.v2.phv00259377.v2`
+    * 3 component_study_variables: `phs001013.v3.pht005309.v3.phv00259370.v3`, `phs001013.v3.pht005311.v2.phv00259376.v2`, `phs001013.v3.pht005311.v2.phv00259377.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18432,7 +18432,7 @@
       ```
 <a id="subcohort_1-jhs"></a>
   * ### demographic/subcohort_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001920.v4.phv00124546.v3`
+    * 1 component_study_variables: `phs000286.v5.pht001920.v4.phv00124546.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18446,7 +18446,7 @@
       ```
 <a id="subcohort_1-mayo_vte_geneva"></a>
   * ### demographic/subcohort_1 -- **Mayo_VTE_GENEVA**:
-    * component_study_variables: `phs000289.v2.pht001883.v1.phv00121830.v1`
+    * 1 component_study_variables: `phs000289.v2.pht001883.v1.phv00121830.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18460,7 +18460,7 @@
       ```
 <a id="subcohort_1-mayo_vte_olmsted"></a>
   * ### demographic/subcohort_1 -- **Mayo_VTE_Olmsted**:
-    * component_study_variables: `phs001402.v1.pht008239.v1.phv00389900.v1`
+    * 1 component_study_variables: `phs001402.v1.pht008239.v1.phv00389900.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18474,7 +18474,7 @@
       ```
 <a id="subcohort_1-mesa_airnr"></a>
   * ### demographic/subcohort_1 -- **MESA_airnr**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00082644.v1`
+    * 1 component_study_variables: `phs000209.v13.pht001111.v4.phv00082644.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18487,7 +18487,7 @@
       ```
 <a id="subcohort_1-mesa_classic"></a>
   * ### demographic/subcohort_1 -- **MESA_classic**:
-    * component_study_variables: `phs000209.v13.pht001116.v10.phv00084447.v2`
+    * 1 component_study_variables: `phs000209.v13.pht001116.v10.phv00084447.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18500,7 +18500,7 @@
       ```
 <a id="subcohort_1-mesa_family"></a>
   * ### demographic/subcohort_1 -- **MESA_family**:
-    * component_study_variables: `phs000209.v13.pht001121.v3.phv00087075.v1`
+    * 1 component_study_variables: `phs000209.v13.pht001121.v3.phv00087075.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18513,7 +18513,7 @@
       ```
 <a id="subcohort_1-mgh_af"></a>
   * ### demographic/subcohort_1 -- **MGH_AF**:
-    * component_study_variables: `phs001001.v1.pht005653.v1.phv00265704.v1`
+    * 1 component_study_variables: `phs001001.v1.pht005653.v1.phv00265704.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18530,7 +18530,7 @@
       ```
 <a id="subcohort_1-partners"></a>
   * ### demographic/subcohort_1 -- **Partners**:
-    * component_study_variables: `phs001024.v3.pht005116.v2.phv00253774.v1`
+    * 1 component_study_variables: `phs001024.v3.pht005116.v2.phv00253774.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18544,7 +18544,7 @@
       ```
 <a id="subcohort_1-sage"></a>
   * ### demographic/subcohort_1 -- **SAGE**:
-    * component_study_variables: `phs000921.v3.pht004881.v3.phv00252275.v3`
+    * 1 component_study_variables: `phs000921.v3.pht004881.v3.phv00252275.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18558,7 +18558,7 @@
       ```
 <a id="subcohort_1-sas"></a>
   * ### demographic/subcohort_1 -- **SAS**:
-    * component_study_variables: `phs000914.v1.pht005251.v1.phv00258664.v1`
+    * 1 component_study_variables: `phs000914.v1.pht005251.v1.phv00258664.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18572,7 +18572,7 @@
       ```
 <a id="subcohort_1-vafar"></a>
   * ### demographic/subcohort_1 -- **VAFAR**:
-    * component_study_variables: `phs000997.v3.pht005087.v3.phv00253604.v3`
+    * 1 component_study_variables: `phs000997.v3.pht005087.v3.phv00253604.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18595,7 +18595,7 @@
       ```
 <a id="subcohort_1-vu_af"></a>
   * ### demographic/subcohort_1 -- **VU_AF**:
-    * component_study_variables: `phs001032.v4.pht005098.v2.phv00253678.v2`
+    * 1 component_study_variables: `phs001032.v4.pht005098.v2.phv00253678.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18618,7 +18618,7 @@
       ```
 <a id="subcohort_1-wghs"></a>
   * ### demographic/subcohort_1 -- **WGHS**:
-    * component_study_variables: `phs001040.v3.pht005203.v2.phv00258321.v2`
+    * 1 component_study_variables: `phs001040.v3.pht005203.v2.phv00258321.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18634,7 +18634,7 @@
       ```
 <a id="subcohort_1-whi"></a>
   * ### demographic/subcohort_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht001031.v6.phv00080424.v6`, `phs000200.v11.pht001031.v6.phv00080425.v6`
+    * 2 component_study_variables: `phs000200.v11.pht001031.v6.phv00080424.v6`, `phs000200.v11.pht001031.v6.phv00080425.v6`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18725,7 +18725,7 @@
     
 <a id="cd40_1-fhs"></a>
   * ### inflammation/cd40_1 -- **FHS**:
-    * component_study_variables: `phs000007.v29.pht000079.v6.phv00021687.v5`, `phs000007.v29.pht003099.v4.phv00177942.v4`
+    * 2 component_study_variables: `phs000007.v29.pht000079.v6.phv00021687.v5`, `phs000007.v29.pht003099.v4.phv00177942.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18748,7 +18748,7 @@
       ```
 <a id="cd40_1-mesa"></a>
   * ### inflammation/cd40_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085021.v2`
+    * 2 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085021.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18875,7 +18875,7 @@
     
 <a id="crp_1-amish"></a>
   * ### inflammation/crp_1 -- **Amish**:
-    * component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00252992.v1`
+    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00252992.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18903,7 +18903,7 @@
       ```
 <a id="crp_1-aric"></a>
   * ### inflammation/crp_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht006431.v1.phv00295623.v1`, `phs000280.v4.pht006444.v1.phv00296696.v1`
+    * 2 component_study_variables: `phs000280.v4.pht006431.v1.phv00295623.v1`, `phs000280.v4.pht006444.v1.phv00296696.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18933,7 +18933,7 @@
       ```
 <a id="crp_1-cardia"></a>
   * ### inflammation/crp_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001851.v2.phv00120748.v2`, `phs000285.v3.pht001853.v2.phv00120759.v2`
+    * 2 component_study_variables: `phs000285.v3.pht001851.v2.phv00120748.v2`, `phs000285.v3.pht001853.v2.phv00120759.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18960,7 +18960,7 @@
       ```
 <a id="crp_1-cfs"></a>
   * ### inflammation/crp_1 -- **CFS**:
-    * component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123990.v1`
+    * 3 component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123990.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -18992,7 +18992,7 @@
       ```
 <a id="crp_1-chs"></a>
   * ### inflammation/crp_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100499.v1`
+    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100499.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -19016,7 +19016,7 @@
       ```
 <a id="crp_1-fhs_gen3_offspring"></a>
   * ### inflammation/crp_1 -- **FHS_Gen3_Offspring**:
-    * component_study_variables: `phs000007.v29.pht000082.v6.phv00021697.v5`, `phs000007.v29.pht000298.v5.phv00036343.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
+    * 5 component_study_variables: `phs000007.v29.pht000082.v6.phv00021697.v5`, `phs000007.v29.pht000298.v5.phv00036343.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -19048,7 +19048,7 @@
       ```
 <a id="crp_1-fhs_newoffspringspouse_omni2"></a>
   * ### inflammation/crp_1 -- **FHS_NewOffspringSpouse_Omni2**:
-    * component_study_variables: `phs000007.v29.pht002889.v2.phv00172177.v2`, `phs000007.v29.pht002889.v2.phv00172203.v2`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`
+    * 4 component_study_variables: `phs000007.v29.pht002889.v2.phv00172177.v2`, `phs000007.v29.pht002889.v2.phv00172203.v2`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -19080,7 +19080,7 @@
       ```
 <a id="crp_1-fhs_omni1"></a>
   * ### inflammation/crp_1 -- **FHS_Omni1**:
-    * component_study_variables: `phs000007.v29.pht002888.v4.phv00172158.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`
+    * 3 component_study_variables: `phs000007.v29.pht002888.v4.phv00172158.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -19107,7 +19107,7 @@
       ```
 <a id="crp_1-genoa"></a>
   * ### inflammation/crp_1 -- **GENOA**:
-    * component_study_variables: `phs001238.v1.pht006046.v1.phv00277758.v1`, `phs001238.v1.pht006048.v1.phv00277841.v1`, `phs001238.v1.pht006659.v1.phv00307949.v1`, `phs001238.v1.pht006661.v1.phv00308034.v1`
+    * 4 component_study_variables: `phs001238.v1.pht006046.v1.phv00277758.v1`, `phs001238.v1.pht006048.v1.phv00277841.v1`, `phs001238.v1.pht006659.v1.phv00307949.v1`, `phs001238.v1.pht006661.v1.phv00308034.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -19143,7 +19143,7 @@
       ```
 <a id="crp_1-hchs_sol"></a>
   * ### inflammation/crp_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00258066.v1`
+    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00258066.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -19167,7 +19167,7 @@
       ```
 <a id="crp_1-jhs"></a>
   * ### inflammation/crp_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001945.v1.phv00125940.v1`, `phs000286.v5.pht001945.v1.phv00125941.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
+    * 3 component_study_variables: `phs000286.v5.pht001945.v1.phv00125940.v1`, `phs000286.v5.pht001945.v1.phv00125941.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -19208,7 +19208,7 @@
       ```
 <a id="crp_1-mesa_airnr"></a>
   * ### inflammation/crp_1 -- **MESA_AirNR**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082967.v1`, `phs000209.v13.pht001111.v4.phv00082968.v1`
+    * 3 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082967.v1`, `phs000209.v13.pht001111.v4.phv00082968.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -19239,7 +19239,7 @@
       ```
 <a id="crp_1-mesa_classic_family"></a>
   * ### inflammation/crp_1 -- **MESA_Classic_Family**:
-    * component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085015.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087661.v1`
+    * 4 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085015.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087661.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -19315,7 +19315,7 @@
     
 <a id="eselectin_1-mesa"></a>
   * ### inflammation/eselectin_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082969.v1`, `phs000209.v13.pht001111.v4.phv00082970.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085022.v2`
+    * 5 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082969.v1`, `phs000209.v13.pht001111.v4.phv00082970.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085022.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -19418,7 +19418,7 @@
     
 <a id="icam1_1-cardia"></a>
   * ### inflammation/icam1_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001697.v2.phv00116390.v2`, `phs000285.v3.pht001699.v2.phv00116396.v2`
+    * 2 component_study_variables: `phs000285.v3.pht001697.v2.phv00116390.v2`, `phs000285.v3.pht001699.v2.phv00116396.v2`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -19444,7 +19444,7 @@
       ```
 <a id="icam1_1-cfs"></a>
   * ### inflammation/icam1_1 -- **CFS**:
-    * component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00124095.v1`, `phs000284.v1.pht001902.v1.phv00124097.v1`, `phs000284.v1.pht001902.v1.phv00124098.v1`
+    * 5 component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00124095.v1`, `phs000284.v1.pht001902.v1.phv00124097.v1`, `phs000284.v1.pht001902.v1.phv00124098.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -19476,7 +19476,7 @@
       ```
 <a id="icam1_1-chs"></a>
   * ### inflammation/icam1_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001449.v1.phv00098764.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
+    * 2 component_study_variables: `phs000287.v6.pht001449.v1.phv00098764.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -19501,7 +19501,7 @@
       ```
 <a id="icam1_1-fhs_gen3_offspring"></a>
   * ### inflammation/icam1_1 -- **FHS_Gen3_Offspring**:
-    * component_study_variables: `phs000007.v29.pht000093.v6.phv00021939.v5`, `phs000007.v29.pht000303.v5.phv00036405.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
+    * 4 component_study_variables: `phs000007.v29.pht000093.v6.phv00021939.v5`, `phs000007.v29.pht000303.v5.phv00036405.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -19531,7 +19531,7 @@
       ```
 <a id="icam1_1-fhs_newoffspringspouse_omni1"></a>
   * ### inflammation/icam1_1 -- **FHS_NewOffspringSpouse_Omni1**:
-    * component_study_variables: `phs000007.v29.pht002890.v4.phv00172215.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`
+    * 4 component_study_variables: `phs000007.v29.pht002890.v4.phv00172215.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -19561,7 +19561,7 @@
       ```
 <a id="icam1_1-mesa_airnr"></a>
   * ### inflammation/icam1_1 -- **MESA_AirNR**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082963.v1`, `phs000209.v13.pht001111.v4.phv00082964.v1`
+    * 3 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082963.v1`, `phs000209.v13.pht001111.v4.phv00082964.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -19588,7 +19588,7 @@
       ```
 <a id="icam1_1-mesa_classic"></a>
   * ### inflammation/icam1_1 -- **MESA_Classic**:
-    * component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085117.v2`, `phs000209.v13.pht001116.v10.phv00085118.v2`
+    * 3 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085117.v2`, `phs000209.v13.pht001116.v10.phv00085118.v2`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -19655,7 +19655,7 @@
     
 <a id="il10_1-cfs"></a>
   * ### inflammation/il10_1 -- **CFS**:
-    * component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00124072.v1`, `phs000284.v1.pht001902.v1.phv00124075.v1`
+    * 4 component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00124072.v1`, `phs000284.v1.pht001902.v1.phv00124075.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -19683,7 +19683,7 @@
       ```
 <a id="il10_1-mesa"></a>
   * ### inflammation/il10_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht002099.v2.phv00142666.v2`, `phs000209.v13.pht002099.v2.phv00142667.v2`
+    * 3 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht002099.v2.phv00142666.v2`, `phs000209.v13.pht002099.v2.phv00142667.v2`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -19753,7 +19753,7 @@
     
 <a id="il18_1-fhs"></a>
   * ### inflammation/il18_1 -- **FHS**:
-    * component_study_variables: `phs000007.v29.pht000671.v5.phv00066686.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
+    * 2 component_study_variables: `phs000007.v29.pht000671.v5.phv00066686.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -19807,7 +19807,7 @@
     
 <a id="il1_beta_1-cfs"></a>
   * ### inflammation/il1_beta_1 -- **CFS**:
-    * component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00124068.v1`, `phs000284.v1.pht001902.v1.phv00124071.v1`
+    * 4 component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00124068.v1`, `phs000284.v1.pht001902.v1.phv00124071.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -19903,7 +19903,7 @@
     
 <a id="il6_1-cardia"></a>
   * ### inflammation/il6_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001851.v2.phv00120748.v2`, `phs000285.v3.pht001862.v2.phv00121064.v2`, `phs000285.v3.pht001862.v2.phv00121065.v2`
+    * 3 component_study_variables: `phs000285.v3.pht001851.v2.phv00120748.v2`, `phs000285.v3.pht001862.v2.phv00121064.v2`, `phs000285.v3.pht001862.v2.phv00121065.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -19936,7 +19936,7 @@
       ```
 <a id="il6_1-cfs"></a>
   * ### inflammation/il6_1 -- **CFS**:
-    * component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00124021.v1`
+    * 3 component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00124021.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -19965,7 +19965,7 @@
       ```
 <a id="il6_1-chs"></a>
   * ### inflammation/il6_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100500.v1`
+    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100500.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -19989,7 +19989,7 @@
       ```
 <a id="il6_1-fhs_gen3"></a>
   * ### inflammation/il6_1 -- **FHS_Gen3**:
-    * component_study_variables: `phs000007.v29.pht001043.v4.phv00080999.v3`, `phs000007.v29.pht001043.v4.phv00081000.v3`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`
+    * 4 component_study_variables: `phs000007.v29.pht001043.v4.phv00080999.v3`, `phs000007.v29.pht001043.v4.phv00081000.v3`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -20015,7 +20015,7 @@
       ```
 <a id="il6_1-fhs_newoffspringspouse_omni1"></a>
   * ### inflammation/il6_1 -- **FHS_NewOffspringSpouse_Omni1**:
-    * component_study_variables: `phs000007.v29.pht002891.v4.phv00172223.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`
+    * 4 component_study_variables: `phs000007.v29.pht002891.v4.phv00172223.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -20043,7 +20043,7 @@
       ```
 <a id="il6_1-fhs_offspring"></a>
   * ### inflammation/il6_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht000161.v6.phv00023796.v5`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
+    * 3 component_study_variables: `phs000007.v29.pht000161.v6.phv00023796.v5`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -20068,7 +20068,7 @@
       ```
 <a id="il6_1-mesa"></a>
   * ### inflammation/il6_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085009.v2`, `phs000209.v13.pht001116.v10.phv00085010.v2`
+    * 3 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085009.v2`, `phs000209.v13.pht001116.v10.phv00085010.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -20152,7 +20152,7 @@
     
 <a id="isoprostane_8_epi_pgf2a_1-fhs"></a>
   * ### inflammation/isoprostane_8_epi_pgf2a_1 -- **FHS**:
-    * component_study_variables: `phs000007.v29.pht000162.v6.phv00023800.v5`, `phs000007.v29.pht002852.v2.phv00171864.v2`, `phs000007.v29.pht002853.v4.phv00171873.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
+    * 7 component_study_variables: `phs000007.v29.pht000162.v6.phv00023800.v5`, `phs000007.v29.pht002852.v2.phv00171864.v2`, `phs000007.v29.pht002853.v4.phv00171873.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -20250,7 +20250,7 @@
     
 <a id="lppla2_act_1-chs"></a>
   * ### inflammation/lppla2_act_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001449.v1.phv00098770.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
+    * 2 component_study_variables: `phs000287.v6.pht001449.v1.phv00098770.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -20274,7 +20274,7 @@
       ```
 <a id="lppla2_act_1-fhs"></a>
   * ### inflammation/lppla2_act_1 -- **FHS**:
-    * component_study_variables: `phs000007.v29.pht000164.v6.phv00023808.v5`, `phs000007.v29.pht000304.v5.phv00036408.v4`, `phs000007.v29.pht002892.v4.phv00172229.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
+    * 7 component_study_variables: `phs000007.v29.pht000164.v6.phv00023808.v5`, `phs000007.v29.pht000304.v5.phv00036408.v4`, `phs000007.v29.pht002892.v4.phv00172229.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -20315,7 +20315,7 @@
       ```
 <a id="lppla2_act_1-mesa"></a>
   * ### inflammation/lppla2_act_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht002512.v1.phv00165052.v1`
+    * 2 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht002512.v1.phv00165052.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -20398,7 +20398,7 @@
     
 <a id="lppla2_mass_1-chs"></a>
   * ### inflammation/lppla2_mass_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001449.v1.phv00098769.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
+    * 2 component_study_variables: `phs000287.v6.pht001449.v1.phv00098769.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -20422,7 +20422,7 @@
       ```
 <a id="lppla2_mass_1-fhs"></a>
   * ### inflammation/lppla2_mass_1 -- **FHS**:
-    * component_study_variables: `phs000007.v29.pht000095.v6.phv00021963.v5`, `phs000007.v29.pht000305.v5.phv00036411.v4`, `phs000007.v29.pht002892.v4.phv00172227.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
+    * 7 component_study_variables: `phs000007.v29.pht000095.v6.phv00021963.v5`, `phs000007.v29.pht000305.v5.phv00036411.v4`, `phs000007.v29.pht002892.v4.phv00172227.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -20463,7 +20463,7 @@
       ```
 <a id="lppla2_mass_1-mesa"></a>
   * ### inflammation/lppla2_mass_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht002512.v1.phv00165050.v1`
+    * 2 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht002512.v1.phv00165050.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -20532,7 +20532,7 @@
     
 <a id="mcp1_1-fhs_gen3_offspring"></a>
   * ### inflammation/mcp1_1 -- **FHS_Gen3_Offspring**:
-    * component_study_variables: `phs000007.v29.pht000165.v6.phv00023811.v5`, `phs000007.v29.pht000306.v6.phv00036415.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
+    * 4 component_study_variables: `phs000007.v29.pht000165.v6.phv00023811.v5`, `phs000007.v29.pht000306.v6.phv00036415.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -20563,7 +20563,7 @@
       ```
 <a id="mcp1_1-fhs_newoffspringspouse_omni1"></a>
   * ### inflammation/mcp1_1 -- **FHS_NewOffspringSpouse_Omni1**:
-    * component_study_variables: `phs000007.v29.pht002893.v4.phv00172239.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`
+    * 4 component_study_variables: `phs000007.v29.pht002893.v4.phv00172239.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -20626,7 +20626,7 @@
     
 <a id="mmp9_1-mesa"></a>
   * ### inflammation/mmp9_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085027.v2`
+    * 2 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085027.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -20688,7 +20688,7 @@
     
 <a id="mpo_1-fhs"></a>
   * ### inflammation/mpo_1 -- **FHS**:
-    * component_study_variables: `phs000007.v29.pht000167.v6.phv00023854.v5`, `phs000007.v29.pht003099.v4.phv00177942.v4`
+    * 2 component_study_variables: `phs000007.v29.pht000167.v6.phv00023854.v5`, `phs000007.v29.pht003099.v4.phv00177942.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -20762,7 +20762,7 @@
     
 <a id="opg_1-fhs_gen3_omni2"></a>
   * ### inflammation/opg_1 -- **FHS_Gen3_Omni2**:
-    * component_study_variables: `phs000007.v29.pht002144.v3.phv00156665.v3`, `phs000007.v29.pht002144.v3.phv00156666.v3`, `phs000007.v29.pht003099.v4.phv00177930.v4`
+    * 3 component_study_variables: `phs000007.v29.pht002144.v3.phv00156665.v3`, `phs000007.v29.pht002144.v3.phv00156666.v3`, `phs000007.v29.pht003099.v4.phv00177930.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -20794,7 +20794,7 @@
       ```
 <a id="opg_1-fhs_offspring_omni1"></a>
   * ### inflammation/opg_1 -- **FHS_Offspring_Omni1**:
-    * component_study_variables: `phs000007.v29.pht002896.v4.phv00172364.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`, `phs000007.v29.pht003099.v4.phv00177944.v4`
+    * 4 component_study_variables: `phs000007.v29.pht002896.v4.phv00172364.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`, `phs000007.v29.pht003099.v4.phv00177944.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -20872,7 +20872,7 @@
     
 <a id="pselectin_1-fhs_gen3_omni2"></a>
   * ### inflammation/pselectin_1 -- **FHS_Gen3_Omni2**:
-    * component_study_variables: `phs000007.v29.pht002145.v3.phv00156677.v3`, `phs000007.v29.pht002145.v3.phv00156678.v3`, `phs000007.v29.pht003099.v4.phv00177930.v4`
+    * 3 component_study_variables: `phs000007.v29.pht002145.v3.phv00156677.v3`, `phs000007.v29.pht002145.v3.phv00156678.v3`, `phs000007.v29.pht003099.v4.phv00177930.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -20901,7 +20901,7 @@
       ```
 <a id="pselectin_1-fhs_offspring"></a>
   * ### inflammation/pselectin_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht000171.v6.phv00023892.v5`, `phs000007.v29.pht003099.v4.phv00177942.v4`
+    * 2 component_study_variables: `phs000007.v29.pht000171.v6.phv00023892.v5`, `phs000007.v29.pht003099.v4.phv00177942.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -20922,7 +20922,7 @@
       ```
 <a id="pselectin_1-fhs_omni1"></a>
   * ### inflammation/pselectin_1 -- **FHS_Omni1**:
-    * component_study_variables: `phs000007.v29.pht002897.v4.phv00172372.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`
+    * 3 component_study_variables: `phs000007.v29.pht002897.v4.phv00172372.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21009,7 +21009,7 @@
     
 <a id="tnfa_1-cfs"></a>
   * ### inflammation/tnfa_1 -- **CFS**:
-    * component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00124076.v1`, `phs000284.v1.pht001902.v1.phv00124079.v1`
+    * 4 component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00124076.v1`, `phs000284.v1.pht001902.v1.phv00124079.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21038,7 +21038,7 @@
       ```
 <a id="tnfa_1-fhs"></a>
   * ### inflammation/tnfa_1 -- **FHS**:
-    * component_study_variables: `phs000007.v29.pht000111.v5.phv00022779.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
+    * 2 component_study_variables: `phs000007.v29.pht000111.v5.phv00022779.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21061,7 +21061,7 @@
       ```
 <a id="tnfa_1-mesa"></a>
   * ### inflammation/tnfa_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001118.v8.phv00085773.v3`, `phs000209.v13.pht001119.v8.phv00086259.v4`, `phs000209.v13.pht002198.v2.phv00160529.v1`, `phs000209.v13.pht002198.v2.phv00160540.v1`, `phs000209.v13.pht002198.v2.phv00160541.v1`
+    * 5 component_study_variables: `phs000209.v13.pht001118.v8.phv00085773.v3`, `phs000209.v13.pht001119.v8.phv00086259.v4`, `phs000209.v13.pht002198.v2.phv00160529.v1`, `phs000209.v13.pht002198.v2.phv00160540.v1`, `phs000209.v13.pht002198.v2.phv00160541.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21148,7 +21148,7 @@
     
 <a id="tnfa_r1_1-mesa"></a>
   * ### inflammation/tnfa_r1_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085029.v3`
+    * 2 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085029.v3`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21222,7 +21222,7 @@
     
 <a id="tnfr2_1-fhs"></a>
   * ### inflammation/tnfr2_1 -- **FHS**:
-    * component_study_variables: `phs000007.v29.pht000175.v6.phv00023913.v5`, `phs000007.v29.pht002898.v2.phv00172383.v2`, `phs000007.v29.pht002899.v4.phv00172391.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
+    * 7 component_study_variables: `phs000007.v29.pht000175.v6.phv00023913.v5`, `phs000007.v29.pht002898.v2.phv00172383.v2`, `phs000007.v29.pht002899.v4.phv00172391.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21319,7 +21319,7 @@
     
 <a id="fasting_lipids_1-amish"></a>
   * ### lipids/fasting_lipids_1 -- **Amish**:
-    * component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`
+    * 1 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21349,7 +21349,7 @@
       ```
 <a id="fasting_lipids_1-aric"></a>
   * ### lipids/fasting_lipids_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004063.v2.phv00204732.v1`
+    * 2 component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004063.v2.phv00204732.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21369,7 +21369,7 @@
       ```
 <a id="fasting_lipids_1-cardia"></a>
   * ### lipids/fasting_lipids_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112661.v2`
+    * 2 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112661.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21390,7 +21390,7 @@
       ```
 <a id="fasting_lipids_1-cfs"></a>
   * ### lipids/fasting_lipids_1 -- **CFS**:
-    * component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`
+    * 2 component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21407,7 +21407,7 @@
       ```
 <a id="fasting_lipids_1-chs"></a>
   * ### lipids/fasting_lipids_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001451.v1.phv00099923.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
+    * 2 component_study_variables: `phs000287.v6.pht001451.v1.phv00099923.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21429,7 +21429,7 @@
       ```
 <a id="fasting_lipids_1-fhs_gen3"></a>
   * ### lipids/fasting_lipids_1 -- **FHS_Gen3**:
-    * component_study_variables: `phs000007.v29.pht000074.v10.phv00021237.v4`, `phs000007.v29.pht006026.v1.phv00277020.v1`
+    * 2 component_study_variables: `phs000007.v29.pht000074.v10.phv00021237.v4`, `phs000007.v29.pht006026.v1.phv00277020.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21453,7 +21453,7 @@
       ```
 <a id="fasting_lipids_1-fhs_newoffspringspouse_omni2"></a>
   * ### lipids/fasting_lipids_1 -- **FHS_NewOffspringSpouse_Omni2**:
-    * component_study_variables: `phs000007.v29.pht005143.v1.phv00255347.v1`, `phs000007.v29.pht006026.v1.phv00277020.v1`
+    * 2 component_study_variables: `phs000007.v29.pht005143.v1.phv00255347.v1`, `phs000007.v29.pht006026.v1.phv00277020.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21475,7 +21475,7 @@
       ```
 <a id="fasting_lipids_1-fhs_offspring"></a>
   * ### lipids/fasting_lipids_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht000030.v7.phv00007550.v5`, `phs000007.v29.pht006027.v1.phv00277077.v1`
+    * 2 component_study_variables: `phs000007.v29.pht000030.v7.phv00007550.v5`, `phs000007.v29.pht006027.v1.phv00277077.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21498,7 +21498,7 @@
       ```
 <a id="fasting_lipids_1-genoa"></a>
   * ### lipids/fasting_lipids_1 -- **GENOA**:
-    * component_study_variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006041.v1.phv00277572.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006655.v1.phv00307853.v1`
+    * 4 component_study_variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006041.v1.phv00277572.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006655.v1.phv00307853.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21530,7 +21530,7 @@
       ```
 <a id="fasting_lipids_1-hchs_sol"></a>
   * ### lipids/fasting_lipids_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00253225.v1`
+    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00253225.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21548,7 +21548,7 @@
       ```
 <a id="fasting_lipids_1-jhs"></a>
   * ### lipids/fasting_lipids_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001949.v1.phv00126044.v1`
+    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001949.v1.phv00126044.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21572,7 +21572,7 @@
       ```
 <a id="fasting_lipids_1-mesa"></a>
   * ### lipids/fasting_lipids_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00083303.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084980.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087524.v1`
+    * 6 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00083303.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084980.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087524.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21598,7 +21598,7 @@
       ```
 <a id="fasting_lipids_1-sas"></a>
   * ### lipids/fasting_lipids_1 -- **SAS**:
-    * component_study_variables: `phs000914.v1.pht005253.v1.phv00258680.v1`
+    * 1 component_study_variables: `phs000914.v1.pht005253.v1.phv00258680.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21665,7 +21665,7 @@
     
 <a id="hdl_1-amish"></a>
   * ### lipids/hdl_1 -- **Amish**:
-    * component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253018.v1`
+    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253018.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21693,7 +21693,7 @@
       ```
 <a id="hdl_1-aric"></a>
   * ### lipids/hdl_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004063.v2.phv00204761.v1`
+    * 2 component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004063.v2.phv00204761.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21709,7 +21709,7 @@
       ```
 <a id="hdl_1-cardia"></a>
   * ### lipids/hdl_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001588.v2.phv00113702.v2`
+    * 2 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001588.v2.phv00113702.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21726,7 +21726,7 @@
       ```
 <a id="hdl_1-cfs"></a>
   * ### lipids/hdl_1 -- **CFS**:
-    * component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123968.v1`
+    * 3 component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123968.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21744,7 +21744,7 @@
       ```
 <a id="hdl_1-chs"></a>
   * ### lipids/hdl_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100426.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
+    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100426.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21760,7 +21760,7 @@
       ```
 <a id="hdl_1-fhs_gen3_newoffspringspouse_omni2"></a>
   * ### lipids/hdl_1 -- **FHS_Gen3_NewOffspringSpouse_Omni2**:
-    * component_study_variables: `phs000007.v29.pht006026.v1.phv00277020.v1`, `phs000007.v29.pht006026.v1.phv00277040.v1`
+    * 2 component_study_variables: `phs000007.v29.pht006026.v1.phv00277020.v1`, `phs000007.v29.pht006026.v1.phv00277040.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21777,7 +21777,7 @@
       ```
 <a id="hdl_1-fhs_offspring"></a>
   * ### lipids/hdl_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht006027.v1.phv00277077.v1`, `phs000007.v29.pht006027.v1.phv00277162.v1`
+    * 2 component_study_variables: `phs000007.v29.pht006027.v1.phv00277077.v1`, `phs000007.v29.pht006027.v1.phv00277162.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21794,7 +21794,7 @@
       ```
 <a id="hdl_1-genoa"></a>
   * ### lipids/hdl_1 -- **GENOA**:
-    * component_study_variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006041.v1.phv00277575.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006655.v1.phv00307856.v1`
+    * 4 component_study_variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006041.v1.phv00277575.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006655.v1.phv00307856.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21828,7 +21828,7 @@
       ```
 <a id="hdl_1-hchs_sol"></a>
   * ### lipids/hdl_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00253239.v1`
+    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00253239.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21843,7 +21843,7 @@
       ```
 <a id="hdl_1-jhs"></a>
   * ### lipids/hdl_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001945.v1.phv00125930.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
+    * 2 component_study_variables: `phs000286.v5.pht001945.v1.phv00125930.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21870,7 +21870,7 @@
       ```
 <a id="hdl_1-mesa"></a>
   * ### lipids/hdl_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082952.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084972.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087099.v1`
+    * 6 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082952.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084972.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087099.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21892,7 +21892,7 @@
       ```
 <a id="hdl_1-sas"></a>
   * ### lipids/hdl_1 -- **SAS**:
-    * component_study_variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258743.v1`
+    * 2 component_study_variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258743.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -21963,7 +21963,7 @@
     
 <a id="ldl_1-dcc_harmonized"></a>
   * ### lipids/ldl_1 -- **DCC_harmonized**:
-    * component_harmonized_variables: `{'dcc_harmonization_id': 124, 'name': 'total_cholesterol_1', 'version': 3}`, `{'dcc_harmonization_id': 125, 'name': 'triglycerides_1', 'version': 3}`, `{'dcc_harmonization_id': 123, 'name': 'hdl_1', 'version': 3}`
+    * 3 component_harmonized_variables: `total_cholesterol_1`, `triglycerides_1`, `hdl_1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22039,7 +22039,7 @@
     
 <a id="lipid_lowering_medication_1-amish"></a>
   * ### lipids/lipid_lowering_medication_1 -- **Amish**:
-    * component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253021.v1`
+    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253021.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22067,7 +22067,7 @@
       ```
 <a id="lipid_lowering_medication_1-aric"></a>
   * ### lipids/lipid_lowering_medication_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004063.v2.phv00204802.v1`
+    * 2 component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004063.v2.phv00204802.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22089,7 +22089,7 @@
       ```
 <a id="lipid_lowering_medication_1-cfs"></a>
   * ### lipids/lipid_lowering_medication_1 -- **CFS**:
-    * component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123030.v1`
+    * 3 component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123030.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22107,7 +22107,7 @@
       ```
 <a id="lipid_lowering_medication_1-chs"></a>
   * ### lipids/lipid_lowering_medication_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100594.v1`
+    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100594.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22125,7 +22125,7 @@
       ```
 <a id="lipid_lowering_medication_1-fhs_gen3_newoffspringspouse_omni2"></a>
   * ### lipids/lipid_lowering_medication_1 -- **FHS_Gen3_NewOffspringSpouse_Omni2**:
-    * component_study_variables: `phs000007.v29.pht006026.v1.phv00277020.v1`, `phs000007.v29.pht006026.v1.phv00277061.v1`
+    * 2 component_study_variables: `phs000007.v29.pht006026.v1.phv00277020.v1`, `phs000007.v29.pht006026.v1.phv00277061.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22142,7 +22142,7 @@
       ```
 <a id="lipid_lowering_medication_1-fhs_offspring"></a>
   * ### lipids/lipid_lowering_medication_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht006027.v1.phv00277077.v1`, `phs000007.v29.pht006027.v1.phv00277254.v1`
+    * 2 component_study_variables: `phs000007.v29.pht006027.v1.phv00277077.v1`, `phs000007.v29.pht006027.v1.phv00277254.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22159,7 +22159,7 @@
       ```
 <a id="lipid_lowering_medication_1-genoa"></a>
   * ### lipids/lipid_lowering_medication_1 -- **GENOA**:
-    * component_study_variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006042.v1.phv00277586.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006656.v1.phv00307867.v1`
+    * 4 component_study_variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006042.v1.phv00277586.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006656.v1.phv00307867.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22194,7 +22194,7 @@
       ```
 <a id="lipid_lowering_medication_1-hchs_sol"></a>
   * ### lipids/lipid_lowering_medication_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226349.v1`
+    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226349.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22210,7 +22210,7 @@
       ```
 <a id="lipid_lowering_medication_1-jhs"></a>
   * ### lipids/lipid_lowering_medication_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001949.v1.phv00126053.v1`
+    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001949.v1.phv00126053.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22234,7 +22234,7 @@
       ```
 <a id="lipid_lowering_medication_1-mesa"></a>
   * ### lipids/lipid_lowering_medication_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00083162.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085407.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087104.v1`
+    * 6 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00083162.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085407.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087104.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22319,7 +22319,7 @@
     
 <a id="total_cholesterol_1-amish"></a>
   * ### lipids/total_cholesterol_1 -- **Amish**:
-    * component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253020.v1`
+    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253020.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22347,7 +22347,7 @@
       ```
 <a id="total_cholesterol_1-aric"></a>
   * ### lipids/total_cholesterol_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004063.v2.phv00204735.v1`
+    * 2 component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004063.v2.phv00204735.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22372,7 +22372,7 @@
       ```
 <a id="total_cholesterol_1-cardia"></a>
   * ### lipids/total_cholesterol_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001588.v2.phv00113700.v2`
+    * 2 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001588.v2.phv00113700.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22390,7 +22390,7 @@
       ```
 <a id="total_cholesterol_1-cfs"></a>
   * ### lipids/total_cholesterol_1 -- **CFS**:
-    * component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123953.v1`
+    * 3 component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123953.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22408,7 +22408,7 @@
       ```
 <a id="total_cholesterol_1-chs"></a>
   * ### lipids/total_cholesterol_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100491.v1`
+    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100491.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22424,7 +22424,7 @@
       ```
 <a id="total_cholesterol_1-fhs_gen3_newoffspringspouse_omni2"></a>
   * ### lipids/total_cholesterol_1 -- **FHS_Gen3_NewOffspringSpouse_Omni2**:
-    * component_study_variables: `phs000007.v29.pht006026.v1.phv00277020.v1`, `phs000007.v29.pht006026.v1.phv00277047.v1`
+    * 2 component_study_variables: `phs000007.v29.pht006026.v1.phv00277020.v1`, `phs000007.v29.pht006026.v1.phv00277047.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22441,7 +22441,7 @@
       ```
 <a id="total_cholesterol_1-fhs_offspring"></a>
   * ### lipids/total_cholesterol_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht006027.v1.phv00277077.v1`, `phs000007.v29.pht006027.v1.phv00277194.v1`
+    * 2 component_study_variables: `phs000007.v29.pht006027.v1.phv00277077.v1`, `phs000007.v29.pht006027.v1.phv00277194.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22458,7 +22458,7 @@
       ```
 <a id="total_cholesterol_1-genoa"></a>
   * ### lipids/total_cholesterol_1 -- **GENOA**:
-    * component_study_variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006041.v1.phv00277573.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006655.v1.phv00307854.v1`
+    * 4 component_study_variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006041.v1.phv00277573.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006655.v1.phv00307854.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22492,7 +22492,7 @@
       ```
 <a id="total_cholesterol_1-hchs_sol"></a>
   * ### lipids/total_cholesterol_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00253238.v1`
+    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00253238.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22508,7 +22508,7 @@
       ```
 <a id="total_cholesterol_1-jhs"></a>
   * ### lipids/total_cholesterol_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001945.v1.phv00125927.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
+    * 2 component_study_variables: `phs000286.v5.pht001945.v1.phv00125927.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22535,7 +22535,7 @@
       ```
 <a id="total_cholesterol_1-mesa"></a>
   * ### lipids/total_cholesterol_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082956.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084974.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087100.v1`
+    * 6 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082956.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084974.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087100.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22558,7 +22558,7 @@
       ```
 <a id="total_cholesterol_1-sas"></a>
   * ### lipids/total_cholesterol_1 -- **SAS**:
-    * component_study_variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258733.v1`
+    * 2 component_study_variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258733.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22628,7 +22628,7 @@
     
 <a id="triglycerides_1-amish"></a>
   * ### lipids/triglycerides_1 -- **Amish**:
-    * component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253019.v1`
+    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253019.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22656,7 +22656,7 @@
       ```
 <a id="triglycerides_1-aric"></a>
   * ### lipids/triglycerides_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004063.v2.phv00204738.v1`
+    * 2 component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004063.v2.phv00204738.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22683,7 +22683,7 @@
       ```
 <a id="triglycerides_1-cardia"></a>
   * ### lipids/triglycerides_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001588.v2.phv00113701.v2`
+    * 2 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001588.v2.phv00113701.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22701,7 +22701,7 @@
       ```
 <a id="triglycerides_1-cfs"></a>
   * ### lipids/triglycerides_1 -- **CFS**:
-    * component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123974.v1`
+    * 3 component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123974.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22719,7 +22719,7 @@
       ```
 <a id="triglycerides_1-chs"></a>
   * ### lipids/triglycerides_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100425.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
+    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100425.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22735,7 +22735,7 @@
       ```
 <a id="triglycerides_1-fhs_gen3_newoffspringspouse_omni2"></a>
   * ### lipids/triglycerides_1 -- **FHS_Gen3_NewOffspringSpouse_Omni2**:
-    * component_study_variables: `phs000007.v29.pht006026.v1.phv00277020.v1`, `phs000007.v29.pht006026.v1.phv00277049.v1`
+    * 2 component_study_variables: `phs000007.v29.pht006026.v1.phv00277020.v1`, `phs000007.v29.pht006026.v1.phv00277049.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22752,7 +22752,7 @@
       ```
 <a id="triglycerides_1-fhs_offspring"></a>
   * ### lipids/triglycerides_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht006027.v1.phv00277077.v1`, `phs000007.v29.pht006027.v1.phv00277203.v1`
+    * 2 component_study_variables: `phs000007.v29.pht006027.v1.phv00277077.v1`, `phs000007.v29.pht006027.v1.phv00277203.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22769,7 +22769,7 @@
       ```
 <a id="triglycerides_1-genoa"></a>
   * ### lipids/triglycerides_1 -- **GENOA**:
-    * component_study_variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006041.v1.phv00277574.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006655.v1.phv00307855.v1`
+    * 4 component_study_variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006041.v1.phv00277574.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006655.v1.phv00307855.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22803,7 +22803,7 @@
       ```
 <a id="triglycerides_1-hchs_sol"></a>
   * ### lipids/triglycerides_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00253240.v1`
+    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00253240.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22818,7 +22818,7 @@
       ```
 <a id="triglycerides_1-jhs"></a>
   * ### lipids/triglycerides_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001945.v1.phv00125933.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
+    * 2 component_study_variables: `phs000286.v5.pht001945.v1.phv00125933.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22845,7 +22845,7 @@
       ```
 <a id="triglycerides_1-mesa"></a>
   * ### lipids/triglycerides_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082950.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084968.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087101.v1`
+    * 6 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082950.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084968.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087101.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22869,7 +22869,7 @@
       ```
 <a id="triglycerides_1-sas"></a>
   * ### lipids/triglycerides_1 -- **SAS**:
-    * component_study_variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258736.v1`
+    * 2 component_study_variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258736.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -22959,7 +22959,7 @@
     
 <a id="sleep_duration_1-aric"></a>
   * ### sleep/sleep_duration_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v5.pht004228.v2.phv00214261.v1`, `phs000280.v5.pht004228.v2.phv00214262.v1`, `phs000280.v5.pht004228.v2.phv00214263.v1`, `phs000280.v5.pht004228.v2.phv00214268.v1`, `phs000280.v5.pht004228.v2.phv00214269.v1`, `phs000280.v5.pht004228.v2.phv00214270.v1`, `phs000280.v5.pht004228.v2.phv00214274.v1`, `phs000280.v5.pht004228.v2.phv00215388.v1`, `phs000280.v5.pht006431.v1.phv00295623.v1`, `phs000280.v5.pht006479.v1.phv00298019.v1`
+    * 10 component_study_variables: `phs000280.v5.pht004228.v2.phv00214261.v1`, `phs000280.v5.pht004228.v2.phv00214262.v1`, `phs000280.v5.pht004228.v2.phv00214263.v1`, `phs000280.v5.pht004228.v2.phv00214268.v1`, `phs000280.v5.pht004228.v2.phv00214269.v1`, `phs000280.v5.pht004228.v2.phv00214270.v1`, `phs000280.v5.pht004228.v2.phv00214274.v1`, `phs000280.v5.pht004228.v2.phv00215388.v1`, `phs000280.v5.pht006431.v1.phv00295623.v1`, `phs000280.v5.pht006479.v1.phv00298019.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -23020,7 +23020,7 @@
       ```
 <a id="sleep_duration_1-cardia"></a>
   * ### sleep/sleep_duration_1 -- **CARDIA**:
-    * component_study_variables: `phs000285.v3.pht001839.v2.phv00120534.v2`, `phs000285.v3.pht001851.v2.phv00120748.v2`
+    * 2 component_study_variables: `phs000285.v3.pht001839.v2.phv00120534.v2`, `phs000285.v3.pht001851.v2.phv00120748.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -23041,7 +23041,7 @@
       ```
 <a id="sleep_duration_1-cfs"></a>
   * ### sleep/sleep_duration_1 -- **CFS**:
-    * component_study_variables: `phs000284.v2.pht001902.v1.phv00122012.v1`, `phs000284.v2.pht001902.v1.phv00122015.v1`, `phs000284.v2.pht001902.v1.phv00122084.v1`, `phs000284.v2.pht001902.v1.phv00122088.v1`, `phs000284.v2.pht001902.v1.phv00122371.v1`, `phs000284.v2.pht001902.v1.phv00122372.v1`
+    * 6 component_study_variables: `phs000284.v2.pht001902.v1.phv00122012.v1`, `phs000284.v2.pht001902.v1.phv00122015.v1`, `phs000284.v2.pht001902.v1.phv00122084.v1`, `phs000284.v2.pht001902.v1.phv00122088.v1`, `phs000284.v2.pht001902.v1.phv00122371.v1`, `phs000284.v2.pht001902.v1.phv00122372.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -23098,7 +23098,7 @@
       ```
 <a id="sleep_duration_1-chs"></a>
   * ### sleep/sleep_duration_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001460.v1.phv00100694.v1`, `phs000287.v6.pht001460.v1.phv00100712.v1`
+    * 2 component_study_variables: `phs000287.v6.pht001460.v1.phv00100694.v1`, `phs000287.v6.pht001460.v1.phv00100712.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -23117,7 +23117,7 @@
       ```
 <a id="sleep_duration_1-fhs_gen3"></a>
   * ### sleep/sleep_duration_1 -- **FHS_Gen3**:
-    * component_study_variables: `phs000007.v30.pht000074.v11.phv00021348.v5`, `phs000007.v30.pht003099.v5.phv00177930.v5`
+    * 2 component_study_variables: `phs000007.v30.pht000074.v11.phv00021348.v5`, `phs000007.v30.pht003099.v5.phv00177930.v5`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -23136,7 +23136,7 @@
       ```
 <a id="sleep_duration_1-fhs_offspring_omni1"></a>
   * ### sleep/sleep_duration_1 -- **FHS_Offspring_Omni1**:
-    * component_study_variables: `phs000007.v30.pht000031.v8.phv00007754.v6`, `phs000007.v30.pht000033.v9.phv00009109.v6`, `phs000007.v30.pht000036.v9.phv00010680.v6`, `phs000007.v30.pht000098.v7.phv00022090.v6`, `phs000007.v30.pht000395.v9.phv00055458.v6`, `phs000007.v30.pht000395.v9.phv00055459.v6`, `phs000007.v30.pht000395.v9.phv00055460.v6`, `phs000007.v30.pht000395.v9.phv00055465.v6`, `phs000007.v30.pht000395.v9.phv00055466.v5`, `phs000007.v30.pht000395.v9.phv00055467.v5`, `phs000007.v30.pht000395.v9.phv00055471.v6`, `phs000007.v30.pht000395.v9.phv00056587.v6`, `phs000007.v30.pht000747.v6.phv00072369.v5`, `phs000007.v30.pht000747.v6.phv00072556.v5`, `phs000007.v30.pht003099.v5.phv00177932.v5`, `phs000007.v30.pht003099.v5.phv00177936.v5`, `phs000007.v30.pht003099.v5.phv00177940.v5`, `phs000007.v30.pht003099.v5.phv00177942.v5`, `phs000007.v30.pht003099.v5.phv00177944.v5`, `phs000007.v30.pht003099.v5.phv00177946.v5`, `phs000007.v30.pht005140.v2.phv00254011.v2`, `phs000007.v30.pht005140.v2.phv00254343.v2`, `phs000007.v30.pht005140.v2.phv00254561.v2`, `phs000007.v30.pht005140.v2.phv00254562.v2`, `phs000007.v30.pht005140.v2.phv00254563.v2`, `phs000007.v30.pht005140.v2.phv00254566.v2`, `phs000007.v30.pht005140.v2.phv00254567.v2`, `phs000007.v30.pht005140.v2.phv00254568.v2`, `phs000007.v30.pht005140.v2.phv00254569.v2`, `phs000007.v30.pht005140.v2.phv00254570.v2`
+    * 30 component_study_variables: `phs000007.v30.pht000031.v8.phv00007754.v6`, `phs000007.v30.pht000033.v9.phv00009109.v6`, `phs000007.v30.pht000036.v9.phv00010680.v6`, `phs000007.v30.pht000098.v7.phv00022090.v6`, `phs000007.v30.pht000395.v9.phv00055458.v6`, `phs000007.v30.pht000395.v9.phv00055459.v6`, `phs000007.v30.pht000395.v9.phv00055460.v6`, `phs000007.v30.pht000395.v9.phv00055465.v6`, `phs000007.v30.pht000395.v9.phv00055466.v5`, `phs000007.v30.pht000395.v9.phv00055467.v5`, `phs000007.v30.pht000395.v9.phv00055471.v6`, `phs000007.v30.pht000395.v9.phv00056587.v6`, `phs000007.v30.pht000747.v6.phv00072369.v5`, `phs000007.v30.pht000747.v6.phv00072556.v5`, `phs000007.v30.pht003099.v5.phv00177932.v5`, `phs000007.v30.pht003099.v5.phv00177936.v5`, `phs000007.v30.pht003099.v5.phv00177940.v5`, `phs000007.v30.pht003099.v5.phv00177942.v5`, `phs000007.v30.pht003099.v5.phv00177944.v5`, `phs000007.v30.pht003099.v5.phv00177946.v5`, `phs000007.v30.pht005140.v2.phv00254011.v2`, `phs000007.v30.pht005140.v2.phv00254343.v2`, `phs000007.v30.pht005140.v2.phv00254561.v2`, `phs000007.v30.pht005140.v2.phv00254562.v2`, `phs000007.v30.pht005140.v2.phv00254563.v2`, `phs000007.v30.pht005140.v2.phv00254566.v2`, `phs000007.v30.pht005140.v2.phv00254567.v2`, `phs000007.v30.pht005140.v2.phv00254568.v2`, `phs000007.v30.pht005140.v2.phv00254569.v2`, `phs000007.v30.pht005140.v2.phv00254570.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -23287,7 +23287,7 @@
       ```
 <a id="sleep_duration_1-fhs_original"></a>
   * ### sleep/sleep_duration_1 -- **FHS_Original**:
-    * component_study_variables: `phs000007.v30.pht000014.v3.phv00001902.v1`, `phs000007.v30.pht000022.v4.phv00004158.v1`, `phs000007.v30.pht003099.v5.phv00177930.v5`
+    * 3 component_study_variables: `phs000007.v30.pht000014.v3.phv00001902.v1`, `phs000007.v30.pht000022.v4.phv00004158.v1`, `phs000007.v30.pht003099.v5.phv00177930.v5`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -23341,7 +23341,7 @@
       ```
 <a id="sleep_duration_1-hchs_sol"></a>
   * ### sleep/sleep_duration_1 -- **HCHS_SOL**:
-    * component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00258046.v1`
+    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00258046.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -23360,7 +23360,7 @@
       ```
 <a id="sleep_duration_1-jhs"></a>
   * ### sleep/sleep_duration_1 -- **JHS**:
-    * component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001963.v1.phv00127678.v1`
+    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001963.v1.phv00127678.v1`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -23376,7 +23376,7 @@
       ```
 <a id="sleep_duration_1-mesa"></a>
   * ### sleep/sleep_duration_1 -- **MESA**:
-    * component_study_variables: `phs000209.v13.pht001120.v10.phv00086727.v3`, `phs000209.v13.pht001120.v10.phv00087048.v2`
+    * 2 component_study_variables: `phs000209.v13.pht001120.v10.phv00086727.v3`, `phs000209.v13.pht001120.v10.phv00087048.v2`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -23395,7 +23395,7 @@
       ```
 <a id="sleep_duration_1-whi"></a>
   * ### sleep/sleep_duration_1 -- **WHI**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001005.v6.phv00078869.v6`, `phs000200.v11.pht001005.v6.phv00078870.v6`, `phs000200.v11.pht001005.v6.phv00079041.v6`
+    * 5 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001005.v6.phv00078869.v6`, `phs000200.v11.pht001005.v6.phv00078870.v6`, `phs000200.v11.pht001005.v6.phv00079041.v6`
     * Function:
       ```r
       harmonize <- function(phen_list){
@@ -23563,7 +23563,7 @@
     
 <a id="vte_case_status_1-aric"></a>
   * ### vte/vte_case_status_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht006485.v1.phv00298125.v1`, `phs000280.v4.pht006485.v1.phv00298126.v1`
+    * 3 component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht006485.v1.phv00298125.v1`, `phs000280.v4.pht006485.v1.phv00298126.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -23603,7 +23603,7 @@
       ```
 <a id="vte_case_status_1-chs"></a>
   * ### vte/vte_case_status_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht005981.v1.phv00273565.v1`, `phs000287.v6.pht005981.v1.phv00273566.v1`, `phs000287.v6.pht005981.v1.phv00273567.v1`
+    * 4 component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht005981.v1.phv00273565.v1`, `phs000287.v6.pht005981.v1.phv00273566.v1`, `phs000287.v6.pht005981.v1.phv00273567.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -23643,8 +23643,8 @@
       ```
 <a id="vte_case_status_1-fhs_g3nosom12"></a>
   * ### vte/vte_case_status_1 -- **FHS_G3NOSOm12**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177927.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177931.v4`, `phs000007.v29.pht003099.v4.phv00177933.v4`, `phs000007.v29.pht003099.v4.phv00177935.v4`, `phs000007.v29.pht003099.v4.phv00177985.v4`, `phs000007.v29.pht003099.v4.phv00177986.v4`, `phs000007.v29.pht003099.v4.phv00177987.v4`, `phs000007.v29.pht006025.v1.phv00276977.v1`, `phs000007.v29.pht006025.v1.phv00277005.v1`
-    * component_harmonized_variables: `{'dcc_harmonization_id': 120, 'name': 'vte_prior_history_1', 'version': 1}`
+    * 11 component_study_variables: `phs000007.v29.pht003099.v4.phv00177927.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177931.v4`, `phs000007.v29.pht003099.v4.phv00177933.v4`, `phs000007.v29.pht003099.v4.phv00177935.v4`, `phs000007.v29.pht003099.v4.phv00177985.v4`, `phs000007.v29.pht003099.v4.phv00177986.v4`, `phs000007.v29.pht003099.v4.phv00177987.v4`, `phs000007.v29.pht006025.v1.phv00276977.v1`, `phs000007.v29.pht006025.v1.phv00277005.v1`
+    * 1 component_harmonized_variables: `vte_prior_history_1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -23716,8 +23716,8 @@
       ```
 <a id="vte_case_status_1-fhs_offspring"></a>
   * ### vte/vte_case_status_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177927.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177931.v4`, `phs000007.v29.pht003099.v4.phv00177933.v4`, `phs000007.v29.pht003099.v4.phv00177935.v4`, `phs000007.v29.pht003099.v4.phv00177937.v4`, `phs000007.v29.pht003099.v4.phv00177939.v4`, `phs000007.v29.pht003099.v4.phv00177941.v4`, `phs000007.v29.pht003099.v4.phv00177943.v4`, `phs000007.v29.pht003099.v4.phv00177945.v4`, `phs000007.v29.pht003099.v4.phv00177985.v4`, `phs000007.v29.pht003099.v4.phv00177986.v4`, `phs000007.v29.pht003099.v4.phv00177987.v4`, `phs000007.v29.pht003099.v4.phv00177988.v4`, `phs000007.v29.pht003099.v4.phv00177989.v4`, `phs000007.v29.pht003099.v4.phv00177990.v4`, `phs000007.v29.pht003099.v4.phv00177991.v4`, `phs000007.v29.pht003099.v4.phv00177992.v4`, `phs000007.v29.pht006025.v1.phv00276977.v1`, `phs000007.v29.pht006025.v1.phv00277005.v1`
-    * component_harmonized_variables: `{'dcc_harmonization_id': 120, 'name': 'vte_prior_history_1', 'version': 1}`
+    * 21 component_study_variables: `phs000007.v29.pht003099.v4.phv00177927.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177931.v4`, `phs000007.v29.pht003099.v4.phv00177933.v4`, `phs000007.v29.pht003099.v4.phv00177935.v4`, `phs000007.v29.pht003099.v4.phv00177937.v4`, `phs000007.v29.pht003099.v4.phv00177939.v4`, `phs000007.v29.pht003099.v4.phv00177941.v4`, `phs000007.v29.pht003099.v4.phv00177943.v4`, `phs000007.v29.pht003099.v4.phv00177945.v4`, `phs000007.v29.pht003099.v4.phv00177985.v4`, `phs000007.v29.pht003099.v4.phv00177986.v4`, `phs000007.v29.pht003099.v4.phv00177987.v4`, `phs000007.v29.pht003099.v4.phv00177988.v4`, `phs000007.v29.pht003099.v4.phv00177989.v4`, `phs000007.v29.pht003099.v4.phv00177990.v4`, `phs000007.v29.pht003099.v4.phv00177991.v4`, `phs000007.v29.pht003099.v4.phv00177992.v4`, `phs000007.v29.pht006025.v1.phv00276977.v1`, `phs000007.v29.pht006025.v1.phv00277005.v1`
+    * 1 component_harmonized_variables: `vte_prior_history_1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -23812,8 +23812,8 @@
       ```
 <a id="vte_case_status_1-fhs_original"></a>
   * ### vte/vte_case_status_1 -- **FHS_Original**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177927.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177931.v4`, `phs000007.v29.pht003099.v4.phv00177933.v4`, `phs000007.v29.pht003099.v4.phv00177935.v4`, `phs000007.v29.pht003099.v4.phv00177937.v4`, `phs000007.v29.pht003099.v4.phv00177939.v4`, `phs000007.v29.pht003099.v4.phv00177941.v4`, `phs000007.v29.pht003099.v4.phv00177943.v4`, `phs000007.v29.pht003099.v4.phv00177945.v4`, `phs000007.v29.pht003099.v4.phv00177947.v4`, `phs000007.v29.pht003099.v4.phv00177949.v4`, `phs000007.v29.pht003099.v4.phv00177951.v4`, `phs000007.v29.pht003099.v4.phv00177953.v4`, `phs000007.v29.pht003099.v4.phv00177955.v4`, `phs000007.v29.pht003099.v4.phv00177957.v4`, `phs000007.v29.pht003099.v4.phv00177959.v4`, `phs000007.v29.pht003099.v4.phv00177961.v4`, `phs000007.v29.pht003099.v4.phv00177963.v4`, `phs000007.v29.pht003099.v4.phv00177965.v4`, `phs000007.v29.pht003099.v4.phv00177967.v4`, `phs000007.v29.pht003099.v4.phv00177969.v4`, `phs000007.v29.pht003099.v4.phv00177971.v4`, `phs000007.v29.pht003099.v4.phv00177973.v4`, `phs000007.v29.pht003099.v4.phv00177975.v4`, `phs000007.v29.pht003099.v4.phv00177977.v4`, `phs000007.v29.pht003099.v4.phv00177979.v4`, `phs000007.v29.pht003099.v4.phv00177981.v4`, `phs000007.v29.pht003099.v4.phv00177983.v4`, `phs000007.v29.pht003099.v4.phv00177985.v4`, `phs000007.v29.pht003099.v4.phv00177986.v4`, `phs000007.v29.pht003099.v4.phv00177987.v4`, `phs000007.v29.pht003099.v4.phv00177988.v4`, `phs000007.v29.pht003099.v4.phv00177989.v4`, `phs000007.v29.pht003099.v4.phv00177990.v4`, `phs000007.v29.pht003099.v4.phv00177991.v4`, `phs000007.v29.pht003099.v4.phv00177992.v4`, `phs000007.v29.pht003099.v4.phv00177993.v4`, `phs000007.v29.pht003099.v4.phv00177994.v4`, `phs000007.v29.pht003099.v4.phv00177995.v4`, `phs000007.v29.pht003099.v4.phv00177996.v4`, `phs000007.v29.pht003099.v4.phv00177997.v4`, `phs000007.v29.pht003099.v4.phv00177998.v4`, `phs000007.v29.pht003099.v4.phv00177999.v4`, `phs000007.v29.pht003099.v4.phv00178000.v4`, `phs000007.v29.pht003099.v4.phv00178001.v4`, `phs000007.v29.pht003099.v4.phv00178002.v4`, `phs000007.v29.pht003099.v4.phv00178003.v4`, `phs000007.v29.pht003099.v4.phv00178004.v4`, `phs000007.v29.pht003099.v4.phv00178005.v4`, `phs000007.v29.pht003099.v4.phv00178006.v4`, `phs000007.v29.pht003099.v4.phv00178007.v4`, `phs000007.v29.pht003099.v4.phv00178008.v4`, `phs000007.v29.pht003099.v4.phv00178009.v4`, `phs000007.v29.pht003099.v4.phv00178010.v4`, `phs000007.v29.pht003099.v4.phv00178011.v4`, `phs000007.v29.pht003099.v4.phv00226997.v1`, `phs000007.v29.pht003099.v4.phv00226998.v1`, `phs000007.v29.pht003099.v4.phv00227000.v1`, `phs000007.v29.pht003099.v4.phv00227001.v1`, `phs000007.v29.pht003099.v4.phv00227003.v1`, `phs000007.v29.pht003099.v4.phv00227004.v1`, `phs000007.v29.pht003099.v4.phv00227006.v1`, `phs000007.v29.pht003099.v4.phv00227007.v1`, `phs000007.v29.pht006025.v1.phv00276977.v1`, `phs000007.v29.pht006025.v1.phv00277005.v1`
-    * component_harmonized_variables: `{'dcc_harmonization_id': 120, 'name': 'vte_prior_history_1', 'version': 1}`
+    * 67 component_study_variables: `phs000007.v29.pht003099.v4.phv00177927.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177931.v4`, `phs000007.v29.pht003099.v4.phv00177933.v4`, `phs000007.v29.pht003099.v4.phv00177935.v4`, `phs000007.v29.pht003099.v4.phv00177937.v4`, `phs000007.v29.pht003099.v4.phv00177939.v4`, `phs000007.v29.pht003099.v4.phv00177941.v4`, `phs000007.v29.pht003099.v4.phv00177943.v4`, `phs000007.v29.pht003099.v4.phv00177945.v4`, `phs000007.v29.pht003099.v4.phv00177947.v4`, `phs000007.v29.pht003099.v4.phv00177949.v4`, `phs000007.v29.pht003099.v4.phv00177951.v4`, `phs000007.v29.pht003099.v4.phv00177953.v4`, `phs000007.v29.pht003099.v4.phv00177955.v4`, `phs000007.v29.pht003099.v4.phv00177957.v4`, `phs000007.v29.pht003099.v4.phv00177959.v4`, `phs000007.v29.pht003099.v4.phv00177961.v4`, `phs000007.v29.pht003099.v4.phv00177963.v4`, `phs000007.v29.pht003099.v4.phv00177965.v4`, `phs000007.v29.pht003099.v4.phv00177967.v4`, `phs000007.v29.pht003099.v4.phv00177969.v4`, `phs000007.v29.pht003099.v4.phv00177971.v4`, `phs000007.v29.pht003099.v4.phv00177973.v4`, `phs000007.v29.pht003099.v4.phv00177975.v4`, `phs000007.v29.pht003099.v4.phv00177977.v4`, `phs000007.v29.pht003099.v4.phv00177979.v4`, `phs000007.v29.pht003099.v4.phv00177981.v4`, `phs000007.v29.pht003099.v4.phv00177983.v4`, `phs000007.v29.pht003099.v4.phv00177985.v4`, `phs000007.v29.pht003099.v4.phv00177986.v4`, `phs000007.v29.pht003099.v4.phv00177987.v4`, `phs000007.v29.pht003099.v4.phv00177988.v4`, `phs000007.v29.pht003099.v4.phv00177989.v4`, `phs000007.v29.pht003099.v4.phv00177990.v4`, `phs000007.v29.pht003099.v4.phv00177991.v4`, `phs000007.v29.pht003099.v4.phv00177992.v4`, `phs000007.v29.pht003099.v4.phv00177993.v4`, `phs000007.v29.pht003099.v4.phv00177994.v4`, `phs000007.v29.pht003099.v4.phv00177995.v4`, `phs000007.v29.pht003099.v4.phv00177996.v4`, `phs000007.v29.pht003099.v4.phv00177997.v4`, `phs000007.v29.pht003099.v4.phv00177998.v4`, `phs000007.v29.pht003099.v4.phv00177999.v4`, `phs000007.v29.pht003099.v4.phv00178000.v4`, `phs000007.v29.pht003099.v4.phv00178001.v4`, `phs000007.v29.pht003099.v4.phv00178002.v4`, `phs000007.v29.pht003099.v4.phv00178003.v4`, `phs000007.v29.pht003099.v4.phv00178004.v4`, `phs000007.v29.pht003099.v4.phv00178005.v4`, `phs000007.v29.pht003099.v4.phv00178006.v4`, `phs000007.v29.pht003099.v4.phv00178007.v4`, `phs000007.v29.pht003099.v4.phv00178008.v4`, `phs000007.v29.pht003099.v4.phv00178009.v4`, `phs000007.v29.pht003099.v4.phv00178010.v4`, `phs000007.v29.pht003099.v4.phv00178011.v4`, `phs000007.v29.pht003099.v4.phv00226997.v1`, `phs000007.v29.pht003099.v4.phv00226998.v1`, `phs000007.v29.pht003099.v4.phv00227000.v1`, `phs000007.v29.pht003099.v4.phv00227001.v1`, `phs000007.v29.pht003099.v4.phv00227003.v1`, `phs000007.v29.pht003099.v4.phv00227004.v1`, `phs000007.v29.pht003099.v4.phv00227006.v1`, `phs000007.v29.pht003099.v4.phv00227007.v1`, `phs000007.v29.pht006025.v1.phv00276977.v1`, `phs000007.v29.pht006025.v1.phv00277005.v1`
+    * 1 component_harmonized_variables: `vte_prior_history_1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -23908,7 +23908,7 @@
       ```
 <a id="vte_case_status_1-hvh"></a>
   * ### vte/vte_case_status_1 -- **HVH**:
-    * component_study_variables: `phs001013.v3.pht005311.v2.phv00259376.v2`, `phs001013.v3.pht005311.v2.phv00259377.v2`, `phs001013.v3.pht005311.v2.phv00259378.v2`, `phs001013.v3.pht005311.v2.phv00259384.v2`
+    * 4 component_study_variables: `phs001013.v3.pht005311.v2.phv00259376.v2`, `phs001013.v3.pht005311.v2.phv00259377.v2`, `phs001013.v3.pht005311.v2.phv00259378.v2`, `phs001013.v3.pht005311.v2.phv00259384.v2`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -23953,7 +23953,7 @@
       ```
 <a id="vte_case_status_1-mayo_geneva"></a>
   * ### vte/vte_case_status_1 -- **Mayo_GENEVA**:
-    * component_study_variables: `phs000289.v2.pht001886.v2.phv00121844.v1`, `phs000289.v2.pht001886.v2.phv00121846.v1`, `phs000289.v2.pht001886.v2.phv00121861.v2`
+    * 3 component_study_variables: `phs000289.v2.pht001886.v2.phv00121844.v1`, `phs000289.v2.pht001886.v2.phv00121846.v1`, `phs000289.v2.pht001886.v2.phv00121861.v2`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -23983,7 +23983,7 @@
       ```
 <a id="vte_case_status_1-mayo_oc"></a>
   * ### vte/vte_case_status_1 -- **Mayo_OC**:
-    * component_study_variables: `phs001402.v1.pht008239.v1.phv00389900.v1`, `phs001402.v1.pht008239.v1.phv00389902.v1`, `phs001402.v1.pht008239.v1.phv00389917.v1`
+    * 3 component_study_variables: `phs001402.v1.pht008239.v1.phv00389900.v1`, `phs001402.v1.pht008239.v1.phv00389902.v1`, `phs001402.v1.pht008239.v1.phv00389917.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -24016,8 +24016,8 @@
       ```
 <a id="vte_case_status_1-whi_hrt"></a>
   * ### vte/vte_case_status_1 -- **WHI_HRT**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001031.v6.phv00080426.v6`, `phs000200.v11.pht003407.v3.phv00193178.v3`, `phs000200.v11.pht003407.v3.phv00193179.v3`, `phs000200.v11.pht003407.v3.phv00193193.v3`, `phs000200.v11.pht003407.v3.phv00193194.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`
-    * component_harmonized_variables: `{'dcc_harmonization_id': 120, 'name': 'vte_prior_history_1', 'version': 1}`
+    * 8 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001031.v6.phv00080426.v6`, `phs000200.v11.pht003407.v3.phv00193178.v3`, `phs000200.v11.pht003407.v3.phv00193179.v3`, `phs000200.v11.pht003407.v3.phv00193193.v3`, `phs000200.v11.pht003407.v3.phv00193194.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`
+    * 1 component_harmonized_variables: `vte_prior_history_1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -24084,8 +24084,8 @@
       ```
 <a id="vte_case_status_1-whi_mrcnonhrt"></a>
   * ### vte/vte_case_status_1 -- **WHI_MRCnonHRT**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001031.v6.phv00080426.v6`, `phs000200.v11.pht003395.v3.phv00192301.v3`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003407.v3.phv00193178.v3`, `phs000200.v11.pht003407.v3.phv00193179.v3`, `phs000200.v11.pht003407.v3.phv00193193.v3`, `phs000200.v11.pht003407.v3.phv00193194.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`
-    * component_harmonized_variables: `{'dcc_harmonization_id': 120, 'name': 'vte_prior_history_1', 'version': 1}`
+    * 10 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001031.v6.phv00080426.v6`, `phs000200.v11.pht003395.v3.phv00192301.v3`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003407.v3.phv00193178.v3`, `phs000200.v11.pht003407.v3.phv00193179.v3`, `phs000200.v11.pht003407.v3.phv00193193.v3`, `phs000200.v11.pht003407.v3.phv00193194.v3`, `phs000200.v11.pht003407.v3.phv00193505.v3`
+    * 1 component_harmonized_variables: `vte_prior_history_1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -24199,7 +24199,7 @@
     
 <a id="vte_followup_start_age_1-aric"></a>
   * ### vte/vte_followup_start_age_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht006485.v1.phv00298125.v1`
+    * 2 component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht006485.v1.phv00298125.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -24228,7 +24228,7 @@
       ```
 <a id="vte_followup_start_age_1-chs"></a>
   * ### vte/vte_followup_start_age_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`
+    * 1 component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -24253,7 +24253,7 @@
       ```
 <a id="vte_followup_start_age_1-fhs_g3nosom12"></a>
   * ### vte/vte_followup_start_age_1 -- **FHS_G3NOSOm12**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`
+    * 2 component_study_variables: `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -24278,7 +24278,7 @@
       ```
 <a id="vte_followup_start_age_1-fhs_offspring"></a>
   * ### vte/vte_followup_start_age_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177937.v4`, `phs000007.v29.pht003099.v4.phv00177939.v4`, `phs000007.v29.pht003099.v4.phv00177941.v4`, `phs000007.v29.pht003099.v4.phv00177988.v4`, `phs000007.v29.pht003099.v4.phv00177989.v4`, `phs000007.v29.pht003099.v4.phv00177990.v4`
+    * 8 component_study_variables: `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177937.v4`, `phs000007.v29.pht003099.v4.phv00177939.v4`, `phs000007.v29.pht003099.v4.phv00177941.v4`, `phs000007.v29.pht003099.v4.phv00177988.v4`, `phs000007.v29.pht003099.v4.phv00177989.v4`, `phs000007.v29.pht003099.v4.phv00177990.v4`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -24340,7 +24340,7 @@
       ```
 <a id="vte_followup_start_age_1-fhs_original"></a>
   * ### vte/vte_followup_start_age_1 -- **FHS_Original**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177973.v4`, `phs000007.v29.pht003099.v4.phv00177975.v4`, `phs000007.v29.pht003099.v4.phv00177977.v4`, `phs000007.v29.pht003099.v4.phv00178006.v4`, `phs000007.v29.pht003099.v4.phv00178007.v4`, `phs000007.v29.pht003099.v4.phv00178008.v4`
+    * 8 component_study_variables: `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177973.v4`, `phs000007.v29.pht003099.v4.phv00177975.v4`, `phs000007.v29.pht003099.v4.phv00177977.v4`, `phs000007.v29.pht003099.v4.phv00178006.v4`, `phs000007.v29.pht003099.v4.phv00178007.v4`, `phs000007.v29.pht003099.v4.phv00178008.v4`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -24402,7 +24402,7 @@
       ```
 <a id="vte_followup_start_age_1-whi_hrt"></a>
   * ### vte/vte_followup_start_age_1 -- **WHI_HRT**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001031.v6.phv00080426.v6`
+    * 3 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001031.v6.phv00080426.v6`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -24438,7 +24438,7 @@
       ```
 <a id="vte_followup_start_age_1-whi_mrcnonhrt"></a>
   * ### vte/vte_followup_start_age_1 -- **WHI_MRCnonHRT**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001031.v6.phv00080426.v6`, `phs000200.v11.pht003395.v3.phv00192301.v3`, `phs000200.v11.pht003395.v3.phv00192302.v3`
+    * 5 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001031.v6.phv00080426.v6`, `phs000200.v11.pht003395.v3.phv00192301.v3`, `phs000200.v11.pht003395.v3.phv00192302.v3`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -24548,7 +24548,7 @@
     
 <a id="vte_prior_history_1-aric"></a>
   * ### vte/vte_prior_history_1 -- **ARIC**:
-    * component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht006485.v1.phv00298125.v1`
+    * 2 component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht006485.v1.phv00298125.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -24580,7 +24580,7 @@
       ```
 <a id="vte_prior_history_1-chs"></a>
   * ### vte/vte_prior_history_1 -- **CHS**:
-    * component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht005981.v1.phv00273567.v1`
+    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht005981.v1.phv00273567.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -24611,7 +24611,7 @@
       ```
 <a id="vte_prior_history_1-fhs_g3nosom12"></a>
   * ### vte/vte_prior_history_1 -- **FHS_G3NOSOm12**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006025.v1.phv00276977.v1`, `phs000007.v29.pht006025.v1.phv00277005.v1`
+    * 4 component_study_variables: `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006025.v1.phv00276977.v1`, `phs000007.v29.pht006025.v1.phv00277005.v1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -24651,8 +24651,8 @@
       ```
 <a id="vte_prior_history_1-fhs_offspring"></a>
   * ### vte/vte_prior_history_1 -- **FHS_Offspring**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177988.v4`, `phs000007.v29.pht003099.v4.phv00177989.v4`, `phs000007.v29.pht003099.v4.phv00177990.v4`, `phs000007.v29.pht006025.v1.phv00276977.v1`, `phs000007.v29.pht006025.v1.phv00277005.v1`
-    * component_harmonized_variables: `{'dcc_harmonization_id': 119, 'name': 'vte_followup_start_age_1', 'version': 1}`
+    * 7 component_study_variables: `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177988.v4`, `phs000007.v29.pht003099.v4.phv00177989.v4`, `phs000007.v29.pht003099.v4.phv00177990.v4`, `phs000007.v29.pht006025.v1.phv00276977.v1`, `phs000007.v29.pht006025.v1.phv00277005.v1`
+    * 1 component_harmonized_variables: `vte_followup_start_age_1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -24739,8 +24739,8 @@
       ```
 <a id="vte_prior_history_1-fhs_original"></a>
   * ### vte/vte_prior_history_1 -- **FHS_Original**:
-    * component_study_variables: `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00178006.v4`, `phs000007.v29.pht003099.v4.phv00178007.v4`, `phs000007.v29.pht003099.v4.phv00178008.v4`, `phs000007.v29.pht006025.v1.phv00276977.v1`, `phs000007.v29.pht006025.v1.phv00277005.v1`
-    * component_harmonized_variables: `{'dcc_harmonization_id': 119, 'name': 'vte_followup_start_age_1', 'version': 1}`
+    * 7 component_study_variables: `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00178006.v4`, `phs000007.v29.pht003099.v4.phv00178007.v4`, `phs000007.v29.pht003099.v4.phv00178008.v4`, `phs000007.v29.pht006025.v1.phv00276977.v1`, `phs000007.v29.pht006025.v1.phv00277005.v1`
+    * 1 component_harmonized_variables: `vte_followup_start_age_1`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -24827,7 +24827,7 @@
       ```
 <a id="vte_prior_history_1-hvh"></a>
   * ### vte/vte_prior_history_1 -- **HVH**:
-    * component_study_variables: `phs001013.v3.pht005311.v2.phv00259376.v2`, `phs001013.v3.pht005311.v2.phv00259377.v2`, `phs001013.v3.pht005311.v2.phv00259378.v2`, `phs001013.v3.pht005311.v2.phv00259384.v2`
+    * 4 component_study_variables: `phs001013.v3.pht005311.v2.phv00259376.v2`, `phs001013.v3.pht005311.v2.phv00259377.v2`, `phs001013.v3.pht005311.v2.phv00259378.v2`, `phs001013.v3.pht005311.v2.phv00259384.v2`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -24870,7 +24870,7 @@
       ```
 <a id="vte_prior_history_1-whi_hrt"></a>
   * ### vte/vte_prior_history_1 -- **WHI_HRT**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht000998.v6.phv00078472.v6`, `phs000200.v11.pht000998.v6.phv00078475.v6`, `phs000200.v11.pht001031.v6.phv00080426.v6`
+    * 4 component_study_variables: `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht000998.v6.phv00078472.v6`, `phs000200.v11.pht000998.v6.phv00078475.v6`, `phs000200.v11.pht001031.v6.phv00080426.v6`
     * Function:
       ```r
       harmonize <- function(phen_list) {
@@ -24903,7 +24903,7 @@
       ```
 <a id="vte_prior_history_1-whi_mrcnonhrt"></a>
   * ### vte/vte_prior_history_1 -- **WHI_MRCnonHRT**:
-    * component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht000998.v6.phv00078472.v6`, `phs000200.v11.pht000998.v6.phv00078475.v6`, `phs000200.v11.pht001031.v6.phv00080426.v6`, `phs000200.v11.pht002770.v4.phv00170649.v4`, `phs000200.v11.pht002770.v4.phv00170650.v4`, `phs000200.v11.pht002770.v4.phv00170651.v4`, `phs000200.v11.pht002770.v4.phv00170652.v4`, `phs000200.v11.pht003395.v3.phv00192301.v3`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003407.v3.phv00193179.v3`, `phs000200.v11.pht003407.v3.phv00193194.v3`
+    * 13 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht000998.v6.phv00078472.v6`, `phs000200.v11.pht000998.v6.phv00078475.v6`, `phs000200.v11.pht001031.v6.phv00080426.v6`, `phs000200.v11.pht002770.v4.phv00170649.v4`, `phs000200.v11.pht002770.v4.phv00170650.v4`, `phs000200.v11.pht002770.v4.phv00170651.v4`, `phs000200.v11.pht002770.v4.phv00170652.v4`, `phs000200.v11.pht003395.v3.phv00192301.v3`, `phs000200.v11.pht003395.v3.phv00192302.v3`, `phs000200.v11.pht003407.v3.phv00193179.v3`, `phs000200.v11.pht003407.v3.phv00193194.v3`
     * Function:
       ```r
       harmonize <- function(phen_list) {
