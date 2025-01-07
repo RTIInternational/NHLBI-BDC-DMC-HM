@@ -204,7 +204,7 @@
 <p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/DeviceExposure">bdchm:DeviceExposure</a></p>
 <div class="mermaid"> classDiagram
     class DeviceExposure
-      Entity &lt;|-- DeviceExposure
+      Exposure &lt;|-- DeviceExposure
 
       DeviceExposure : age_at_exposure_end
 
@@ -237,7 +237,10 @@
 <h2 id="inheritance">Inheritance</h2>
 <ul>
 <li><a href="../Entity/">Entity</a><ul>
+<li><a href="../Exposure/">Exposure</a><ul>
 <li><strong>DeviceExposure</strong></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -253,27 +256,9 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../identity/">identity</a></td>
-<td>0..* <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
-<td>A 'business' identifier or accession number for the entity, typically as prov...</td>
-<td>direct</td>
-</tr>
-<tr>
 <td><a href="../device_concept/">device_concept</a></td>
 <td>0..1 <br/> <a href="../DeviceExposureConceptEnum/">DeviceExposureConceptEnum</a></td>
 <td>The coded value for a device</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../age_at_exposure_start/">age_at_exposure_start</a></td>
-<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
-<td>The Participant's age (expressed in days) at the exposure start date</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../age_at_exposure_end/">age_at_exposure_end</a></td>
-<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
-<td>The Participant's age (expressed in days) at the exposure end date, if availa...</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -289,16 +274,34 @@
 <td>direct</td>
 </tr>
 <tr>
+<td><a href="../identity/">identity</a></td>
+<td>0..* <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
+<td>A 'business' identifier or accession number for the entity, typically as prov...</td>
+<td><a href="../Exposure/">Exposure</a></td>
+</tr>
+<tr>
+<td><a href="../age_at_exposure_start/">age_at_exposure_start</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>The Participant's age (expressed in days) at the exposure start date</td>
+<td><a href="../Exposure/">Exposure</a></td>
+</tr>
+<tr>
+<td><a href="../age_at_exposure_end/">age_at_exposure_end</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>The Participant's age (expressed in days) at the exposure end date, if availa...</td>
+<td><a href="../Exposure/">Exposure</a></td>
+</tr>
+<tr>
 <td><a href="../associated_participant/">associated_participant</a></td>
 <td>0..1 <br/> <a href="../Participant/">Participant</a></td>
 <td>A reference to the Participant to which the exposure is attributed</td>
-<td>direct</td>
+<td><a href="../Exposure/">Exposure</a></td>
 </tr>
 <tr>
 <td><a href="../associated_visit/">associated_visit</a></td>
 <td>0..1 <br/> <a href="../Visit/">Visit</a></td>
 <td>A reference to the Visit the exposure is associated with, if any</td>
-<td>direct</td>
+<td><a href="../Exposure/">Exposure</a></td>
 </tr>
 <tr>
 <td><a href="../id/">id</a></td>
@@ -341,9 +344,7 @@ description: DeviceExposures are records of a Person suggesting exposure to a fo
   object. The source is typically physical objects used in procedures, measurements,
   or observations.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
-is_a: Entity
-slots:
-- identity
+is_a: Exposure
 attributes:
   device_concept:
     name: device_concept
@@ -352,21 +353,6 @@ attributes:
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     range: DeviceExposureConceptEnum
-  age_at_exposure_start:
-    name: age_at_exposure_start
-    description: The Participant's age (expressed in days) at the exposure start date.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    range: integer
-    unit:
-      ucum_code: d
-  age_at_exposure_end:
-    name: age_at_exposure_end
-    description: The Participant's age (expressed in days) at the exposure end date,
-      if available. Otherwise equal to age_at_exposure_start.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    range: integer
-    unit:
-      ucum_code: d
   exposure_provenance:
     name: exposure_provenance
     description: A value representing the provenance of the DeviceExposure record.
@@ -379,17 +365,6 @@ attributes:
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     range: float
     required: false
-  associated_participant:
-    name: associated_participant
-    description: A reference to the Participant to which the exposure is attributed.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    range: Participant
-  associated_visit:
-    name: associated_visit
-    description: A reference to the Visit the exposure is associated with, if any.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    range: Visit
-    required: false
 
 </code></pre>
 </details>
@@ -400,7 +375,7 @@ description: DeviceExposures are records of a Person suggesting exposure to a fo
   object. The source is typically physical objects used in procedures, measurements,
   or observations.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
-is_a: Entity
+is_a: Exposure
 attributes:
   device_concept:
     name: device_concept
@@ -413,31 +388,6 @@ attributes:
     domain_of:
     - DeviceExposure
     range: DeviceExposureConceptEnum
-  age_at_exposure_start:
-    name: age_at_exposure_start
-    description: The Participant's age (expressed in days) at the exposure start date.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    alias: age_at_exposure_start
-    owner: DeviceExposure
-    domain_of:
-    - DrugExposure
-    - DeviceExposure
-    range: integer
-    unit:
-      ucum_code: d
-  age_at_exposure_end:
-    name: age_at_exposure_end
-    description: The Participant's age (expressed in days) at the exposure end date,
-      if available. Otherwise equal to age_at_exposure_start.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    alias: age_at_exposure_end
-    owner: DeviceExposure
-    domain_of:
-    - DrugExposure
-    - DeviceExposure
-    range: integer
-    unit:
-      ucum_code: d
   exposure_provenance:
     name: exposure_provenance
     description: A value representing the provenance of the DeviceExposure record.
@@ -460,38 +410,6 @@ attributes:
     - DrugExposure
     - DeviceExposure
     range: float
-    required: false
-  associated_participant:
-    name: associated_participant
-    description: A reference to the Participant to which the exposure is attributed.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    alias: associated_participant
-    owner: DeviceExposure
-    domain_of:
-    - Demography
-    - Visit
-    - Condition
-    - Procedure
-    - DrugExposure
-    - DeviceExposure
-    - File
-    - ObservationSet
-    - Observation
-    range: Participant
-  associated_visit:
-    name: associated_visit
-    description: A reference to the Visit the exposure is associated with, if any.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    alias: associated_visit
-    owner: DeviceExposure
-    domain_of:
-    - QuestionnaireResponse
-    - Condition
-    - Procedure
-    - DrugExposure
-    - DeviceExposure
-    - Observation
-    range: Visit
     required: false
   identity:
     name: identity
@@ -520,13 +438,67 @@ attributes:
     - QuestionnaireItem
     - Condition
     - Procedure
-    - DrugExposure
-    - DeviceExposure
+    - Exposure
     - File
     - Document
     - Specimen
     - BiologicProduct
     range: uriorcurie
+  age_at_exposure_start:
+    name: age_at_exposure_start
+    description: The Participant's age (expressed in days) at the exposure start date.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: age_at_exposure_start
+    owner: DeviceExposure
+    domain_of:
+    - Exposure
+    range: integer
+    unit:
+      ucum_code: d
+  age_at_exposure_end:
+    name: age_at_exposure_end
+    description: The Participant's age (expressed in days) at the exposure end date,
+      if available. Otherwise equal to age_at_exposure_start.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: age_at_exposure_end
+    owner: DeviceExposure
+    domain_of:
+    - Exposure
+    range: integer
+    unit:
+      ucum_code: d
+  associated_participant:
+    name: associated_participant
+    description: A reference to the Participant to which the exposure is attributed.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    alias: associated_participant
+    owner: DeviceExposure
+    domain_of:
+    - Demography
+    - Visit
+    - Condition
+    - Procedure
+    - Exposure
+    - File
+    - ObservationSet
+    - Observation
+    range: Participant
+  associated_visit:
+    name: associated_visit
+    description: A reference to the Visit the exposure is associated with, if any.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    alias: associated_visit
+    owner: DeviceExposure
+    domain_of:
+    - QuestionnaireResponse
+    - Condition
+    - Procedure
+    - Exposure
+    - Observation
+    range: Visit
+    required: false
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The

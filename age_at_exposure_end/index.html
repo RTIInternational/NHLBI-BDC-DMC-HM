@@ -274,6 +274,19 @@
     Identifier and Mapping Information
   </a>
   
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
+    Schema Source
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -304,6 +317,7 @@
 
 
 <h1 id="slot-age_at_exposure_end">Slot: age_at_exposure_end</h1>
+<p><em>The Participant's age (expressed in days) at the exposure end date, if available. Otherwise equal to age_at_exposure_start.</em></p>
 <p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/age_at_exposure_end">bdchm:age_at_exposure_end</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -318,6 +332,11 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="../Exposure/">Exposure</a></td>
+<td>Exposures are records of a Person suggesting exposure to a medication, device...</td>
+<td>no</td>
+</tr>
+<tr>
 <td><a href="../DrugExposure/">DrugExposure</a></td>
 <td>DrugExposures are records of a Person suggesting exposure to a medication</td>
 <td>no</td>
@@ -331,18 +350,28 @@
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../String/">String</a></li>
+<li>Range: <a href="../Integer/">Integer</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+</ul>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
 <pre><code class="language-yaml">name: age_at_exposure_end
+description: The Participant's age (expressed in days) at the exposure end date, if
+  available. Otherwise equal to age_at_exposure_start.
+from_schema: https://w3id.org/nhlbidatastage/bdchm
+rank: 1000
 alias: age_at_exposure_end
+owner: Exposure
 domain_of:
-- DrugExposure
-- DeviceExposure
-range: string
+- Exposure
+range: integer
+unit:
+  ucum_code: d
 
 </code></pre>
 
