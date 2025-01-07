@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
-from collections import defaultdict
+from collections import defaultdict, Counter
+import re
 
 
 def format_code(code):
@@ -22,6 +23,8 @@ def generate_markdown(root_dir, output_file):
     """Generate markdown documentation from JSON files"""
     root_path = Path(root_dir).resolve()
     sections = defaultdict(list)
+    study_vars = []
+    harm_vars = []
 
     # Store structure for TOC
     structure = defaultdict(lambda: defaultdict(list))
@@ -103,13 +106,26 @@ def generate_markdown(root_dir, output_file):
                 section.append(f'<a id="{unit_anchor}"></a>')
                 section.append(unit_heading)
 
+                zeros = []
                 if unit.get('component_study_variables'):
-                    vars_text = ", ".join(f"`{var}`" for var in unit['component_study_variables'])
-                    section.append(f"    * component_study_variables: {vars_text}")
+                    file_study_vars = unit['component_study_variables']
+                    study_vars.extend(file_study_vars)
+                    vars_text = ", ".join(f"`{var}`" for var in file_study_vars)
+                    section.append(f"    * {len(unit['component_study_variables'])} component_study_variables: {vars_text}")
+                else:
+                    zeros.append("component_study_variables")
 
                 if unit.get('component_harmonized_variables'):
-                    harm_vars_text = ", ".join(f"`{var}`" for var in unit['component_harmonized_variables'])
-                    section.append(f"    * component_harmonized_variables: {harm_vars_text}")
+                    file_harm_vars = [hv['name'] for hv in unit['component_harmonized_variables']]
+                    harm_vars.extend(file_harm_vars)
+                    vars_text = ", ".join(f"`{var}`" for var in file_harm_vars)
+                    harm_vars_text = ", ".join(f"`{var}`" for var in file_harm_vars)
+                    section.append(f"    * {len(unit['component_harmonized_variables'])} component_harmonized_variables: {vars_text}")
+                else:
+                    zeros.append("component_harmonized_variables")
+
+                if len(zeros) == 2: # never happens, but I thought it did. no harm leaving it.
+                    section.append(f"    * Does not use {' or '.join(zeros)}")
 
                 if unit.get('harmonization_function'):
                     section.append("    * Function:")
@@ -140,6 +156,14 @@ def generate_markdown(root_dir, output_file):
 
             f.write('\n'.join(sections[directory]))
             f.write("\n")
+
+    study_vars = [re.sub(r'.*(phv\d+).*', r'\1', v) for v in study_vars]
+    sc = Counter(study_vars)
+    print(f"\n{len(study_vars)} study vars, {len(sc)} distinct")
+
+    hc = Counter(harm_vars)
+    print(f"{len(harm_vars)} harm vars, {len(hc)} distinct\n")
+    pass
 
 
 def main():
