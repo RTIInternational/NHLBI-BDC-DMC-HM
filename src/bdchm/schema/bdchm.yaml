@@ -470,14 +470,11 @@ classes:
     slots:
       - identity
 
-  DrugExposure:
+  Exposure:
     is_a: Entity
     description: >-
-       DrugExposures are records of a Person suggesting exposure to a medication. The source could be prescription, dispensing, medication administration records (MARs), or patient medication list.
+      Exposures are records of a Person suggesting exposure to a medication, device, environmental material.
     attributes:
-      drug_concept:
-        range: DrugExposureConceptEnum
-        description: The coded value for a drug. From RxNorm. The syntax for the enum may need work.
       age_at_exposure_start:
         range: integer
         description: The Participant's age (expressed in days) at the exposure start date.
@@ -488,6 +485,24 @@ classes:
         description: The Participant's age (expressed in days) at the exposure end date, if available. Otherwise equal to age_at_exposure_start.
         unit:
           ucum_code: d
+      associated_participant:
+        range: Participant
+        description: A reference to the Participant to which the exposure is attributed.
+      associated_visit:
+        description: A reference to the Visit the exposure is associated with, if any.
+        range: Visit
+        required: false
+    slots:
+      - identity
+
+  DrugExposure:
+    is_a: Exposure
+    description: >-
+       DrugExposures are records of a Person suggesting exposure to a medication. The source could be prescription, dispensing, medication administration records (MARs), or patient medication list.
+    attributes:
+      drug_concept:
+        range: DrugExposureConceptEnum
+        description: The coded value for a drug. From RxNorm. The syntax for the enum may need work.
       exposure_provenance:
         range: DrugExposureProvenanceEnum
         description: A value representing the provenance of the DrugExposure record. From OMOP Drug Types.
@@ -512,34 +527,15 @@ classes:
       route_concept:
         range: DrugRouteEnum
         description: Route of drug administration.
-      associated_participant:
-        range: Participant
-        description: A reference to the Participant to which the exposure is attributed.
-      associated_visit:
-        description: A reference to the Visit the exposure is associated with, if any.
-        range: Visit
-        required: false
-    slots:
-      - identity
 
   DeviceExposure:
-    is_a: Entity
+    is_a: Exposure
     description: >-
        DeviceExposures are records of a Person suggesting exposure to a foreign object. The source is typically physical objects used in procedures, measurements, or observations.
     attributes:
       device_concept:
         range: DeviceExposureConceptEnum
         description: The coded value for a device. Primarily SNOMED. The syntax for the enum may need work.
-      age_at_exposure_start:
-        range: integer
-        description: The Participant's age (expressed in days) at the exposure start date.
-        unit:
-          ucum_code: d
-      age_at_exposure_end:
-        range: integer
-        description: The Participant's age (expressed in days) at the exposure end date, if available. Otherwise equal to age_at_exposure_start.
-        unit:
-          ucum_code: d
       exposure_provenance:
         range: DeviceExposureProvenanceEnum
         description: A value representing the provenance of the DeviceExposure record. From OMOP Device Types.
@@ -547,15 +543,6 @@ classes:
         range: float
         description: Amount of device used. If not present in source, default to 1.
         required: false
-      associated_participant:
-        range: Participant
-        description: A reference to the Participant to which the exposure is attributed.
-      associated_visit:
-        description: A reference to the Visit the exposure is associated with, if any.
-        range: Visit
-        required: false
-    slots:
-      - identity
 
   DimensionalObservation:
     is_a: Observation
