@@ -1288,6 +1288,9 @@ classes:
         multivalued: false
         range: Participant
         required: false
+      associated_visit:
+        description: A reference to the Visit during which this Observation was recorded.
+        range: Visit
       method_type:
         description: The type of method used in generating the ObservationSet
         comments:
@@ -1363,14 +1366,9 @@ classes:
         required: true
 
   ObservationValue:
-    description: Single-valued observation valueholiding slot
+    description: Single-valued observation value-holiding slot
     abstract: true
     attributes:
-      type:
-        range: string
-        designates_type: true
-      name:
-        range: string
     slots:
       - value
 
