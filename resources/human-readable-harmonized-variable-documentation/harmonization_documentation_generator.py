@@ -23,6 +23,9 @@ def generate_markdown(root_dir, output_file):
     """Generate markdown documentation from JSON files"""
     root_path = Path(root_dir).resolve()
     sections = defaultdict(list)
+    json_files = 0
+    harmonization_units = 0
+    component_var_lists = []
     study_vars = []
     harm_vars = []
 
@@ -47,6 +50,7 @@ def generate_markdown(root_dir, output_file):
 
     # Second pass: generate content with all TOCs
     for json_file in sorted(root_path.glob('**/*.json')):
+        json_files += 1
         rel_path = json_file.relative_to(root_path)
         directory = rel_path.parent.name
 
@@ -101,6 +105,7 @@ def generate_markdown(root_dir, output_file):
         # Harmonization units
         if data.get('harmonization_units'):
             for unit in data['harmonization_units']:
+                harmonization_units += 1
                 unit_heading = f"  * ### {directory}/{data['name']} -- **{unit['name']}**:"
                 unit_anchor = create_anchor(f"{data['name']}-{unit['name']}")
                 section.append(f'<a id="{unit_anchor}"></a>')
@@ -112,6 +117,7 @@ def generate_markdown(root_dir, output_file):
                     study_vars.extend(file_study_vars)
                     vars_text = ", ".join(f"`{var}`" for var in file_study_vars)
                     section.append(f"    * {len(unit['component_study_variables'])} component_study_variables: {vars_text}")
+                    component_var_lists.append(f"#### {len(file_study_vars)} study vars in {directory}/{data['name']}/{unit['name']}:\n{vars_text}")
                 else:
                     zeros.append("component_study_variables")
 
@@ -121,6 +127,7 @@ def generate_markdown(root_dir, output_file):
                     vars_text = ", ".join(f"`{var}`" for var in file_harm_vars)
                     harm_vars_text = ", ".join(f"`{var}`" for var in file_harm_vars)
                     section.append(f"    * {len(unit['component_harmonized_variables'])} component_harmonized_variables: {vars_text}")
+                    component_var_lists.append(f"#### {len(file_harm_vars)} study vars in {directory}/{data['name']}/{unit['name']}:\n{harm_vars_text}")
                 else:
                     zeros.append("component_harmonized_variables")
 
@@ -132,12 +139,26 @@ def generate_markdown(root_dir, output_file):
                     code = format_code(unit['harmonization_function'])
                     indented_code = '\n'.join('      ' + line for line in code.split('\n'))
                     section.append(indented_code)
+        else:
+            raise Exception("Every json file should have some harmonization units")
 
         sections[directory].append('\n'.join(section))
+
+    print(f"\n{json_files} json files")
+    print(f"{harmonization_units} harmonization units (i.e. harmonized variables)")
+    print(f"{len(component_var_lists)} component var lists\n")
+
+    study_vars = [re.sub(r'.*(phv\d+).*', r'\1', v) for v in study_vars]
+    sc = Counter(study_vars)
+    print(f"{len(study_vars)} component_study_variables, {len(sc)} distinct")
+
+    hc = Counter(harm_vars)
+    print(f"{len(harm_vars)} component_harmonization_variables, {len(hc)} distinct\n")
 
     with open(output_file, 'w') as f:
         # Main TOC
         f.write("# TOPMed Variable Documentation\n")
+        f.write("### [List of component variables](#component_vars)\n")
         f.write("## Contents\n")
         for directory in sorted(sections.keys()):
             f.write(f"* [{directory}](#{directory.lower()})\n")
@@ -157,12 +178,15 @@ def generate_markdown(root_dir, output_file):
             f.write('\n'.join(sections[directory]))
             f.write("\n")
 
-    study_vars = [re.sub(r'.*(phv\d+).*', r'\1', v) for v in study_vars]
-    sc = Counter(study_vars)
-    print(f"\n{len(study_vars)} study vars, {len(sc)} distinct")
+        f.write('\n\n<a id="component_vars"></a>\n')
+        f.write("# Consolodated list of component variables by json file:\n")
+        f.write('\n'.join(component_var_lists))
+        f.write("\n")
 
-    hc = Counter(harm_vars)
-    print(f"{len(harm_vars)} harm vars, {len(hc)} distinct\n")
+        # not in good order and very long, don't include for now
+        # f.write("# Component variables count of uses in harmonization units:\n")
+        # f.write('\n'.join([f"{k}: {sc[k]}" for k in sc.keys()]))
+        # f.write("\n")
     pass
 
 
