@@ -206,10 +206,6 @@
     class ObservationValueDecimal
       ObservationValue &lt;|-- ObservationValueDecimal
 
-      ObservationValueDecimal : name
-
-      ObservationValueDecimal : type
-
       ObservationValueDecimal : value
 
 
@@ -236,18 +232,6 @@
 <td><a href="../value/">value</a></td>
 <td>1..1 <br/> <a href="../Decimal/">Decimal</a></td>
 <td>A general slot to hold a value</td>
-<td><a href="../ObservationValue/">ObservationValue</a></td>
-</tr>
-<tr>
-<td><a href="../type/">type</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../ObservationValue/">ObservationValue</a></td>
-</tr>
-<tr>
-<td><a href="../name/">name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
 <td><a href="../ObservationValue/">ObservationValue</a></td>
 </tr>
 </tbody>
@@ -325,28 +309,6 @@ attributes:
     - ObservationValue
     range: decimal
     required: true
-  type:
-    name: type
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    designates_type: true
-    alias: type
-    owner: ObservationValueDecimal
-    domain_of:
-    - QuestionnaireResponseValue
-    - ObservationValue
-    range: string
-  name:
-    name: name
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    alias: name
-    owner: ObservationValueDecimal
-    domain_of:
-    - ResearchStudy
-    - Organization
-    - Questionnaire
-    - QuestionnaireResponseValue
-    - ObservationValue
-    range: string
 
 </code></pre>
 </details>

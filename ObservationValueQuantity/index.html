@@ -211,10 +211,6 @@
     class ObservationValueQuantity
       ObservationValue &lt;|-- ObservationValueQuantity
 
-      ObservationValueQuantity : name
-
-      ObservationValueQuantity : type
-
       ObservationValueQuantity : value
 
           ObservationValueQuantity --&gt; Quantity : value
@@ -243,18 +239,6 @@
 <td><a href="../value/">value</a></td>
 <td>1..1 <br/> <a href="../Quantity/">Quantity</a></td>
 <td>A general slot to hold a value</td>
-<td><a href="../ObservationValue/">ObservationValue</a></td>
-</tr>
-<tr>
-<td><a href="../type/">type</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../ObservationValue/">ObservationValue</a></td>
-</tr>
-<tr>
-<td><a href="../name/">name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
 <td><a href="../ObservationValue/">ObservationValue</a></td>
 </tr>
 </tbody>
@@ -357,28 +341,6 @@ attributes:
     - ObservationValue
     range: Quantity
     required: true
-  type:
-    name: type
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    designates_type: true
-    alias: type
-    owner: ObservationValueQuantity
-    domain_of:
-    - QuestionnaireResponseValue
-    - ObservationValue
-    range: string
-  name:
-    name: name
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    alias: name
-    owner: ObservationValueQuantity
-    domain_of:
-    - ResearchStudy
-    - Organization
-    - Questionnaire
-    - QuestionnaireResponseValue
-    - ObservationValue
-    range: string
 
 </code></pre>
 </details>
