@@ -19,21 +19,21 @@ def create_anchor(text):
     return text.lower().replace(' ', '-').replace('**', '').replace('(', '').replace(')', '').replace(',', '')
 
 
-def generate_markdown(root_dir, output_file):
+def generate_markdown(root_dir, output_dir, output_index):
     """Generate markdown documentation from JSON files"""
     root_path = Path(root_dir).resolve()
     sections = defaultdict(list)
     json_files = 0
     harmonization_units = 0
-    component_var_lists = []
+    component_var_lists = {}
     study_vars = []
     harm_vars = []
 
     # Store structure for TOC
     structure = defaultdict(lambda: defaultdict(list))
 
-    # First pass: collect structure
     for json_file in sorted(root_path.glob('**/*.json')):
+        json_files += 1
         rel_path = json_file.relative_to(root_path)
         directory = rel_path.parent.name
 
@@ -47,15 +47,6 @@ def generate_markdown(root_dir, output_file):
         if data.get('harmonization_units'):
             for unit in data['harmonization_units']:
                 structure[directory][data['name']].append(unit['name'])
-
-    # Second pass: generate content with all TOCs
-    for json_file in sorted(root_path.glob('**/*.json')):
-        json_files += 1
-        rel_path = json_file.relative_to(root_path)
-        directory = rel_path.parent.name
-
-        with open(json_file, 'r') as f:
-            data = json.load(f)
 
         section = []
 
@@ -117,7 +108,8 @@ def generate_markdown(root_dir, output_file):
                     study_vars.extend(file_study_vars)
                     vars_text = ", ".join(f"`{var}`" for var in file_study_vars)
                     section.append(f"    * {len(unit['component_study_variables'])} component_study_variables: {vars_text}")
-                    component_var_lists.append(f"#### {len(file_study_vars)} study vars in {directory}/{data['name']}/{unit['name']}:\n{vars_text}")
+                    # component_var_lists.append(f"#### {len(file_study_vars)} study vars in {directory}/{data['name']}/{unit['name']}:\n{vars_text}")
+                    component_var_lists[f"{directory}/{data['name']}/{unit['name']}"] = file_study_vars
                 else:
                     zeros.append("component_study_variables")
 
@@ -127,7 +119,8 @@ def generate_markdown(root_dir, output_file):
                     vars_text = ", ".join(f"`{var}`" for var in file_harm_vars)
                     harm_vars_text = ", ".join(f"`{var}`" for var in file_harm_vars)
                     section.append(f"    * {len(unit['component_harmonized_variables'])} component_harmonized_variables: {vars_text}")
-                    component_var_lists.append(f"#### {len(file_harm_vars)} study vars in {directory}/{data['name']}/{unit['name']}:\n{harm_vars_text}")
+                    # component_var_lists.append(f"#### {len(file_harm_vars)} study vars in {directory}/{data['name']}/{unit['name']}:\n{harm_vars_text}")
+                    component_var_lists[f"{directory}/{data['name']}/{unit['name']}"] = file_study_vars
                 else:
                     zeros.append("component_harmonized_variables")
 
@@ -142,7 +135,7 @@ def generate_markdown(root_dir, output_file):
         else:
             raise Exception("Every json file should have some harmonization units")
 
-        sections[directory].append('\n'.join(section))
+        sections[directory].append('\n'.join(section)) # don't really need this now that splitting up pages
 
     print(f"\n{json_files} json files")
     print(f"{harmonization_units} harmonization units (i.e. harmonized variables)")
@@ -155,33 +148,44 @@ def generate_markdown(root_dir, output_file):
     hc = Counter(harm_vars)
     print(f"{len(harm_vars)} component_harmonization_variables, {len(hc)} distinct\n")
 
-    with open(output_file, 'w') as f:
+    # Generate content with directory-level TOCs
+    for directory in sorted(sections.keys()):
+        with open(f"{output_dir}/{directory}.md", 'w') as f:
+            f.write(f"\n# {directory}\n")
+
+            # Add file-level TOC for this directory
+            f.write("\n### Variables in this section:\n")
+            print(sorted(structure[directory].keys()))
+            for var_name in sorted(structure[directory].keys()):
+                var_anchor = create_anchor(f"{var_name}")
+                f.write(f"* [{var_name}](#{var_anchor})\n")
+                print(f"{directory}/{var_name}: {var_anchor}")
+            f.write("\n")
+
+            f.write('\n'.join(sections[directory]))
+
+
+    with open(f"{output_dir}/{output_index}", 'w') as f:
         # Main TOC
         f.write("# TOPMed Variable Documentation\n")
         f.write("### [List of component variables](#component_vars)\n")
         f.write("## Contents\n")
         for directory in sorted(sections.keys()):
-            f.write(f"* [{directory}](#{directory.lower()})\n")
+            f.write(f"* [{directory}]({directory.lower()}.md)\n")
         f.write("\n")
-
-        # Generate content with directory-level TOCs
-        for directory in sorted(sections.keys()):
-            f.write(f"\n# {directory}\n")
-
-            # Add file-level TOC for this directory
-            f.write("\n### Variables in this section:\n")
-            for var_name in sorted(structure[directory].keys()):
-                var_anchor = create_anchor(f"{var_name}")
-                f.write(f"* [{var_name}](#{var_anchor})\n")
-            f.write("\n")
-
-            f.write('\n'.join(sections[directory]))
-            f.write("\n")
 
         f.write('\n\n<a id="component_vars"></a>\n')
-        f.write("# Consolodated list of component variables by json file:\n")
-        f.write('\n'.join(component_var_lists))
-        f.write("\n")
+        list_lengths = Counter([len(l) for l in component_var_lists.values()])
+        keys = sorted(list_lengths.keys())
+        f.write("# Counts of study variables used by number of harmonized variables:\n")
+        f.write("| This many R functions | use this many study variables |\n")
+        f.write("|------------:|-----------:|\n")
+        for key in keys:
+            f.write(f"| {list_lengths[key]} | {key} |\n")
+
+        # f.write("# Consolodated list of component variables by json file:\n")
+        # f.write('\n'.join(component_var_lists))
+        # f.write("\n")
 
         # not in good order and very long, don't include for now
         # f.write("# Component variables count of uses in harmonization units:\n")
@@ -191,11 +195,12 @@ def generate_markdown(root_dir, output_file):
 
 
 def main():
-    input_dir = "harmonized-variable-documentation"
-    output_file = "topmed-variable-documentation.md"
+    input_dir = "harmonized-variable-source-documentation"
+    output_index = "README.md"
+    output_dir = "generated-doc-pages"
 
-    generate_markdown(input_dir, output_file)
-    print(f"Documentation generated in {output_file}")
+    generate_markdown(input_dir, output_dir, output_index)
+    print(f"Documentation generated in {output_dir}/{output_index}")
 
 
 if __name__ == "__main__":
