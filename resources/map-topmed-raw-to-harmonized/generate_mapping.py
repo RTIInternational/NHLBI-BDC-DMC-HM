@@ -65,7 +65,7 @@ def write_csv(mappings, output_file):
 
 def main():
     # Define input directory and output file
-    input_dir = "harmonized-variable-documentation"
+    input_dir = "harmonized-variable-source-documentation"
     output_file = "raw-to-harmonized-topmed-vars.csv"
 
     # Process JSON files and get mappings
