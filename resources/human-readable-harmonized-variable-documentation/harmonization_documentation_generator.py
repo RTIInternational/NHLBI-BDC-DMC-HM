@@ -3,6 +3,7 @@ from pathlib import Path
 from collections import defaultdict, Counter
 import re
 
+prioritized_studies = ['ARIC','CARDIA','CHS','COPDGene','FHS','HCHS_SOL','JHS','MESA','WHI']
 
 def format_code(code):
     """Format R code with proper markdown code block syntax"""
@@ -46,7 +47,8 @@ def generate_markdown(root_dir, output_dir, output_index):
         # Store harmonization unit names if present
         if data.get('harmonization_units'):
             for unit in data['harmonization_units']:
-                structure[directory][data['name']].append(unit['name'])
+                if unit['name'] in prioritized_studies:
+                    structure[directory][data['name']].append(unit['name'])
 
         section = []
 
@@ -63,8 +65,9 @@ def generate_markdown(root_dir, output_dir, output_index):
         if data.get('harmonization_units'):
             section.append("  * **Harmonization Units**:")
             for unit in data['harmonization_units']:
-                unit_anchor = create_anchor(f"{data['name']}-{unit['name']}")
-                section.append(f"    * [{unit['name']}](#{unit_anchor})")
+                if unit['name'] in prioritized_studies:
+                    unit_anchor = create_anchor(f"{data['name']}-{unit['name']}")
+                    section.append(f"    * [{unit['name']}](#{unit_anchor})")
 
         # Basic metadata
         metadata = [
@@ -96,6 +99,8 @@ def generate_markdown(root_dir, output_dir, output_index):
         # Harmonization units
         if data.get('harmonization_units'):
             for unit in data['harmonization_units']:
+                if unit['name'] not in prioritized_studies:
+                    continue
                 harmonization_units += 1
                 unit_heading = f"  * ### {directory}/{data['name']} -- **{unit['name']}**:"
                 unit_anchor = create_anchor(f"{data['name']}-{unit['name']}")

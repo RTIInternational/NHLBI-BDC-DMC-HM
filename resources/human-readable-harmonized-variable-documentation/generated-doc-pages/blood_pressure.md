@@ -10,20 +10,12 @@
 ## blood_pressure: **antihypertensive_meds_1** (antihypertensive_meds)
   Indicator for use of antihypertensive medication at the time of blood pressure measurement.
   * **Harmonization Units**:
-    * [Amish](#antihypertensive_meds_1-amish)
     * [ARIC](#antihypertensive_meds_1-aric)
     * [CARDIA](#antihypertensive_meds_1-cardia)
-    * [CFS](#antihypertensive_meds_1-cfs)
     * [CHS](#antihypertensive_meds_1-chs)
-    * [FHS_Gen3_NOS_Omni2](#antihypertensive_meds_1-fhs_gen3_nos_omni2)
-    * [FHS_Offspring](#antihypertensive_meds_1-fhs_offspring)
-    * [FHS_Omni1](#antihypertensive_meds_1-fhs_omni1)
-    * [FHS_Original](#antihypertensive_meds_1-fhs_original)
-    * [GENOA](#antihypertensive_meds_1-genoa)
     * [HCHS_SOL](#antihypertensive_meds_1-hchs_sol)
     * [JHS](#antihypertensive_meds_1-jhs)
     * [MESA](#antihypertensive_meds_1-mesa)
-    * [SAS](#antihypertensive_meds_1-sas)
     * [WHI](#antihypertensive_meds_1-whi)
   * **Metadata**:
     **`Data Type`**: encoded, **`Measurement Units`**: None, **`Version`**: 1, **`Has Age Variable`**: Yes, **`Date Harmonized`**: 2018-07-31 12:39:37
@@ -45,30 +37,6 @@
     
     There was no study variable to indicate whether a subject was taking antihypertensive medication at the time of blood pressure measurement. Therefore, all *_GOLDN_* subjects have missing values for this harmonized variable. 
     
-<a id="antihypertensive_meds_1-amish"></a>
-  * ### blood_pressure/antihypertensive_meds_1 -- **Amish**:
-    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00252997.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-        # Get dataset and rename variables.
-        dataset <- phen_list$source_data$pht005002 %>%
-                   rename(age = age_baseline, antihypertensive_meds = htn_med_baseline)
-      
-        # Substitute the winsorized age value of '90+' to a numeric value 90.
-        dataset$age[dataset$age %in% '90+'] <- 90
-      
-        # Substitute the value of 'NA' to missing.
-        dataset$age[dataset$age %in% 'NA'] <- NA
-        dataset$antihypertensive_meds[dataset$antihypertensive_meds %in% 'NA'] <- NA
-      
-        # Convert character values to numeric and remove NAs.
-        dataset <- mutate(dataset, age = as.numeric(age)) %>%
-                   na.omit()
-      
-        return(dataset)
-      }
-      ```
 <a id="antihypertensive_meds_1-aric"></a>
   * ### blood_pressure/antihypertensive_meds_1 -- **ARIC**:
     * 2 component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004063.v2.phv00204754.v1`
@@ -161,29 +129,6 @@
         return(dataset)
       }
       ```
-<a id="antihypertensive_meds_1-cfs"></a>
-  * ### blood_pressure/antihypertensive_meds_1 -- **CFS**:
-    * 3 component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123029.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-        dataset <- phen_list$source_data$pht001902 %>%
-      
-        # Rename variables.
-                   rename(antihypertensive_meds = xbpmeds) %>%
-      
-        # Filter for baseline visit only.
-                   filter(visit == 5) %>%
-      
-        # Select diastolic blood pressure.
-                   select(topmed_subject_id, age, antihypertensive_meds) %>%
-      
-        # Remove NAs.
-                   na.omit()
-      
-        return(dataset)
-      }
-      ```
 <a id="antihypertensive_meds_1-chs"></a>
   * ### blood_pressure/antihypertensive_meds_1 -- **CHS**:
     * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100595.v1`
@@ -200,122 +145,6 @@
         dataset <- na.omit(dataset)
       
         # Return harmonized dataset
-        return(dataset)
-      }
-      ```
-<a id="antihypertensive_meds_1-fhs_gen3_nos_omni2"></a>
-  * ### blood_pressure/antihypertensive_meds_1 -- **FHS_Gen3_NOS_Omni2**:
-    * 2 component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006026.v1.phv00277059.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-      
-        dataset <- inner_join(phen_list$source_data$pht006026,
-                              phen_list$source_data$pht003099,
-                              by = "topmed_subject_id") %>%
-      
-          # Rename variables.
-          rename(antihypertensive_meds = HRX1, age = age1) %>%
-      
-          # Remove NAs.
-          na.omit()
-      
-        # Return harmonized dataset.
-        return(dataset)
-      }
-      ```
-<a id="antihypertensive_meds_1-fhs_offspring"></a>
-  * ### blood_pressure/antihypertensive_meds_1 -- **FHS_Offspring**:
-    * 2 component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006027.v1.phv00277245.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-      
-        dataset <- inner_join(phen_list$source_data$pht006027,
-                              phen_list$source_data$pht003099,
-                              by = "topmed_subject_id") %>%
-      
-          # Rename variables.
-          rename(antihypertensive_meds = HRX1, age = age1) %>%
-      
-          # Remove NAs.
-          na.omit()
-      
-        # Return harmonized dataset.
-        return(dataset)
-      }
-      ```
-<a id="antihypertensive_meds_1-fhs_omni1"></a>
-  * ### blood_pressure/antihypertensive_meds_1 -- **FHS_Omni1**:
-    * 2 component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht004813.v1.phv00250358.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-        dataset <- plyr::join_all(phen_list$source_data) %>%
-      
-          # Rename variables.
-          rename(antihypertensive_meds = e221, age = age1) %>%
-      
-          # Remove NAs.
-          na.omit()
-      
-        # Return dataset.
-        return(dataset)
-      
-      }
-      ```
-<a id="antihypertensive_meds_1-fhs_original"></a>
-  * ### blood_pressure/antihypertensive_meds_1 -- **FHS_Original**:
-    * 2 component_study_variables: `phs000007.v29.pht000009.v2.phv00000705.v1`, `phs000007.v29.pht003099.v4.phv00177936.v4`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-        dataset <- plyr::join_all(phen_list$source_data) %>%
-      
-          # Rename variables.
-          rename(antihypertensive_meds = MF250, age = age4)
-      
-        # Recode encoded values to 0 (no) and 1 (yes).
-        dataset[dataset$antihypertensive_meds %in% "2", ]$antihypertensive_meds <- "0"
-      
-        # Remove NAs.
-        dataset <- na.omit(dataset)
-      
-        # Return dataset.
-        return(dataset)
-      
-      }
-      ```
-<a id="antihypertensive_meds_1-genoa"></a>
-  * ### blood_pressure/antihypertensive_meds_1 -- **GENOA**:
-    * 4 component_study_variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006042.v1.phv00277585.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006656.v1.phv00307866.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-        # Get dataset.
-        source_data <- phen_list$source_data
-        data_aa <- inner_join(source_data$pht006039,
-                              source_data$pht006042,
-                              by = "topmed_subject_id")
-        data_ea <- inner_join(source_data$pht006653,
-                              source_data$pht006656,
-                              by = "topmed_subject_id")
-        dataset <- union(data_aa, data_ea)
-      
-        # Rename variables.
-        dataset <- rename(dataset, age = AGE, antihypertensive_meds = meds_HYT)
-      
-        # Encode the two-level factor values to binary values.
-        dataset <- mutate_if(dataset, is.factor, as.character)
-        dataset$antihypertensive_meds[dataset$antihypertensive_meds %in% 'NO'] <- 0
-        dataset$antihypertensive_meds[dataset$antihypertensive_meds %in% 'YES'] <- 1
-      
-        # Convert variable types and remove records with NAs from dataset.
-        dataset <- mutate(dataset,
-                          age = as.numeric(age),
-                          antihypertensive_meds = as.character(antihypertensive_meds)) %>%
-                   na.omit()
-      
         return(dataset)
       }
       ```
@@ -383,24 +212,6 @@
         dataset <- na.omit(dataset)
       
         # Return harmonized dataset
-        return(dataset)
-      }
-      ```
-<a id="antihypertensive_meds_1-sas"></a>
-  * ### blood_pressure/antihypertensive_meds_1 -- **SAS**:
-    * 2 component_study_variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258749.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-        # Get dataset.
-        dataset <- phen_list$source_data$pht005253 %>%
-        # Rename variables.
-                   transmute(topmed_subject_id,
-                             age = Dec_Age,
-                             antihypertensive_meds = na_if(Hyp_meds, "NA")) %>%
-                   mutate_at(vars(age), funs(as.numeric)) %>%
-        # Remove NAs.
-                   na.omit()
         return(dataset)
       }
       ```
@@ -538,22 +349,13 @@
 ## blood_pressure: **bp_diastolic_1** (bp_diastolic)
   Resting diastolic blood pressure from the upper arm in a clinical setting.
   * **Harmonization Units**:
-    * [Amish](#bp_diastolic_1-amish)
     * [ARIC](#bp_diastolic_1-aric)
     * [CARDIA](#bp_diastolic_1-cardia)
-    * [CFS](#bp_diastolic_1-cfs)
     * [CHS](#bp_diastolic_1-chs)
     * [COPDGene](#bp_diastolic_1-copdgene)
-    * [FHS_Gen3_NOS_Omni2](#bp_diastolic_1-fhs_gen3_nos_omni2)
-    * [FHS_Offspring](#bp_diastolic_1-fhs_offspring)
-    * [FHS_Omni1](#bp_diastolic_1-fhs_omni1)
-    * [FHS_Original](#bp_diastolic_1-fhs_original)
-    * [GENOA](#bp_diastolic_1-genoa)
-    * [GOLDN](#bp_diastolic_1-goldn)
     * [HCHS_SOL](#bp_diastolic_1-hchs_sol)
     * [JHS](#bp_diastolic_1-jhs)
     * [MESA](#bp_diastolic_1-mesa)
-    * [SAS](#bp_diastolic_1-sas)
     * [WHI](#bp_diastolic_1-whi)
   * **Metadata**:
     **`Data Type`**: decimal, **`Measurement Units`**: mmHg, **`Version`**: 1, **`Has Age Variable`**: Yes, **`Date Harmonized`**: 2018-07-31 12:33:29
@@ -583,31 +385,6 @@
     
     The instruments used for BP measurements were different among studies, including standard manual sphygmomanometers, random-zero sphygmomanometers, and automated digital blood pressure monitors.
     
-<a id="bp_diastolic_1-amish"></a>
-  * ### blood_pressure/bp_diastolic_1 -- **Amish**:
-    * 3 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00252995.v1`, `phs000956.v2.pht005002.v1.phv00252996.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-        # Get dataset.
-        dataset <- phen_list$source_data$pht005002
-        # Substitute the winsorized age value of '90+' to a numeric value 90.
-        ind <- dataset$age_baseline == "90+"
-        dataset$age_baseline[ind] <- "90"
-        # Rename variables.
-        dataset <- transmute(dataset,
-                             topmed_subject_id,
-                             bp_systolic = as.numeric(sbp_baseline),
-                             bp_diastolic = as.numeric(dbp_baseline),
-                             age = as.numeric(age_baseline)) %>%
-        # Subset to observations where systolic BP is greater than or equal to diastolic BP.
-                   filter(bp_systolic >= bp_diastolic) %>%
-        # Select the output variables and remove NAs.
-                   select(-bp_systolic) %>%
-                   na.omit()
-        return(dataset)
-      }
-      ```
 <a id="bp_diastolic_1-aric"></a>
   * ### blood_pressure/bp_diastolic_1 -- **ARIC**:
     * 7 component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004192.v2.phv00210284.v1`, `phs000280.v4.pht004192.v2.phv00210285.v1`, `phs000280.v4.pht004192.v2.phv00210286.v1`, `phs000280.v4.pht004192.v2.phv00210287.v1`, `phs000280.v4.pht004192.v2.phv00210288.v1`, `phs000280.v4.pht004192.v2.phv00210289.v1`
@@ -724,31 +501,6 @@
         return(dataset)
       }
       ```
-<a id="bp_diastolic_1-cfs"></a>
-  * ### blood_pressure/bp_diastolic_1 -- **CFS**:
-    * 4 component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123001.v1`, `phs000284.v1.pht001902.v1.phv00123002.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-        dataset_tmp <- phen_list$source_data$pht001902 %>%
-      
-        # Convert from character to numeric.
-                       mutate_if(is.character, as.numeric) %>%
-      
-        # Filter for baseline visit only.
-                       filter(visit == 5) %>%
-      
-        # Check for inconsistencies between systolic and diastolic values.
-                       filter(sbp >= dbp)
-      
-        # Create dataset.
-        dataset <- dataset_tmp %>%
-                   select(topmed_subject_id, age, bp_diastolic = dbp) %>%
-                   na.omit()
-      
-        return(dataset)
-      }
-      ```
 <a id="bp_diastolic_1-chs"></a>
   * ### blood_pressure/bp_diastolic_1 -- **CHS**:
     * 3 component_study_variables: `phs000287.v6.pht001452.v1.phv00100435.v1`, `phs000287.v6.pht001452.v1.phv00100436.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
@@ -800,206 +552,6 @@
         # Rename and select the output variables.
         dataset <- rename(dataset, age = Age_Enroll) %>%
                    select(topmed_subject_id, bp_diastolic, age)
-      
-        # Remove records with NAs from dataset.
-        dataset <- na.omit(dataset)
-      
-        return(dataset)
-      }
-      ```
-<a id="bp_diastolic_1-fhs_gen3_nos_omni2"></a>
-  * ### blood_pressure/bp_diastolic_1 -- **FHS_Gen3_NOS_Omni2**:
-    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006026.v1.phv00277034.v1`, `phs000007.v29.pht006026.v1.phv00277045.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-      
-        dataset <- inner_join(phen_list$source_data$pht006026,
-                              phen_list$source_data$pht003099,
-                              by = "topmed_subject_id") %>%
-      
-          # Convert from character to numeric.
-          mutate_if(is.character, as.numeric) %>%
-      
-          # Check SBP >= DBP.
-          filter(SBP1 >= DBP1) %>%
-      
-          # Rename variables.
-          rename(bp_diastolic = DBP1, age = age1) %>%
-      
-          # Select relevant columns for harmonized dataset.
-          select(topmed_subject_id, age, bp_diastolic) %>%
-      
-          # Remove NAs.
-          na.omit()
-      
-        # Return harmonized dataset.
-        return(dataset)
-      }
-      ```
-<a id="bp_diastolic_1-fhs_offspring"></a>
-  * ### blood_pressure/bp_diastolic_1 -- **FHS_Offspring**:
-    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006027.v1.phv00277137.v1`, `phs000007.v29.pht006027.v1.phv00277185.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-      
-        dataset <- inner_join(phen_list$source_data$pht006027,
-                              phen_list$source_data$pht003099,
-                              by = "topmed_subject_id") %>%
-      
-          # Convert from character to numeric.
-          mutate_if(is.character, as.numeric) %>%
-      
-          # Check SBP >= DBP.
-          filter(SBP1 >= DBP1) %>%
-      
-          # Rename variables.
-          rename(bp_diastolic = DBP1, age = age1) %>%
-      
-          # Select relevant columns for harmonized dataset.
-          select(topmed_subject_id, age, bp_diastolic) %>%
-      
-          # Remove NAs.
-          na.omit()
-      
-        # Return harmonized dataset.
-        return(dataset)
-      }
-      ```
-<a id="bp_diastolic_1-fhs_omni1"></a>
-  * ### blood_pressure/bp_diastolic_1 -- **FHS_Omni1**:
-    * 5 component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht004813.v1.phv00250561.v1`, `phs000007.v29.pht004813.v1.phv00250562.v1`, `phs000007.v29.pht004813.v1.phv00250652.v1`, `phs000007.v29.pht004813.v1.phv00250653.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-      
-        dataset <- plyr::join_all(phen_list$source_data) %>%
-      
-          # Rename variables.
-          rename(sbp_1 = e485, dbp_1 = e486, sbp_2 = e581, dbp_2 = e582, age = age1) %>%
-      
-          # Convert from character to numeric.
-          mutate_if(is.character, as.numeric)
-      
-        # Filter for values in which sbp is greater than or equal to dbp.
-        dataset <- mutate(dataset, sbp_1 = ifelse(sbp_1 >= dbp_1, sbp_1, NA))
-        dataset <- mutate(dataset, sbp_2 = ifelse(sbp_2 >= dbp_2, sbp_2, NA))
-        dataset <- mutate(dataset, dbp_1 = ifelse(sbp_1 >= dbp_1, dbp_1, NA))
-        dataset <- mutate(dataset, dbp_2 = ifelse(sbp_2 >= dbp_2, dbp_2, NA))
-      
-        # Subset DBP values.
-        dataset_2 <- dataset %>%
-          select(topmed_subject_id, dbp_1, dbp_2)
-      
-        # Take the mean of DBP
-        vars <- c("dbp_1", "dbp_2")
-        dataset$bp_diastolic <- rowMeans(dataset_2[, vars], na.rm = TRUE)
-      
-        # Select columns for harmonization dataset.
-        dataset <- select(dataset, topmed_subject_id, age, bp_diastolic)
-      
-        # Remove NAs
-        dataset <- na.omit(dataset)
-      
-        # Return harmonized dataset.
-        return(dataset)
-      }
-      ```
-<a id="bp_diastolic_1-fhs_original"></a>
-  * ### blood_pressure/bp_diastolic_1 -- **FHS_Original**:
-    * 5 component_study_variables: `phs000007.v29.pht000009.v2.phv00000719.v1`, `phs000007.v29.pht000009.v2.phv00000720.v1`, `phs000007.v29.pht000009.v2.phv00000721.v1`, `phs000007.v29.pht000009.v2.phv00000722.v1`, `phs000007.v29.pht003099.v4.phv00177936.v4`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-      
-        dataset <- plyr::join_all(phen_list$source_data) %>%
-      
-          # Rename variables.
-          rename(sbp_1 = MF264, dbp_1 = MF265, sbp_2 = MF266, dbp_2 = MF267, age = age4) %>%
-      
-          # Convert from character to numeric.
-          mutate_if(is.character, as.numeric)
-      
-        # Filter for values in which sbp is greater than or equal to dbp.
-        dataset <- mutate(dataset, sbp_1 = ifelse(sbp_1 >= dbp_1, sbp_1, NA))
-        dataset <- mutate(dataset, sbp_2 = ifelse(sbp_2 >= dbp_2, sbp_2, NA))
-        dataset <- mutate(dataset, dbp_1 = ifelse(sbp_1 >= dbp_1, dbp_1, NA))
-        dataset <- mutate(dataset, dbp_2 = ifelse(sbp_2 >= dbp_2, dbp_2, NA))
-      
-        # Subset DBP values.
-        dataset_2 <- dataset %>%
-          select(topmed_subject_id, dbp_1, dbp_2)
-      
-        # Take the mean of DBP
-        vars <- c("dbp_1", "dbp_2")
-        dataset$bp_diastolic <- rowMeans(dataset_2[, vars], na.rm = TRUE)
-      
-        # Select columns for harmonization dataset.
-        dataset <- select(dataset, topmed_subject_id, age, bp_diastolic)
-      
-        # Remove NAs
-        dataset <- na.omit(dataset)
-      
-        # Return harmonized dataset.
-        return(dataset)
-      }
-      ```
-<a id="bp_diastolic_1-genoa"></a>
-  * ### blood_pressure/bp_diastolic_1 -- **GENOA**:
-    * 10 component_study_variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006039.v1.phv00277520.v1`, `phs001238.v1.pht006039.v1.phv00277521.v1`, `phs001238.v1.pht006039.v1.phv00277522.v1`, `phs001238.v1.pht006039.v1.phv00277523.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006653.v1.phv00307801.v1`, `phs001238.v1.pht006653.v1.phv00307802.v1`, `phs001238.v1.pht006653.v1.phv00307803.v1`, `phs001238.v1.pht006653.v1.phv00307804.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-        # Get dataset.
-        dataset <- union(phen_list$source_data$pht006039, phen_list$source_data$pht006653)
-      
-        # Substitute the value of 'NA' to missing.
-        dataset$RAND_SYS2[dataset$RAND_SYS2 %in% 'NA'] <- NA
-        dataset$RAND_DIA2[dataset$RAND_DIA2 %in% 'NA'] <- NA
-        dataset$RAND_SYS3[dataset$RAND_SYS3 %in% 'NA'] <- NA
-        dataset$RAND_DIA3[dataset$RAND_DIA3 %in% 'NA'] <- NA
-      
-        # Convert character values to numeric.
-        dataset <- mutate_if(dataset, is.character, as.numeric)
-      
-        # Set diastolic BP to NA when systolic BP is less than diastolic BP from the same reading
-        # or when systolic BP from the same reading is NA.
-        dataset <- mutate(dataset,
-                          dbp2 = ifelse(RAND_SYS2 >= RAND_DIA2, RAND_DIA2, NA),
-                          dbp3 = ifelse(RAND_SYS3 >= RAND_DIA3, RAND_DIA3, NA))
-      
-        # Calculate the average systolic BP.
-        dataset$bp_diastolic <- rowMeans(dataset[, c("dbp2", "dbp3")], na.rm = TRUE)
-      
-        # Rename and select the output variables.
-        dataset <- rename(dataset, age = AGE) %>%
-                   select(topmed_subject_id, bp_diastolic, age)
-      
-        # Remove records with NAs from dataset.
-        dataset <- na.omit(dataset)
-      
-        return(dataset)
-      }
-      ```
-<a id="bp_diastolic_1-goldn"></a>
-  * ### blood_pressure/bp_diastolic_1 -- **GOLDN**:
-    * 3 component_study_variables: `phs000741.v2.pht003918.v2.phv00202104.v2`, `phs000741.v2.pht003918.v2.phv00259052.v1`, `phs000741.v2.pht003918.v2.phv00259053.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-        # Get dataset.
-        dataset <- phen_list$source_data$pht003918
-      
-        # Convert character values to numeric.
-        dataset <- mutate_if(dataset, is.character, as.numeric)
-      
-        # Set diastolic BP to NA when systolic BP is less than diastolic BP from the same reading
-        # or when systolic BP from the same reading is NA.
-        dataset <- mutate(dataset, bp_diastolic = ifelse(SBP >= DBP, DBP, NA))
-      
-        # Select the output variables.
-        dataset <- select(dataset, topmed_subject_id, bp_diastolic, age)
       
         # Remove records with NAs from dataset.
         dataset <- na.omit(dataset)
@@ -1125,28 +677,6 @@
         return(dataset)
       }
       ```
-<a id="bp_diastolic_1-sas"></a>
-  * ### blood_pressure/bp_diastolic_1 -- **SAS**:
-    * 3 component_study_variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258701.v1`, `phs000914.v1.pht005253.v1.phv00258703.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-        # Get dataset.
-        dataset <- phen_list$source_data$pht005253 %>%
-        # Rename variables.
-                   transmute(topmed_subject_id,
-                             age = Dec_Age,
-                             bp_diastolic = na_if(Diastolic_BP, "NA"),
-                             bp_systolic = na_if(Systolic_BP, "NA")) %>%
-                   mutate_at(vars(age, bp_diastolic, bp_systolic), funs(as.numeric)) %>%
-        # Subset to observations where systolic BP is greater than or equal to diastolic BP.
-                   filter(bp_systolic >= bp_diastolic) %>%
-        # Select the output variables and remove NAs.
-                   select(-bp_systolic) %>%
-                   na.omit()
-        return(dataset)
-      }
-      ```
 <a id="bp_diastolic_1-whi"></a>
   * ### blood_pressure/bp_diastolic_1 -- **WHI**:
     * 8 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001019.v6.phv00079850.v6`, `phs000200.v11.pht001019.v6.phv00079852.v6`, `phs000200.v11.pht001019.v6.phv00079854.v6`, `phs000200.v11.pht001019.v6.phv00079855.v6`, `phs000200.v11.pht001019.v6.phv00079856.v6`, `phs000200.v11.pht001019.v6.phv00079857.v6`
@@ -1212,22 +742,13 @@
 ## blood_pressure: **bp_systolic_1** (bp_systolic)
   Resting systolic blood pressure from the upper arm in a clinical setting.
   * **Harmonization Units**:
-    * [Amish](#bp_systolic_1-amish)
     * [ARIC](#bp_systolic_1-aric)
     * [CARDIA](#bp_systolic_1-cardia)
-    * [CFS](#bp_systolic_1-cfs)
     * [CHS](#bp_systolic_1-chs)
     * [COPDGene](#bp_systolic_1-copdgene)
-    * [FHS_Gen3_NOS_Omni2](#bp_systolic_1-fhs_gen3_nos_omni2)
-    * [FHS_Offspring](#bp_systolic_1-fhs_offspring)
-    * [FHS_Omni1](#bp_systolic_1-fhs_omni1)
-    * [FHS_Original](#bp_systolic_1-fhs_original)
-    * [GENOA](#bp_systolic_1-genoa)
-    * [GOLDN](#bp_systolic_1-goldn)
     * [HCHS_SOL](#bp_systolic_1-hchs_sol)
     * [JHS](#bp_systolic_1-jhs)
     * [MESA](#bp_systolic_1-mesa)
-    * [SAS](#bp_systolic_1-sas)
     * [WHI](#bp_systolic_1-whi)
   * **Metadata**:
     **`Data Type`**: decimal, **`Measurement Units`**: mmHg, **`Version`**: 1, **`Has Age Variable`**: Yes, **`Date Harmonized`**: 2018-07-31 12:02:39
@@ -1253,31 +774,6 @@
     
     The instruments used for BP measurements were different among studies, including standard manual sphygmomanometers, random-zero sphygmomanometers, and automated digital blood pressure monitors.
     
-<a id="bp_systolic_1-amish"></a>
-  * ### blood_pressure/bp_systolic_1 -- **Amish**:
-    * 3 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00252995.v1`, `phs000956.v2.pht005002.v1.phv00252996.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-        # Get dataset.
-        dataset <- phen_list$source_data$pht005002
-        # Substitute the winsorized age value of '90+' to a numeric value 90.
-        ind <- dataset$age_baseline == "90+"
-        dataset$age_baseline[ind] <- "90"
-        # Rename variables.
-        dataset <- transmute(dataset,
-                             topmed_subject_id,
-                             bp_systolic = as.numeric(sbp_baseline),
-                             bp_diastolic = as.numeric(dbp_baseline),
-                             age = as.numeric(age_baseline)) %>%
-        # Subset to observations where systolic BP is greater than or equal to diastolic BP.
-                   filter(bp_systolic >= bp_diastolic) %>%
-        # Select the output variables and remove NAs.
-                   select(-bp_diastolic) %>%
-                   na.omit()
-        return(dataset)
-      }
-      ```
 <a id="bp_systolic_1-aric"></a>
   * ### blood_pressure/bp_systolic_1 -- **ARIC**:
     * 7 component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004192.v2.phv00210284.v1`, `phs000280.v4.pht004192.v2.phv00210285.v1`, `phs000280.v4.pht004192.v2.phv00210286.v1`, `phs000280.v4.pht004192.v2.phv00210287.v1`, `phs000280.v4.pht004192.v2.phv00210288.v1`, `phs000280.v4.pht004192.v2.phv00210289.v1`
@@ -1394,31 +890,6 @@
         return(dataset)
       }
       ```
-<a id="bp_systolic_1-cfs"></a>
-  * ### blood_pressure/bp_systolic_1 -- **CFS**:
-    * 4 component_study_variables: `phs000284.v1.pht001902.v1.phv00122012.v1`, `phs000284.v1.pht001902.v1.phv00122015.v1`, `phs000284.v1.pht001902.v1.phv00123001.v1`, `phs000284.v1.pht001902.v1.phv00123002.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-        dataset_tmp <- phen_list$source_data$pht001902 %>%
-      
-        # Convert from character to numeric.
-                       mutate_if(is.character, as.numeric) %>%
-      
-        # Filter for baseline visit only
-                       filter(visit == 5) %>%
-      
-        # Check for inconsistencies between systolic and diastolic values.
-                       filter(sbp >= dbp)
-      
-        # Create dataset.
-        dataset <- dataset_tmp %>%
-                   select(topmed_subject_id, age, bp_systolic = sbp) %>%
-                   na.omit()
-      
-        return(dataset)
-      }
-      ```
 <a id="bp_systolic_1-chs"></a>
   * ### blood_pressure/bp_systolic_1 -- **CHS**:
     * 3 component_study_variables: `phs000287.v6.pht001452.v1.phv00100435.v1`, `phs000287.v6.pht001452.v1.phv00100436.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
@@ -1470,206 +941,6 @@
         # Rename and select the output variables.
         dataset <- rename(dataset, age = Age_Enroll) %>%
                    select(topmed_subject_id, bp_systolic, age)
-      
-        # Remove records with NAs from dataset.
-        dataset <- na.omit(dataset)
-      
-        return(dataset)
-      }
-      ```
-<a id="bp_systolic_1-fhs_gen3_nos_omni2"></a>
-  * ### blood_pressure/bp_systolic_1 -- **FHS_Gen3_NOS_Omni2**:
-    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006026.v1.phv00277034.v1`, `phs000007.v29.pht006026.v1.phv00277045.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-      
-        dataset <- inner_join(phen_list$source_data$pht006026,
-                              phen_list$source_data$pht003099,
-                              by = "topmed_subject_id") %>%
-      
-          # Convert from character to numeric.
-          mutate_if(is.character, as.numeric) %>%
-      
-          # Check SBP >= DBP.
-          filter(SBP1 >= DBP1) %>%
-      
-          # Rename variables.
-          rename(bp_systolic = SBP1, age = age1) %>%
-      
-          # Select relevant columns for harmonized dataset.
-          select(topmed_subject_id, age, bp_systolic) %>%
-      
-          # Remove NAs.
-          na.omit()
-      
-        # Return harmonized dataset.
-        return(dataset)
-      }
-      ```
-<a id="bp_systolic_1-fhs_offspring"></a>
-  * ### blood_pressure/bp_systolic_1 -- **FHS_Offspring**:
-    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht006027.v1.phv00277137.v1`, `phs000007.v29.pht006027.v1.phv00277185.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-      
-        dataset <- inner_join(phen_list$source_data$pht006027,
-                              phen_list$source_data$pht003099,
-                              by = "topmed_subject_id") %>%
-      
-          # Convert from character to numeric.
-          mutate_if(is.character, as.numeric) %>%
-      
-          # Check SBP >= DBP.
-          filter(SBP1 >= DBP1) %>%
-      
-          # Rename variables.
-          rename(bp_systolic = SBP1, age = age1) %>%
-      
-          # Select relevant columns for harmonized dataset.
-          select(topmed_subject_id, age, bp_systolic) %>%
-      
-          # Remove NAs.
-          na.omit()
-      
-        # Return harmonized dataset.
-        return(dataset)
-      }
-      ```
-<a id="bp_systolic_1-fhs_omni1"></a>
-  * ### blood_pressure/bp_systolic_1 -- **FHS_Omni1**:
-    * 5 component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht004813.v1.phv00250561.v1`, `phs000007.v29.pht004813.v1.phv00250562.v1`, `phs000007.v29.pht004813.v1.phv00250652.v1`, `phs000007.v29.pht004813.v1.phv00250653.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-      
-        dataset <- plyr::join_all(phen_list$source_data) %>%
-      
-          # Rename variables.
-          rename(sbp_1 = e485, dbp_1 = e486, sbp_2 = e581, dbp_2 = e582, age = age1) %>%
-      
-          # Convert from character to numeric.
-          mutate_if(is.character, as.numeric)
-      
-        # Filter for values in which sbp is greater than or equal to dbp.
-        dataset <- mutate(dataset, sbp_1 = ifelse(sbp_1 >= dbp_1, sbp_1, NA))
-        dataset <- mutate(dataset, sbp_2 = ifelse(sbp_2 >= dbp_2, sbp_2, NA))
-        dataset <- mutate(dataset, dbp_1 = ifelse(sbp_1 >= dbp_1, dbp_1, NA))
-        dataset <- mutate(dataset, dbp_2 = ifelse(sbp_2 >= dbp_2, dbp_2, NA))
-      
-        # Subset SBP values.
-        dataset_2 <- dataset %>%
-          select(topmed_subject_id, sbp_1, sbp_2)
-      
-        # Take the mean of SBP
-        vars <- c("sbp_1", "sbp_2")
-        dataset$bp_systolic <- rowMeans(dataset_2[, vars], na.rm = TRUE)
-      
-        # Select columns for harmonization dataset.
-        dataset <- select(dataset, topmed_subject_id, age, bp_systolic)
-      
-        # Remove NAs
-        dataset <- na.omit(dataset)
-      
-        # Return harmonized dataset.
-        return(dataset)
-      }
-      ```
-<a id="bp_systolic_1-fhs_original"></a>
-  * ### blood_pressure/bp_systolic_1 -- **FHS_Original**:
-    * 5 component_study_variables: `phs000007.v29.pht000009.v2.phv00000719.v1`, `phs000007.v29.pht000009.v2.phv00000720.v1`, `phs000007.v29.pht000009.v2.phv00000721.v1`, `phs000007.v29.pht000009.v2.phv00000722.v1`, `phs000007.v29.pht003099.v4.phv00177936.v4`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-      
-        dataset <- plyr::join_all(phen_list$source_data) %>%
-      
-          # Rename variables.
-          rename(sbp_1 = MF264, dbp_1 = MF265, sbp_2 = MF266, dbp_2 = MF267, age = age4) %>%
-      
-          # Convert from character to numeric.
-          mutate_if(is.character, as.numeric)
-      
-        # Filter for values in which sbp is greater than or equal to dbp.
-        dataset <- mutate(dataset, sbp_1 = ifelse(sbp_1 >= dbp_1, sbp_1, NA))
-        dataset <- mutate(dataset, sbp_2 = ifelse(sbp_2 >= dbp_2, sbp_2, NA))
-        dataset <- mutate(dataset, dbp_1 = ifelse(sbp_1 >= dbp_1, dbp_1, NA))
-        dataset <- mutate(dataset, dbp_2 = ifelse(sbp_2 >= dbp_2, dbp_2, NA))
-      
-        # Subset SBP values.
-        dataset_2 <- dataset %>%
-          select(topmed_subject_id, sbp_1, sbp_2)
-      
-        # Take the mean of SBP
-        vars <- c("sbp_1", "sbp_2")
-        dataset$bp_systolic <- rowMeans(dataset_2[, vars], na.rm = TRUE)
-      
-        # Select columns for harmonization dataset.
-        dataset <- select(dataset, topmed_subject_id, age, bp_systolic)
-      
-        # Remove NAs
-        dataset <- na.omit(dataset)
-      
-        # Return harmonized dataset.
-        return(dataset)
-      }
-      ```
-<a id="bp_systolic_1-genoa"></a>
-  * ### blood_pressure/bp_systolic_1 -- **GENOA**:
-    * 10 component_study_variables: `phs001238.v1.pht006039.v1.phv00277507.v1`, `phs001238.v1.pht006039.v1.phv00277520.v1`, `phs001238.v1.pht006039.v1.phv00277521.v1`, `phs001238.v1.pht006039.v1.phv00277522.v1`, `phs001238.v1.pht006039.v1.phv00277523.v1`, `phs001238.v1.pht006653.v1.phv00307788.v1`, `phs001238.v1.pht006653.v1.phv00307801.v1`, `phs001238.v1.pht006653.v1.phv00307802.v1`, `phs001238.v1.pht006653.v1.phv00307803.v1`, `phs001238.v1.pht006653.v1.phv00307804.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-        # Get dataset.
-        dataset <- union(phen_list$source_data$pht006039, phen_list$source_data$pht006653)
-      
-        # Substitute the value of 'NA' to missing.
-        dataset$RAND_SYS2[dataset$RAND_SYS2 %in% 'NA'] <- NA
-        dataset$RAND_DIA2[dataset$RAND_DIA2 %in% 'NA'] <- NA
-        dataset$RAND_SYS3[dataset$RAND_SYS3 %in% 'NA'] <- NA
-        dataset$RAND_DIA3[dataset$RAND_DIA3 %in% 'NA'] <- NA
-      
-        # Convert character values to numeric.
-        dataset <- mutate_if(dataset, is.character, as.numeric)
-      
-        # Set systolic BP to NA when systolic BP is less than diastolic BP from the same reading
-        # or when diastolic BP from the same reading is NA.
-        dataset <- mutate(dataset,
-                          sbp2 = ifelse(RAND_SYS2 >= RAND_DIA2, RAND_SYS2, NA),
-                          sbp3 = ifelse(RAND_SYS3 >= RAND_DIA3, RAND_SYS3, NA))
-      
-        # Calculate the average systolic BP.
-        dataset$bp_systolic <- rowMeans(dataset[, c("sbp2", "sbp3")], na.rm = TRUE)
-      
-        # Rename and select the output variables.
-        dataset <- rename(dataset, age = AGE) %>%
-                   select(topmed_subject_id, bp_systolic, age)
-      
-        # Remove records with NAs from dataset.
-        dataset <- na.omit(dataset)
-      
-        return(dataset)
-      }
-      ```
-<a id="bp_systolic_1-goldn"></a>
-  * ### blood_pressure/bp_systolic_1 -- **GOLDN**:
-    * 3 component_study_variables: `phs000741.v2.pht003918.v2.phv00202104.v2`, `phs000741.v2.pht003918.v2.phv00259052.v1`, `phs000741.v2.pht003918.v2.phv00259053.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-        # Get dataset.
-        dataset <- phen_list$source_data$pht003918
-      
-        # Convert character values to numeric.
-        dataset <- mutate_if(dataset, is.character, as.numeric)
-      
-        # Set systolic BP to NA when systolic BP is less than diastolic BP from the same reading
-        # or when diastolic BP from the same reading is NA.
-        dataset <- mutate(dataset, bp_systolic = ifelse(SBP >= DBP, SBP, NA))
-      
-        # Select the output variables.
-        dataset <- select(dataset, topmed_subject_id, bp_systolic, age)
       
         # Remove records with NAs from dataset.
         dataset <- na.omit(dataset)
@@ -1792,28 +1063,6 @@
         dataset <- na.omit(dataset)
       
         # Return harmonized dataset.
-        return(dataset)
-      }
-      ```
-<a id="bp_systolic_1-sas"></a>
-  * ### blood_pressure/bp_systolic_1 -- **SAS**:
-    * 3 component_study_variables: `phs000914.v1.pht005253.v1.phv00258680.v1`, `phs000914.v1.pht005253.v1.phv00258701.v1`, `phs000914.v1.pht005253.v1.phv00258703.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-        # Get dataset.
-        dataset <- phen_list$source_data$pht005253 %>%
-        # Rename variables.
-               transmute(topmed_subject_id,
-                         age = Dec_Age,
-                         bp_systolic = na_if(Systolic_BP, "NA"),
-                         bp_diastolic = na_if(Diastolic_BP, "NA")) %>%
-               mutate_at(vars(age, bp_systolic, bp_diastolic), funs(as.numeric)) %>%
-        # Subset to observations where systolic BP is greater than or equal to diastolic BP.
-               filter(bp_systolic >= bp_diastolic) %>%
-        # Select the output variables and remove NAs.
-               select(-bp_diastolic) %>%
-               na.omit()
         return(dataset)
       }
       ```

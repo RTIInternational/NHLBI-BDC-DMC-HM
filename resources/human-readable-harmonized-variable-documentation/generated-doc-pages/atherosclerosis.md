@@ -13,16 +13,8 @@
 ## atherosclerosis: **cac_score_1** (cac_score)
   Coronary artery calcification (CAC) score using Agatston scoring of CT scan(s) of coronary arteries
   * **Harmonization Units**:
-    * [Amish](#cac_score_1-amish)
     * [CHS](#cac_score_1-chs)
-    * [FHS_Gen3](#cac_score_1-fhs_gen3)
-    * [FHS_Offspring](#cac_score_1-fhs_offspring)
-    * [FHS_Omnis](#cac_score_1-fhs_omnis)
-    * [GENOA](#cac_score_1-genoa)
     * [JHS](#cac_score_1-jhs)
-    * [MESA_AirNR](#cac_score_1-mesa_airnr)
-    * [MESA_Classic](#cac_score_1-mesa_classic)
-    * [MESA_Family](#cac_score_1-mesa_family)
   * **Metadata**:
     **`Data Type`**: decimal, **`Measurement Units`**: None, **`Version`**: 2, **`Has Age Variable`**: Yes, **`Date Harmonized`**: 2018-01-18 19:10:10
   * **Controlled Vocabulary**:
@@ -46,32 +38,6 @@
     * For JHS (phs000286), Amish (phs000965), CHS (phs000287), and GENOA (phs001238) the scores were based on only one scan and were not phantom adjusted.
     
     
-<a id="cac_score_1-amish"></a>
-  * ### atherosclerosis/cac_score_1 -- **Amish**:
-    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252986.v1`, `phs000956.v2.pht005002.v1.phv00252987.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-          library(dplyr)
-          library(magrittr)
-      
-      # harmonize CAC Agatston score Amish
-         source_data <- phen_list$source_data
-      
-         dat <- source_data[["pht005002"]]
-      
-      # change variable names and type
-      # mutate age to reflect age winsorized at 90 and change missing code "." to NA
-      # then select final variables and omit missing records
-      
-         dat <- dat %>% mutate(cac_score = as.numeric(cac_agatston_score)) %>%
-             mutate(age = ifelse(cac_score_age %in% "90+", 90, cac_score_age)) %>%
-             mutate(age = ifelse(age %in% ".", NA, age)) %>%
-             select(topmed_subject_id, cac_score, age) %>% na.omit
-      
-         return(dat)
-      }
-      ```
 <a id="cac_score_1-chs"></a>
   * ### atherosclerosis/cac_score_1 -- **CHS**:
     * 2 component_study_variables: `phs000287.v6.pht001459.v1.phv00100691.v1`, `phs000287.v6.pht001475.v1.phv00102583.v1`
@@ -99,134 +65,6 @@
       
          dat <- dat %>% mutate(cac_score = as.numeric(CACSCORE), age = AGEY11) %>%
                 select(topmed_subject_id, cac_score, age) %>% na.omit
-      
-         return(dat)
-      }
-      ```
-<a id="cac_score_1-fhs_gen3"></a>
-  * ### atherosclerosis/cac_score_1 -- **FHS_Gen3**:
-    * 4 component_study_variables: `phs000007.v29.pht000144.v4.phv00023194.v3`, `phs000007.v29.pht000144.v4.phv00023195.v3`, `phs000007.v29.pht000144.v4.phv00023197.v3`, `phs000007.v29.pht003099.v4.phv00177930.v4`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-          library(dplyr)
-          library(magrittr)
-      
-      # harmonize CAC Agatston score FHS Generation 3 2002-2005
-      # use earliest exam time to maximize sample size
-      
-         source_data <- phen_list$source_data
-      
-      # CAC data set
-         dat1 <- source_data[["pht000144"]]
-      
-      # for baseline age info
-         dat2 <- source_data[["pht003099"]]
-      
-         dat <- inner_join(dat1, dat2)
-      
-      # define score as  average of the 2 scans for subjects with 2 scans
-      # else define equal to the non-missing scan score
-         dat <- dat %>%
-         mutate(cac_score = rowMeans(cbind(as.numeric(CA1), as.numeric(CA2)), na.rm = TRUE))
-      
-      # compute age at scoring using age at Exam 1 and days since Exam 1 for scan date
-      # then select final variables and omit missing records
-      
-         dat <- dat %>% mutate(age = (as.numeric(age1) + as.numeric(studydat) / 365.25)) %>%
-                select(topmed_subject_id, cac_score, age) %>% na.omit
-      
-         return(dat)
-      }
-      ```
-<a id="cac_score_1-fhs_offspring"></a>
-  * ### atherosclerosis/cac_score_1 -- **FHS_Offspring**:
-    * 4 component_study_variables: `phs000007.v29.pht000145.v4.phv00023200.v3`, `phs000007.v29.pht000145.v4.phv00023201.v3`, `phs000007.v29.pht000145.v4.phv00023203.v3`, `phs000007.v29.pht003099.v4.phv00177930.v4`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-          library(dplyr)
-          library(magrittr)
-      
-      # harmonize CAC Agatston score FHS Offspring  2002-2005
-      # use earliest exam time to maximize sample size
-      
-         source_data <- phen_list$source_data
-      
-      # CAC data set
-         dat1 <- source_data[["pht000145"]]
-      
-      # for baseline age info
-         dat2 <- source_data[["pht003099"]]
-      
-         dat <- inner_join(dat1, dat2)
-      
-      # define score as  average of the 2 scans for subjects with 2 scans
-      # else define as equal to the non-missing scan score
-         dat <- dat %>%
-         mutate(cac_score = rowMeans(cbind(as.numeric(CA1), as.numeric(CA2)), na.rm = TRUE))
-      
-      # compute age at scoring using age at Exam 1 and days since Exam 1 for scan date
-      # then select final variables and omit missing records
-      
-         dat <- dat %>% mutate(age = (as.numeric(age1) + as.numeric(studydat) / 365.25)) %>%
-                select(topmed_subject_id, cac_score, age) %>% na.omit
-      
-         return(dat)
-      }
-      ```
-<a id="cac_score_1-fhs_omnis"></a>
-  * ### atherosclerosis/cac_score_1 -- **FHS_Omnis**:
-    * 4 component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht005161.v1.phv00257669.v1`, `phs000007.v29.pht005161.v1.phv00257670.v1`, `phs000007.v29.pht005161.v1.phv00257672.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-          library(dplyr)
-          library(magrittr)
-      
-      # harmonize CAC Agatston score FHS for Omni's 2008-2011
-         source_data <- phen_list$source_data
-      
-      # CAC data set
-         dat1 <- source_data[["pht005161"]]
-      
-      # for age info
-         dat2 <- source_data[["pht003099"]]
-      
-         dat <- inner_join(dat1, dat2)
-      
-      # filter to obtain Omni cohorts 7 and 72 (other cohorts done separately)
-      # change variable name then
-      # compute age at scoring using age at Exam 1 and days since Exam 1 for scan date
-      # then select final variables and omit missing records
-      
-         dat <- dat %>% filter(IDTYPE %in% c(7, 72)) %>% mutate(cac_score = as.numeric(CAC_S)) %>%
-                mutate(age = (as.numeric(age1) + as.numeric(scan_date) / 365.25)) %>%
-                select(topmed_subject_id, cac_score, age) %>% na.omit
-      
-         return(dat)
-      }
-      ```
-<a id="cac_score_1-genoa"></a>
-  * ### atherosclerosis/cac_score_1 -- **GENOA**:
-    * 2 component_study_variables: `phs001238.v1.pht006034.v1.phv00277327.v1`, `phs001238.v1.pht006034.v1.phv00277347.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-          library(dplyr)
-          library(magrittr)
-      
-      # harmonize CAC Agatston score GENOA
-         source_data <- phen_list$source_data
-      
-         dat <- source_data[["pht006034"]]
-      
-      # change variable names
-      # then select final variables and omit missing records
-      
-         dat <- dat %>% mutate(cac_score = as.numeric(MD1CAC_S)) %>%
-             mutate(age = AGE) %>%
-             select(topmed_subject_id, cac_score, age) %>% na.omit
       
          return(dat)
       }
@@ -260,86 +98,11 @@
          return(dat)
       }
       ```
-<a id="cac_score_1-mesa_airnr"></a>
-  * ### atherosclerosis/cac_score_1 -- **MESA_AirNR**:
-    * 2 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082660.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-          library(dplyr)
-          library(magrittr)
-      
-      # harmonize CAC Agatston score MESA AirNR
-      # use Exam 1 to maximize sample size
-         source_data <- phen_list$source_data
-      
-         dat <- source_data[["pht001111"]]
-      
-      # change variable names and type
-      # then select final variables and omit missing records
-      
-         dat <- dat %>% mutate(cac_score = as.numeric(agatpm1c), age = as.numeric(age1c)) %>%
-                select(topmed_subject_id, cac_score, age) %>% na.omit
-      
-         return(dat)
-      }
-      ```
-<a id="cac_score_1-mesa_classic"></a>
-  * ### atherosclerosis/cac_score_1 -- **MESA_Classic**:
-    * 2 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084521.v2`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-          library(dplyr)
-          library(magrittr)
-      
-      # harmonize CAC Agatston score MESA Classic
-      # use Exam 1 to maximize sample size
-         source_data <- phen_list$source_data
-      
-         dat <- source_data[["pht001116"]]
-      
-      # change variable names
-      # then select final variables and omit missing records
-      
-         dat <- dat %>% mutate(cac_score = as.numeric(agatpm1c), age = age1c) %>%
-                select(topmed_subject_id, cac_score, age) %>% na.omit
-      
-         return(dat)
-      }
-      ```
-<a id="cac_score_1-mesa_family"></a>
-  * ### atherosclerosis/cac_score_1 -- **MESA_Family**:
-    * 2 component_study_variables: `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087105.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-          library(dplyr)
-          library(magrittr)
-      
-      # harmonize CAC Agatston score MESA Family
-      
-         source_data <- phen_list$source_data
-      
-         dat <- source_data[["pht001121"]]
-      
-      # change variable names
-      # then select final variables and omit missing records
-      
-         dat <- dat %>% mutate(cac_score = as.numeric(agatpmfc), age = agefc) %>%
-                select(topmed_subject_id, cac_score, age) %>% na.omit
-      
-         return(dat)
-      }
-      ```
 <a id="cac_volume_1"></a>
 ## atherosclerosis: **cac_volume_1** (cac_volume)
   Coronary artery calcium volume using CT scan(s) of coronary arteries
   * **Harmonization Units**:
     * [FHS](#cac_volume_1-fhs)
-    * [MESA_AirNR](#cac_volume_1-mesa_airnr)
-    * [MESA_Classic](#cac_volume_1-mesa_classic)
-    * [MESA_Family](#cac_volume_1-mesa_family)
   * **Metadata**:
     **`Data Type`**: decimal, **`Measurement Units`**: cubic millimeters, **`Version`**: 1, **`Has Age Variable`**: Yes, **`Date Harmonized`**: 2017-10-30 17:31:30
   * **Controlled Vocabulary**:
@@ -391,83 +154,10 @@
          return(dat)
       }
       ```
-<a id="cac_volume_1-mesa_airnr"></a>
-  * ### atherosclerosis/cac_volume_1 -- **MESA_AirNR**:
-    * 2 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082663.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-          library(dplyr)
-          library(magrittr)
-      
-      # harmonize CAC volume MESA AirNR
-      # use Exam 1 to maximize sample size
-         source_data <- phen_list$source_data
-      
-         dat <- source_data[["pht001111"]]
-      
-      # change variable names and type
-      # then select final variables and omit missing records
-      
-         dat <- dat %>% mutate(cac_volume = as.numeric(volpm1c), age = as.numeric(age1c)) %>%
-                select(topmed_subject_id, cac_volume, age) %>% na.omit
-      
-         return(dat)
-      }
-      ```
-<a id="cac_volume_1-mesa_classic"></a>
-  * ### atherosclerosis/cac_volume_1 -- **MESA_Classic**:
-    * 2 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084524.v2`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-          library(dplyr)
-          library(magrittr)
-      
-      # harmonize CAC volume MESA Classic
-      # use Exam 1 to maximize sample size
-         source_data <- phen_list$source_data
-      
-         dat <- source_data[["pht001116"]]
-      
-      # change variable names and type
-      # then select final variables and omit missing records
-      
-         dat <- dat %>% mutate(cac_volume = as.numeric(volpm1c), age = as.numeric(age1c)) %>%
-                select(topmed_subject_id, cac_volume, age) %>% na.omit
-      
-         return(dat)
-      }
-      ```
-<a id="cac_volume_1-mesa_family"></a>
-  * ### atherosclerosis/cac_volume_1 -- **MESA_Family**:
-    * 2 component_study_variables: `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087108.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-          library(dplyr)
-          library(magrittr)
-      
-      # harmonize CAC volume MESA Family
-      
-         source_data <- phen_list$source_data
-      
-         dat <- source_data[["pht001121"]]
-      
-      # change variable names and type
-      # then select final variables and omit missing records
-      
-         dat <- dat %>% mutate(cac_volume = as.numeric(volpmfc), age = as.numeric(agefc)) %>%
-                select(topmed_subject_id, cac_volume, age) %>% na.omit
-      
-         return(dat)
-      }
-      ```
 <a id="carotid_plaque_1"></a>
 ## atherosclerosis: **carotid_plaque_1** (carotid_plaque)
   Presence or absence of carotid plaque.
   * **Harmonization Units**:
-    * [Amish](#carotid_plaque_1-amish)
     * [ARIC](#carotid_plaque_1-aric)
     * [CHS](#carotid_plaque_1-chs)
     * [JHS](#carotid_plaque_1-jhs)
@@ -509,34 +199,6 @@
     
     [^1]:[Documentation Without Data Collection Forms phd002779.1](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/document.cgi?study_id=phs000287.v6.p1&phd=2779)
     
-<a id="carotid_plaque_1-amish"></a>
-  * ### atherosclerosis/carotid_plaque_1 -- **Amish**:
-    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00252989.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-        library(dplyr)
-      
-        # Get dataset and rename variables.
-        dataset <- phen_list$source_data$pht005002 %>%
-          rename(age = age_baseline, carotid_plaque = imt_anyplaque_baseline)
-      
-        # Substitute the winsorized age value of '90+' to a numeric value 90.
-        dataset$age[dataset$age %in% '90+'] <- 90
-      
-        # Substitute the value of 'NA' to missing.
-        dataset$age[dataset$age %in% 'NA'] <- NA
-        dataset$carotid_plaque[dataset$carotid_plaque %in% 'NA'] <- NA
-      
-        # Remove records with NAs from dataset.
-        dataset <- dataset[!is.na(dataset$age) & !is.na(dataset$carotid_plaque), ]
-      
-        # Convert character values to numeric.
-        dataset <- mutate(dataset, age = as.numeric(age))
-      
-        return(dataset)
-      }
-      ```
 <a id="carotid_plaque_1-aric"></a>
   * ### atherosclerosis/carotid_plaque_1 -- **ARIC**:
     * 2 component_study_variables: `phs000280.v3.pht004063.v1.phv00204712.v1`, `phs000280.v3.pht004063.v1.phv00204791.v1`
@@ -865,13 +527,10 @@
 ## atherosclerosis: **cimt_1** (cimt)
   Common carotid intima-media thickness, calculated as the mean of two values: mean of multiple thickness estimates from the left far wall and from the right far wall.
   * **Harmonization Units**:
-    * [Amish](#cimt_1-amish)
     * [ARIC](#cimt_1-aric)
     * [CHS](#cimt_1-chs)
     * [FHS](#cimt_1-fhs)
     * [JHS](#cimt_1-jhs)
-    * [MESA_AirNR](#cimt_1-mesa_airnr)
-    * [MESA_classic_family](#cimt_1-mesa_classic_family)
   * **Metadata**:
     **`Data Type`**: decimal, **`Measurement Units`**: mm, **`Version`**: 1, **`Has Age Variable`**: Yes, **`Date Harmonized`**: 2018-05-30 11:44:19
   * **Controlled Vocabulary**:
@@ -898,34 +557,6 @@
     | JHS   | Hewlett Packard SONOS 4500 |
     | MESA  | GE Logiq 700               |
     
-<a id="cimt_1-amish"></a>
-  * ### atherosclerosis/cimt_1 -- **Amish**:
-    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00252988.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-        library(dplyr)
-      
-        # Get dataset and rename variables.
-        dataset <- phen_list$source_data$pht005002 %>%
-          rename(age = age_baseline, cimt = imt_mean_farwall_cca_baseline)
-      
-        # Substitute the winsorized age value of '90+' to a numeric value 90.
-        dataset$age[dataset$age %in% '90+'] <- 90
-      
-        # Substitute the value of 'NA' to missing.
-        dataset$age[dataset$age %in% 'NA'] <- NA
-        dataset$cimt[dataset$cimt %in% 'NA'] <- NA
-      
-        # Remove records with NAs from dataset.
-        dataset <- dataset[!is.na(dataset$age) & !is.na(dataset$cimt), ]
-      
-        # Convert character values to numeric.
-        dataset <- mutate_if(dataset, is.character, as.numeric)
-      
-        return(dataset)
-      }
-      ```
 <a id="cimt_1-aric"></a>
   * ### atherosclerosis/cimt_1 -- **ARIC**:
     * 7 component_study_variables: `phs000280.v3.pht004063.v1.phv00204712.v1`, `phs000280.v3.pht004207.v1.phv00211095.v1`, `phs000280.v3.pht004207.v1.phv00211096.v1`, `phs000280.v3.pht004207.v1.phv00211097.v1`, `phs000280.v3.pht004207.v1.phv00211101.v1`, `phs000280.v3.pht004207.v1.phv00211102.v1`, `phs000280.v3.pht004207.v1.phv00211103.v1`
@@ -1062,55 +693,6 @@
         return(dataset)
       }
       ```
-<a id="cimt_1-mesa_airnr"></a>
-  * ### atherosclerosis/cimt_1 -- **MESA_AirNR**:
-    * 3 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001528.v1.phv00111973.v1`, `phs000209.v13.pht001528.v1.phv00112049.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-        library(dplyr)
-        source_data <- phen_list$source_data
-        harmonized <- source_data$pht001528 %>%
-          # Join age dataset and phenotype dataset.
-          inner_join(source_data$pht001111, "topmed_subject_id") %>%
-          # Convert character vectors to numeric.
-          mutate_if(is.character, as.numeric) %>%
-          # Specify operations on dataframe are row-wise.
-          rowwise() %>%
-          # Rename variables and calculate the mean of left and right far-wall
-          # thickness.
-          transmute(topmed_subject_id, age = age1c,
-                    cimt = mean(c(rcfwmn4, lcfwmn4), na.rm = TRUE)) %>%
-          # Exlcude rows with missing data.
-          na.omit()
-        return(harmonized)
-      }
-      ```
-<a id="cimt_1-mesa_classic_family"></a>
-  * ### atherosclerosis/cimt_1 -- **MESA_classic_family**:
-    * 5 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084879.v2`, `phs000209.v13.pht001116.v10.phv00084958.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00128698.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-        library(dplyr)
-        source_data <- phen_list$source_data
-        # Rename variables from Family exam dataset to match Classic variable names.
-        harmonized <- rename(source_data$pht001121, rcfwmn1 = rcfwmnf,
-                             age1c = agefc) %>%
-          # Bind dataframes row-wise.
-          bind_rows(source_data$pht001116) %>%
-          # Convert character vectors to numeric.
-          mutate_if(is.character, as.numeric) %>%
-          # Specify operations will be row-wise.
-          rowwise() %>%
-          # Rename variables, and calculate mean-of-mean cimt.
-          transmute(topmed_subject_id, cimt = mean(c(rcfwmn1, lcfwmn1), na.rm = TRUE),
-                    age = age1c) %>%
-          # Exclude rows with missing data.
-          na.omit()
-        return(harmonized)
-      }
-      ```
 <a id="cimt_2"></a>
 ## atherosclerosis: **cimt_2** (cimt)
   Common carotid intima-media thickness, calculated as the mean of four values: maximum of multiple thickness estimates from the left far wall, left near wall, right far wall, and right near wall.
@@ -1119,8 +701,6 @@
     * [CHS](#cimt_2-chs)
     * [FHS](#cimt_2-fhs)
     * [JHS](#cimt_2-jhs)
-    * [MESA_airnr](#cimt_2-mesa_airnr)
-    * [MESA_classic_family](#cimt_2-mesa_classic_family)
   * **Metadata**:
     **`Data Type`**: decimal, **`Measurement Units`**: mm, **`Version`**: 1, **`Has Age Variable`**: Yes, **`Date Harmonized`**: 2018-05-30 12:10:37
   * **Controlled Vocabulary**:
@@ -1373,54 +953,5 @@
         dataset <- dataset[!is.na(dataset$age) & !is.na(dataset$cimt), ]
       
         return(dataset)
-      }
-      ```
-<a id="cimt_2-mesa_airnr"></a>
-  * ### atherosclerosis/cimt_2 -- **MESA_airnr**:
-    * 5 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001528.v1.phv00111971.v1`, `phs000209.v13.pht001528.v1.phv00111975.v1`, `phs000209.v13.pht001528.v1.phv00112047.v1`, `phs000209.v13.pht001528.v1.phv00112051.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-        library(dplyr)
-        source_data <- phen_list$source_data
-        # Join age dataset with ultrasound dataset.
-        harmonized <- left_join(source_data$pht001528, source_data$pht001111,
-                                "topmed_subject_id") %>%
-          # Convert character vectors to numeric.
-          mutate_if(is.character, as.numeric) %>%
-          # Specify calculations will be row-wise.
-          rowwise() %>%
-          # Select and rename necessary variables, calculate mean cimt.
-          transmute(topmed_subject_id, age = age1c,
-                    cimt = mean(c(rcfwmax4, rcnwmax4, lcfwmax4, lcnwmax4), na.rm = TRUE)) %>%
-          # Exclude rows with missing data.
-          na.omit()
-        return(harmonized)
-      }
-      ```
-<a id="cimt_2-mesa_classic_family"></a>
-  * ### atherosclerosis/cimt_2 -- **MESA_classic_family**:
-    * 10 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084877.v2`, `phs000209.v13.pht001116.v10.phv00084881.v2`, `phs000209.v13.pht001116.v10.phv00084956.v2`, `phs000209.v13.pht001116.v10.phv00084959.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087557.v1`, `phs000209.v13.pht001121.v3.phv00087558.v1`, `phs000209.v13.pht001121.v3.phv00087559.v1`, `phs000209.v13.pht001121.v3.phv00087560.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-        library(dplyr)
-        source_data <- phen_list$source_data
-        # Rename variables in Family Exam dataset to match Classic.
-        source_data$pht001121 <- rename(source_data$pht001121, age1c = agefc,
-                                        rcfwmax1 = rcfwmaxf, rcnwmax1 = rcnwmaxf,
-                                        lcfwmax1 = lcfwmaxf, lcnwmax1 = lcnwmaxf)
-        # Bind dataframe row-wise.
-        harmonized <- bind_rows(source_data) %>%
-          # Convert character vectors to numeric.
-          mutate_if(is.character, as.numeric) %>%
-          # Specify calculations will be row-wise.
-          rowwise() %>%
-          # Select and rename necessary variables, calculate mean cimt.
-          transmute(topmed_subject_id, age = age1c,
-                    cimt = mean(c(lcfwmax1, lcnwmax1, rcfwmax1, rcnwmax1), na.rm = TRUE)) %>%
-          # Exclude rows with missing data.
-          na.omit()
-        return(harmonized)
       }
       ```

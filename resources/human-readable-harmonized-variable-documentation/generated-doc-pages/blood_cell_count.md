@@ -22,12 +22,8 @@
 ## blood_cell_count: **basophil_ncnc_bld_1** (basophil_ncnc_bld)
   Count by volume, or number concentration (ncnc), of basophils in the blood (bld).
   * **Harmonization Units**:
-    * [Amish](#basophil_ncnc_bld_1-amish)
     * [ARIC](#basophil_ncnc_bld_1-aric)
     * [CARDIA](#basophil_ncnc_bld_1-cardia)
-    * [FHS_Gen3NOSOmni2](#basophil_ncnc_bld_1-fhs_gen3nosomni2)
-    * [FHS_Offspring](#basophil_ncnc_bld_1-fhs_offspring)
-    * [FHS_Omni1](#basophil_ncnc_bld_1-fhs_omni1)
     * [HCHS_SOL](#basophil_ncnc_bld_1-hchs_sol)
     * [JHS](#basophil_ncnc_bld_1-jhs)
     * [MESA](#basophil_ncnc_bld_1-mesa)
@@ -68,32 +64,6 @@
     
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values for WBC, basophils, and other WBC subtype differentials may not be from the same visit, so the harmonized subtype differential counts may not sum to the WBC count.
     
-<a id="basophil_ncnc_bld_1-amish"></a>
-  * ### blood_cell_count/basophil_ncnc_bld_1 -- **Amish**:
-    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253015.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-      
-        source_data <- phen_list$source_data
-         # basophil_ncnc_bld units in cells/microliter - we want thousands/microliter - 10^9 cells/liter
-        dataset <- source_data[["pht005002"]]
-        dataset$basophils_baseline <- as.numeric(dataset$basophils_baseline)
-        names(dataset)[names(dataset) %in% "basophils_baseline"] <- "basophil_ncnc_bld"
-        dataset$basophil_ncnc_bld <- dataset$basophil_ncnc_bld / 1000
-      
-         # age - winsorize at 90
-         dataset$age_baseline[dataset$age_baseline %in% "90+"] <- 90
-         dataset$age_baseline <- as.numeric(dataset$age_baseline)
-         names(dataset)[names(dataset) %in% "age_baseline"] <- "age"
-      
-         # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$basophil_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
 <a id="basophil_ncnc_bld_1-aric"></a>
   * ### blood_cell_count/basophil_ncnc_bld_1 -- **ARIC**:
     * 6 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004107.v2.phv00207264.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004108.v2.phv00207279.v1`
@@ -189,110 +159,6 @@
           return(dataset)
       }
       ```
-<a id="basophil_ncnc_bld_1-fhs_gen3nosomni2"></a>
-  * ### blood_cell_count/basophil_ncnc_bld_1 -- **FHS_Gen3NOSOmni2**:
-    * 3 component_study_variables: `phs000007.v29.pht002889.v2.phv00172178.v2`, `phs000007.v29.pht002889.v2.phv00172192.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-         # basophil: use percent measurement along with WBC
-        dataset1 <- source_data[["pht002889"]]
-        dataset1$BA_PER <- as.numeric(dataset1$BA_PER)
-        dataset1$WBC <- as.numeric(dataset1$WBC)
-        dataset1$basophil_ncnc_bld <- dataset1$WBC * dataset1$BA_PER / 100
-        dataset1$BA_PER <- NULL
-        dataset1$WBC <- NULL
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age2 <- as.numeric(dataset2$age2)
-        names(dataset2)[names(dataset2) %in% "age2"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$basophil_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
-<a id="basophil_ncnc_bld_1-fhs_offspring"></a>
-  * ### blood_cell_count/basophil_ncnc_bld_1 -- **FHS_Offspring**:
-    * 4 component_study_variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227039.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-         # basophil
-        dataset1 <- source_data[["pht004802"]]
-          # subset to Offspring
-        dataset1 <- dataset1[dataset1$IDTYPE %in% 1, ]
-        dataset1$IDTYPE <- NULL
-      
-        dataset1$BA_PER <- as.numeric(dataset1$BA_PER)
-        dataset1$WBC <- as.numeric(dataset1$WBC)
-        dataset1$basophil_ncnc_bld <- dataset1$WBC * dataset1$BA_PER / 100
-        dataset1$BA_PER <- NULL
-        dataset1$WBC <- NULL
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age9 <- as.numeric(dataset2$age9)
-        names(dataset2)[names(dataset2) %in% "age9"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$basophil_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
-<a id="basophil_ncnc_bld_1-fhs_omni1"></a>
-  * ### blood_cell_count/basophil_ncnc_bld_1 -- **FHS_Omni1**:
-    * 4 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227039.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-         # basophil
-        dataset1 <- source_data[["pht004802"]]
-          # subset to Omni1
-        dataset1 <- dataset1[dataset1$IDTYPE %in% 7, ]
-        dataset1$IDTYPE <- NULL
-      
-        dataset1$BA_PER <- as.numeric(dataset1$BA_PER)
-        dataset1$WBC <- as.numeric(dataset1$WBC)
-        dataset1$basophil_ncnc_bld <- dataset1$WBC * dataset1$BA_PER / 100
-        dataset1$BA_PER <- NULL
-        dataset1$WBC <- NULL
-      
-         # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age4 <- as.numeric(dataset2$age4)
-        names(dataset2)[names(dataset2) %in% "age4"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$basophil_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
 <a id="basophil_ncnc_bld_1-hchs_sol"></a>
   * ### blood_cell_count/basophil_ncnc_bld_1 -- **HCHS_SOL**:
     * 3 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`, `phs000810.v1.pht004715.v1.phv00226288.v1`
@@ -377,12 +243,8 @@
 ## blood_cell_count: **eosinophil_ncnc_bld_1** (eosinophil_ncnc_bld)
   Count by volume, or number concentration (ncnc), of eosinophils in the blood (bld).
   * **Harmonization Units**:
-    * [Amish](#eosinophil_ncnc_bld_1-amish)
     * [ARIC](#eosinophil_ncnc_bld_1-aric)
     * [CARDIA](#eosinophil_ncnc_bld_1-cardia)
-    * [FHS_Gen3NOSOmni2](#eosinophil_ncnc_bld_1-fhs_gen3nosomni2)
-    * [FHS_Offspring](#eosinophil_ncnc_bld_1-fhs_offspring)
-    * [FHS_Omni1](#eosinophil_ncnc_bld_1-fhs_omni1)
     * [HCHS_SOL](#eosinophil_ncnc_bld_1-hchs_sol)
     * [JHS](#eosinophil_ncnc_bld_1-jhs)
     * [MESA](#eosinophil_ncnc_bld_1-mesa)
@@ -423,32 +285,6 @@
     
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values for WBC, eosinophils, and other WBC subtype differentials may not be from the same visit, so the harmonized subtype differential counts may not sum to the WBC count.
     
-<a id="eosinophil_ncnc_bld_1-amish"></a>
-  * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **Amish**:
-    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253014.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-      
-         source_data <- phen_list$source_data
-         # eosinophil_ncnc_bld units in cells/microliter - we want thousands/microliter - 10^9 cells/liter
-        dataset <- source_data[["pht005002"]]
-        dataset$eosinophils_baseline <- as.numeric(dataset$eosinophils_baseline)
-        names(dataset)[names(dataset) %in% "eosinophils_baseline"] <- "eosinophil_ncnc_bld"
-        dataset$eosinophil_ncnc_bld <- dataset$eosinophil_ncnc_bld / 1000
-      
-         # age - winsorize at 90
-         dataset$age_baseline[dataset$age_baseline %in% "90+"] <- 90
-         dataset$age_baseline <- as.numeric(dataset$age_baseline)
-         names(dataset)[names(dataset) %in% "age_baseline"] <- "age"
-      
-         # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$eosinophil_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
 <a id="eosinophil_ncnc_bld_1-aric"></a>
   * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **ARIC**:
     * 6 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004107.v2.phv00207263.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004108.v2.phv00207278.v1`
@@ -544,110 +380,6 @@
           return(dataset)
       }
       ```
-<a id="eosinophil_ncnc_bld_1-fhs_gen3nosomni2"></a>
-  * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **FHS_Gen3NOSOmni2**:
-    * 3 component_study_variables: `phs000007.v29.pht002889.v2.phv00172178.v2`, `phs000007.v29.pht002889.v2.phv00172191.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-         # eosinophil
-        dataset1 <- source_data[["pht002889"]]
-        dataset1$EO_PER <- as.numeric(dataset1$EO_PER)
-        dataset1$WBC <- as.numeric(dataset1$WBC)
-        dataset1$eosinophil_ncnc_bld <- dataset1$WBC * dataset1$EO_PER / 100
-        dataset1$EO_PER <- NULL
-        dataset1$WBC <- NULL
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age2 <- as.numeric(dataset2$age2)
-        names(dataset2)[names(dataset2) %in% "age2"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$eosinophil_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
-<a id="eosinophil_ncnc_bld_1-fhs_offspring"></a>
-  * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **FHS_Offspring**:
-    * 4 component_study_variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227038.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-        # eosinophil
-        dataset1 <- source_data[["pht004802"]]
-          # subset to Offspring
-        dataset1 <- dataset1[dataset1$IDTYPE %in% 1, ]
-        dataset1$IDTYPE <- NULL
-      
-        dataset1$EO_PER <- as.numeric(dataset1$EO_PER)
-        dataset1$WBC <- as.numeric(dataset1$WBC)
-        dataset1$eosinophil_ncnc_bld <- dataset1$WBC * dataset1$EO_PER / 100
-        dataset1$EO_PER <- NULL
-        dataset1$WBC <- NULL
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age9 <- as.numeric(dataset2$age9)
-        names(dataset2)[names(dataset2) %in% "age9"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$eosinophil_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
-<a id="eosinophil_ncnc_bld_1-fhs_omni1"></a>
-  * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **FHS_Omni1**:
-    * 4 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227038.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-         # eosinophil
-        dataset1 <- source_data[["pht004802"]]
-          # subset to Omni1
-        dataset1 <- dataset1[dataset1$IDTYPE %in% 7, ]
-        dataset1$IDTYPE <- NULL
-      
-        dataset1$EO_PER <- as.numeric(dataset1$EO_PER)
-        dataset1$WBC <- as.numeric(dataset1$WBC)
-        dataset1$eosinophil_ncnc_bld <- dataset1$WBC * dataset1$EO_PER / 100
-        dataset1$EO_PER <- NULL
-        dataset1$WBC <- NULL
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age4 <- as.numeric(dataset2$age4)
-        names(dataset2)[names(dataset2) %in% "age4"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$eosinophil_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
 <a id="eosinophil_ncnc_bld_1-hchs_sol"></a>
   * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **HCHS_SOL**:
     * 3 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`, `phs000810.v1.pht004715.v1.phv00226287.v1`
@@ -732,13 +464,9 @@
 ## blood_cell_count: **hematocrit_vfr_bld_1** (hematocrit_vfr_bld)
   Measurement of hematocrit, the fraction of volume (vfr) of blood (bld) that is composed of red blood cells.
   * **Harmonization Units**:
-    * [Amish](#hematocrit_vfr_bld_1-amish)
     * [ARIC](#hematocrit_vfr_bld_1-aric)
     * [CARDIA](#hematocrit_vfr_bld_1-cardia)
     * [CHS](#hematocrit_vfr_bld_1-chs)
-    * [FHS_Gen3NOSOmni2](#hematocrit_vfr_bld_1-fhs_gen3nosomni2)
-    * [FHS_Offspring](#hematocrit_vfr_bld_1-fhs_offspring)
-    * [FHS_Omni1](#hematocrit_vfr_bld_1-fhs_omni1)
     * [HCHS_SOL](#hematocrit_vfr_bld_1-hchs_sol)
     * [JHS](#hematocrit_vfr_bld_1-jhs)
     * [MESA](#hematocrit_vfr_bld_1-mesa)
@@ -769,31 +497,6 @@
     
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject.
     
-<a id="hematocrit_vfr_bld_1-amish"></a>
-  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **Amish**:
-    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253008.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-      
-        source_data <- phen_list$source_data
-         # hematocrit units already %
-        dataset <- source_data[["pht005002"]]
-        dataset$hematocrit_baseline <- as.numeric(dataset$hematocrit_baseline)
-        names(dataset)[names(dataset) %in% "hematocrit_baseline"] <- "hematocrit_vfr_bld"
-      
-         # age - winsorize at 90
-         dataset$age_baseline[dataset$age_baseline %in% "90+"] <- 90
-         dataset$age_baseline <- as.numeric(dataset$age_baseline)
-         names(dataset)[names(dataset) %in% "age_baseline"] <- "age"
-      
-         # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$hematocrit_vfr_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
 <a id="hematocrit_vfr_bld_1-aric"></a>
   * ### blood_cell_count/hematocrit_vfr_bld_1 -- **ARIC**:
     * 10 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004107.v2.phv00207255.v1`, `phs000280.v4.pht004108.v2.phv00207270.v1`, `phs000280.v4.pht004109.v2.phv00207289.v1`, `phs000280.v4.pht004110.v2.phv00207301.v1`, `phs000280.v4.pht006422.v1.phv00294957.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
@@ -911,141 +614,6 @@
           return(dataset)
       }
       ```
-<a id="hematocrit_vfr_bld_1-fhs_gen3nosomni2"></a>
-  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **FHS_Gen3NOSOmni2**:
-    * 2 component_study_variables: `phs000007.v29.pht002889.v2.phv00172181.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-         # hematocrit
-        dataset1 <- source_data[["pht002889"]]
-      
-        dataset1$HCT <- as.numeric(dataset1$HCT)
-        names(dataset1)[names(dataset1) %in% "HCT"] <- "hematocrit_vfr_bld"
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age2 <- as.numeric(dataset2$age2)
-        names(dataset2)[names(dataset2) %in% "age2"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$hematocrit_vfr_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
-<a id="hematocrit_vfr_bld_1-fhs_offspring"></a>
-  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **FHS_Offspring**:
-    * 7 component_study_variables: `phs000007.v29.pht000030.v7.phv00007555.v5`, `phs000007.v29.pht000031.v7.phv00008111.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227028.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-        # hematocrit
-        var <- "hematocrit_vfr_bld"
-      
-        # Offspring exam 9
-        dataset9 <- source_data[["pht004802"]]
-        # subset to Offspring
-        dataset9 <- dataset9[dataset9$IDTYPE %in% 1, ]
-        dataset9$IDTYPE <- NULL
-      
-        dataset9$HCT <- as.numeric(dataset9$HCT)
-      
-        # Offspring exam 2
-        dataset2 <- source_data[["pht000031"]]
-        dataset2$B764 <- as.numeric(dataset2$B764)
-      
-         # Offspring exam 1
-        dataset1 <- source_data[["pht000030"]]
-        dataset1$A28 <- as.numeric(dataset1$A28)
-      
-        # ages
-        dataseta <- source_data[["pht003099"]]
-        dataseta$age9 <- as.numeric(dataseta$age9)
-        dataseta$age2 <- as.numeric(dataseta$age2)
-        dataseta$age1 <- as.numeric(dataseta$age1)
-      
-        # add appropriate ages to datasets
-        dataset9 <- inner_join(dataset9, dataseta)
-        dataset9$age2 <- NULL
-        dataset9$age1 <- NULL
-      
-        dataset2 <- inner_join(dataset2, dataseta)
-        dataset2$age9 <- NULL
-        dataset2$age1 <- NULL
-      
-        dataset1 <- inner_join(dataset1, dataseta)
-        dataset1$age9 <- NULL
-        dataset1$age2 <- NULL
-      
-        sel <- !is.na(dataset9$HCT) & !is.na(dataset9$age9)
-        keep9 <- dataset9[sel, ]
-        names(keep9)[names(keep9) == "HCT"] <- var
-        names(keep9)[names(keep9) == "age9"] <- "age"
-      
-        dataset2 <- anti_join(dataset2, keep9)
-        sel2 <- !is.na(dataset2$B764) & !is.na(dataset2$age2)
-        keep2 <- dataset2[sel2, ]
-        names(keep2)[names(keep2) == "B764"] <- var
-        names(keep2)[names(keep2) == "age2"] <- "age"
-      
-        keep <- rbind(keep9, keep2)
-      
-        dataset1 <- anti_join(dataset1, keep)
-        sel1 <-  !is.na(dataset1$A28) & !is.na(dataset1$age1)
-        keep1 <- dataset1[sel1, ]
-        names(keep1)[names(keep1) == "A28"] <- var
-        names(keep1)[names(keep1) == "age1"] <- "age"
-      
-        # combine
-        dataset <- rbind(keep, keep1)
-      
-        return(dataset)
-      }
-      ```
-<a id="hematocrit_vfr_bld_1-fhs_omni1"></a>
-  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **FHS_Omni1**:
-    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227028.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-        # hematocrit
-        dataset1 <- source_data[["pht004802"]]
-        # choose Omni1 cohort
-        dataset1 <- dataset1[dataset1$IDTYPE %in% 7, ]
-      
-        dataset1$HCT <- as.numeric(dataset1$HCT)
-        names(dataset1)[names(dataset1) %in% "HCT"] <- "hematocrit_vfr_bld"
-        dataset1$IDTYPE <- NULL
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age4 <- as.numeric(dataset2$age4)
-        names(dataset2)[names(dataset2) %in% "age4"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$hematocrit_vfr_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
 <a id="hematocrit_vfr_bld_1-hchs_sol"></a>
   * ### blood_cell_count/hematocrit_vfr_bld_1 -- **HCHS_SOL**:
     * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226303.v1`
@@ -1155,13 +723,9 @@
 ## blood_cell_count: **hemoglobin_mcnc_bld_1** (hemoglobin_mcnc_bld)
   Measurement of mass per volume, or mass concentration (mcnc), of hemoglobin in the blood (bld).
   * **Harmonization Units**:
-    * [Amish](#hemoglobin_mcnc_bld_1-amish)
     * [ARIC](#hemoglobin_mcnc_bld_1-aric)
     * [CARDIA](#hemoglobin_mcnc_bld_1-cardia)
     * [CHS](#hemoglobin_mcnc_bld_1-chs)
-    * [FHS_Gen3NOSOmni2](#hemoglobin_mcnc_bld_1-fhs_gen3nosomni2)
-    * [FHS_Offspring](#hemoglobin_mcnc_bld_1-fhs_offspring)
-    * [FHS_Omni1](#hemoglobin_mcnc_bld_1-fhs_omni1)
     * [HCHS_SOL](#hemoglobin_mcnc_bld_1-hchs_sol)
     * [JHS](#hemoglobin_mcnc_bld_1-jhs)
     * [MESA](#hemoglobin_mcnc_bld_1-mesa)
@@ -1191,31 +755,6 @@
     
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject.
     
-<a id="hemoglobin_mcnc_bld_1-amish"></a>
-  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **Amish**:
-    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253007.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-      
-        source_data <- phen_list$source_data
-         # hemoglobin units already g/dL (grams per deciliter)
-        dataset <- source_data[["pht005002"]]
-        dataset$hemoglobin_baseline <- as.numeric(dataset$hemoglobin_baseline)
-        names(dataset)[names(dataset) %in% "hemoglobin_baseline"] <- "hemoglobin_mcnc_bld"
-      
-         # age - winsorize at 90
-         dataset$age_baseline[dataset$age_baseline %in% "90+"] <- 90
-         dataset$age_baseline <- as.numeric(dataset$age_baseline)
-         names(dataset)[names(dataset) %in% "age_baseline"] <- "age"
-      
-         # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$hemoglobin_mcnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
 <a id="hemoglobin_mcnc_bld_1-aric"></a>
   * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **ARIC**:
     * 10 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004107.v2.phv00207256.v1`, `phs000280.v4.pht004108.v2.phv00207271.v1`, `phs000280.v4.pht004109.v2.phv00207288.v1`, `phs000280.v4.pht004110.v2.phv00207300.v1`, `phs000280.v4.pht006422.v1.phv00294956.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
@@ -1331,146 +870,6 @@
           return(dataset)
       }
       ```
-<a id="hemoglobin_mcnc_bld_1-fhs_gen3nosomni2"></a>
-  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **FHS_Gen3NOSOmni2**:
-    * 2 component_study_variables: `phs000007.v29.pht002889.v2.phv00172180.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-         # hemoglobin
-        dataset1 <- source_data[["pht002889"]]
-        dataset1$HGB <- as.numeric(dataset1$HGB)
-        names(dataset1)[names(dataset1) %in% "HGB"] <- "hemoglobin_mcnc_bld"
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age2 <- as.numeric(dataset2$age2)
-        names(dataset2)[names(dataset2) %in% "age2"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$hemoglobin_mcnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
-<a id="hemoglobin_mcnc_bld_1-fhs_offspring"></a>
-  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **FHS_Offspring**:
-    * 7 component_study_variables: `phs000007.v29.pht000030.v7.phv00007642.v5`, `phs000007.v29.pht000031.v7.phv00008110.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227027.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-         # hemoglobin
-        var <- "hemoglobin_mcnc_bld"
-      
-        # Offspring exam 9
-        dataset9 <- source_data[["pht004802"]]
-        # subset to Offspring
-        dataset9 <- dataset9[dataset9$IDTYPE %in% 1, ]
-        dataset9$IDTYPE <- NULL
-      
-        dataset9$HGB <- as.numeric(dataset9$HGB)
-      
-        # Offspring exam 2
-        dataset2 <- source_data[["pht000031"]]
-        dataset2$B763 <- as.numeric(dataset2$B763)
-      
-      # Recode: B763 in g/L - need g/dL - so divide by 10
-        dataset2$B763 <- dataset2$B763 / 10
-      
-         # Offspring exam 1
-        dataset1 <- source_data[["pht000030"]]
-        dataset1$A140 <- as.numeric(dataset1$A140)
-      
-        # Recode: A140 in g/L - need g/dL - so divide by 10
-        dataset1$A140 <- dataset1$A140 / 10
-      
-        # ages
-        dataseta <- source_data[["pht003099"]]
-        dataseta$age9 <- as.numeric(dataseta$age9)
-        dataseta$age2 <- as.numeric(dataseta$age2)
-        dataseta$age1 <- as.numeric(dataseta$age1)
-      
-        # add appropriate ages to datasets
-        dataset9 <- inner_join(dataset9, dataseta)
-        dataset9$age2 <- NULL
-        dataset9$age1 <- NULL
-      
-        dataset2 <- inner_join(dataset2, dataseta)
-        dataset2$age9 <- NULL
-        dataset2$age1 <- NULL
-      
-        dataset1 <- inner_join(dataset1, dataseta)
-        dataset1$age9 <- NULL
-        dataset1$age2 <- NULL
-      
-        sel <- !is.na(dataset9$HGB) & !is.na(dataset9$age9)
-        keep9 <- dataset9[sel, ]
-        names(keep9)[names(keep9) == "HGB"] <- var
-        names(keep9)[names(keep9) == "age9"] <- "age"
-      
-        dataset2 <- anti_join(dataset2, keep9)
-        sel2 <- !is.na(dataset2$B763) & !is.na(dataset2$age2)
-        keep2 <- dataset2[sel2, ]
-        names(keep2)[names(keep2) == "B763"] <- var
-        names(keep2)[names(keep2) == "age2"] <- "age"
-      
-        keep <- rbind(keep9, keep2)
-      
-        dataset1 <- anti_join(dataset1, keep)
-        sel1 <-  !is.na(dataset1$A140) & !is.na(dataset1$age1)
-        keep1 <- dataset1[sel1, ]
-        names(keep1)[names(keep1) == "A140"] <- var
-        names(keep1)[names(keep1) == "age1"] <- "age"
-      
-        # combine
-        dataset <- rbind(keep, keep1)
-      
-        return(dataset)
-      }
-      ```
-<a id="hemoglobin_mcnc_bld_1-fhs_omni1"></a>
-  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **FHS_Omni1**:
-    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227027.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-        # hemoglobin
-        dataset1 <- source_data[["pht004802"]]
-        # choose Omni1 cohort
-        dataset1 <- dataset1[dataset1$IDTYPE %in% 7, ]
-      
-        dataset1$HGB <- as.numeric(dataset1$HGB)
-        names(dataset1)[names(dataset1) %in% "HGB"] <- "hemoglobin_mcnc_bld"
-        dataset1$IDTYPE <- NULL
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age4 <- as.numeric(dataset2$age4)
-        names(dataset2)[names(dataset2) %in% "age4"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$hemoglobin_mcnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
 <a id="hemoglobin_mcnc_bld_1-hchs_sol"></a>
   * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **HCHS_SOL**:
     * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226302.v1`
@@ -1581,12 +980,8 @@
 ## blood_cell_count: **lymphocyte_ncnc_bld_1** (lymphocyte_ncnc_bld)
   Count by volume, or number concentration (ncnc), of lymphocytes in the blood (bld).
   * **Harmonization Units**:
-    * [Amish](#lymphocyte_ncnc_bld_1-amish)
     * [ARIC](#lymphocyte_ncnc_bld_1-aric)
     * [CARDIA](#lymphocyte_ncnc_bld_1-cardia)
-    * [FHS_Gen3NOSOmni2](#lymphocyte_ncnc_bld_1-fhs_gen3nosomni2)
-    * [FHS_Offspring](#lymphocyte_ncnc_bld_1-fhs_offspring)
-    * [FHS_Omni1](#lymphocyte_ncnc_bld_1-fhs_omni1)
     * [HCHS_SOL](#lymphocyte_ncnc_bld_1-hchs_sol)
     * [JHS](#lymphocyte_ncnc_bld_1-jhs)
     * [MESA](#lymphocyte_ncnc_bld_1-mesa)
@@ -1627,33 +1022,6 @@
     
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values for WBC, lymphocytes, and other WBC subtype differentials may not be from the same visit, so the harmonized subtype differential counts may not sum to the WBC count.
     
-<a id="lymphocyte_ncnc_bld_1-amish"></a>
-  * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **Amish**:
-    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253013.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-      
-        source_data <- phen_list$source_data
-         # lymphocyte_ncnc_bld units in cells/microliter
-         #   we want thousands/microliter
-        dataset <- source_data[["pht005002"]]
-        dataset$lymphocytes_baseline <- as.numeric(dataset$lymphocytes_baseline)
-        names(dataset)[names(dataset) %in% "lymphocytes_baseline"] <- "lymphocyte_ncnc_bld"
-        dataset$lymphocyte_ncnc_bld <- dataset$lymphocyte_ncnc_bld / 1000
-      
-         # age - winsorize at 90
-         dataset$age_baseline[dataset$age_baseline %in% "90+"] <- 90
-         dataset$age_baseline <- as.numeric(dataset$age_baseline)
-         names(dataset)[names(dataset) %in% "age_baseline"] <- "age"
-      
-         # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$lymphocyte_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
 <a id="lymphocyte_ncnc_bld_1-aric"></a>
   * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **ARIC**:
     * 9 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004107.v2.phv00207261.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004108.v2.phv00207276.v1`, `phs000280.v4.pht006422.v1.phv00294954.v1`, `phs000280.v4.pht006422.v1.phv00294964.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
@@ -1758,110 +1126,6 @@
           return(dataset)
       }
       ```
-<a id="lymphocyte_ncnc_bld_1-fhs_gen3nosomni2"></a>
-  * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **FHS_Gen3NOSOmni2**:
-    * 3 component_study_variables: `phs000007.v29.pht002889.v2.phv00172178.v2`, `phs000007.v29.pht002889.v2.phv00172189.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-        # lymphocyte - derive count from percentage and total WBC
-        dataset1 <- source_data[["pht002889"]]
-        dataset1$LY_PER <- as.numeric(dataset1$LY_PER)
-        dataset1$WBC <- as.numeric(dataset1$WBC)
-        dataset1$lymphocyte_ncnc_bld <- dataset1$WBC * dataset1$LY_PER / 100
-        dataset1$LY_PER <- NULL
-        dataset1$WBC <- NULL
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age2 <- as.numeric(dataset2$age2)
-        names(dataset2)[names(dataset2) %in% "age2"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$lymphocyte_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
-<a id="lymphocyte_ncnc_bld_1-fhs_offspring"></a>
-  * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **FHS_Offspring**:
-    * 4 component_study_variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227036.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-         # lymphocyte - derive count from percentage and total WBC
-        dataset1 <- source_data[["pht004802"]]
-          # subset to Offspring
-        dataset1 <- dataset1[dataset1$IDTYPE %in% 1, ]
-        dataset1$IDTYPE <- NULL
-      
-        dataset1$LY_PER <- as.numeric(dataset1$LY_PER)
-        dataset1$WBC <- as.numeric(dataset1$WBC)
-        dataset1$lymphocyte_ncnc_bld <- dataset1$WBC * dataset1$LY_PER / 100
-        dataset1$LY_PER <- NULL
-        dataset1$WBC <- NULL
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age9 <- as.numeric(dataset2$age9)
-        names(dataset2)[names(dataset2) %in% "age9"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$lymphocyte_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
-<a id="lymphocyte_ncnc_bld_1-fhs_omni1"></a>
-  * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **FHS_Omni1**:
-    * 4 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227036.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-         # lymphocyte - derive from percentage and total WBC
-        dataset1 <- source_data[["pht004802"]]
-          # subset to Omni1
-        dataset1 <- dataset1[dataset1$IDTYPE %in% 7, ]
-        dataset1$IDTYPE <- NULL
-      
-        dataset1$LY_PER <- as.numeric(dataset1$LY_PER)
-        dataset1$WBC <- as.numeric(dataset1$WBC)
-        dataset1$lymphocyte_ncnc_bld <- dataset1$WBC * dataset1$LY_PER / 100
-        dataset1$LY_PER <- NULL
-        dataset1$WBC <- NULL
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age4 <- as.numeric(dataset2$age4)
-        names(dataset2)[names(dataset2) %in% "age4"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$lymphocyte_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
 <a id="lymphocyte_ncnc_bld_1-hchs_sol"></a>
   * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **HCHS_SOL**:
     * 3 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`, `phs000810.v1.pht004715.v1.phv00226285.v1`
@@ -1945,12 +1209,8 @@
 ## blood_cell_count: **mch_entmass_rbc_1** (mch_entmass_rbc)
   Measurement of the average mass (entmass) of hemoglobin per red blood cell(rbc), known as mean corpuscular hemoglobin (MCH).
   * **Harmonization Units**:
-    * [Amish](#mch_entmass_rbc_1-amish)
     * [ARIC](#mch_entmass_rbc_1-aric)
     * [CARDIA](#mch_entmass_rbc_1-cardia)
-    * [FHS_Gen3NOSOmni2](#mch_entmass_rbc_1-fhs_gen3nosomni2)
-    * [FHS_Offspring](#mch_entmass_rbc_1-fhs_offspring)
-    * [FHS_Omni1](#mch_entmass_rbc_1-fhs_omni1)
     * [HCHS_SOL](#mch_entmass_rbc_1-hchs_sol)
     * [JHS](#mch_entmass_rbc_1-jhs)
     * [MESA](#mch_entmass_rbc_1-mesa)
@@ -1987,34 +1247,6 @@
     
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values for hemoglobin, red blood cell count, and MCH may not be from the same visit.
     
-<a id="mch_entmass_rbc_1-amish"></a>
-  * ### blood_cell_count/mch_entmass_rbc_1 -- **Amish**:
-    * 3 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253007.v1`, `phs000956.v2.pht005002.v1.phv00253010.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library(dplyr)
-        source_data <- phen_list$source_data
-      
-         # MCH = hemoglobin/RBC * 10 units = pg (picograms) mean corpuscular hemoglobin
-        dataset <- source_data[["pht005002"]]
-        dataset$red_blood_cell_count_baseline <- as.numeric(dataset$red_blood_cell_count_baseline)
-        dataset$hemoglobin_baseline <- as.numeric(dataset$hemoglobin_baseline)
-        dataset <- dataset %>%
-          mutate(mch_entmass_rbc = hemoglobin_baseline / red_blood_cell_count_baseline * 10)
-      
-         # age - winsorize at 90
-         dataset$age_baseline[dataset$age_baseline %in% "90+"] <- 90
-         dataset$age_baseline <- as.numeric(dataset$age_baseline)
-         names(dataset)[names(dataset) %in% "age_baseline"] <- "age"
-      
-         # subset to non-missing values
-         dataset <- dataset %>% filter(!is.na(age) & !is.na(mch_entmass_rbc)) %>%
-             select(topmed_subject_id, mch_entmass_rbc, age)
-      
-        return(dataset)
-      }
-      ```
 <a id="mch_entmass_rbc_1-aric"></a>
   * ### blood_cell_count/mch_entmass_rbc_1 -- **ARIC**:
     * 6 component_study_variables: `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004109.v2.phv00207290.v1`, `phs000280.v4.pht004110.v2.phv00207302.v1`, `phs000280.v4.pht006422.v1.phv00294960.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
@@ -2105,145 +1337,6 @@
           return(dataset)
       }
       ```
-<a id="mch_entmass_rbc_1-fhs_gen3nosomni2"></a>
-  * ### blood_cell_count/mch_entmass_rbc_1 -- **FHS_Gen3NOSOmni2**:
-    * 2 component_study_variables: `phs000007.v29.pht002889.v2.phv00172183.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-        source_data <- phen_list$source_data
-      
-         # mch_entmass_rbc units = pg (picograms) mean corpuscular hemoglobin
-        dataset1 <- source_data[["pht002889"]]
-        dataset1$MCH <- as.numeric(dataset1$MCH)
-        names(dataset1)[names(dataset1) %in% "MCH"] <- "mch_entmass_rbc"
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age2 <- as.numeric(dataset2$age2)
-        names(dataset2)[names(dataset2) %in% "age2"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$mch_entmass_rbc)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
-<a id="mch_entmass_rbc_1-fhs_offspring"></a>
-  * ### blood_cell_count/mch_entmass_rbc_1 -- **FHS_Offspring**:
-    * 7 component_study_variables: `phs000007.v29.pht000030.v7.phv00007645.v5`, `phs000007.v29.pht000031.v7.phv00008113.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227030.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-        source_data <- phen_list$source_data
-         # MCH units = pg (picograms) mean corpuscular hemoglobin
-        var <- "mch_entmass_rbc"
-      
-        # Offspring exam 9
-        dataset9 <- source_data[["pht004802"]]
-        # subset to Offspring
-        dataset9 <- dataset9[dataset9$IDTYPE %in% 1, ]
-        dataset9$IDTYPE <- NULL
-      
-        dataset9$MCH <- as.numeric(dataset9$MCH)
-      
-        # Offspring exam 2
-        dataset2 <- source_data[["pht000031"]]
-        dataset2$B766 <- as.numeric(dataset2$B766)
-      
-        # Recode: tens of pg - recode to pg (picogram)
-        dataset2$B766 <- dataset2$B766 / 10
-      
-         # Offspring exam 1
-        dataset1 <- source_data[["pht000030"]]
-        dataset1$A143 <- as.numeric(dataset1$A143)
-      
-        # Recode: tens of pg - recode to pg (picogram)
-        dataset1$A143 <- dataset1$A143 / 10
-      
-        # ages
-        dataseta <- source_data[["pht003099"]]
-        dataseta$age9 <- as.numeric(dataseta$age9)
-        dataseta$age2 <- as.numeric(dataseta$age2)
-        dataseta$age1 <- as.numeric(dataseta$age1)
-      
-        # add appropriate ages to datasets
-        dataset9 <- inner_join(dataset9, dataseta)
-        dataset9$age2 <- NULL
-        dataset9$age1 <- NULL
-      
-        dataset2 <- inner_join(dataset2, dataseta)
-        dataset2$age9 <- NULL
-        dataset2$age1 <- NULL
-      
-        dataset1 <- inner_join(dataset1, dataseta)
-        dataset1$age9 <- NULL
-        dataset1$age2 <- NULL
-      
-        sel <- !is.na(dataset9$MCH) & !is.na(dataset9$age9)
-        keep9 <- dataset9[sel, ]
-        names(keep9)[names(keep9) == "MCH"] <- var
-        names(keep9)[names(keep9) == "age9"] <- "age"
-      
-        dataset2 <- anti_join(dataset2, keep9)
-        sel2 <- !is.na(dataset2$B766) & !is.na(dataset2$age2)
-        keep2 <- dataset2[sel2, ]
-        names(keep2)[names(keep2) == "B766"] <- var
-        names(keep2)[names(keep2) == "age2"] <- "age"
-      
-        keep <- rbind(keep9, keep2)
-      
-        dataset1 <- anti_join(dataset1, keep)
-        sel1 <-  !is.na(dataset1$A143) & !is.na(dataset1$age1)
-        keep1 <- dataset1[sel1, ]
-        names(keep1)[names(keep1) == "A143"] <- var
-        names(keep1)[names(keep1) == "age1"] <- "age"
-      
-        # combine
-        dataset <- rbind(keep, keep1)
-      
-        return(dataset)
-      }
-      ```
-<a id="mch_entmass_rbc_1-fhs_omni1"></a>
-  * ### blood_cell_count/mch_entmass_rbc_1 -- **FHS_Omni1**:
-    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227030.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-        source_data <- phen_list$source_data
-      
-        dataset1 <- source_data[["pht004802"]]
-        # choose Omni1 cohort
-        dataset1 <- dataset1[dataset1$IDTYPE %in% 7, ]
-      
-         # mch_entmass_rbc units = pg (picograms) mean corpuscular hemoglobin
-        dataset1$MCH <- as.numeric(dataset1$MCH)
-        names(dataset1)[names(dataset1) %in% "MCH"] <- "mch_entmass_rbc"
-        dataset1$IDTYPE <- NULL
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age4 <- as.numeric(dataset2$age4)
-        names(dataset2)[names(dataset2) %in% "age4"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$mch_entmass_rbc)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
 <a id="mch_entmass_rbc_1-hchs_sol"></a>
   * ### blood_cell_count/mch_entmass_rbc_1 -- **HCHS_SOL**:
     * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226305.v1`
@@ -2329,13 +1422,9 @@
 ## blood_cell_count: **mchc_mcnc_rbc_1** (mchc_mcnc_rbc)
   Measurement of the mass concentration (mcnc) of hemoglobin in a given volume of packed red blood cells (rbc), known as mean corpuscular hemoglobin concentration (MCHC).
   * **Harmonization Units**:
-    * [Amish](#mchc_mcnc_rbc_1-amish)
     * [ARIC](#mchc_mcnc_rbc_1-aric)
     * [CARDIA](#mchc_mcnc_rbc_1-cardia)
     * [CHS](#mchc_mcnc_rbc_1-chs)
-    * [FHS_Gen3NOSOmni2](#mchc_mcnc_rbc_1-fhs_gen3nosomni2)
-    * [FHS_Offspring](#mchc_mcnc_rbc_1-fhs_offspring)
-    * [FHS_Omni1](#mchc_mcnc_rbc_1-fhs_omni1)
     * [HCHS_SOL](#mchc_mcnc_rbc_1-hchs_sol)
     * [JHS](#mchc_mcnc_rbc_1-jhs)
     * [MESA](#mchc_mcnc_rbc_1-mesa)
@@ -2377,36 +1466,6 @@
     
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values for hemoglobin, hematocrit, and MCHC may not be from the same visit.
     
-<a id="mchc_mcnc_rbc_1-amish"></a>
-  * ### blood_cell_count/mchc_mcnc_rbc_1 -- **Amish**:
-    * 3 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253007.v1`, `phs000956.v2.pht005002.v1.phv00253008.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-      
-         # MCHC = hemoglobin/hematocrit * 100
-         #   units = g/dL  mean corpuscular hemoglobin concentration
-         # no data given so derive trait
-        source_data <- phen_list$source_data
-        dataset <- source_data[["pht005002"]]
-        dataset$hematocrit_baseline <- as.numeric(dataset$hematocrit_baseline)
-        dataset$hemoglobin_baseline <- as.numeric(dataset$hemoglobin_baseline)
-        dataset$mchc_mcnc_rbc <- dataset$hemoglobin_baseline / dataset$hematocrit_baseline * 100
-        dataset$hematocrit_baseline <- NULL
-        dataset$hemoglobin_baseline <- NULL
-      
-         # age - winsorize at 90
-         dataset$age_baseline[dataset$age_baseline %in% "90+"] <- 90
-         dataset$age_baseline <- as.numeric(dataset$age_baseline)
-         names(dataset)[names(dataset) %in% "age_baseline"] <- "age"
-      
-         # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$mchc_mcnc_rbc)
-        dataset <- dataset[sel, ]
-      
-       return(dataset)
-      }
-      ```
 <a id="mchc_mcnc_rbc_1-aric"></a>
   * ### blood_cell_count/mchc_mcnc_rbc_1 -- **ARIC**:
     * 15 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004107.v2.phv00207255.v1`, `phs000280.v4.pht004107.v2.phv00207256.v1`, `phs000280.v4.pht004108.v2.phv00207270.v1`, `phs000280.v4.pht004108.v2.phv00207271.v1`, `phs000280.v4.pht004109.v2.phv00207288.v1`, `phs000280.v4.pht004109.v2.phv00207289.v1`, `phs000280.v4.pht004110.v2.phv00207300.v1`, `phs000280.v4.pht004110.v2.phv00207301.v1`, `phs000280.v4.pht006422.v1.phv00294956.v1`, `phs000280.v4.pht006422.v1.phv00294957.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
@@ -2537,146 +1596,6 @@
           return(dataset)
       }
       ```
-<a id="mchc_mcnc_rbc_1-fhs_gen3nosomni2"></a>
-  * ### blood_cell_count/mchc_mcnc_rbc_1 -- **FHS_Gen3NOSOmni2**:
-    * 2 component_study_variables: `phs000007.v29.pht002889.v2.phv00172184.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-       # mchc_mcnc_rbc units = g/dL (grams/deciliter) mean corpuscular hemoglobin concentration
-        dataset1 <- source_data[["pht002889"]]
-        dataset1$MCHC <- as.numeric(dataset1$MCHC)
-        names(dataset1)[names(dataset1) %in% "MCHC"] <- "mchc_mcnc_rbc"
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age2 <- as.numeric(dataset2$age2)
-        names(dataset2)[names(dataset2) %in% "age2"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$mchc_mcnc_rbc)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
-<a id="mchc_mcnc_rbc_1-fhs_offspring"></a>
-  * ### blood_cell_count/mchc_mcnc_rbc_1 -- **FHS_Offspring**:
-    * 7 component_study_variables: `phs000007.v29.pht000030.v7.phv00007646.v5`, `phs000007.v29.pht000031.v7.phv00008114.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227031.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-        # MCHC units = g/dL (grams/deciliter) mean corpuscular hemoglobin concentration
-        var <- "mchc_mcnc_rbc"
-      
-        # Offspring exam 9
-        dataset9 <- source_data[["pht004802"]]
-        # subset to Offspring
-        dataset9 <- dataset9[dataset9$IDTYPE %in% 1, ]
-        dataset9$IDTYPE <- NULL
-      
-        dataset9$MCHC <- as.numeric(dataset9$MCHC)
-      
-        # Offspring exam 2
-        dataset2 <- source_data[["pht000031"]]
-        dataset2$B767 <- as.numeric(dataset2$B767)
-      
-        # Recode: g/L - recode to g/dL
-        dataset2$B767 <- dataset2$B767 / 10
-      
-         # Offspring exam 1
-        dataset1 <- source_data[["pht000030"]]
-        dataset1$A144 <- as.numeric(dataset1$A144)
-      
-        # Recode: g/L - recode to g/dL
-        dataset1$A144 <- dataset1$A144 / 10
-      
-        # ages
-        dataseta <- source_data[["pht003099"]]
-        dataseta$age9 <- as.numeric(dataseta$age9)
-        dataseta$age2 <- as.numeric(dataseta$age2)
-        dataseta$age1 <- as.numeric(dataseta$age1)
-      
-        # add appropriate ages to datasets
-        dataset9 <- inner_join(dataset9, dataseta)
-        dataset9$age2 <- NULL
-        dataset9$age1 <- NULL
-      
-        dataset2 <- inner_join(dataset2, dataseta)
-        dataset2$age9 <- NULL
-        dataset2$age1 <- NULL
-      
-        dataset1 <- inner_join(dataset1, dataseta)
-        dataset1$age9 <- NULL
-        dataset1$age2 <- NULL
-      
-        sel <- !is.na(dataset9$MCHC) & !is.na(dataset9$age9)
-        keep9 <- dataset9[sel, ]
-        names(keep9)[names(keep9) == "MCHC"] <- var
-        names(keep9)[names(keep9) == "age9"] <- "age"
-      
-        dataset2 <- anti_join(dataset2, keep9)
-        sel2 <- !is.na(dataset2$B767) & !is.na(dataset2$age2)
-        keep2 <- dataset2[sel2, ]
-        names(keep2)[names(keep2) == "B767"] <- var
-        names(keep2)[names(keep2) == "age2"] <- "age"
-      
-        keep <- rbind(keep9, keep2)
-      
-        dataset1 <- anti_join(dataset1, keep)
-        sel1 <-  !is.na(dataset1$A144) & !is.na(dataset1$age1)
-        keep1 <- dataset1[sel1, ]
-        names(keep1)[names(keep1) == "A144"] <- var
-        names(keep1)[names(keep1) == "age1"] <- "age"
-      
-        # combine
-        dataset <- rbind(keep, keep1)
-      
-        return(dataset)
-      }
-      ```
-<a id="mchc_mcnc_rbc_1-fhs_omni1"></a>
-  * ### blood_cell_count/mchc_mcnc_rbc_1 -- **FHS_Omni1**:
-    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227031.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-        dataset1 <- source_data[["pht004802"]]
-        # choose Omni1 cohort
-        dataset1 <- dataset1[dataset1$IDTYPE %in% 7, ]
-      
-         # mchc_mcnc_rbc units = g/dL (grams/deciliter) mean corpuscular hemoglobin concentration
-        dataset1$MCHC <- as.numeric(dataset1$MCHC)
-        names(dataset1)[names(dataset1) %in% "MCHC"] <- "mchc_mcnc_rbc"
-        dataset1$IDTYPE <- NULL
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age4 <- as.numeric(dataset2$age4)
-        names(dataset2)[names(dataset2) %in% "age4"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$mchc_mcnc_rbc)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
 <a id="mchc_mcnc_rbc_1-hchs_sol"></a>
   * ### blood_cell_count/mchc_mcnc_rbc_1 -- **HCHS_SOL**:
     * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226306.v1`
@@ -2763,12 +1682,8 @@
 ## blood_cell_count: **mcv_entvol_rbc_1** (mcv_entvol_rbc)
   Measurement of the average volume (entvol) of red blood cells (rbc), known as mean corpuscular volume (MCV).
   * **Harmonization Units**:
-    * [Amish](#mcv_entvol_rbc_1-amish)
     * [ARIC](#mcv_entvol_rbc_1-aric)
     * [CARDIA](#mcv_entvol_rbc_1-cardia)
-    * [FHS_Gen3NOSOmni2](#mcv_entvol_rbc_1-fhs_gen3nosomni2)
-    * [FHS_Offspring](#mcv_entvol_rbc_1-fhs_offspring)
-    * [FHS_Omni1](#mcv_entvol_rbc_1-fhs_omni1)
     * [HCHS_SOL](#mcv_entvol_rbc_1-hchs_sol)
     * [JHS](#mcv_entvol_rbc_1-jhs)
     * [MESA](#mcv_entvol_rbc_1-mesa)
@@ -2805,34 +1720,6 @@
     
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values for hematocrit, red blood cell count, and MCV may not be from the same visit.
     
-<a id="mcv_entvol_rbc_1-amish"></a>
-  * ### blood_cell_count/mcv_entvol_rbc_1 -- **Amish**:
-    * 3 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253008.v1`, `phs000956.v2.pht005002.v1.phv00253010.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-         library(dplyr)
-        source_data <- phen_list$source_data
-         # MCV = hematocrit/RBC * 10 units=fL femtoliter mean corpuscular volume
-         # data not given so derive
-        dataset <- source_data[["pht005002"]]
-        dataset$red_blood_cell_count_baseline <- as.numeric(dataset$red_blood_cell_count_baseline)
-        dataset$hematocrit_baseline <- as.numeric(dataset$hematocrit_baseline)
-        dataset <- dataset %>%
-          mutate(mcv_entvol_rbc = hematocrit_baseline / red_blood_cell_count_baseline * 10)
-      
-         # age - winsorize at 90
-         dataset$age_baseline[dataset$age_baseline %in% "90+"] <- 90
-         dataset$age_baseline <- as.numeric(dataset$age_baseline)
-         names(dataset)[names(dataset) %in% "age_baseline"] <- "age"
-      
-         # subset to non-missing values
-        dataset <- dataset %>% filter(!is.na(age) & !is.na(mcv_entvol_rbc)) %>%
-          select(topmed_subject_id, mcv_entvol_rbc, age)
-      
-        return(dataset)
-      }
-      ```
 <a id="mcv_entvol_rbc_1-aric"></a>
   * ### blood_cell_count/mcv_entvol_rbc_1 -- **ARIC**:
     * 8 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004108.v2.phv00207282.v1`, `phs000280.v4.pht004109.v2.phv00207293.v1`, `phs000280.v4.pht004110.v2.phv00207305.v1`, `phs000280.v4.pht006422.v1.phv00294959.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
@@ -2928,140 +1815,6 @@
           return(dataset)
       }
       ```
-<a id="mcv_entvol_rbc_1-fhs_gen3nosomni2"></a>
-  * ### blood_cell_count/mcv_entvol_rbc_1 -- **FHS_Gen3NOSOmni2**:
-    * 2 component_study_variables: `phs000007.v29.pht002889.v2.phv00172182.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-         # mcv_entvol_rbc  units=fL femtoliter mean corpuscular volume
-        dataset1 <- source_data[["pht002889"]]
-        dataset1$MCV <- as.numeric(dataset1$MCV)
-        names(dataset1)[names(dataset1) %in% "MCV"] <- "mcv_entvol_rbc"
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age2 <- as.numeric(dataset2$age2)
-        names(dataset2)[names(dataset2) %in% "age2"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$mcv_entvol_rbc)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
-<a id="mcv_entvol_rbc_1-fhs_offspring"></a>
-  * ### blood_cell_count/mcv_entvol_rbc_1 -- **FHS_Offspring**:
-    * 7 component_study_variables: `phs000007.v29.pht000030.v7.phv00007644.v5`, `phs000007.v29.pht000031.v7.phv00008112.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227029.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-        source_data <- phen_list$source_data
-      
-         # MCV units=fL femtoliter mean corpuscular volume
-        var <- "mcv_entvol_rbc"
-      
-        # Offspring exam 9
-        dataset9 <- source_data[["pht004802"]]
-        # subset to Offspring
-        dataset9 <- dataset9[dataset9$IDTYPE %in% 1, ]
-        dataset9$IDTYPE <- NULL
-      
-        dataset9$MCV <- as.numeric(dataset9$MCV)
-      
-        # Offspring exam 2
-        dataset2 <- source_data[["pht000031"]]
-        dataset2$B765 <- as.numeric(dataset2$B765)
-      
-         # Offspring exam 1
-        dataset1 <- source_data[["pht000030"]]
-        dataset1$A142 <- as.numeric(dataset1$A142)
-      
-        # ages
-        dataseta <- source_data[["pht003099"]]
-        dataseta$age9 <- as.numeric(dataseta$age9)
-        dataseta$age2 <- as.numeric(dataseta$age2)
-        dataseta$age1 <- as.numeric(dataseta$age1)
-      
-        # add appropriate ages to datasets
-        dataset9 <- inner_join(dataset9, dataseta)
-        dataset9$age2 <- NULL
-        dataset9$age1 <- NULL
-      
-        dataset2 <- inner_join(dataset2, dataseta)
-        dataset2$age9 <- NULL
-        dataset2$age1 <- NULL
-      
-        dataset1 <- inner_join(dataset1, dataseta)
-        dataset1$age9 <- NULL
-        dataset1$age2 <- NULL
-      
-        sel <- !is.na(dataset9$MCV) & !is.na(dataset9$age9)
-        keep9 <- dataset9[sel, ]
-        names(keep9)[names(keep9) == "MCV"] <- var
-        names(keep9)[names(keep9) == "age9"] <- "age"
-      
-        dataset2 <- anti_join(dataset2, keep9)
-        sel2 <- !is.na(dataset2$B765) & !is.na(dataset2$age2)
-        keep2 <- dataset2[sel2, ]
-        names(keep2)[names(keep2) == "B765"] <- var
-        names(keep2)[names(keep2) == "age2"] <- "age"
-      
-        keep <- rbind(keep9, keep2)
-      
-        dataset1 <- anti_join(dataset1, keep)
-        sel1 <-  !is.na(dataset1$A142) & !is.na(dataset1$age1)
-        keep1 <- dataset1[sel1, ]
-        names(keep1)[names(keep1) == "A142"] <- var
-        names(keep1)[names(keep1) == "age1"] <- "age"
-      
-        # combine
-        dataset <- rbind(keep, keep1)
-      
-        return(dataset)
-      }
-      ```
-<a id="mcv_entvol_rbc_1-fhs_omni1"></a>
-  * ### blood_cell_count/mcv_entvol_rbc_1 -- **FHS_Omni1**:
-    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227029.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-        dataset1 <- source_data[["pht004802"]]
-        # choose Omni1 cohort
-        dataset1 <- dataset1[dataset1$IDTYPE %in% 7, ]
-      
-         # mcv_entvol_rbc units=fL femtoliter mean corpuscular volume
-        dataset1$MCV <- as.numeric(dataset1$MCV)
-        names(dataset1)[names(dataset1) %in% "MCV"] <- "mcv_entvol_rbc"
-        dataset1$IDTYPE <- NULL
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age4 <- as.numeric(dataset2$age4)
-        names(dataset2)[names(dataset2) %in% "age4"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$mcv_entvol_rbc)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
 <a id="mcv_entvol_rbc_1-hchs_sol"></a>
   * ### blood_cell_count/mcv_entvol_rbc_1 -- **HCHS_SOL**:
     * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226304.v1`
@@ -3149,12 +1902,8 @@
 ## blood_cell_count: **monocyte_ncnc_bld_1** (monocyte_ncnc_bld)
   Count by volume, or number concentration (ncnc), of monocytes in the blood (bld).
   * **Harmonization Units**:
-    * [Amish](#monocyte_ncnc_bld_1-amish)
     * [ARIC](#monocyte_ncnc_bld_1-aric)
     * [CARDIA](#monocyte_ncnc_bld_1-cardia)
-    * [FHS_Gen3NOSOmni2](#monocyte_ncnc_bld_1-fhs_gen3nosomni2)
-    * [FHS_Offspring](#monocyte_ncnc_bld_1-fhs_offspring)
-    * [FHS_Omni1](#monocyte_ncnc_bld_1-fhs_omni1)
     * [HCHS_SOL](#monocyte_ncnc_bld_1-hchs_sol)
     * [JHS](#monocyte_ncnc_bld_1-jhs)
     * [MESA](#monocyte_ncnc_bld_1-mesa)
@@ -3195,32 +1944,6 @@
     
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values for WBC, monocytes, and other WBC subtype differentials may not be from the same visit, so the harmonized subtype differential counts may not sum to the WBC count.
     
-<a id="monocyte_ncnc_bld_1-amish"></a>
-  * ### blood_cell_count/monocyte_ncnc_bld_1 -- **Amish**:
-    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253012.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-      
-        source_data <- phen_list$source_data
-         # monocyte_ncnc_bld units in cells/microliter - we want thousands/microliter - 10^9 cells/liter
-        dataset <- source_data[["pht005002"]]
-        dataset$monocytes_baseline <- as.numeric(dataset$monocytes_baseline)
-        names(dataset)[names(dataset) %in% "monocytes_baseline"] <- "monocyte_ncnc_bld"
-        dataset$monocyte_ncnc_bld <- dataset$monocyte_ncnc_bld / 1000
-      
-         # age - winsorize at 90
-         dataset$age_baseline[dataset$age_baseline %in% "90+"] <- 90
-         dataset$age_baseline <- as.numeric(dataset$age_baseline)
-         names(dataset)[names(dataset) %in% "age_baseline"] <- "age"
-      
-         # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$monocyte_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
 <a id="monocyte_ncnc_bld_1-aric"></a>
   * ### blood_cell_count/monocyte_ncnc_bld_1 -- **ARIC**:
     * 9 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004107.v2.phv00207262.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004108.v2.phv00207277.v1`, `phs000280.v4.pht006422.v1.phv00294954.v1`, `phs000280.v4.pht006422.v1.phv00294965.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
@@ -3324,110 +2047,6 @@
           return(dataset)
       }
       ```
-<a id="monocyte_ncnc_bld_1-fhs_gen3nosomni2"></a>
-  * ### blood_cell_count/monocyte_ncnc_bld_1 -- **FHS_Gen3NOSOmni2**:
-    * 3 component_study_variables: `phs000007.v29.pht002889.v2.phv00172178.v2`, `phs000007.v29.pht002889.v2.phv00172190.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-         # monocyte
-        dataset1 <- source_data[["pht002889"]]
-        dataset1$MO_PER <- as.numeric(dataset1$MO_PER)
-        dataset1$WBC <- as.numeric(dataset1$WBC)
-        dataset1$monocyte_ncnc_bld <- dataset1$WBC * dataset1$MO_PER / 100
-        dataset1$MO_PER <- NULL
-        dataset1$WBC <- NULL
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age2 <- as.numeric(dataset2$age2)
-        names(dataset2)[names(dataset2) %in% "age2"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$monocyte_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
-<a id="monocyte_ncnc_bld_1-fhs_offspring"></a>
-  * ### blood_cell_count/monocyte_ncnc_bld_1 -- **FHS_Offspring**:
-    * 4 component_study_variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227037.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-         source_data <- phen_list$source_data
-         # monocyte
-        dataset1 <- source_data[["pht004802"]]
-          # subset to Offspring
-        dataset1 <- dataset1[dataset1$IDTYPE %in% 1, ]
-        dataset1$IDTYPE <- NULL
-      
-        dataset1$MO_PER <- as.numeric(dataset1$MO_PER)
-        dataset1$WBC <- as.numeric(dataset1$WBC)
-        dataset1$monocyte_ncnc_bld <- dataset1$WBC * dataset1$MO_PER / 100
-        dataset1$MO_PER <- NULL
-        dataset1$WBC <- NULL
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age9 <- as.numeric(dataset2$age9)
-        names(dataset2)[names(dataset2) %in% "age9"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$monocyte_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
-<a id="monocyte_ncnc_bld_1-fhs_omni1"></a>
-  * ### blood_cell_count/monocyte_ncnc_bld_1 -- **FHS_Omni1**:
-    * 4 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227037.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-         # monocyte
-        dataset1 <- source_data[["pht004802"]]
-          # subset to Omni1
-        dataset1 <- dataset1[dataset1$IDTYPE %in% 7, ]
-        dataset1$IDTYPE <- NULL
-      
-        dataset1$MO_PER <- as.numeric(dataset1$MO_PER)
-        dataset1$WBC <- as.numeric(dataset1$WBC)
-        dataset1$monocyte_ncnc_bld <- dataset1$WBC * dataset1$MO_PER / 100
-        dataset1$MO_PER <- NULL
-        dataset1$WBC <- NULL
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age4 <- as.numeric(dataset2$age4)
-        names(dataset2)[names(dataset2) %in% "age4"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$monocyte_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
 <a id="monocyte_ncnc_bld_1-hchs_sol"></a>
   * ### blood_cell_count/monocyte_ncnc_bld_1 -- **HCHS_SOL**:
     * 3 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`, `phs000810.v1.pht004715.v1.phv00226286.v1`
@@ -3511,12 +2130,8 @@
 ## blood_cell_count: **neutrophil_ncnc_bld_1** (neutrophil_ncnc_bld)
   Count by volume, or number concentration (ncnc), of neutrophils in the blood (bld).
   * **Harmonization Units**:
-    * [Amish](#neutrophil_ncnc_bld_1-amish)
     * [ARIC](#neutrophil_ncnc_bld_1-aric)
     * [CARDIA](#neutrophil_ncnc_bld_1-cardia)
-    * [FHS_Gen3NOSOmni2](#neutrophil_ncnc_bld_1-fhs_gen3nosomni2)
-    * [FHS_Offspring](#neutrophil_ncnc_bld_1-fhs_offspring)
-    * [FHS_Omni1](#neutrophil_ncnc_bld_1-fhs_omni1)
     * [HCHS_SOL](#neutrophil_ncnc_bld_1-hchs_sol)
     * [JHS](#neutrophil_ncnc_bld_1-jhs)
     * [MESA](#neutrophil_ncnc_bld_1-mesa)
@@ -3563,32 +2178,6 @@
     
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values for WBC, neutrophils, and other WBC subtype differentials may not be from the same visit, so the harmonized subtype differential counts may not sum to the WBC count.
     
-<a id="neutrophil_ncnc_bld_1-amish"></a>
-  * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **Amish**:
-    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253011.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-      
-        source_data <- phen_list$source_data
-         # neutrophil_ncnc_bld units in cells/microliter - we want thousands/microliter - 10^9 cells/liter
-        dataset <- source_data[["pht005002"]]
-        dataset$neutrophils_baseline <- as.numeric(dataset$neutrophils_baseline)
-        names(dataset)[names(dataset) %in% "neutrophils_baseline"] <- "neutrophil_ncnc_bld"
-        dataset$neutrophil_ncnc_bld <- dataset$neutrophil_ncnc_bld / 1000
-      
-         # age - winsorize at 90
-         dataset$age_baseline[dataset$age_baseline %in% "90+"] <- 90
-         dataset$age_baseline <- as.numeric(dataset$age_baseline)
-         names(dataset)[names(dataset) %in% "age_baseline"] <- "age"
-      
-         # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$neutrophil_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
 <a id="neutrophil_ncnc_bld_1-aric"></a>
   * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **ARIC**:
     * 8 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004107.v2.phv00207259.v1`, `phs000280.v4.pht004107.v2.phv00207260.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004108.v2.phv00207274.v1`, `phs000280.v4.pht004108.v2.phv00207275.v1`
@@ -3704,110 +2293,6 @@
           return(dataset)
       }
       ```
-<a id="neutrophil_ncnc_bld_1-fhs_gen3nosomni2"></a>
-  * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **FHS_Gen3NOSOmni2**:
-    * 3 component_study_variables: `phs000007.v29.pht002889.v2.phv00172178.v2`, `phs000007.v29.pht002889.v2.phv00172188.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-         # neutrophil
-        dataset1 <- source_data[["pht002889"]]
-        dataset1$NE_PER <- as.numeric(dataset1$NE_PER)
-        dataset1$WBC <- as.numeric(dataset1$WBC)
-        dataset1$neutrophil_ncnc_bld <- dataset1$WBC * dataset1$NE_PER / 100
-        dataset1$NE_PER <- NULL
-        dataset1$WBC <- NULL
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age2 <- as.numeric(dataset2$age2)
-        names(dataset2)[names(dataset2) %in% "age2"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$neutrophil_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
-<a id="neutrophil_ncnc_bld_1-fhs_offspring"></a>
-  * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **FHS_Offspring**:
-    * 4 component_study_variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227035.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-        # neutrophil
-        dataset1 <- source_data[["pht004802"]]
-          # subset to Offspring
-        dataset1 <- dataset1[dataset1$IDTYPE %in% 1, ]
-        dataset1$IDTYPE <- NULL
-      
-        dataset1$NE_PER <- as.numeric(dataset1$NE_PER)
-        dataset1$WBC <- as.numeric(dataset1$WBC)
-        dataset1$neutrophil_ncnc_bld <- dataset1$WBC * dataset1$NE_PER / 100
-        dataset1$NE_PER <- NULL
-        dataset1$WBC <- NULL
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age9 <- as.numeric(dataset2$age9)
-        names(dataset2)[names(dataset2) %in% "age9"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$neutrophil_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
-<a id="neutrophil_ncnc_bld_1-fhs_omni1"></a>
-  * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **FHS_Omni1**:
-    * 4 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`, `phs000007.v29.pht004802.v1.phv00227035.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-         # neutrophil
-        dataset1 <- source_data[["pht004802"]]
-          # subset to Omni1
-        dataset1 <- dataset1[dataset1$IDTYPE %in% 7, ]
-        dataset1$IDTYPE <- NULL
-      
-        dataset1$NE_PER <- as.numeric(dataset1$NE_PER)
-        dataset1$WBC <- as.numeric(dataset1$WBC)
-        dataset1$neutrophil_ncnc_bld <- dataset1$WBC * dataset1$NE_PER / 100
-        dataset1$NE_PER <- NULL
-        dataset1$WBC <- NULL
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age4 <- as.numeric(dataset2$age4)
-        names(dataset2)[names(dataset2) %in% "age4"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$neutrophil_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
 <a id="neutrophil_ncnc_bld_1-hchs_sol"></a>
   * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **HCHS_SOL**:
     * 3 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`, `phs000810.v1.pht004715.v1.phv00226284.v1`
@@ -3898,13 +2383,9 @@
 ## blood_cell_count: **platelet_ncnc_bld_1** (platelet_ncnc_bld)
   Count by volume, or number concentration (ncnc), of platelets in the blood (bld).
   * **Harmonization Units**:
-    * [Amish](#platelet_ncnc_bld_1-amish)
     * [ARIC](#platelet_ncnc_bld_1-aric)
     * [CARDIA](#platelet_ncnc_bld_1-cardia)
     * [CHS](#platelet_ncnc_bld_1-chs)
-    * [FHS_Gen3NOSOmni2](#platelet_ncnc_bld_1-fhs_gen3nosomni2)
-    * [FHS_Offspring](#platelet_ncnc_bld_1-fhs_offspring)
-    * [FHS_Omni1](#platelet_ncnc_bld_1-fhs_omni1)
     * [HCHS_SOL](#platelet_ncnc_bld_1-hchs_sol)
     * [JHS](#platelet_ncnc_bld_1-jhs)
     * [MESA](#platelet_ncnc_bld_1-mesa)
@@ -3931,31 +2412,6 @@
     
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. 
     
-<a id="platelet_ncnc_bld_1-amish"></a>
-  * ### blood_cell_count/platelet_ncnc_bld_1 -- **Amish**:
-    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253009.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-      
-         source_data <- phen_list$source_data
-         # platelet_ncnc_bld units already thousands/microliter
-        dataset <- source_data[["pht005002"]]
-        dataset$platelet_count_baseline <- as.integer(dataset$platelet_count_baseline)
-        names(dataset)[names(dataset) %in% "platelet_count_baseline"] <- "platelet_ncnc_bld"
-      
-         # age - winsorize at 90
-         dataset$age_baseline[dataset$age_baseline %in% "90+"] <- 90
-         dataset$age_baseline <- as.numeric(dataset$age_baseline)
-         names(dataset)[names(dataset) %in% "age_baseline"] <- "age"
-      
-         # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$platelet_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
 <a id="platelet_ncnc_bld_1-aric"></a>
   * ### blood_cell_count/platelet_ncnc_bld_1 -- **ARIC**:
     * 10 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004107.v2.phv00207258.v1`, `phs000280.v4.pht004108.v2.phv00207273.v1`, `phs000280.v4.pht004109.v2.phv00207294.v1`, `phs000280.v4.pht004110.v2.phv00207306.v1`, `phs000280.v4.pht006422.v1.phv00294958.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
@@ -4073,101 +2529,6 @@
           return(dataset)
       }
       ```
-<a id="platelet_ncnc_bld_1-fhs_gen3nosomni2"></a>
-  * ### blood_cell_count/platelet_ncnc_bld_1 -- **FHS_Gen3NOSOmni2**:
-    * 2 component_study_variables: `phs000007.v29.pht002889.v2.phv00172186.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-         source_data <- phen_list$source_data
-         # platelet
-        dataset1 <- source_data[["pht002889"]]
-        dataset1$PLT <- as.integer(dataset1$PLT)
-        names(dataset1)[names(dataset1) %in% "PLT"] <- "platelet_ncnc_bld"
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age2 <- as.numeric(dataset2$age2)
-        names(dataset2)[names(dataset2) %in% "age2"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$platelet_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
-<a id="platelet_ncnc_bld_1-fhs_offspring"></a>
-  * ### blood_cell_count/platelet_ncnc_bld_1 -- **FHS_Offspring**:
-    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227033.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-         # platelet
-        dataset1 <- source_data[["pht004802"]]
-          # subset to Offspring
-        dataset1 <- dataset1[dataset1$IDTYPE %in% 1, ]
-        dataset1$IDTYPE <- NULL
-      
-        dataset1$PLT <- as.integer(dataset1$PLT)
-        names(dataset1)[names(dataset1) %in% "PLT"] <- "platelet_ncnc_bld"
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age9 <- as.numeric(dataset2$age9)
-        names(dataset2)[names(dataset2) %in% "age9"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$platelet_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
-<a id="platelet_ncnc_bld_1-fhs_omni1"></a>
-  * ### blood_cell_count/platelet_ncnc_bld_1 -- **FHS_Omni1**:
-    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227033.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-         # platelet
-        dataset1 <- source_data[["pht004802"]]
-        # choose Omni1 cohort
-        dataset1 <- dataset1[dataset1$IDTYPE %in% 7, ]
-      
-        dataset1$PLT <- as.integer(dataset1$PLT)
-        names(dataset1)[names(dataset1) %in% "PLT"] <- "platelet_ncnc_bld"
-        dataset1$IDTYPE <- NULL
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age4 <- as.numeric(dataset2$age4)
-        names(dataset2)[names(dataset2) %in% "age4"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$platelet_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
 <a id="platelet_ncnc_bld_1-hchs_sol"></a>
   * ### blood_cell_count/platelet_ncnc_bld_1 -- **HCHS_SOL**:
     * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226310.v1`
@@ -4279,9 +2640,6 @@
   Measurement of the mean volume (entvol) of platelets in the blood (bld), known as mean platelet volume (MPV or PMV).
   * **Harmonization Units**:
     * [ARIC](#pmv_entvol_bld_1-aric)
-    * [FHS_Gen3NOSOmni2](#pmv_entvol_bld_1-fhs_gen3nosomni2)
-    * [FHS_Offspring](#pmv_entvol_bld_1-fhs_offspring)
-    * [FHS_Omni1](#pmv_entvol_bld_1-fhs_omni1)
     * [JHS](#pmv_entvol_bld_1-jhs)
   * **Metadata**:
     **`Data Type`**: decimal, **`Measurement Units`**: fL = femtoliter, **`Version`**: 2, **`Has Age Variable`**: Yes, **`Date Harmonized`**: 2018-09-28 15:33:16
@@ -4323,101 +2681,6 @@
          return(datafnl)
       }
       ```
-<a id="pmv_entvol_bld_1-fhs_gen3nosomni2"></a>
-  * ### blood_cell_count/pmv_entvol_bld_1 -- **FHS_Gen3NOSOmni2**:
-    * 2 component_study_variables: `phs000007.v29.pht002889.v2.phv00172187.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-        source_data <- phen_list$source_data
-      
-         # pmv_entvol_bld units = fL (femtoliter) mean platelet volume
-        dataset1 <- source_data[["pht002889"]]
-        dataset1$MPV <- as.numeric(dataset1$MPV)
-        names(dataset1)[names(dataset1) %in% "MPV"] <- "pmv_entvol_bld"
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age2 <- as.numeric(dataset2$age2)
-        names(dataset2)[names(dataset2) %in% "age2"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$pmv_entvol_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
-<a id="pmv_entvol_bld_1-fhs_offspring"></a>
-  * ### blood_cell_count/pmv_entvol_bld_1 -- **FHS_Offspring**:
-    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227034.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-        dataset1 <- source_data[["pht004802"]]
-        # choose Offspring cohort
-        dataset1 <- dataset1[dataset1$IDTYPE %in% 1, ]
-      
-         # pmv_entvol_bld units = fL (femtoliter) mean platelet volume
-        dataset1$MPV <- as.numeric(dataset1$MPV)
-        names(dataset1)[names(dataset1) %in% "MPV"] <- "pmv_entvol_bld"
-        dataset1$IDTYPE <- NULL
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age9 <- as.numeric(dataset2$age9)
-        names(dataset2)[names(dataset2) %in% "age9"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$pmv_entvol_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
-<a id="pmv_entvol_bld_1-fhs_omni1"></a>
-  * ### blood_cell_count/pmv_entvol_bld_1 -- **FHS_Omni1**:
-    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227034.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-        dataset1 <- source_data[["pht004802"]]
-        # choose Omni1 cohort
-        dataset1 <- dataset1[dataset1$IDTYPE %in% 7, ]
-      
-         # pmv_entvol_bld units = fL (femtoliter) mean platelet volume
-        dataset1$MPV <- as.numeric(dataset1$MPV)
-        names(dataset1)[names(dataset1) %in% "MPV"] <- "pmv_entvol_bld"
-        dataset1$IDTYPE <- NULL
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age4 <- as.numeric(dataset2$age4)
-        names(dataset2)[names(dataset2) %in% "age4"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$pmv_entvol_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
 <a id="pmv_entvol_bld_1-jhs"></a>
   * ### blood_cell_count/pmv_entvol_bld_1 -- **JHS**:
     * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127627.v1`
@@ -4451,12 +2714,8 @@
 ## blood_cell_count: **rbc_ncnc_bld_1** (rbc_ncnc_bld)
   Count by volume, or number concentration (ncnc), of red blood cells in the blood (bld).
   * **Harmonization Units**:
-    * [Amish](#rbc_ncnc_bld_1-amish)
     * [ARIC](#rbc_ncnc_bld_1-aric)
     * [CARDIA](#rbc_ncnc_bld_1-cardia)
-    * [FHS_Gen3NOSOmni2](#rbc_ncnc_bld_1-fhs_gen3nosomni2)
-    * [FHS_Offspring](#rbc_ncnc_bld_1-fhs_offspring)
-    * [FHS_Omni1](#rbc_ncnc_bld_1-fhs_omni1)
     * [HCHS_SOL](#rbc_ncnc_bld_1-hchs_sol)
     * [JHS](#rbc_ncnc_bld_1-jhs)
     * [MESA](#rbc_ncnc_bld_1-mesa)
@@ -4483,31 +2742,6 @@
     
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values of red blood cell count (RBC) and other red blood cell phenotypes may not be from the same visit.
     
-<a id="rbc_ncnc_bld_1-amish"></a>
-  * ### blood_cell_count/rbc_ncnc_bld_1 -- **Amish**:
-    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253010.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-      
-        source_data <- phen_list$source_data
-         # RBC_count units already millions/microliter
-        dataset <- source_data[["pht005002"]]
-        dataset$red_blood_cell_count_baseline <- as.numeric(dataset$red_blood_cell_count_baseline)
-        names(dataset)[names(dataset) %in% "red_blood_cell_count_baseline"] <- "rbc_ncnc_bld"
-      
-         # age - winsorize at 90
-         dataset$age_baseline[dataset$age_baseline %in% "90+"] <- 90
-         dataset$age_baseline <- as.numeric(dataset$age_baseline)
-         names(dataset)[names(dataset) %in% "age_baseline"] <- "age"
-      
-         # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$rbc_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
 <a id="rbc_ncnc_bld_1-aric"></a>
   * ### blood_cell_count/rbc_ncnc_bld_1 -- **ARIC**:
     * 6 component_study_variables: `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004109.v2.phv00207287.v1`, `phs000280.v4.pht004110.v2.phv00207299.v1`, `phs000280.v4.pht006422.v1.phv00294955.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
@@ -4596,146 +2830,6 @@
           return(dataset)
       }
       ```
-<a id="rbc_ncnc_bld_1-fhs_gen3nosomni2"></a>
-  * ### blood_cell_count/rbc_ncnc_bld_1 -- **FHS_Gen3NOSOmni2**:
-    * 2 component_study_variables: `phs000007.v29.pht002889.v2.phv00172179.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-         # RBC
-        dataset1 <- source_data[["pht002889"]]
-        dataset1$RBC <- as.numeric(dataset1$RBC)
-        names(dataset1)[names(dataset1) %in% "RBC"] <- "rbc_ncnc_bld"
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age2 <- as.numeric(dataset2$age2)
-        names(dataset2)[names(dataset2) %in% "age2"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$rbc_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
-<a id="rbc_ncnc_bld_1-fhs_offspring"></a>
-  * ### blood_cell_count/rbc_ncnc_bld_1 -- **FHS_Offspring**:
-    * 7 component_study_variables: `phs000007.v29.pht000030.v7.phv00007641.v5`, `phs000007.v29.pht000031.v7.phv00008109.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227026.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-         # RBC
-        var <- "rbc_ncnc_bld"
-      
-        # Offspring exam 9
-        dataset9 <- source_data[["pht004802"]]
-        # subset to Offspring
-        dataset9 <- dataset9[dataset9$IDTYPE %in% 1, ]
-        dataset9$IDTYPE <- NULL
-      
-        dataset9$RBC <- as.numeric(dataset9$RBC)
-      
-        # Offspring exam 2
-        dataset2 <- source_data[["pht000031"]]
-        dataset2$B762 <- as.numeric(dataset2$B762)
-      
-        # Recode: hundred millions/microliter - need millions/microliter - so divide by 100
-        dataset2$B762 <- dataset2$B762 / 100
-      
-         # Offspring exam 1
-        dataset1 <- source_data[["pht000030"]]
-        dataset1$A139 <- as.numeric(dataset1$A139)
-      
-        # Recode: hundred millions/microliter - need millions/microliter - so divide by 100
-        dataset1$A139 <- dataset1$A139 / 100
-      
-        # ages
-        dataseta <- source_data[["pht003099"]]
-        dataseta$age9 <- as.numeric(dataseta$age9)
-        dataseta$age2 <- as.numeric(dataseta$age2)
-        dataseta$age1 <- as.numeric(dataseta$age1)
-      
-        # add appropriate ages to datasets
-        dataset9 <- inner_join(dataset9, dataseta)
-        dataset9$age2 <- NULL
-        dataset9$age1 <- NULL
-      
-        dataset2 <- inner_join(dataset2, dataseta)
-        dataset2$age9 <- NULL
-        dataset2$age1 <- NULL
-      
-        dataset1 <- inner_join(dataset1, dataseta)
-        dataset1$age9 <- NULL
-        dataset1$age2 <- NULL
-      
-        sel <- !is.na(dataset9$RBC) & !is.na(dataset9$age9)
-        keep9 <- dataset9[sel, ]
-        names(keep9)[names(keep9) == "RBC"] <- var
-        names(keep9)[names(keep9) == "age9"] <- "age"
-      
-        dataset2 <- anti_join(dataset2, keep9)
-        sel2 <- !is.na(dataset2$B762) & !is.na(dataset2$age2)
-        keep2 <- dataset2[sel2, ]
-        names(keep2)[names(keep2) == "B762"] <- var
-        names(keep2)[names(keep2) == "age2"] <- "age"
-      
-        keep <- rbind(keep9, keep2)
-      
-        dataset1 <- anti_join(dataset1, keep)
-        sel1 <-  !is.na(dataset1$A139) & !is.na(dataset1$age1)
-        keep1 <- dataset1[sel1, ]
-        names(keep1)[names(keep1) == "A139"] <- var
-        names(keep1)[names(keep1) == "age1"] <- "age"
-      
-        # combine
-        dataset <- rbind(keep, keep1)
-      
-        return(dataset)
-      }
-      ```
-<a id="rbc_ncnc_bld_1-fhs_omni1"></a>
-  * ### blood_cell_count/rbc_ncnc_bld_1 -- **FHS_Omni1**:
-    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227026.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-         # RBC
-        dataset1 <- source_data[["pht004802"]]
-        # choose Omni1 cohort
-        dataset1 <- dataset1[dataset1$IDTYPE %in% 7, ]
-      
-        dataset1$RBC <- as.numeric(dataset1$RBC)
-        names(dataset1)[names(dataset1) %in% "RBC"] <- "rbc_ncnc_bld"
-        dataset1$IDTYPE <- NULL
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age4 <- as.numeric(dataset2$age4)
-        names(dataset2)[names(dataset2) %in% "age4"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$rbc_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
 <a id="rbc_ncnc_bld_1-hchs_sol"></a>
   * ### blood_cell_count/rbc_ncnc_bld_1 -- **HCHS_SOL**:
     * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226294.v1`
@@ -4813,9 +2907,6 @@
   Measurement of the ratio of variation in width to the mean width of the red blood cell (rbc) volume distribution curve taken at +/- 1 CV, known as red cell distribution width (RDW).
   * **Harmonization Units**:
     * [ARIC](#rdw_ratio_rbc_1-aric)
-    * [FHS_Gen3NOSOmni2](#rdw_ratio_rbc_1-fhs_gen3nosomni2)
-    * [FHS_Offspring](#rdw_ratio_rbc_1-fhs_offspring)
-    * [FHS_Omni1](#rdw_ratio_rbc_1-fhs_omni1)
     * [HCHS_SOL](#rdw_ratio_rbc_1-hchs_sol)
     * [JHS](#rdw_ratio_rbc_1-jhs)
   * **Metadata**:
@@ -4898,103 +2989,6 @@
          return(datafnl)
       }
       ```
-<a id="rdw_ratio_rbc_1-fhs_gen3nosomni2"></a>
-  * ### blood_cell_count/rdw_ratio_rbc_1 -- **FHS_Gen3NOSOmni2**:
-    * 2 component_study_variables: `phs000007.v29.pht002889.v2.phv00172185.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-      
-         #rdw_ratio_rbc  units = %  red blood cell distribution width
-        dataset1 <- source_data[["pht002889"]]
-        dataset1$RDW <- as.numeric(dataset1$RDW)
-        names(dataset1)[names(dataset1) %in% "RDW"] <- "rdw_ratio_rbc"
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age2 <- as.numeric(dataset2$age2)
-        names(dataset2)[names(dataset2) %in% "age2"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$rdw_ratio_rbc)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
-<a id="rdw_ratio_rbc_1-fhs_offspring"></a>
-  * ### blood_cell_count/rdw_ratio_rbc_1 -- **FHS_Offspring**:
-    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227032.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-        source_data <- phen_list$source_data
-      
-        dataset1 <- source_data[["pht004802"]]
-        # choose Offspring cohort
-        dataset1 <- dataset1[dataset1$IDTYPE %in% 1, ]
-      
-         # rdw_ratio_rbc units = %  red blood cell distribution width
-        dataset1$RDW <- as.numeric(dataset1$RDW)
-        names(dataset1)[names(dataset1) %in% "RDW"] <- "rdw_ratio_rbc"
-        dataset1$IDTYPE <- NULL
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age9 <- as.numeric(dataset2$age9)
-        names(dataset2)[names(dataset2) %in% "age9"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$rdw_ratio_rbc)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
-<a id="rdw_ratio_rbc_1-fhs_omni1"></a>
-  * ### blood_cell_count/rdw_ratio_rbc_1 -- **FHS_Omni1**:
-    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227032.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-      
-        dataset1 <- source_data[["pht004802"]]
-        # choose Omni1 cohort
-        dataset1 <- dataset1[dataset1$IDTYPE %in% 7, ]
-      
-         # rdw_ratio_rbc  units = %  red blood cell distribution width
-        dataset1$RDW <- as.numeric(dataset1$RDW)
-        names(dataset1)[names(dataset1) %in% "RDW"] <- "rdw_ratio_rbc"
-        dataset1$IDTYPE <- NULL
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age4 <- as.numeric(dataset2$age4)
-        names(dataset2)[names(dataset2) %in% "age4"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$rdw_ratio_rbc)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
 <a id="rdw_ratio_rbc_1-hchs_sol"></a>
   * ### blood_cell_count/rdw_ratio_rbc_1 -- **HCHS_SOL**:
     * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226308.v1`
@@ -5049,13 +3043,9 @@
 ## blood_cell_count: **wbc_ncnc_bld_1** (wbc_ncnc_bld)
   Count by volume, or number concentration (ncnc), of white blood cells in the blood (bld).
   * **Harmonization Units**:
-    * [Amish](#wbc_ncnc_bld_1-amish)
     * [ARIC](#wbc_ncnc_bld_1-aric)
     * [CARDIA](#wbc_ncnc_bld_1-cardia)
     * [CHS](#wbc_ncnc_bld_1-chs)
-    * [FHS_Gen3NOSOmni2](#wbc_ncnc_bld_1-fhs_gen3nosomni2)
-    * [FHS_Offspring](#wbc_ncnc_bld_1-fhs_offspring)
-    * [FHS_Omni1](#wbc_ncnc_bld_1-fhs_omni1)
     * [HCHS_SOL](#wbc_ncnc_bld_1-hchs_sol)
     * [JHS](#wbc_ncnc_bld_1-jhs)
     * [MESA](#wbc_ncnc_bld_1-mesa)
@@ -5088,31 +3078,6 @@
     
     
     
-<a id="wbc_ncnc_bld_1-amish"></a>
-  * ### blood_cell_count/wbc_ncnc_bld_1 -- **Amish**:
-    * 2 component_study_variables: `phs000956.v2.pht005002.v1.phv00252976.v1`, `phs000956.v2.pht005002.v1.phv00253006.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-      
-        source_data <- phen_list$source_data
-         # WBC_count units already thousands/microliter
-        dataset <- source_data[["pht005002"]]
-        dataset$white_blood_cell_count_baseline <- as.numeric(dataset$white_blood_cell_count_baseline)
-        names(dataset)[names(dataset) %in% "white_blood_cell_count_baseline"] <- "wbc_ncnc_bld"
-      
-         # age - winsorize at 90
-         dataset$age_baseline[dataset$age_baseline %in% "90+"] <- 90
-         dataset$age_baseline <- as.numeric(dataset$age_baseline)
-         names(dataset)[names(dataset) %in% "age_baseline"] <- "age"
-      
-         # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$wbc_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
 <a id="wbc_ncnc_bld_1-aric"></a>
   * ### blood_cell_count/wbc_ncnc_bld_1 -- **ARIC**:
     * 10 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004109.v2.phv00207286.v1`, `phs000280.v4.pht004110.v2.phv00207298.v1`, `phs000280.v4.pht006422.v1.phv00294954.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
@@ -5227,146 +3192,6 @@
               select(topmed_subject_id, age, wbc_ncnc_bld) %>% na.omit
       
           return(dataset)
-      }
-      ```
-<a id="wbc_ncnc_bld_1-fhs_gen3nosomni2"></a>
-  * ### blood_cell_count/wbc_ncnc_bld_1 -- **FHS_Gen3NOSOmni2**:
-    * 2 component_study_variables: `phs000007.v29.pht002889.v2.phv00172178.v2`, `phs000007.v29.pht003099.v4.phv00177932.v4`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-         # WBC
-        dataset1 <- source_data[["pht002889"]]
-        dataset1$WBC <- as.numeric(dataset1$WBC)
-        names(dataset1)[names(dataset1) %in% "WBC"] <- "wbc_ncnc_bld"
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age2 <- as.numeric(dataset2$age2)
-        names(dataset2)[names(dataset2) %in% "age2"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$wbc_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
-      }
-      ```
-<a id="wbc_ncnc_bld_1-fhs_offspring"></a>
-  * ### blood_cell_count/wbc_ncnc_bld_1 -- **FHS_Offspring**:
-    * 7 component_study_variables: `phs000007.v29.pht000030.v7.phv00007640.v5`, `phs000007.v29.pht000031.v7.phv00008108.v5`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177932.v4`, `phs000007.v29.pht003099.v4.phv00177946.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-         # WBC
-        var <- "wbc_ncnc_bld"
-      
-        # Offspring exam 9
-        dataset9 <- source_data[["pht004802"]]
-        # subset to Offspring
-        dataset9 <- dataset9[dataset9$IDTYPE %in% 1, ]
-        dataset9$IDTYPE <- NULL
-      
-        dataset9$WBC <- as.numeric(dataset9$WBC)
-      
-        # Offspring exam 2
-        dataset2 <- source_data[["pht000031"]]
-        dataset2$B761 <- as.numeric(dataset2$B761)
-      
-        # Recode: ten thousands/microliter - need thousands/microliter - so divide by 10
-        dataset2$B761 <- dataset2$B761 / 10
-      
-         # Offspring exam 1
-        dataset1 <- source_data[["pht000030"]]
-        dataset1$A138 <- as.numeric(dataset1$A138)
-      
-        # Recode: ten thousands/microliter - need thousands/microliter - so divide by 10
-        dataset1$A138 <- dataset1$A138 / 10
-      
-        # ages
-        dataseta <- source_data[["pht003099"]]
-        dataseta$age9 <- as.numeric(dataseta$age9)
-        dataseta$age2 <- as.numeric(dataseta$age2)
-        dataseta$age1 <- as.numeric(dataseta$age1)
-      
-        # add appropriate ages to datasets
-        dataset9 <- inner_join(dataset9, dataseta)
-        dataset9$age2 <- NULL
-        dataset9$age1 <- NULL
-      
-        dataset2 <- inner_join(dataset2, dataseta)
-        dataset2$age9 <- NULL
-        dataset2$age1 <- NULL
-      
-        dataset1 <- inner_join(dataset1, dataseta)
-        dataset1$age9 <- NULL
-        dataset1$age2 <- NULL
-      
-        sel <- !is.na(dataset9$WBC) & !is.na(dataset9$age9)
-        keep9 <- dataset9[sel, ]
-        names(keep9)[names(keep9) == "WBC"] <- var
-        names(keep9)[names(keep9) == "age9"] <- "age"
-      
-        dataset2 <- anti_join(dataset2, keep9)
-        sel2 <- !is.na(dataset2$B761) & !is.na(dataset2$age2)
-        keep2 <- dataset2[sel2, ]
-        names(keep2)[names(keep2) == "B761"] <- var
-        names(keep2)[names(keep2) == "age2"] <- "age"
-      
-        keep <- rbind(keep9, keep2)
-      
-        dataset1 <- anti_join(dataset1, keep)
-        sel1 <-  !is.na(dataset1$A138) & !is.na(dataset1$age1)
-        keep1 <- dataset1[sel1, ]
-        names(keep1)[names(keep1) == "A138"] <- var
-        names(keep1)[names(keep1) == "age1"] <- "age"
-      
-        # combine
-        dataset <- rbind(keep, keep1)
-      
-        return(dataset)
-      }
-      ```
-<a id="wbc_ncnc_bld_1-fhs_omni1"></a>
-  * ### blood_cell_count/wbc_ncnc_bld_1 -- **FHS_Omni1**:
-    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177936.v4`, `phs000007.v29.pht004802.v1.phv00227024.v1`, `phs000007.v29.pht004802.v1.phv00227025.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list) {
-        library("dplyr")
-      
-        source_data <- phen_list$source_data
-         # WBC
-        dataset1 <- source_data[["pht004802"]]
-        # choose Omni1 cohort
-        dataset1 <- dataset1[dataset1$IDTYPE %in% 7, ]
-      
-        dataset1$WBC <- as.numeric(dataset1$WBC)
-        names(dataset1)[names(dataset1) %in% "WBC"] <- "wbc_ncnc_bld"
-        dataset1$IDTYPE <- NULL
-      
-        # age
-        dataset2 <- source_data[["pht003099"]]
-        dataset2$age4 <- as.numeric(dataset2$age4)
-        names(dataset2)[names(dataset2) %in% "age4"] <- "age"
-      
-        # combine
-        dataset <- inner_join(dataset1, dataset2)
-      
-        # subset to non-missing values
-        sel <- !is.na(dataset$age) & !is.na(dataset$wbc_ncnc_bld)
-        dataset <- dataset[sel, ]
-      
-        return(dataset)
       }
       ```
 <a id="wbc_ncnc_bld_1-hchs_sol"></a>

@@ -632,7 +632,6 @@
 ## atherosclerosis_events_prior: **coronary_revascularization_prior_1** (coronary_revascularization_prior)
   An indicator of whether a subject had a coronary revascularization procedure prior to the start of the baseline visit. This includes angioplasty, CABG, and other coronary revascularization procedures.
   * **Harmonization Units**:
-    * [GENOA](#coronary_revascularization_prior_1-genoa)
   * **Metadata**:
     **`Data Type`**: encoded, **`Measurement Units`**: coronary_revascularization_prior, **`Version`**: 1, **`Has Age Variable`**: Yes, **`Date Harmonized`**: 2019-10-31 16:32:57
   * **Controlled Vocabulary**:
@@ -650,61 +649,14 @@
     | GENOA | Self-report |
     
     
-<a id="coronary_revascularization_prior_1-genoa"></a>
-  * ### atherosclerosis_events_prior/coronary_revascularization_prior_1 -- **GENOA**:
-    * 4 component_study_variables: `phs001238.v2.pht006039.v1.phv00277507.v1`, `phs001238.v2.pht006043.v1.phv00277602.v1`, `phs001238.v2.pht006653.v1.phv00307788.v1`, `phs001238.v2.pht006657.v1.phv00307883.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-        library(dplyr)
-        library(magrittr)
-      
-        # Join datasets with age and revascularization events - Eu cohort.
-        dataset_eu <- dplyr::full_join(phen_list$source_data$pht006657,
-          phen_list$source_data$pht006653) %>%
-          rename(age = AGE, coronary_revascularization_prior = ARTERIES)
-      
-        dataset_eu2 <- dataset_eu %>%
-          mutate(coronary_revascularization_prior =
-                 case_when(coronary_revascularization_prior == "No" ~ 0,
-                           coronary_revascularization_prior == "Yes" ~ 1,
-                           TRUE ~ NA_real_))
-      
-        # Join datasets with age and revascularization events - AA cohort.
-        dataset_aa <- dplyr::full_join(phen_list$source_data$pht006043,
-          phen_list$source_data$pht006039) %>%
-          rename(age = AGE, coronary_revascularization_prior = ARTERIES)
-      
-        dataset_aa2 <- dataset_aa %>%
-          mutate(coronary_revascularization_prior =
-               case_when(coronary_revascularization_prior == "No" ~ 0,
-                         coronary_revascularization_prior == "Yes" ~ 1,
-                         TRUE ~ NA_real_))
-      
-      
-        # Combine AA and Eu datasets.
-        dataset <- rbind(dataset_aa2, dataset_eu2)
-      
-        # Convert revascularization_prior to character, age to numeric.
-        dataset$coronary_revascularization_prior <- as.character(dataset$coronary_revascularization_prior)
-        dataset$age <- as.numeric(dataset$age)
-      
-        # Remove NAs.
-        dataset <- na.omit(dataset)
-      
-        return(dataset)
-      }
-      ```
 <a id="mi_prior_1"></a>
 ## atherosclerosis_events_prior: **mi_prior_1** (mi_prior)
   An indicator of whether a subject had a myocardial infarction (MI) prior to the start of the baseline visit.
   * **Harmonization Units**:
-    * [Amish](#mi_prior_1-amish)
     * [ARIC](#mi_prior_1-aric)
     * [CHS](#mi_prior_1-chs)
     * [COPDGene](#mi_prior_1-copdgene)
     * [FHS](#mi_prior_1-fhs)
-    * [GENOA](#mi_prior_1-genoa)
     * [JHS](#mi_prior_1-jhs)
     * [MESA](#mi_prior_1-mesa)
     * [WHI](#mi_prior_1-whi)
@@ -736,23 +688,6 @@
     | COPDGene | Self-report |
     | WHI | Self-report |
     
-<a id="mi_prior_1-amish"></a>
-  * ### atherosclerosis_events_prior/mi_prior_1 -- **Amish**:
-    * 2 component_study_variables: `phs000956.v3.pht005002.v1.phv00252976.v1`, `phs000956.v3.pht005002.v1.phv00252984.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-        dat <- transmute(phen_list$source_data$pht005002, topmed_subject_id,
-                         # Rename MI variable.
-                         mi_prior = mi_baseline,
-                         # Recode Winsorized values and convert age to numeric.
-                         age = as.numeric(case_when(age_baseline == "90+" ~ "90",
-                                                    TRUE ~ age_baseline))) %>%
-          # Exclude rows with missing data.
-          na.omit()
-        return(dat)
-      }
-      ```
 <a id="mi_prior_1-aric"></a>
   * ### atherosclerosis_events_prior/mi_prior_1 -- **ARIC**:
     * 2 component_study_variables: `phs000280.v5.pht004063.v2.phv00204705.v1`, `phs000280.v5.pht004063.v2.phv00204712.v1`
@@ -901,51 +836,6 @@
             na.omit()
       
           return(dat_combined)
-      }
-      ```
-<a id="mi_prior_1-genoa"></a>
-  * ### atherosclerosis_events_prior/mi_prior_1 -- **GENOA**:
-    * 4 component_study_variables: `phs001238.v2.pht006039.v1.phv00277507.v1`, `phs001238.v2.pht006043.v1.phv00277598.v1`, `phs001238.v2.pht006653.v1.phv00307788.v1`, `phs001238.v2.pht006657.v1.phv00307879.v1`
-    * Function:
-      ```r
-      harmonize <- function(phen_list){
-        library(dplyr)
-        library(magrittr)
-      
-        # Join datasets with age and MI events - Eu cohort.
-        dataset_eu <- dplyr::full_join(phen_list$source_data$pht006657,
-          phen_list$source_data$pht006653) %>%
-          rename(age = AGE, mi_prior = MI)
-      
-        dataset_eu2 <- dataset_eu %>%
-            mutate(mi_prior =
-                   case_when(mi_prior == "No" ~ 0,
-                             mi_prior == "Yes" ~ 1,
-                             TRUE ~ NA_real_))
-      
-        # Join datasets with age and MI events - AA cohort.
-        dataset_aa <- dplyr::full_join(phen_list$source_data$pht006043,
-          phen_list$source_data$pht006039) %>%
-          rename(age = AGE, mi_prior = MI)
-      
-        dataset_aa2 <- dataset_aa %>%
-          mutate(mi_prior =
-                 case_when(mi_prior == "No" ~ 0,
-                           mi_prior == "Yes" ~ 1,
-                           TRUE ~ NA_real_))
-      
-      
-        # Combine AA and Eu datasets.
-        dataset <- rbind(dataset_aa2, dataset_eu2)
-      
-        # Convert age to numeric and mi_prior to character.
-        dataset$age <- as.numeric(dataset$age)
-        dataset$mi_prior <- as.character(dataset$mi_prior)
-      
-        # Remove NAs.
-        dataset <- na.omit(dataset)
-      
-        return(dataset)
       }
       ```
 <a id="mi_prior_1-jhs"></a>
