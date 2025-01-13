@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 from collections import defaultdict, Counter
 import re
+import pandas as pd
 
 prioritized_studies = ['ARIC','CARDIA','CHS','COPDGene','FHS','HCHS_SOL','JHS','MESA','WHI']
 
@@ -29,6 +30,16 @@ def generate_markdown(root_dir, output_dir, output_index):
     component_var_lists = {}
     study_vars = []
     harm_vars = []
+    # for printing out hyperlinks for google sheet: https://docs.google.com/spreadsheets/d/1G-AIk2m4UCDfh1OvFID3bewQXqxExeKNNmVxaswLT8E/edit?gid=979420329#gid=979420329&range=D:D
+    var_links = {}
+
+    # dbGap metadata is available for some phv vals
+    df = pd.read_csv('../merged-TOPMed-harmonized-data-file/merged_variables.csv') # Read the CSV file
+    df = df.drop('TOPMed Harmonized Variable', axis=1)
+    df = df.drop_duplicates(keep='first')
+    dbgap_metadata = df.set_index('TOPMed Component ID').to_dict('index')
+
+    study_names = df.iloc[:, [1, 9]].drop_duplicates().dropna().set_index('TOPMed Study').to_dict()['dbGap Study Name']
 
     # Store structure for TOC
     structure = defaultdict(lambda: defaultdict(list))
@@ -41,6 +52,8 @@ def generate_markdown(root_dir, output_dir, output_index):
         with open(json_file, 'r') as f:
             data = json.load(f)
 
+        var_links[data['name']] = f"""=HYPERLINK("https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/blob/main/resources/human-readable-harmonized-variable-documentation/generated-doc-pages/{directory}.md#{data['name']}", "{data['name']}")"""
+
         # Store variable name for file-level TOC
         structure[directory][data['name']] = []
 
@@ -49,6 +62,8 @@ def generate_markdown(root_dir, output_dir, output_index):
             for unit in data['harmonization_units']:
                 if unit['name'] in prioritized_studies:
                     structure[directory][data['name']].append(unit['name'])
+        else:
+            continue
 
         section = []
 
@@ -102,7 +117,8 @@ def generate_markdown(root_dir, output_dir, output_index):
                 if unit['name'] not in prioritized_studies:
                     continue
                 harmonization_units += 1
-                unit_heading = f"  * ### {directory}/{data['name']} -- **{unit['name']}**:"
+                dbgap_study_name = study_names.get(unit['name'], '')
+                unit_heading = f"  * ### {directory}/{data['name']} -- **{unit['name']} {dbgap_study_name}**:"
                 unit_anchor = create_anchor(f"{data['name']}-{unit['name']}")
                 section.append(f'<a id="{unit_anchor}"></a>')
                 section.append(unit_heading)
@@ -111,9 +127,21 @@ def generate_markdown(root_dir, output_dir, output_index):
                 if unit.get('component_study_variables'):
                     file_study_vars = unit['component_study_variables']
                     study_vars.extend(file_study_vars)
-                    vars_text = ", ".join(f"`{var}`" for var in file_study_vars)
-                    section.append(f"    * {len(unit['component_study_variables'])} component_study_variables: {vars_text}")
-                    # component_var_lists.append(f"#### {len(file_study_vars)} study vars in {directory}/{data['name']}/{unit['name']}:\n{vars_text}")
+                    # vars_text = ", ".join(f"`{var}`" for var in file_study_vars)
+                    # section.append(f"    * {len(unit['component_study_variables'])} component_study_variables: {vars_text}")
+                    section.append(f"    * {len(unit['component_study_variables'])} component_study_variables")
+                    for var in file_study_vars:
+                        vartext = f"      * _{var}_"
+                        md = dbgap_metadata.get(var)
+                        mdtext = []
+                        if md:
+                            mdtext.append(f"Name: **{md['dbGap Variable Name']}**")
+                            mdtext.append(f"Desc: **{md['dbGap Variable Description']}**")
+                            mdtext.append(f"Table: **{md['dbGap pht Name']}**")
+                            vartext += f". dbGap {', '.join(mdtext)}."
+                        else:
+                            vartext += f". No dbGap metadata available."
+                        section.append(vartext)
                     component_var_lists[f"{directory}/{data['name']}/{unit['name']}"] = file_study_vars
                 else:
                     zeros.append("component_study_variables")
@@ -133,7 +161,7 @@ def generate_markdown(root_dir, output_dir, output_index):
                     section.append(f"    * Does not use {' or '.join(zeros)}")
 
                 if unit.get('harmonization_function'):
-                    section.append("    * Function:")
+                    section.append("    * **Function:**")
                     code = format_code(unit['harmonization_function'])
                     indented_code = '\n'.join('      ' + line for line in code.split('\n'))
                     section.append(indented_code)
@@ -160,11 +188,11 @@ def generate_markdown(root_dir, output_dir, output_index):
 
             # Add file-level TOC for this directory
             f.write("\n### Variables in this section:\n")
-            print(sorted(structure[directory].keys()))
+            # print(sorted(structure[directory].keys()))
             for var_name in sorted(structure[directory].keys()):
                 var_anchor = create_anchor(f"{var_name}")
                 f.write(f"* [{var_name}](#{var_anchor})\n")
-                print(f"{directory}/{var_name}: {var_anchor}")
+                # print(f"{directory}/{var_name}: {var_anchor}")
             f.write("\n")
 
             f.write('\n'.join(sections[directory]))
@@ -196,6 +224,25 @@ def generate_markdown(root_dir, output_dir, output_index):
         # f.write("# Component variables count of uses in harmonization units:\n")
         # f.write('\n'.join([f"{k}: {sc[k]}" for k in sc.keys()]))
         # f.write("\n")
+
+    vars_in_gsheet_order = [
+        'angina_incident_1', 'cabg_incident_1', 'cad_followup_start_age_1', 'chd_death_definite_1',
+        'chd_death_probable_1', 'coronary_angioplasty_incident_1', 'mi_incident_1', 'pad_incident_1', 'angina_prior_1',
+        'cabg_prior_1', 'coronary_angioplasty_prior_1', 'coronary_revascularization_prior_1', 'mi_prior_1',
+        'pad_prior_1', 'annotated_sex_1', 'geographic_site_1', 'hispanic_or_latino_1', 'hispanic_subgroup_1',
+        'race_us_1', 'subcohort_1', 'bmi_baseline_1', 'current_smoker_baseline_1', 'ever_smoker_baseline_1',
+        'height_baseline_1', 'weight_baseline_1', 'sleep_duration_1', 'cd40_1', 'crp_1', 'eselectin_1', 'icam1_1',
+        'il1_beta_1', 'il10_1', 'il18_1', 'il6_1', 'isoprostane_8_epi_pgf2a_1', 'lppla2_act_1', 'lppla2_mass_1',
+        'mcp1_1', 'mmp9_1', 'mpo_1', 'opg_1', 'pselectin_1', 'tnfa_1', 'tnfa_r1_1', 'tnfr2_1', 'fasting_lipids_1',
+        'hdl_1', 'ldl_1', 'lipid_lowering_medication_1', 'total_cholesterol_1', 'triglycerides_1', 'vte_case_status_1',
+        'vte_followup_start_age_1', 'vte_prior_history_1', 'basophil_ncnc_bld_1', 'eosinophil_ncnc_bld_1',
+        'hematocrit_vfr_bld_1', 'hemoglobin_mcnc_bld_1', 'lymphocyte_ncnc_bld_1', 'mch_entmass_rbc_1',
+        'mchc_mcnc_rbc_1', 'mcv_entvol_rbc_1', 'monocyte_ncnc_bld_1', 'neutrophil_ncnc_bld_1', 'platelet_ncnc_bld_1',
+        'pmv_entvol_bld_1', 'rbc_ncnc_bld_1', 'rdw_ratio_rbc_1', 'wbc_ncnc_bld_1', 'antihypertensive_meds_1',
+        'bp_diastolic_1', 'bp_systolic_1', 'cac_score_1', 'cac_volume_1', 'carotid_plaque_1', 'carotid_stenosis_1',
+        'cimt_1', 'cimt_2']
+    for var in vars_in_gsheet_order:
+        print(var_links[var])
     pass
 
 

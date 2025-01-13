@@ -2,6 +2,7 @@ import json
 import csv
 from pathlib import Path
 
+prioritized_studies = ['ARIC','CARDIA','CHS','COPDGene','FHS','HCHS_SOL','JHS','MESA','WHI']
 
 def process_json_files(root_dir):
     """
@@ -34,6 +35,9 @@ def process_json_files(root_dir):
                     # Get the harmonized name
                     harmonization_unit_name = unit['name']
 
+                    if harmonization_unit_name not in prioritized_studies:
+                        continue
+
                     # Get the raw variable names
                     raw_vars = unit.get('component_study_variables', [])
 
@@ -65,7 +69,7 @@ def write_csv(mappings, output_file):
 
 def main():
     # Define input directory and output file
-    input_dir = "harmonized-variable-source-documentation"
+    input_dir = "../harmonized-variable-documentation"
     output_file = "raw-to-harmonized-topmed-vars.csv"
 
     # Process JSON files and get mappings

@@ -72,9 +72,11 @@
     | MESA | Serum |
     
 <a id="cd40_1-fhs"></a>
-  * ### inflammation/cd40_1 -- **FHS**:
-    * 2 component_study_variables: `phs000007.v29.pht000079.v6.phv00021687.v5`, `phs000007.v29.pht003099.v4.phv00177942.v4`
-    * Function:
+  * ### inflammation/cd40_1 -- **FHS Framingham Cohort**:
+    * 2 component_study_variables
+      * _phs000007.v29.pht000079.v6.phv00021687.v5_. No dbGap metadata available.
+      * _phs000007.v29.pht003099.v4.phv00177942.v4_. dbGap Name: **age7**, Desc: **Age at Exam 7**, Table: **vr_dates_2019_a_1175s**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -95,9 +97,11 @@
       }
       ```
 <a id="cd40_1-mesa"></a>
-  * ### inflammation/cd40_1 -- **MESA**:
-    * 2 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085021.v2`
-    * Function:
+  * ### inflammation/cd40_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 2 component_study_variables
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00085021.v2_. dbGap Name: **cd40l1**, Desc: **CD40 LIGAND (pg/mL)**, Table: **MESA_Exam1Main**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -214,9 +218,11 @@
     | GENOA | Serum |
     
 <a id="crp_1-aric"></a>
-  * ### inflammation/crp_1 -- **ARIC**:
-    * 2 component_study_variables: `phs000280.v4.pht006431.v1.phv00295623.v1`, `phs000280.v4.pht006444.v1.phv00296696.v1`
-    * Function:
+  * ### inflammation/crp_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 2 component_study_variables
+      * _phs000280.v4.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht006444.v1.phv00296696.v1_. dbGap Name: **LIP33**, Desc: **High sensitive C reactive protein [Central Lab Data]**, Table: **LIP**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -244,9 +250,11 @@
       }
       ```
 <a id="crp_1-cardia"></a>
-  * ### inflammation/crp_1 -- **CARDIA**:
-    * 2 component_study_variables: `phs000285.v3.pht001851.v2.phv00120748.v2`, `phs000285.v3.pht001853.v2.phv00120759.v2`
-    * Function:
+  * ### inflammation/crp_1 -- **CARDIA CARDIA Cohort**:
+    * 2 component_study_variables
+      * _phs000285.v3.pht001851.v2.phv00120748.v2_. dbGap Name: **EX6_AGE**, Desc: **CALCULATED AGE AT EXAM 6**, Table: **F1REF**.
+      * _phs000285.v3.pht001853.v2.phv00120759.v2_. dbGap Name: **FL6CRPBN**, Desc: **RERUN CRP (uG/ml - BNII METHOD)**, Table: **F2CRP**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -271,9 +279,11 @@
       }
       ```
 <a id="crp_1-chs"></a>
-  * ### inflammation/crp_1 -- **CHS**:
-    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100499.v1`
-    * Function:
+  * ### inflammation/crp_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 2 component_study_variables
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100499.v1_. dbGap Name: **CRPBLADJ**, Desc: **C-reactive protein, adjusted original va**, Table: **BASEBOTH**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -295,9 +305,11 @@
       }
       ```
 <a id="crp_1-hchs_sol"></a>
-  * ### inflammation/crp_1 -- **HCHS_SOL**:
-    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00258066.v1`
-    * Function:
+  * ### inflammation/crp_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
+    * 2 component_study_variables
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00258066.v1_. dbGap Name: **LABA91**, Desc: **High-sensitivity C-Reactive Protein (mg/L) (LABA91)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -319,9 +331,12 @@
       }
       ```
 <a id="crp_1-jhs"></a>
-  * ### inflammation/crp_1 -- **JHS**:
-    * 3 component_study_variables: `phs000286.v5.pht001945.v1.phv00125940.v1`, `phs000286.v5.pht001945.v1.phv00125941.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
-    * Function:
+  * ### inflammation/crp_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 3 component_study_variables
+      * _phs000286.v5.pht001945.v1.phv00125940.v1_. dbGap Name: **Hscrp_cresult**, Desc: **Character results for Hscrp [Visit 1]**, Table: **cena**.
+      * _phs000286.v5.pht001945.v1.phv00125941.v1_. dbGap Name: **HSCRP**, Desc: **Hscrp: high sensitivity C-reactive protein in mg/dL [Visit 1]**, Table: **cena**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -402,9 +417,14 @@
     | MESA | Serum |
     
 <a id="eselectin_1-mesa"></a>
-  * ### inflammation/eselectin_1 -- **MESA**:
-    * 5 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082969.v1`, `phs000209.v13.pht001111.v4.phv00082970.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085022.v2`
-    * Function:
+  * ### inflammation/eselectin_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 5 component_study_variables
+      * _phs000209.v13.pht001111.v4.phv00082639.v2_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_AirNRExamMain**.
+      * _phs000209.v13.pht001111.v4.phv00082969.v1_. dbGap Name: **eselect1**, Desc: **E-SELECTIN (ng/mL)**, Table: **MESA_AirNRExamMain**.
+      * _phs000209.v13.pht001111.v4.phv00082970.v1_. dbGap Name: **eselect1m**, Desc: **E-SELECTIN MISSING VALUE**, Table: **MESA_AirNRExamMain**.
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00085022.v2_. dbGap Name: **eselect1**, Desc: **E-SELECTIN (ng/mL)**, Table: **MESA_Exam1Main**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -500,9 +520,11 @@
     | MESA | Plasma |
     
 <a id="icam1_1-cardia"></a>
-  * ### inflammation/icam1_1 -- **CARDIA**:
-    * 2 component_study_variables: `phs000285.v3.pht001697.v2.phv00116390.v2`, `phs000285.v3.pht001699.v2.phv00116396.v2`
-    * Function:
+  * ### inflammation/icam1_1 -- **CARDIA CARDIA Cohort**:
+    * 2 component_study_variables
+      * _phs000285.v3.pht001697.v2.phv00116390.v2_. dbGap Name: **EX3_AGE**, Desc: **CALCULATED AGE AT EXAM 3**, Table: **C1REF**.
+      * _phs000285.v3.pht001699.v2.phv00116396.v2_. dbGap Name: **sICAM1**, Desc: **SICAM1**, Table: **CARE_ICAM**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list) {
       
@@ -526,9 +548,11 @@
       }
       ```
 <a id="icam1_1-chs"></a>
-  * ### inflammation/icam1_1 -- **CHS**:
-    * 2 component_study_variables: `phs000287.v6.pht001449.v1.phv00098764.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
-    * Function:
+  * ### inflammation/icam1_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 2 component_study_variables
+      * _phs000287.v6.pht001449.v1.phv00098764.v1_. dbGap Name: **ICAM1**, Desc: **BASELINE ICAM-1 -sample**, Table: **ADDITIONAL_BIOMARKERS**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -589,9 +613,12 @@
     1. The study included information indicating which measurements were below or above the limit of detection. If "Yes", measurements outside the LOD can be identified using component study or subcohort variables.
     
 <a id="il10_1-mesa"></a>
-  * ### inflammation/il10_1 -- **MESA**:
-    * 3 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht002099.v2.phv00142666.v2`, `phs000209.v13.pht002099.v2.phv00142667.v2`
-    * Function:
+  * ### inflammation/il10_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 3 component_study_variables
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht002099.v2.phv00142666.v2_. dbGap Name: **il10a1**, Desc: **INTERLEUKIN-10**, Table: **MESA_AncilMesaIL10**.
+      * _phs000209.v13.pht002099.v2.phv00142667.v2_. dbGap Name: **il10a1m**, Desc: **MISSING INTERLEUKIN-10 VALUE: REASON**, Table: **MESA_AncilMesaIL10**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list) {
         #Dataset
@@ -659,9 +686,11 @@
     | FHS | Serum |
     
 <a id="il18_1-fhs"></a>
-  * ### inflammation/il18_1 -- **FHS**:
-    * 2 component_study_variables: `phs000007.v29.pht000671.v5.phv00066686.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
-    * Function:
+  * ### inflammation/il18_1 -- **FHS Framingham Cohort**:
+    * 2 component_study_variables
+      * _phs000007.v29.pht000671.v5.phv00066686.v4_. No dbGap metadata available.
+      * _phs000007.v29.pht003099.v4.phv00177942.v4_. dbGap Name: **age7**, Desc: **Age at Exam 7**, Table: **vr_dates_2019_a_1175s**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -775,9 +804,12 @@
     | FHS | Serum |
     
 <a id="il6_1-cardia"></a>
-  * ### inflammation/il6_1 -- **CARDIA**:
-    * 3 component_study_variables: `phs000285.v3.pht001851.v2.phv00120748.v2`, `phs000285.v3.pht001862.v2.phv00121064.v2`, `phs000285.v3.pht001862.v2.phv00121065.v2`
-    * Function:
+  * ### inflammation/il6_1 -- **CARDIA CARDIA Cohort**:
+    * 3 component_study_variables
+      * _phs000285.v3.pht001851.v2.phv00120748.v2_. dbGap Name: **EX6_AGE**, Desc: **CALCULATED AGE AT EXAM 6**, Table: **F1REF**.
+      * _phs000285.v3.pht001862.v2.phv00121064.v2_. dbGap Name: **FL6IL6**, Desc: **IL6 PG/ML**, Table: **F2IGFIL**.
+      * _phs000285.v3.pht001862.v2.phv00121065.v2_. dbGap Name: **FL6IL6CM**, Desc: **IL6 COMMENTS**, Table: **F2IGFIL**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -808,9 +840,11 @@
       }
       ```
 <a id="il6_1-chs"></a>
-  * ### inflammation/il6_1 -- **CHS**:
-    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100500.v1`
-    * Function:
+  * ### inflammation/il6_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 2 component_study_variables
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100500.v1_. dbGap Name: **IL6BL**, Desc: **IL-6 at baseline (pg/ml)**, Table: **BASEBOTH**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -832,9 +866,12 @@
       }
       ```
 <a id="il6_1-mesa"></a>
-  * ### inflammation/il6_1 -- **MESA**:
-    * 3 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085009.v2`, `phs000209.v13.pht001116.v10.phv00085010.v2`
-    * Function:
+  * ### inflammation/il6_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 3 component_study_variables
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00085009.v2_. dbGap Name: **il61**, Desc: **INTERLEUKIN-6 (IL-6) (pg/mL)**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00085010.v2_. dbGap Name: **il61M**, Desc: **EXCEPTIONAL MISSING IL61**, Table: **MESA_Exam1Main**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -916,9 +953,16 @@
     | FHS | Urine |
     
 <a id="isoprostane_8_epi_pgf2a_1-fhs"></a>
-  * ### inflammation/isoprostane_8_epi_pgf2a_1 -- **FHS**:
-    * 7 component_study_variables: `phs000007.v29.pht000162.v6.phv00023800.v5`, `phs000007.v29.pht002852.v2.phv00171864.v2`, `phs000007.v29.pht002853.v4.phv00171873.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
-    * Function:
+  * ### inflammation/isoprostane_8_epi_pgf2a_1 -- **FHS Framingham Cohort**:
+    * 7 component_study_variables
+      * _phs000007.v29.pht000162.v6.phv00023800.v5_. No dbGap metadata available.
+      * _phs000007.v29.pht002852.v2.phv00171864.v2_. No dbGap metadata available.
+      * _phs000007.v29.pht002853.v4.phv00171873.v4_. No dbGap metadata available.
+      * _phs000007.v29.pht003099.v4.phv00177928.v4_. dbGap Name: **idtype**, Desc: **Framingham Heart Study cohort identifier**, Table: **vr_dates_2019_a_1175s**.
+      * _phs000007.v29.pht003099.v4.phv00177930.v4_. dbGap Name: **age1**, Desc: **Age at Exam 1**, Table: **vr_dates_2019_a_1175s**.
+      * _phs000007.v29.pht003099.v4.phv00177934.v4_. dbGap Name: **age3**, Desc: **Age at Exam 3**, Table: **vr_dates_2019_a_1175s**.
+      * _phs000007.v29.pht003099.v4.phv00177942.v4_. dbGap Name: **age7**, Desc: **Age at Exam 7**, Table: **vr_dates_2019_a_1175s**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -1014,9 +1058,11 @@
     | MESA | Serum |
     
 <a id="lppla2_act_1-chs"></a>
-  * ### inflammation/lppla2_act_1 -- **CHS**:
-    * 2 component_study_variables: `phs000287.v6.pht001449.v1.phv00098770.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
-    * Function:
+  * ### inflammation/lppla2_act_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 2 component_study_variables
+      * _phs000287.v6.pht001449.v1.phv00098770.v1_. dbGap Name: **LPPLA2AC**, Desc: **Baseline LP-PLA2 Activity (nmols/min/mL)**, Table: **ADDITIONAL_BIOMARKERS**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -1038,9 +1084,16 @@
       }
       ```
 <a id="lppla2_act_1-fhs"></a>
-  * ### inflammation/lppla2_act_1 -- **FHS**:
-    * 7 component_study_variables: `phs000007.v29.pht000164.v6.phv00023808.v5`, `phs000007.v29.pht000304.v5.phv00036408.v4`, `phs000007.v29.pht002892.v4.phv00172229.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
-    * Function:
+  * ### inflammation/lppla2_act_1 -- **FHS Framingham Cohort**:
+    * 7 component_study_variables
+      * _phs000007.v29.pht000164.v6.phv00023808.v5_. No dbGap metadata available.
+      * _phs000007.v29.pht000304.v5.phv00036408.v4_. No dbGap metadata available.
+      * _phs000007.v29.pht002892.v4.phv00172229.v4_. No dbGap metadata available.
+      * _phs000007.v29.pht003099.v4.phv00177928.v4_. dbGap Name: **idtype**, Desc: **Framingham Heart Study cohort identifier**, Table: **vr_dates_2019_a_1175s**.
+      * _phs000007.v29.pht003099.v4.phv00177930.v4_. dbGap Name: **age1**, Desc: **Age at Exam 1**, Table: **vr_dates_2019_a_1175s**.
+      * _phs000007.v29.pht003099.v4.phv00177934.v4_. dbGap Name: **age3**, Desc: **Age at Exam 3**, Table: **vr_dates_2019_a_1175s**.
+      * _phs000007.v29.pht003099.v4.phv00177942.v4_. dbGap Name: **age7**, Desc: **Age at Exam 7**, Table: **vr_dates_2019_a_1175s**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -1079,9 +1132,11 @@
       }
       ```
 <a id="lppla2_act_1-mesa"></a>
-  * ### inflammation/lppla2_act_1 -- **MESA**:
-    * 2 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht002512.v1.phv00165052.v1`
-    * Function:
+  * ### inflammation/lppla2_act_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 2 component_study_variables
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht002512.v1.phv00165052.v1_. dbGap Name: **cam1a**, Desc: **LIPOPROTEIN-ASSOCIATED PHOSPHOLIPASE A2: ACTIVITY**, Table: **MESA_AncilMesaLpPLA2**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -1162,9 +1217,11 @@
     | MESA | Serum |
     
 <a id="lppla2_mass_1-chs"></a>
-  * ### inflammation/lppla2_mass_1 -- **CHS**:
-    * 2 component_study_variables: `phs000287.v6.pht001449.v1.phv00098769.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
-    * Function:
+  * ### inflammation/lppla2_mass_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 2 component_study_variables
+      * _phs000287.v6.pht001449.v1.phv00098769.v1_. dbGap Name: **LPPLA2**, Desc: **Baseline LP-PLA2 Mass (ng/ml)**, Table: **ADDITIONAL_BIOMARKERS**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -1186,9 +1243,16 @@
       }
       ```
 <a id="lppla2_mass_1-fhs"></a>
-  * ### inflammation/lppla2_mass_1 -- **FHS**:
-    * 7 component_study_variables: `phs000007.v29.pht000095.v6.phv00021963.v5`, `phs000007.v29.pht000305.v5.phv00036411.v4`, `phs000007.v29.pht002892.v4.phv00172227.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
-    * Function:
+  * ### inflammation/lppla2_mass_1 -- **FHS Framingham Cohort**:
+    * 7 component_study_variables
+      * _phs000007.v29.pht000095.v6.phv00021963.v5_. No dbGap metadata available.
+      * _phs000007.v29.pht000305.v5.phv00036411.v4_. No dbGap metadata available.
+      * _phs000007.v29.pht002892.v4.phv00172227.v4_. No dbGap metadata available.
+      * _phs000007.v29.pht003099.v4.phv00177928.v4_. dbGap Name: **idtype**, Desc: **Framingham Heart Study cohort identifier**, Table: **vr_dates_2019_a_1175s**.
+      * _phs000007.v29.pht003099.v4.phv00177930.v4_. dbGap Name: **age1**, Desc: **Age at Exam 1**, Table: **vr_dates_2019_a_1175s**.
+      * _phs000007.v29.pht003099.v4.phv00177934.v4_. dbGap Name: **age3**, Desc: **Age at Exam 3**, Table: **vr_dates_2019_a_1175s**.
+      * _phs000007.v29.pht003099.v4.phv00177942.v4_. dbGap Name: **age7**, Desc: **Age at Exam 7**, Table: **vr_dates_2019_a_1175s**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -1227,9 +1291,11 @@
       }
       ```
 <a id="lppla2_mass_1-mesa"></a>
-  * ### inflammation/lppla2_mass_1 -- **MESA**:
-    * 2 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht002512.v1.phv00165050.v1`
-    * Function:
+  * ### inflammation/lppla2_mass_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 2 component_study_variables
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht002512.v1.phv00165050.v1_. dbGap Name: **plac1a**, Desc: **LIPOPROTEIN-ASSOCIATED PHOSPHOLIPASE A2: MASS**, Table: **MESA_AncilMesaLpPLA2**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -1326,9 +1392,11 @@
     2. The study included information indicating which measurements were below or above the limit of detection. If "Yes", measurements outside the LOD can be identified using component study or subcohort variables.
     
 <a id="mmp9_1-mesa"></a>
-  * ### inflammation/mmp9_1 -- **MESA**:
-    * 2 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085027.v2`
-    * Function:
+  * ### inflammation/mmp9_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 2 component_study_variables
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00085027.v2_. dbGap Name: **mmp91**, Desc: **MATRIX METALLOPROTEINASE 9 (ng/mL)**, Table: **MESA_Exam1Main**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -1388,9 +1456,11 @@
     | FHS | Serum |
     
 <a id="mpo_1-fhs"></a>
-  * ### inflammation/mpo_1 -- **FHS**:
-    * 2 component_study_variables: `phs000007.v29.pht000167.v6.phv00023854.v5`, `phs000007.v29.pht003099.v4.phv00177942.v4`
-    * Function:
+  * ### inflammation/mpo_1 -- **FHS Framingham Cohort**:
+    * 2 component_study_variables
+      * _phs000007.v29.pht000167.v6.phv00023854.v5_. No dbGap metadata available.
+      * _phs000007.v29.pht003099.v4.phv00177942.v4_. dbGap Name: **age7**, Desc: **Age at Exam 7**, Table: **vr_dates_2019_a_1175s**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -1566,9 +1636,11 @@
     | MESA | Serum |
     
 <a id="tnfa_1-fhs"></a>
-  * ### inflammation/tnfa_1 -- **FHS**:
-    * 2 component_study_variables: `phs000007.v29.pht000111.v5.phv00022779.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
-    * Function:
+  * ### inflammation/tnfa_1 -- **FHS Framingham Cohort**:
+    * 2 component_study_variables
+      * _phs000007.v29.pht000111.v5.phv00022779.v4_. No dbGap metadata available.
+      * _phs000007.v29.pht003099.v4.phv00177942.v4_. dbGap Name: **age7**, Desc: **Age at Exam 7**, Table: **vr_dates_2019_a_1175s**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -1589,9 +1661,14 @@
       }
       ```
 <a id="tnfa_1-mesa"></a>
-  * ### inflammation/tnfa_1 -- **MESA**:
-    * 5 component_study_variables: `phs000209.v13.pht001118.v8.phv00085773.v3`, `phs000209.v13.pht001119.v8.phv00086259.v4`, `phs000209.v13.pht002198.v2.phv00160529.v1`, `phs000209.v13.pht002198.v2.phv00160540.v1`, `phs000209.v13.pht002198.v2.phv00160541.v1`
-    * Function:
+  * ### inflammation/tnfa_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 5 component_study_variables
+      * _phs000209.v13.pht001118.v8.phv00085773.v3_. dbGap Name: **age2c**, Desc: **AGE AT EXAM 2**, Table: **MESA_Exam2Main**.
+      * _phs000209.v13.pht001119.v8.phv00086259.v4_. dbGap Name: **age3c**, Desc: **AGE AT EXAM3**, Table: **MESA_Exam3Main**.
+      * _phs000209.v13.pht002198.v2.phv00160529.v1_. dbGap Name: **exam3**, Desc: **EXAM**, Table: **MESA_AncilMesaAbdBodyComposition**.
+      * _phs000209.v13.pht002198.v2.phv00160540.v1_. dbGap Name: **tnfa3**, Desc: **TNFa (pg/mL)**, Table: **MESA_AncilMesaAbdBodyComposition**.
+      * _phs000209.v13.pht002198.v2.phv00160541.v1_. dbGap Name: **tnfa3m**, Desc: **TNFa (MISSING VALUE REASON)**, Table: **MESA_AncilMesaAbdBodyComposition**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -1676,9 +1753,11 @@
     | MESA | Serum |
     
 <a id="tnfa_r1_1-mesa"></a>
-  * ### inflammation/tnfa_r1_1 -- **MESA**:
-    * 2 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085029.v3`
-    * Function:
+  * ### inflammation/tnfa_r1_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 2 component_study_variables
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00085029.v3_. dbGap Name: **tnfri1**, Desc: **TUMOR NECROSIS FACTOR-A SOLUBLE RECEPTORS (pg/ml)**, Table: **MESA_Exam1Main**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -1750,9 +1829,16 @@
     | FHS | Plasma |
     
 <a id="tnfr2_1-fhs"></a>
-  * ### inflammation/tnfr2_1 -- **FHS**:
-    * 7 component_study_variables: `phs000007.v29.pht000175.v6.phv00023913.v5`, `phs000007.v29.pht002898.v2.phv00172383.v2`, `phs000007.v29.pht002899.v4.phv00172391.v4`, `phs000007.v29.pht003099.v4.phv00177928.v4`, `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht003099.v4.phv00177934.v4`, `phs000007.v29.pht003099.v4.phv00177942.v4`
-    * Function:
+  * ### inflammation/tnfr2_1 -- **FHS Framingham Cohort**:
+    * 7 component_study_variables
+      * _phs000007.v29.pht000175.v6.phv00023913.v5_. No dbGap metadata available.
+      * _phs000007.v29.pht002898.v2.phv00172383.v2_. No dbGap metadata available.
+      * _phs000007.v29.pht002899.v4.phv00172391.v4_. No dbGap metadata available.
+      * _phs000007.v29.pht003099.v4.phv00177928.v4_. dbGap Name: **idtype**, Desc: **Framingham Heart Study cohort identifier**, Table: **vr_dates_2019_a_1175s**.
+      * _phs000007.v29.pht003099.v4.phv00177930.v4_. dbGap Name: **age1**, Desc: **Age at Exam 1**, Table: **vr_dates_2019_a_1175s**.
+      * _phs000007.v29.pht003099.v4.phv00177934.v4_. dbGap Name: **age3**, Desc: **Age at Exam 3**, Table: **vr_dates_2019_a_1175s**.
+      * _phs000007.v29.pht003099.v4.phv00177942.v4_. dbGap Name: **age7**, Desc: **Age at Exam 7**, Table: **vr_dates_2019_a_1175s**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)

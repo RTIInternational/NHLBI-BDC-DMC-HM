@@ -46,9 +46,11 @@
     
     
 <a id="angina_prior_1-chs"></a>
-  * ### atherosclerosis_events_prior/angina_prior_1 -- **CHS**:
-    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100504.v1`
-    * Function:
+  * ### atherosclerosis_events_prior/angina_prior_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 2 component_study_variables
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100504.v1_. dbGap Name: **ANBLMOD**, Desc: **ANG MODIFIED BL STAT**, Table: **BASEBOTH**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         # Convert age to numeric and rename angina variable.
@@ -60,9 +62,11 @@
       }
       ```
 <a id="angina_prior_1-copdgene"></a>
-  * ### atherosclerosis_events_prior/angina_prior_1 -- **COPDGene**:
-    * 2 component_study_variables: `phs000179.v5.pht002239.v4.phv00159608.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
-    * Function:
+  * ### atherosclerosis_events_prior/angina_prior_1 -- **COPDGene **:
+    * 2 component_study_variables
+      * _phs000179.v5.pht002239.v4.phv00159608.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159836.v4_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -82,9 +86,14 @@
       }
       ```
 <a id="angina_prior_1-fhs"></a>
-  * ### atherosclerosis_events_prior/angina_prior_1 -- **FHS**:
-    * 5 component_study_variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
-    * Function:
+  * ### atherosclerosis_events_prior/angina_prior_1 -- **FHS Framingham Cohort**:
+    * 5 component_study_variables
+      * _phs000007.v30.pht000309.v13.phv00036469.v12_. dbGap Name: **EVENT**, Desc: **Event Number**, Table: **vr_soe_2020_a_1340s**.
+      * _phs000007.v30.pht000309.v13.phv00036471.v12_. dbGap Name: **DATE**, Desc: **Date of Event**, Table: **vr_soe_2020_a_1340s**.
+      * _phs000007.v30.pht003099.v5.phv00177930.v5_. dbGap Name: **age1**, Desc: **Age at Exam 1**, Table: **vr_dates_2019_a_1175s**.
+      * _phs000007.v30.pht003316.v7.phv00190817.v7_. dbGap Name: **cvd**, Desc: **Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
+      * _phs000007.v30.pht003316.v7.phv00190823.v7_. dbGap Name: **cvddate**, Desc: **Date of Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -169,9 +178,10 @@
       }
       ```
 <a id="angina_prior_1-mesa"></a>
-  * ### atherosclerosis_events_prior/angina_prior_1 -- **MESA**:
-    * 1 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`
-    * Function:
+  * ### atherosclerosis_events_prior/angina_prior_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 1 component_study_variables
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         # Convert age to numeric and set all participants to 0.
@@ -181,9 +191,13 @@
       }
       ```
 <a id="angina_prior_1-whi"></a>
-  * ### atherosclerosis_events_prior/angina_prior_1 -- **WHI**:
-    * 4 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht000999.v6.phv00078507.v6`, `phs000200.v11.pht000999.v6.phv00078560.v6`
-    * Function:
+  * ### atherosclerosis_events_prior/angina_prior_1 -- **WHI Women's Health Initiative**:
+    * 4 component_study_variables
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
+      * _phs000200.v11.pht000999.v6.phv00078507.v6_. dbGap Name: **F30DAYS**, Desc: **F30 Days since randomization/enrollment**, Table: **f30_rel2**.
+      * _phs000200.v11.pht000999.v6.phv00078560.v6_. dbGap Name: **ANGINA**, Desc: **Angina ever**, Table: **f30_rel2**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         source_data <- phen_list$source_data
@@ -240,9 +254,13 @@
     
     
 <a id="cabg_prior_1-aric"></a>
-  * ### atherosclerosis_events_prior/cabg_prior_1 -- **ARIC**:
-    * 4 component_study_variables: `phs000280.v5.pht004063.v2.phv00204712.v1`, `phs000280.v5.pht004143.v2.phv00208845.v1`, `phs000280.v5.pht004143.v2.phv00208846.v1`, `phs000280.v5.pht004143.v2.phv00208853.v1`
-    * Function:
+  * ### atherosclerosis_events_prior/cabg_prior_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 4 component_study_variables
+      * _phs000280.v5.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v5.pht004143.v2.phv00208845.v1_. dbGap Name: **PHEA06**, Desc: **[Invasive procedures]. Have you ever had surgery on your heart, or on the arteries of your neck or legs, excluding surgery for vericose veins? Q6 [Physical Examination Form. PHEA. Visit 1]**, Table: **PHEA**.
+      * _phs000280.v5.pht004143.v2.phv00208846.v1_. dbGap Name: **PHEA07A**, Desc: **[Invasive procedures]. Have you ever had surgery on your heart, or on the arteries of your neck or legs, excluding surgery for vericose veins? Coronary bypass. Q7a [Physical Examination Form. PHEA. Visit 1]**, Table: **PHEA**.
+      * _phs000280.v5.pht004143.v2.phv00208853.v1_. dbGap Name: **PHEA08**, Desc: **[Invasive procedures]. Have you ever had a balloon angioplasty on the arteries of your heart or legs? Q8 [Physical Examination Form. PHEA. Visit 1]**, Table: **PHEA**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -282,9 +300,11 @@
       }
       ```
 <a id="cabg_prior_1-chs"></a>
-  * ### atherosclerosis_events_prior/cabg_prior_1 -- **CHS**:
-    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001464.v1.phv00100785.v1`
-    * Function:
+  * ### atherosclerosis_events_prior/cabg_prior_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 2 component_study_variables
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001464.v1.phv00100785.v1_. dbGap Name: **BPSSURBL**, Desc: **CORONARY BYPASS SURGERY AT BL**, Table: **EVENT_SUMMARY**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -299,9 +319,11 @@
       }
       ```
 <a id="cabg_prior_1-copdgene"></a>
-  * ### atherosclerosis_events_prior/cabg_prior_1 -- **COPDGene**:
-    * 2 component_study_variables: `phs000179.v5.pht002239.v4.phv00159631.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
-    * Function:
+  * ### atherosclerosis_events_prior/cabg_prior_1 -- **COPDGene **:
+    * 2 component_study_variables
+      * _phs000179.v5.pht002239.v4.phv00159631.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159836.v4_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         # Rename CABG variable and convert age to numeric.
@@ -313,9 +335,14 @@
       }
       ```
 <a id="cabg_prior_1-fhs"></a>
-  * ### atherosclerosis_events_prior/cabg_prior_1 -- **FHS**:
-    * 5 component_study_variables: `phs000007.v30.pht000389.v10.phv00054697.v8`, `phs000007.v30.pht000389.v10.phv00163410.v7`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
-    * Function:
+  * ### atherosclerosis_events_prior/cabg_prior_1 -- **FHS Framingham Cohort**:
+    * 5 component_study_variables
+      * _phs000007.v30.pht000389.v10.phv00054697.v8_. dbGap Name: **procdate**, Desc: **Date of cardiovascular procedure**, Table: **vr_cvdproc_2020_a_1313s**.
+      * _phs000007.v30.pht000389.v10.phv00163410.v7_. dbGap Name: **vessel**, Desc: **Coronary Artery Bypass Graft (CABG) - Number of vessels bypassed - PROCNUM = 141**, Table: **vr_cvdproc_2020_a_1313s**.
+      * _phs000007.v30.pht003099.v5.phv00177930.v5_. dbGap Name: **age1**, Desc: **Age at Exam 1**, Table: **vr_dates_2019_a_1175s**.
+      * _phs000007.v30.pht003316.v7.phv00190817.v7_. dbGap Name: **cvd**, Desc: **Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
+      * _phs000007.v30.pht003316.v7.phv00190823.v7_. dbGap Name: **cvddate**, Desc: **Date of Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -388,9 +415,15 @@
       }
       ```
 <a id="cabg_prior_1-jhs"></a>
-  * ### atherosclerosis_events_prior/cabg_prior_1 -- **JHS**:
-    * 6 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001963.v1.phv00127727.v1`, `phs000286.v5.pht001963.v1.phv00127728.v1`, `phs000286.v5.pht001963.v1.phv00127731.v1`, `phs000286.v5.pht001963.v1.phv00127733.v1`, `phs000286.v5.pht001963.v1.phv00127740.v1`
-    * Function:
+  * ### atherosclerosis_events_prior/cabg_prior_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 6 component_study_variables
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001963.v1.phv00127727.v1_. dbGap Name: **MHXA51**, Desc: **Q51. F. Invasive procedures. Ever had surgery on heart, arteries of neck or legs? [Visit 1] [Medical History Form, MHX]**, Table: **mhxa**.
+      * _phs000286.v5.pht001963.v1.phv00127728.v1_. dbGap Name: **MHXA52A**, Desc: **Q52a. F. Invasive procedures. Did you have a coronary bypass? [Visit 1] [Medical History Form, MHX]**, Table: **mhxa**.
+      * _phs000286.v5.pht001963.v1.phv00127731.v1_. dbGap Name: **MHXA52C**, Desc: **Q52c. F. Invasive procedures. Have you had carotid endarterectomy? [Visit 1] [Medical History Form, MHX]**, Table: **mhxa**.
+      * _phs000286.v5.pht001963.v1.phv00127733.v1_. dbGap Name: **MHXA52E1**, Desc: **Q52e1. F. Invasive procedures. Had other revascularization or bypass? [Visit 1] [Medical History Form, MHX]**, Table: **mhxa**.
+      * _phs000286.v5.pht001963.v1.phv00127740.v1_. dbGap Name: **MHXA55A**, Desc: **Q55a. F. Invasive procedures. Ever had heart catheterization? [Visit 1] [Medical History Form, MHX]**, Table: **mhxa**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -428,9 +461,10 @@
       }
       ```
 <a id="cabg_prior_1-mesa"></a>
-  * ### atherosclerosis_events_prior/cabg_prior_1 -- **MESA**:
-    * 1 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`
-    * Function:
+  * ### atherosclerosis_events_prior/cabg_prior_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 1 component_study_variables
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         # Convert age to numeric and set all participants to 0.
@@ -440,9 +474,13 @@
       }
       ```
 <a id="cabg_prior_1-whi"></a>
-  * ### atherosclerosis_events_prior/cabg_prior_1 -- **WHI**:
-    * 4 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht000999.v6.phv00078507.v6`, `phs000200.v11.pht000999.v6.phv00078535.v6`
-    * Function:
+  * ### atherosclerosis_events_prior/cabg_prior_1 -- **WHI Women's Health Initiative**:
+    * 4 component_study_variables
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
+      * _phs000200.v11.pht000999.v6.phv00078507.v6_. dbGap Name: **F30DAYS**, Desc: **F30 Days since randomization/enrollment**, Table: **f30_rel2**.
+      * _phs000200.v11.pht000999.v6.phv00078535.v6_. dbGap Name: **CABG**, Desc: **Coronary bypass surgery ever**, Table: **f30_rel2**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         source_data <- phen_list$source_data
@@ -492,9 +530,13 @@
     
     
 <a id="coronary_angioplasty_prior_1-aric"></a>
-  * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **ARIC**:
-    * 4 component_study_variables: `phs000280.v5.pht004063.v2.phv00204712.v1`, `phs000280.v5.pht004143.v2.phv00208845.v1`, `phs000280.v5.pht004143.v2.phv00208853.v1`, `phs000280.v5.pht004143.v2.phv00208854.v1`
-    * Function:
+  * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 4 component_study_variables
+      * _phs000280.v5.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v5.pht004143.v2.phv00208845.v1_. dbGap Name: **PHEA06**, Desc: **[Invasive procedures]. Have you ever had surgery on your heart, or on the arteries of your neck or legs, excluding surgery for vericose veins? Q6 [Physical Examination Form. PHEA. Visit 1]**, Table: **PHEA**.
+      * _phs000280.v5.pht004143.v2.phv00208853.v1_. dbGap Name: **PHEA08**, Desc: **[Invasive procedures]. Have you ever had a balloon angioplasty on the arteries of your heart or legs? Q8 [Physical Examination Form. PHEA. Visit 1]**, Table: **PHEA**.
+      * _phs000280.v5.pht004143.v2.phv00208854.v1_. dbGap Name: **PHEA09A**, Desc: **[Invasive procedures]. [Probe for type of procedure]. Angioplasty of coronary artery(ies)? Q9a [Physical Examination Form. PHEA. Visit 1]**, Table: **PHEA**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -531,9 +573,11 @@
       }
       ```
 <a id="coronary_angioplasty_prior_1-chs"></a>
-  * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **CHS**:
-    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100322.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
-    * Function:
+  * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 2 component_study_variables
+      * _phs000287.v6.pht001452.v1.phv00100322.v1_. dbGap Name: **CORART**, Desc: **CORONARY ARTERY ANGIOPLASTY**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -546,9 +590,11 @@
       }
       ```
 <a id="coronary_angioplasty_prior_1-copdgene"></a>
-  * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **COPDGene**:
-    * 2 component_study_variables: `phs000179.v5.pht002239.v4.phv00159632.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
-    * Function:
+  * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **COPDGene **:
+    * 2 component_study_variables
+      * _phs000179.v5.pht002239.v4.phv00159632.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159836.v4_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         # Rename angioplasty variable and convert age to numeric.
@@ -561,9 +607,15 @@
       }
       ```
 <a id="coronary_angioplasty_prior_1-jhs"></a>
-  * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **JHS**:
-    * 6 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001963.v1.phv00127727.v1`, `phs000286.v5.pht001963.v1.phv00127731.v1`, `phs000286.v5.pht001963.v1.phv00127733.v1`, `phs000286.v5.pht001963.v1.phv00127737.v1`, `phs000286.v5.pht001963.v1.phv00127740.v1`
-    * Function:
+  * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 6 component_study_variables
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001963.v1.phv00127727.v1_. dbGap Name: **MHXA51**, Desc: **Q51. F. Invasive procedures. Ever had surgery on heart, arteries of neck or legs? [Visit 1] [Medical History Form, MHX]**, Table: **mhxa**.
+      * _phs000286.v5.pht001963.v1.phv00127731.v1_. dbGap Name: **MHXA52C**, Desc: **Q52c. F. Invasive procedures. Have you had carotid endarterectomy? [Visit 1] [Medical History Form, MHX]**, Table: **mhxa**.
+      * _phs000286.v5.pht001963.v1.phv00127733.v1_. dbGap Name: **MHXA52E1**, Desc: **Q52e1. F. Invasive procedures. Had other revascularization or bypass? [Visit 1] [Medical History Form, MHX]**, Table: **mhxa**.
+      * _phs000286.v5.pht001963.v1.phv00127737.v1_. dbGap Name: **MHXA54A**, Desc: **Q54a. F. Invasive procedures. Ever had angioplasty of coronary arteries? [Visit 1] [Medical History Form, MHX]**, Table: **mhxa**.
+      * _phs000286.v5.pht001963.v1.phv00127740.v1_. dbGap Name: **MHXA55A**, Desc: **Q55a. F. Invasive procedures. Ever had heart catheterization? [Visit 1] [Medical History Form, MHX]**, Table: **mhxa**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -597,9 +649,10 @@
       }
       ```
 <a id="coronary_angioplasty_prior_1-mesa"></a>
-  * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **MESA**:
-    * 1 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`
-    * Function:
+  * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 1 component_study_variables
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         # Convert age to numeric and set all participants to 0.
@@ -609,9 +662,13 @@
       }
       ```
 <a id="coronary_angioplasty_prior_1-whi"></a>
-  * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **WHI**:
-    * 4 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht000999.v6.phv00078507.v6`, `phs000200.v11.pht000999.v6.phv00078536.v6`
-    * Function:
+  * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **WHI Women's Health Initiative**:
+    * 4 component_study_variables
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
+      * _phs000200.v11.pht000999.v6.phv00078507.v6_. dbGap Name: **F30DAYS**, Desc: **F30 Days since randomization/enrollment**, Table: **f30_rel2**.
+      * _phs000200.v11.pht000999.v6.phv00078536.v6_. dbGap Name: **PTCA**, Desc: **Angioplasty of coronary arteries ever**, Table: **f30_rel2**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -689,9 +746,11 @@
     | WHI | Self-report |
     
 <a id="mi_prior_1-aric"></a>
-  * ### atherosclerosis_events_prior/mi_prior_1 -- **ARIC**:
-    * 2 component_study_variables: `phs000280.v5.pht004063.v2.phv00204705.v1`, `phs000280.v5.pht004063.v2.phv00204712.v1`
-    * Function:
+  * ### atherosclerosis_events_prior/mi_prior_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 2 component_study_variables
+      * _phs000280.v5.pht004063.v2.phv00204705.v1_. dbGap Name: **PREVMI05**, Desc: **Prevalent MI from ECG or medical history [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v5.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -716,9 +775,11 @@
       }
       ```
 <a id="mi_prior_1-chs"></a>
-  * ### atherosclerosis_events_prior/mi_prior_1 -- **CHS**:
-    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100508.v1`
-    * Function:
+  * ### atherosclerosis_events_prior/mi_prior_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 2 component_study_variables
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100508.v1_. dbGap Name: **MIBLMOD**, Desc: **MI MODIFIED BL STAT**, Table: **BASEBOTH**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -731,9 +792,11 @@
       }
       ```
 <a id="mi_prior_1-copdgene"></a>
-  * ### atherosclerosis_events_prior/mi_prior_1 -- **COPDGene**:
-    * 2 component_study_variables: `phs000179.v5.pht002239.v4.phv00159615.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
-    * Function:
+  * ### atherosclerosis_events_prior/mi_prior_1 -- **COPDGene **:
+    * 2 component_study_variables
+      * _phs000179.v5.pht002239.v4.phv00159615.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159836.v4_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -753,9 +816,14 @@
       }
       ```
 <a id="mi_prior_1-fhs"></a>
-  * ### atherosclerosis_events_prior/mi_prior_1 -- **FHS**:
-    * 5 component_study_variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
-    * Function:
+  * ### atherosclerosis_events_prior/mi_prior_1 -- **FHS Framingham Cohort**:
+    * 5 component_study_variables
+      * _phs000007.v30.pht000309.v13.phv00036469.v12_. dbGap Name: **EVENT**, Desc: **Event Number**, Table: **vr_soe_2020_a_1340s**.
+      * _phs000007.v30.pht000309.v13.phv00036471.v12_. dbGap Name: **DATE**, Desc: **Date of Event**, Table: **vr_soe_2020_a_1340s**.
+      * _phs000007.v30.pht003099.v5.phv00177930.v5_. dbGap Name: **age1**, Desc: **Age at Exam 1**, Table: **vr_dates_2019_a_1175s**.
+      * _phs000007.v30.pht003316.v7.phv00190817.v7_. dbGap Name: **cvd**, Desc: **Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
+      * _phs000007.v30.pht003316.v7.phv00190823.v7_. dbGap Name: **cvddate**, Desc: **Date of Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -839,9 +907,11 @@
       }
       ```
 <a id="mi_prior_1-jhs"></a>
-  * ### atherosclerosis_events_prior/mi_prior_1 -- **JHS**:
-    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001949.v1.phv00126088.v1`
-    * Function:
+  * ### atherosclerosis_events_prior/mi_prior_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 2 component_study_variables
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001949.v1.phv00126088.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -864,9 +934,10 @@
       }
       ```
 <a id="mi_prior_1-mesa"></a>
-  * ### atherosclerosis_events_prior/mi_prior_1 -- **MESA**:
-    * 1 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`
-    * Function:
+  * ### atherosclerosis_events_prior/mi_prior_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 1 component_study_variables
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         # Convert age to numeric and set all participants to 0.
@@ -876,9 +947,12 @@
       }
       ```
 <a id="mi_prior_1-whi"></a>
-  * ### atherosclerosis_events_prior/mi_prior_1 -- **WHI**:
-    * 3 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht000998.v6.phv00078482.v6`
-    * Function:
+  * ### atherosclerosis_events_prior/mi_prior_1 -- **WHI Women's Health Initiative**:
+    * 3 component_study_variables
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078482.v6_. dbGap Name: **MI**, Desc: **MI ever**, Table: **f2_rel1**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           # Convert age to numeric and rename MI variable.
@@ -936,9 +1010,11 @@
     
     
 <a id="pad_prior_1-aric"></a>
-  * ### atherosclerosis_events_prior/pad_prior_1 -- **ARIC**:
-    * 2 component_study_variables: `phs000280.v5.pht004063.v2.phv00204712.v1`, `phs000280.v5.pht004063.v2.phv00204795.v1`
-    * Function:
+  * ### atherosclerosis_events_prior/pad_prior_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 2 component_study_variables
+      * _phs000280.v5.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v5.pht004063.v2.phv00204795.v1_. dbGap Name: **PAD02**, Desc: **Peripheral artery disease visit 1, definition 2 - same for both genders [Cohort. Visit 1]**, Table: **DERIVE13**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -959,9 +1035,13 @@
       }
       ```
 <a id="pad_prior_1-chs"></a>
-  * ### atherosclerosis_events_prior/pad_prior_1 -- **CHS**:
-    * 4 component_study_variables: `phs000287.v6.pht001452.v1.phv00100330.v1`, `phs000287.v6.pht001452.v1.phv00100333.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100507.v1`
-    * Function:
+  * ### atherosclerosis_events_prior/pad_prior_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 4 component_study_variables
+      * _phs000287.v6.pht001452.v1.phv00100330.v1_. dbGap Name: **ABTLEG**, Desc: **LEG ARTERY BYPASS**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100333.v1_. dbGap Name: **EXTART**, Desc: **LOW EXTREM ANGIOPLASTY**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100507.v1_. dbGap Name: **CLBLMOD**, Desc: **CLD MODIFIED BL STAT**, Table: **BASEBOTH**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         # Filter out rows where all phenotype rows are missing.
@@ -982,9 +1062,11 @@
       }
       ```
 <a id="pad_prior_1-copdgene"></a>
-  * ### atherosclerosis_events_prior/pad_prior_1 -- **COPDGene**:
-    * 2 component_study_variables: `phs000179.v5.pht002239.v4.phv00159618.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
-    * Function:
+  * ### atherosclerosis_events_prior/pad_prior_1 -- **COPDGene **:
+    * 2 component_study_variables
+      * _phs000179.v5.pht002239.v4.phv00159618.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159836.v4_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -1004,9 +1086,14 @@
       }
       ```
 <a id="pad_prior_1-fhs"></a>
-  * ### atherosclerosis_events_prior/pad_prior_1 -- **FHS**:
-    * 5 component_study_variables: `phs000007.v30.pht000309.v13.phv00036469.v12`, `phs000007.v30.pht000309.v13.phv00036471.v12`, `phs000007.v30.pht003099.v5.phv00177930.v5`, `phs000007.v30.pht003316.v7.phv00190817.v7`, `phs000007.v30.pht003316.v7.phv00190823.v7`
-    * Function:
+  * ### atherosclerosis_events_prior/pad_prior_1 -- **FHS Framingham Cohort**:
+    * 5 component_study_variables
+      * _phs000007.v30.pht000309.v13.phv00036469.v12_. dbGap Name: **EVENT**, Desc: **Event Number**, Table: **vr_soe_2020_a_1340s**.
+      * _phs000007.v30.pht000309.v13.phv00036471.v12_. dbGap Name: **DATE**, Desc: **Date of Event**, Table: **vr_soe_2020_a_1340s**.
+      * _phs000007.v30.pht003099.v5.phv00177930.v5_. dbGap Name: **age1**, Desc: **Age at Exam 1**, Table: **vr_dates_2019_a_1175s**.
+      * _phs000007.v30.pht003316.v7.phv00190817.v7_. dbGap Name: **cvd**, Desc: **Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
+      * _phs000007.v30.pht003316.v7.phv00190823.v7_. dbGap Name: **cvddate**, Desc: **Date of Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -1091,9 +1178,16 @@
       }
       ```
 <a id="pad_prior_1-jhs"></a>
-  * ### atherosclerosis_events_prior/pad_prior_1 -- **JHS**:
-    * 7 component_study_variables: `phs000286.v5.pht001921.v1.phv00124562.v1`, `phs000286.v5.pht001921.v1.phv00124563.v1`, `phs000286.v5.pht001921.v1.phv00124564.v1`, `phs000286.v5.pht001921.v1.phv00124565.v1`, `phs000286.v5.pht001921.v1.phv00124566.v1`, `phs000286.v5.pht001921.v1.phv00124567.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
-    * Function:
+  * ### atherosclerosis_events_prior/pad_prior_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 7 component_study_variables
+      * _phs000286.v5.pht001921.v1.phv00124562.v1_. dbGap Name: **ABBA7**, Desc: **7. B. Measures. First brachial Doppler blood pressure (mm Hg) [Visit 1] [Ankle-Brachial Blood Pressure]**, Table: **abba**.
+      * _phs000286.v5.pht001921.v1.phv00124563.v1_. dbGap Name: **ABBA8**, Desc: **8. B. Measures. First right posterior tibia blood pressure (mm Hg) [Visit 1] [Ankle-Brachial Blood Pressure]**, Table: **abba**.
+      * _phs000286.v5.pht001921.v1.phv00124564.v1_. dbGap Name: **ABBA9**, Desc: **9. B. Measures. First left posterior tibia blood pressure (mm Hg) [Visit 1] [Ankle-Brachial Blood Pressure]**, Table: **abba**.
+      * _phs000286.v5.pht001921.v1.phv00124565.v1_. dbGap Name: **ABBA10**, Desc: **10. B. Measures. Second left posterior tibia [Visit 1] [Ankle-Brachial Blood Pressure]**, Table: **abba**.
+      * _phs000286.v5.pht001921.v1.phv00124566.v1_. dbGap Name: **ABBA11**, Desc: **11. B. Measures. Second right posterior tibia blood pressure (mm Hg) [Visit 1] [Ankle-Brachial Blood Pressure]**, Table: **abba**.
+      * _phs000286.v5.pht001921.v1.phv00124567.v1_. dbGap Name: **ABBA12**, Desc: **12. B. Measures. Second brachial blood pressure (mm Hg) [Visit 1] [Ankle-Brachial Blood Pressure]**, Table: **abba**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -1139,9 +1233,10 @@
       }
       ```
 <a id="pad_prior_1-mesa"></a>
-  * ### atherosclerosis_events_prior/pad_prior_1 -- **MESA**:
-    * 1 component_study_variables: `phs000209.v13.pht001116.v10.phv00084442.v3`
-    * Function:
+  * ### atherosclerosis_events_prior/pad_prior_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 1 component_study_variables
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         # Convert age to numeric and set all participants to 0.
@@ -1151,9 +1246,13 @@
       }
       ```
 <a id="pad_prior_1-whi"></a>
-  * ### atherosclerosis_events_prior/pad_prior_1 -- **WHI**:
-    * 4 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht000999.v6.phv00078507.v6`, `phs000200.v11.pht000999.v6.phv00078562.v6`
-    * Function:
+  * ### atherosclerosis_events_prior/pad_prior_1 -- **WHI Women's Health Initiative**:
+    * 4 component_study_variables
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
+      * _phs000200.v11.pht000999.v6.phv00078507.v6_. dbGap Name: **F30DAYS**, Desc: **F30 Days since randomization/enrollment**, Table: **f30_rel2**.
+      * _phs000200.v11.pht000999.v6.phv00078562.v6_. dbGap Name: **PAD**, Desc: **Peripheral arterial disease ever**, Table: **f30_rel2**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         source_data <- phen_list$source_data

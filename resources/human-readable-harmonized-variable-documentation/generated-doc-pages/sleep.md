@@ -65,9 +65,19 @@
     Some subjects in *_CARDIA_*, *_CHS_*, *_FHS_* Original Cohort, *_HCHS/SOL_* and *_MESA_* reported usual sleep duration of zero or greater than 24 hours per day and were removed from the harmonized dataset.
     
 <a id="sleep_duration_1-aric"></a>
-  * ### sleep/sleep_duration_1 -- **ARIC**:
-    * 10 component_study_variables: `phs000280.v5.pht004228.v2.phv00214261.v1`, `phs000280.v5.pht004228.v2.phv00214262.v1`, `phs000280.v5.pht004228.v2.phv00214263.v1`, `phs000280.v5.pht004228.v2.phv00214268.v1`, `phs000280.v5.pht004228.v2.phv00214269.v1`, `phs000280.v5.pht004228.v2.phv00214270.v1`, `phs000280.v5.pht004228.v2.phv00214274.v1`, `phs000280.v5.pht004228.v2.phv00215388.v1`, `phs000280.v5.pht006431.v1.phv00295623.v1`, `phs000280.v5.pht006479.v1.phv00298019.v1`
-    * Function:
+  * ### sleep/sleep_duration_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 10 component_study_variables
+      * _phs000280.v5.pht004228.v2.phv00214261.v1_. No dbGap metadata available.
+      * _phs000280.v5.pht004228.v2.phv00214262.v1_. No dbGap metadata available.
+      * _phs000280.v5.pht004228.v2.phv00214263.v1_. No dbGap metadata available.
+      * _phs000280.v5.pht004228.v2.phv00214268.v1_. No dbGap metadata available.
+      * _phs000280.v5.pht004228.v2.phv00214269.v1_. No dbGap metadata available.
+      * _phs000280.v5.pht004228.v2.phv00214270.v1_. No dbGap metadata available.
+      * _phs000280.v5.pht004228.v2.phv00214274.v1_. No dbGap metadata available.
+      * _phs000280.v5.pht004228.v2.phv00215388.v1_. No dbGap metadata available.
+      * _phs000280.v5.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
+      * _phs000280.v5.pht006479.v1.phv00298019.v1_. dbGap Name: **RSE21**, Desc: **F. Sleep. Q21. Hours of sleep in past month [Respiratory Symptoms Form. RSE. Visit 5]**, Table: **RSE**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -126,9 +136,11 @@
       }
       ```
 <a id="sleep_duration_1-cardia"></a>
-  * ### sleep/sleep_duration_1 -- **CARDIA**:
-    * 2 component_study_variables: `phs000285.v3.pht001839.v2.phv00120534.v2`, `phs000285.v3.pht001851.v2.phv00120748.v2`
-    * Function:
+  * ### sleep/sleep_duration_1 -- **CARDIA CARDIA Cohort**:
+    * 2 component_study_variables
+      * _phs000285.v3.pht001839.v2.phv00120534.v2_. dbGap Name: **F67SLPHR**, Desc: **PAST MONTH AVG SLEEPING HOURS. Q 7**, Table: **F1F67**.
+      * _phs000285.v3.pht001851.v2.phv00120748.v2_. dbGap Name: **EX6_AGE**, Desc: **CALCULATED AGE AT EXAM 6**, Table: **F1REF**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -147,9 +159,11 @@
       }
       ```
 <a id="sleep_duration_1-chs"></a>
-  * ### sleep/sleep_duration_1 -- **CHS**:
-    * 2 component_study_variables: `phs000287.v6.pht001460.v1.phv00100694.v1`, `phs000287.v6.pht001460.v1.phv00100712.v1`
-    * Function:
+  * ### sleep/sleep_duration_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 2 component_study_variables
+      * _phs000287.v6.pht001460.v1.phv00100694.v1_. dbGap Name: **AGE_S1**, Desc: **Age = StdyDtqa - DOB**, Table: **CHS_SHHS1_15K**.
+      * _phs000287.v6.pht001460.v1.phv00100712.v1_. dbGap Name: **HRSWD02**, Desc: **How many hours of sleep do you usually get at night (or your main sleep period) on weekdays or workdays?**, Table: **CHS_SHHS1_15K**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -166,9 +180,11 @@
       }
       ```
 <a id="sleep_duration_1-hchs_sol"></a>
-  * ### sleep/sleep_duration_1 -- **HCHS_SOL**:
-    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00258046.v1`
-    * Function:
+  * ### sleep/sleep_duration_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
+    * 2 component_study_variables
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00258046.v1_. dbGap Name: **SLPDUR**, Desc: **Average sleep duration (hours)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -185,9 +201,11 @@
       }
       ```
 <a id="sleep_duration_1-jhs"></a>
-  * ### sleep/sleep_duration_1 -- **JHS**:
-    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001963.v1.phv00127678.v1`
-    * Function:
+  * ### sleep/sleep_duration_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 2 component_study_variables
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001963.v1.phv00127678.v1_. dbGap Name: **MHXA7**, Desc: **Q7. A. Sleep. During the past month, excluding naps, how many hours of actual sleep did you get at night (or day, if you work at night) on average (Hours)? [Visit 1] [Medical History Form, MHX]**, Table: **mhxa**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         source_data <- phen_list$source_data
@@ -201,9 +219,11 @@
       }
       ```
 <a id="sleep_duration_1-mesa"></a>
-  * ### sleep/sleep_duration_1 -- **MESA**:
-    * 2 component_study_variables: `phs000209.v13.pht001120.v10.phv00086727.v3`, `phs000209.v13.pht001120.v10.phv00087048.v2`
-    * Function:
+  * ### sleep/sleep_duration_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 2 component_study_variables
+      * _phs000209.v13.pht001120.v10.phv00086727.v3_. dbGap Name: **age4c**, Desc: **AGE AT EXAM 4**, Table: **MESA_Exam4Main**.
+      * _phs000209.v13.pht001120.v10.phv00087048.v2_. dbGap Name: **slpwkhr4**, Desc: **NIGHT SLEEP HOURS ON WEEKDAY OR WORKDAY**, Table: **MESA_Exam4Main**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -220,9 +240,14 @@
       }
       ```
 <a id="sleep_duration_1-whi"></a>
-  * ### sleep/sleep_duration_1 -- **WHI**:
-    * 5 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001005.v6.phv00078869.v6`, `phs000200.v11.pht001005.v6.phv00078870.v6`, `phs000200.v11.pht001005.v6.phv00079041.v6`
-    * Function:
+  * ### sleep/sleep_duration_1 -- **WHI Women's Health Initiative**:
+    * 5 component_study_variables
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
+      * _phs000200.v11.pht001005.v6.phv00078869.v6_. dbGap Name: **F37VY**, Desc: **Visit year**, Table: **f37_rel1**.
+      * _phs000200.v11.pht001005.v6.phv00078870.v6_. dbGap Name: **F37DAYS**, Desc: **F37 Days since randomization/enrollment**, Table: **f37_rel1**.
+      * _phs000200.v11.pht001005.v6.phv00079041.v6_. dbGap Name: **HRSSLP**, Desc: **How many hours of sleep**, Table: **f37_rel1**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)

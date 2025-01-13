@@ -142,9 +142,13 @@
     
     
 <a id="current_smoker_baseline_1-aric"></a>
-  * ### baseline_common_covariates/current_smoker_baseline_1 -- **ARIC**:
-    * 4 component_study_variables: `phs000280.v5.pht004063.v2.phv00204712.v1`, `phs000280.v5.pht004111.v2.phv00207368.v1`, `phs000280.v5.pht004111.v2.phv00207370.v1`, `phs000280.v5.pht004111.v2.phv00207372.v1`
-    * Function:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 4 component_study_variables
+      * _phs000280.v5.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v5.pht004111.v2.phv00207368.v1_. dbGap Name: **HOM28**, Desc: **Have you ever smoked cigarettes? Q28 [Home Interview. HOM. Visit 1]**, Table: **HOM**.
+      * _phs000280.v5.pht004111.v2.phv00207370.v1_. dbGap Name: **HOM30**, Desc: **Do you now smoke cigarettes? Q30 [Home Interview. HOM. Visit 1]**, Table: **HOM**.
+      * _phs000280.v5.pht004111.v2.phv00207372.v1_. dbGap Name: **HOM32**, Desc: **Number of cigarettes smoked per day. Q32 [Home Interview. HOM. Visit 1]**, Table: **HOM**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -172,9 +176,12 @@
       }
       ```
 <a id="current_smoker_baseline_1-cardia"></a>
-  * ### baseline_common_covariates/current_smoker_baseline_1 -- **CARDIA**:
-    * 3 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001572.v2.phv00113168.v2`, `phs000285.v3.pht001573.v2.phv00113213.v2`
-    * Function:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **CARDIA CARDIA Cohort**:
+    * 3 component_study_variables
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
+      * _phs000285.v3.pht001572.v2.phv00113168.v2_. dbGap Name: **A09SMKNW**, Desc: **STILL SMOKES CIGARETTES REGULARLY? Q 2.01**, Table: **A4F09TOB**.
+      * _phs000285.v3.pht001573.v2.phv00113213.v2_. dbGap Name: **A10CIGS**, Desc: **SUBJECT HAS SMOKED CIGARETTES. Q 2**, Table: **A4F10**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         source_data <- phen_list$source_data
@@ -200,9 +207,14 @@
       }
       ```
 <a id="current_smoker_baseline_1-chs"></a>
-  * ### baseline_common_covariates/current_smoker_baseline_1 -- **CHS**:
-    * 5 component_study_variables: `phs000287.v6.pht001450.v1.phv00098844.v1`, `phs000287.v6.pht001450.v1.phv00098845.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001490.v1.phv00105143.v1`, `phs000287.v6.pht001490.v1.phv00105144.v1`
-    * Function:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 5 component_study_variables
+      * _phs000287.v6.pht001450.v1.phv00098844.v1_. dbGap Name: **SMOKE101**, Desc: **SMOKED IN LIFETIME**, Table: **BASE1**.
+      * _phs000287.v6.pht001450.v1.phv00098845.v1_. dbGap Name: **SMOKE201**, Desc: **SMOKED CIGARETTES LAST 30 DAYS**, Table: **BASE1**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001490.v1.phv00105143.v1_. dbGap Name: **SMOKE101**, Desc: **SMOKED IN LIFETIME**, Table: **YR5NEW**.
+      * _phs000287.v6.pht001490.v1.phv00105144.v1_. dbGap Name: **SMOKE201**, Desc: **SMOKED CIGARETTES LAST 30 DAYS**, Table: **YR5NEW**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -228,9 +240,18 @@
       }
       ```
 <a id="current_smoker_baseline_1-copdgene"></a>
-  * ### baseline_common_covariates/current_smoker_baseline_1 -- **COPDGene**:
-    * 9 component_study_variables: `phs000179.v5.pht002239.v4.phv00159636.v4`, `phs000179.v5.pht002239.v4.phv00159637.v4`, `phs000179.v5.pht002239.v4.phv00159640.v4`, `phs000179.v5.pht002239.v4.phv00159749.v4`, `phs000179.v5.pht002239.v4.phv00159750.v4`, `phs000179.v5.pht002239.v4.phv00159754.v4`, `phs000179.v5.pht002239.v4.phv00159755.v4`, `phs000179.v5.pht002239.v4.phv00159756.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
-    * Function:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **COPDGene **:
+    * 9 component_study_variables
+      * _phs000179.v5.pht002239.v4.phv00159636.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159637.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159640.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159749.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159750.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159754.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159755.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159756.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159836.v4_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -257,9 +278,14 @@
       }
       ```
 <a id="current_smoker_baseline_1-hchs_sol"></a>
-  * ### baseline_common_covariates/current_smoker_baseline_1 -- **HCHS_SOL**:
-    * 5 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00258106.v1`, `phs000810.v1.pht004715.v1.phv00258107.v1`, `phs000810.v1.pht004715.v1.phv00258108.v1`, `phs000810.v1.pht004715.v1.phv00258110.v1`
-    * Function:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
+    * 5 component_study_variables
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00258106.v1_. dbGap Name: **TBEA1**, Desc: **Smoke at least 100 cigs in lifetime (TBEA1)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00258107.v1_. dbGap Name: **TBEA3**, Desc: **Present Smoking Status (TBEA3)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00258108.v1_. dbGap Name: **TBEA4**, Desc: **Daily: Cigs per Day - Present (TBEA4)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00258110.v1_. dbGap Name: **TBEA5A**, Desc: **Some: Past 30 days - quit smoking 6 months or longer (TBEA5A)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -287,9 +313,12 @@
       }
       ```
 <a id="current_smoker_baseline_1-jhs"></a>
-  * ### baseline_common_covariates/current_smoker_baseline_1 -- **JHS**:
-    * 3 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001977.v1.phv00128496.v1`, `phs000286.v5.pht001977.v1.phv00128498.v1`
-    * Function:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 3 component_study_variables
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001977.v1.phv00128496.v1_. dbGap Name: **TOBA1**, Desc: **Q1. Smoked at least 400 cigarettes in your lifetime [Visit 1] [Health Practices: Tobacco Use, TOB]**, Table: **toba**.
+      * _phs000286.v5.pht001977.v1.phv00128498.v1_. dbGap Name: **TOBA3**, Desc: **Q3. Do you now smoke cigarettes [Visit 1] [Health Practices: Tobacco Use, TOB]**, Table: **toba**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -308,9 +337,18 @@
       }
       ```
 <a id="current_smoker_baseline_1-mesa"></a>
-  * ### baseline_common_covariates/current_smoker_baseline_1 -- **MESA**:
-    * 9 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00083243.v1`, `phs000209.v13.pht001111.v4.phv00083245.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085570.v2`, `phs000209.v13.pht001116.v10.phv00085572.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087252.v1`, `phs000209.v13.pht001121.v3.phv00087254.v1`
-    * Function:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 9 component_study_variables
+      * _phs000209.v13.pht001111.v4.phv00082639.v2_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_AirNRExamMain**.
+      * _phs000209.v13.pht001111.v4.phv00083243.v1_. dbGap Name: **evsmk1**, Desc: **SMOKED AT LEAST 100 CIGARETTES IN LIFETIME**, Table: **MESA_AirNRExamMain**.
+      * _phs000209.v13.pht001111.v4.phv00083245.v1_. dbGap Name: **cursmk1**, Desc: **CIGARETTES: SMOKED IN LAST 30 DAYS**, Table: **MESA_AirNRExamMain**.
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00085570.v2_. dbGap Name: **evsmk1**, Desc: **SMOKED AT LEAST 100 CIGARETTES IN LIFETIME**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00085572.v2_. dbGap Name: **cursmk1**, Desc: **CIGARETTES: SMOKED IN LAST 30 DAYS**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001121.v3.phv00087071.v1_. dbGap Name: **agefc**, Desc: **AGE**, Table: **MESA_FamilyExamMain**.
+      * _phs000209.v13.pht001121.v3.phv00087252.v1_. dbGap Name: **evsmkf**, Desc: **SMOKED 100+ CIGARETTES IN LIFETIME**, Table: **MESA_FamilyExamMain**.
+      * _phs000209.v13.pht001121.v3.phv00087254.v1_. dbGap Name: **cursmkf**, Desc: **SMOKED CIGARETTES IN THE LAST 30 DAYS**, Table: **MESA_FamilyExamMain**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -336,9 +374,14 @@
       }
       ```
 <a id="current_smoker_baseline_1-whi"></a>
-  * ### baseline_common_covariates/current_smoker_baseline_1 -- **WHI**:
-    * 5 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001003.v6.phv00078773.v6`, `phs000200.v11.pht001003.v6.phv00078774.v6`, `phs000200.v11.pht001003.v6.phv00078776.v6`
-    * Function:
+  * ### baseline_common_covariates/current_smoker_baseline_1 -- **WHI Women's Health Initiative**:
+    * 5 component_study_variables
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
+      * _phs000200.v11.pht001003.v6.phv00078773.v6_. dbGap Name: **F34DAYS**, Desc: **F34 Days since randomization/enrollment**, Table: **f34_rel2**.
+      * _phs000200.v11.pht001003.v6.phv00078774.v6_. dbGap Name: **SMOKEVR**, Desc: **Smoked at least 100 cigarettes ever**, Table: **f34_rel2**.
+      * _phs000200.v11.pht001003.v6.phv00078776.v6_. dbGap Name: **SMOKNOW**, Desc: **Smoke cigarettes now**, Table: **f34_rel2**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -432,9 +475,15 @@
     | WHI | Screening, Year 0 |
     
 <a id="ever_smoker_baseline_1-aric"></a>
-  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **ARIC**:
-    * 6 component_study_variables: `phs000280.v5.pht004063.v2.phv00204712.v1`, `phs000280.v5.pht004111.v2.phv00207368.v1`, `phs000280.v5.pht004111.v2.phv00207369.v1`, `phs000280.v5.pht004111.v2.phv00207370.v1`, `phs000280.v5.pht004111.v2.phv00207375.v1`, `phs000280.v5.pht004111.v2.phv00207376.v1`
-    * Function:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 6 component_study_variables
+      * _phs000280.v5.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v5.pht004111.v2.phv00207368.v1_. dbGap Name: **HOM28**, Desc: **Have you ever smoked cigarettes? Q28 [Home Interview. HOM. Visit 1]**, Table: **HOM**.
+      * _phs000280.v5.pht004111.v2.phv00207369.v1_. dbGap Name: **HOM29**, Desc: **How old were you when you first started regular cigarette smoking? Q29 [Home Interview. HOM. Visit 1]**, Table: **HOM**.
+      * _phs000280.v5.pht004111.v2.phv00207370.v1_. dbGap Name: **HOM30**, Desc: **Do you now smoke cigarettes? Q30 [Home Interview. HOM. Visit 1]**, Table: **HOM**.
+      * _phs000280.v5.pht004111.v2.phv00207375.v1_. dbGap Name: **HOM35**, Desc: **On the average of the entire time you smoked, how many cigarettes did you usually smoke per day? Q35 [Home Interview. HOM. Visit 1]**, Table: **HOM**.
+      * _phs000280.v5.pht004111.v2.phv00207376.v1_. dbGap Name: **HOM36**, Desc: **(Do/did) you inhale the cigarette smoke? Q36 [Home Interview. HOM. Visit 1]**, Table: **HOM**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -462,9 +511,11 @@
       }
       ```
 <a id="ever_smoker_baseline_1-cardia"></a>
-  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **CARDIA**:
-    * 2 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001573.v2.phv00113213.v2`
-    * Function:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **CARDIA CARDIA Cohort**:
+    * 2 component_study_variables
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
+      * _phs000285.v3.pht001573.v2.phv00113213.v2_. dbGap Name: **A10CIGS**, Desc: **SUBJECT HAS SMOKED CIGARETTES. Q 2**, Table: **A4F10**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -487,9 +538,18 @@
       }
       ```
 <a id="ever_smoker_baseline_1-chs"></a>
-  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **CHS**:
-    * 9 component_study_variables: `phs000287.v6.pht001450.v1.phv00098844.v1`, `phs000287.v6.pht001450.v1.phv00098845.v1`, `phs000287.v6.pht001450.v1.phv00099157.v1`, `phs000287.v6.pht001450.v1.phv00099159.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001490.v1.phv00105143.v1`, `phs000287.v6.pht001490.v1.phv00105144.v1`, `phs000287.v6.pht001490.v1.phv00106198.v1`, `phs000287.v6.pht001490.v1.phv00106200.v1`
-    * Function:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 9 component_study_variables
+      * _phs000287.v6.pht001450.v1.phv00098844.v1_. dbGap Name: **SMOKE101**, Desc: **SMOKED IN LIFETIME**, Table: **BASE1**.
+      * _phs000287.v6.pht001450.v1.phv00098845.v1_. dbGap Name: **SMOKE201**, Desc: **SMOKED CIGARETTES LAST 30 DAYS**, Table: **BASE1**.
+      * _phs000287.v6.pht001450.v1.phv00099157.v1_. dbGap Name: **SMKAGE08**, Desc: **HOW OLD WHEN YOU STARTED TO SMOKE**, Table: **BASE1**.
+      * _phs000287.v6.pht001450.v1.phv00099159.v1_. dbGap Name: **AMOUNT08**, Desc: **HOW MANY DID YOU SMOKE PER DAY ON AVER (99=UNKNOWN)**, Table: **BASE1**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001490.v1.phv00105143.v1_. dbGap Name: **SMOKE101**, Desc: **SMOKED IN LIFETIME**, Table: **YR5NEW**.
+      * _phs000287.v6.pht001490.v1.phv00105144.v1_. dbGap Name: **SMOKE201**, Desc: **SMOKED CIGARETTES LAST 30 DAYS**, Table: **YR5NEW**.
+      * _phs000287.v6.pht001490.v1.phv00106198.v1_. dbGap Name: **SMKAGE58**, Desc: **HOW OLD WHEN YOU STARTED TO SMOKE**, Table: **YR5NEW**.
+      * _phs000287.v6.pht001490.v1.phv00106200.v1_. dbGap Name: **AMOUNT58**, Desc: **HOW MANY DID YOU SMOKE PER DAY ON AVER.**, Table: **YR5NEW**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -531,9 +591,25 @@
       }
       ```
 <a id="ever_smoker_baseline_1-copdgene"></a>
-  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **COPDGene**:
-    * 16 component_study_variables: `phs000179.v5.pht002239.v4.phv00159636.v4`, `phs000179.v5.pht002239.v4.phv00159637.v4`, `phs000179.v5.pht002239.v4.phv00159638.v4`, `phs000179.v5.pht002239.v4.phv00159639.v4`, `phs000179.v5.pht002239.v4.phv00159640.v4`, `phs000179.v5.pht002239.v4.phv00159641.v4`, `phs000179.v5.pht002239.v4.phv00159747.v4`, `phs000179.v5.pht002239.v4.phv00159748.v4`, `phs000179.v5.pht002239.v4.phv00159749.v4`, `phs000179.v5.pht002239.v4.phv00159750.v4`, `phs000179.v5.pht002239.v4.phv00159752.v4`, `phs000179.v5.pht002239.v4.phv00159754.v4`, `phs000179.v5.pht002239.v4.phv00159755.v4`, `phs000179.v5.pht002239.v4.phv00159756.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`, `phs000179.v5.pht002239.v4.phv00169388.v3`
-    * Function:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **COPDGene **:
+    * 16 component_study_variables
+      * _phs000179.v5.pht002239.v4.phv00159636.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159637.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159638.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159639.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159640.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159641.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159747.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159748.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159749.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159750.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159752.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159754.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159755.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159756.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159836.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00169388.v3_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -555,9 +631,14 @@
       }
       ```
 <a id="ever_smoker_baseline_1-hchs_sol"></a>
-  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **HCHS_SOL**:
-    * 5 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00258106.v1`, `phs000810.v1.pht004715.v1.phv00258107.v1`, `phs000810.v1.pht004715.v1.phv00258108.v1`, `phs000810.v1.pht004715.v1.phv00258110.v1`
-    * Function:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
+    * 5 component_study_variables
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00258106.v1_. dbGap Name: **TBEA1**, Desc: **Smoke at least 100 cigs in lifetime (TBEA1)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00258107.v1_. dbGap Name: **TBEA3**, Desc: **Present Smoking Status (TBEA3)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00258108.v1_. dbGap Name: **TBEA4**, Desc: **Daily: Cigs per Day - Present (TBEA4)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00258110.v1_. dbGap Name: **TBEA5A**, Desc: **Some: Past 30 days - quit smoking 6 months or longer (TBEA5A)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -587,9 +668,16 @@
       }
       ```
 <a id="ever_smoker_baseline_1-jhs"></a>
-  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **JHS**:
-    * 7 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001977.v1.phv00128496.v1`, `phs000286.v5.pht001977.v1.phv00128498.v1`, `phs000286.v5.pht001977.v1.phv00128502.v1`, `phs000286.v5.pht001977.v1.phv00128503.v1`, `phs000286.v5.pht001977.v1.phv00128506.v1`, `phs000286.v5.pht001977.v1.phv00128507.v1`
-    * Function:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 7 component_study_variables
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001977.v1.phv00128496.v1_. dbGap Name: **TOBA1**, Desc: **Q1. Smoked at least 400 cigarettes in your lifetime [Visit 1] [Health Practices: Tobacco Use, TOB]**, Table: **toba**.
+      * _phs000286.v5.pht001977.v1.phv00128498.v1_. dbGap Name: **TOBA3**, Desc: **Q3. Do you now smoke cigarettes [Visit 1] [Health Practices: Tobacco Use, TOB]**, Table: **toba**.
+      * _phs000286.v5.pht001977.v1.phv00128502.v1_. dbGap Name: **TOBA6**, Desc: **Q6. Do you smoke more frequently during the first few hours after awakening than during the rest of the day? [Visit 1] [Health Practices: Tobacco Use, TOB]**, Table: **toba**.
+      * _phs000286.v5.pht001977.v1.phv00128503.v1_. dbGap Name: **TOBA7**, Desc: **Q7. How soon after you wake up do you smoke your first cigarette? [Visit 1] [Health Practices: Tobacco Use, TOB]**, Table: **toba**.
+      * _phs000286.v5.pht001977.v1.phv00128506.v1_. dbGap Name: **TOBA10**, Desc: **Q10. Do you smoke if you are so ill that you are in bed most of the day? [Visit 1] [Health Practices: Tobacco Use, TOB]**, Table: **toba**.
+      * _phs000286.v5.pht001977.v1.phv00128507.v1_. dbGap Name: **TOBA11**, Desc: **Q11. On the average for the entire time you have smoked, how many cigarettes did you smoke usually per day? [Visit 1] [Health Practices: Tobacco Use, TOB]**, Table: **toba**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -621,9 +709,21 @@
       }
       ```
 <a id="ever_smoker_baseline_1-mesa"></a>
-  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **MESA**:
-    * 12 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00083243.v1`, `phs000209.v13.pht001111.v4.phv00083245.v1`, `phs000209.v13.pht001111.v4.phv00083247.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085570.v2`, `phs000209.v13.pht001116.v10.phv00085572.v2`, `phs000209.v13.pht001116.v10.phv00085574.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087252.v1`, `phs000209.v13.pht001121.v3.phv00087254.v1`, `phs000209.v13.pht001121.v3.phv00087256.v1`
-    * Function:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 12 component_study_variables
+      * _phs000209.v13.pht001111.v4.phv00082639.v2_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_AirNRExamMain**.
+      * _phs000209.v13.pht001111.v4.phv00083243.v1_. dbGap Name: **evsmk1**, Desc: **SMOKED AT LEAST 100 CIGARETTES IN LIFETIME**, Table: **MESA_AirNRExamMain**.
+      * _phs000209.v13.pht001111.v4.phv00083245.v1_. dbGap Name: **cursmk1**, Desc: **CIGARETTES: SMOKED IN LAST 30 DAYS**, Table: **MESA_AirNRExamMain**.
+      * _phs000209.v13.pht001111.v4.phv00083247.v1_. dbGap Name: **cigsday1**, Desc: **CIGARETTES: AVERAGE # SMOKED PER DAY**, Table: **MESA_AirNRExamMain**.
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00085570.v2_. dbGap Name: **evsmk1**, Desc: **SMOKED AT LEAST 100 CIGARETTES IN LIFETIME**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00085572.v2_. dbGap Name: **cursmk1**, Desc: **CIGARETTES: SMOKED IN LAST 30 DAYS**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00085574.v2_. dbGap Name: **cigsday1**, Desc: **CIGARETTES: AVERAGE # SMOKED PER DAY**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001121.v3.phv00087071.v1_. dbGap Name: **agefc**, Desc: **AGE**, Table: **MESA_FamilyExamMain**.
+      * _phs000209.v13.pht001121.v3.phv00087252.v1_. dbGap Name: **evsmkf**, Desc: **SMOKED 100+ CIGARETTES IN LIFETIME**, Table: **MESA_FamilyExamMain**.
+      * _phs000209.v13.pht001121.v3.phv00087254.v1_. dbGap Name: **cursmkf**, Desc: **SMOKED CIGARETTES IN THE LAST 30 DAYS**, Table: **MESA_FamilyExamMain**.
+      * _phs000209.v13.pht001121.v3.phv00087256.v1_. dbGap Name: **cigsdayf**, Desc: **AVERAGE NUMBER OF CIGARETTES SMOKED PER DAY**, Table: **MESA_FamilyExamMain**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -656,9 +756,13 @@
       }
       ```
 <a id="ever_smoker_baseline_1-whi"></a>
-  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **WHI**:
-    * 4 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001003.v6.phv00078773.v6`, `phs000200.v11.pht001003.v6.phv00078774.v6`
-    * Function:
+  * ### baseline_common_covariates/ever_smoker_baseline_1 -- **WHI Women's Health Initiative**:
+    * 4 component_study_variables
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
+      * _phs000200.v11.pht001003.v6.phv00078773.v6_. dbGap Name: **F34DAYS**, Desc: **F34 Days since randomization/enrollment**, Table: **f34_rel2**.
+      * _phs000200.v11.pht001003.v6.phv00078774.v6_. dbGap Name: **SMOKEVR**, Desc: **Smoked at least 100 cigarettes ever**, Table: **f34_rel2**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -753,9 +857,11 @@
     
     
 <a id="height_baseline_1-aric"></a>
-  * ### baseline_common_covariates/height_baseline_1 -- **ARIC**:
-    * 2 component_study_variables: `phs000280.v5.pht004032.v2.phv00203151.v1`, `phs000280.v5.pht004063.v2.phv00204712.v1`
-    * Function:
+  * ### baseline_common_covariates/height_baseline_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 2 component_study_variables
+      * _phs000280.v5.pht004032.v2.phv00203151.v1_. dbGap Name: **ANTA01**, Desc: **[Height and weight]. Standing height (to the nearest cm). Q1 [Anthropometry Form, ANTA. Visit 1]**, Table: **ANTA**.
+      * _phs000280.v5.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -775,9 +881,11 @@
       }
       ```
 <a id="height_baseline_1-cardia"></a>
-  * ### baseline_common_covariates/height_baseline_1 -- **CARDIA**:
-    * 2 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001583.v2.phv00113634.v2`
-    * Function:
+  * ### baseline_common_covariates/height_baseline_1 -- **CARDIA CARDIA Cohort**:
+    * 2 component_study_variables
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
+      * _phs000285.v3.pht001583.v2.phv00113634.v2_. dbGap Name: **A20HGT**, Desc: **PT'S HGT, CM. Q 1**, Table: **A4F20**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -792,9 +900,11 @@
       }
       ```
 <a id="height_baseline_1-chs"></a>
-  * ### baseline_common_covariates/height_baseline_1 -- **CHS**:
-    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100382.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
-    * Function:
+  * ### baseline_common_covariates/height_baseline_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 2 component_study_variables
+      * _phs000287.v6.pht001452.v1.phv00100382.v1_. dbGap Name: **STHT13**, Desc: **STANDING HEIGHT - CM**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -811,9 +921,11 @@
       }
       ```
 <a id="height_baseline_1-copdgene"></a>
-  * ### baseline_common_covariates/height_baseline_1 -- **COPDGene**:
-    * 2 component_study_variables: `phs000179.v5.pht002239.v4.phv00159592.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
-    * Function:
+  * ### baseline_common_covariates/height_baseline_1 -- **COPDGene **:
+    * 2 component_study_variables
+      * _phs000179.v5.pht002239.v4.phv00159592.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159836.v4_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -829,9 +941,11 @@
       }
       ```
 <a id="height_baseline_1-hchs_sol"></a>
-  * ### baseline_common_covariates/height_baseline_1 -- **HCHS_SOL**:
-    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226281.v1`
-    * Function:
+  * ### baseline_common_covariates/height_baseline_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
+    * 2 component_study_variables
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226281.v1_. dbGap Name: **HEIGHT**, Desc: **Height (corrected)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -846,9 +960,11 @@
       }
       ```
 <a id="height_baseline_1-jhs"></a>
-  * ### baseline_common_covariates/height_baseline_1 -- **JHS**:
-    * 2 component_study_variables: `phs000286.v5.pht001940.v1.phv00125860.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
-    * Function:
+  * ### baseline_common_covariates/height_baseline_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 2 component_study_variables
+      * _phs000286.v5.pht001940.v1.phv00125860.v1_. dbGap Name: **antv1**, Desc: **A. Height and weight. 1: Standing height to nearest cm [Visit 1]**, Table: **antv**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -868,9 +984,15 @@
       }
       ```
 <a id="height_baseline_1-mesa"></a>
-  * ### baseline_common_covariates/height_baseline_1 -- **MESA**:
-    * 6 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082683.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084482.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087078.v1`
-    * Function:
+  * ### baseline_common_covariates/height_baseline_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 6 component_study_variables
+      * _phs000209.v13.pht001111.v4.phv00082639.v2_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_AirNRExamMain**.
+      * _phs000209.v13.pht001111.v4.phv00082683.v1_. dbGap Name: **htcm1**, Desc: **HEIGHT (cm)**, Table: **MESA_AirNRExamMain**.
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00084482.v2_. dbGap Name: **htcm1**, Desc: **HEIGHT (cm)**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001121.v3.phv00087071.v1_. dbGap Name: **agefc**, Desc: **AGE**, Table: **MESA_FamilyExamMain**.
+      * _phs000209.v13.pht001121.v3.phv00087078.v1_. dbGap Name: **htcmf**, Desc: **HEIGHT (cm)**, Table: **MESA_FamilyExamMain**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -893,9 +1015,14 @@
       }
       ```
 <a id="height_baseline_1-whi"></a>
-  * ### baseline_common_covariates/height_baseline_1 -- **WHI**:
-    * 5 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001019.v6.phv00079851.v6`, `phs000200.v11.pht001019.v6.phv00079852.v6`, `phs000200.v11.pht001019.v6.phv00079858.v6`
-    * Function:
+  * ### baseline_common_covariates/height_baseline_1 -- **WHI Women's Health Initiative**:
+    * 5 component_study_variables
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
+      * _phs000200.v11.pht001019.v6.phv00079851.v6_. dbGap Name: **F80VY**, Desc: **Visit year**, Table: **f80_rel1**.
+      * _phs000200.v11.pht001019.v6.phv00079852.v6_. dbGap Name: **F80DAYS**, Desc: **F80 Days since randomization/enrollment**, Table: **f80_rel1**.
+      * _phs000200.v11.pht001019.v6.phv00079858.v6_. dbGap Name: **HEIGHTX**, Desc: **F80 Height cm**, Table: **f80_rel1**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -1003,9 +1130,11 @@
     
     
 <a id="weight_baseline_1-aric"></a>
-  * ### baseline_common_covariates/weight_baseline_1 -- **ARIC**:
-    * 2 component_study_variables: `phs000280.v5.pht004032.v2.phv00203154.v1`, `phs000280.v5.pht004063.v2.phv00204712.v1`
-    * Function:
+  * ### baseline_common_covariates/weight_baseline_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 2 component_study_variables
+      * _phs000280.v5.pht004032.v2.phv00203154.v1_. dbGap Name: **ANTA04**, Desc: **[Height and weight]. Weight (to the nearest lb). Q4 [Anthropometry Form, ANTA. Visit 1]**, Table: **ANTA**.
+      * _phs000280.v5.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -1027,9 +1156,11 @@
       }
       ```
 <a id="weight_baseline_1-cardia"></a>
-  * ### baseline_common_covariates/weight_baseline_1 -- **CARDIA**:
-    * 2 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001583.v2.phv00113635.v2`
-    * Function:
+  * ### baseline_common_covariates/weight_baseline_1 -- **CARDIA CARDIA Cohort**:
+    * 2 component_study_variables
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
+      * _phs000285.v3.pht001583.v2.phv00113635.v2_. dbGap Name: **A20WGT**, Desc: **PT'S WGT, LBS. Q 2**, Table: **A4F20**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         # Join all dataframes.
@@ -1043,9 +1174,11 @@
       }
       ```
 <a id="weight_baseline_1-chs"></a>
-  * ### baseline_common_covariates/weight_baseline_1 -- **CHS**:
-    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100383.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
-    * Function:
+  * ### baseline_common_covariates/weight_baseline_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 2 component_study_variables
+      * _phs000287.v6.pht001452.v1.phv00100383.v1_. dbGap Name: **WEIGHT13**, Desc: **WEIGHT - LBS**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -1061,9 +1194,11 @@
       }
       ```
 <a id="weight_baseline_1-copdgene"></a>
-  * ### baseline_common_covariates/weight_baseline_1 -- **COPDGene**:
-    * 2 component_study_variables: `phs000179.v5.pht002239.v4.phv00159591.v4`, `phs000179.v5.pht002239.v4.phv00159836.v4`
-    * Function:
+  * ### baseline_common_covariates/weight_baseline_1 -- **COPDGene **:
+    * 2 component_study_variables
+      * _phs000179.v5.pht002239.v4.phv00159591.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159836.v4_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -1080,9 +1215,11 @@
       }
       ```
 <a id="weight_baseline_1-hchs_sol"></a>
-  * ### baseline_common_covariates/weight_baseline_1 -- **HCHS_SOL**:
-    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00253218.v1`
-    * Function:
+  * ### baseline_common_covariates/weight_baseline_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
+    * 2 component_study_variables
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00253218.v1_. dbGap Name: **ANTA4**, Desc: **Weight (kg) (ANTA4)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -1097,9 +1234,11 @@
       }
       ```
 <a id="weight_baseline_1-jhs"></a>
-  * ### baseline_common_covariates/weight_baseline_1 -- **JHS**:
-    * 2 component_study_variables: `phs000286.v5.pht001940.v1.phv00125861.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
-    * Function:
+  * ### baseline_common_covariates/weight_baseline_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 2 component_study_variables
+      * _phs000286.v5.pht001940.v1.phv00125861.v1_. dbGap Name: **antv2**, Desc: **A. Height and weight. 2: Weight to nearest kilogram [Visit 1]**, Table: **antv**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -1119,9 +1258,15 @@
       }
       ```
 <a id="weight_baseline_1-mesa"></a>
-  * ### baseline_common_covariates/weight_baseline_1 -- **MESA**:
-    * 6 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082685.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084484.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087079.v1`
-    * Function:
+  * ### baseline_common_covariates/weight_baseline_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 6 component_study_variables
+      * _phs000209.v13.pht001111.v4.phv00082639.v2_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_AirNRExamMain**.
+      * _phs000209.v13.pht001111.v4.phv00082685.v1_. dbGap Name: **wtlb1**, Desc: **WEIGHT (lbs)**, Table: **MESA_AirNRExamMain**.
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00084484.v2_. dbGap Name: **wtlb1**, Desc: **WEIGHT (lbs)**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001121.v3.phv00087071.v1_. dbGap Name: **agefc**, Desc: **AGE**, Table: **MESA_FamilyExamMain**.
+      * _phs000209.v13.pht001121.v3.phv00087079.v1_. dbGap Name: **wtlbf**, Desc: **WEIGHT (lbs)**, Table: **MESA_FamilyExamMain**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -1143,9 +1288,14 @@
       }
       ```
 <a id="weight_baseline_1-whi"></a>
-  * ### baseline_common_covariates/weight_baseline_1 -- **WHI**:
-    * 5 component_study_variables: `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`, `phs000200.v11.pht001019.v6.phv00079851.v6`, `phs000200.v11.pht001019.v6.phv00079852.v6`, `phs000200.v11.pht001019.v6.phv00079859.v6`
-    * Function:
+  * ### baseline_common_covariates/weight_baseline_1 -- **WHI Women's Health Initiative**:
+    * 5 component_study_variables
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
+      * _phs000200.v11.pht001019.v6.phv00079851.v6_. dbGap Name: **F80VY**, Desc: **Visit year**, Table: **f80_rel1**.
+      * _phs000200.v11.pht001019.v6.phv00079852.v6_. dbGap Name: **F80DAYS**, Desc: **F80 Days since randomization/enrollment**, Table: **f80_rel1**.
+      * _phs000200.v11.pht001019.v6.phv00079859.v6_. dbGap Name: **WEIGHTX**, Desc: **F80 Weight kg**, Table: **f80_rel1**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)

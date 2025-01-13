@@ -135,9 +135,12 @@
     [^3]: Germain, M et al (2015). Meta-analysis of 65,734 individuals identifies TSPAN15 and SLC44A2 as two susceptibility loci for venous thromboembolism. Am J Hum Genet, 96(4) 532-542.
     
 <a id="vte_case_status_1-aric"></a>
-  * ### vte/vte_case_status_1 -- **ARIC**:
-    * 3 component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht006485.v1.phv00298125.v1`, `phs000280.v4.pht006485.v1.phv00298126.v1`
-    * Function:
+  * ### vte/vte_case_status_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 3 component_study_variables
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v4.pht006485.v1.phv00298125.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht006485.v1.phv00298126.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list) {
         library(dplyr)
@@ -175,9 +178,13 @@
       }
       ```
 <a id="vte_case_status_1-chs"></a>
-  * ### vte/vte_case_status_1 -- **CHS**:
-    * 4 component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht005981.v1.phv00273565.v1`, `phs000287.v6.pht005981.v1.phv00273566.v1`, `phs000287.v6.pht005981.v1.phv00273567.v1`
-    * Function:
+  * ### vte/vte_case_status_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 4 component_study_variables
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht005981.v1.phv00273565.v1_. dbGap Name: **vt**, Desc: **Lite: VT case (through dec01)**, Table: **CHS_VTE_data**.
+      * _phs000287.v6.pht005981.v1.phv00273566.v1_. dbGap Name: **ttoevent**, Desc: **Days from baseline to VT or censoring (through dec01)**, Table: **CHS_VTE_data**.
+      * _phs000287.v6.pht005981.v1.phv00273567.v1_. dbGap Name: **vtpehx01**, Desc: **LITE : Self-report of DVT or PE at baseline**, Table: **CHS_VTE_data**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list) {
         library(dplyr)
@@ -248,9 +255,11 @@
     (Note that for the Generation 3, New Offspring Spouse, Omni1 and Omni2 cohorts, adjudication started at Exam 1 so the harmonized variable was set to the age at Exam 1.)
     
 <a id="vte_followup_start_age_1-aric"></a>
-  * ### vte/vte_followup_start_age_1 -- **ARIC**:
-    * 2 component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht006485.v1.phv00298125.v1`
-    * Function:
+  * ### vte/vte_followup_start_age_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 2 component_study_variables
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v4.pht006485.v1.phv00298125.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list) {
         library(dplyr)
@@ -277,9 +286,10 @@
       }
       ```
 <a id="vte_followup_start_age_1-chs"></a>
-  * ### vte/vte_followup_start_age_1 -- **CHS**:
-    * 1 component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`
-    * Function:
+  * ### vte/vte_followup_start_age_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 1 component_study_variables
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list) {
         library(dplyr)
@@ -361,9 +371,11 @@
     
     
 <a id="vte_prior_history_1-aric"></a>
-  * ### vte/vte_prior_history_1 -- **ARIC**:
-    * 2 component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht006485.v1.phv00298125.v1`
-    * Function:
+  * ### vte/vte_prior_history_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 2 component_study_variables
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v4.pht006485.v1.phv00298125.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list) {
         library(dplyr)
@@ -393,9 +405,11 @@
       }
       ```
 <a id="vte_prior_history_1-chs"></a>
-  * ### vte/vte_prior_history_1 -- **CHS**:
-    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht005981.v1.phv00273567.v1`
-    * Function:
+  * ### vte/vte_prior_history_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 2 component_study_variables
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht005981.v1.phv00273567.v1_. dbGap Name: **vtpehx01**, Desc: **LITE : Self-report of DVT or PE at baseline**, Table: **CHS_VTE_data**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list) {
         library(dplyr)
