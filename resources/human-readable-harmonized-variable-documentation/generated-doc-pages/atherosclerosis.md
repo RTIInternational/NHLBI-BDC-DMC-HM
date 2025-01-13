@@ -39,9 +39,11 @@
     
     
 <a id="cac_score_1-chs"></a>
-  * ### atherosclerosis/cac_score_1 -- **CHS**:
-    * 2 component_study_variables: `phs000287.v6.pht001459.v1.phv00100691.v1`, `phs000287.v6.pht001475.v1.phv00102583.v1`
-    * Function:
+  * ### atherosclerosis/cac_score_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 2 component_study_variables
+      * _phs000287.v6.pht001459.v1.phv00100691.v1_. dbGap Name: **CACSCORE**, Desc: **Coronary Artery Calcification by electron beam CYT scan**, Table: **CHS_CAC**.
+      * _phs000287.v6.pht001475.v1.phv00102583.v1_. dbGap Name: **AGEY11**, Desc: **AGE AT YEAR 11**, Table: **YR11**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -70,9 +72,11 @@
       }
       ```
 <a id="cac_score_1-jhs"></a>
-  * ### atherosclerosis/cac_score_1 -- **JHS**:
-    * 2 component_study_variables: `phs000286.v5.pht001948.v1.phv00126002.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
-    * Function:
+  * ### atherosclerosis/cac_score_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 2 component_study_variables
+      * _phs000286.v5.pht001948.v1.phv00126002.v1_. dbGap Name: **CSTA24**, Desc: **24. Agatston Score All Coronary (does not include others)**, Table: **csta**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -124,9 +128,12 @@
     
     Please note that the study component calcium volume variables for FHS sub-cohorts "Offspring" and "Generation 3" were measured at a later time than the component study variables used for harmonized `cac_score`.
 <a id="cac_volume_1-fhs"></a>
-  * ### atherosclerosis/cac_volume_1 -- **FHS**:
-    * 3 component_study_variables: `phs000007.v29.pht003099.v4.phv00177930.v4`, `phs000007.v29.pht005161.v1.phv00257671.v1`, `phs000007.v29.pht005161.v1.phv00257672.v1`
-    * Function:
+  * ### atherosclerosis/cac_volume_1 -- **FHS Framingham Cohort**:
+    * 3 component_study_variables
+      * _phs000007.v29.pht003099.v4.phv00177930.v4_. dbGap Name: **age1**, Desc: **Age at Exam 1**, Table: **vr_dates_2019_a_1175s**.
+      * _phs000007.v29.pht005161.v1.phv00257671.v1_. dbGap Name: **CAC_V**, Desc: **Coronary artery calcium volume**, Table: **t_ctthrcac_2011_m_0682s**.
+      * _phs000007.v29.pht005161.v1.phv00257672.v1_. dbGap Name: **scan_date**, Desc: **CT scan date**, Table: **t_ctthrcac_2011_m_0682s**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -200,9 +207,11 @@
     [^1]:[Documentation Without Data Collection Forms phd002779.1](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/document.cgi?study_id=phs000287.v6.p1&phd=2779)
     
 <a id="carotid_plaque_1-aric"></a>
-  * ### atherosclerosis/carotid_plaque_1 -- **ARIC**:
-    * 2 component_study_variables: `phs000280.v3.pht004063.v1.phv00204712.v1`, `phs000280.v3.pht004063.v1.phv00204791.v1`
-    * Function:
+  * ### atherosclerosis/carotid_plaque_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 2 component_study_variables
+      * _phs000280.v3.pht004063.v1.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v3.pht004063.v1.phv00204791.v1_. dbGap Name: **PLAQUE01**, Desc: **Plaque (with or without shadowing) in any carotid site [Cohort. Visit 1]**, Table: **DERIVE13**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -226,9 +235,15 @@
       }
       ```
 <a id="carotid_plaque_1-chs"></a>
-  * ### atherosclerosis/carotid_plaque_1 -- **CHS**:
-    * 6 component_study_variables: `phs000287.v6.pht001452.v1.phv00100290.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001473.v1.phv00101306.v1`, `phs000287.v6.pht001473.v1.phv00101307.v1`, `phs000287.v6.pht001473.v1.phv00101317.v1`, `phs000287.v6.pht001473.v1.phv00101318.v1`
-    * Function:
+  * ### atherosclerosis/carotid_plaque_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 6 component_study_variables
+      * _phs000287.v6.pht001452.v1.phv00100290.v1_. dbGap Name: **PERSTAT**, Desc: **COHORT**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001473.v1.phv00101306.v1_. dbGap Name: **LMRPH141**, Desc: **YEAR 5 LESION MORPHOLOGY, RT SIDE**, Table: **ULTRAYR5**.
+      * _phs000287.v6.pht001473.v1.phv00101307.v1_. dbGap Name: **LMRPH241**, Desc: **YEAR 5 LESION MORPHOLOGY, LFT SIDE**, Table: **ULTRAYR5**.
+      * _phs000287.v6.pht001473.v1.phv00101317.v1_. dbGap Name: **LMRPH155**, Desc: **BL REREAD LESION MORPHOLOGY, RT SIDE**, Table: **ULTRAYR5**.
+      * _phs000287.v6.pht001473.v1.phv00101318.v1_. dbGap Name: **LMRPH255**, Desc: **BL REREAD LESION MORPHOLOGY, LFT SIDE**, Table: **ULTRAYR5**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -290,9 +305,11 @@
       }
       ```
 <a id="carotid_plaque_1-jhs"></a>
-  * ### atherosclerosis/carotid_plaque_1 -- **JHS**:
-    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001978.v1.phv00128573.v1`
-    * Function:
+  * ### atherosclerosis/carotid_plaque_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 2 component_study_variables
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001978.v1.phv00128573.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -317,9 +334,14 @@
       }
       ```
 <a id="carotid_plaque_1-mesa"></a>
-  * ### atherosclerosis/carotid_plaque_1 -- **MESA**:
-    * 5 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084797.v2`, `phs000209.v13.pht001116.v10.phv00084802.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`
-    * Function:
+  * ### atherosclerosis/carotid_plaque_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 5 component_study_variables
+      * _phs000209.v13.pht001111.v4.phv00082639.v2_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_AirNRExamMain**.
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00084797.v2_. dbGap Name: **rmorph1**, Desc: **RIGHT MORPHOLOGY**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00084802.v2_. dbGap Name: **lmorph1**, Desc: **LEFT MORPHOLOGY**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001121.v3.phv00087071.v1_. dbGap Name: **agefc**, Desc: **AGE**, Table: **MESA_FamilyExamMain**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         harmonized <- phen_list$source_data$pht001116 %>%
@@ -385,9 +407,15 @@
     [^1]:[Documentation Without Data Collection Forms phd002779.1](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/document.cgi?study_id=phs000287.v6.p1&phd=2779)
     
 <a id="carotid_stenosis_1-chs"></a>
-  * ### atherosclerosis/carotid_stenosis_1 -- **CHS**:
-    * 6 component_study_variables: `phs000287.v6.pht001452.v1.phv00100290.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001473.v1.phv00101302.v1`, `phs000287.v6.pht001473.v1.phv00101303.v1`, `phs000287.v6.pht001473.v1.phv00101313.v1`, `phs000287.v6.pht001473.v1.phv00101314.v1`
-    * Function:
+  * ### atherosclerosis/carotid_stenosis_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 6 component_study_variables
+      * _phs000287.v6.pht001452.v1.phv00100290.v1_. dbGap Name: **PERSTAT**, Desc: **COHORT**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001473.v1.phv00101302.v1_. dbGap Name: **PSTEN141**, Desc: **YEAR 5 PERCENT STENOSIS, RT SIDE**, Table: **ULTRAYR5**.
+      * _phs000287.v6.pht001473.v1.phv00101303.v1_. dbGap Name: **PSTEN241**, Desc: **YEAR 5 PERCENT STENOSIS, LFT SIDE**, Table: **ULTRAYR5**.
+      * _phs000287.v6.pht001473.v1.phv00101313.v1_. dbGap Name: **PSTEN155**, Desc: **BL REREAD PERCENT STENOSIS, RT SIDE**, Table: **ULTRAYR5**.
+      * _phs000287.v6.pht001473.v1.phv00101314.v1_. dbGap Name: **PSTEN255**, Desc: **BL REREAD PERCENT STENOSIS, LFT SIDE**, Table: **ULTRAYR5**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -475,9 +503,12 @@
       }
       ```
 <a id="carotid_stenosis_1-fhs"></a>
-  * ### atherosclerosis/carotid_stenosis_1 -- **FHS**:
-    * 3 component_study_variables: `phs000007.v29.pht000083.v6.phv00021700.v5`, `phs000007.v29.pht000083.v6.phv00021702.v5`, `phs000007.v29.pht003099.v4.phv00177940.v4`
-    * Function:
+  * ### atherosclerosis/carotid_stenosis_1 -- **FHS Framingham Cohort**:
+    * 3 component_study_variables
+      * _phs000007.v29.pht000083.v6.phv00021700.v5_. dbGap Name: **R_STENO**, Desc: **PERCENT STENOSIS ON THE RIGHT**, Table: **carotid1_6s**.
+      * _phs000007.v29.pht000083.v6.phv00021702.v5_. dbGap Name: **L_STENO**, Desc: **PERCENT STENOSIS ON THE LEFT**, Table: **carotid1_6s**.
+      * _phs000007.v29.pht003099.v4.phv00177940.v4_. dbGap Name: **age6**, Desc: **Age at Exam 6**, Table: **vr_dates_2019_a_1175s**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -500,9 +531,14 @@
       }
       ```
 <a id="carotid_stenosis_1-mesa"></a>
-  * ### atherosclerosis/carotid_stenosis_1 -- **MESA**:
-    * 5 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084798.v2`, `phs000209.v13.pht001116.v10.phv00084803.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`
-    * Function:
+  * ### atherosclerosis/carotid_stenosis_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 5 component_study_variables
+      * _phs000209.v13.pht001111.v4.phv00082639.v2_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_AirNRExamMain**.
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00084798.v2_. dbGap Name: **rsten1**, Desc: **RIGHT STENOSIS**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00084803.v2_. dbGap Name: **lsten1**, Desc: **LEFT STENOSIS**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001121.v3.phv00087071.v1_. dbGap Name: **agefc**, Desc: **AGE**, Table: **MESA_FamilyExamMain**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -558,9 +594,16 @@
     | MESA  | GE Logiq 700               |
     
 <a id="cimt_1-aric"></a>
-  * ### atherosclerosis/cimt_1 -- **ARIC**:
-    * 7 component_study_variables: `phs000280.v3.pht004063.v1.phv00204712.v1`, `phs000280.v3.pht004207.v1.phv00211095.v1`, `phs000280.v3.pht004207.v1.phv00211096.v1`, `phs000280.v3.pht004207.v1.phv00211097.v1`, `phs000280.v3.pht004207.v1.phv00211101.v1`, `phs000280.v3.pht004207.v1.phv00211102.v1`, `phs000280.v3.pht004207.v1.phv00211103.v1`
-    * Function:
+  * ### atherosclerosis/cimt_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 7 component_study_variables
+      * _phs000280.v3.pht004063.v1.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v3.pht004207.v1.phv00211095.v1_. dbGap Name: **LOPAAV45**, Desc: **Average far wall width, left common carotid: optimal angle [Ultrasound Derived Data. UBMD4. Visit 1]**, Table: **UBMD4**.
+      * _phs000280.v3.pht004207.v1.phv00211096.v1_. dbGap Name: **LANAAV45**, Desc: **Average far wall width, left common carotid: anterior angle [Ultrasound Derived Data. UBMD4. Visit 1]**, Table: **UBMD4**.
+      * _phs000280.v3.pht004207.v1.phv00211097.v1_. dbGap Name: **LPOAAV45**, Desc: **Average far wall width, left common carotid: posterior angle [Ultrasound Derived Data. UBMD4. Visit 1]**, Table: **UBMD4**.
+      * _phs000280.v3.pht004207.v1.phv00211101.v1_. dbGap Name: **ROPAAV45**, Desc: **Average far wall width, right common carotid: optimal angle [Ultrasound Derived Data. UBMD4. Visit 1]**, Table: **UBMD4**.
+      * _phs000280.v3.pht004207.v1.phv00211102.v1_. dbGap Name: **RANAAV45**, Desc: **Average far wall width, right common carotid: anterior angle [Ultrasound Derived Data. UBMD4. Visit 1]**, Table: **UBMD4**.
+      * _phs000280.v3.pht004207.v1.phv00211103.v1_. dbGap Name: **RPOAAV45**, Desc: **Average far wall width, right common carotid: posterior angle [Ultrasound Derived Data. UBMD4. Visit 1]**, Table: **UBMD4**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -604,9 +647,11 @@
       }
       ```
 <a id="cimt_1-chs"></a>
-  * ### atherosclerosis/cimt_1 -- **CHS**:
-    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001468.v1.phv00100864.v1`
-    * Function:
+  * ### atherosclerosis/cimt_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 2 component_study_variables
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001468.v1.phv00100864.v1_. dbGap Name: **CCA_FWME**, Desc: **Mean of the mean far wall intima media t (var=CCA_FWME)**, Table: **IMT_POLACK**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -627,9 +672,11 @@
       }
       ```
 <a id="cimt_1-fhs"></a>
-  * ### atherosclerosis/cimt_1 -- **FHS**:
-    * 2 component_study_variables: `phs000007.v29.pht000907.v5.phv00076366.v4`, `phs000007.v29.pht003099.v4.phv00177940.v4`
-    * Function:
+  * ### atherosclerosis/cimt_1 -- **FHS Framingham Cohort**:
+    * 2 component_study_variables
+      * _phs000007.v29.pht000907.v5.phv00076366.v4_. dbGap Name: **cca_fw_mean_imt**, Desc: **Mean of the mean common carotid IMT far wall of both sides**, Table: **imtcarotid1_6s**.
+      * _phs000007.v29.pht003099.v4.phv00177940.v4_. dbGap Name: **age6**, Desc: **Age at Exam 6**, Table: **vr_dates_2019_a_1175s**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -647,9 +694,16 @@
       }
       ```
 <a id="cimt_1-jhs"></a>
-  * ### atherosclerosis/cimt_1 -- **JHS**:
-    * 7 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001978.v1.phv00128531.v1`, `phs000286.v5.pht001978.v1.phv00128532.v1`, `phs000286.v5.pht001978.v1.phv00128533.v1`, `phs000286.v5.pht001978.v1.phv00128534.v1`, `phs000286.v5.pht001978.v1.phv00128535.v1`, `phs000286.v5.pht001978.v1.phv00128536.v1`
-    * Function:
+  * ### atherosclerosis/cimt_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 7 component_study_variables
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001978.v1.phv00128531.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001978.v1.phv00128532.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001978.v1.phv00128533.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001978.v1.phv00128534.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001978.v1.phv00128535.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001978.v1.phv00128536.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -733,9 +787,22 @@
     [^1]:[Documentation Without Data Collection Forms phd002779.1](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/document.cgi?study_id=phs000287.v6.p1&phd=2779)
     
 <a id="cimt_2-aric"></a>
-  * ### atherosclerosis/cimt_2 -- **ARIC**:
-    * 13 component_study_variables: `phs000280.v3.pht004063.v1.phv00204712.v1`, `phs000280.v3.pht004207.v1.phv00211053.v1`, `phs000280.v3.pht004207.v1.phv00211054.v1`, `phs000280.v3.pht004207.v1.phv00211055.v1`, `phs000280.v3.pht004207.v1.phv00211059.v1`, `phs000280.v3.pht004207.v1.phv00211060.v1`, `phs000280.v3.pht004207.v1.phv00211061.v1`, `phs000280.v3.pht004207.v1.phv00211081.v1`, `phs000280.v3.pht004207.v1.phv00211082.v1`, `phs000280.v3.pht004207.v1.phv00211083.v1`, `phs000280.v3.pht004207.v1.phv00211087.v1`, `phs000280.v3.pht004207.v1.phv00211088.v1`, `phs000280.v3.pht004207.v1.phv00211089.v1`
-    * Function:
+  * ### atherosclerosis/cimt_2 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 13 component_study_variables
+      * _phs000280.v3.pht004063.v1.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v3.pht004207.v1.phv00211053.v1_. dbGap Name: **LOPAMX23**, Desc: **Maximum near wall width, left common carotid: optimal angle [Ultrasound Derived Data. UBMD4. Visit 1]**, Table: **UBMD4**.
+      * _phs000280.v3.pht004207.v1.phv00211054.v1_. dbGap Name: **LANAMX23**, Desc: **Maximum near wall width, left common carotid: anterior angle [Ultrasound Derived Data. UBMD4. Visit 1]**, Table: **UBMD4**.
+      * _phs000280.v3.pht004207.v1.phv00211055.v1_. dbGap Name: **LPOAMX23**, Desc: **Maximum near wall width, left common carotid: posterior angle [Ultrasound Derived Data. UBMD4. Visit 1]**, Table: **UBMD4**.
+      * _phs000280.v3.pht004207.v1.phv00211059.v1_. dbGap Name: **ROPAMX23**, Desc: **Maximum near wall width, right common carotid: optimal angle [Ultrasound Derived Data. UBMD4. Visit 1]**, Table: **UBMD4**.
+      * _phs000280.v3.pht004207.v1.phv00211060.v1_. dbGap Name: **RANAMX23**, Desc: **Maximum near wall width, right common carotid: anterior angle [Ultrasound Derived Data. UBMD4. Visit 1]**, Table: **UBMD4**.
+      * _phs000280.v3.pht004207.v1.phv00211061.v1_. dbGap Name: **RPOAMX23**, Desc: **Maximum near wall width, right common carotid: posterior angle [Ultrasound Derived Data. UBMD4. Visit 1]**, Table: **UBMD4**.
+      * _phs000280.v3.pht004207.v1.phv00211081.v1_. dbGap Name: **LOPAMX45**, Desc: **Maximum far wall width, left common carotid: optimal angle [Ultrasound Derived Data. UBMD4. Visit 1]**, Table: **UBMD4**.
+      * _phs000280.v3.pht004207.v1.phv00211082.v1_. dbGap Name: **LANAMX45**, Desc: **Maximum far wall width, left common carotid: anterior angle [Ultrasound Derived Data. UBMD4. Visit 1]**, Table: **UBMD4**.
+      * _phs000280.v3.pht004207.v1.phv00211083.v1_. dbGap Name: **LPOAMX45**, Desc: **Maximum far wall width, left common carotid: posterior angle [Ultrasound Derived Data. UBMD4. Visit 1]**, Table: **UBMD4**.
+      * _phs000280.v3.pht004207.v1.phv00211087.v1_. dbGap Name: **ROPAMX45**, Desc: **Maximum far wall width, right common carotid: optimal angle [Ultrasound Derived Data. UBMD4. Visit 1]**, Table: **UBMD4**.
+      * _phs000280.v3.pht004207.v1.phv00211088.v1_. dbGap Name: **RANAMX45**, Desc: **Maximum far wall width, right common carotid: anterior angle [Ultrasound Derived Data. UBMD4. Visit 1]**, Table: **UBMD4**.
+      * _phs000280.v3.pht004207.v1.phv00211089.v1_. dbGap Name: **RPOAMX45**, Desc: **Maximum far wall width, right common carotid: posterior angle [Ultrasound Derived Data. UBMD4. Visit 1]**, Table: **UBMD4**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -797,9 +864,19 @@
       }
       ```
 <a id="cimt_2-chs"></a>
-  * ### atherosclerosis/cimt_2 -- **CHS**:
-    * 10 component_study_variables: `phs000287.v6.pht001452.v1.phv00100290.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001473.v1.phv00101238.v1`, `phs000287.v6.pht001473.v1.phv00101239.v1`, `phs000287.v6.pht001473.v1.phv00101250.v1`, `phs000287.v6.pht001473.v1.phv00101251.v1`, `phs000287.v6.pht001473.v1.phv00101264.v1`, `phs000287.v6.pht001473.v1.phv00101265.v1`, `phs000287.v6.pht001473.v1.phv00101276.v1`, `phs000287.v6.pht001473.v1.phv00101277.v1`
-    * Function:
+  * ### atherosclerosis/cimt_2 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 10 component_study_variables
+      * _phs000287.v6.pht001452.v1.phv00100290.v1_. dbGap Name: **PERSTAT**, Desc: **COHORT**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001473.v1.phv00101238.v1_. dbGap Name: **NMAX155**, Desc: **BL REREAD NEAR WALL MAX, R. COMMON**, Table: **ULTRAYR5**.
+      * _phs000287.v6.pht001473.v1.phv00101239.v1_. dbGap Name: **FMAX155**, Desc: **BL REREAD FAR WALL MAX, R. COMMON**, Table: **ULTRAYR5**.
+      * _phs000287.v6.pht001473.v1.phv00101250.v1_. dbGap Name: **NMAX555**, Desc: **BL REREAD NEAR WALL MAX, L. COMMON**, Table: **ULTRAYR5**.
+      * _phs000287.v6.pht001473.v1.phv00101251.v1_. dbGap Name: **FMAX555**, Desc: **BL REREAD FAR WALL MAX, L. COMMON**, Table: **ULTRAYR5**.
+      * _phs000287.v6.pht001473.v1.phv00101264.v1_. dbGap Name: **NMAX141**, Desc: **YEAR 5 NEAR WALL MAX, R. COMMON**, Table: **ULTRAYR5**.
+      * _phs000287.v6.pht001473.v1.phv00101265.v1_. dbGap Name: **FMAX141**, Desc: **YEAR 5 FAR WALL MAX, R. COMMON**, Table: **ULTRAYR5**.
+      * _phs000287.v6.pht001473.v1.phv00101276.v1_. dbGap Name: **NMAX541**, Desc: **YEAR 5 NEAR WALL MAX, L. COMMON**, Table: **ULTRAYR5**.
+      * _phs000287.v6.pht001473.v1.phv00101277.v1_. dbGap Name: **FMAX541**, Desc: **YEAR 5 FAR WALL MAX, L. COMMON**, Table: **ULTRAYR5**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -862,9 +939,11 @@
       }
       ```
 <a id="cimt_2-fhs"></a>
-  * ### atherosclerosis/cimt_2 -- **FHS**:
-    * 2 component_study_variables: `phs000007.v29.pht000083.v6.phv00021728.v5`, `phs000007.v29.pht003099.v4.phv00177940.v4`
-    * Function:
+  * ### atherosclerosis/cimt_2 -- **FHS Framingham Cohort**:
+    * 2 component_study_variables
+      * _phs000007.v29.pht000083.v6.phv00021728.v5_. dbGap Name: **CCD_MEMX**, Desc: **MEAN OF MAX IMT FOR BOTH LEFT AND RIGHT COMMON CAROTID ARTERIES IN DIASTOLE (MM)**, Table: **carotid1_6s**.
+      * _phs000007.v29.pht003099.v4.phv00177940.v4_. dbGap Name: **age6**, Desc: **Age at Exam 6**, Table: **vr_dates_2019_a_1175s**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         source_data <- phen_list$source_data
@@ -879,9 +958,22 @@
       }
       ```
 <a id="cimt_2-jhs"></a>
-  * ### atherosclerosis/cimt_2 -- **JHS**:
-    * 13 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001978.v1.phv00128541.v1`, `phs000286.v5.pht001978.v1.phv00128542.v1`, `phs000286.v5.pht001978.v1.phv00128543.v1`, `phs000286.v5.pht001978.v1.phv00128544.v1`, `phs000286.v5.pht001978.v1.phv00128545.v1`, `phs000286.v5.pht001978.v1.phv00128546.v1`, `phs000286.v5.pht001978.v1.phv00128561.v1`, `phs000286.v5.pht001978.v1.phv00128562.v1`, `phs000286.v5.pht001978.v1.phv00128563.v1`, `phs000286.v5.pht001978.v1.phv00128564.v1`, `phs000286.v5.pht001978.v1.phv00128565.v1`, `phs000286.v5.pht001978.v1.phv00128566.v1`
-    * Function:
+  * ### atherosclerosis/cimt_2 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 13 component_study_variables
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001978.v1.phv00128541.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001978.v1.phv00128542.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001978.v1.phv00128543.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001978.v1.phv00128544.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001978.v1.phv00128545.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001978.v1.phv00128546.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001978.v1.phv00128561.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001978.v1.phv00128562.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001978.v1.phv00128563.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001978.v1.phv00128564.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001978.v1.phv00128565.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001978.v1.phv00128566.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)

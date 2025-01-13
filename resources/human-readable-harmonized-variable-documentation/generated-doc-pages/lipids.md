@@ -48,9 +48,11 @@
     
     
 <a id="fasting_lipids_1-aric"></a>
-  * ### lipids/fasting_lipids_1 -- **ARIC**:
-    * 2 component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004063.v2.phv00204732.v1`
-    * Function:
+  * ### lipids/fasting_lipids_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 2 component_study_variables
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v4.pht004063.v2.phv00204732.v1_. dbGap Name: **FAST0802**, Desc: **Fasting time of 8 hours or more [Cohort. Visit 1]**, Table: **DERIVE13**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -68,9 +70,11 @@
       }
       ```
 <a id="fasting_lipids_1-cardia"></a>
-  * ### lipids/fasting_lipids_1 -- **CARDIA**:
-    * 2 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112661.v2`
-    * Function:
+  * ### lipids/fasting_lipids_1 -- **CARDIA CARDIA Cohort**:
+    * 2 component_study_variables
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
+      * _phs000285.v3.pht001563.v2.phv00112661.v2_. dbGap Name: **A05FAST**, Desc: **12 HR FAST BEFORE BLOOD DRAWN**, Table: **A4F05**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -89,9 +93,11 @@
       }
       ```
 <a id="fasting_lipids_1-chs"></a>
-  * ### lipids/fasting_lipids_1 -- **CHS**:
-    * 2 component_study_variables: `phs000287.v6.pht001451.v1.phv00099923.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
-    * Function:
+  * ### lipids/fasting_lipids_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 2 component_study_variables
+      * _phs000287.v6.pht001451.v1.phv00099923.v1_. dbGap Name: **FAST30**, Desc: **HOURS SINCE LAST ATE OR DRANK**, Table: **BASE2**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -111,9 +117,11 @@
       }
       ```
 <a id="fasting_lipids_1-hchs_sol"></a>
-  * ### lipids/fasting_lipids_1 -- **HCHS_SOL**:
-    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00253225.v1`
-    * Function:
+  * ### lipids/fasting_lipids_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
+    * 2 component_study_variables
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00253225.v1_. dbGap Name: **FASTTIME**, Desc: **Fasting time (hrs.)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -129,9 +137,11 @@
       }
       ```
 <a id="fasting_lipids_1-jhs"></a>
-  * ### lipids/fasting_lipids_1 -- **JHS**:
-    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001949.v1.phv00126044.v1`
-    * Function:
+  * ### lipids/fasting_lipids_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 2 component_study_variables
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001949.v1.phv00126044.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -153,9 +163,15 @@
       }
       ```
 <a id="fasting_lipids_1-mesa"></a>
-  * ### lipids/fasting_lipids_1 -- **MESA**:
-    * 6 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00083303.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084980.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087524.v1`
-    * Function:
+  * ### lipids/fasting_lipids_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 6 component_study_variables
+      * _phs000209.v13.pht001111.v4.phv00082639.v2_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_AirNRExamMain**.
+      * _phs000209.v13.pht001111.v4.phv00083303.v1_. dbGap Name: **lastdrk1**, Desc: **HOW LONG AGO LAST DRINK OR EAT? (HRS)**, Table: **MESA_AirNRExamMain**.
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00084980.v2_. dbGap Name: **lastdrk1**, Desc: **HOW LONG AGO LAST DRINK OR EAT? (HRS)**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001121.v3.phv00087071.v1_. dbGap Name: **agefc**, Desc: **AGE**, Table: **MESA_FamilyExamMain**.
+      * _phs000209.v13.pht001121.v3.phv00087524.v1_. dbGap Name: **lastdrkf**, Desc: **HOW LONG AGO LAST DRINK OR EAT? (hrs)**, Table: **MESA_FamilyExamMain**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -222,9 +238,11 @@
     
     
 <a id="hdl_1-aric"></a>
-  * ### lipids/hdl_1 -- **ARIC**:
-    * 2 component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004063.v2.phv00204761.v1`
-    * Function:
+  * ### lipids/hdl_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 2 component_study_variables
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v4.pht004063.v2.phv00204761.v1_. dbGap Name: **HDL01**, Desc: **HDL cholesterol (recalibrated lipid) [Cohort. Visit 1]**, Table: **DERIVE13**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -238,9 +256,11 @@
       }
       ```
 <a id="hdl_1-cardia"></a>
-  * ### lipids/hdl_1 -- **CARDIA**:
-    * 2 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001588.v2.phv00113702.v2`
-    * Function:
+  * ### lipids/hdl_1 -- **CARDIA CARDIA Cohort**:
+    * 2 component_study_variables
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
+      * _phs000285.v3.pht001588.v2.phv00113702.v2_. dbGap Name: **AL1HDL**, Desc: **TOTAL HDL CHOLESTEROL (MG/DL)**, Table: **A4LIP**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -255,9 +275,11 @@
       }
       ```
 <a id="hdl_1-chs"></a>
-  * ### lipids/hdl_1 -- **CHS**:
-    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100426.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
-    * Function:
+  * ### lipids/hdl_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 2 component_study_variables
+      * _phs000287.v6.pht001452.v1.phv00100426.v1_. dbGap Name: **HDL44**, Desc: **HDL (mg/dl)**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -271,9 +293,11 @@
       }
       ```
 <a id="hdl_1-hchs_sol"></a>
-  * ### lipids/hdl_1 -- **HCHS_SOL**:
-    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00253239.v1`
-    * Function:
+  * ### lipids/hdl_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
+    * 2 component_study_variables
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00253239.v1_. dbGap Name: **LABA68**, Desc: **HDL-cholesterol (mg/dL) (LABA68)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -286,9 +310,11 @@
       }
       ```
 <a id="hdl_1-jhs"></a>
-  * ### lipids/hdl_1 -- **JHS**:
-    * 2 component_study_variables: `phs000286.v5.pht001945.v1.phv00125930.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
-    * Function:
+  * ### lipids/hdl_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 2 component_study_variables
+      * _phs000286.v5.pht001945.v1.phv00125930.v1_. dbGap Name: **HDLC**, Desc: **Hdlc: HDL cholesterol - mg/dL [Visit 1]**, Table: **cena**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -313,9 +339,15 @@
       }
       ```
 <a id="hdl_1-mesa"></a>
-  * ### lipids/hdl_1 -- **MESA**:
-    * 6 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082952.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084972.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087099.v1`
-    * Function:
+  * ### lipids/hdl_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 6 component_study_variables
+      * _phs000209.v13.pht001111.v4.phv00082639.v2_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_AirNRExamMain**.
+      * _phs000209.v13.pht001111.v4.phv00082952.v1_. dbGap Name: **hdl1**, Desc: **HDL CHOLESTEROL (mg/dl)**, Table: **MESA_AirNRExamMain**.
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00084972.v2_. dbGap Name: **hdl1**, Desc: **HDL CHOLESTEROL (mg/dl)**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001121.v3.phv00087071.v1_. dbGap Name: **agefc**, Desc: **AGE**, Table: **MESA_FamilyExamMain**.
+      * _phs000209.v13.pht001121.v3.phv00087099.v1_. dbGap Name: **hdlf**, Desc: **HDL CHOLESTEROL (mg/dl)**, Table: **MESA_FamilyExamMain**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -415,9 +447,11 @@
     
     
 <a id="lipid_lowering_medication_1-aric"></a>
-  * ### lipids/lipid_lowering_medication_1 -- **ARIC**:
-    * 2 component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004063.v2.phv00204802.v1`
-    * Function:
+  * ### lipids/lipid_lowering_medication_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 2 component_study_variables
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v4.pht004063.v2.phv00204802.v1_. dbGap Name: **CHOLMDCODE01**, Desc: **Cholesterol lowering medication in past 2 weeks: using 2004 Med. code, visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -437,9 +471,11 @@
       }
       ```
 <a id="lipid_lowering_medication_1-chs"></a>
-  * ### lipids/lipid_lowering_medication_1 -- **CHS**:
-    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100594.v1`
-    * Function:
+  * ### lipids/lipid_lowering_medication_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 2 component_study_variables
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100594.v1_. dbGap Name: **LIPID06**, Desc: **Any lipid-lowering medication**, Table: **BASEBOTH**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -455,9 +491,11 @@
       }
       ```
 <a id="lipid_lowering_medication_1-hchs_sol"></a>
-  * ### lipids/lipid_lowering_medication_1 -- **HCHS_SOL**:
-    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226349.v1`
-    * Function:
+  * ### lipids/lipid_lowering_medication_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
+    * 2 component_study_variables
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226349.v1_. dbGap Name: **MED_LLD**, Desc: **Lipid lowering drugs/Antihyperlipidemics (LLD)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -471,9 +509,11 @@
       }
       ```
 <a id="lipid_lowering_medication_1-jhs"></a>
-  * ### lipids/lipid_lowering_medication_1 -- **JHS**:
-    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001949.v1.phv00126053.v1`
-    * Function:
+  * ### lipids/lipid_lowering_medication_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 2 component_study_variables
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001949.v1.phv00126053.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -495,9 +535,15 @@
       }
       ```
 <a id="lipid_lowering_medication_1-mesa"></a>
-  * ### lipids/lipid_lowering_medication_1 -- **MESA**:
-    * 6 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00083162.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00085407.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087104.v1`
-    * Function:
+  * ### lipids/lipid_lowering_medication_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 6 component_study_variables
+      * _phs000209.v13.pht001111.v4.phv00082639.v2_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_AirNRExamMain**.
+      * _phs000209.v13.pht001111.v4.phv00083162.v1_. dbGap Name: **lipid1c**, Desc: **ANY LIPID-LOWERING MEDICATION**, Table: **MESA_AirNRExamMain**.
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00085407.v2_. dbGap Name: **lipid1c**, Desc: **ANY LIPID-LOWERING MEDICATION**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001121.v3.phv00087071.v1_. dbGap Name: **agefc**, Desc: **AGE**, Table: **MESA_FamilyExamMain**.
+      * _phs000209.v13.pht001121.v3.phv00087104.v1_. dbGap Name: **lipidfc**, Desc: **ANY LIPID-LOWERING MEDICATION**, Table: **MESA_FamilyExamMain**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -574,9 +620,11 @@
     
     
 <a id="total_cholesterol_1-aric"></a>
-  * ### lipids/total_cholesterol_1 -- **ARIC**:
-    * 2 component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004063.v2.phv00204735.v1`
-    * Function:
+  * ### lipids/total_cholesterol_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 2 component_study_variables
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v4.pht004063.v2.phv00204735.v1_. dbGap Name: **TCHSIU01**, Desc: **Total cholesterol in SI units [Cohort. Visit 1]**, Table: **DERIVE13**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -599,9 +647,11 @@
       }
       ```
 <a id="total_cholesterol_1-cardia"></a>
-  * ### lipids/total_cholesterol_1 -- **CARDIA**:
-    * 2 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001588.v2.phv00113700.v2`
-    * Function:
+  * ### lipids/total_cholesterol_1 -- **CARDIA CARDIA Cohort**:
+    * 2 component_study_variables
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
+      * _phs000285.v3.pht001588.v2.phv00113700.v2_. dbGap Name: **AL1CHOL**, Desc: **TOTAL CHOLESTEROL (MG/DL)**, Table: **A4LIP**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -617,9 +667,11 @@
       }
       ```
 <a id="total_cholesterol_1-chs"></a>
-  * ### lipids/total_cholesterol_1 -- **CHS**:
-    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100487.v1`, `phs000287.v6.pht001452.v1.phv00100491.v1`
-    * Function:
+  * ### lipids/total_cholesterol_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 2 component_study_variables
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100491.v1_. dbGap Name: **CHOLADJ**, Desc: **Adjusted Cholesterol (mg/dl)**, Table: **BASEBOTH**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -633,9 +685,11 @@
       }
       ```
 <a id="total_cholesterol_1-hchs_sol"></a>
-  * ### lipids/total_cholesterol_1 -- **HCHS_SOL**:
-    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00253238.v1`
-    * Function:
+  * ### lipids/total_cholesterol_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
+    * 2 component_study_variables
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00253238.v1_. dbGap Name: **LABA66**, Desc: **Total cholesterol (mg/dL) (LABA66)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -649,9 +703,11 @@
       }
       ```
 <a id="total_cholesterol_1-jhs"></a>
-  * ### lipids/total_cholesterol_1 -- **JHS**:
-    * 2 component_study_variables: `phs000286.v5.pht001945.v1.phv00125927.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
-    * Function:
+  * ### lipids/total_cholesterol_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 2 component_study_variables
+      * _phs000286.v5.pht001945.v1.phv00125927.v1_. dbGap Name: **CHR**, Desc: **Chr: total cholesterol - mg/dL [Visit 1]**, Table: **cena**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -676,9 +732,15 @@
       }
       ```
 <a id="total_cholesterol_1-mesa"></a>
-  * ### lipids/total_cholesterol_1 -- **MESA**:
-    * 6 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082956.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084974.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087100.v1`
-    * Function:
+  * ### lipids/total_cholesterol_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 6 component_study_variables
+      * _phs000209.v13.pht001111.v4.phv00082639.v2_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_AirNRExamMain**.
+      * _phs000209.v13.pht001111.v4.phv00082956.v1_. dbGap Name: **chol1**, Desc: **TOTAL CHOLESTEROL (mg/dl)**, Table: **MESA_AirNRExamMain**.
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00084974.v2_. dbGap Name: **chol1**, Desc: **TOTAL CHOLESTEROL (mg/dl)**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001121.v3.phv00087071.v1_. dbGap Name: **agefc**, Desc: **AGE**, Table: **MESA_FamilyExamMain**.
+      * _phs000209.v13.pht001121.v3.phv00087100.v1_. dbGap Name: **cholf**, Desc: **TOTAL CHOLESTEROL (mg/dl)**, Table: **MESA_FamilyExamMain**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -743,9 +805,11 @@
     
     
 <a id="triglycerides_1-aric"></a>
-  * ### lipids/triglycerides_1 -- **ARIC**:
-    * 2 component_study_variables: `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004063.v2.phv00204738.v1`
-    * Function:
+  * ### lipids/triglycerides_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 2 component_study_variables
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v4.pht004063.v2.phv00204738.v1_. dbGap Name: **TRGSIU01**, Desc: **Total triglycerides In SI units [Cohort. Visit 1]**, Table: **DERIVE13**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -770,9 +834,11 @@
       }
       ```
 <a id="triglycerides_1-cardia"></a>
-  * ### lipids/triglycerides_1 -- **CARDIA**:
-    * 2 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001588.v2.phv00113701.v2`
-    * Function:
+  * ### lipids/triglycerides_1 -- **CARDIA CARDIA Cohort**:
+    * 2 component_study_variables
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
+      * _phs000285.v3.pht001588.v2.phv00113701.v2_. dbGap Name: **AL1NTRIG**, Desc: **TRIGLYCERIDES (MG/DL)**, Table: **A4LIP**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -788,9 +854,11 @@
       }
       ```
 <a id="triglycerides_1-chs"></a>
-  * ### lipids/triglycerides_1 -- **CHS**:
-    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100425.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
-    * Function:
+  * ### lipids/triglycerides_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 2 component_study_variables
+      * _phs000287.v6.pht001452.v1.phv00100425.v1_. dbGap Name: **TRIG44**, Desc: **TRIGLYCERIDE (mg/dl)**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -804,9 +872,11 @@
       }
       ```
 <a id="triglycerides_1-hchs_sol"></a>
-  * ### lipids/triglycerides_1 -- **HCHS_SOL**:
-    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00253240.v1`
-    * Function:
+  * ### lipids/triglycerides_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
+    * 2 component_study_variables
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00253240.v1_. dbGap Name: **LABA67**, Desc: **Triglycerides (mg/dL) (LABA67)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -819,9 +889,11 @@
       }
       ```
 <a id="triglycerides_1-jhs"></a>
-  * ### lipids/triglycerides_1 -- **JHS**:
-    * 2 component_study_variables: `phs000286.v5.pht001945.v1.phv00125933.v1`, `phs000286.v5.pht001949.v1.phv00126009.v1`
-    * Function:
+  * ### lipids/triglycerides_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 2 component_study_variables
+      * _phs000286.v5.pht001945.v1.phv00125933.v1_. dbGap Name: **TRR**, Desc: **Trr: triglyceride - mg/dL [Visit 1]**, Table: **cena**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)
@@ -846,9 +918,15 @@
       }
       ```
 <a id="triglycerides_1-mesa"></a>
-  * ### lipids/triglycerides_1 -- **MESA**:
-    * 6 component_study_variables: `phs000209.v13.pht001111.v4.phv00082639.v2`, `phs000209.v13.pht001111.v4.phv00082950.v1`, `phs000209.v13.pht001116.v10.phv00084442.v3`, `phs000209.v13.pht001116.v10.phv00084968.v2`, `phs000209.v13.pht001121.v3.phv00087071.v1`, `phs000209.v13.pht001121.v3.phv00087101.v1`
-    * Function:
+  * ### lipids/triglycerides_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 6 component_study_variables
+      * _phs000209.v13.pht001111.v4.phv00082639.v2_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_AirNRExamMain**.
+      * _phs000209.v13.pht001111.v4.phv00082950.v1_. dbGap Name: **trig1**, Desc: **TRIGLYCERIDES (mg/dl)**, Table: **MESA_AirNRExamMain**.
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00084968.v2_. dbGap Name: **trig1**, Desc: **TRIGLYCERIDES (mg/dl)**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001121.v3.phv00087071.v1_. dbGap Name: **agefc**, Desc: **AGE**, Table: **MESA_FamilyExamMain**.
+      * _phs000209.v13.pht001121.v3.phv00087101.v1_. dbGap Name: **trigf**, Desc: **TRIGLYCERIDES (mg/dl)**, Table: **MESA_FamilyExamMain**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
         library(dplyr)

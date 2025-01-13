@@ -65,9 +65,15 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values for WBC, basophils, and other WBC subtype differentials may not be from the same visit, so the harmonized subtype differential counts may not sum to the WBC count.
     
 <a id="basophil_ncnc_bld_1-aric"></a>
-  * ### blood_cell_count/basophil_ncnc_bld_1 -- **ARIC**:
-    * 6 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004107.v2.phv00207264.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004108.v2.phv00207279.v1`
-    * Function:
+  * ### blood_cell_count/basophil_ncnc_bld_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 6 component_study_variables
+      * _phs000280.v4.pht004062.v2.phv00204623.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v4.pht004107.v2.phv00207257.v1_. dbGap Name: **HMTA03**, Desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
+      * _phs000280.v4.pht004107.v2.phv00207264.v1_. dbGap Name: **HMTA10**, Desc: **Basophils % Q10 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
+      * _phs000280.v4.pht004108.v2.phv00207272.v1_. dbGap Name: **HMTB03**, Desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
+      * _phs000280.v4.pht004108.v2.phv00207279.v1_. dbGap Name: **HMTB10**, Desc: **Basophils %. Q10 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -133,9 +139,12 @@
       }
       ```
 <a id="basophil_ncnc_bld_1-cardia"></a>
-  * ### blood_cell_count/basophil_ncnc_bld_1 -- **CARDIA**:
-    * 3 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112686.v2`, `phs000285.v3.pht001563.v2.phv00112696.v2`
-    * Function:
+  * ### blood_cell_count/basophil_ncnc_bld_1 -- **CARDIA CARDIA Cohort**:
+    * 3 component_study_variables
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
+      * _phs000285.v3.pht001563.v2.phv00112686.v2_. dbGap Name: **A05WBC**, Desc: **WHITE CELL COUNT (X 1000)**, Table: **A4F05**.
+      * _phs000285.v3.pht001563.v2.phv00112696.v2_. dbGap Name: **A05BASO**, Desc: **BASOPHILS (%)**, Table: **A4F05**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -160,9 +169,12 @@
       }
       ```
 <a id="basophil_ncnc_bld_1-hchs_sol"></a>
-  * ### blood_cell_count/basophil_ncnc_bld_1 -- **HCHS_SOL**:
-    * 3 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`, `phs000810.v1.pht004715.v1.phv00226288.v1`
-    * Function:
+  * ### blood_cell_count/basophil_ncnc_bld_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
+    * 3 component_study_variables
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226283.v1_. dbGap Name: **LABA1**, Desc: **White Blood Count (x10e9) (LABA1)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226288.v1_. dbGap Name: **LABA14**, Desc: **% Basophils (LABA14)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -180,9 +192,12 @@
       }
       ```
 <a id="basophil_ncnc_bld_1-jhs"></a>
-  * ### blood_cell_count/basophil_ncnc_bld_1 -- **JHS**:
-    * 3 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127620.v1`, `phs000286.v5.pht001959.v1.phv00127631.v1`
-    * Function:
+  * ### blood_cell_count/basophil_ncnc_bld_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 3 component_study_variables
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001959.v1.phv00127620.v1_. dbGap Name: **BASO**, Desc: **Baso: diff measure % [Visit 1]**, Table: **loca**.
+      * _phs000286.v5.pht001959.v1.phv00127631.v1_. dbGap Name: **WBC**, Desc: **White blood cells TH/CMM [Visit 1]**, Table: **loca**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list) {
         library("dplyr")
@@ -214,9 +229,11 @@
       }
       ```
 <a id="basophil_ncnc_bld_1-mesa"></a>
-  * ### blood_cell_count/basophil_ncnc_bld_1 -- **MESA**:
-    * 2 component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00219002.v1`
-    * Function:
+  * ### blood_cell_count/basophil_ncnc_bld_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 2 component_study_variables
+      * _phs000209.v13.pht003091.v3.phv00176011.v1_. dbGap Name: **age5c**, Desc: **AGE AT EXAM 5**, Table: **MESA_Exam5Main**.
+      * _phs000209.v13.pht004319.v1.phv00219002.v1_. dbGap Name: **basosa5**, Desc: **BASOPHIL (ABSOLUTE) (x10E3/uL)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -286,9 +303,15 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values for WBC, eosinophils, and other WBC subtype differentials may not be from the same visit, so the harmonized subtype differential counts may not sum to the WBC count.
     
 <a id="eosinophil_ncnc_bld_1-aric"></a>
-  * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **ARIC**:
-    * 6 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004107.v2.phv00207263.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004108.v2.phv00207278.v1`
-    * Function:
+  * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 6 component_study_variables
+      * _phs000280.v4.pht004062.v2.phv00204623.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v4.pht004107.v2.phv00207257.v1_. dbGap Name: **HMTA03**, Desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
+      * _phs000280.v4.pht004107.v2.phv00207263.v1_. dbGap Name: **HMTA09**, Desc: **Eosinophils % Q9 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
+      * _phs000280.v4.pht004108.v2.phv00207272.v1_. dbGap Name: **HMTB03**, Desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
+      * _phs000280.v4.pht004108.v2.phv00207278.v1_. dbGap Name: **HMTB09**, Desc: **Eosinophils %. Q9 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -354,9 +377,12 @@
       }
       ```
 <a id="eosinophil_ncnc_bld_1-cardia"></a>
-  * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **CARDIA**:
-    * 3 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112686.v2`, `phs000285.v3.pht001563.v2.phv00112693.v2`
-    * Function:
+  * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **CARDIA CARDIA Cohort**:
+    * 3 component_study_variables
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
+      * _phs000285.v3.pht001563.v2.phv00112686.v2_. dbGap Name: **A05WBC**, Desc: **WHITE CELL COUNT (X 1000)**, Table: **A4F05**.
+      * _phs000285.v3.pht001563.v2.phv00112693.v2_. dbGap Name: **A05EOSIN**, Desc: **EOSINPHILS (%)**, Table: **A4F05**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -381,9 +407,12 @@
       }
       ```
 <a id="eosinophil_ncnc_bld_1-hchs_sol"></a>
-  * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **HCHS_SOL**:
-    * 3 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`, `phs000810.v1.pht004715.v1.phv00226287.v1`
-    * Function:
+  * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
+    * 3 component_study_variables
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226283.v1_. dbGap Name: **LABA1**, Desc: **White Blood Count (x10e9) (LABA1)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226287.v1_. dbGap Name: **LABA13**, Desc: **% Eosiniphils (LABA13)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -401,9 +430,12 @@
       }
       ```
 <a id="eosinophil_ncnc_bld_1-jhs"></a>
-  * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **JHS**:
-    * 3 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127621.v1`, `phs000286.v5.pht001959.v1.phv00127631.v1`
-    * Function:
+  * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 3 component_study_variables
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001959.v1.phv00127621.v1_. dbGap Name: **EOSIN**, Desc: **Eosin: diff measure % [Visit 1]**, Table: **loca**.
+      * _phs000286.v5.pht001959.v1.phv00127631.v1_. dbGap Name: **WBC**, Desc: **White blood cells TH/CMM [Visit 1]**, Table: **loca**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list) {
         library("dplyr")
@@ -435,9 +467,11 @@
       }
       ```
 <a id="eosinophil_ncnc_bld_1-mesa"></a>
-  * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **MESA**:
-    * 2 component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00219001.v1`
-    * Function:
+  * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 2 component_study_variables
+      * _phs000209.v13.pht003091.v3.phv00176011.v1_. dbGap Name: **age5c**, Desc: **AGE AT EXAM 5**, Table: **MESA_Exam5Main**.
+      * _phs000209.v13.pht004319.v1.phv00219001.v1_. dbGap Name: **eosa5**, Desc: **EOSINOPHILS (ABSOLUTE) (x10E3/uL)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -498,9 +532,19 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject.
     
 <a id="hematocrit_vfr_bld_1-aric"></a>
-  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **ARIC**:
-    * 10 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004107.v2.phv00207255.v1`, `phs000280.v4.pht004108.v2.phv00207270.v1`, `phs000280.v4.pht004109.v2.phv00207289.v1`, `phs000280.v4.pht004110.v2.phv00207301.v1`, `phs000280.v4.pht006422.v1.phv00294957.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
-    * Function:
+  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 10 component_study_variables
+      * _phs000280.v4.pht004062.v2.phv00204623.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v4.pht004064.v2.phv00204871.v1_. dbGap Name: **V3AGE31**, Desc: **Age at visit 3 [Cohort. Visit 3]**, Table: **DERIVE37**.
+      * _phs000280.v4.pht004065.v2.phv00204975.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004107.v2.phv00207255.v1_. dbGap Name: **HMTA01**, Desc: **Hematocrit % (MAV). Q1 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
+      * _phs000280.v4.pht004108.v2.phv00207270.v1_. dbGap Name: **HMTB01**, Desc: **Hematocrit % (MAV). Q1 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
+      * _phs000280.v4.pht004109.v2.phv00207289.v1_. dbGap Name: **HMTC5**, Desc: **Hematocrit. Q5 [Hematology Lab. HMTCV301. Visit 3]**, Table: **HMTCV301**.
+      * _phs000280.v4.pht004110.v2.phv00207301.v1_. dbGap Name: **HMTC5**, Desc: **Hematocrit. Q5 [Hematology Lab. HMTCV401. Visit 4]**, Table: **HMTCV401**.
+      * _phs000280.v4.pht006422.v1.phv00294957.v1_. dbGap Name: **CBC6**, Desc: **Hematocrit, Hct [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
+      * _phs000280.v4.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -571,9 +615,11 @@
       }
       ```
 <a id="hematocrit_vfr_bld_1-cardia"></a>
-  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **CARDIA**:
-    * 2 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112689.v2`
-    * Function:
+  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **CARDIA CARDIA Cohort**:
+    * 2 component_study_variables
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
+      * _phs000285.v3.pht001563.v2.phv00112689.v2_. dbGap Name: **A05HCT**, Desc: **HEMATOCRIT (%)**, Table: **A4F05**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -596,9 +642,11 @@
       }
       ```
 <a id="hematocrit_vfr_bld_1-chs"></a>
-  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **CHS**:
-    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100413.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
-    * Function:
+  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 2 component_study_variables
+      * _phs000287.v6.pht001452.v1.phv00100413.v1_. dbGap Name: **HEMATO23**, Desc: **HEMATOCRIT (%)**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -615,9 +663,11 @@
       }
       ```
 <a id="hematocrit_vfr_bld_1-hchs_sol"></a>
-  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **HCHS_SOL**:
-    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226303.v1`
-    * Function:
+  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
+    * 2 component_study_variables
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226303.v1_. dbGap Name: **LABA4**, Desc: **% Hematocrit (LABA4)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -634,9 +684,11 @@
       }
       ```
 <a id="hematocrit_vfr_bld_1-jhs"></a>
-  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **JHS**:
-    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127614.v1`
-    * Function:
+  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 2 component_study_variables
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001959.v1.phv00127614.v1_. dbGap Name: **HEMATOCRIT**, Desc: **Hematocrit % [Visit 1]**, Table: **loca**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list) {
         library("dplyr")
@@ -663,9 +715,11 @@
       }
       ```
 <a id="hematocrit_vfr_bld_1-mesa"></a>
-  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **MESA**:
-    * 2 component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218992.v1`
-    * Function:
+  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 2 component_study_variables
+      * _phs000209.v13.pht003091.v3.phv00176011.v1_. dbGap Name: **age5c**, Desc: **AGE AT EXAM 5**, Table: **MESA_Exam5Main**.
+      * _phs000209.v13.pht004319.v1.phv00218992.v1_. dbGap Name: **hct5**, Desc: **HEMATOCRIT (%)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -687,9 +741,14 @@
       }
       ```
 <a id="hematocrit_vfr_bld_1-whi"></a>
-  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **WHI**:
-    * 5 component_study_variables: `phs000200.v11.pht000986.v6.phv00077362.v6`, `phs000200.v11.pht000986.v6.phv00077363.v6`, `phs000200.v11.pht000986.v6.phv00077365.v6`, `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`
-    * Function:
+  * ### blood_cell_count/hematocrit_vfr_bld_1 -- **WHI Women's Health Initiative**:
+    * 5 component_study_variables
+      * _phs000200.v11.pht000986.v6.phv00077362.v6_. dbGap Name: **CBCVY**, Desc: **CBC Visit year**, Table: **cbc_rel1**.
+      * _phs000200.v11.pht000986.v6.phv00077363.v6_. dbGap Name: **CBCDAYS**, Desc: **CBC Days since randomization/enrollment**, Table: **cbc_rel1**.
+      * _phs000200.v11.pht000986.v6.phv00077365.v6_. dbGap Name: **HEMATOCR**, Desc: **Hematocrit (%)**, Table: **cbc_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -756,9 +815,19 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject.
     
 <a id="hemoglobin_mcnc_bld_1-aric"></a>
-  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **ARIC**:
-    * 10 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004107.v2.phv00207256.v1`, `phs000280.v4.pht004108.v2.phv00207271.v1`, `phs000280.v4.pht004109.v2.phv00207288.v1`, `phs000280.v4.pht004110.v2.phv00207300.v1`, `phs000280.v4.pht006422.v1.phv00294956.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
-    * Function:
+  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 10 component_study_variables
+      * _phs000280.v4.pht004062.v2.phv00204623.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v4.pht004064.v2.phv00204871.v1_. dbGap Name: **V3AGE31**, Desc: **Age at visit 3 [Cohort. Visit 3]**, Table: **DERIVE37**.
+      * _phs000280.v4.pht004065.v2.phv00204975.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004107.v2.phv00207256.v1_. dbGap Name: **HMTA02**, Desc: **Hemoglobin g/dL (MAV). Q2 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
+      * _phs000280.v4.pht004108.v2.phv00207271.v1_. dbGap Name: **HMTB02**, Desc: **Hemoglobin g/dL (MAV). Q2 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
+      * _phs000280.v4.pht004109.v2.phv00207288.v1_. dbGap Name: **HMTC4**, Desc: **Hemoglobin. Q4 [Hematology Lab. HMTCV301. Visit 3]**, Table: **HMTCV301**.
+      * _phs000280.v4.pht004110.v2.phv00207300.v1_. dbGap Name: **HMTC4**, Desc: **Hemoglobin. Q4 [Hematology Lab. HMTCV401. Visit 4]**, Table: **HMTCV401**.
+      * _phs000280.v4.pht006422.v1.phv00294956.v1_. dbGap Name: **CBC5**, Desc: **Hemoglobin, Hgb [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
+      * _phs000280.v4.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -829,9 +898,11 @@
       }
       ```
 <a id="hemoglobin_mcnc_bld_1-cardia"></a>
-  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **CARDIA**:
-    * 2 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112688.v2`
-    * Function:
+  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **CARDIA CARDIA Cohort**:
+    * 2 component_study_variables
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
+      * _phs000285.v3.pht001563.v2.phv00112688.v2_. dbGap Name: **A05HGB**, Desc: **HEMOGLOBIN (G/DL)**, Table: **A4F05**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -854,9 +925,11 @@
       }
       ```
 <a id="hemoglobin_mcnc_bld_1-chs"></a>
-  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **CHS**:
-    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100412.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
-    * Function:
+  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 2 component_study_variables
+      * _phs000287.v6.pht001452.v1.phv00100412.v1_. dbGap Name: **HEMOGL23**, Desc: **HEMOGLOBIN (g/dl)**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -871,9 +944,11 @@
       }
       ```
 <a id="hemoglobin_mcnc_bld_1-hchs_sol"></a>
-  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **HCHS_SOL**:
-    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226302.v1`
-    * Function:
+  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
+    * 2 component_study_variables
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226302.v1_. dbGap Name: **LABA3**, Desc: **Hemoglobin (g/dL) (LABA3)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -890,9 +965,11 @@
       }
       ```
 <a id="hemoglobin_mcnc_bld_1-jhs"></a>
-  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **JHS**:
-    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127615.v1`
-    * Function:
+  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 2 component_study_variables
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001959.v1.phv00127615.v1_. dbGap Name: **HEMOGLOBIN**, Desc: **Hemoglobin G/DL [Visit 1]**, Table: **loca**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list) {
         library("dplyr")
@@ -919,9 +996,11 @@
       }
       ```
 <a id="hemoglobin_mcnc_bld_1-mesa"></a>
-  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **MESA**:
-    * 2 component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218993.v1`
-    * Function:
+  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 2 component_study_variables
+      * _phs000209.v13.pht003091.v3.phv00176011.v1_. dbGap Name: **age5c**, Desc: **AGE AT EXAM 5**, Table: **MESA_Exam5Main**.
+      * _phs000209.v13.pht004319.v1.phv00218993.v1_. dbGap Name: **hgb5**, Desc: **HEMOGLOBIN (g/dL)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -942,9 +1021,14 @@
       }
       ```
 <a id="hemoglobin_mcnc_bld_1-whi"></a>
-  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **WHI**:
-    * 5 component_study_variables: `phs000200.v11.pht000986.v6.phv00077362.v6`, `phs000200.v11.pht000986.v6.phv00077363.v6`, `phs000200.v11.pht000986.v6.phv00077366.v6`, `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`
-    * Function:
+  * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **WHI Women's Health Initiative**:
+    * 5 component_study_variables
+      * _phs000200.v11.pht000986.v6.phv00077362.v6_. dbGap Name: **CBCVY**, Desc: **CBC Visit year**, Table: **cbc_rel1**.
+      * _phs000200.v11.pht000986.v6.phv00077363.v6_. dbGap Name: **CBCDAYS**, Desc: **CBC Days since randomization/enrollment**, Table: **cbc_rel1**.
+      * _phs000200.v11.pht000986.v6.phv00077366.v6_. dbGap Name: **HEMOGLBN**, Desc: **Hemoglobin (gm/dl)**, Table: **cbc_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -1023,9 +1107,18 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values for WBC, lymphocytes, and other WBC subtype differentials may not be from the same visit, so the harmonized subtype differential counts may not sum to the WBC count.
     
 <a id="lymphocyte_ncnc_bld_1-aric"></a>
-  * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **ARIC**:
-    * 9 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004107.v2.phv00207261.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004108.v2.phv00207276.v1`, `phs000280.v4.pht006422.v1.phv00294954.v1`, `phs000280.v4.pht006422.v1.phv00294964.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
-    * Function:
+  * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 9 component_study_variables
+      * _phs000280.v4.pht004062.v2.phv00204623.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v4.pht004107.v2.phv00207257.v1_. dbGap Name: **HMTA03**, Desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
+      * _phs000280.v4.pht004107.v2.phv00207261.v1_. dbGap Name: **HMTA07**, Desc: **Lymphocytes % Q7 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
+      * _phs000280.v4.pht004108.v2.phv00207272.v1_. dbGap Name: **HMTB03**, Desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
+      * _phs000280.v4.pht004108.v2.phv00207276.v1_. dbGap Name: **HMTB07**, Desc: **Lymphocytes %. Q7 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
+      * _phs000280.v4.pht006422.v1.phv00294954.v1_. dbGap Name: **CBC3**, Desc: **White blood cell count, Wbc [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
+      * _phs000280.v4.pht006422.v1.phv00294964.v1_. dbGap Name: **CBC13**, Desc: **Lymphocyte percentage, Ly [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
+      * _phs000280.v4.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -1099,9 +1192,12 @@
       }
       ```
 <a id="lymphocyte_ncnc_bld_1-cardia"></a>
-  * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **CARDIA**:
-    * 3 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112686.v2`, `phs000285.v3.pht001563.v2.phv00112691.v2`
-    * Function:
+  * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **CARDIA CARDIA Cohort**:
+    * 3 component_study_variables
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
+      * _phs000285.v3.pht001563.v2.phv00112686.v2_. dbGap Name: **A05WBC**, Desc: **WHITE CELL COUNT (X 1000)**, Table: **A4F05**.
+      * _phs000285.v3.pht001563.v2.phv00112691.v2_. dbGap Name: **A05LYMPH**, Desc: **LYMPHOCYTE COUNT**, Table: **A4F05**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -1127,9 +1223,12 @@
       }
       ```
 <a id="lymphocyte_ncnc_bld_1-hchs_sol"></a>
-  * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **HCHS_SOL**:
-    * 3 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`, `phs000810.v1.pht004715.v1.phv00226285.v1`
-    * Function:
+  * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
+    * 3 component_study_variables
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226283.v1_. dbGap Name: **LABA1**, Desc: **White Blood Count (x10e9) (LABA1)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226285.v1_. dbGap Name: **LABA11**, Desc: **% Lymphocytes (LABA11)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -1147,9 +1246,12 @@
       }
       ```
 <a id="lymphocyte_ncnc_bld_1-jhs"></a>
-  * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **JHS**:
-    * 3 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127622.v1`, `phs000286.v5.pht001959.v1.phv00127631.v1`
-    * Function:
+  * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 3 component_study_variables
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001959.v1.phv00127622.v1_. dbGap Name: **LYMPHS**, Desc: **Lymphs: diff measure % [Visit 1]**, Table: **loca**.
+      * _phs000286.v5.pht001959.v1.phv00127631.v1_. dbGap Name: **WBC**, Desc: **White blood cells TH/CMM [Visit 1]**, Table: **loca**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list) {
         library("dplyr")
@@ -1181,9 +1283,11 @@
       }
       ```
 <a id="lymphocyte_ncnc_bld_1-mesa"></a>
-  * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **MESA**:
-    * 2 component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218998.v1`
-    * Function:
+  * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 2 component_study_variables
+      * _phs000209.v13.pht003091.v3.phv00176011.v1_. dbGap Name: **age5c**, Desc: **AGE AT EXAM 5**, Table: **MESA_Exam5Main**.
+      * _phs000209.v13.pht004319.v1.phv00218998.v1_. dbGap Name: **lymphsa5**, Desc: **LYMPHOCYTES (ABSOLUTE) (x10E3/uL)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -1248,9 +1352,15 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values for hemoglobin, red blood cell count, and MCH may not be from the same visit.
     
 <a id="mch_entmass_rbc_1-aric"></a>
-  * ### blood_cell_count/mch_entmass_rbc_1 -- **ARIC**:
-    * 6 component_study_variables: `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004109.v2.phv00207290.v1`, `phs000280.v4.pht004110.v2.phv00207302.v1`, `phs000280.v4.pht006422.v1.phv00294960.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
-    * Function:
+  * ### blood_cell_count/mch_entmass_rbc_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 6 component_study_variables
+      * _phs000280.v4.pht004064.v2.phv00204871.v1_. dbGap Name: **V3AGE31**, Desc: **Age at visit 3 [Cohort. Visit 3]**, Table: **DERIVE37**.
+      * _phs000280.v4.pht004065.v2.phv00204975.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004109.v2.phv00207290.v1_. dbGap Name: **HMTC7**, Desc: **MCH. Q7 [Hematology Lab. HMTCV301. Visit 3]**, Table: **HMTCV301**.
+      * _phs000280.v4.pht004110.v2.phv00207302.v1_. dbGap Name: **HMTC7**, Desc: **MCH. Q7 [Hematology Lab. HMTCV401. Visit 4]**, Table: **HMTCV401**.
+      * _phs000280.v4.pht006422.v1.phv00294960.v1_. dbGap Name: **CBC9**, Desc: **Mean corpuscular hemoglobin, Mch [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
+      * _phs000280.v4.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -1311,9 +1421,12 @@
       }
       ```
 <a id="mch_entmass_rbc_1-cardia"></a>
-  * ### blood_cell_count/mch_entmass_rbc_1 -- **CARDIA**:
-    * 3 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112687.v2`, `phs000285.v3.pht001563.v2.phv00112688.v2`
-    * Function:
+  * ### blood_cell_count/mch_entmass_rbc_1 -- **CARDIA CARDIA Cohort**:
+    * 3 component_study_variables
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
+      * _phs000285.v3.pht001563.v2.phv00112687.v2_. dbGap Name: **A05RBC**, Desc: **RED CELL COUNT (X 1,000,000)**, Table: **A4F05**.
+      * _phs000285.v3.pht001563.v2.phv00112688.v2_. dbGap Name: **A05HGB**, Desc: **HEMOGLOBIN (G/DL)**, Table: **A4F05**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -1338,9 +1451,11 @@
       }
       ```
 <a id="mch_entmass_rbc_1-hchs_sol"></a>
-  * ### blood_cell_count/mch_entmass_rbc_1 -- **HCHS_SOL**:
-    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226305.v1`
-    * Function:
+  * ### blood_cell_count/mch_entmass_rbc_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
+    * 2 component_study_variables
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226305.v1_. dbGap Name: **LABA6**, Desc: **Mean Corpuscular Hemoglobin (pg) (LABA6)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -1358,9 +1473,11 @@
       }
       ```
 <a id="mch_entmass_rbc_1-jhs"></a>
-  * ### blood_cell_count/mch_entmass_rbc_1 -- **JHS**:
-    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127623.v1`
-    * Function:
+  * ### blood_cell_count/mch_entmass_rbc_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 2 component_study_variables
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001959.v1.phv00127623.v1_. dbGap Name: **MCH**, Desc: **MCH PG [Visit 1]**, Table: **loca**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list) {
         library("dplyr")
@@ -1387,9 +1504,12 @@
       }
       ```
 <a id="mch_entmass_rbc_1-mesa"></a>
-  * ### blood_cell_count/mch_entmass_rbc_1 -- **MESA**:
-    * 3 component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218990.v1`, `phs000209.v13.pht004319.v1.phv00218993.v1`
-    * Function:
+  * ### blood_cell_count/mch_entmass_rbc_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 3 component_study_variables
+      * _phs000209.v13.pht003091.v3.phv00176011.v1_. dbGap Name: **age5c**, Desc: **AGE AT EXAM 5**, Table: **MESA_Exam5Main**.
+      * _phs000209.v13.pht004319.v1.phv00218990.v1_. dbGap Name: **rbc5**, Desc: **RED BLOOD CELL (RBC) (x10E6/uL)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+      * _phs000209.v13.pht004319.v1.phv00218993.v1_. dbGap Name: **hgb5**, Desc: **HEMOGLOBIN (g/dL)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list) {
         library("dplyr")
@@ -1467,9 +1587,24 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values for hemoglobin, hematocrit, and MCHC may not be from the same visit.
     
 <a id="mchc_mcnc_rbc_1-aric"></a>
-  * ### blood_cell_count/mchc_mcnc_rbc_1 -- **ARIC**:
-    * 15 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004107.v2.phv00207255.v1`, `phs000280.v4.pht004107.v2.phv00207256.v1`, `phs000280.v4.pht004108.v2.phv00207270.v1`, `phs000280.v4.pht004108.v2.phv00207271.v1`, `phs000280.v4.pht004109.v2.phv00207288.v1`, `phs000280.v4.pht004109.v2.phv00207289.v1`, `phs000280.v4.pht004110.v2.phv00207300.v1`, `phs000280.v4.pht004110.v2.phv00207301.v1`, `phs000280.v4.pht006422.v1.phv00294956.v1`, `phs000280.v4.pht006422.v1.phv00294957.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
-    * Function:
+  * ### blood_cell_count/mchc_mcnc_rbc_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 15 component_study_variables
+      * _phs000280.v4.pht004062.v2.phv00204623.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v4.pht004064.v2.phv00204871.v1_. dbGap Name: **V3AGE31**, Desc: **Age at visit 3 [Cohort. Visit 3]**, Table: **DERIVE37**.
+      * _phs000280.v4.pht004065.v2.phv00204975.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004107.v2.phv00207255.v1_. dbGap Name: **HMTA01**, Desc: **Hematocrit % (MAV). Q1 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
+      * _phs000280.v4.pht004107.v2.phv00207256.v1_. dbGap Name: **HMTA02**, Desc: **Hemoglobin g/dL (MAV). Q2 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
+      * _phs000280.v4.pht004108.v2.phv00207270.v1_. dbGap Name: **HMTB01**, Desc: **Hematocrit % (MAV). Q1 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
+      * _phs000280.v4.pht004108.v2.phv00207271.v1_. dbGap Name: **HMTB02**, Desc: **Hemoglobin g/dL (MAV). Q2 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
+      * _phs000280.v4.pht004109.v2.phv00207288.v1_. dbGap Name: **HMTC4**, Desc: **Hemoglobin. Q4 [Hematology Lab. HMTCV301. Visit 3]**, Table: **HMTCV301**.
+      * _phs000280.v4.pht004109.v2.phv00207289.v1_. dbGap Name: **HMTC5**, Desc: **Hematocrit. Q5 [Hematology Lab. HMTCV301. Visit 3]**, Table: **HMTCV301**.
+      * _phs000280.v4.pht004110.v2.phv00207300.v1_. dbGap Name: **HMTC4**, Desc: **Hemoglobin. Q4 [Hematology Lab. HMTCV401. Visit 4]**, Table: **HMTCV401**.
+      * _phs000280.v4.pht004110.v2.phv00207301.v1_. dbGap Name: **HMTC5**, Desc: **Hematocrit. Q5 [Hematology Lab. HMTCV401. Visit 4]**, Table: **HMTCV401**.
+      * _phs000280.v4.pht006422.v1.phv00294956.v1_. dbGap Name: **CBC5**, Desc: **Hemoglobin, Hgb [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
+      * _phs000280.v4.pht006422.v1.phv00294957.v1_. dbGap Name: **CBC6**, Desc: **Hematocrit, Hct [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
+      * _phs000280.v4.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -1549,9 +1684,12 @@
       }
       ```
 <a id="mchc_mcnc_rbc_1-cardia"></a>
-  * ### blood_cell_count/mchc_mcnc_rbc_1 -- **CARDIA**:
-    * 3 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112688.v2`, `phs000285.v3.pht001563.v2.phv00112689.v2`
-    * Function:
+  * ### blood_cell_count/mchc_mcnc_rbc_1 -- **CARDIA CARDIA Cohort**:
+    * 3 component_study_variables
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
+      * _phs000285.v3.pht001563.v2.phv00112688.v2_. dbGap Name: **A05HGB**, Desc: **HEMOGLOBIN (G/DL)**, Table: **A4F05**.
+      * _phs000285.v3.pht001563.v2.phv00112689.v2_. dbGap Name: **A05HCT**, Desc: **HEMATOCRIT (%)**, Table: **A4F05**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -1576,9 +1714,12 @@
       }
       ```
 <a id="mchc_mcnc_rbc_1-chs"></a>
-  * ### blood_cell_count/mchc_mcnc_rbc_1 -- **CHS**:
-    * 3 component_study_variables: `phs000287.v6.pht001452.v1.phv00100412.v1`, `phs000287.v6.pht001452.v1.phv00100413.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
-    * Function:
+  * ### blood_cell_count/mchc_mcnc_rbc_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 3 component_study_variables
+      * _phs000287.v6.pht001452.v1.phv00100412.v1_. dbGap Name: **HEMOGL23**, Desc: **HEMOGLOBIN (g/dl)**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100413.v1_. dbGap Name: **HEMATO23**, Desc: **HEMATOCRIT (%)**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -1597,9 +1738,11 @@
       }
       ```
 <a id="mchc_mcnc_rbc_1-hchs_sol"></a>
-  * ### blood_cell_count/mchc_mcnc_rbc_1 -- **HCHS_SOL**:
-    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226306.v1`
-    * Function:
+  * ### blood_cell_count/mchc_mcnc_rbc_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
+    * 2 component_study_variables
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226306.v1_. dbGap Name: **LABA7**, Desc: **Mean Corpuscular Hemoglobin Concentration (g/dL)(LABA7)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -1617,9 +1760,11 @@
       }
       ```
 <a id="mchc_mcnc_rbc_1-jhs"></a>
-  * ### blood_cell_count/mchc_mcnc_rbc_1 -- **JHS**:
-    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127624.v1`
-    * Function:
+  * ### blood_cell_count/mchc_mcnc_rbc_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 2 component_study_variables
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001959.v1.phv00127624.v1_. dbGap Name: **MCHC**, Desc: **Mchc % [Visit 1]**, Table: **loca**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list) {
         library("dplyr")
@@ -1646,9 +1791,12 @@
       }
       ```
 <a id="mchc_mcnc_rbc_1-mesa"></a>
-  * ### blood_cell_count/mchc_mcnc_rbc_1 -- **MESA**:
-    * 3 component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218992.v1`, `phs000209.v13.pht004319.v1.phv00218993.v1`
-    * Function:
+  * ### blood_cell_count/mchc_mcnc_rbc_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 3 component_study_variables
+      * _phs000209.v13.pht003091.v3.phv00176011.v1_. dbGap Name: **age5c**, Desc: **AGE AT EXAM 5**, Table: **MESA_Exam5Main**.
+      * _phs000209.v13.pht004319.v1.phv00218992.v1_. dbGap Name: **hct5**, Desc: **HEMATOCRIT (%)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+      * _phs000209.v13.pht004319.v1.phv00218993.v1_. dbGap Name: **hgb5**, Desc: **HEMOGLOBIN (g/dL)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list) {
         library("dplyr")
@@ -1721,9 +1869,17 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values for hematocrit, red blood cell count, and MCV may not be from the same visit.
     
 <a id="mcv_entvol_rbc_1-aric"></a>
-  * ### blood_cell_count/mcv_entvol_rbc_1 -- **ARIC**:
-    * 8 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004108.v2.phv00207282.v1`, `phs000280.v4.pht004109.v2.phv00207293.v1`, `phs000280.v4.pht004110.v2.phv00207305.v1`, `phs000280.v4.pht006422.v1.phv00294959.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
-    * Function:
+  * ### blood_cell_count/mcv_entvol_rbc_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 8 component_study_variables
+      * _phs000280.v4.pht004062.v2.phv00204623.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004064.v2.phv00204871.v1_. dbGap Name: **V3AGE31**, Desc: **Age at visit 3 [Cohort. Visit 3]**, Table: **DERIVE37**.
+      * _phs000280.v4.pht004065.v2.phv00204975.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004108.v2.phv00207282.v1_. dbGap Name: **HMTB13**, Desc: **Mean corpuscular volume (MCV) (to nearest whole unit). Q13 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
+      * _phs000280.v4.pht004109.v2.phv00207293.v1_. dbGap Name: **HMTC6**, Desc: **MCV. Q6 [Hematology Lab. HMTCV301. Visit 3]**, Table: **HMTCV301**.
+      * _phs000280.v4.pht004110.v2.phv00207305.v1_. dbGap Name: **HMTC6**, Desc: **MCV. Q6 [Hematology Lab. HMTCV401. Visit 4]**, Table: **HMTCV401**.
+      * _phs000280.v4.pht006422.v1.phv00294959.v1_. dbGap Name: **CBC8**, Desc: **Mean cell volume, Mcv [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
+      * _phs000280.v4.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -1789,9 +1945,12 @@
       }
       ```
 <a id="mcv_entvol_rbc_1-cardia"></a>
-  * ### blood_cell_count/mcv_entvol_rbc_1 -- **CARDIA**:
-    * 3 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112687.v2`, `phs000285.v3.pht001563.v2.phv00112689.v2`
-    * Function:
+  * ### blood_cell_count/mcv_entvol_rbc_1 -- **CARDIA CARDIA Cohort**:
+    * 3 component_study_variables
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
+      * _phs000285.v3.pht001563.v2.phv00112687.v2_. dbGap Name: **A05RBC**, Desc: **RED CELL COUNT (X 1,000,000)**, Table: **A4F05**.
+      * _phs000285.v3.pht001563.v2.phv00112689.v2_. dbGap Name: **A05HCT**, Desc: **HEMATOCRIT (%)**, Table: **A4F05**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -1816,9 +1975,11 @@
       }
       ```
 <a id="mcv_entvol_rbc_1-hchs_sol"></a>
-  * ### blood_cell_count/mcv_entvol_rbc_1 -- **HCHS_SOL**:
-    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226304.v1`
-    * Function:
+  * ### blood_cell_count/mcv_entvol_rbc_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
+    * 2 component_study_variables
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226304.v1_. dbGap Name: **LABA5**, Desc: **Mean Corpuscular Volume (fl) (LABA5)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -1836,9 +1997,11 @@
       }
       ```
 <a id="mcv_entvol_rbc_1-jhs"></a>
-  * ### blood_cell_count/mcv_entvol_rbc_1 -- **JHS**:
-    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127625.v1`
-    * Function:
+  * ### blood_cell_count/mcv_entvol_rbc_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 2 component_study_variables
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001959.v1.phv00127625.v1_. dbGap Name: **MCV**, Desc: **Mcv FL [Visit 1]**, Table: **loca**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list) {
         library("dplyr")
@@ -1865,9 +2028,12 @@
       }
       ```
 <a id="mcv_entvol_rbc_1-mesa"></a>
-  * ### blood_cell_count/mcv_entvol_rbc_1 -- **MESA**:
-    * 3 component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218990.v1`, `phs000209.v13.pht004319.v1.phv00218992.v1`
-    * Function:
+  * ### blood_cell_count/mcv_entvol_rbc_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 3 component_study_variables
+      * _phs000209.v13.pht003091.v3.phv00176011.v1_. dbGap Name: **age5c**, Desc: **AGE AT EXAM 5**, Table: **MESA_Exam5Main**.
+      * _phs000209.v13.pht004319.v1.phv00218990.v1_. dbGap Name: **rbc5**, Desc: **RED BLOOD CELL (RBC) (x10E6/uL)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+      * _phs000209.v13.pht004319.v1.phv00218992.v1_. dbGap Name: **hct5**, Desc: **HEMATOCRIT (%)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list) {
         library("dplyr")
@@ -1945,9 +2111,18 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values for WBC, monocytes, and other WBC subtype differentials may not be from the same visit, so the harmonized subtype differential counts may not sum to the WBC count.
     
 <a id="monocyte_ncnc_bld_1-aric"></a>
-  * ### blood_cell_count/monocyte_ncnc_bld_1 -- **ARIC**:
-    * 9 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004107.v2.phv00207262.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004108.v2.phv00207277.v1`, `phs000280.v4.pht006422.v1.phv00294954.v1`, `phs000280.v4.pht006422.v1.phv00294965.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
-    * Function:
+  * ### blood_cell_count/monocyte_ncnc_bld_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 9 component_study_variables
+      * _phs000280.v4.pht004062.v2.phv00204623.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v4.pht004107.v2.phv00207257.v1_. dbGap Name: **HMTA03**, Desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
+      * _phs000280.v4.pht004107.v2.phv00207262.v1_. dbGap Name: **HMTA08**, Desc: **Monocytes % Q8 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
+      * _phs000280.v4.pht004108.v2.phv00207272.v1_. dbGap Name: **HMTB03**, Desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
+      * _phs000280.v4.pht004108.v2.phv00207277.v1_. dbGap Name: **HMTB08**, Desc: **Monocytes %. Q8 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
+      * _phs000280.v4.pht006422.v1.phv00294954.v1_. dbGap Name: **CBC3**, Desc: **White blood cell count, Wbc [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
+      * _phs000280.v4.pht006422.v1.phv00294965.v1_. dbGap Name: **CBC14**, Desc: **Monocyte percentage, Mo [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
+      * _phs000280.v4.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -2021,9 +2196,12 @@
       }
       ```
 <a id="monocyte_ncnc_bld_1-cardia"></a>
-  * ### blood_cell_count/monocyte_ncnc_bld_1 -- **CARDIA**:
-    * 3 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112686.v2`, `phs000285.v3.pht001563.v2.phv00112692.v2`
-    * Function:
+  * ### blood_cell_count/monocyte_ncnc_bld_1 -- **CARDIA CARDIA Cohort**:
+    * 3 component_study_variables
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
+      * _phs000285.v3.pht001563.v2.phv00112686.v2_. dbGap Name: **A05WBC**, Desc: **WHITE CELL COUNT (X 1000)**, Table: **A4F05**.
+      * _phs000285.v3.pht001563.v2.phv00112692.v2_. dbGap Name: **A05MONO**, Desc: **MONOCYTES (%)**, Table: **A4F05**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -2048,9 +2226,12 @@
       }
       ```
 <a id="monocyte_ncnc_bld_1-hchs_sol"></a>
-  * ### blood_cell_count/monocyte_ncnc_bld_1 -- **HCHS_SOL**:
-    * 3 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`, `phs000810.v1.pht004715.v1.phv00226286.v1`
-    * Function:
+  * ### blood_cell_count/monocyte_ncnc_bld_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
+    * 3 component_study_variables
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226283.v1_. dbGap Name: **LABA1**, Desc: **White Blood Count (x10e9) (LABA1)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226286.v1_. dbGap Name: **LABA12**, Desc: **% Monocytes (LABA12)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -2068,9 +2249,12 @@
       }
       ```
 <a id="monocyte_ncnc_bld_1-jhs"></a>
-  * ### blood_cell_count/monocyte_ncnc_bld_1 -- **JHS**:
-    * 3 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127626.v1`, `phs000286.v5.pht001959.v1.phv00127631.v1`
-    * Function:
+  * ### blood_cell_count/monocyte_ncnc_bld_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 3 component_study_variables
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001959.v1.phv00127626.v1_. dbGap Name: **MONOS**, Desc: **Monos: diff % [Visit 1]**, Table: **loca**.
+      * _phs000286.v5.pht001959.v1.phv00127631.v1_. dbGap Name: **WBC**, Desc: **White blood cells TH/CMM [Visit 1]**, Table: **loca**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list) {
         library("dplyr")
@@ -2102,9 +2286,11 @@
       }
       ```
 <a id="monocyte_ncnc_bld_1-mesa"></a>
-  * ### blood_cell_count/monocyte_ncnc_bld_1 -- **MESA**:
-    * 2 component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00219000.v1`
-    * Function:
+  * ### blood_cell_count/monocyte_ncnc_bld_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 2 component_study_variables
+      * _phs000209.v13.pht003091.v3.phv00176011.v1_. dbGap Name: **age5c**, Desc: **AGE AT EXAM 5**, Table: **MESA_Exam5Main**.
+      * _phs000209.v13.pht004319.v1.phv00219000.v1_. dbGap Name: **monosa5**, Desc: **MONOCYTES(ABSOLUTE) (x10E3/uL)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -2179,9 +2365,17 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values for WBC, neutrophils, and other WBC subtype differentials may not be from the same visit, so the harmonized subtype differential counts may not sum to the WBC count.
     
 <a id="neutrophil_ncnc_bld_1-aric"></a>
-  * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **ARIC**:
-    * 8 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004107.v2.phv00207259.v1`, `phs000280.v4.pht004107.v2.phv00207260.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004108.v2.phv00207274.v1`, `phs000280.v4.pht004108.v2.phv00207275.v1`
-    * Function:
+  * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 8 component_study_variables
+      * _phs000280.v4.pht004062.v2.phv00204623.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v4.pht004107.v2.phv00207257.v1_. dbGap Name: **HMTA03**, Desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
+      * _phs000280.v4.pht004107.v2.phv00207259.v1_. dbGap Name: **HMTA05**, Desc: **Neutrophils % Q5 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
+      * _phs000280.v4.pht004107.v2.phv00207260.v1_. dbGap Name: **HMTA06**, Desc: **Neutrophil Bands % Q6 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
+      * _phs000280.v4.pht004108.v2.phv00207272.v1_. dbGap Name: **HMTB03**, Desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
+      * _phs000280.v4.pht004108.v2.phv00207274.v1_. dbGap Name: **HMTB05**, Desc: **Neutrophils % Q5. Q5 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
+      * _phs000280.v4.pht004108.v2.phv00207275.v1_. dbGap Name: **HMTB06**, Desc: **Neutrophil Bands %.Q6 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -2253,9 +2447,15 @@
       }
       ```
 <a id="neutrophil_ncnc_bld_1-cardia"></a>
-  * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **CARDIA**:
-    * 6 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112686.v2`, `phs000285.v3.pht001563.v2.phv00112694.v2`, `phs000285.v3.pht001563.v2.phv00112695.v2`, `phs000285.v3.pht001563.v2.phv00112697.v2`, `phs000285.v3.pht001563.v2.phv00112698.v2`
-    * Function:
+  * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **CARDIA CARDIA Cohort**:
+    * 6 component_study_variables
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
+      * _phs000285.v3.pht001563.v2.phv00112686.v2_. dbGap Name: **A05WBC**, Desc: **WHITE CELL COUNT (X 1000)**, Table: **A4F05**.
+      * _phs000285.v3.pht001563.v2.phv00112694.v2_. dbGap Name: **A05NEUTR**, Desc: **NEUTROPHILS (%)**, Table: **A4F05**.
+      * _phs000285.v3.pht001563.v2.phv00112695.v2_. dbGap Name: **A05GRAN**, Desc: **GRANULOCYTES (%)**, Table: **A4F05**.
+      * _phs000285.v3.pht001563.v2.phv00112697.v2_. dbGap Name: **A05BANDS**, Desc: **BANDS (%)**, Table: **A4F05**.
+      * _phs000285.v3.pht001563.v2.phv00112698.v2_. dbGap Name: **A05SEGS**, Desc: **SEGS (%)**, Table: **A4F05**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -2294,9 +2494,12 @@
       }
       ```
 <a id="neutrophil_ncnc_bld_1-hchs_sol"></a>
-  * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **HCHS_SOL**:
-    * 3 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`, `phs000810.v1.pht004715.v1.phv00226284.v1`
-    * Function:
+  * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
+    * 3 component_study_variables
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226283.v1_. dbGap Name: **LABA1**, Desc: **White Blood Count (x10e9) (LABA1)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226284.v1_. dbGap Name: **LABA10**, Desc: **% Neutrophils (LABA10)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -2314,9 +2517,13 @@
       }
       ```
 <a id="neutrophil_ncnc_bld_1-jhs"></a>
-  * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **JHS**:
-    * 4 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127630.v1`, `phs000286.v5.pht001959.v1.phv00127631.v1`, `phs000286.v5.pht001959.v1.phv00127632.v1`
-    * Function:
+  * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 4 component_study_variables
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001959.v1.phv00127630.v1_. dbGap Name: **SEGS**, Desc: **Segs: diff measure % [Visit 1]**, Table: **loca**.
+      * _phs000286.v5.pht001959.v1.phv00127631.v1_. dbGap Name: **WBC**, Desc: **White blood cells TH/CMM [Visit 1]**, Table: **loca**.
+      * _phs000286.v5.pht001959.v1.phv00127632.v1_. dbGap Name: **BANDS**, Desc: **Bands: diff measure % [Visit 1]**, Table: **loca**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list) {
       
@@ -2354,9 +2561,11 @@
       }
       ```
 <a id="neutrophil_ncnc_bld_1-mesa"></a>
-  * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **MESA**:
-    * 2 component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218999.v1`
-    * Function:
+  * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 2 component_study_variables
+      * _phs000209.v13.pht003091.v3.phv00176011.v1_. dbGap Name: **age5c**, Desc: **AGE AT EXAM 5**, Table: **MESA_Exam5Main**.
+      * _phs000209.v13.pht004319.v1.phv00218999.v1_. dbGap Name: **polysa5**, Desc: **NEUTROPHILS (ABSOLUTE) (x10E3/uL)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -2413,9 +2622,19 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. 
     
 <a id="platelet_ncnc_bld_1-aric"></a>
-  * ### blood_cell_count/platelet_ncnc_bld_1 -- **ARIC**:
-    * 10 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004107.v2.phv00207258.v1`, `phs000280.v4.pht004108.v2.phv00207273.v1`, `phs000280.v4.pht004109.v2.phv00207294.v1`, `phs000280.v4.pht004110.v2.phv00207306.v1`, `phs000280.v4.pht006422.v1.phv00294958.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
-    * Function:
+  * ### blood_cell_count/platelet_ncnc_bld_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 10 component_study_variables
+      * _phs000280.v4.pht004062.v2.phv00204623.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v4.pht004064.v2.phv00204871.v1_. dbGap Name: **V3AGE31**, Desc: **Age at visit 3 [Cohort. Visit 3]**, Table: **DERIVE37**.
+      * _phs000280.v4.pht004065.v2.phv00204975.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004107.v2.phv00207258.v1_. dbGap Name: **HMTA04**, Desc: **Platelet count x1000/mm3 (MAV). Q4 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
+      * _phs000280.v4.pht004108.v2.phv00207273.v1_. dbGap Name: **HMTB04**, Desc: **Platelet count x1000/mm3 (MAV). Q4 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
+      * _phs000280.v4.pht004109.v2.phv00207294.v1_. dbGap Name: **HMTC10**, Desc: **Platelet count Q10 [Hematology Lab. HMTCV301. Visit 3]**, Table: **HMTCV301**.
+      * _phs000280.v4.pht004110.v2.phv00207306.v1_. dbGap Name: **HMTC10**, Desc: **Platelet count. Q10 [Hematology Lab. HMTCV401. Visit 4]**, Table: **HMTCV401**.
+      * _phs000280.v4.pht006422.v1.phv00294958.v1_. dbGap Name: **CBC7**, Desc: **Platelet count, Plt [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
+      * _phs000280.v4.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -2486,9 +2705,11 @@
       }
       ```
 <a id="platelet_ncnc_bld_1-cardia"></a>
-  * ### blood_cell_count/platelet_ncnc_bld_1 -- **CARDIA**:
-    * 2 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112690.v2`
-    * Function:
+  * ### blood_cell_count/platelet_ncnc_bld_1 -- **CARDIA CARDIA Cohort**:
+    * 2 component_study_variables
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
+      * _phs000285.v3.pht001563.v2.phv00112690.v2_. dbGap Name: **A05PLATL**, Desc: **PLATELET COUNT**, Table: **A4F05**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -2512,9 +2733,11 @@
       }
       ```
 <a id="platelet_ncnc_bld_1-chs"></a>
-  * ### blood_cell_count/platelet_ncnc_bld_1 -- **CHS**:
-    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100414.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
-    * Function:
+  * ### blood_cell_count/platelet_ncnc_bld_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 2 component_study_variables
+      * _phs000287.v6.pht001452.v1.phv00100414.v1_. dbGap Name: **PLATE23**, Desc: **PLATELET COUNT (/cc.mm)**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -2530,9 +2753,11 @@
       }
       ```
 <a id="platelet_ncnc_bld_1-hchs_sol"></a>
-  * ### blood_cell_count/platelet_ncnc_bld_1 -- **HCHS_SOL**:
-    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226310.v1`
-    * Function:
+  * ### blood_cell_count/platelet_ncnc_bld_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
+    * 2 component_study_variables
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226310.v1_. dbGap Name: **LABA9**, Desc: **Platelet Count (x10e9) (LABA9)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -2550,9 +2775,11 @@
       }
       ```
 <a id="platelet_ncnc_bld_1-jhs"></a>
-  * ### blood_cell_count/platelet_ncnc_bld_1 -- **JHS**:
-    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127616.v1`
-    * Function:
+  * ### blood_cell_count/platelet_ncnc_bld_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 2 component_study_variables
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001959.v1.phv00127616.v1_. dbGap Name: **PLATELET**, Desc: **Platelet TH/CMM [Visit 1]**, Table: **loca**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list) {
         library("dplyr")
@@ -2579,9 +2806,11 @@
       }
       ```
 <a id="platelet_ncnc_bld_1-mesa"></a>
-  * ### blood_cell_count/platelet_ncnc_bld_1 -- **MESA**:
-    * 2 component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218991.v1`
-    * Function:
+  * ### blood_cell_count/platelet_ncnc_bld_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 2 component_study_variables
+      * _phs000209.v13.pht003091.v3.phv00176011.v1_. dbGap Name: **age5c**, Desc: **AGE AT EXAM 5**, Table: **MESA_Exam5Main**.
+      * _phs000209.v13.pht004319.v1.phv00218991.v1_. dbGap Name: **plt5**, Desc: **PLATELETS (x10E3/uL)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -2604,9 +2833,14 @@
       }
       ```
 <a id="platelet_ncnc_bld_1-whi"></a>
-  * ### blood_cell_count/platelet_ncnc_bld_1 -- **WHI**:
-    * 5 component_study_variables: `phs000200.v11.pht000986.v6.phv00077362.v6`, `phs000200.v11.pht000986.v6.phv00077363.v6`, `phs000200.v11.pht000986.v6.phv00077367.v6`, `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`
-    * Function:
+  * ### blood_cell_count/platelet_ncnc_bld_1 -- **WHI Women's Health Initiative**:
+    * 5 component_study_variables
+      * _phs000200.v11.pht000986.v6.phv00077362.v6_. dbGap Name: **CBCVY**, Desc: **CBC Visit year**, Table: **cbc_rel1**.
+      * _phs000200.v11.pht000986.v6.phv00077363.v6_. dbGap Name: **CBCDAYS**, Desc: **CBC Days since randomization/enrollment**, Table: **cbc_rel1**.
+      * _phs000200.v11.pht000986.v6.phv00077367.v6_. dbGap Name: **PLATELET**, Desc: **Platelet count (Kcell/microliter)**, Table: **cbc_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -2654,9 +2888,11 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values for mean platelet volume and platelet count may not be from the same visit.
     
 <a id="pmv_entvol_bld_1-aric"></a>
-  * ### blood_cell_count/pmv_entvol_bld_1 -- **ARIC**:
-    * 2 component_study_variables: `phs000280.v4.pht006422.v1.phv00294963.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
-    * Function:
+  * ### blood_cell_count/pmv_entvol_bld_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 2 component_study_variables
+      * _phs000280.v4.pht006422.v1.phv00294963.v1_. dbGap Name: **CBC12**, Desc: **Mean platelet volume, Mpv [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
+      * _phs000280.v4.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -2682,9 +2918,11 @@
       }
       ```
 <a id="pmv_entvol_bld_1-jhs"></a>
-  * ### blood_cell_count/pmv_entvol_bld_1 -- **JHS**:
-    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127627.v1`
-    * Function:
+  * ### blood_cell_count/pmv_entvol_bld_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 2 component_study_variables
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001959.v1.phv00127627.v1_. dbGap Name: **MPV**, Desc: **Mpv FL [Visit 1]**, Table: **loca**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list) {
         library("dplyr")
@@ -2743,9 +2981,15 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values of red blood cell count (RBC) and other red blood cell phenotypes may not be from the same visit.
     
 <a id="rbc_ncnc_bld_1-aric"></a>
-  * ### blood_cell_count/rbc_ncnc_bld_1 -- **ARIC**:
-    * 6 component_study_variables: `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004109.v2.phv00207287.v1`, `phs000280.v4.pht004110.v2.phv00207299.v1`, `phs000280.v4.pht006422.v1.phv00294955.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
-    * Function:
+  * ### blood_cell_count/rbc_ncnc_bld_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 6 component_study_variables
+      * _phs000280.v4.pht004064.v2.phv00204871.v1_. dbGap Name: **V3AGE31**, Desc: **Age at visit 3 [Cohort. Visit 3]**, Table: **DERIVE37**.
+      * _phs000280.v4.pht004065.v2.phv00204975.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004109.v2.phv00207287.v1_. dbGap Name: **HMTC3**, Desc: **Red blood count. Q3 [Hematology Lab. HMTCV301. Visit 3]**, Table: **HMTCV301**.
+      * _phs000280.v4.pht004110.v2.phv00207299.v1_. dbGap Name: **HMTC3**, Desc: **Red blood count. Q3 [Hematology Lab. HMTCV401. Visit 4]**, Table: **HMTCV401**.
+      * _phs000280.v4.pht006422.v1.phv00294955.v1_. dbGap Name: **CBC4**, Desc: **Red blood cell count, Rbc [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
+      * _phs000280.v4.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -2806,9 +3050,11 @@
       }
       ```
 <a id="rbc_ncnc_bld_1-cardia"></a>
-  * ### blood_cell_count/rbc_ncnc_bld_1 -- **CARDIA**:
-    * 2 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112687.v2`
-    * Function:
+  * ### blood_cell_count/rbc_ncnc_bld_1 -- **CARDIA CARDIA Cohort**:
+    * 2 component_study_variables
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
+      * _phs000285.v3.pht001563.v2.phv00112687.v2_. dbGap Name: **A05RBC**, Desc: **RED CELL COUNT (X 1,000,000)**, Table: **A4F05**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -2831,9 +3077,11 @@
       }
       ```
 <a id="rbc_ncnc_bld_1-hchs_sol"></a>
-  * ### blood_cell_count/rbc_ncnc_bld_1 -- **HCHS_SOL**:
-    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226294.v1`
-    * Function:
+  * ### blood_cell_count/rbc_ncnc_bld_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
+    * 2 component_study_variables
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226294.v1_. dbGap Name: **LABA2**, Desc: **Red Blood Count (x10e12) (LABA2)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -2851,9 +3099,11 @@
       }
       ```
 <a id="rbc_ncnc_bld_1-jhs"></a>
-  * ### blood_cell_count/rbc_ncnc_bld_1 -- **JHS**:
-    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127629.v1`
-    * Function:
+  * ### blood_cell_count/rbc_ncnc_bld_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 2 component_study_variables
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001959.v1.phv00127629.v1_. dbGap Name: **RED_CELL_COUNT**, Desc: **Red cell count M/CMM [Visit 1]**, Table: **loca**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list) {
         library("dplyr")
@@ -2880,9 +3130,11 @@
       }
       ```
 <a id="rbc_ncnc_bld_1-mesa"></a>
-  * ### blood_cell_count/rbc_ncnc_bld_1 -- **MESA**:
-    * 2 component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218990.v1`
-    * Function:
+  * ### blood_cell_count/rbc_ncnc_bld_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 2 component_study_variables
+      * _phs000209.v13.pht003091.v3.phv00176011.v1_. dbGap Name: **age5c**, Desc: **AGE AT EXAM 5**, Table: **MESA_Exam5Main**.
+      * _phs000209.v13.pht004319.v1.phv00218990.v1_. dbGap Name: **rbc5**, Desc: **RED BLOOD CELL (RBC) (x10E6/uL)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -2927,9 +3179,15 @@
     Please note that visit selection to maximize sample size introduced the possibility that related _harmonized_ hematology variables may be measured at different visits for a given subject. For example, for any given subject, the _harmonized_ values of red cell distribution width and other red blood cell phenotypes may not be from the same visit.
     
 <a id="rdw_ratio_rbc_1-aric"></a>
-  * ### blood_cell_count/rdw_ratio_rbc_1 -- **ARIC**:
-    * 6 component_study_variables: `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004109.v2.phv00207292.v1`, `phs000280.v4.pht004110.v2.phv00207304.v1`, `phs000280.v4.pht006422.v1.phv00294962.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
-    * Function:
+  * ### blood_cell_count/rdw_ratio_rbc_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 6 component_study_variables
+      * _phs000280.v4.pht004064.v2.phv00204871.v1_. dbGap Name: **V3AGE31**, Desc: **Age at visit 3 [Cohort. Visit 3]**, Table: **DERIVE37**.
+      * _phs000280.v4.pht004065.v2.phv00204975.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004109.v2.phv00207292.v1_. dbGap Name: **HMTC9**, Desc: **RBC distribution width. Q9 [Hematology Lab. HMTCV301. Visit 3]**, Table: **HMTCV301**.
+      * _phs000280.v4.pht004110.v2.phv00207304.v1_. dbGap Name: **HMTC9**, Desc: **RBC distribution width. Q9 [Hematology Lab. HMTCV401. Visit 4]**, Table: **HMTCV401**.
+      * _phs000280.v4.pht006422.v1.phv00294962.v1_. dbGap Name: **CBC11**, Desc: **Red cell distribution width, Rdw [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
+      * _phs000280.v4.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -2990,9 +3248,11 @@
       }
       ```
 <a id="rdw_ratio_rbc_1-hchs_sol"></a>
-  * ### blood_cell_count/rdw_ratio_rbc_1 -- **HCHS_SOL**:
-    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226308.v1`
-    * Function:
+  * ### blood_cell_count/rdw_ratio_rbc_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
+    * 2 component_study_variables
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226308.v1_. dbGap Name: **LABA8**, Desc: **% Red Cell Distribution Width (LABA8)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -3010,9 +3270,11 @@
       }
       ```
 <a id="rdw_ratio_rbc_1-jhs"></a>
-  * ### blood_cell_count/rdw_ratio_rbc_1 -- **JHS**:
-    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127628.v1`
-    * Function:
+  * ### blood_cell_count/rdw_ratio_rbc_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 2 component_study_variables
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001959.v1.phv00127628.v1_. dbGap Name: **RDW**, Desc: **RDW [Visit 1]**, Table: **loca**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list) {
         library("dplyr")
@@ -3079,9 +3341,19 @@
     
     
 <a id="wbc_ncnc_bld_1-aric"></a>
-  * ### blood_cell_count/wbc_ncnc_bld_1 -- **ARIC**:
-    * 10 component_study_variables: `phs000280.v4.pht004062.v2.phv00204623.v1`, `phs000280.v4.pht004063.v2.phv00204712.v1`, `phs000280.v4.pht004064.v2.phv00204871.v1`, `phs000280.v4.pht004065.v2.phv00204975.v1`, `phs000280.v4.pht004107.v2.phv00207257.v1`, `phs000280.v4.pht004108.v2.phv00207272.v1`, `phs000280.v4.pht004109.v2.phv00207286.v1`, `phs000280.v4.pht004110.v2.phv00207298.v1`, `phs000280.v4.pht006422.v1.phv00294954.v1`, `phs000280.v4.pht006431.v1.phv00295623.v1`
-    * Function:
+  * ### blood_cell_count/wbc_ncnc_bld_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
+    * 10 component_study_variables
+      * _phs000280.v4.pht004062.v2.phv00204623.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v4.pht004064.v2.phv00204871.v1_. dbGap Name: **V3AGE31**, Desc: **Age at visit 3 [Cohort. Visit 3]**, Table: **DERIVE37**.
+      * _phs000280.v4.pht004065.v2.phv00204975.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004107.v2.phv00207257.v1_. dbGap Name: **HMTA03**, Desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
+      * _phs000280.v4.pht004108.v2.phv00207272.v1_. dbGap Name: **HMTB03**, Desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
+      * _phs000280.v4.pht004109.v2.phv00207286.v1_. dbGap Name: **HMTC2**, Desc: **White blood count. Q2 [Hematology Lab. HMTCV301. Visit 3]**, Table: **HMTCV301**.
+      * _phs000280.v4.pht004110.v2.phv00207298.v1_. dbGap Name: **HMTC2**, Desc: **White blood count. Q2 [Hematology Lab. HMTCV401. Visit 4]**, Table: **HMTCV401**.
+      * _phs000280.v4.pht006422.v1.phv00294954.v1_. dbGap Name: **CBC3**, Desc: **White blood cell count, Wbc [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
+      * _phs000280.v4.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -3152,9 +3424,11 @@
       }
       ```
 <a id="wbc_ncnc_bld_1-cardia"></a>
-  * ### blood_cell_count/wbc_ncnc_bld_1 -- **CARDIA**:
-    * 2 component_study_variables: `phs000285.v3.pht001559.v2.phv00112439.v2`, `phs000285.v3.pht001563.v2.phv00112686.v2`
-    * Function:
+  * ### blood_cell_count/wbc_ncnc_bld_1 -- **CARDIA CARDIA Cohort**:
+    * 2 component_study_variables
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
+      * _phs000285.v3.pht001563.v2.phv00112686.v2_. dbGap Name: **A05WBC**, Desc: **WHITE CELL COUNT (X 1000)**, Table: **A4F05**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -3177,9 +3451,11 @@
       }
       ```
 <a id="wbc_ncnc_bld_1-chs"></a>
-  * ### blood_cell_count/wbc_ncnc_bld_1 -- **CHS**:
-    * 2 component_study_variables: `phs000287.v6.pht001452.v1.phv00100411.v1`, `phs000287.v6.pht001452.v1.phv00100487.v1`
-    * Function:
+  * ### blood_cell_count/wbc_ncnc_bld_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
+    * 2 component_study_variables
+      * _phs000287.v6.pht001452.v1.phv00100411.v1_. dbGap Name: **WBLD23**, Desc: **WHITE BLOOD COUNT (x1, 000/cubic mm)**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -3195,9 +3471,11 @@
       }
       ```
 <a id="wbc_ncnc_bld_1-hchs_sol"></a>
-  * ### blood_cell_count/wbc_ncnc_bld_1 -- **HCHS_SOL**:
-    * 2 component_study_variables: `phs000810.v1.pht004715.v1.phv00226251.v1`, `phs000810.v1.pht004715.v1.phv00226283.v1`
-    * Function:
+  * ### blood_cell_count/wbc_ncnc_bld_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
+    * 2 component_study_variables
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226283.v1_. dbGap Name: **LABA1**, Desc: **White Blood Count (x10e9) (LABA1)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -3215,9 +3493,11 @@
       }
       ```
 <a id="wbc_ncnc_bld_1-jhs"></a>
-  * ### blood_cell_count/wbc_ncnc_bld_1 -- **JHS**:
-    * 2 component_study_variables: `phs000286.v5.pht001949.v1.phv00126009.v1`, `phs000286.v5.pht001959.v1.phv00127631.v1`
-    * Function:
+  * ### blood_cell_count/wbc_ncnc_bld_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
+    * 2 component_study_variables
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001959.v1.phv00127631.v1_. dbGap Name: **WBC**, Desc: **White blood cells TH/CMM [Visit 1]**, Table: **loca**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list) {
         library("dplyr")
@@ -3244,9 +3524,11 @@
       }
       ```
 <a id="wbc_ncnc_bld_1-mesa"></a>
-  * ### blood_cell_count/wbc_ncnc_bld_1 -- **MESA**:
-    * 2 component_study_variables: `phs000209.v13.pht003091.v3.phv00176011.v1`, `phs000209.v13.pht004319.v1.phv00218997.v1`
-    * Function:
+  * ### blood_cell_count/wbc_ncnc_bld_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
+    * 2 component_study_variables
+      * _phs000209.v13.pht003091.v3.phv00176011.v1_. dbGap Name: **age5c**, Desc: **AGE AT EXAM 5**, Table: **MESA_Exam5Main**.
+      * _phs000209.v13.pht004319.v1.phv00218997.v1_. dbGap Name: **wbc5**, Desc: **WHITE BLOOD CELL COUNT (x10E3/uL)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)
@@ -3268,9 +3550,14 @@
       }
       ```
 <a id="wbc_ncnc_bld_1-whi"></a>
-  * ### blood_cell_count/wbc_ncnc_bld_1 -- **WHI**:
-    * 5 component_study_variables: `phs000200.v11.pht000986.v6.phv00077362.v6`, `phs000200.v11.pht000986.v6.phv00077363.v6`, `phs000200.v11.pht000986.v6.phv00077368.v6`, `phs000200.v11.pht000998.v6.phv00078436.v6`, `phs000200.v11.pht000998.v6.phv00078437.v6`
-    * Function:
+  * ### blood_cell_count/wbc_ncnc_bld_1 -- **WHI Women's Health Initiative**:
+    * 5 component_study_variables
+      * _phs000200.v11.pht000986.v6.phv00077362.v6_. dbGap Name: **CBCVY**, Desc: **CBC Visit year**, Table: **cbc_rel1**.
+      * _phs000200.v11.pht000986.v6.phv00077363.v6_. dbGap Name: **CBCDAYS**, Desc: **CBC Days since randomization/enrollment**, Table: **cbc_rel1**.
+      * _phs000200.v11.pht000986.v6.phv00077368.v6_. dbGap Name: **WBC**, Desc: **White blood cell (Kcell/microliter)**, Table: **cbc_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
+    * **Function:**
       ```r
       harmonize <- function(phen_list){
           library(dplyr)

@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 from collections import defaultdict, Counter
 import re
+import pandas as pd
 
 prioritized_studies = ['ARIC','CARDIA','CHS','COPDGene','FHS','HCHS_SOL','JHS','MESA','WHI']
 
@@ -32,6 +33,14 @@ def generate_markdown(root_dir, output_dir, output_index):
     # for printing out hyperlinks for google sheet: https://docs.google.com/spreadsheets/d/1G-AIk2m4UCDfh1OvFID3bewQXqxExeKNNmVxaswLT8E/edit?gid=979420329#gid=979420329&range=D:D
     var_links = {}
 
+    # dbGap metadata is available for some phv vals
+    df = pd.read_csv('../merged-TOPMed-harmonized-data-file/merged_variables.csv') # Read the CSV file
+    df = df.drop('TOPMed Harmonized Variable', axis=1)
+    df = df.drop_duplicates(keep='first')
+    dbgap_metadata = df.set_index('TOPMed Component ID').to_dict('index')
+
+    study_names = df.iloc[:, [1, 9]].drop_duplicates().dropna().set_index('TOPMed Study').to_dict()['dbGap Study Name']
+
     # Store structure for TOC
     structure = defaultdict(lambda: defaultdict(list))
 
@@ -53,6 +62,8 @@ def generate_markdown(root_dir, output_dir, output_index):
             for unit in data['harmonization_units']:
                 if unit['name'] in prioritized_studies:
                     structure[directory][data['name']].append(unit['name'])
+        else:
+            continue
 
         section = []
 
@@ -106,7 +117,8 @@ def generate_markdown(root_dir, output_dir, output_index):
                 if unit['name'] not in prioritized_studies:
                     continue
                 harmonization_units += 1
-                unit_heading = f"  * ### {directory}/{data['name']} -- **{unit['name']}**:"
+                dbgap_study_name = study_names.get(unit['name'], '')
+                unit_heading = f"  * ### {directory}/{data['name']} -- **{unit['name']} {dbgap_study_name}**:"
                 unit_anchor = create_anchor(f"{data['name']}-{unit['name']}")
                 section.append(f'<a id="{unit_anchor}"></a>')
                 section.append(unit_heading)
@@ -115,9 +127,21 @@ def generate_markdown(root_dir, output_dir, output_index):
                 if unit.get('component_study_variables'):
                     file_study_vars = unit['component_study_variables']
                     study_vars.extend(file_study_vars)
-                    vars_text = ", ".join(f"`{var}`" for var in file_study_vars)
-                    section.append(f"    * {len(unit['component_study_variables'])} component_study_variables: {vars_text}")
-                    # component_var_lists.append(f"#### {len(file_study_vars)} study vars in {directory}/{data['name']}/{unit['name']}:\n{vars_text}")
+                    # vars_text = ", ".join(f"`{var}`" for var in file_study_vars)
+                    # section.append(f"    * {len(unit['component_study_variables'])} component_study_variables: {vars_text}")
+                    section.append(f"    * {len(unit['component_study_variables'])} component_study_variables")
+                    for var in file_study_vars:
+                        vartext = f"      * _{var}_"
+                        md = dbgap_metadata.get(var)
+                        mdtext = []
+                        if md:
+                            mdtext.append(f"Name: **{md['dbGap Variable Name']}**")
+                            mdtext.append(f"Desc: **{md['dbGap Variable Description']}**")
+                            mdtext.append(f"Table: **{md['dbGap pht Name']}**")
+                            vartext += f". dbGap {', '.join(mdtext)}."
+                        else:
+                            vartext += f". No dbGap metadata available."
+                        section.append(vartext)
                     component_var_lists[f"{directory}/{data['name']}/{unit['name']}"] = file_study_vars
                 else:
                     zeros.append("component_study_variables")
@@ -137,7 +161,7 @@ def generate_markdown(root_dir, output_dir, output_index):
                     section.append(f"    * Does not use {' or '.join(zeros)}")
 
                 if unit.get('harmonization_function'):
-                    section.append("    * Function:")
+                    section.append("    * **Function:**")
                     code = format_code(unit['harmonization_function'])
                     indented_code = '\n'.join('      ' + line for line in code.split('\n'))
                     section.append(indented_code)

@@ -19,3 +19,10 @@ The two files had only 773 values in common.
 
          comm -12 phv-names-raw-to-harmonized phv-names-dbgap | wc -l
          773
+
+#### Filtered raw-to-harmonized to only include priority cohorts
+(i.e., ARIC,CARDIA,CHS,COPDGene,FHS,HCHS_SOL,JHS,MESA,WHI)
+
+Command for getting phv values common to both files:
+
+    comm -12 <(cat dbgap_variables_priority_cohorts.csv | sed 's/^.*\(phv[0-1]*\)/\1/' | sed 's/\..*//' | sort -u) <(cat raw-to-harmonized-topmed-vars.csv | sed 's/^.*\(phv[0-1]*\)/\1/' | sed 's/\..*//' | sort -u)
