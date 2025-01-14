@@ -237,9 +237,17 @@
 
           SpecimenQualityObservation --&gt; Organization : performed_by
 
-      SpecimenQualityObservation : value
+      SpecimenQualityObservation : valueBoolean
 
-          SpecimenQualityObservation --&gt; ObservationValueString : value
+      SpecimenQualityObservation : valueEnum
+
+          SpecimenQualityObservation --&gt; BaseEnum : valueEnum
+
+      SpecimenQualityObservation : valueQuantity
+
+          SpecimenQualityObservation --&gt; Quantity : valueQuantity
+
+      SpecimenQualityObservation : valueString
 
 
 </div>
@@ -313,9 +321,27 @@
 <td><a href="../Observation/">Observation</a></td>
 </tr>
 <tr>
-<td><a href="../value/">value</a></td>
-<td>1..1 <br/> <a href="../ObservationValueString/">ObservationValueString</a></td>
-<td>The result of the observation, encoded as a free-text Quantity</td>
+<td><a href="../valueString/">valueString</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>A slot to hold a string value for an Observation</td>
+<td><a href="../Observation/">Observation</a></td>
+</tr>
+<tr>
+<td><a href="../valueBoolean/">valueBoolean</a></td>
+<td>0..1 <br/> <a href="../Boolean/">Boolean</a></td>
+<td>A slot to hold a boolean value for an Observation</td>
+<td><a href="../Observation/">Observation</a></td>
+</tr>
+<tr>
+<td><a href="../valueQuantity/">valueQuantity</a></td>
+<td>0..1 <br/> <a href="../Quantity/">Quantity</a></td>
+<td>A slot to hold a Quantity value for an Observation</td>
+<td><a href="../Observation/">Observation</a></td>
+</tr>
+<tr>
+<td><a href="../valueEnum/">valueEnum</a></td>
+<td>0..1 <br/> <a href="../BaseEnum/">BaseEnum</a></td>
+<td>A slot to hold an enumerated value for an Observation</td>
 <td><a href="../Observation/">Observation</a></td>
 </tr>
 <tr>
@@ -379,19 +405,6 @@ description: A structured object that describes a characteristic of a specimen i
   or measurement.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 is_a: Observation
-slot_usage:
-  value:
-    name: value
-    description: The result of the observation, encoded as a free-text Quantity.
-    comments:
-    - One and only one of the value(x) fields must be populated.
-    multivalued: false
-    domain_of:
-    - QuestionnaireResponseValue
-    - Observation
-    - ObservationValue
-    range: ObservationValueString
-    required: true
 
 </code></pre>
 </details>
@@ -403,19 +416,6 @@ description: A structured object that describes a characteristic of a specimen i
   or measurement.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 is_a: Observation
-slot_usage:
-  value:
-    name: value
-    description: The result of the observation, encoded as a free-text Quantity.
-    comments:
-    - One and only one of the value(x) fields must be populated.
-    multivalued: false
-    domain_of:
-    - QuestionnaireResponseValue
-    - Observation
-    - ObservationValue
-    range: ObservationValueString
-    required: true
 attributes:
   age_at_observation:
     name: age_at_observation
@@ -553,21 +553,62 @@ attributes:
     - Observation
     range: Organization
     required: false
-  value:
-    name: value
-    description: The result of the observation, encoded as a free-text Quantity.
+  valueString:
+    name: valueString
+    description: A slot to hold a string value for an Observation.
     comments:
     - One and only one of the value(x) fields must be populated.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
     multivalued: false
-    alias: value
+    alias: valueString
     owner: SpecimenQualityObservation
     domain_of:
-    - QuestionnaireResponseValue
     - Observation
-    - ObservationValue
-    range: ObservationValueString
-    required: true
+    range: string
+    required: false
+  valueBoolean:
+    name: valueBoolean
+    description: A slot to hold a boolean value for an Observation.
+    comments:
+    - One and only one of the value(x) fields must be populated.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    multivalued: false
+    alias: valueBoolean
+    owner: SpecimenQualityObservation
+    domain_of:
+    - Observation
+    range: boolean
+    required: false
+  valueQuantity:
+    name: valueQuantity
+    description: A slot to hold a Quantity value for an Observation.
+    comments:
+    - One and only one of the value(x) fields must be populated.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    multivalued: false
+    alias: valueQuantity
+    owner: SpecimenQualityObservation
+    domain_of:
+    - Observation
+    range: Quantity
+    required: false
+  valueEnum:
+    name: valueEnum
+    description: A slot to hold an enumerated value for an Observation.
+    comments:
+    - One and only one of the value(x) fields must be populated.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    multivalued: false
+    alias: valueEnum
+    owner: SpecimenQualityObservation
+    domain_of:
+    - Observation
+    range: BaseEnum
+    required: false
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The
