@@ -549,12 +549,6 @@ classes:
     description: A structured object that describes a single data item about the physical dimensions of an entity (e.g. length width, area), as generated through a point-in-time observation or measurement.
     comments:
     - At the core of an Observation is a flexible key-value pair (or a structured collection of key-value pairs), where a "key" field defines the type of observation made, and the "value" field describes the value or outcome of the observation. The fact that the type of observation captured is defined in the data allow Observation to convey a broad range of observation data.
-    slot_usage:
-      value:
-        description: The result of the observation, encoded as a Quantity.
-        multivalued: false
-        range: ObservationValueQuantity
-        required: true
 
   DimensionalObservationSet:
     is_a: ObservationSet
@@ -956,28 +950,12 @@ classes:
   SpecimenQualityObservation:
     is_a: Observation
     description: A structured object that describes a characteristic of a specimen indicative of its quality or suitability for use, as generated through a point-in-time observation or measurement.
-    slot_usage:
-      value:
-        description: The result of the observation, encoded as a free-text Quantity.
-        comments:
-        - One and only one of the value(x) fields must be populated.
-        multivalued: false
-        range: ObservationValueString
-        required: true
 
   SpecimenQuantityObservation:
     is_a: Observation
     description: A structured object that describes a single data item about the quantity of a Specimen, as generated through a point-in-time observation or measurement.
     comments:
     - At the core of an Observation is a flexible key-value pair (or a structured collection of key-value pairs), where a "key" field defines the type of observation made, and the "value" field describes the value or outcome of the observation. The fact that the type of observation captured is defined in the data allow Observation to convey a broad range of observation data.
-    slot_usage:
-      value:
-        description: The result of the observation, encoded as a Quantity.
-        comments:
-        - One and only one of the value(x) fields must be populated.
-        multivalued: false
-        range: ObservationValueQuantity
-        required: true
 
   SpecimenProcessingActivity:
     name: SpecimenProcessingActivity
@@ -1357,60 +1335,34 @@ classes:
         multivalued: false
         range: Organization
         required: false
-      value:
-        description: The value for an Observation.
+      valueString:
+        description: A slot to hold a string value for an Observation.
         comments:
         - One and only one of the value(x) fields must be populated.
         multivalued: false
-        range: ObservationValue
-        required: true
-
-  ObservationValue:
-    description: Single-valued observation value-holiding slot
-    abstract: true
-    attributes:
-    slots:
-      - value
-
-  ObservationValueDecimal:
-    is_a: ObservationValue
-    description: Single-valued decimal observation
-    slot_usage:
-      value:
-        range: decimal
-        required: true
-
-  ObservationValueInteger:
-    is_a: ObservationValue
-    description: Single-valued integer observation
-    slot_usage:
-      value:
-        range: integer
-        required: true
-
-  ObservationValueBoolean:
-    is_a: ObservationValue
-    description: Single-valued boolean observation
-    slot_usage:
-      value:
-        range: boolean
-        required: true
-
-  ObservationValueString:
-    is_a: ObservationValue
-    description: Single-valued string observation
-    slot_usage:
-      value:
+        required: false
         range: string
-        required: true
-
-  ObservationValueQuantity:
-    is_a: ObservationValue
-    description: Single-valued Quantity observation
-    slot_usage:
-      value:
+      valueBoolean:
+        description: A slot to hold a boolean value for an Observation.
+        comments:
+        - One and only one of the value(x) fields must be populated.
+        multivalued: false
+        required: false
+        range: boolean
+      valueQuantity:
+        description: A slot to hold a Quantity value for an Observation.
+        comments:
+        - One and only one of the value(x) fields must be populated.
+        multivalued: false
+        required: false
         range: Quantity
-        required: true
+      valueEnum:
+        description: A slot to hold an enumerated value for an Observation.
+        comments:
+        - One and only one of the value(x) fields must be populated.
+        multivalued: false
+        required: false
+        range: BaseEnum
 
 
 slots:
@@ -1440,6 +1392,10 @@ slots:
 
 
 enums:
+  BaseEnum:
+    description: >-
+      A base constrained set of enumerative values that can be used as a placeholder in a class expected to be further constrained in a subclass.
+
   DataUseEnum:
     description: >-
       A constrained set of enumerative values drawn from the Data Use Ontology (DUO). The DUO is an ontology which represent data use conditions.
