@@ -896,6 +896,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/new_erd/</loc>
+         <lastmod>2025-01-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/observation_type/</loc>
          <lastmod>2025-01-21</lastmod>
          <changefreq>daily</changefreq>
