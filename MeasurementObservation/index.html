@@ -245,17 +245,17 @@
 
           MeasurementObservation --&gt; Quantity : range_low
 
-      MeasurementObservation : valueBoolean
+      MeasurementObservation : value_boolean
 
-      MeasurementObservation : valueEnum
+      MeasurementObservation : value_enum
 
-          MeasurementObservation --&gt; BaseEnum : valueEnum
+          MeasurementObservation --&gt; BaseEnum : value_enum
 
-      MeasurementObservation : valueQuantity
+      MeasurementObservation : value_quantity
 
-          MeasurementObservation --&gt; Quantity : valueQuantity
+          MeasurementObservation --&gt; Quantity : value_quantity
 
-      MeasurementObservation : valueString
+      MeasurementObservation : value_string
 
 
 </div>
@@ -341,25 +341,25 @@
 <td><a href="../Observation/">Observation</a></td>
 </tr>
 <tr>
-<td><a href="../valueString/">valueString</a></td>
+<td><a href="../value_string/">value_string</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>A slot to hold a string value for an Observation</td>
 <td><a href="../Observation/">Observation</a></td>
 </tr>
 <tr>
-<td><a href="../valueBoolean/">valueBoolean</a></td>
+<td><a href="../value_boolean/">value_boolean</a></td>
 <td>0..1 <br/> <a href="../Boolean/">Boolean</a></td>
 <td>A slot to hold a boolean value for an Observation</td>
 <td><a href="../Observation/">Observation</a></td>
 </tr>
 <tr>
-<td><a href="../valueQuantity/">valueQuantity</a></td>
+<td><a href="../value_quantity/">value_quantity</a></td>
 <td>0..1 <br/> <a href="../Quantity/">Quantity</a></td>
 <td>A slot to hold a Quantity value for an Observation</td>
 <td><a href="../Observation/">Observation</a></td>
 </tr>
 <tr>
-<td><a href="../valueEnum/">valueEnum</a></td>
+<td><a href="../value_enum/">value_enum</a></td>
 <td>0..1 <br/> <a href="../BaseEnum/">BaseEnum</a></td>
 <td>A slot to hold an enumerated value for an Observation</td>
 <td><a href="../Observation/">Observation</a></td>
@@ -614,57 +614,57 @@ attributes:
     - Observation
     range: Organization
     required: false
-  valueString:
-    name: valueString
+  value_string:
+    name: value_string
     description: A slot to hold a string value for an Observation.
     comments:
     - One and only one of the value(x) fields must be populated.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     multivalued: false
-    alias: valueString
+    alias: value_string
     owner: MeasurementObservation
     domain_of:
     - Observation
     range: string
     required: false
-  valueBoolean:
-    name: valueBoolean
+  value_boolean:
+    name: value_boolean
     description: A slot to hold a boolean value for an Observation.
     comments:
     - One and only one of the value(x) fields must be populated.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     multivalued: false
-    alias: valueBoolean
+    alias: value_boolean
     owner: MeasurementObservation
     domain_of:
     - Observation
     range: boolean
     required: false
-  valueQuantity:
-    name: valueQuantity
+  value_quantity:
+    name: value_quantity
     description: A slot to hold a Quantity value for an Observation.
     comments:
     - One and only one of the value(x) fields must be populated.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     multivalued: false
-    alias: valueQuantity
+    alias: value_quantity
     owner: MeasurementObservation
     domain_of:
     - Observation
     range: Quantity
     required: false
-  valueEnum:
-    name: valueEnum
+  value_enum:
+    name: value_enum
     description: A slot to hold an enumerated value for an Observation.
     comments:
     - One and only one of the value(x) fields must be populated.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     multivalued: false
-    alias: valueEnum
+    alias: value_enum
     owner: MeasurementObservation
     domain_of:
     - Observation

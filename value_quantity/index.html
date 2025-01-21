@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/valueBoolean/">
+        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/value_quantity/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-8.5.10">
     
     
       
-        <title>Slot: valueBoolean - BioData Catalyst Harmonized Model</title>
+        <title>Slot: value_quantity - BioData Catalyst Harmonized Model</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-valueboolean" class="md-skip">
+        <a href="#slot-value_quantity" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: valueBoolean
+              Slot: value_quantity
             
           </span>
         </div>
@@ -317,15 +317,15 @@
                 
                   
 
-  <a href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/edit/master/docs/valueBoolean.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/edit/master/docs/value_quantity.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="slot-valueboolean">Slot: valueBoolean</h1>
-<p><em>A slot to hold a boolean value for an Observation.</em></p>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/valueBoolean">bdchm:valueBoolean</a></p>
+<h1 id="slot-value_quantity">Slot: value_quantity</h1>
+<p><em>A slot to hold a Quantity value for an Observation.</em></p>
+<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/value_quantity">bdchm:value_quantity</a></p>
 <!-- no inheritance hierarchy -->
 
 <h2 id="applicable-classes">Applicable Classes</h2>
@@ -372,7 +372,7 @@
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../Boolean/">Boolean</a></li>
+<li>Range: <a href="../Quantity/">Quantity</a></li>
 </ul>
 <h2 id="comments">Comments</h2>
 <ul>
@@ -386,18 +386,18 @@
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: valueBoolean
-description: A slot to hold a boolean value for an Observation.
+<pre><code class="language-yaml">name: value_quantity
+description: A slot to hold a Quantity value for an Observation.
 comments:
 - One and only one of the value(x) fields must be populated.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 rank: 1000
 multivalued: false
-alias: valueBoolean
+alias: value_quantity
 owner: Observation
 domain_of:
 - Observation
-range: boolean
+range: Quantity
 required: false
 
 </code></pre>

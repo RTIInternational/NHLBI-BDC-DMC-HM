@@ -1191,22 +1191,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/valueBoolean/</loc>
-         <lastmod>2025-01-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/valueEnum/</loc>
-         <lastmod>2025-01-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/valueQuantity/</loc>
-         <lastmod>2025-01-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/valueString/</loc>
+         <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/value_boolean/</loc>
          <lastmod>2025-01-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1217,6 +1202,21 @@
     </url>
     <url>
          <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/value_decimal/</loc>
+         <lastmod>2025-01-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/value_enum/</loc>
+         <lastmod>2025-01-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/value_quantity/</loc>
+         <lastmod>2025-01-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/value_string/</loc>
          <lastmod>2025-01-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
