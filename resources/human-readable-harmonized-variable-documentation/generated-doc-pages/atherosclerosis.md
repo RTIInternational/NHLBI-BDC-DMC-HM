@@ -12,7 +12,7 @@
 <a id="cac_score_1"></a>
 ## atherosclerosis: **cac_score_1** (cac_score)
   Coronary artery calcification (CAC) score using Agatston scoring of CT scan(s) of coronary arteries
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [CHS](#cac_score_1-chs)
     * [JHS](#cac_score_1-jhs)
   * **Metadata**:
@@ -105,7 +105,7 @@
 <a id="cac_volume_1"></a>
 ## atherosclerosis: **cac_volume_1** (cac_volume)
   Coronary artery calcium volume using CT scan(s) of coronary arteries
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [FHS](#cac_volume_1-fhs)
   * **Metadata**:
     **`Data Type`**: decimal, **`Measurement Units`**: cubic millimeters, **`Version`**: 1, **`Has Age Variable`**: Yes, **`Date Harmonized`**: 2017-10-30 17:31:30
@@ -164,7 +164,7 @@
 <a id="carotid_plaque_1"></a>
 ## atherosclerosis: **carotid_plaque_1** (carotid_plaque)
   Presence or absence of carotid plaque.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#carotid_plaque_1-aric)
     * [CHS](#carotid_plaque_1-chs)
     * [JHS](#carotid_plaque_1-jhs)
@@ -367,7 +367,7 @@
 <a id="carotid_stenosis_1"></a>
 ## atherosclerosis: **carotid_stenosis_1** (carotid_stenosis)
   Extent of narrowing of the carotid artery.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [CHS](#carotid_stenosis_1-chs)
     * [FHS](#carotid_stenosis_1-fhs)
     * [MESA](#carotid_stenosis_1-mesa)
@@ -562,7 +562,7 @@
 <a id="cimt_1"></a>
 ## atherosclerosis: **cimt_1** (cimt)
   Common carotid intima-media thickness, calculated as the mean of two values: mean of multiple thickness estimates from the left far wall and from the right far wall.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#cimt_1-aric)
     * [CHS](#cimt_1-chs)
     * [FHS](#cimt_1-fhs)
@@ -750,7 +750,7 @@
 <a id="cimt_2"></a>
 ## atherosclerosis: **cimt_2** (cimt)
   Common carotid intima-media thickness, calculated as the mean of four values: maximum of multiple thickness estimates from the left far wall, left near wall, right far wall, and right near wall.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#cimt_2-aric)
     * [CHS](#cimt_2-chs)
     * [FHS](#cimt_2-fhs)

@@ -12,7 +12,7 @@
 <a id="angina_prior_1"></a>
 ## atherosclerosis_events_prior: **angina_prior_1** (angina_prior)
   An indicator of whether a subject had an angina event prior to the baseline visit.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [CHS](#angina_prior_1-chs)
     * [COPDGene](#angina_prior_1-copdgene)
     * [FHS](#angina_prior_1-fhs)
@@ -216,7 +216,7 @@
 <a id="cabg_prior_1"></a>
 ## atherosclerosis_events_prior: **cabg_prior_1** (cabg_prior)
   An indicator of whether a subject had a coronary artery bypass graft (CABG) procedure prior to the start of the baseline visit.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#cabg_prior_1-aric)
     * [CHS](#cabg_prior_1-chs)
     * [COPDGene](#cabg_prior_1-copdgene)
@@ -499,7 +499,7 @@
 <a id="coronary_angioplasty_prior_1"></a>
 ## atherosclerosis_events_prior: **coronary_angioplasty_prior_1** (coronary_angioplasty_prior)
   An indicator of whether a subject had a coronary angioplasty procedure prior to the start of the baseline visit.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#coronary_angioplasty_prior_1-aric)
     * [CHS](#coronary_angioplasty_prior_1-chs)
     * [COPDGene](#coronary_angioplasty_prior_1-copdgene)
@@ -688,7 +688,7 @@
 <a id="coronary_revascularization_prior_1"></a>
 ## atherosclerosis_events_prior: **coronary_revascularization_prior_1** (coronary_revascularization_prior)
   An indicator of whether a subject had a coronary revascularization procedure prior to the start of the baseline visit. This includes angioplasty, CABG, and other coronary revascularization procedures.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
   * **Metadata**:
     **`Data Type`**: encoded, **`Measurement Units`**: coronary_revascularization_prior, **`Version`**: 1, **`Has Age Variable`**: Yes, **`Date Harmonized`**: 2019-10-31 16:32:57
   * **Controlled Vocabulary**:
@@ -709,7 +709,7 @@
 <a id="mi_prior_1"></a>
 ## atherosclerosis_events_prior: **mi_prior_1** (mi_prior)
   An indicator of whether a subject had a myocardial infarction (MI) prior to the start of the baseline visit.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#mi_prior_1-aric)
     * [CHS](#mi_prior_1-chs)
     * [COPDGene](#mi_prior_1-copdgene)
@@ -970,7 +970,7 @@
 <a id="pad_prior_1"></a>
 ## atherosclerosis_events_prior: **pad_prior_1** (pad_prior)
   An indicator of whether a subject had peripheral arterial disease prior to the baseline visit.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#pad_prior_1-aric)
     * [CHS](#pad_prior_1-chs)
     * [COPDGene](#pad_prior_1-copdgene)
