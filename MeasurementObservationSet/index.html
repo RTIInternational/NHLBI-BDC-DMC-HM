@@ -5,10 +5,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/ObservationSet/" rel="canonical"/>
+<link href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/MeasurementObservationSet/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.5.3, mkdocs-material-8.5.10" name="generator"/>
-<title>Class: ObservationSet - BioData Catalyst Harmonized Model</title>
+<title>Class: MeasurementObservationSet - BioData Catalyst Harmonized Model</title>
 <link href="../assets/stylesheets/main.975780f9.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -21,7 +21,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#class-observationset">
+<a class="md-skip" href="#class-measurementobservationset">
           Skip to content
         </a>
 </div>
@@ -45,7 +45,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Class: ObservationSet
+              Class: MeasurementObservationSet
             
           </span>
 </div>
@@ -196,55 +196,49 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/edit/master/docs/ObservationSet.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/edit/master/docs/MeasurementObservationSet.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
-<h1 id="class-observationset">Class: ObservationSet</h1>
+<h1 id="class-measurementobservationset">Class: MeasurementObservationSet</h1>
 <p><em>A structured object to hold related Observations in a set.</em></p>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/ObservationSet">bdchm:ObservationSet</a></p>
+<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/MeasurementObservationSet">bdchm:MeasurementObservationSet</a></p>
 <div class="mermaid"> classDiagram
-    class ObservationSet
-      Entity &lt;|-- ObservationSet
-
-
-      ObservationSet &lt;|-- DimensionalObservationSet
+    class MeasurementObservationSet
       ObservationSet &lt;|-- MeasurementObservationSet
 
+      MeasurementObservationSet : associated_participant
 
-      ObservationSet : associated_participant
+          MeasurementObservationSet --&gt; Participant : associated_participant
 
-          ObservationSet --&gt; Participant : associated_participant
+      MeasurementObservationSet : associated_visit
 
-      ObservationSet : associated_visit
+          MeasurementObservationSet --&gt; Visit : associated_visit
 
-          ObservationSet --&gt; Visit : associated_visit
+      MeasurementObservationSet : category
 
-      ObservationSet : category
+      MeasurementObservationSet : focus
 
-      ObservationSet : focus
+          MeasurementObservationSet --&gt; Entity : focus
 
-          ObservationSet --&gt; Entity : focus
+      MeasurementObservationSet : id
 
-      ObservationSet : id
+      MeasurementObservationSet : method_type
 
-      ObservationSet : method_type
+      MeasurementObservationSet : observations
 
-      ObservationSet : observations
+          MeasurementObservationSet --&gt; MeasurementObservation : observations
 
-          ObservationSet --&gt; Observation : observations
+      MeasurementObservationSet : performed_by
 
-      ObservationSet : performed_by
-
-          ObservationSet --&gt; Organization : performed_by
+          MeasurementObservationSet --&gt; Organization : performed_by
 
 
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
 <li><a href="../Entity/">Entity</a><ul>
-<li><strong>ObservationSet</strong><ul>
-<li><a href="../DimensionalObservationSet/">DimensionalObservationSet</a></li>
-<li><a href="../MeasurementObservationSet/">MeasurementObservationSet</a></li>
+<li><a href="../ObservationSet/">ObservationSet</a><ul>
+<li><strong>MeasurementObservationSet</strong></li>
 </ul>
 </li>
 </ul>
@@ -263,45 +257,45 @@
 <tbody>
 <tr>
 <td><a href="../observations/">observations</a></td>
-<td>0..* <br/> <a href="../Observation/">Observation</a></td>
+<td>0..* <br/> <a href="../MeasurementObservation/">MeasurementObservation</a></td>
 <td>A set of one or more observations</td>
-<td>direct</td>
+<td><a href="../ObservationSet/">ObservationSet</a></td>
 </tr>
 <tr>
 <td><a href="../category/">category</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The general category of observation set described</td>
-<td>direct</td>
+<td><a href="../ObservationSet/">ObservationSet</a></td>
 </tr>
 <tr>
 <td><a href="../focus/">focus</a></td>
 <td>0..* <br/> <a href="../Entity/">Entity</a></td>
 <td>The entity or entities directly observed/measured in generating an observatio...</td>
-<td>direct</td>
+<td><a href="../ObservationSet/">ObservationSet</a></td>
 </tr>
 <tr>
 <td><a href="../associated_participant/">associated_participant</a></td>
 <td>0..1 <br/> <a href="../Participant/">Participant</a></td>
 <td>The Participant that the observation is about (if not the direct focus)</td>
-<td>direct</td>
+<td><a href="../ObservationSet/">ObservationSet</a></td>
 </tr>
 <tr>
 <td><a href="../associated_visit/">associated_visit</a></td>
 <td>0..1 <br/> <a href="../Visit/">Visit</a></td>
 <td>A reference to the Visit during which this Observation was recorded</td>
-<td>direct</td>
+<td><a href="../ObservationSet/">ObservationSet</a></td>
 </tr>
 <tr>
 <td><a href="../method_type/">method_type</a></td>
 <td>0..* <br/> <a href="../String/">String</a></td>
 <td>The type of method used in generating the ObservationSet</td>
-<td>direct</td>
+<td><a href="../ObservationSet/">ObservationSet</a></td>
 </tr>
 <tr>
 <td><a href="../performed_by/">performed_by</a></td>
 <td>0..1 <br/> <a href="../Organization/">Organization</a></td>
 <td>The organization or group that performed the observation activity</td>
-<td>direct</td>
+<td><a href="../ObservationSet/">ObservationSet</a></td>
 </tr>
 <tr>
 <td><a href="../id/">id</a></td>
@@ -327,11 +321,11 @@
 <tbody>
 <tr>
 <td>self</td>
-<td>bdchm:ObservationSet</td>
+<td>bdchm:MeasurementObservationSet</td>
 </tr>
 <tr>
 <td>native</td>
-<td>bdchm:ObservationSet</td>
+<td>bdchm:MeasurementObservationSet</td>
 </tr>
 </tbody>
 </table>
@@ -339,86 +333,43 @@
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
 <h3 id="direct">Direct</h3>
 <details>
-<pre><code class="language-yaml">name: ObservationSet
+<pre><code class="language-yaml">name: MeasurementObservationSet
 description: A structured object to hold related Observations in a set.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
-is_a: Entity
-slots:
-- observations
-attributes:
-  category:
-    name: category
-    description: The general category of observation set described
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    values_from:
-    - crdch:enum_CRDCH_ObservationSet_category
-    multivalued: false
-    range: string
-    required: false
-  focus:
-    name: focus
-    description: The entity or entities directly observed/measured in generating an
-      observation result.
-    comments:
-    - The "focus", and "associated_participant" fields are useful when data creators
-      want an Observation object to stand on its own, so it can point back to the
-      entities it is about. These fields are not needed when an Observation is embedded
-      in an entity, where focus, subject, and specimen can be determined from context.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    multivalued: true
-    range: Entity
-    required: false
-    inlined: true
-    inlined_as_list: true
-  associated_participant:
-    name: associated_participant
-    description: The Participant that the observation is about (if not the direct
-      focus).  Observations are often made on specimens derived from a patient, or
-      other entities related to a patient, that ultimately tell us something about
-      the patient of interest.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    multivalued: false
-    range: Participant
-    required: false
-  associated_visit:
-    name: associated_visit
-    description: A reference to the Visit during which this Observation was recorded.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    range: Visit
-  method_type:
-    name: method_type
-    description: The type of method used in generating the ObservationSet
-    comments:
-    - This may be a type of observational, measurement, experimental, or computational
-      method specifying how to generate data (e.g. "manual counting", "bright field
-      microscopy"). Or a Guideline or SOP specifying how to interpret data and/or
-      encode the result of an  Observation (e.g. a Cancer Staging system such as that
-      defined by the AJCC, or variant interpretation guideline such as that provided
-      by the ACMG).
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    values_from:
-    - crdch:enum_CRDCH_ObservationSet_method_type
-    multivalued: true
-    range: string
-    required: false
-  performed_by:
-    name: performed_by
-    description: The organization or group that performed the observation activity.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    multivalued: false
-    range: Organization
-    required: false
+is_a: ObservationSet
+slot_usage:
+  observations:
+    name: observations
+    domain_of:
+    - ObservationSet
+    range: MeasurementObservation
 
 </code></pre>
 </details>
 <h3 id="induced">Induced</h3>
 <details>
-<pre><code class="language-yaml">name: ObservationSet
+<pre><code class="language-yaml">name: MeasurementObservationSet
 description: A structured object to hold related Observations in a set.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
-is_a: Entity
+is_a: ObservationSet
+slot_usage:
+  observations:
+    name: observations
+    domain_of:
+    - ObservationSet
+    range: MeasurementObservation
 attributes:
+  observations:
+    name: observations
+    description: A set of one or more observations.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    multivalued: true
+    alias: observations
+    owner: MeasurementObservationSet
+    domain_of:
+    - ObservationSet
+    range: MeasurementObservation
   category:
     name: category
     description: The general category of observation set described
@@ -428,7 +379,7 @@ attributes:
     - crdch:enum_CRDCH_ObservationSet_category
     multivalued: false
     alias: category
-    owner: ObservationSet
+    owner: MeasurementObservationSet
     domain_of:
     - ObservationSet
     - Observation
@@ -446,7 +397,7 @@ attributes:
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     multivalued: true
     alias: focus
-    owner: ObservationSet
+    owner: MeasurementObservationSet
     domain_of:
     - Document
     - ObservationSet
@@ -464,7 +415,7 @@ attributes:
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     multivalued: false
     alias: associated_participant
-    owner: ObservationSet
+    owner: MeasurementObservationSet
     domain_of:
     - Demography
     - Visit
@@ -481,7 +432,7 @@ attributes:
     description: A reference to the Visit during which this Observation was recorded.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     alias: associated_visit
-    owner: ObservationSet
+    owner: MeasurementObservationSet
     domain_of:
     - QuestionnaireResponse
     - Condition
@@ -505,7 +456,7 @@ attributes:
     - crdch:enum_CRDCH_ObservationSet_method_type
     multivalued: true
     alias: method_type
-    owner: ObservationSet
+    owner: MeasurementObservationSet
     domain_of:
     - SpecimenProcessingActivity
     - SpecimenStorageActivity
@@ -519,24 +470,13 @@ attributes:
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     multivalued: false
     alias: performed_by
-    owner: ObservationSet
+    owner: MeasurementObservationSet
     domain_of:
     - SpecimenCreationActivity
     - ObservationSet
     - Observation
     range: Organization
     required: false
-  observations:
-    name: observations
-    description: A set of one or more observations.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    multivalued: true
-    alias: observations
-    owner: ObservationSet
-    domain_of:
-    - ObservationSet
-    range: Observation
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The
@@ -554,7 +494,7 @@ attributes:
     slot_uri: schema:identifier
     identifier: true
     alias: id
-    owner: ObservationSet
+    owner: MeasurementObservationSet
     domain_of:
     - Entity
     range: uriorcurie
