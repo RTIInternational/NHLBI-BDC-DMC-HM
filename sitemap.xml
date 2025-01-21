@@ -171,6 +171,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/GravityDomainEnum/</loc>
+         <lastmod>2025-01-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/HpoPhenotypicAbnormalityEnum/</loc>
          <lastmod>2025-01-21</lastmod>
          <changefreq>daily</changefreq>
@@ -327,6 +332,16 @@
     </url>
     <url>
          <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/ResearchStudyCollection/</loc>
+         <lastmod>2025-01-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/SdohObservation/</loc>
+         <lastmod>2025-01-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/SdohObservationSet/</loc>
          <lastmod>2025-01-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1017,6 +1032,11 @@
     </url>
     <url>
          <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/related_document/</loc>
+         <lastmod>2025-01-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/related_questionnaire_item/</loc>
          <lastmod>2025-01-21</lastmod>
          <changefreq>daily</changefreq>
     </url>

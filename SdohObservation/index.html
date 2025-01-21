@@ -5,10 +5,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/Quantity/" rel="canonical"/>
+<link href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/SdohObservation/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.5.3, mkdocs-material-8.5.10" name="generator"/>
-<title>Class: Quantity - BioData Catalyst Harmonized Model</title>
+<title>Class: SdohObservation - BioData Catalyst Harmonized Model</title>
 <link href="../assets/stylesheets/main.975780f9.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -21,7 +21,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#class-quantity">
+<a class="md-skip" href="#class-sdohobservation">
           Skip to content
         </a>
 </div>
@@ -45,7 +45,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Class: Quantity
+              Class: SdohObservation
             
           </span>
 </div>
@@ -157,11 +157,6 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#comments">
-    Comments
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#identifier-and-mapping-information">
     Identifier and Mapping Information
   </a>
@@ -206,32 +201,69 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/edit/master/docs/Quantity.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/edit/master/docs/SdohObservation.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
-<h1 id="class-quantity">Class: Quantity</h1>
-<p><em>A structured object to represent an amount of something (e.g., weight, mass, length, duration of time) - including a value and unit.</em></p>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/Quantity">bdchm:Quantity</a></p>
+<h1 id="class-sdohobservation">Class: SdohObservation</h1>
+<p><em>A data structure with key (observation_type) and value (value) attributes that represents a single observation, such as the hematocrit component of a complete blood count panel.</em></p>
+<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/SdohObservation">bdchm:SdohObservation</a></p>
 <div class="mermaid"> classDiagram
-    class Quantity
-      Entity &lt;|-- Quantity
+    class SdohObservation
+      Observation &lt;|-- SdohObservation
 
-      Quantity : id
+      SdohObservation : age_at_observation
 
-      Quantity : unit
+      SdohObservation : associated_participant
 
-          Quantity --&gt; UnitOfMeasurementEnum : unit
+          SdohObservation --&gt; Participant : associated_participant
 
-      Quantity : value_concept
+      SdohObservation : associated_visit
 
-      Quantity : value_decimal
+          SdohObservation --&gt; Visit : associated_visit
+
+      SdohObservation : category
+
+          SdohObservation --&gt; GravityDomainEnum : category
+
+      SdohObservation : focus
+
+          SdohObservation --&gt; Entity : focus
+
+      SdohObservation : id
+
+      SdohObservation : method_type
+
+      SdohObservation : observation_type
+
+      SdohObservation : performed_by
+
+          SdohObservation --&gt; Organization : performed_by
+
+      SdohObservation : related_questionnaire_item
+
+          SdohObservation --&gt; QuestionnaireItem : related_questionnaire_item
+
+      SdohObservation : valueBoolean
+
+      SdohObservation : valueEnum
+
+          SdohObservation --&gt; BaseEnum : valueEnum
+
+      SdohObservation : valueQuantity
+
+          SdohObservation --&gt; Quantity : valueQuantity
+
+      SdohObservation : valueString
 
 
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
 <li><a href="../Entity/">Entity</a><ul>
-<li><strong>Quantity</strong></li>
+<li><a href="../Observation/">Observation</a><ul>
+<li><strong>SdohObservation</strong></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -247,22 +279,82 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../value_decimal/">value_decimal</a></td>
-<td>0..1 <br/> <a href="../Decimal/">Decimal</a></td>
-<td>An amount, in the given units (if specified)</td>
+<td><a href="../related_questionnaire_item/">related_questionnaire_item</a></td>
+<td>0..1 <br/> <a href="../QuestionnaireItem/">QuestionnaireItem</a></td>
+<td>An optional attribute that captures the QuestionnaireItem to which this SdohO...</td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../value_concept/">value_concept</a></td>
+<td><a href="../age_at_observation/">age_at_observation</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>The Participant's age (expressed in days) when the Observation was made</td>
+<td><a href="../Observation/">Observation</a></td>
+</tr>
+<tr>
+<td><a href="../category/">category</a></td>
+<td>0..1 <br/> <a href="../GravityDomainEnum/">GravityDomainEnum</a></td>
+<td>The general category of observation described</td>
+<td><a href="../Observation/">Observation</a></td>
+</tr>
+<tr>
+<td><a href="../observation_type/">observation_type</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>The type of Observation being represented (e</td>
+<td><a href="../Observation/">Observation</a></td>
+</tr>
+<tr>
+<td><a href="../method_type/">method_type</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td>A coded value representing a quantity (e</td>
-<td>direct</td>
+<td>A type of method used in generating the Observation result</td>
+<td><a href="../Observation/">Observation</a></td>
 </tr>
 <tr>
-<td><a href="../unit/">unit</a></td>
-<td>0..1 <br/> <a href="../UnitOfMeasurementEnum/">UnitOfMeasurementEnum</a></td>
-<td>A coded or free text (in the</td>
-<td>direct</td>
+<td><a href="../focus/">focus</a></td>
+<td>0..1 <br/> <a href="../Entity/">Entity</a></td>
+<td>The entity or entities directly observed/measured in generating an observatio...</td>
+<td><a href="../Observation/">Observation</a></td>
+</tr>
+<tr>
+<td><a href="../associated_participant/">associated_participant</a></td>
+<td>0..1 <br/> <a href="../Participant/">Participant</a></td>
+<td>The patient that the observation is about (if not the direct focus)</td>
+<td><a href="../Observation/">Observation</a></td>
+</tr>
+<tr>
+<td><a href="../associated_visit/">associated_visit</a></td>
+<td>0..1 <br/> <a href="../Visit/">Visit</a></td>
+<td>A reference to the Visit during which this Observation was recorded</td>
+<td><a href="../Observation/">Observation</a></td>
+</tr>
+<tr>
+<td><a href="../performed_by/">performed_by</a></td>
+<td>0..1 <br/> <a href="../Organization/">Organization</a></td>
+<td>The organization or group that performed the observation activity</td>
+<td><a href="../Observation/">Observation</a></td>
+</tr>
+<tr>
+<td><a href="../valueString/">valueString</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>A slot to hold a string value for an Observation</td>
+<td><a href="../Observation/">Observation</a></td>
+</tr>
+<tr>
+<td><a href="../valueBoolean/">valueBoolean</a></td>
+<td>0..1 <br/> <a href="../Boolean/">Boolean</a></td>
+<td>A slot to hold a boolean value for an Observation</td>
+<td><a href="../Observation/">Observation</a></td>
+</tr>
+<tr>
+<td><a href="../valueQuantity/">valueQuantity</a></td>
+<td>0..1 <br/> <a href="../Quantity/">Quantity</a></td>
+<td>A slot to hold a Quantity value for an Observation</td>
+<td><a href="../Observation/">Observation</a></td>
+</tr>
+<tr>
+<td><a href="../valueEnum/">valueEnum</a></td>
+<td>0..1 <br/> <a href="../BaseEnum/">BaseEnum</a></td>
+<td>A slot to hold an enumerated value for an Observation</td>
+<td><a href="../Observation/">Observation</a></td>
 </tr>
 <tr>
 <td><a href="../id/">id</a></td>
@@ -284,89 +376,13 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../Procedure/">Procedure</a></td>
-<td><a href="../quantity/">quantity</a></td>
+<td><a href="../SdohObservationSet/">SdohObservationSet</a></td>
+<td><a href="../observations/">observations</a></td>
 <td>range</td>
-<td><a href="./">Quantity</a></td>
-</tr>
-<tr>
-<td><a href="../DimensionalObservation/">DimensionalObservation</a></td>
-<td><a href="../valueQuantity/">valueQuantity</a></td>
-<td>range</td>
-<td><a href="./">Quantity</a></td>
-</tr>
-<tr>
-<td><a href="../SpecimenCreationActivity/">SpecimenCreationActivity</a></td>
-<td><a href="../quantity_collected/">quantity_collected</a></td>
-<td>range</td>
-<td><a href="./">Quantity</a></td>
-</tr>
-<tr>
-<td><a href="../SpecimenQualityObservation/">SpecimenQualityObservation</a></td>
-<td><a href="../valueQuantity/">valueQuantity</a></td>
-<td>range</td>
-<td><a href="./">Quantity</a></td>
-</tr>
-<tr>
-<td><a href="../SpecimenQuantityObservation/">SpecimenQuantityObservation</a></td>
-<td><a href="../valueQuantity/">valueQuantity</a></td>
-<td>range</td>
-<td><a href="./">Quantity</a></td>
-</tr>
-<tr>
-<td><a href="../SpecimenProcessingActivity/">SpecimenProcessingActivity</a></td>
-<td><a href="../duration/">duration</a></td>
-<td>range</td>
-<td><a href="./">Quantity</a></td>
-</tr>
-<tr>
-<td><a href="../SpecimenStorageActivity/">SpecimenStorageActivity</a></td>
-<td><a href="../duration/">duration</a></td>
-<td>range</td>
-<td><a href="./">Quantity</a></td>
-</tr>
-<tr>
-<td><a href="../Substance/">Substance</a></td>
-<td><a href="../substance_quantity/">substance_quantity</a></td>
-<td>range</td>
-<td><a href="./">Quantity</a></td>
-</tr>
-<tr>
-<td><a href="../Observation/">Observation</a></td>
-<td><a href="../valueQuantity/">valueQuantity</a></td>
-<td>range</td>
-<td><a href="./">Quantity</a></td>
-</tr>
-<tr>
-<td><a href="../MeasurementObservation/">MeasurementObservation</a></td>
-<td><a href="../range_low/">range_low</a></td>
-<td>range</td>
-<td><a href="./">Quantity</a></td>
-</tr>
-<tr>
-<td><a href="../MeasurementObservation/">MeasurementObservation</a></td>
-<td><a href="../range_high/">range_high</a></td>
-<td>range</td>
-<td><a href="./">Quantity</a></td>
-</tr>
-<tr>
-<td><a href="../MeasurementObservation/">MeasurementObservation</a></td>
-<td><a href="../valueQuantity/">valueQuantity</a></td>
-<td>range</td>
-<td><a href="./">Quantity</a></td>
-</tr>
-<tr>
-<td><a href="../SdohObservation/">SdohObservation</a></td>
-<td><a href="../valueQuantity/">valueQuantity</a></td>
-<td>range</td>
-<td><a href="./">Quantity</a></td>
+<td><a href="./">SdohObservation</a></td>
 </tr>
 </tbody>
 </table>
-<h2 id="comments">Comments</h2>
-<ul>
-<li>QuantityMeasure may be implemented as an Observation-like object that will let us capture any type of measure of the amount of some substance (e.g. "weight", "volume"), with distinct timestamps and methods associated.  It could be implemented as a "simple" observation (one measurement per instance, where the "code" fields is bound to a value set describing the different types of quantity measures allowed -  e.g. "weight", "volume", "concentration"),  or as "composite" observation (multiple measurements possible in a single instance, each captured as a component defined to hold a specific type of quantity measure - e.g.  "weight", "volume", "concentration").  The number of different quantity measures we anticipate needed to support, and the potential for data sparseness, are factors that determine whether a simple or composite Observation would be most appropriate.</li>
-</ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
@@ -383,11 +399,11 @@
 <tbody>
 <tr>
 <td>self</td>
-<td>bdchm:Quantity</td>
+<td>bdchm:SdohObservation</td>
 </tr>
 <tr>
 <td>native</td>
-<td>bdchm:Quantity</td>
+<td>bdchm:SdohObservation</td>
 </tr>
 </tbody>
 </table>
@@ -395,110 +411,246 @@
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
 <h3 id="direct">Direct</h3>
 <details>
-<pre><code class="language-yaml">name: Quantity
-description: A structured object to represent an amount of something (e.g., weight,
-  mass, length, duration of time) - including a value and unit.
-comments:
-- QuantityMeasure may be implemented as an Observation-like object that will let us
-  capture any type of measure of the amount of some substance (e.g. "weight", "volume"),
-  with distinct timestamps and methods associated.  It could be implemented as a "simple"
-  observation (one measurement per instance, where the "code" fields is bound to a
-  value set describing the different types of quantity measures allowed -  e.g. "weight",
-  "volume", "concentration"),  or as "composite" observation (multiple measurements
-  possible in a single instance, each captured as a component defined to hold a specific
-  type of quantity measure - e.g.  "weight", "volume", "concentration").  The number
-  of different quantity measures we anticipate needed to support, and the potential
-  for data sparseness, are factors that determine whether a simple or composite Observation
-  would be most appropriate.
+<pre><code class="language-yaml">name: SdohObservation
+description: A data structure with key (observation_type) and value (value) attributes
+  that represents a single observation, such as the hematocrit component of a complete
+  blood count panel.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
-is_a: Entity
+is_a: Observation
+slot_usage:
+  category:
+    name: category
+    domain_of:
+    - ObservationSet
+    - Observation
+    range: GravityDomainEnum
 attributes:
-  value_decimal:
-    name: value_decimal
-    description: An amount, in the given units (if specified)
+  related_questionnaire_item:
+    name: related_questionnaire_item
+    description: An optional attribute that captures the QuestionnaireItem to which
+      this SdohObservation refers.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: false
-    range: decimal
-    required: false
-  value_concept:
-    name: value_concept
-    description: A coded value representing a quantity (e.g. "Adjacent (&lt; or = 2cm)")
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    values_from:
-    - crdch:enum_CRDCH_Quantity_value_codeable_concept
-    multivalued: false
-    range: string
-    required: false
-  unit:
-    name: unit
-    description: A coded or free text (in the .text field) representation of the unit.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    multivalued: false
-    range: UnitOfMeasurementEnum
-    required: false
+    range: QuestionnaireItem
 
 </code></pre>
 </details>
 <h3 id="induced">Induced</h3>
 <details>
-<pre><code class="language-yaml">name: Quantity
-description: A structured object to represent an amount of something (e.g., weight,
-  mass, length, duration of time) - including a value and unit.
-comments:
-- QuantityMeasure may be implemented as an Observation-like object that will let us
-  capture any type of measure of the amount of some substance (e.g. "weight", "volume"),
-  with distinct timestamps and methods associated.  It could be implemented as a "simple"
-  observation (one measurement per instance, where the "code" fields is bound to a
-  value set describing the different types of quantity measures allowed -  e.g. "weight",
-  "volume", "concentration"),  or as "composite" observation (multiple measurements
-  possible in a single instance, each captured as a component defined to hold a specific
-  type of quantity measure - e.g.  "weight", "volume", "concentration").  The number
-  of different quantity measures we anticipate needed to support, and the potential
-  for data sparseness, are factors that determine whether a simple or composite Observation
-  would be most appropriate.
+<pre><code class="language-yaml">name: SdohObservation
+description: A data structure with key (observation_type) and value (value) attributes
+  that represents a single observation, such as the hematocrit component of a complete
+  blood count panel.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
-is_a: Entity
+is_a: Observation
+slot_usage:
+  category:
+    name: category
+    domain_of:
+    - ObservationSet
+    - Observation
+    range: GravityDomainEnum
 attributes:
-  value_decimal:
-    name: value_decimal
-    description: An amount, in the given units (if specified)
+  related_questionnaire_item:
+    name: related_questionnaire_item
+    description: An optional attribute that captures the QuestionnaireItem to which
+      this SdohObservation refers.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: false
-    alias: value_decimal
-    owner: Quantity
+    alias: related_questionnaire_item
+    owner: SdohObservation
     domain_of:
-    - Quantity
-    range: decimal
+    - SdohObservation
+    range: QuestionnaireItem
+  age_at_observation:
+    name: age_at_observation
+    description: The Participant's age (expressed in days) when the Observation was
+      made.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: age_at_observation
+    owner: SdohObservation
+    domain_of:
+    - Observation
+    range: integer
+    unit:
+      ucum_code: d
+  category:
+    name: category
+    description: The general category of observation described
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    multivalued: false
+    alias: category
+    owner: SdohObservation
+    domain_of:
+    - ObservationSet
+    - Observation
+    range: GravityDomainEnum
     required: false
-  value_concept:
-    name: value_concept
-    description: A coded value representing a quantity (e.g. "Adjacent (&lt; or = 2cm)")
+  observation_type:
+    name: observation_type
+    description: The type of Observation being represented (e.g. 'diastolic blood
+      pressure')
+    comments:
+    - This field holds the "key" in the core key-value pair comprised of the observation_type
+      field and the relevant value(s) field.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     values_from:
-    - crdch:enum_CRDCH_Quantity_value_codeable_concept
+    - crdch:enum_CRDCH_Observation_observation_type
     multivalued: false
-    alias: value_concept
-    owner: Quantity
+    alias: observation_type
+    owner: SdohObservation
     domain_of:
-    - Quantity
+    - Observation
+    range: string
+    required: true
+  method_type:
+    name: method_type
+    description: A type of method used in generating the Observation result.
+    comments:
+    - This may be a type of observational, measurement, experimental, or computational
+      method specifying how to generate data (e.g. "manual counting", "bright field
+      microscopy",). Or a Guideline or SOP specifying how to interpret data and/or
+      encode the result of an  Observation (e.g. a Cancer Staging system such as that
+      defined by the AJCC, or variant interpretation guideline such as that provided
+      by the ACMG).
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    values_from:
+    - crdch:enum_CRDCH_Observation_method_type
+    multivalued: false
+    alias: method_type
+    owner: SdohObservation
+    domain_of:
+    - SpecimenProcessingActivity
+    - SpecimenStorageActivity
+    - ObservationSet
+    - Observation
     range: string
     required: false
-  unit:
-    name: unit
-    description: A coded or free text (in the .text field) representation of the unit.
+  focus:
+    name: focus
+    description: The entity or entities directly observed/measured in generating an
+      observation result.
+    comments:
+    - The "focus", "subject", and "specimen" fields are useful when data creators
+      want an Observation object to stand on its own, so it can point back to the
+      entities it is about.  These fields are not needed when an Observation is embedded
+      in a Specimen or other entity, where focus, subject, and specimen can be determined
+      from context.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    multivalued: false
+    alias: focus
+    owner: SdohObservation
+    domain_of:
+    - Document
+    - ObservationSet
+    - Observation
+    range: Entity
+    required: false
+  associated_participant:
+    name: associated_participant
+    description: The patient that the observation is about (if not the direct focus).  e.g.
+      observations are often made on specimens derived from a patient, or other entities
+      related to a patient, that ultimately tell us something about the patient of
+      interest.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    multivalued: false
+    alias: associated_participant
+    owner: SdohObservation
+    domain_of:
+    - Demography
+    - Visit
+    - Condition
+    - Procedure
+    - Exposure
+    - File
+    - ObservationSet
+    - Observation
+    range: Participant
+    required: false
+  associated_visit:
+    name: associated_visit
+    description: A reference to the Visit during which this Observation was recorded.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    alias: associated_visit
+    owner: SdohObservation
+    domain_of:
+    - QuestionnaireResponse
+    - Condition
+    - Procedure
+    - Exposure
+    - ObservationSet
+    - Observation
+    range: Visit
+  performed_by:
+    name: performed_by
+    description: The organization or group that performed the observation activity.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    multivalued: false
+    alias: performed_by
+    owner: SdohObservation
+    domain_of:
+    - SpecimenCreationActivity
+    - ObservationSet
+    - Observation
+    range: Organization
+    required: false
+  valueString:
+    name: valueString
+    description: A slot to hold a string value for an Observation.
+    comments:
+    - One and only one of the value(x) fields must be populated.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     multivalued: false
-    alias: unit
-    owner: Quantity
+    alias: valueString
+    owner: SdohObservation
     domain_of:
-    - Quantity
-    range: UnitOfMeasurementEnum
+    - Observation
+    range: string
+    required: false
+  valueBoolean:
+    name: valueBoolean
+    description: A slot to hold a boolean value for an Observation.
+    comments:
+    - One and only one of the value(x) fields must be populated.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    multivalued: false
+    alias: valueBoolean
+    owner: SdohObservation
+    domain_of:
+    - Observation
+    range: boolean
+    required: false
+  valueQuantity:
+    name: valueQuantity
+    description: A slot to hold a Quantity value for an Observation.
+    comments:
+    - One and only one of the value(x) fields must be populated.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    multivalued: false
+    alias: valueQuantity
+    owner: SdohObservation
+    domain_of:
+    - Observation
+    range: Quantity
+    required: false
+  valueEnum:
+    name: valueEnum
+    description: A slot to hold an enumerated value for an Observation.
+    comments:
+    - One and only one of the value(x) fields must be populated.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    multivalued: false
+    alias: valueEnum
+    owner: SdohObservation
+    domain_of:
+    - Observation
+    range: BaseEnum
     required: false
   id:
     name: id
@@ -517,7 +669,7 @@ attributes:
     slot_uri: schema:identifier
     identifier: true
     alias: id
-    owner: Quantity
+    owner: SdohObservation
     domain_of:
     - Entity
     range: uriorcurie

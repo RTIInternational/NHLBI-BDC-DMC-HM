@@ -262,7 +262,7 @@
 <tbody>
 <tr>
 <td><a href="../observations/">observations</a></td>
-<td>0..* <br/> <a href="../DimensionalObservation/">DimensionalObservation</a></td>
+<td>1..* <br/> <a href="../DimensionalObservation/">DimensionalObservation</a></td>
 <td>A set of one or more observations</td>
 <td><a href="../ObservationSet/">ObservationSet</a></td>
 </tr>
@@ -368,6 +368,7 @@ slot_usage:
     domain_of:
     - ObservationSet
     range: DimensionalObservation
+    required: true
 
 </code></pre>
 </details>
@@ -384,6 +385,7 @@ slot_usage:
     domain_of:
     - ObservationSet
     range: DimensionalObservation
+    required: true
 attributes:
   observations:
     name: observations
@@ -396,6 +398,7 @@ attributes:
     domain_of:
     - ObservationSet
     range: DimensionalObservation
+    required: true
   category:
     name: category
     description: The general category of observation set described
