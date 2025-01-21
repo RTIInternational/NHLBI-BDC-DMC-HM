@@ -1364,6 +1364,24 @@ classes:
         required: false
         range: BaseEnum
 
+  MeasurementObservationSet:
+    is_a: ObservationSet
+    description: A structured object to hold related Observations in a set.
+    slot_usage:
+      observations:
+        range: MeasurementObservation
+            
+  MeasurementObservation:
+    is_a: Observation
+    description: A data structure with key (observation_type) and value (value) attributes that represents a single observation, such as the hematocrit component of a complete blood count panel.
+    attributes:
+      range_low:
+        description: If reference ranges for upper and lower limit of normal as provided (typically by a laboratory) these are stored in the range_high and range_low fields. This should be set to NULL if not provided.
+        range: Quantity
+      range_high:
+        description: If reference ranges for upper and lower limit of normal as provided (typically by a laboratory) these are stored in the range_high and range_low fields. This should be set to NULL if not provided.
+        range: Quantity
+
 
 slots:
   id:
