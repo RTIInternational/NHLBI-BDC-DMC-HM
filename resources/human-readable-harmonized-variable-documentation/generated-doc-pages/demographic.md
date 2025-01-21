@@ -12,7 +12,7 @@
 <a id="annotated_sex_1"></a>
 ## demographic: **annotated_sex_1** (annotated_sex)
   Subject sex, as recorded by the study.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#annotated_sex_1-aric)
     * [CARDIA](#annotated_sex_1-cardia)
     * [CHS](#annotated_sex_1-chs)
@@ -232,7 +232,7 @@
 <a id="geographic_site_1"></a>
 ## demographic: **geographic_site_1** (geographic_site)
   Recruitment/field center, baseline clinic, or geographic region.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#geographic_site_1-aric)
     * [CARDIA](#geographic_site_1-cardia)
     * [CHS](#geographic_site_1-chs)
@@ -499,7 +499,7 @@
 <a id="hispanic_or_latino_1"></a>
 ## demographic: **hispanic_or_latino_1** (hispanic_or_latino)
   Indicator of reported Hispanic or Latino ethnicity.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [COPDGene](#hispanic_or_latino_1-copdgene)
     * [HCHS_SOL](#hispanic_or_latino_1-hchs_sol)
     * [WHI](#hispanic_or_latino_1-whi)
@@ -634,7 +634,7 @@
 <a id="hispanic_subgroup_1"></a>
 ## demographic: **hispanic_subgroup_1** (hispanic_subgroup)
   classification of Hispanic/Latino background for Hispanic/Latino subjects where country or region of origin information is available
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [HCHS_SOL](#hispanic_subgroup_1-hchs_sol)
     * [WHI](#hispanic_subgroup_1-whi)
   * **Metadata**:
@@ -713,7 +713,7 @@
 <a id="race_us_1"></a>
 ## demographic: **race_us_1** (race_us)
   Reported race of participant according to the United States administrative definition of race.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#race_us_1-aric)
     * [CARDIA](#race_us_1-cardia)
     * [COPDGene](#race_us_1-copdgene)
@@ -1112,7 +1112,7 @@
 <a id="subcohort_1"></a>
 ## demographic: **subcohort_1** (subcohort)
   A distinct subgroup within a study, generally indicating subjects who share similar characteristics due to study design. Subjects may belong to only one subcohort.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#subcohort_1-aric)
     * [CARDIA](#subcohort_1-cardia)
     * [CHS](#subcohort_1-chs)

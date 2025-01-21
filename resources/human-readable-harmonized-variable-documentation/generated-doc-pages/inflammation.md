@@ -25,7 +25,7 @@
 <a id="cd40_1"></a>
 ## inflammation: **cd40_1** (cd40)
   Cluster of differentiation 40 ligand (CD40) concentration in blood.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [FHS](#cd40_1-fhs)
     * [MESA](#cd40_1-mesa)
   * **Metadata**:
@@ -123,7 +123,7 @@
 <a id="crp_1"></a>
 ## inflammation: **crp_1** (crp)
   C-reactive protein (CRP) concentration in blood.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#crp_1-aric)
     * [CARDIA](#crp_1-cardia)
     * [CHS](#crp_1-chs)
@@ -377,7 +377,7 @@
 <a id="eselectin_1"></a>
 ## inflammation: **eselectin_1** (eselectin)
   E-selectin concentration in blood.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [MESA](#eselectin_1-mesa)
   * **Metadata**:
     **`Data Type`**: decimal, **`Measurement Units`**: ng / mL, **`Version`**: 1, **`Has Age Variable`**: Yes, **`Date Harmonized`**: 2019-04-15 15:14:23
@@ -457,7 +457,7 @@
 <a id="icam1_1"></a>
 ## inflammation: **icam1_1** (icam1)
   Intercellular adhesion molecule 1 (ICAM1) concentration in blood.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [CARDIA](#icam1_1-cardia)
     * [CHS](#icam1_1-chs)
   * **Metadata**:
@@ -577,7 +577,7 @@
 <a id="il10_1"></a>
 ## inflammation: **il10_1** (il10)
   Interleukin 10 (IL10) concentration in blood.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [MESA](#il10_1-mesa)
   * **Metadata**:
     **`Data Type`**: decimal, **`Measurement Units`**: pg / mL, **`Version`**: 1, **`Has Age Variable`**: Yes, **`Date Harmonized`**: 2019-04-15 15:30:51
@@ -649,7 +649,7 @@
 <a id="il18_1"></a>
 ## inflammation: **il18_1** (il18)
   Interleukin 18 (IL18) concentration in blood.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [FHS](#il18_1-fhs)
   * **Metadata**:
     **`Data Type`**: decimal, **`Measurement Units`**: pg / mL, **`Version`**: 1, **`Has Age Variable`**: Yes, **`Date Harmonized`**: 2019-04-15 15:32:49
@@ -713,7 +713,7 @@
 <a id="il1_beta_1"></a>
 ## inflammation: **il1_beta_1** (il1_beta)
   Interleukin 1 beta (IL1b) concentration in blood.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
   * **Metadata**:
     **`Data Type`**: decimal, **`Measurement Units`**: pg / mL, **`Version`**: 1, **`Has Age Variable`**: Yes, **`Date Harmonized`**: 2019-04-15 15:24:49
   * **Controlled Vocabulary**:
@@ -743,7 +743,7 @@
 <a id="il6_1"></a>
 ## inflammation: **il6_1** (il6)
   Interleukin 6 (IL6) concentration in blood.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [CARDIA](#il6_1-cardia)
     * [CHS](#il6_1-chs)
     * [MESA](#il6_1-mesa)
@@ -907,7 +907,7 @@
 <a id="isoprostane_8_epi_pgf2a_1"></a>
 ## inflammation: **isoprostane_8_epi_pgf2a_1** (isoprostane_8_epi_pgf2a)
   Isoprostane 8-epi-prostaglandin F2 alpha (8-epi-PGF2a) concentration in urine.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [FHS](#isoprostane_8_epi_pgf2a_1-fhs)
   * **Metadata**:
     **`Data Type`**: decimal, **`Measurement Units`**: pg / mL, **`Version`**: 1, **`Has Age Variable`**: Yes, **`Date Harmonized`**: 2019-04-15 15:35:36
@@ -1003,7 +1003,7 @@
 <a id="lppla2_act_1"></a>
 ## inflammation: **lppla2_act_1** (lppla2_act)
   Activity of lipoprotein-associated phospholipase A2 (LP-PLA2), also known as platelet-activating factor acetylhydrolase, measured in blood.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [CHS](#lppla2_act_1-chs)
     * [FHS](#lppla2_act_1-fhs)
     * [MESA](#lppla2_act_1-mesa)
@@ -1161,7 +1161,7 @@
 <a id="lppla2_mass_1"></a>
 ## inflammation: **lppla2_mass_1** (lppla2_mass)
   Mass of lipoprotein-associated phospholipase A2 (LP-PLA2), also known as platelet-activating factor acetylhydrolase, measured in blood.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [CHS](#lppla2_mass_1-chs)
     * [FHS](#lppla2_mass_1-fhs)
     * [MESA](#lppla2_mass_1-mesa)
@@ -1319,7 +1319,7 @@
 <a id="mcp1_1"></a>
 ## inflammation: **mcp1_1** (mcp1)
   Monocyte chemoattractant protein-1 (MCP1), also known as C-C motif chemokine ligand 2, concentration in blood.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
   * **Metadata**:
     **`Data Type`**: decimal, **`Measurement Units`**: pg / mL, **`Version`**: 1, **`Has Age Variable`**: Yes, **`Date Harmonized`**: 2019-04-15 15:43:07
   * **Controlled Vocabulary**:
@@ -1362,7 +1362,7 @@
 <a id="mmp9_1"></a>
 ## inflammation: **mmp9_1** (mmp9)
   Matrix metalloproteinase 9 (MMP9) concentration in blood.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [MESA](#mmp9_1-mesa)
   * **Metadata**:
     **`Data Type`**: decimal, **`Measurement Units`**: ng / mL, **`Version`**: 1, **`Has Age Variable`**: Yes, **`Date Harmonized`**: 2019-04-15 15:45:19
@@ -1417,7 +1417,7 @@
 <a id="mpo_1"></a>
 ## inflammation: **mpo_1** (mpo)
   Myeloperoxidase (MPO) concentration in blood.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [FHS](#mpo_1-fhs)
   * **Metadata**:
     **`Data Type`**: decimal, **`Measurement Units`**: ng / mL, **`Version`**: 1, **`Has Age Variable`**: Yes, **`Date Harmonized`**: 2019-04-15 15:47:50
@@ -1483,7 +1483,7 @@
 <a id="opg_1"></a>
 ## inflammation: **opg_1** (opg)
   Osteoprotegerin (OPG) concentration in blood.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
   * **Metadata**:
     **`Data Type`**: decimal, **`Measurement Units`**: pmol / L, **`Version`**: 1, **`Has Age Variable`**: Yes, **`Date Harmonized`**: 2019-04-15 15:50:07
   * **Controlled Vocabulary**:
@@ -1532,7 +1532,7 @@
 <a id="pselectin_1"></a>
 ## inflammation: **pselectin_1** (pselectin)
   P-selectin concentration in blood.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
   * **Metadata**:
     **`Data Type`**: decimal, **`Measurement Units`**: ng / mL, **`Version`**: 1, **`Has Age Variable`**: Yes, **`Date Harmonized`**: 2019-04-15 15:52:08
   * **Controlled Vocabulary**:
@@ -1579,7 +1579,7 @@
 <a id="tnfa_1"></a>
 ## inflammation: **tnfa_1** (tnfa)
   Tumor necrosis factor alpha (TNFa) concentration in blood.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [FHS](#tnfa_1-fhs)
     * [MESA](#tnfa_1-mesa)
   * **Metadata**:
@@ -1713,7 +1713,7 @@
 <a id="tnfa_r1_1"></a>
 ## inflammation: **tnfa_r1_1** (tnfa_r1)
   Tumor necrosis factor alpha receptor 1 (TNFa-R1) concentration in blood.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [MESA](#tnfa_r1_1-mesa)
   * **Metadata**:
     **`Data Type`**: decimal, **`Measurement Units`**: pg / mL, **`Version`**: 1, **`Has Age Variable`**: Yes, **`Date Harmonized`**: 2019-04-15 15:56:50
@@ -1784,7 +1784,7 @@
 <a id="tnfr2_1"></a>
 ## inflammation: **tnfr2_1** (tnfr2)
   Tumor necrosis factor receptor 2 (TNFR2) concentration in blood.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [FHS](#tnfr2_1-fhs)
   * **Metadata**:
     **`Data Type`**: decimal, **`Measurement Units`**: pg / mL, **`Version`**: 1, **`Has Age Variable`**: Yes, **`Date Harmonized`**: 2019-04-15 16:03:21

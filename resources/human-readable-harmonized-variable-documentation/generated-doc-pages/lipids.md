@@ -12,7 +12,7 @@
 <a id="fasting_lipids_1"></a>
 ## lipids: **fasting_lipids_1** (fasting_lipids)
   Indicates whether participant fasted for at least eight hours prior to blood draw to measure lipids phenotypes.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#fasting_lipids_1-aric)
     * [CARDIA](#fasting_lipids_1-cardia)
     * [CHS](#fasting_lipids_1-chs)
@@ -197,7 +197,7 @@
 <a id="hdl_1"></a>
 ## lipids: **hdl_1** (hdl)
   Blood mass concentration of high-density lipoprotein cholesterol
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#hdl_1-aric)
     * [CARDIA](#hdl_1-cardia)
     * [CHS](#hdl_1-chs)
@@ -369,7 +369,7 @@
 <a id="ldl_1"></a>
 ## lipids: **ldl_1** (ldl)
   Blood mass concentration of low-density lipoprotein cholesterol
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
   * **Metadata**:
     **`Data Type`**: decimal, **`Measurement Units`**: mg/dL, **`Version`**: 3, **`Has Age Variable`**: Yes, **`Date Harmonized`**: 2018-12-12 16:13:48
   * **Controlled Vocabulary**:
@@ -419,7 +419,7 @@
 <a id="lipid_lowering_medication_1"></a>
 ## lipids: **lipid_lowering_medication_1** (lipid_lowering_medication)
   Indicates whether participant was taking any lipid-lowering medication at blood draw to measure lipids phenotypes
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#lipid_lowering_medication_1-aric)
     * [CHS](#lipid_lowering_medication_1-chs)
     * [HCHS_SOL](#lipid_lowering_medication_1-hchs_sol)
@@ -566,7 +566,7 @@
 <a id="total_cholesterol_1"></a>
 ## lipids: **total_cholesterol_1** (total_cholesterol)
   Blood mass concentration of total cholesterol
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#total_cholesterol_1-aric)
     * [CARDIA](#total_cholesterol_1-cardia)
     * [CHS](#total_cholesterol_1-chs)
@@ -763,7 +763,7 @@
 <a id="triglycerides_1"></a>
 ## lipids: **triglycerides_1** (triglycerides)
   Blood mass concentration of triglycerides
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#triglycerides_1-aric)
     * [CARDIA](#triglycerides_1-cardia)
     * [CHS](#triglycerides_1-chs)

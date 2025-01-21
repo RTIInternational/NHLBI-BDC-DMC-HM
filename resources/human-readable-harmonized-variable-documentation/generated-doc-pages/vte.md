@@ -9,7 +9,7 @@
 <a id="vte_case_status_1"></a>
 ## vte: **vte_case_status_1** (vte_case_status)
   An indicator of whether a subject experienced a venous thromboembolism event (VTE) that was verified by adjudication or by medical professionals.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#vte_case_status_1-aric)
     * [CHS](#vte_case_status_1-chs)
   * **Metadata**:
@@ -224,7 +224,7 @@
 <a id="vte_followup_start_age_1"></a>
 ## vte: **vte_followup_start_age_1** (vte_followup_start_age)
   Age of subject at the start of the follow up period during which venous thromboembolism (VTE) events were reviewed and adjudicated.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#vte_followup_start_age_1-aric)
     * [CHS](#vte_followup_start_age_1-chs)
   * **Metadata**:
@@ -314,7 +314,7 @@
 <a id="vte_prior_history_1"></a>
 ## vte: **vte_prior_history_1** (vte_prior_history)
   An indicator of whether a subject had a venous thromboembolism (VTE) event prior to the start of the medical review process (including self-reported events).
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#vte_prior_history_1-aric)
     * [CHS](#vte_prior_history_1-chs)
   * **Metadata**:

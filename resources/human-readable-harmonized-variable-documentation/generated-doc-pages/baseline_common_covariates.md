@@ -11,7 +11,7 @@
 <a id="bmi_baseline_1"></a>
 ## baseline_common_covariates: **bmi_baseline_1** (bmi_baseline)
   Body mass index calculated at baseline.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
   * **Metadata**:
     **`Data Type`**: decimal, **`Measurement Units`**: kg/m^2, **`Version`**: 4, **`Has Age Variable`**: Yes, **`Date Harmonized`**: 2019-09-30 16:03:59
   * **Controlled Vocabulary**:
@@ -82,7 +82,7 @@
 <a id="current_smoker_baseline_1"></a>
 ## baseline_common_covariates: **current_smoker_baseline_1** (current_smoker_baseline)
   Indicates whether subject currently smokes cigarettes.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#current_smoker_baseline_1-aric)
     * [CARDIA](#current_smoker_baseline_1-cardia)
     * [CHS](#current_smoker_baseline_1-chs)
@@ -408,7 +408,7 @@
 <a id="ever_smoker_baseline_1"></a>
 ## baseline_common_covariates: **ever_smoker_baseline_1** (ever_smoker_baseline)
   Indicates whether subject ever regularly smoked cigarettes.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#ever_smoker_baseline_1-aric)
     * [CARDIA](#ever_smoker_baseline_1-cardia)
     * [CHS](#ever_smoker_baseline_1-chs)
@@ -786,7 +786,7 @@
 <a id="height_baseline_1"></a>
 ## baseline_common_covariates: **height_baseline_1** (height_baseline)
   Body height at baseline.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#height_baseline_1-aric)
     * [CARDIA](#height_baseline_1-cardia)
     * [CHS](#height_baseline_1-chs)
@@ -1052,7 +1052,7 @@
 <a id="weight_baseline_1"></a>
 ## baseline_common_covariates: **weight_baseline_1** (weight_baseline)
   Body weight at baseline.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#weight_baseline_1-aric)
     * [CARDIA](#weight_baseline_1-cardia)
     * [CHS](#weight_baseline_1-chs)

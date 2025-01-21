@@ -9,7 +9,7 @@
 <a id="antihypertensive_meds_1"></a>
 ## blood_pressure: **antihypertensive_meds_1** (antihypertensive_meds)
   Indicator for use of antihypertensive medication at the time of blood pressure measurement.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#antihypertensive_meds_1-aric)
     * [CARDIA](#antihypertensive_meds_1-cardia)
     * [CHS](#antihypertensive_meds_1-chs)
@@ -374,7 +374,7 @@
 <a id="bp_diastolic_1"></a>
 ## blood_pressure: **bp_diastolic_1** (bp_diastolic)
   Resting diastolic blood pressure from the upper arm in a clinical setting.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#bp_diastolic_1-aric)
     * [CARDIA](#bp_diastolic_1-cardia)
     * [CHS](#bp_diastolic_1-chs)
@@ -822,7 +822,7 @@
 <a id="bp_systolic_1"></a>
 ## blood_pressure: **bp_systolic_1** (bp_systolic)
   Resting systolic blood pressure from the upper arm in a clinical setting.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#bp_systolic_1-aric)
     * [CARDIA](#bp_systolic_1-cardia)
     * [CHS](#bp_systolic_1-chs)

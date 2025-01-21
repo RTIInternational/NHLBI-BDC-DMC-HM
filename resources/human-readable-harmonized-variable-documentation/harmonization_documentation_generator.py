@@ -52,7 +52,7 @@ def generate_markdown(root_dir, output_dir, output_index):
         with open(json_file, 'r') as f:
             data = json.load(f)
 
-        var_links[data['name']] = f"""=HYPERLINK("https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/blob/main/resources/human-readable-harmonized-variable-documentation/generated-doc-pages/{directory}.md#{data['name']}", "{data['name']}")"""
+        var_links[data['name']] = f"""HYPERLINK("https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/blob/main/resources/human-readable-harmonized-variable-documentation/generated-doc-pages/{directory}.md#{data['name']}", "{data['name']}")"""
 
         # Store variable name for file-level TOC
         structure[directory][data['name']] = []
@@ -78,7 +78,7 @@ def generate_markdown(root_dir, output_dir, output_index):
 
         # Add harmonization units TOC if present
         if data.get('harmonization_units'):
-            section.append("  * **Harmonization Units**:")
+            section.append("  * **Study (harmonization_units)**:")
             for unit in data['harmonization_units']:
                 if unit['name'] in prioritized_studies:
                     unit_anchor = create_anchor(f"{data['name']}-{unit['name']}")
@@ -225,7 +225,7 @@ def generate_markdown(root_dir, output_dir, output_index):
         # f.write('\n'.join([f"{k}: {sc[k]}" for k in sc.keys()]))
         # f.write("\n")
 
-    vars_in_gsheet_order = [
+    vars_in_gsheet_order = [ # for column D https://docs.google.com/spreadsheets/d/1G-AIk2m4UCDfh1OvFID3bewQXqxExeKNNmVxaswLT8E/edit?gid=979420329#gid=979420329
         'angina_incident_1', 'cabg_incident_1', 'cad_followup_start_age_1', 'chd_death_definite_1',
         'chd_death_probable_1', 'coronary_angioplasty_incident_1', 'mi_incident_1', 'pad_incident_1', 'angina_prior_1',
         'cabg_prior_1', 'coronary_angioplasty_prior_1', 'coronary_revascularization_prior_1', 'mi_prior_1',
@@ -241,8 +241,39 @@ def generate_markdown(root_dir, output_dir, output_index):
         'pmv_entvol_bld_1', 'rbc_ncnc_bld_1', 'rdw_ratio_rbc_1', 'wbc_ncnc_bld_1', 'antihypertensive_meds_1',
         'bp_diastolic_1', 'bp_systolic_1', 'cac_score_1', 'cac_volume_1', 'carotid_plaque_1', 'carotid_stenosis_1',
         'cimt_1', 'cimt_2']
+    vars_in_gsheet_order = [ # for column W https://docs.google.com/spreadsheets/d/1G-AIk2m4UCDfh1OvFID3bewQXqxExeKNNmVxaswLT8E/edit?gid=2039879463#gid=2039879463
+        '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'cac_score_1', 'cac_volume_1', 'cimt_1|cimt_2',
+        'carotid_stenosis_1', '', '', '', '', '', '', '', '', '', '', '', '', 'fasting_lipids_1', '', '', '', '', '',
+        '', '', 'hematocrit_vfr_bld_1', '', '', 'coronary_angioplasty_prior_1|coronary_angioplasty_incident_1',
+        'cabg_prior_1|cabg_incident_1|coronary_revascularization_prior_1', '', '', '', '', '', '',
+        'lymphocyte_ncnc_bld_1', '', '', '', '', 'neutrophil_ncnc_bld_1', '', '', '', '', '', '', '', '', '', '',
+        'rbc_ncnc_bld_1', '', '', '', '', '', '', 'antihypertensive_meds_1', 'antihypertensive_meds_1',
+        'antihypertensive_meds_1', 'antihypertensive_meds_1', 'antihypertensive_meds_1', 'antihypertensive_meds_1',
+        'antihypertensive_meds_1', 'antihypertensive_meds_1', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
+        '', '', 'crp_1', '', '', '', '', '', 'fasting_lipids_1', '', '', '', '', '', '', '', 'hemoglobin_mcnc_bld_1',
+        'mi_prior_1|mi_incident_1', 'il6_1', '', 'platelet_ncnc_bld_1', '', 'lipid_lowering_medication_1',
+        'vte_case_status_1|vte_prior_history_1', 'wbc_ncnc_bld_1', 'current_smoker_baseline_1|ever_smoker_baseline_1',
+        '', 'hdl_1', 'antihypertensive_meds_1', 'ldl_1', 'total_cholesterol_1', 'triglycerides_1', '',
+        'bmi_baseline_1', 'weight_baseline_1', '', '', 'bp_diastolic_1', 'height_baseline_1', '', 'race_us_1',
+        'annotated_sex_1', 'bp_systolic_1', '', 'cad_followup_start_age_1|vte_followup_start_age_1',
+        'hispanic_or_latino_1|hispanic_subgroup_1', 'geographic_site_1', 'subcohort_1', 'sleep_duration_1',
+        'angina_incident_1|angina_prior_1', 'chd_death_definite_1|chd_death_probable_1', 'pad_prior_1|pad_incident_1', 'cd40_1', 'eselectin_1', 'icam1_1', 'il1_beta_1', 'il10_1', 'il18_1',
+                                                                                            'isoprostane_8_epi_pgf2a_1',
+        'lppla2_act_1', 'lppla2_mass_1', 'mcp1_1', 'monocyte_ncnc_bld_1', 'mmp9_1',
+        'mpo_1', 'opg_1', 'pselectin_1', 'tnfa_1', 'tnfa_r1_1', 'tnfr2_1', 'basophil_ncnc_bld_1',
+        'eosinophil_ncnc_bld_1', 'mcv_entvol_rbc_1', 'mch_entmass_rbc_1', 'mchc_mcnc_rbc_1', 'pmv_entvol_bld_1',
+        'rdw_ratio_rbc_1', 'carotid_plaque_1'
+    ]
     for var in vars_in_gsheet_order:
-        print(var_links[var])
+        if not var:
+            print('""')
+            continue
+        vars = var.split('|')
+        links = [var_links[v] for v in vars]
+        if len(vars) > 1:
+            print(f"""=CONCATENATE({', " | ", '.join(links)})""")
+        else:
+            print('=' + links[0])
     pass
 
 

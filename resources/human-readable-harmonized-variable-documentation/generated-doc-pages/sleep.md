@@ -7,7 +7,7 @@
 <a id="sleep_duration_1"></a>
 ## sleep: **sleep_duration_1** (sleep_duration)
   Usual amount of time slept per day.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#sleep_duration_1-aric)
     * [CARDIA](#sleep_duration_1-cardia)
     * [CHS](#sleep_duration_1-chs)

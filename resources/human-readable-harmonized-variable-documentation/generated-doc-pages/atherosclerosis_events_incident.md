@@ -14,7 +14,7 @@
 <a id="angina_incident_1"></a>
 ## atherosclerosis_events_incident: **angina_incident_1** (angina_incident)
   An indicator of whether a subject had an angina event (that was verified by adjudication or by medical professionals) during the follow-up period.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [FHS](#angina_incident_1-fhs)
     * [WHI](#angina_incident_1-whi)
   * **Metadata**:
@@ -159,7 +159,7 @@
 <a id="cabg_incident_1"></a>
 ## atherosclerosis_events_incident: **cabg_incident_1** (cabg_incident)
   An indicator of whether a subject had a coronary artery bypass graft (CABG) procedure (that was verified by adjudication or by medical professionals) during the follow-up period.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [FHS](#cabg_incident_1-fhs)
     * [WHI](#cabg_incident_1-whi)
   * **Metadata**:
@@ -294,7 +294,7 @@
 <a id="cad_followup_start_age_1"></a>
 ## atherosclerosis_events_incident: **cad_followup_start_age_1** (cad_followup_start_age)
   Age of subject at the start of the follow-up period during which atherosclerosis events were reviewed and adjudicated.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [FHS](#cad_followup_start_age_1-fhs)
     * [WHI](#cad_followup_start_age_1-whi)
   * **Metadata**:
@@ -345,7 +345,7 @@
 <a id="chd_death_definite_1"></a>
 ## atherosclerosis_events_incident: **chd_death_definite_1** (chd_death_definite)
   An indicator of whether the cause of death was determined by medical professionals or technicians to be "definite" coronary heart disease for subjects who died during the follow-up period.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [FHS](#chd_death_definite_1-fhs)
     * [WHI](#chd_death_definite_1-whi)
   * **Metadata**:
@@ -499,7 +499,7 @@
 <a id="chd_death_probable_1"></a>
 ## atherosclerosis_events_incident: **chd_death_probable_1** (chd_death_probable)
   An indicator of whether the cause of death was determined by medical professionals or technicians to be "probable" or "definite" coronary heart disease for subjects who died during the follow-up period.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [FHS](#chd_death_probable_1-fhs)
     * [WHI](#chd_death_probable_1-whi)
   * **Metadata**:
@@ -654,7 +654,7 @@
 <a id="coronary_angioplasty_incident_1"></a>
 ## atherosclerosis_events_incident: **coronary_angioplasty_incident_1** (coronary_angioplasty_incident)
   An indicator of whether a subject had a coronary angioplasty procedure (that was verified by adjudication or by medical professionals) during the follow-up period.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [WHI](#coronary_angioplasty_incident_1-whi)
   * **Metadata**:
     **`Data Type`**: encoded, **`Measurement Units`**: None, **`Version`**: 1, **`Has Age Variable`**: Yes, **`Date Harmonized`**: 2019-10-31 16:34:10
@@ -698,7 +698,7 @@
 <a id="mi_incident_1"></a>
 ## atherosclerosis_events_incident: **mi_incident_1** (mi_incident)
   An indicator of whether a subject had a myocardial infarction (MI) event (that was verified by adjudication or by medical professionals) during the follow-up period.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [FHS](#mi_incident_1-fhs)
     * [WHI](#mi_incident_1-whi)
   * **Metadata**:
@@ -841,7 +841,7 @@
 <a id="pad_incident_1"></a>
 ## atherosclerosis_events_incident: **pad_incident_1** (pad_incident)
   An indicator of whether a subject had peripheral arterial disease (that was verified by adjudication or by medical professionals) during the follow-up period.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [FHS](#pad_incident_1-fhs)
     * [WHI](#pad_incident_1-whi)
   * **Metadata**:

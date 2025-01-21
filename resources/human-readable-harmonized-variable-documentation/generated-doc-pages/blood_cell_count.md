@@ -21,7 +21,7 @@
 <a id="basophil_ncnc_bld_1"></a>
 ## blood_cell_count: **basophil_ncnc_bld_1** (basophil_ncnc_bld)
   Count by volume, or number concentration (ncnc), of basophils in the blood (bld).
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#basophil_ncnc_bld_1-aric)
     * [CARDIA](#basophil_ncnc_bld_1-cardia)
     * [HCHS_SOL](#basophil_ncnc_bld_1-hchs_sol)
@@ -259,7 +259,7 @@
 <a id="eosinophil_ncnc_bld_1"></a>
 ## blood_cell_count: **eosinophil_ncnc_bld_1** (eosinophil_ncnc_bld)
   Count by volume, or number concentration (ncnc), of eosinophils in the blood (bld).
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#eosinophil_ncnc_bld_1-aric)
     * [CARDIA](#eosinophil_ncnc_bld_1-cardia)
     * [HCHS_SOL](#eosinophil_ncnc_bld_1-hchs_sol)
@@ -497,7 +497,7 @@
 <a id="hematocrit_vfr_bld_1"></a>
 ## blood_cell_count: **hematocrit_vfr_bld_1** (hematocrit_vfr_bld)
   Measurement of hematocrit, the fraction of volume (vfr) of blood (bld) that is composed of red blood cells.
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#hematocrit_vfr_bld_1-aric)
     * [CARDIA](#hematocrit_vfr_bld_1-cardia)
     * [CHS](#hematocrit_vfr_bld_1-chs)
@@ -781,7 +781,7 @@
 <a id="hemoglobin_mcnc_bld_1"></a>
 ## blood_cell_count: **hemoglobin_mcnc_bld_1** (hemoglobin_mcnc_bld)
   Measurement of mass per volume, or mass concentration (mcnc), of hemoglobin in the blood (bld).
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#hemoglobin_mcnc_bld_1-aric)
     * [CARDIA](#hemoglobin_mcnc_bld_1-cardia)
     * [CHS](#hemoglobin_mcnc_bld_1-chs)
@@ -1063,7 +1063,7 @@
 <a id="lymphocyte_ncnc_bld_1"></a>
 ## blood_cell_count: **lymphocyte_ncnc_bld_1** (lymphocyte_ncnc_bld)
   Count by volume, or number concentration (ncnc), of lymphocytes in the blood (bld).
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#lymphocyte_ncnc_bld_1-aric)
     * [CARDIA](#lymphocyte_ncnc_bld_1-cardia)
     * [HCHS_SOL](#lymphocyte_ncnc_bld_1-hchs_sol)
@@ -1312,7 +1312,7 @@
 <a id="mch_entmass_rbc_1"></a>
 ## blood_cell_count: **mch_entmass_rbc_1** (mch_entmass_rbc)
   Measurement of the average mass (entmass) of hemoglobin per red blood cell(rbc), known as mean corpuscular hemoglobin (MCH).
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#mch_entmass_rbc_1-aric)
     * [CARDIA](#mch_entmass_rbc_1-cardia)
     * [HCHS_SOL](#mch_entmass_rbc_1-hchs_sol)
@@ -1541,7 +1541,7 @@
 <a id="mchc_mcnc_rbc_1"></a>
 ## blood_cell_count: **mchc_mcnc_rbc_1** (mchc_mcnc_rbc)
   Measurement of the mass concentration (mcnc) of hemoglobin in a given volume of packed red blood cells (rbc), known as mean corpuscular hemoglobin concentration (MCHC).
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#mchc_mcnc_rbc_1-aric)
     * [CARDIA](#mchc_mcnc_rbc_1-cardia)
     * [CHS](#mchc_mcnc_rbc_1-chs)
@@ -1829,7 +1829,7 @@
 <a id="mcv_entvol_rbc_1"></a>
 ## blood_cell_count: **mcv_entvol_rbc_1** (mcv_entvol_rbc)
   Measurement of the average volume (entvol) of red blood cells (rbc), known as mean corpuscular volume (MCV).
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#mcv_entvol_rbc_1-aric)
     * [CARDIA](#mcv_entvol_rbc_1-cardia)
     * [HCHS_SOL](#mcv_entvol_rbc_1-hchs_sol)
@@ -2067,7 +2067,7 @@
 <a id="monocyte_ncnc_bld_1"></a>
 ## blood_cell_count: **monocyte_ncnc_bld_1** (monocyte_ncnc_bld)
   Count by volume, or number concentration (ncnc), of monocytes in the blood (bld).
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#monocyte_ncnc_bld_1-aric)
     * [CARDIA](#monocyte_ncnc_bld_1-cardia)
     * [HCHS_SOL](#monocyte_ncnc_bld_1-hchs_sol)
@@ -2315,7 +2315,7 @@
 <a id="neutrophil_ncnc_bld_1"></a>
 ## blood_cell_count: **neutrophil_ncnc_bld_1** (neutrophil_ncnc_bld)
   Count by volume, or number concentration (ncnc), of neutrophils in the blood (bld).
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#neutrophil_ncnc_bld_1-aric)
     * [CARDIA](#neutrophil_ncnc_bld_1-cardia)
     * [HCHS_SOL](#neutrophil_ncnc_bld_1-hchs_sol)
@@ -2591,7 +2591,7 @@
 <a id="platelet_ncnc_bld_1"></a>
 ## blood_cell_count: **platelet_ncnc_bld_1** (platelet_ncnc_bld)
   Count by volume, or number concentration (ncnc), of platelets in the blood (bld).
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#platelet_ncnc_bld_1-aric)
     * [CARDIA](#platelet_ncnc_bld_1-cardia)
     * [CHS](#platelet_ncnc_bld_1-chs)
@@ -2872,7 +2872,7 @@
 <a id="pmv_entvol_bld_1"></a>
 ## blood_cell_count: **pmv_entvol_bld_1** (pmv_entvol_bld)
   Measurement of the mean volume (entvol) of platelets in the blood (bld), known as mean platelet volume (MPV or PMV).
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#pmv_entvol_bld_1-aric)
     * [JHS](#pmv_entvol_bld_1-jhs)
   * **Metadata**:
@@ -2951,7 +2951,7 @@
 <a id="rbc_ncnc_bld_1"></a>
 ## blood_cell_count: **rbc_ncnc_bld_1** (rbc_ncnc_bld)
   Count by volume, or number concentration (ncnc), of red blood cells in the blood (bld).
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#rbc_ncnc_bld_1-aric)
     * [CARDIA](#rbc_ncnc_bld_1-cardia)
     * [HCHS_SOL](#rbc_ncnc_bld_1-hchs_sol)
@@ -3157,7 +3157,7 @@
 <a id="rdw_ratio_rbc_1"></a>
 ## blood_cell_count: **rdw_ratio_rbc_1** (rdw_ratio_rbc)
   Measurement of the ratio of variation in width to the mean width of the red blood cell (rbc) volume distribution curve taken at +/- 1 CV, known as red cell distribution width (RDW).
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#rdw_ratio_rbc_1-aric)
     * [HCHS_SOL](#rdw_ratio_rbc_1-hchs_sol)
     * [JHS](#rdw_ratio_rbc_1-jhs)
@@ -3304,7 +3304,7 @@
 <a id="wbc_ncnc_bld_1"></a>
 ## blood_cell_count: **wbc_ncnc_bld_1** (wbc_ncnc_bld)
   Count by volume, or number concentration (ncnc), of white blood cells in the blood (bld).
-  * **Harmonization Units**:
+  * **Study (harmonization_units)**:
     * [ARIC](#wbc_ncnc_bld_1-aric)
     * [CARDIA](#wbc_ncnc_bld_1-cardia)
     * [CHS](#wbc_ncnc_bld_1-chs)
