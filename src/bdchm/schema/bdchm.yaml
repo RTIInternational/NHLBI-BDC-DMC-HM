@@ -556,6 +556,7 @@ classes:
     slot_usage:
       observations:
         range: DimensionalObservation
+        required: true
 
   File:
     is_a: Entity
@@ -1370,6 +1371,7 @@ classes:
     slot_usage:
       observations:
         range: MeasurementObservation
+        required: true
             
   MeasurementObservation:
     is_a: Observation
@@ -1382,6 +1384,27 @@ classes:
         description: If reference ranges for upper and lower limit of normal as provided (typically by a laboratory) these are stored in the range_high and range_low fields. This should be set to NULL if not provided.
         range: Quantity
 
+  SdohObservationSet:
+    is_a: ObservationSet
+    description: A structured object to hold related Observations in a set.
+    slot_usage:
+      observations:
+        range: SdohObservation
+        required: true
+      category: 
+        range: GravityDomainEnum
+  
+  SdohObservation:
+    is_a: Observation
+    description: A data structure with key (observation_type) and value (value) attributes that represents a single observation, such as the hematocrit component of a complete blood count panel.
+    attributes:
+      related_questionnaire_item:
+        description: An optional attribute that captures the QuestionnaireItem to which this SdohObservation refers.
+        range: QuestionnaireItem
+    slot_usage:
+      category: 
+        range: GravityDomainEnum
+      
 
 slots:
   id:
@@ -3146,3 +3169,67 @@ enums:
     description: Standard units of measurement from the [Units of Measurement (UOM) ontology](https://units-of-measurement.org/). Units-of-measurement (UOM) provides URLs for Unified Code for Units of Measure (UCUM) codes, and mappings to a number of units ontologies and systems, in human- and machine-readable linked data formats.
     reachable_from:
       source_ontology: UOM
+
+  GravityDomainEnum:
+    description: Social Determinants of Health domains as defined in the Gravity Project
+    permissible_values:
+      FOOD_INSECURITY:
+        text: FOOD_INSECURITY
+        description:
+      HOUSING_INSTABILITY:
+        text: HOUSING_INSTABILITY
+        description:
+      HOMELESSNESS:
+        text: HOMELESSNESS
+        description:
+      INADEQUATE_HOUSING:
+        text: INADEQUATE_HOUSING
+        description:
+      TRANSPORTATION_INSECURITY:
+        text: TRANSPORTATION_INSECURITY
+        description:
+      FINANCIAL_INSECURITY:
+        text: FINANCIAL_INSECURITY
+        description:
+      MATERIAL_HARDSHIP:
+        text: MATERIAL_HARDSHIP
+        description:
+      EMPLOYMENT_STATUS:
+        text: EMPLOYMENT_STATUS
+        description:
+      EDUCATIONAL_ATTAINMENT:
+        text: EDUCATIONAL_ATTAINMENT
+        description:
+      VETERAN_STATUS:
+        text: VETERAN_STATUS
+        description:
+      STRESS:
+        text: STRESS
+        description:
+      SOCIAL_CONNECTION:
+        text: SOCIAL_CONNECTION
+        description:
+      INTIMATE_PARTNER_VIOLENCE_IPV:
+        text: INTIMATE_PARTNER_VIOLENCE_IPV
+        description:
+      ELDER_ABUSE:
+        text: ELDER_ABUSE
+        description:
+      HEALTH_LITERACY:
+        text: HEALTH_LITERACY
+        description:
+      MEDICAL_COST_BURDEN:
+        text: MEDICAL_COST_BURDEN
+        description:
+      HEALTH_INSURANCE_COVERAGE_STATUS:
+        text: HEALTH_INSURANCE_COVERAGE_STATUS
+        description:
+      DIGITAL_LITERACY:
+        text: DIGITAL_LITERACY
+        description:
+      DIGITAL_ACCESS:
+        text: DIGITAL_ACCESS
+        description:
+      UTILITY_INSECURITY:
+        text: UTILITY_INSECURITY
+        description:
