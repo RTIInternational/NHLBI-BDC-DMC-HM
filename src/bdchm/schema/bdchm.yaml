@@ -1336,28 +1336,28 @@ classes:
         multivalued: false
         range: Organization
         required: false
-      valueString:
+      value_string:
         description: A slot to hold a string value for an Observation.
         comments:
         - One and only one of the value(x) fields must be populated.
         multivalued: false
         required: false
         range: string
-      valueBoolean:
+      value_boolean:
         description: A slot to hold a boolean value for an Observation.
         comments:
         - One and only one of the value(x) fields must be populated.
         multivalued: false
         required: false
         range: boolean
-      valueQuantity:
+      value_quantity:
         description: A slot to hold a Quantity value for an Observation.
         comments:
         - One and only one of the value(x) fields must be populated.
         multivalued: false
         required: false
         range: Quantity
-      valueEnum:
+      value_enum:
         description: A slot to hold an enumerated value for an Observation.
         comments:
         - One and only one of the value(x) fields must be populated.
