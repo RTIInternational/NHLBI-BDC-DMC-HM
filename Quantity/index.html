@@ -224,7 +224,11 @@
 
       Quantity : value_concept
 
+          Quantity --&gt; BaseEnum : value_concept
+
       Quantity : value_decimal
+
+      Quantity : value_integer
 
 
 </div>
@@ -249,12 +253,18 @@
 <tr>
 <td><a href="../value_decimal/">value_decimal</a></td>
 <td>0..1 <br/> <a href="../Decimal/">Decimal</a></td>
-<td>An amount, in the given units (if specified)</td>
+<td>A decimal amount, in the given units (if specified)</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../value_integer/">value_integer</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>An integer amount, in the given units (if specified)</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../value_concept/">value_concept</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>0..1 <br/> <a href="../BaseEnum/">BaseEnum</a></td>
 <td>A coded value representing a quantity (e</td>
 <td>direct</td>
 </tr>
@@ -415,21 +425,27 @@ is_a: Entity
 attributes:
   value_decimal:
     name: value_decimal
-    description: An amount, in the given units (if specified)
+    description: A decimal amount, in the given units (if specified)
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     multivalued: false
     range: decimal
+    required: false
+  value_integer:
+    name: value_integer
+    description: An integer amount, in the given units (if specified)
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    multivalued: false
+    range: integer
     required: false
   value_concept:
     name: value_concept
     description: A coded value representing a quantity (e.g. "Adjacent (&lt; or = 2cm)")
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    values_from:
-    - crdch:enum_CRDCH_Quantity_value_codeable_concept
     multivalued: false
-    range: string
+    range: BaseEnum
     required: false
   unit:
     name: unit
@@ -464,7 +480,7 @@ is_a: Entity
 attributes:
   value_decimal:
     name: value_decimal
-    description: An amount, in the given units (if specified)
+    description: A decimal amount, in the given units (if specified)
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     multivalued: false
@@ -474,19 +490,29 @@ attributes:
     - Quantity
     range: decimal
     required: false
+  value_integer:
+    name: value_integer
+    description: An integer amount, in the given units (if specified)
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    multivalued: false
+    alias: value_integer
+    owner: Quantity
+    domain_of:
+    - Quantity
+    range: integer
+    required: false
   value_concept:
     name: value_concept
     description: A coded value representing a quantity (e.g. "Adjacent (&lt; or = 2cm)")
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    values_from:
-    - crdch:enum_CRDCH_Quantity_value_codeable_concept
     multivalued: false
     alias: value_concept
     owner: Quantity
     domain_of:
     - Quantity
-    range: string
+    range: BaseEnum
     required: false
   unit:
     name: unit

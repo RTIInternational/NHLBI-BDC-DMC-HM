@@ -340,7 +340,7 @@
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../String/">String</a></li>
+<li>Range: <a href="../BaseEnum/">BaseEnum</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
@@ -354,14 +354,12 @@
 description: A coded value representing a quantity (e.g. &quot;Adjacent (&lt; or = 2cm)&quot;)
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 rank: 1000
-values_from:
-- crdch:enum_CRDCH_Quantity_value_codeable_concept
 multivalued: false
 alias: value_concept
 owner: Quantity
 domain_of:
 - Quantity
-range: string
+range: BaseEnum
 required: false
 
 </code></pre>
