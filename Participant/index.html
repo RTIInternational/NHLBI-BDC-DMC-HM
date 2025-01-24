@@ -211,7 +211,7 @@
     class Participant
       Entity &lt;|-- Participant
 
-      Participant : age_at_enrollment
+      Participant : age_at_index
 
       Participant : associated_person
 
@@ -284,9 +284,9 @@
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../age_at_enrollment/">age_at_enrollment</a></td>
+<td><a href="../age_at_index/">age_at_index</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
-<td>The age in days when the Participant enrolled on the ResearchStudy</td>
+<td>The age in days of the Participant at the index_timepoint</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -500,9 +500,9 @@ attributes:
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     range: ResearchStudy
-  age_at_enrollment:
-    name: age_at_enrollment
-    description: The age in days when the Participant enrolled on the ResearchStudy
+  age_at_index:
+    name: age_at_index
+    description: The age in days of the Participant at the index_timepoint
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     range: integer
@@ -579,12 +579,12 @@ attributes:
     domain_of:
     - Participant
     range: ResearchStudy
-  age_at_enrollment:
-    name: age_at_enrollment
-    description: The age in days when the Participant enrolled on the ResearchStudy
+  age_at_index:
+    name: age_at_index
+    description: The age in days of the Participant at the index_timepoint
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    alias: age_at_enrollment
+    alias: age_at_index
     owner: Participant
     domain_of:
     - Participant
