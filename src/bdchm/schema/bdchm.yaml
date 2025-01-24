@@ -97,9 +97,9 @@ classes:
       member_of_research_study:
         range: ResearchStudy
         description: A reference to the Study(s) of which this Participant is a member
-      age_at_enrollment:
+      age_at_index:
         range: integer
-        description: The age in days when the Participant enrolled on the ResearchStudy
+        description: The age in days of the Participant at the index_timepoint
         unit:
           ucum_code: d
       index_timepoint:
