@@ -226,6 +226,10 @@
 
           Condition --&gt; ProvenanceEnum : condition_provenance
 
+      Condition : condition_severity
+
+          Condition --&gt; ConditionSeverityEnum : condition_severity
+
       Condition : condition_status
 
           Condition --&gt; ConditionStatusEnum : condition_status
@@ -290,6 +294,12 @@
 <td><a href="../condition_status/">condition_status</a></td>
 <td>0..1 <br/> <a href="../ConditionStatusEnum/">ConditionStatusEnum</a></td>
 <td>A value indicating whether the medical condition described in this record is ...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../condition_severity/">condition_severity</a></td>
+<td>0..1 <br/> <a href="../ConditionSeverityEnum/">ConditionSeverityEnum</a></td>
+<td>A subjective assessment of the severity of the condition</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -395,6 +405,12 @@ attributes:
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     range: ConditionStatusEnum
+  condition_severity:
+    name: condition_severity
+    description: A subjective assessment of the severity of the condition
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    range: ConditionSeverityEnum
   relationship_to_participant:
     name: relationship_to_participant
     description: A value indicating the relationship between the Participant to which
@@ -488,6 +504,16 @@ attributes:
     domain_of:
     - Condition
     range: ConditionStatusEnum
+  condition_severity:
+    name: condition_severity
+    description: A subjective assessment of the severity of the condition
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: condition_severity
+    owner: Condition
+    domain_of:
+    - Condition
+    range: ConditionSeverityEnum
   relationship_to_participant:
     name: relationship_to_participant
     description: A value indicating the relationship between the Participant to which
