@@ -3245,11 +3245,11 @@ enums:
     description: Social Determinants of Health domains as defined in the Gravity Project
     permissible_values:
       MILD:
-        text: UTILITY_INSECURITY
+        text: MILD
         meaning: SNOMED:255604002
       MODERATE:
-        text: UTILITY_INSECURITY
+        text: MODERATE
         meaning: SNOMED:6736007
       SEVERE:
-        text: UTILITY_INSECURITY
+        text: SEVERE
         meaning: SNOMED:24484000
