@@ -430,6 +430,9 @@ classes:
       condition_status:
         range: ConditionStatusEnum
         description: A value indicating whether the medical condition described in this record is present, absent, or unknown for this individual patient.
+      condition_severity:
+        range: ConditionSeverityEnum
+        description: A subjective assessment of the severity of the condition
       relationship_to_participant:
         range: string
         description: A value indicating the relationship between the Participant to which the Condition is attributed and the individual who had the reported Condition.  If the Condition is affecting the participant themselves, then 'Self' is the appropriate relationship.  If the Condition is affecting a family member (e.g. a parent of the Participant) then an appropriate relationship should be provided (e.g. 'Parent')
@@ -3237,3 +3240,16 @@ enums:
       UTILITY_INSECURITY:
         text: UTILITY_INSECURITY
         description:
+  
+  ConditionSeverityEnum:
+    description: Social Determinants of Health domains as defined in the Gravity Project
+    permissible_values:
+      MILD:
+        text: UTILITY_INSECURITY
+        meaning: SNOMED:255604002
+      MODERATE:
+        text: UTILITY_INSECURITY
+        meaning: SNOMED:6736007
+      SEVERE:
+        text: UTILITY_INSECURITY
+        meaning: SNOMED:24484000
