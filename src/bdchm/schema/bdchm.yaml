@@ -1896,6 +1896,8 @@ enums:
         description: The condition is/was present in the patient.
       ABSENT:
         description: The condition is/was absent in the patient.
+      HISTORICAL:
+        description: The condition is/was present in the patient historically.
       UNKNOWN:
         description: The condition is/was of unknown status in the patient.
 
