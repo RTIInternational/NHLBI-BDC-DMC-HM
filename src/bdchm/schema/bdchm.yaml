@@ -434,7 +434,7 @@ classes:
         range: ConditionSeverityEnum
         description: A subjective assessment of the severity of the condition
       relationship_to_participant:
-        range: string
+        range: FamilyRelationshipEnum
         description: A value indicating the relationship between the Participant to which the Condition is attributed and the individual who had the reported Condition.  If the Condition is affecting the participant themselves, then 'Self' is the appropriate relationship.  If the Condition is affecting a family member (e.g. a parent of the Participant) then an appropriate relationship should be provided (e.g. 'Parent')
       associated_participant:
         range: Participant
@@ -3255,3 +3255,28 @@ enums:
       SEVERE:
         text: SEVERE
         meaning: SNOMED:24484000
+
+  FamilyRelationshipEnum:
+    description: Values describing the relationship between an individual and family members.
+    permissible_values:
+      SELF:
+        text: A relationship to one's self.
+      NATURAL_PARENT:
+        text: A relation to a natural parent (mother or father) when otherwise not specified.
+        meaning: SNOMED:13646006
+      NATURAL_FATHER:	
+        text: A relation to a natural father.
+        meaning: SNOMED:9947008
+      NATURAL_MOTHER:
+        text: A relation to a natural mother.
+        meaning: SNOMED:65656005
+      NATURAL_SIBLING:
+        text: A relation to a natural sibling (sister or brother) when otherwise not specified.
+        meaning: SNOMED:82101005
+      NATURAL_BROTHER:
+        text: A relation to a natural brother.
+        meaning: SNOMED:60614009
+      NATURAL_SISTER:
+        text: A relation to a natural sister.
+        meaning: SNOMED:73678001
+ 
