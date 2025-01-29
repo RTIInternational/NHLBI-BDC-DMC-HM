@@ -3259,24 +3259,24 @@ enums:
   FamilyRelationshipEnum:
     description: Values describing the relationship between an individual and family members.
     permissible_values:
-      SELF:
-        text: A relationship to one's self.
+      ONESELF:
+        description: A relation to one's self.
       NATURAL_PARENT:
-        text: A relation to a natural parent (mother or father) when otherwise not specified.
+        description: A relation to a natural parent (mother or father) when otherwise not specified.
         meaning: SNOMED:13646006
-      NATURAL_FATHER:	
-        text: A relation to a natural father.
+      NATURAL_FATHER:
+        description: A relation to a natural father.
         meaning: SNOMED:9947008
       NATURAL_MOTHER:
-        text: A relation to a natural mother.
+        description: A relation to a natural mother.
         meaning: SNOMED:65656005
       NATURAL_SIBLING:
-        text: A relation to a natural sibling (sister or brother) when otherwise not specified.
+        description: A relation to a natural sibling (sister or brother) when otherwise not specified.
         meaning: SNOMED:82101005
       NATURAL_BROTHER:
-        text: A relation to a natural brother.
+        description: A relation to a natural brother.
         meaning: SNOMED:60614009
       NATURAL_SISTER:
-        text: A relation to a natural sister.
+        description: A relation to a natural sister.
         meaning: SNOMED:73678001
- 
+  
