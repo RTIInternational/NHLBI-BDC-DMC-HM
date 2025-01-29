@@ -166,6 +166,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/FamilyRelationshipEnum/</loc>
+         <lastmod>2025-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/File/</loc>
          <lastmod>2025-01-29</lastmod>
          <changefreq>daily</changefreq>

@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/relationship_to_participant/">
+        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/FamilyRelationshipEnum/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-8.5.10">
     
     
       
-        <title>Slot: relationship_to_participant - BioData Catalyst Harmonized Model</title>
+        <title>Enum: FamilyRelationshipEnum - BioData Catalyst Harmonized Model</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-relationship_to_participant" class="md-skip">
+        <a href="#enum-familyrelationshipenum" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: relationship_to_participant
+              Enum: FamilyRelationshipEnum
             
           </span>
         </div>
@@ -256,15 +256,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#applicable-classes" class="md-nav__link">
-    Applicable Classes
+  <a href="#permissible-values" class="md-nav__link">
+    Permissible Values
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    Properties
+  <a href="#slots" class="md-nav__link">
+    Slots
   </a>
   
 </li>
@@ -310,38 +310,77 @@
                 
                   
 
-  <a href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/edit/master/docs/relationship_to_participant.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/edit/master/docs/FamilyRelationshipEnum.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="slot-relationship_to_participant">Slot: relationship_to_participant</h1>
-<p><em>A value indicating the relationship between the Participant to which the Condition is attributed and the individual who had the reported Condition.  If the Condition is affecting the participant themselves, then 'Self' is the appropriate relationship.  If the Condition is affecting a family member (e.g. a parent of the Participant) then an appropriate relationship should be provided (e.g. 'Parent')</em></p>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/relationship_to_participant">bdchm:relationship_to_participant</a></p>
-<!-- no inheritance hierarchy -->
-
-<h2 id="applicable-classes">Applicable Classes</h2>
+<h1 id="enum-familyrelationshipenum">Enum: FamilyRelationshipEnum</h1>
+<p><em>Values describing the relationship between an individual and family members.</em></p>
+<p>URI: <a href="./">FamilyRelationshipEnum</a></p>
+<h2 id="permissible-values">Permissible Values</h2>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ONESELF</td>
+<td>None</td>
+<td>A relation to one's self</td>
+</tr>
+<tr>
+<td>NATURAL_PARENT</td>
+<td>SNOMED:13646006</td>
+<td>A relation to a natural parent (mother or father) when otherwise not specifie...</td>
+</tr>
+<tr>
+<td>NATURAL_FATHER</td>
+<td>SNOMED:9947008</td>
+<td>A relation to a natural father</td>
+</tr>
+<tr>
+<td>NATURAL_MOTHER</td>
+<td>SNOMED:65656005</td>
+<td>A relation to a natural mother</td>
+</tr>
+<tr>
+<td>NATURAL_SIBLING</td>
+<td>SNOMED:82101005</td>
+<td>A relation to a natural sibling (sister or brother) when otherwise not specif...</td>
+</tr>
+<tr>
+<td>NATURAL_BROTHER</td>
+<td>SNOMED:60614009</td>
+<td>A relation to a natural brother</td>
+</tr>
+<tr>
+<td>NATURAL_SISTER</td>
+<td>SNOMED:73678001</td>
+<td>A relation to a natural sister</td>
+</tr>
+</tbody>
+</table>
+<h2 id="slots">Slots</h2>
 <table>
 <thead>
 <tr>
 <th>Name</th>
 <th>Description</th>
-<th>Modifies Slot</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="../Condition/">Condition</a></td>
-<td>Conditions are records of a Person suggesting the presence of a disease or me...</td>
-<td>no</td>
+<td><a href="../relationship_to_participant/">relationship_to_participant</a></td>
+<td>A value indicating the relationship between the Participant to which the Cond...</td>
 </tr>
 </tbody>
 </table>
-<h2 id="properties">Properties</h2>
-<ul>
-<li>Range: <a href="../FamilyRelationshipEnum/">FamilyRelationshipEnum</a></li>
-</ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
@@ -350,19 +389,40 @@
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: relationship_to_participant
-description: A value indicating the relationship between the Participant to which
-  the Condition is attributed and the individual who had the reported Condition.  If
-  the Condition is affecting the participant themselves, then 'Self' is the appropriate
-  relationship.  If the Condition is affecting a family member (e.g. a parent of the
-  Participant) then an appropriate relationship should be provided (e.g. 'Parent')
+<pre><code class="language-yaml">name: FamilyRelationshipEnum
+description: Values describing the relationship between an individual and family members.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 rank: 1000
-alias: relationship_to_participant
-owner: Condition
-domain_of:
-- Condition
-range: FamilyRelationshipEnum
+permissible_values:
+  ONESELF:
+    text: ONESELF
+    description: A relation to one's self.
+  NATURAL_PARENT:
+    text: NATURAL_PARENT
+    description: A relation to a natural parent (mother or father) when otherwise
+      not specified.
+    meaning: SNOMED:13646006
+  NATURAL_FATHER:
+    text: NATURAL_FATHER
+    description: A relation to a natural father.
+    meaning: SNOMED:9947008
+  NATURAL_MOTHER:
+    text: NATURAL_MOTHER
+    description: A relation to a natural mother.
+    meaning: SNOMED:65656005
+  NATURAL_SIBLING:
+    text: NATURAL_SIBLING
+    description: A relation to a natural sibling (sister or brother) when otherwise
+      not specified.
+    meaning: SNOMED:82101005
+  NATURAL_BROTHER:
+    text: NATURAL_BROTHER
+    description: A relation to a natural brother.
+    meaning: SNOMED:60614009
+  NATURAL_SISTER:
+    text: NATURAL_SISTER
+    description: A relation to a natural sister.
+    meaning: SNOMED:73678001
 
 </code></pre>
 

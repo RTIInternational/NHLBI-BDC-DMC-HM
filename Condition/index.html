@@ -240,6 +240,8 @@
 
       Condition : relationship_to_participant
 
+          Condition --&gt; FamilyRelationshipEnum : relationship_to_participant
+
 
 </div>
 <h2 id="inheritance">Inheritance</h2>
@@ -304,7 +306,7 @@
 </tr>
 <tr>
 <td><a href="../relationship_to_participant/">relationship_to_participant</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>0..1 <br/> <a href="../FamilyRelationshipEnum/">FamilyRelationshipEnum</a></td>
 <td>A value indicating the relationship between the Participant to which the Cond...</td>
 <td>direct</td>
 </tr>
@@ -421,7 +423,7 @@ attributes:
       'Parent')
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    range: string
+    range: FamilyRelationshipEnum
   associated_participant:
     name: associated_participant
     description: A reference to the Participant to which the Condition is attributed.
@@ -528,7 +530,7 @@ attributes:
     owner: Condition
     domain_of:
     - Condition
-    range: string
+    range: FamilyRelationshipEnum
   associated_participant:
     name: associated_participant
     description: A reference to the Participant to which the Condition is attributed.
