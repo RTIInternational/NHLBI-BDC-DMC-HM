@@ -8,14 +8,14 @@
     -- Output
 
 * [human-readable-harmonized-variable-documentation/](human-readable-harmonized-variable-documentation/)
-  * [topmed-variable-documentation.md](human-readable-harmonized-variable-documentation/topmed-variable-documentation.md)
+  * [TopMED variable documentation](human-readable-harmonized-variable-documentation/generated-doc-pages/README.md)
 
 * [merged-TOPMed-harmonized-data-file](merged-TOPMed-harmonized-data-file/)
 
 
 ### External resources
 
-* [copies-of-certain-files-from-gdrive/](copies-of-source-files/)
-* [harmonized-variable-documentation](harmonized-variable-documentation)
+* [copies-of-external-source-files](copies-of-source-files/)
+* [harmonized-variable-documentation](../../../topmed-dcc-harmonized-phenotypes/harmonized-variable-documentation)
   * Symbolic link to local clone of [UW-GAC/topmed-dcc-harmonized-phenotypes](https://github.com/UW-GAC/topmed-dcc-harmonized-phenotypes/tree/master/harmonized-variable-documentation).
     Clone that repo in the same directory as this repo, and the symlink should work.

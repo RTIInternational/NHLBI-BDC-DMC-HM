@@ -9,8 +9,8 @@ def extract_phv(text):
 
 
 # Read the CSVs
-dbgap_vars = pd.read_csv('dbgap_variables_priority_cohorts.csv')
-raw_to_harm = pd.read_csv('raw-to-harmonized-topmed-vars.csv')
+dbgap_vars = pd.read_csv('../copies-of-external-source-files/dbgap_variables_priority_cohorts.csv')
+raw_to_harm = pd.read_csv('../map-topmed-raw-to-harmonized/raw-to-harmonized-topmed-vars.csv')
 
 # Extract PHV numbers from the 'Variable accession' column
 dbgap_vars['phv_number'] = dbgap_vars['Variable accession'].apply(extract_phv)
@@ -20,10 +20,10 @@ raw_to_harm['phv_number'] = raw_to_harm['raw'].apply(extract_phv)
 
 # Verify uniqueness of PHV numbers in both dataframes
 if len(dbgap_vars['phv_number'].unique()) != len(dbgap_vars['phv_number']):
-    print("Warning: Duplicate PHV numbers found in dbgap_variables_priority_cohorts.csv")
+    print("Warning: Duplicate PHV numbers found in ../copies-of-external-source-files/dbgap_variables_priority_cohorts.csv")
 
 # if len(raw_to_harm['phv_number'].unique()) != len(raw_to_harm['phv_number']):
-#     print("Warning: Duplicate PHV numbers found in raw-to-harmonized-topmed-vars.csv")
+#     print("Warning: Duplicate PHV numbers found in ../map-topmed-raw-to-harmonized/raw-to-harmonized-topmed-vars.csv")
 
 # Merge dataframes on PHV number
 merged_df = pd.merge( raw_to_harm,

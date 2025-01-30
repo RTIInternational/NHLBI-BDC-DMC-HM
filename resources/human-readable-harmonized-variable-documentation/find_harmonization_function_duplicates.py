@@ -101,7 +101,7 @@ def analyze_functions(functions_data, duplicate_groups):
 
 
 def main():
-    input_dir = "harmonized-variable-source-documentation"
+    input_dir = "../../../topmed-dcc-harmonized-phenotypes/harmonized-variable-documentation"
 
     # Get functions and analyze
     functions_data, duplicate_groups = get_harmonization_functions(input_dir)

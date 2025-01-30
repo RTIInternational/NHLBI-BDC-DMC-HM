@@ -278,7 +278,7 @@ def generate_markdown(root_dir, output_dir, output_index):
 
 
 def main():
-    input_dir = "harmonized-variable-source-documentation"
+    input_dir = "../../../topmed-dcc-harmonized-phenotypes/harmonized-variable-documentation"
     output_index = "README.md"
     output_dir = "generated-doc-pages"
 
