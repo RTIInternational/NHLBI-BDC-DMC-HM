@@ -29,7 +29,7 @@ if len(dbgap_vars['phv_number'].unique()) != len(dbgap_vars['phv_number']):
 merged_df = pd.merge( raw_to_harm,
                       dbgap_vars,
                       on='phv_number',
-                      how='inner')
+                      how='left')
 
 # Rename columns as needed (you can modify these names)
 column_mapping = {

@@ -15,7 +15,7 @@
 
 ### External resources
 
-* [copies-of-certain-files-from-gdrive/](copies-of-certain-files-from-gdrive/)
+* [copies-of-certain-files-from-gdrive/](copies-of-source-files/)
 * [harmonized-variable-documentation](harmonized-variable-documentation)
   * Symbolic link to local clone of [UW-GAC/topmed-dcc-harmonized-phenotypes](https://github.com/UW-GAC/topmed-dcc-harmonized-phenotypes/tree/master/harmonized-variable-documentation).
     Clone that repo in the same directory as this repo, and the symlink should work.

@@ -97,6 +97,7 @@ classes:
       member_of_research_study:
         range: ResearchStudy
         description: A reference to the Study(s) of which this Participant is a member
+        comments: Shouldn't this be multivalued?
       age_at_enrollment:
         range: integer
         description: The age in days when the Participant enrolled on the ResearchStudy
@@ -1430,6 +1431,8 @@ slots:
     range: Observation
     description: A set of one or more observations.
     multivalued: true
+  category:
+    range: string
 
 
 enums:
