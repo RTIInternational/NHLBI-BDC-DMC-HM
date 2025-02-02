@@ -7,16 +7,15 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/Specimen/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.5.3, mkdocs-material-8.5.10" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.1" name="generator"/>
 <title>Class: Specimen - BioData Catalyst Harmonized Model</title>
-<link href="../assets/stylesheets/main.975780f9.min.css" rel="stylesheet"/>
-<link href="../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/main.a40c8224.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 </head>
-<body data-md-color-accent="None" data-md-color-primary="None" data-md-color-scheme="default" dir="ltr">
+<body dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
@@ -27,13 +26,13 @@
 </div>
 <div data-md-component="announce">
 </div>
-<header class="md-header" data-md-component="header">
+<header class="md-header md-header--shadow" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
 <a aria-label="BioData Catalyst Harmonized Model" class="md-header__button md-logo" data-md-component="logo" href=".." title="BioData Catalyst Harmonized Model">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
 </label>
 <div class="md-header__title" data-md-component="header-title">
 <div class="md-header__ellipsis">
@@ -51,8 +50,9 @@
 </div>
 </div>
 </div>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
 <label class="md-header__button md-icon" for="__search">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
 </label>
 <div class="md-search" data-md-component="search" role="dialog">
 <label class="md-search__overlay" for="__search"></label>
@@ -60,22 +60,22 @@
 <form class="md-search__form" name="search">
 <input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
 <label class="md-search__icon md-icon" for="__search">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
 </label>
 <nav aria-label="Search" class="md-search__options">
 <button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
 </button>
 </nav>
 </form>
 <div class="md-search__output">
-<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
 <div class="md-search-result" data-md-component="search-result">
 <div class="md-search-result__meta">
             Initializing search
           </div>
-<ol class="md-search-result__list"></ol>
+<ol class="md-search-result__list" role="presentation"></ol>
 </div>
 </div>
 </div>
@@ -84,7 +84,7 @@
 <div class="md-header__source">
 <a class="md-source" data-md-component="source" href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HM" title="Go to repository">
 <div class="md-source__icon md-icon">
-<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
 </div>
 <div class="md-source__repository">
     GitHub
@@ -102,14 +102,14 @@
 <nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
 <a aria-label="BioData Catalyst Harmonized Model" class="md-nav__button md-logo" data-md-component="logo" href=".." title="BioData Catalyst Harmonized Model">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 </a>
     BioData Catalyst Harmonized Model
   </label>
 <div class="md-nav__source">
 <a class="md-source" data-md-component="source" href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HM" title="Go to repository">
 <div class="md-source__icon md-icon">
-<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
 </div>
 <div class="md-source__repository">
     GitHub
@@ -119,13 +119,19 @@
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="..">
-        Index
-      </a>
+<span class="md-ellipsis">
+    Index
+    
+  </span>
+</a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../about/">
-        About
-      </a>
+<span class="md-ellipsis">
+    About
+    
+  </span>
+</a>
 </li>
 </ul>
 </nav>
@@ -143,53 +149,71 @@
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#inheritance">
-    Inheritance
-  </a>
+<span class="md-ellipsis">
+      Inheritance
+    </span>
+</a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#slots">
-    Slots
-  </a>
+<span class="md-ellipsis">
+      Slots
+    </span>
+</a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#usages">
-    Usages
-  </a>
+<span class="md-ellipsis">
+      Usages
+    </span>
+</a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#identifier-and-mapping-information">
-    Identifier and Mapping Information
-  </a>
+<span class="md-ellipsis">
+      Identifier and Mapping Information
+    </span>
+</a>
 <nav aria-label="Identifier and Mapping Information" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#schema-source">
-    Schema Source
-  </a>
+<span class="md-ellipsis">
+      Schema Source
+    </span>
+</a>
 </li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#mappings">
-    Mappings
-  </a>
+<span class="md-ellipsis">
+      Mappings
+    </span>
+</a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#linkml-source">
-    LinkML Source
-  </a>
+<span class="md-ellipsis">
+      LinkML Source
+    </span>
+</a>
 <nav aria-label="LinkML Source" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#direct">
-    Direct
-  </a>
+<span class="md-ellipsis">
+      Direct
+    </span>
+</a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#induced">
-    Induced
-  </a>
+<span class="md-ellipsis">
+      Induced
+    </span>
+</a>
 </li>
 </ul>
 </nav>
@@ -201,39 +225,63 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/edit/master/docs/Specimen.md" title="Edit this page">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
-</a>
 <h1 id="class-specimen">Class: Specimen</h1>
 <p><em>Any material taken as a sample from a biological entity (living or dead), or from a physical object or the environment. Specimens are usually collected as an example of their kind, often for use in some investigation.</em></p>
 <p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/Specimen">bdchm:Specimen</a></p>
 <div class="mermaid"> classDiagram
     class Specimen
+    click Specimen href "../Specimen"
       Entity &lt;|-- Specimen
+        click Entity href "../Entity"
 
       Specimen : analyte_type
 
-          Specimen --&gt; AnalyteTypeEnum : analyte_type
+
+
+
+    Specimen --&gt; "0..1" AnalyteTypeEnum : analyte_type
+    click AnalyteTypeEnum href "../AnalyteTypeEnum"
+
 
       Specimen : cellular_composition_type
 
       Specimen : contained_in
 
-          Specimen --&gt; SpecimenContainer : contained_in
+
+
+
+    Specimen --&gt; "0..1" SpecimenContainer : contained_in
+    click SpecimenContainer href "../SpecimenContainer"
+
 
       Specimen : creation_activity
 
-          Specimen --&gt; SpecimenCreationActivity : creation_activity
+
+
+
+    Specimen --&gt; "0..1" SpecimenCreationActivity : creation_activity
+    click SpecimenCreationActivity href "../SpecimenCreationActivity"
+
 
       Specimen : derived_product
 
-          Specimen --&gt; BiologicProduct : derived_product
+
+
+
+    Specimen --&gt; "*" BiologicProduct : derived_product
+    click BiologicProduct href "../BiologicProduct"
+
 
       Specimen : description
 
       Specimen : dimensional_measures
 
-          Specimen --&gt; DimensionalObservationSet : dimensional_measures
+
+
+
+    Specimen --&gt; "0..1" DimensionalObservationSet : dimensional_measures
+    click DimensionalObservationSet href "../DimensionalObservationSet"
+
 
       Specimen : id
 
@@ -241,47 +289,102 @@
 
       Specimen : parent_specimen
 
-          Specimen --&gt; Specimen : parent_specimen
+
+
+
+    Specimen --&gt; "*" Specimen : parent_specimen
+    click Specimen href "../Specimen"
+
 
       Specimen : processing_activity
 
-          Specimen --&gt; SpecimenProcessingActivity : processing_activity
+
+
+
+    Specimen --&gt; "*" SpecimenProcessingActivity : processing_activity
+    click SpecimenProcessingActivity href "../SpecimenProcessingActivity"
+
 
       Specimen : quality_measure
 
-          Specimen --&gt; SpecimenQualityObservation : quality_measure
+
+
+
+    Specimen --&gt; "*" SpecimenQualityObservation : quality_measure
+    click SpecimenQualityObservation href "../SpecimenQualityObservation"
+
 
       Specimen : quantity_measure
 
-          Specimen --&gt; SpecimenQuantityObservation : quantity_measure
+
+
+
+    Specimen --&gt; "*" SpecimenQuantityObservation : quantity_measure
+    click SpecimenQuantityObservation href "../SpecimenQuantityObservation"
+
 
       Specimen : related_document
 
-          Specimen --&gt; Document : related_document
+
+
+
+    Specimen --&gt; "*" Document : related_document
+    click Document href "../Document"
+
 
       Specimen : section_location
 
-          Specimen --&gt; SectionLocationEnum : section_location
+
+
+
+    Specimen --&gt; "0..1" SectionLocationEnum : section_location
+    click SectionLocationEnum href "../SectionLocationEnum"
+
 
       Specimen : source_material_type
 
-          Specimen --&gt; SourceMaterialTypeEnum : source_material_type
+
+
+
+    Specimen --&gt; "0..1" SourceMaterialTypeEnum : source_material_type
+    click SourceMaterialTypeEnum href "../SourceMaterialTypeEnum"
+
 
       Specimen : source_participant
 
-          Specimen --&gt; Participant : source_participant
+
+
+
+    Specimen --&gt; "0..1" Participant : source_participant
+    click Participant href "../Participant"
+
 
       Specimen : specimen_type
 
-          Specimen --&gt; SpecimenTypeEnum : specimen_type
+
+
+
+    Specimen --&gt; "0..1" SpecimenTypeEnum : specimen_type
+    click SpecimenTypeEnum href "../SpecimenTypeEnum"
+
 
       Specimen : storage_activity
 
-          Specimen --&gt; SpecimenStorageActivity : storage_activity
+
+
+
+    Specimen --&gt; "*" SpecimenStorageActivity : storage_activity
+    click SpecimenStorageActivity href "../SpecimenStorageActivity"
+
 
       Specimen : transport_activity
 
-          Specimen --&gt; SpecimenTransportActivity : transport_activity
+
+
+
+    Specimen --&gt; "*" SpecimenTransportActivity : transport_activity
+    click SpecimenTransportActivity href "../SpecimenTransportActivity"
+
 
 
 </div>
@@ -305,7 +408,7 @@
 <tbody>
 <tr>
 <td><a href="../identity/">identity</a></td>
-<td>0..* <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
+<td>* <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
 <td>A 'business' identifier or accession number for the entity, typically as prov...</td>
 <td>direct</td>
 </tr>
@@ -335,7 +438,7 @@
 </tr>
 <tr>
 <td><a href="../parent_specimen/">parent_specimen</a></td>
-<td>0..* <br/> <a href="./">Specimen</a></td>
+<td>* <br/> <a href="./">Specimen</a></td>
 <td>An existing specimen from which the specimen of interest was directly derived...</td>
 <td>direct</td>
 </tr>
@@ -353,19 +456,19 @@
 </tr>
 <tr>
 <td><a href="../processing_activity/">processing_activity</a></td>
-<td>0..* <br/> <a href="../SpecimenProcessingActivity/">SpecimenProcessingActivity</a></td>
+<td>* <br/> <a href="../SpecimenProcessingActivity/">SpecimenProcessingActivity</a></td>
 <td>An activity that modifies the physical structure, composition, or state of a ...</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../storage_activity/">storage_activity</a></td>
-<td>0..* <br/> <a href="../SpecimenStorageActivity/">SpecimenStorageActivity</a></td>
+<td>* <br/> <a href="../SpecimenStorageActivity/">SpecimenStorageActivity</a></td>
 <td>An activity that results in the storage or maintenance of a specimen in a par...</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../transport_activity/">transport_activity</a></td>
-<td>0..* <br/> <a href="../SpecimenTransportActivity/">SpecimenTransportActivity</a></td>
+<td>* <br/> <a href="../SpecimenTransportActivity/">SpecimenTransportActivity</a></td>
 <td>An activity through which the specimen is transported between locations</td>
 <td>direct</td>
 </tr>
@@ -383,13 +486,13 @@
 </tr>
 <tr>
 <td><a href="../quantity_measure/">quantity_measure</a></td>
-<td>0..* <br/> <a href="../SpecimenQuantityObservation/">SpecimenQuantityObservation</a></td>
+<td>* <br/> <a href="../SpecimenQuantityObservation/">SpecimenQuantityObservation</a></td>
 <td>An observation related to the present quantity of a specimen - e</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../quality_measure/">quality_measure</a></td>
-<td>0..* <br/> <a href="../SpecimenQualityObservation/">SpecimenQualityObservation</a></td>
+<td>* <br/> <a href="../SpecimenQualityObservation/">SpecimenQualityObservation</a></td>
 <td>An observation about characteristics of a specimen that are indicative of its...</td>
 <td>direct</td>
 </tr>
@@ -401,7 +504,7 @@
 </tr>
 <tr>
 <td><a href="../related_document/">related_document</a></td>
-<td>0..* <br/> <a href="../Document/">Document</a></td>
+<td>* <br/> <a href="../Document/">Document</a></td>
 <td>A reference to an external document that is about or related to the specimen ...</td>
 <td>direct</td>
 </tr>
@@ -413,13 +516,13 @@
 </tr>
 <tr>
 <td><a href="../derived_product/">derived_product</a></td>
-<td>0..* <br/> <a href="../BiologicProduct/">BiologicProduct</a></td>
+<td>* <br/> <a href="../BiologicProduct/">BiologicProduct</a></td>
 <td>A 'living' biologically active product that was derived from the specimen (e</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../id/">id</a></td>
-<td>1..1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
+<td>1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
 <td>The 'logical' identifier of the entity within the system of record</td>
 <td><a href="../Entity/">Entity</a></td>
 </tr>
@@ -486,9 +589,17 @@ attributes:
     description: A free text field to capture additional information or explanation
       about the specimen.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
-    multivalued: false
+    domain_of:
+    - Participant
+    - ResearchStudy
+    - Questionnaire
+    - File
+    - Document
+    - Specimen
+    - BiologicProduct
     range: string
     required: false
+    multivalued: false
   specimen_type:
     name: specimen_type
     description: The high-level type of the specimen, based on its derivation provenance
@@ -503,9 +614,11 @@ attributes:
     rank: 1000
     values_from:
     - crdch:enum_CRDCH_Specimen_specimen_type
-    multivalued: false
+    domain_of:
+    - Specimen
     range: SpecimenTypeEnum
     required: false
+    multivalued: false
   analyte_type:
     name: analyte_type
     description: For specimens of type 'analyte' (or an 'aliquot' derived from an
@@ -522,9 +635,11 @@ attributes:
     rank: 1000
     values_from:
     - crdch:enum_CRDCH_Specimen_analyte_type
-    multivalued: false
+    domain_of:
+    - Specimen
     range: AnalyteTypeEnum
     required: false
+    multivalued: false
   source_material_type:
     name: source_material_type
     description: The general kind of material from which the specimen was derived.
@@ -542,9 +657,11 @@ attributes:
     - value: Xenograft Tissue
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: false
+    domain_of:
+    - Specimen
     range: SourceMaterialTypeEnum
     required: false
+    multivalued: false
   parent_specimen:
     name: parent_specimen
     description: An existing specimen from which the specimen of interest was directly
@@ -554,9 +671,11 @@ attributes:
       0..m to account for specimens derived from pooling of multiple specimens.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: true
+    domain_of:
+    - Specimen
     range: Specimen
     required: false
+    multivalued: true
     inlined: true
     inlined_as_list: true
   source_participant:
@@ -565,9 +684,11 @@ attributes:
       derived.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: false
+    domain_of:
+    - Specimen
     range: Participant
     required: false
+    multivalued: false
   creation_activity:
     name: creation_activity
     description: The activity through which a specimen was created, by removing material
@@ -578,9 +699,11 @@ attributes:
       new specimens from it.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: false
+    domain_of:
+    - Specimen
     range: SpecimenCreationActivity
     required: false
+    multivalued: false
   processing_activity:
     name: processing_activity
     description: An activity that modifies the physical structure, composition, or
@@ -592,9 +715,11 @@ attributes:
       it is considered a SpeciemnCreationActivity.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: true
+    domain_of:
+    - Specimen
     range: SpecimenProcessingActivity
     required: false
+    multivalued: true
   storage_activity:
     name: storage_activity
     description: An activity that results in the storage or maintenance of a specimen
@@ -605,9 +730,11 @@ attributes:
       under different conditions
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: true
+    domain_of:
+    - Specimen
     range: SpecimenStorageActivity
     required: false
+    multivalued: true
   transport_activity:
     name: transport_activity
     description: An activity through which the specimen is transported between locations.
@@ -616,9 +743,11 @@ attributes:
       may undergo many separate transport processes at different periods of time.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: true
+    domain_of:
+    - Specimen
     range: SpecimenTransportActivity
     required: false
+    multivalued: true
   contained_in:
     name: contained_in
     description: A physical container in which a specimen is presently held or attached
@@ -630,9 +759,11 @@ attributes:
       "parent_container" attribute of the Container entity.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: false
+    domain_of:
+    - Specimen
     range: SpecimenContainer
     required: false
+    multivalued: false
   dimensional_measures:
     name: dimensional_measures
     description: Observations about the current physical dimensions of an object (e.g.
@@ -643,9 +774,11 @@ attributes:
       type of observation made is captured as data in the Observation object.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: false
+    domain_of:
+    - Specimen
     range: DimensionalObservationSet
     required: false
+    multivalued: false
   quantity_measure:
     name: quantity_measure
     description: An observation related to the present quantity of a specimen - e.g.
@@ -656,9 +789,11 @@ attributes:
       type of observation made is captured as data in the Observation object.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: true
+    domain_of:
+    - Specimen
     range: SpecimenQuantityObservation
     required: false
+    multivalued: true
   quality_measure:
     name: quality_measure
     description: An observation about characteristics of a specimen that are indicative
@@ -669,9 +804,11 @@ attributes:
       type of observation made is captured as data in the Observation object.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: true
+    domain_of:
+    - Specimen
     range: SpecimenQualityObservation
     required: false
+    multivalued: true
   cellular_composition_type:
     name: cellular_composition_type
     description: A term describing the type of cell or cellular material comprising
@@ -691,9 +828,11 @@ attributes:
     rank: 1000
     values_from:
     - crdch:enum_CRDCH_Specimen_cellular_composition_type
-    multivalued: false
+    domain_of:
+    - Specimen
     range: string
     required: false
+    multivalued: false
   related_document:
     name: related_document
     description: A reference to an external document that is about or related to the
@@ -702,9 +841,11 @@ attributes:
       collected)
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: true
+    domain_of:
+    - Specimen
     range: Document
     required: false
+    multivalued: true
   section_location:
     name: section_location
     description: The location in a parent specimen from which a section/portion was
@@ -719,18 +860,22 @@ attributes:
     rank: 1000
     values_from:
     - crdch:enum_CRDCH_Specimen_section_location
-    multivalued: false
+    domain_of:
+    - Specimen
     range: SectionLocationEnum
     required: false
+    multivalued: false
   derived_product:
     name: derived_product
     description: A 'living' biologically active product that was derived from the
       specimen (e.g. a cell culture, tissue culture, or organoid)
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: true
+    domain_of:
+    - Specimen
     range: BiologicProduct
     required: false
+    multivalued: true
     inlined: true
     inlined_as_list: true
 
@@ -750,7 +895,6 @@ attributes:
     description: A free text field to capture additional information or explanation
       about the specimen.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
-    multivalued: false
     alias: description
     owner: Specimen
     domain_of:
@@ -763,6 +907,7 @@ attributes:
     - BiologicProduct
     range: string
     required: false
+    multivalued: false
   specimen_type:
     name: specimen_type
     description: The high-level type of the specimen, based on its derivation provenance
@@ -777,13 +922,13 @@ attributes:
     rank: 1000
     values_from:
     - crdch:enum_CRDCH_Specimen_specimen_type
-    multivalued: false
     alias: specimen_type
     owner: Specimen
     domain_of:
     - Specimen
     range: SpecimenTypeEnum
     required: false
+    multivalued: false
   analyte_type:
     name: analyte_type
     description: For specimens of type 'analyte' (or an 'aliquot' derived from an
@@ -800,13 +945,13 @@ attributes:
     rank: 1000
     values_from:
     - crdch:enum_CRDCH_Specimen_analyte_type
-    multivalued: false
     alias: analyte_type
     owner: Specimen
     domain_of:
     - Specimen
     range: AnalyteTypeEnum
     required: false
+    multivalued: false
   source_material_type:
     name: source_material_type
     description: The general kind of material from which the specimen was derived.
@@ -824,13 +969,13 @@ attributes:
     - value: Xenograft Tissue
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: false
     alias: source_material_type
     owner: Specimen
     domain_of:
     - Specimen
     range: SourceMaterialTypeEnum
     required: false
+    multivalued: false
   parent_specimen:
     name: parent_specimen
     description: An existing specimen from which the specimen of interest was directly
@@ -840,13 +985,13 @@ attributes:
       0..m to account for specimens derived from pooling of multiple specimens.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: true
     alias: parent_specimen
     owner: Specimen
     domain_of:
     - Specimen
     range: Specimen
     required: false
+    multivalued: true
     inlined: true
     inlined_as_list: true
   source_participant:
@@ -855,13 +1000,13 @@ attributes:
       derived.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: false
     alias: source_participant
     owner: Specimen
     domain_of:
     - Specimen
     range: Participant
     required: false
+    multivalued: false
   creation_activity:
     name: creation_activity
     description: The activity through which a specimen was created, by removing material
@@ -872,13 +1017,13 @@ attributes:
       new specimens from it.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: false
     alias: creation_activity
     owner: Specimen
     domain_of:
     - Specimen
     range: SpecimenCreationActivity
     required: false
+    multivalued: false
   processing_activity:
     name: processing_activity
     description: An activity that modifies the physical structure, composition, or
@@ -890,13 +1035,13 @@ attributes:
       it is considered a SpeciemnCreationActivity.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: true
     alias: processing_activity
     owner: Specimen
     domain_of:
     - Specimen
     range: SpecimenProcessingActivity
     required: false
+    multivalued: true
   storage_activity:
     name: storage_activity
     description: An activity that results in the storage or maintenance of a specimen
@@ -907,13 +1052,13 @@ attributes:
       under different conditions
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: true
     alias: storage_activity
     owner: Specimen
     domain_of:
     - Specimen
     range: SpecimenStorageActivity
     required: false
+    multivalued: true
   transport_activity:
     name: transport_activity
     description: An activity through which the specimen is transported between locations.
@@ -922,13 +1067,13 @@ attributes:
       may undergo many separate transport processes at different periods of time.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: true
     alias: transport_activity
     owner: Specimen
     domain_of:
     - Specimen
     range: SpecimenTransportActivity
     required: false
+    multivalued: true
   contained_in:
     name: contained_in
     description: A physical container in which a specimen is presently held or attached
@@ -940,13 +1085,13 @@ attributes:
       "parent_container" attribute of the Container entity.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: false
     alias: contained_in
     owner: Specimen
     domain_of:
     - Specimen
     range: SpecimenContainer
     required: false
+    multivalued: false
   dimensional_measures:
     name: dimensional_measures
     description: Observations about the current physical dimensions of an object (e.g.
@@ -957,13 +1102,13 @@ attributes:
       type of observation made is captured as data in the Observation object.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: false
     alias: dimensional_measures
     owner: Specimen
     domain_of:
     - Specimen
     range: DimensionalObservationSet
     required: false
+    multivalued: false
   quantity_measure:
     name: quantity_measure
     description: An observation related to the present quantity of a specimen - e.g.
@@ -974,13 +1119,13 @@ attributes:
       type of observation made is captured as data in the Observation object.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: true
     alias: quantity_measure
     owner: Specimen
     domain_of:
     - Specimen
     range: SpecimenQuantityObservation
     required: false
+    multivalued: true
   quality_measure:
     name: quality_measure
     description: An observation about characteristics of a specimen that are indicative
@@ -991,13 +1136,13 @@ attributes:
       type of observation made is captured as data in the Observation object.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: true
     alias: quality_measure
     owner: Specimen
     domain_of:
     - Specimen
     range: SpecimenQualityObservation
     required: false
+    multivalued: true
   cellular_composition_type:
     name: cellular_composition_type
     description: A term describing the type of cell or cellular material comprising
@@ -1017,13 +1162,13 @@ attributes:
     rank: 1000
     values_from:
     - crdch:enum_CRDCH_Specimen_cellular_composition_type
-    multivalued: false
     alias: cellular_composition_type
     owner: Specimen
     domain_of:
     - Specimen
     range: string
     required: false
+    multivalued: false
   related_document:
     name: related_document
     description: A reference to an external document that is about or related to the
@@ -1032,13 +1177,13 @@ attributes:
       collected)
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: true
     alias: related_document
     owner: Specimen
     domain_of:
     - Specimen
     range: Document
     required: false
+    multivalued: true
   section_location:
     name: section_location
     description: The location in a parent specimen from which a section/portion was
@@ -1053,26 +1198,26 @@ attributes:
     rank: 1000
     values_from:
     - crdch:enum_CRDCH_Specimen_section_location
-    multivalued: false
     alias: section_location
     owner: Specimen
     domain_of:
     - Specimen
     range: SectionLocationEnum
     required: false
+    multivalued: false
   derived_product:
     name: derived_product
     description: A 'living' biologically active product that was derived from the
       specimen (e.g. a cell culture, tissue culture, or organoid)
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    multivalued: true
     alias: derived_product
     owner: Specimen
     domain_of:
     - Specimen
     range: BiologicProduct
     required: false
+    multivalued: true
     inlined: true
     inlined_as_list: true
   identity:
@@ -1089,7 +1234,6 @@ attributes:
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     slot_uri: schema:identifier
-    multivalued: true
     alias: identity
     owner: Specimen
     domain_of:
@@ -1108,6 +1252,7 @@ attributes:
     - Specimen
     - BiologicProduct
     range: uriorcurie
+    multivalued: true
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The
@@ -1135,7 +1280,8 @@ attributes:
 </details>
 </article>
 </div>
-<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
 </div>
 </main>
 <footer class="md-footer">
@@ -1156,7 +1302,8 @@ attributes:
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
-<script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
-<script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script><script>mermaid.initialize({});</script></body>
+<script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../assets/javascripts/bundle.5090c770.min.js"></script>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+mermaid.initialize({});</script></body>
 </html>
