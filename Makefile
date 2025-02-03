@@ -27,6 +27,7 @@ SHEET_MODULE = personinfo_enums
 SHEET_ID = $(LINKML_SCHEMA_GOOGLE_SHEET_ID)
 SHEET_TABS = $(LINKML_SCHEMA_GOOGLE_SHEET_TABS)
 SHEET_MODULE_PATH = $(SOURCE_SCHEMA_DIR)/$(SHEET_MODULE).yaml
+TEMPLATEDIR = $(SRC)/doc-templates
 
 CONFIG_YAML =
 ifdef LINKML_GENERATORS_CONFIG_YAML
@@ -195,7 +196,8 @@ $(DOCDIR):
 
 gendoc: $(DOCDIR)
 	cp -rf $(SRC)/docs/* $(DOCDIR) ; \
-	$(RUN) gen-doc ${GEN_DOC_ARGS} -d $(DOCDIR) $(SOURCE_SCHEMA_PATH)
+	$(RUN) gen-doc -d $(DOCDIR) --template-directory $(TEMPLATEDIR)  $(SOURCE_SCHEMA_PATH)
+#	$(RUN) gen-doc ${GEN_DOC_ARGS} -d $(DOCDIR) --template-directory $(TEMPLATEDIR) $(SOURCE_SCHEMA_PATH)
 
 testdoc: gendoc serve
 

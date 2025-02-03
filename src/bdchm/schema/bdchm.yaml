@@ -97,10 +97,9 @@ classes:
       member_of_research_study:
         range: ResearchStudy
         description: A reference to the Study(s) of which this Participant is a member
-        comments: Shouldn't this be multivalued?
-      age_at_enrollment:
+      age_at_index:
         range: integer
-        description: The age in days when the Participant enrolled on the ResearchStudy
+        description: The age in days of the Participant at the index_timepoint
         unit:
           ucum_code: d
       index_timepoint:
@@ -431,8 +430,11 @@ classes:
       condition_status:
         range: ConditionStatusEnum
         description: A value indicating whether the medical condition described in this record is present, absent, or unknown for this individual patient.
+      condition_severity:
+        range: ConditionSeverityEnum
+        description: A subjective assessment of the severity of the condition
       relationship_to_participant:
-        range: string
+        range: FamilyRelationshipEnum
         description: A value indicating the relationship between the Participant to which the Condition is attributed and the individual who had the reported Condition.  If the Condition is affecting the participant themselves, then 'Self' is the appropriate relationship.  If the Condition is affecting a family member (e.g. a parent of the Participant) then an appropriate relationship should be provided (e.g. 'Parent')
       associated_participant:
         range: Participant
@@ -1204,15 +1206,19 @@ classes:
     - QuantityMeasure may be implemented as an Observation-like object that will let us capture any type of measure of the amount of some substance (e.g. "weight", "volume"), with distinct timestamps and methods associated.  It could be implemented as a "simple" observation (one measurement per instance, where the "code" fields is bound to a value set describing the different types of quantity measures allowed -  e.g. "weight", "volume", "concentration"),  or as "composite" observation (multiple measurements possible in a single instance, each captured as a component defined to hold a specific type of quantity measure - e.g.  "weight", "volume", "concentration").  The number of different quantity measures we anticipate needed to support, and the potential for data sparseness, are factors that determine whether a simple or composite Observation would be most appropriate.
     attributes:
       value_decimal:
-        description: An amount, in the given units (if specified)
+        description: A decimal amount, in the given units (if specified)
         multivalued: false
         range: decimal
         required: false
+      value_integer:
+        description: An integer amount, in the given units (if specified)
+        multivalued: false
+        range: integer
+        required: false
       value_concept:
         description: A coded value representing a quantity (e.g. "Adjacent (< or = 2cm)")
-        values_from: crdch:enum_CRDCH_Quantity_value_codeable_concept
         multivalued: false
-        range: string
+        range: BaseEnum
         required: false
       unit:
         description: A coded or free text (in the .text field) representation of the unit.
@@ -1431,8 +1437,6 @@ slots:
     range: Observation
     description: A set of one or more observations.
     multivalued: true
-  category:
-    range: string
 
 
 enums:
@@ -1892,6 +1896,8 @@ enums:
         description: The condition is/was present in the patient.
       ABSENT:
         description: The condition is/was absent in the patient.
+      HISTORICAL:
+        description: The condition is/was present in the patient historically.
       UNKNOWN:
         description: The condition is/was of unknown status in the patient.
 
@@ -3236,3 +3242,41 @@ enums:
       UTILITY_INSECURITY:
         text: UTILITY_INSECURITY
         description:
+  
+  ConditionSeverityEnum:
+    description: Social Determinants of Health domains as defined in the Gravity Project
+    permissible_values:
+      MILD:
+        text: MILD
+        meaning: SNOMED:255604002
+      MODERATE:
+        text: MODERATE
+        meaning: SNOMED:6736007
+      SEVERE:
+        text: SEVERE
+        meaning: SNOMED:24484000
+
+  FamilyRelationshipEnum:
+    description: Values describing the relationship between an individual and family members.
+    permissible_values:
+      ONESELF:
+        description: A relation to one's self.
+      NATURAL_PARENT:
+        description: A relation to a natural parent (mother or father) when otherwise not specified.
+        meaning: SNOMED:13646006
+      NATURAL_FATHER:
+        description: A relation to a natural father.
+        meaning: SNOMED:9947008
+      NATURAL_MOTHER:
+        description: A relation to a natural mother.
+        meaning: SNOMED:65656005
+      NATURAL_SIBLING:
+        description: A relation to a natural sibling (sister or brother) when otherwise not specified.
+        meaning: SNOMED:82101005
+      NATURAL_BROTHER:
+        description: A relation to a natural brother.
+        meaning: SNOMED:60614009
+      NATURAL_SISTER:
+        description: A relation to a natural sister.
+        meaning: SNOMED:73678001
+  
