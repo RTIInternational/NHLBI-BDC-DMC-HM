@@ -48,8 +48,16 @@
 <a id="angina_prior_1-chs"></a>
   * ### atherosclerosis_events_prior/angina_prior_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
     * 2 component_study_variables
-      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
-      * _phs000287.v6.pht001452.v1.phv00100504.v1_. dbGap Name: **ANBLMOD**, Desc: **ANG MODIFIED BL STAT**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_
+        * dbGap name: **AGEBL**
+        * dbGap desc: **CALCULATED AGE AT BASELINE**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000287.v6.pht001452.v1.phv00100504.v1_
+        * dbGap name: **ANBLMOD**
+        * dbGap desc: **ANG MODIFIED BL STAT**
+        * dbGap table: **BASEBOTH**
+         * PIC-SURE permissible values: Incident, Prevalent
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -64,8 +72,12 @@
 <a id="angina_prior_1-copdgene"></a>
   * ### atherosclerosis_events_prior/angina_prior_1 -- **COPDGene **:
     * 2 component_study_variables
-      * _phs000179.v5.pht002239.v4.phv00159608.v4_. No dbGap metadata available.
-      * _phs000179.v5.pht002239.v4.phv00159836.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159608.v4_
+        * No dbGap metadata available
+         * PIC-SURE permissible values: No, Yes
+      * _phs000179.v5.pht002239.v4.phv00159836.v4_
+        * No dbGap metadata available
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -88,11 +100,31 @@
 <a id="angina_prior_1-fhs"></a>
   * ### atherosclerosis_events_prior/angina_prior_1 -- **FHS Framingham Cohort**:
     * 5 component_study_variables
-      * _phs000007.v30.pht000309.v13.phv00036469.v12_. dbGap Name: **EVENT**, Desc: **Event Number**, Table: **vr_soe_2020_a_1340s**.
-      * _phs000007.v30.pht000309.v13.phv00036471.v12_. dbGap Name: **DATE**, Desc: **Date of Event**, Table: **vr_soe_2020_a_1340s**.
-      * _phs000007.v30.pht003099.v5.phv00177930.v5_. dbGap Name: **age1**, Desc: **Age at Exam 1**, Table: **vr_dates_2019_a_1175s**.
-      * _phs000007.v30.pht003316.v7.phv00190817.v7_. dbGap Name: **cvd**, Desc: **Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
-      * _phs000007.v30.pht003316.v7.phv00190823.v7_. dbGap Name: **cvddate**, Desc: **Date of Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
+      * _phs000007.v30.pht000309.v13.phv00036469.v12_
+        * dbGap name: **EVENT**
+        * dbGap desc: **Event Number**
+        * dbGap table: **vr_soe_2020_a_1340s**
+         * PIC-SURE permissible values: ABI (Atherothrombotic Infarction of brain), AP, first episode only, Acute MI by autopsy, previously coded as 1 or 2, CHF, hospitalized, CHF, not hospitalized, diagnosed on basis of on exam or MD notes, CHF, questionable CHF at exam 1, CI, definite by both history and ECG, CVA, definite CVA, type unknown, Cerebral embolism, Death, CHD sudden, within 1 hour, Death, CHD, 1-23 hours, non sudden, Death, CHD, 24-47 hours, non sudden, Death, CHD, 48 hours or more, non sudden, Death, CVA, Death, Cancer, Death, cause unknown, Death, other CVD, Death, other causes, Definite CVA at exam 1, but questionable type, IC, first episode only, IC, questionable IC at exam 1, Intracerebral hemorrhage, MI recognized, with diagnostic ECG, MI recognized, without diagnostic ECG, with autopsy evidence, new event (see also code 9), MI recognized, without diagnostic ECG, with enzymes and history, MI unrecognized, not silent, MI unrecognized, silent, Other CVA, Questionable CVA at exam 1, Questionable MI at exam 1, Subarachnoid hemorrhage, TIA (Transient Ischemic Attack) only the 1st TIA is coded, TIA with positive imaging
+      * _phs000007.v30.pht000309.v13.phv00036471.v12_
+        * dbGap name: **DATE**
+        * dbGap desc: **Date of Event**
+        * dbGap table: **vr_soe_2020_a_1340s**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000007.v30.pht003099.v5.phv00177930.v5_
+        * dbGap name: **age1**
+        * dbGap desc: **Age at Exam 1**
+        * dbGap table: **vr_dates_2019_a_1175s**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000007.v30.pht003316.v7.phv00190817.v7_
+        * dbGap name: **cvd**
+        * dbGap desc: **Cardiovascular Disease (CVD) status**
+        * dbGap table: **vr_survcvd_2019_a_1334s**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000007.v30.pht003316.v7.phv00190823.v7_
+        * dbGap name: **cvddate**
+        * dbGap desc: **Date of Cardiovascular Disease (CVD) status**
+        * dbGap table: **vr_survcvd_2019_a_1334s**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -180,7 +212,11 @@
 <a id="angina_prior_1-mesa"></a>
   * ### atherosclerosis_events_prior/angina_prior_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 1 component_study_variables
-      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_
+        * dbGap name: **age1c**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_Exam1Main**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -193,10 +229,26 @@
 <a id="angina_prior_1-whi"></a>
   * ### atherosclerosis_events_prior/angina_prior_1 -- **WHI Women's Health Initiative**:
     * 4 component_study_variables
-      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
-      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
-      * _phs000200.v11.pht000999.v6.phv00078507.v6_. dbGap Name: **F30DAYS**, Desc: **F30 Days since randomization/enrollment**, Table: **f30_rel2**.
-      * _phs000200.v11.pht000999.v6.phv00078560.v6_. dbGap Name: **ANGINA**, Desc: **Angina ever**, Table: **f30_rel2**.
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_
+        * dbGap name: **F2DAYS**
+        * dbGap desc: **F2 Days since randomization**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age at screening**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000999.v6.phv00078507.v6_
+        * dbGap name: **F30DAYS**
+        * dbGap desc: **F30 Days since randomization/enrollment**
+        * dbGap table: **f30_rel2**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000999.v6.phv00078560.v6_
+        * dbGap name: **ANGINA**
+        * dbGap desc: **Angina ever**
+        * dbGap table: **f30_rel2**
+         * PIC-SURE permissible values: No, Yes
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -256,10 +308,26 @@
 <a id="cabg_prior_1-aric"></a>
   * ### atherosclerosis_events_prior/cabg_prior_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 4 component_study_variables
-      * _phs000280.v5.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
-      * _phs000280.v5.pht004143.v2.phv00208845.v1_. dbGap Name: **PHEA06**, Desc: **[Invasive procedures]. Have you ever had surgery on your heart, or on the arteries of your neck or legs, excluding surgery for vericose veins? Q6 [Physical Examination Form. PHEA. Visit 1]**, Table: **PHEA**.
-      * _phs000280.v5.pht004143.v2.phv00208846.v1_. dbGap Name: **PHEA07A**, Desc: **[Invasive procedures]. Have you ever had surgery on your heart, or on the arteries of your neck or legs, excluding surgery for vericose veins? Coronary bypass. Q7a [Physical Examination Form. PHEA. Visit 1]**, Table: **PHEA**.
-      * _phs000280.v5.pht004143.v2.phv00208853.v1_. dbGap Name: **PHEA08**, Desc: **[Invasive procedures]. Have you ever had a balloon angioplasty on the arteries of your heart or legs? Q8 [Physical Examination Form. PHEA. Visit 1]**, Table: **PHEA**.
+      * _phs000280.v5.pht004063.v2.phv00204712.v1_
+        * dbGap name: **V1AGE01**
+        * dbGap desc: **Age at visit 1 [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204712_ not found in PIC-SURE data dictionary
+      * _phs000280.v5.pht004143.v2.phv00208845.v1_
+        * dbGap name: **PHEA06**
+        * dbGap desc: **[Invasive procedures]. Have you ever had surgery on your heart, or on the arteries of your neck or legs, excluding surgery for vericose veins? Q6 [Physical Examination Form. PHEA. Visit 1]**
+        * dbGap table: **PHEA**
+         * varId _phv00208845_ not found in PIC-SURE data dictionary
+      * _phs000280.v5.pht004143.v2.phv00208846.v1_
+        * dbGap name: **PHEA07A**
+        * dbGap desc: **[Invasive procedures]. Have you ever had surgery on your heart, or on the arteries of your neck or legs, excluding surgery for vericose veins? Coronary bypass. Q7a [Physical Examination Form. PHEA. Visit 1]**
+        * dbGap table: **PHEA**
+         * varId _phv00208846_ not found in PIC-SURE data dictionary
+      * _phs000280.v5.pht004143.v2.phv00208853.v1_
+        * dbGap name: **PHEA08**
+        * dbGap desc: **[Invasive procedures]. Have you ever had a balloon angioplasty on the arteries of your heart or legs? Q8 [Physical Examination Form. PHEA. Visit 1]**
+        * dbGap table: **PHEA**
+         * varId _phv00208853_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -302,8 +370,16 @@
 <a id="cabg_prior_1-chs"></a>
   * ### atherosclerosis_events_prior/cabg_prior_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
     * 2 component_study_variables
-      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
-      * _phs000287.v6.pht001464.v1.phv00100785.v1_. dbGap Name: **BPSSURBL**, Desc: **CORONARY BYPASS SURGERY AT BL**, Table: **EVENT_SUMMARY**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_
+        * dbGap name: **AGEBL**
+        * dbGap desc: **CALCULATED AGE AT BASELINE**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000287.v6.pht001464.v1.phv00100785.v1_
+        * dbGap name: **BPSSURBL**
+        * dbGap desc: **CORONARY BYPASS SURGERY AT BL**
+        * dbGap table: **EVENT_SUMMARY**
+         * PIC-SURE permissible values: NO, YES
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -321,8 +397,12 @@
 <a id="cabg_prior_1-copdgene"></a>
   * ### atherosclerosis_events_prior/cabg_prior_1 -- **COPDGene **:
     * 2 component_study_variables
-      * _phs000179.v5.pht002239.v4.phv00159631.v4_. No dbGap metadata available.
-      * _phs000179.v5.pht002239.v4.phv00159836.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159631.v4_
+        * No dbGap metadata available
+         * PIC-SURE permissible values: No, Yes
+      * _phs000179.v5.pht002239.v4.phv00159836.v4_
+        * No dbGap metadata available
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -337,11 +417,31 @@
 <a id="cabg_prior_1-fhs"></a>
   * ### atherosclerosis_events_prior/cabg_prior_1 -- **FHS Framingham Cohort**:
     * 5 component_study_variables
-      * _phs000007.v30.pht000389.v10.phv00054697.v8_. dbGap Name: **procdate**, Desc: **Date of cardiovascular procedure**, Table: **vr_cvdproc_2020_a_1313s**.
-      * _phs000007.v30.pht000389.v10.phv00163410.v7_. dbGap Name: **vessel**, Desc: **Coronary Artery Bypass Graft (CABG) - Number of vessels bypassed - PROCNUM = 141**, Table: **vr_cvdproc_2020_a_1313s**.
-      * _phs000007.v30.pht003099.v5.phv00177930.v5_. dbGap Name: **age1**, Desc: **Age at Exam 1**, Table: **vr_dates_2019_a_1175s**.
-      * _phs000007.v30.pht003316.v7.phv00190817.v7_. dbGap Name: **cvd**, Desc: **Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
-      * _phs000007.v30.pht003316.v7.phv00190823.v7_. dbGap Name: **cvddate**, Desc: **Date of Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
+      * _phs000007.v30.pht000389.v10.phv00054697.v8_
+        * dbGap name: **procdate**
+        * dbGap desc: **Date of cardiovascular procedure**
+        * dbGap table: **vr_cvdproc_2020_a_1313s**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000007.v30.pht000389.v10.phv00163410.v7_
+        * dbGap name: **vessel**
+        * dbGap desc: **Coronary Artery Bypass Graft (CABG) - Number of vessels bypassed - PROCNUM = 141**
+        * dbGap table: **vr_cvdproc_2020_a_1313s**
+         * PIC-SURE permissible values: CABG Procedure not done, Five (5) vessels bypassed, Four (4) vessels bypassed, One (1) vessel bypassed, Seven (7) vessels bypassed, Six (6) vessels bypassed, Three (3) vessels bypassed, Two (2) vessels bypassed
+      * _phs000007.v30.pht003099.v5.phv00177930.v5_
+        * dbGap name: **age1**
+        * dbGap desc: **Age at Exam 1**
+        * dbGap table: **vr_dates_2019_a_1175s**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000007.v30.pht003316.v7.phv00190817.v7_
+        * dbGap name: **cvd**
+        * dbGap desc: **Cardiovascular Disease (CVD) status**
+        * dbGap table: **vr_survcvd_2019_a_1334s**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000007.v30.pht003316.v7.phv00190823.v7_
+        * dbGap name: **cvddate**
+        * dbGap desc: **Date of Cardiovascular Disease (CVD) status**
+        * dbGap table: **vr_survcvd_2019_a_1334s**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -417,12 +517,34 @@
 <a id="cabg_prior_1-jhs"></a>
   * ### atherosclerosis_events_prior/cabg_prior_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 6 component_study_variables
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
-      * _phs000286.v5.pht001963.v1.phv00127727.v1_. dbGap Name: **MHXA51**, Desc: **Q51. F. Invasive procedures. Ever had surgery on heart, arteries of neck or legs? [Visit 1] [Medical History Form, MHX]**, Table: **mhxa**.
-      * _phs000286.v5.pht001963.v1.phv00127728.v1_. dbGap Name: **MHXA52A**, Desc: **Q52a. F. Invasive procedures. Did you have a coronary bypass? [Visit 1] [Medical History Form, MHX]**, Table: **mhxa**.
-      * _phs000286.v5.pht001963.v1.phv00127731.v1_. dbGap Name: **MHXA52C**, Desc: **Q52c. F. Invasive procedures. Have you had carotid endarterectomy? [Visit 1] [Medical History Form, MHX]**, Table: **mhxa**.
-      * _phs000286.v5.pht001963.v1.phv00127733.v1_. dbGap Name: **MHXA52E1**, Desc: **Q52e1. F. Invasive procedures. Had other revascularization or bypass? [Visit 1] [Medical History Form, MHX]**, Table: **mhxa**.
-      * _phs000286.v5.pht001963.v1.phv00127740.v1_. dbGap Name: **MHXA55A**, Desc: **Q55a. F. Invasive procedures. Ever had heart catheterization? [Visit 1] [Medical History Form, MHX]**, Table: **mhxa**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001963.v1.phv00127727.v1_
+        * dbGap name: **MHXA51**
+        * dbGap desc: **Q51. F. Invasive procedures. Ever had surgery on heart, arteries of neck or legs? [Visit 1] [Medical History Form, MHX]**
+        * dbGap table: **mhxa**
+         * varId _phv00127727_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001963.v1.phv00127728.v1_
+        * dbGap name: **MHXA52A**
+        * dbGap desc: **Q52a. F. Invasive procedures. Did you have a coronary bypass? [Visit 1] [Medical History Form, MHX]**
+        * dbGap table: **mhxa**
+         * varId _phv00127728_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001963.v1.phv00127731.v1_
+        * dbGap name: **MHXA52C**
+        * dbGap desc: **Q52c. F. Invasive procedures. Have you had carotid endarterectomy? [Visit 1] [Medical History Form, MHX]**
+        * dbGap table: **mhxa**
+         * varId _phv00127731_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001963.v1.phv00127733.v1_
+        * dbGap name: **MHXA52E1**
+        * dbGap desc: **Q52e1. F. Invasive procedures. Had other revascularization or bypass? [Visit 1] [Medical History Form, MHX]**
+        * dbGap table: **mhxa**
+         * varId _phv00127733_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001963.v1.phv00127740.v1_
+        * dbGap name: **MHXA55A**
+        * dbGap desc: **Q55a. F. Invasive procedures. Ever had heart catheterization? [Visit 1] [Medical History Form, MHX]**
+        * dbGap table: **mhxa**
+         * varId _phv00127740_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -463,7 +585,11 @@
 <a id="cabg_prior_1-mesa"></a>
   * ### atherosclerosis_events_prior/cabg_prior_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 1 component_study_variables
-      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_
+        * dbGap name: **age1c**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_Exam1Main**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -476,10 +602,26 @@
 <a id="cabg_prior_1-whi"></a>
   * ### atherosclerosis_events_prior/cabg_prior_1 -- **WHI Women's Health Initiative**:
     * 4 component_study_variables
-      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
-      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
-      * _phs000200.v11.pht000999.v6.phv00078507.v6_. dbGap Name: **F30DAYS**, Desc: **F30 Days since randomization/enrollment**, Table: **f30_rel2**.
-      * _phs000200.v11.pht000999.v6.phv00078535.v6_. dbGap Name: **CABG**, Desc: **Coronary bypass surgery ever**, Table: **f30_rel2**.
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_
+        * dbGap name: **F2DAYS**
+        * dbGap desc: **F2 Days since randomization**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age at screening**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000999.v6.phv00078507.v6_
+        * dbGap name: **F30DAYS**
+        * dbGap desc: **F30 Days since randomization/enrollment**
+        * dbGap table: **f30_rel2**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000999.v6.phv00078535.v6_
+        * dbGap name: **CABG**
+        * dbGap desc: **Coronary bypass surgery ever**
+        * dbGap table: **f30_rel2**
+         * PIC-SURE permissible values: No, Yes
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -532,10 +674,26 @@
 <a id="coronary_angioplasty_prior_1-aric"></a>
   * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 4 component_study_variables
-      * _phs000280.v5.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
-      * _phs000280.v5.pht004143.v2.phv00208845.v1_. dbGap Name: **PHEA06**, Desc: **[Invasive procedures]. Have you ever had surgery on your heart, or on the arteries of your neck or legs, excluding surgery for vericose veins? Q6 [Physical Examination Form. PHEA. Visit 1]**, Table: **PHEA**.
-      * _phs000280.v5.pht004143.v2.phv00208853.v1_. dbGap Name: **PHEA08**, Desc: **[Invasive procedures]. Have you ever had a balloon angioplasty on the arteries of your heart or legs? Q8 [Physical Examination Form. PHEA. Visit 1]**, Table: **PHEA**.
-      * _phs000280.v5.pht004143.v2.phv00208854.v1_. dbGap Name: **PHEA09A**, Desc: **[Invasive procedures]. [Probe for type of procedure]. Angioplasty of coronary artery(ies)? Q9a [Physical Examination Form. PHEA. Visit 1]**, Table: **PHEA**.
+      * _phs000280.v5.pht004063.v2.phv00204712.v1_
+        * dbGap name: **V1AGE01**
+        * dbGap desc: **Age at visit 1 [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204712_ not found in PIC-SURE data dictionary
+      * _phs000280.v5.pht004143.v2.phv00208845.v1_
+        * dbGap name: **PHEA06**
+        * dbGap desc: **[Invasive procedures]. Have you ever had surgery on your heart, or on the arteries of your neck or legs, excluding surgery for vericose veins? Q6 [Physical Examination Form. PHEA. Visit 1]**
+        * dbGap table: **PHEA**
+         * varId _phv00208845_ not found in PIC-SURE data dictionary
+      * _phs000280.v5.pht004143.v2.phv00208853.v1_
+        * dbGap name: **PHEA08**
+        * dbGap desc: **[Invasive procedures]. Have you ever had a balloon angioplasty on the arteries of your heart or legs? Q8 [Physical Examination Form. PHEA. Visit 1]**
+        * dbGap table: **PHEA**
+         * varId _phv00208853_ not found in PIC-SURE data dictionary
+      * _phs000280.v5.pht004143.v2.phv00208854.v1_
+        * dbGap name: **PHEA09A**
+        * dbGap desc: **[Invasive procedures]. [Probe for type of procedure]. Angioplasty of coronary artery(ies)? Q9a [Physical Examination Form. PHEA. Visit 1]**
+        * dbGap table: **PHEA**
+         * varId _phv00208854_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -575,8 +733,16 @@
 <a id="coronary_angioplasty_prior_1-chs"></a>
   * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
     * 2 component_study_variables
-      * _phs000287.v6.pht001452.v1.phv00100322.v1_. dbGap Name: **CORART**, Desc: **CORONARY ARTERY ANGIOPLASTY**, Table: **BASEBOTH**.
-      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100322.v1_
+        * dbGap name: **CORART**
+        * dbGap desc: **CORONARY ARTERY ANGIOPLASTY**
+        * dbGap table: **BASEBOTH**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_
+        * dbGap name: **AGEBL**
+        * dbGap desc: **CALCULATED AGE AT BASELINE**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -592,8 +758,12 @@
 <a id="coronary_angioplasty_prior_1-copdgene"></a>
   * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **COPDGene **:
     * 2 component_study_variables
-      * _phs000179.v5.pht002239.v4.phv00159632.v4_. No dbGap metadata available.
-      * _phs000179.v5.pht002239.v4.phv00159836.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159632.v4_
+        * No dbGap metadata available
+         * PIC-SURE permissible values: No, Yes
+      * _phs000179.v5.pht002239.v4.phv00159836.v4_
+        * No dbGap metadata available
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -609,12 +779,34 @@
 <a id="coronary_angioplasty_prior_1-jhs"></a>
   * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 6 component_study_variables
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
-      * _phs000286.v5.pht001963.v1.phv00127727.v1_. dbGap Name: **MHXA51**, Desc: **Q51. F. Invasive procedures. Ever had surgery on heart, arteries of neck or legs? [Visit 1] [Medical History Form, MHX]**, Table: **mhxa**.
-      * _phs000286.v5.pht001963.v1.phv00127731.v1_. dbGap Name: **MHXA52C**, Desc: **Q52c. F. Invasive procedures. Have you had carotid endarterectomy? [Visit 1] [Medical History Form, MHX]**, Table: **mhxa**.
-      * _phs000286.v5.pht001963.v1.phv00127733.v1_. dbGap Name: **MHXA52E1**, Desc: **Q52e1. F. Invasive procedures. Had other revascularization or bypass? [Visit 1] [Medical History Form, MHX]**, Table: **mhxa**.
-      * _phs000286.v5.pht001963.v1.phv00127737.v1_. dbGap Name: **MHXA54A**, Desc: **Q54a. F. Invasive procedures. Ever had angioplasty of coronary arteries? [Visit 1] [Medical History Form, MHX]**, Table: **mhxa**.
-      * _phs000286.v5.pht001963.v1.phv00127740.v1_. dbGap Name: **MHXA55A**, Desc: **Q55a. F. Invasive procedures. Ever had heart catheterization? [Visit 1] [Medical History Form, MHX]**, Table: **mhxa**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001963.v1.phv00127727.v1_
+        * dbGap name: **MHXA51**
+        * dbGap desc: **Q51. F. Invasive procedures. Ever had surgery on heart, arteries of neck or legs? [Visit 1] [Medical History Form, MHX]**
+        * dbGap table: **mhxa**
+         * varId _phv00127727_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001963.v1.phv00127731.v1_
+        * dbGap name: **MHXA52C**
+        * dbGap desc: **Q52c. F. Invasive procedures. Have you had carotid endarterectomy? [Visit 1] [Medical History Form, MHX]**
+        * dbGap table: **mhxa**
+         * varId _phv00127731_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001963.v1.phv00127733.v1_
+        * dbGap name: **MHXA52E1**
+        * dbGap desc: **Q52e1. F. Invasive procedures. Had other revascularization or bypass? [Visit 1] [Medical History Form, MHX]**
+        * dbGap table: **mhxa**
+         * varId _phv00127733_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001963.v1.phv00127737.v1_
+        * dbGap name: **MHXA54A**
+        * dbGap desc: **Q54a. F. Invasive procedures. Ever had angioplasty of coronary arteries? [Visit 1] [Medical History Form, MHX]**
+        * dbGap table: **mhxa**
+         * varId _phv00127737_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001963.v1.phv00127740.v1_
+        * dbGap name: **MHXA55A**
+        * dbGap desc: **Q55a. F. Invasive procedures. Ever had heart catheterization? [Visit 1] [Medical History Form, MHX]**
+        * dbGap table: **mhxa**
+         * varId _phv00127740_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -651,7 +843,11 @@
 <a id="coronary_angioplasty_prior_1-mesa"></a>
   * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 1 component_study_variables
-      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_
+        * dbGap name: **age1c**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_Exam1Main**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -664,10 +860,26 @@
 <a id="coronary_angioplasty_prior_1-whi"></a>
   * ### atherosclerosis_events_prior/coronary_angioplasty_prior_1 -- **WHI Women's Health Initiative**:
     * 4 component_study_variables
-      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
-      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
-      * _phs000200.v11.pht000999.v6.phv00078507.v6_. dbGap Name: **F30DAYS**, Desc: **F30 Days since randomization/enrollment**, Table: **f30_rel2**.
-      * _phs000200.v11.pht000999.v6.phv00078536.v6_. dbGap Name: **PTCA**, Desc: **Angioplasty of coronary arteries ever**, Table: **f30_rel2**.
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_
+        * dbGap name: **F2DAYS**
+        * dbGap desc: **F2 Days since randomization**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age at screening**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000999.v6.phv00078507.v6_
+        * dbGap name: **F30DAYS**
+        * dbGap desc: **F30 Days since randomization/enrollment**
+        * dbGap table: **f30_rel2**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000999.v6.phv00078536.v6_
+        * dbGap name: **PTCA**
+        * dbGap desc: **Angioplasty of coronary arteries ever**
+        * dbGap table: **f30_rel2**
+         * PIC-SURE permissible values: No, Yes
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -748,8 +960,16 @@
 <a id="mi_prior_1-aric"></a>
   * ### atherosclerosis_events_prior/mi_prior_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 2 component_study_variables
-      * _phs000280.v5.pht004063.v2.phv00204705.v1_. dbGap Name: **PREVMI05**, Desc: **Prevalent MI from ECG or medical history [Cohort. Visit 1]**, Table: **DERIVE13**.
-      * _phs000280.v5.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v5.pht004063.v2.phv00204705.v1_
+        * dbGap name: **PREVMI05**
+        * dbGap desc: **Prevalent MI from ECG or medical history [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204705_ not found in PIC-SURE data dictionary
+      * _phs000280.v5.pht004063.v2.phv00204712.v1_
+        * dbGap name: **V1AGE01**
+        * dbGap desc: **Age at visit 1 [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204712_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -777,8 +997,16 @@
 <a id="mi_prior_1-chs"></a>
   * ### atherosclerosis_events_prior/mi_prior_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
     * 2 component_study_variables
-      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
-      * _phs000287.v6.pht001452.v1.phv00100508.v1_. dbGap Name: **MIBLMOD**, Desc: **MI MODIFIED BL STAT**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_
+        * dbGap name: **AGEBL**
+        * dbGap desc: **CALCULATED AGE AT BASELINE**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000287.v6.pht001452.v1.phv00100508.v1_
+        * dbGap name: **MIBLMOD**
+        * dbGap desc: **MI MODIFIED BL STAT**
+        * dbGap table: **BASEBOTH**
+         * PIC-SURE permissible values: Incident, Prevalent
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -794,8 +1022,12 @@
 <a id="mi_prior_1-copdgene"></a>
   * ### atherosclerosis_events_prior/mi_prior_1 -- **COPDGene **:
     * 2 component_study_variables
-      * _phs000179.v5.pht002239.v4.phv00159615.v4_. No dbGap metadata available.
-      * _phs000179.v5.pht002239.v4.phv00159836.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159615.v4_
+        * No dbGap metadata available
+         * PIC-SURE permissible values: No, Yes
+      * _phs000179.v5.pht002239.v4.phv00159836.v4_
+        * No dbGap metadata available
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -818,11 +1050,31 @@
 <a id="mi_prior_1-fhs"></a>
   * ### atherosclerosis_events_prior/mi_prior_1 -- **FHS Framingham Cohort**:
     * 5 component_study_variables
-      * _phs000007.v30.pht000309.v13.phv00036469.v12_. dbGap Name: **EVENT**, Desc: **Event Number**, Table: **vr_soe_2020_a_1340s**.
-      * _phs000007.v30.pht000309.v13.phv00036471.v12_. dbGap Name: **DATE**, Desc: **Date of Event**, Table: **vr_soe_2020_a_1340s**.
-      * _phs000007.v30.pht003099.v5.phv00177930.v5_. dbGap Name: **age1**, Desc: **Age at Exam 1**, Table: **vr_dates_2019_a_1175s**.
-      * _phs000007.v30.pht003316.v7.phv00190817.v7_. dbGap Name: **cvd**, Desc: **Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
-      * _phs000007.v30.pht003316.v7.phv00190823.v7_. dbGap Name: **cvddate**, Desc: **Date of Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
+      * _phs000007.v30.pht000309.v13.phv00036469.v12_
+        * dbGap name: **EVENT**
+        * dbGap desc: **Event Number**
+        * dbGap table: **vr_soe_2020_a_1340s**
+         * PIC-SURE permissible values: ABI (Atherothrombotic Infarction of brain), AP, first episode only, Acute MI by autopsy, previously coded as 1 or 2, CHF, hospitalized, CHF, not hospitalized, diagnosed on basis of on exam or MD notes, CHF, questionable CHF at exam 1, CI, definite by both history and ECG, CVA, definite CVA, type unknown, Cerebral embolism, Death, CHD sudden, within 1 hour, Death, CHD, 1-23 hours, non sudden, Death, CHD, 24-47 hours, non sudden, Death, CHD, 48 hours or more, non sudden, Death, CVA, Death, Cancer, Death, cause unknown, Death, other CVD, Death, other causes, Definite CVA at exam 1, but questionable type, IC, first episode only, IC, questionable IC at exam 1, Intracerebral hemorrhage, MI recognized, with diagnostic ECG, MI recognized, without diagnostic ECG, with autopsy evidence, new event (see also code 9), MI recognized, without diagnostic ECG, with enzymes and history, MI unrecognized, not silent, MI unrecognized, silent, Other CVA, Questionable CVA at exam 1, Questionable MI at exam 1, Subarachnoid hemorrhage, TIA (Transient Ischemic Attack) only the 1st TIA is coded, TIA with positive imaging
+      * _phs000007.v30.pht000309.v13.phv00036471.v12_
+        * dbGap name: **DATE**
+        * dbGap desc: **Date of Event**
+        * dbGap table: **vr_soe_2020_a_1340s**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000007.v30.pht003099.v5.phv00177930.v5_
+        * dbGap name: **age1**
+        * dbGap desc: **Age at Exam 1**
+        * dbGap table: **vr_dates_2019_a_1175s**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000007.v30.pht003316.v7.phv00190817.v7_
+        * dbGap name: **cvd**
+        * dbGap desc: **Cardiovascular Disease (CVD) status**
+        * dbGap table: **vr_survcvd_2019_a_1334s**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000007.v30.pht003316.v7.phv00190823.v7_
+        * dbGap name: **cvddate**
+        * dbGap desc: **Date of Cardiovascular Disease (CVD) status**
+        * dbGap table: **vr_survcvd_2019_a_1334s**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -909,8 +1161,12 @@
 <a id="mi_prior_1-jhs"></a>
   * ### atherosclerosis_events_prior/mi_prior_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 2 component_study_variables
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
-      * _phs000286.v5.pht001949.v1.phv00126088.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001949.v1.phv00126088.v1_
+        * No dbGap metadata available
+         * varId _phv00126088_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -936,7 +1192,11 @@
 <a id="mi_prior_1-mesa"></a>
   * ### atherosclerosis_events_prior/mi_prior_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 1 component_study_variables
-      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_
+        * dbGap name: **age1c**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_Exam1Main**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -949,9 +1209,21 @@
 <a id="mi_prior_1-whi"></a>
   * ### atherosclerosis_events_prior/mi_prior_1 -- **WHI Women's Health Initiative**:
     * 3 component_study_variables
-      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
-      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
-      * _phs000200.v11.pht000998.v6.phv00078482.v6_. dbGap Name: **MI**, Desc: **MI ever**, Table: **f2_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_
+        * dbGap name: **F2DAYS**
+        * dbGap desc: **F2 Days since randomization**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age at screening**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000998.v6.phv00078482.v6_
+        * dbGap name: **MI**
+        * dbGap desc: **MI ever**
+        * dbGap table: **f2_rel1**
+         * PIC-SURE permissible values: No, Yes
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1012,8 +1284,16 @@
 <a id="pad_prior_1-aric"></a>
   * ### atherosclerosis_events_prior/pad_prior_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 2 component_study_variables
-      * _phs000280.v5.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
-      * _phs000280.v5.pht004063.v2.phv00204795.v1_. dbGap Name: **PAD02**, Desc: **Peripheral artery disease visit 1, definition 2 - same for both genders [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v5.pht004063.v2.phv00204712.v1_
+        * dbGap name: **V1AGE01**
+        * dbGap desc: **Age at visit 1 [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204712_ not found in PIC-SURE data dictionary
+      * _phs000280.v5.pht004063.v2.phv00204795.v1_
+        * dbGap name: **PAD02**
+        * dbGap desc: **Peripheral artery disease visit 1, definition 2 - same for both genders [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204795_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1037,10 +1317,26 @@
 <a id="pad_prior_1-chs"></a>
   * ### atherosclerosis_events_prior/pad_prior_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
     * 4 component_study_variables
-      * _phs000287.v6.pht001452.v1.phv00100330.v1_. dbGap Name: **ABTLEG**, Desc: **LEG ARTERY BYPASS**, Table: **BASEBOTH**.
-      * _phs000287.v6.pht001452.v1.phv00100333.v1_. dbGap Name: **EXTART**, Desc: **LOW EXTREM ANGIOPLASTY**, Table: **BASEBOTH**.
-      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
-      * _phs000287.v6.pht001452.v1.phv00100507.v1_. dbGap Name: **CLBLMOD**, Desc: **CLD MODIFIED BL STAT**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100330.v1_
+        * dbGap name: **ABTLEG**
+        * dbGap desc: **LEG ARTERY BYPASS**
+        * dbGap table: **BASEBOTH**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000287.v6.pht001452.v1.phv00100333.v1_
+        * dbGap name: **EXTART**
+        * dbGap desc: **LOW EXTREM ANGIOPLASTY**
+        * dbGap table: **BASEBOTH**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_
+        * dbGap name: **AGEBL**
+        * dbGap desc: **CALCULATED AGE AT BASELINE**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000287.v6.pht001452.v1.phv00100507.v1_
+        * dbGap name: **CLBLMOD**
+        * dbGap desc: **CLD MODIFIED BL STAT**
+        * dbGap table: **BASEBOTH**
+         * PIC-SURE permissible values: Incident, Prevalent
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1064,8 +1360,12 @@
 <a id="pad_prior_1-copdgene"></a>
   * ### atherosclerosis_events_prior/pad_prior_1 -- **COPDGene **:
     * 2 component_study_variables
-      * _phs000179.v5.pht002239.v4.phv00159618.v4_. No dbGap metadata available.
-      * _phs000179.v5.pht002239.v4.phv00159836.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159618.v4_
+        * No dbGap metadata available
+         * PIC-SURE permissible values: No, Yes
+      * _phs000179.v5.pht002239.v4.phv00159836.v4_
+        * No dbGap metadata available
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1088,11 +1388,31 @@
 <a id="pad_prior_1-fhs"></a>
   * ### atherosclerosis_events_prior/pad_prior_1 -- **FHS Framingham Cohort**:
     * 5 component_study_variables
-      * _phs000007.v30.pht000309.v13.phv00036469.v12_. dbGap Name: **EVENT**, Desc: **Event Number**, Table: **vr_soe_2020_a_1340s**.
-      * _phs000007.v30.pht000309.v13.phv00036471.v12_. dbGap Name: **DATE**, Desc: **Date of Event**, Table: **vr_soe_2020_a_1340s**.
-      * _phs000007.v30.pht003099.v5.phv00177930.v5_. dbGap Name: **age1**, Desc: **Age at Exam 1**, Table: **vr_dates_2019_a_1175s**.
-      * _phs000007.v30.pht003316.v7.phv00190817.v7_. dbGap Name: **cvd**, Desc: **Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
-      * _phs000007.v30.pht003316.v7.phv00190823.v7_. dbGap Name: **cvddate**, Desc: **Date of Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
+      * _phs000007.v30.pht000309.v13.phv00036469.v12_
+        * dbGap name: **EVENT**
+        * dbGap desc: **Event Number**
+        * dbGap table: **vr_soe_2020_a_1340s**
+         * PIC-SURE permissible values: ABI (Atherothrombotic Infarction of brain), AP, first episode only, Acute MI by autopsy, previously coded as 1 or 2, CHF, hospitalized, CHF, not hospitalized, diagnosed on basis of on exam or MD notes, CHF, questionable CHF at exam 1, CI, definite by both history and ECG, CVA, definite CVA, type unknown, Cerebral embolism, Death, CHD sudden, within 1 hour, Death, CHD, 1-23 hours, non sudden, Death, CHD, 24-47 hours, non sudden, Death, CHD, 48 hours or more, non sudden, Death, CVA, Death, Cancer, Death, cause unknown, Death, other CVD, Death, other causes, Definite CVA at exam 1, but questionable type, IC, first episode only, IC, questionable IC at exam 1, Intracerebral hemorrhage, MI recognized, with diagnostic ECG, MI recognized, without diagnostic ECG, with autopsy evidence, new event (see also code 9), MI recognized, without diagnostic ECG, with enzymes and history, MI unrecognized, not silent, MI unrecognized, silent, Other CVA, Questionable CVA at exam 1, Questionable MI at exam 1, Subarachnoid hemorrhage, TIA (Transient Ischemic Attack) only the 1st TIA is coded, TIA with positive imaging
+      * _phs000007.v30.pht000309.v13.phv00036471.v12_
+        * dbGap name: **DATE**
+        * dbGap desc: **Date of Event**
+        * dbGap table: **vr_soe_2020_a_1340s**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000007.v30.pht003099.v5.phv00177930.v5_
+        * dbGap name: **age1**
+        * dbGap desc: **Age at Exam 1**
+        * dbGap table: **vr_dates_2019_a_1175s**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000007.v30.pht003316.v7.phv00190817.v7_
+        * dbGap name: **cvd**
+        * dbGap desc: **Cardiovascular Disease (CVD) status**
+        * dbGap table: **vr_survcvd_2019_a_1334s**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000007.v30.pht003316.v7.phv00190823.v7_
+        * dbGap name: **cvddate**
+        * dbGap desc: **Date of Cardiovascular Disease (CVD) status**
+        * dbGap table: **vr_survcvd_2019_a_1334s**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1180,13 +1500,39 @@
 <a id="pad_prior_1-jhs"></a>
   * ### atherosclerosis_events_prior/pad_prior_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 7 component_study_variables
-      * _phs000286.v5.pht001921.v1.phv00124562.v1_. dbGap Name: **ABBA7**, Desc: **7. B. Measures. First brachial Doppler blood pressure (mm Hg) [Visit 1] [Ankle-Brachial Blood Pressure]**, Table: **abba**.
-      * _phs000286.v5.pht001921.v1.phv00124563.v1_. dbGap Name: **ABBA8**, Desc: **8. B. Measures. First right posterior tibia blood pressure (mm Hg) [Visit 1] [Ankle-Brachial Blood Pressure]**, Table: **abba**.
-      * _phs000286.v5.pht001921.v1.phv00124564.v1_. dbGap Name: **ABBA9**, Desc: **9. B. Measures. First left posterior tibia blood pressure (mm Hg) [Visit 1] [Ankle-Brachial Blood Pressure]**, Table: **abba**.
-      * _phs000286.v5.pht001921.v1.phv00124565.v1_. dbGap Name: **ABBA10**, Desc: **10. B. Measures. Second left posterior tibia [Visit 1] [Ankle-Brachial Blood Pressure]**, Table: **abba**.
-      * _phs000286.v5.pht001921.v1.phv00124566.v1_. dbGap Name: **ABBA11**, Desc: **11. B. Measures. Second right posterior tibia blood pressure (mm Hg) [Visit 1] [Ankle-Brachial Blood Pressure]**, Table: **abba**.
-      * _phs000286.v5.pht001921.v1.phv00124567.v1_. dbGap Name: **ABBA12**, Desc: **12. B. Measures. Second brachial blood pressure (mm Hg) [Visit 1] [Ankle-Brachial Blood Pressure]**, Table: **abba**.
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001921.v1.phv00124562.v1_
+        * dbGap name: **ABBA7**
+        * dbGap desc: **7. B. Measures. First brachial Doppler blood pressure (mm Hg) [Visit 1] [Ankle-Brachial Blood Pressure]**
+        * dbGap table: **abba**
+         * varId _phv00124562_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001921.v1.phv00124563.v1_
+        * dbGap name: **ABBA8**
+        * dbGap desc: **8. B. Measures. First right posterior tibia blood pressure (mm Hg) [Visit 1] [Ankle-Brachial Blood Pressure]**
+        * dbGap table: **abba**
+         * varId _phv00124563_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001921.v1.phv00124564.v1_
+        * dbGap name: **ABBA9**
+        * dbGap desc: **9. B. Measures. First left posterior tibia blood pressure (mm Hg) [Visit 1] [Ankle-Brachial Blood Pressure]**
+        * dbGap table: **abba**
+         * varId _phv00124564_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001921.v1.phv00124565.v1_
+        * dbGap name: **ABBA10**
+        * dbGap desc: **10. B. Measures. Second left posterior tibia [Visit 1] [Ankle-Brachial Blood Pressure]**
+        * dbGap table: **abba**
+         * varId _phv00124565_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001921.v1.phv00124566.v1_
+        * dbGap name: **ABBA11**
+        * dbGap desc: **11. B. Measures. Second right posterior tibia blood pressure (mm Hg) [Visit 1] [Ankle-Brachial Blood Pressure]**
+        * dbGap table: **abba**
+         * varId _phv00124566_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001921.v1.phv00124567.v1_
+        * dbGap name: **ABBA12**
+        * dbGap desc: **12. B. Measures. Second brachial blood pressure (mm Hg) [Visit 1] [Ankle-Brachial Blood Pressure]**
+        * dbGap table: **abba**
+         * varId _phv00124567_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1235,7 +1581,11 @@
 <a id="pad_prior_1-mesa"></a>
   * ### atherosclerosis_events_prior/pad_prior_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 1 component_study_variables
-      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_
+        * dbGap name: **age1c**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_Exam1Main**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1248,10 +1598,26 @@
 <a id="pad_prior_1-whi"></a>
   * ### atherosclerosis_events_prior/pad_prior_1 -- **WHI Women's Health Initiative**:
     * 4 component_study_variables
-      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
-      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
-      * _phs000200.v11.pht000999.v6.phv00078507.v6_. dbGap Name: **F30DAYS**, Desc: **F30 Days since randomization/enrollment**, Table: **f30_rel2**.
-      * _phs000200.v11.pht000999.v6.phv00078562.v6_. dbGap Name: **PAD**, Desc: **Peripheral arterial disease ever**, Table: **f30_rel2**.
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_
+        * dbGap name: **F2DAYS**
+        * dbGap desc: **F2 Days since randomization**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age at screening**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000999.v6.phv00078507.v6_
+        * dbGap name: **F30DAYS**
+        * dbGap desc: **F30 Days since randomization/enrollment**
+        * dbGap table: **f30_rel2**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000999.v6.phv00078562.v6_
+        * dbGap name: **PAD**
+        * dbGap desc: **Peripheral arterial disease ever**
+        * dbGap table: **f30_rel2**
+         * PIC-SURE permissible values: No, Yes
     * **Function:**
       ```r
       harmonize <- function(phen_list){

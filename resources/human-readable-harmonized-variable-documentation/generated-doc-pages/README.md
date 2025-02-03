@@ -1,5 +1,4 @@
 # TOPMed Variable Documentation
-### [List of component variables](#component_vars)
 ## Contents
 * [atherosclerosis](atherosclerosis.md)
 * [atherosclerosis_events_incident](atherosclerosis_events_incident.md)
@@ -12,6 +11,10 @@
 * [lipids](lipids.md)
 * [sleep](sleep.md)
 * [vte](vte.md)
+
+934 of 1,110 input study variables have dbGap metadata
+
+670 of 1,110 input study variables have PIC-SURE metadata
 
 
 

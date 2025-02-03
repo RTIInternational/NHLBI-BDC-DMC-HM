@@ -35,11 +35,31 @@
 <a id="angina_incident_1-fhs"></a>
   * ### atherosclerosis_events_incident/angina_incident_1 -- **FHS Framingham Cohort**:
     * 5 component_study_variables
-      * _phs000007.v30.pht000309.v13.phv00036469.v12_. dbGap Name: **EVENT**, Desc: **Event Number**, Table: **vr_soe_2020_a_1340s**.
-      * _phs000007.v30.pht000309.v13.phv00036471.v12_. dbGap Name: **DATE**, Desc: **Date of Event**, Table: **vr_soe_2020_a_1340s**.
-      * _phs000007.v30.pht003099.v5.phv00177930.v5_. dbGap Name: **age1**, Desc: **Age at Exam 1**, Table: **vr_dates_2019_a_1175s**.
-      * _phs000007.v30.pht003316.v7.phv00190817.v7_. dbGap Name: **cvd**, Desc: **Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
-      * _phs000007.v30.pht003316.v7.phv00190823.v7_. dbGap Name: **cvddate**, Desc: **Date of Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
+      * _phs000007.v30.pht000309.v13.phv00036469.v12_
+        * dbGap name: **EVENT**
+        * dbGap desc: **Event Number**
+        * dbGap table: **vr_soe_2020_a_1340s**
+         * PIC-SURE permissible values: ABI (Atherothrombotic Infarction of brain), AP, first episode only, Acute MI by autopsy, previously coded as 1 or 2, CHF, hospitalized, CHF, not hospitalized, diagnosed on basis of on exam or MD notes, CHF, questionable CHF at exam 1, CI, definite by both history and ECG, CVA, definite CVA, type unknown, Cerebral embolism, Death, CHD sudden, within 1 hour, Death, CHD, 1-23 hours, non sudden, Death, CHD, 24-47 hours, non sudden, Death, CHD, 48 hours or more, non sudden, Death, CVA, Death, Cancer, Death, cause unknown, Death, other CVD, Death, other causes, Definite CVA at exam 1, but questionable type, IC, first episode only, IC, questionable IC at exam 1, Intracerebral hemorrhage, MI recognized, with diagnostic ECG, MI recognized, without diagnostic ECG, with autopsy evidence, new event (see also code 9), MI recognized, without diagnostic ECG, with enzymes and history, MI unrecognized, not silent, MI unrecognized, silent, Other CVA, Questionable CVA at exam 1, Questionable MI at exam 1, Subarachnoid hemorrhage, TIA (Transient Ischemic Attack) only the 1st TIA is coded, TIA with positive imaging
+      * _phs000007.v30.pht000309.v13.phv00036471.v12_
+        * dbGap name: **DATE**
+        * dbGap desc: **Date of Event**
+        * dbGap table: **vr_soe_2020_a_1340s**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000007.v30.pht003099.v5.phv00177930.v5_
+        * dbGap name: **age1**
+        * dbGap desc: **Age at Exam 1**
+        * dbGap table: **vr_dates_2019_a_1175s**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000007.v30.pht003316.v7.phv00190817.v7_
+        * dbGap name: **cvd**
+        * dbGap desc: **Cardiovascular Disease (CVD) status**
+        * dbGap table: **vr_survcvd_2019_a_1334s**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000007.v30.pht003316.v7.phv00190823.v7_
+        * dbGap name: **cvddate**
+        * dbGap desc: **Date of Cardiovascular Disease (CVD) status**
+        * dbGap table: **vr_survcvd_2019_a_1334s**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -126,13 +146,41 @@
 <a id="angina_incident_1-whi"></a>
   * ### atherosclerosis_events_incident/angina_incident_1 -- **WHI Women's Health Initiative**:
     * 7 component_study_variables
-      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
-      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
-      * _phs000200.v11.pht003395.v3.phv00192302.v3_. dbGap Name: **EXT2MRC**, Desc: **Extension 2 MRC Participant**, Table: **ext_rel2**.
-      * _phs000200.v11.pht003407.v3.phv00193145.v3_. dbGap Name: **ANGINA**, Desc: **Angina**, Table: **outc_ct_os_rel4**.
-      * _phs000200.v11.pht003407.v3.phv00193146.v3_. dbGap Name: **ANGINADY**, Desc: **Days enrollment to Angina**, Table: **outc_ct_os_rel4**.
-      * _phs000200.v11.pht003407.v3.phv00193504.v3_. dbGap Name: **ENDEXT1DY**, Desc: **Days enrollment to end of Ext1 followup**, Table: **outc_ct_os_rel4**.
-      * _phs000200.v11.pht003407.v3.phv00193505.v3_. dbGap Name: **ENDFOLLOWDY**, Desc: **Days enrollment to end of followup**, Table: **outc_ct_os_rel4**.
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_
+        * dbGap name: **F2DAYS**
+        * dbGap desc: **F2 Days since randomization**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age at screening**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht003395.v3.phv00192302.v3_
+        * dbGap name: **EXT2MRC**
+        * dbGap desc: **Extension 2 MRC Participant**
+        * dbGap table: **ext_rel2**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht003407.v3.phv00193145.v3_
+        * dbGap name: **ANGINA**
+        * dbGap desc: **Angina**
+        * dbGap table: **outc_ct_os_rel4**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht003407.v3.phv00193146.v3_
+        * dbGap name: **ANGINADY**
+        * dbGap desc: **Days enrollment to Angina**
+        * dbGap table: **outc_ct_os_rel4**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht003407.v3.phv00193504.v3_
+        * dbGap name: **ENDEXT1DY**
+        * dbGap desc: **Days enrollment to end of Ext1 followup**
+        * dbGap table: **outc_ct_os_rel4**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht003407.v3.phv00193505.v3_
+        * dbGap name: **ENDFOLLOWDY**
+        * dbGap desc: **Days enrollment to end of followup**
+        * dbGap table: **outc_ct_os_rel4**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -181,11 +229,31 @@
 <a id="cabg_incident_1-fhs"></a>
   * ### atherosclerosis_events_incident/cabg_incident_1 -- **FHS Framingham Cohort**:
     * 5 component_study_variables
-      * _phs000007.v30.pht000389.v10.phv00054697.v8_. dbGap Name: **procdate**, Desc: **Date of cardiovascular procedure**, Table: **vr_cvdproc_2020_a_1313s**.
-      * _phs000007.v30.pht000389.v10.phv00163410.v7_. dbGap Name: **vessel**, Desc: **Coronary Artery Bypass Graft (CABG) - Number of vessels bypassed - PROCNUM = 141**, Table: **vr_cvdproc_2020_a_1313s**.
-      * _phs000007.v30.pht003099.v5.phv00177930.v5_. dbGap Name: **age1**, Desc: **Age at Exam 1**, Table: **vr_dates_2019_a_1175s**.
-      * _phs000007.v30.pht003316.v7.phv00190817.v7_. dbGap Name: **cvd**, Desc: **Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
-      * _phs000007.v30.pht003316.v7.phv00190823.v7_. dbGap Name: **cvddate**, Desc: **Date of Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
+      * _phs000007.v30.pht000389.v10.phv00054697.v8_
+        * dbGap name: **procdate**
+        * dbGap desc: **Date of cardiovascular procedure**
+        * dbGap table: **vr_cvdproc_2020_a_1313s**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000007.v30.pht000389.v10.phv00163410.v7_
+        * dbGap name: **vessel**
+        * dbGap desc: **Coronary Artery Bypass Graft (CABG) - Number of vessels bypassed - PROCNUM = 141**
+        * dbGap table: **vr_cvdproc_2020_a_1313s**
+         * PIC-SURE permissible values: CABG Procedure not done, Five (5) vessels bypassed, Four (4) vessels bypassed, One (1) vessel bypassed, Seven (7) vessels bypassed, Six (6) vessels bypassed, Three (3) vessels bypassed, Two (2) vessels bypassed
+      * _phs000007.v30.pht003099.v5.phv00177930.v5_
+        * dbGap name: **age1**
+        * dbGap desc: **Age at Exam 1**
+        * dbGap table: **vr_dates_2019_a_1175s**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000007.v30.pht003316.v7.phv00190817.v7_
+        * dbGap name: **cvd**
+        * dbGap desc: **Cardiovascular Disease (CVD) status**
+        * dbGap table: **vr_survcvd_2019_a_1334s**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000007.v30.pht003316.v7.phv00190823.v7_
+        * dbGap name: **cvddate**
+        * dbGap desc: **Date of Cardiovascular Disease (CVD) status**
+        * dbGap table: **vr_survcvd_2019_a_1334s**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -263,13 +331,41 @@
 <a id="cabg_incident_1-whi"></a>
   * ### atherosclerosis_events_incident/cabg_incident_1 -- **WHI Women's Health Initiative**:
     * 7 component_study_variables
-      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
-      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
-      * _phs000200.v11.pht003395.v3.phv00192302.v3_. dbGap Name: **EXT2MRC**, Desc: **Extension 2 MRC Participant**, Table: **ext_rel2**.
-      * _phs000200.v11.pht003407.v3.phv00193157.v3_. dbGap Name: **CABG**, Desc: **CABG**, Table: **outc_ct_os_rel4**.
-      * _phs000200.v11.pht003407.v3.phv00193158.v3_. dbGap Name: **CABGDY**, Desc: **Days enrollment to CABG**, Table: **outc_ct_os_rel4**.
-      * _phs000200.v11.pht003407.v3.phv00193504.v3_. dbGap Name: **ENDEXT1DY**, Desc: **Days enrollment to end of Ext1 followup**, Table: **outc_ct_os_rel4**.
-      * _phs000200.v11.pht003407.v3.phv00193505.v3_. dbGap Name: **ENDFOLLOWDY**, Desc: **Days enrollment to end of followup**, Table: **outc_ct_os_rel4**.
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_
+        * dbGap name: **F2DAYS**
+        * dbGap desc: **F2 Days since randomization**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age at screening**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht003395.v3.phv00192302.v3_
+        * dbGap name: **EXT2MRC**
+        * dbGap desc: **Extension 2 MRC Participant**
+        * dbGap table: **ext_rel2**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht003407.v3.phv00193157.v3_
+        * dbGap name: **CABG**
+        * dbGap desc: **CABG**
+        * dbGap table: **outc_ct_os_rel4**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht003407.v3.phv00193158.v3_
+        * dbGap name: **CABGDY**
+        * dbGap desc: **Days enrollment to CABG**
+        * dbGap table: **outc_ct_os_rel4**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht003407.v3.phv00193504.v3_
+        * dbGap name: **ENDEXT1DY**
+        * dbGap desc: **Days enrollment to end of Ext1 followup**
+        * dbGap table: **outc_ct_os_rel4**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht003407.v3.phv00193505.v3_
+        * dbGap name: **ENDFOLLOWDY**
+        * dbGap desc: **Days enrollment to end of followup**
+        * dbGap table: **outc_ct_os_rel4**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -313,7 +409,11 @@
 <a id="cad_followup_start_age_1-fhs"></a>
   * ### atherosclerosis_events_incident/cad_followup_start_age_1 -- **FHS Framingham Cohort**:
     * 1 component_study_variables
-      * _phs000007.v30.pht003099.v5.phv00177930.v5_. dbGap Name: **age1**, Desc: **Age at Exam 1**, Table: **vr_dates_2019_a_1175s**.
+      * _phs000007.v30.pht003099.v5.phv00177930.v5_
+        * dbGap name: **age1**
+        * dbGap desc: **Age at Exam 1**
+        * dbGap table: **vr_dates_2019_a_1175s**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -329,7 +429,11 @@
 <a id="cad_followup_start_age_1-whi"></a>
   * ### atherosclerosis_events_incident/cad_followup_start_age_1 -- **WHI Women's Health Initiative**:
     * 1 component_study_variables
-      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age at screening**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -362,11 +466,31 @@
 <a id="chd_death_definite_1-fhs"></a>
   * ### atherosclerosis_events_incident/chd_death_definite_1 -- **FHS Framingham Cohort**:
     * 5 component_study_variables
-      * _phs000007.v30.pht000309.v13.phv00036469.v12_. dbGap Name: **EVENT**, Desc: **Event Number**, Table: **vr_soe_2020_a_1340s**.
-      * _phs000007.v30.pht000309.v13.phv00036471.v12_. dbGap Name: **DATE**, Desc: **Date of Event**, Table: **vr_soe_2020_a_1340s**.
-      * _phs000007.v30.pht003099.v5.phv00177930.v5_. dbGap Name: **age1**, Desc: **Age at Exam 1**, Table: **vr_dates_2019_a_1175s**.
-      * _phs000007.v30.pht003316.v7.phv00190817.v7_. dbGap Name: **cvd**, Desc: **Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
-      * _phs000007.v30.pht003316.v7.phv00190823.v7_. dbGap Name: **cvddate**, Desc: **Date of Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
+      * _phs000007.v30.pht000309.v13.phv00036469.v12_
+        * dbGap name: **EVENT**
+        * dbGap desc: **Event Number**
+        * dbGap table: **vr_soe_2020_a_1340s**
+         * PIC-SURE permissible values: ABI (Atherothrombotic Infarction of brain), AP, first episode only, Acute MI by autopsy, previously coded as 1 or 2, CHF, hospitalized, CHF, not hospitalized, diagnosed on basis of on exam or MD notes, CHF, questionable CHF at exam 1, CI, definite by both history and ECG, CVA, definite CVA, type unknown, Cerebral embolism, Death, CHD sudden, within 1 hour, Death, CHD, 1-23 hours, non sudden, Death, CHD, 24-47 hours, non sudden, Death, CHD, 48 hours or more, non sudden, Death, CVA, Death, Cancer, Death, cause unknown, Death, other CVD, Death, other causes, Definite CVA at exam 1, but questionable type, IC, first episode only, IC, questionable IC at exam 1, Intracerebral hemorrhage, MI recognized, with diagnostic ECG, MI recognized, without diagnostic ECG, with autopsy evidence, new event (see also code 9), MI recognized, without diagnostic ECG, with enzymes and history, MI unrecognized, not silent, MI unrecognized, silent, Other CVA, Questionable CVA at exam 1, Questionable MI at exam 1, Subarachnoid hemorrhage, TIA (Transient Ischemic Attack) only the 1st TIA is coded, TIA with positive imaging
+      * _phs000007.v30.pht000309.v13.phv00036471.v12_
+        * dbGap name: **DATE**
+        * dbGap desc: **Date of Event**
+        * dbGap table: **vr_soe_2020_a_1340s**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000007.v30.pht003099.v5.phv00177930.v5_
+        * dbGap name: **age1**
+        * dbGap desc: **Age at Exam 1**
+        * dbGap table: **vr_dates_2019_a_1175s**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000007.v30.pht003316.v7.phv00190817.v7_
+        * dbGap name: **cvd**
+        * dbGap desc: **Cardiovascular Disease (CVD) status**
+        * dbGap table: **vr_survcvd_2019_a_1334s**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000007.v30.pht003316.v7.phv00190823.v7_
+        * dbGap name: **cvddate**
+        * dbGap desc: **Date of Cardiovascular Disease (CVD) status**
+        * dbGap table: **vr_survcvd_2019_a_1334s**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -466,14 +590,46 @@
 <a id="chd_death_definite_1-whi"></a>
   * ### atherosclerosis_events_incident/chd_death_definite_1 -- **WHI Women's Health Initiative**:
     * 8 component_study_variables
-      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
-      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
-      * _phs000200.v11.pht003395.v3.phv00192302.v3_. dbGap Name: **EXT2MRC**, Desc: **Extension 2 MRC Participant**, Table: **ext_rel2**.
-      * _phs000200.v11.pht003407.v3.phv00193498.v3_. dbGap Name: **DEATHDY**, Desc: **Days enrollment to Death**, Table: **outc_ct_os_rel4**.
-      * _phs000200.v11.pht003407.v3.phv00193504.v3_. dbGap Name: **ENDEXT1DY**, Desc: **Days enrollment to end of Ext1 followup**, Table: **outc_ct_os_rel4**.
-      * _phs000200.v11.pht003407.v3.phv00193505.v3_. dbGap Name: **ENDFOLLOWDY**, Desc: **Days enrollment to end of followup**, Table: **outc_ct_os_rel4**.
-      * _phs000200.v11.pht003409.v3.phv00193531.v2_. dbGap Name: **DEATH**, Desc: **Death**, Table: **outc_death_rel5**.
-      * _phs000200.v11.pht003409.v3.phv00193532.v2_. dbGap Name: **DEATHCAUSE**, Desc: **Cause of Death**, Table: **outc_death_rel5**.
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_
+        * dbGap name: **F2DAYS**
+        * dbGap desc: **F2 Days since randomization**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age at screening**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht003395.v3.phv00192302.v3_
+        * dbGap name: **EXT2MRC**
+        * dbGap desc: **Extension 2 MRC Participant**
+        * dbGap table: **ext_rel2**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht003407.v3.phv00193498.v3_
+        * dbGap name: **DEATHDY**
+        * dbGap desc: **Days enrollment to Death**
+        * dbGap table: **outc_ct_os_rel4**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht003407.v3.phv00193504.v3_
+        * dbGap name: **ENDEXT1DY**
+        * dbGap desc: **Days enrollment to end of Ext1 followup**
+        * dbGap table: **outc_ct_os_rel4**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht003407.v3.phv00193505.v3_
+        * dbGap name: **ENDFOLLOWDY**
+        * dbGap desc: **Days enrollment to end of followup**
+        * dbGap table: **outc_ct_os_rel4**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht003409.v3.phv00193531.v2_
+        * dbGap name: **DEATH**
+        * dbGap desc: **Death**
+        * dbGap table: **outc_death_rel5**
+         * PIC-SURE permissible values: Yes
+      * _phs000200.v11.pht003409.v3.phv00193532.v2_
+        * dbGap name: **DEATHCAUSE**
+        * dbGap desc: **Cause of Death**
+        * dbGap table: **outc_death_rel5**
+         * PIC-SURE permissible values: ALS, Accessory Sinus Cancer, Accident, Adrenal Gland Cancer, Alzheimers, Anus Cancer, Appendix Cancer, Biliary Tract Cancer, Bladder Cancer, Bone-Limb Cancer, Bone-Non Limb Cancer, Brain Cancer, Breast Cancer, COPD, Central Nervous System Cancer, Cerebrovascular, Cervix Cancer, Colon Cancer, Connective Tissue Cancer, Definite CHD, Dementia NOS, Endocrine Glands Cancer, Endometrial Cancer, Esophagus Cancer, Eye and Adnexa Cancer, Gallbladder Cancer, Genital Organ Cancer, Gum Cancer, Heart Cancer, Hepatic Cirrhosis, Homicide, Hypopharynx Cancer, Kidney Cancer, Known Other Cause, Larynx Cancer, Leukemia, Liver Cancer, Lung Cancer, Lymph Node Cancer, Lymphoma (NHL only), Lymphoma, Hodgkins, Melanoma, Meninges Cancer, Multiple Myeloma, Nasal Cavity Mid Ear Cancer, Nasopharynx Cancer, Oral (Mouth) Cancer, Oropharynx Cancer, Other Cancer Death, Other Cardiovascular, Other Digestive Cancer, Other Injury, Other Lip Cancer, Ovarian Cancer, Palate Cancer, Pancreas, Parkinson's, Parotid Gland,Stensens Cancer, Peritoneum Cancer, Pneumonia, Possible CHD, Pulmonary Embolism, Pulmonary Fibrosis, Rectosigmoid Cancer, Rectum Cancer, Renal Failure, Renal Pelvis Cancer, Salivary Glands Cancer, Sepsis, Small Intestine Cancer, Stomach Cancer, Suicide, Thymus Cancer, Thyroid Cancer, Tongue Cancer, Tonsil Cancer, Unknown Cancer Site, Unknown Cardiovascular, Unknown Cause, Unknown Cause (Not yet adj), Ureter Cancer, Urinary Organs Cancer, Uterine Cancer, Vagina Cancer, Vulva Cancer
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -516,11 +672,31 @@
 <a id="chd_death_probable_1-fhs"></a>
   * ### atherosclerosis_events_incident/chd_death_probable_1 -- **FHS Framingham Cohort**:
     * 5 component_study_variables
-      * _phs000007.v30.pht000309.v13.phv00036469.v12_. dbGap Name: **EVENT**, Desc: **Event Number**, Table: **vr_soe_2020_a_1340s**.
-      * _phs000007.v30.pht000309.v13.phv00036471.v12_. dbGap Name: **DATE**, Desc: **Date of Event**, Table: **vr_soe_2020_a_1340s**.
-      * _phs000007.v30.pht003099.v5.phv00177930.v5_. dbGap Name: **age1**, Desc: **Age at Exam 1**, Table: **vr_dates_2019_a_1175s**.
-      * _phs000007.v30.pht003316.v7.phv00190817.v7_. dbGap Name: **cvd**, Desc: **Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
-      * _phs000007.v30.pht003316.v7.phv00190823.v7_. dbGap Name: **cvddate**, Desc: **Date of Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
+      * _phs000007.v30.pht000309.v13.phv00036469.v12_
+        * dbGap name: **EVENT**
+        * dbGap desc: **Event Number**
+        * dbGap table: **vr_soe_2020_a_1340s**
+         * PIC-SURE permissible values: ABI (Atherothrombotic Infarction of brain), AP, first episode only, Acute MI by autopsy, previously coded as 1 or 2, CHF, hospitalized, CHF, not hospitalized, diagnosed on basis of on exam or MD notes, CHF, questionable CHF at exam 1, CI, definite by both history and ECG, CVA, definite CVA, type unknown, Cerebral embolism, Death, CHD sudden, within 1 hour, Death, CHD, 1-23 hours, non sudden, Death, CHD, 24-47 hours, non sudden, Death, CHD, 48 hours or more, non sudden, Death, CVA, Death, Cancer, Death, cause unknown, Death, other CVD, Death, other causes, Definite CVA at exam 1, but questionable type, IC, first episode only, IC, questionable IC at exam 1, Intracerebral hemorrhage, MI recognized, with diagnostic ECG, MI recognized, without diagnostic ECG, with autopsy evidence, new event (see also code 9), MI recognized, without diagnostic ECG, with enzymes and history, MI unrecognized, not silent, MI unrecognized, silent, Other CVA, Questionable CVA at exam 1, Questionable MI at exam 1, Subarachnoid hemorrhage, TIA (Transient Ischemic Attack) only the 1st TIA is coded, TIA with positive imaging
+      * _phs000007.v30.pht000309.v13.phv00036471.v12_
+        * dbGap name: **DATE**
+        * dbGap desc: **Date of Event**
+        * dbGap table: **vr_soe_2020_a_1340s**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000007.v30.pht003099.v5.phv00177930.v5_
+        * dbGap name: **age1**
+        * dbGap desc: **Age at Exam 1**
+        * dbGap table: **vr_dates_2019_a_1175s**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000007.v30.pht003316.v7.phv00190817.v7_
+        * dbGap name: **cvd**
+        * dbGap desc: **Cardiovascular Disease (CVD) status**
+        * dbGap table: **vr_survcvd_2019_a_1334s**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000007.v30.pht003316.v7.phv00190823.v7_
+        * dbGap name: **cvddate**
+        * dbGap desc: **Date of Cardiovascular Disease (CVD) status**
+        * dbGap table: **vr_survcvd_2019_a_1334s**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -620,14 +796,46 @@
 <a id="chd_death_probable_1-whi"></a>
   * ### atherosclerosis_events_incident/chd_death_probable_1 -- **WHI Women's Health Initiative**:
     * 8 component_study_variables
-      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
-      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
-      * _phs000200.v11.pht003395.v3.phv00192302.v3_. dbGap Name: **EXT2MRC**, Desc: **Extension 2 MRC Participant**, Table: **ext_rel2**.
-      * _phs000200.v11.pht003407.v3.phv00193498.v3_. dbGap Name: **DEATHDY**, Desc: **Days enrollment to Death**, Table: **outc_ct_os_rel4**.
-      * _phs000200.v11.pht003407.v3.phv00193504.v3_. dbGap Name: **ENDEXT1DY**, Desc: **Days enrollment to end of Ext1 followup**, Table: **outc_ct_os_rel4**.
-      * _phs000200.v11.pht003407.v3.phv00193505.v3_. dbGap Name: **ENDFOLLOWDY**, Desc: **Days enrollment to end of followup**, Table: **outc_ct_os_rel4**.
-      * _phs000200.v11.pht003409.v3.phv00193531.v2_. dbGap Name: **DEATH**, Desc: **Death**, Table: **outc_death_rel5**.
-      * _phs000200.v11.pht003409.v3.phv00193532.v2_. dbGap Name: **DEATHCAUSE**, Desc: **Cause of Death**, Table: **outc_death_rel5**.
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_
+        * dbGap name: **F2DAYS**
+        * dbGap desc: **F2 Days since randomization**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age at screening**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht003395.v3.phv00192302.v3_
+        * dbGap name: **EXT2MRC**
+        * dbGap desc: **Extension 2 MRC Participant**
+        * dbGap table: **ext_rel2**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht003407.v3.phv00193498.v3_
+        * dbGap name: **DEATHDY**
+        * dbGap desc: **Days enrollment to Death**
+        * dbGap table: **outc_ct_os_rel4**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht003407.v3.phv00193504.v3_
+        * dbGap name: **ENDEXT1DY**
+        * dbGap desc: **Days enrollment to end of Ext1 followup**
+        * dbGap table: **outc_ct_os_rel4**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht003407.v3.phv00193505.v3_
+        * dbGap name: **ENDFOLLOWDY**
+        * dbGap desc: **Days enrollment to end of followup**
+        * dbGap table: **outc_ct_os_rel4**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht003409.v3.phv00193531.v2_
+        * dbGap name: **DEATH**
+        * dbGap desc: **Death**
+        * dbGap table: **outc_death_rel5**
+         * PIC-SURE permissible values: Yes
+      * _phs000200.v11.pht003409.v3.phv00193532.v2_
+        * dbGap name: **DEATHCAUSE**
+        * dbGap desc: **Cause of Death**
+        * dbGap table: **outc_death_rel5**
+         * PIC-SURE permissible values: ALS, Accessory Sinus Cancer, Accident, Adrenal Gland Cancer, Alzheimers, Anus Cancer, Appendix Cancer, Biliary Tract Cancer, Bladder Cancer, Bone-Limb Cancer, Bone-Non Limb Cancer, Brain Cancer, Breast Cancer, COPD, Central Nervous System Cancer, Cerebrovascular, Cervix Cancer, Colon Cancer, Connective Tissue Cancer, Definite CHD, Dementia NOS, Endocrine Glands Cancer, Endometrial Cancer, Esophagus Cancer, Eye and Adnexa Cancer, Gallbladder Cancer, Genital Organ Cancer, Gum Cancer, Heart Cancer, Hepatic Cirrhosis, Homicide, Hypopharynx Cancer, Kidney Cancer, Known Other Cause, Larynx Cancer, Leukemia, Liver Cancer, Lung Cancer, Lymph Node Cancer, Lymphoma (NHL only), Lymphoma, Hodgkins, Melanoma, Meninges Cancer, Multiple Myeloma, Nasal Cavity Mid Ear Cancer, Nasopharynx Cancer, Oral (Mouth) Cancer, Oropharynx Cancer, Other Cancer Death, Other Cardiovascular, Other Digestive Cancer, Other Injury, Other Lip Cancer, Ovarian Cancer, Palate Cancer, Pancreas, Parkinson's, Parotid Gland,Stensens Cancer, Peritoneum Cancer, Pneumonia, Possible CHD, Pulmonary Embolism, Pulmonary Fibrosis, Rectosigmoid Cancer, Rectum Cancer, Renal Failure, Renal Pelvis Cancer, Salivary Glands Cancer, Sepsis, Small Intestine Cancer, Stomach Cancer, Suicide, Thymus Cancer, Thyroid Cancer, Tongue Cancer, Tonsil Cancer, Unknown Cancer Site, Unknown Cardiovascular, Unknown Cause, Unknown Cause (Not yet adj), Ureter Cancer, Urinary Organs Cancer, Uterine Cancer, Vagina Cancer, Vulva Cancer
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -667,13 +875,41 @@
 <a id="coronary_angioplasty_incident_1-whi"></a>
   * ### atherosclerosis_events_incident/coronary_angioplasty_incident_1 -- **WHI Women's Health Initiative**:
     * 7 component_study_variables
-      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
-      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
-      * _phs000200.v11.pht003395.v3.phv00192302.v3_. dbGap Name: **EXT2MRC**, Desc: **Extension 2 MRC Participant**, Table: **ext_rel2**.
-      * _phs000200.v11.pht003407.v3.phv00193199.v3_. dbGap Name: **PTCA**, Desc: **PTCA**, Table: **outc_ct_os_rel4**.
-      * _phs000200.v11.pht003407.v3.phv00193200.v3_. dbGap Name: **PTCADY**, Desc: **Days enrollment to PTCA**, Table: **outc_ct_os_rel4**.
-      * _phs000200.v11.pht003407.v3.phv00193504.v3_. dbGap Name: **ENDEXT1DY**, Desc: **Days enrollment to end of Ext1 followup**, Table: **outc_ct_os_rel4**.
-      * _phs000200.v11.pht003407.v3.phv00193505.v3_. dbGap Name: **ENDFOLLOWDY**, Desc: **Days enrollment to end of followup**, Table: **outc_ct_os_rel4**.
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_
+        * dbGap name: **F2DAYS**
+        * dbGap desc: **F2 Days since randomization**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age at screening**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht003395.v3.phv00192302.v3_
+        * dbGap name: **EXT2MRC**
+        * dbGap desc: **Extension 2 MRC Participant**
+        * dbGap table: **ext_rel2**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht003407.v3.phv00193199.v3_
+        * dbGap name: **PTCA**
+        * dbGap desc: **PTCA**
+        * dbGap table: **outc_ct_os_rel4**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht003407.v3.phv00193200.v3_
+        * dbGap name: **PTCADY**
+        * dbGap desc: **Days enrollment to PTCA**
+        * dbGap table: **outc_ct_os_rel4**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht003407.v3.phv00193504.v3_
+        * dbGap name: **ENDEXT1DY**
+        * dbGap desc: **Days enrollment to end of Ext1 followup**
+        * dbGap table: **outc_ct_os_rel4**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht003407.v3.phv00193505.v3_
+        * dbGap name: **ENDFOLLOWDY**
+        * dbGap desc: **Days enrollment to end of followup**
+        * dbGap table: **outc_ct_os_rel4**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -719,11 +955,31 @@
 <a id="mi_incident_1-fhs"></a>
   * ### atherosclerosis_events_incident/mi_incident_1 -- **FHS Framingham Cohort**:
     * 5 component_study_variables
-      * _phs000007.v30.pht000309.v13.phv00036469.v12_. dbGap Name: **EVENT**, Desc: **Event Number**, Table: **vr_soe_2020_a_1340s**.
-      * _phs000007.v30.pht000309.v13.phv00036471.v12_. dbGap Name: **DATE**, Desc: **Date of Event**, Table: **vr_soe_2020_a_1340s**.
-      * _phs000007.v30.pht003099.v5.phv00177930.v5_. dbGap Name: **age1**, Desc: **Age at Exam 1**, Table: **vr_dates_2019_a_1175s**.
-      * _phs000007.v30.pht003316.v7.phv00190817.v7_. dbGap Name: **cvd**, Desc: **Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
-      * _phs000007.v30.pht003316.v7.phv00190823.v7_. dbGap Name: **cvddate**, Desc: **Date of Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
+      * _phs000007.v30.pht000309.v13.phv00036469.v12_
+        * dbGap name: **EVENT**
+        * dbGap desc: **Event Number**
+        * dbGap table: **vr_soe_2020_a_1340s**
+         * PIC-SURE permissible values: ABI (Atherothrombotic Infarction of brain), AP, first episode only, Acute MI by autopsy, previously coded as 1 or 2, CHF, hospitalized, CHF, not hospitalized, diagnosed on basis of on exam or MD notes, CHF, questionable CHF at exam 1, CI, definite by both history and ECG, CVA, definite CVA, type unknown, Cerebral embolism, Death, CHD sudden, within 1 hour, Death, CHD, 1-23 hours, non sudden, Death, CHD, 24-47 hours, non sudden, Death, CHD, 48 hours or more, non sudden, Death, CVA, Death, Cancer, Death, cause unknown, Death, other CVD, Death, other causes, Definite CVA at exam 1, but questionable type, IC, first episode only, IC, questionable IC at exam 1, Intracerebral hemorrhage, MI recognized, with diagnostic ECG, MI recognized, without diagnostic ECG, with autopsy evidence, new event (see also code 9), MI recognized, without diagnostic ECG, with enzymes and history, MI unrecognized, not silent, MI unrecognized, silent, Other CVA, Questionable CVA at exam 1, Questionable MI at exam 1, Subarachnoid hemorrhage, TIA (Transient Ischemic Attack) only the 1st TIA is coded, TIA with positive imaging
+      * _phs000007.v30.pht000309.v13.phv00036471.v12_
+        * dbGap name: **DATE**
+        * dbGap desc: **Date of Event**
+        * dbGap table: **vr_soe_2020_a_1340s**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000007.v30.pht003099.v5.phv00177930.v5_
+        * dbGap name: **age1**
+        * dbGap desc: **Age at Exam 1**
+        * dbGap table: **vr_dates_2019_a_1175s**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000007.v30.pht003316.v7.phv00190817.v7_
+        * dbGap name: **cvd**
+        * dbGap desc: **Cardiovascular Disease (CVD) status**
+        * dbGap table: **vr_survcvd_2019_a_1334s**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000007.v30.pht003316.v7.phv00190823.v7_
+        * dbGap name: **cvddate**
+        * dbGap desc: **Date of Cardiovascular Disease (CVD) status**
+        * dbGap table: **vr_survcvd_2019_a_1334s**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -810,13 +1066,41 @@
 <a id="mi_incident_1-whi"></a>
   * ### atherosclerosis_events_incident/mi_incident_1 -- **WHI Women's Health Initiative**:
     * 7 component_study_variables
-      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
-      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
-      * _phs000200.v11.pht003395.v3.phv00192302.v3_. dbGap Name: **EXT2MRC**, Desc: **Extension 2 MRC Participant**, Table: **ext_rel2**.
-      * _phs000200.v11.pht003407.v3.phv00193169.v3_. dbGap Name: **MI**, Desc: **Clinical MI**, Table: **outc_ct_os_rel4**.
-      * _phs000200.v11.pht003407.v3.phv00193170.v3_. dbGap Name: **MIDY**, Desc: **Days enrollment to Clinical MI**, Table: **outc_ct_os_rel4**.
-      * _phs000200.v11.pht003407.v3.phv00193504.v3_. dbGap Name: **ENDEXT1DY**, Desc: **Days enrollment to end of Ext1 followup**, Table: **outc_ct_os_rel4**.
-      * _phs000200.v11.pht003407.v3.phv00193505.v3_. dbGap Name: **ENDFOLLOWDY**, Desc: **Days enrollment to end of followup**, Table: **outc_ct_os_rel4**.
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_
+        * dbGap name: **F2DAYS**
+        * dbGap desc: **F2 Days since randomization**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age at screening**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht003395.v3.phv00192302.v3_
+        * dbGap name: **EXT2MRC**
+        * dbGap desc: **Extension 2 MRC Participant**
+        * dbGap table: **ext_rel2**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht003407.v3.phv00193169.v3_
+        * dbGap name: **MI**
+        * dbGap desc: **Clinical MI**
+        * dbGap table: **outc_ct_os_rel4**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht003407.v3.phv00193170.v3_
+        * dbGap name: **MIDY**
+        * dbGap desc: **Days enrollment to Clinical MI**
+        * dbGap table: **outc_ct_os_rel4**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht003407.v3.phv00193504.v3_
+        * dbGap name: **ENDEXT1DY**
+        * dbGap desc: **Days enrollment to end of Ext1 followup**
+        * dbGap table: **outc_ct_os_rel4**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht003407.v3.phv00193505.v3_
+        * dbGap name: **ENDFOLLOWDY**
+        * dbGap desc: **Days enrollment to end of followup**
+        * dbGap table: **outc_ct_os_rel4**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -866,11 +1150,31 @@
 <a id="pad_incident_1-fhs"></a>
   * ### atherosclerosis_events_incident/pad_incident_1 -- **FHS Framingham Cohort**:
     * 5 component_study_variables
-      * _phs000007.v30.pht000309.v13.phv00036469.v12_. dbGap Name: **EVENT**, Desc: **Event Number**, Table: **vr_soe_2020_a_1340s**.
-      * _phs000007.v30.pht000309.v13.phv00036471.v12_. dbGap Name: **DATE**, Desc: **Date of Event**, Table: **vr_soe_2020_a_1340s**.
-      * _phs000007.v30.pht003099.v5.phv00177930.v5_. dbGap Name: **age1**, Desc: **Age at Exam 1**, Table: **vr_dates_2019_a_1175s**.
-      * _phs000007.v30.pht003316.v7.phv00190817.v7_. dbGap Name: **cvd**, Desc: **Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
-      * _phs000007.v30.pht003316.v7.phv00190823.v7_. dbGap Name: **cvddate**, Desc: **Date of Cardiovascular Disease (CVD) status**, Table: **vr_survcvd_2019_a_1334s**.
+      * _phs000007.v30.pht000309.v13.phv00036469.v12_
+        * dbGap name: **EVENT**
+        * dbGap desc: **Event Number**
+        * dbGap table: **vr_soe_2020_a_1340s**
+         * PIC-SURE permissible values: ABI (Atherothrombotic Infarction of brain), AP, first episode only, Acute MI by autopsy, previously coded as 1 or 2, CHF, hospitalized, CHF, not hospitalized, diagnosed on basis of on exam or MD notes, CHF, questionable CHF at exam 1, CI, definite by both history and ECG, CVA, definite CVA, type unknown, Cerebral embolism, Death, CHD sudden, within 1 hour, Death, CHD, 1-23 hours, non sudden, Death, CHD, 24-47 hours, non sudden, Death, CHD, 48 hours or more, non sudden, Death, CVA, Death, Cancer, Death, cause unknown, Death, other CVD, Death, other causes, Definite CVA at exam 1, but questionable type, IC, first episode only, IC, questionable IC at exam 1, Intracerebral hemorrhage, MI recognized, with diagnostic ECG, MI recognized, without diagnostic ECG, with autopsy evidence, new event (see also code 9), MI recognized, without diagnostic ECG, with enzymes and history, MI unrecognized, not silent, MI unrecognized, silent, Other CVA, Questionable CVA at exam 1, Questionable MI at exam 1, Subarachnoid hemorrhage, TIA (Transient Ischemic Attack) only the 1st TIA is coded, TIA with positive imaging
+      * _phs000007.v30.pht000309.v13.phv00036471.v12_
+        * dbGap name: **DATE**
+        * dbGap desc: **Date of Event**
+        * dbGap table: **vr_soe_2020_a_1340s**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000007.v30.pht003099.v5.phv00177930.v5_
+        * dbGap name: **age1**
+        * dbGap desc: **Age at Exam 1**
+        * dbGap table: **vr_dates_2019_a_1175s**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000007.v30.pht003316.v7.phv00190817.v7_
+        * dbGap name: **cvd**
+        * dbGap desc: **Cardiovascular Disease (CVD) status**
+        * dbGap table: **vr_survcvd_2019_a_1334s**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000007.v30.pht003316.v7.phv00190823.v7_
+        * dbGap name: **cvddate**
+        * dbGap desc: **Date of Cardiovascular Disease (CVD) status**
+        * dbGap table: **vr_survcvd_2019_a_1334s**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -959,20 +1263,76 @@
 <a id="pad_incident_1-whi"></a>
   * ### atherosclerosis_events_incident/pad_incident_1 -- **WHI Women's Health Initiative**:
     * 14 component_study_variables
-      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
-      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
-      * _phs000200.v11.pht003395.v3.phv00192302.v3_. dbGap Name: **EXT2MRC**, Desc: **Extension 2 MRC Participant**, Table: **ext_rel2**.
-      * _phs000200.v11.pht003406.v3.phv00193101.v3_. dbGap Name: **PADDX**, Desc: **PAD diagnosis**, Table: **outc_cardio_rel4**.
-      * _phs000200.v11.pht003406.v3.phv00193102.v3_. dbGap Name: **PADPLAQ**, Desc: **Ultrasonography or angiography**, Table: **outc_cardio_rel4**.
-      * _phs000200.v11.pht003406.v3.phv00193103.v3_. dbGap Name: **PADABDOP**, Desc: **No Doppler pulse in vessels**, Table: **outc_cardio_rel4**.
-      * _phs000200.v11.pht003406.v3.phv00193104.v3_. dbGap Name: **PADEXER**, Desc: **Positive exercise test**, Table: **outc_cardio_rel4**.
-      * _phs000200.v11.pht003406.v3.phv00193105.v3_. dbGap Name: **PADSURG**, Desc: **Surgery, angioplasty or thromb**, Table: **outc_cardio_rel4**.
-      * _phs000200.v11.pht003406.v3.phv00193106.v3_. dbGap Name: **PADAMP**, Desc: **PAD Amputation of one or more toes**, Table: **outc_cardio_rel4**.
-      * _phs000200.v11.pht003406.v3.phv00193107.v3_. dbGap Name: **PADLEG**, Desc: **Exertional leg pain**, Table: **outc_cardio_rel4**.
-      * _phs000200.v11.pht003407.v3.phv00193190.v3_. dbGap Name: **PERIPH**, Desc: **PAD**, Table: **outc_ct_os_rel4**.
-      * _phs000200.v11.pht003407.v3.phv00193191.v3_. dbGap Name: **PERIPHDY**, Desc: **Days enrollment to PAD**, Table: **outc_ct_os_rel4**.
-      * _phs000200.v11.pht003407.v3.phv00193504.v3_. dbGap Name: **ENDEXT1DY**, Desc: **Days enrollment to end of Ext1 followup**, Table: **outc_ct_os_rel4**.
-      * _phs000200.v11.pht003407.v3.phv00193505.v3_. dbGap Name: **ENDFOLLOWDY**, Desc: **Days enrollment to end of followup**, Table: **outc_ct_os_rel4**.
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_
+        * dbGap name: **F2DAYS**
+        * dbGap desc: **F2 Days since randomization**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age at screening**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht003395.v3.phv00192302.v3_
+        * dbGap name: **EXT2MRC**
+        * dbGap desc: **Extension 2 MRC Participant**
+        * dbGap table: **ext_rel2**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht003406.v3.phv00193101.v3_
+        * dbGap name: **PADDX**
+        * dbGap desc: **PAD diagnosis**
+        * dbGap table: **outc_cardio_rel4**
+         * PIC-SURE permissible values: Abdominal aortic anuerysm (AAA), Arterial embolism and/or thrombosis of the lower extremities, Atherosclerosis of arteries of the lower extremities, Lower extremity claudication
+      * _phs000200.v11.pht003406.v3.phv00193102.v3_
+        * dbGap name: **PADPLAQ**
+        * dbGap desc: **Ultrasonography or angiography**
+        * dbGap table: **outc_cardio_rel4**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht003406.v3.phv00193103.v3_
+        * dbGap name: **PADABDOP**
+        * dbGap desc: **No Doppler pulse in vessels**
+        * dbGap table: **outc_cardio_rel4**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht003406.v3.phv00193104.v3_
+        * dbGap name: **PADEXER**
+        * dbGap desc: **Positive exercise test**
+        * dbGap table: **outc_cardio_rel4**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht003406.v3.phv00193105.v3_
+        * dbGap name: **PADSURG**
+        * dbGap desc: **Surgery, angioplasty or thromb**
+        * dbGap table: **outc_cardio_rel4**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht003406.v3.phv00193106.v3_
+        * dbGap name: **PADAMP**
+        * dbGap desc: **PAD Amputation of one or more toes**
+        * dbGap table: **outc_cardio_rel4**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht003406.v3.phv00193107.v3_
+        * dbGap name: **PADLEG**
+        * dbGap desc: **Exertional leg pain**
+        * dbGap table: **outc_cardio_rel4**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht003407.v3.phv00193190.v3_
+        * dbGap name: **PERIPH**
+        * dbGap desc: **PAD**
+        * dbGap table: **outc_ct_os_rel4**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht003407.v3.phv00193191.v3_
+        * dbGap name: **PERIPHDY**
+        * dbGap desc: **Days enrollment to PAD**
+        * dbGap table: **outc_ct_os_rel4**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht003407.v3.phv00193504.v3_
+        * dbGap name: **ENDEXT1DY**
+        * dbGap desc: **Days enrollment to end of Ext1 followup**
+        * dbGap table: **outc_ct_os_rel4**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht003407.v3.phv00193505.v3_
+        * dbGap name: **ENDFOLLOWDY**
+        * dbGap desc: **Days enrollment to end of followup**
+        * dbGap table: **outc_ct_os_rel4**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){

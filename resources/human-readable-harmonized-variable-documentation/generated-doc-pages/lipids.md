@@ -50,8 +50,16 @@
 <a id="fasting_lipids_1-aric"></a>
   * ### lipids/fasting_lipids_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 2 component_study_variables
-      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
-      * _phs000280.v4.pht004063.v2.phv00204732.v1_. dbGap Name: **FAST0802**, Desc: **Fasting time of 8 hours or more [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_
+        * dbGap name: **V1AGE01**
+        * dbGap desc: **Age at visit 1 [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204712_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004063.v2.phv00204732.v1_
+        * dbGap name: **FAST0802**
+        * dbGap desc: **Fasting time of 8 hours or more [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204732_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -72,8 +80,16 @@
 <a id="fasting_lipids_1-cardia"></a>
   * ### lipids/fasting_lipids_1 -- **CARDIA CARDIA Cohort**:
     * 2 component_study_variables
-      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
-      * _phs000285.v3.pht001563.v2.phv00112661.v2_. dbGap Name: **A05FAST**, Desc: **12 HR FAST BEFORE BLOOD DRAWN**, Table: **A4F05**.
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_
+        * dbGap name: **A01AGE2**
+        * dbGap desc: **AGE VERIFY**
+        * dbGap table: **A4F01**
+         * varId _phv00112439_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001563.v2.phv00112661.v2_
+        * dbGap name: **A05FAST**
+        * dbGap desc: **12 HR FAST BEFORE BLOOD DRAWN**
+        * dbGap table: **A4F05**
+         * varId _phv00112661_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -95,8 +111,16 @@
 <a id="fasting_lipids_1-chs"></a>
   * ### lipids/fasting_lipids_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
     * 2 component_study_variables
-      * _phs000287.v6.pht001451.v1.phv00099923.v1_. dbGap Name: **FAST30**, Desc: **HOURS SINCE LAST ATE OR DRANK**, Table: **BASE2**.
-      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001451.v1.phv00099923.v1_
+        * dbGap name: **FAST30**
+        * dbGap desc: **HOURS SINCE LAST ATE OR DRANK**
+        * dbGap table: **BASE2**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_
+        * dbGap name: **AGEBL**
+        * dbGap desc: **CALCULATED AGE AT BASELINE**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -119,8 +143,16 @@
 <a id="fasting_lipids_1-hchs_sol"></a>
   * ### lipids/fasting_lipids_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 2 component_study_variables
-      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00253225.v1_. dbGap Name: **FASTTIME**, Desc: **Fasting time (hrs.)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00253225.v1_
+        * dbGap name: **FASTTIME**
+        * dbGap desc: **Fasting time (hrs.)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -139,8 +171,12 @@
 <a id="fasting_lipids_1-jhs"></a>
   * ### lipids/fasting_lipids_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 2 component_study_variables
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
-      * _phs000286.v5.pht001949.v1.phv00126044.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001949.v1.phv00126044.v1_
+        * No dbGap metadata available
+         * varId _phv00126044_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -165,12 +201,36 @@
 <a id="fasting_lipids_1-mesa"></a>
   * ### lipids/fasting_lipids_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 6 component_study_variables
-      * _phs000209.v13.pht001111.v4.phv00082639.v2_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_AirNRExamMain**.
-      * _phs000209.v13.pht001111.v4.phv00083303.v1_. dbGap Name: **lastdrk1**, Desc: **HOW LONG AGO LAST DRINK OR EAT? (HRS)**, Table: **MESA_AirNRExamMain**.
-      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
-      * _phs000209.v13.pht001116.v10.phv00084980.v2_. dbGap Name: **lastdrk1**, Desc: **HOW LONG AGO LAST DRINK OR EAT? (HRS)**, Table: **MESA_Exam1Main**.
-      * _phs000209.v13.pht001121.v3.phv00087071.v1_. dbGap Name: **agefc**, Desc: **AGE**, Table: **MESA_FamilyExamMain**.
-      * _phs000209.v13.pht001121.v3.phv00087524.v1_. dbGap Name: **lastdrkf**, Desc: **HOW LONG AGO LAST DRINK OR EAT? (hrs)**, Table: **MESA_FamilyExamMain**.
+      * _phs000209.v13.pht001111.v4.phv00082639.v2_
+        * dbGap name: **age1c**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_AirNRExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001111.v4.phv00083303.v1_
+        * dbGap name: **lastdrk1**
+        * dbGap desc: **HOW LONG AGO LAST DRINK OR EAT? (HRS)**
+        * dbGap table: **MESA_AirNRExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_
+        * dbGap name: **age1c**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_Exam1Main**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001116.v10.phv00084980.v2_
+        * dbGap name: **lastdrk1**
+        * dbGap desc: **HOW LONG AGO LAST DRINK OR EAT? (HRS)**
+        * dbGap table: **MESA_Exam1Main**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001121.v3.phv00087071.v1_
+        * dbGap name: **agefc**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_FamilyExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001121.v3.phv00087524.v1_
+        * dbGap name: **lastdrkf**
+        * dbGap desc: **HOW LONG AGO LAST DRINK OR EAT? (hrs)**
+        * dbGap table: **MESA_FamilyExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -240,8 +300,16 @@
 <a id="hdl_1-aric"></a>
   * ### lipids/hdl_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 2 component_study_variables
-      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
-      * _phs000280.v4.pht004063.v2.phv00204761.v1_. dbGap Name: **HDL01**, Desc: **HDL cholesterol (recalibrated lipid) [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_
+        * dbGap name: **V1AGE01**
+        * dbGap desc: **Age at visit 1 [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204712_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004063.v2.phv00204761.v1_
+        * dbGap name: **HDL01**
+        * dbGap desc: **HDL cholesterol (recalibrated lipid) [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204761_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -258,8 +326,16 @@
 <a id="hdl_1-cardia"></a>
   * ### lipids/hdl_1 -- **CARDIA CARDIA Cohort**:
     * 2 component_study_variables
-      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
-      * _phs000285.v3.pht001588.v2.phv00113702.v2_. dbGap Name: **AL1HDL**, Desc: **TOTAL HDL CHOLESTEROL (MG/DL)**, Table: **A4LIP**.
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_
+        * dbGap name: **A01AGE2**
+        * dbGap desc: **AGE VERIFY**
+        * dbGap table: **A4F01**
+         * varId _phv00112439_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001588.v2.phv00113702.v2_
+        * dbGap name: **AL1HDL**
+        * dbGap desc: **TOTAL HDL CHOLESTEROL (MG/DL)**
+        * dbGap table: **A4LIP**
+         * varId _phv00113702_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -277,8 +353,16 @@
 <a id="hdl_1-chs"></a>
   * ### lipids/hdl_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
     * 2 component_study_variables
-      * _phs000287.v6.pht001452.v1.phv00100426.v1_. dbGap Name: **HDL44**, Desc: **HDL (mg/dl)**, Table: **BASEBOTH**.
-      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100426.v1_
+        * dbGap name: **HDL44**
+        * dbGap desc: **HDL (mg/dl)**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_
+        * dbGap name: **AGEBL**
+        * dbGap desc: **CALCULATED AGE AT BASELINE**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -295,8 +379,16 @@
 <a id="hdl_1-hchs_sol"></a>
   * ### lipids/hdl_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 2 component_study_variables
-      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00253239.v1_. dbGap Name: **LABA68**, Desc: **HDL-cholesterol (mg/dL) (LABA68)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00253239.v1_
+        * dbGap name: **LABA68**
+        * dbGap desc: **HDL-cholesterol (mg/dL) (LABA68)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -312,8 +404,14 @@
 <a id="hdl_1-jhs"></a>
   * ### lipids/hdl_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 2 component_study_variables
-      * _phs000286.v5.pht001945.v1.phv00125930.v1_. dbGap Name: **HDLC**, Desc: **Hdlc: HDL cholesterol - mg/dL [Visit 1]**, Table: **cena**.
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001945.v1.phv00125930.v1_
+        * dbGap name: **HDLC**
+        * dbGap desc: **Hdlc: HDL cholesterol - mg/dL [Visit 1]**
+        * dbGap table: **cena**
+         * varId _phv00125930_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -341,12 +439,36 @@
 <a id="hdl_1-mesa"></a>
   * ### lipids/hdl_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 6 component_study_variables
-      * _phs000209.v13.pht001111.v4.phv00082639.v2_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_AirNRExamMain**.
-      * _phs000209.v13.pht001111.v4.phv00082952.v1_. dbGap Name: **hdl1**, Desc: **HDL CHOLESTEROL (mg/dl)**, Table: **MESA_AirNRExamMain**.
-      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
-      * _phs000209.v13.pht001116.v10.phv00084972.v2_. dbGap Name: **hdl1**, Desc: **HDL CHOLESTEROL (mg/dl)**, Table: **MESA_Exam1Main**.
-      * _phs000209.v13.pht001121.v3.phv00087071.v1_. dbGap Name: **agefc**, Desc: **AGE**, Table: **MESA_FamilyExamMain**.
-      * _phs000209.v13.pht001121.v3.phv00087099.v1_. dbGap Name: **hdlf**, Desc: **HDL CHOLESTEROL (mg/dl)**, Table: **MESA_FamilyExamMain**.
+      * _phs000209.v13.pht001111.v4.phv00082639.v2_
+        * dbGap name: **age1c**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_AirNRExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001111.v4.phv00082952.v1_
+        * dbGap name: **hdl1**
+        * dbGap desc: **HDL CHOLESTEROL (mg/dl)**
+        * dbGap table: **MESA_AirNRExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_
+        * dbGap name: **age1c**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_Exam1Main**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001116.v10.phv00084972.v2_
+        * dbGap name: **hdl1**
+        * dbGap desc: **HDL CHOLESTEROL (mg/dl)**
+        * dbGap table: **MESA_Exam1Main**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001121.v3.phv00087071.v1_
+        * dbGap name: **agefc**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_FamilyExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001121.v3.phv00087099.v1_
+        * dbGap name: **hdlf**
+        * dbGap desc: **HDL CHOLESTEROL (mg/dl)**
+        * dbGap table: **MESA_FamilyExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -449,8 +571,16 @@
 <a id="lipid_lowering_medication_1-aric"></a>
   * ### lipids/lipid_lowering_medication_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 2 component_study_variables
-      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
-      * _phs000280.v4.pht004063.v2.phv00204802.v1_. dbGap Name: **CHOLMDCODE01**, Desc: **Cholesterol lowering medication in past 2 weeks: using 2004 Med. code, visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_
+        * dbGap name: **V1AGE01**
+        * dbGap desc: **Age at visit 1 [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204712_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004063.v2.phv00204802.v1_
+        * dbGap name: **CHOLMDCODE01**
+        * dbGap desc: **Cholesterol lowering medication in past 2 weeks: using 2004 Med. code, visit 1 [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204802_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -473,8 +603,16 @@
 <a id="lipid_lowering_medication_1-chs"></a>
   * ### lipids/lipid_lowering_medication_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
     * 2 component_study_variables
-      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
-      * _phs000287.v6.pht001452.v1.phv00100594.v1_. dbGap Name: **LIPID06**, Desc: **Any lipid-lowering medication**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_
+        * dbGap name: **AGEBL**
+        * dbGap desc: **CALCULATED AGE AT BASELINE**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000287.v6.pht001452.v1.phv00100594.v1_
+        * dbGap name: **LIPID06**
+        * dbGap desc: **Any lipid-lowering medication**
+        * dbGap table: **BASEBOTH**
+         * PIC-SURE permissible values: No, Yes
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -493,8 +631,16 @@
 <a id="lipid_lowering_medication_1-hchs_sol"></a>
   * ### lipids/lipid_lowering_medication_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 2 component_study_variables
-      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00226349.v1_. dbGap Name: **MED_LLD**, Desc: **Lipid lowering drugs/Antihyperlipidemics (LLD)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00226349.v1_
+        * dbGap name: **MED_LLD**
+        * dbGap desc: **Lipid lowering drugs/Antihyperlipidemics (LLD)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * PIC-SURE permissible values: No, Yes
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -511,8 +657,12 @@
 <a id="lipid_lowering_medication_1-jhs"></a>
   * ### lipids/lipid_lowering_medication_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 2 component_study_variables
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
-      * _phs000286.v5.pht001949.v1.phv00126053.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001949.v1.phv00126053.v1_
+        * No dbGap metadata available
+         * varId _phv00126053_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -537,12 +687,36 @@
 <a id="lipid_lowering_medication_1-mesa"></a>
   * ### lipids/lipid_lowering_medication_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 6 component_study_variables
-      * _phs000209.v13.pht001111.v4.phv00082639.v2_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_AirNRExamMain**.
-      * _phs000209.v13.pht001111.v4.phv00083162.v1_. dbGap Name: **lipid1c**, Desc: **ANY LIPID-LOWERING MEDICATION**, Table: **MESA_AirNRExamMain**.
-      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
-      * _phs000209.v13.pht001116.v10.phv00085407.v2_. dbGap Name: **lipid1c**, Desc: **ANY LIPID-LOWERING MEDICATION**, Table: **MESA_Exam1Main**.
-      * _phs000209.v13.pht001121.v3.phv00087071.v1_. dbGap Name: **agefc**, Desc: **AGE**, Table: **MESA_FamilyExamMain**.
-      * _phs000209.v13.pht001121.v3.phv00087104.v1_. dbGap Name: **lipidfc**, Desc: **ANY LIPID-LOWERING MEDICATION**, Table: **MESA_FamilyExamMain**.
+      * _phs000209.v13.pht001111.v4.phv00082639.v2_
+        * dbGap name: **age1c**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_AirNRExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001111.v4.phv00083162.v1_
+        * dbGap name: **lipid1c**
+        * dbGap desc: **ANY LIPID-LOWERING MEDICATION**
+        * dbGap table: **MESA_AirNRExamMain**
+         * PIC-SURE permissible values: NO, YES
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_
+        * dbGap name: **age1c**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_Exam1Main**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001116.v10.phv00085407.v2_
+        * dbGap name: **lipid1c**
+        * dbGap desc: **ANY LIPID-LOWERING MEDICATION**
+        * dbGap table: **MESA_Exam1Main**
+         * PIC-SURE permissible values: NO, YES
+      * _phs000209.v13.pht001121.v3.phv00087071.v1_
+        * dbGap name: **agefc**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_FamilyExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001121.v3.phv00087104.v1_
+        * dbGap name: **lipidfc**
+        * dbGap desc: **ANY LIPID-LOWERING MEDICATION**
+        * dbGap table: **MESA_FamilyExamMain**
+         * PIC-SURE permissible values: NO, YES
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -622,8 +796,16 @@
 <a id="total_cholesterol_1-aric"></a>
   * ### lipids/total_cholesterol_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 2 component_study_variables
-      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
-      * _phs000280.v4.pht004063.v2.phv00204735.v1_. dbGap Name: **TCHSIU01**, Desc: **Total cholesterol in SI units [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_
+        * dbGap name: **V1AGE01**
+        * dbGap desc: **Age at visit 1 [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204712_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004063.v2.phv00204735.v1_
+        * dbGap name: **TCHSIU01**
+        * dbGap desc: **Total cholesterol in SI units [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204735_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -649,8 +831,16 @@
 <a id="total_cholesterol_1-cardia"></a>
   * ### lipids/total_cholesterol_1 -- **CARDIA CARDIA Cohort**:
     * 2 component_study_variables
-      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
-      * _phs000285.v3.pht001588.v2.phv00113700.v2_. dbGap Name: **AL1CHOL**, Desc: **TOTAL CHOLESTEROL (MG/DL)**, Table: **A4LIP**.
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_
+        * dbGap name: **A01AGE2**
+        * dbGap desc: **AGE VERIFY**
+        * dbGap table: **A4F01**
+         * varId _phv00112439_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001588.v2.phv00113700.v2_
+        * dbGap name: **AL1CHOL**
+        * dbGap desc: **TOTAL CHOLESTEROL (MG/DL)**
+        * dbGap table: **A4LIP**
+         * varId _phv00113700_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -669,8 +859,16 @@
 <a id="total_cholesterol_1-chs"></a>
   * ### lipids/total_cholesterol_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
     * 2 component_study_variables
-      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
-      * _phs000287.v6.pht001452.v1.phv00100491.v1_. dbGap Name: **CHOLADJ**, Desc: **Adjusted Cholesterol (mg/dl)**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_
+        * dbGap name: **AGEBL**
+        * dbGap desc: **CALCULATED AGE AT BASELINE**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000287.v6.pht001452.v1.phv00100491.v1_
+        * dbGap name: **CHOLADJ**
+        * dbGap desc: **Adjusted Cholesterol (mg/dl)**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -687,8 +885,16 @@
 <a id="total_cholesterol_1-hchs_sol"></a>
   * ### lipids/total_cholesterol_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 2 component_study_variables
-      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00253238.v1_. dbGap Name: **LABA66**, Desc: **Total cholesterol (mg/dL) (LABA66)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00253238.v1_
+        * dbGap name: **LABA66**
+        * dbGap desc: **Total cholesterol (mg/dL) (LABA66)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -705,8 +911,14 @@
 <a id="total_cholesterol_1-jhs"></a>
   * ### lipids/total_cholesterol_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 2 component_study_variables
-      * _phs000286.v5.pht001945.v1.phv00125927.v1_. dbGap Name: **CHR**, Desc: **Chr: total cholesterol - mg/dL [Visit 1]**, Table: **cena**.
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001945.v1.phv00125927.v1_
+        * dbGap name: **CHR**
+        * dbGap desc: **Chr: total cholesterol - mg/dL [Visit 1]**
+        * dbGap table: **cena**
+         * varId _phv00125927_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -734,12 +946,36 @@
 <a id="total_cholesterol_1-mesa"></a>
   * ### lipids/total_cholesterol_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 6 component_study_variables
-      * _phs000209.v13.pht001111.v4.phv00082639.v2_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_AirNRExamMain**.
-      * _phs000209.v13.pht001111.v4.phv00082956.v1_. dbGap Name: **chol1**, Desc: **TOTAL CHOLESTEROL (mg/dl)**, Table: **MESA_AirNRExamMain**.
-      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
-      * _phs000209.v13.pht001116.v10.phv00084974.v2_. dbGap Name: **chol1**, Desc: **TOTAL CHOLESTEROL (mg/dl)**, Table: **MESA_Exam1Main**.
-      * _phs000209.v13.pht001121.v3.phv00087071.v1_. dbGap Name: **agefc**, Desc: **AGE**, Table: **MESA_FamilyExamMain**.
-      * _phs000209.v13.pht001121.v3.phv00087100.v1_. dbGap Name: **cholf**, Desc: **TOTAL CHOLESTEROL (mg/dl)**, Table: **MESA_FamilyExamMain**.
+      * _phs000209.v13.pht001111.v4.phv00082639.v2_
+        * dbGap name: **age1c**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_AirNRExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001111.v4.phv00082956.v1_
+        * dbGap name: **chol1**
+        * dbGap desc: **TOTAL CHOLESTEROL (mg/dl)**
+        * dbGap table: **MESA_AirNRExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_
+        * dbGap name: **age1c**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_Exam1Main**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001116.v10.phv00084974.v2_
+        * dbGap name: **chol1**
+        * dbGap desc: **TOTAL CHOLESTEROL (mg/dl)**
+        * dbGap table: **MESA_Exam1Main**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001121.v3.phv00087071.v1_
+        * dbGap name: **agefc**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_FamilyExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001121.v3.phv00087100.v1_
+        * dbGap name: **cholf**
+        * dbGap desc: **TOTAL CHOLESTEROL (mg/dl)**
+        * dbGap table: **MESA_FamilyExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -807,8 +1043,16 @@
 <a id="triglycerides_1-aric"></a>
   * ### lipids/triglycerides_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 2 component_study_variables
-      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
-      * _phs000280.v4.pht004063.v2.phv00204738.v1_. dbGap Name: **TRGSIU01**, Desc: **Total triglycerides In SI units [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_
+        * dbGap name: **V1AGE01**
+        * dbGap desc: **Age at visit 1 [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204712_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004063.v2.phv00204738.v1_
+        * dbGap name: **TRGSIU01**
+        * dbGap desc: **Total triglycerides In SI units [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204738_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -836,8 +1080,16 @@
 <a id="triglycerides_1-cardia"></a>
   * ### lipids/triglycerides_1 -- **CARDIA CARDIA Cohort**:
     * 2 component_study_variables
-      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
-      * _phs000285.v3.pht001588.v2.phv00113701.v2_. dbGap Name: **AL1NTRIG**, Desc: **TRIGLYCERIDES (MG/DL)**, Table: **A4LIP**.
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_
+        * dbGap name: **A01AGE2**
+        * dbGap desc: **AGE VERIFY**
+        * dbGap table: **A4F01**
+         * varId _phv00112439_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001588.v2.phv00113701.v2_
+        * dbGap name: **AL1NTRIG**
+        * dbGap desc: **TRIGLYCERIDES (MG/DL)**
+        * dbGap table: **A4LIP**
+         * varId _phv00113701_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -856,8 +1108,16 @@
 <a id="triglycerides_1-chs"></a>
   * ### lipids/triglycerides_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
     * 2 component_study_variables
-      * _phs000287.v6.pht001452.v1.phv00100425.v1_. dbGap Name: **TRIG44**, Desc: **TRIGLYCERIDE (mg/dl)**, Table: **BASEBOTH**.
-      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100425.v1_
+        * dbGap name: **TRIG44**
+        * dbGap desc: **TRIGLYCERIDE (mg/dl)**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_
+        * dbGap name: **AGEBL**
+        * dbGap desc: **CALCULATED AGE AT BASELINE**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -874,8 +1134,16 @@
 <a id="triglycerides_1-hchs_sol"></a>
   * ### lipids/triglycerides_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 2 component_study_variables
-      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00253240.v1_. dbGap Name: **LABA67**, Desc: **Triglycerides (mg/dL) (LABA67)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00253240.v1_
+        * dbGap name: **LABA67**
+        * dbGap desc: **Triglycerides (mg/dL) (LABA67)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -891,8 +1159,14 @@
 <a id="triglycerides_1-jhs"></a>
   * ### lipids/triglycerides_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 2 component_study_variables
-      * _phs000286.v5.pht001945.v1.phv00125933.v1_. dbGap Name: **TRR**, Desc: **Trr: triglyceride - mg/dL [Visit 1]**, Table: **cena**.
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001945.v1.phv00125933.v1_
+        * dbGap name: **TRR**
+        * dbGap desc: **Trr: triglyceride - mg/dL [Visit 1]**
+        * dbGap table: **cena**
+         * varId _phv00125933_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -920,12 +1194,36 @@
 <a id="triglycerides_1-mesa"></a>
   * ### lipids/triglycerides_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 6 component_study_variables
-      * _phs000209.v13.pht001111.v4.phv00082639.v2_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_AirNRExamMain**.
-      * _phs000209.v13.pht001111.v4.phv00082950.v1_. dbGap Name: **trig1**, Desc: **TRIGLYCERIDES (mg/dl)**, Table: **MESA_AirNRExamMain**.
-      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
-      * _phs000209.v13.pht001116.v10.phv00084968.v2_. dbGap Name: **trig1**, Desc: **TRIGLYCERIDES (mg/dl)**, Table: **MESA_Exam1Main**.
-      * _phs000209.v13.pht001121.v3.phv00087071.v1_. dbGap Name: **agefc**, Desc: **AGE**, Table: **MESA_FamilyExamMain**.
-      * _phs000209.v13.pht001121.v3.phv00087101.v1_. dbGap Name: **trigf**, Desc: **TRIGLYCERIDES (mg/dl)**, Table: **MESA_FamilyExamMain**.
+      * _phs000209.v13.pht001111.v4.phv00082639.v2_
+        * dbGap name: **age1c**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_AirNRExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001111.v4.phv00082950.v1_
+        * dbGap name: **trig1**
+        * dbGap desc: **TRIGLYCERIDES (mg/dl)**
+        * dbGap table: **MESA_AirNRExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_
+        * dbGap name: **age1c**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_Exam1Main**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001116.v10.phv00084968.v2_
+        * dbGap name: **trig1**
+        * dbGap desc: **TRIGLYCERIDES (mg/dl)**
+        * dbGap table: **MESA_Exam1Main**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001121.v3.phv00087071.v1_
+        * dbGap name: **agefc**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_FamilyExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001121.v3.phv00087101.v1_
+        * dbGap name: **trigf**
+        * dbGap desc: **TRIGLYCERIDES (mg/dl)**
+        * dbGap table: **MESA_FamilyExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
