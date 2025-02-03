@@ -67,12 +67,34 @@
 <a id="basophil_ncnc_bld_1-aric"></a>
   * ### blood_cell_count/basophil_ncnc_bld_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 6 component_study_variables
-      * _phs000280.v4.pht004062.v2.phv00204623.v1_. No dbGap metadata available.
-      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
-      * _phs000280.v4.pht004107.v2.phv00207257.v1_. dbGap Name: **HMTA03**, Desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
-      * _phs000280.v4.pht004107.v2.phv00207264.v1_. dbGap Name: **HMTA10**, Desc: **Basophils % Q10 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
-      * _phs000280.v4.pht004108.v2.phv00207272.v1_. dbGap Name: **HMTB03**, Desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
-      * _phs000280.v4.pht004108.v2.phv00207279.v1_. dbGap Name: **HMTB10**, Desc: **Basophils %. Q10 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
+      * _phs000280.v4.pht004062.v2.phv00204623.v1_
+        * No dbGap metadata available
+         * varId _phv00204623_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_
+        * dbGap name: **V1AGE01**
+        * dbGap desc: **Age at visit 1 [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204712_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004107.v2.phv00207257.v1_
+        * dbGap name: **HMTA03**
+        * dbGap desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTA. Visit 1]**
+        * dbGap table: **HMTA**
+         * varId _phv00207257_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004107.v2.phv00207264.v1_
+        * dbGap name: **HMTA10**
+        * dbGap desc: **Basophils % Q10 [Hematology Form. HMTA. Visit 1]**
+        * dbGap table: **HMTA**
+         * varId _phv00207264_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004108.v2.phv00207272.v1_
+        * dbGap name: **HMTB03**
+        * dbGap desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTB. Visit 2]**
+        * dbGap table: **HMTB**
+         * varId _phv00207272_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004108.v2.phv00207279.v1_
+        * dbGap name: **HMTB10**
+        * dbGap desc: **Basophils %. Q10 [Hematology Form. HMTB. Visit 2]**
+        * dbGap table: **HMTB**
+         * varId _phv00207279_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -141,9 +163,21 @@
 <a id="basophil_ncnc_bld_1-cardia"></a>
   * ### blood_cell_count/basophil_ncnc_bld_1 -- **CARDIA CARDIA Cohort**:
     * 3 component_study_variables
-      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
-      * _phs000285.v3.pht001563.v2.phv00112686.v2_. dbGap Name: **A05WBC**, Desc: **WHITE CELL COUNT (X 1000)**, Table: **A4F05**.
-      * _phs000285.v3.pht001563.v2.phv00112696.v2_. dbGap Name: **A05BASO**, Desc: **BASOPHILS (%)**, Table: **A4F05**.
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_
+        * dbGap name: **A01AGE2**
+        * dbGap desc: **AGE VERIFY**
+        * dbGap table: **A4F01**
+         * varId _phv00112439_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001563.v2.phv00112686.v2_
+        * dbGap name: **A05WBC**
+        * dbGap desc: **WHITE CELL COUNT (X 1000)**
+        * dbGap table: **A4F05**
+         * varId _phv00112686_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001563.v2.phv00112696.v2_
+        * dbGap name: **A05BASO**
+        * dbGap desc: **BASOPHILS (%)**
+        * dbGap table: **A4F05**
+         * varId _phv00112696_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -171,9 +205,21 @@
 <a id="basophil_ncnc_bld_1-hchs_sol"></a>
   * ### blood_cell_count/basophil_ncnc_bld_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 3 component_study_variables
-      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00226283.v1_. dbGap Name: **LABA1**, Desc: **White Blood Count (x10e9) (LABA1)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00226288.v1_. dbGap Name: **LABA14**, Desc: **% Basophils (LABA14)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00226283.v1_
+        * dbGap name: **LABA1**
+        * dbGap desc: **White Blood Count (x10e9) (LABA1)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00226288.v1_
+        * dbGap name: **LABA14**
+        * dbGap desc: **% Basophils (LABA14)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -194,9 +240,19 @@
 <a id="basophil_ncnc_bld_1-jhs"></a>
   * ### blood_cell_count/basophil_ncnc_bld_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 3 component_study_variables
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
-      * _phs000286.v5.pht001959.v1.phv00127620.v1_. dbGap Name: **BASO**, Desc: **Baso: diff measure % [Visit 1]**, Table: **loca**.
-      * _phs000286.v5.pht001959.v1.phv00127631.v1_. dbGap Name: **WBC**, Desc: **White blood cells TH/CMM [Visit 1]**, Table: **loca**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001959.v1.phv00127620.v1_
+        * dbGap name: **BASO**
+        * dbGap desc: **Baso: diff measure % [Visit 1]**
+        * dbGap table: **loca**
+         * varId _phv00127620_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001959.v1.phv00127631.v1_
+        * dbGap name: **WBC**
+        * dbGap desc: **White blood cells TH/CMM [Visit 1]**
+        * dbGap table: **loca**
+         * varId _phv00127631_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list) {
@@ -231,8 +287,16 @@
 <a id="basophil_ncnc_bld_1-mesa"></a>
   * ### blood_cell_count/basophil_ncnc_bld_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 2 component_study_variables
-      * _phs000209.v13.pht003091.v3.phv00176011.v1_. dbGap Name: **age5c**, Desc: **AGE AT EXAM 5**, Table: **MESA_Exam5Main**.
-      * _phs000209.v13.pht004319.v1.phv00219002.v1_. dbGap Name: **basosa5**, Desc: **BASOPHIL (ABSOLUTE) (x10E3/uL)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+      * _phs000209.v13.pht003091.v3.phv00176011.v1_
+        * dbGap name: **age5c**
+        * dbGap desc: **AGE AT EXAM 5**
+        * dbGap table: **MESA_Exam5Main**
+         * PIC-SURE permissible values: 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94
+      * _phs000209.v13.pht004319.v1.phv00219002.v1_
+        * dbGap name: **basosa5**
+        * dbGap desc: **BASOPHIL (ABSOLUTE) (x10E3/uL)**
+        * dbGap table: **MESA_AncilMesaEpigenomicCBC**
+         * PIC-SURE permissible values: .1, .2, 0
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -305,12 +369,34 @@
 <a id="eosinophil_ncnc_bld_1-aric"></a>
   * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 6 component_study_variables
-      * _phs000280.v4.pht004062.v2.phv00204623.v1_. No dbGap metadata available.
-      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
-      * _phs000280.v4.pht004107.v2.phv00207257.v1_. dbGap Name: **HMTA03**, Desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
-      * _phs000280.v4.pht004107.v2.phv00207263.v1_. dbGap Name: **HMTA09**, Desc: **Eosinophils % Q9 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
-      * _phs000280.v4.pht004108.v2.phv00207272.v1_. dbGap Name: **HMTB03**, Desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
-      * _phs000280.v4.pht004108.v2.phv00207278.v1_. dbGap Name: **HMTB09**, Desc: **Eosinophils %. Q9 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
+      * _phs000280.v4.pht004062.v2.phv00204623.v1_
+        * No dbGap metadata available
+         * varId _phv00204623_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_
+        * dbGap name: **V1AGE01**
+        * dbGap desc: **Age at visit 1 [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204712_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004107.v2.phv00207257.v1_
+        * dbGap name: **HMTA03**
+        * dbGap desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTA. Visit 1]**
+        * dbGap table: **HMTA**
+         * varId _phv00207257_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004107.v2.phv00207263.v1_
+        * dbGap name: **HMTA09**
+        * dbGap desc: **Eosinophils % Q9 [Hematology Form. HMTA. Visit 1]**
+        * dbGap table: **HMTA**
+         * varId _phv00207263_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004108.v2.phv00207272.v1_
+        * dbGap name: **HMTB03**
+        * dbGap desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTB. Visit 2]**
+        * dbGap table: **HMTB**
+         * varId _phv00207272_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004108.v2.phv00207278.v1_
+        * dbGap name: **HMTB09**
+        * dbGap desc: **Eosinophils %. Q9 [Hematology Form. HMTB. Visit 2]**
+        * dbGap table: **HMTB**
+         * varId _phv00207278_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -379,9 +465,21 @@
 <a id="eosinophil_ncnc_bld_1-cardia"></a>
   * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **CARDIA CARDIA Cohort**:
     * 3 component_study_variables
-      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
-      * _phs000285.v3.pht001563.v2.phv00112686.v2_. dbGap Name: **A05WBC**, Desc: **WHITE CELL COUNT (X 1000)**, Table: **A4F05**.
-      * _phs000285.v3.pht001563.v2.phv00112693.v2_. dbGap Name: **A05EOSIN**, Desc: **EOSINPHILS (%)**, Table: **A4F05**.
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_
+        * dbGap name: **A01AGE2**
+        * dbGap desc: **AGE VERIFY**
+        * dbGap table: **A4F01**
+         * varId _phv00112439_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001563.v2.phv00112686.v2_
+        * dbGap name: **A05WBC**
+        * dbGap desc: **WHITE CELL COUNT (X 1000)**
+        * dbGap table: **A4F05**
+         * varId _phv00112686_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001563.v2.phv00112693.v2_
+        * dbGap name: **A05EOSIN**
+        * dbGap desc: **EOSINPHILS (%)**
+        * dbGap table: **A4F05**
+         * varId _phv00112693_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -409,9 +507,21 @@
 <a id="eosinophil_ncnc_bld_1-hchs_sol"></a>
   * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 3 component_study_variables
-      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00226283.v1_. dbGap Name: **LABA1**, Desc: **White Blood Count (x10e9) (LABA1)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00226287.v1_. dbGap Name: **LABA13**, Desc: **% Eosiniphils (LABA13)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00226283.v1_
+        * dbGap name: **LABA1**
+        * dbGap desc: **White Blood Count (x10e9) (LABA1)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00226287.v1_
+        * dbGap name: **LABA13**
+        * dbGap desc: **% Eosiniphils (LABA13)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -432,9 +542,19 @@
 <a id="eosinophil_ncnc_bld_1-jhs"></a>
   * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 3 component_study_variables
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
-      * _phs000286.v5.pht001959.v1.phv00127621.v1_. dbGap Name: **EOSIN**, Desc: **Eosin: diff measure % [Visit 1]**, Table: **loca**.
-      * _phs000286.v5.pht001959.v1.phv00127631.v1_. dbGap Name: **WBC**, Desc: **White blood cells TH/CMM [Visit 1]**, Table: **loca**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001959.v1.phv00127621.v1_
+        * dbGap name: **EOSIN**
+        * dbGap desc: **Eosin: diff measure % [Visit 1]**
+        * dbGap table: **loca**
+         * varId _phv00127621_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001959.v1.phv00127631.v1_
+        * dbGap name: **WBC**
+        * dbGap desc: **White blood cells TH/CMM [Visit 1]**
+        * dbGap table: **loca**
+         * varId _phv00127631_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list) {
@@ -469,8 +589,16 @@
 <a id="eosinophil_ncnc_bld_1-mesa"></a>
   * ### blood_cell_count/eosinophil_ncnc_bld_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 2 component_study_variables
-      * _phs000209.v13.pht003091.v3.phv00176011.v1_. dbGap Name: **age5c**, Desc: **AGE AT EXAM 5**, Table: **MESA_Exam5Main**.
-      * _phs000209.v13.pht004319.v1.phv00219001.v1_. dbGap Name: **eosa5**, Desc: **EOSINOPHILS (ABSOLUTE) (x10E3/uL)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+      * _phs000209.v13.pht003091.v3.phv00176011.v1_
+        * dbGap name: **age5c**
+        * dbGap desc: **AGE AT EXAM 5**
+        * dbGap table: **MESA_Exam5Main**
+         * PIC-SURE permissible values: 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94
+      * _phs000209.v13.pht004319.v1.phv00219001.v1_
+        * dbGap name: **eosa5**
+        * dbGap desc: **EOSINOPHILS (ABSOLUTE) (x10E3/uL)**
+        * dbGap table: **MESA_AncilMesaEpigenomicCBC**
+         * PIC-SURE permissible values: .1, .2, .3, .4, .5, .6, .7, .8, .9, 0, 1, 1.2, 1.3, 1.4, 1.6, 1.7
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -534,16 +662,50 @@
 <a id="hematocrit_vfr_bld_1-aric"></a>
   * ### blood_cell_count/hematocrit_vfr_bld_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 10 component_study_variables
-      * _phs000280.v4.pht004062.v2.phv00204623.v1_. No dbGap metadata available.
-      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
-      * _phs000280.v4.pht004064.v2.phv00204871.v1_. dbGap Name: **V3AGE31**, Desc: **Age at visit 3 [Cohort. Visit 3]**, Table: **DERIVE37**.
-      * _phs000280.v4.pht004065.v2.phv00204975.v1_. No dbGap metadata available.
-      * _phs000280.v4.pht004107.v2.phv00207255.v1_. dbGap Name: **HMTA01**, Desc: **Hematocrit % (MAV). Q1 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
-      * _phs000280.v4.pht004108.v2.phv00207270.v1_. dbGap Name: **HMTB01**, Desc: **Hematocrit % (MAV). Q1 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
-      * _phs000280.v4.pht004109.v2.phv00207289.v1_. dbGap Name: **HMTC5**, Desc: **Hematocrit. Q5 [Hematology Lab. HMTCV301. Visit 3]**, Table: **HMTCV301**.
-      * _phs000280.v4.pht004110.v2.phv00207301.v1_. dbGap Name: **HMTC5**, Desc: **Hematocrit. Q5 [Hematology Lab. HMTCV401. Visit 4]**, Table: **HMTCV401**.
-      * _phs000280.v4.pht006422.v1.phv00294957.v1_. dbGap Name: **CBC6**, Desc: **Hematocrit, Hct [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
-      * _phs000280.v4.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004062.v2.phv00204623.v1_
+        * No dbGap metadata available
+         * varId _phv00204623_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_
+        * dbGap name: **V1AGE01**
+        * dbGap desc: **Age at visit 1 [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204712_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004064.v2.phv00204871.v1_
+        * dbGap name: **V3AGE31**
+        * dbGap desc: **Age at visit 3 [Cohort. Visit 3]**
+        * dbGap table: **DERIVE37**
+         * varId _phv00204871_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004065.v2.phv00204975.v1_
+        * No dbGap metadata available
+         * varId _phv00204975_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004107.v2.phv00207255.v1_
+        * dbGap name: **HMTA01**
+        * dbGap desc: **Hematocrit % (MAV). Q1 [Hematology Form. HMTA. Visit 1]**
+        * dbGap table: **HMTA**
+         * varId _phv00207255_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004108.v2.phv00207270.v1_
+        * dbGap name: **HMTB01**
+        * dbGap desc: **Hematocrit % (MAV). Q1 [Hematology Form. HMTB. Visit 2]**
+        * dbGap table: **HMTB**
+         * varId _phv00207270_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004109.v2.phv00207289.v1_
+        * dbGap name: **HMTC5**
+        * dbGap desc: **Hematocrit. Q5 [Hematology Lab. HMTCV301. Visit 3]**
+        * dbGap table: **HMTCV301**
+         * varId _phv00207289_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004110.v2.phv00207301.v1_
+        * dbGap name: **HMTC5**
+        * dbGap desc: **Hematocrit. Q5 [Hematology Lab. HMTCV401. Visit 4]**
+        * dbGap table: **HMTCV401**
+         * varId _phv00207301_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006422.v1.phv00294957.v1_
+        * dbGap name: **CBC6**
+        * dbGap desc: **Hematocrit, Hct [Complete Blood Count, CBC, Visit 5]**
+        * dbGap table: **CBC**
+         * varId _phv00294957_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006431.v1.phv00295623.v1_
+        * No dbGap metadata available
+         * varId _phv00295623_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -617,8 +779,16 @@
 <a id="hematocrit_vfr_bld_1-cardia"></a>
   * ### blood_cell_count/hematocrit_vfr_bld_1 -- **CARDIA CARDIA Cohort**:
     * 2 component_study_variables
-      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
-      * _phs000285.v3.pht001563.v2.phv00112689.v2_. dbGap Name: **A05HCT**, Desc: **HEMATOCRIT (%)**, Table: **A4F05**.
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_
+        * dbGap name: **A01AGE2**
+        * dbGap desc: **AGE VERIFY**
+        * dbGap table: **A4F01**
+         * varId _phv00112439_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001563.v2.phv00112689.v2_
+        * dbGap name: **A05HCT**
+        * dbGap desc: **HEMATOCRIT (%)**
+        * dbGap table: **A4F05**
+         * varId _phv00112689_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -644,8 +814,16 @@
 <a id="hematocrit_vfr_bld_1-chs"></a>
   * ### blood_cell_count/hematocrit_vfr_bld_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
     * 2 component_study_variables
-      * _phs000287.v6.pht001452.v1.phv00100413.v1_. dbGap Name: **HEMATO23**, Desc: **HEMATOCRIT (%)**, Table: **BASEBOTH**.
-      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100413.v1_
+        * dbGap name: **HEMATO23**
+        * dbGap desc: **HEMATOCRIT (%)**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_
+        * dbGap name: **AGEBL**
+        * dbGap desc: **CALCULATED AGE AT BASELINE**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -665,8 +843,16 @@
 <a id="hematocrit_vfr_bld_1-hchs_sol"></a>
   * ### blood_cell_count/hematocrit_vfr_bld_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 2 component_study_variables
-      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00226303.v1_. dbGap Name: **LABA4**, Desc: **% Hematocrit (LABA4)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00226303.v1_
+        * dbGap name: **LABA4**
+        * dbGap desc: **% Hematocrit (LABA4)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -686,8 +872,14 @@
 <a id="hematocrit_vfr_bld_1-jhs"></a>
   * ### blood_cell_count/hematocrit_vfr_bld_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 2 component_study_variables
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
-      * _phs000286.v5.pht001959.v1.phv00127614.v1_. dbGap Name: **HEMATOCRIT**, Desc: **Hematocrit % [Visit 1]**, Table: **loca**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001959.v1.phv00127614.v1_
+        * dbGap name: **HEMATOCRIT**
+        * dbGap desc: **Hematocrit % [Visit 1]**
+        * dbGap table: **loca**
+         * varId _phv00127614_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list) {
@@ -717,8 +909,16 @@
 <a id="hematocrit_vfr_bld_1-mesa"></a>
   * ### blood_cell_count/hematocrit_vfr_bld_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 2 component_study_variables
-      * _phs000209.v13.pht003091.v3.phv00176011.v1_. dbGap Name: **age5c**, Desc: **AGE AT EXAM 5**, Table: **MESA_Exam5Main**.
-      * _phs000209.v13.pht004319.v1.phv00218992.v1_. dbGap Name: **hct5**, Desc: **HEMATOCRIT (%)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+      * _phs000209.v13.pht003091.v3.phv00176011.v1_
+        * dbGap name: **age5c**
+        * dbGap desc: **AGE AT EXAM 5**
+        * dbGap table: **MESA_Exam5Main**
+         * PIC-SURE permissible values: 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94
+      * _phs000209.v13.pht004319.v1.phv00218992.v1_
+        * dbGap name: **hct5**
+        * dbGap desc: **HEMATOCRIT (%)**
+        * dbGap table: **MESA_AncilMesaEpigenomicCBC**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -743,11 +943,31 @@
 <a id="hematocrit_vfr_bld_1-whi"></a>
   * ### blood_cell_count/hematocrit_vfr_bld_1 -- **WHI Women's Health Initiative**:
     * 5 component_study_variables
-      * _phs000200.v11.pht000986.v6.phv00077362.v6_. dbGap Name: **CBCVY**, Desc: **CBC Visit year**, Table: **cbc_rel1**.
-      * _phs000200.v11.pht000986.v6.phv00077363.v6_. dbGap Name: **CBCDAYS**, Desc: **CBC Days since randomization/enrollment**, Table: **cbc_rel1**.
-      * _phs000200.v11.pht000986.v6.phv00077365.v6_. dbGap Name: **HEMATOCR**, Desc: **Hematocrit (%)**, Table: **cbc_rel1**.
-      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
-      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
+      * _phs000200.v11.pht000986.v6.phv00077362.v6_
+        * dbGap name: **CBCVY**
+        * dbGap desc: **CBC Visit year**
+        * dbGap table: **cbc_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000986.v6.phv00077363.v6_
+        * dbGap name: **CBCDAYS**
+        * dbGap desc: **CBC Days since randomization/enrollment**
+        * dbGap table: **cbc_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000986.v6.phv00077365.v6_
+        * dbGap name: **HEMATOCR**
+        * dbGap desc: **Hematocrit (%)**
+        * dbGap table: **cbc_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_
+        * dbGap name: **F2DAYS**
+        * dbGap desc: **F2 Days since randomization**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age at screening**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -817,16 +1037,50 @@
 <a id="hemoglobin_mcnc_bld_1-aric"></a>
   * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 10 component_study_variables
-      * _phs000280.v4.pht004062.v2.phv00204623.v1_. No dbGap metadata available.
-      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
-      * _phs000280.v4.pht004064.v2.phv00204871.v1_. dbGap Name: **V3AGE31**, Desc: **Age at visit 3 [Cohort. Visit 3]**, Table: **DERIVE37**.
-      * _phs000280.v4.pht004065.v2.phv00204975.v1_. No dbGap metadata available.
-      * _phs000280.v4.pht004107.v2.phv00207256.v1_. dbGap Name: **HMTA02**, Desc: **Hemoglobin g/dL (MAV). Q2 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
-      * _phs000280.v4.pht004108.v2.phv00207271.v1_. dbGap Name: **HMTB02**, Desc: **Hemoglobin g/dL (MAV). Q2 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
-      * _phs000280.v4.pht004109.v2.phv00207288.v1_. dbGap Name: **HMTC4**, Desc: **Hemoglobin. Q4 [Hematology Lab. HMTCV301. Visit 3]**, Table: **HMTCV301**.
-      * _phs000280.v4.pht004110.v2.phv00207300.v1_. dbGap Name: **HMTC4**, Desc: **Hemoglobin. Q4 [Hematology Lab. HMTCV401. Visit 4]**, Table: **HMTCV401**.
-      * _phs000280.v4.pht006422.v1.phv00294956.v1_. dbGap Name: **CBC5**, Desc: **Hemoglobin, Hgb [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
-      * _phs000280.v4.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004062.v2.phv00204623.v1_
+        * No dbGap metadata available
+         * varId _phv00204623_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_
+        * dbGap name: **V1AGE01**
+        * dbGap desc: **Age at visit 1 [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204712_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004064.v2.phv00204871.v1_
+        * dbGap name: **V3AGE31**
+        * dbGap desc: **Age at visit 3 [Cohort. Visit 3]**
+        * dbGap table: **DERIVE37**
+         * varId _phv00204871_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004065.v2.phv00204975.v1_
+        * No dbGap metadata available
+         * varId _phv00204975_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004107.v2.phv00207256.v1_
+        * dbGap name: **HMTA02**
+        * dbGap desc: **Hemoglobin g/dL (MAV). Q2 [Hematology Form. HMTA. Visit 1]**
+        * dbGap table: **HMTA**
+         * varId _phv00207256_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004108.v2.phv00207271.v1_
+        * dbGap name: **HMTB02**
+        * dbGap desc: **Hemoglobin g/dL (MAV). Q2 [Hematology Form. HMTB. Visit 2]**
+        * dbGap table: **HMTB**
+         * varId _phv00207271_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004109.v2.phv00207288.v1_
+        * dbGap name: **HMTC4**
+        * dbGap desc: **Hemoglobin. Q4 [Hematology Lab. HMTCV301. Visit 3]**
+        * dbGap table: **HMTCV301**
+         * varId _phv00207288_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004110.v2.phv00207300.v1_
+        * dbGap name: **HMTC4**
+        * dbGap desc: **Hemoglobin. Q4 [Hematology Lab. HMTCV401. Visit 4]**
+        * dbGap table: **HMTCV401**
+         * varId _phv00207300_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006422.v1.phv00294956.v1_
+        * dbGap name: **CBC5**
+        * dbGap desc: **Hemoglobin, Hgb [Complete Blood Count, CBC, Visit 5]**
+        * dbGap table: **CBC**
+         * varId _phv00294956_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006431.v1.phv00295623.v1_
+        * No dbGap metadata available
+         * varId _phv00295623_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -900,8 +1154,16 @@
 <a id="hemoglobin_mcnc_bld_1-cardia"></a>
   * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **CARDIA CARDIA Cohort**:
     * 2 component_study_variables
-      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
-      * _phs000285.v3.pht001563.v2.phv00112688.v2_. dbGap Name: **A05HGB**, Desc: **HEMOGLOBIN (G/DL)**, Table: **A4F05**.
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_
+        * dbGap name: **A01AGE2**
+        * dbGap desc: **AGE VERIFY**
+        * dbGap table: **A4F01**
+         * varId _phv00112439_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001563.v2.phv00112688.v2_
+        * dbGap name: **A05HGB**
+        * dbGap desc: **HEMOGLOBIN (G/DL)**
+        * dbGap table: **A4F05**
+         * varId _phv00112688_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -927,8 +1189,16 @@
 <a id="hemoglobin_mcnc_bld_1-chs"></a>
   * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
     * 2 component_study_variables
-      * _phs000287.v6.pht001452.v1.phv00100412.v1_. dbGap Name: **HEMOGL23**, Desc: **HEMOGLOBIN (g/dl)**, Table: **BASEBOTH**.
-      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100412.v1_
+        * dbGap name: **HEMOGL23**
+        * dbGap desc: **HEMOGLOBIN (g/dl)**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_
+        * dbGap name: **AGEBL**
+        * dbGap desc: **CALCULATED AGE AT BASELINE**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -946,8 +1216,16 @@
 <a id="hemoglobin_mcnc_bld_1-hchs_sol"></a>
   * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 2 component_study_variables
-      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00226302.v1_. dbGap Name: **LABA3**, Desc: **Hemoglobin (g/dL) (LABA3)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00226302.v1_
+        * dbGap name: **LABA3**
+        * dbGap desc: **Hemoglobin (g/dL) (LABA3)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -967,8 +1245,14 @@
 <a id="hemoglobin_mcnc_bld_1-jhs"></a>
   * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 2 component_study_variables
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
-      * _phs000286.v5.pht001959.v1.phv00127615.v1_. dbGap Name: **HEMOGLOBIN**, Desc: **Hemoglobin G/DL [Visit 1]**, Table: **loca**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001959.v1.phv00127615.v1_
+        * dbGap name: **HEMOGLOBIN**
+        * dbGap desc: **Hemoglobin G/DL [Visit 1]**
+        * dbGap table: **loca**
+         * varId _phv00127615_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list) {
@@ -998,8 +1282,16 @@
 <a id="hemoglobin_mcnc_bld_1-mesa"></a>
   * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 2 component_study_variables
-      * _phs000209.v13.pht003091.v3.phv00176011.v1_. dbGap Name: **age5c**, Desc: **AGE AT EXAM 5**, Table: **MESA_Exam5Main**.
-      * _phs000209.v13.pht004319.v1.phv00218993.v1_. dbGap Name: **hgb5**, Desc: **HEMOGLOBIN (g/dL)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+      * _phs000209.v13.pht003091.v3.phv00176011.v1_
+        * dbGap name: **age5c**
+        * dbGap desc: **AGE AT EXAM 5**
+        * dbGap table: **MESA_Exam5Main**
+         * PIC-SURE permissible values: 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94
+      * _phs000209.v13.pht004319.v1.phv00218993.v1_
+        * dbGap name: **hgb5**
+        * dbGap desc: **HEMOGLOBIN (g/dL)**
+        * dbGap table: **MESA_AncilMesaEpigenomicCBC**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1023,11 +1315,31 @@
 <a id="hemoglobin_mcnc_bld_1-whi"></a>
   * ### blood_cell_count/hemoglobin_mcnc_bld_1 -- **WHI Women's Health Initiative**:
     * 5 component_study_variables
-      * _phs000200.v11.pht000986.v6.phv00077362.v6_. dbGap Name: **CBCVY**, Desc: **CBC Visit year**, Table: **cbc_rel1**.
-      * _phs000200.v11.pht000986.v6.phv00077363.v6_. dbGap Name: **CBCDAYS**, Desc: **CBC Days since randomization/enrollment**, Table: **cbc_rel1**.
-      * _phs000200.v11.pht000986.v6.phv00077366.v6_. dbGap Name: **HEMOGLBN**, Desc: **Hemoglobin (gm/dl)**, Table: **cbc_rel1**.
-      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
-      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
+      * _phs000200.v11.pht000986.v6.phv00077362.v6_
+        * dbGap name: **CBCVY**
+        * dbGap desc: **CBC Visit year**
+        * dbGap table: **cbc_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000986.v6.phv00077363.v6_
+        * dbGap name: **CBCDAYS**
+        * dbGap desc: **CBC Days since randomization/enrollment**
+        * dbGap table: **cbc_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000986.v6.phv00077366.v6_
+        * dbGap name: **HEMOGLBN**
+        * dbGap desc: **Hemoglobin (gm/dl)**
+        * dbGap table: **cbc_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_
+        * dbGap name: **F2DAYS**
+        * dbGap desc: **F2 Days since randomization**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age at screening**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1109,15 +1421,47 @@
 <a id="lymphocyte_ncnc_bld_1-aric"></a>
   * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 9 component_study_variables
-      * _phs000280.v4.pht004062.v2.phv00204623.v1_. No dbGap metadata available.
-      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
-      * _phs000280.v4.pht004107.v2.phv00207257.v1_. dbGap Name: **HMTA03**, Desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
-      * _phs000280.v4.pht004107.v2.phv00207261.v1_. dbGap Name: **HMTA07**, Desc: **Lymphocytes % Q7 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
-      * _phs000280.v4.pht004108.v2.phv00207272.v1_. dbGap Name: **HMTB03**, Desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
-      * _phs000280.v4.pht004108.v2.phv00207276.v1_. dbGap Name: **HMTB07**, Desc: **Lymphocytes %. Q7 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
-      * _phs000280.v4.pht006422.v1.phv00294954.v1_. dbGap Name: **CBC3**, Desc: **White blood cell count, Wbc [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
-      * _phs000280.v4.pht006422.v1.phv00294964.v1_. dbGap Name: **CBC13**, Desc: **Lymphocyte percentage, Ly [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
-      * _phs000280.v4.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004062.v2.phv00204623.v1_
+        * No dbGap metadata available
+         * varId _phv00204623_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_
+        * dbGap name: **V1AGE01**
+        * dbGap desc: **Age at visit 1 [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204712_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004107.v2.phv00207257.v1_
+        * dbGap name: **HMTA03**
+        * dbGap desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTA. Visit 1]**
+        * dbGap table: **HMTA**
+         * varId _phv00207257_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004107.v2.phv00207261.v1_
+        * dbGap name: **HMTA07**
+        * dbGap desc: **Lymphocytes % Q7 [Hematology Form. HMTA. Visit 1]**
+        * dbGap table: **HMTA**
+         * varId _phv00207261_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004108.v2.phv00207272.v1_
+        * dbGap name: **HMTB03**
+        * dbGap desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTB. Visit 2]**
+        * dbGap table: **HMTB**
+         * varId _phv00207272_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004108.v2.phv00207276.v1_
+        * dbGap name: **HMTB07**
+        * dbGap desc: **Lymphocytes %. Q7 [Hematology Form. HMTB. Visit 2]**
+        * dbGap table: **HMTB**
+         * varId _phv00207276_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006422.v1.phv00294954.v1_
+        * dbGap name: **CBC3**
+        * dbGap desc: **White blood cell count, Wbc [Complete Blood Count, CBC, Visit 5]**
+        * dbGap table: **CBC**
+         * varId _phv00294954_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006422.v1.phv00294964.v1_
+        * dbGap name: **CBC13**
+        * dbGap desc: **Lymphocyte percentage, Ly [Complete Blood Count, CBC, Visit 5]**
+        * dbGap table: **CBC**
+         * varId _phv00294964_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006431.v1.phv00295623.v1_
+        * No dbGap metadata available
+         * varId _phv00295623_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1194,9 +1538,21 @@
 <a id="lymphocyte_ncnc_bld_1-cardia"></a>
   * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **CARDIA CARDIA Cohort**:
     * 3 component_study_variables
-      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
-      * _phs000285.v3.pht001563.v2.phv00112686.v2_. dbGap Name: **A05WBC**, Desc: **WHITE CELL COUNT (X 1000)**, Table: **A4F05**.
-      * _phs000285.v3.pht001563.v2.phv00112691.v2_. dbGap Name: **A05LYMPH**, Desc: **LYMPHOCYTE COUNT**, Table: **A4F05**.
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_
+        * dbGap name: **A01AGE2**
+        * dbGap desc: **AGE VERIFY**
+        * dbGap table: **A4F01**
+         * varId _phv00112439_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001563.v2.phv00112686.v2_
+        * dbGap name: **A05WBC**
+        * dbGap desc: **WHITE CELL COUNT (X 1000)**
+        * dbGap table: **A4F05**
+         * varId _phv00112686_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001563.v2.phv00112691.v2_
+        * dbGap name: **A05LYMPH**
+        * dbGap desc: **LYMPHOCYTE COUNT**
+        * dbGap table: **A4F05**
+         * varId _phv00112691_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1225,9 +1581,21 @@
 <a id="lymphocyte_ncnc_bld_1-hchs_sol"></a>
   * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 3 component_study_variables
-      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00226283.v1_. dbGap Name: **LABA1**, Desc: **White Blood Count (x10e9) (LABA1)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00226285.v1_. dbGap Name: **LABA11**, Desc: **% Lymphocytes (LABA11)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00226283.v1_
+        * dbGap name: **LABA1**
+        * dbGap desc: **White Blood Count (x10e9) (LABA1)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00226285.v1_
+        * dbGap name: **LABA11**
+        * dbGap desc: **% Lymphocytes (LABA11)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1248,9 +1616,19 @@
 <a id="lymphocyte_ncnc_bld_1-jhs"></a>
   * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 3 component_study_variables
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
-      * _phs000286.v5.pht001959.v1.phv00127622.v1_. dbGap Name: **LYMPHS**, Desc: **Lymphs: diff measure % [Visit 1]**, Table: **loca**.
-      * _phs000286.v5.pht001959.v1.phv00127631.v1_. dbGap Name: **WBC**, Desc: **White blood cells TH/CMM [Visit 1]**, Table: **loca**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001959.v1.phv00127622.v1_
+        * dbGap name: **LYMPHS**
+        * dbGap desc: **Lymphs: diff measure % [Visit 1]**
+        * dbGap table: **loca**
+         * varId _phv00127622_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001959.v1.phv00127631.v1_
+        * dbGap name: **WBC**
+        * dbGap desc: **White blood cells TH/CMM [Visit 1]**
+        * dbGap table: **loca**
+         * varId _phv00127631_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list) {
@@ -1285,8 +1663,16 @@
 <a id="lymphocyte_ncnc_bld_1-mesa"></a>
   * ### blood_cell_count/lymphocyte_ncnc_bld_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 2 component_study_variables
-      * _phs000209.v13.pht003091.v3.phv00176011.v1_. dbGap Name: **age5c**, Desc: **AGE AT EXAM 5**, Table: **MESA_Exam5Main**.
-      * _phs000209.v13.pht004319.v1.phv00218998.v1_. dbGap Name: **lymphsa5**, Desc: **LYMPHOCYTES (ABSOLUTE) (x10E3/uL)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+      * _phs000209.v13.pht003091.v3.phv00176011.v1_
+        * dbGap name: **age5c**
+        * dbGap desc: **AGE AT EXAM 5**
+        * dbGap table: **MESA_Exam5Main**
+         * PIC-SURE permissible values: 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94
+      * _phs000209.v13.pht004319.v1.phv00218998.v1_
+        * dbGap name: **lymphsa5**
+        * dbGap desc: **LYMPHOCYTES (ABSOLUTE) (x10E3/uL)**
+        * dbGap table: **MESA_AncilMesaEpigenomicCBC**
+         * PIC-SURE permissible values: .2, .4, .5, .6, .7, .8, .9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 33.3, 37.6, 4, 4.6, 4.8, 5.8, 6.1, 8
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1354,12 +1740,32 @@
 <a id="mch_entmass_rbc_1-aric"></a>
   * ### blood_cell_count/mch_entmass_rbc_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 6 component_study_variables
-      * _phs000280.v4.pht004064.v2.phv00204871.v1_. dbGap Name: **V3AGE31**, Desc: **Age at visit 3 [Cohort. Visit 3]**, Table: **DERIVE37**.
-      * _phs000280.v4.pht004065.v2.phv00204975.v1_. No dbGap metadata available.
-      * _phs000280.v4.pht004109.v2.phv00207290.v1_. dbGap Name: **HMTC7**, Desc: **MCH. Q7 [Hematology Lab. HMTCV301. Visit 3]**, Table: **HMTCV301**.
-      * _phs000280.v4.pht004110.v2.phv00207302.v1_. dbGap Name: **HMTC7**, Desc: **MCH. Q7 [Hematology Lab. HMTCV401. Visit 4]**, Table: **HMTCV401**.
-      * _phs000280.v4.pht006422.v1.phv00294960.v1_. dbGap Name: **CBC9**, Desc: **Mean corpuscular hemoglobin, Mch [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
-      * _phs000280.v4.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004064.v2.phv00204871.v1_
+        * dbGap name: **V3AGE31**
+        * dbGap desc: **Age at visit 3 [Cohort. Visit 3]**
+        * dbGap table: **DERIVE37**
+         * varId _phv00204871_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004065.v2.phv00204975.v1_
+        * No dbGap metadata available
+         * varId _phv00204975_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004109.v2.phv00207290.v1_
+        * dbGap name: **HMTC7**
+        * dbGap desc: **MCH. Q7 [Hematology Lab. HMTCV301. Visit 3]**
+        * dbGap table: **HMTCV301**
+         * varId _phv00207290_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004110.v2.phv00207302.v1_
+        * dbGap name: **HMTC7**
+        * dbGap desc: **MCH. Q7 [Hematology Lab. HMTCV401. Visit 4]**
+        * dbGap table: **HMTCV401**
+         * varId _phv00207302_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006422.v1.phv00294960.v1_
+        * dbGap name: **CBC9**
+        * dbGap desc: **Mean corpuscular hemoglobin, Mch [Complete Blood Count, CBC, Visit 5]**
+        * dbGap table: **CBC**
+         * varId _phv00294960_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006431.v1.phv00295623.v1_
+        * No dbGap metadata available
+         * varId _phv00295623_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1423,9 +1829,21 @@
 <a id="mch_entmass_rbc_1-cardia"></a>
   * ### blood_cell_count/mch_entmass_rbc_1 -- **CARDIA CARDIA Cohort**:
     * 3 component_study_variables
-      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
-      * _phs000285.v3.pht001563.v2.phv00112687.v2_. dbGap Name: **A05RBC**, Desc: **RED CELL COUNT (X 1,000,000)**, Table: **A4F05**.
-      * _phs000285.v3.pht001563.v2.phv00112688.v2_. dbGap Name: **A05HGB**, Desc: **HEMOGLOBIN (G/DL)**, Table: **A4F05**.
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_
+        * dbGap name: **A01AGE2**
+        * dbGap desc: **AGE VERIFY**
+        * dbGap table: **A4F01**
+         * varId _phv00112439_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001563.v2.phv00112687.v2_
+        * dbGap name: **A05RBC**
+        * dbGap desc: **RED CELL COUNT (X 1,000,000)**
+        * dbGap table: **A4F05**
+         * varId _phv00112687_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001563.v2.phv00112688.v2_
+        * dbGap name: **A05HGB**
+        * dbGap desc: **HEMOGLOBIN (G/DL)**
+        * dbGap table: **A4F05**
+         * varId _phv00112688_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1453,8 +1871,16 @@
 <a id="mch_entmass_rbc_1-hchs_sol"></a>
   * ### blood_cell_count/mch_entmass_rbc_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 2 component_study_variables
-      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00226305.v1_. dbGap Name: **LABA6**, Desc: **Mean Corpuscular Hemoglobin (pg) (LABA6)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00226305.v1_
+        * dbGap name: **LABA6**
+        * dbGap desc: **Mean Corpuscular Hemoglobin (pg) (LABA6)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1475,8 +1901,14 @@
 <a id="mch_entmass_rbc_1-jhs"></a>
   * ### blood_cell_count/mch_entmass_rbc_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 2 component_study_variables
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
-      * _phs000286.v5.pht001959.v1.phv00127623.v1_. dbGap Name: **MCH**, Desc: **MCH PG [Visit 1]**, Table: **loca**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001959.v1.phv00127623.v1_
+        * dbGap name: **MCH**
+        * dbGap desc: **MCH PG [Visit 1]**
+        * dbGap table: **loca**
+         * varId _phv00127623_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list) {
@@ -1506,9 +1938,21 @@
 <a id="mch_entmass_rbc_1-mesa"></a>
   * ### blood_cell_count/mch_entmass_rbc_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 3 component_study_variables
-      * _phs000209.v13.pht003091.v3.phv00176011.v1_. dbGap Name: **age5c**, Desc: **AGE AT EXAM 5**, Table: **MESA_Exam5Main**.
-      * _phs000209.v13.pht004319.v1.phv00218990.v1_. dbGap Name: **rbc5**, Desc: **RED BLOOD CELL (RBC) (x10E6/uL)**, Table: **MESA_AncilMesaEpigenomicCBC**.
-      * _phs000209.v13.pht004319.v1.phv00218993.v1_. dbGap Name: **hgb5**, Desc: **HEMOGLOBIN (g/dL)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+      * _phs000209.v13.pht003091.v3.phv00176011.v1_
+        * dbGap name: **age5c**
+        * dbGap desc: **AGE AT EXAM 5**
+        * dbGap table: **MESA_Exam5Main**
+         * PIC-SURE permissible values: 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94
+      * _phs000209.v13.pht004319.v1.phv00218990.v1_
+        * dbGap name: **rbc5**
+        * dbGap desc: **RED BLOOD CELL (RBC) (x10E6/uL)**
+        * dbGap table: **MESA_AncilMesaEpigenomicCBC**
+         * PIC-SURE permissible values: 2.36, 2.39, 2.75, 2.99, 3.01, 3.06, 3.09, 3.1, 3.13, 3.16, 3.19, 3.21, 3.22, 3.23, 3.24, 3.25, 3.26, 3.27, 3.28, 3.29, 3.3, 3.31, 3.33, 3.34, 3.35, 3.37, 3.38, 3.4, 3.41, 3.42, 3.43, 3.44, 3.45, 3.47, 3.48, 3.49, 3.5, 3.51, 3.52, 3.53, 3.54, 3.55, 3.56, 3.57, 3.58, 3.59, 3.6, 3.61, 3.62, 3.63, 3.64, 3.65, 3.66, 3.67, 3.68, 3.69, 3.7, 3.71, 3.72, 3.73, 3.74, 3.75, 3.76, 3.77, 3.78, 3.79, 3.8, 3.81, 3.82, 3.83, 3.84, 3.85, 3.86, 3.87, 3.88, 3.89, 3.9, 3.91, 3.92, 3.93, 3.94, 3.95, 3.96, 3.97, 3.98, 3.99, 4, 4.01, 4.02, 4.03, 4.04, 4.05, 4.06, 4.07, 4.08, 4.09, 4.1, 4.11, 4.12, 4.13, 4.14, 4.15, 4.16, 4.17, 4.18, 4.19, 4.2, 4.21, 4.22, 4.23, 4.24, 4.25, 4.26, 4.27, 4.28, 4.29, 4.3, 4.31, 4.32, 4.33, 4.34, 4.35, 4.36, 4.37, 4.38, 4.39, 4.4, 4.41, 4.42, 4.43, 4.44, 4.45, 4.46, 4.47, 4.48, 4.49, 4.5, 4.51, 4.52, 4.53, 4.54, 4.55, 4.56, 4.57, 4.58, 4.59, 4.6, 4.61, 4.62, 4.63, 4.64, 4.65, 4.66, 4.67, 4.68, 4.69, 4.7, 4.71, 4.72, 4.73, 4.74, 4.75, 4.76, 4.77, 4.78, 4.79, 4.8, 4.81, 4.82, 4.83, 4.84, 4.85, 4.86, 4.87, 4.88, 4.89, 4.9, 4.91, 4.92, 4.93, 4.94, 4.95, 4.96, 4.97, 4.98, 4.99, 5, 5.01, 5.02, 5.03, 5.04, 5.05, 5.06, 5.07, 5.08, 5.09, 5.1, 5.11, 5.12, 5.13, 5.14, 5.15, 5.16, 5.17, 5.18, 5.19, 5.2, 5.21, 5.22, 5.23, 5.24, 5.25, 5.26, 5.27, 5.28, 5.29, 5.3, 5.31, 5.32, 5.33, 5.34, 5.35, 5.36, 5.37, 5.38, 5.39, 5.4, 5.41, 5.42, 5.43, 5.45, 5.46, 5.47, 5.48, 5.49, 5.5, 5.51, 5.53, 5.54, 5.55, 5.56, 5.57, 5.58, 5.59, 5.6, 5.61, 5.65, 5.66, 5.67, 5.7, 5.71, 5.72, 5.73, 5.74, 5.76, 5.78, 5.81, 5.82, 5.85, 5.89, 5.9, 5.95, 5.97, 6.05, 6.07, 6.09, 6.14, 6.17, 6.35, 6.41, 6.81
+      * _phs000209.v13.pht004319.v1.phv00218993.v1_
+        * dbGap name: **hgb5**
+        * dbGap desc: **HEMOGLOBIN (g/dL)**
+        * dbGap table: **MESA_AncilMesaEpigenomicCBC**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list) {
@@ -1589,21 +2033,75 @@
 <a id="mchc_mcnc_rbc_1-aric"></a>
   * ### blood_cell_count/mchc_mcnc_rbc_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 15 component_study_variables
-      * _phs000280.v4.pht004062.v2.phv00204623.v1_. No dbGap metadata available.
-      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
-      * _phs000280.v4.pht004064.v2.phv00204871.v1_. dbGap Name: **V3AGE31**, Desc: **Age at visit 3 [Cohort. Visit 3]**, Table: **DERIVE37**.
-      * _phs000280.v4.pht004065.v2.phv00204975.v1_. No dbGap metadata available.
-      * _phs000280.v4.pht004107.v2.phv00207255.v1_. dbGap Name: **HMTA01**, Desc: **Hematocrit % (MAV). Q1 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
-      * _phs000280.v4.pht004107.v2.phv00207256.v1_. dbGap Name: **HMTA02**, Desc: **Hemoglobin g/dL (MAV). Q2 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
-      * _phs000280.v4.pht004108.v2.phv00207270.v1_. dbGap Name: **HMTB01**, Desc: **Hematocrit % (MAV). Q1 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
-      * _phs000280.v4.pht004108.v2.phv00207271.v1_. dbGap Name: **HMTB02**, Desc: **Hemoglobin g/dL (MAV). Q2 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
-      * _phs000280.v4.pht004109.v2.phv00207288.v1_. dbGap Name: **HMTC4**, Desc: **Hemoglobin. Q4 [Hematology Lab. HMTCV301. Visit 3]**, Table: **HMTCV301**.
-      * _phs000280.v4.pht004109.v2.phv00207289.v1_. dbGap Name: **HMTC5**, Desc: **Hematocrit. Q5 [Hematology Lab. HMTCV301. Visit 3]**, Table: **HMTCV301**.
-      * _phs000280.v4.pht004110.v2.phv00207300.v1_. dbGap Name: **HMTC4**, Desc: **Hemoglobin. Q4 [Hematology Lab. HMTCV401. Visit 4]**, Table: **HMTCV401**.
-      * _phs000280.v4.pht004110.v2.phv00207301.v1_. dbGap Name: **HMTC5**, Desc: **Hematocrit. Q5 [Hematology Lab. HMTCV401. Visit 4]**, Table: **HMTCV401**.
-      * _phs000280.v4.pht006422.v1.phv00294956.v1_. dbGap Name: **CBC5**, Desc: **Hemoglobin, Hgb [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
-      * _phs000280.v4.pht006422.v1.phv00294957.v1_. dbGap Name: **CBC6**, Desc: **Hematocrit, Hct [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
-      * _phs000280.v4.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004062.v2.phv00204623.v1_
+        * No dbGap metadata available
+         * varId _phv00204623_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_
+        * dbGap name: **V1AGE01**
+        * dbGap desc: **Age at visit 1 [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204712_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004064.v2.phv00204871.v1_
+        * dbGap name: **V3AGE31**
+        * dbGap desc: **Age at visit 3 [Cohort. Visit 3]**
+        * dbGap table: **DERIVE37**
+         * varId _phv00204871_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004065.v2.phv00204975.v1_
+        * No dbGap metadata available
+         * varId _phv00204975_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004107.v2.phv00207255.v1_
+        * dbGap name: **HMTA01**
+        * dbGap desc: **Hematocrit % (MAV). Q1 [Hematology Form. HMTA. Visit 1]**
+        * dbGap table: **HMTA**
+         * varId _phv00207255_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004107.v2.phv00207256.v1_
+        * dbGap name: **HMTA02**
+        * dbGap desc: **Hemoglobin g/dL (MAV). Q2 [Hematology Form. HMTA. Visit 1]**
+        * dbGap table: **HMTA**
+         * varId _phv00207256_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004108.v2.phv00207270.v1_
+        * dbGap name: **HMTB01**
+        * dbGap desc: **Hematocrit % (MAV). Q1 [Hematology Form. HMTB. Visit 2]**
+        * dbGap table: **HMTB**
+         * varId _phv00207270_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004108.v2.phv00207271.v1_
+        * dbGap name: **HMTB02**
+        * dbGap desc: **Hemoglobin g/dL (MAV). Q2 [Hematology Form. HMTB. Visit 2]**
+        * dbGap table: **HMTB**
+         * varId _phv00207271_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004109.v2.phv00207288.v1_
+        * dbGap name: **HMTC4**
+        * dbGap desc: **Hemoglobin. Q4 [Hematology Lab. HMTCV301. Visit 3]**
+        * dbGap table: **HMTCV301**
+         * varId _phv00207288_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004109.v2.phv00207289.v1_
+        * dbGap name: **HMTC5**
+        * dbGap desc: **Hematocrit. Q5 [Hematology Lab. HMTCV301. Visit 3]**
+        * dbGap table: **HMTCV301**
+         * varId _phv00207289_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004110.v2.phv00207300.v1_
+        * dbGap name: **HMTC4**
+        * dbGap desc: **Hemoglobin. Q4 [Hematology Lab. HMTCV401. Visit 4]**
+        * dbGap table: **HMTCV401**
+         * varId _phv00207300_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004110.v2.phv00207301.v1_
+        * dbGap name: **HMTC5**
+        * dbGap desc: **Hematocrit. Q5 [Hematology Lab. HMTCV401. Visit 4]**
+        * dbGap table: **HMTCV401**
+         * varId _phv00207301_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006422.v1.phv00294956.v1_
+        * dbGap name: **CBC5**
+        * dbGap desc: **Hemoglobin, Hgb [Complete Blood Count, CBC, Visit 5]**
+        * dbGap table: **CBC**
+         * varId _phv00294956_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006422.v1.phv00294957.v1_
+        * dbGap name: **CBC6**
+        * dbGap desc: **Hematocrit, Hct [Complete Blood Count, CBC, Visit 5]**
+        * dbGap table: **CBC**
+         * varId _phv00294957_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006431.v1.phv00295623.v1_
+        * No dbGap metadata available
+         * varId _phv00295623_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1686,9 +2184,21 @@
 <a id="mchc_mcnc_rbc_1-cardia"></a>
   * ### blood_cell_count/mchc_mcnc_rbc_1 -- **CARDIA CARDIA Cohort**:
     * 3 component_study_variables
-      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
-      * _phs000285.v3.pht001563.v2.phv00112688.v2_. dbGap Name: **A05HGB**, Desc: **HEMOGLOBIN (G/DL)**, Table: **A4F05**.
-      * _phs000285.v3.pht001563.v2.phv00112689.v2_. dbGap Name: **A05HCT**, Desc: **HEMATOCRIT (%)**, Table: **A4F05**.
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_
+        * dbGap name: **A01AGE2**
+        * dbGap desc: **AGE VERIFY**
+        * dbGap table: **A4F01**
+         * varId _phv00112439_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001563.v2.phv00112688.v2_
+        * dbGap name: **A05HGB**
+        * dbGap desc: **HEMOGLOBIN (G/DL)**
+        * dbGap table: **A4F05**
+         * varId _phv00112688_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001563.v2.phv00112689.v2_
+        * dbGap name: **A05HCT**
+        * dbGap desc: **HEMATOCRIT (%)**
+        * dbGap table: **A4F05**
+         * varId _phv00112689_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1716,9 +2226,21 @@
 <a id="mchc_mcnc_rbc_1-chs"></a>
   * ### blood_cell_count/mchc_mcnc_rbc_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
     * 3 component_study_variables
-      * _phs000287.v6.pht001452.v1.phv00100412.v1_. dbGap Name: **HEMOGL23**, Desc: **HEMOGLOBIN (g/dl)**, Table: **BASEBOTH**.
-      * _phs000287.v6.pht001452.v1.phv00100413.v1_. dbGap Name: **HEMATO23**, Desc: **HEMATOCRIT (%)**, Table: **BASEBOTH**.
-      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100412.v1_
+        * dbGap name: **HEMOGL23**
+        * dbGap desc: **HEMOGLOBIN (g/dl)**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000287.v6.pht001452.v1.phv00100413.v1_
+        * dbGap name: **HEMATO23**
+        * dbGap desc: **HEMATOCRIT (%)**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_
+        * dbGap name: **AGEBL**
+        * dbGap desc: **CALCULATED AGE AT BASELINE**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1740,8 +2262,16 @@
 <a id="mchc_mcnc_rbc_1-hchs_sol"></a>
   * ### blood_cell_count/mchc_mcnc_rbc_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 2 component_study_variables
-      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00226306.v1_. dbGap Name: **LABA7**, Desc: **Mean Corpuscular Hemoglobin Concentration (g/dL)(LABA7)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00226306.v1_
+        * dbGap name: **LABA7**
+        * dbGap desc: **Mean Corpuscular Hemoglobin Concentration (g/dL)(LABA7)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1762,8 +2292,14 @@
 <a id="mchc_mcnc_rbc_1-jhs"></a>
   * ### blood_cell_count/mchc_mcnc_rbc_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 2 component_study_variables
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
-      * _phs000286.v5.pht001959.v1.phv00127624.v1_. dbGap Name: **MCHC**, Desc: **Mchc % [Visit 1]**, Table: **loca**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001959.v1.phv00127624.v1_
+        * dbGap name: **MCHC**
+        * dbGap desc: **Mchc % [Visit 1]**
+        * dbGap table: **loca**
+         * varId _phv00127624_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list) {
@@ -1793,9 +2329,21 @@
 <a id="mchc_mcnc_rbc_1-mesa"></a>
   * ### blood_cell_count/mchc_mcnc_rbc_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 3 component_study_variables
-      * _phs000209.v13.pht003091.v3.phv00176011.v1_. dbGap Name: **age5c**, Desc: **AGE AT EXAM 5**, Table: **MESA_Exam5Main**.
-      * _phs000209.v13.pht004319.v1.phv00218992.v1_. dbGap Name: **hct5**, Desc: **HEMATOCRIT (%)**, Table: **MESA_AncilMesaEpigenomicCBC**.
-      * _phs000209.v13.pht004319.v1.phv00218993.v1_. dbGap Name: **hgb5**, Desc: **HEMOGLOBIN (g/dL)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+      * _phs000209.v13.pht003091.v3.phv00176011.v1_
+        * dbGap name: **age5c**
+        * dbGap desc: **AGE AT EXAM 5**
+        * dbGap table: **MESA_Exam5Main**
+         * PIC-SURE permissible values: 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94
+      * _phs000209.v13.pht004319.v1.phv00218992.v1_
+        * dbGap name: **hct5**
+        * dbGap desc: **HEMATOCRIT (%)**
+        * dbGap table: **MESA_AncilMesaEpigenomicCBC**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht004319.v1.phv00218993.v1_
+        * dbGap name: **hgb5**
+        * dbGap desc: **HEMOGLOBIN (g/dL)**
+        * dbGap table: **MESA_AncilMesaEpigenomicCBC**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list) {
@@ -1871,14 +2419,40 @@
 <a id="mcv_entvol_rbc_1-aric"></a>
   * ### blood_cell_count/mcv_entvol_rbc_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 8 component_study_variables
-      * _phs000280.v4.pht004062.v2.phv00204623.v1_. No dbGap metadata available.
-      * _phs000280.v4.pht004064.v2.phv00204871.v1_. dbGap Name: **V3AGE31**, Desc: **Age at visit 3 [Cohort. Visit 3]**, Table: **DERIVE37**.
-      * _phs000280.v4.pht004065.v2.phv00204975.v1_. No dbGap metadata available.
-      * _phs000280.v4.pht004108.v2.phv00207282.v1_. dbGap Name: **HMTB13**, Desc: **Mean corpuscular volume (MCV) (to nearest whole unit). Q13 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
-      * _phs000280.v4.pht004109.v2.phv00207293.v1_. dbGap Name: **HMTC6**, Desc: **MCV. Q6 [Hematology Lab. HMTCV301. Visit 3]**, Table: **HMTCV301**.
-      * _phs000280.v4.pht004110.v2.phv00207305.v1_. dbGap Name: **HMTC6**, Desc: **MCV. Q6 [Hematology Lab. HMTCV401. Visit 4]**, Table: **HMTCV401**.
-      * _phs000280.v4.pht006422.v1.phv00294959.v1_. dbGap Name: **CBC8**, Desc: **Mean cell volume, Mcv [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
-      * _phs000280.v4.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004062.v2.phv00204623.v1_
+        * No dbGap metadata available
+         * varId _phv00204623_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004064.v2.phv00204871.v1_
+        * dbGap name: **V3AGE31**
+        * dbGap desc: **Age at visit 3 [Cohort. Visit 3]**
+        * dbGap table: **DERIVE37**
+         * varId _phv00204871_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004065.v2.phv00204975.v1_
+        * No dbGap metadata available
+         * varId _phv00204975_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004108.v2.phv00207282.v1_
+        * dbGap name: **HMTB13**
+        * dbGap desc: **Mean corpuscular volume (MCV) (to nearest whole unit). Q13 [Hematology Form. HMTB. Visit 2]**
+        * dbGap table: **HMTB**
+         * varId _phv00207282_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004109.v2.phv00207293.v1_
+        * dbGap name: **HMTC6**
+        * dbGap desc: **MCV. Q6 [Hematology Lab. HMTCV301. Visit 3]**
+        * dbGap table: **HMTCV301**
+         * varId _phv00207293_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004110.v2.phv00207305.v1_
+        * dbGap name: **HMTC6**
+        * dbGap desc: **MCV. Q6 [Hematology Lab. HMTCV401. Visit 4]**
+        * dbGap table: **HMTCV401**
+         * varId _phv00207305_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006422.v1.phv00294959.v1_
+        * dbGap name: **CBC8**
+        * dbGap desc: **Mean cell volume, Mcv [Complete Blood Count, CBC, Visit 5]**
+        * dbGap table: **CBC**
+         * varId _phv00294959_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006431.v1.phv00295623.v1_
+        * No dbGap metadata available
+         * varId _phv00295623_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1947,9 +2521,21 @@
 <a id="mcv_entvol_rbc_1-cardia"></a>
   * ### blood_cell_count/mcv_entvol_rbc_1 -- **CARDIA CARDIA Cohort**:
     * 3 component_study_variables
-      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
-      * _phs000285.v3.pht001563.v2.phv00112687.v2_. dbGap Name: **A05RBC**, Desc: **RED CELL COUNT (X 1,000,000)**, Table: **A4F05**.
-      * _phs000285.v3.pht001563.v2.phv00112689.v2_. dbGap Name: **A05HCT**, Desc: **HEMATOCRIT (%)**, Table: **A4F05**.
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_
+        * dbGap name: **A01AGE2**
+        * dbGap desc: **AGE VERIFY**
+        * dbGap table: **A4F01**
+         * varId _phv00112439_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001563.v2.phv00112687.v2_
+        * dbGap name: **A05RBC**
+        * dbGap desc: **RED CELL COUNT (X 1,000,000)**
+        * dbGap table: **A4F05**
+         * varId _phv00112687_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001563.v2.phv00112689.v2_
+        * dbGap name: **A05HCT**
+        * dbGap desc: **HEMATOCRIT (%)**
+        * dbGap table: **A4F05**
+         * varId _phv00112689_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1977,8 +2563,16 @@
 <a id="mcv_entvol_rbc_1-hchs_sol"></a>
   * ### blood_cell_count/mcv_entvol_rbc_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 2 component_study_variables
-      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00226304.v1_. dbGap Name: **LABA5**, Desc: **Mean Corpuscular Volume (fl) (LABA5)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00226304.v1_
+        * dbGap name: **LABA5**
+        * dbGap desc: **Mean Corpuscular Volume (fl) (LABA5)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1999,8 +2593,14 @@
 <a id="mcv_entvol_rbc_1-jhs"></a>
   * ### blood_cell_count/mcv_entvol_rbc_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 2 component_study_variables
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
-      * _phs000286.v5.pht001959.v1.phv00127625.v1_. dbGap Name: **MCV**, Desc: **Mcv FL [Visit 1]**, Table: **loca**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001959.v1.phv00127625.v1_
+        * dbGap name: **MCV**
+        * dbGap desc: **Mcv FL [Visit 1]**
+        * dbGap table: **loca**
+         * varId _phv00127625_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list) {
@@ -2030,9 +2630,21 @@
 <a id="mcv_entvol_rbc_1-mesa"></a>
   * ### blood_cell_count/mcv_entvol_rbc_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 3 component_study_variables
-      * _phs000209.v13.pht003091.v3.phv00176011.v1_. dbGap Name: **age5c**, Desc: **AGE AT EXAM 5**, Table: **MESA_Exam5Main**.
-      * _phs000209.v13.pht004319.v1.phv00218990.v1_. dbGap Name: **rbc5**, Desc: **RED BLOOD CELL (RBC) (x10E6/uL)**, Table: **MESA_AncilMesaEpigenomicCBC**.
-      * _phs000209.v13.pht004319.v1.phv00218992.v1_. dbGap Name: **hct5**, Desc: **HEMATOCRIT (%)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+      * _phs000209.v13.pht003091.v3.phv00176011.v1_
+        * dbGap name: **age5c**
+        * dbGap desc: **AGE AT EXAM 5**
+        * dbGap table: **MESA_Exam5Main**
+         * PIC-SURE permissible values: 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94
+      * _phs000209.v13.pht004319.v1.phv00218990.v1_
+        * dbGap name: **rbc5**
+        * dbGap desc: **RED BLOOD CELL (RBC) (x10E6/uL)**
+        * dbGap table: **MESA_AncilMesaEpigenomicCBC**
+         * PIC-SURE permissible values: 2.36, 2.39, 2.75, 2.99, 3.01, 3.06, 3.09, 3.1, 3.13, 3.16, 3.19, 3.21, 3.22, 3.23, 3.24, 3.25, 3.26, 3.27, 3.28, 3.29, 3.3, 3.31, 3.33, 3.34, 3.35, 3.37, 3.38, 3.4, 3.41, 3.42, 3.43, 3.44, 3.45, 3.47, 3.48, 3.49, 3.5, 3.51, 3.52, 3.53, 3.54, 3.55, 3.56, 3.57, 3.58, 3.59, 3.6, 3.61, 3.62, 3.63, 3.64, 3.65, 3.66, 3.67, 3.68, 3.69, 3.7, 3.71, 3.72, 3.73, 3.74, 3.75, 3.76, 3.77, 3.78, 3.79, 3.8, 3.81, 3.82, 3.83, 3.84, 3.85, 3.86, 3.87, 3.88, 3.89, 3.9, 3.91, 3.92, 3.93, 3.94, 3.95, 3.96, 3.97, 3.98, 3.99, 4, 4.01, 4.02, 4.03, 4.04, 4.05, 4.06, 4.07, 4.08, 4.09, 4.1, 4.11, 4.12, 4.13, 4.14, 4.15, 4.16, 4.17, 4.18, 4.19, 4.2, 4.21, 4.22, 4.23, 4.24, 4.25, 4.26, 4.27, 4.28, 4.29, 4.3, 4.31, 4.32, 4.33, 4.34, 4.35, 4.36, 4.37, 4.38, 4.39, 4.4, 4.41, 4.42, 4.43, 4.44, 4.45, 4.46, 4.47, 4.48, 4.49, 4.5, 4.51, 4.52, 4.53, 4.54, 4.55, 4.56, 4.57, 4.58, 4.59, 4.6, 4.61, 4.62, 4.63, 4.64, 4.65, 4.66, 4.67, 4.68, 4.69, 4.7, 4.71, 4.72, 4.73, 4.74, 4.75, 4.76, 4.77, 4.78, 4.79, 4.8, 4.81, 4.82, 4.83, 4.84, 4.85, 4.86, 4.87, 4.88, 4.89, 4.9, 4.91, 4.92, 4.93, 4.94, 4.95, 4.96, 4.97, 4.98, 4.99, 5, 5.01, 5.02, 5.03, 5.04, 5.05, 5.06, 5.07, 5.08, 5.09, 5.1, 5.11, 5.12, 5.13, 5.14, 5.15, 5.16, 5.17, 5.18, 5.19, 5.2, 5.21, 5.22, 5.23, 5.24, 5.25, 5.26, 5.27, 5.28, 5.29, 5.3, 5.31, 5.32, 5.33, 5.34, 5.35, 5.36, 5.37, 5.38, 5.39, 5.4, 5.41, 5.42, 5.43, 5.45, 5.46, 5.47, 5.48, 5.49, 5.5, 5.51, 5.53, 5.54, 5.55, 5.56, 5.57, 5.58, 5.59, 5.6, 5.61, 5.65, 5.66, 5.67, 5.7, 5.71, 5.72, 5.73, 5.74, 5.76, 5.78, 5.81, 5.82, 5.85, 5.89, 5.9, 5.95, 5.97, 6.05, 6.07, 6.09, 6.14, 6.17, 6.35, 6.41, 6.81
+      * _phs000209.v13.pht004319.v1.phv00218992.v1_
+        * dbGap name: **hct5**
+        * dbGap desc: **HEMATOCRIT (%)**
+        * dbGap table: **MESA_AncilMesaEpigenomicCBC**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list) {
@@ -2113,15 +2725,47 @@
 <a id="monocyte_ncnc_bld_1-aric"></a>
   * ### blood_cell_count/monocyte_ncnc_bld_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 9 component_study_variables
-      * _phs000280.v4.pht004062.v2.phv00204623.v1_. No dbGap metadata available.
-      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
-      * _phs000280.v4.pht004107.v2.phv00207257.v1_. dbGap Name: **HMTA03**, Desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
-      * _phs000280.v4.pht004107.v2.phv00207262.v1_. dbGap Name: **HMTA08**, Desc: **Monocytes % Q8 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
-      * _phs000280.v4.pht004108.v2.phv00207272.v1_. dbGap Name: **HMTB03**, Desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
-      * _phs000280.v4.pht004108.v2.phv00207277.v1_. dbGap Name: **HMTB08**, Desc: **Monocytes %. Q8 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
-      * _phs000280.v4.pht006422.v1.phv00294954.v1_. dbGap Name: **CBC3**, Desc: **White blood cell count, Wbc [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
-      * _phs000280.v4.pht006422.v1.phv00294965.v1_. dbGap Name: **CBC14**, Desc: **Monocyte percentage, Mo [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
-      * _phs000280.v4.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004062.v2.phv00204623.v1_
+        * No dbGap metadata available
+         * varId _phv00204623_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_
+        * dbGap name: **V1AGE01**
+        * dbGap desc: **Age at visit 1 [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204712_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004107.v2.phv00207257.v1_
+        * dbGap name: **HMTA03**
+        * dbGap desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTA. Visit 1]**
+        * dbGap table: **HMTA**
+         * varId _phv00207257_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004107.v2.phv00207262.v1_
+        * dbGap name: **HMTA08**
+        * dbGap desc: **Monocytes % Q8 [Hematology Form. HMTA. Visit 1]**
+        * dbGap table: **HMTA**
+         * varId _phv00207262_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004108.v2.phv00207272.v1_
+        * dbGap name: **HMTB03**
+        * dbGap desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTB. Visit 2]**
+        * dbGap table: **HMTB**
+         * varId _phv00207272_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004108.v2.phv00207277.v1_
+        * dbGap name: **HMTB08**
+        * dbGap desc: **Monocytes %. Q8 [Hematology Form. HMTB. Visit 2]**
+        * dbGap table: **HMTB**
+         * varId _phv00207277_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006422.v1.phv00294954.v1_
+        * dbGap name: **CBC3**
+        * dbGap desc: **White blood cell count, Wbc [Complete Blood Count, CBC, Visit 5]**
+        * dbGap table: **CBC**
+         * varId _phv00294954_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006422.v1.phv00294965.v1_
+        * dbGap name: **CBC14**
+        * dbGap desc: **Monocyte percentage, Mo [Complete Blood Count, CBC, Visit 5]**
+        * dbGap table: **CBC**
+         * varId _phv00294965_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006431.v1.phv00295623.v1_
+        * No dbGap metadata available
+         * varId _phv00295623_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -2198,9 +2842,21 @@
 <a id="monocyte_ncnc_bld_1-cardia"></a>
   * ### blood_cell_count/monocyte_ncnc_bld_1 -- **CARDIA CARDIA Cohort**:
     * 3 component_study_variables
-      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
-      * _phs000285.v3.pht001563.v2.phv00112686.v2_. dbGap Name: **A05WBC**, Desc: **WHITE CELL COUNT (X 1000)**, Table: **A4F05**.
-      * _phs000285.v3.pht001563.v2.phv00112692.v2_. dbGap Name: **A05MONO**, Desc: **MONOCYTES (%)**, Table: **A4F05**.
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_
+        * dbGap name: **A01AGE2**
+        * dbGap desc: **AGE VERIFY**
+        * dbGap table: **A4F01**
+         * varId _phv00112439_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001563.v2.phv00112686.v2_
+        * dbGap name: **A05WBC**
+        * dbGap desc: **WHITE CELL COUNT (X 1000)**
+        * dbGap table: **A4F05**
+         * varId _phv00112686_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001563.v2.phv00112692.v2_
+        * dbGap name: **A05MONO**
+        * dbGap desc: **MONOCYTES (%)**
+        * dbGap table: **A4F05**
+         * varId _phv00112692_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -2228,9 +2884,21 @@
 <a id="monocyte_ncnc_bld_1-hchs_sol"></a>
   * ### blood_cell_count/monocyte_ncnc_bld_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 3 component_study_variables
-      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00226283.v1_. dbGap Name: **LABA1**, Desc: **White Blood Count (x10e9) (LABA1)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00226286.v1_. dbGap Name: **LABA12**, Desc: **% Monocytes (LABA12)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00226283.v1_
+        * dbGap name: **LABA1**
+        * dbGap desc: **White Blood Count (x10e9) (LABA1)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00226286.v1_
+        * dbGap name: **LABA12**
+        * dbGap desc: **% Monocytes (LABA12)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -2251,9 +2919,19 @@
 <a id="monocyte_ncnc_bld_1-jhs"></a>
   * ### blood_cell_count/monocyte_ncnc_bld_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 3 component_study_variables
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
-      * _phs000286.v5.pht001959.v1.phv00127626.v1_. dbGap Name: **MONOS**, Desc: **Monos: diff % [Visit 1]**, Table: **loca**.
-      * _phs000286.v5.pht001959.v1.phv00127631.v1_. dbGap Name: **WBC**, Desc: **White blood cells TH/CMM [Visit 1]**, Table: **loca**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001959.v1.phv00127626.v1_
+        * dbGap name: **MONOS**
+        * dbGap desc: **Monos: diff % [Visit 1]**
+        * dbGap table: **loca**
+         * varId _phv00127626_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001959.v1.phv00127631.v1_
+        * dbGap name: **WBC**
+        * dbGap desc: **White blood cells TH/CMM [Visit 1]**
+        * dbGap table: **loca**
+         * varId _phv00127631_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list) {
@@ -2288,8 +2966,16 @@
 <a id="monocyte_ncnc_bld_1-mesa"></a>
   * ### blood_cell_count/monocyte_ncnc_bld_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 2 component_study_variables
-      * _phs000209.v13.pht003091.v3.phv00176011.v1_. dbGap Name: **age5c**, Desc: **AGE AT EXAM 5**, Table: **MESA_Exam5Main**.
-      * _phs000209.v13.pht004319.v1.phv00219000.v1_. dbGap Name: **monosa5**, Desc: **MONOCYTES(ABSOLUTE) (x10E3/uL)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+      * _phs000209.v13.pht003091.v3.phv00176011.v1_
+        * dbGap name: **age5c**
+        * dbGap desc: **AGE AT EXAM 5**
+        * dbGap table: **MESA_Exam5Main**
+         * PIC-SURE permissible values: 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94
+      * _phs000209.v13.pht004319.v1.phv00219000.v1_
+        * dbGap name: **monosa5**
+        * dbGap desc: **MONOCYTES(ABSOLUTE) (x10E3/uL)**
+        * dbGap table: **MESA_AncilMesaEpigenomicCBC**
+         * PIC-SURE permissible values: .1, .2, .3, .4, .5, .6, .7, .8, .9, 0, 1, 1.1, 1.2, 1.3, 1.4, 2.6
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -2367,14 +3053,44 @@
 <a id="neutrophil_ncnc_bld_1-aric"></a>
   * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 8 component_study_variables
-      * _phs000280.v4.pht004062.v2.phv00204623.v1_. No dbGap metadata available.
-      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
-      * _phs000280.v4.pht004107.v2.phv00207257.v1_. dbGap Name: **HMTA03**, Desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
-      * _phs000280.v4.pht004107.v2.phv00207259.v1_. dbGap Name: **HMTA05**, Desc: **Neutrophils % Q5 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
-      * _phs000280.v4.pht004107.v2.phv00207260.v1_. dbGap Name: **HMTA06**, Desc: **Neutrophil Bands % Q6 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
-      * _phs000280.v4.pht004108.v2.phv00207272.v1_. dbGap Name: **HMTB03**, Desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
-      * _phs000280.v4.pht004108.v2.phv00207274.v1_. dbGap Name: **HMTB05**, Desc: **Neutrophils % Q5. Q5 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
-      * _phs000280.v4.pht004108.v2.phv00207275.v1_. dbGap Name: **HMTB06**, Desc: **Neutrophil Bands %.Q6 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
+      * _phs000280.v4.pht004062.v2.phv00204623.v1_
+        * No dbGap metadata available
+         * varId _phv00204623_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_
+        * dbGap name: **V1AGE01**
+        * dbGap desc: **Age at visit 1 [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204712_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004107.v2.phv00207257.v1_
+        * dbGap name: **HMTA03**
+        * dbGap desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTA. Visit 1]**
+        * dbGap table: **HMTA**
+         * varId _phv00207257_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004107.v2.phv00207259.v1_
+        * dbGap name: **HMTA05**
+        * dbGap desc: **Neutrophils % Q5 [Hematology Form. HMTA. Visit 1]**
+        * dbGap table: **HMTA**
+         * varId _phv00207259_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004107.v2.phv00207260.v1_
+        * dbGap name: **HMTA06**
+        * dbGap desc: **Neutrophil Bands % Q6 [Hematology Form. HMTA. Visit 1]**
+        * dbGap table: **HMTA**
+         * varId _phv00207260_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004108.v2.phv00207272.v1_
+        * dbGap name: **HMTB03**
+        * dbGap desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTB. Visit 2]**
+        * dbGap table: **HMTB**
+         * varId _phv00207272_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004108.v2.phv00207274.v1_
+        * dbGap name: **HMTB05**
+        * dbGap desc: **Neutrophils % Q5. Q5 [Hematology Form. HMTB. Visit 2]**
+        * dbGap table: **HMTB**
+         * varId _phv00207274_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004108.v2.phv00207275.v1_
+        * dbGap name: **HMTB06**
+        * dbGap desc: **Neutrophil Bands %.Q6 [Hematology Form. HMTB. Visit 2]**
+        * dbGap table: **HMTB**
+         * varId _phv00207275_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -2449,12 +3165,36 @@
 <a id="neutrophil_ncnc_bld_1-cardia"></a>
   * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **CARDIA CARDIA Cohort**:
     * 6 component_study_variables
-      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
-      * _phs000285.v3.pht001563.v2.phv00112686.v2_. dbGap Name: **A05WBC**, Desc: **WHITE CELL COUNT (X 1000)**, Table: **A4F05**.
-      * _phs000285.v3.pht001563.v2.phv00112694.v2_. dbGap Name: **A05NEUTR**, Desc: **NEUTROPHILS (%)**, Table: **A4F05**.
-      * _phs000285.v3.pht001563.v2.phv00112695.v2_. dbGap Name: **A05GRAN**, Desc: **GRANULOCYTES (%)**, Table: **A4F05**.
-      * _phs000285.v3.pht001563.v2.phv00112697.v2_. dbGap Name: **A05BANDS**, Desc: **BANDS (%)**, Table: **A4F05**.
-      * _phs000285.v3.pht001563.v2.phv00112698.v2_. dbGap Name: **A05SEGS**, Desc: **SEGS (%)**, Table: **A4F05**.
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_
+        * dbGap name: **A01AGE2**
+        * dbGap desc: **AGE VERIFY**
+        * dbGap table: **A4F01**
+         * varId _phv00112439_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001563.v2.phv00112686.v2_
+        * dbGap name: **A05WBC**
+        * dbGap desc: **WHITE CELL COUNT (X 1000)**
+        * dbGap table: **A4F05**
+         * varId _phv00112686_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001563.v2.phv00112694.v2_
+        * dbGap name: **A05NEUTR**
+        * dbGap desc: **NEUTROPHILS (%)**
+        * dbGap table: **A4F05**
+         * varId _phv00112694_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001563.v2.phv00112695.v2_
+        * dbGap name: **A05GRAN**
+        * dbGap desc: **GRANULOCYTES (%)**
+        * dbGap table: **A4F05**
+         * varId _phv00112695_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001563.v2.phv00112697.v2_
+        * dbGap name: **A05BANDS**
+        * dbGap desc: **BANDS (%)**
+        * dbGap table: **A4F05**
+         * varId _phv00112697_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001563.v2.phv00112698.v2_
+        * dbGap name: **A05SEGS**
+        * dbGap desc: **SEGS (%)**
+        * dbGap table: **A4F05**
+         * varId _phv00112698_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -2496,9 +3236,21 @@
 <a id="neutrophil_ncnc_bld_1-hchs_sol"></a>
   * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 3 component_study_variables
-      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00226283.v1_. dbGap Name: **LABA1**, Desc: **White Blood Count (x10e9) (LABA1)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00226284.v1_. dbGap Name: **LABA10**, Desc: **% Neutrophils (LABA10)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00226283.v1_
+        * dbGap name: **LABA1**
+        * dbGap desc: **White Blood Count (x10e9) (LABA1)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00226284.v1_
+        * dbGap name: **LABA10**
+        * dbGap desc: **% Neutrophils (LABA10)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -2519,10 +3271,24 @@
 <a id="neutrophil_ncnc_bld_1-jhs"></a>
   * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 4 component_study_variables
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
-      * _phs000286.v5.pht001959.v1.phv00127630.v1_. dbGap Name: **SEGS**, Desc: **Segs: diff measure % [Visit 1]**, Table: **loca**.
-      * _phs000286.v5.pht001959.v1.phv00127631.v1_. dbGap Name: **WBC**, Desc: **White blood cells TH/CMM [Visit 1]**, Table: **loca**.
-      * _phs000286.v5.pht001959.v1.phv00127632.v1_. dbGap Name: **BANDS**, Desc: **Bands: diff measure % [Visit 1]**, Table: **loca**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001959.v1.phv00127630.v1_
+        * dbGap name: **SEGS**
+        * dbGap desc: **Segs: diff measure % [Visit 1]**
+        * dbGap table: **loca**
+         * varId _phv00127630_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001959.v1.phv00127631.v1_
+        * dbGap name: **WBC**
+        * dbGap desc: **White blood cells TH/CMM [Visit 1]**
+        * dbGap table: **loca**
+         * varId _phv00127631_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001959.v1.phv00127632.v1_
+        * dbGap name: **BANDS**
+        * dbGap desc: **Bands: diff measure % [Visit 1]**
+        * dbGap table: **loca**
+         * varId _phv00127632_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list) {
@@ -2563,8 +3329,16 @@
 <a id="neutrophil_ncnc_bld_1-mesa"></a>
   * ### blood_cell_count/neutrophil_ncnc_bld_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 2 component_study_variables
-      * _phs000209.v13.pht003091.v3.phv00176011.v1_. dbGap Name: **age5c**, Desc: **AGE AT EXAM 5**, Table: **MESA_Exam5Main**.
-      * _phs000209.v13.pht004319.v1.phv00218999.v1_. dbGap Name: **polysa5**, Desc: **NEUTROPHILS (ABSOLUTE) (x10E3/uL)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+      * _phs000209.v13.pht003091.v3.phv00176011.v1_
+        * dbGap name: **age5c**
+        * dbGap desc: **AGE AT EXAM 5**
+        * dbGap table: **MESA_Exam5Main**
+         * PIC-SURE permissible values: 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94
+      * _phs000209.v13.pht004319.v1.phv00218999.v1_
+        * dbGap name: **polysa5**
+        * dbGap desc: **NEUTROPHILS (ABSOLUTE) (x10E3/uL)**
+        * dbGap table: **MESA_AncilMesaEpigenomicCBC**
+         * PIC-SURE permissible values: .1, .6, .7, .9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 11.1, 11.5, 12.7, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 5, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 6, 6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8, 6.9, 7, 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8, 7.9, 8, 8.1, 8.2, 8.3, 8.4, 8.6, 8.8, 8.9, 9, 9.3
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -2624,16 +3398,50 @@
 <a id="platelet_ncnc_bld_1-aric"></a>
   * ### blood_cell_count/platelet_ncnc_bld_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 10 component_study_variables
-      * _phs000280.v4.pht004062.v2.phv00204623.v1_. No dbGap metadata available.
-      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
-      * _phs000280.v4.pht004064.v2.phv00204871.v1_. dbGap Name: **V3AGE31**, Desc: **Age at visit 3 [Cohort. Visit 3]**, Table: **DERIVE37**.
-      * _phs000280.v4.pht004065.v2.phv00204975.v1_. No dbGap metadata available.
-      * _phs000280.v4.pht004107.v2.phv00207258.v1_. dbGap Name: **HMTA04**, Desc: **Platelet count x1000/mm3 (MAV). Q4 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
-      * _phs000280.v4.pht004108.v2.phv00207273.v1_. dbGap Name: **HMTB04**, Desc: **Platelet count x1000/mm3 (MAV). Q4 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
-      * _phs000280.v4.pht004109.v2.phv00207294.v1_. dbGap Name: **HMTC10**, Desc: **Platelet count Q10 [Hematology Lab. HMTCV301. Visit 3]**, Table: **HMTCV301**.
-      * _phs000280.v4.pht004110.v2.phv00207306.v1_. dbGap Name: **HMTC10**, Desc: **Platelet count. Q10 [Hematology Lab. HMTCV401. Visit 4]**, Table: **HMTCV401**.
-      * _phs000280.v4.pht006422.v1.phv00294958.v1_. dbGap Name: **CBC7**, Desc: **Platelet count, Plt [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
-      * _phs000280.v4.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004062.v2.phv00204623.v1_
+        * No dbGap metadata available
+         * varId _phv00204623_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_
+        * dbGap name: **V1AGE01**
+        * dbGap desc: **Age at visit 1 [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204712_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004064.v2.phv00204871.v1_
+        * dbGap name: **V3AGE31**
+        * dbGap desc: **Age at visit 3 [Cohort. Visit 3]**
+        * dbGap table: **DERIVE37**
+         * varId _phv00204871_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004065.v2.phv00204975.v1_
+        * No dbGap metadata available
+         * varId _phv00204975_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004107.v2.phv00207258.v1_
+        * dbGap name: **HMTA04**
+        * dbGap desc: **Platelet count x1000/mm3 (MAV). Q4 [Hematology Form. HMTA. Visit 1]**
+        * dbGap table: **HMTA**
+         * varId _phv00207258_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004108.v2.phv00207273.v1_
+        * dbGap name: **HMTB04**
+        * dbGap desc: **Platelet count x1000/mm3 (MAV). Q4 [Hematology Form. HMTB. Visit 2]**
+        * dbGap table: **HMTB**
+         * varId _phv00207273_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004109.v2.phv00207294.v1_
+        * dbGap name: **HMTC10**
+        * dbGap desc: **Platelet count Q10 [Hematology Lab. HMTCV301. Visit 3]**
+        * dbGap table: **HMTCV301**
+         * varId _phv00207294_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004110.v2.phv00207306.v1_
+        * dbGap name: **HMTC10**
+        * dbGap desc: **Platelet count. Q10 [Hematology Lab. HMTCV401. Visit 4]**
+        * dbGap table: **HMTCV401**
+         * varId _phv00207306_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006422.v1.phv00294958.v1_
+        * dbGap name: **CBC7**
+        * dbGap desc: **Platelet count, Plt [Complete Blood Count, CBC, Visit 5]**
+        * dbGap table: **CBC**
+         * varId _phv00294958_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006431.v1.phv00295623.v1_
+        * No dbGap metadata available
+         * varId _phv00295623_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -2707,8 +3515,16 @@
 <a id="platelet_ncnc_bld_1-cardia"></a>
   * ### blood_cell_count/platelet_ncnc_bld_1 -- **CARDIA CARDIA Cohort**:
     * 2 component_study_variables
-      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
-      * _phs000285.v3.pht001563.v2.phv00112690.v2_. dbGap Name: **A05PLATL**, Desc: **PLATELET COUNT**, Table: **A4F05**.
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_
+        * dbGap name: **A01AGE2**
+        * dbGap desc: **AGE VERIFY**
+        * dbGap table: **A4F01**
+         * varId _phv00112439_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001563.v2.phv00112690.v2_
+        * dbGap name: **A05PLATL**
+        * dbGap desc: **PLATELET COUNT**
+        * dbGap table: **A4F05**
+         * varId _phv00112690_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -2735,8 +3551,16 @@
 <a id="platelet_ncnc_bld_1-chs"></a>
   * ### blood_cell_count/platelet_ncnc_bld_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
     * 2 component_study_variables
-      * _phs000287.v6.pht001452.v1.phv00100414.v1_. dbGap Name: **PLATE23**, Desc: **PLATELET COUNT (/cc.mm)**, Table: **BASEBOTH**.
-      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100414.v1_
+        * dbGap name: **PLATE23**
+        * dbGap desc: **PLATELET COUNT (/cc.mm)**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_
+        * dbGap name: **AGEBL**
+        * dbGap desc: **CALCULATED AGE AT BASELINE**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -2755,8 +3579,16 @@
 <a id="platelet_ncnc_bld_1-hchs_sol"></a>
   * ### blood_cell_count/platelet_ncnc_bld_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 2 component_study_variables
-      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00226310.v1_. dbGap Name: **LABA9**, Desc: **Platelet Count (x10e9) (LABA9)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00226310.v1_
+        * dbGap name: **LABA9**
+        * dbGap desc: **Platelet Count (x10e9) (LABA9)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -2777,8 +3609,14 @@
 <a id="platelet_ncnc_bld_1-jhs"></a>
   * ### blood_cell_count/platelet_ncnc_bld_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 2 component_study_variables
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
-      * _phs000286.v5.pht001959.v1.phv00127616.v1_. dbGap Name: **PLATELET**, Desc: **Platelet TH/CMM [Visit 1]**, Table: **loca**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001959.v1.phv00127616.v1_
+        * dbGap name: **PLATELET**
+        * dbGap desc: **Platelet TH/CMM [Visit 1]**
+        * dbGap table: **loca**
+         * varId _phv00127616_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list) {
@@ -2808,8 +3646,16 @@
 <a id="platelet_ncnc_bld_1-mesa"></a>
   * ### blood_cell_count/platelet_ncnc_bld_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 2 component_study_variables
-      * _phs000209.v13.pht003091.v3.phv00176011.v1_. dbGap Name: **age5c**, Desc: **AGE AT EXAM 5**, Table: **MESA_Exam5Main**.
-      * _phs000209.v13.pht004319.v1.phv00218991.v1_. dbGap Name: **plt5**, Desc: **PLATELETS (x10E3/uL)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+      * _phs000209.v13.pht003091.v3.phv00176011.v1_
+        * dbGap name: **age5c**
+        * dbGap desc: **AGE AT EXAM 5**
+        * dbGap table: **MESA_Exam5Main**
+         * PIC-SURE permissible values: 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94
+      * _phs000209.v13.pht004319.v1.phv00218991.v1_
+        * dbGap name: **plt5**
+        * dbGap desc: **PLATELETS (x10E3/uL)**
+        * dbGap table: **MESA_AncilMesaEpigenomicCBC**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -2835,11 +3681,31 @@
 <a id="platelet_ncnc_bld_1-whi"></a>
   * ### blood_cell_count/platelet_ncnc_bld_1 -- **WHI Women's Health Initiative**:
     * 5 component_study_variables
-      * _phs000200.v11.pht000986.v6.phv00077362.v6_. dbGap Name: **CBCVY**, Desc: **CBC Visit year**, Table: **cbc_rel1**.
-      * _phs000200.v11.pht000986.v6.phv00077363.v6_. dbGap Name: **CBCDAYS**, Desc: **CBC Days since randomization/enrollment**, Table: **cbc_rel1**.
-      * _phs000200.v11.pht000986.v6.phv00077367.v6_. dbGap Name: **PLATELET**, Desc: **Platelet count (Kcell/microliter)**, Table: **cbc_rel1**.
-      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
-      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
+      * _phs000200.v11.pht000986.v6.phv00077362.v6_
+        * dbGap name: **CBCVY**
+        * dbGap desc: **CBC Visit year**
+        * dbGap table: **cbc_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000986.v6.phv00077363.v6_
+        * dbGap name: **CBCDAYS**
+        * dbGap desc: **CBC Days since randomization/enrollment**
+        * dbGap table: **cbc_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000986.v6.phv00077367.v6_
+        * dbGap name: **PLATELET**
+        * dbGap desc: **Platelet count (Kcell/microliter)**
+        * dbGap table: **cbc_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_
+        * dbGap name: **F2DAYS**
+        * dbGap desc: **F2 Days since randomization**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age at screening**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -2890,8 +3756,14 @@
 <a id="pmv_entvol_bld_1-aric"></a>
   * ### blood_cell_count/pmv_entvol_bld_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 2 component_study_variables
-      * _phs000280.v4.pht006422.v1.phv00294963.v1_. dbGap Name: **CBC12**, Desc: **Mean platelet volume, Mpv [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
-      * _phs000280.v4.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht006422.v1.phv00294963.v1_
+        * dbGap name: **CBC12**
+        * dbGap desc: **Mean platelet volume, Mpv [Complete Blood Count, CBC, Visit 5]**
+        * dbGap table: **CBC**
+         * varId _phv00294963_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006431.v1.phv00295623.v1_
+        * No dbGap metadata available
+         * varId _phv00295623_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -2920,8 +3792,14 @@
 <a id="pmv_entvol_bld_1-jhs"></a>
   * ### blood_cell_count/pmv_entvol_bld_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 2 component_study_variables
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
-      * _phs000286.v5.pht001959.v1.phv00127627.v1_. dbGap Name: **MPV**, Desc: **Mpv FL [Visit 1]**, Table: **loca**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001959.v1.phv00127627.v1_
+        * dbGap name: **MPV**
+        * dbGap desc: **Mpv FL [Visit 1]**
+        * dbGap table: **loca**
+         * varId _phv00127627_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list) {
@@ -2983,12 +3861,32 @@
 <a id="rbc_ncnc_bld_1-aric"></a>
   * ### blood_cell_count/rbc_ncnc_bld_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 6 component_study_variables
-      * _phs000280.v4.pht004064.v2.phv00204871.v1_. dbGap Name: **V3AGE31**, Desc: **Age at visit 3 [Cohort. Visit 3]**, Table: **DERIVE37**.
-      * _phs000280.v4.pht004065.v2.phv00204975.v1_. No dbGap metadata available.
-      * _phs000280.v4.pht004109.v2.phv00207287.v1_. dbGap Name: **HMTC3**, Desc: **Red blood count. Q3 [Hematology Lab. HMTCV301. Visit 3]**, Table: **HMTCV301**.
-      * _phs000280.v4.pht004110.v2.phv00207299.v1_. dbGap Name: **HMTC3**, Desc: **Red blood count. Q3 [Hematology Lab. HMTCV401. Visit 4]**, Table: **HMTCV401**.
-      * _phs000280.v4.pht006422.v1.phv00294955.v1_. dbGap Name: **CBC4**, Desc: **Red blood cell count, Rbc [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
-      * _phs000280.v4.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004064.v2.phv00204871.v1_
+        * dbGap name: **V3AGE31**
+        * dbGap desc: **Age at visit 3 [Cohort. Visit 3]**
+        * dbGap table: **DERIVE37**
+         * varId _phv00204871_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004065.v2.phv00204975.v1_
+        * No dbGap metadata available
+         * varId _phv00204975_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004109.v2.phv00207287.v1_
+        * dbGap name: **HMTC3**
+        * dbGap desc: **Red blood count. Q3 [Hematology Lab. HMTCV301. Visit 3]**
+        * dbGap table: **HMTCV301**
+         * varId _phv00207287_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004110.v2.phv00207299.v1_
+        * dbGap name: **HMTC3**
+        * dbGap desc: **Red blood count. Q3 [Hematology Lab. HMTCV401. Visit 4]**
+        * dbGap table: **HMTCV401**
+         * varId _phv00207299_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006422.v1.phv00294955.v1_
+        * dbGap name: **CBC4**
+        * dbGap desc: **Red blood cell count, Rbc [Complete Blood Count, CBC, Visit 5]**
+        * dbGap table: **CBC**
+         * varId _phv00294955_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006431.v1.phv00295623.v1_
+        * No dbGap metadata available
+         * varId _phv00295623_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -3052,8 +3950,16 @@
 <a id="rbc_ncnc_bld_1-cardia"></a>
   * ### blood_cell_count/rbc_ncnc_bld_1 -- **CARDIA CARDIA Cohort**:
     * 2 component_study_variables
-      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
-      * _phs000285.v3.pht001563.v2.phv00112687.v2_. dbGap Name: **A05RBC**, Desc: **RED CELL COUNT (X 1,000,000)**, Table: **A4F05**.
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_
+        * dbGap name: **A01AGE2**
+        * dbGap desc: **AGE VERIFY**
+        * dbGap table: **A4F01**
+         * varId _phv00112439_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001563.v2.phv00112687.v2_
+        * dbGap name: **A05RBC**
+        * dbGap desc: **RED CELL COUNT (X 1,000,000)**
+        * dbGap table: **A4F05**
+         * varId _phv00112687_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -3079,8 +3985,16 @@
 <a id="rbc_ncnc_bld_1-hchs_sol"></a>
   * ### blood_cell_count/rbc_ncnc_bld_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 2 component_study_variables
-      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00226294.v1_. dbGap Name: **LABA2**, Desc: **Red Blood Count (x10e12) (LABA2)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00226294.v1_
+        * dbGap name: **LABA2**
+        * dbGap desc: **Red Blood Count (x10e12) (LABA2)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -3101,8 +4015,14 @@
 <a id="rbc_ncnc_bld_1-jhs"></a>
   * ### blood_cell_count/rbc_ncnc_bld_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 2 component_study_variables
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
-      * _phs000286.v5.pht001959.v1.phv00127629.v1_. dbGap Name: **RED_CELL_COUNT**, Desc: **Red cell count M/CMM [Visit 1]**, Table: **loca**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001959.v1.phv00127629.v1_
+        * dbGap name: **RED_CELL_COUNT**
+        * dbGap desc: **Red cell count M/CMM [Visit 1]**
+        * dbGap table: **loca**
+         * varId _phv00127629_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list) {
@@ -3132,8 +4052,16 @@
 <a id="rbc_ncnc_bld_1-mesa"></a>
   * ### blood_cell_count/rbc_ncnc_bld_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 2 component_study_variables
-      * _phs000209.v13.pht003091.v3.phv00176011.v1_. dbGap Name: **age5c**, Desc: **AGE AT EXAM 5**, Table: **MESA_Exam5Main**.
-      * _phs000209.v13.pht004319.v1.phv00218990.v1_. dbGap Name: **rbc5**, Desc: **RED BLOOD CELL (RBC) (x10E6/uL)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+      * _phs000209.v13.pht003091.v3.phv00176011.v1_
+        * dbGap name: **age5c**
+        * dbGap desc: **AGE AT EXAM 5**
+        * dbGap table: **MESA_Exam5Main**
+         * PIC-SURE permissible values: 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94
+      * _phs000209.v13.pht004319.v1.phv00218990.v1_
+        * dbGap name: **rbc5**
+        * dbGap desc: **RED BLOOD CELL (RBC) (x10E6/uL)**
+        * dbGap table: **MESA_AncilMesaEpigenomicCBC**
+         * PIC-SURE permissible values: 2.36, 2.39, 2.75, 2.99, 3.01, 3.06, 3.09, 3.1, 3.13, 3.16, 3.19, 3.21, 3.22, 3.23, 3.24, 3.25, 3.26, 3.27, 3.28, 3.29, 3.3, 3.31, 3.33, 3.34, 3.35, 3.37, 3.38, 3.4, 3.41, 3.42, 3.43, 3.44, 3.45, 3.47, 3.48, 3.49, 3.5, 3.51, 3.52, 3.53, 3.54, 3.55, 3.56, 3.57, 3.58, 3.59, 3.6, 3.61, 3.62, 3.63, 3.64, 3.65, 3.66, 3.67, 3.68, 3.69, 3.7, 3.71, 3.72, 3.73, 3.74, 3.75, 3.76, 3.77, 3.78, 3.79, 3.8, 3.81, 3.82, 3.83, 3.84, 3.85, 3.86, 3.87, 3.88, 3.89, 3.9, 3.91, 3.92, 3.93, 3.94, 3.95, 3.96, 3.97, 3.98, 3.99, 4, 4.01, 4.02, 4.03, 4.04, 4.05, 4.06, 4.07, 4.08, 4.09, 4.1, 4.11, 4.12, 4.13, 4.14, 4.15, 4.16, 4.17, 4.18, 4.19, 4.2, 4.21, 4.22, 4.23, 4.24, 4.25, 4.26, 4.27, 4.28, 4.29, 4.3, 4.31, 4.32, 4.33, 4.34, 4.35, 4.36, 4.37, 4.38, 4.39, 4.4, 4.41, 4.42, 4.43, 4.44, 4.45, 4.46, 4.47, 4.48, 4.49, 4.5, 4.51, 4.52, 4.53, 4.54, 4.55, 4.56, 4.57, 4.58, 4.59, 4.6, 4.61, 4.62, 4.63, 4.64, 4.65, 4.66, 4.67, 4.68, 4.69, 4.7, 4.71, 4.72, 4.73, 4.74, 4.75, 4.76, 4.77, 4.78, 4.79, 4.8, 4.81, 4.82, 4.83, 4.84, 4.85, 4.86, 4.87, 4.88, 4.89, 4.9, 4.91, 4.92, 4.93, 4.94, 4.95, 4.96, 4.97, 4.98, 4.99, 5, 5.01, 5.02, 5.03, 5.04, 5.05, 5.06, 5.07, 5.08, 5.09, 5.1, 5.11, 5.12, 5.13, 5.14, 5.15, 5.16, 5.17, 5.18, 5.19, 5.2, 5.21, 5.22, 5.23, 5.24, 5.25, 5.26, 5.27, 5.28, 5.29, 5.3, 5.31, 5.32, 5.33, 5.34, 5.35, 5.36, 5.37, 5.38, 5.39, 5.4, 5.41, 5.42, 5.43, 5.45, 5.46, 5.47, 5.48, 5.49, 5.5, 5.51, 5.53, 5.54, 5.55, 5.56, 5.57, 5.58, 5.59, 5.6, 5.61, 5.65, 5.66, 5.67, 5.7, 5.71, 5.72, 5.73, 5.74, 5.76, 5.78, 5.81, 5.82, 5.85, 5.89, 5.9, 5.95, 5.97, 6.05, 6.07, 6.09, 6.14, 6.17, 6.35, 6.41, 6.81
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -3181,12 +4109,32 @@
 <a id="rdw_ratio_rbc_1-aric"></a>
   * ### blood_cell_count/rdw_ratio_rbc_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 6 component_study_variables
-      * _phs000280.v4.pht004064.v2.phv00204871.v1_. dbGap Name: **V3AGE31**, Desc: **Age at visit 3 [Cohort. Visit 3]**, Table: **DERIVE37**.
-      * _phs000280.v4.pht004065.v2.phv00204975.v1_. No dbGap metadata available.
-      * _phs000280.v4.pht004109.v2.phv00207292.v1_. dbGap Name: **HMTC9**, Desc: **RBC distribution width. Q9 [Hematology Lab. HMTCV301. Visit 3]**, Table: **HMTCV301**.
-      * _phs000280.v4.pht004110.v2.phv00207304.v1_. dbGap Name: **HMTC9**, Desc: **RBC distribution width. Q9 [Hematology Lab. HMTCV401. Visit 4]**, Table: **HMTCV401**.
-      * _phs000280.v4.pht006422.v1.phv00294962.v1_. dbGap Name: **CBC11**, Desc: **Red cell distribution width, Rdw [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
-      * _phs000280.v4.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004064.v2.phv00204871.v1_
+        * dbGap name: **V3AGE31**
+        * dbGap desc: **Age at visit 3 [Cohort. Visit 3]**
+        * dbGap table: **DERIVE37**
+         * varId _phv00204871_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004065.v2.phv00204975.v1_
+        * No dbGap metadata available
+         * varId _phv00204975_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004109.v2.phv00207292.v1_
+        * dbGap name: **HMTC9**
+        * dbGap desc: **RBC distribution width. Q9 [Hematology Lab. HMTCV301. Visit 3]**
+        * dbGap table: **HMTCV301**
+         * varId _phv00207292_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004110.v2.phv00207304.v1_
+        * dbGap name: **HMTC9**
+        * dbGap desc: **RBC distribution width. Q9 [Hematology Lab. HMTCV401. Visit 4]**
+        * dbGap table: **HMTCV401**
+         * varId _phv00207304_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006422.v1.phv00294962.v1_
+        * dbGap name: **CBC11**
+        * dbGap desc: **Red cell distribution width, Rdw [Complete Blood Count, CBC, Visit 5]**
+        * dbGap table: **CBC**
+         * varId _phv00294962_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006431.v1.phv00295623.v1_
+        * No dbGap metadata available
+         * varId _phv00295623_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -3250,8 +4198,16 @@
 <a id="rdw_ratio_rbc_1-hchs_sol"></a>
   * ### blood_cell_count/rdw_ratio_rbc_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 2 component_study_variables
-      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00226308.v1_. dbGap Name: **LABA8**, Desc: **% Red Cell Distribution Width (LABA8)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00226308.v1_
+        * dbGap name: **LABA8**
+        * dbGap desc: **% Red Cell Distribution Width (LABA8)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -3272,8 +4228,14 @@
 <a id="rdw_ratio_rbc_1-jhs"></a>
   * ### blood_cell_count/rdw_ratio_rbc_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 2 component_study_variables
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
-      * _phs000286.v5.pht001959.v1.phv00127628.v1_. dbGap Name: **RDW**, Desc: **RDW [Visit 1]**, Table: **loca**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001959.v1.phv00127628.v1_
+        * dbGap name: **RDW**
+        * dbGap desc: **RDW [Visit 1]**
+        * dbGap table: **loca**
+         * varId _phv00127628_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list) {
@@ -3343,16 +4305,50 @@
 <a id="wbc_ncnc_bld_1-aric"></a>
   * ### blood_cell_count/wbc_ncnc_bld_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 10 component_study_variables
-      * _phs000280.v4.pht004062.v2.phv00204623.v1_. No dbGap metadata available.
-      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
-      * _phs000280.v4.pht004064.v2.phv00204871.v1_. dbGap Name: **V3AGE31**, Desc: **Age at visit 3 [Cohort. Visit 3]**, Table: **DERIVE37**.
-      * _phs000280.v4.pht004065.v2.phv00204975.v1_. No dbGap metadata available.
-      * _phs000280.v4.pht004107.v2.phv00207257.v1_. dbGap Name: **HMTA03**, Desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTA. Visit 1]**, Table: **HMTA**.
-      * _phs000280.v4.pht004108.v2.phv00207272.v1_. dbGap Name: **HMTB03**, Desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTB. Visit 2]**, Table: **HMTB**.
-      * _phs000280.v4.pht004109.v2.phv00207286.v1_. dbGap Name: **HMTC2**, Desc: **White blood count. Q2 [Hematology Lab. HMTCV301. Visit 3]**, Table: **HMTCV301**.
-      * _phs000280.v4.pht004110.v2.phv00207298.v1_. dbGap Name: **HMTC2**, Desc: **White blood count. Q2 [Hematology Lab. HMTCV401. Visit 4]**, Table: **HMTCV401**.
-      * _phs000280.v4.pht006422.v1.phv00294954.v1_. dbGap Name: **CBC3**, Desc: **White blood cell count, Wbc [Complete Blood Count, CBC, Visit 5]**, Table: **CBC**.
-      * _phs000280.v4.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004062.v2.phv00204623.v1_
+        * No dbGap metadata available
+         * varId _phv00204623_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_
+        * dbGap name: **V1AGE01**
+        * dbGap desc: **Age at visit 1 [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204712_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004064.v2.phv00204871.v1_
+        * dbGap name: **V3AGE31**
+        * dbGap desc: **Age at visit 3 [Cohort. Visit 3]**
+        * dbGap table: **DERIVE37**
+         * varId _phv00204871_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004065.v2.phv00204975.v1_
+        * No dbGap metadata available
+         * varId _phv00204975_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004107.v2.phv00207257.v1_
+        * dbGap name: **HMTA03**
+        * dbGap desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTA. Visit 1]**
+        * dbGap table: **HMTA**
+         * varId _phv00207257_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004108.v2.phv00207272.v1_
+        * dbGap name: **HMTB03**
+        * dbGap desc: **White blood count x1000/mm3 (MAV). Q3 [Hematology Form. HMTB. Visit 2]**
+        * dbGap table: **HMTB**
+         * varId _phv00207272_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004109.v2.phv00207286.v1_
+        * dbGap name: **HMTC2**
+        * dbGap desc: **White blood count. Q2 [Hematology Lab. HMTCV301. Visit 3]**
+        * dbGap table: **HMTCV301**
+         * varId _phv00207286_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004110.v2.phv00207298.v1_
+        * dbGap name: **HMTC2**
+        * dbGap desc: **White blood count. Q2 [Hematology Lab. HMTCV401. Visit 4]**
+        * dbGap table: **HMTCV401**
+         * varId _phv00207298_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006422.v1.phv00294954.v1_
+        * dbGap name: **CBC3**
+        * dbGap desc: **White blood cell count, Wbc [Complete Blood Count, CBC, Visit 5]**
+        * dbGap table: **CBC**
+         * varId _phv00294954_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006431.v1.phv00295623.v1_
+        * No dbGap metadata available
+         * varId _phv00295623_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -3426,8 +4422,16 @@
 <a id="wbc_ncnc_bld_1-cardia"></a>
   * ### blood_cell_count/wbc_ncnc_bld_1 -- **CARDIA CARDIA Cohort**:
     * 2 component_study_variables
-      * _phs000285.v3.pht001559.v2.phv00112439.v2_. dbGap Name: **A01AGE2**, Desc: **AGE VERIFY**, Table: **A4F01**.
-      * _phs000285.v3.pht001563.v2.phv00112686.v2_. dbGap Name: **A05WBC**, Desc: **WHITE CELL COUNT (X 1000)**, Table: **A4F05**.
+      * _phs000285.v3.pht001559.v2.phv00112439.v2_
+        * dbGap name: **A01AGE2**
+        * dbGap desc: **AGE VERIFY**
+        * dbGap table: **A4F01**
+         * varId _phv00112439_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001563.v2.phv00112686.v2_
+        * dbGap name: **A05WBC**
+        * dbGap desc: **WHITE CELL COUNT (X 1000)**
+        * dbGap table: **A4F05**
+         * varId _phv00112686_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -3453,8 +4457,16 @@
 <a id="wbc_ncnc_bld_1-chs"></a>
   * ### blood_cell_count/wbc_ncnc_bld_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
     * 2 component_study_variables
-      * _phs000287.v6.pht001452.v1.phv00100411.v1_. dbGap Name: **WBLD23**, Desc: **WHITE BLOOD COUNT (x1, 000/cubic mm)**, Table: **BASEBOTH**.
-      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100411.v1_
+        * dbGap name: **WBLD23**
+        * dbGap desc: **WHITE BLOOD COUNT (x1, 000/cubic mm)**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_
+        * dbGap name: **AGEBL**
+        * dbGap desc: **CALCULATED AGE AT BASELINE**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -3473,8 +4485,16 @@
 <a id="wbc_ncnc_bld_1-hchs_sol"></a>
   * ### blood_cell_count/wbc_ncnc_bld_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 2 component_study_variables
-      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00226283.v1_. dbGap Name: **LABA1**, Desc: **White Blood Count (x10e9) (LABA1)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00226283.v1_
+        * dbGap name: **LABA1**
+        * dbGap desc: **White Blood Count (x10e9) (LABA1)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -3495,8 +4515,14 @@
 <a id="wbc_ncnc_bld_1-jhs"></a>
   * ### blood_cell_count/wbc_ncnc_bld_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 2 component_study_variables
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
-      * _phs000286.v5.pht001959.v1.phv00127631.v1_. dbGap Name: **WBC**, Desc: **White blood cells TH/CMM [Visit 1]**, Table: **loca**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001959.v1.phv00127631.v1_
+        * dbGap name: **WBC**
+        * dbGap desc: **White blood cells TH/CMM [Visit 1]**
+        * dbGap table: **loca**
+         * varId _phv00127631_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list) {
@@ -3526,8 +4552,16 @@
 <a id="wbc_ncnc_bld_1-mesa"></a>
   * ### blood_cell_count/wbc_ncnc_bld_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 2 component_study_variables
-      * _phs000209.v13.pht003091.v3.phv00176011.v1_. dbGap Name: **age5c**, Desc: **AGE AT EXAM 5**, Table: **MESA_Exam5Main**.
-      * _phs000209.v13.pht004319.v1.phv00218997.v1_. dbGap Name: **wbc5**, Desc: **WHITE BLOOD CELL COUNT (x10E3/uL)**, Table: **MESA_AncilMesaEpigenomicCBC**.
+      * _phs000209.v13.pht003091.v3.phv00176011.v1_
+        * dbGap name: **age5c**
+        * dbGap desc: **AGE AT EXAM 5**
+        * dbGap table: **MESA_Exam5Main**
+         * PIC-SURE permissible values: 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94
+      * _phs000209.v13.pht004319.v1.phv00218997.v1_
+        * dbGap name: **wbc5**
+        * dbGap desc: **WHITE BLOOD CELL COUNT (x10E3/uL)**
+        * dbGap table: **MESA_AncilMesaEpigenomicCBC**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -3552,11 +4586,31 @@
 <a id="wbc_ncnc_bld_1-whi"></a>
   * ### blood_cell_count/wbc_ncnc_bld_1 -- **WHI Women's Health Initiative**:
     * 5 component_study_variables
-      * _phs000200.v11.pht000986.v6.phv00077362.v6_. dbGap Name: **CBCVY**, Desc: **CBC Visit year**, Table: **cbc_rel1**.
-      * _phs000200.v11.pht000986.v6.phv00077363.v6_. dbGap Name: **CBCDAYS**, Desc: **CBC Days since randomization/enrollment**, Table: **cbc_rel1**.
-      * _phs000200.v11.pht000986.v6.phv00077368.v6_. dbGap Name: **WBC**, Desc: **White blood cell (Kcell/microliter)**, Table: **cbc_rel1**.
-      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
-      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
+      * _phs000200.v11.pht000986.v6.phv00077362.v6_
+        * dbGap name: **CBCVY**
+        * dbGap desc: **CBC Visit year**
+        * dbGap table: **cbc_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000986.v6.phv00077363.v6_
+        * dbGap name: **CBCDAYS**
+        * dbGap desc: **CBC Days since randomization/enrollment**
+        * dbGap table: **cbc_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000986.v6.phv00077368.v6_
+        * dbGap name: **WBC**
+        * dbGap desc: **White blood cell (Kcell/microliter)**
+        * dbGap table: **cbc_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_
+        * dbGap name: **F2DAYS**
+        * dbGap desc: **F2 Days since randomization**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age at screening**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){

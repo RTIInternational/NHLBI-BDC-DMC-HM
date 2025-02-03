@@ -3,7 +3,10 @@ from pathlib import Path
 from collections import defaultdict
 import hashlib
 
-
+"""
+The main point of this script was to identify whether any function appeared
+more than once in the JSON files. None do.
+"""
 def get_harmonization_functions(root_dir):
     """
     Extract all harmonization functions from JSON files and identify duplicates.
@@ -60,8 +63,7 @@ def get_harmonization_functions(root_dir):
 
     # Filter to only duplicate groups (more than one function)
     duplicate_groups = {
-        h: files for h, files in func_hash_to_info.items()
-        if len(files) > 1
+        h: files for h, files in func_hash_to_info.items() if len(files) > 1
     }
 
     return functions_data, duplicate_groups
@@ -101,7 +103,7 @@ def analyze_functions(functions_data, duplicate_groups):
 
 
 def main():
-    input_dir = "harmonized-variable-source-documentation"
+    input_dir = "./topmed-dcc-harmonized-phenotypes/harmonized-variable-documentation"
 
     # Get functions and analyze
     functions_data, duplicate_groups = get_harmonization_functions(input_dir)

@@ -67,16 +67,38 @@
 <a id="sleep_duration_1-aric"></a>
   * ### sleep/sleep_duration_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 10 component_study_variables
-      * _phs000280.v5.pht004228.v2.phv00214261.v1_. No dbGap metadata available.
-      * _phs000280.v5.pht004228.v2.phv00214262.v1_. No dbGap metadata available.
-      * _phs000280.v5.pht004228.v2.phv00214263.v1_. No dbGap metadata available.
-      * _phs000280.v5.pht004228.v2.phv00214268.v1_. No dbGap metadata available.
-      * _phs000280.v5.pht004228.v2.phv00214269.v1_. No dbGap metadata available.
-      * _phs000280.v5.pht004228.v2.phv00214270.v1_. No dbGap metadata available.
-      * _phs000280.v5.pht004228.v2.phv00214274.v1_. No dbGap metadata available.
-      * _phs000280.v5.pht004228.v2.phv00215388.v1_. No dbGap metadata available.
-      * _phs000280.v5.pht006431.v1.phv00295623.v1_. No dbGap metadata available.
-      * _phs000280.v5.pht006479.v1.phv00298019.v1_. dbGap Name: **RSE21**, Desc: **F. Sleep. Q21. Hours of sleep in past month [Respiratory Symptoms Form. RSE. Visit 5]**, Table: **RSE**.
+      * _phs000280.v5.pht004228.v2.phv00214261.v1_
+        * No dbGap metadata available
+         * varId _phv00214261_ not found in PIC-SURE data dictionary
+      * _phs000280.v5.pht004228.v2.phv00214262.v1_
+        * No dbGap metadata available
+         * varId _phv00214262_ not found in PIC-SURE data dictionary
+      * _phs000280.v5.pht004228.v2.phv00214263.v1_
+        * No dbGap metadata available
+         * varId _phv00214263_ not found in PIC-SURE data dictionary
+      * _phs000280.v5.pht004228.v2.phv00214268.v1_
+        * No dbGap metadata available
+         * varId _phv00214268_ not found in PIC-SURE data dictionary
+      * _phs000280.v5.pht004228.v2.phv00214269.v1_
+        * No dbGap metadata available
+         * varId _phv00214269_ not found in PIC-SURE data dictionary
+      * _phs000280.v5.pht004228.v2.phv00214270.v1_
+        * No dbGap metadata available
+         * varId _phv00214270_ not found in PIC-SURE data dictionary
+      * _phs000280.v5.pht004228.v2.phv00214274.v1_
+        * No dbGap metadata available
+         * varId _phv00214274_ not found in PIC-SURE data dictionary
+      * _phs000280.v5.pht004228.v2.phv00215388.v1_
+        * No dbGap metadata available
+         * varId _phv00215388_ not found in PIC-SURE data dictionary
+      * _phs000280.v5.pht006431.v1.phv00295623.v1_
+        * No dbGap metadata available
+         * varId _phv00295623_ not found in PIC-SURE data dictionary
+      * _phs000280.v5.pht006479.v1.phv00298019.v1_
+        * dbGap name: **RSE21**
+        * dbGap desc: **F. Sleep. Q21. Hours of sleep in past month [Respiratory Symptoms Form. RSE. Visit 5]**
+        * dbGap table: **RSE**
+         * varId _phv00298019_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -138,8 +160,16 @@
 <a id="sleep_duration_1-cardia"></a>
   * ### sleep/sleep_duration_1 -- **CARDIA CARDIA Cohort**:
     * 2 component_study_variables
-      * _phs000285.v3.pht001839.v2.phv00120534.v2_. dbGap Name: **F67SLPHR**, Desc: **PAST MONTH AVG SLEEPING HOURS. Q 7**, Table: **F1F67**.
-      * _phs000285.v3.pht001851.v2.phv00120748.v2_. dbGap Name: **EX6_AGE**, Desc: **CALCULATED AGE AT EXAM 6**, Table: **F1REF**.
+      * _phs000285.v3.pht001839.v2.phv00120534.v2_
+        * dbGap name: **F67SLPHR**
+        * dbGap desc: **PAST MONTH AVG SLEEPING HOURS. Q 7**
+        * dbGap table: **F1F67**
+         * varId _phv00120534_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001851.v2.phv00120748.v2_
+        * dbGap name: **EX6_AGE**
+        * dbGap desc: **CALCULATED AGE AT EXAM 6**
+        * dbGap table: **F1REF**
+         * varId _phv00120748_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -161,8 +191,16 @@
 <a id="sleep_duration_1-chs"></a>
   * ### sleep/sleep_duration_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
     * 2 component_study_variables
-      * _phs000287.v6.pht001460.v1.phv00100694.v1_. dbGap Name: **AGE_S1**, Desc: **Age = StdyDtqa - DOB**, Table: **CHS_SHHS1_15K**.
-      * _phs000287.v6.pht001460.v1.phv00100712.v1_. dbGap Name: **HRSWD02**, Desc: **How many hours of sleep do you usually get at night (or your main sleep period) on weekdays or workdays?**, Table: **CHS_SHHS1_15K**.
+      * _phs000287.v6.pht001460.v1.phv00100694.v1_
+        * dbGap name: **AGE_S1**
+        * dbGap desc: **Age = StdyDtqa - DOB**
+        * dbGap table: **CHS_SHHS1_15K**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000287.v6.pht001460.v1.phv00100712.v1_
+        * dbGap name: **HRSWD02**
+        * dbGap desc: **How many hours of sleep do you usually get at night (or your main sleep period) on weekdays or workdays?**
+        * dbGap table: **CHS_SHHS1_15K**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -182,8 +220,16 @@
 <a id="sleep_duration_1-hchs_sol"></a>
   * ### sleep/sleep_duration_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 2 component_study_variables
-      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00258046.v1_. dbGap Name: **SLPDUR**, Desc: **Average sleep duration (hours)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00258046.v1_
+        * dbGap name: **SLPDUR**
+        * dbGap desc: **Average sleep duration (hours)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -203,8 +249,14 @@
 <a id="sleep_duration_1-jhs"></a>
   * ### sleep/sleep_duration_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 2 component_study_variables
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
-      * _phs000286.v5.pht001963.v1.phv00127678.v1_. dbGap Name: **MHXA7**, Desc: **Q7. A. Sleep. During the past month, excluding naps, how many hours of actual sleep did you get at night (or day, if you work at night) on average (Hours)? [Visit 1] [Medical History Form, MHX]**, Table: **mhxa**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001963.v1.phv00127678.v1_
+        * dbGap name: **MHXA7**
+        * dbGap desc: **Q7. A. Sleep. During the past month, excluding naps, how many hours of actual sleep did you get at night (or day, if you work at night) on average (Hours)? [Visit 1] [Medical History Form, MHX]**
+        * dbGap table: **mhxa**
+         * varId _phv00127678_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -221,8 +273,16 @@
 <a id="sleep_duration_1-mesa"></a>
   * ### sleep/sleep_duration_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 2 component_study_variables
-      * _phs000209.v13.pht001120.v10.phv00086727.v3_. dbGap Name: **age4c**, Desc: **AGE AT EXAM 4**, Table: **MESA_Exam4Main**.
-      * _phs000209.v13.pht001120.v10.phv00087048.v2_. dbGap Name: **slpwkhr4**, Desc: **NIGHT SLEEP HOURS ON WEEKDAY OR WORKDAY**, Table: **MESA_Exam4Main**.
+      * _phs000209.v13.pht001120.v10.phv00086727.v3_
+        * dbGap name: **age4c**
+        * dbGap desc: **AGE AT EXAM 4**
+        * dbGap table: **MESA_Exam4Main**
+         * PIC-SURE permissible values: 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90
+      * _phs000209.v13.pht001120.v10.phv00087048.v2_
+        * dbGap name: **slpwkhr4**
+        * dbGap desc: **NIGHT SLEEP HOURS ON WEEKDAY OR WORKDAY**
+        * dbGap table: **MESA_Exam4Main**
+         * PIC-SURE permissible values: 0, 1, 10, 11, 12, 13, 14, 2, 24, 25, 3, 4, 5, 6, 7, 8, 9, 99
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -242,11 +302,31 @@
 <a id="sleep_duration_1-whi"></a>
   * ### sleep/sleep_duration_1 -- **WHI Women's Health Initiative**:
     * 5 component_study_variables
-      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
-      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
-      * _phs000200.v11.pht001005.v6.phv00078869.v6_. dbGap Name: **F37VY**, Desc: **Visit year**, Table: **f37_rel1**.
-      * _phs000200.v11.pht001005.v6.phv00078870.v6_. dbGap Name: **F37DAYS**, Desc: **F37 Days since randomization/enrollment**, Table: **f37_rel1**.
-      * _phs000200.v11.pht001005.v6.phv00079041.v6_. dbGap Name: **HRSSLP**, Desc: **How many hours of sleep**, Table: **f37_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_
+        * dbGap name: **F2DAYS**
+        * dbGap desc: **F2 Days since randomization**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age at screening**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht001005.v6.phv00078869.v6_
+        * dbGap name: **F37VY**
+        * dbGap desc: **Visit year**
+        * dbGap table: **f37_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht001005.v6.phv00078870.v6_
+        * dbGap name: **F37DAYS**
+        * dbGap desc: **F37 Days since randomization/enrollment**
+        * dbGap table: **f37_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht001005.v6.phv00079041.v6_
+        * dbGap name: **HRSSLP**
+        * dbGap desc: **How many hours of sleep**
+        * dbGap table: **f37_rel1**
+         * PIC-SURE permissible values: 10 or more hours, 5 or less hours, 6 hours, 7 hours, 8 hours, 9 hours
     * **Function:**
       ```r
       harmonize <- function(phen_list){

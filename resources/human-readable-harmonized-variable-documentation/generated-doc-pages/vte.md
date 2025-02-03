@@ -137,9 +137,17 @@
 <a id="vte_case_status_1-aric"></a>
   * ### vte/vte_case_status_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 3 component_study_variables
-      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
-      * _phs000280.v4.pht006485.v1.phv00298125.v1_. No dbGap metadata available.
-      * _phs000280.v4.pht006485.v1.phv00298126.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_
+        * dbGap name: **V1AGE01**
+        * dbGap desc: **Age at visit 1 [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204712_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006485.v1.phv00298125.v1_
+        * No dbGap metadata available
+         * varId _phv00298125_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006485.v1.phv00298126.v1_
+        * No dbGap metadata available
+         * varId _phv00298126_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list) {
@@ -180,10 +188,26 @@
 <a id="vte_case_status_1-chs"></a>
   * ### vte/vte_case_status_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
     * 4 component_study_variables
-      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
-      * _phs000287.v6.pht005981.v1.phv00273565.v1_. dbGap Name: **vt**, Desc: **Lite: VT case (through dec01)**, Table: **CHS_VTE_data**.
-      * _phs000287.v6.pht005981.v1.phv00273566.v1_. dbGap Name: **ttoevent**, Desc: **Days from baseline to VT or censoring (through dec01)**, Table: **CHS_VTE_data**.
-      * _phs000287.v6.pht005981.v1.phv00273567.v1_. dbGap Name: **vtpehx01**, Desc: **LITE : Self-report of DVT or PE at baseline**, Table: **CHS_VTE_data**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_
+        * dbGap name: **AGEBL**
+        * dbGap desc: **CALCULATED AGE AT BASELINE**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000287.v6.pht005981.v1.phv00273565.v1_
+        * dbGap name: **vt**
+        * dbGap desc: **Lite: VT case (through dec01)**
+        * dbGap table: **CHS_VTE_data**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000287.v6.pht005981.v1.phv00273566.v1_
+        * dbGap name: **ttoevent**
+        * dbGap desc: **Days from baseline to VT or censoring (through dec01)**
+        * dbGap table: **CHS_VTE_data**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000287.v6.pht005981.v1.phv00273567.v1_
+        * dbGap name: **vtpehx01**
+        * dbGap desc: **LITE : Self-report of DVT or PE at baseline**
+        * dbGap table: **CHS_VTE_data**
+         * PIC-SURE permissible values: Missing, No, Yes
     * **Function:**
       ```r
       harmonize <- function(phen_list) {
@@ -257,8 +281,14 @@
 <a id="vte_followup_start_age_1-aric"></a>
   * ### vte/vte_followup_start_age_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 2 component_study_variables
-      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
-      * _phs000280.v4.pht006485.v1.phv00298125.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_
+        * dbGap name: **V1AGE01**
+        * dbGap desc: **Age at visit 1 [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204712_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006485.v1.phv00298125.v1_
+        * No dbGap metadata available
+         * varId _phv00298125_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list) {
@@ -288,7 +318,11 @@
 <a id="vte_followup_start_age_1-chs"></a>
   * ### vte/vte_followup_start_age_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
     * 1 component_study_variables
-      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_
+        * dbGap name: **AGEBL**
+        * dbGap desc: **CALCULATED AGE AT BASELINE**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list) {
@@ -373,8 +407,14 @@
 <a id="vte_prior_history_1-aric"></a>
   * ### vte/vte_prior_history_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 2 component_study_variables
-      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
-      * _phs000280.v4.pht006485.v1.phv00298125.v1_. No dbGap metadata available.
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_
+        * dbGap name: **V1AGE01**
+        * dbGap desc: **Age at visit 1 [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204712_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht006485.v1.phv00298125.v1_
+        * No dbGap metadata available
+         * varId _phv00298125_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list) {
@@ -407,8 +447,16 @@
 <a id="vte_prior_history_1-chs"></a>
   * ### vte/vte_prior_history_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
     * 2 component_study_variables
-      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
-      * _phs000287.v6.pht005981.v1.phv00273567.v1_. dbGap Name: **vtpehx01**, Desc: **LITE : Self-report of DVT or PE at baseline**, Table: **CHS_VTE_data**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_
+        * dbGap name: **AGEBL**
+        * dbGap desc: **CALCULATED AGE AT BASELINE**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000287.v6.pht005981.v1.phv00273567.v1_
+        * dbGap name: **vtpehx01**
+        * dbGap desc: **LITE : Self-report of DVT or PE at baseline**
+        * dbGap table: **CHS_VTE_data**
+         * PIC-SURE permissible values: Missing, No, Yes
     * **Function:**
       ```r
       harmonize <- function(phen_list) {

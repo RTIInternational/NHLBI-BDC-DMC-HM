@@ -42,7 +42,11 @@
 <a id="annotated_sex_1-aric"></a>
   * ### demographic/annotated_sex_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 1 component_study_variables
-      * _phs000280.v5.pht004063.v2.phv00204711.v1_. dbGap Name: **GENDER**, Desc: **Sex (uncorrected from FTRA22) [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v5.pht004063.v2.phv00204711.v1_
+        * dbGap name: **GENDER**
+        * dbGap desc: **Sex (uncorrected from FTRA22) [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204711_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -68,7 +72,11 @@
 <a id="annotated_sex_1-cardia"></a>
   * ### demographic/annotated_sex_1 -- **CARDIA CARDIA Cohort**:
     * 1 component_study_variables
-      * _phs000285.v3.pht001645.v2.phv00115114.v2_. dbGap Name: **SEX**, Desc: **SEX (VERIFIED AT EXAM 2)**, Table: **B2REF**.
+      * _phs000285.v3.pht001645.v2.phv00115114.v2_
+        * dbGap name: **SEX**
+        * dbGap desc: **SEX (VERIFIED AT EXAM 2)**
+        * dbGap table: **B2REF**
+         * varId _phv00115114_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -90,7 +98,11 @@
 <a id="annotated_sex_1-chs"></a>
   * ### demographic/annotated_sex_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
     * 1 component_study_variables
-      * _phs000287.v6.pht001452.v1.phv00100302.v1_. dbGap Name: **GEND01**, Desc: **GENDER**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100302.v1_
+        * dbGap name: **GEND01**
+        * dbGap desc: **GENDER**
+        * dbGap table: **BASEBOTH**
+         * PIC-SURE permissible values: Female, Male
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -115,7 +127,9 @@
 <a id="annotated_sex_1-copdgene"></a>
   * ### demographic/annotated_sex_1 -- **COPDGene **:
     * 1 component_study_variables
-      * _phs000179.v5.pht002239.v4.phv00159571.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159571.v4_
+        * No dbGap metadata available
+         * PIC-SURE permissible values: Female, Male
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -137,7 +151,11 @@
 <a id="annotated_sex_1-fhs"></a>
   * ### demographic/annotated_sex_1 -- **FHS Framingham Cohort**:
     * 1 component_study_variables
-      * _phs000007.v30.pht003099.v5.phv00177929.v5_. dbGap Name: **sex**, Desc: **Participant gender**, Table: **vr_dates_2019_a_1175s**.
+      * _phs000007.v30.pht003099.v5.phv00177929.v5_
+        * dbGap name: **sex**
+        * dbGap desc: **Participant gender**
+        * dbGap table: **vr_dates_2019_a_1175s**
+         * PIC-SURE permissible values: Female, Male
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -163,7 +181,11 @@
 <a id="annotated_sex_1-hchs_sol"></a>
   * ### demographic/annotated_sex_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 1 component_study_variables
-      * _phs000810.v1.pht004715.v1.phv00226279.v1_. dbGap Name: **GENDER**, Desc: **Gender (F=Female, M=Male)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226279.v1_
+        * dbGap name: **GENDER**
+        * dbGap desc: **Gender (F=Female, M=Male)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * PIC-SURE permissible values: Female, Male
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -183,7 +205,9 @@
 <a id="annotated_sex_1-jhs"></a>
   * ### demographic/annotated_sex_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 1 component_study_variables
-      * _phs000286.v5.pht001949.v1.phv00126012.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001949.v1.phv00126012.v1_
+        * No dbGap metadata available
+         * varId _phv00126012_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -207,7 +231,11 @@
 <a id="annotated_sex_1-whi"></a>
   * ### demographic/annotated_sex_1 -- **WHI Women's Health Initiative**:
     * 1 component_study_variables
-      * _phs000200.v11.pht000982.v8.phv00077315.v8_. dbGap Name: **CONSENT**, Desc: **WHI dbGaP Consent Group**, Table: **WHI_Subject**.
+      * _phs000200.v11.pht000982.v8.phv00077315.v8_
+        * dbGap name: **CONSENT**
+        * dbGap desc: **WHI dbGaP Consent Group**
+        * dbGap table: **WHI_Subject**
+         * PIC-SURE permissible values: Health/Medical/Biomedical (IRB) (HMB-IRB), Health/Medical/Biomedical (IRB, NPU) (HMB-IRB-NPU)
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -261,7 +289,11 @@
 <a id="geographic_site_1-aric"></a>
   * ### demographic/geographic_site_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 1 component_study_variables
-      * _phs000280.v5.pht004063.v2.phv00204813.v1_. dbGap Name: **CENTERID**, Desc: **Recoded Center ID [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v5.pht004063.v2.phv00204813.v1_
+        * dbGap name: **CENTERID**
+        * dbGap desc: **Recoded Center ID [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204813_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -295,7 +327,11 @@
 <a id="geographic_site_1-cardia"></a>
   * ### demographic/geographic_site_1 -- **CARDIA CARDIA Cohort**:
     * 1 component_study_variables
-      * _phs000285.v3.pht001700.v2.phv00116398.v2_. dbGap Name: **CENTER_CARE**, Desc: **CENTER FOR CARE PROJECT**, Table: **CENTER**.
+      * _phs000285.v3.pht001700.v2.phv00116398.v2_
+        * dbGap name: **CENTER_CARE**
+        * dbGap desc: **CENTER FOR CARE PROJECT**
+        * dbGap table: **CENTER**
+         * varId _phv00116398_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -327,7 +363,11 @@
 <a id="geographic_site_1-chs"></a>
   * ### demographic/geographic_site_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
     * 1 component_study_variables
-      * _phs000287.v6.pht001452.v1.phv00100291.v1_. dbGap Name: **CLINIC**, Desc: **CHS CLINIC**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100291.v1_
+        * dbGap name: **CLINIC**
+        * dbGap desc: **CHS CLINIC**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -366,7 +406,9 @@
 <a id="geographic_site_1-copdgene"></a>
   * ### demographic/geographic_site_1 -- **COPDGene **:
     * 1 component_study_variables
-      * _phs000179.v5.pht002239.v4.phv00159569.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159569.v4_
+        * No dbGap metadata available
+         * PIC-SURE permissible values: C01, C02, C03, C04, C05, C06, C07, C08, C09, C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -393,7 +435,11 @@
 <a id="geographic_site_1-hchs_sol"></a>
   * ### demographic/geographic_site_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 1 component_study_variables
-      * _phs000810.v1.pht004715.v1.phv00226256.v1_. dbGap Name: **CENTER**, Desc: **Center**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226256.v1_
+        * dbGap name: **CENTER**
+        * dbGap desc: **Center**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * PIC-SURE permissible values: Bronx, Chicago, Miami, San Diego
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -430,7 +476,9 @@
 <a id="geographic_site_1-jhs"></a>
   * ### demographic/geographic_site_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 1 component_study_variables
-      * _phs000286.v5.pht001949.v1.phv00126005.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001949.v1.phv00126005.v1_
+        * No dbGap metadata available
+         * varId _phv00126005_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -460,7 +508,11 @@
 <a id="geographic_site_1-whi"></a>
   * ### demographic/geographic_site_1 -- **WHI Women's Health Initiative**:
     * 1 component_study_variables
-      * _phs000200.v11.pht001031.v6.phv00080435.v6_. dbGap Name: **REGION**, Desc: **U. S. Region**, Table: **rand_rel2**.
+      * _phs000200.v11.pht001031.v6.phv00080435.v6_
+        * dbGap name: **REGION**
+        * dbGap desc: **U. S. Region**
+        * dbGap table: **rand_rel2**
+         * PIC-SURE permissible values: Midwest, Northeast, South, West
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -554,7 +606,9 @@
 <a id="hispanic_or_latino_1-copdgene"></a>
   * ### demographic/hispanic_or_latino_1 -- **COPDGene **:
     * 1 component_study_variables
-      * _phs000179.v5.pht002239.v4.phv00159573.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159573.v4_
+        * No dbGap metadata available
+         * PIC-SURE permissible values: Not Hispanic or Latino
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -577,7 +631,11 @@
 <a id="hispanic_or_latino_1-hchs_sol"></a>
   * ### demographic/hispanic_or_latino_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 1 component_study_variables
-      * _phs000810.v1.pht004713.v1.phv00226241.v1_. dbGap Name: **CONSENT**, Desc: **Consent group**, Table: **HCHS_SOL_Cohort_Subject**.
+      * _phs000810.v1.pht004713.v1.phv00226241.v1_
+        * dbGap name: **CONSENT**
+        * dbGap desc: **Consent group**
+        * dbGap table: **HCHS_SOL_Cohort_Subject**
+         * PIC-SURE permissible values: Health/Medical/Biomedical (HMB), Health/Medical/Biomedical (NPU) (HMB-NPU)
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -602,7 +660,11 @@
 <a id="hispanic_or_latino_1-whi"></a>
   * ### demographic/hispanic_or_latino_1 -- **WHI Women's Health Initiative**:
     * 1 component_study_variables
-      * _phs000200.v11.pht000998.v6.phv00078450.v6_. dbGap Name: **RACE**, Desc: **Racial or ethnic group**, Table: **f2_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078450.v6_
+        * dbGap name: **RACE**
+        * dbGap desc: **Racial or ethnic group**
+        * dbGap table: **f2_rel1**
+         * PIC-SURE permissible values: American Indian or Alaskan Native, Asian or Pacific Islander, Black or African-American, Hispanic/Latino, Other, White (not of Hispanic origin)
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -648,7 +710,11 @@
 <a id="hispanic_subgroup_1-hchs_sol"></a>
   * ### demographic/hispanic_subgroup_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 1 component_study_variables
-      * _phs000810.v1.pht004715.v1.phv00226254.v1_. dbGap Name: **BKGRD1_C7**, Desc: **7-level re-classification of Hispanic/Latino Background**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226254.v1_
+        * dbGap name: **BKGRD1_C7**
+        * dbGap desc: **7-level re-classification of Hispanic/Latino Background**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * PIC-SURE permissible values: Central American, Cuban, Dominican, Mexican, More than one heritage/Other, Puerto-Rican, South American
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -677,8 +743,16 @@
 <a id="hispanic_subgroup_1-whi"></a>
   * ### demographic/hispanic_subgroup_1 -- **WHI Women's Health Initiative**:
     * 2 component_study_variables
-      * _phs000200.v11.pht000998.v6.phv00078450.v6_. dbGap Name: **RACE**, Desc: **Racial or ethnic group**, Table: **f2_rel1**.
-      * _phs000200.v11.pht001009.v6.phv00079316.v6_. dbGap Name: **SPANISH**, Desc: **Are you Spanish/Hispanic/Latino**, Table: **f41_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078450.v6_
+        * dbGap name: **RACE**
+        * dbGap desc: **Racial or ethnic group**
+        * dbGap table: **f2_rel1**
+         * PIC-SURE permissible values: American Indian or Alaskan Native, Asian or Pacific Islander, Black or African-American, Hispanic/Latino, Other, White (not of Hispanic origin)
+      * _phs000200.v11.pht001009.v6.phv00079316.v6_
+        * dbGap name: **SPANISH**
+        * dbGap desc: **Are you Spanish/Hispanic/Latino**
+        * dbGap table: **f41_rel1**
+         * PIC-SURE permissible values: No, Yes, Cuban, Yes, Mexican, Mexican American, Chicano, Yes, Puerto Rican, Yes, other Spanish/Hispanic/Latina
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -791,9 +865,17 @@
 <a id="race_us_1-aric"></a>
   * ### demographic/race_us_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 3 component_study_variables
-      * _phs000280.v5.pht004062.v2.phv00204633.v1_. No dbGap metadata available.
-      * _phs000280.v5.pht004063.v2.phv00204710.v1_. dbGap Name: **RACEGRP**, Desc: **Race (from FTRA23) [Cohort. Visit 1]**, Table: **DERIVE13**.
-      * _phs000280.v5.pht004065.v2.phv00204962.v1_. No dbGap metadata available.
+      * _phs000280.v5.pht004062.v2.phv00204633.v1_
+        * No dbGap metadata available
+         * varId _phv00204633_ not found in PIC-SURE data dictionary
+      * _phs000280.v5.pht004063.v2.phv00204710.v1_
+        * dbGap name: **RACEGRP**
+        * dbGap desc: **Race (from FTRA23) [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204710_ not found in PIC-SURE data dictionary
+      * _phs000280.v5.pht004065.v2.phv00204962.v1_
+        * No dbGap metadata available
+         * varId _phv00204962_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -846,7 +928,11 @@
 <a id="race_us_1-cardia"></a>
   * ### demographic/race_us_1 -- **CARDIA CARDIA Cohort**:
     * 1 component_study_variables
-      * _phs000285.v3.pht001645.v2.phv00115113.v2_. dbGap Name: **RACE**, Desc: **RACE (VERIFIED AT EXAM 2)**, Table: **B2REF**.
+      * _phs000285.v3.pht001645.v2.phv00115113.v2_
+        * dbGap name: **RACE**
+        * dbGap desc: **RACE (VERIFIED AT EXAM 2)**
+        * dbGap table: **B2REF**
+         * varId _phv00115113_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -883,7 +969,9 @@
 <a id="race_us_1-copdgene"></a>
   * ### demographic/race_us_1 -- **COPDGene **:
     * 1 component_study_variables
-      * _phs000179.v5.pht002239.v4.phv00159572.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159572.v4_
+        * No dbGap metadata available
+         * PIC-SURE permissible values: African American, Caucasian
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -909,7 +997,11 @@
 <a id="race_us_1-hchs_sol"></a>
   * ### demographic/race_us_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 1 component_study_variables
-      * _phs000810.v1.pht004713.v1.phv00226241.v1_. dbGap Name: **CONSENT**, Desc: **Consent group**, Table: **HCHS_SOL_Cohort_Subject**.
+      * _phs000810.v1.pht004713.v1.phv00226241.v1_
+        * dbGap name: **CONSENT**
+        * dbGap desc: **Consent group**
+        * dbGap table: **HCHS_SOL_Cohort_Subject**
+         * PIC-SURE permissible values: Health/Medical/Biomedical (HMB), Health/Medical/Biomedical (NPU) (HMB-NPU)
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -934,7 +1026,11 @@
 <a id="race_us_1-jhs"></a>
   * ### demographic/race_us_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 1 component_study_variables
-      * _phs000286.v5.pht001920.v4.phv00124546.v3_. dbGap Name: **CONSENT**, Desc: **Consent group as determined by DAC**, Table: **JHS_Subject**.
+      * _phs000286.v5.pht001920.v4.phv00124546.v3_
+        * dbGap name: **CONSENT**
+        * dbGap desc: **Consent group as determined by DAC**
+        * dbGap table: **JHS_Subject**
+         * varId _phv00124546_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -958,22 +1054,86 @@
 <a id="race_us_1-whi"></a>
   * ### demographic/race_us_1 -- **WHI Women's Health Initiative**:
     * 16 component_study_variables
-      * _phs000200.v11.pht000998.v6.phv00078450.v6_. dbGap Name: **RACE**, Desc: **Racial or ethnic group**, Table: **f2_rel1**.
-      * _phs000200.v11.pht001009.v6.phv00079317.v6_. dbGap Name: **WHITE**, Desc: **White**, Table: **f41_rel1**.
-      * _phs000200.v11.pht001009.v6.phv00079318.v6_. dbGap Name: **BLACK**, Desc: **Black, African-American, or Negro**, Table: **f41_rel1**.
-      * _phs000200.v11.pht001009.v6.phv00079319.v6_. dbGap Name: **AMERINDIAN**, Desc: **American Indian or Alaskan Native**, Table: **f41_rel1**.
-      * _phs000200.v11.pht001009.v6.phv00079320.v6_. dbGap Name: **ASIAINDIAN**, Desc: **Asian Indian**, Table: **f41_rel1**.
-      * _phs000200.v11.pht001009.v6.phv00079321.v6_. dbGap Name: **CHINESE**, Desc: **Chinese**, Table: **f41_rel1**.
-      * _phs000200.v11.pht001009.v6.phv00079322.v6_. dbGap Name: **FILIPINO**, Desc: **Filipino**, Table: **f41_rel1**.
-      * _phs000200.v11.pht001009.v6.phv00079323.v6_. dbGap Name: **JAPANESE**, Desc: **Japanese**, Table: **f41_rel1**.
-      * _phs000200.v11.pht001009.v6.phv00079324.v6_. dbGap Name: **KOREAN**, Desc: **Korean**, Table: **f41_rel1**.
-      * _phs000200.v11.pht001009.v6.phv00079325.v6_. dbGap Name: **VIETNAMESE**, Desc: **Vietnamese**, Table: **f41_rel1**.
-      * _phs000200.v11.pht001009.v6.phv00079326.v6_. dbGap Name: **OTHERASIAN**, Desc: **Other Asian**, Table: **f41_rel1**.
-      * _phs000200.v11.pht001009.v6.phv00079327.v6_. dbGap Name: **HAWAIIAN**, Desc: **Native Hawaiian**, Table: **f41_rel1**.
-      * _phs000200.v11.pht001009.v6.phv00079328.v6_. dbGap Name: **GUAMANIAN**, Desc: **Guamanian or Chamorro**, Table: **f41_rel1**.
-      * _phs000200.v11.pht001009.v6.phv00079329.v6_. dbGap Name: **SAMOAN**, Desc: **Samoan**, Table: **f41_rel1**.
-      * _phs000200.v11.pht001009.v6.phv00079330.v6_. dbGap Name: **OTHRPACISL**, Desc: **Other Pacific Islander**, Table: **f41_rel1**.
-      * _phs000200.v11.pht001009.v6.phv00079331.v6_. dbGap Name: **OTHERRACE**, Desc: **Some other race**, Table: **f41_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078450.v6_
+        * dbGap name: **RACE**
+        * dbGap desc: **Racial or ethnic group**
+        * dbGap table: **f2_rel1**
+         * PIC-SURE permissible values: American Indian or Alaskan Native, Asian or Pacific Islander, Black or African-American, Hispanic/Latino, Other, White (not of Hispanic origin)
+      * _phs000200.v11.pht001009.v6.phv00079317.v6_
+        * dbGap name: **WHITE**
+        * dbGap desc: **White**
+        * dbGap table: **f41_rel1**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht001009.v6.phv00079318.v6_
+        * dbGap name: **BLACK**
+        * dbGap desc: **Black, African-American, or Negro**
+        * dbGap table: **f41_rel1**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht001009.v6.phv00079319.v6_
+        * dbGap name: **AMERINDIAN**
+        * dbGap desc: **American Indian or Alaskan Native**
+        * dbGap table: **f41_rel1**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht001009.v6.phv00079320.v6_
+        * dbGap name: **ASIAINDIAN**
+        * dbGap desc: **Asian Indian**
+        * dbGap table: **f41_rel1**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht001009.v6.phv00079321.v6_
+        * dbGap name: **CHINESE**
+        * dbGap desc: **Chinese**
+        * dbGap table: **f41_rel1**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht001009.v6.phv00079322.v6_
+        * dbGap name: **FILIPINO**
+        * dbGap desc: **Filipino**
+        * dbGap table: **f41_rel1**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht001009.v6.phv00079323.v6_
+        * dbGap name: **JAPANESE**
+        * dbGap desc: **Japanese**
+        * dbGap table: **f41_rel1**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht001009.v6.phv00079324.v6_
+        * dbGap name: **KOREAN**
+        * dbGap desc: **Korean**
+        * dbGap table: **f41_rel1**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht001009.v6.phv00079325.v6_
+        * dbGap name: **VIETNAMESE**
+        * dbGap desc: **Vietnamese**
+        * dbGap table: **f41_rel1**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht001009.v6.phv00079326.v6_
+        * dbGap name: **OTHERASIAN**
+        * dbGap desc: **Other Asian**
+        * dbGap table: **f41_rel1**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht001009.v6.phv00079327.v6_
+        * dbGap name: **HAWAIIAN**
+        * dbGap desc: **Native Hawaiian**
+        * dbGap table: **f41_rel1**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht001009.v6.phv00079328.v6_
+        * dbGap name: **GUAMANIAN**
+        * dbGap desc: **Guamanian or Chamorro**
+        * dbGap table: **f41_rel1**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht001009.v6.phv00079329.v6_
+        * dbGap name: **SAMOAN**
+        * dbGap desc: **Samoan**
+        * dbGap table: **f41_rel1**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht001009.v6.phv00079330.v6_
+        * dbGap name: **OTHRPACISL**
+        * dbGap desc: **Other Pacific Islander**
+        * dbGap table: **f41_rel1**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht001009.v6.phv00079331.v6_
+        * dbGap name: **OTHERRACE**
+        * dbGap desc: **Some other race**
+        * dbGap table: **f41_rel1**
+         * PIC-SURE permissible values: No, Yes
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1134,7 +1294,11 @@
 <a id="subcohort_1-aric"></a>
   * ### demographic/subcohort_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 1 component_study_variables
-      * _phs000280.v5.pht001440.v5.phv00098580.v4_. dbGap Name: **CONSENT**, Desc: **Restriction on Use/Storage of DNA and Other**, Table: **ARIC_Subject**.
+      * _phs000280.v5.pht001440.v5.phv00098580.v4_
+        * dbGap name: **CONSENT**
+        * dbGap desc: **Restriction on Use/Storage of DNA and Other**
+        * dbGap table: **ARIC_Subject**
+         * varId _phv00098580_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1149,7 +1313,11 @@
 <a id="subcohort_1-cardia"></a>
   * ### demographic/subcohort_1 -- **CARDIA CARDIA Cohort**:
     * 1 component_study_variables
-      * _phs000285.v3.pht001554.v3.phv00112395.v2_. dbGap Name: **Consent**, Desc: **Consent group**, Table: **CARDIA_Cohort_Subject**.
+      * _phs000285.v3.pht001554.v3.phv00112395.v2_
+        * dbGap name: **Consent**
+        * dbGap desc: **Consent group**
+        * dbGap table: **CARDIA_Cohort_Subject**
+         * varId _phv00112395_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1164,7 +1332,11 @@
 <a id="subcohort_1-chs"></a>
   * ### demographic/subcohort_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
     * 1 component_study_variables
-      * _phs000287.v6.pht001452.v1.phv00100290.v1_. dbGap Name: **PERSTAT**, Desc: **COHORT**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100290.v1_
+        * dbGap name: **PERSTAT**
+        * dbGap desc: **COHORT**
+        * dbGap table: **BASEBOTH**
+         * PIC-SURE permissible values: NEW COHORT, OLD COHORT
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1184,7 +1356,9 @@
 <a id="subcohort_1-copdgene"></a>
   * ### demographic/subcohort_1 -- **COPDGene **:
     * 1 component_study_variables
-      * _phs000179.v5.pht002237.v3.phv00159560.v3_. No dbGap metadata available.
+      * _phs000179.v5.pht002237.v3.phv00159560.v3_
+        * No dbGap metadata available
+         * PIC-SURE permissible values: Disease-Specific (COPD and Smoking) (DS-CS), Health/Medical/Biomedical (HMB)
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1199,7 +1373,11 @@
 <a id="subcohort_1-fhs"></a>
   * ### demographic/subcohort_1 -- **FHS Framingham Cohort**:
     * 1 component_study_variables
-      * _phs000007.v30.pht003099.v5.phv00177928.v5_. dbGap Name: **idtype**, Desc: **Framingham Heart Study cohort identifier**, Table: **vr_dates_2019_a_1175s**.
+      * _phs000007.v30.pht003099.v5.phv00177928.v5_
+        * dbGap name: **idtype**
+        * dbGap desc: **Framingham Heart Study cohort identifier**
+        * dbGap table: **vr_dates_2019_a_1175s**
+         * PIC-SURE permissible values: Generation 3 Cohort, New Offspring Spouse Cohort, Offspring Cohort, Omni 1 Cohort, Omni 2 Cohort, Original Cohort
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1222,7 +1400,11 @@
 <a id="subcohort_1-hchs_sol"></a>
   * ### demographic/subcohort_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 1 component_study_variables
-      * _phs000810.v1.pht004713.v1.phv00226241.v1_. dbGap Name: **CONSENT**, Desc: **Consent group**, Table: **HCHS_SOL_Cohort_Subject**.
+      * _phs000810.v1.pht004713.v1.phv00226241.v1_
+        * dbGap name: **CONSENT**
+        * dbGap desc: **Consent group**
+        * dbGap table: **HCHS_SOL_Cohort_Subject**
+         * PIC-SURE permissible values: Health/Medical/Biomedical (HMB), Health/Medical/Biomedical (NPU) (HMB-NPU)
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1237,7 +1419,11 @@
 <a id="subcohort_1-jhs"></a>
   * ### demographic/subcohort_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 1 component_study_variables
-      * _phs000286.v5.pht001920.v4.phv00124546.v3_. dbGap Name: **CONSENT**, Desc: **Consent group as determined by DAC**, Table: **JHS_Subject**.
+      * _phs000286.v5.pht001920.v4.phv00124546.v3_
+        * dbGap name: **CONSENT**
+        * dbGap desc: **Consent group as determined by DAC**
+        * dbGap table: **JHS_Subject**
+         * varId _phv00124546_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1252,8 +1438,16 @@
 <a id="subcohort_1-whi"></a>
   * ### demographic/subcohort_1 -- **WHI Women's Health Initiative**:
     * 2 component_study_variables
-      * _phs000200.v11.pht001031.v6.phv00080424.v6_. dbGap Name: **CTFLAG**, Desc: **CT Participant**, Table: **rand_rel2**.
-      * _phs000200.v11.pht001031.v6.phv00080425.v6_. dbGap Name: **OSFLAG**, Desc: **OS Participant**, Table: **rand_rel2**.
+      * _phs000200.v11.pht001031.v6.phv00080424.v6_
+        * dbGap name: **CTFLAG**
+        * dbGap desc: **CT Participant**
+        * dbGap table: **rand_rel2**
+         * PIC-SURE permissible values: No, Yes
+      * _phs000200.v11.pht001031.v6.phv00080425.v6_
+        * dbGap name: **OSFLAG**
+        * dbGap desc: **OS Participant**
+        * dbGap table: **rand_rel2**
+         * PIC-SURE permissible values: No, Yes
     * **Function:**
       ```r
       harmonize <- function(phen_list){

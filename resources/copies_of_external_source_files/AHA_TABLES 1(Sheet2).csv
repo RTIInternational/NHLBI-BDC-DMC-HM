@@ -1,0 +1,1382 @@
+Harmonized Variable,Study Mapped,Variable Field Name,Variable Description,Missing Samples (%)
+AFIB,ARIC,atrfib11.af,Atrial fibrillation,-
+AFIB,ARIC,afincps13.afinc,Incident AF,2.1927486
+AFIB,ARIC,afincps13.ttaf,time to incident af,2.1927486
+AFIB,ARIC,atrfib21.af,Atrial fibrillation,-
+AFIB,ARIC,afincps13.afinc,Incident AF,2.1927486
+AFIB,ARIC,afincps13.ttaf,time to incident af,2.1927486
+AFIB,ARIC,derive2_10.v2days,DAYS SINCE EXAM 1,-
+AFIB,ARIC,atrfib31.af,Atrial fibrillation,-
+AFIB,ARIC,afincps13.afinc,Incident AF,2.1927486
+AFIB,ARIC,afincps13.ttaf,time to incident af,2.1927486
+AFIB,ARIC,derive37.v3days,DAYS SINCE EXAM 1,-
+AFIB,ARIC,atrfib41.af,Atrial fibrillation,-
+AFIB,ARIC,afincps13.afinc,Incident AF,2.1927486
+AFIB,ARIC,afincps13.ttaf,time to incident af,2.1927486
+AFIB,ARIC,derive47.v4days,DAYS SINCE EXAM 1,-
+AFIB,Framingham,ex1_1d_v3.a158,ATRIAL FIBRILLATION,0.040096231
+AFIB,Framingham,ex1_2d_v3.b269,D205-026-ATRIAL-FIBRILLATION,0.319829424
+AFIB,Framingham,ex1_3d_v1.c302,ATRIAL FIBRILLATION ON ECG,0.132908028
+AFIB,Framingham,ex1_4d_v1.d306,ECG-ATRIAL FIBRILLATION,0.128139416
+AFIB,Framingham,ex1_5d_v1.e589,ECG-RHYTHM,0.027114968
+AFIB,Framingham,ex1_6d_v1.f584,ECG-RHYTHM,-
+AFIB,Framingham,ex1_7d_v2.g362,ECG - RHYTHM,0.086306099
+AFIB,Framingham,e_exam_ex08_1_0005d.h309,ECG - RHYTHM,0.033500838
+AFIB,Framingham,e_exam_ex09_1b_0844d.j364,ECG - RHYTHM,0.148864905
+AFIB,MESA,mesae1dres20220813.afib1c,ATRIAL FIBRILLATION / FLUTTER BY NOVACODE,0.719107719
+AFIB,MESA,mesaevaffu10_drepos_2015416.afib,Atrial Fibrillation Diagnosis (via ICD10 Code),-
+AFIB,MESA,mesaevaffu10_drepos_2015416.afibtt,Atrial Fibrillation (via ICD10 Code): Time from Baseline to Diagnosis (Days),0.058702671
+AFIB,MESA,mesaevaffu10_drepos_2015416.afib,Atrial Fibrillation Diagnosis (via ICD10 Code),-
+AFIB,MESA,mesaevaffu10_drepos_2015416.afibtt,Atrial Fibrillation (via ICD10 Code): Time from Baseline to Diagnosis (Days),0.058702671
+AFIB,MESA,mesae2dres06222012.e12dyc,"Time between exam visits, in days",8.526562959
+AFIB,MESA,mesaevaffu10_drepos_2015416.afib,Atrial Fibrillation Diagnosis (via ICD10 Code),-
+AFIB,MESA,mesaevaffu10_drepos_2015416.afibtt,Atrial Fibrillation (via ICD10 Code): Time from Baseline to Diagnosis (Days),0.058702671
+AFIB,MESA,mesae3dres06222012.e13dyc,"Time between first and third visits, in days",12.72380393
+AFIB,MESA,mesaevaffu10_drepos_2015416.afib,Atrial Fibrillation Diagnosis (via ICD10 Code),-
+AFIB,MESA,mesaevaffu10_drepos_2015416.afibtt,Atrial Fibrillation (via ICD10 Code): Time from Baseline to Diagnosis (Days),0.058702671
+AFIB,MESA,mesae4dres06222012.e14dyc,"Time between first and fourth visits, in days",14.61696507
+AFIB,MESA,mesae5_drepos_20220820.afib5c,ECG ATRIAL FIBRILLATION / FLUTTER,2.184054283
+AFIB,MESA,mesaevaffu10_drepos_2015416.afib,Atrial Fibrillation Diagnosis (via ICD10 Code),-
+AFIB,MESA,mesaevaffu10_drepos_2015416.afibtt,Atrial Fibrillation (via ICD10 Code): Time from Baseline to Diagnosis (Days),0.058702671
+AFIB,MESA,mesae5_drepos_20220820.e15dyc,"TIME BETWEEN FIRST AND FIFTH VISITS, IN DAYS",-
+AFIB,REGARDS,baseline_calculated_variables.AFIB_ECG,-,-
+AFIB,REGARDS,baseline_calculated_variables.AFIB_SR,-,-
+AGE,ARIC,derive13.v1age01,AGE AT VISIT 1,-
+AGE,ARIC,derive2_10.v2age22,Age at Visit 2,-
+AGE,ARIC,derive37.v3age31,Age at Visit 3,-
+AGE,ARIC,derive47.v4age41,Age at Visit 4,-
+AGE,ARIC,derive51.v5age52,Corrected Visit 5 age,-
+AGE,Framingham,vr_wkthru_ex09_1_1001d.age1,"Age (years), Exam 1",-
+AGE,Framingham,vr_wkthru_ex09_1_1001d.age2,"Age (years), Exam 2",24.77947073
+AGE,Framingham,vr_wkthru_ex09_1_1001d.age3,"Age (years), Exam 3",24.57898958
+AGE,Framingham,vr_wkthru_ex09_1_1001d.age4,"Age (years), Exam 4",21.77225341
+AGE,Framingham,vr_wkthru_ex09_1_1001d.age5,"Age (years), Exam 5",26.06255012
+AGE,Framingham,vr_wkthru_ex09_1_1001d.age6,"Age (years), Exam 6",31.61587811
+AGE,Framingham,vr_wkthru_ex09_1_1001d.age7,"Age (years), Exam 7",30.3127506
+AGE,Framingham,vr_wkthru_ex09_1_1001d.age8,"Age (years), Exam 8",40.1563753
+AGE,Framingham,vr_wkthru_ex09_1_1001d.age9,"Age (years), Exam 9",51.88452285
+AGE,MESA,mesae1dres20220813.age1c,AGE,-
+AGE,MESA,mesae2dres06222012.age2c,AGE AT EXAM 2,8.526562959
+AGE,MESA,mesae3dres06222012.age3c,AGE AT EXAM3,12.72380393
+AGE,MESA,mesae4dres06222012.age4c,Age at exam 4,14.61696507
+AGE,MESA,mesae5_drepos_20220820.age5c,AGE AT EXAM 5,-
+AGE,REGARDS,baseline_calculated_variables.AGE,-,-
+ALCOHOL,ARIC,dtia.dtia90,DRINK ALCOHOLIC BEVERAGE Q90,-
+ALCOHOL,ARIC,dtia.dtia96,NO OF GLASSES WINE CONSUMED P WK Q96,43.73831776
+ALCOHOL,ARIC,dtia.dtia97,NO OF CANS OF BEER CONSUMED P WK Q97,43.71161549
+ALCOHOL,ARIC,dtia.dtia98,NO OF HARD LIQUOR DRINKS PER WK Q98,43.76502003
+ALCOHOL,ARIC,phxb04.phxb14,EVER CONSUMED ALCOHOLIC BEVERAGES Q14,-
+ALCOHOL,ARIC,phxb04.phxb15,DRINK ALCOHOL NOW Q15,-
+ALCOHOL,ARIC,phxb04.phxb17a,USUAL # OF GLASSES WINE/WK Q17A,50.96950387
+ALCOHOL,ARIC,phxb04.phxb18a,USUAL # OF BEERS PER WEEK Q18A,50.99681384
+ALCOHOL,ARIC,phxb04.phxb19a,USUAL # OF HARD LIQUOR DRINKS/WK Q19A,50.99681384
+ALCOHOL,Framingham,ex1_3d_v1.c452,Total Alcohol Consumption,0.292397661
+ALCOHOL,Framingham,vr_ffreq_ex06_1_0506d.ffd114,BEER:(servings/week),0.886990802
+ALCOHOL,Framingham,vr_ffreq_ex06_1_0506d.ffd115,RED WINE:(servings/week),0.525624179
+ALCOHOL,Framingham,vr_ffreq_ex06_1_0506d.ffd116,WHITE WINE:(servings/week),0.591327201
+ALCOHOL,Framingham,vr_ffreq_ex06_1_0506d.ffd117,LIQUOR:(servings/week),0.229960578
+ALCOHOL,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd114,BEER:(servings/week),1.115656378
+ALCOHOL,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd115,RED WINE:(servings/week),0.483451097
+ALCOHOL,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd116,WHITE WINE:(servings/week),0.520639643
+ALCOHOL,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd117,LIQUOR:(servings/week),0.037188546
+ALCOHOL,MESA,mesae1dres20220813.alcwk1c,# DRINKS PER WEEK (CURRENT AND FORMER DRINKERS),21.44115057
+ALCOHOL,REGARDS,baseline_calculated_variables.ALC_DRINKS_WK,-,1.961368983
+ANYCHOLMED,ARIC,derive13.cholmdcode01,Cholesterol lowering medication w/in 2wks: Using 2004 Med Code -V1,0.759797387
+ANYCHOLMED,ARIC,derive2_10.cholmdcode21,Cholesterol lowering medication w/in 2wks: Using 2004 Med Code -V2,0.308710033
+ANYCHOLMED,ARIC,derive37.cholmdcode31,Cholesterol lowering medication w/in 2wks: Using 2004 Med Code -V3,0.205153455
+ANYCHOLMED,ARIC,derive47.cholmdcode41,Cholesterol lowering medication w/in 2wks: Using 2004 Med Code -V4,0.391442877
+ANYCHOLMED,ARIC,msr.msrf33e,Medication taken for high blood cholesterol,-
+ANYCHOLMED,Framingham,ex1_5d_v1.e249,ANTI CHOLESTEROL DRUGS-OTHER,0.054229935
+ANYCHOLMED,Framingham,ex1_6d_v1.f209,MEDS - ANTI-CHOL -RESINS,0.029316916
+ANYCHOLMED,Framingham,ex1_6d_v1.f210,MEDS - ANTI-CHOL -NIACIN/NICOTINIC ACID,0.029316916
+ANYCHOLMED,Framingham,ex1_6d_v1.f211,MEDS - ANTI-CHOL -FIBRATES,0.029316916
+ANYCHOLMED,Framingham,ex1_5d_v1.e247,ANTI CHOLESTEROL DRUGS-FIBRATES,0.027114968
+ANYCHOLMED,Framingham,ex1_5d_v1.e248,ANTI CHOLESTEROL DRUGS-STATINS,0.027114968
+ANYCHOLMED,Framingham,ex1_1d_v3.a80,ANTI-CHOLESTEROL AGENTS,0.481154772
+ASPIRIN,ARIC,derive13.aspirincode01,"Used Aspirin-containing analgesics (at Visit 1) in last 2 weeks (0=No, 1=Yes), based on 2004 Med Code",0.866435617
+ASPIRIN,ARIC,derive2_10.aspirincode21,"Used Aspirin-containing analgesics (at Visit 2) in last 2 weeks (0=No, 1=Yes), based on 2004 Med Code",0.323410511
+ASPIRIN,ARIC,derive37.aspirincode31,"Used Aspirin-containing analgesics (at Visit 3) in last 2 weeks (0=No, 1=Yes), based on 2004 Med Code",0.262596422
+ASPIRIN,ARIC,derive47.aspirincode41,"Used Aspirin-containing analgesics (at Visit 4) in last 2 weeks (0=No, 1=Yes), based on 2004 Med Code",0.409649522
+ASPIRIN,ARIC,msr.msrf34,Aspirin taken in last 4 weeks,-
+ASPIRIN,Framingham,ex1_5d_v1.e218,NUMBER OF ASPIRINS PER TIME INTERVAL,0.569414317
+ASPIRIN,Framingham,ex1_5d_v1.e219,TIME INTERVAL FOR ASPIRIN TAKEN,0.921908894
+ASPIRIN,Framingham,ex1_6d_v1.f181,NUMBER OF ASPIRINS TAKEN REGULARLY,0.35180299
+ASPIRIN,Framingham,ex1_6d_v1.f182,ASPIRIN FREQUENCY,0.322486075
+ASPIRIN,Framingham,ex1_7d_v2.g038,NUMBER OF ASPIRINS TAKEN REGULARLY,0.115074799
+ASPIRIN,Framingham,ex1_7d_v2.g039,ASPIRIN FREQUENCY,0.172612198
+ASPIRIN,Framingham,e_exam_ex08_1_0005d.h011,Number aspirins taken regularly,0.167504188
+ASPIRIN,Framingham,e_exam_ex08_1_0005d.h012,Aspirin Frequency per,0.201005025
+ASPIRIN,Framingham,vr_meds_ex08_1_0280d.atc_cod1,ATC CODE FOR MEDICATION OR FIRST DRUG IN COMPOUND,-
+ASPIRIN,Framingham,vr_meds_ex08_1_0280d.atc_cod2,ATC CODE FOR SECOND DRUG IN COMPOUND,-
+ASPIRIN,Framingham,vr_meds_ex08_1_0280d.atc_cod3,ATC CODE FOR THIRD DRUG IN COMPOUND,-
+ASPIRIN,Framingham,vr_meds_ex08_1_0280d.atc_cod4,ATC CODE FOR FOURTH DRUG IN COMPOUND,-
+ASPIRIN,Framingham,e_exam_ex09_1b_0844d.j011,"MEDS - ASPIR, # OF",0.558243394
+ASPIRIN,Framingham,e_exam_ex09_1b_0844d.j012,"MEDS - ASPIR, PER DY/WK/MO/YR",0.632675847
+ASPIRIN,Framingham,vr_meds_ex09_1b_0879d.atc_cod1,ATC code for medication or first drug in compound,-
+ASPIRIN,Framingham,vr_meds_ex09_1b_0879d.atc_cod2,ATC code for medication or second drug in compound,-
+ASPIRIN,Framingham,vr_meds_ex09_1b_0879d.atc_cod3,ATC code for medication or third drug in compound,-
+ASPIRIN,Framingham,vr_meds_ex09_1b_0879d.atc_cod4,ATC code for medication or fourth drug in compound,-
+ASPIRIN,MESA,mesae1dres20220813.asa1c,Aspirin from 280804 (anti-inflam agents),0.044027003
+ASPIRIN,MESA,mesae2dres06222012.asa2c,Aspirin from 280804 (anti-inflam agents),12.35691224
+ASPIRIN,MESA,mesae3dres06222012.asa3c,Aspirin from 280804 (anti-inflam agents),14.22072204
+ASPIRIN,MESA,mesae4dres06222012.asa4c,Aspirin from 280804 (anti-inflam agents),17.36131494
+ASPIRIN,MESA,mesae5_drepos_20220820.asa5c,ASPIRIN FROM 280804 (ANTI-INFLAM AGENTS),0.169635284
+ASPIRIN,REGARDS,baseline_calculated_variables.REG_ASA,-,-
+BASE_CVD,ARIC,derive13.prvchd05,PREVALENT CORONARY HEART DISEASE,2.19941349
+BASE_CVD,ARIC,derive13.symchd03,SYMPTOMATIC CORONARY HEART DISEASE,1.073047187
+BASE_CVD,ARIC,derive13.roseic03,"ROSE INTERMITTENT CLAUDICATION, DEF. 3",0.299920021
+BASE_CVD,ARIC,derive13.prevhf01,Prevalent HF at Visit 1,1.832844575
+BASE_CVD,Framingham,vr_survcvd_2019_a_1334d.cvd,Cardiovascular Disease (CVD) status,-
+BASE_CVD,Framingham,vr_survcvd_2019_a_1334d.cvddate,Date of Cardiovascular Disease (CVD) status,-
+BASE_CVD,MESA,mesaevthr2015_drepos_20200330.prebase,Type of pre-baseline event,-
+BASE_STROKE,ARIC,stroke01.stroke01,Stroke,-
+BASE_STROKE,ARIC,stroke01.tia01,TIA,-
+BASE_STROKE,Framingham,vr_svstk_2019_a_1335d.stroke,Stroke status,-
+BASE_STROKE,Framingham,vr_svstk_2019_a_1335d.strokedate,Date of stroke,-
+BASE_STROKE,Framingham,vr_svstktia_2019_a_1336d.stroke_tia,Stroke/TIA status,-
+BASE_STROKE,Framingham,vr_svstktia_2019_a_1336d.stroketiadate,Date of stroke/TIA,-
+BASE_STROKE,REGARDS,baseline_calculated_variables.STROKE_SR,-,-
+BG,Framingham,vr_wkthru_ex09_1_1001d.bg1,"Blood glucose (mg/dL) (includes fasting and non-fasting), Exam 1",4.250200481
+BG,Framingham,vr_wkthru_ex09_1_1001d.bg2,"Blood glucose (mg/dL) (includes fasting and non-fasting), Exam 2",27.7265437
+BG,Framingham,vr_wkthru_ex09_1_1001d.bg3,"Blood glucose (mg/dL) (includes fasting and non-fasting), Exam 3",27.12510024
+BG,Framingham,vr_wkthru_ex09_1_1001d.bg4,"Blood glucose (mg/dL) (includes fasting and non-fasting), Exam 4",23.61668003
+BG,Framingham,vr_wkthru_ex09_1_1001d.bg5,"Blood glucose (mg/dL) (includes fasting and non-fasting), Exam 5",26.66399358
+BG,Framingham,vr_wkthru_ex09_1_1001d.bg6,"Blood glucose (mg/dL) (includes fasting and non-fasting), Exam 6",32.55813953
+BG,Framingham,vr_wkthru_ex09_1_1001d.bg7,"Blood glucose (mg/dL) (includes fasting and non-fasting), Exam 7",34.38251804
+BG,Framingham,vr_wkthru_ex09_1_1001d.bg8,"Blood glucose (mg/dL) (includes fasting and non-fasting), Exam 8",42.54210104
+BG,Framingham,vr_wkthru_ex09_1_1001d.bg9,"Blood glucose (mg/dL) (includes fasting and non-fasting), Exam 9",54.87169206
+BMI,ARIC,derive13.bmi01,BODY MASS INDEX IN KG/(M*M),0.159957345
+BMI,ARIC,derive2_10.bmi21,V2 body mass index in kg/m2,0.205806689
+BMI,ARIC,derive37.bmi32,Body Mass Index in kg/m**2,0.147710487
+BMI,ARIC,derive47.bmi41,Description not found,0.318616295
+BMI,ARIC,derive51.bm!51,-,-
+BMI,Framingham,vr_wkthru_ex09_1_1001d.bmi1,"Body mass index (kg/m²), Exam 1",0.080192462
+BMI,Framingham,vr_wkthru_ex09_1_1001d.bmi2,"Body mass index (kg/m²), Exam 2",24.83961508
+BMI,Framingham,vr_wkthru_ex09_1_1001d.bmi3,"Body mass index (kg/m²), Exam 3",25.56134723
+BMI,Framingham,vr_wkthru_ex09_1_1001d.bmi4,"Body mass index (kg/m²), Exam 4",22.19326383
+BMI,Framingham,vr_wkthru_ex09_1_1001d.bmi5,"Body mass index (kg/m²), Exam 5",26.62389735
+BMI,Framingham,vr_wkthru_ex09_1_1001d.bmi6,"Body mass index (kg/m²), Exam 6",32.55813953
+BMI,Framingham,vr_wkthru_ex09_1_1001d.bmi7,"Body mass index (kg/m²), Exam 7",34.30232558
+BMI,Framingham,vr_wkthru_ex09_1_1001d.bmi8,"Body mass index (kg/m²), Exam 8",42.38171612
+BMI,Framingham,vr_wkthru_ex09_1_1001d.bmi9,"Body mass index (kg/m²), Exam 9",54.69125902
+BMI,MESA,mesae1dres20220813.bmi1c,BODY MASS INDEX (kg)/(m^2),-
+BMI,MESA,mesae2dres06222012.bmi2c,BODY MASS INDEX (kg)/(m^2),8.555914294
+BMI,MESA,mesae3dres06222012.bmi3c,BODY MASS INDEX (kg)/(m^2),12.84120928
+BMI,MESA,mesae4dres06222012.bmi4c,BODY MASS INDEX (kg)/(m^2),16.31934253
+BMI,MESA,mesae5_drepos_20220820.bmi5c,BODY MASS INDEX (kg/m^2),1.569126378
+BMI,REGARDS,baseline_calculated_variables.BMI,-,0.722260875
+CARSTEN,ARIC,phea.phea10,CAROTID BRUITS? Q10,-
+CARSTEN,ARIC,derive47.plaque42,Alt. Plaque in any site,40.6008193
+CARSTEN,Framingham,ex1_3d_v1.c361,CDI: LEFT CAROTID BRUIT,0.079744817
+CARSTEN,Framingham,ex1_3d_v1.c362,CDI: RIGHT CAROTID BRUIT,0.079744817
+CARSTEN,Framingham,ex1_6d_v1.f564,CAROTID BRUIT-LEFT,1.231310466
+CARSTEN,Framingham,ex1_6d_v1.f565,CAROTID BRUIT-RIGHT,1.260627382
+CARSTEN,Framingham,e_exam_ex08_1_0005d.h298,CAROTID BRUIT - LEFT,3.718592965
+CARSTEN,Framingham,e_exam_ex08_1_0005d.h299,CAROTID BRUIT - RIGHT,3.718592965
+CARSTEN,MESA,mesae1dres20220813.maxstn1c,"MAXIMUM CAROTID STENOSIS, GRADED",1.438215439
+CENSDAY,ARIC,incps18.fudth18,Follow Up Days to Death by 2018,-
+CENSDAY,Framingham,vr_survdth_2019_a_1337d.datedth,Date of death,57.63052209
+CENSDAY,Framingham,vr_survdth_2019_a_1337d.lastcon,Date of last contact,42.36947791
+CENSDAY,MESA,mesaevthr2015_drepos_20200330.fuptt,Time until most recent follow-up (days),0.073378339
+CREAT,ARIC,chma.chma09,CREATININE (MG-DL) Q9,-
+CREAT,ARIC,chmb.chmb08,CREATININE (mg per dL) DEC PT REQ Q8,-
+CREAT,ARIC,chm.chm21,"Creatinine, Serum (mg/dL)",0.609652837
+CREAT,Framingham,vr_wkthru_ex09_1_1001d.creat2,"Creatinine (mg/dL), Exam 2",27.7265437
+CREAT,Framingham,vr_wkthru_ex09_1_1001d.creat5,"Creatinine (mg/dL), Exam 5",38.09141941
+CREAT,Framingham,vr_wkthru_ex09_1_1001d.creat6,"Creatinine (mg/dL), Exam 6",33.05934242
+CREAT,Framingham,vr_wkthru_ex09_1_1001d.creat7,"Creatinine (mg/dL), Exam 7",34.60304731
+CREAT,Framingham,vr_wkthru_ex09_1_1001d.creat8,"Creatinine (mg/dL), Exam 8",42.78267843
+CREAT,Framingham,vr_wkthru_ex09_1_1001d.creat9,"Creatinine (mg/dL), Exam 9",55.13231756
+CREAT,MESA,mesae1dres20220813.creatin1,CREATININE (mg/dl),0.366891694
+CREAT,MESA,mesae3dres06222012.creatin3,CREATININE (mg/dl),13.604344
+CREAT,MESA,mesae4dres06222012.creatin4,Creatinine (mg/dl),17.31728794
+CREAT,MESA,mesae5_drepos_20220820.creatnn5,CREATININE,95.41984733
+CREAT,REGARDS,baseline_calculated_variables.CREATININE_SERUM,-,4.323625882
+CURRSMK,ARIC,derive13.cursmk01,CURRENT CIGARETTE SMOKER,0.09997334
+CURRSMK,ARIC,derive2_10.cursmk21,Current Smoker Flag,0.242557883
+CURRSMK,ARIC,derive37.cursmk31,Current Smoker,0.303627113
+CURRSMK,ARIC,derive47.cursmk41,Current Cigarette Smoker,0.937642239
+CURRSMK,ARIC,derive51.cursmk52,V5 Current Cigarette Smoker,6.29005059
+CURRSMK,Framingham,vr_wkthru_ex09_1_1001d.currsmk1,"Current smoking status, Exam 1",0.320769848
+CURRSMK,Framingham,vr_wkthru_ex09_1_1001d.currsmk2,"Current smoking status, Exam 2",24.81956696
+CURRSMK,Framingham,vr_wkthru_ex09_1_1001d.currsmk3,"Current smoking status, Exam 3",24.61908581
+CURRSMK,Framingham,vr_wkthru_ex09_1_1001d.currsmk4,"Current smoking status, Exam 4",21.8925421
+CURRSMK,Framingham,vr_wkthru_ex09_1_1001d.currsmk5,"Current smoking status, Exam 5",26.12269447
+CURRSMK,Framingham,vr_wkthru_ex09_1_1001d.currsmk6,"Current smoking status, Exam 6",31.61587811
+CURRSMK,Framingham,vr_wkthru_ex09_1_1001d.currsmk7,"Current smoking status, Exam 7",30.35284683
+CURRSMK,Framingham,vr_wkthru_ex09_1_1001d.currsmk8,"Current smoking status, Exam 8",40.23656776
+CURRSMK,Framingham,vr_wkthru_ex09_1_1001d.currsmk9,"Current smoking status, Exam 9",52.04490778
+CURRSMK,MESA,mesae1dres20220813.cig1c,CIGARETTE SMOKING STATUS,0.32286469
+CURRSMK,MESA,mesae2dres06222012.cig2c,"Cigarrette Smoking Status, Exam 2",9.172292339
+CURRSMK,MESA,mesae3dres06222012.cig3c,"Cigarrette Smoking Status, Exam 3",13.34018198
+CURRSMK,MESA,mesae4dres06222012.cig4c,"Cigarette Smoking Status, Exam 4",15.58555914
+CURRSMK,MESA,mesae5_drepos_20220820.cig5c,"CIGARETTE SMOKING STATUS, EXAM 5",1.378286684
+CURRSMK,REGARDS,baseline_calculated_variables.SMOKE,-,-
+DAYS_SINCE_EXAM1,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+DAYS_SINCE_EXAM1,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+DAYS_SINCE_EXAM1,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+DAYS_SINCE_EXAM1,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+DAYS_SINCE_EXAM1,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+DEATH_IND,ARIC,incps18.dead18,Dead by 2018 from DTH/NDI/AFU,-
+DEATH_IND,Framingham,vr_survdth_2019_a_1337d.datedth,Date of death,57.63052209
+DEATH_IND,MESA,mesaevthr2015_drepos_20200330.dth,Death,0.308189023
+DEATH_IND_T2,MESA,mesaevthr2015_drepos_20200330.dthtt,Time to All-Cause Death or End of Year 2015 (days),0.308189023
+DIAB,ARIC,derive37.diabts34,Diabetes Using Lower Cutpoint 126 mg/dL,0.623666503
+DIAB,ARIC,derive47.diabts42,Diabetes Using Lower Cutpoint 126 mg/dL,1.201638598
+DIAB,ARIC,derive51.diabts54,V5 Diabetes - Lower Cutpoint 126 mg/dL,3.591905565
+DIAB,Framingham,vr_diab_ex09_1_1002d.curr_diab1,"Diabetes Mellitus Status, Exam 1",4.731355253
+DIAB,Framingham,vr_diab_ex09_1_1002d.curr_diab2,"Diabetes Mellitus Status, Exam 2",27.96712109
+DIAB,Framingham,vr_diab_ex09_1_1002d.curr_diab3,"Diabetes Mellitus Status, Exam 3",27.12510024
+DIAB,Framingham,vr_diab_ex09_1_1002d.curr_diab4,"Diabetes Mellitus Status, Exam 4",23.65677626
+DIAB,Framingham,vr_diab_ex09_1_1002d.curr_diab5,"Diabetes Mellitus Status, Exam 5",26.64394547
+DIAB,Framingham,vr_diab_ex09_1_1002d.curr_diab6,"Diabetes Mellitus Status, Exam 6",32.47794707
+DIAB,Framingham,vr_diab_ex09_1_1002d.curr_diab7,"Diabetes Mellitus Status, Exam 7",33.9414595
+DIAB,Framingham,vr_diab_ex09_1_1002d.curr_diab8,"Diabetes Mellitus Status, Exam 8",42.26142743
+DIAB,Framingham,vr_diab_ex09_1_1002d.curr_diab9,"Diabetes Mellitus Status, Exam 9",54.83159583
+DIAB,MESA,mesae1dres20220813.dm031c,Exam 1 Diabetes mellitus by 2003 ADA fasting criteria algorithm,0.352216026
+DIAB,MESA,mesae2dres06222012.dm032c,Exam 2 Diabetes mellitus by 2003 ADA fasting criteria algorithm,9.186968007
+DIAB,MESA,mesae3dres06222012.dm033c,Exam 3 Diabetes mellitus by 2003 ADA fasting criteria algorithm,13.47226299
+DIAB,MESA,mesae4dres06222012.dm034c,Exam 4 Diabetes mellitus by 2003 ADA fasting criteria algorithm,16.90636924
+DIAB,MESA,mesae5_drepos_20220820.dm035c,DIABETES 2003 ADA FASTING CRITERIA,2.565733673
+DIAB,REGARDS,baseline_calculated_variables.DIABETES_SR,-,-
+DIAB,REGARDS,baseline_calculated_variables.DIAB_SRMED_GLU,-,-
+DIABP,ARIC,sbpa02.sbpa22,2ND AND 3RD DIASTOLIC BP AVERAGE Q22,0.079984003
+DIABP,ARIC,sbpb02.sbpb22,2ND AND 3RD DIASTOLIC BP AVERAGE Q22,0.029400956
+DIABP,ARIC,sbpc04_02.sbpc23,2ND AND 3RD DIASTOLIC BP AVERAGE Q23,0.024624477
+DIABP,ARIC,sbpd04_02.sbpd20,1ST AND 2ND DIASTOLIC BP AVERAGE Q20,0.109239873
+DIABP,ARIC,sbp.sbp15,AVG: Diastolic (mmHg),0.690817186
+DIABP,MESA,mesae1dres20220813.dbp1c,SEATED DIASTOLIC BLOOD PRESSURE (mmHg),0.044027003
+DIABP,MESA,mesae2dres06222012.dbp2c,Seated Diastolic Blood Pressure (mmHg),8.570589962
+DIABP,MESA,mesae3dres06222012.dbp3c,SEATED DIASTOLIC BLOOD PRESSURE (mmHg),12.88523628
+DIABP,MESA,mesae4dres06222012.dbp4c,Seated diastolic blood pressure (mmhg),16.3780452
+DIABP,MESA,mesae5_drepos_20220820.dbp5c,SEATED DIASTOLIC BLOOD PRESSURE (mmHg),1.335877863
+DIABP,REGARDS,baseline_calculated_variables.DBP,-,0.288241726
+DIABP1,Framingham,ex1_1d_v3.a56,"PHYSICIAN DIASTOLIC BLOOD PRESSURE, 1ST",0.180433039
+DIABP1,Framingham,ex1_2d_v3.b25,D201-050-DIAS-PHYS-FIRST,0.053304904
+DIABP1,Framingham,ex1_3d_v1.c185,FIRST DIASTOLIC BLOOD PRESSURE,0.079744817
+DIABP1,Framingham,ex1_4d_v1.d193,DIASTOLIC BP -PHYSICIAN - 1ST READING,0.051255766
+DIABP1,Framingham,ex1_5d_v1.e486,DIASTOLIC PRESSURE - 1ST MD READING,0.054229935
+DIABP1,Framingham,ex1_6d_v1.f477,PHYSICIAN BP-DIASTOLIC-1ST READING,0.087950748
+DIABP1,Framingham,ex1_7d_v2.g272,PHYSICIAN BP DIASTOLIC - 1ST READING,0.230149597
+DIABP1,Framingham,e_exam_ex08_1_0005d.h112,PHYSICIAN DIASTOLIC BP - 1ST READING,0.234505863
+DIABP1,Framingham,e_exam_ex09_1b_0844d.j118,"MDBP1 - DIASTOLIC 1, MMHG",0.111648679
+DIABP2,Framingham,ex1_1d_v3.a58,"PHYSICIAN DIASTOLIC BLOOD PRESSURE, 2ND",82.23736969
+DIABP2,Framingham,ex1_2d_v3.b27,D201-056-DIAS-PHYS-SECOND,0.13326226
+DIABP2,Framingham,ex1_3d_v1.c287,SECOND DIASTOLIC BLOOD PRESSURE,0.345560872
+DIABP2,Framingham,ex1_4d_v1.d289,DIASTOLIC BP -PHYSICIAN - 2ND READING,0.333162481
+DIABP2,Framingham,ex1_5d_v1.e582,DIASTOLIC PRESSURE - 2ND MD READING,0.10845987
+DIABP2,Framingham,ex1_6d_v1.f577,PHYSICIAN BP-2ND READING-DIASTOLIC,0.175901495
+DIABP2,Framingham,ex1_7d_v2.g355,PHYSICIAN BP DIASTOLIC - 2ND READING,0.201380898
+DIABP2,Framingham,e_exam_ex08_1_0005d.h234,PHYSICIAN DIASTOLIC BP - 2ND READING,0.234505863
+DIABP2,Framingham,e_exam_ex09_1b_0844d.j257,"MDBP2 - DIAST, MMHG",0.29772981
+EDUCLEV,ARIC,hom.hom54,HIGHEST EDUCATION COMPLETED Q54,0.14665689
+EDUCLEV,Framingham,ex1_2d_v3.b43,D201-099-YEARS-EDUCATION,0.159914712
+EDUCLEV,MESA,mesae1dres20220813.educ1,EDUCATION: HIGHEST LEVEL COMPLETED,0.337540358
+EDUCLEV,REGARDS,baseline_calculated_variables.ED_CAT,-,-
+EVENT,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+EVENT,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+EVENT,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+EVENT,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+EVENT,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+EVENT_DESC,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+EVENT_DESC,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+EVENT_DESC,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+EVENT_DESC,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+EVENT_DESC,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+EVENT_T2_O,ARIC,incps18.fthem18,Follow-up HEM Strokes (days),-
+EVENT_T2_O,ARIC,incps18.ft18chm,Follow-up CHM Strokes (days),-
+EVENT_T2_O,ARIC,incps18.ftisc18,Follow-up ISC Strokes (days),-
+EVENT_T2_O,ARIC,incps18.ft18dp,Follow-up DP Strokes (days),-
+EVENT_T2_O,ARIC,incps18.ftdpp18,Follow-up DPP Strokes (days),-
+EVENT_T2_O,MESA,mesaevthr2015_drepos_20200330.strktt,Time to Stroke or End of Year 2015 (days),0.4549457
+EVENT_T2_O,MESA,mesaevthr2015_drepos_20200330.fuptt,Time until most recent follow-up (days),0.073378339
+EVENT_T2_O,MESA,mesaevthr2015_drepos_20200330.strktt,Time to Stroke or End of Year 2015 (days),0.4549457
+EVENT_T2_O,MESA,mesaevthr2015_drepos_20200330.fuptt,Time until most recent follow-up (days),0.073378339
+EVENT_T2_O,MESA,mesaevthr2015_drepos_20200330.strktt,Time to Stroke or End of Year 2015 (days),0.4549457
+EVENT_T2_O,MESA,mesaevthr2015_drepos_20200330.fuptt,Time until most recent follow-up (days),0.073378339
+EVENT_T2_O,MESA,mesaevthr2015_drepos_20200330.strktt,Time to Stroke or End of Year 2015 (days),0.4549457
+EVENT_T2_O,MESA,mesaevthr2015_drepos_20200330.fuptt,Time until most recent follow-up (days),0.073378339
+EVENT_T2_O,MESA,mesaevthr2015_drepos_20200330.dthtt,Time to All-Cause Death or End of Year 2015 (days),0.308189023
+EVENT_T2_O,MESA,mesaevthr2015_drepos_20200330.fuptt,Time until most recent follow-up (days),0.073378339
+EVENT_VAL_C,ARIC,incps18.inhem18,Def/Prob Hemmorrhagic Inc. Stroke by Censoring Date,-
+EVENT_VAL_C,ARIC,incps18.inchm18,Def/Prob Combined Hemm Inc. Stroke by Censoring Date,-
+EVENT_VAL_C,ARIC,incps18.inisc18,Def/Prob Ischemic Inc. Stroke by Censoring Date,-
+EVENT_VAL_C,ARIC,incps18.indp18,Def/Prob Incident Stroke by Censoring Date,-
+EVENT_VAL_C,ARIC,incps18.indpp18,Def/Prob/Poss Inc. Stroke by Censoring Date,-
+EVENT_VAL_C,MESA,mesaevthr2015_drepos_20200330.strk,Stroke,0.4549457
+EVENT_VAL_C,MESA,mesaevthr2015_drepos_20200330.strk,Stroke,0.4549457
+EVENT_VAL_C,MESA,mesaevthr2015_drepos_20200330.strktype,Stroke type,-
+EVENT_VAL_C,MESA,mesaevthr2015_drepos_20200330.strk,Stroke,0.4549457
+EVENT_VAL_C,MESA,mesaevthr2015_drepos_20200330.strktype,Stroke type,-
+EVENT_VAL_C,MESA,mesaevthr2015_drepos_20200330.strk,Stroke,0.4549457
+EVENT_VAL_C,MESA,mesaevthr2015_drepos_20200330.strktype,Stroke type,-
+EVENT_VAL_C,MESA,mesaevthr2015_drepos_20200330.dth,Death,0.308189023
+EVENT_VAL_C,MESA,mesaevthr2015_drepos_20200330.dthtype,Death type,80.96565894
+FAM_INCOME,ARIC,hom.hom62,COMBINED FAMILY INCOME GROUP Q62,5.659622692
+FAM_INCOME,ARIC,sesa04.sesa6,HOUSEHOLD INCOME LAST YEAR Q6,-
+FAM_INCOME,Framingham,q_psych_ex03_1_0167d.py125,Current total family income/yr before tx,20.96008931
+FAM_INCOME,MESA,mesae1dres20220813.income1,"TOTAL GROSS FAMILY INCOME, PAST 12 MONTHS",4.006457294
+FAM_INCOME,REGARDS,baseline_calculated_variables.INCOME,-,12.35794984
+FASTING,REGARDS,baseline_calculated_variables.FASTED,-,-
+FASTING_12HR,ARIC,derive13.fast1202,FASTING TIME OF 12 HOURS OR MORE,0.459877366
+FASTING_12HR,ARIC,derive2_10.fast1223,"V2 Fast 12 Hrs or More, Definition 2",0.308710033
+FASTING_12HR,ARIC,derive37.fast1234,Fasting Time of 12 Hours or More,0.812407681
+FASTING_8HR,ARIC,derive13.fast0802,FASTING TIME OF 8 HOURS OR MORE,0.446547587
+FASTING_8HR,ARIC,derive2_10.fast0823,"V2 Fast 8 Hrs or More, Definition 2",0.301359794
+FASTING_8HR,ARIC,derive37.fast0834,Fasting Time of 8 Hours or More,0.812407681
+FASTING_BG,Framingham,vr_wkthru_ex09_1_1001d.fasting_bg3,"Fasting (>= 8 hours) blood glucose (mg/dL), Exam 3",29.17000802
+FASTING_BG,Framingham,vr_wkthru_ex09_1_1001d.fasting_bg4,"Fasting (>= 8 hours) blood glucose (mg/dL), Exam 4",26.98476343
+FASTING_BG,Framingham,vr_wkthru_ex09_1_1001d.fasting_bg5,"Fasting (>= 8 hours) blood glucose (mg/dL), Exam 5",27.5862069
+FASTING_BG,Framingham,vr_wkthru_ex09_1_1001d.fasting_bg6,"Fasting (>= 8 hours) blood glucose (mg/dL), Exam 6",33.72093023
+FASTING_BG,Framingham,vr_wkthru_ex09_1_1001d.fasting_bg7,"Fasting (>= 8 hours) blood glucose (mg/dL), Exam 7",35.56535686
+FASTING_BG,Framingham,vr_wkthru_ex09_1_1001d.fasting_bg8,"Fasting (>= 8 hours) blood glucose (mg/dL), Exam 8",43.68484362
+FASTING_BG,Framingham,vr_wkthru_ex09_1_1001d.fasting_bg9,"Fasting (>= 8 hours) blood glucose (mg/dL), Exam 9",55.87409783
+FASTING_BG,MESA,mesae1dres20220813.glucos1c,Exam 1 Fasting Glucose- Calibrated,0.366891694
+FASTING_BG,MESA,mesae2dres06222012.glucos2c,FASTING GLUCOSE (mg/dL) CALIBRATED,9.245670678
+FASTING_BG,MESA,mesae3dres06222012.glucos3c,FASTING GLUCOSE (mg/dL) CALIBRATED,13.604344
+FASTING_BG,MESA,mesae4dres06222012.glucos4c,Fasting Glucose (mg/dL) Calibrated,17.31728794
+FASTING_BG,MESA,mesae5_drepos_20220820.glucose5,FASTING GLUCOSE (mg/dl),2.735368957
+FH_STROKE,ARIC,derive13.momhistorystr,New Maternal History of Stroke,5.131964809
+FH_STROKE,ARIC,derive13.dadhistorystr,New Paternal History of Stroke,9.72407358
+FH_STROKE,Framingham,ex1_6d_v1.f692,FATHER-HAVE STROKE BEFORE AGE 65,12.28378775
+FH_STROKE,Framingham,ex1_6d_v1.f701,MOTHER-HAVE STROKE BEFORE AGE 65,11.6388156
+FH_STROKE,MESA,mesae1dres20220813.pstk1,FAMILY HISTORY OF STROKE: PARENT,0.058702671
+FH_STROKE,REGARDS,family_history.MOMSTROKE,-,-
+FH_STROKE,REGARDS,family_history.DADSTROKE,-,-
+FRUITS,ARIC,dtia.dtia09,CONSUMED APPLES OR PEARS Q9,-
+FRUITS,ARIC,dtia.dtia10,CONSUMED ORANGES Q10,-
+FRUITS,ARIC,dtia.dtia12,CONSUMED PEACHES APRICOTS PLUMS Q12,-
+FRUITS,ARIC,dtia.dtia13,CONSUMED BANANAS Q13,-
+FRUITS,ARIC,dtia.dtia14,CONSUMED OTHER FRUITS Q14,-
+FRUITS,ARIC,dtic04.dtic9,CONSUMED APPLES OR PEARS Q9,-
+FRUITS,ARIC,dtic04.dtic10,CONSUMED ORANGES Q10,-
+FRUITS,ARIC,dtic04.dtic12,CONSUMED PEACHES APRICOTS PLUMS Q12,-
+FRUITS,ARIC,dtic04.dtic13,CONSUMED BANANAS Q13,-
+FRUITS,ARIC,dtic04.dtic14,CONSUMED OTHER FRUITS Q14,-
+FRUITS,Framingham,q_ffreq_ex03_1_0302d.apple,FRESH APPLE OR PAIR,1.35209713
+FRUITS,Framingham,q_ffreq_ex03_1_0302d.orange,ORANGE OR TANGERINE,2.069536424
+FRUITS,Framingham,q_ffreq_ex03_1_0302d.grapfrut,HALF GRAPEFRUIT OR GLASS JUICE,1.90397351
+FRUITS,Framingham,q_ffreq_ex03_1_0302d.peaches,"PEACHES,APRICOTS,PLUMS OR NECTARINES",1.379690949
+FRUITS,Framingham,q_ffreq_ex03_1_0302d.bananas,BANANAS,1.07615894
+FRUITS,Framingham,q_ffreq_ex03_1_0302d.strawber,"FRESH,FROZEN OR CANNED STRAWBERRIES",1.62803532
+FRUITS,Framingham,q_ffreq_ex03_1_0302d.blackber,"BLACKBERRIES,BLUEBERRIES,RASPBERRIES",1.655629139
+FRUITS,Framingham,q_ffreq_ex03_1_0302d.melon,CANTELOUPE OR HONEYDEW MELON-SLICE,1.379690949
+FRUITS,Framingham,q_ffreq_ex03_1_0302d.watermel,SLICE OF WATERMELON,2.290286976
+FRUITS,Framingham,q_ffreq_ex03_1_0302d.pineappl,FRESH OR CANNED PINEAPPLE,1.766004415
+FRUITS,Framingham,q_ffreq_ex03_1_0302d.cherries,FRESH OR CANNED CHERRIES,1.931567329
+FRUITS,Framingham,q_ffreq_ex03_1_0302d.papayas,HALF CUP PAPAYAS,1.90397351
+FRUITS,Framingham,q_ffreq_ex03_1_0302d.avocados,ONE QUARTER OF AN AVOCADO,2.317880795
+FRUITS,Framingham,q_ffreq_ex03_1_0302d.prunes,HALF CUP RAISINS OR DRY APRICOTS,1.738410596
+FRUITS,Framingham,q_ffreq_ex03_1_0302d.dates,HALF CUP DATES OR FIGS,1.90397351
+FRUITS,Framingham,q_ffreq_ex03_1_0302d.raisins,SMALL PACK RAISINS OR GRAPES,1.600441501
+FRUITS,Framingham,vr_ffreq_ex06_1_0506d.ffd30,RAISINS:(servings/week),0.427069645
+FRUITS,Framingham,vr_ffreq_ex06_1_0506d.ffd31,PRUNES:(servings/week),0.919842313
+FRUITS,Framingham,vr_ffreq_ex06_1_0506d.ffd32,BANANAS:(servings/week),1.609724047
+FRUITS,Framingham,vr_ffreq_ex06_1_0506d.ffd33,CANTALOUPE:(servings/week),0.985545335
+FRUITS,Framingham,vr_ffreq_ex06_1_0506d.ffd34,WATERMELON:(servings/week),1.806833114
+FRUITS,Framingham,vr_ffreq_ex06_1_0506d.ffd35,"APPLES/PEARS, FRESH:(servings/week)",1.149802891
+FRUITS,Framingham,vr_ffreq_ex06_1_0506d.ffd37,ORANGES:(servings/week),1.741130092
+FRUITS,Framingham,vr_ffreq_ex06_1_0506d.ffd39,GRAPEFRUIT:(servings/week),1.281208936
+FRUITS,Framingham,vr_ffreq_ex06_1_0506d.ffd42,STRAWBERRIES:(servings/week),0.459921156
+FRUITS,Framingham,vr_ffreq_ex06_1_0506d.ffd43,BLUEBERRIES:(servings/week),0.427069645
+FRUITS,Framingham,vr_ffreq_ex06_1_0506d.ffd44,PEACHES:(servings/week),0.427069645
+FRUITS,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd30,RAISINS:(servings/week),0.892525102
+FRUITS,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd31,PRUNES:(servings/week),1.264410562
+FRUITS,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd32,BANANAS:(servings/week),1.115656378
+FRUITS,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd33,CANTALOUPE:(servings/week),1.301599108
+FRUITS,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd34,WATERMELON:(servings/week),1.822238751
+FRUITS,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd35,"APPLES/PEARS, FRESH:(servings/week)",1.338787653
+FRUITS,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd37,ORANGES:(servings/week),1.375976199
+FRUITS,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd39,GRAPEFRUIT:(servings/week),1.264410562
+FRUITS,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd42,STRAWBERRIES:(servings/week),1.264410562
+FRUITS,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd43,BLUEBERRIES:(servings/week),0.483451097
+FRUITS,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd44,PEACHES:(servings/week),0.557828189
+FRUITS,REGARDS,ffq_analyzed.FRUITSRV,-,-
+GENHLTH,ARIC,hom.hom09,HEALTH CONDITION Q9,-
+GENHLTH,Framingham,ex1_5d_v1.e065,YOUR HEALTH NOW IN GENERAL,0.569414317
+GENHLTH,Framingham,ex1_6d_v1.f087,YOUR HEALTH NOW IN GENERAL,1.026092055
+GENHLTH,Framingham,ex1_7d_v2.g514,YOUR HEALTH NOW IN GENERAL,1.179516686
+GENHLTH2,ARIC,sfe.sfe1,Rate general health,-
+GENHLTH2,Framingham,e_exam_ex08_1_0005d.h714,"IN GENERAL, HOW IS YOUR HEALTH",2.244556114
+GENHLTH2,Framingham,e_exam_ex09_1b_0844d.j890,SF-12 - HOW YOUR HLTH,4.242649795
+GENHLTH2,MESA,mesae2dres06222012.genhel2,IN GENERAL YOUR HEALTH IS,8.77604931
+GENHLTH2,REGARDS,baseline_calculated_variables.GEN_SR_HEALTH,-,-
+GLUCOSE,ARIC,derive13.glucos01,DERIVED GLUCOSE VALUE in mg/dl,0.913089843
+GLUCOSE,ARIC,chmb.chmb07,GLUCOSE (mg per dL) DEC PT REQ Q7,-
+GLUCOSE,ARIC,lipc04.lipc4a,GLUCOSE (VALUE IN MG/DL) Q4A,-
+GLUCOSE,ARIC,lipd04.lipd4a,FASTING GLUCOSE (VALUE) Q4A,0.009175154
+GLUCOSE,ARIC,lip.lip23,Fasting Glucose (mg/dL),5.536742296
+GLUCOSE,REGARDS,baseline_calculated_variables.GLUCOSE,-,4.330252129
+HDL,ARIC,derive13.hdl01,RE-CALIBRATED HDL CHOL. in mg/dl,1.552919222
+HDL,ARIC,lipb.lipb03a,HDL CHOLESTREROL (VALUE) Q3A,0.317906255
+HDL,ARIC,lipc04.lipc3a,HDL CHOLESTEROL (VALUE IN MG/DL) Q3A,-
+HDL,ARIC,lipd04.lipd3a,HDL CHOLESTEROL (VALUE) Q3A,0.009175154
+HDL,ARIC,lip.lip13,HDLC-Cholesterol (mg/dL),0.914324416
+HDL,Framingham,vr_wkthru_ex09_1_1001d.hdl1,"HDL cholesterol (mg/dL), Exam 1",2.08500401
+HDL,Framingham,vr_wkthru_ex09_1_1001d.hdl2,"HDL cholesterol (mg/dL), Exam 2",26.4234162
+HDL,Framingham,vr_wkthru_ex09_1_1001d.hdl3,"HDL cholesterol (mg/dL), Exam 3",27.34562951
+HDL,Framingham,vr_wkthru_ex09_1_1001d.hdl4,"HDL cholesterol (mg/dL), Exam 4",23.957498
+HDL,Framingham,vr_wkthru_ex09_1_1001d.hdl5,"HDL cholesterol (mg/dL), Exam 5",26.86447474
+HDL,Framingham,vr_wkthru_ex09_1_1001d.hdl6,"HDL cholesterol (mg/dL), Exam 6",32.73857257
+HDL,Framingham,vr_wkthru_ex09_1_1001d.hdl7,"HDL cholesterol (mg/dL), Exam 7",34.50280674
+HDL,Framingham,vr_wkthru_ex09_1_1001d.hdl8,"HDL cholesterol (mg/dL), Exam 8",42.54210104
+HDL,Framingham,vr_wkthru_ex09_1_1001d.hdl9,"HDL cholesterol (mg/dL), Exam 9",54.89174018
+HDL,MESA,mesae1dres20220813.hdl1,HDL CHOLESTROL (mg/dl),0.381567361
+HDL,MESA,mesae2dres06222012.hdl2,HDL CHOLESTEROL (mg/dl),9.260346346
+HDL,MESA,mesae3dres06222012.hdl3,HDL CHOLESTEROL (mg/dl),13.54564133
+HDL,MESA,mesae4dres06222012.hdl4,HDL Cholesterol (mg/dl),17.3319636
+HDL,MESA,mesae5_drepos_20220820.hdl5,HDL CHOLESTROL (mg/dl),2.86259542
+HDL,REGARDS,baseline_calculated_variables.HDL,-,4.813968128
+HGT_CM,ARIC,anta.anta01,STANDING HEIGHT TO NEAREST CM Q1,0.119968009
+HGT_CM,ARIC,antc04.antc1,STANDING HEIGHT TO NEAREST CM Q1,0.024640657
+HGT_CM,ARIC,antd05.antd1,Description not found,0.30040965
+HGT_CM,ARIC,ant.ant3,Standing height (cm),4.043807919
+HGT_CM,Framingham,vr_wkthru_ex09_1_1001d.hgt1,"Height (inches), Exam 1",0.080192462
+HGT_CM,Framingham,vr_wkthru_ex09_1_1001d.hgt2,"Height (inches), Exam 2",24.83961508
+HGT_CM,Framingham,vr_wkthru_ex09_1_1001d.hgt3,"Height (inches), Exam 3",25.50120289
+HGT_CM,Framingham,vr_wkthru_ex09_1_1001d.hgt4,"Height (inches), Exam 4",22.19326383
+HGT_CM,Framingham,vr_wkthru_ex09_1_1001d.hgt5,"Height (inches), Exam 5",26.58380112
+HGT_CM,Framingham,vr_wkthru_ex09_1_1001d.hgt6,"Height (inches), Exam 6",32.55813953
+HGT_CM,Framingham,vr_wkthru_ex09_1_1001d.hgt7,"Height (inches), Exam 7",34.30232558
+HGT_CM,Framingham,vr_wkthru_ex09_1_1001d.hgt8,"Height (inches), Exam 8",42.38171612
+HGT_CM,Framingham,vr_wkthru_ex09_1_1001d.hgt9,"Height (inches), Exam 9",54.69125902
+HGT_CM,MESA,mesae1dres20220813.htcm1,HEIGHT (cm),-
+HRX,ARIC,derive13.hyptmd01,"HYPERTENSION LOWERING MED. USE, DEF. 1",0.579845375
+HRX,ARIC,derive2_10.hyptmd21,Hypertension Meds (Self reported),0.448364572
+HRX,ARIC,derive37.hyptmd31,"V3 HYPERTENSION MEDICATIONS, DEF. 1",0.607254226
+HRX,ARIC,derive47.hyptmd41,V4 Hypert Med in Past 2 Wks: Self-rptd,0.600819299
+HRX,ARIC,msr.msrf33d,Medication taken for high blodd pressure or hypertension,-
+HRX,Framingham,vr_wkthru_ex09_1_1001d.hrx1,"Treated for hypertension, Exam 1",0.541299118
+HRX,Framingham,vr_wkthru_ex09_1_1001d.hrx2,"Treated for hypertension, Exam 2",24.83961508
+HRX,Framingham,vr_wkthru_ex09_1_1001d.hrx3,"Treated for hypertension, Exam 3",24.65918204
+HRX,Framingham,vr_wkthru_ex09_1_1001d.hrx4,"Treated for hypertension, Exam 4",21.93263833
+HRX,Framingham,vr_wkthru_ex09_1_1001d.hrx5,"Treated for hypertension, Exam 5",26.40336808
+HRX,Framingham,vr_wkthru_ex09_1_1001d.hrx6,"Treated for hypertension, Exam 6",31.85645549
+HRX,Framingham,vr_wkthru_ex09_1_1001d.hrx7,"Treated for hypertension, Exam 7",30.49318364
+HRX,Framingham,vr_wkthru_ex09_1_1001d.hrx8,"Treated for hypertension, Exam 8",40.21651965
+HRX,Framingham,vr_wkthru_ex09_1_1001d.hrx9,"Treated for hypertension, Exam 9",52.04490778
+HRX,MESA,mesae1dres20220813.htnmed1c,Hypertension Medication,0.044027003
+HRX,MESA,mesae2dres06222012.htnmed2c,Hypertension Medication,12.35691224
+HRX,MESA,mesae3dres06222012.htnmed3c,Any hypertension medication,14.22072204
+HRX,MESA,mesae4dres06222012.htnmed4c,Any hypertension medication,17.36131494
+HRX,MESA,mesae5_drepos_20220820.htnmed5c,ANY HYPERTENSION MEDICATION,0.169635284
+HRX,REGARDS,baseline_calculated_variables.HYPER_MEDS_SR_NOW,-,-
+HXCVD,ARIC,derive13.roseic03,"ROSE INTERMITTENT CLAUDICATION, DEF. 3",0.299920021
+HXCVD,ARIC,derive13.prvchd05,PREVALENT CORONARY HEART DISEASE,2.19941349
+HXCVD,ARIC,derive13.rangna01,ROSE ANGINA,0.239936017
+HXCVD,ARIC,derive13.prevhf01,Prevalent HF at Visit 1,1.832844575
+HXCVD,ARIC,incps18.c7_futimehf,Follow-up time for INCHF18 in days,6.671554252
+HXCVD,ARIC,incps18.inchf18,Incident HF (from discharge codes),6.671554252
+HXCVD,ARIC,derive13.prevhf01,Prevalent HF at Visit 1,1.832844575
+HXCVD,ARIC,derive37.prvchd33,"Prevalent CHD at V3, definition 3",2.067946824
+HXCVD,ARIC,derive37.v3days,DAYS SINCE EXAM 1,-
+HXCVD,ARIC,hhxc04.hhxc1,REPORT ROSE ANGINA IN AFU? Q1,-
+HXCVD,ARIC,incps18.c7_futimehf,Follow-up time for INCHF18 in days,6.671554252
+HXCVD,ARIC,incps18.inchf18,Incident HF (from discharge codes),6.671554252
+HXCVD,ARIC,derive13.prevhf01,Prevalent HF at Visit 1,1.832844575
+HXCVD,ARIC,derive47.prvchd43,"Prevalent CHD at V4, definition 3",1.957214383
+HXCVD,ARIC,derive47.v4days,DAYS SINCE EXAM 1,-
+HXCVD,ARIC,hhxd04.hhxd1,REPORT ROSE ANGINA IN AFU? Q1,-
+HXCVD,ARIC,incps18.c7_futimehf,Follow-up time for INCHF18 in days,6.671554252
+HXCVD,ARIC,incps18.inchf18,Incident HF (from discharge codes),6.671554252
+HXCVD,Framingham,vr_survcvd_2019_a_1334d.cvd,Cardiovascular Disease (CVD) status,-
+HXCVD,Framingham,vr_survcvd_2019_a_1334d.cvddate,Date of Cardiovascular Disease (CVD) status,-
+HXCVD,Framingham,,-,-
+HXCVD,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXCVD,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXCVD,Framingham,vr_survcvd_2019_a_1334d.cvd,Cardiovascular Disease (CVD) status,-
+HXCVD,Framingham,vr_survcvd_2019_a_1334d.cvddate,Date of Cardiovascular Disease (CVD) status,-
+HXCVD,Framingham,vr_wkthru_ex09_1_1001d.date2,Date of Exam 2,24.77947073
+HXCVD,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXCVD,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXCVD,Framingham,vr_survcvd_2019_a_1334d.cvd,Cardiovascular Disease (CVD) status,-
+HXCVD,Framingham,vr_survcvd_2019_a_1334d.cvddate,Date of Cardiovascular Disease (CVD) status,-
+HXCVD,Framingham,vr_wkthru_ex09_1_1001d.date3,Date of Exam 3,24.57898958
+HXCVD,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXCVD,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXCVD,Framingham,vr_survcvd_2019_a_1334d.cvd,Cardiovascular Disease (CVD) status,-
+HXCVD,Framingham,vr_survcvd_2019_a_1334d.cvddate,Date of Cardiovascular Disease (CVD) status,-
+HXCVD,Framingham,vr_wkthru_ex09_1_1001d.date4,Date of Exam 4,21.77225341
+HXCVD,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXCVD,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXCVD,Framingham,vr_survcvd_2019_a_1334d.cvd,Cardiovascular Disease (CVD) status,-
+HXCVD,Framingham,vr_survcvd_2019_a_1334d.cvddate,Date of Cardiovascular Disease (CVD) status,-
+HXCVD,Framingham,vr_wkthru_ex09_1_1001d.date5,Date of Exam 5,26.06255012
+HXCVD,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXCVD,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXCVD,Framingham,vr_survcvd_2019_a_1334d.cvd,Cardiovascular Disease (CVD) status,-
+HXCVD,Framingham,vr_survcvd_2019_a_1334d.cvddate,Date of Cardiovascular Disease (CVD) status,-
+HXCVD,Framingham,vr_wkthru_ex09_1_1001d.date6,Date of Exam 6,31.61587811
+HXCVD,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXCVD,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXCVD,Framingham,vr_survcvd_2019_a_1334d.cvd,Cardiovascular Disease (CVD) status,-
+HXCVD,Framingham,vr_survcvd_2019_a_1334d.cvddate,Date of Cardiovascular Disease (CVD) status,-
+HXCVD,Framingham,vr_wkthru_ex09_1_1001d.date7,Date of Exam 7,30.3127506
+HXCVD,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXCVD,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXCVD,Framingham,vr_survcvd_2019_a_1334d.cvd,Cardiovascular Disease (CVD) status,-
+HXCVD,Framingham,vr_survcvd_2019_a_1334d.cvddate,Date of Cardiovascular Disease (CVD) status,-
+HXCVD,Framingham,vr_wkthru_ex09_1_1001d.date8,Date of Exam 8,40.1563753
+HXCVD,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXCVD,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXCVD,Framingham,vr_survcvd_2019_a_1334d.cvd,Cardiovascular Disease (CVD) status,-
+HXCVD,Framingham,vr_survcvd_2019_a_1334d.cvddate,Date of Cardiovascular Disease (CVD) status,-
+HXCVD,Framingham,vr_wkthru_ex09_1_1001d.date9,Date of Exam 9,51.88452285
+HXCVD,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXCVD,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXCVD,MESA,mesaevthr2015_drepos_20200330.mi,Myocardial Infarction (MI),0.440270032
+HXCVD,MESA,mesaevthr2015_drepos_20200330.mitt,Time to MI or End of Year 2015 (days),0.440270032
+HXCVD,MESA,mesaevthr2015_drepos_20200330.rca,Resuscitated Cardiac Arrest,0.4549457
+HXCVD,MESA,mesaevthr2015_drepos_20200330.rcatt,Time to RCA or End of Year 2015 (days),0.4549457
+HXCVD,MESA,mesaevthr2015_drepos_20200330.ang,Angina Pectoris,0.4549457
+HXCVD,MESA,mesaevthr2015_drepos_20200330.angtt,Time to Angina or End of Year 2015 (days),0.4549457
+HXCVD,MESA,mesaevthr2015_drepos_20200330.chf,Congestive Heart Failure (CHF),0.425594365
+HXCVD,MESA,mesaevthr2015_drepos_20200330.chftt,Time to CHF or End of Year 2015 (days),0.425594365
+HXCVD,MESA,mesaevthr2015_drepos_20200330.pvd,Peripheral Vascular Disease (PVD),0.513648371
+HXCVD,MESA,mesaevthr2015_drepos_20200330.pvdtt,Time to PVD or End of Year 2015 (days),0.4549457
+HXCVD,MESA,mesaevthr2015_drepos_20200330.prebase,Type of pre-baseline event,-
+HXCVD,MESA,mesae1dres20220813.whoros1c,WHO ROSE Intermittent Claudication,9.054886997
+HXCVD,MESA,mesaevthr2015_drepos_20200330.mi,Myocardial Infarction (MI),0.440270032
+HXCVD,MESA,mesaevthr2015_drepos_20200330.mitt,Time to MI or End of Year 2015 (days),0.440270032
+HXCVD,MESA,mesaevthr2015_drepos_20200330.rca,Resuscitated Cardiac Arrest,0.4549457
+HXCVD,MESA,mesaevthr2015_drepos_20200330.rcatt,Time to RCA or End of Year 2015 (days),0.4549457
+HXCVD,MESA,mesaevthr2015_drepos_20200330.ang,Angina Pectoris,0.4549457
+HXCVD,MESA,mesaevthr2015_drepos_20200330.angtt,Time to Angina or End of Year 2015 (days),0.4549457
+HXCVD,MESA,mesaevthr2015_drepos_20200330.chf,Congestive Heart Failure (CHF),0.425594365
+HXCVD,MESA,mesaevthr2015_drepos_20200330.chftt,Time to CHF or End of Year 2015 (days),0.425594365
+HXCVD,MESA,mesaevthr2015_drepos_20200330.pvd,Peripheral Vascular Disease (PVD),0.513648371
+HXCVD,MESA,mesaevthr2015_drepos_20200330.pvdtt,Time to PVD or End of Year 2015 (days),0.4549457
+HXCVD,MESA,mesaevthr2015_drepos_20200330.prebase,Type of pre-baseline event,-
+HXCVD,MESA,mesae2dres06222012.whoros2c,WHO ROSE Intermittent Claudication,14.26474905
+HXCVD,MESA,mesae2dres06222012.e12dyc,"Time between exam visits, in days",8.526562959
+HXCVD,MESA,mesaevthr2015_drepos_20200330.mi,Myocardial Infarction (MI),0.440270032
+HXCVD,MESA,mesaevthr2015_drepos_20200330.mitt,Time to MI or End of Year 2015 (days),0.440270032
+HXCVD,MESA,mesaevthr2015_drepos_20200330.rca,Resuscitated Cardiac Arrest,0.4549457
+HXCVD,MESA,mesaevthr2015_drepos_20200330.rcatt,Time to RCA or End of Year 2015 (days),0.4549457
+HXCVD,MESA,mesaevthr2015_drepos_20200330.ang,Angina Pectoris,0.4549457
+HXCVD,MESA,mesaevthr2015_drepos_20200330.angtt,Time to Angina or End of Year 2015 (days),0.4549457
+HXCVD,MESA,mesaevthr2015_drepos_20200330.chf,Congestive Heart Failure (CHF),0.425594365
+HXCVD,MESA,mesaevthr2015_drepos_20200330.chftt,Time to CHF or End of Year 2015 (days),0.425594365
+HXCVD,MESA,mesaevthr2015_drepos_20200330.pvd,Peripheral Vascular Disease (PVD),0.513648371
+HXCVD,MESA,mesaevthr2015_drepos_20200330.pvdtt,Time to PVD or End of Year 2015 (days),0.4549457
+HXCVD,MESA,mesaevthr2015_drepos_20200330.prebase,Type of pre-baseline event,-
+HXCVD,MESA,mesae3dres06222012.htnmed3c,Any hypertension medication,14.22072204
+HXCVD,MESA,mesae3dres06222012.e13dyc,"Time between first and third visits, in days",12.72380393
+HXCVD,MESA,mesaevthr2015_drepos_20200330.mi,Myocardial Infarction (MI),0.440270032
+HXCVD,MESA,mesaevthr2015_drepos_20200330.mitt,Time to MI or End of Year 2015 (days),0.440270032
+HXCVD,MESA,mesaevthr2015_drepos_20200330.rca,Resuscitated Cardiac Arrest,0.4549457
+HXCVD,MESA,mesaevthr2015_drepos_20200330.rcatt,Time to RCA or End of Year 2015 (days),0.4549457
+HXCVD,MESA,mesaevthr2015_drepos_20200330.ang,Angina Pectoris,0.4549457
+HXCVD,MESA,mesaevthr2015_drepos_20200330.angtt,Time to Angina or End of Year 2015 (days),0.4549457
+HXCVD,MESA,mesaevthr2015_drepos_20200330.chf,Congestive Heart Failure (CHF),0.425594365
+HXCVD,MESA,mesaevthr2015_drepos_20200330.chftt,Time to CHF or End of Year 2015 (days),0.425594365
+HXCVD,MESA,mesaevthr2015_drepos_20200330.pvd,Peripheral Vascular Disease (PVD),0.513648371
+HXCVD,MESA,mesaevthr2015_drepos_20200330.pvdtt,Time to PVD or End of Year 2015 (days),0.4549457
+HXCVD,MESA,mesaevthr2015_drepos_20200330.prebase,Type of pre-baseline event,-
+HXCVD,MESA,mesae4dres06222012.whoros4c,WHO ROSE Intermittent Claudication,21.16231289
+HXCVD,MESA,mesae4dres06222012.e14dyc,"Time between first and fourth visits, in days",14.61696507
+HXCVD,MESA,mesaevthr2015_drepos_20200330.mi,Myocardial Infarction (MI),0.440270032
+HXCVD,MESA,mesaevthr2015_drepos_20200330.mitt,Time to MI or End of Year 2015 (days),0.440270032
+HXCVD,MESA,mesaevthr2015_drepos_20200330.rca,Resuscitated Cardiac Arrest,0.4549457
+HXCVD,MESA,mesaevthr2015_drepos_20200330.rcatt,Time to RCA or End of Year 2015 (days),0.4549457
+HXCVD,MESA,mesaevthr2015_drepos_20200330.ang,Angina Pectoris,0.4549457
+HXCVD,MESA,mesaevthr2015_drepos_20200330.angtt,Time to Angina or End of Year 2015 (days),0.4549457
+HXCVD,MESA,mesaevthr2015_drepos_20200330.chf,Congestive Heart Failure (CHF),0.425594365
+HXCVD,MESA,mesaevthr2015_drepos_20200330.chftt,Time to CHF or End of Year 2015 (days),0.425594365
+HXCVD,MESA,mesaevthr2015_drepos_20200330.pvd,Peripheral Vascular Disease (PVD),0.513648371
+HXCVD,MESA,mesaevthr2015_drepos_20200330.pvdtt,Time to PVD or End of Year 2015 (days),0.4549457
+HXCVD,MESA,mesaevthr2015_drepos_20200330.prebase,Type of pre-baseline event,-
+HXCVD,MESA,mesae5_drepos_20220820.e15dyc,"TIME BETWEEN FIRST AND FIFTH VISITS, IN DAYS",-
+HXCVD,REGARDS,baseline_calculated_variables.CAD_SR_ECG,-,-
+HXCVD,REGARDS,baseline_calculated_variables.STROKE_SR,-,-
+HXCVD,REGARDS,baseline_calculated_variables.TIA_SR,-,-
+HXHRTD,ARIC,derive13.pad02,"PAD V1, Def 2 (same for both genders)",3.692348707
+HXHRTD,ARIC,derive13.rangna01,ROSE ANGINA,0.239936017
+HXHRTD,ARIC,derive13.prevhf01,Prevalent HF at Visit 1,1.832844575
+HXHRTD,ARIC,incps18.c7_futimehf,Follow-up time for INCHF18 in days,6.671554252
+HXHRTD,ARIC,incps18.inchf18,Incident HF (from discharge codes),6.671554252
+HXHRTD,ARIC,incps18.fuproc18,Follow up time for PROC18 (days),-
+HXHRTD,ARIC,incps18.proc18,Cardiac Procedures,-
+HXHRTD,ARIC,derive13.prevhf01,Prevalent HF at Visit 1,1.832844575
+HXHRTD,ARIC,derive37.pad32,"PAD V3, Def 2 (same for both genders)",65.00082061
+HXHRTD,ARIC,derive37.v3days,DAYS SINCE EXAM 1,-
+HXHRTD,ARIC,hhxc04.hhxc1,REPORT ROSE ANGINA IN AFU? Q1,-
+HXHRTD,ARIC,incps18.c7_futimehf,Follow-up time for INCHF18 in days,6.671554252
+HXHRTD,ARIC,incps18.inchf18,Incident HF (from discharge codes),6.671554252
+HXHRTD,ARIC,incps18.fuproc18,Follow up time for PROC18 (days),-
+HXHRTD,ARIC,incps18.proc18,Cardiac Procedures,-
+HXHRTD,ARIC,derive13.prevhf01,Prevalent HF at Visit 1,1.832844575
+HXHRTD,ARIC,derive47.pad42,"PAD V4, Def 2 (same for both genders)",44.86117433
+HXHRTD,ARIC,derive47.v4days,DAYS SINCE EXAM 1,-
+HXHRTD,ARIC,hhxd04.hhxd1,REPORT ROSE ANGINA IN AFU? Q1,-
+HXHRTD,ARIC,incps18.c7_futimehf,Follow-up time for INCHF18 in days,6.671554252
+HXHRTD,ARIC,incps18.inchf18,Incident HF (from discharge codes),6.671554252
+HXHRTD,ARIC,incps18.fuproc18,Follow up time for PROC18 (days),-
+HXHRTD,ARIC,incps18.proc18,Cardiac Procedures,-
+HXHRTD,Framingham,vr_survcvd_2019_a_1334d.cvd,Cardiovascular Disease (CVD) status,-
+HXHRTD,Framingham,vr_survcvd_2019_a_1334d.cvddate,Date of Cardiovascular Disease (CVD) status,-
+HXHRTD,Framingham,,-,-
+HXHRTD,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXHRTD,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXHRTD,Framingham,vr_cvdproc_2020_a_1313d.procdate,Date of cardiovascular procedure,-
+HXHRTD,Framingham,vr_cvdproc_2020_a_1313d.procnum,PROCEDURE NUMBER,-
+HXHRTD,Framingham,vr_survcvd_2019_a_1334d.cvd,Cardiovascular Disease (CVD) status,-
+HXHRTD,Framingham,vr_survcvd_2019_a_1334d.cvddate,Date of Cardiovascular Disease (CVD) status,-
+HXHRTD,Framingham,vr_wkthru_ex09_1_1001d.date2,Date of Exam 2,24.77947073
+HXHRTD,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXHRTD,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXHRTD,Framingham,vr_cvdproc_2020_a_1313d.procdate,Date of cardiovascular procedure,-
+HXHRTD,Framingham,vr_cvdproc_2020_a_1313d.procnum,PROCEDURE NUMBER,-
+HXHRTD,Framingham,vr_survcvd_2019_a_1334d.cvd,Cardiovascular Disease (CVD) status,-
+HXHRTD,Framingham,vr_survcvd_2019_a_1334d.cvddate,Date of Cardiovascular Disease (CVD) status,-
+HXHRTD,Framingham,vr_wkthru_ex09_1_1001d.date3,Date of Exam 3,24.57898958
+HXHRTD,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXHRTD,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXHRTD,Framingham,vr_cvdproc_2020_a_1313d.procdate,Date of cardiovascular procedure,-
+HXHRTD,Framingham,vr_cvdproc_2020_a_1313d.procnum,PROCEDURE NUMBER,-
+HXHRTD,Framingham,vr_survcvd_2019_a_1334d.cvd,Cardiovascular Disease (CVD) status,-
+HXHRTD,Framingham,vr_survcvd_2019_a_1334d.cvddate,Date of Cardiovascular Disease (CVD) status,-
+HXHRTD,Framingham,vr_wkthru_ex09_1_1001d.date4,Date of Exam 4,21.77225341
+HXHRTD,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXHRTD,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXHRTD,Framingham,vr_cvdproc_2020_a_1313d.procdate,Date of cardiovascular procedure,-
+HXHRTD,Framingham,vr_cvdproc_2020_a_1313d.procnum,PROCEDURE NUMBER,-
+HXHRTD,Framingham,vr_survcvd_2019_a_1334d.cvd,Cardiovascular Disease (CVD) status,-
+HXHRTD,Framingham,vr_survcvd_2019_a_1334d.cvddate,Date of Cardiovascular Disease (CVD) status,-
+HXHRTD,Framingham,vr_wkthru_ex09_1_1001d.date5,Date of Exam 5,26.06255012
+HXHRTD,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXHRTD,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXHRTD,Framingham,vr_cvdproc_2020_a_1313d.procdate,Date of cardiovascular procedure,-
+HXHRTD,Framingham,vr_cvdproc_2020_a_1313d.procnum,PROCEDURE NUMBER,-
+HXHRTD,Framingham,vr_survcvd_2019_a_1334d.cvd,Cardiovascular Disease (CVD) status,-
+HXHRTD,Framingham,vr_survcvd_2019_a_1334d.cvddate,Date of Cardiovascular Disease (CVD) status,-
+HXHRTD,Framingham,vr_wkthru_ex09_1_1001d.date6,Date of Exam 6,31.61587811
+HXHRTD,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXHRTD,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXHRTD,Framingham,vr_cvdproc_2020_a_1313d.procdate,Date of cardiovascular procedure,-
+HXHRTD,Framingham,vr_cvdproc_2020_a_1313d.procnum,PROCEDURE NUMBER,-
+HXHRTD,Framingham,vr_survcvd_2019_a_1334d.cvd,Cardiovascular Disease (CVD) status,-
+HXHRTD,Framingham,vr_survcvd_2019_a_1334d.cvddate,Date of Cardiovascular Disease (CVD) status,-
+HXHRTD,Framingham,vr_wkthru_ex09_1_1001d.date7,Date of Exam 7,30.3127506
+HXHRTD,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXHRTD,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXHRTD,Framingham,vr_cvdproc_2020_a_1313d.procdate,Date of cardiovascular procedure,-
+HXHRTD,Framingham,vr_cvdproc_2020_a_1313d.procnum,PROCEDURE NUMBER,-
+HXHRTD,Framingham,vr_survcvd_2019_a_1334d.cvd,Cardiovascular Disease (CVD) status,-
+HXHRTD,Framingham,vr_survcvd_2019_a_1334d.cvddate,Date of Cardiovascular Disease (CVD) status,-
+HXHRTD,Framingham,vr_wkthru_ex09_1_1001d.date8,Date of Exam 8,40.1563753
+HXHRTD,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXHRTD,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXHRTD,Framingham,vr_cvdproc_2020_a_1313d.procdate,Date of cardiovascular procedure,-
+HXHRTD,Framingham,vr_cvdproc_2020_a_1313d.procnum,PROCEDURE NUMBER,-
+HXHRTD,Framingham,vr_survcvd_2019_a_1334d.cvd,Cardiovascular Disease (CVD) status,-
+HXHRTD,Framingham,vr_survcvd_2019_a_1334d.cvddate,Date of Cardiovascular Disease (CVD) status,-
+HXHRTD,Framingham,vr_wkthru_ex09_1_1001d.date9,Date of Exam 9,51.88452285
+HXHRTD,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXHRTD,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXHRTD,Framingham,vr_cvdproc_2020_a_1313d.procdate,Date of cardiovascular procedure,-
+HXHRTD,Framingham,vr_cvdproc_2020_a_1313d.procnum,PROCEDURE NUMBER,-
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.mi,Myocardial Infarction (MI),0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.mitt,Time to MI or End of Year 2015 (days),0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.rca,Resuscitated Cardiac Arrest,0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.rcatt,Time to RCA or End of Year 2015 (days),0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.ang,Angina Pectoris,0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.angtt,Time to Angina or End of Year 2015 (days),0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.chf,Congestive Heart Failure (CHF),0.425594365
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.chftt,Time to CHF or End of Year 2015 (days),0.425594365
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.pvd,Peripheral Vascular Disease (PVD),0.513648371
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.pvdtt,Time to PVD or End of Year 2015 (days),0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.cbg,Coronary Bypass Graft (CBG),0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.cbgtt,Time to CBG or End of Year 2015 (days),0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.ptca,"PTCA, Cor. Stent, or Cor. Atherectomy",0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.ptcatt,Time to PTCA or End of Year 2015 (days),0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.revc,Coronary Revascularization,0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.revctt,Time to Cor. Revasc. or End of Year 2015 (days),0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.prebase,Type of pre-baseline event,-
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.mi,Myocardial Infarction (MI),0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.mitt,Time to MI or End of Year 2015 (days),0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.rca,Resuscitated Cardiac Arrest,0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.rcatt,Time to RCA or End of Year 2015 (days),0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.ang,Angina Pectoris,0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.angtt,Time to Angina or End of Year 2015 (days),0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.chf,Congestive Heart Failure (CHF),0.425594365
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.chftt,Time to CHF or End of Year 2015 (days),0.425594365
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.pvd,Peripheral Vascular Disease (PVD),0.513648371
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.pvdtt,Time to PVD or End of Year 2015 (days),0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.cbg,Coronary Bypass Graft (CBG),0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.cbgtt,Time to CBG or End of Year 2015 (days),0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.ptca,"PTCA, Cor. Stent, or Cor. Atherectomy",0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.ptcatt,Time to PTCA or End of Year 2015 (days),0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.revc,Coronary Revascularization,0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.revctt,Time to Cor. Revasc. or End of Year 2015 (days),0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.prebase,Type of pre-baseline event,-
+HXHRTD,MESA,mesae2dres06222012.e12dyc,"Time between exam visits, in days",8.526562959
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.mi,Myocardial Infarction (MI),0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.mitt,Time to MI or End of Year 2015 (days),0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.rca,Resuscitated Cardiac Arrest,0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.rcatt,Time to RCA or End of Year 2015 (days),0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.ang,Angina Pectoris,0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.angtt,Time to Angina or End of Year 2015 (days),0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.chf,Congestive Heart Failure (CHF),0.425594365
+HXHRTD,MESA,mesae4dres06222012.e14dyc,"Time between first and fourth visits, in days",14.61696507
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.chftt,Time to CHF or End of Year 2015 (days),0.425594365
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.pvd,Peripheral Vascular Disease (PVD),0.513648371
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.pvdtt,Time to PVD or End of Year 2015 (days),0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.cbg,Coronary Bypass Graft (CBG),0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.cbgtt,Time to CBG or End of Year 2015 (days),0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.ptca,"PTCA, Cor. Stent, or Cor. Atherectomy",0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.ptcatt,Time to PTCA or End of Year 2015 (days),0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.revc,Coronary Revascularization,0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.revctt,Time to Cor. Revasc. or End of Year 2015 (days),0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.prebase,Type of pre-baseline event,-
+HXHRTD,MESA,mesae3dres06222012.e13dyc,"Time between first and third visits, in days",12.72380393
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.mi,Myocardial Infarction (MI),0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.mitt,Time to MI or End of Year 2015 (days),0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.rca,Resuscitated Cardiac Arrest,0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.mi,Myocardial Infarction (MI),0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.rcatt,Time to RCA or End of Year 2015 (days),0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.ang,Angina Pectoris,0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.angtt,Time to Angina or End of Year 2015 (days),0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.chf,Congestive Heart Failure (CHF),0.425594365
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.chftt,Time to CHF or End of Year 2015 (days),0.425594365
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.pvd,Peripheral Vascular Disease (PVD),0.513648371
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.pvdtt,Time to PVD or End of Year 2015 (days),0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.cbg,Coronary Bypass Graft (CBG),0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.cbgtt,Time to CBG or End of Year 2015 (days),0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.ptca,"PTCA, Cor. Stent, or Cor. Atherectomy",0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.ptcatt,Time to PTCA or End of Year 2015 (days),0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.revc,Coronary Revascularization,0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.revctt,Time to Cor. Revasc. or End of Year 2015 (days),0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.prebase,Type of pre-baseline event,-
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.mitt,Time to MI or End of Year 2015 (days),0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.rca,Resuscitated Cardiac Arrest,0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.rcatt,Time to RCA or End of Year 2015 (days),0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.ang,Angina Pectoris,0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.angtt,Time to Angina or End of Year 2015 (days),0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.chf,Congestive Heart Failure (CHF),0.425594365
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.chftt,Time to CHF or End of Year 2015 (days),0.425594365
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.pvd,Peripheral Vascular Disease (PVD),0.513648371
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.pvdtt,Time to PVD or End of Year 2015 (days),0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.cbg,Coronary Bypass Graft (CBG),0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.cbgtt,Time to CBG or End of Year 2015 (days),0.4549457
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.ptca,"PTCA, Cor. Stent, or Cor. Atherectomy",0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.ptcatt,Time to PTCA or End of Year 2015 (days),0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.revc,Coronary Revascularization,0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.revctt,Time to Cor. Revasc. or End of Year 2015 (days),0.440270032
+HXHRTD,MESA,mesaevthr2015_drepos_20200330.prebase,Type of pre-baseline event,-
+HXHRTD,MESA,mesae5_drepos_20220820.e15dyc,"TIME BETWEEN FIRST AND FIFTH VISITS, IN DAYS",-
+HXHRTD,REGARDS,baseline_calculated_variables.CAD_SR_ECG,-,-
+HXMI,ARIC,derive13.mddxmi02,MD DIAGNOSED MYOCARDIAL INFARCTION,0.359904026
+HXMI,ARIC,derive13.hxofmi02,HISTORY OF MYOCARDIAL INFARCTION,0.366568915
+HXMI,ARIC,incps18.fumi18,Follow up time for MI18 (days),-
+HXMI,ARIC,incps18.fuinc18,Follow up time for INC_BY18 (days),-
+HXMI,ARIC,incps18.mi18,MI by Censoring Date,-
+HXMI,ARIC,incps18.inc18,MI/FATCHD by Censoring Date,-
+HXMI,ARIC,derive2_10.mddxmi21,V2 MD Diagnosed Myocardial Infarction,-
+HXMI,ARIC,derive2_10.hxofmi21,V2 History of Myocardial Infarction,-
+HXMI,ARIC,derive2_10.v2days,DAYS SINCE EXAM 1,-
+HXMI,ARIC,incps18.fumi18,Follow up time for MI18 (days),-
+HXMI,ARIC,incps18.fuinc18,Follow up time for INC_BY18 (days),-
+HXMI,ARIC,incps18.mi18,MI by Censoring Date,-
+HXMI,ARIC,incps18.inc18,MI/FATCHD by Censoring Date,-
+HXMI,ARIC,derive37.mddxmi31,V3 MD Diagnosed Myocardial Infarction,-
+HXMI,ARIC,derive37.hxofmi31,V3 History of Myocardial Infarction,0.008206138
+HXMI,ARIC,derive37.v3days,DAYS SINCE EXAM 1,-
+HXMI,ARIC,incps18.fumi18,Follow up time for MI18 (days),-
+HXMI,ARIC,incps18.fuinc18,Follow up time for INC_BY18 (days),-
+HXMI,ARIC,incps18.mi18,MI by Censoring Date,-
+HXMI,ARIC,incps18.inc18,MI/FATCHD by Censoring Date,-
+HXMI,ARIC,derive47.mddxmi41,V4 MD Diagnosed Myocardial Infarction,-
+HXMI,ARIC,derive47.hxofmi41,V4 History of Myocardial Infarction,-
+HXMI,ARIC,derive47.v4days,DAYS SINCE EXAM 1,-
+HXMI,ARIC,incps18.fumi18,Follow up time for MI18 (days),-
+HXMI,ARIC,incps18.fuinc18,Follow up time for INC_BY18 (days),-
+HXMI,ARIC,incps18.mi18,MI by Censoring Date,-
+HXMI,ARIC,incps18.inc18,MI/FATCHD by Censoring Date,-
+HXMI,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXMI,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXMI,Framingham,,-,-
+HXMI,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXMI,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXMI,Framingham,vr_wkthru_ex09_1_1001d.date2,Date of Exam 2,24.77947073
+HXMI,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXMI,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXMI,Framingham,vr_wkthru_ex09_1_1001d.date3,Date of Exam 3,24.57898958
+HXMI,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXMI,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXMI,Framingham,vr_wkthru_ex09_1_1001d.date4,Date of Exam 4,21.77225341
+HXMI,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXMI,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXMI,Framingham,vr_wkthru_ex09_1_1001d.date5,Date of Exam 5,26.06255012
+HXMI,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXMI,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXMI,Framingham,vr_wkthru_ex09_1_1001d.date6,Date of Exam 6,31.61587811
+HXMI,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXMI,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXMI,Framingham,vr_wkthru_ex09_1_1001d.date7,Date of Exam 7,30.3127506
+HXMI,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXMI,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXMI,Framingham,vr_wkthru_ex09_1_1001d.date8,Date of Exam 8,40.1563753
+HXMI,Framingham,vr_soe_2020_a_1340d.date,DATE OF EVENT,0.016110843
+HXMI,Framingham,vr_soe_2020_a_1340d.event,EVENT NUMBER ON SEQUENCE OF EVENTS,-
+HXMI,Framingham,vr_wkthru_ex09_1_1001d.date9,Date of Exam 9,51.88452285
+HXMI,MESA,mesaevthr2015_drepos_20200330.mi,Myocardial Infarction (MI),0.440270032
+HXMI,MESA,mesaevthr2015_drepos_20200330.mitt,Time to MI or End of Year 2015 (days),0.440270032
+HXMI,MESA,mesaevthr2015_drepos_20200330.mi,Myocardial Infarction (MI),0.440270032
+HXMI,MESA,mesaevthr2015_drepos_20200330.mitt,Time to MI or End of Year 2015 (days),0.440270032
+HXMI,MESA,mesae2dres06222012.e12dyc,"Time between exam visits, in days",8.526562959
+HXMI,MESA,mesaevthr2015_drepos_20200330.mi,Myocardial Infarction (MI),0.440270032
+HXMI,MESA,mesaevthr2015_drepos_20200330.mitt,Time to MI or End of Year 2015 (days),0.440270032
+HXMI,MESA,mesae3dres06222012.e13dyc,"Time between first and third visits, in days",12.72380393
+HXMI,MESA,mesaevthr2015_drepos_20200330.mi,Myocardial Infarction (MI),0.440270032
+HXMI,MESA,mesaevthr2015_drepos_20200330.mitt,Time to MI or End of Year 2015 (days),0.440270032
+HXMI,MESA,mesae4dres06222012.e14dyc,"Time between first and fourth visits, in days",14.61696507
+HXMI,MESA,mesaevthr2015_drepos_20200330.mi,Myocardial Infarction (MI),0.440270032
+HXMI,MESA,mesaevthr2015_drepos_20200330.mitt,Time to MI or End of Year 2015 (days),0.440270032
+HXMI,MESA,mesae5_drepos_20220820.e15dyc,"TIME BETWEEN FIRST AND FIFTH VISITS, IN DAYS",-
+HXMI,REGARDS,baseline_calculated_variables.MI_SR_ECG,-,-
+HXMI_SR,REGARDS,baseline_calculated_variables.MI_SR,-,-
+HXPAD,REGARDS,baseline_calculated_variables.PAD_AMPUTATION,-,-
+HXPAD,REGARDS,baseline_calculated_variables.PAD_SURGERY,-,-
+HXPAD,REGARDS,baseline_calculated_variables.DVT_SR,-,-
+HXTIA,REGARDS,baseline_calculated_variables.TIA_SR,-,-
+HYPT,MESA,mesae1dres20220813.htn1c,Hypertension by JNC VI (1997) criteria,-
+HYPT,MESA,mesae2dres06222012.htn2c,"Hypertension by JNC VI (1997) criteria, Exam 2",9.451130026
+HYPT,MESA,mesae3dres06222012.htn3c,"Hypertension by JNC VI (1997) criteria, Exam 3",13.42823598
+HYPT,MESA,mesae4dres06222012.htn4c,"Hypertension by JNC VI (1997) criteria, Exam 4",16.40739654
+HYPT,MESA,mesae5_drepos_20220820.htn5c,"HYPERTENSION BY JNC VI (1997) CRITERIA, EXAM 5",1.335877863
+ID_C,ARIC,derive13.id_c,Scrambled Cohort Visit ID,-
+ID_C,ARIC,derive2_10.id_c,Scrambled Cohort Visit ID,-
+ID_C,ARIC,derive37.id_c,Scrambled Cohort Visit ID,-
+ID_C,ARIC,derive47.id_c,Scrambled Cohort Visit ID,-
+ID_C,ARIC,derive51.id_c,Scrambled Cohort Visit ID,-
+INSULIN,ARIC,msrcod07.msra04aa,MEDICATION & CONCENTRATION Q4M01A,-
+INSULIN,ARIC,msrcod07.msra04ba,MEDICATION & CONCENTRATION Q4M02A,-
+INSULIN,ARIC,msrcod07.msra04ca,MEDICATION & CONCENTRATION Q4M03A,-
+INSULIN,ARIC,msrcod07.msra04da,MEDICATION & CONCENTRATION Q4M04A,-
+INSULIN,ARIC,msrcod07.msra04ea,MEDICATION & CONCENTRATION Q4M05A,-
+INSULIN,ARIC,msrcod07.msra04fa,MEDICATION & CONCENTRATION Q4M06A,-
+INSULIN,ARIC,msrcod07.msra04ga,MEDICATION & CONCENTRATION Q4M07A,-
+INSULIN,ARIC,msrcod07.msra04ha,MEDICATION & CONCENTRATION Q4M08A,-
+INSULIN,ARIC,msrcod07.msra04ia,MEDICATION & CONCENTRATION Q4M09A,-
+INSULIN,ARIC,msrcod07.msra04ja,MEDICATION & CONCENTRATION Q4M10A,-
+INSULIN,ARIC,msrcod07.msra04ka,MEDICATION & CONCENTRATION Q4M11A,-
+INSULIN,ARIC,msrcod07.msra04la,MEDICATION & CONCENTRATION Q4M12A,-
+INSULIN,ARIC,msrcod07.msra04ma,MEDICATION & CONCENTRATION Q4M13A,-
+INSULIN,ARIC,msrcod07.msra04na,MEDICATION & CONCENTRATION Q4M14A,-
+INSULIN,ARIC,msrcod07.msra04oa,MEDICATION & CONCENTRATION Q4M15A,-
+INSULIN,ARIC,msrcod07.msra04pa,MEDICATION & CONCENTRATION Q4M16A,-
+INSULIN,ARIC,msrcod07.msra04qa,MEDICATION & CONCENTRATION Q4M17A,-
+INSULIN,ARIC,msrcod26.msrb04a,MEDICATION NAME & CONCENTRATION Q4A,-
+INSULIN,ARIC,msrcod26.msrb05a,MEDICATION NAME & CONCENTRATION Q5A,-
+INSULIN,ARIC,msrcod26.msrb06a,MEDICATION NAME & CONCENTRATION Q6A,-
+INSULIN,ARIC,msrcod26.msrb07a,MEDICATION NAME & CONCENTRATION Q7A,-
+INSULIN,ARIC,msrcod26.msrb08a,MEDICATION NAME & CONCENTRATION Q8A,-
+INSULIN,ARIC,msrcod26.msrb09a,MEDICATION NAME & CONCENTRATION Q9A,-
+INSULIN,ARIC,msrcod26.msrb10a,MEDICATION NAME & CONCENTRATION Q10A,-
+INSULIN,ARIC,msrcod26.msrb11a,MEDICATION NAME & CONCENTRATION Q11A,-
+INSULIN,ARIC,msrcod26.msrb12a,MEDICATION NAME & CONCENTRATION Q12A,-
+INSULIN,ARIC,msrcod26.msrb13a,MEDICATION NAME & CONCENTRATION Q13A,-
+INSULIN,ARIC,msrcod26.msrb14a,MEDICATION NAME & CONCENTRATION Q14A,-
+INSULIN,ARIC,msrcod26.msrb15a,MEDICATION NAME & CONCENTRATION Q15A,-
+INSULIN,ARIC,msrcod26.msrb16a,MEDICATION NAME & CONCENTRATION Q16A,-
+INSULIN,ARIC,msrcod26.msrb17a,MEDICATION NAME & CONCENTRATION Q17A,-
+INSULIN,ARIC,msrcod26.msrb18a,MEDICATION NAME & CONCENTRATION Q18A,-
+INSULIN,ARIC,msrcod26.msrb19a,MEDICATION NAME & CONCENTRATION Q19A,-
+INSULIN,ARIC,msrcod26.msrb20a,MEDICATION NAME & CONCENTRATION Q20A,-
+INSULIN,ARIC,msrc04.msrc4a,MEDICATION A NAME & CONCENTATION Q4A,-
+INSULIN,ARIC,msrc04.msrc5a,MEDICATION B NAME & CONCENTRATION Q5A,-
+INSULIN,ARIC,msrc04.msrc6a,MEDICATION C NAME & CONCENTRATION Q6A,-
+INSULIN,ARIC,msrc04.msrc7a,MEDICATION D NAME & CONCENTRATION Q7A,-
+INSULIN,ARIC,msrc04.msrc8a,MEDICATION E NAME & CONCENTRATION Q8A,-
+INSULIN,ARIC,msrc04.msrc9a,MEDICATION F NAME & CONCENTRATION Q9A,-
+INSULIN,ARIC,msrc04.msrc10a,MEDICATION G NAME & CONCENTRATION Q10A,-
+INSULIN,ARIC,msrc04.msrc11a,MEDICATION H NAME & CONCENTRATION Q11A,-
+INSULIN,ARIC,msrc04.msrc12a,MEDICATION I NAME & CONCENTRATION Q12A,-
+INSULIN,ARIC,msrc04.msrc13a,MEDICATION J NAME & CONCENTRATION Q13A,-
+INSULIN,ARIC,msrc04.msrc14a,MEDICATION K NAME & CONCENTRATION Q14A,-
+INSULIN,ARIC,msrc04.msrc15a,MEDICATION L NAME & CONCENTRATION Q15A,-
+INSULIN,ARIC,msrc04.msrc16a,MEDICATION M NAME & CONCENTRATION Q16A,-
+INSULIN,ARIC,msrc04.msrc17a,MEDICATION N NAME & CONCENTRATION Q17A,-
+INSULIN,ARIC,msrc04.msrc80a,-,-
+INSULIN,ARIC,msrc04.msrc19a,MEDICATION P NAME & CONCENTRATION Q19A,-
+INSULIN,ARIC,msrc04.msrc20a,MEDICATION Q NAME & CONCENTRATION Q20A,-
+INSULIN,ARIC,msrd04.msrd4a,MEDICATION A NAME Q4A,-
+INSULIN,ARIC,msrd04.msrd5a,MEDICATION B NAME Q5A,-
+INSULIN,ARIC,msrd04.msrd6a,MEDICATION C NAME Q6A,-
+INSULIN,ARIC,msrd04.msrd7a,MEDICATION D NAME Q7A,-
+INSULIN,ARIC,msrd04.msrd8a,MEDICATION E NAME Q8A,-
+INSULIN,ARIC,msrd04.msrd9a,MEDICATION F NAME Q9A,-
+INSULIN,ARIC,msrd04.msrd10a,MEDICATION G NAME Q10A,-
+INSULIN,ARIC,msrd04.msrd11a,MEDICATION H NAME Q11A,-
+INSULIN,ARIC,msrd04.msrd12a,MEDICATION I NAME Q12A,-
+INSULIN,ARIC,msrd04.msrd13a,MEDICATION J NAME Q13A,-
+INSULIN,ARIC,msrd04.msrd14a,MEDICATION K NAME Q14A,-
+INSULIN,ARIC,msrd04.msrd15a,MEDICATION L NAME Q15A,-
+INSULIN,ARIC,msrd04.msrd16a,MEDICATION M NAME Q16A,-
+INSULIN,ARIC,msrd04.msrd17a,MEDICATION N NAME Q17A,-
+INSULIN,ARIC,msrd04.msrd18a,MEDICATION O NAME Q18A,-
+INSULIN,ARIC,msrd04.msrd19a,MEDICATION P NAME Q19A,-
+INSULIN,ARIC,msrd04.msrd20a,MEDICATION Q NAME Q20A,-
+INSULIN,ARIC,msrcod51.msrcod5a,Med 1: Scanned UPC med name,-
+INSULIN,ARIC,msrcod51.msrcod6a,Med 2: Scanned UPC med name,-
+INSULIN,ARIC,msrcod51.msrcod7a,Med 3: Scanned UPC med name,-
+INSULIN,ARIC,msrcod51.msrcod8a,Med 4: Scanned UPC med name,-
+INSULIN,ARIC,msrcod51.msrcod9a,Med 5: Scanned UPC med name,-
+INSULIN,ARIC,msrcod51.msrcod10a,Med 6: Scanned UPC med name,-
+INSULIN,ARIC,msrcod51.msrcod11a,Med 7: Scanned UPC med name,-
+INSULIN,ARIC,msrcod51.msrcod12a,Med 8: Scanned UPC med name,-
+INSULIN,ARIC,msrcod51.msrcod13a,Med 9: Scanned UPC med name,-
+INSULIN,ARIC,msrcod51.msrcod14a,Med 10: Scanned UPC med name,-
+INSULIN,ARIC,msrcod51.msrcod15a,Med 11: Scanned UPC med name,-
+INSULIN,ARIC,msrcod51.msrcod16a,Med 12: Scanned UPC med name,-
+INSULIN,ARIC,msrcod51.msrcod17a,Med 13: Scanned UPC med name,-
+INSULIN,ARIC,msrcod51.msrcod18a,Med 14: Scanned UPC med name,-
+INSULIN,ARIC,msrcod51.msrcod19a,Med 15: Scanned UPC med name,-
+INSULIN,ARIC,msrcod51.msrcod20a,Med 16: Scanned UPC med name,-
+INSULIN,ARIC,msrcod51.msrcod21a,Med 17: Scanned UPC med name,-
+INSULIN,ARIC,msrcod51.msrcod22a,Med 18: Scanned UPC med name,-
+INSULIN,ARIC,msrcod51.msrcod23a,Med 19: Scanned UPC med name,-
+INSULIN,ARIC,msrcod51.msrcod24a,Med 20: Scanned UPC med name,-
+INSULIN,ARIC,msrcod51.msrcod25a,Med 21: Scanned UPC med name,-
+INSULIN,ARIC,msrcod51.msrcod26a,Med 22: Scanned UPC med name,-
+INSULIN,ARIC,msrcod51.msrcod27a,Med 23: Scanned UPC med name,-
+INSULIN,ARIC,msrcod51.msrcod28a,Med 24: Scanned UPC med name,-
+INSULIN,ARIC,msrcod51.msrcod29a,Med 25: Scanned UPC med name,-
+INSULIN,Framingham,ex1_5d_v1.e254,INSULIN,0.027114968
+INSULIN,Framingham,ex1_2d_v3.b68,D202-23-INSULIN,0.026652452
+INSULIN,Framingham,ex1_3d_v1.c29,INSULIN,-
+INSULIN,Framingham,ex1_4d_v1.d035,INSULIN,0.230650948
+INSULIN,Framingham,ex1_6d_v1.f218,MEDS - INSULIN,0.205218411
+INSULIN,Framingham,ex1_7d_v2.g050,MEDS - INSULIN,0.057537399
+INSULIN,Framingham,vr_meds_ex08_1_0280d.atc_cod1,ATC CODE FOR MEDICATION OR FIRST DRUG IN COMPOUND,-
+INSULIN,Framingham,vr_meds_ex08_1_0280d.atc_cod2,ATC CODE FOR SECOND DRUG IN COMPOUND,-
+INSULIN,Framingham,vr_meds_ex08_1_0280d.atc_cod3,ATC CODE FOR THIRD DRUG IN COMPOUND,-
+INSULIN,Framingham,vr_meds_ex08_1_0280d.atc_cod4,ATC CODE FOR FOURTH DRUG IN COMPOUND,-
+INSULIN,Framingham,vr_meds_ex09_1b_0879d.atc_cod1,ATC code for medication or first drug in compound,-
+INSULIN,Framingham,vr_meds_ex09_1b_0879d.atc_cod2,ATC code for medication or second drug in compound,-
+INSULIN,Framingham,vr_meds_ex09_1b_0879d.atc_cod3,ATC code for medication or third drug in compound,-
+INSULIN,Framingham,vr_meds_ex09_1b_0879d.atc_cod4,ATC code for medication or fourth drug in compound,-
+INSULIN,MESA,mesae1dres20220813.insln1c,Insulins,0.044027003
+INSULIN,MESA,mesae2dres06222012.insln2c,Insulins,12.35691224
+INSULIN,MESA,mesae3dres06222012.insln3c,Insulins,14.22072204
+INSULIN,MESA,mesae4dres06222012.insln4c,Insulins,17.36131494
+INSULIN,MESA,mesae5_drepos_20220820.insln5c,INSULINS,0.169635284
+INSULIN,REGARDS,baseline_calculated_variables.DIABETES_MEDS_SR_INSULIN,-,-
+LDL,ARIC,derive13.ldl02,RE-CALIBRATED LDL CHOL. in mg/dl,3.005865103
+LDL,ARIC,derive2_10.ldl22,V2 re-calculated LDL-C in mg/dL,2.396177876
+LDL,ARIC,derive37.ldl32,Re-Calibrated LDL Cholesterol in mg/dL,2.04332841
+LDL,ARIC,derive47.ldl41,V4 Recalculated LDL Cholesterol,2.403277196
+LDL,ARIC,lip.lip18,LDLCC-Cholesterol calculated (mg/dL),1.557737894
+LDL,MESA,mesae1dres20220813.ldl1,LDL CHOLESTEROL (mg/dl),1.658350455
+LDL,MESA,mesae2dres06222012.ldl2,LDL CHOLESTEROL (mg/dl),10.27296742
+LDL,MESA,mesae3dres06222012.ldl3,LDL CHOLESTEROL (mg/dl),14.73437041
+LDL,MESA,mesae4dres06222012.ldl4,LDL Cholesterol (mg/dl),18.153801
+LDL,MESA,mesae5_drepos_20220820.ldl5,LDL CHOLESTEROL (mg/dl),3.329092451
+LDL,REGARDS,baseline_calculated_variables.LDL,-,6.145843687
+LVH,ARIC,derive13.clvh01,LVH present by cornell definition,-
+LVH,ARIC,derive2_10.clvh21,LVH present by cornell definition,-
+LVH,ARIC,derive37.clvh31,LVH present by cornell definition,-
+LVH,ARIC,derive47.clvh41,LVH present by cornell definition,-
+LVH,Framingham,vr_wkthru_ex09_1_1001d.dlvh1,"Definite left ventricular hypertrophy, Exam 1",0.040096231
+LVH,Framingham,vr_wkthru_ex09_1_1001d.dlvh2,"Definite left ventricular hypertrophy, Exam 2",25.02004812
+LVH,Framingham,vr_wkthru_ex09_1_1001d.dlvh3,"Definite left ventricular hypertrophy, Exam 3",24.67923015
+LVH,Framingham,vr_wkthru_ex09_1_1001d.dlvh4,"Definite left ventricular hypertrophy, Exam 4",22.45388933
+LVH,Framingham,vr_wkthru_ex09_1_1001d.dlvh5,"Definite left ventricular hypertrophy, Exam 5",27.36567763
+LVH,Framingham,vr_wkthru_ex09_1_1001d.dlvh6,"Definite left ventricular hypertrophy, Exam 6",32.59823577
+LVH,Framingham,vr_wkthru_ex09_1_1001d.dlvh7,"Definite left ventricular hypertrophy, Exam 7",31.77626303
+LVH,Framingham,vr_wkthru_ex09_1_1001d.dlvh8,"Definite left ventricular hypertrophy, Exam 8",42.16118685
+LVH,Framingham,vr_wkthru_ex09_1_1001d.dlvh9,"Definite left ventricular hypertrophy, Exam 9",53.8893344
+LVH,MESA,mesae1dres20220813.ecglvh1c,LEFT VENTRICULAR HYPERTROPHY BY NOVACODE,0.719107719
+LVH,MESA,mesae5_drepos_20220820.ecglvh5c,ECG LEFT VENTRICULAR HYPERTROPHY BY NOVACODE,2.184054283
+LVH,REGARDS,baseline_calculated_variables.LVH_12,-,-
+MESAID,MESA,mesae1dres20220813.mesaid,MESA Participant Identification Number,-
+MESAID,MESA,mesae2dres06222012.mesaid,MESA Participant Identification Number,-
+MESAID,MESA,mesae3dres06222012.mesaid,MESA Participant Identification Number,-
+MESAID,MESA,mesae4dres06222012.mesaid,MESA Participant Identification Number,-
+MESAID,MESA,mesae5_drepos_20220820.mesaid,MESA PARTICIPANT IDENTIFICATION NUMBER,-
+NONSTATIN,Framingham,ex1_1d_v3.a80,ANTI-CHOLESTEROL AGENTS,0.481154772
+NONSTATIN,Framingham,ex1_2d_v3.b61,D202-016-ANTI-CHOLESTEROL,0.053304904
+NONSTATIN,Framingham,ex1_3d_v1.c26,ANTI CHOLESTEROL DRUGS,0.026581606
+NONSTATIN,Framingham,ex1_4d_v1.d030,ANTI CHOLESTEROL DRUGS,0.230650948
+NONSTATIN,Framingham,ex1_5d_v1.e245,ANTI CHOLESTEROL DRUGS-RESINS,0.027114968
+NONSTATIN,Framingham,ex1_5d_v1.e246,ANTI CHOLESTEROL DRUGS-NIACIN,0.027114968
+NONSTATIN,Framingham,ex1_5d_v1.e247,ANTI CHOLESTEROL DRUGS-FIBRATES,0.027114968
+NONSTATIN,Framingham,ex1_5d_v1.e249,ANTI CHOLESTEROL DRUGS-OTHER,0.054229935
+NONSTATIN,Framingham,ex1_6d_v1.f209,MEDS - ANTI-CHOL -RESINS,0.029316916
+NONSTATIN,Framingham,ex1_6d_v1.f210,MEDS - ANTI-CHOL -NIACIN/NICOTINIC ACID,0.029316916
+NONSTATIN,Framingham,ex1_6d_v1.f211,MEDS - ANTI-CHOL -FIBRATES,0.029316916
+NONSTATIN,Framingham,ex1_6d_v1.f213,MEDS - ANTI-CHOL -OTHER,0.029316916
+NONSTATIN,Framingham,ex1_7d_v2.g041,MEDS - ANTI-CHOL - RESINS,0.115074799
+NONSTATIN,Framingham,ex1_7d_v2.g042,MEDS - ANTI-CHOL - NIACIN/NICOTINIC ACID,0.115074799
+NONSTATIN,Framingham,ex1_7d_v2.g043,MEDS - ANTI-CHOL - FIBRATES,0.115074799
+NONSTATIN,Framingham,ex1_7d_v2.g045,MEDS - ANTI-CHOL - OTHER,0.115074799
+NONSTATIN,Framingham,vr_meds_ex08_1_0280d.atc_cod1,ATC CODE FOR MEDICATION OR FIRST DRUG IN COMPOUND,-
+NONSTATIN,Framingham,vr_meds_ex08_1_0280d.atc_cod2,ATC CODE FOR SECOND DRUG IN COMPOUND,-
+NONSTATIN,Framingham,vr_meds_ex08_1_0280d.atc_cod3,ATC CODE FOR THIRD DRUG IN COMPOUND,-
+NONSTATIN,Framingham,vr_meds_ex08_1_0280d.atc_cod4,ATC CODE FOR FOURTH DRUG IN COMPOUND,-
+NONSTATIN,Framingham,vr_meds_ex09_1b_0879d.atc_cod1,ATC code for medication or first drug in compound,-
+NONSTATIN,Framingham,vr_meds_ex09_1b_0879d.atc_cod2,ATC code for medication or second drug in compound,-
+NONSTATIN,Framingham,vr_meds_ex09_1b_0879d.atc_cod3,ATC code for medication or third drug in compound,-
+NONSTATIN,Framingham,vr_meds_ex09_1b_0879d.atc_cod4,ATC code for medication or fourth drug in compound,-
+NONSTATIN,MESA,mesae1dres20220813.basq1c,Bile-acid sequestrants,0.044027003
+NONSTATIN,MESA,mesae1dres20220813.fibr1c,Fibrates,0.044027003
+NONSTATIN,MESA,mesae1dres20220813.mlpd1c,Miscellaneous lipid-lowering drugs,0.044027003
+NONSTATIN,MESA,mesae1dres20220813.niac1c,Niacin and nictotinic acid,0.044027003
+NONSTATIN,MESA,mesae1dres20220813.prob1c,Probucol,0.044027003
+NONSTATIN,MESA,mesae2dres06222012.basq2c,Bile-acid sequestrants,12.35691224
+NONSTATIN,MESA,mesae2dres06222012.fibr2c,Fibrates,12.35691224
+NONSTATIN,MESA,mesae2dres06222012.mlpd2c,Miscellaneous lipid-lowering drugs,12.35691224
+NONSTATIN,MESA,mesae2dres06222012.niac2c,Niacin and nictotinic acid,12.35691224
+NONSTATIN,MESA,mesae2dres06222012.prob2c,Probucol,12.35691224
+NONSTATIN,MESA,mesae3dres06222012.basq3c,Bile-acid sequestrants,14.22072204
+NONSTATIN,MESA,mesae3dres06222012.fibr3c,Fibrates,14.22072204
+NONSTATIN,MESA,mesae3dres06222012.mlpd3c,Miscellaneous lipid-lowering drugs,14.22072204
+NONSTATIN,MESA,mesae3dres06222012.niac3c,Niacin and nictotinic acid,14.22072204
+NONSTATIN,MESA,mesae3dres06222012.prob3c,Probucol,14.22072204
+NONSTATIN,MESA,mesae3dres06222012.basq4c,-,-
+NONSTATIN,MESA,mesae4dres06222012.fibr4c,Fibrates,17.36131494
+NONSTATIN,MESA,mesae4dres06222012.mlpd4c,Miscellaneous lipid-lowering drugs,17.36131494
+NONSTATIN,MESA,mesae4dres06222012.niac4c,Niacin and nictotinic acid,17.36131494
+NONSTATIN,MESA,mesae4dres06222012.prob4c,Probucol,17.36131494
+NONSTATIN,MESA,mesae5_drepos_20220820.basq5c,BILE-ACID SEQUESTRANTS,0.169635284
+NONSTATIN,MESA,mesae5_drepos_20220820.fibr5c,FIBRATES,0.169635284
+NONSTATIN,MESA,mesae5_drepos_20220820.mlpd5c,MISCELLANEOUS LIPID-LOWERING DRUGS,0.169635284
+NONSTATIN,MESA,mesae5_drepos_20220820.niac5c,NIACIN AND NICTOTINIC ACID,0.169635284
+NONSTATIN,MESA,mesae5_drepos_20220820.prob5c,PROBUCOL,0.169635284
+PID,Framingham,vr_wkthru_ex09_1_1001d.pid,COHORT GENERAL EXAM DATA RANDOM ID,-
+PID,Framingham,vr_wkthru_ex09_1_1001d.pid,COHORT GENERAL EXAM DATA RANDOM ID,-
+PID,Framingham,vr_wkthru_ex09_1_1001d.pid,COHORT GENERAL EXAM DATA RANDOM ID,-
+PID,Framingham,vr_wkthru_ex09_1_1001d.pid,COHORT GENERAL EXAM DATA RANDOM ID,-
+PID,Framingham,vr_wkthru_ex09_1_1001d.pid,COHORT GENERAL EXAM DATA RANDOM ID,-
+PID,Framingham,vr_wkthru_ex09_1_1001d.pid,COHORT GENERAL EXAM DATA RANDOM ID,-
+PID,Framingham,vr_wkthru_ex09_1_1001d.pid,COHORT GENERAL EXAM DATA RANDOM ID,-
+PID,Framingham,vr_wkthru_ex09_1_1001d.pid,COHORT GENERAL EXAM DATA RANDOM ID,-
+PID,Framingham,vr_wkthru_ex09_1_1001d.pid,COHORT GENERAL EXAM DATA RANDOM ID,-
+RACE_C,ARIC,derive13.racegrp,RACE (from FTRA23),-
+RACE_C,ARIC,derive13.racegrp,RACE (from FTRA23),-
+RACE_C,ARIC,derive13.racegrp,RACE (from FTRA23),-
+RACE_C,ARIC,derive13.racegrp,RACE (from FTRA23),-
+RACE_C,ARIC,derive13.racegrp,RACE (from FTRA23),-
+RACE_C,MESA,mesae1dres20220813.race1c,RACE,-
+RACE_C,MESA,mesae1dres20220813.race1c,RACE,-
+RACE_C,MESA,mesae1dres20220813.race1c,RACE,-
+RACE_C,MESA,mesae1dres20220813.race1c,RACE,-
+RACE_C,MESA,mesae1dres20220813.race1c,RACE,-
+RACE_C,REGARDS,baseline_calculated_variables.RACE,-,-
+REGARDS_SUBJ_ID,REGARDS,baseline_calculated_variables.ID,-,-
+SEX_C,ARIC,derive13.gender,SEX (from FTRA22),-
+SEX_C,ARIC,derive2_10.gender,SEX (from FTRA22),-
+SEX_C,ARIC,derive47.gender,SEX (from FTRA22),-
+SEX_C,Framingham,vr_dates_2019_a_1175d.sex,\x91Participant gender\x92,-
+SEX_C,Framingham,vr_dates_2019_a_1175d.sex,\x91Participant gender\x92,-
+SEX_C,Framingham,vr_dates_2019_a_1175d.sex,\x91Participant gender\x92,-
+SEX_C,Framingham,vr_dates_2019_a_1175d.sex,\x91Participant gender\x92,-
+SEX_C,Framingham,vr_dates_2019_a_1175d.sex,\x91Participant gender\x92,-
+SEX_C,Framingham,vr_dates_2019_a_1175d.sex,\x91Participant gender\x92,-
+SEX_C,Framingham,vr_dates_2019_a_1175d.sex,\x91Participant gender\x92,-
+SEX_C,Framingham,vr_dates_2019_a_1175d.sex,\x91Participant gender\x92,-
+SEX_C,Framingham,vr_dates_2019_a_1175d.sex,\x91Participant gender\x92,-
+SEX_C,MESA,mesae1dres20220813.gender1,gender,-
+SEX_C,MESA,mesae2dres06222012.gender2,-,-
+SEX_C,MESA,mesae3dres06222012.gender3,-,-
+SEX_C,MESA,mesae4dres06222012.gender4,-,-
+SEX_C,MESA,mesae5_drepos_20220820.gender5,-,-
+SEX_C,REGARDS,baseline_calculated_variables.GENDER,-,-
+SEX_N,ARIC,derive47.gender,SEX (from FTRA22),-
+SEX_N,ARIC,derive13.gender,SEX (from FTRA22),-
+SEX_N,ARIC,derive2_10.gender,SEX (from FTRA22),-
+SEX_N,Framingham,vr_dates_2019_a_1175d.sex,\x91Participant gender\x92,-
+SEX_N,Framingham,vr_dates_2019_a_1175d.sex,\x91Participant gender\x92,-
+SEX_N,Framingham,vr_dates_2019_a_1175d.sex,\x91Participant gender\x92,-
+SEX_N,Framingham,vr_dates_2019_a_1175d.sex,\x91Participant gender\x92,-
+SEX_N,Framingham,vr_dates_2019_a_1175d.sex,\x91Participant gender\x92,-
+SEX_N,Framingham,vr_dates_2019_a_1175d.sex,\x91Participant gender\x92,-
+SEX_N,Framingham,vr_dates_2019_a_1175d.sex,\x91Participant gender\x92,-
+SEX_N,Framingham,vr_dates_2019_a_1175d.sex,\x91Participant gender\x92,-
+SEX_N,Framingham,vr_dates_2019_a_1175d.sex,\x91Participant gender\x92,-
+SEX_N,MESA,mesae1dres20220813.gender1,gender,-
+SEX_N,MESA,mesae2dres06222012.gender2,-,-
+SEX_N,MESA,mesae3dres06222012.gender3,-,-
+SEX_N,MESA,mesae4dres06222012.gender4,-,-
+SEX_N,MESA,mesae5_drepos_20220820.gender5,-,-
+SEX_N,REGARDS,baseline_calculated_variables.GENDER,-,-
+SODIUM,ARIC,anut2.sodi,sodium (mg),-
+SODIUM,ARIC,nutv3.sodi,sodium (mg),-
+SODIUM,Framingham,vr_ffreq_ex06_1_0506d.nut_sodium,SODIUM (mg),-
+SODIUM,Framingham,vr_ffreq_ex08_1_0615d_v1.nut_sodium,Sodium mg,-
+SODIUM,REGARDS,ffq_analyzed.SODIUM,-,-
+STATE,ARIC,derive13.centerid,Description not found,-
+STATE,ARIC,derive13.centerid,Description not found,-
+STATE,MESA,mesa_site_drepos_20181106.site1c,Exam 1: Site,-
+STATE,REGARDS,baseline_calculated_variables.STATE,-,-
+STATIN,ARIC,derive13.statincode01,"Used Statin (at Visit 1) last 2weeks (0=No, 1=Yes) based on 2004 Med Code",0.766462277
+STATIN,ARIC,derive2_10.statincode21,"Used Statin (at Visit 2) last 2weeks (0=No, 1=Yes) based on 2004 Med Code",0.323410511
+STATIN,ARIC,derive37.statincode31,"Used Statin (at Visit 3) last 2weeks (0=No, 1=Yes) based on 2004 Med Code",0.254390284
+STATIN,ARIC,derive47.statincode41,"Used Statin (at Visit 4) last 2weeks (0=No, 1=Yes) based on 2004 Med Code",0.400546199
+STATIN,ARIC,msrcod51.code5a2,Med 1: Therapeutic Class Code,-
+STATIN,ARIC,msrcod51.code6a2,Med 2: Therapeutic Class Code,-
+STATIN,ARIC,msrcod51.code7a2,Med 3: Therapeutic Class Code,-
+STATIN,ARIC,msrcod51.code8a2,Med 4: Therapeutic Class Code,-
+STATIN,ARIC,msrcod51.code9a2,Med 5: Therapeutic Class Code,-
+STATIN,ARIC,msrcod51.code10a2,Med 6: Therapeutic Class Code,-
+STATIN,ARIC,msrcod51.code11a2,Med 7: Therapeutic Class Code,-
+STATIN,ARIC,msrcod51.code12a2,Med 8: Therapeutic Class Code,-
+STATIN,ARIC,msrcod51.code13a2,Med 9: Therapeutic Class Code,-
+STATIN,ARIC,msrcod51.code14a2,Med 10: Therapeutic Class Code,-
+STATIN,ARIC,msrcod51.code15a2,Med 11: Therapeutic Class Code,-
+STATIN,ARIC,msrcod51.code16a2,Med 12: Therapeutic Class Code,-
+STATIN,ARIC,msrcod51.code17a2,Med 13: Therapeutic Class Code,-
+STATIN,ARIC,msrcod51.code18a2,Med 14: Therapeutic Class Code,-
+STATIN,ARIC,msrcod51.code19a2,Med 15: Therapeutic Class Code,-
+STATIN,ARIC,msrcod51.code20a2,Med 16: Therapeutic Class Code,-
+STATIN,ARIC,msrcod51.code21a2,Med 17: Therapeutic Class Code,-
+STATIN,ARIC,msrcod51.code22a2,Med 18: Therapeutic Class Code,-
+STATIN,ARIC,msrcod51.code23a2,Med 19: Therapeutic Class Code,-
+STATIN,ARIC,msrcod51.code24a2,Med 20: Therapeutic Class Code,-
+STATIN,ARIC,msrcod51.code25a2,Med 21: Therapeutic Class Code,-
+STATIN,ARIC,msrcod51.code26a2,Med 22: Therapeutic Class Code,-
+STATIN,ARIC,msrcod51.code27a2,Med 23: Therapeutic Class Code,-
+STATIN,ARIC,msrcod51.code28a2,Med 24: Therapeutic Class Code,-
+STATIN,ARIC,msrcod51.code29a2,Med 25: Therapeutic Class Code,-
+STATIN,Framingham,ex1_5d_v1.e248,ANTI CHOLESTEROL DRUGS-STATINS,0.027114968
+STATIN,Framingham,ex1_6d_v1.f212,MEDS - ANTI-CHOL -STATINS,0.029316916
+STATIN,Framingham,ex1_7d_v2.g044,MEDS - ANTI-CHOL - STATINS,0.086306099
+STATIN,Framingham,vr_meds_ex08_1_0280d.atc_cod1,ATC CODE FOR MEDICATION OR FIRST DRUG IN COMPOUND,-
+STATIN,Framingham,vr_meds_ex08_1_0280d.atc_cod2,ATC CODE FOR SECOND DRUG IN COMPOUND,-
+STATIN,Framingham,vr_meds_ex08_1_0280d.atc_cod3,ATC CODE FOR THIRD DRUG IN COMPOUND,-
+STATIN,Framingham,vr_meds_ex08_1_0280d.atc_cod4,ATC CODE FOR FOURTH DRUG IN COMPOUND,-
+STATIN,Framingham,vr_meds_ex09_1b_0879d.atc_cod1,ATC code for medication or first drug in compound,-
+STATIN,Framingham,vr_meds_ex09_1b_0879d.atc_cod2,ATC code for medication or second drug in compound,-
+STATIN,Framingham,vr_meds_ex09_1b_0879d.atc_cod3,ATC code for medication or third drug in compound,-
+STATIN,Framingham,vr_meds_ex09_1b_0879d.atc_cod4,ATC code for medication or fourth drug in compound,-
+STATIN,MESA,mesae1dres20220813.sttn1c,HMG CoA reducatace inhibitors (statins),0.044027003
+STATIN,MESA,mesae2dres06222012.sttn2c,HMG CoA reducatace inhibitors (statins),12.35691224
+STATIN,MESA,mesae3dres06222012.sttn3c,HMG CoA reducatace inhibitors (statins),14.22072204
+STATIN,MESA,mesae4dres06222012.sttn4c,HMG CoA reducatace inhibitors (statins),17.36131494
+STATIN,MESA,mesae5_drepos_20220820.sttn5c,HMG COA REDUCATACE INHIBITORS (STATINS),0.169635284
+STATIN,REGARDS,baseline_meds.MEDS_STATIN,-,-
+STATNONSTAT,Framingham,vr_meds_ex08_1_0280d.atc_cod1,ATC CODE FOR MEDICATION OR FIRST DRUG IN COMPOUND,-
+STATNONSTAT,Framingham,vr_meds_ex08_1_0280d.atc_cod2,ATC CODE FOR SECOND DRUG IN COMPOUND,-
+STATNONSTAT,Framingham,vr_meds_ex09_1b_0879d.atc_cod1,ATC code for medication or first drug in compound,-
+STATNONSTAT,Framingham,vr_meds_ex09_1b_0879d.atc_cod2,ATC code for medication or second drug in compound,-
+STROKE,REGARDS,stroke_outcome.STROKE19,-,-
+STROKE10,REGARDS,stroke_outcome.STROKE19,-,-
+STROKE10,REGARDS,stroke_outcome.STROKE19DT,-,-
+STROKE10,REGARDS,baseline_calculated_variables.INHOMEDATE,-,0.046383726
+STROKE - ALL CAUSE,REGARDS,stroke_outcome.STROKE19,-,-
+STROKE - ALL CAUSE,REGARDS,stroke_outcome.STROKE19DT,-,-
+STROKE - HEMORRHAGIC,REGARDS,stroke_outcome.HEMORRHAGIC19,-,-
+STROKE - HEMORRHAGIC,REGARDS,stroke_outcome.HEMORRHAGIC19DT,-,-
+STROKE - ISCHEMIC,REGARDS,stroke_outcome.ISCHEMIC19,-,-
+STROKE - ISCHEMIC,REGARDS,stroke_outcome.ISCHEMIC19DT,-,-
+SYSBP,ARIC,sbpa02.sbpa21,2ND AND 3RD SYSTOLIC BP AVERAGE Q21,0.079984003
+SYSBP,ARIC,sbpb02.sbpb21,2ND AND 3RD SYSTOLIC BP AVERAGE Q21,0.036751194
+SYSBP,ARIC,sbpc04_02.sbpc22,2ND AND 3RD SYSTOLIC BP AVERAGE Q22,0.024624477
+SYSBP,ARIC,sbpd04_02.sbpc19,-,-
+SYSBP,ARIC,sbp.sbp14,AVG: Systolic (mmHg),0.690817186
+SYSBP,MESA,mesae1dres20220813.sbp1c,SEATED SYSTOLIC BLOOD PRESSURE (mmHg),0.044027003
+SYSBP,MESA,mesae2dres06222012.sbp2c,Seated Systolic Blood Pressure (mmHg),8.570589962
+SYSBP,MESA,mesae3dres06222012.sbp3c,SEATED SYSTOLIC BLOOD PRESSURE (mmHg),12.88523628
+SYSBP,MESA,mesae4dres06222012.sbp4c,Seated systolic blood pressure (mmhg),16.3780452
+SYSBP,MESA,mesae5_drepos_20220820.sbp5c,SEATED SYSTOLIC BLOOD PRESSURE (mmHg),1.335877863
+SYSBP,REGARDS,baseline_calculated_variables.SBP,-,0.284928602
+SYSBP1,Framingham,ex1_1d_v3.a55,"PHYSICIAN SYSTOLIC BLOOD PRESSURE, 1ST",0.180433039
+SYSBP1,Framingham,ex1_2d_v3.b24,D201-047-SYS-PHYS-FIRST,0.026652452
+SYSBP1,Framingham,ex1_3d_v1.c184,FIRST SYSTOLIC BLOOD PRESSURE,0.053163211
+SYSBP1,Framingham,ex1_4d_v1.d192,SYSTOLIC BP - PHYSICIAN - 1ST READING,-
+SYSBP1,Framingham,ex1_5d_v1.e485,SYSTOLIC PRESSURE - 1ST MD READING,0.054229935
+SYSBP1,Framingham,ex1_6d_v1.f476,PHYSICIAN BP-SYSTOLIC-1ST READING,0.058633832
+SYSBP1,Framingham,ex1_7d_v2.g271,PHYSICIAN BP SYSTOLIC - 1ST READING,0.115074799
+SYSBP1,Framingham,e_exam_ex08_1_0005d.h111,PHYSICIAN SYSTOLIC BP - 1ST READING,0.13400335
+SYSBP1,Framingham,e_exam_ex09_1b_0844d.j116,"MDBP1 - SYSTOLIC1, MMHG",0.111648679
+SYSBP2,Framingham,ex1_1d_v3.a57,"PHYSICIAN SYSTOLIC BLOOD PRESSURE, 2ND",82.23736969
+SYSBP2,Framingham,ex1_2d_v3.b26,D201-053-SYS-PHYS-SECOND,0.106609808
+SYSBP2,Framingham,ex1_3d_v1.c286,SECOND SYSTOLIC BLOOD PRESSURE,0.372142477
+SYSBP2,Framingham,ex1_4d_v1.d288,SYSTOLIC BP - PHYSICIAN - 2ND READING,0.281906715
+SYSBP2,Framingham,ex1_5d_v1.e581,SYSTOLIC PRESSURE - 2ND MD READING,0.081344902
+SYSBP2,Framingham,ex1_6d_v1.f576,PHYSICIAN BP-2ND READING-SYSTOLIC,0.146584579
+SYSBP2,Framingham,ex1_7d_v2.g354,PHYSICIAN BP SYSTOLIC - 2ND READING,0.143843498
+SYSBP2,Framingham,e_exam_ex08_1_0005d.h233,PHYSICIAN SYSTOLIC BP - 2ND READING,0.201005025
+SYSBP2,Framingham,e_exam_ex09_1b_0844d.j255,"MDBP2 - SYST, MMHG",0.29772981
+T2STROKE,REGARDS,stroke_outcome.STROKE19DT,-,-
+T2STROKE,REGARDS,baseline_calculated_variables.INHOMEDATE,-,0.046383726
+T2STROKE10,REGARDS,stroke_outcome.STROKE19,-,-
+T2STROKE10,REGARDS,stroke_outcome.STROKE19DT,-,-
+T2STROKE10,REGARDS,baseline_calculated_variables.INHOMEDATE,-,0.046383726
+T2STROKE10_YRS,REGARDS,stroke_outcome.STROKE19,-,-
+T2STROKE10_YRS,REGARDS,stroke_outcome.STROKE19DT,-,-
+T2STROKE10_YRS,REGARDS,baseline_calculated_variables.INHOMEDATE,-,0.046383726
+T2STROKE_YRS,REGARDS,stroke_outcome.STROKE19DT,-,-
+T2STROKE_YRS,REGARDS,baseline_calculated_variables.INHOMEDATE,-,0.046383726
+TC,ARIC,lipa.lipa01,TOTAL CHOLESTEROL (MG-DL),0.020308692
+TC,ARIC,lipb.lipb01a,CHOLESTEROL (VALUE) Q1A,0.014786337
+TC,ARIC,lipc04.lipc1a,CHOLESTEROL (VALUE IN MG/DL) Q1A,-
+TC,ARIC,lipd04.lipd1a,CHOLESTEROL (VALUE) Q1A,0.009175154
+TC,ARIC,lip.lip3,Total Cholesterol (mg/dL),0.914324416
+TC,Framingham,vr_wkthru_ex09_1_1001d.tc1,"Total cholesterol (mg/dL), Exam 1",1.744186047
+TC,Framingham,vr_wkthru_ex09_1_1001d.tc2,"Total cholesterol (mg/dL), Exam 2",26.4234162
+TC,Framingham,vr_wkthru_ex09_1_1001d.tc3,"Total cholesterol (mg/dL), Exam 3",27.08500401
+TC,Framingham,vr_wkthru_ex09_1_1001d.tc4,"Total cholesterol (mg/dL), Exam 4",23.61668003
+TC,Framingham,vr_wkthru_ex09_1_1001d.tc5,"Total cholesterol (mg/dL), Exam 5",26.62389735
+TC,Framingham,vr_wkthru_ex09_1_1001d.tc6,"Total cholesterol (mg/dL), Exam 6",32.55813953
+TC,Framingham,vr_wkthru_ex09_1_1001d.tc7,"Total cholesterol (mg/dL), Exam 7",34.38251804
+TC,Framingham,vr_wkthru_ex09_1_1001d.tc8,"Total cholesterol (mg/dL), Exam 8",42.52205293
+TC,Framingham,vr_wkthru_ex09_1_1001d.tc9,"Total cholesterol (mg/dL), Exam 9",54.87169206
+TC,MESA,mesae1dres20220813.chol1,TOTAL CHOLESTEROL (mg/dl),0.337540358
+TC,MESA,mesae2dres06222012.chol2,TOTAL CHOLESTEROL (mg/dl),9.23099501
+TC,MESA,mesae3dres06222012.chol3,TOTAL CHOLESTEROL (mg/dl),13.53096566
+TC,MESA,mesae4dres06222012.chol4,Total Cholesterol (mg/dl),17.31728794
+TC,MESA,mesae5_drepos_20220820.chol5,TOTAL CHOLESTEROL (mg/dl),2.841391009
+TC,REGARDS,baseline_calculated_variables.CHOLEST,-,4.316999636
+TRIG,ARIC,lipa.lipa02,TOTAL TRIGLYCERIDES (MG-DL),-
+TRIG,ARIC,lipb.lipb02a,TRIGLYCERIDE (VALUE) Q2A,0.029572675
+TRIG,ARIC,lipc04.lipc2a,TRIGLYCERIDE (VALUE IN MG/DL) Q2A,-
+TRIG,ARIC,lipd04.lipd2a,TRIGLYCERIDE (VALUE) Q2A,0.009175154
+TRIG,ARIC,lip.lip8,Total Triglycerides (mg/dL),0.914324416
+TRIG,Framingham,vr_wkthru_ex09_1_1001d.trig1,"Triglycerides (mg/dL), Exam 1",1.784282278
+TRIG,Framingham,vr_wkthru_ex09_1_1001d.trig2,"Triglycerides (mg/dL), Exam 2",26.4234162
+TRIG,Framingham,vr_wkthru_ex09_1_1001d.trig3,"Triglycerides (mg/dL), Exam 3",27.10505213
+TRIG,Framingham,vr_wkthru_ex09_1_1001d.trig4,"Triglycerides (mg/dL), Exam 4",23.65677626
+TRIG,Framingham,vr_wkthru_ex09_1_1001d.trig5,"Triglycerides (mg/dL), Exam 5",26.62389735
+TRIG,Framingham,vr_wkthru_ex09_1_1001d.trig6,"Triglycerides (mg/dL), Exam 6",32.55813953
+TRIG,Framingham,vr_wkthru_ex09_1_1001d.trig7,"Triglycerides (mg/dL), Exam 7",34.38251804
+TRIG,Framingham,vr_wkthru_ex09_1_1001d.trig8,"Triglycerides (mg/dL), Exam 8",42.52205293
+TRIG,Framingham,vr_wkthru_ex09_1_1001d.trig9,"Triglycerides (mg/dL), Exam 9",54.87169206
+TRIG,MESA,mesae1dres20220813.trig1,TRIGLYCERIDES (mg/dl),0.337540358
+TRIG,MESA,mesae2dres06222012.trig2,TRIGLYCERIDES (mg/dl),9.23099501
+TRIG,MESA,mesae3dres06222012.trig3,TRIGLYCERIDES (mg/dl),13.53096566
+TRIG,MESA,mesae4dres06222012.trig4,Triglycerides (mg/dl),17.31728794
+TRIG,MESA,mesae5_drepos_20220820.trig5,TRIGLYCERIDES (mg/dl),2.841391009
+TRIG,REGARDS,baseline_calculated_variables.TRIGLY,-,4.346817745
+VALVDIS,Framingham,ex1_3d_v1.c339,CDI: RHEUMATIC HEART DISEASE,0.053163211
+VALVDIS,Framingham,ex1_3d_v1.c340,CDI: AORTIC VALVE DISEASE,0.079744817
+VALVDIS,Framingham,ex1_3d_v1.c341,CDI: MITRAL VALVE DISEASE,0.053163211
+VALVDIS,Framingham,ex1_6d_v1.f617,CDI-RHEUMATIC HEART DISEASE,1.34857813
+VALVDIS,Framingham,ex1_6d_v1.f618,CDI-AORTIC VALVE DISEASE,1.34857813
+VALVDIS,Framingham,ex1_6d_v1.f619,CDI-MITRAL VALVE DISEASE,1.377895045
+VALVDIS,Framingham,e_exam_ex08_1_0005d.h339,CDI - RHEUMATIC HEART DISEASE,0.201005025
+VALVDIS,Framingham,e_exam_ex08_1_0005d.h340,CDI - AORTIC VALVE DISEASE,0.167504188
+VALVDIS,Framingham,e_exam_ex08_1_0005d.h341,CDI - MITRAL VALVE DISEASE,0.167504188
+VALVDIS,MESA,mesae1dres20220813.rheuhv1,RHEUMATIC HEART DISEASE: SELF-REPORT,0.014675668
+VEGETABLES,ARIC,dtia.dtia15,CONSUMED STRING OR GREEN BEANS Q15,-
+VEGETABLES,ARIC,dtia.dtia16,CONSUMED BROCCOLI Q16,-
+VEGETABLES,ARIC,dtia.dtia17,"CABBAGE, CAULIFLWR,BUS SPROUT Q17",-
+VEGETABLES,ARIC,dtia.dtia18,CONSUMED CARROTS Q18,-
+VEGETABLES,ARIC,dtia.dtia19,CONSUMED CORN Q19,-
+VEGETABLES,ARIC,dtia.dtia20,"SPINACH, COLLARDS, GREENS Q20",-
+VEGETABLES,ARIC,dtia.dtia21,CONSUMED PEAS OR LIMA BEANS Q21,-
+VEGETABLES,ARIC,dtia.dtia22,CONSUMED DARK YELLOW SQUASH Q22,-
+VEGETABLES,ARIC,dtia.dtia23,CONSUMED SWEET POTATOES Q23,-
+VEGETABLES,ARIC,dtia.dtia24,CONSUMED BEANS OR LENTILS Q24,-
+VEGETABLES,ARIC,dtia.dtia25,CONSUMED TOMATOES Q25,-
+VEGETABLES,ARIC,dtic04.dtic15,CONSUMED STRING OR GREEN BEANS Q15,-
+VEGETABLES,ARIC,dtic04.dtic16,CONSUMED BROCCOLI Q16,-
+VEGETABLES,ARIC,dtic04.dtic17,"CABBAGE, CAULIFLWR, BRUS SPROUTS Q17",-
+VEGETABLES,ARIC,dtic04.dtic18,CONSUMED CARROTS Q18,-
+VEGETABLES,ARIC,dtic04.dtic19,CONSUMED CORN Q19,-
+VEGETABLES,ARIC,dtic04.dtic20,"SPINACH, COLLARDS, GREENS Q20",-
+VEGETABLES,ARIC,dtic04.dtic21,CONSUMED PEAS OR LIMA BEANS Q21,-
+VEGETABLES,ARIC,dtic04.dtic22,CONSUMED DARK YELLOW SQUASH Q22,-
+VEGETABLES,ARIC,dtic04.dtic23,CONSUMED SWEET POTATOES Q23,-
+VEGETABLES,ARIC,dtic04.dtic24,CONSUMED BEANS OR LENTILS Q24,-
+VEGETABLES,ARIC,dtic04.dtic25,CONSUMED TOMATOES Q25,-
+VEGETABLES,Framingham,q_ffreq_ex03_1_0302d.greenben,GREEN STRING BEANS OR ASPARAGUS,1.434878587
+VEGETABLES,Framingham,q_ffreq_ex03_1_0302d.broccoli,HALF CUP BROCCOLI,1.379690949
+VEGETABLES,Framingham,q_ffreq_ex03_1_0302d.cabbage,CABBAGE COLE SLAW OR SAUERKRAUT,1.655629139
+VEGETABLES,Framingham,q_ffreq_ex03_1_0302d.caulflwr,CAULIFLOWER-HALF CUP,1.710816777
+VEGETABLES,Framingham,q_ffreq_ex03_1_0302d.bruselsp,HALF CUP BRUSSEL SPROUTS,1.62803532
+VEGETABLES,Framingham,q_ffreq_ex03_1_0302d.carrots,ONE WHOLE OR HALF CUP COOKED,0.965783665
+VEGETABLES,Framingham,q_ffreq_ex03_1_0302d.corn,EAR OR HALF CUP FROZEN,1.62803532
+VEGETABLES,Framingham,q_ffreq_ex03_1_0302d.spinach,HALF CUP SPINACH RAW OR COOKED,1.62803532
+VEGETABLES,Framingham,q_ffreq_ex03_1_0302d.peppers,GREEN OR RED PEPPERS-HALF CUP,2.317880795
+VEGETABLES,Framingham,q_ffreq_ex03_1_0302d.kale,"KALE,MUSTARD,CHARD,BEET OR OTHER GREENS",2.786975717
+VEGETABLES,Framingham,q_ffreq_ex03_1_0302d.iceberg,CUP OF ICEBERG OR HEAD LETTUCE,1.490066225
+VEGETABLES,Framingham,q_ffreq_ex03_1_0302d.romaine,"ESCAROLE,ROMAINE,WATERCRESS LEAFLETTUCE",2.73178808
+VEGETABLES,Framingham,q_ffreq_ex03_1_0302d.peas,"PEAS,LIMA BEANS OR PEA PODS",1.766004415
+VEGETABLES,Framingham,q_ffreq_ex03_1_0302d.wintersq,YELLOW WINTER SQUASH OR PUMPKINS,1.766004415
+VEGETABLES,Framingham,q_ffreq_ex03_1_0302d.zucchini,"EGGPLANT,ZUCCHINI,OTHER SUMMER SQUASH",1.710816777
+VEGETABLES,Framingham,q_ffreq_ex03_1_0302d.yams,HALF CUP YAMS OR SWEET POTATOES,2.262693157
+VEGETABLES,Framingham,q_ffreq_ex03_1_0302d.tomatoes,ONE TOMATO OR HALF CUP,1.407284768
+VEGETABLES,Framingham,q_ffreq_ex03_1_0302d.lentils,"LENTILS, CHICK PEAS, KIDNEY,PINTO BEANS",2.124724062
+VEGETABLES,Framingham,vr_ffreq_ex06_1_0506d.ffd45,TOMATOES:(servings/week),0.262812089
+VEGETABLES,Framingham,vr_ffreq_ex06_1_0506d.ffd50,STRING BEANS:(servings/week),0.361366623
+VEGETABLES,Framingham,vr_ffreq_ex06_1_0506d.ffd51,BROCCOLI:(servings/week),0.821287779
+VEGETABLES,Framingham,vr_ffreq_ex06_1_0506d.ffd52,CABBAGE/COLE SLAW:(servings/week),0.295663601
+VEGETABLES,Framingham,vr_ffreq_ex06_1_0506d.ffd53,CAULIFLOWER:(servings/week),0.55847569
+VEGETABLES,Framingham,vr_ffreq_ex06_1_0506d.ffd54,BRUSSELS SPROUTS:(servings/week),0.624178712
+VEGETABLES,Framingham,vr_ffreq_ex06_1_0506d.ffd55,"CARROTS, RAW:(servings/week)",1.248357424
+VEGETABLES,Framingham,vr_ffreq_ex06_1_0506d.ffd56,"CARROTS, COOKED:(servings/week)",0.788436268
+VEGETABLES,Framingham,vr_ffreq_ex06_1_0506d.ffd57,CORN:(servings/week),1.018396846
+VEGETABLES,Framingham,vr_ffreq_ex06_1_0506d.ffd58,PEAS/LIMA BEANS:(servings/week),0.459921156
+VEGETABLES,Framingham,vr_ffreq_ex06_1_0506d.ffd59,MIXED VEGETABLES:(servings/week),0.722733246
+VEGETABLES,Framingham,vr_ffreq_ex06_1_0506d.ffd60,BEANS/LENTILS:(servings/week),0.85413929
+VEGETABLES,Framingham,vr_ffreq_ex06_1_0506d.ffd61,WINTER SQUASH:(servings/week),0.919842313
+VEGETABLES,Framingham,vr_ffreq_ex06_1_0506d.ffd62,SUMMER SQUASH:(servings/week),0.492772668
+VEGETABLES,Framingham,vr_ffreq_ex06_1_0506d.ffd63,YAMS/SWEET POTATOES:(servings/week),0.164257556
+VEGETABLES,Framingham,vr_ffreq_ex06_1_0506d.ffd64,"SPINACH, COOKED:(servings/week)",0.328515112
+VEGETABLES,Framingham,vr_ffreq_ex06_1_0506d.ffd65,"SPANACH, RAW:(servings/week)",0.788436268
+VEGETABLES,Framingham,vr_ffreq_ex06_1_0506d.ffd66,KALE/MUSTARD/CHARD:(servings/week),0.85413929
+VEGETABLES,Framingham,vr_ffreq_ex06_1_0506d.ffd67,ICEBERG/HEAD LETTUCE:(servings/week),0.886990802
+VEGETABLES,Framingham,vr_ffreq_ex06_1_0506d.ffd68,ROMAINE/LEAF LETTUCE:(servings/week),0.657030223
+VEGETABLES,Framingham,vr_ffreq_ex06_1_0506d.ffd69,CELERY:(servings/week),0.657030223
+VEGETABLES,Framingham,vr_ffreq_ex06_1_0506d.ffd70,BEETS:(servings/week),0.328515112
+VEGETABLES,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd45,TOMATOES:(servings/week),0.483451097
+VEGETABLES,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd50,STRING BEANS:(servings/week),0.929713648
+VEGETABLES,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd51,BROCCOLI:(servings/week),0.892525102
+VEGETABLES,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd52,CABBAGE/COLE SLAW:(servings/week),0.409074005
+VEGETABLES,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd53,CAULIFLOWER:(servings/week),0.520639643
+VEGETABLES,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd54,BRUSSELS SPROUTS:(servings/week),0.669393827
+VEGETABLES,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd55,"CARROTS, RAW:(servings/week)",1.375976199
+VEGETABLES,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd56,"CARROTS, COOKED:(servings/week)",1.375976199
+VEGETABLES,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd57,CORN:(servings/week),1.413164745
+VEGETABLES,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd58,PEAS/LIMA BEANS:(servings/week),0.520639643
+VEGETABLES,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd59,MIXED VEGETABLES:(servings/week),1.487541837
+VEGETABLES,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd60,BEANS/LENTILS:(servings/week),0.557828189
+VEGETABLES,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd61,WINTER SQUASH:(servings/week),1.227222016
+VEGETABLES,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd62,SUMMER SQUASH:(servings/week),0.260319822
+VEGETABLES,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd63,YAMS/SWEET POTATOES:(servings/week),0.148754184
+VEGETABLES,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd64,"SPINACH, COOKED:(servings/week)",0.855336556
+VEGETABLES,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd65,"SPANACH, RAW:(servings/week)",0.855336556
+VEGETABLES,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd66,KALE/MUSTARD/CHARD:(servings/week),1.450353291
+VEGETABLES,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd67,ICEBERG/HEAD LETTUCE:(servings/week),1.338787653
+VEGETABLES,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd68,ROMAINE/LEAF LETTUCE:(servings/week),0.706582373
+VEGETABLES,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd69,CELERY:(servings/week),0.595016735
+VEGETABLES,Framingham,vr_ffreq_ex08_1_0615d_v1.ffd70,BEETS:(servings/week),0.446262551
+VEGETABLES,REGARDS,ffq_analyzed.VEGSRV,-,-
+VISDAY,ARIC,derive2_10.v2days,DAYS SINCE EXAM 1,-
+VISDAY,ARIC,derive37.v3days,DAYS SINCE EXAM 1,-
+VISDAY,ARIC,derive47.v4days,DAYS SINCE EXAM 1,-
+VISDAY,ARIC,derive51.v5date51_days,"Visit 5 Date, NCS Stage 1 - days from visit 1",-
+VISDAY,Framingham,vr_wkthru_ex09_1_1001d.date2,Date of Exam 2,24.77947073
+VISDAY,Framingham,vr_wkthru_ex09_1_1001d.date3,Date of Exam 3,24.57898958
+VISDAY,Framingham,vr_wkthru_ex09_1_1001d.date4,Date of Exam 4,21.77225341
+VISDAY,Framingham,vr_wkthru_ex09_1_1001d.date5,Date of Exam 5,26.06255012
+VISDAY,Framingham,vr_wkthru_ex09_1_1001d.date6,Date of Exam 6,31.61587811
+VISDAY,Framingham,vr_wkthru_ex09_1_1001d.date7,Date of Exam 7,30.3127506
+VISDAY,Framingham,vr_wkthru_ex09_1_1001d.date8,Date of Exam 8,40.1563753
+VISDAY,Framingham,vr_wkthru_ex09_1_1001d.date9,Date of Exam 9,51.88452285
+VISDAY,MESA,mesae2dres06222012.e12dyc,"Time between exam visits, in days",8.526562959
+VISDAY,MESA,mesae3dres06222012.e13dyc,"Time between first and third visits, in days",12.72380393
+VISDAY,MESA,mesae4dres06222012.e14dyc,"Time between first and fourth visits, in days",14.61696507
+VISDAY,MESA,mesae5_drepos_20220820.e15dyc,"TIME BETWEEN FIRST AND FIFTH VISITS, IN DAYS",-
+WGT,ARIC,anta.anta04,WEIGHT TO THE NEAREST LB Q4,0.159957345
+WGT,ARIC,antb.antb01,WEIGHT TO NEAREST LB Q1,0.154355017
+WGT,ARIC,antc04.antc2,WEIGHT TO NEAREST LB Q2,0.057494867
+WGT,ARIC,antd05.antd2,WEIGHT TO NEAREST LB Q2,0.282203004
+WGT,ARIC,ant.ant4,Weight (kg),1.48272957
+WGT,Framingham,vr_wkthru_ex09_1_1001d.wgt1,"Weight (pounds), Exam 1",-
+WGT,Framingham,vr_wkthru_ex09_1_1001d.wgt2,"Weight (pounds), Exam 2",24.77947073
+WGT,Framingham,vr_wkthru_ex09_1_1001d.wgt3,"Weight (pounds), Exam 3",25.32076985
+WGT,Framingham,vr_wkthru_ex09_1_1001d.wgt4,"Weight (pounds), Exam 4",21.97273456
+WGT,Framingham,vr_wkthru_ex09_1_1001d.wgt5,"Weight (pounds), Exam 5",26.40336808
+WGT,Framingham,vr_wkthru_ex09_1_1001d.wgt6,"Weight (pounds), Exam 6",31.97674419
+WGT,Framingham,vr_wkthru_ex09_1_1001d.wgt7,"Weight (pounds), Exam 7",30.93424218
+WGT,Framingham,vr_wkthru_ex09_1_1001d.wgt8,"Weight (pounds), Exam 8",40.29671211
+WGT,Framingham,vr_wkthru_ex09_1_1001d.wgt9,"Weight (pounds), Exam 9",51.88452285
+WGT,MESA,mesae1dres20220813.wtlb1,WEIGHT (lbs),-
+WGT,MESA,mesae2dres06222012.wtlb2,WEIGHT (lbs),8.555914294
+WGT,MESA,mesae3dres06222012.wtlb3,WEIGHT (lbs),12.84120928
+WGT,MESA,mesae4dres06222012.wtlb4,WEIGHT (lbs),16.30466686
+WGT,MESA,mesae5_drepos_20220820.wtlb5,WEIGHT (lbs),1.547921968
+WGT,REGARDS,baseline_calculated_variables.WEIGHT_KG,-,0.351191068

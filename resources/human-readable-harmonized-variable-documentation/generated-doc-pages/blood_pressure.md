@@ -40,8 +40,16 @@
 <a id="antihypertensive_meds_1-aric"></a>
   * ### blood_pressure/antihypertensive_meds_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 2 component_study_variables
-      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
-      * _phs000280.v4.pht004063.v2.phv00204754.v1_. dbGap Name: **HYPTMD01**, Desc: **Blood pressure lowering medications in the past 2 weeks [Cohort. Visit 1]**, Table: **DERIVE13**.
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_
+        * dbGap name: **V1AGE01**
+        * dbGap desc: **Age at visit 1 [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204712_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004063.v2.phv00204754.v1_
+        * dbGap name: **HYPTMD01**
+        * dbGap desc: **Blood pressure lowering medications in the past 2 weeks [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204754_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -67,10 +75,26 @@
 <a id="antihypertensive_meds_1-cardia"></a>
   * ### blood_pressure/antihypertensive_meds_1 -- **CARDIA CARDIA Cohort**:
     * 4 component_study_variables
-      * _phs000285.v3.pht001569.v2.phv00113012.v2_. dbGap Name: **A08BPMED**, Desc: **EVER TAKEN MEDS FOR HIGH BLOOD PRESSURE**, Table: **A4F08**.
-      * _phs000285.v3.pht001571.v2.phv00113154.v2_. dbGap Name: **A09MDTYP**, Desc: **MEDIC'N FOLL'UP PAGE NAME (MED TYPE)**, Table: **A4F09MED**.
-      * _phs000285.v3.pht001571.v2.phv00113155.v2_. dbGap Name: **A09MDNOW**, Desc: **TAKING MED NOW?**, Table: **A4F09MED**.
-      * _phs000285.v3.pht001645.v2.phv00115119.v2_. dbGap Name: **EXAMAGE**, Desc: **AGE AT EXAM 1 (VERIFIED AT EXAM 2)**, Table: **B2REF**.
+      * _phs000285.v3.pht001569.v2.phv00113012.v2_
+        * dbGap name: **A08BPMED**
+        * dbGap desc: **EVER TAKEN MEDS FOR HIGH BLOOD PRESSURE**
+        * dbGap table: **A4F08**
+         * varId _phv00113012_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001571.v2.phv00113154.v2_
+        * dbGap name: **A09MDTYP**
+        * dbGap desc: **MEDIC'N FOLL'UP PAGE NAME (MED TYPE)**
+        * dbGap table: **A4F09MED**
+         * varId _phv00113154_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001571.v2.phv00113155.v2_
+        * dbGap name: **A09MDNOW**
+        * dbGap desc: **TAKING MED NOW?**
+        * dbGap table: **A4F09MED**
+         * varId _phv00113155_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001645.v2.phv00115119.v2_
+        * dbGap name: **EXAMAGE**
+        * dbGap desc: **AGE AT EXAM 1 (VERIFIED AT EXAM 2)**
+        * dbGap table: **B2REF**
+         * varId _phv00115119_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -138,8 +162,16 @@
 <a id="antihypertensive_meds_1-chs"></a>
   * ### blood_pressure/antihypertensive_meds_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
     * 2 component_study_variables
-      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
-      * _phs000287.v6.pht001452.v1.phv00100595.v1_. dbGap Name: **HTNMED06**, Desc: **Any hypertension medication**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_
+        * dbGap name: **AGEBL**
+        * dbGap desc: **CALCULATED AGE AT BASELINE**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000287.v6.pht001452.v1.phv00100595.v1_
+        * dbGap name: **HTNMED06**
+        * dbGap desc: **Any hypertension medication**
+        * dbGap table: **BASEBOTH**
+         * PIC-SURE permissible values: No, Yes
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -159,8 +191,16 @@
 <a id="antihypertensive_meds_1-hchs_sol"></a>
   * ### blood_pressure/antihypertensive_meds_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 2 component_study_variables
-      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00226324.v1_. dbGap Name: **MED_ANTIHYPERT**, Desc: **Antihypertensives**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00226324.v1_
+        * dbGap name: **MED_ANTIHYPERT**
+        * dbGap desc: **Antihypertensives**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * PIC-SURE permissible values: No, Yes
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -179,8 +219,12 @@
 <a id="antihypertensive_meds_1-jhs"></a>
   * ### blood_pressure/antihypertensive_meds_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 2 component_study_variables
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
-      * _phs000286.v5.pht001949.v1.phv00126038.v1_. No dbGap metadata available.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001949.v1.phv00126038.v1_
+        * No dbGap metadata available
+         * varId _phv00126038_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -203,12 +247,36 @@
 <a id="antihypertensive_meds_1-mesa"></a>
   * ### blood_pressure/antihypertensive_meds_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 6 component_study_variables
-      * _phs000209.v13.pht001111.v4.phv00082639.v2_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_AirNRExamMain**.
-      * _phs000209.v13.pht001111.v4.phv00083163.v1_. dbGap Name: **htnmed1c**, Desc: **HYPERTENSION MEDICATION**, Table: **MESA_AirNRExamMain**.
-      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
-      * _phs000209.v13.pht001116.v10.phv00085324.v2_. dbGap Name: **htnmed1c**, Desc: **HYPERTENSION MEDICATION**, Table: **MESA_Exam1Main**.
-      * _phs000209.v13.pht001121.v3.phv00087071.v1_. dbGap Name: **agefc**, Desc: **AGE**, Table: **MESA_FamilyExamMain**.
-      * _phs000209.v13.pht001121.v3.phv00087093.v1_. dbGap Name: **htnmedfc**, Desc: **ANY HYPERTENSION MEDICATION**, Table: **MESA_FamilyExamMain**.
+      * _phs000209.v13.pht001111.v4.phv00082639.v2_
+        * dbGap name: **age1c**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_AirNRExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001111.v4.phv00083163.v1_
+        * dbGap name: **htnmed1c**
+        * dbGap desc: **HYPERTENSION MEDICATION**
+        * dbGap table: **MESA_AirNRExamMain**
+         * PIC-SURE permissible values: NO, YES
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_
+        * dbGap name: **age1c**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_Exam1Main**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001116.v10.phv00085324.v2_
+        * dbGap name: **htnmed1c**
+        * dbGap desc: **HYPERTENSION MEDICATION**
+        * dbGap table: **MESA_Exam1Main**
+         * PIC-SURE permissible values: NO, YES
+      * _phs000209.v13.pht001121.v3.phv00087071.v1_
+        * dbGap name: **agefc**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_FamilyExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001121.v3.phv00087093.v1_
+        * dbGap name: **htnmedfc**
+        * dbGap desc: **ANY HYPERTENSION MEDICATION**
+        * dbGap table: **MESA_FamilyExamMain**
+         * PIC-SURE permissible values: NO, YES
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -236,14 +304,46 @@
 <a id="antihypertensive_meds_1-whi"></a>
   * ### blood_pressure/antihypertensive_meds_1 -- **WHI Women's Health Initiative**:
     * 8 component_study_variables
-      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
-      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
-      * _phs000200.v11.pht001019.v6.phv00079850.v6_. dbGap Name: **F80VTYP**, Desc: **Visit Type**, Table: **f80_rel1**.
-      * _phs000200.v11.pht001019.v6.phv00079852.v6_. dbGap Name: **F80DAYS**, Desc: **F80 Days since randomization/enrollment**, Table: **f80_rel1**.
-      * _phs000200.v11.pht002754.v4.phv00169603.v4_. dbGap Name: **F44VTYP**, Desc: **Visit Type**, Table: **f44_rel1**.
-      * _phs000200.v11.pht002754.v4.phv00169605.v4_. dbGap Name: **F44DAYS**, Desc: **F44 Days since randomization/enrollment**, Table: **f44_rel1**.
-      * _phs000200.v11.pht002754.v4.phv00169608.v4_. dbGap Name: **ADULTDY**, Desc: **F44 Adult duration of medication use (days)**, Table: **f44_rel1**.
-      * _phs000200.v11.pht002754.v4.phv00169611.v4_. dbGap Name: **TCCODE**, Desc: **F44 Medication Therapeutic Class Code**, Table: **f44_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_
+        * dbGap name: **F2DAYS**
+        * dbGap desc: **F2 Days since randomization**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age at screening**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht001019.v6.phv00079850.v6_
+        * dbGap name: **F80VTYP**
+        * dbGap desc: **Visit Type**
+        * dbGap table: **f80_rel1**
+         * PIC-SURE permissible values: Annual visit, Screening
+      * _phs000200.v11.pht001019.v6.phv00079852.v6_
+        * dbGap name: **F80DAYS**
+        * dbGap desc: **F80 Days since randomization/enrollment**
+        * dbGap table: **f80_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht002754.v4.phv00169603.v4_
+        * dbGap name: **F44VTYP**
+        * dbGap desc: **Visit Type**
+        * dbGap table: **f44_rel1**
+         * PIC-SURE permissible values: Annual visit, Screening
+      * _phs000200.v11.pht002754.v4.phv00169605.v4_
+        * dbGap name: **F44DAYS**
+        * dbGap desc: **F44 Days since randomization/enrollment**
+        * dbGap table: **f44_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht002754.v4.phv00169608.v4_
+        * dbGap name: **ADULTDY**
+        * dbGap desc: **F44 Adult duration of medication use (days)**
+        * dbGap table: **f44_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht002754.v4.phv00169611.v4_
+        * dbGap name: **TCCODE**
+        * dbGap desc: **F44 Medication Therapeutic Class Code**
+        * dbGap table: **f44_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -414,13 +514,41 @@
 <a id="bp_diastolic_1-aric"></a>
   * ### blood_pressure/bp_diastolic_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 7 component_study_variables
-      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
-      * _phs000280.v4.pht004192.v2.phv00210284.v1_. dbGap Name: **SBPA15**, Desc: **[Second blood pressure measurement]. 2nd systolic. Q15 [Siting Blood Pressure. SBPA. Visit 1]**, Table: **SBPA02**.
-      * _phs000280.v4.pht004192.v2.phv00210285.v1_. dbGap Name: **SBPA16**, Desc: **[Second blood pressure measurement]. 2nd diastolic. Q16 [Siting Blood Pressure. SBPA. Visit 1]**, Table: **SBPA02**.
-      * _phs000280.v4.pht004192.v2.phv00210286.v1_. dbGap Name: **SBPA17**, Desc: **[Second blood pressure measurement]. 2nd zero reading. Q17 [Siting Blood Pressure. SBPA. Visit 1]**, Table: **SBPA02**.
-      * _phs000280.v4.pht004192.v2.phv00210287.v1_. dbGap Name: **SBPA18**, Desc: **[Third blood pressure measurement]. 3rd systolic. Q18 [Siting Blood Pressure. SBPA. Visit 1]**, Table: **SBPA02**.
-      * _phs000280.v4.pht004192.v2.phv00210288.v1_. dbGap Name: **SBPA19**, Desc: **[Third blood pressure measurement]. 3rd diastolic. Q19 [Siting Blood Pressure. SBPA. Visit 1]**, Table: **SBPA02**.
-      * _phs000280.v4.pht004192.v2.phv00210289.v1_. dbGap Name: **SBPA20**, Desc: **[Third blood pressure measurement]. 3rd zero reading. Q20 [Siting Blood Pressure. SBPA. Visit 1]**, Table: **SBPA02**.
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_
+        * dbGap name: **V1AGE01**
+        * dbGap desc: **Age at visit 1 [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204712_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004192.v2.phv00210284.v1_
+        * dbGap name: **SBPA15**
+        * dbGap desc: **[Second blood pressure measurement]. 2nd systolic. Q15 [Siting Blood Pressure. SBPA. Visit 1]**
+        * dbGap table: **SBPA02**
+         * varId _phv00210284_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004192.v2.phv00210285.v1_
+        * dbGap name: **SBPA16**
+        * dbGap desc: **[Second blood pressure measurement]. 2nd diastolic. Q16 [Siting Blood Pressure. SBPA. Visit 1]**
+        * dbGap table: **SBPA02**
+         * varId _phv00210285_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004192.v2.phv00210286.v1_
+        * dbGap name: **SBPA17**
+        * dbGap desc: **[Second blood pressure measurement]. 2nd zero reading. Q17 [Siting Blood Pressure. SBPA. Visit 1]**
+        * dbGap table: **SBPA02**
+         * varId _phv00210286_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004192.v2.phv00210287.v1_
+        * dbGap name: **SBPA18**
+        * dbGap desc: **[Third blood pressure measurement]. 3rd systolic. Q18 [Siting Blood Pressure. SBPA. Visit 1]**
+        * dbGap table: **SBPA02**
+         * varId _phv00210287_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004192.v2.phv00210288.v1_
+        * dbGap name: **SBPA19**
+        * dbGap desc: **[Third blood pressure measurement]. 3rd diastolic. Q19 [Siting Blood Pressure. SBPA. Visit 1]**
+        * dbGap table: **SBPA02**
+         * varId _phv00210288_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004192.v2.phv00210289.v1_
+        * dbGap name: **SBPA20**
+        * dbGap desc: **[Third blood pressure measurement]. 3rd zero reading. Q20 [Siting Blood Pressure. SBPA. Visit 1]**
+        * dbGap table: **SBPA02**
+         * varId _phv00210289_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -487,15 +615,51 @@
 <a id="bp_diastolic_1-cardia"></a>
   * ### blood_pressure/bp_diastolic_1 -- **CARDIA CARDIA Cohort**:
     * 9 component_study_variables
-      * _phs000285.v3.pht001560.v2.phv00112481.v2_. dbGap Name: **A02R2S**, Desc: **SECOND READING SBP**, Table: **A4F02**.
-      * _phs000285.v3.pht001560.v2.phv00112482.v2_. dbGap Name: **A02R2D**, Desc: **SECOND READING DBP**, Table: **A4F02**.
-      * _phs000285.v3.pht001560.v2.phv00112483.v2_. dbGap Name: **A02RZ2S**, Desc: **RZ2 SBP**, Table: **A4F02**.
-      * _phs000285.v3.pht001560.v2.phv00112484.v2_. dbGap Name: **A02RZ2D**, Desc: **RZ2 DBP**, Table: **A4F02**.
-      * _phs000285.v3.pht001560.v2.phv00112487.v2_. dbGap Name: **A02R3S**, Desc: **THIRD READING SBP**, Table: **A4F02**.
-      * _phs000285.v3.pht001560.v2.phv00112488.v2_. dbGap Name: **A02R3D**, Desc: **THIRD READING DBP**, Table: **A4F02**.
-      * _phs000285.v3.pht001560.v2.phv00112489.v2_. dbGap Name: **A02RZ3S**, Desc: **RZ3 SBP**, Table: **A4F02**.
-      * _phs000285.v3.pht001560.v2.phv00112490.v2_. dbGap Name: **A02RZ3D**, Desc: **RZ3 DBP**, Table: **A4F02**.
-      * _phs000285.v3.pht001645.v2.phv00115119.v2_. dbGap Name: **EXAMAGE**, Desc: **AGE AT EXAM 1 (VERIFIED AT EXAM 2)**, Table: **B2REF**.
+      * _phs000285.v3.pht001560.v2.phv00112481.v2_
+        * dbGap name: **A02R2S**
+        * dbGap desc: **SECOND READING SBP**
+        * dbGap table: **A4F02**
+         * varId _phv00112481_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001560.v2.phv00112482.v2_
+        * dbGap name: **A02R2D**
+        * dbGap desc: **SECOND READING DBP**
+        * dbGap table: **A4F02**
+         * varId _phv00112482_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001560.v2.phv00112483.v2_
+        * dbGap name: **A02RZ2S**
+        * dbGap desc: **RZ2 SBP**
+        * dbGap table: **A4F02**
+         * varId _phv00112483_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001560.v2.phv00112484.v2_
+        * dbGap name: **A02RZ2D**
+        * dbGap desc: **RZ2 DBP**
+        * dbGap table: **A4F02**
+         * varId _phv00112484_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001560.v2.phv00112487.v2_
+        * dbGap name: **A02R3S**
+        * dbGap desc: **THIRD READING SBP**
+        * dbGap table: **A4F02**
+         * varId _phv00112487_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001560.v2.phv00112488.v2_
+        * dbGap name: **A02R3D**
+        * dbGap desc: **THIRD READING DBP**
+        * dbGap table: **A4F02**
+         * varId _phv00112488_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001560.v2.phv00112489.v2_
+        * dbGap name: **A02RZ3S**
+        * dbGap desc: **RZ3 SBP**
+        * dbGap table: **A4F02**
+         * varId _phv00112489_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001560.v2.phv00112490.v2_
+        * dbGap name: **A02RZ3D**
+        * dbGap desc: **RZ3 DBP**
+        * dbGap table: **A4F02**
+         * varId _phv00112490_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001645.v2.phv00115119.v2_
+        * dbGap name: **EXAMAGE**
+        * dbGap desc: **AGE AT EXAM 1 (VERIFIED AT EXAM 2)**
+        * dbGap table: **B2REF**
+         * varId _phv00115119_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -546,9 +710,21 @@
 <a id="bp_diastolic_1-chs"></a>
   * ### blood_pressure/bp_diastolic_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
     * 3 component_study_variables
-      * _phs000287.v6.pht001452.v1.phv00100435.v1_. dbGap Name: **AVZMSYS**, Desc: **AVE ZERO MUD SYSTOL (mm Hg)**, Table: **BASEBOTH**.
-      * _phs000287.v6.pht001452.v1.phv00100436.v1_. dbGap Name: **AVZMDIA**, Desc: **AVE ZERO MUD DIASTOL-adj (mm Hg)**, Table: **BASEBOTH**.
-      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100435.v1_
+        * dbGap name: **AVZMSYS**
+        * dbGap desc: **AVE ZERO MUD SYSTOL (mm Hg)**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000287.v6.pht001452.v1.phv00100436.v1_
+        * dbGap name: **AVZMDIA**
+        * dbGap desc: **AVE ZERO MUD DIASTOL-adj (mm Hg)**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_
+        * dbGap name: **AGEBL**
+        * dbGap desc: **CALCULATED AGE AT BASELINE**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -577,9 +753,15 @@
 <a id="bp_diastolic_1-copdgene"></a>
   * ### blood_pressure/bp_diastolic_1 -- **COPDGene **:
     * 3 component_study_variables
-      * _phs000179.v5.pht002239.v4.phv00159583.v4_. No dbGap metadata available.
-      * _phs000179.v5.pht002239.v4.phv00159590.v4_. No dbGap metadata available.
-      * _phs000179.v5.pht002239.v4.phv00159836.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159583.v4_
+        * No dbGap metadata available
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000179.v5.pht002239.v4.phv00159590.v4_
+        * No dbGap metadata available
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000179.v5.pht002239.v4.phv00159836.v4_
+        * No dbGap metadata available
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -610,9 +792,21 @@
 <a id="bp_diastolic_1-hchs_sol"></a>
   * ### blood_pressure/bp_diastolic_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 3 component_study_variables
-      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00226390.v1_. dbGap Name: **SBPA5**, Desc: **Average Systolic (SBPA5)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00226391.v1_. dbGap Name: **SBPA6**, Desc: **Average Diastolic (SBPA6)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00226390.v1_
+        * dbGap name: **SBPA5**
+        * dbGap desc: **Average Systolic (SBPA5)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00226391.v1_
+        * dbGap name: **SBPA6**
+        * dbGap desc: **Average Diastolic (SBPA6)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -632,13 +826,39 @@
 <a id="bp_diastolic_1-jhs"></a>
   * ### blood_pressure/bp_diastolic_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 7 component_study_variables
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
-      * _phs000286.v5.pht001974.v1.phv00128370.v1_. dbGap Name: **SBPA13**, Desc: **Q13. D. First blood pressure measurement. Systolic (first BP) [Visit 1] [Sitting Blood Pressure Form, SBP]**, Table: **sbpa**.
-      * _phs000286.v5.pht001974.v1.phv00128371.v1_. dbGap Name: **SBPA14**, Desc: **Q14. D. First blood pressure measurement. Diastolic (first BP) [Visit 1] [Sitting Blood Pressure Form, SBP]**, Table: **sbpa**.
-      * _phs000286.v5.pht001974.v1.phv00128372.v1_. dbGap Name: **SBPA15**, Desc: **Q15. D. First blood pressure measurement. Zero reading (first BP) [Visit 1] [Sitting Blood Pressure Form, SBP]**, Table: **sbpa**.
-      * _phs000286.v5.pht001974.v1.phv00128373.v1_. dbGap Name: **SBPA16**, Desc: **Q16. E. Second blood pressure measurement. Systolic (second BP) [Visit 1] [Sitting Blood Pressure Form, SBP]**, Table: **sbpa**.
-      * _phs000286.v5.pht001974.v1.phv00128374.v1_. dbGap Name: **SBPA17**, Desc: **Q17. E. Second blood pressure measurement. Diastolic (second BP) [Visit 1] [Sitting Blood Pressure Form, SBP]**, Table: **sbpa**.
-      * _phs000286.v5.pht001974.v1.phv00128375.v1_. dbGap Name: **SBPA18**, Desc: **Q18. E. Second blood pressure measurement. Zero Reading (second BP) [Visit 1] [Sitting Blood Pressure Form, SBP]**, Table: **sbpa**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001974.v1.phv00128370.v1_
+        * dbGap name: **SBPA13**
+        * dbGap desc: **Q13. D. First blood pressure measurement. Systolic (first BP) [Visit 1] [Sitting Blood Pressure Form, SBP]**
+        * dbGap table: **sbpa**
+         * varId _phv00128370_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001974.v1.phv00128371.v1_
+        * dbGap name: **SBPA14**
+        * dbGap desc: **Q14. D. First blood pressure measurement. Diastolic (first BP) [Visit 1] [Sitting Blood Pressure Form, SBP]**
+        * dbGap table: **sbpa**
+         * varId _phv00128371_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001974.v1.phv00128372.v1_
+        * dbGap name: **SBPA15**
+        * dbGap desc: **Q15. D. First blood pressure measurement. Zero reading (first BP) [Visit 1] [Sitting Blood Pressure Form, SBP]**
+        * dbGap table: **sbpa**
+         * varId _phv00128372_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001974.v1.phv00128373.v1_
+        * dbGap name: **SBPA16**
+        * dbGap desc: **Q16. E. Second blood pressure measurement. Systolic (second BP) [Visit 1] [Sitting Blood Pressure Form, SBP]**
+        * dbGap table: **sbpa**
+         * varId _phv00128373_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001974.v1.phv00128374.v1_
+        * dbGap name: **SBPA17**
+        * dbGap desc: **Q17. E. Second blood pressure measurement. Diastolic (second BP) [Visit 1] [Sitting Blood Pressure Form, SBP]**
+        * dbGap table: **sbpa**
+         * varId _phv00128374_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001974.v1.phv00128375.v1_
+        * dbGap name: **SBPA18**
+        * dbGap desc: **Q18. E. Second blood pressure measurement. Zero Reading (second BP) [Visit 1] [Sitting Blood Pressure Form, SBP]**
+        * dbGap table: **sbpa**
+         * varId _phv00128375_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -687,21 +907,81 @@
 <a id="bp_diastolic_1-mesa"></a>
   * ### blood_pressure/bp_diastolic_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 15 component_study_variables
-      * _phs000209.v13.pht001111.v4.phv00082639.v2_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_AirNRExamMain**.
-      * _phs000209.v13.pht001111.v4.phv00083403.v1_. dbGap Name: **s2bp1**, Desc: **SEATED BP: SYSTOLIC 2ND READING (mmHg)**, Table: **MESA_AirNRExamMain**.
-      * _phs000209.v13.pht001111.v4.phv00083404.v1_. dbGap Name: **d2bp1**, Desc: **SEATED BP: DIASTOLIC 2ND READING (mmHg)**, Table: **MESA_AirNRExamMain**.
-      * _phs000209.v13.pht001111.v4.phv00083406.v1_. dbGap Name: **s3bp1**, Desc: **SEATED BP: SYSTOLIC 3RD READING (mmHg)**, Table: **MESA_AirNRExamMain**.
-      * _phs000209.v13.pht001111.v4.phv00083407.v1_. dbGap Name: **d3bp1**, Desc: **SEATED BP: DIASTOLIC 3RD READING (mmHg)**, Table: **MESA_AirNRExamMain**.
-      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
-      * _phs000209.v13.pht001116.v10.phv00085735.v2_. dbGap Name: **s2bp1**, Desc: **SEATED BP: SYSTOLIC 2ND READING (mmHg)**, Table: **MESA_Exam1Main**.
-      * _phs000209.v13.pht001116.v10.phv00085736.v2_. dbGap Name: **d2bp1**, Desc: **SEATED BP: DIASTOLIC 2ND READING (mmHg)**, Table: **MESA_Exam1Main**.
-      * _phs000209.v13.pht001116.v10.phv00085737.v2_. dbGap Name: **s3bp1**, Desc: **SEATED BP: SYSTOLIC 3RD READING (mmHg)**, Table: **MESA_Exam1Main**.
-      * _phs000209.v13.pht001116.v10.phv00085738.v2_. dbGap Name: **d3bp1**, Desc: **SEATED BP: DIASTOLIC 3RD READING (mmHg)**, Table: **MESA_Exam1Main**.
-      * _phs000209.v13.pht001121.v3.phv00087071.v1_. dbGap Name: **agefc**, Desc: **AGE**, Table: **MESA_FamilyExamMain**.
-      * _phs000209.v13.pht001121.v3.phv00087509.v1_. dbGap Name: **s2bpf**, Desc: **2ND READING: SEATED SYSTOLIC BP (mmHg)**, Table: **MESA_FamilyExamMain**.
-      * _phs000209.v13.pht001121.v3.phv00087510.v1_. dbGap Name: **d2bpf**, Desc: **2ND READING: SEATED DIASTOLIC BP (mmHg)**, Table: **MESA_FamilyExamMain**.
-      * _phs000209.v13.pht001121.v3.phv00087512.v1_. dbGap Name: **s3bpf**, Desc: **3RD READING: SEATED SYSTOLIC BP (mmHg)**, Table: **MESA_FamilyExamMain**.
-      * _phs000209.v13.pht001121.v3.phv00087513.v1_. dbGap Name: **d3bpf**, Desc: **3RD READING: SEATED DIASTOLIC BP (mmHg)**, Table: **MESA_FamilyExamMain**.
+      * _phs000209.v13.pht001111.v4.phv00082639.v2_
+        * dbGap name: **age1c**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_AirNRExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001111.v4.phv00083403.v1_
+        * dbGap name: **s2bp1**
+        * dbGap desc: **SEATED BP: SYSTOLIC 2ND READING (mmHg)**
+        * dbGap table: **MESA_AirNRExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001111.v4.phv00083404.v1_
+        * dbGap name: **d2bp1**
+        * dbGap desc: **SEATED BP: DIASTOLIC 2ND READING (mmHg)**
+        * dbGap table: **MESA_AirNRExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001111.v4.phv00083406.v1_
+        * dbGap name: **s3bp1**
+        * dbGap desc: **SEATED BP: SYSTOLIC 3RD READING (mmHg)**
+        * dbGap table: **MESA_AirNRExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001111.v4.phv00083407.v1_
+        * dbGap name: **d3bp1**
+        * dbGap desc: **SEATED BP: DIASTOLIC 3RD READING (mmHg)**
+        * dbGap table: **MESA_AirNRExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_
+        * dbGap name: **age1c**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_Exam1Main**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001116.v10.phv00085735.v2_
+        * dbGap name: **s2bp1**
+        * dbGap desc: **SEATED BP: SYSTOLIC 2ND READING (mmHg)**
+        * dbGap table: **MESA_Exam1Main**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001116.v10.phv00085736.v2_
+        * dbGap name: **d2bp1**
+        * dbGap desc: **SEATED BP: DIASTOLIC 2ND READING (mmHg)**
+        * dbGap table: **MESA_Exam1Main**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001116.v10.phv00085737.v2_
+        * dbGap name: **s3bp1**
+        * dbGap desc: **SEATED BP: SYSTOLIC 3RD READING (mmHg)**
+        * dbGap table: **MESA_Exam1Main**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001116.v10.phv00085738.v2_
+        * dbGap name: **d3bp1**
+        * dbGap desc: **SEATED BP: DIASTOLIC 3RD READING (mmHg)**
+        * dbGap table: **MESA_Exam1Main**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001121.v3.phv00087071.v1_
+        * dbGap name: **agefc**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_FamilyExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001121.v3.phv00087509.v1_
+        * dbGap name: **s2bpf**
+        * dbGap desc: **2ND READING: SEATED SYSTOLIC BP (mmHg)**
+        * dbGap table: **MESA_FamilyExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001121.v3.phv00087510.v1_
+        * dbGap name: **d2bpf**
+        * dbGap desc: **2ND READING: SEATED DIASTOLIC BP (mmHg)**
+        * dbGap table: **MESA_FamilyExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001121.v3.phv00087512.v1_
+        * dbGap name: **s3bpf**
+        * dbGap desc: **3RD READING: SEATED SYSTOLIC BP (mmHg)**
+        * dbGap table: **MESA_FamilyExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001121.v3.phv00087513.v1_
+        * dbGap name: **d3bpf**
+        * dbGap desc: **3RD READING: SEATED DIASTOLIC BP (mmHg)**
+        * dbGap table: **MESA_FamilyExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -753,14 +1033,46 @@
 <a id="bp_diastolic_1-whi"></a>
   * ### blood_pressure/bp_diastolic_1 -- **WHI Women's Health Initiative**:
     * 8 component_study_variables
-      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
-      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
-      * _phs000200.v11.pht001019.v6.phv00079850.v6_. dbGap Name: **F80VTYP**, Desc: **Visit Type**, Table: **f80_rel1**.
-      * _phs000200.v11.pht001019.v6.phv00079852.v6_. dbGap Name: **F80DAYS**, Desc: **F80 Days since randomization/enrollment**, Table: **f80_rel1**.
-      * _phs000200.v11.pht001019.v6.phv00079854.v6_. dbGap Name: **SYSTBP1**, Desc: **Systolic blood pressure (1st reading)**, Table: **f80_rel1**.
-      * _phs000200.v11.pht001019.v6.phv00079855.v6_. dbGap Name: **DIASBP1**, Desc: **Diastolic blood pressure (1st reading)**, Table: **f80_rel1**.
-      * _phs000200.v11.pht001019.v6.phv00079856.v6_. dbGap Name: **SYSTBP2**, Desc: **Systolic blood pressure (2nd reading)**, Table: **f80_rel1**.
-      * _phs000200.v11.pht001019.v6.phv00079857.v6_. dbGap Name: **DIASBP2**, Desc: **Diastolic blood pressure (2nd reading)**, Table: **f80_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_
+        * dbGap name: **F2DAYS**
+        * dbGap desc: **F2 Days since randomization**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age at screening**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht001019.v6.phv00079850.v6_
+        * dbGap name: **F80VTYP**
+        * dbGap desc: **Visit Type**
+        * dbGap table: **f80_rel1**
+         * PIC-SURE permissible values: Annual visit, Screening
+      * _phs000200.v11.pht001019.v6.phv00079852.v6_
+        * dbGap name: **F80DAYS**
+        * dbGap desc: **F80 Days since randomization/enrollment**
+        * dbGap table: **f80_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht001019.v6.phv00079854.v6_
+        * dbGap name: **SYSTBP1**
+        * dbGap desc: **Systolic blood pressure (1st reading)**
+        * dbGap table: **f80_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht001019.v6.phv00079855.v6_
+        * dbGap name: **DIASBP1**
+        * dbGap desc: **Diastolic blood pressure (1st reading)**
+        * dbGap table: **f80_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht001019.v6.phv00079856.v6_
+        * dbGap name: **SYSTBP2**
+        * dbGap desc: **Systolic blood pressure (2nd reading)**
+        * dbGap table: **f80_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht001019.v6.phv00079857.v6_
+        * dbGap name: **DIASBP2**
+        * dbGap desc: **Diastolic blood pressure (2nd reading)**
+        * dbGap table: **f80_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -858,13 +1170,41 @@
 <a id="bp_systolic_1-aric"></a>
   * ### blood_pressure/bp_systolic_1 -- **ARIC Atherosclerosis Risk in Communities (ARIC) Cohort**:
     * 7 component_study_variables
-      * _phs000280.v4.pht004063.v2.phv00204712.v1_. dbGap Name: **V1AGE01**, Desc: **Age at visit 1 [Cohort. Visit 1]**, Table: **DERIVE13**.
-      * _phs000280.v4.pht004192.v2.phv00210284.v1_. dbGap Name: **SBPA15**, Desc: **[Second blood pressure measurement]. 2nd systolic. Q15 [Siting Blood Pressure. SBPA. Visit 1]**, Table: **SBPA02**.
-      * _phs000280.v4.pht004192.v2.phv00210285.v1_. dbGap Name: **SBPA16**, Desc: **[Second blood pressure measurement]. 2nd diastolic. Q16 [Siting Blood Pressure. SBPA. Visit 1]**, Table: **SBPA02**.
-      * _phs000280.v4.pht004192.v2.phv00210286.v1_. dbGap Name: **SBPA17**, Desc: **[Second blood pressure measurement]. 2nd zero reading. Q17 [Siting Blood Pressure. SBPA. Visit 1]**, Table: **SBPA02**.
-      * _phs000280.v4.pht004192.v2.phv00210287.v1_. dbGap Name: **SBPA18**, Desc: **[Third blood pressure measurement]. 3rd systolic. Q18 [Siting Blood Pressure. SBPA. Visit 1]**, Table: **SBPA02**.
-      * _phs000280.v4.pht004192.v2.phv00210288.v1_. dbGap Name: **SBPA19**, Desc: **[Third blood pressure measurement]. 3rd diastolic. Q19 [Siting Blood Pressure. SBPA. Visit 1]**, Table: **SBPA02**.
-      * _phs000280.v4.pht004192.v2.phv00210289.v1_. dbGap Name: **SBPA20**, Desc: **[Third blood pressure measurement]. 3rd zero reading. Q20 [Siting Blood Pressure. SBPA. Visit 1]**, Table: **SBPA02**.
+      * _phs000280.v4.pht004063.v2.phv00204712.v1_
+        * dbGap name: **V1AGE01**
+        * dbGap desc: **Age at visit 1 [Cohort. Visit 1]**
+        * dbGap table: **DERIVE13**
+         * varId _phv00204712_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004192.v2.phv00210284.v1_
+        * dbGap name: **SBPA15**
+        * dbGap desc: **[Second blood pressure measurement]. 2nd systolic. Q15 [Siting Blood Pressure. SBPA. Visit 1]**
+        * dbGap table: **SBPA02**
+         * varId _phv00210284_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004192.v2.phv00210285.v1_
+        * dbGap name: **SBPA16**
+        * dbGap desc: **[Second blood pressure measurement]. 2nd diastolic. Q16 [Siting Blood Pressure. SBPA. Visit 1]**
+        * dbGap table: **SBPA02**
+         * varId _phv00210285_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004192.v2.phv00210286.v1_
+        * dbGap name: **SBPA17**
+        * dbGap desc: **[Second blood pressure measurement]. 2nd zero reading. Q17 [Siting Blood Pressure. SBPA. Visit 1]**
+        * dbGap table: **SBPA02**
+         * varId _phv00210286_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004192.v2.phv00210287.v1_
+        * dbGap name: **SBPA18**
+        * dbGap desc: **[Third blood pressure measurement]. 3rd systolic. Q18 [Siting Blood Pressure. SBPA. Visit 1]**
+        * dbGap table: **SBPA02**
+         * varId _phv00210287_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004192.v2.phv00210288.v1_
+        * dbGap name: **SBPA19**
+        * dbGap desc: **[Third blood pressure measurement]. 3rd diastolic. Q19 [Siting Blood Pressure. SBPA. Visit 1]**
+        * dbGap table: **SBPA02**
+         * varId _phv00210288_ not found in PIC-SURE data dictionary
+      * _phs000280.v4.pht004192.v2.phv00210289.v1_
+        * dbGap name: **SBPA20**
+        * dbGap desc: **[Third blood pressure measurement]. 3rd zero reading. Q20 [Siting Blood Pressure. SBPA. Visit 1]**
+        * dbGap table: **SBPA02**
+         * varId _phv00210289_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -931,15 +1271,51 @@
 <a id="bp_systolic_1-cardia"></a>
   * ### blood_pressure/bp_systolic_1 -- **CARDIA CARDIA Cohort**:
     * 9 component_study_variables
-      * _phs000285.v3.pht001560.v2.phv00112481.v2_. dbGap Name: **A02R2S**, Desc: **SECOND READING SBP**, Table: **A4F02**.
-      * _phs000285.v3.pht001560.v2.phv00112482.v2_. dbGap Name: **A02R2D**, Desc: **SECOND READING DBP**, Table: **A4F02**.
-      * _phs000285.v3.pht001560.v2.phv00112483.v2_. dbGap Name: **A02RZ2S**, Desc: **RZ2 SBP**, Table: **A4F02**.
-      * _phs000285.v3.pht001560.v2.phv00112484.v2_. dbGap Name: **A02RZ2D**, Desc: **RZ2 DBP**, Table: **A4F02**.
-      * _phs000285.v3.pht001560.v2.phv00112487.v2_. dbGap Name: **A02R3S**, Desc: **THIRD READING SBP**, Table: **A4F02**.
-      * _phs000285.v3.pht001560.v2.phv00112488.v2_. dbGap Name: **A02R3D**, Desc: **THIRD READING DBP**, Table: **A4F02**.
-      * _phs000285.v3.pht001560.v2.phv00112489.v2_. dbGap Name: **A02RZ3S**, Desc: **RZ3 SBP**, Table: **A4F02**.
-      * _phs000285.v3.pht001560.v2.phv00112490.v2_. dbGap Name: **A02RZ3D**, Desc: **RZ3 DBP**, Table: **A4F02**.
-      * _phs000285.v3.pht001645.v2.phv00115119.v2_. dbGap Name: **EXAMAGE**, Desc: **AGE AT EXAM 1 (VERIFIED AT EXAM 2)**, Table: **B2REF**.
+      * _phs000285.v3.pht001560.v2.phv00112481.v2_
+        * dbGap name: **A02R2S**
+        * dbGap desc: **SECOND READING SBP**
+        * dbGap table: **A4F02**
+         * varId _phv00112481_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001560.v2.phv00112482.v2_
+        * dbGap name: **A02R2D**
+        * dbGap desc: **SECOND READING DBP**
+        * dbGap table: **A4F02**
+         * varId _phv00112482_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001560.v2.phv00112483.v2_
+        * dbGap name: **A02RZ2S**
+        * dbGap desc: **RZ2 SBP**
+        * dbGap table: **A4F02**
+         * varId _phv00112483_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001560.v2.phv00112484.v2_
+        * dbGap name: **A02RZ2D**
+        * dbGap desc: **RZ2 DBP**
+        * dbGap table: **A4F02**
+         * varId _phv00112484_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001560.v2.phv00112487.v2_
+        * dbGap name: **A02R3S**
+        * dbGap desc: **THIRD READING SBP**
+        * dbGap table: **A4F02**
+         * varId _phv00112487_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001560.v2.phv00112488.v2_
+        * dbGap name: **A02R3D**
+        * dbGap desc: **THIRD READING DBP**
+        * dbGap table: **A4F02**
+         * varId _phv00112488_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001560.v2.phv00112489.v2_
+        * dbGap name: **A02RZ3S**
+        * dbGap desc: **RZ3 SBP**
+        * dbGap table: **A4F02**
+         * varId _phv00112489_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001560.v2.phv00112490.v2_
+        * dbGap name: **A02RZ3D**
+        * dbGap desc: **RZ3 DBP**
+        * dbGap table: **A4F02**
+         * varId _phv00112490_ not found in PIC-SURE data dictionary
+      * _phs000285.v3.pht001645.v2.phv00115119.v2_
+        * dbGap name: **EXAMAGE**
+        * dbGap desc: **AGE AT EXAM 1 (VERIFIED AT EXAM 2)**
+        * dbGap table: **B2REF**
+         * varId _phv00115119_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -990,9 +1366,21 @@
 <a id="bp_systolic_1-chs"></a>
   * ### blood_pressure/bp_systolic_1 -- **CHS Cardiovascular Health Study (CHS) Cohort: an NHLBI-funded observational study of risk factors for cardiovascular disease in adults 65 years or older**:
     * 3 component_study_variables
-      * _phs000287.v6.pht001452.v1.phv00100435.v1_. dbGap Name: **AVZMSYS**, Desc: **AVE ZERO MUD SYSTOL (mm Hg)**, Table: **BASEBOTH**.
-      * _phs000287.v6.pht001452.v1.phv00100436.v1_. dbGap Name: **AVZMDIA**, Desc: **AVE ZERO MUD DIASTOL-adj (mm Hg)**, Table: **BASEBOTH**.
-      * _phs000287.v6.pht001452.v1.phv00100487.v1_. dbGap Name: **AGEBL**, Desc: **CALCULATED AGE AT BASELINE**, Table: **BASEBOTH**.
+      * _phs000287.v6.pht001452.v1.phv00100435.v1_
+        * dbGap name: **AVZMSYS**
+        * dbGap desc: **AVE ZERO MUD SYSTOL (mm Hg)**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000287.v6.pht001452.v1.phv00100436.v1_
+        * dbGap name: **AVZMDIA**
+        * dbGap desc: **AVE ZERO MUD DIASTOL-adj (mm Hg)**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000287.v6.pht001452.v1.phv00100487.v1_
+        * dbGap name: **AGEBL**
+        * dbGap desc: **CALCULATED AGE AT BASELINE**
+        * dbGap table: **BASEBOTH**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1021,9 +1409,15 @@
 <a id="bp_systolic_1-copdgene"></a>
   * ### blood_pressure/bp_systolic_1 -- **COPDGene **:
     * 3 component_study_variables
-      * _phs000179.v5.pht002239.v4.phv00159583.v4_. No dbGap metadata available.
-      * _phs000179.v5.pht002239.v4.phv00159590.v4_. No dbGap metadata available.
-      * _phs000179.v5.pht002239.v4.phv00159836.v4_. No dbGap metadata available.
+      * _phs000179.v5.pht002239.v4.phv00159583.v4_
+        * No dbGap metadata available
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000179.v5.pht002239.v4.phv00159590.v4_
+        * No dbGap metadata available
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000179.v5.pht002239.v4.phv00159836.v4_
+        * No dbGap metadata available
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1054,9 +1448,21 @@
 <a id="bp_systolic_1-hchs_sol"></a>
   * ### blood_pressure/bp_systolic_1 -- **HCHS_SOL Hispanic Community Health Study /Study of Latinos (HCHS/SOL)**:
     * 3 component_study_variables
-      * _phs000810.v1.pht004715.v1.phv00226251.v1_. dbGap Name: **AGE**, Desc: **Age**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00226390.v1_. dbGap Name: **SBPA5**, Desc: **Average Systolic (SBPA5)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
-      * _phs000810.v1.pht004715.v1.phv00226391.v1_. dbGap Name: **SBPA6**, Desc: **Average Diastolic (SBPA6)**, Table: **HCHS_SOL_Cohort_Subject_Phenotypes**.
+      * _phs000810.v1.pht004715.v1.phv00226251.v1_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00226390.v1_
+        * dbGap name: **SBPA5**
+        * dbGap desc: **Average Systolic (SBPA5)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000810.v1.pht004715.v1.phv00226391.v1_
+        * dbGap name: **SBPA6**
+        * dbGap desc: **Average Diastolic (SBPA6)**
+        * dbGap table: **HCHS_SOL_Cohort_Subject_Phenotypes**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1076,13 +1482,39 @@
 <a id="bp_systolic_1-jhs"></a>
   * ### blood_pressure/bp_systolic_1 -- **JHS Jackson Heart Study (JHS) Cohort**:
     * 7 component_study_variables
-      * _phs000286.v5.pht001949.v1.phv00126009.v1_. No dbGap metadata available.
-      * _phs000286.v5.pht001974.v1.phv00128370.v1_. dbGap Name: **SBPA13**, Desc: **Q13. D. First blood pressure measurement. Systolic (first BP) [Visit 1] [Sitting Blood Pressure Form, SBP]**, Table: **sbpa**.
-      * _phs000286.v5.pht001974.v1.phv00128371.v1_. dbGap Name: **SBPA14**, Desc: **Q14. D. First blood pressure measurement. Diastolic (first BP) [Visit 1] [Sitting Blood Pressure Form, SBP]**, Table: **sbpa**.
-      * _phs000286.v5.pht001974.v1.phv00128372.v1_. dbGap Name: **SBPA15**, Desc: **Q15. D. First blood pressure measurement. Zero reading (first BP) [Visit 1] [Sitting Blood Pressure Form, SBP]**, Table: **sbpa**.
-      * _phs000286.v5.pht001974.v1.phv00128373.v1_. dbGap Name: **SBPA16**, Desc: **Q16. E. Second blood pressure measurement. Systolic (second BP) [Visit 1] [Sitting Blood Pressure Form, SBP]**, Table: **sbpa**.
-      * _phs000286.v5.pht001974.v1.phv00128374.v1_. dbGap Name: **SBPA17**, Desc: **Q17. E. Second blood pressure measurement. Diastolic (second BP) [Visit 1] [Sitting Blood Pressure Form, SBP]**, Table: **sbpa**.
-      * _phs000286.v5.pht001974.v1.phv00128375.v1_. dbGap Name: **SBPA18**, Desc: **Q18. E. Second blood pressure measurement. Zero Reading (second BP) [Visit 1] [Sitting Blood Pressure Form, SBP]**, Table: **sbpa**.
+      * _phs000286.v5.pht001949.v1.phv00126009.v1_
+        * No dbGap metadata available
+         * varId _phv00126009_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001974.v1.phv00128370.v1_
+        * dbGap name: **SBPA13**
+        * dbGap desc: **Q13. D. First blood pressure measurement. Systolic (first BP) [Visit 1] [Sitting Blood Pressure Form, SBP]**
+        * dbGap table: **sbpa**
+         * varId _phv00128370_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001974.v1.phv00128371.v1_
+        * dbGap name: **SBPA14**
+        * dbGap desc: **Q14. D. First blood pressure measurement. Diastolic (first BP) [Visit 1] [Sitting Blood Pressure Form, SBP]**
+        * dbGap table: **sbpa**
+         * varId _phv00128371_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001974.v1.phv00128372.v1_
+        * dbGap name: **SBPA15**
+        * dbGap desc: **Q15. D. First blood pressure measurement. Zero reading (first BP) [Visit 1] [Sitting Blood Pressure Form, SBP]**
+        * dbGap table: **sbpa**
+         * varId _phv00128372_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001974.v1.phv00128373.v1_
+        * dbGap name: **SBPA16**
+        * dbGap desc: **Q16. E. Second blood pressure measurement. Systolic (second BP) [Visit 1] [Sitting Blood Pressure Form, SBP]**
+        * dbGap table: **sbpa**
+         * varId _phv00128373_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001974.v1.phv00128374.v1_
+        * dbGap name: **SBPA17**
+        * dbGap desc: **Q17. E. Second blood pressure measurement. Diastolic (second BP) [Visit 1] [Sitting Blood Pressure Form, SBP]**
+        * dbGap table: **sbpa**
+         * varId _phv00128374_ not found in PIC-SURE data dictionary
+      * _phs000286.v5.pht001974.v1.phv00128375.v1_
+        * dbGap name: **SBPA18**
+        * dbGap desc: **Q18. E. Second blood pressure measurement. Zero Reading (second BP) [Visit 1] [Sitting Blood Pressure Form, SBP]**
+        * dbGap table: **sbpa**
+         * varId _phv00128375_ not found in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1131,21 +1563,81 @@
 <a id="bp_systolic_1-mesa"></a>
   * ### blood_pressure/bp_systolic_1 -- **MESA Multi-Ethnic Study of Atherosclerosis (MESA) Cohort**:
     * 15 component_study_variables
-      * _phs000209.v13.pht001111.v4.phv00082639.v2_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_AirNRExamMain**.
-      * _phs000209.v13.pht001111.v4.phv00083403.v1_. dbGap Name: **s2bp1**, Desc: **SEATED BP: SYSTOLIC 2ND READING (mmHg)**, Table: **MESA_AirNRExamMain**.
-      * _phs000209.v13.pht001111.v4.phv00083404.v1_. dbGap Name: **d2bp1**, Desc: **SEATED BP: DIASTOLIC 2ND READING (mmHg)**, Table: **MESA_AirNRExamMain**.
-      * _phs000209.v13.pht001111.v4.phv00083406.v1_. dbGap Name: **s3bp1**, Desc: **SEATED BP: SYSTOLIC 3RD READING (mmHg)**, Table: **MESA_AirNRExamMain**.
-      * _phs000209.v13.pht001111.v4.phv00083407.v1_. dbGap Name: **d3bp1**, Desc: **SEATED BP: DIASTOLIC 3RD READING (mmHg)**, Table: **MESA_AirNRExamMain**.
-      * _phs000209.v13.pht001116.v10.phv00084442.v3_. dbGap Name: **age1c**, Desc: **AGE**, Table: **MESA_Exam1Main**.
-      * _phs000209.v13.pht001116.v10.phv00085735.v2_. dbGap Name: **s2bp1**, Desc: **SEATED BP: SYSTOLIC 2ND READING (mmHg)**, Table: **MESA_Exam1Main**.
-      * _phs000209.v13.pht001116.v10.phv00085736.v2_. dbGap Name: **d2bp1**, Desc: **SEATED BP: DIASTOLIC 2ND READING (mmHg)**, Table: **MESA_Exam1Main**.
-      * _phs000209.v13.pht001116.v10.phv00085737.v2_. dbGap Name: **s3bp1**, Desc: **SEATED BP: SYSTOLIC 3RD READING (mmHg)**, Table: **MESA_Exam1Main**.
-      * _phs000209.v13.pht001116.v10.phv00085738.v2_. dbGap Name: **d3bp1**, Desc: **SEATED BP: DIASTOLIC 3RD READING (mmHg)**, Table: **MESA_Exam1Main**.
-      * _phs000209.v13.pht001121.v3.phv00087071.v1_. dbGap Name: **agefc**, Desc: **AGE**, Table: **MESA_FamilyExamMain**.
-      * _phs000209.v13.pht001121.v3.phv00087509.v1_. dbGap Name: **s2bpf**, Desc: **2ND READING: SEATED SYSTOLIC BP (mmHg)**, Table: **MESA_FamilyExamMain**.
-      * _phs000209.v13.pht001121.v3.phv00087510.v1_. dbGap Name: **d2bpf**, Desc: **2ND READING: SEATED DIASTOLIC BP (mmHg)**, Table: **MESA_FamilyExamMain**.
-      * _phs000209.v13.pht001121.v3.phv00087512.v1_. dbGap Name: **s3bpf**, Desc: **3RD READING: SEATED SYSTOLIC BP (mmHg)**, Table: **MESA_FamilyExamMain**.
-      * _phs000209.v13.pht001121.v3.phv00087513.v1_. dbGap Name: **d3bpf**, Desc: **3RD READING: SEATED DIASTOLIC BP (mmHg)**, Table: **MESA_FamilyExamMain**.
+      * _phs000209.v13.pht001111.v4.phv00082639.v2_
+        * dbGap name: **age1c**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_AirNRExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001111.v4.phv00083403.v1_
+        * dbGap name: **s2bp1**
+        * dbGap desc: **SEATED BP: SYSTOLIC 2ND READING (mmHg)**
+        * dbGap table: **MESA_AirNRExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001111.v4.phv00083404.v1_
+        * dbGap name: **d2bp1**
+        * dbGap desc: **SEATED BP: DIASTOLIC 2ND READING (mmHg)**
+        * dbGap table: **MESA_AirNRExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001111.v4.phv00083406.v1_
+        * dbGap name: **s3bp1**
+        * dbGap desc: **SEATED BP: SYSTOLIC 3RD READING (mmHg)**
+        * dbGap table: **MESA_AirNRExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001111.v4.phv00083407.v1_
+        * dbGap name: **d3bp1**
+        * dbGap desc: **SEATED BP: DIASTOLIC 3RD READING (mmHg)**
+        * dbGap table: **MESA_AirNRExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001116.v10.phv00084442.v3_
+        * dbGap name: **age1c**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_Exam1Main**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001116.v10.phv00085735.v2_
+        * dbGap name: **s2bp1**
+        * dbGap desc: **SEATED BP: SYSTOLIC 2ND READING (mmHg)**
+        * dbGap table: **MESA_Exam1Main**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001116.v10.phv00085736.v2_
+        * dbGap name: **d2bp1**
+        * dbGap desc: **SEATED BP: DIASTOLIC 2ND READING (mmHg)**
+        * dbGap table: **MESA_Exam1Main**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001116.v10.phv00085737.v2_
+        * dbGap name: **s3bp1**
+        * dbGap desc: **SEATED BP: SYSTOLIC 3RD READING (mmHg)**
+        * dbGap table: **MESA_Exam1Main**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001116.v10.phv00085738.v2_
+        * dbGap name: **d3bp1**
+        * dbGap desc: **SEATED BP: DIASTOLIC 3RD READING (mmHg)**
+        * dbGap table: **MESA_Exam1Main**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001121.v3.phv00087071.v1_
+        * dbGap name: **agefc**
+        * dbGap desc: **AGE**
+        * dbGap table: **MESA_FamilyExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001121.v3.phv00087509.v1_
+        * dbGap name: **s2bpf**
+        * dbGap desc: **2ND READING: SEATED SYSTOLIC BP (mmHg)**
+        * dbGap table: **MESA_FamilyExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001121.v3.phv00087510.v1_
+        * dbGap name: **d2bpf**
+        * dbGap desc: **2ND READING: SEATED DIASTOLIC BP (mmHg)**
+        * dbGap table: **MESA_FamilyExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001121.v3.phv00087512.v1_
+        * dbGap name: **s3bpf**
+        * dbGap desc: **3RD READING: SEATED SYSTOLIC BP (mmHg)**
+        * dbGap table: **MESA_FamilyExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000209.v13.pht001121.v3.phv00087513.v1_
+        * dbGap name: **d3bpf**
+        * dbGap desc: **3RD READING: SEATED DIASTOLIC BP (mmHg)**
+        * dbGap table: **MESA_FamilyExamMain**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){
@@ -1197,14 +1689,46 @@
 <a id="bp_systolic_1-whi"></a>
   * ### blood_pressure/bp_systolic_1 -- **WHI Women's Health Initiative**:
     * 8 component_study_variables
-      * _phs000200.v11.pht000998.v6.phv00078436.v6_. dbGap Name: **F2DAYS**, Desc: **F2 Days since randomization**, Table: **f2_rel1**.
-      * _phs000200.v11.pht000998.v6.phv00078437.v6_. dbGap Name: **AGE**, Desc: **Age at screening**, Table: **f2_rel1**.
-      * _phs000200.v11.pht001019.v6.phv00079850.v6_. dbGap Name: **F80VTYP**, Desc: **Visit Type**, Table: **f80_rel1**.
-      * _phs000200.v11.pht001019.v6.phv00079852.v6_. dbGap Name: **F80DAYS**, Desc: **F80 Days since randomization/enrollment**, Table: **f80_rel1**.
-      * _phs000200.v11.pht001019.v6.phv00079854.v6_. dbGap Name: **SYSTBP1**, Desc: **Systolic blood pressure (1st reading)**, Table: **f80_rel1**.
-      * _phs000200.v11.pht001019.v6.phv00079855.v6_. dbGap Name: **DIASBP1**, Desc: **Diastolic blood pressure (1st reading)**, Table: **f80_rel1**.
-      * _phs000200.v11.pht001019.v6.phv00079856.v6_. dbGap Name: **SYSTBP2**, Desc: **Systolic blood pressure (2nd reading)**, Table: **f80_rel1**.
-      * _phs000200.v11.pht001019.v6.phv00079857.v6_. dbGap Name: **DIASBP2**, Desc: **Diastolic blood pressure (2nd reading)**, Table: **f80_rel1**.
+      * _phs000200.v11.pht000998.v6.phv00078436.v6_
+        * dbGap name: **F2DAYS**
+        * dbGap desc: **F2 Days since randomization**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht000998.v6.phv00078437.v6_
+        * dbGap name: **AGE**
+        * dbGap desc: **Age at screening**
+        * dbGap table: **f2_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht001019.v6.phv00079850.v6_
+        * dbGap name: **F80VTYP**
+        * dbGap desc: **Visit Type**
+        * dbGap table: **f80_rel1**
+         * PIC-SURE permissible values: Annual visit, Screening
+      * _phs000200.v11.pht001019.v6.phv00079852.v6_
+        * dbGap name: **F80DAYS**
+        * dbGap desc: **F80 Days since randomization/enrollment**
+        * dbGap table: **f80_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht001019.v6.phv00079854.v6_
+        * dbGap name: **SYSTBP1**
+        * dbGap desc: **Systolic blood pressure (1st reading)**
+        * dbGap table: **f80_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht001019.v6.phv00079855.v6_
+        * dbGap name: **DIASBP1**
+        * dbGap desc: **Diastolic blood pressure (1st reading)**
+        * dbGap table: **f80_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht001019.v6.phv00079856.v6_
+        * dbGap name: **SYSTBP2**
+        * dbGap desc: **Systolic blood pressure (2nd reading)**
+        * dbGap table: **f80_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
+      * _phs000200.v11.pht001019.v6.phv00079857.v6_
+        * dbGap name: **DIASBP2**
+        * dbGap desc: **Diastolic blood pressure (2nd reading)**
+        * dbGap table: **f80_rel1**
+         * No permissible values listed in PIC-SURE data dictionary
     * **Function:**
       ```r
       harmonize <- function(phen_list){

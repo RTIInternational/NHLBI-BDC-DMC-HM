@@ -3,6 +3,8 @@ from pathlib import Path
 from collections import defaultdict, Counter
 import re
 import pandas as pd
+from .picsure_data_dict import picsure_dd_parse
+from merged_TOPMed_harmonized_data_file.merge_files import extract_phv
 
 prioritized_studies = ['ARIC','CARDIA','CHS','COPDGene','FHS','HCHS_SOL','JHS','MESA','WHI']
 
@@ -21,7 +23,7 @@ def create_anchor(text):
     return text.lower().replace(' ', '-').replace('**', '').replace('(', '').replace(')', '').replace(',', '')
 
 
-def generate_markdown(root_dir, output_dir, output_index):
+def generate_markdown(root_dir, output_dir, output_index, picsure_dd):
     """Generate markdown documentation from JSON files"""
     root_path = Path(root_dir).resolve()
     sections = defaultdict(list)
@@ -29,12 +31,15 @@ def generate_markdown(root_dir, output_dir, output_index):
     harmonization_units = 0
     component_var_lists = {}
     study_vars = []
+    component_study_vars = []
+    study_vars_with_dbGap_metadata = []
+    study_vars_with_picsure_metadata = []
     harm_vars = []
     # for printing out hyperlinks for google sheet: https://docs.google.com/spreadsheets/d/1G-AIk2m4UCDfh1OvFID3bewQXqxExeKNNmVxaswLT8E/edit?gid=979420329#gid=979420329&range=D:D
     var_links = {}
 
     # dbGap metadata is available for some phv vals
-    df = pd.read_csv('../merged-TOPMed-harmonized-data-file/merged_variables.csv') # Read the CSV file
+    df = pd.read_csv('./merged_TOPMed_harmonized_data_file/merged_variables.csv') # Read the CSV file
     df = df.drop('TOPMed Harmonized Variable', axis=1)
     df = df.drop_duplicates(keep='first')
     dbgap_metadata = df.set_index('TOPMed Component ID').to_dict('index')
@@ -131,17 +136,31 @@ def generate_markdown(root_dir, output_dir, output_index):
                     # section.append(f"    * {len(unit['component_study_variables'])} component_study_variables: {vars_text}")
                     section.append(f"    * {len(unit['component_study_variables'])} component_study_variables")
                     for var in file_study_vars:
-                        vartext = f"      * _{var}_"
+                        component_study_vars.append(var)
+                        section.append(f"      * _{var}_")
                         md = dbgap_metadata.get(var)
-                        mdtext = []
                         if md:
-                            mdtext.append(f"Name: **{md['dbGap Variable Name']}**")
-                            mdtext.append(f"Desc: **{md['dbGap Variable Description']}**")
-                            mdtext.append(f"Table: **{md['dbGap pht Name']}**")
-                            vartext += f". dbGap {', '.join(mdtext)}."
+                            section.append(f"        * dbGap name: **{md['dbGap Variable Name']}**")
+                            section.append(f"        * dbGap desc: **{md['dbGap Variable Description']}**")
+                            section.append(f"        * dbGap table: **{md['dbGap pht Name']}**")
+                            study_vars_with_dbGap_metadata.append(var)
                         else:
-                            vartext += f". No dbGap metadata available."
-                        section.append(vartext)
+                            section.append(f"        * No dbGap metadata available")
+
+                        phv = extract_phv(var)
+                        try:
+                            picsure_rec = picsure_dd.loc[phv]
+                            study_vars_with_picsure_metadata.append(var)
+                        except KeyError:
+                            section.append(f"         * varId _{phv}_ not found in PIC-SURE data dictionary")
+                            continue
+
+                        var_values = picsure_rec['values']
+                        if var_values:
+                            section.append(f"         * PIC-SURE permissible values: {', '.join(var_values)}")
+                        else:
+                            section.append(f"         * No permissible values listed in PIC-SURE data dictionary")
+
                     component_var_lists[f"{directory}/{data['name']}/{unit['name']}"] = file_study_vars
                 else:
                     zeros.append("component_study_variables")
@@ -201,11 +220,14 @@ def generate_markdown(root_dir, output_dir, output_index):
     with open(f"{output_dir}/{output_index}", 'w') as f:
         # Main TOC
         f.write("# TOPMed Variable Documentation\n")
-        f.write("### [List of component variables](#component_vars)\n")
+        # f.write("### [List of component variables](#component_vars)\n")
         f.write("## Contents\n")
         for directory in sorted(sections.keys()):
             f.write(f"* [{directory}]({directory.lower()}.md)\n")
         f.write("\n")
+
+        f.write(f"{len(study_vars_with_dbGap_metadata):,} of {len(component_study_vars):,} input study variables have dbGap metadata\n\n")
+        f.write(f"{len(study_vars_with_picsure_metadata):,} of {len(component_study_vars):,} input study variables have PIC-SURE metadata\n\n")
 
         f.write('\n\n<a id="component_vars"></a>\n')
         list_lengths = Counter([len(l) for l in component_var_lists.values()])
@@ -225,6 +247,7 @@ def generate_markdown(root_dir, output_dir, output_index):
         # f.write('\n'.join([f"{k}: {sc[k]}" for k in sc.keys()]))
         # f.write("\n")
 
+    # This stuff is for printing links to be used in google docs
     vars_in_gsheet_order = [ # for column D https://docs.google.com/spreadsheets/d/1G-AIk2m4UCDfh1OvFID3bewQXqxExeKNNmVxaswLT8E/edit?gid=979420329#gid=979420329
         'angina_incident_1', 'cabg_incident_1', 'cad_followup_start_age_1', 'chd_death_definite_1',
         'chd_death_probable_1', 'coronary_angioplasty_incident_1', 'mi_incident_1', 'pad_incident_1', 'angina_prior_1',
@@ -274,15 +297,18 @@ def generate_markdown(root_dir, output_dir, output_index):
             print(f"""=CONCATENATE({', " | ", '.join(links)})""")
         else:
             print('=' + links[0])
+
     pass
 
 
 def main():
-    input_dir = "harmonized-variable-source-documentation"
+    input_dir = "../../topmed-dcc-harmonized-phenotypes/harmonized-variable-documentation"
     output_index = "README.md"
-    output_dir = "generated-doc-pages"
+    output_dir = "./human-readable-harmonized-variable-documentation/generated-doc-pages"
+    picsure_dd, picsure_var_vals = picsure_dd_parse()
+    picsure_dd.set_index('varId', inplace=True)
 
-    generate_markdown(input_dir, output_dir, output_index)
+    generate_markdown(input_dir, output_dir, output_index, picsure_dd)
     print(f"Documentation generated in {output_dir}/{output_index}")
 
 
