@@ -2,7 +2,7 @@ import pandas as pd
 from collections import defaultdict, Counter
 import statistics
 
-PATH = './copies_of_external_source_files'
+PATH = './resources/copies_of_external_source_files'
 
 def picsure_dd_parse(path=PATH):
     cols_to_load = ['values', 'studyId', 'dtId', 'varId', 'is_categorical', 'is_continuous',
