@@ -3,8 +3,8 @@ from pathlib import Path
 from collections import defaultdict, Counter
 import re
 import pandas as pd
-from .picsure_data_dict import picsure_dd_parse
-from merged_TOPMed_harmonized_data_file.merge_files import extract_phv
+from picsure_data_dict import picsure_dd_parse
+from resources.merged_TOPMed_harmonized_data_file.merge_files import extract_phv
 
 prioritized_studies = ['ARIC','CARDIA','CHS','COPDGene','FHS','HCHS_SOL','JHS','MESA','WHI']
 
@@ -39,7 +39,7 @@ def generate_markdown(root_dir, output_dir, output_index, picsure_dd):
     var_links = {}
 
     # dbGap metadata is available for some phv vals
-    df = pd.read_csv('./merged_TOPMed_harmonized_data_file/merged_variables.csv') # Read the CSV file
+    df = pd.read_csv('./resources/merged_TOPMed_harmonized_data_file/merged_variables.csv') # Read the CSV file
     df = df.drop('TOPMed Harmonized Variable', axis=1)
     df = df.drop_duplicates(keep='first')
     dbgap_metadata = df.set_index('TOPMed Component ID').to_dict('index')
@@ -302,9 +302,9 @@ def generate_markdown(root_dir, output_dir, output_index, picsure_dd):
 
 
 def main():
-    input_dir = "../../topmed-dcc-harmonized-phenotypes/harmonized-variable-documentation"
+    input_dir = "../topmed-dcc-harmonized-phenotypes/harmonized-variable-documentation"
     output_index = "README.md"
-    output_dir = "./human-readable-harmonized-variable-documentation/generated-doc-pages"
+    output_dir = "./resources/human-readable-harmonized-variable-documentation/generated-doc-pages"
     picsure_dd, picsure_var_vals = picsure_dd_parse()
     picsure_dd.set_index('varId', inplace=True)
 
