@@ -15,10 +15,9 @@
 
 ### External resources
 
-* [copies_of_external_source_files](./copies_of_external_source_files/README.md)
 * [harmonized-variable-documentation](../../../topmed-dcc-harmonized-phenotypes/harmonized-variable-documentation)
-  * Symbolic link to local clone of [UW-GAC/topmed-dcc-harmonized-phenotypes](https://github.com/UW-GAC/topmed-dcc-harmonized-phenotypes/tree/master/harmonized-variable-documentation).
-    Clone that repo in the same directory as this repo, and the symlink should work.
+  * Location of local clone of [UW-GAC/topmed-dcc-harmonized-phenotypes](https://github.com/UW-GAC/topmed-dcc-harmonized-phenotypes/tree/master/harmonized-variable-documentation).
+    Clone that repo in the same directory as this repo, and the code that needs it should work.
 
 
 | short_name                     | local_path                                                                       | web_location                                                                                             |
