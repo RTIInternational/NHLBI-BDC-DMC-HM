@@ -48,7 +48,7 @@ def main():
     working_dir = os.getcwd()
     relative_path = os.path.relpath(script_dir, working_dir)
     ofile = os.path.join(relative_path, 'aha_dbgap_picsure.csv')
-    aha_dbgap_picsure.to_csv(ofile, index=False)
+    aha_dbgap_picsure.sort_values('Variable Field Name').to_csv(ofile, index=False)
     pass
 
 aha_vars_also_in_topmed = [
