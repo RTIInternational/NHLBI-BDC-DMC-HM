@@ -1,10 +1,18 @@
 import pandas as pd
 from collections import defaultdict, Counter
 import statistics
+from resources.config import PROJECT_ROOT
 
-PATH = './resources/copies_of_external_source_files'
+# this depends on the run file having set working dir to project root:
+# PATH = './resources/copies_of_external_source_files'
+EXTERNAL_FILES_PATH = f'{PROJECT_ROOT}/resources/copies_of_external_source_files'
+USE_CACHED = True
 
-def picsure_dd_parse(path=PATH):
+def picsure_dd_parse(path=EXTERNAL_FILES_PATH):
+    if USE_CACHED: # just to save time while developing
+        dd = pd.read_pickle(f'{path}/picsure_data_dictionary.pkl')
+        return dd, dd['values']
+
     cols_to_load = ['values', 'studyId', 'dtId', 'varId', 'is_categorical', 'is_continuous',
                     'columnmeta_is_stigmatized', 'columnmeta_name', 'description',
                     'columnmeta_min', 'HPDS_PATH', 'derived_group_id',
@@ -25,9 +33,12 @@ def picsure_dd_parse(path=PATH):
         low_memory=False
     )
 
+    # the values column holds a quoted list
+    # should probably use json.loads instead of eval, but the values are single quoted, not valid json
     values = [eval(v) for v in list(dd['values'])]
 
     dd['values'] = values
+    dd.to_pickle(f'{path}/picsure_data_dictionary.pkl')
     return dd, values
 
 def analyze(path):
@@ -127,7 +138,7 @@ def analyze_values(values):
 
 
 def main():
-    analyze(PATH)
+    analyze(EXTERNAL_FILES_PATH)
 
 
 if __name__ == "__main__":

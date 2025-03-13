@@ -3,7 +3,6 @@ from datetime import datetime
 import os
 from pathlib import Path
 
-
 def load_table():
     # module_dir = os.path.dirname(__file__)
     # readme_path = os.path.join(module_dir, 'README.md')

@@ -57,7 +57,7 @@ def generate_markdown(root_dir, output_dir, output_index, picsure_dd):
         with open(json_file, 'r') as f:
             data = json.load(f)
 
-        var_links[data['name']] = f"""HYPERLINK("https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/blob/main/resources/human-readable-harmonized-variable-documentation/generated-doc-pages/{directory}.md#{data['name']}", "{data['name']}")"""
+        var_links[data['name']] = f"""HYPERLINK("https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/blob/main/resources/human_readable_harmonized_variable_documentation/generated_doc_pages/{directory}.md#{data['name']}", "{data['name']}")"""
 
         # Store variable name for file-level TOC
         structure[directory][data['name']] = []
@@ -304,7 +304,7 @@ def generate_markdown(root_dir, output_dir, output_index, picsure_dd):
 def main():
     input_dir = "../topmed-dcc-harmonized-phenotypes/harmonized-variable-documentation"
     output_index = "README.md"
-    output_dir = "./resources/human-readable-harmonized-variable-documentation/generated-doc-pages"
+    output_dir = "./resources/human_readable_harmonized_variable_documentation/generated_doc_pages"
     picsure_dd, picsure_var_vals = picsure_dd_parse()
     picsure_dd.set_index('varId', inplace=True)
 
