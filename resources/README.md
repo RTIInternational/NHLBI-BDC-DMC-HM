@@ -7,8 +7,8 @@
   * [raw-to-harmonized-topmed-vars.csv](map-topmed-raw-to-harmonized/raw-to-harmonized-topmed-vars.csv)
     -- Output
 
-* [human-readable-harmonized-variable-documentation/](human-readable-harmonized-variable-documentation/)
-  * [TopMED variable documentation](human-readable-harmonized-variable-documentation/generated-doc-pages/README.md)
+* [human_readable_harmonized_variable_documentation/](human_readable_harmonized_variable_documentation/)
+  * [TopMED variable documentation](human_readable_harmonized_variable_documentation/generated-doc-pages/README.md)
 
 * [merged_TOPMed_harmonized_data_file](merged_TOPMed_harmonized_data_file/)
 
