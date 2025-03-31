@@ -1,0 +1,13 @@
+# family medical history
+Condition:
+  id: 1a71568d-d039-4a48-8e27-aad019793cf1
+  identity: 197cd333-758b-46e3-b7f9-833bb5023f27
+  associated_participant: 4a887f0e-4691-43d6-a521-d307f17558d7
+  associated_visit: 
+  condition_concept: HP:0030692   # Brain neoplasm
+  age_at_condition_start: 
+  age_at_condition_end: 
+  condition_provenance: EHR_PROBLEM_LIST_ENTRY
+  condition_status: HISTORICAL
+  condition_severity:
+  relationship_to_participant: NATURAL_FATHER

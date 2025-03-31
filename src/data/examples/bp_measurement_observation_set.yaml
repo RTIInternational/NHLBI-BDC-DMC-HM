@@ -1,0 +1,30 @@
+# Systolic and Diastolic BP measurements
+MeasurementObservationSet:
+  id: 478a7982-62e8-4fa1-b5f9-1cf77fff4764
+  associated_participant: 4a887f0e-4691-43d6-a521-d307f17558d7
+  associated_visit: 27c68f26-e702-4cc0-b78a-59eb8618d460
+  category:
+  method_type:
+  observations:
+    - MeasurementObservation:
+        id: 339da8b9-0dbd-4964-8bd2-f7a65457db72
+        age_at_observation: 2305
+        category:
+        observation_type: OMOP:4152194 #SYSTOLIC BP
+        method_type:
+        associated_participant: 4a887f0e-4691-43d6-a521-d307f17558d7
+        associated_visit: 27c68f26-e702-4cc0-b78a-59eb8618d460
+        value_quantity:
+          value_integer: 118
+          unit: mm[Hg]
+    - MeasurementObservation:
+        id: 3811aca1-e4cc-45ef-a065-240d549454d3
+        age_at_observation: 2305
+        category:
+        observation_type: OMOP:4154790  #DIASTOLIC BP
+        method_type:
+        associated_participant: 4a887f0e-4691-43d6-a521-d307f17558d7
+        associated_visit: 27c68f26-e702-4cc0-b78a-59eb8618d460
+        value_quantity:
+          value_integer: 75
+          unit: mm[Hg]
