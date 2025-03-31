@@ -1,0 +1,13 @@
+# patient condition
+Condition:
+  id: 2f76e5c4-bee6-4d65-a263-03e51e615328
+  identity: 286d8127-da9c-401a-a837-c2b73b4e6a57
+  associated_participant: 4a887f0e-4691-43d6-a521-d307f17558d7
+  associated_visit: 27c68f26-e702-4cc0-b78a-59eb8618d460
+  condition_concept: HP:0012324   # Myeloid leukemia
+  age_at_condition_start: 2240
+  age_at_condition_end:
+  condition_provenance: EHR_PROBLEM_LIST_ENTRY
+  condition_status: PRESENT
+  condition_severity:
+  relationship_to_participant: ONESELF

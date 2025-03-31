@@ -1,0 +1,13 @@
+# patient medical history
+Condition:
+  id: b0615e8a-c400-479a-bffa-900b2f2d56a2
+  identity: 54ad442f-1564-4df3-956f-0e1515b8d598
+  associated_participant: 4a887f0e-4691-43d6-a521-d307f17558d7
+  associated_visit: c0fdf562-2ec7-425a-a392-2e267b5479f2
+  condition_concept: HP:0001649   # Tachycardia
+  age_at_condition_start: 1214
+  age_at_condition_end: 1220
+  condition_provenance: EHR_PROBLEM_LIST_ENTRY
+  condition_status: HISTORICAL
+  condition_severity:
+  relationship_to_participant: ONESELF

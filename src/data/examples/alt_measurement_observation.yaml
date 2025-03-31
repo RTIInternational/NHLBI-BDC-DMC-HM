@@ -1,0 +1,18 @@
+# ALT SGPT Measurement
+MeasurementObservation:
+  id: dcececb0-3510-44c7-9776-a729f27793c5
+  age_at_observation: 2305
+  category:
+  observation_type: OMOP:4146380 #Alanine aminotransferase measurement
+  method_type:
+  associated_participant: 4a887f0e-4691-43d6-a521-d307f17558d7
+  associated_visit: 27c68f26-e702-4cc0-b78a-59eb8618d460
+  value_quantity:
+    value_decimal: 45
+    unit: "[IU]/L"
+  range_low:
+    value_decimal: 7
+    unit: "[IU]/L"
+  range_high:
+    value_decimal: 56
+    unit: "[IU]/L"

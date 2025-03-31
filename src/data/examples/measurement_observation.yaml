@@ -1,0 +1,45 @@
+MeasurementObservationSet:
+  id:
+  associated_participant:
+  associated_visit:
+  category:
+  focus:
+  method_type:
+  performed_by:
+  observations:
+    - MeasurementObservation:
+        id:
+        age_at_observation:
+        category:
+        observation_type:
+        method_type:
+        focus:
+        associated_participant:
+        associated_visit:
+        performed_by:
+        value_string:
+        value_boolean:
+        value_quantity:
+          value_decimal:
+          value_integer:
+          value_concept:
+          unit:
+        value_enum:
+    - MeasurementObservation:
+        id:
+        age_at_observation:
+        category:
+        observation_type:
+        method_type:
+        focus:
+        associated_participant:
+        associated_visit:
+        performed_by:
+        value_string:
+        value_boolean:
+        value_quantity:
+          value_decimal:
+          value_integer:
+          value_concept:
+          unit:
+        value_enum:
