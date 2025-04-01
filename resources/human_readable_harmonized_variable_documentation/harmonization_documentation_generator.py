@@ -5,6 +5,7 @@ import re
 import pandas as pd
 from picsure_data_dict import picsure_dd_parse
 from resources.merged_TOPMed_harmonized_data_file.merge_files import extract_phv
+from resources.load_data import load_csv
 
 prioritized_studies = ['ARIC','CARDIA','CHS','COPDGene','FHS','HCHS_SOL','JHS','MESA','WHI']
 
@@ -39,7 +40,8 @@ def generate_markdown(root_dir, output_dir, output_index, picsure_dd):
     var_links = {}
 
     # dbGap metadata is available for some phv vals
-    df = pd.read_csv('./resources/merged_TOPMed_harmonized_data_file/merged_variables.csv') # Read the CSV file
+    df = load_csv('topmed_plus_dbgap')
+    # df = pd.read_csv('./resources/merged_TOPMed_harmonized_data_file/merged_variables.csv') # Read the CSV file
     df = df.drop('TOPMed Harmonized Variable', axis=1)
     df = df.drop_duplicates(keep='first')
     dbgap_metadata = df.set_index('TOPMed Component ID').to_dict('index')
