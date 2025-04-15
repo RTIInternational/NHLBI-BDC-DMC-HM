@@ -1,0 +1,10 @@
+# Sdoh Observation
+SdohObservation:
+  id: 2ea67d5b-1719-479a-8990-37a952b0e7df
+  age_at_observation: 2312
+  category: EDUCATIONAL_ATTAINMENT
+  observation_type: OMOP:4022643 # Academic achievement
+  method_type:
+  associated_participant: 4a887f0e-4691-43d6-a521-d307f17558d7
+  associated_visit: 27c68f26-e702-4cc0-b78a-59eb8618d460
+  value_enum: OMOP:37171568 # Bachelor's degree achieved (finding) 

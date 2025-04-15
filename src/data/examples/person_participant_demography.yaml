@@ -1,0 +1,34 @@
+# Demography with inlined Participant, Person, and Consent records and ResearchStudy record by reference
+Demography:
+  id: 3e712453-ee3d-4531-9e2d-1b237dc612ff
+  identity: fb43b475-8ff2-4372-adba-0ee1a9663f86
+  sex: MALE # OMOP:8507
+  ethnicity: NOT_HISPANIC_OR_LATINO # OMOP:38003564
+  race: BLACK_OR_AFRICAN_AMERICAN # OMOP:8516
+  associated_participant:
+    Participant:
+      id: 2f76e5c4-bee6-4d65-a263-03e51e615328
+      identity: 286d8127-da9c-401a-a837-c2b73b4e6a57
+      associated_person: 
+        Person:
+          id: 38a06e44-ed63-4864-b64d-5c0a3190bd47
+          identity: e676c092-ba59-40bd-97e0-b6daf9bca702
+          year_of_birth: 1971
+          vital_status: DEAD  # OMOP:434489
+          year_of_death: 2021
+          age_at_death: 18363
+      member_of_research_study: 81278184-a4c7-4ce6-85e1-ecd39ec821cc
+      index_timepoint: Enrollment
+      age_at_index: 17552
+      consents:
+        - Consent:
+            id: a3e44dcd-0d51-47e5-bdda-02244619c71e
+            valid_from:
+              id: 8928738c-ef09-417f-8f91-cf3236344cf0
+              date_time: 2020-01-23
+            valid_to:
+              id: dc8d63b5-9f91-400c-afe3-3a6ee61377dc
+              date_time: 2020-10-15
+            consent_code: GRU # DUO:0000042
+
+  
