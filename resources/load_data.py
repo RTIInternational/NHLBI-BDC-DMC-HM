@@ -2,12 +2,38 @@ import pandas as pd
 from datetime import datetime
 import os
 from pathlib import Path
+from contextlib import contextmanager
+
+@contextmanager
+def working_directory(path):
+    """
+    Context manager that temporarily changes the working directory
+    and automatically reverts back when exiting the context.
+
+    Usage:
+    with working_directory('/path/to/dir'):
+        # code that runs in the new working directory
+    # working directory is now reverted to original
+    """
+    original_dir = os.getcwd()
+    try:
+        os.chdir(path)
+        yield
+    finally:
+        os.chdir(original_dir)
+
+def file_locations_readme_path():
+    rd = root_dir()
+    return os.path.join(rd, 'resources/README.md')
+
+def root_dir():
+    root_dir = Path(__file__).absolute().parent.parent
+    return root_dir
 
 
 def load_table():
-    # module_dir = os.path.dirname(__file__)
-    # readme_path = os.path.join(module_dir, 'README.md')
-    readme_path = './resources/README.md'
+    # readme_path = './resources/README.md'
+    readme_path = file_locations_readme_path()
     with open(readme_path, 'r') as f:
         markdown_text = f.read()
     return find_and_parse_markdown_table(markdown_text)
@@ -22,9 +48,10 @@ def get_sheet_info(short_name):
 def load_csv(short_name):
     # copies_of_external_source_files/AHA_TABLES 1(Sheet2).csv breaks
     #   pd.csv because of (kg/m²), so using code to figure out file encoding
-    sheet_info = get_sheet_info(short_name)
-    short_name, local_path, web_location = sheet_info.values()
-    df = read_csv_with_encoding(local_path)
+    with working_directory(root_dir()):
+        sheet_info = get_sheet_info(short_name)
+        short_name, local_path, web_location = sheet_info.values()
+        df = read_csv_with_encoding(local_path)
     return df
 
 
