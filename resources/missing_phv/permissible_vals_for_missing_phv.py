@@ -10,9 +10,9 @@ from resources.load_data import load_csv
 USE_CACHED = False
 
 def main():
-    # fix_missing_phts()
+    fix_missing_phts()
     # update_phv_not_in_tm()
-    tm_phvs()
+    # tm_phvs()
 
 def update_phv_not_in_tm(sheets_and_data):
     priority_vars_sheet, priority_vars, missing_phvs_sheet, missing_phv_rows, picsure_dd = get_sheets_and_data('not_in_tm')
@@ -237,7 +237,7 @@ def get_sheets_and_data(which):
 def fix_missing_phts():
     gc = gspread.service_account()
     spreadsheet = gc.open("BDCHM Prioritization Information")
-    sheet = spreadsheet.worksheet("Copy of priority phv not in TM")
+    sheet = spreadsheet.worksheet("DO NOT TOUCH Copy of priority phv not in TM")
 
     if sheet.get('I1')[0][0] != 'Dataset accession':
         raise Exception('Expected column I to be Dataset accession')
@@ -249,15 +249,15 @@ def fix_missing_phts():
     dbgap_w_index = dbgap_priority.set_index(['dbGaP Study Accession', 'Variable accession'])
 
     phts = []
-    for row in missing_phvs:
-        if not row['Original row']:
-            continue
-        if len(phts) != int(row['Original row']) - 1:
-            raise Exception(f"phts array out of sync with row['Original row'] {row['Original row']}")
-        if row['Dataset accession']:
-            pht = row['Dataset accession']
-        else:
-            pht = lookup_pht(row['dbGaP Study Accession'], row['Variable accession'], dbgap_w_index)
+    for i, row in enumerate(missing_phvs):
+        # if not row['Original row']:
+        #     continue
+        # if len(phts) != int(row['Original row']) - 1:
+        #     raise Exception(f"phts array out of sync with row['Original row'] {row['Original row']}")
+        # if row['Dataset accession']:
+        #     pht = row['Dataset accession']
+        # else:
+        pht = lookup_pht(row['dbGaP Study Accession'], row['Variable accession'], dbgap_w_index, i+2)
         phts.append(pht)
 
     cell_range = f'I2:I{len(phts) + 1}'
@@ -265,7 +265,7 @@ def fix_missing_phts():
     pass
 
 
-def lookup_pht(phs, phv, df):
+def lookup_pht(phs, phv, df, row_num):
     try:
         # This will raise a KeyError if the key doesn't exist
         result = df.loc[(phs, phv)]
@@ -278,13 +278,13 @@ def lookup_pht(phs, phv, df):
             pht = result.iloc[0]['Dataset accession'] # Option 1: Take the first row anyway
             # Option 2: Handle the multiple rows case as needed
         if not pht:
-            print(f"Warning: No pht on dbgap row for {phs}, {phv}")
+            print(f"Warning: No pht on dbgap row for {phs}, {phv}, from row {row_num}")
             return ''
         return pht
 
     except KeyError:
         # Handle the case where no rows match
-        print(f"No rows found for values {phs}, {phv}")
+        print(f"No dbgap rows found for values {phs}, {phv}, from row {row_num}")
 
 def find_potential_key_columns(df):
     """
