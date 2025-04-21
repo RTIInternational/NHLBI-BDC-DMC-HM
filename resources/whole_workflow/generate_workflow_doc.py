@@ -122,7 +122,7 @@ def document_workflow_step(
     # Render the template with our data
     rendered_markdown = template.render(
         step_name=step_name,
-        script_path=script_path,
+        script_path=convert_path_relative_to(script_path, current_dir),
         script_basename=os.path.basename(script_path),
         specific_function=specific_function,
         description=textwrap.dedent(description),

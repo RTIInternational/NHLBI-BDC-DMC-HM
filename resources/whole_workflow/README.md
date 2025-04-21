@@ -5,7 +5,7 @@ For each component_study_variable
             give the harmonized variable name and the harmonization unit name.
             Inputs are all the json files [here](https://github.com/UW-GAC/topmed-dcc-harmonized-phenotypes/tree/master/harmonized-variable-documentation).
 
-#### Script: [generate_mapping.py](resources/map-topmed-raw-to-harmonized/generate_mapping.py)
+#### Script: [generate_mapping.py](../map-topmed-raw-to-harmonized/generate_mapping.py)
 
 
 
@@ -36,7 +36,7 @@ For each TOPMed harmonized variable, readably display everything
             PicSure values lists are sometimes (and probably incorrectly) very long,
             so showing a preview of that file without them.
 
-#### Script: [harmonization_documentation_generator.py](resources/human_readable_harmonized_variable_documentation/harmonization_documentation_generator.py)
+#### Script: [harmonization_documentation_generator.py](../human_readable_harmonized_variable_documentation/harmonization_documentation_generator.py)
 
 
 ### Input Files
@@ -86,7 +86,7 @@ Reads from and writes to worksheet in
             `DO NOT TOUCH Copy of priority phv not in TM`.
             Uses `dbGaP Study Accession` and `Variable accession` columns to look up pht in `dbgap_priority`.
 
-#### Script: [permissible_vals_for_missing_phv.py](resources/missing_phv/permissible_vals_for_missing_phv.py): fix_missing_phts()
+#### Script: [permissible_vals_for_missing_phv.py](../missing_phv/permissible_vals_for_missing_phv.py): fix_missing_phts()
 
 
 ### Input Files
@@ -118,7 +118,7 @@ Reads from and writes to worksheet in
 Reads from and writes to same worksheet as fix_missing_phts() above.
             Uses `dbGaP Study Accession` and `Variable accession` columns to look up pht in `dbgap_priority`.
 
-#### Script: [permissible_vals_for_missing_phv.py](resources/missing_phv/permissible_vals_for_missing_phv.py): update_phv_not_in_tm()
+#### Script: [permissible_vals_for_missing_phv.py](../missing_phv/permissible_vals_for_missing_phv.py): update_phv_not_in_tm()
 
 
 ### Input Files
