@@ -4,6 +4,11 @@ import os
 from pathlib import Path
 from contextlib import contextmanager
 
+"""
+Needs to find credentials in ~/.config/gspread/service_account.json.
+Instructions: https://docs.gspread.org/en/v6.1.3/oauth2.html
+"""
+
 @contextmanager
 def working_directory(path):
     """
@@ -23,6 +28,9 @@ def working_directory(path):
         os.chdir(original_dir)
 
 def file_locations_readme_path():
+    """
+    :return: Path to README file with the markdown table that specifies file locations
+    """
     rd = root_dir()
     return os.path.join(rd, 'resources/README.md')
 
@@ -32,7 +40,6 @@ def root_dir():
 
 
 def load_table():
-    # readme_path = './resources/README.md'
     readme_path = file_locations_readme_path()
     with open(readme_path, 'r') as f:
         markdown_text = f.read()
@@ -53,58 +60,6 @@ def load_csv(short_name):
         short_name, local_path, web_location = sheet_info.values()
         df = read_csv_with_encoding(local_path)
     return df
-
-
-# not using this now. was having too many issues with loading from gsheets
-def handle_sheet_download(short_name):  # not working with gsheets download...just use local for now
-    # web_location = "YOUR_GOOGLE_SHEET_URL"
-    sheet_info = get_sheet_info(short_name)
-    short_name, local_path, web_location = sheet_info.values()
-    if not web_location:
-        df = read_csv_with_encoding(local_path)
-        return df
-
-    today = datetime.now().date()
-    backup_dir = Path('resources/copies_of_external_source_files/backups')
-    backup_dir.mkdir(exist_ok=True)
-
-    # Check if we already downloaded today
-    if os.path.exists(local_path):
-        file_date = datetime.fromtimestamp(os.path.getmtime(local_path)).date()
-        if file_date == today:
-            print(f"Already downloaded {local_path} today. Using local copy.")
-            return read_csv_with_encoding(local_path)
-
-    # Download new version
-    web_location = web_location.replace('/edit?gid=', '/export?format=csv&gid=')
-    new_df = read_csv_with_encoding(web_location)
-
-    # Compare with existing if it exists
-    if os.path.exists(local_path):
-        old_df = read_csv_with_encoding(local_path)
-
-        # Create backup of old file
-        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-        backup_path = backup_dir / f"{Path(local_path).stem}_{timestamp}.csv"
-        old_df.to_csv(backup_path, index=False)
-
-        # Compare and report differences
-        if not old_df.equals(new_df):
-            print(f"Changes detected! Old version backed up to {backup_path}")
-
-            # Find and report specific differences
-            if old_df.shape != new_df.shape:
-                print(f"Row count changed: {old_df.shape[0]} -> {new_df.shape[0]}")
-            else:
-                # Find changed values
-                changes = (old_df != new_df).any()
-                changed_cols = changes[changes].index.tolist()
-                if changed_cols:
-                    print("Changed columns:", ", ".join(changed_cols))
-
-    # Save new version
-    new_df.to_csv(local_path, index=False)
-    return new_df
 
 
 def find_and_parse_markdown_table(markdown_text):
@@ -174,3 +129,29 @@ def read_csv_with_encoding(filepath):
     except Exception as e:
         print(f"Error reading {filepath}: {str(e)}")
         return None
+
+
+def convert_path_relative_to(local_path, target_dir):
+    """
+    Converts a path that is relative to project root to be relative to another directory.
+
+    Args:
+        local_path (str): Path from README table (relative to project root)
+        target_dir (str): Target directory (relative to project root)
+
+    Returns:
+        str: Path that is relative to the target directory
+    """
+    # Remove leading ./ if present in the local_path
+    if local_path.startswith('./'):
+        local_path = local_path[2:]
+
+    # Convert both paths to absolute using Path objects
+    root_dir_path = Path(root_dir())
+    abs_local_path = root_dir_path / local_path
+    abs_target_path = root_dir_path / target_dir
+
+    # Create relative path from target to local path
+    rel_path = os.path.relpath(abs_local_path, abs_target_path)
+
+    return rel_path
