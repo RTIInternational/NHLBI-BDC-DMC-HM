@@ -12,7 +12,7 @@ import pandas as pd
 import json
 import textwrap
 from jinja2 import Environment, FileSystemLoader, select_autoescape
-from resources.load_data import get_sheet_info, load_csv, load_table
+from resources.load_data import get_sheet_info, load_csv, load_table, convert_path_relative_to
 
 current_dir = os.path.abspath(os.getcwd())
 project_dir = os.path.abspath(os.path.join(os.getcwd(), '../..'))
@@ -49,7 +49,6 @@ def get_file_info(file_path):
         try:
             info = get_sheet_info(file_path)
             file_path = info['local_path']
-            # basename = os.path.basename(file_path)
             df = load_csv(short_name)
             try:
                 preview = df.head(3).to_markdown(index=False)
@@ -58,6 +57,7 @@ def get_file_info(file_path):
 
             file_info = {
                 'path': file_path,
+                'relative_path': convert_path_relative_to(file_path, current_dir),
                 'basename': short_name,
                 'type': file_path.split('.')[-1] if '.' in file_path else None,
                 'preview': preview,

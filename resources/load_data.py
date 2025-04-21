@@ -28,6 +28,9 @@ def working_directory(path):
         os.chdir(original_dir)
 
 def file_locations_readme_path():
+    """
+    :return: Path to README file with the markdown table that specifies file locations
+    """
     rd = root_dir()
     return os.path.join(rd, 'resources/README.md')
 
@@ -37,7 +40,6 @@ def root_dir():
 
 
 def load_table():
-    # readme_path = './resources/README.md'
     readme_path = file_locations_readme_path()
     with open(readme_path, 'r') as f:
         markdown_text = f.read()
@@ -127,3 +129,29 @@ def read_csv_with_encoding(filepath):
     except Exception as e:
         print(f"Error reading {filepath}: {str(e)}")
         return None
+
+
+def convert_path_relative_to(local_path, target_dir):
+    """
+    Converts a path that is relative to project root to be relative to another directory.
+
+    Args:
+        local_path (str): Path from README table (relative to project root)
+        target_dir (str): Target directory (relative to project root)
+
+    Returns:
+        str: Path that is relative to the target directory
+    """
+    # Remove leading ./ if present in the local_path
+    if local_path.startswith('./'):
+        local_path = local_path[2:]
+
+    # Convert both paths to absolute using Path objects
+    root_dir_path = Path(root_dir())
+    abs_local_path = root_dir_path / local_path
+    abs_target_path = root_dir_path / target_dir
+
+    # Create relative path from target to local path
+    rel_path = os.path.relpath(abs_local_path, abs_target_path)
+
+    return rel_path

@@ -12,7 +12,7 @@ For each component_study_variable
 
 ### Output Files
 
-#### [topmed_raw_to_harm](./resources/map-topmed-raw-to-harmonized/raw-to-harmonized-topmed-vars.csv)
+#### [topmed_raw_to_harm](../map-topmed-raw-to-harmonized/raw-to-harmonized-topmed-vars.csv)
 
 <details><summary>Preview</summary>
 
@@ -41,7 +41,7 @@ For each TOPMed harmonized variable, readably display everything
 
 ### Input Files
 
-#### [topmed_plus_dbgap](./resources/merged_TOPMed_harmonized_data_file/merged_variables.csv)
+#### [topmed_plus_dbgap](../merged_TOPMed_harmonized_data_file/merged_variables.csv)
 
 <details><summary>Preview</summary>
 
@@ -56,7 +56,7 @@ For each TOPMed harmonized variable, readably display everything
 </details>
 
 
-#### [picsure_without_values_col.csv](resources/copies_of_external_source_files/picsure_without_values_col.csv)
+#### [picsure_without_values_col.csv]()
 
 <details><summary>Preview</summary>
 
@@ -91,7 +91,7 @@ Reads from and writes to worksheet in
 
 ### Input Files
 
-#### [dbgap_priority](./resources/copies_of_external_source_files/dbgap_variables_priority_cohorts_V2.csv)
+#### [dbgap_priority](../copies_of_external_source_files/dbgap_variables_priority_cohorts_V2.csv)
 
 <details><summary>Preview</summary>
 
@@ -123,7 +123,7 @@ Reads from and writes to same worksheet as fix_missing_phts() above.
 
 ### Input Files
 
-#### [dbgap_priority](./resources/copies_of_external_source_files/dbgap_variables_priority_cohorts_V2.csv)
+#### [dbgap_priority](../copies_of_external_source_files/dbgap_variables_priority_cohorts_V2.csv)
 
 <details><summary>Preview</summary>
 

@@ -7,7 +7,7 @@
 {% if input_files %}
 ### Input Files
 {% for file in input_files %}
-#### [{{ file.basename }}]({{ file.path }})
+#### [{{ file.basename }}]({{ file.relative_path }})
 {% if file.preview %}
 <details><summary>Preview</summary>
 
@@ -27,7 +27,7 @@
 {% if output_files %}
 ### Output Files
 {% for file in output_files %}
-#### [{{ file.basename }}]({{ file.path }})
+#### [{{ file.basename }}]({{ file.relative_path }})
 {% if file.preview %}
 <details><summary>Preview</summary>
 
