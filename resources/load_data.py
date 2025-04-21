@@ -4,6 +4,11 @@ import os
 from pathlib import Path
 from contextlib import contextmanager
 
+"""
+Needs to find credentials in ~/.config/gspread/service_account.json.
+Instructions: https://docs.gspread.org/en/v6.1.3/oauth2.html
+"""
+
 @contextmanager
 def working_directory(path):
     """
@@ -53,58 +58,6 @@ def load_csv(short_name):
         short_name, local_path, web_location = sheet_info.values()
         df = read_csv_with_encoding(local_path)
     return df
-
-
-# not using this now. was having too many issues with loading from gsheets
-def handle_sheet_download(short_name):  # not working with gsheets download...just use local for now
-    # web_location = "YOUR_GOOGLE_SHEET_URL"
-    sheet_info = get_sheet_info(short_name)
-    short_name, local_path, web_location = sheet_info.values()
-    if not web_location:
-        df = read_csv_with_encoding(local_path)
-        return df
-
-    today = datetime.now().date()
-    backup_dir = Path('resources/copies_of_external_source_files/backups')
-    backup_dir.mkdir(exist_ok=True)
-
-    # Check if we already downloaded today
-    if os.path.exists(local_path):
-        file_date = datetime.fromtimestamp(os.path.getmtime(local_path)).date()
-        if file_date == today:
-            print(f"Already downloaded {local_path} today. Using local copy.")
-            return read_csv_with_encoding(local_path)
-
-    # Download new version
-    web_location = web_location.replace('/edit?gid=', '/export?format=csv&gid=')
-    new_df = read_csv_with_encoding(web_location)
-
-    # Compare with existing if it exists
-    if os.path.exists(local_path):
-        old_df = read_csv_with_encoding(local_path)
-
-        # Create backup of old file
-        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-        backup_path = backup_dir / f"{Path(local_path).stem}_{timestamp}.csv"
-        old_df.to_csv(backup_path, index=False)
-
-        # Compare and report differences
-        if not old_df.equals(new_df):
-            print(f"Changes detected! Old version backed up to {backup_path}")
-
-            # Find and report specific differences
-            if old_df.shape != new_df.shape:
-                print(f"Row count changed: {old_df.shape[0]} -> {new_df.shape[0]}")
-            else:
-                # Find changed values
-                changes = (old_df != new_df).any()
-                changed_cols = changes[changes].index.tolist()
-                if changed_cols:
-                    print("Changed columns:", ", ".join(changed_cols))
-
-    # Save new version
-    new_df.to_csv(local_path, index=False)
-    return new_df
 
 
 def find_and_parse_markdown_table(markdown_text):

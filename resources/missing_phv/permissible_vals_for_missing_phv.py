@@ -10,11 +10,18 @@ from resources.load_data import load_csv
 USE_CACHED = False
 
 def main():
-    fix_missing_phts()
-    # update_phv_not_in_tm()
+    # fix_missing_phts()
+    update_phv_not_in_tm()
     # tm_phvs()
 
 def update_phv_not_in_tm(sheets_and_data):
+    """
+    Adds permissible value data from PicSure to `DO NOT TOUCH Copy of priority phv not in TM` worksheet.
+    For
+
+    :param sheets_and_data:
+    :return:
+    """
     priority_vars_sheet, priority_vars, missing_phvs_sheet, missing_phv_rows, picsure_dd = get_sheets_and_data('not_in_tm')
 
     # get the priority var rows with yc
