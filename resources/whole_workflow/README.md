@@ -91,6 +91,9 @@ Reads from and writes to worksheet in
 
 ### Input Files
 
+#### [DO NOT TOUCH Copy of priority phv not in TM worksheet](https://docs.google.com/spreadsheets/d/1G-AIk2m4UCDfh1OvFID3bewQXqxExeKNNmVxaswLT8E/edit?gid=1927886785)
+
+
 #### [dbgap_priority](../copies_of_external_source_files/dbgap_variables_priority_cohorts_V2.csv)
 
 <details><summary>Preview</summary>
@@ -111,28 +114,99 @@ Reads from and writes to worksheet in
 
 
 
-### Output: [DO NOT TOUCH Copy of priority phv not in TM worksheet](https://docs.google.com/spreadsheets/d/1G-AIk2m4UCDfh1OvFID3bewQXqxExeKNNmVxaswLT8E/edit?gid=1927886785)
-
 ## Adds permissible value data from PicSure to `DO NOT TOUCH Copy of priority phv not in TM` worksheet.
 
-Reads from and writes to same worksheet as fix_missing_phts() above.
-            Uses `dbGaP Study Accession` and `Variable accession` columns to look up pht in `dbgap_priority`.
+Adds permissible value data from PicSure to `DO NOT TOUCH Copy of priority phv not in TM` worksheet.
+            For each row of priority not in TM where the BDCHM Variable is marked as 'yc' in BDCHM Priority Variables,
+            look up phv in PicSure and grab permissible values info. (The PicSure data dictionary input is too large
+            to store on GitHub. I have it as a local file.
 
 #### Script: [permissible_vals_for_missing_phv.py](../missing_phv/permissible_vals_for_missing_phv.py): update_phv_not_in_tm()
 
 
 ### Input Files
 
-#### [dbgap_priority](../copies_of_external_source_files/dbgap_variables_priority_cohorts_V2.csv)
+#### [DO NOT TOUCH Copy of priority phv not in TM worksheet](https://docs.google.com/spreadsheets/d/1G-AIk2m4UCDfh1OvFID3bewQXqxExeKNNmVxaswLT8E/edit?gid=1927886785)
+
+
+#### [BDCHM Priority Variables](https://docs.google.com/spreadsheets/d/1G-AIk2m4UCDfh1OvFID3bewQXqxExeKNNmVxaswLT8E/edit?gid=2039879463#gid=2039879463)
+
+
+
+
+
+### Output Files
+
+#### [DO NOT TOUCH Copy of priority phv not in TM worksheet](https://docs.google.com/spreadsheets/d/1G-AIk2m4UCDfh1OvFID3bewQXqxExeKNNmVxaswLT8E/edit?gid=1927886785)
+
+
+
+
+
+## Adds permissible value data from PicSure to `DO NOT TOUCH TOPMed phvs & and values` worksheet.
+
+
+Populate worksheet with picsure metadata for topmed vars
+    Sources:
+        BDCHM Priority Variables worksheet (pvars)
+        TOPMed plus dbGap merge file (tm_dbgap) from https://github.com/RTIInternational/NHLBI-BDC-DMC-HM/blob/main/resources/merged_TOPMed_harmonized_data_file/merged_variables.csv
+        PicSure data dictionary (too big for github, stored as local csv)
+
+    Target columns              Source
+    --------------------------  ----------------------------------------------
+    BDCHM Variable              pvars       col F 'Variable (Label)'
+    BDCHM var                   pvars       col G 'Variable (Machine Readable Name)'
+    Cohort                      tm_dbgap    'TOPMed Study'
+    Variable name (col E)       tm_dbgap    'dbGap Variable Name'
+    Variable description (F)    tm_dbgap    'dbGap Variable Description'
+    dbGaP Study Accession       tm_dbgap    'dbGap phs'
+    Variable accession          tm_dbgap    'dbGap phv'
+    Dataset accession           tm_dbgap    'dbGap pht'
+    copy of Dataset accession               Not needed
+    Dataset name                tm_dbgap    'dbGap pht Name	'
+    [blank]
+    is_categorical              picsure
+    is_continuous               picsure
+    min                         picsure
+    max                         picsure
+    values                      picsure
+
+    Algorithm:
+        1. Filter pvars (Priority Variables worksheet) to rows with a TOPMed Reference (tmref).
+        2. There can be multiple values in tmref (e.g., `cimt_1|cimt_2`). Explode those to have
+           one row for each value.
+        3. Inner join pvars and tm_dbgap on pvars:TOPMed Reference = tm_dbap:TOPMed Harmonized Variable.
+           Result is `plus_dbgap`. Limit to cols needed for worksheet. For pvars that don't match, put
+           rows in `missing_from_dbgap`
+        4. Filter picsure to these columns: varid, is_categorical, is_continuous, min, max, values.
+           (And varid is a lower-case copy of varId, for matching on variable name.)
+           Result is `psdd`.
+        5. Inner join picsure to plus_dbgap in two ways (was three) with result in
+           `plus_picsure`:
+            a. Previously was matching on tmref, but that wasn't helpful.
+            b. 'dbGap Variable Name' to picsure 'varid' (lower case version of varId, which same as metacolumn_name).
+            c. 'Matched phv' to picsure 'varid' because picsure varId inconsistently includes variable names
+               sometime, phv other times.
+
+
+#### Script: [permissible_vals_for_missing_phv.py](../missing_phv/permissible_vals_for_missing_phv.py): tm_phvs()
+
+
+### Input Files
+
+#### [BDCHM Priority Variables](https://docs.google.com/spreadsheets/d/1G-AIk2m4UCDfh1OvFID3bewQXqxExeKNNmVxaswLT8E/edit?gid=2039879463#gid=2039879463)
+
+
+#### [topmed_plus_dbgap](../merged_TOPMed_harmonized_data_file/merged_variables.csv)
 
 <details><summary>Preview</summary>
 
 
-| Study             | FHS_Gen3_Omni2   | Variable description    | dbGaP Study Accession   | Variable accession   | Dataset accession   | Dataset name   |
-|:------------------|:-----------------|:------------------------|:------------------------|:---------------------|:--------------------|:---------------|
-| Framingham Cohort | MF4              | RELATIVE WEIGHT, EXAM 1 | phs000007.v33.p14       | phv00000479.v1.p14   | pht000009.v2.p14    | ex0_7s         |
-| Framingham Cohort | MF5              | EDUCATION               | phs000007.v33.p14       | phv00000480.v1.p14   | pht000009.v2.p14    | ex0_7s         |
-| Framingham Cohort | MF6              | COUNTRY OF BIRTH        | phs000007.v33.p14       | phv00000481.v1.p14   | pht000009.v2.p14    | ex0_7s         |
+| Matched phv   | TOPMed Study   | TOPMed Harmonized Variable   | dbGap Variable Description   | dbGap Variable Name   | TOPMed Component ID                         | dbGap phs         | dbGap phv           | dbGap pht         | dbGap pht Name        | dbGap Study Name   |
+|:--------------|:---------------|:-----------------------------|:-----------------------------|:----------------------|:--------------------------------------------|:------------------|:--------------------|:------------------|:----------------------|:-------------------|
+| phv00036469   | FHS            | pad_incident_1               | Event Number                 | EVENT                 | phs000007.v30.pht000309.v13.phv00036469.v12 | phs000007.v33.p14 | phv00036469.v15.p14 | pht000309.v16.p14 | vr_soe_2020_a_1340s   | Framingham Cohort  |
+| phv00036471   | FHS            | pad_incident_1               | Date of Event                | DATE                  | phs000007.v30.pht000309.v13.phv00036471.v12 | phs000007.v33.p14 | phv00036471.v15.p14 | pht000309.v16.p14 | vr_soe_2020_a_1340s   | Framingham Cohort  |
+| phv00177930   | FHS            | pad_incident_1               | Age at Exam 1                | age1                  | phs000007.v30.pht003099.v5.phv00177930.v5   | phs000007.v33.p14 | phv00177930.v8.p14  | pht003099.v8.p14  | vr_dates_2019_a_1175s | Framingham Cohort  |
 
 
 </details>
@@ -141,6 +215,11 @@ Reads from and writes to same worksheet as fix_missing_phts() above.
 
 
 
+### Output Files
+
+#### [DO NOT TOUCH TOPMed phvs & and values](https://docs.google.com/spreadsheets/d/1G-AIk2m4UCDfh1OvFID3bewQXqxExeKNNmVxaswLT8E/edit?gid=546161536#gid=546161536)
+
+</details>
 
 
-### Output: [DO NOT TOUCH Copy of priority phv not in TM worksheet](https://docs.google.com/spreadsheets/d/1G-AIk2m4UCDfh1OvFID3bewQXqxExeKNNmVxaswLT8E/edit?gid=1927886785)
+
