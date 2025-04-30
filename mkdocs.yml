@@ -14,7 +14,8 @@ plugins:
 nav:
   # - Home: home.md
   - Index: index.md
-  - About: about.md
+  - About: class-diagram-w-attrs.md
+  - Old About: about.md
 site_url: https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/
 repo_url: https://github.com/RTIInternational/NHLBI-BDC-DMC-HM
 
