@@ -20,7 +20,11 @@ def main():
         'Text definition':          sheet['Text definition'],
     })
 
+    # only keep MeasurementObservation, Demography, SdohObservation
+    df = df[df['BDCHM element'].isin(['MeasurementObservation', 'Demography', 'SdohObservation'])]
+
     by_element = df.groupby('BDCHM element')
+
 
     with open(f'{root_dir()}/VARIABLE_DOCUMENTATION.md', 'w') as f:
         for grp, grp_df in by_element:
