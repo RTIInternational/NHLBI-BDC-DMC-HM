@@ -12,6 +12,12 @@
 
 * [merged_TOPMed_harmonized_data_file](merged_TOPMed_harmonized_data_file/)
 
+### Notes
+
+- In order to run scripts that open Google spreadsheets, you need
+  credentials in ~/.config/gspread/service_account.json.
+  - Instructions: https://docs.gspread.org/en/v6.1.3/oauth2.html
+  - Also [load_data.py](./load_data.py) has a function for returning df from worksheet
 
 ### External resources and generated CSV files
 

@@ -3,11 +3,21 @@ from datetime import datetime
 import os
 from pathlib import Path
 from contextlib import contextmanager
+import gspread
+from gspread_dataframe import set_with_dataframe, get_as_dataframe
 
-"""
-Needs to find credentials in ~/.config/gspread/service_account.json.
-Instructions: https://docs.gspread.org/en/v6.1.3/oauth2.html
-"""
+def load_gsheet_as_df(spreadsheet_name: str, worksheet_name: str) -> pd.DataFrame:
+    """
+    Needs to find credentials in ~/.config/gspread/service_account.json.
+    And you have to share the google sheet with the service account email address
+    Instructions: https://docs.gspread.org/en/v6.1.3/oauth2.html
+    """
+    gc = gspread.service_account()
+    spreadsheet = gc.open(spreadsheet_name)
+    worksheet = spreadsheet.worksheet(worksheet_name)
+    df = get_as_dataframe(worksheet).dropna(how='all').dropna(axis=1, how='all')
+    df = df.fillna('')
+    return df
 
 @contextmanager
 def working_directory(path):
