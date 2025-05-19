@@ -3248,13 +3248,13 @@ enums:
     permissible_values:
       MILD:
         text: MILD
-        meaning: SNOMED:255604002
+        meaning: OMOP:4116992
       MODERATE:
         text: MODERATE
-        meaning: SNOMED:6736007
+        meaning: OMOP:3272197
       SEVERE:
         text: SEVERE
-        meaning: SNOMED:24484000
+        meaning: OMOP:4087703
 
   FamilyRelationshipEnum:
     description: Values describing the relationship between an individual and family members.
@@ -3263,20 +3263,20 @@ enums:
         description: A relation to one's self.
       NATURAL_PARENT:
         description: A relation to a natural parent (mother or father) when otherwise not specified.
-        meaning: SNOMED:13646006
+        meaning: OMOP:4029630
       NATURAL_FATHER:
         description: A relation to a natural father.
-        meaning: SNOMED:9947008
+        meaning: OMOP:4321888
       NATURAL_MOTHER:
         description: A relation to a natural mother.
-        meaning: SNOMED:65656005
+        meaning: OMOP:4277283
       NATURAL_SIBLING:
         description: A relation to a natural sibling (sister or brother) when otherwise not specified.
-        meaning: SNOMED:82101005
+        meaning: OMOP:4218412
       NATURAL_BROTHER:
         description: A relation to a natural brother.
-        meaning: SNOMED:60614009
+        meaning: OMOP:4263682
       NATURAL_SISTER:
         description: A relation to a natural sister.
-        meaning: SNOMED:73678001
+        meaning: OMOP:4251326
   
