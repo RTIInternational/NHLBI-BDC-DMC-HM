@@ -20,6 +20,7 @@ prefixes:
   HP: http://purl.obolibrary.org/obo/HP_
   rxnorm: https://bioregistry.io/rxnorm:/
   UOM: https://units-of-measurement.org/
+  OBA: http://purl.obolibrary.org/obo/OBA_
 
 default_prefix: bdchm
 default_range: string
