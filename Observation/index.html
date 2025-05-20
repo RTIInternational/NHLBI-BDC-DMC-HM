@@ -516,10 +516,9 @@ attributes:
       field and the relevant value(s) field.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    values_from:
-    - crdch:enum_CRDCH_Observation_observation_type
     domain_of:
     - Observation
+    - MeasurementObservation
     range: string
     required: true
     multivalued: false
@@ -700,12 +699,11 @@ attributes:
       field and the relevant value(s) field.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
-    values_from:
-    - crdch:enum_CRDCH_Observation_observation_type
     alias: observation_type
     owner: Observation
     domain_of:
     - Observation
+    - MeasurementObservation
     range: string
     required: true
     multivalued: false

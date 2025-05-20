@@ -279,6 +279,13 @@
 
       MeasurementObservation : observation_type
 
+
+
+
+    MeasurementObservation --&gt; "0..1" MeasurementObservationTypeEnum : observation_type
+    click MeasurementObservationTypeEnum href "../MeasurementObservationTypeEnum"
+
+
       MeasurementObservation : performed_by
 
 
@@ -364,6 +371,12 @@
 <td>direct</td>
 </tr>
 <tr>
+<td><a href="../observation_type/">observation_type</a></td>
+<td>0..1 <br/> <a href="../MeasurementObservationTypeEnum/">MeasurementObservationTypeEnum</a></td>
+<td>The type of Observation being represented (e</td>
+<td>direct</td>
+</tr>
+<tr>
 <td><a href="../age_at_observation/">age_at_observation</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>The Participant's age (expressed in days) when the Observation was made</td>
@@ -373,12 +386,6 @@
 <td><a href="../category/">category</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The general category of observation described</td>
-<td><a href="../Observation/">Observation</a></td>
-</tr>
-<tr>
-<td><a href="../observation_type/">observation_type</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
-<td>The type of Observation being represented (e</td>
 <td><a href="../Observation/">Observation</a></td>
 </tr>
 <tr>
@@ -517,6 +524,18 @@ attributes:
     domain_of:
     - MeasurementObservation
     range: Quantity
+  observation_type:
+    name: observation_type
+    description: The type of Observation being represented (e.g. 'diastolic blood
+      pressure')
+    comments:
+    - This field holds the "key" in the core key-value pair comprised of the observation_type
+      field and the relevant value(s) field.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    domain_of:
+    - Observation
+    - MeasurementObservation
+    range: MeasurementObservationTypeEnum
 
 </code></pre>
 </details>
@@ -553,6 +572,20 @@ attributes:
     domain_of:
     - MeasurementObservation
     range: Quantity
+  observation_type:
+    name: observation_type
+    description: The type of Observation being represented (e.g. 'diastolic blood
+      pressure')
+    comments:
+    - This field holds the "key" in the core key-value pair comprised of the observation_type
+      field and the relevant value(s) field.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    alias: observation_type
+    owner: MeasurementObservation
+    domain_of:
+    - Observation
+    - MeasurementObservation
+    range: MeasurementObservationTypeEnum
   age_at_observation:
     name: age_at_observation
     description: The Participant's age (expressed in days) when the Observation was
@@ -579,24 +612,6 @@ attributes:
     - Observation
     range: string
     required: false
-    multivalued: false
-  observation_type:
-    name: observation_type
-    description: The type of Observation being represented (e.g. 'diastolic blood
-      pressure')
-    comments:
-    - This field holds the "key" in the core key-value pair comprised of the observation_type
-      field and the relevant value(s) field.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    values_from:
-    - crdch:enum_CRDCH_Observation_observation_type
-    alias: observation_type
-    owner: MeasurementObservation
-    domain_of:
-    - Observation
-    range: string
-    required: true
     multivalued: false
   method_type:
     name: method_type

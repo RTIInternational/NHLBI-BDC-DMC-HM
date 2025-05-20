@@ -314,35 +314,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#comments" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comments
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#identifier-and-mapping-information" class="md-nav__link">
     <span class="md-ellipsis">
       Identifier and Mapping Information
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      Schema Source
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -384,7 +360,6 @@
 
 
 <h1 id="slot-observation_type">Slot: observation_type</h1>
-<p><em>The type of Observation being represented (e.g. 'diastolic blood pressure')</em></p>
 <p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/observation_type">bdchm:observation_type</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -399,7 +374,12 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../SdohObservation/">SdohObservation</a></td>
+<td><a href="../SpecimenQuantityObservation/">SpecimenQuantityObservation</a></td>
+<td>A structured object that describes a single data item about the quantity of a...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../Observation/">Observation</a></td>
 <td>A data structure with key (observation_type) and value (value) attributes tha...</td>
 <td>no</td>
 </tr>
@@ -409,13 +389,8 @@
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../Observation/">Observation</a></td>
-<td>A data structure with key (observation_type) and value (value) attributes tha...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../SpecimenQuantityObservation/">SpecimenQuantityObservation</a></td>
-<td>A structured object that describes a single data item about the quantity of a...</td>
+<td><a href="../SpecimenQualityObservation/">SpecimenQualityObservation</a></td>
+<td>A structured object that describes a characteristic of a specimen indicative ...</td>
 <td>no</td>
 </tr>
 <tr>
@@ -424,30 +399,17 @@
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../SpecimenQualityObservation/">SpecimenQualityObservation</a></td>
-<td>A structured object that describes a characteristic of a specimen indicative ...</td>
+<td><a href="../SdohObservation/">SdohObservation</a></td>
+<td>A data structure with key (observation_type) and value (value) attributes tha...</td>
 <td>no</td>
 </tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>
-<p>Range: <a href="../String/">String</a></p>
-</li>
-<li>
-<p>Required: True</p>
-</li>
-</ul>
-<h2 id="comments">Comments</h2>
-<ul>
-<li>This field holds the "key" in the core key-value pair comprised of the observation_type field and the relevant value(s) field.</li>
+<li>Range: <a href="../String/">String</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
-</ul>
 <h2 id="mappings">Mappings</h2>
 <table>
 <thead>
@@ -471,21 +433,11 @@
 <details>
 
 <pre><code class="language-yaml">name: observation_type
-description: The type of Observation being represented (e.g. 'diastolic blood pressure')
-comments:
-- This field holds the &quot;key&quot; in the core key-value pair comprised of the observation_type
-  field and the relevant value(s) field.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
-rank: 1000
-values_from:
-- crdch:enum_CRDCH_Observation_observation_type
 alias: observation_type
-owner: Observation
 domain_of:
 - Observation
+- MeasurementObservation
 range: string
-required: true
-multivalued: false
 
 </code></pre>
 
