@@ -1311,7 +1311,6 @@ classes:
       observation_type:
         description: The type of Observation being represented (e.g. 'diastolic blood pressure')
         comments: This field holds the "key" in the core key-value pair comprised of the observation_type field and the relevant value(s) field.  
-        values_from: crdch:enum_CRDCH_Observation_observation_type
         multivalued: false
         range: string
         required: true
@@ -1390,6 +1389,10 @@ classes:
       range_high:
         description: If reference ranges for upper and lower limit of normal as provided (typically by a laboratory) these are stored in the range_high and range_low fields. This should be set to NULL if not provided.
         range: Quantity
+      observation_type:
+        description: The type of Observation being represented (e.g. 'diastolic blood pressure')
+        comments: This field holds the "key" in the core key-value pair comprised of the observation_type field and the relevant value(s) field.  
+        range: MeasurementObservationTypeEnum
 
   SdohObservationSet:
     is_a: ObservationSet
@@ -1887,6 +1890,8 @@ enums:
         meaning: OMOP:4822129
       TUMOR_REGISTRY:
         meaning: OMOP:4822266
+      WORKING_DIAGNOSIS:
+        meaning: OMOP:4208085
 
   ConditionStatusEnum:
     description: >-
@@ -3279,4 +3284,227 @@ enums:
       NATURAL_SISTER:
         description: A relation to a natural sister.
         meaning: OMOP:4251326
-  
+
+  MeasurementObservationTypeEnum:
+    description: Values describing the types of MeasurementObservations.
+    permissible_values:
+      ALBUMIN_IN_BLOOD: 
+        meaning: OBA:2050068 #Albumin in blood
+      ALT_SGPT:   
+        meaning: OBA:2050062 #ALT SGPT
+      BASOPHILS_COUNT:  
+        meaning: OBA:VT0002607  #basophils count
+      BILIRUBIN_UNCONJUGATED_INDIRECT: 
+        meaning: OBA:VT0001569  #Bilirubin Unconjugated Indirect
+      BMI:  
+        meaning: OBA:2045455 #BMI
+      BNP:  
+        meaning: OBA:2045303 #BNP
+      BODY_WEIGHT:   
+        meaning: OBA:VT0001259  #Body weight
+      BUN:  
+        meaning: OBA:VT0005265  #BUN
+      CD40_IN_BLOOD: 
+        meaning: OBA:2052305 #CD40 in blood
+      CHLORIDE_IN_BLOOD:   
+        meaning: OBA:VT0003018  #Chloride in blood
+      CREATININE_IN_BLOOD: 
+        meaning: OBA:2050096 #Creatinine in blood
+      CREATININE_IN_URINE: 
+        meaning: OBA:VT0010540  #Creatinine in urine
+      CYSTATIN_C_IN_BLOOD: 
+        meaning: OBA:2052375 #Cystatin C in blood
+      E-SELECTIN_IN_BLOOD: 
+        meaning: OBA:2052778 #E-selectin in blood
+      EOSINOPHILS_COUNT:   
+        meaning: OBA:VT0002602  #Eosinophils count
+      ERYTHROCYTE_SED_RATE:   
+        meaning: OBA:2045235 #Erythrocyte Sed Rate
+      FACTOR_VII: 
+        meaning: OBA:2041535 #Factor VII
+      FERRITIN:   
+        meaning: OBA:VT0010513  #Ferritin
+      FIBRINOGEN: 
+        meaning: OBA:0000061 #Fibrinogen
+      GFR:  
+        meaning: OBA:0003747 #GFR
+      GLUCOSE_IN_BLOOD: 
+        meaning: OBA:VT0000188  #Glucose in blood
+      HDL:  
+        meaning: OBA:VT0000184  #HDL
+      HEART_RATE: 
+        meaning: OBA:1001087 #Heart rate
+      HEIGHT:  
+        meaning: OBA:VT0001253  #Height
+      HEMATOCRIT: 
+        meaning: OBA:2045381 #Hematocrit
+      HEMOGLOBIN: 
+        meaning: OBA:2060175 #Hemoglobin
+      HIP_CIRCUMFERENCE:   
+        meaning: OBA:1000032 #Hip circumference
+      INSULIN_IN_BLOOD: 
+        meaning: OBA:2060174 #Insulin in blood
+      INTERLEUKIN_6_IN_BLOOD: 
+        meaning: OBA:2052890 #interleukin 6 in blood
+      LACTATE_DEHYDROGENASE_LDH: 
+        meaning: OBA:VT0010477  #Lactate Dehydrogenase LDH
+      LACTATE_IN_BLOOD: 
+        meaning: OBA:VT0010616  #Lactate in blood
+      LDL:  
+        meaning: OBA:VT0000181  #LDL
+      LYMPHOCYTES_COUNT:   
+        meaning: OBA:VT0000217  #Lymphocytes count
+      MCP1_IN_BLOOD: 
+        meaning: OBA:2052436 #MCP1 in blood
+      MEAN_ARTERIAL_PRESSURE: 
+        meaning: OBA:VT2000000  #Mean arterial pressure
+      MEAN_CORPUSCULAR_HEMOGLOBIN:  
+        meaning: OBA:2045301 #mean corpuscular hemoglobin
+      MEAN_CORPUSCULAR_VOLUME:   
+        meaning: OBA:0003460 #mean corpuscular volume
+      MEAN_PLATELET_VOLUME:   
+        meaning: OBA:0003277 #mean platelet volume
+      MMP9_IN_BLOOD: 
+        meaning: OBA:2052397 #MMP9 in blood
+      MYELOPEROXIDASE_IN_BLOOD:  
+        meaning: OBA:2052389 #Myeloperoxidase in blood
+      NEUTROPHILS_COUNT:   
+        meaning: OBA:VT0000222  #Neutrophils count
+      NT_PRO_BNP: 
+        meaning: OBA:2045303 #NT pro BNP
+      P-SELECTIN_IN_BLOOD: 
+        meaning: OBA:2052701 #P-selectin in blood
+      PH_OF_BLOOD:   
+        meaning: OBA:2045409 #pH of blood
+      POTASSIUM_IN_BLOOD:  
+        meaning: OBA:VT0002668  #Potassium in blood
+      QRS_INTERVAL:  
+        meaning: OBA:1001086 #QRS interval
+      RED_BLOOD_CELL_COUNT:   
+        meaning: OBA:VT0001586  #Red blood cell count
+      SLEEP_HOURS:   
+        meaning: OBA:2040171 #Sleep hours
+      SODIUM_IN_BLOOD:  
+        meaning: OBA:VT0001776  #Sodium in blood
+      SPO2: 
+        meaning: OBA:2045443 #SpO2
+      TEMPERATURE:   
+        meaning: OBA:VT0005535  #Temperature
+      TNFA_IN_BLOOD: 
+        meaning: OBA:2051979 #TNFa in blood
+      TNFA-R1_IN_BLOOD: 
+        meaning: OBA:2051975 #TNFa-R1 in blood
+      TOTAL_CHOLESTEROL_IN_BLOOD:   
+        meaning: OBA:VT0000180  #Total cholesterol in blood
+      TRIGLYCERIDES_IN_BLOOD: 
+        meaning: OBA:VT0002644  #Triglycerides in blood
+      VON_WILLEBRAND_FACTOR:  
+        meaning: OBA:2052741 #von Willebrand factor
+      WAIST_CIRCUMFERENCE: 
+        meaning: OBA:1001085 #Waist circumference
+      WHITE_BLOOD_CELL_COUNT: 
+        meaning: OBA:VT0000217  #White blood cell count
+      ALBUMIN_IN_URINE: 
+        meaning: OBA:VT0002871  #Albumin in urine
+      FACTOR_VIII:   
+        meaning: OBA:2041536 #Factor VIII
+      MONOCYTES_COUNT:  
+        meaning: OBA:VT0000223  #monocytes count
+      ISOPROSTANE_8_EPI_PGF2A:
+        meaning: OMOP:3011888      #isoprostane_8_epi_pgf2a
+      LPPLA2_ACT:
+        meaning: OMOP:36305170     #lppla2_act
+      APNEA_HYPOP_INDEX:
+        meaning: OMOP:37396400     #apnea_hypop_index
+      ALBUMIN_CREATININE:
+        meaning: OMOP:4154347      #albumin_creatinine
+      ALCOHOL_SERVINGS:
+        meaning: OMOP:35609491     #alcohol_servings
+      AST_SGOT:
+        meaning: OMOP:4263457      #ast_sgot
+      BILIRUBIN_CON:
+        meaning: OMOP:44805650     #bilirubin_con
+      BILIRUBIN_TOT:
+        meaning: OMOP:4230543      #bilirubin_tot
+      BUN_CREATININE:
+        meaning: OMOP:4112223      #bun_creatinine
+      CRP:
+        meaning: OMOP:4208414      #crp
+      CAC_SCORE:
+        meaning: OMOP:42872742     #cac_score
+      CAROTID_IMT:
+        meaning: OMOP:4138462      #carotid_imt
+      SMOKING:
+        meaning: OMOP:43054909     #smoking
+      D_DIMER:
+        meaning: OMOP:37393605     #d_dimer
+      BP_DIASTOLIC:
+        meaning: OMOP:4154790      #bp_diastolic
+      EGFR:
+        meaning: OMOP:37208635     #egfr
+      FAST_GLUC_BLD:
+        meaning: OMOP:4156660      #fast_gluc_bld
+      FEV1:
+        meaning: OMOP:4241837      #fev1
+      FEV1_FVC:
+        meaning: OMOP:3011505      #fev1_fvc
+      FRUIT_SERVING:
+        meaning: OMOP:21493059     #fruit_serving
+      FVC:
+        meaning: OMOP:4176265      #fvc
+      HEMO_A1C:
+        meaning: OMOP:4184637      #hemo_a1c
+      ICAM:
+        meaning: OMOP:4284103      #icam
+      IL1_BETA:
+        meaning: OMOP:3001804      #il1_beta
+      IL10:
+        meaning: OMOP:3004578      #il10
+      IL18:
+        meaning: OMOP:3043144      #il18
+      LYMPHO_PCT:
+        meaning: OMOP:37208690     #lympho_pct
+      LPPLA2_MASS:
+        meaning: OMOP:3041450      #lppla2_mass
+      MCHC:
+        meaning: OMOP:37393850     #mchc
+      NEUTRO_PCT:
+        meaning: OMOP:37208698     #neutro_pct
+      OPG:
+        meaning: OMOP:1552124      #opg
+      PLATELET_CT:
+        meaning: OMOP:4267147      #platelet_ct
+      PR_EKG:
+        meaning: OMOP:4274406      #pr_ekg
+      PROCAL:
+        meaning: OMOP:44791466     #procal
+      QT_EKG:
+        meaning: OMOP:4273023      #qt_ekg
+      RDW:
+        meaning: OMOP:37397924     #rdw
+      RESP_RT:
+        meaning: OMOP:4313591      #resp_rt
+      SODIUM_INTAK:
+        meaning: OMOP:606729    #sodium_intak
+      TNFR2:
+        meaning: OMOP:37543055     #tnfr2
+      TROPONIN:
+        meaning: OMOP:4021291      #troponin
+      VEGE_SERVING:
+        meaning: OMOP:4042886      #vege_serving
+      WAIST_HIP:
+        meaning: OMOP:4087501      #waist_hip
+      CESD_SCORE:
+        meaning: OMOP:36303297     #cesd_score
+      FAST_LIPIDS:
+        meaning: OMOP:4150326      #fast_lipids
+      MED_ADHER:
+        meaning: OMOP:4056965      #med_adher
+      MED_USE:
+        meaning: OMOP:3021806      #med_use
+      PACEM_STAT:
+        meaning: OMOP:45772840     #pacem_stat
+      SLP_AP_STAT:
+        meaning: OMOP:313459    #slp_ap_stat
+      BP_SYSTOLIC:
+        meaning: OMOP:4152194      #bp_systolic
