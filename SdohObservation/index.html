@@ -286,6 +286,13 @@
 
       SdohObservation : observation_type
 
+
+
+
+    SdohObservation --&gt; "1" BaseObservationTypeEnum : observation_type
+    click BaseObservationTypeEnum href "../BaseObservationTypeEnum"
+
+
       SdohObservation : performed_by
 
 
@@ -369,7 +376,7 @@
 </tr>
 <tr>
 <td><a href="../observation_type/">observation_type</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../BaseObservationTypeEnum/">BaseObservationTypeEnum</a></td>
 <td>The type of Observation being represented (e</td>
 <td><a href="../Observation/">Observation</a></td>
 </tr>
@@ -570,7 +577,7 @@ attributes:
     domain_of:
     - Observation
     - MeasurementObservation
-    range: string
+    range: BaseObservationTypeEnum
     required: true
     multivalued: false
   method_type:
