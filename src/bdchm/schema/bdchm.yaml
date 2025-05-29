@@ -1313,7 +1313,7 @@ classes:
         description: The type of Observation being represented (e.g. 'diastolic blood pressure')
         comments: This field holds the "key" in the core key-value pair comprised of the observation_type field and the relevant value(s) field.  
         multivalued: false
-        range: string
+        range: BaseObservationTypeEnum
         required: true
       method_type:
         description: A type of method used in generating the Observation result.
@@ -3509,3 +3509,24 @@ enums:
         meaning: OMOP:313459    #slp_ap_stat
       BP_SYSTOLIC:
         meaning: OMOP:4152194      #bp_systolic
+
+  EducationalAttainmentObservationTypeEnum:
+    description: Values describing the types of Education Attainment observed in an Observation.
+    permissible_values:
+      8TH_GRADE_OR_LESS:
+        meaning: OMOP:1990362
+      HIGH_SCHOOL_NO_DIPLOMA:
+        meaning: OMOP:1990281
+      HIGH_SCHOOL_GRADUATE_GED:
+        meaning: OMOP:37079292
+      SOME_COLLEGE_OR_TECH_NO_DEGREE:
+        meaning: OMOP:45882538
+      COLLEGE_OR_TECH_WITH_DEGREE:
+        meaning: OMOP:45884846
+      MASTERS_OR_DOCTORAL_DEGREE:
+        meaning: OMOP:45880652
+
+  BaseObservationTypeEnum:
+    description: Values describing the types of an Observation.
+    inherits:
+      - EducationalAttainmentObservationTypeEnum
