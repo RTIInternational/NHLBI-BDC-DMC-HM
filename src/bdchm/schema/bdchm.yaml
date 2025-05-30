@@ -3526,7 +3526,20 @@ enums:
       MASTERS_OR_DOCTORAL_DEGREE:
         meaning: OMOP:45880652
 
+  SmokingStatusObservationTypeEnum:
+    description: Values describing the types of Smoking Status observed in an Observation.
+    permissible_values:
+      CURRENT_SMOKER:
+        meaning: OMOP:40766945
+      FORMER_SOMKER:
+        meaning: OMOP:45883458
+      NEVER_SMOKED:
+        meaning: OMOP:45883537
+      UNKNOWN_IF_EVER_SMOKED:
+        meaning: OMOP:45885135
+
   BaseObservationTypeEnum:
     description: Values describing the types of an Observation.
     inherits:
       - EducationalAttainmentObservationTypeEnum
+      - SmokingStatusObservationTypeEnum
