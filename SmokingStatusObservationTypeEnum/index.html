@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/date_ended/">
+        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/SmokingStatusObservationTypeEnum/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>Slot: date_ended - BioData Catalyst Harmonized Model</title>
+        <title>Enum: SmokingStatusObservationTypeEnum - BioData Catalyst Harmonized Model</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-date_ended" class="md-skip">
+        <a href="#enum-smokingstatusobservationtypeenum" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: date_ended
+              Enum: SmokingStatusObservationTypeEnum
             
           </span>
         </div>
@@ -296,18 +296,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#applicable-classes" class="md-nav__link">
+  <a href="#permissible-values" class="md-nav__link">
     <span class="md-ellipsis">
-      Applicable Classes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      Properties
+      Permissible Values
     </span>
   </a>
   
@@ -320,14 +311,20 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mappings" class="md-nav__link">
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
     <span class="md-ellipsis">
-      Mappings
+      Schema Source
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -359,83 +356,66 @@
   
 
 
-<h1 id="slot-date_ended">Slot: date_ended</h1>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/date_ended">bdchm:date_ended</a></p>
-<!-- no inheritance hierarchy -->
-
-<h2 id="applicable-classes">Applicable Classes</h2>
+<h1 id="enum-smokingstatusobservationtypeenum">Enum: SmokingStatusObservationTypeEnum</h1>
+<p><em>Values describing the types of Smoking Status observed in an Observation.</em></p>
+<p>URI: <a href="./">SmokingStatusObservationTypeEnum</a></p>
+<h2 id="permissible-values">Permissible Values</h2>
 <table>
 <thead>
 <tr>
-<th>Name</th>
+<th>Value</th>
+<th>Meaning</th>
 <th>Description</th>
-<th>Modifies Slot</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="../SpecimenTransportActivity/">SpecimenTransportActivity</a></td>
-<td>An activity through which a specimen is transported between locations or orga...</td>
-<td>no</td>
+<td>CURRENT_SMOKER</td>
+<td>OMOP:40766945</td>
+<td></td>
 </tr>
 <tr>
-<td><a href="../SpecimenStorageActivity/">SpecimenStorageActivity</a></td>
-<td>An activity in which a specimen is stored or maintained in a particular locat...</td>
-<td>no</td>
+<td>FORMER_SOMKER</td>
+<td>OMOP:45883458</td>
+<td></td>
 </tr>
 <tr>
-<td><a href="../SpecimenProcessingActivity/">SpecimenProcessingActivity</a></td>
-<td>An activity that modifies the physical structure, composition, or state of a ...</td>
-<td>no</td>
+<td>NEVER_SMOKED</td>
+<td>OMOP:45883537</td>
+<td></td>
 </tr>
 <tr>
-<td><a href="../ResearchStudy/">ResearchStudy</a></td>
-<td>A process where a researcher or organization plans and then executes a series...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../SpecimenCreationActivity/">SpecimenCreationActivity</a></td>
-<td>The process of creating a specimen</td>
-<td>no</td>
+<td>UNKNOWN_IF_EVER_SMOKED</td>
+<td>OMOP:45885135</td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<h2 id="properties">Properties</h2>
-<ul>
-<li>Range: <a href="../String/">String</a></li>
-</ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>bdchm:date_ended</td>
-</tr>
-<tr>
-<td>native</td>
-<td>bdchm:date_ended</td>
-</tr>
-</tbody>
-</table>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+</ul>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: date_ended
-alias: date_ended
-domain_of:
-- ResearchStudy
-- SpecimenCreationActivity
-- SpecimenProcessingActivity
-- SpecimenStorageActivity
-- SpecimenTransportActivity
-range: string
+<pre><code class="language-yaml">name: SmokingStatusObservationTypeEnum
+description: Values describing the types of Smoking Status observed in an Observation.
+from_schema: https://w3id.org/nhlbidatastage/bdchm
+rank: 1000
+permissible_values:
+  CURRENT_SMOKER:
+    text: CURRENT_SMOKER
+    meaning: OMOP:40766945
+  FORMER_SOMKER:
+    text: FORMER_SOMKER
+    meaning: OMOP:45883458
+  NEVER_SMOKED:
+    text: NEVER_SMOKED
+    meaning: OMOP:45883537
+  UNKNOWN_IF_EVER_SMOKED:
+    text: UNKNOWN_IF_EVER_SMOKED
+    meaning: OMOP:45885135
 
 </code></pre>
 
