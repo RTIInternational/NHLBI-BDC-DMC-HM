@@ -1501,6 +1501,9 @@ enums:
       WHITE:
         description: 'Denotes person with European, Middle Eastern, or North African ancestral origin who identifies, or is identified, as White.'
         meaning: OMOP:8527
+      MORE_THAN_ONE_RACE:
+        description: 'A person having more than one race.'
+        meaning: OMOP:45880900
 
   SexEnum:
     description: >-
