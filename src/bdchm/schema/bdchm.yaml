@@ -1896,6 +1896,8 @@ enums:
         meaning: OMOP:4822266
       WORKING_DIAGNOSIS:
         meaning: OMOP:4208085
+      CLINICAL_DIAGNOSIS:
+        meaning: OMOP:4309119
 
   ConditionStatusEnum:
     description: >-
