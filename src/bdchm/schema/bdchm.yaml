@@ -406,6 +406,48 @@ classes:
       value:
         range: string
         required: true
+
+  ConditionSet:
+    is_a: Entity
+    description: A structured object to hold related Conditions in a set.
+    attributes:
+      category:
+        description: The general category of observation set described
+        values_from: crdch:enum_CRDCH_ObservationSet_category
+        multivalued: false
+        range: string
+        required: false
+      focus:
+        description: The entity or entities directly observed/measured in generating an observation result.
+        comments:
+        - The "focus", and "associated_participant" fields are useful when data creators want an Observation object to stand on its own, so it can point back to the entities it is about. These fields are not needed when an Observation is embedded in an entity, where focus, subject, and specimen can be determined from context.
+        multivalued: true
+        inlined_as_list: true
+        range: Entity
+        required: false
+      associated_participant:
+        description: The Participant that the observation is about (if not the direct focus).  Observations are often made on specimens derived from a patient, or other entities related to a patient, that ultimately tell us something about the patient of interest.
+        multivalued: false
+        range: Participant
+        required: false
+      associated_visit:
+        description: A reference to the Visit during which this Observation was recorded.
+        range: Visit
+      method_type:
+        description: The type of method used in generating the ObservationSet
+        comments:
+        - This may be a type of observational, measurement, experimental, or computational method specifying how to generate data (e.g. "manual counting", "bright field microscopy"). Or a Guideline or SOP specifying how to interpret data and/or encode the result of an  Observation (e.g. a Cancer Staging system such as that defined by the AJCC, or variant interpretation guideline such as that provided by the ACMG).
+        values_from: crdch:enum_CRDCH_ObservationSet_method_type
+        multivalued: true
+        range: string
+        required: false
+      performed_by:
+        description: The organization or group that performed the observation activity.
+        multivalued: false
+        range: Organization
+        required: false
+    slots:
+      - conditions
               
   Condition:
     is_a: Entity
@@ -1440,6 +1482,10 @@ slots:
   observations:
     range: Observation
     description: A set of one or more observations.
+    multivalued: true
+  conditions:
+    range: Condition
+    description: A set of one or more conditions.
     multivalued: true
 
 
