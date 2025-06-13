@@ -68,6 +68,7 @@ classes:
         description: Coded value indicating the circumstance or condition that results in the death of the individual.
     slots:
       - identity
+      - participants
 
   Demography:
     is_a: Entity
@@ -120,6 +121,12 @@ classes:
     slots:
       - associated_person
       - identity
+      - observations
+      - conditions
+      - demography
+      - exposures
+      - procedures
+      - sdoh_observations
 
   ResearchStudy:
     is_a: Entity
@@ -1486,6 +1493,26 @@ slots:
   conditions:
     range: Condition
     description: A set of one or more conditions.
+    multivalued: true
+  demography:
+    range: DemographicData
+    description: A set of demographic data about the Participant.
+    multivalued: false
+  exposures:
+    range: Exposure
+    description: A set of one or more exposures.
+    multivalued: true
+  procedures:
+    range: Procedure
+    description: A set of one or more procedures.
+    multivalued: true
+  participants:
+    range: Participant
+    description: A set of one or more Participants.
+    multivalued: true
+  sdoh_observations:
+    range: SdohObservation
+    description: A set of one or more SDOH observations.
     multivalued: true
 
 
