@@ -1343,34 +1343,12 @@ classes:
         multivalued: false
         range: Organization
         required: false
-      value_string:
-        description: A slot to hold a string value for an Observation.
-        comments:
-        - One and only one of the value(x) fields must be populated.
-        multivalued: false
+      observation_value:
+        description: A value for an Observation.
+        multivalued: true
+        inlined_as_list: true
+        range: ObservationValue
         required: false
-        range: string
-      value_boolean:
-        description: A slot to hold a boolean value for an Observation.
-        comments:
-        - One and only one of the value(x) fields must be populated.
-        multivalued: false
-        required: false
-        range: boolean
-      value_quantity:
-        description: A slot to hold a Quantity value for an Observation.
-        comments:
-        - One and only one of the value(x) fields must be populated.
-        multivalued: false
-        required: false
-        range: Quantity
-      value_enum:
-        description: A slot to hold an enumerated value for an Observation.
-        comments:
-        - One and only one of the value(x) fields must be populated.
-        multivalued: false
-        required: false
-        range: BaseEnum
 
   MeasurementObservationSet:
     is_a: ObservationSet
@@ -1415,7 +1393,56 @@ classes:
     slot_usage:
       category: 
         range: GravityDomainEnum
-      
+
+  ObservationValue:
+    is_a: Entity
+    description: A structured object to hold a value for an Observation, such as a string, boolean, quantity, or enumerated value.
+    attributes:
+      value:
+        description: A value for an Observation.
+        multivalued: false
+        required: true
+        range: ObservationValue
+  
+  ObservationValueString:
+    is_a: ObservationValue
+    description: A structured object to hold a string value for an Observation.
+    attributes:
+      value_string:
+        description: A string value for an Observation.
+        multivalued: false
+        required: true
+        range: string
+        
+  ObservationValueBoolean:
+    is_a: ObservationValue
+    description: A structured object to hold a boolean value for an Observation.
+    attributes:
+      value_boolean:
+        description: A boolean value for an Observation.
+        multivalued: false
+        required: true
+        range: boolean
+
+  ObservationValueQuantity:
+    is_a: ObservationValue
+    description: A structured object to hold a Quantity value for an Observation.
+    attributes:
+      value_quantity:
+        description: A Quantity value for an Observation.
+        multivalued: false
+        required: true
+        range: Quantity
+
+  ObservationValueEnum:
+    is_a: ObservationValue
+    description: A structured object to hold an enumerated value for an Observation.
+    attributes:
+      value_enum:
+        description: An enumerated value for an Observation.
+        multivalued: false
+        required: true
+        range: BaseEnum
 
 slots:
   id:
