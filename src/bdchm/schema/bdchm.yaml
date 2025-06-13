@@ -511,6 +511,9 @@ classes:
       procedure_provenance:
         range: ProvenanceEnum
         description: A value representing the provenance of the Procedure record
+      procedure_status:
+        range: ProcedureStatusEnum
+        description: A value indicating whether the medical procedure described in this record is present, absent, or unknown for this individual patient.
       quantity:
         range: Quantity
         description: The quantity of procedures ordered or administered.
@@ -538,6 +541,9 @@ classes:
         description: The Participant's age (expressed in days) at the exposure end date, if available. Otherwise equal to age_at_exposure_start.
         unit:
           ucum_code: d
+      exposure_status:
+        range: ExposureStatusEnum
+        description: A value indicating whether the medical procedure described in this record is present, absent, or unknown for this individual patient.
       associated_participant:
         range: Participant
         description: A reference to the Participant to which the exposure is attributed.
@@ -1989,6 +1995,28 @@ enums:
     description: Procedure codes from OMOP.
     reachable_from:
       source_ontology: OMOP
+  
+  ProcedureStatusEnum:
+    description: >-
+      A constrained set of enumerative values indicating whether a Procedure is present, absent, or its status is unknown.
+    permissible_values:
+      PRESENT:
+        description: The condition is/was present in the patient.
+      ABSENT:
+        description: The condition is/was absent in the patient.
+      UNKNOWN:
+        description: The condition is/was of unknown status in the patient.
+
+  ExposureStatusEnum:
+    description: >-
+      A constrained set of enumerative values indicating whether a Exposure is present, absent, or its status is unknown.
+    permissible_values:
+      PRESENT:
+        description: The condition is/was present in the patient.
+      ABSENT:
+        description: The condition is/was absent in the patient.
+      UNKNOWN:
+        description: The condition is/was of unknown status in the patient.
 
   DrugExposureConceptEnum:
     description: Drug codes from RxNorm.
