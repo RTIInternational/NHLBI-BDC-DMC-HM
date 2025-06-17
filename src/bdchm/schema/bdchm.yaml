@@ -121,10 +121,11 @@ classes:
     slots:
       - associated_person
       - identity
-      - observations
       - conditions
       - demography
       - exposures
+      - measurements
+      - observations
       - procedures
       - sdoh_observations
 
@@ -1507,6 +1508,10 @@ slots:
   exposures:
     range: Exposure
     description: A set of one or more exposures.
+    multivalued: true
+  measurements:
+    range: MeasurementObservation
+    description: A set of one or more measurements.
     multivalued: true
   procedures:
     range: Procedure
