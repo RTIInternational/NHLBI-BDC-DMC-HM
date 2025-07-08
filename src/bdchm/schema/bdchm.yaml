@@ -1502,7 +1502,7 @@ slots:
     description: A set of one or more conditions.
     multivalued: true
   demography:
-    range: DemographicData
+    range: Demography
     description: A set of demographic data about the Participant.
     multivalued: false
   exposures:
