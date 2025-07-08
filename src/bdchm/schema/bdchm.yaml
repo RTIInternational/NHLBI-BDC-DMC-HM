@@ -1504,7 +1504,7 @@ slots:
   demography:
     range: Demography
     description: A set of demographic data about the Participant.
-    multivalued: false
+    multivalued: true
   exposures:
     range: Exposure
     description: A set of one or more exposures.
