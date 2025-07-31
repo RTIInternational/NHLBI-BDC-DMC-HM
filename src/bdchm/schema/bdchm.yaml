@@ -86,6 +86,7 @@ classes:
     slots:
       - identity
       - associated_participant
+      - associated_visit
 
   Participant:
     is_a: Entity
@@ -3290,6 +3291,12 @@ enums:
       NATURAL_SISTER:
         description: A relation to a natural sister.
         meaning: OMOP:4251326
+      NATURAL_CHILD:
+        description: A relation to a natural child.
+        meaning: OMOP:4326600
+      BLOOD_RELATIVE:
+        description: A generic blood relation.
+        meaning: OMOP:4053608
 
   MeasurementObservationTypeEnum:
     description: Values describing the types of MeasurementObservations.
