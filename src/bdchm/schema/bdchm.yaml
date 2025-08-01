@@ -524,6 +524,9 @@ classes:
       associated_visit:
         description: A reference to the Visit during which this Procedure was performed.
         range: Visit
+      procedure_status:
+        description: Absence or Presence of the procedure for the patient
+        range: string
     slots:
       - identity
 
@@ -552,6 +555,9 @@ classes:
         description: A reference to the Visit the exposure is associated with, if any.
         range: Visit
         required: false
+      exposure_status:
+        description: Presence or Absence of exposure
+        range: string
     slots:
       - identity
 
