@@ -313,6 +313,12 @@
 <td>direct</td>
 </tr>
 <tr>
+<td><a href="../associated_visit/">associated_visit</a></td>
+<td>0..1 <br/> <a href="../Visit/">Visit</a></td>
+<td>A reference to the Visit that is associated with this record</td>
+<td>direct</td>
+</tr>
+<tr>
 <td><a href="../procedure_concept/">procedure_concept</a></td>
 <td>0..1 <br/> <a href="../ProcedureConceptEnum/">ProcedureConceptEnum</a></td>
 <td>The coded value that describes the procedure, derived from OMOP codes</td>
@@ -340,12 +346,6 @@
 <td><a href="../associated_participant/">associated_participant</a></td>
 <td>0..1 <br/> <a href="../Participant/">Participant</a></td>
 <td>A reference to the Participant on which the Procedure was performed</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../associated_visit/">associated_visit</a></td>
-<td>0..1 <br/> <a href="../Visit/">Visit</a></td>
-<td>A reference to the Visit during which this Procedure was performed</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -393,6 +393,7 @@ from_schema: https://w3id.org/nhlbidatastage/bdchm
 is_a: Entity
 slots:
 - identity
+- associated_visit
 attributes:
   procedure_concept:
     name: procedure_concept
@@ -445,18 +446,6 @@ attributes:
     - ObservationSet
     - Observation
     range: Participant
-  associated_visit:
-    name: associated_visit
-    description: A reference to the Visit during which this Procedure was performed.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    domain_of:
-    - QuestionnaireResponse
-    - Condition
-    - Procedure
-    - Exposure
-    - ObservationSet
-    - Observation
-    range: Visit
 
 </code></pre>
 </details>
@@ -531,20 +520,6 @@ attributes:
     - ObservationSet
     - Observation
     range: Participant
-  associated_visit:
-    name: associated_visit
-    description: A reference to the Visit during which this Procedure was performed.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    alias: associated_visit
-    owner: Procedure
-    domain_of:
-    - QuestionnaireResponse
-    - Condition
-    - Procedure
-    - Exposure
-    - ObservationSet
-    - Observation
-    range: Visit
   identity:
     name: identity
     description: A 'business' identifier or accession number for the entity, typically
@@ -578,6 +553,22 @@ attributes:
     - BiologicProduct
     range: uriorcurie
     multivalued: true
+  associated_visit:
+    name: associated_visit
+    description: A reference to the Visit that is associated with this record.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: associated_visit
+    owner: Procedure
+    domain_of:
+    - Demography
+    - QuestionnaireResponse
+    - Condition
+    - Procedure
+    - Exposure
+    - ObservationSet
+    - Observation
+    range: Visit
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The

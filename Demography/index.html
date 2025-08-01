@@ -244,6 +244,15 @@
     click Participant href "../Participant"
 
 
+      Demography : associated_visit
+
+
+
+
+    Demography --&gt; "0..1" Visit : associated_visit
+    click Visit href "../Visit"
+
+
       Demography : ethnicity
 
 
@@ -308,6 +317,12 @@
 <td>direct</td>
 </tr>
 <tr>
+<td><a href="../associated_visit/">associated_visit</a></td>
+<td>0..1 <br/> <a href="../Visit/">Visit</a></td>
+<td>A reference to the Visit that is associated with this record</td>
+<td>direct</td>
+</tr>
+<tr>
 <td><a href="../sex/">sex</a></td>
 <td>0..1 <br/> <a href="../SexEnum/">SexEnum</a></td>
 <td>The biologic character or quality that distinguishes male and female from one...</td>
@@ -369,6 +384,7 @@ is_a: Entity
 slots:
 - identity
 - associated_participant
+- associated_visit
 attributes:
   sex:
     name: sex
@@ -505,6 +521,22 @@ attributes:
     - ObservationSet
     - Observation
     range: Participant
+  associated_visit:
+    name: associated_visit
+    description: A reference to the Visit that is associated with this record.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: associated_visit
+    owner: Demography
+    domain_of:
+    - Demography
+    - QuestionnaireResponse
+    - Condition
+    - Procedure
+    - Exposure
+    - ObservationSet
+    - Observation
+    range: Visit
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The

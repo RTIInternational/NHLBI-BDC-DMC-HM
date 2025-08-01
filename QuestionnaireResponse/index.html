@@ -278,6 +278,12 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="../associated_visit/">associated_visit</a></td>
+<td>0..1 <br/> <a href="../Visit/">Visit</a></td>
+<td>A reference to the Visit that is associated with this record</td>
+<td>direct</td>
+</tr>
+<tr>
 <td><a href="../age_at_response/">age_at_response</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>The age (in days) of the Participant when the QuestionnaireResponse was captu...</td>
@@ -287,12 +293,6 @@
 <td><a href="../items/">items</a></td>
 <td>1..* <br/> <a href="../QuestionnaireResponseItem/">QuestionnaireResponseItem</a></td>
 <td>A collection of QuestionnaireResponseItem objects which encapsulate the quest...</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../associated_visit/">associated_visit</a></td>
-<td>0..1 <br/> <a href="../Visit/">Visit</a></td>
-<td>A reference to the Visit during which this QuestionnaireResponse was captured</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -336,6 +336,8 @@ description: QuestionnaireResponse provides a complete or partial list of answer
   to a set of questions filled when responding to a questionnaire. (FHIR)
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 is_a: Entity
+slots:
+- associated_visit
 attributes:
   age_at_response:
     name: age_at_response
@@ -359,20 +361,6 @@ attributes:
     range: QuestionnaireResponseItem
     required: true
     multivalued: true
-  associated_visit:
-    name: associated_visit
-    description: A reference to the Visit during which this QuestionnaireResponse
-      was captured.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    rank: 1000
-    domain_of:
-    - QuestionnaireResponse
-    - Condition
-    - Procedure
-    - Exposure
-    - ObservationSet
-    - Observation
-    range: Visit
 
 </code></pre>
 </details>
@@ -412,13 +400,13 @@ attributes:
     multivalued: true
   associated_visit:
     name: associated_visit
-    description: A reference to the Visit during which this QuestionnaireResponse
-      was captured.
+    description: A reference to the Visit that is associated with this record.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     alias: associated_visit
     owner: QuestionnaireResponse
     domain_of:
+    - Demography
     - QuestionnaireResponse
     - Condition
     - Procedure

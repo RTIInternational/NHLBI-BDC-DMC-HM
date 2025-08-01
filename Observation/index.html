@@ -358,6 +358,12 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="../associated_visit/">associated_visit</a></td>
+<td>0..1 <br/> <a href="../Visit/">Visit</a></td>
+<td>A reference to the Visit that is associated with this record</td>
+<td>direct</td>
+</tr>
+<tr>
 <td><a href="../age_at_observation/">age_at_observation</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>The Participant's age (expressed in days) when the Observation was made</td>
@@ -391,12 +397,6 @@
 <td><a href="../associated_participant/">associated_participant</a></td>
 <td>0..1 <br/> <a href="../Participant/">Participant</a></td>
 <td>The patient that the observation is about (if not the direct focus)</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../associated_visit/">associated_visit</a></td>
-<td>0..1 <br/> <a href="../Visit/">Visit</a></td>
-<td>A reference to the Visit during which this Observation was recorded</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -490,6 +490,8 @@ description: A data structure with key (observation_type) and value (value) attr
   blood count panel.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 is_a: Entity
+slots:
+- associated_visit
 attributes:
   age_at_observation:
     name: age_at_observation
@@ -587,18 +589,6 @@ attributes:
     range: Participant
     required: false
     multivalued: false
-  associated_visit:
-    name: associated_visit
-    description: A reference to the Visit during which this Observation was recorded.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    domain_of:
-    - QuestionnaireResponse
-    - Condition
-    - Procedure
-    - Exposure
-    - ObservationSet
-    - Observation
-    range: Visit
   performed_by:
     name: performed_by
     description: The organization or group that performed the observation activity.
@@ -778,20 +768,6 @@ attributes:
     range: Participant
     required: false
     multivalued: false
-  associated_visit:
-    name: associated_visit
-    description: A reference to the Visit during which this Observation was recorded.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    alias: associated_visit
-    owner: Observation
-    domain_of:
-    - QuestionnaireResponse
-    - Condition
-    - Procedure
-    - Exposure
-    - ObservationSet
-    - Observation
-    range: Visit
   performed_by:
     name: performed_by
     description: The organization or group that performed the observation activity.
@@ -861,6 +837,22 @@ attributes:
     range: BaseEnum
     required: false
     multivalued: false
+  associated_visit:
+    name: associated_visit
+    description: A reference to the Visit that is associated with this record.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: associated_visit
+    owner: Observation
+    domain_of:
+    - Demography
+    - QuestionnaireResponse
+    - Condition
+    - Procedure
+    - Exposure
+    - ObservationSet
+    - Observation
+    range: Visit
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The

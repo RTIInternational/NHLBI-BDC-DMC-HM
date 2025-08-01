@@ -368,6 +368,12 @@
 <td><a href="../Exposure/">Exposure</a></td>
 </tr>
 <tr>
+<td><a href="../associated_visit/">associated_visit</a></td>
+<td>0..1 <br/> <a href="../Visit/">Visit</a></td>
+<td>A reference to the Visit that is associated with this record</td>
+<td><a href="../Exposure/">Exposure</a></td>
+</tr>
+<tr>
 <td><a href="../age_at_exposure_start/">age_at_exposure_start</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>The Participant's age (expressed in days) at the exposure start date</td>
@@ -383,12 +389,6 @@
 <td><a href="../associated_participant/">associated_participant</a></td>
 <td>0..1 <br/> <a href="../Participant/">Participant</a></td>
 <td>A reference to the Participant to which the exposure is attributed</td>
-<td><a href="../Exposure/">Exposure</a></td>
-</tr>
-<tr>
-<td><a href="../associated_visit/">associated_visit</a></td>
-<td>0..1 <br/> <a href="../Visit/">Visit</a></td>
-<td>A reference to the Visit the exposure is associated with, if any</td>
 <td><a href="../Exposure/">Exposure</a></td>
 </tr>
 <tr>
@@ -677,6 +677,22 @@ attributes:
     - BiologicProduct
     range: uriorcurie
     multivalued: true
+  associated_visit:
+    name: associated_visit
+    description: A reference to the Visit that is associated with this record.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: associated_visit
+    owner: DrugExposure
+    domain_of:
+    - Demography
+    - QuestionnaireResponse
+    - Condition
+    - Procedure
+    - Exposure
+    - ObservationSet
+    - Observation
+    range: Visit
   age_at_exposure_start:
     name: age_at_exposure_start
     description: The Participant's age (expressed in days) at the exposure start date.
@@ -718,21 +734,6 @@ attributes:
     - ObservationSet
     - Observation
     range: Participant
-  associated_visit:
-    name: associated_visit
-    description: A reference to the Visit the exposure is associated with, if any.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    alias: associated_visit
-    owner: DrugExposure
-    domain_of:
-    - QuestionnaireResponse
-    - Condition
-    - Procedure
-    - Exposure
-    - ObservationSet
-    - Observation
-    range: Visit
-    required: false
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The

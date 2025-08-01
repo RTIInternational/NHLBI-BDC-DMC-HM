@@ -320,6 +320,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schema Source
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -360,6 +375,7 @@
 
 
 <h1 id="slot-associated_visit">Slot: associated_visit</h1>
+<p><em>A reference to the Visit that is associated with this record.</em></p>
 <p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/associated_visit">bdchm:associated_visit</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -374,33 +390,8 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../SdohObservationSet/">SdohObservationSet</a></td>
-<td>A structured object to hold related Observations in a set</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../QuestionnaireResponse/">QuestionnaireResponse</a></td>
-<td>QuestionnaireResponse provides a complete or partial list of answers to a set...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Procedure/">Procedure</a></td>
-<td>Procedure contains records of activities or processes ordered by, or carried ...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../SdohObservation/">SdohObservation</a></td>
-<td>A data structure with key (observation_type) and value (value) attributes tha...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../MeasurementObservation/">MeasurementObservation</a></td>
-<td>A data structure with key (observation_type) and value (value) attributes tha...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Observation/">Observation</a></td>
-<td>A data structure with key (observation_type) and value (value) attributes tha...</td>
+<td><a href="../DimensionalObservationSet/">DimensionalObservationSet</a></td>
+<td>A set of one or more discrete observations about the physical dimensions of a...</td>
 <td>no</td>
 </tr>
 <tr>
@@ -409,28 +400,8 @@
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../SpecimenQuantityObservation/">SpecimenQuantityObservation</a></td>
-<td>A structured object that describes a single data item about the quantity of a...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../DimensionalObservationSet/">DimensionalObservationSet</a></td>
-<td>A set of one or more discrete observations about the physical dimensions of a...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Condition/">Condition</a></td>
-<td>Conditions are records of a Person suggesting the presence of a disease or me...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../DeviceExposure/">DeviceExposure</a></td>
-<td>DeviceExposures are records of a Person suggesting exposure to a foreign obje...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../DimensionalObservation/">DimensionalObservation</a></td>
-<td>A structured object that describes a single data item about the physical dime...</td>
+<td><a href="../SpecimenQualityObservation/">SpecimenQualityObservation</a></td>
+<td>A structured object that describes a characteristic of a specimen indicative ...</td>
 <td>no</td>
 </tr>
 <tr>
@@ -439,13 +410,63 @@
 <td>no</td>
 </tr>
 <tr>
+<td><a href="../SpecimenQuantityObservation/">SpecimenQuantityObservation</a></td>
+<td>A structured object that describes a single data item about the quantity of a...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../DeviceExposure/">DeviceExposure</a></td>
+<td>DeviceExposures are records of a Person suggesting exposure to a foreign obje...</td>
+<td>no</td>
+</tr>
+<tr>
 <td><a href="../Exposure/">Exposure</a></td>
 <td>Exposures are records of a Person suggesting exposure to a medication, device...</td>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../SpecimenQualityObservation/">SpecimenQualityObservation</a></td>
-<td>A structured object that describes a characteristic of a specimen indicative ...</td>
+<td><a href="../Procedure/">Procedure</a></td>
+<td>Procedure contains records of activities or processes ordered by, or carried ...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../QuestionnaireResponse/">QuestionnaireResponse</a></td>
+<td>QuestionnaireResponse provides a complete or partial list of answers to a set...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../Demography/">Demography</a></td>
+<td>Demographics about an individual or animal receiving care or other health-rel...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../DimensionalObservation/">DimensionalObservation</a></td>
+<td>A structured object that describes a single data item about the physical dime...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../Observation/">Observation</a></td>
+<td>A data structure with key (observation_type) and value (value) attributes tha...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../SdohObservation/">SdohObservation</a></td>
+<td>A data structure with key (observation_type) and value (value) attributes tha...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../SdohObservationSet/">SdohObservationSet</a></td>
+<td>A structured object to hold related Observations in a set</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../Condition/">Condition</a></td>
+<td>Conditions are records of a Person suggesting the presence of a disease or me...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../MeasurementObservation/">MeasurementObservation</a></td>
+<td>A data structure with key (observation_type) and value (value) attributes tha...</td>
 <td>no</td>
 </tr>
 <tr>
@@ -457,9 +478,13 @@
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../String/">String</a></li>
+<li>Range: <a href="../Visit/">Visit</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+</ul>
 <h2 id="mappings">Mappings</h2>
 <table>
 <thead>
@@ -483,15 +508,19 @@
 <details>
 
 <pre><code class="language-yaml">name: associated_visit
+description: A reference to the Visit that is associated with this record.
+from_schema: https://w3id.org/nhlbidatastage/bdchm
+rank: 1000
 alias: associated_visit
 domain_of:
+- Demography
 - QuestionnaireResponse
 - Condition
 - Procedure
 - Exposure
 - ObservationSet
 - Observation
-range: string
+range: Visit
 
 </code></pre>
 

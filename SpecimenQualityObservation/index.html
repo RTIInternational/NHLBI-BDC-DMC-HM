@@ -341,6 +341,12 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="../associated_visit/">associated_visit</a></td>
+<td>0..1 <br/> <a href="../Visit/">Visit</a></td>
+<td>A reference to the Visit that is associated with this record</td>
+<td><a href="../Observation/">Observation</a></td>
+</tr>
+<tr>
 <td><a href="../age_at_observation/">age_at_observation</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>The Participant's age (expressed in days) when the Observation was made</td>
@@ -374,12 +380,6 @@
 <td><a href="../associated_participant/">associated_participant</a></td>
 <td>0..1 <br/> <a href="../Participant/">Participant</a></td>
 <td>The patient that the observation is about (if not the direct focus)</td>
-<td><a href="../Observation/">Observation</a></td>
-</tr>
-<tr>
-<td><a href="../associated_visit/">associated_visit</a></td>
-<td>0..1 <br/> <a href="../Visit/">Visit</a></td>
-<td>A reference to the Visit during which this Observation was recorded</td>
 <td><a href="../Observation/">Observation</a></td>
 </tr>
 <tr>
@@ -485,6 +485,22 @@ description: A structured object that describes a characteristic of a specimen i
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 is_a: Observation
 attributes:
+  associated_visit:
+    name: associated_visit
+    description: A reference to the Visit that is associated with this record.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: associated_visit
+    owner: SpecimenQualityObservation
+    domain_of:
+    - Demography
+    - QuestionnaireResponse
+    - Condition
+    - Procedure
+    - Exposure
+    - ObservationSet
+    - Observation
+    range: Visit
   age_at_observation:
     name: age_at_observation
     description: The Participant's age (expressed in days) when the Observation was
@@ -593,20 +609,6 @@ attributes:
     range: Participant
     required: false
     multivalued: false
-  associated_visit:
-    name: associated_visit
-    description: A reference to the Visit during which this Observation was recorded.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    alias: associated_visit
-    owner: SpecimenQualityObservation
-    domain_of:
-    - QuestionnaireResponse
-    - Condition
-    - Procedure
-    - Exposure
-    - ObservationSet
-    - Observation
-    range: Visit
   performed_by:
     name: performed_by
     description: The organization or group that performed the observation activity.

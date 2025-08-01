@@ -327,6 +327,12 @@
 <td>direct</td>
 </tr>
 <tr>
+<td><a href="../associated_visit/">associated_visit</a></td>
+<td>0..1 <br/> <a href="../Visit/">Visit</a></td>
+<td>A reference to the Visit that is associated with this record</td>
+<td>direct</td>
+</tr>
+<tr>
 <td><a href="../category/">category</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>The general category of observation set described</td>
@@ -342,12 +348,6 @@
 <td><a href="../associated_participant/">associated_participant</a></td>
 <td>0..1 <br/> <a href="../Participant/">Participant</a></td>
 <td>The Participant that the observation is about (if not the direct focus)</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../associated_visit/">associated_visit</a></td>
-<td>0..1 <br/> <a href="../Visit/">Visit</a></td>
-<td>A reference to the Visit during which this Observation was recorded</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -404,6 +404,7 @@ from_schema: https://w3id.org/nhlbidatastage/bdchm
 is_a: Entity
 slots:
 - observations
+- associated_visit
 attributes:
   category:
     name: category
@@ -456,18 +457,6 @@ attributes:
     range: Participant
     required: false
     multivalued: false
-  associated_visit:
-    name: associated_visit
-    description: A reference to the Visit during which this Observation was recorded.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    domain_of:
-    - QuestionnaireResponse
-    - Condition
-    - Procedure
-    - Exposure
-    - ObservationSet
-    - Observation
-    range: Visit
   method_type:
     name: method_type
     description: The type of method used in generating the ObservationSet
@@ -567,20 +556,6 @@ attributes:
     range: Participant
     required: false
     multivalued: false
-  associated_visit:
-    name: associated_visit
-    description: A reference to the Visit during which this Observation was recorded.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    alias: associated_visit
-    owner: ObservationSet
-    domain_of:
-    - QuestionnaireResponse
-    - Condition
-    - Procedure
-    - Exposure
-    - ObservationSet
-    - Observation
-    range: Visit
   method_type:
     name: method_type
     description: The type of method used in generating the ObservationSet
@@ -628,6 +603,22 @@ attributes:
     - ObservationSet
     range: Observation
     multivalued: true
+  associated_visit:
+    name: associated_visit
+    description: A reference to the Visit that is associated with this record.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: associated_visit
+    owner: ObservationSet
+    domain_of:
+    - Demography
+    - QuestionnaireResponse
+    - Condition
+    - Procedure
+    - Exposure
+    - ObservationSet
+    - Observation
+    range: Visit
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The
