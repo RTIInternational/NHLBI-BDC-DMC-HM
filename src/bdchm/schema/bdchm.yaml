@@ -339,9 +339,8 @@ classes:
         range: QuestionnaireResponseItem
         multivalued: true
         required: true
-      associated_visit:
-        description: A reference to the Visit during which this QuestionnaireResponse was captured.
-        range: Visit
+    slots:
+      - associated_visit
 
   QuestionnaireResponseItem:
     description: QuestionnaireResponseItem provides a complete or partial list of answers to a set of questions filled when responding to a questionnaire. (FHIR)
@@ -441,11 +440,9 @@ classes:
       associated_participant:
         range: Participant
         description: A reference to the Participant to which the Condition is attributed.
-      associated_visit:
-        description: A reference to the Visit during which this Condition was recorded.
-        range: Visit
     slots:
       - identity
+      - associated_visit
 
   Procedure:
     is_a: Entity
@@ -469,11 +466,9 @@ classes:
       associated_participant:
         range: Participant
         description: A reference to the Participant on which the Procedure was performed.
-      associated_visit:
-        description: A reference to the Visit during which this Procedure was performed.
-        range: Visit
     slots:
       - identity
+      - associated_visit
 
   Exposure:
     is_a: Entity
@@ -493,12 +488,9 @@ classes:
       associated_participant:
         range: Participant
         description: A reference to the Participant to which the exposure is attributed.
-      associated_visit:
-        description: A reference to the Visit the exposure is associated with, if any.
-        range: Visit
-        required: false
     slots:
       - identity
+      - associated_visit
 
   DrugExposure:
     is_a: Exposure
@@ -1276,9 +1268,6 @@ classes:
         multivalued: false
         range: Participant
         required: false
-      associated_visit:
-        description: A reference to the Visit during which this Observation was recorded.
-        range: Visit
       method_type:
         description: The type of method used in generating the ObservationSet
         comments:
@@ -1294,6 +1283,7 @@ classes:
         required: false
     slots:
       - observations
+      - associated_visit
       
   Observation:
     is_a: Entity
@@ -1336,9 +1326,6 @@ classes:
         multivalued: false
         range: Participant
         required: false
-      associated_visit:
-        description: A reference to the Visit during which this Observation was recorded.
-        range: Visit
       performed_by:
         description: The organization or group that performed the observation activity.
         multivalued: false
@@ -1372,6 +1359,8 @@ classes:
         multivalued: false
         required: false
         range: BaseEnum
+    slots:
+      - associated_visit
 
   MeasurementObservationSet:
     is_a: ObservationSet
@@ -1432,6 +1421,9 @@ slots:
   associated_person:
     range: Person
     description: A reference to the Person that is associated with this record.
+  associated_visit:
+    description: A reference to the Visit that is associated with this record.
+    range: Visit
   value:
     range: string
     description: A general slot to hold a value.
