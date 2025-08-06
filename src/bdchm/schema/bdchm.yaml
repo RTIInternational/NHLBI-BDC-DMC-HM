@@ -155,6 +155,15 @@ classes:
       - date_ended:
           range: TimePoint
           description: The date when the research project ended.
+      - accesssion_number:
+          range: string
+          description: The accession number of the research study with the accession authority
+      - accession_authority:
+          range: string
+          description: The accession authority for the research study.
+      - version:
+          range: string
+          description: The version number of the ResearchStudy
       - url:
           range: uriorcurie
           description: A URL address for a resource that provides information about a research program, project, or study.
@@ -524,9 +533,6 @@ classes:
       associated_visit:
         description: A reference to the Visit during which this Procedure was performed.
         range: Visit
-      procedure_status:
-        description: Absence or Presence of the procedure for the patient
-        range: string
     slots:
       - identity
 
@@ -555,9 +561,6 @@ classes:
         description: A reference to the Visit the exposure is associated with, if any.
         range: Visit
         required: false
-      exposure_status:
-        description: Presence or Absence of exposure
-        range: string
     slots:
       - identity
 
