@@ -155,7 +155,7 @@ classes:
       - date_ended:
           range: TimePoint
           description: The date when the research project ended.
-      - accesssion_number:
+      - accession_number:
           range: string
           description: The accession number of the research study with the accession authority
       - accession_authority:
