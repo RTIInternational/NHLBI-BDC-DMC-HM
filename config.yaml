@@ -18,8 +18,8 @@ generator_args:
   #   metadata: false
   # jsonld:
   #   mergeimports: false
-  # jsonschema:
-  #   mergeimports: false
+  jsonschema:
+    mergeimports: false
   # jsonldcontext:
   #   mergeimports: false
   python:

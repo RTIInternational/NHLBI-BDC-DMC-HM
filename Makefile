@@ -28,6 +28,7 @@ SHEET_ID = $(LINKML_SCHEMA_GOOGLE_SHEET_ID)
 SHEET_TABS = $(LINKML_SCHEMA_GOOGLE_SHEET_TABS)
 SHEET_MODULE_PATH = $(SOURCE_SCHEMA_DIR)/$(SHEET_MODULE).yaml
 TEMPLATEDIR = $(SRC)/doc-templates
+GENERATEDDIR = generated
 
 CONFIG_YAML =
 ifdef LINKML_GENERATORS_CONFIG_YAML
@@ -198,6 +199,9 @@ gendoc: $(DOCDIR)
 	cp -rf $(SRC)/docs/* $(DOCDIR) ; \
 	$(RUN) gen-doc -d $(DOCDIR) --template-directory $(TEMPLATEDIR)  $(SOURCE_SCHEMA_PATH)
 #	$(RUN) gen-doc ${GEN_DOC_ARGS} -d $(DOCDIR) --template-directory $(TEMPLATEDIR) $(SOURCE_SCHEMA_PATH)
+
+genjsonschema: 
+	$(RUN) gen-json-schema $(SOURCE_SCHEMA_PATH) > $(GENERATEDDIR)/bdchm.schema.json
 
 testdoc: gendoc serve
 
