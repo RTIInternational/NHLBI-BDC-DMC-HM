@@ -255,6 +255,13 @@
 
       Person : cause_of_death
 
+
+
+
+    Person --&gt; "*" CauseOfDeath : cause_of_death
+    click CauseOfDeath href "../CauseOfDeath"
+
+
       Person : id
 
       Person : identity
@@ -345,7 +352,7 @@
 </tr>
 <tr>
 <td><a href="../cause_of_death/">cause_of_death</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>* <br/> <a href="../CauseOfDeath/">CauseOfDeath</a></td>
 <td>Coded value indicating the circumstance or condition that results in the deat...</td>
 <td>direct</td>
 </tr>
@@ -478,7 +485,8 @@ attributes:
     rank: 1000
     domain_of:
     - Person
-    range: string
+    range: CauseOfDeath
+    multivalued: true
 
 </code></pre>
 </details>
@@ -570,7 +578,8 @@ attributes:
     owner: Person
     domain_of:
     - Person
-    range: string
+    range: CauseOfDeath
+    multivalued: true
   identity:
     name: identity
     description: A 'business' identifier or accession number for the entity, typically

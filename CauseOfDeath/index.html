@@ -5,10 +5,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/Entity/" rel="canonical"/>
+<link href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/CauseOfDeath/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.6.1" name="generator"/>
-<title>Class: Entity - BioData Catalyst Harmonized Model</title>
+<title>Class: CauseOfDeath - BioData Catalyst Harmonized Model</title>
 <link href="../assets/stylesheets/main.a40c8224.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
@@ -20,7 +20,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#class-entity">
+<a class="md-skip" href="#class-causeofdeath">
           Skip to content
         </a>
 </div>
@@ -44,7 +44,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Class: Entity
+              Class: CauseOfDeath
             
           </span>
 </div>
@@ -233,110 +233,34 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="class-entity">Class: Entity</h1>
-<p><em>Any resource that has its own identifier</em></p>
-<ul>
-<li><strong>NOTE</strong>: this is an abstract class and should not be instantiated directly</li>
-</ul>
-<p>URI: <a href="http://schema.org/Thing">schema:Thing</a></p>
+<h1 id="class-causeofdeath">Class: CauseOfDeath</h1>
+<p><em>A class / complex datatype for handling both values and ordinality for causes of death.</em></p>
+<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/CauseOfDeath">bdchm:CauseOfDeath</a></p>
 <div class="mermaid"> classDiagram
-    class Entity
-    click Entity href "../Entity"
-      Entity &lt;|-- Person
-        click Person href "../Person"
-      Entity &lt;|-- Demography
-        click Demography href "../Demography"
-      Entity &lt;|-- Participant
-        click Participant href "../Participant"
-      Entity &lt;|-- ResearchStudy
-        click ResearchStudy href "../ResearchStudy"
-      Entity &lt;|-- Consent
-        click Consent href "../Consent"
-      Entity &lt;|-- Visit
-        click Visit href "../Visit"
-      Entity &lt;|-- Organization
-        click Organization href "../Organization"
-      Entity &lt;|-- TimePoint
-        click TimePoint href "../TimePoint"
-      Entity &lt;|-- Questionnaire
-        click Questionnaire href "../Questionnaire"
-      Entity &lt;|-- QuestionnaireItem
-        click QuestionnaireItem href "../QuestionnaireItem"
-      Entity &lt;|-- QuestionnaireResponse
-        click QuestionnaireResponse href "../QuestionnaireResponse"
-      Entity &lt;|-- Condition
-        click Condition href "../Condition"
-      Entity &lt;|-- Procedure
-        click Procedure href "../Procedure"
-      Entity &lt;|-- Exposure
-        click Exposure href "../Exposure"
-      Entity &lt;|-- File
-        click File href "../File"
-      Entity &lt;|-- Document
-        click Document href "../Document"
-      Entity &lt;|-- Specimen
-        click Specimen href "../Specimen"
-      Entity &lt;|-- SpecimenContainer
-        click SpecimenContainer href "../SpecimenContainer"
-      Entity &lt;|-- SpecimenCreationActivity
-        click SpecimenCreationActivity href "../SpecimenCreationActivity"
-      Entity &lt;|-- SpecimenProcessingActivity
-        click SpecimenProcessingActivity href "../SpecimenProcessingActivity"
-      Entity &lt;|-- SpecimenStorageActivity
-        click SpecimenStorageActivity href "../SpecimenStorageActivity"
-      Entity &lt;|-- SpecimenTransportActivity
-        click SpecimenTransportActivity href "../SpecimenTransportActivity"
-      Entity &lt;|-- BiologicProduct
-        click BiologicProduct href "../BiologicProduct"
-      Entity &lt;|-- Substance
-        click Substance href "../Substance"
-      Entity &lt;|-- Quantity
-        click Quantity href "../Quantity"
-      Entity &lt;|-- BodySite
-        click BodySite href "../BodySite"
-      Entity &lt;|-- ObservationSet
-        click ObservationSet href "../ObservationSet"
-      Entity &lt;|-- Observation
-        click Observation href "../Observation"
+    class CauseOfDeath
+    click CauseOfDeath href "../CauseOfDeath"
       Entity &lt;|-- CauseOfDeath
-        click CauseOfDeath href "../CauseOfDeath"
+        click Entity href "../Entity"
 
-      Entity : id
+      CauseOfDeath : cause
+
+
+
+
+    CauseOfDeath --&gt; "1" CauseOfDeathEnum : cause
+    click CauseOfDeathEnum href "../CauseOfDeathEnum"
+
+
+      CauseOfDeath : id
+
+      CauseOfDeath : order
 
 
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
-<li><strong>Entity</strong><ul>
-<li><a href="../Person/">Person</a></li>
-<li><a href="../Demography/">Demography</a></li>
-<li><a href="../Participant/">Participant</a></li>
-<li><a href="../ResearchStudy/">ResearchStudy</a></li>
-<li><a href="../Consent/">Consent</a></li>
-<li><a href="../Visit/">Visit</a></li>
-<li><a href="../Organization/">Organization</a></li>
-<li><a href="../TimePoint/">TimePoint</a></li>
-<li><a href="../Questionnaire/">Questionnaire</a></li>
-<li><a href="../QuestionnaireItem/">QuestionnaireItem</a></li>
-<li><a href="../QuestionnaireResponse/">QuestionnaireResponse</a></li>
-<li><a href="../Condition/">Condition</a></li>
-<li><a href="../Procedure/">Procedure</a></li>
-<li><a href="../Exposure/">Exposure</a></li>
-<li><a href="../File/">File</a></li>
-<li><a href="../Document/">Document</a></li>
-<li><a href="../Specimen/">Specimen</a></li>
-<li><a href="../SpecimenContainer/">SpecimenContainer</a></li>
-<li><a href="../SpecimenCreationActivity/">SpecimenCreationActivity</a></li>
-<li><a href="../SpecimenProcessingActivity/">SpecimenProcessingActivity</a></li>
-<li><a href="../SpecimenStorageActivity/">SpecimenStorageActivity</a></li>
-<li><a href="../SpecimenTransportActivity/">SpecimenTransportActivity</a></li>
-<li><a href="../BiologicProduct/">BiologicProduct</a></li>
-<li><a href="../Substance/">Substance</a></li>
-<li><a href="../Quantity/">Quantity</a></li>
-<li><a href="../BodySite/">BodySite</a></li>
-<li><a href="../ObservationSet/">ObservationSet</a></li>
-<li><a href="../Observation/">Observation</a></li>
-<li><a href="../CauseOfDeath/">CauseOfDeath</a></li>
+<li><a href="../Entity/">Entity</a><ul>
+<li><strong>CauseOfDeath</strong></li>
 </ul>
 </li>
 </ul>
@@ -352,10 +276,22 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="../cause/">cause</a></td>
+<td>1 <br/> <a href="../CauseOfDeathEnum/">CauseOfDeathEnum</a></td>
+<td>The value for the cause of death (e</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../order/">order</a></td>
+<td>1 <br/> <a href="../Integer/">Integer</a></td>
+<td>The ordinality of a given cause of death record recorded in integers</td>
+<td>direct</td>
+</tr>
+<tr>
 <td><a href="../id/">id</a></td>
 <td>1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
 <td>The 'logical' identifier of the entity within the system of record</td>
-<td>direct</td>
+<td><a href="../Entity/">Entity</a></td>
 </tr>
 </tbody>
 </table>
@@ -371,70 +307,10 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../DimensionalObservation/">DimensionalObservation</a></td>
-<td><a href="../focus/">focus</a></td>
+<td><a href="../Person/">Person</a></td>
+<td><a href="../cause_of_death/">cause_of_death</a></td>
 <td>range</td>
-<td><a href="./">Entity</a></td>
-</tr>
-<tr>
-<td><a href="../DimensionalObservationSet/">DimensionalObservationSet</a></td>
-<td><a href="../focus/">focus</a></td>
-<td>range</td>
-<td><a href="./">Entity</a></td>
-</tr>
-<tr>
-<td><a href="../Document/">Document</a></td>
-<td><a href="../focus/">focus</a></td>
-<td>range</td>
-<td><a href="./">Entity</a></td>
-</tr>
-<tr>
-<td><a href="../SpecimenQualityObservation/">SpecimenQualityObservation</a></td>
-<td><a href="../focus/">focus</a></td>
-<td>range</td>
-<td><a href="./">Entity</a></td>
-</tr>
-<tr>
-<td><a href="../SpecimenQuantityObservation/">SpecimenQuantityObservation</a></td>
-<td><a href="../focus/">focus</a></td>
-<td>range</td>
-<td><a href="./">Entity</a></td>
-</tr>
-<tr>
-<td><a href="../ObservationSet/">ObservationSet</a></td>
-<td><a href="../focus/">focus</a></td>
-<td>range</td>
-<td><a href="./">Entity</a></td>
-</tr>
-<tr>
-<td><a href="../Observation/">Observation</a></td>
-<td><a href="../focus/">focus</a></td>
-<td>range</td>
-<td><a href="./">Entity</a></td>
-</tr>
-<tr>
-<td><a href="../MeasurementObservationSet/">MeasurementObservationSet</a></td>
-<td><a href="../focus/">focus</a></td>
-<td>range</td>
-<td><a href="./">Entity</a></td>
-</tr>
-<tr>
-<td><a href="../MeasurementObservation/">MeasurementObservation</a></td>
-<td><a href="../focus/">focus</a></td>
-<td>range</td>
-<td><a href="./">Entity</a></td>
-</tr>
-<tr>
-<td><a href="../SdohObservationSet/">SdohObservationSet</a></td>
-<td><a href="../focus/">focus</a></td>
-<td>range</td>
-<td><a href="./">Entity</a></td>
-</tr>
-<tr>
-<td><a href="../SdohObservation/">SdohObservation</a></td>
-<td><a href="../focus/">focus</a></td>
-<td>range</td>
-<td><a href="./">Entity</a></td>
+<td><a href="./">CauseOfDeath</a></td>
 </tr>
 </tbody>
 </table>
@@ -454,11 +330,11 @@
 <tbody>
 <tr>
 <td>self</td>
-<td>schema:Thing</td>
+<td>bdchm:CauseOfDeath</td>
 </tr>
 <tr>
 <td>native</td>
-<td>bdchm:Entity</td>
+<td>bdchm:CauseOfDeath</td>
 </tr>
 </tbody>
 </table>
@@ -466,23 +342,73 @@
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
 <h3 id="direct">Direct</h3>
 <details>
-<pre><code class="language-yaml">name: Entity
-description: Any resource that has its own identifier
+<pre><code class="language-yaml">name: CauseOfDeath
+description: A class / complex datatype for handling both values and ordinality for
+  causes of death.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
-abstract: true
-slots:
-- id
-class_uri: schema:Thing
+is_a: Entity
+attributes:
+  cause:
+    name: cause
+    description: The value for the cause of death (e.g., myocardial infarction, chronic
+      obstructive pulmonary disorder).
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    domain_of:
+    - CauseOfDeath
+    range: CauseOfDeathEnum
+    required: true
+    multivalued: false
+  order:
+    name: order
+    description: The ordinality of a given cause of death record recorded in integers.  Primary
+      cause of death should have order equal to 1 and additional causes should be
+      recorded starting from 2 and iterating up from there.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    domain_of:
+    - CauseOfDeath
+    range: integer
+    required: true
+    multivalued: false
 
 </code></pre>
 </details>
 <h3 id="induced">Induced</h3>
 <details>
-<pre><code class="language-yaml">name: Entity
-description: Any resource that has its own identifier
+<pre><code class="language-yaml">name: CauseOfDeath
+description: A class / complex datatype for handling both values and ordinality for
+  causes of death.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
-abstract: true
+is_a: Entity
 attributes:
+  cause:
+    name: cause
+    description: The value for the cause of death (e.g., myocardial infarction, chronic
+      obstructive pulmonary disorder).
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: cause
+    owner: CauseOfDeath
+    domain_of:
+    - CauseOfDeath
+    range: CauseOfDeathEnum
+    required: true
+    multivalued: false
+  order:
+    name: order
+    description: The ordinality of a given cause of death record recorded in integers.  Primary
+      cause of death should have order equal to 1 and additional causes should be
+      recorded starting from 2 and iterating up from there.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: order
+    owner: CauseOfDeath
+    domain_of:
+    - CauseOfDeath
+    range: integer
+    required: true
+    multivalued: false
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The
@@ -500,11 +426,11 @@ attributes:
     slot_uri: schema:identifier
     identifier: true
     alias: id
-    owner: Entity
+    owner: CauseOfDeath
     domain_of:
     - Entity
     range: uriorcurie
-class_uri: schema:Thing
+    required: true
 
 </code></pre>
 </details>
