@@ -21,6 +21,7 @@ prefixes:
   rxnorm: https://bioregistry.io/rxnorm:/
   UOM: https://units-of-measurement.org/
   OBA: http://purl.obolibrary.org/obo/OBA_
+  ICD10CM: http://purl.bioontology.org/ontology/ICD10CM/
 
 default_prefix: bdchm
 default_range: string
@@ -64,8 +65,9 @@ classes:
         range: integer
         description: Numeric value to represent the calendar year in which an individual died.
       cause_of_death:
-        range: string
+        range: CauseOfDeath
         description: Coded value indicating the circumstance or condition that results in the death of the individual.
+        multivalued: true
     slots:
       - identity
 
@@ -1405,7 +1407,21 @@ classes:
     slot_usage:
       category: 
         range: GravityDomainEnum
-      
+
+  CauseOfDeath:
+    is_a: Entity
+    description: A class / complex datatype for handling both values and ordinality for causes of death.
+    attributes:
+      cause:
+        description: The value for the cause of death (e.g., myocardial infarction, chronic obstructive pulmonary disorder).
+        range: CauseOfDeathEnum
+        multivalued: false
+        required: true
+      order:
+        description: The ordinality of a given cause of death record recorded in integers.  Primary cause of death should have order equal to 1 and additional causes should be recorded starting from 2 and iterating up from there.
+        range: integer
+        multivalued: false
+        required: true
 
 slots:
   id:
@@ -3541,6 +3557,12 @@ enums:
         meaning: OMOP:45883537
       UNKNOWN_IF_EVER_SMOKED:
         meaning: OMOP:45885135
+
+  CauseOfDeathEnum:
+    description: >-
+      A constrained set of enumerative values containing the ICD-10 diagnoses.
+    reachable_from:
+      source_ontology: bioregistry:icd10cm
 
   BaseObservationTypeEnum:
     description: Values describing the types of an Observation.
