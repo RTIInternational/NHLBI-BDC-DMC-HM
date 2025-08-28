@@ -40,5 +40,9 @@ jobs:
           ([ ! -f docs/new-erd.md ] && cp src/docs/new-erd.md docs/) || true
           make mkd-gh-deploy
 
+      - name: Build additional generated artifacts.
+        run: |
+          mkdir -p generated
+          make genjsonschema
       #- name: Deploy to GitHub Pages.
       #  uses: actions/deploy-pages@v4
