@@ -64,7 +64,7 @@ classes:
         range: integer
         description: Numeric value to represent the calendar year in which an individual died.
       cause_of_death:
-        range: string
+        range: CauseOfDeath
         description: Coded value indicating the circumstance or condition that results in the death of the individual.
     slots:
       - identity
@@ -551,9 +551,6 @@ classes:
         description: The Participant's age (expressed in days) at the exposure end date, if available. Otherwise equal to age_at_exposure_start.
         unit:
           ucum_code: d
-      exposure_status:
-        range: ExposureStatusEnum
-        description: A value indicating whether the medical procedure described in this record is present, absent, or unknown for this individual patient.
       associated_participant:
         range: Participant
         description: A reference to the Participant to which the exposure is attributed.
@@ -561,6 +558,9 @@ classes:
         description: A reference to the Visit the exposure is associated with, if any.
         range: Visit
         required: false
+      exposure_status:
+        range: ExposureStatusEnum
+        description: A value indicating whether the exposure described in this record is present, absent, historical, or unknown for this individual patient.
     slots:
       - identity
 
@@ -1480,7 +1480,21 @@ classes:
     slot_usage:
       category: 
         range: GravityDomainEnum
-      
+  
+  CauseOfDeath:
+    is_a: Entity
+    description: A class / complex datatype for handling both values and ordinality for causes of death.
+    attributes:
+      cause:
+        description: The value for the cause of death (e.g., myocardial infarction, chronic obstructive pulmonary disorder).
+        range: CauseOfDeathEnum
+        multivalued: false
+        required: true
+      order:
+        description: The ordinality of a given cause of death record recorded in integers.  Primary cause of death should have order equal to 1 and additional causes should be recorded starting from 2 and iterating up from there.
+        range: integer
+        multivalued: false
+        required: true    
 
 slots:
   id:
@@ -2005,6 +2019,19 @@ enums:
       UNKNOWN:
         description: The condition is/was of unknown status in the patient.
 
+  ExposureStatusEnum:
+    description: >-
+      A constrained set of enumerative values indicating whether an Exposure is present, absent, or its status is unknown.
+    permissible_values:
+      PRESENT:
+        description: The exposure is/was present in the patient.
+      ABSENT:
+        description: The exposure is/was absent in the patient.
+      HISTORICAL:
+        description: The exposure is/was present in the patient historically.
+      UNKNOWN:
+        description: The exposure is/was of unknown status in the patient.
+
   ProcedureConceptEnum:
     description: Procedure codes from OMOP.
     reachable_from:
@@ -2013,17 +2040,6 @@ enums:
   ProcedureStatusEnum:
     description: >-
       A constrained set of enumerative values indicating whether a Procedure is present, absent, or its status is unknown.
-    permissible_values:
-      PRESENT:
-        description: The condition is/was present in the patient.
-      ABSENT:
-        description: The condition is/was absent in the patient.
-      UNKNOWN:
-        description: The condition is/was of unknown status in the patient.
-
-  ExposureStatusEnum:
-    description: >-
-      A constrained set of enumerative values indicating whether a Exposure is present, absent, or its status is unknown.
     permissible_values:
       PRESENT:
         description: The condition is/was present in the patient.
