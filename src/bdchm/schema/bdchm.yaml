@@ -21,6 +21,7 @@ prefixes:
   rxnorm: https://bioregistry.io/rxnorm:/
   UOM: https://units-of-measurement.org/
   OBA: http://purl.obolibrary.org/obo/OBA_
+  ICD10CM: http://purl.bioontology.org/ontology/ICD10CM/
 
 default_prefix: bdchm
 default_range: string
@@ -66,9 +67,9 @@ classes:
       cause_of_death:
         range: CauseOfDeath
         description: Coded value indicating the circumstance or condition that results in the death of the individual.
+        multivalued: true
     slots:
       - identity
-      - participants
 
   Demography:
     is_a: Entity
@@ -84,12 +85,10 @@ classes:
       race:
         range: RaceEnum
         description: An arbitrary classification of a taxonomic group that is a division of a species. It usually arises as a consequence of geographical isolation within a species and is characterized by shared heredity, physical attributes and behavior, and in the case of humans, by common history, nationality, or geographic distribution. The provided values are based on the categories defined by the U.S. Office of Management and Business and used by the U.S. Census Bureau.
-      associated_visit:
-        description: A reference to the Visit during which this Condition was recorded.
-        range: Visit
     slots:
       - identity
       - associated_participant
+      - associated_visit
 
   Participant:
     is_a: Entity
@@ -124,13 +123,6 @@ classes:
     slots:
       - associated_person
       - identity
-      - conditions
-      - demography
-      - exposures
-      - measurements
-      - observations
-      - procedures
-      - sdoh_observations
 
   ResearchStudy:
     is_a: Entity
@@ -358,9 +350,8 @@ classes:
         range: QuestionnaireResponseItem
         multivalued: true
         required: true
-      associated_visit:
-        description: A reference to the Visit during which this QuestionnaireResponse was captured.
-        range: Visit
+    slots:
+      - associated_visit
 
   QuestionnaireResponseItem:
     description: QuestionnaireResponseItem provides a complete or partial list of answers to a set of questions filled when responding to a questionnaire. (FHIR)
@@ -426,48 +417,6 @@ classes:
       value:
         range: string
         required: true
-
-  ConditionSet:
-    is_a: Entity
-    description: A structured object to hold related Conditions in a set.
-    attributes:
-      category:
-        description: The general category of observation set described
-        values_from: crdch:enum_CRDCH_ObservationSet_category
-        multivalued: false
-        range: string
-        required: false
-      focus:
-        description: The entity or entities directly observed/measured in generating an observation result.
-        comments:
-        - The "focus", and "associated_participant" fields are useful when data creators want an Observation object to stand on its own, so it can point back to the entities it is about. These fields are not needed when an Observation is embedded in an entity, where focus, subject, and specimen can be determined from context.
-        multivalued: true
-        inlined_as_list: true
-        range: Entity
-        required: false
-      associated_participant:
-        description: The Participant that the observation is about (if not the direct focus).  Observations are often made on specimens derived from a patient, or other entities related to a patient, that ultimately tell us something about the patient of interest.
-        multivalued: false
-        range: Participant
-        required: false
-      associated_visit:
-        description: A reference to the Visit during which this Observation was recorded.
-        range: Visit
-      method_type:
-        description: The type of method used in generating the ObservationSet
-        comments:
-        - This may be a type of observational, measurement, experimental, or computational method specifying how to generate data (e.g. "manual counting", "bright field microscopy"). Or a Guideline or SOP specifying how to interpret data and/or encode the result of an  Observation (e.g. a Cancer Staging system such as that defined by the AJCC, or variant interpretation guideline such as that provided by the ACMG).
-        values_from: crdch:enum_CRDCH_ObservationSet_method_type
-        multivalued: true
-        range: string
-        required: false
-      performed_by:
-        description: The organization or group that performed the observation activity.
-        multivalued: false
-        range: Organization
-        required: false
-    slots:
-      - conditions
               
   Condition:
     is_a: Entity
@@ -502,11 +451,9 @@ classes:
       associated_participant:
         range: Participant
         description: A reference to the Participant to which the Condition is attributed.
-      associated_visit:
-        description: A reference to the Visit during which this Condition was recorded.
-        range: Visit
     slots:
       - identity
+      - associated_visit
 
   Procedure:
     is_a: Entity
@@ -533,11 +480,9 @@ classes:
       associated_participant:
         range: Participant
         description: A reference to the Participant on which the Procedure was performed.
-      associated_visit:
-        description: A reference to the Visit during which this Procedure was performed.
-        range: Visit
     slots:
       - identity
+      - associated_visit
 
   Exposure:
     is_a: Entity
@@ -557,15 +502,9 @@ classes:
       associated_participant:
         range: Participant
         description: A reference to the Participant to which the exposure is attributed.
-      associated_visit:
-        description: A reference to the Visit the exposure is associated with, if any.
-        range: Visit
-        required: false
-      exposure_status:
-        range: ExposureStatusEnum
-        description: A value indicating whether the exposure described in this record is present, absent, historical, or unknown for this individual patient.
     slots:
       - identity
+      - associated_visit
 
   DrugExposure:
     is_a: Exposure
@@ -1343,9 +1282,6 @@ classes:
         multivalued: false
         range: Participant
         required: false
-      associated_visit:
-        description: A reference to the Visit during which this Observation was recorded.
-        range: Visit
       method_type:
         description: The type of method used in generating the ObservationSet
         comments:
@@ -1361,6 +1297,7 @@ classes:
         required: false
     slots:
       - observations
+      - associated_visit
       
   Observation:
     is_a: Entity
@@ -1403,9 +1340,6 @@ classes:
         multivalued: false
         range: Participant
         required: false
-      associated_visit:
-        description: A reference to the Visit during which this Observation was recorded.
-        range: Visit
       performed_by:
         description: The organization or group that performed the observation activity.
         multivalued: false
@@ -1439,6 +1373,8 @@ classes:
         multivalued: false
         required: false
         range: BaseEnum
+    slots:
+      - associated_visit
 
   MeasurementObservationSet:
     is_a: ObservationSet
@@ -1483,7 +1419,7 @@ classes:
     slot_usage:
       category: 
         range: GravityDomainEnum
-  
+
   CauseOfDeath:
     is_a: Entity
     description: A class / complex datatype for handling both values and ordinality for causes of death.
@@ -1497,7 +1433,7 @@ classes:
         description: The ordinality of a given cause of death record recorded in integers.  Primary cause of death should have order equal to 1 and additional causes should be recorded starting from 2 and iterating up from there.
         range: integer
         multivalued: false
-        required: true    
+        required: true
 
 slots:
   id:
@@ -1513,6 +1449,9 @@ slots:
   associated_person:
     range: Person
     description: A reference to the Person that is associated with this record.
+  associated_visit:
+    description: A reference to the Visit that is associated with this record.
+    range: Visit
   value:
     range: string
     description: A general slot to hold a value.
@@ -1522,34 +1461,6 @@ slots:
   observations:
     range: Observation
     description: A set of one or more observations.
-    multivalued: true
-  conditions:
-    range: Condition
-    description: A set of one or more conditions.
-    multivalued: true
-  demography:
-    range: Demography
-    description: A set of demographic data about the Participant.
-    multivalued: true
-  exposures:
-    range: Exposure
-    description: A set of one or more exposures.
-    multivalued: true
-  measurements:
-    range: MeasurementObservation
-    description: A set of one or more measurements.
-    multivalued: true
-  procedures:
-    range: Procedure
-    description: A set of one or more procedures.
-    multivalued: true
-  participants:
-    range: Participant
-    description: A set of one or more Participants.
-    multivalued: true
-  sdoh_observations:
-    range: SdohObservation
-    description: A set of one or more SDOH observations.
     multivalued: true
 
 
@@ -3424,6 +3335,12 @@ enums:
       NATURAL_SISTER:
         description: A relation to a natural sister.
         meaning: OMOP:4251326
+      NATURAL_CHILD:
+        description: A relation to a natural child.
+        meaning: OMOP:4326600
+      BLOOD_RELATIVE:
+        description: A generic blood relation.
+        meaning: OMOP:4053608
 
   MeasurementObservationTypeEnum:
     description: Values describing the types of MeasurementObservations.
@@ -3676,6 +3593,12 @@ enums:
         meaning: OMOP:45883537
       UNKNOWN_IF_EVER_SMOKED:
         meaning: OMOP:45885135
+
+  CauseOfDeathEnum:
+    description: >-
+      A constrained set of enumerative values containing the ICD-10 diagnoses.
+    reachable_from:
+      source_ontology: bioregistry:icd10cm
 
   BaseObservationTypeEnum:
     description: Values describing the types of an Observation.
