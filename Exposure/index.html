@@ -264,6 +264,15 @@
     click Visit href "../Visit"
 
 
+      Exposure : exposure_status
+
+
+
+
+    Exposure --&gt; "0..1" HistoricalStatusEnum : exposure_status
+    click HistoricalStatusEnum href "../HistoricalStatusEnum"
+
+
       Exposure : id
 
       Exposure : identity
@@ -320,6 +329,12 @@
 <td><a href="../associated_participant/">associated_participant</a></td>
 <td>0..1 <br/> <a href="../Participant/">Participant</a></td>
 <td>A reference to the Participant to which the exposure is attributed</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../exposure_status/">exposure_status</a></td>
+<td>0..1 <br/> <a href="../HistoricalStatusEnum/">HistoricalStatusEnum</a></td>
+<td>A value indicating whether the exposure described in this record is present, ...</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -402,6 +417,15 @@ attributes:
     - ObservationSet
     - Observation
     range: Participant
+  exposure_status:
+    name: exposure_status
+    description: A value indicating whether the exposure described in this record
+      is present, absent, historically present, or unknown for this individual patient.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    domain_of:
+    - Exposure
+    range: HistoricalStatusEnum
 
 </code></pre>
 </details>
@@ -454,6 +478,17 @@ attributes:
     - ObservationSet
     - Observation
     range: Participant
+  exposure_status:
+    name: exposure_status
+    description: A value indicating whether the exposure described in this record
+      is present, absent, historically present, or unknown for this individual patient.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: exposure_status
+    owner: Exposure
+    domain_of:
+    - Exposure
+    range: HistoricalStatusEnum
   identity:
     name: identity
     description: A 'business' identifier or accession number for the entity, typically

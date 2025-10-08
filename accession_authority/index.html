@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/date_started/">
+        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/accession_authority/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>Slot: date_started - BioData Catalyst Harmonized Model</title>
+        <title>Slot: accession_authority - BioData Catalyst Harmonized Model</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-date_started" class="md-skip">
+        <a href="#slot-accession_authority" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: date_started
+              Slot: accession_authority
             
           </span>
         </div>
@@ -320,6 +320,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schema Source
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -359,8 +374,9 @@
   
 
 
-<h1 id="slot-date_started">Slot: date_started</h1>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/date_started">bdchm:date_started</a></p>
+<h1 id="slot-accession_authority">Slot: accession_authority</h1>
+<p><em>The accession authority for the research study.</em></p>
+<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/accession_authority">bdchm:accession_authority</a></p>
 <!-- no inheritance hierarchy -->
 
 <h2 id="applicable-classes">Applicable Classes</h2>
@@ -374,26 +390,6 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../SpecimenTransportActivity/">SpecimenTransportActivity</a></td>
-<td>An activity through which a specimen is transported between locations or orga...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../SpecimenStorageActivity/">SpecimenStorageActivity</a></td>
-<td>An activity in which a specimen is stored or maintained in a particular locat...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../SpecimenCreationActivity/">SpecimenCreationActivity</a></td>
-<td>The process of creating a specimen</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../SpecimenProcessingActivity/">SpecimenProcessingActivity</a></td>
-<td>An activity that modifies the physical structure, composition, or state of a ...</td>
-<td>no</td>
-</tr>
-<tr>
 <td><a href="../ResearchStudy/">ResearchStudy</a></td>
 <td>A process where a researcher or organization plans and then executes a series...</td>
 <td>no</td>
@@ -405,6 +401,10 @@
 <li>Range: <a href="../String/">String</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+</ul>
 <h2 id="mappings">Mappings</h2>
 <table>
 <thead>
@@ -416,25 +416,25 @@
 <tbody>
 <tr>
 <td>self</td>
-<td>bdchm:date_started</td>
+<td>bdchm:accession_authority</td>
 </tr>
 <tr>
 <td>native</td>
-<td>bdchm:date_started</td>
+<td>bdchm:accession_authority</td>
 </tr>
 </tbody>
 </table>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: date_started
-alias: date_started
+<pre><code class="language-yaml">name: accession_authority
+description: The accession authority for the research study.
+from_schema: https://w3id.org/nhlbidatastage/bdchm
+rank: 1000
+alias: accession_authority
+owner: ResearchStudy
 domain_of:
 - ResearchStudy
-- SpecimenCreationActivity
-- SpecimenProcessingActivity
-- SpecimenStorageActivity
-- SpecimenTransportActivity
 range: string
 
 </code></pre>

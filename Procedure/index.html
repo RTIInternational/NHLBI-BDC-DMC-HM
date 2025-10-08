@@ -277,6 +277,15 @@
     click ProvenanceEnum href "../ProvenanceEnum"
 
 
+      Procedure : procedure_status
+
+
+
+
+    Procedure --&gt; "0..1" StatusEnum : procedure_status
+    click StatusEnum href "../StatusEnum"
+
+
       Procedure : quantity
 
 
@@ -334,6 +343,12 @@
 <td><a href="../procedure_provenance/">procedure_provenance</a></td>
 <td>0..1 <br/> <a href="../ProvenanceEnum/">ProvenanceEnum</a></td>
 <td>A value representing the provenance of the Procedure record</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../procedure_status/">procedure_status</a></td>
+<td>0..1 <br/> <a href="../StatusEnum/">StatusEnum</a></td>
+<td>A value indicating whether the medical procedure described in this record is ...</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -422,6 +437,15 @@ attributes:
     domain_of:
     - Procedure
     range: ProvenanceEnum
+  procedure_status:
+    name: procedure_status
+    description: A value indicating whether the medical procedure described in this
+      record is present, absent, or unknown for this individual patient.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    domain_of:
+    - Procedure
+    range: StatusEnum
   quantity:
     name: quantity
     description: The quantity of procedures ordered or administered.
@@ -492,6 +516,17 @@ attributes:
     domain_of:
     - Procedure
     range: ProvenanceEnum
+  procedure_status:
+    name: procedure_status
+    description: A value indicating whether the medical procedure described in this
+      record is present, absent, or unknown for this individual patient.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: procedure_status
+    owner: Procedure
+    domain_of:
+    - Procedure
+    range: StatusEnum
   quantity:
     name: quantity
     description: The quantity of procedures ordered or administered.

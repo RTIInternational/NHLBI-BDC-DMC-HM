@@ -375,7 +375,7 @@
 
 
 <h1 id="slot-condition_status">Slot: condition_status</h1>
-<p><em>A value indicating whether the medical condition described in this record is present, absent, or unknown for this individual patient.</em></p>
+<p><em>A value indicating whether the medical condition described in this record is present, absent, historically present, or unknown for this individual patient.</em></p>
 <p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/condition_status">bdchm:condition_status</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -398,7 +398,7 @@
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../ConditionStatusEnum/">ConditionStatusEnum</a></li>
+<li>Range: <a href="../HistoricalStatusEnum/">HistoricalStatusEnum</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
@@ -429,14 +429,14 @@
 
 <pre><code class="language-yaml">name: condition_status
 description: A value indicating whether the medical condition described in this record
-  is present, absent, or unknown for this individual patient.
+  is present, absent, historically present, or unknown for this individual patient.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 rank: 1000
 alias: condition_status
 owner: Condition
 domain_of:
 - Condition
-range: ConditionStatusEnum
+range: HistoricalStatusEnum
 
 </code></pre>
 

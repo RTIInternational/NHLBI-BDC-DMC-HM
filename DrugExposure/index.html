@@ -277,6 +277,15 @@
     click DrugExposureProvenanceEnum href "../DrugExposureProvenanceEnum"
 
 
+      DrugExposure : exposure_status
+
+
+
+
+    DrugExposure --&gt; "0..1" HistoricalStatusEnum : exposure_status
+    click HistoricalStatusEnum href "../HistoricalStatusEnum"
+
+
       DrugExposure : id
 
       DrugExposure : identity
@@ -389,6 +398,12 @@
 <td><a href="../associated_participant/">associated_participant</a></td>
 <td>0..1 <br/> <a href="../Participant/">Participant</a></td>
 <td>A reference to the Participant to which the exposure is attributed</td>
+<td><a href="../Exposure/">Exposure</a></td>
+</tr>
+<tr>
+<td><a href="../exposure_status/">exposure_status</a></td>
+<td>0..1 <br/> <a href="../HistoricalStatusEnum/">HistoricalStatusEnum</a></td>
+<td>A value indicating whether the exposure described in this record is present, ...</td>
 <td><a href="../Exposure/">Exposure</a></td>
 </tr>
 <tr>
@@ -734,6 +749,17 @@ attributes:
     - ObservationSet
     - Observation
     range: Participant
+  exposure_status:
+    name: exposure_status
+    description: A value indicating whether the exposure described in this record
+      is present, absent, historically present, or unknown for this individual patient.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: exposure_status
+    owner: DrugExposure
+    domain_of:
+    - Exposure
+    range: HistoricalStatusEnum
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The

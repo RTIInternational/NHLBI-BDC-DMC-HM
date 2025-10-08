@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/ConditionStatusEnum/">
+        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/StatusEnum/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>Enum: ConditionStatusEnum - BioData Catalyst Harmonized Model</title>
+        <title>Enum: StatusEnum - BioData Catalyst Harmonized Model</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#enum-conditionstatusenum" class="md-skip">
+        <a href="#enum-statusenum" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Enum: ConditionStatusEnum
+              Enum: StatusEnum
             
           </span>
         </div>
@@ -365,9 +365,9 @@
   
 
 
-<h1 id="enum-conditionstatusenum">Enum: ConditionStatusEnum</h1>
-<p><em>A constrained set of enumerative values indicating whether a Condition is present, absent, or its status is unknown.</em></p>
-<p>URI: <a href="./">ConditionStatusEnum</a></p>
+<h1 id="enum-statusenum">Enum: StatusEnum</h1>
+<p><em>A constrained set of enumerative values indicating whether something is present, absent, or its status is unknown.</em></p>
+<p>URI: <a href="./">StatusEnum</a></p>
 <h2 id="permissible-values">Permissible Values</h2>
 <table>
 <thead>
@@ -381,22 +381,17 @@
 <tr>
 <td>PRESENT</td>
 <td>None</td>
-<td>The condition is/was present in the patient</td>
+<td>was present in the patient at observation time</td>
 </tr>
 <tr>
 <td>ABSENT</td>
 <td>None</td>
-<td>The condition is/was absent in the patient</td>
-</tr>
-<tr>
-<td>HISTORICAL</td>
-<td>None</td>
-<td>The condition is/was present in the patient historically</td>
+<td>was absent in the patient at observation time</td>
 </tr>
 <tr>
 <td>UNKNOWN</td>
 <td>None</td>
-<td>The condition is/was of unknown status in the patient</td>
+<td>was of unknown status in the patient at observation time</td>
 </tr>
 </tbody>
 </table>
@@ -410,8 +405,8 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../condition_status/">condition_status</a></td>
-<td>A value indicating whether the medical condition described in this record is ...</td>
+<td><a href="../procedure_status/">procedure_status</a></td>
+<td>A value indicating whether the medical procedure described in this record is ...</td>
 </tr>
 </tbody>
 </table>
@@ -423,24 +418,21 @@
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: ConditionStatusEnum
-description: A constrained set of enumerative values indicating whether a Condition
+<pre><code class="language-yaml">name: StatusEnum
+description: A constrained set of enumerative values indicating whether something
   is present, absent, or its status is unknown.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 rank: 1000
 permissible_values:
   PRESENT:
     text: PRESENT
-    description: The condition is/was present in the patient.
+    description: was present in the patient at observation time.
   ABSENT:
     text: ABSENT
-    description: The condition is/was absent in the patient.
-  HISTORICAL:
-    text: HISTORICAL
-    description: The condition is/was present in the patient historically.
+    description: was absent in the patient at observation time.
   UNKNOWN:
     text: UNKNOWN
-    description: The condition is/was of unknown status in the patient.
+    description: was of unknown status in the patient at observation time.
 
 </code></pre>
 

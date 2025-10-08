@@ -289,8 +289,8 @@
 
 
 
-    Condition --&gt; "0..1" ConditionStatusEnum : condition_status
-    click ConditionStatusEnum href "../ConditionStatusEnum"
+    Condition --&gt; "0..1" HistoricalStatusEnum : condition_status
+    click HistoricalStatusEnum href "../HistoricalStatusEnum"
 
 
       Condition : id
@@ -364,7 +364,7 @@
 </tr>
 <tr>
 <td><a href="../condition_status/">condition_status</a></td>
-<td>0..1 <br/> <a href="../ConditionStatusEnum/">ConditionStatusEnum</a></td>
+<td>0..1 <br/> <a href="../HistoricalStatusEnum/">HistoricalStatusEnum</a></td>
 <td>A value indicating whether the medical condition described in this record is ...</td>
 <td>direct</td>
 </tr>
@@ -476,12 +476,13 @@ attributes:
   condition_status:
     name: condition_status
     description: A value indicating whether the medical condition described in this
-      record is present, absent, or unknown for this individual patient.
+      record is present, absent, historically present, or unknown for this individual
+      patient.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     domain_of:
     - Condition
-    range: ConditionStatusEnum
+    range: HistoricalStatusEnum
   condition_severity:
     name: condition_severity
     description: A subjective assessment of the severity of the condition
@@ -581,14 +582,15 @@ attributes:
   condition_status:
     name: condition_status
     description: A value indicating whether the medical condition described in this
-      record is present, absent, or unknown for this individual patient.
+      record is present, absent, historically present, or unknown for this individual
+      patient.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
     rank: 1000
     alias: condition_status
     owner: Condition
     domain_of:
     - Condition
-    range: ConditionStatusEnum
+    range: HistoricalStatusEnum
   condition_severity:
     name: condition_severity
     description: A subjective assessment of the severity of the condition

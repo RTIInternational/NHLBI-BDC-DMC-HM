@@ -242,6 +242,10 @@
       Entity &lt;|-- ResearchStudy
         click Entity href "../Entity"
 
+      ResearchStudy : accession_authority
+
+      ResearchStudy : accession_number
+
       ResearchStudy : associated_timepoint
 
 
@@ -306,6 +310,8 @@
       ResearchStudy : sponsor
 
       ResearchStudy : url
+
+      ResearchStudy : version
 
 
 </div>
@@ -373,6 +379,24 @@
 <td><a href="../date_ended/">date_ended</a></td>
 <td>0..1 <br/> <a href="../TimePoint/">TimePoint</a></td>
 <td>The date when the research project ended</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../accession_number/">accession_number</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>The accession number of the research study with the accession authority</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../accession_authority/">accession_authority</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>The accession authority for the research study</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../version/">version</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>The version number of the ResearchStudy</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -563,6 +587,31 @@ attributes:
     - SpecimenStorageActivity
     - SpecimenTransportActivity
     range: TimePoint
+  accession_number:
+    name: accession_number
+    description: The accession number of the research study with the accession authority
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    domain_of:
+    - ResearchStudy
+    range: string
+  accession_authority:
+    name: accession_authority
+    description: The accession authority for the research study.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    domain_of:
+    - ResearchStudy
+    range: string
+  version:
+    name: version
+    description: The version number of the ResearchStudy
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    domain_of:
+    - ResearchStudy
+    - Questionnaire
+    range: string
   url:
     name: url
     description: A URL address for a resource that provides information about a research
@@ -727,6 +776,37 @@ attributes:
     - SpecimenStorageActivity
     - SpecimenTransportActivity
     range: TimePoint
+  accession_number:
+    name: accession_number
+    description: The accession number of the research study with the accession authority
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: accession_number
+    owner: ResearchStudy
+    domain_of:
+    - ResearchStudy
+    range: string
+  accession_authority:
+    name: accession_authority
+    description: The accession authority for the research study.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: accession_authority
+    owner: ResearchStudy
+    domain_of:
+    - ResearchStudy
+    range: string
+  version:
+    name: version
+    description: The version number of the ResearchStudy
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: version
+    owner: ResearchStudy
+    domain_of:
+    - ResearchStudy
+    - Questionnaire
+    range: string
   url:
     name: url
     description: A URL address for a resource that provides information about a research
