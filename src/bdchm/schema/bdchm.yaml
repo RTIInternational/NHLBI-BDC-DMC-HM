@@ -440,8 +440,8 @@ classes:
         range: ProvenanceEnum
         description: A value representing the provenance of the Condition record
       condition_status:
-        range: ConditionStatusEnum
-        description: A value indicating whether the medical condition described in this record is present, absent, or unknown for this individual patient.
+        range: HistoricalStatusEnum
+        description: A value indicating whether the medical condition described in this record is present, absent, historically present, or unknown for this individual patient.
       condition_severity:
         range: ConditionSeverityEnum
         description: A subjective assessment of the severity of the condition
@@ -472,7 +472,7 @@ classes:
         range: ProvenanceEnum
         description: A value representing the provenance of the Procedure record
       procedure_status:
-        range: ProcedureStatusEnum
+        range: StatusEnum
         description: A value indicating whether the medical procedure described in this record is present, absent, or unknown for this individual patient.
       quantity:
         range: Quantity
@@ -502,6 +502,9 @@ classes:
       associated_participant:
         range: Participant
         description: A reference to the Participant to which the exposure is attributed.
+      exposure_status:
+        range: HistoricalStatusEnum
+        description: A value indicating whether the exposure described in this record is present, absent, historically present, or unknown for this individual patient.
     slots:
       - identity
       - associated_visit
@@ -1920,47 +1923,32 @@ enums:
       CLINICAL_DIAGNOSIS:
         meaning: OMOP:4309119
 
-  ConditionStatusEnum:
+  StatusEnum:
     description: >-
-      A constrained set of enumerative values indicating whether a Condition is present, absent, or its status is unknown.
+      A constrained set of enumerative values indicating whether something is present, absent, or its status is unknown.
     permissible_values:
       PRESENT:
-        description: The condition is/was present in the patient.
+        description: was present in the patient at observation time.
       ABSENT:
-        description: The condition is/was absent in the patient.
-      HISTORICAL:
-        description: The condition is/was present in the patient historically.
+        description: was absent in the patient at observation time.
       UNKNOWN:
-        description: The condition is/was of unknown status in the patient.
+        description: was of unknown status in the patient at observation time.
 
-  ExposureStatusEnum:
+  HistoricalStatusEnum:
+    is_a: StatusEnum
     description: >-
-      A constrained set of enumerative values indicating whether an Exposure is present, absent, or its status is unknown.
-    permissible_values:
-      PRESENT:
-        description: The exposure is/was present in the patient.
-      ABSENT:
-        description: The exposure is/was absent in the patient.
-      HISTORICAL:
-        description: The exposure is/was present in the patient historically.
-      UNKNOWN:
-        description: The exposure is/was of unknown status in the patient.
+      A constrained set of enumerative values indicating whether something is present, absent, historical, or its status is unknown.
+    inherits:
+      - StatusEnum
+    include:
+      permissible_values:
+        HISTORICAL:
+          description: was present in the patient historically.
 
   ProcedureConceptEnum:
     description: Procedure codes from OMOP.
     reachable_from:
       source_ontology: OMOP
-  
-  ProcedureStatusEnum:
-    description: >-
-      A constrained set of enumerative values indicating whether a Procedure is present, absent, or its status is unknown.
-    permissible_values:
-      PRESENT:
-        description: The condition is/was present in the patient.
-      ABSENT:
-        description: The condition is/was absent in the patient.
-      UNKNOWN:
-        description: The condition is/was of unknown status in the patient.
 
   DrugExposureConceptEnum:
     description: Drug codes from RxNorm.
