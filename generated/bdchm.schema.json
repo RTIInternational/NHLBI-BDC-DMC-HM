@@ -199,8 +199,8 @@
                     "description": "A subjective assessment of the severity of the condition"
                 },
                 "condition_status": {
-                    "$ref": "#/$defs/ConditionStatusEnum",
-                    "description": "A value indicating whether the medical condition described in this record is present, absent, or unknown for this individual patient."
+                    "$ref": "#/$defs/HistoricalStatusEnum",
+                    "description": "A value indicating whether the medical condition described in this record is present, absent, historically present, or unknown for this individual patient."
                 },
                 "id": {
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
@@ -240,17 +240,6 @@
                 "SEVERE"
             ],
             "title": "ConditionSeverityEnum",
-            "type": "string"
-        },
-        "ConditionStatusEnum": {
-            "description": "A constrained set of enumerative values indicating whether a Condition is present, absent, or its status is unknown.",
-            "enum": [
-                "PRESENT",
-                "ABSENT",
-                "HISTORICAL",
-                "UNKNOWN"
-            ],
-            "title": "ConditionStatusEnum",
             "type": "string"
         },
         "Consent": {
@@ -388,6 +377,10 @@
                 "exposure_provenance": {
                     "$ref": "#/$defs/DeviceExposureProvenanceEnum",
                     "description": "A value representing the provenance of the DeviceExposure record. From OMOP Device Types."
+                },
+                "exposure_status": {
+                    "$ref": "#/$defs/HistoricalStatusEnum",
+                    "description": "A value indicating whether the exposure described in this record is present, absent, historically present, or unknown for this individual patient."
                 },
                 "id": {
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
@@ -777,6 +770,10 @@
                     "$ref": "#/$defs/DrugExposureProvenanceEnum",
                     "description": "A value representing the provenance of the DrugExposure record. From OMOP Drug Types."
                 },
+                "exposure_status": {
+                    "$ref": "#/$defs/HistoricalStatusEnum",
+                    "description": "A value indicating whether the exposure described in this record is present, absent, historically present, or unknown for this individual patient."
+                },
                 "id": {
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
                     "type": "string"
@@ -1077,6 +1074,10 @@
                         "null"
                     ]
                 },
+                "exposure_status": {
+                    "$ref": "#/$defs/HistoricalStatusEnum",
+                    "description": "A value indicating whether the exposure described in this record is present, absent, historically present, or unknown for this individual patient."
+                },
                 "id": {
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
                     "type": "string"
@@ -1237,6 +1238,11 @@
                 "UTILITY_INSECURITY"
             ],
             "title": "GravityDomainEnum",
+            "type": "string"
+        },
+        "HistoricalStatusEnum": {
+            "description": "A constrained set of enumerative values indicating whether something is present, absent, historical, or its status is unknown.",
+            "title": "HistoricalStatusEnum",
             "type": "string"
         },
         "HpoPhenotypicAbnormalityEnum": {
@@ -1962,6 +1968,10 @@
                     "$ref": "#/$defs/ProvenanceEnum",
                     "description": "A value representing the provenance of the Procedure record"
                 },
+                "procedure_status": {
+                    "$ref": "#/$defs/StatusEnum",
+                    "description": "A value indicating whether the medical procedure described in this record is present, absent, or unknown for this individual patient."
+                },
                 "quantity": {
                     "description": "The quantity of procedures ordered or administered.",
                     "type": [
@@ -2434,6 +2444,20 @@
             "additionalProperties": false,
             "description": "A process where a researcher or organization plans and then executes a series of steps intended to increase the field of healthcare-related knowledge. This includes studies of safety, efficacy, comparative effectiveness and other information about medications, devices, therapies and other interventional and investigative techniques. A ResearchStudy involves the gathering of information about human or animal subjects.",
             "properties": {
+                "accession_authority": {
+                    "description": "The accession authority for the research study.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "accession_number": {
+                    "description": "The accession number of the research study with the accession authority",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "associated_timepoint": {
                     "description": "A collection of timepoint observations that are relevant to research projects (e.g. date of IACUC approval, date of IRB approval, date of embargo end, etc.)",
                     "items": {
@@ -2543,6 +2567,13 @@
                 },
                 "url": {
                     "description": "A URL address for a resource that provides information about a research program, project, or study.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "version": {
+                    "description": "The version number of the ResearchStudy",
                     "type": [
                         "string",
                         "null"
@@ -2583,6 +2614,20 @@
             "additionalProperties": false,
             "description": "A process where a researcher or organization plans and then executes a series of steps intended to increase the field of healthcare-related knowledge. This includes studies of safety, efficacy, comparative effectiveness and other information about medications, devices, therapies and other interventional and investigative techniques. A ResearchStudy involves the gathering of information about human or animal subjects.",
             "properties": {
+                "accession_authority": {
+                    "description": "The accession authority for the research study.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "accession_number": {
+                    "description": "The accession number of the research study with the accession authority",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "associated_timepoint": {
                     "description": "A collection of timepoint observations that are relevant to research projects (e.g. date of IACUC approval, date of IRB approval, date of embargo end, etc.)",
                     "items": {
@@ -2692,6 +2737,13 @@
                 },
                 "url": {
                     "description": "A URL address for a resource that provides information about a research program, project, or study.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "version": {
+                    "description": "The version number of the ResearchStudy",
                     "type": [
                         "string",
                         "null"
@@ -3768,6 +3820,16 @@
                 "SLIDE"
             ],
             "title": "SpecimenTypeEnum",
+            "type": "string"
+        },
+        "StatusEnum": {
+            "description": "A constrained set of enumerative values indicating whether something is present, absent, or its status is unknown.",
+            "enum": [
+                "PRESENT",
+                "ABSENT",
+                "UNKNOWN"
+            ],
+            "title": "StatusEnum",
             "type": "string"
         },
         "Substance": {
