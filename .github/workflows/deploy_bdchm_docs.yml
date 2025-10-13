@@ -39,10 +39,32 @@ jobs:
           ([ ! -f docs/about.md ] && cp src/docs/about.md docs/) || true
           ([ ! -f docs/new-erd.md ] && cp src/docs/new-erd.md docs/) || true
           make mkd-gh-deploy
+      #- name: Deploy to GitHub Pages.
+      #  uses: actions/deploy-pages@v4
 
       - name: Build additional generated artifacts.
         run: |
           mkdir -p generated
           make genjsonschema
-      #- name: Deploy to GitHub Pages.
-      #  uses: actions/deploy-pages@v4
+          
+      - name: Check for changes in generated files
+        id: verify_diff
+        run: |
+          git diff --quiet generated/bdchm.schema.json || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit generated files
+        if: steps.verify_diff.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add generated/bdchm.schema.json
+          git commit -m "Update generated JSON schema [skip ci]"
+
+      - name: Push changes
+        if: steps.verify_diff.outputs.changed == 'true'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+      
+      
