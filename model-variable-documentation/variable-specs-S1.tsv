@@ -1,0 +1,152 @@
+BDCHM Element	Variable Label	Data Type	UCUM Unit	CURIE	Variable Description
+Measurement Observation	8-epi-PGF2a in urine	decimal	pg/mL	OMOP:3011888	Concentration of 8-epi-prostaglandin F2 alpha in urine
+Measurement Observation	Activity LP-PLA2 in blood	decimal	nmol/min/mL	OMOP:36305170	Measurement of the activity of the Lp-PLA2 (lipoprotein-associated phospholipase A2) enzyme in serum or plasma.
+Measurement Observation	AHI Apnea-Hypopnea Index	decimal	/h	OMOP:37396400	Measurement used to diagnose and assess the severity of sleep apnea. It is calculated by counting the number of apneas and hypopneas that occur per hour of sleep.
+Measurement Observation	Albumin creatinine ratio in urine	decimal	mg/g{creat}	OMOP:4154347	Measurement of the ratio of albumin to creatinine in urine. Also known as uACR.
+Measurement Observation	Albumin in blood	decimal	g/dL	OBA:2050068	Measurement of albumin in blood serum
+Measurement Observation	Albumin in urine	decimal	mg/L	OBA:VT0002871	Concentration of albumin in urine
+Measurement Observation	Alcohol	integer	{#}/wk	OMOP:35609491	Servings of alcohol consumed per week
+Measurement Observation	ALT SGPT	decimal	[IU]/L	OBA:2050062	Concentration of ALT/SGPT in the blood. ALT, or alanine transaminase, is the same as SGPT, which stands for serum glutamic-pyruvic transaminase. Typically measured in serum or plasma.
+Condition	Angina	Uriorcurie			
+Drug Exposure	Aspirin	Uriorcurie			
+Measurement Observation	AST SGOT	decimal	[IU]/L	OMOP:4263457	Concentration of AST/SGOT in blood. AST (aspartate aminotransferase), also known as SGOT (Serum Glutamic Oxaloacetic Transaminase), is typically measured in serum or plasma.
+Condition	Asthma	Uriorcurie			
+Condition	Atrial fibrillation	Uriorcurie			
+Measurement Observation	basophils count	decimal	10*3/uL	OBA:VT0002607	Concentration of basophil cells in whole blood
+Measurement Observation	Bilirubin Conjugated Direct	decimal	mg/dL	OMOP:44805650	Concentration of conjugated (or direct) bilirubin in blood, typically measured in serum or plasma
+Measurement Observation	Bilirubin total	decimal	mg/dL	OMOP:4230543	Concentration of total bilirubin in blood, typically measured in serum or plasma
+Measurement Observation	BMI	decimal	kg/m2	OBA:2045455	Also known as body mass index: ratio of a person's weight in kilos to the square of their height in meters
+Measurement Observation	BNP	decimal	pg/mL	OBA:2045303	Concentration of BNP in blood, typically measured in plasma or whole blood. Also known as B-type natriuretic peptide, a hormone.
+Measurement Observation	Body weight	decimal	kg	OBA:VT0001259	Mass of a person or other organism
+Measurement Observation	BUN	decimal	mg/dL	OBA:VT0005265	Concentration of blood urea nitrogen in blood, typically measured in serum or plasma
+Measurement Observation	BUN Creatinine ratio	decimal	{ratio}	OMOP:4112223	Ratio of blood urea nitrogen (BUN) to creatinine in blood, typically measured in serum or plasma
+Measurement Observation	c-reactive protein CRP	decimal	mg/L	OMOP:4208414	Concentration of c-reactive protein (CRP) in blood, typically measured in serum or plasma
+Measurement Observation	CAC Score	decimal	{score}	OMOP:42872742	The Coronary Artery Calcium Score is a measure of the amount of calcium in the arteries of the heart. Measured from a CT Scan.
+Measurement Observation	CAC volume	decimal		OMOP:4166120	Volume of coronarty artery calcium in the arteries of the heart. Measured by CT Scan.
+Condition	Cardiovascular disease	Uriorcurie			
+Measurement Observation	Carotid IMT	decimal	mm	OMOP:4138462	Carotid intima-media thickness (IMT) measures the thickness of the inner two layers (intima and media layers) of the carotid artery walls - there are many ways to take this measurement
+Condition	Carotid plaque	Uriorcurie			
+Measurement Observation	Carotid stenosis left	decimal	%	OMOP:43020498	
+Measurement Observation	Carotid stenosis right	decimal	%	OMOP:43021859	
+Person	Cause of death	String			
+Measurement Observation	CD40 in blood	decimal	pg/mL	OBA:2052305	Concentration of CD40 (Cluster of differentiation antigen 40) in blood, typically measured in serum or plasma
+Measurement Observation	CESD score	integer	{score}	OMOP:36303297	Score from a self-report questionnaire, the CES-D (Center for Epidemiological Studies Depression Scale)
+Measurement Observation	Chloride in blood	decimal	mmol/L	OBA:VT0003018	Concentration of chloride in blood, also known as serum chloride
+Observation	Cigarette smoking	SmokingStatusObservationTypeEnum		OMOP:4282779	Cigarette smoking status - Does not include other forms of tobacco use like pipes or chewing tobacco
+Condition	COPD	Uriorcurie			
+Measurement Observation	Creatinine in blood	decimal	mg/dL	OBA:2050096	Concentration of creatinine in blood, typically measured in serum or plasma
+Measurement Observation	Creatinine in urine	decimal	mg/dL	OBA:VT0010540	Concentration of creatinine in a sample of urine
+Measurement Observation	Cystatin C in blood	decimal	mg/L	OBA:2052375	Concentration of cystatin C in blood, typically measured in serum or plasma
+Measurement Observation	D-Dimer	decimal	ug/mL	OMOP:37393605	Concentration of D-dimer in blood, can be measured in whole blood or plasma
+Person	Death	VitalStatusEnum			
+Condition	Diabetes	Uriorcurie			
+Measurement Observation	Diastolic blood pressure	decimal	mm[Hg]	OMOP:4154790	Measurement of pressure in your arteries when your heart is at rest between beats, the bottom number in a blood pressure reading
+Measurement Observation	E-selectin in blood	decimal	ng/mL	OBA:2052778	Concentration of E-selectin in blood, typically measured in serum or plasma
+SDoH Observation	Education level	EducationalAttainmentObservationTypeEnum		OMOP:4022643	Highest level of education that an individual has completed
+Measurement Observation	EGFR	decimal	mL/min/{1.73_m2}	OMOP:37208635	Stands for estimated glomerular filtration rate - calculated from creatinine concentration, age, sex, and body size.
+Measurement Observation	Eosinophils count	decimal	10*3/uL	OBA:VT0002602	Concentration of eosinophil cells in whole blood
+Demography	Ethnicity	EthnicityEnum		OMOP:44803968	A person's cultural heritage or ancestry
+Measurement Observation	Factor VII	decimal	%{Normal}	OBA:2041535	Concentration of Factor VII in blood, typically measured in plasma. Also known as FVII and proconvertin
+Measurement Observation	Factor VIII	decimal	[IU]/mL	OBA:2041536	Measure of the amount of FVIII activity in a volume of plasma
+Condition	Family history of stroke	Uriorcurie			
+SDoH Observation	Family income		USD		The sum of the income of all family members 15 years and older living in the household over 12 months, before taxes
+Measurement Observation	Fasting blood glucose	decimal	mg/dL	OMOP:4156660	Concentration of glucose in blood after not eating or drinking (except water) for a set period, typically 8-12 hours
+Measurement Observation	Fasting lipids	decimal	mg/dL	OMOP:4150326	Concentration of lipids in blood after not eating or drinking (except water) for a set period, typically 8-12 hours
+Measurement Observation	Ferritin	decimal	ng/mL	OBA:VT0010513	Concentration of ferritin in blood, typically measured in serum or plasma
+Measurement Observation	FEV1 - Forced Expiratory Volume in 1 sec	decimal	L	OMOP:4241837	Volume of air a person can exhale forcefully in one second, measured before the administration of bronchodilator medication
+Measurement Observation	FEV1 FVC	decimal	{ratio}	OMOP:3011505	Ratio of the volume of air a person can exhale forcefully in one second (FEV1) to the total volume of air a person can exhale from their lungs after taking the deepest possible breath and then exhaling as forcefully and as completely as possible (FVC), measured before the administration of bronchodilator medication
+Measurement Observation	Fibrinogen	decimal	mg/dL	OBA:0000061	Concentration of fibrinogen in blood, typically measured in plasma
+Measurement Observation	Fruits	integer	{#}/wk	OMOP:21493059	Servings of fruits consumed per week (includes fruit and fruit juice)
+Measurement Observation	FVC - Forced Vital Capacity	decimal	L	OMOP:4176265	Total volume of air a person can exhale from their lungs after taking the deepest possible breath and then exhaling as forcefully and as completely as possible, measured before the administration of bronchodilator medication
+Measurement Observation	GFR	decimal	mL/min/{1.73_m2}	OBA:0003747	Stands for glomerular filtration rate: a measure of how much blood passes through the glomeruli
+Measurement Observation	Glucose in blood	decimal	mg/dL	OBA:VT0000188	Concentration of glucose in blood, can be measured in whole blood, serum, or plasma
+Measurement Observation	HDL	decimal	mg/dL	OBA:VT0000184	Concentration of high-density lipoprotein (HDL) in blood, typically measured in serum
+Measurement Observation	Heart rate	integer	{beats}/min	OBA:1001087	Number of times a heart beats per minute - also known as pulse rate
+Measurement Observation	Height	decimal	cm	OBA:VT0001253	Measure of the vertical distance of a standing person from head to foot
+Measurement Observation	Hematocrit	decimal	%	OBA:2045381	The percentage of whole blood volume that consists of red blood cells - also known as packed cell volume (PCV)
+Measurement Observation	Hemoglobin	decimal	g/dL	OBA:2060175	Concentration of hemoglobin (Hb) in whole blood
+Measurement Observation	Hemoglobin A1c	decimal	%	OMOP:4184637	Percentage of hemoglobin in your red blood cells that has glucose attached to it. Also known as HbA1c
+Measurement Observation	Hip circumference	decimal	cm	OBA:1000032	Distance measurement taken around the fullest part of the hips
+Condition	History of cardiovascular disease	Uriorcurie			
+Procedure	History of coronary angioplasty	Uriorcurie			
+Procedure	History of coronary artery bypass graft	Uriorcurie			
+Condition	History of heart disease	Uriorcurie			
+Condition	History of heart failure	Uriorcurie			
+Condition	History of myocardial infarction	Uriorcurie			
+Condition	Hypertension	Uriorcurie			
+Drug Exposure	Hypertension treatment	Uriorcurie			
+Measurement Observation	ICAM1 in blood	decimal	ng/mL	OMOP:4284103	Concentration of Intercellular adhesion molecule 1 (ICAM-1) in blood, typically measured in serum or plasma
+Measurement Observation	Insulin in blood	decimal	pmol/L	OBA:2060174	Concentration of insulin in blood, typically measured in serum or plasma
+Measurement Observation	Interleukin 1 beta in blood	decimal	pg/mL	OMOP:3001804	Concentration of Interleukin-1 beta (IL-1β) in blood, typically measured in serum or plasma
+Measurement Observation	Interleukin 10 in blood	decimal	pg/mL	OMOP:3004578	Concentration of Interleukin-1 beta (IL-10) in blood, typically measured in serum or plasma
+Measurement Observation	Interleukin 18 in blood	decimal	pg/mL	OMOP:3043144	Concentration of Interleukin-1 beta (IL-18) in blood, typically measured in serum or plasma
+Measurement Observation	interleukin 6 in blood	decimal	pg/mL	OBA:2052890	Concentration of Interleukin-1 beta (IL-6) in blood, typically measured in serum or plasma
+Measurement Observation	Lactate Dehydrogenase LDH	decimal	[IU]/L	OBA:VT0010477	Concentration of lactate dehydrogenase (LDH) in blood, typically in serum or plasma
+Measurement Observation	Lactate in blood	decimal	mmol/L	OBA:VT0010616	Concentration of lactate in blood, typically measured in whole blood or plasma
+Measurement Observation	LDL	decimal	mg/dL	OBA:VT0000181	Concentration of low-density lipoprotein (LDL) in blood, typically measured in serum
+Condition	LVH from EKG	Uriorcurie			
+Measurement Observation	Lymphocytes count	decimal	10*3/uL	OBA:VT0000217	Concentration of lymphocytes in whole blood
+Measurement Observation	Lymphocytes percent	decimal	%	OMOP:37208690	Percent of total leukocytes that are lymphocytes
+Measurement Observation	Mass LP-PLA2 in blood	decimal	ng/mL	OMOP:3041450	Concentration of Lp-PLA2 (lipoprotein-associated phospholipase A2) enzyme in serum or plasma.
+Measurement Observation	MCP1 in blood	decimal	pg/mL	OBA:2052436	Concentration of Monocyte Chemoattractant Protein-1 (MCP-1), also known as CCL2, in blood, typically in serum or plasma
+Measurement Observation	Mean arterial pressure	decimal	mm[Hg]	OBA:VT2000000	Average pressure in your arteries throughout one complete cardiac cycle, also known as MAP
+Measurement Observation	mean corpuscular hemoglobin	decimal	pg/{cell}	OBA:2045301	Average amount of hemoglobin in each red blood cell, also known as MCH
+Measurement Observation	mean corpuscular hemoglobin concentration	decimal	g/dL	OMOP:37393850	Average concentration of hemoglobin within a single red blood cell, also known as MCHC
+Measurement Observation	mean corpuscular volume	decimal	fL	OBA:0003460	Average size/volume of a red blood cell, also known as MCV
+Measurement Observation	mean platelet volume	decimal	fL	OBA:0003277	Average size/volume of a platelet, also known as MPV
+Measurement Observation	Medication adherence	BaseEnum		OMOP:4056965	
+Measurement Observation	MMP9 in blood	decimal	ng/mL	OBA:2052397	Concentration of Matrix Metalloproteinase-9 (MMP-9) in blood, typically measured in serum or plasma
+Measurement Observation	monocytes count	decimal	10*3/uL	OBA:VT0000223	Concentration of monocyte cells in whole blood
+Measurement Observation	Myeloperoxidase in blood	decimal	ng/mL	OBA:2052389	Concentration of Myeloperoxidase (MPO) in blood, typically measured in plasma or serum
+Measurement Observation	Neutrophils count	decimal	10*3/uL	OBA:VT0000222	Concentration of neutrophil cells in whole blood
+Measurement Observation	Neutrophils percent	decimal	%{WBCs}	OMOP:37208698	Percent of total leukocytes that are neutrophils
+Measurement Observation	NT pro BNP	decimal	pg/mL	OBA:2045303	Concentration of NT-proBNP in blood, typically measured in serum or plasma. Also known as N-terminal prohormone of brain natriuretic peptide
+Condition	Obesity	ConditionStatusEnum			
+Measurement Observation	Osteoprotegerin in blood	decimal	ng/mL	OMOP:1552124	Concentration of Osteoprotegerin (OPG) in blood, typically measured in serum or plasma
+Measurement Observation	P-selectin in blood	decimal	ng/mL	OBA:2052701	Concentration of P-selectin in blood, typically measured in plasma
+Procedure	Pacemaker implant status	BaseEnum			
+Condition	peripheral arterial disease	Uriorcurie			
+Measurement Observation	Platelet count	decimal	10*3/uL	OMOP:4267147	Concentration of platelets in whole blood
+Measurement Observation	Potassium in blood	decimal	mmol/L	OBA:VT0002668	Concentration of potassium in blood, typically measured in whole blood or serum
+Measurement Observation	PR interval	decimal	ms	OMOP:4274406	Time it takes for electrical impulses to travel from the atria to the ventricles of the heart. Measured using ECG/EKG
+Measurement Observation	QRS interval	decimal	ms	OBA:1001086	Time that elapses from the beginning of the Q wave to the end of the S wave. Measured using ECG/EKG
+Measurement Observation	QT interval	decimal	ms	OMOP:4273023	Time it takes for the ventricles of the heart to depolarize and repolarize. Measured using ECG/EKG
+Demography	Race	RaceEnum		OMOP:4013886	Self-reported category reflecting an individual's identity and social understanding of race in the United States
+Measurement Observation	Red blood cell count	decimal	10*6/uL	OBA:VT0001586	Concentration of red blood cells in whole blood
+Measurement Observation	Red cell distribution width	decimal	%	OMOP:37397924	Measure of the variation in the size and volume of red blood cells, also known as RDW. SD or CV?
+Demography	Sex	SexEnum		OMOP:3046965	Self-reported category reflecting an individual's biological sex and/or gender identity
+Condition	Sleep apnea	Uriorcurie			
+Measurement Observation	Sleep hours	decimal	h	OBA:2040171	Cumulative amount of time spent sleeping each night
+Measurement Observation	Sodium in blood	decimal	mmol/L	OBA:VT0001776	Concentration of sodium in blood, typically measured in serum or plasma
+Measurement Observation	Sodium intake	decimal	mg/d	OMOP:606729	Mass of sodium consumed by an individual per day
+Measurement Observation	SpO2	decimal	%	OBA:2045443	Percentage of oxygen-carrying hemoglobin in the blood compared to the total amount of hemoglobin. Also known as oxygen saturation.
+Condition	Stroke	Uriorcurie			
+Measurement Observation	Systolic blood pressure	integer		OMOP:4152194	Measurement of pressure in your arteries when your heart pumps blood, the top number in a blood pressure reading
+Drug Exposure	Taking ACE inhibitors	Uriorcurie			
+Drug Exposure	Taking aldosterone receptor blockers	Uriorcurie			
+Drug Exposure	Taking alpha blockers	Uriorcurie			
+Drug Exposure	Taking angiotensin receptor blockers	Uriorcurie			
+Drug Exposure	Taking beta blockers	Uriorcurie			
+Drug Exposure	Taking calcium channel blockers	Uriorcurie			
+Drug Exposure	Taking centrally acting agents	Uriorcurie			
+Drug Exposure	Taking diuretics	Uriorcurie			
+Drug Exposure	Taking insulin	Uriorcurie			
+Drug Exposure	Taking medication for diabetes	Uriorcurie			
+Drug Exposure	Taking non statin medication	Uriorcurie			
+Drug Exposure	Taking oral hypoglycemic agents	Uriorcurie			
+Drug Exposure	Taking statin medication	Uriorcurie			
+Drug Exposure	Taking systemic steroids	Uriorcurie			
+Drug Exposure	Taking vasodilators	Uriorcurie			
+Measurement Observation	Temperature	decimal	Cel	OBA:VT0005535	An individual's internal body temperature
+Measurement Observation	TNFa in blood	decimal	pg/mL	OBA:2051979	Concentration of TNF in blood, typically measured in serum or plasma. Also known as TNF-alpha, TNFα,  and tumor necrosis factor
+Measurement Observation	TNFa-R1 in blood	decimal	pg/mL	OBA:2051975	Concentration of TNF receptor 1  in blood, typically measured in serum or plasma. Also known as TNFR1, TNFRSF1A, CD120a, and tumor necrosis factor receptor 1
+Measurement Observation	Total cholesterol in blood	decimal	mg/dL	OBA:VT0000180	Concentration of all cholesterol in your blood, including both HDL and LDL
+Measurement Observation	Triglycerides in blood	decimal	mg/dL	OBA:VT0002644	Concentration of triglycerides in blood, typically measured in serum or plasma
+Measurement Observation	Troponin all types	decimal	ng/mL	OMOP:4021291	Concentration of all types of troponin in blood
+Condition	Valvular heart disease	Uriorcurie			
+Measurement Observation	Vegetables	integer		OMOP:4042886	Servings of vegetables consumed per week
+Condition	Venous thromboembolism	Uriorcurie			
+Measurement Observation	von Willebrand factor	decimal	%{Normal}	OBA:2052741	Concentration of von willebrand factor in blood
+Measurement Observation	Waist circumference	decimal	cm	OBA:1001085	Distance measurement taken around the waist, just above the hip bone
+Measurement Observation	Waist-hip ratio	decimal	{ratio}	OMOP:4087501	Ratio of the circumference of the waist to the circumference of the hips
+Measurement Observation	White blood cell count	decimal	10*3/uL	OBA:VT0000217	Concentration of white blood cells in whole blood
