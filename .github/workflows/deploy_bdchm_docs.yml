@@ -46,7 +46,8 @@ jobs:
         run: |
           mkdir -p generated
           make genjsonschema
-          
+          make gentypescriptschema
+
       - name: Check for changes in generated files
         id: verify_diff
         run: |

@@ -203,6 +203,9 @@ gendoc: $(DOCDIR)
 genjsonschema: 
 	$(RUN) gen-json-schema $(SOURCE_SCHEMA_PATH) > $(GENERATEDDIR)/bdchm.schema.json
 
+gentypescriptschema:
+	$(RUN) gen-typescript $(SOURCE_SCHEMA_PATH) > $(GENERATEDDIR)/bdchm.schema.ts
+
 testdoc: gendoc serve
 
 MKDOCS = $(RUN) mkdocs
