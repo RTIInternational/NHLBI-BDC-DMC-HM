@@ -1,7 +1,7 @@
 name: Auto-deployment of BDCHM Documentation
 on:
   push:
-    branches: 
+    branches:
       - main
 
 jobs:
@@ -13,6 +13,7 @@ jobs:
       contents: write  # to let mkdocs write the new docs
       pages: write     # to deploy to Pages
       id-token: write  # to verify the deployment originates from an appropriate source
+      pull-requests: write  # to create PRs
 
     steps:
       - name: Checkout
@@ -39,8 +40,6 @@ jobs:
           ([ ! -f docs/about.md ] && cp src/docs/about.md docs/) || true
           ([ ! -f docs/new-erd.md ] && cp src/docs/new-erd.md docs/) || true
           make mkd-gh-deploy
-      #- name: Deploy to GitHub Pages.
-      #  uses: actions/deploy-pages@v4
 
       - name: Build additional generated artifacts.
         run: |
