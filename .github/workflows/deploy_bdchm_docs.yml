@@ -45,6 +45,7 @@ jobs:
         run: |
           mkdir -p generated
           make genjsonschema
+          make gentypescriptschema
 
       - name: Create Pull Request for generated files
         uses: peter-evans/create-pull-request@v6
