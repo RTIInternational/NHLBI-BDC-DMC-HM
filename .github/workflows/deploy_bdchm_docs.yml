@@ -48,24 +48,17 @@ jobs:
           make genjsonschema
           make gentypescriptschema
 
-      - name: Check for changes in generated files
-        id: verify_diff
-        run: |
-          git diff --quiet generated/bdchm.schema.json || echo "changed=true" >> $GITHUB_OUTPUT
-
-      - name: Commit generated files
-        if: steps.verify_diff.outputs.changed == 'true'
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add generated/bdchm.schema.json
-          git commit -m "Update generated JSON schema [skip ci]"
-
-      - name: Push changes
-        if: steps.verify_diff.outputs.changed == 'true'
-        uses: ad-m/github-push-action@master
+      - name: Create Pull Request for generated files
+        uses: peter-evans/create-pull-request@v6
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
-      
-      
+          commit-message: "Update generated JSON schema [skip ci]"
+          branch: auto-update-schema
+          delete-branch: true
+          title: "Auto-update generated JSON schema"
+          body: |
+            Automated changes from the documentation build workflow.
+            
+            - Updated `generated/bdchm.schema.json`
+          labels: |
+            automated
+            documentation
