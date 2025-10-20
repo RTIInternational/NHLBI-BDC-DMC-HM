@@ -259,6 +259,7 @@ classes:
           description: An event that occurred at the point in time specified by this TimePoint.
 
   TimePeriod:
+    is_a: Entity
     description: >-
       A period of time between a start and end time point.
     attributes:
@@ -353,6 +354,7 @@ classes:
       - associated_visit
 
   QuestionnaireResponseItem:
+    is_a: Entity
     description: QuestionnaireResponseItem provides a complete or partial list of answers to a set of questions filled when responding to a questionnaire. (FHIR)
     attributes:
       has_questionnaire_item:
@@ -366,6 +368,7 @@ classes:
         required: true
 
   QuestionnaireResponseValue:
+    is_a: Entity
     description: Single-valued answer to the question. (FHIR)
     abstract: true
     attributes:
