@@ -220,9 +220,8 @@ classes:
       - visit_provenance:
           range: VisitProvenanceEnum
           description: A value representing the provenance of the visit record, or where the record comes from.
-      - associated_participant:
-          range: Participant
-          description: A reference to the Participant for whom this Visit occurred.
+    slots:    
+      - associated_participant
 
   Organization:
     is_a: Entity
@@ -448,12 +447,10 @@ classes:
       relationship_to_participant:
         range: FamilyRelationshipEnum
         description: A value indicating the relationship between the Participant to which the Condition is attributed and the individual who had the reported Condition.  If the Condition is affecting the participant themselves, then 'Self' is the appropriate relationship.  If the Condition is affecting a family member (e.g. a parent of the Participant) then an appropriate relationship should be provided (e.g. 'Parent')
-      associated_participant:
-        range: Participant
-        description: A reference to the Participant to which the Condition is attributed.
     slots:
       - identity
       - associated_visit
+      - associated_participant
 
   Procedure:
     is_a: Entity
@@ -477,12 +474,41 @@ classes:
       quantity:
         range: Quantity
         description: The quantity of procedures ordered or administered.
-      associated_participant:
-        range: Participant
-        description: A reference to the Participant on which the Procedure was performed.
     slots:
       - identity
       - associated_visit
+      - associated_participant
+
+  ImagingStudy:
+    is_a: Entity
+    description: An ImagingStudy is a set of images produced in a single study (one or more series of references images).  It may include images from different modalities (e.g. CT, MR, Ultrasound) and from different instances in time.  The ImagingStudy may be linked to other information such as the clinical context in which the images were acquired.
+    attributes:
+      age_at_imaging_study:
+        range: integer
+        description: The Participant's age (expressed in days) when the ImagingStudy was performed.
+        unit:
+          ucum_code: d
+      number_of_series:
+        range: integer
+        description: Number of Series in the Study.
+      number_of_instances:
+        range: integer
+        description: Number of SOP Instances in Study.
+      study_description:
+        range: string
+        description: (0008, 1030) Study Description. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. 
+      study_modality:
+        range: string
+        description: The modalities of the imaging study; derived from (0008, 0060) Modality. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. 
+      study_uid:
+        range: string
+        description: (0020, 000d) Study Instance UID. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.
+      body_part_examined:
+        range: BodySite
+        description: (0018, 0015) Body Part Examined. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. 
+    slots:
+      - associated_visit
+      - associated_participant
 
   Exposure:
     is_a: Entity
@@ -499,15 +525,13 @@ classes:
         description: The Participant's age (expressed in days) at the exposure end date, if available. Otherwise equal to age_at_exposure_start.
         unit:
           ucum_code: d
-      associated_participant:
-        range: Participant
-        description: A reference to the Participant to which the exposure is attributed.
       exposure_status:
         range: HistoricalStatusEnum
         description: A value indicating whether the exposure described in this record is present, absent, historically present, or unknown for this individual patient.
     slots:
       - identity
       - associated_visit
+      - associated_participant
 
   DrugExposure:
     is_a: Exposure
@@ -574,25 +598,7 @@ classes:
 
   File:
     is_a: Entity
-    description: >-
-      Abstract class for various kinds of files. Subclasses may be defined
-      for specific file types.
-    comments:
-      - This is taken largely from the 
-        [Gen3 Core Metadata Collection](https://gen3.biodatacatalyst.nhlbi.nih.gov/DD)
-        definition.
-      - Gen3 apparently took most of the attributes listed here from the
-        [Dublin Core /elements/1.1/ namespace](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-3).
-      - Attributes different from those in Dublin Core are noted as such in the comments.
-      - The Document entity was defined in this model prior to defining this File entity.
-        Should it be modified to be a subclass of this?
-      - Unlike Document, which has a url property, the Gen3 Core Metadata
-        definition doesn't have a file location or unique identifier.
-        Should that be left to specific File subclasses or defined here?
-      - Tentatively including three attribute for addressing this --
-        identifier, file_path, and uri.
-      - There appear to be 11 specific file types defined in Gen3, 8 types
-        classified as Data Files and 3 classified as Index Files.
+    description: Abstract class for various kinds of files. Subclasses may be defined for specific file types.
     attributes:
       file_name:
         range: string
@@ -609,39 +615,51 @@ classes:
         description: The 128-bit hash value expressed as a 32 digit hexadecimal number used as a file's digital fingerprint.
       data_type:
         range: string
-        description: >-
-          The nature or genre of the resource. Recommended best practice is to
-          use a controlled vocabulary such as the DCMI Type Vocabulary
-          [DCMI-TYPE](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7).
-          To describe the file format, physical medium, or dimensions of the
-          resource, use the Format element.
-        comments:
-          - Called 'type' in Dublin Core.
+        description: The nature or genre of the resource. Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMI-TYPE](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7). To describe the file format, physical medium, or dimensions of the resource, use the Format element.
       data_category:
         range: string
         description: A broad categorization of the contents of the data file.
       format:
         range: string
-        description: >-
-          The file format, physical medium, or dimensions of the resource.
-          Examples of dimensions include size and duration. Recommended best
-          practice is to use a controlled vocabulary such as the list of
-          Internet Media Types [MIME]
-          (http://www.iana.org/assignments/media-types/).
+        description: The file format, physical medium, or dimensions of the resource. Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME] (http://www.iana.org/assignments/media-types/).
       description:
         range: string
-        description: >-
-          An account of the resource. Description may include but is not
-          limited to: an abstract, a table of contents, a graphical
-          representation, or a free-text account of the resource.
-      associated_participant:
-        range: Participant
-        description: A reference to the Participant to which this file relates.
+        description: An account of the resource. Description may include but is not limited to an abstract, a table of contents, a graphical representation, or a free-text account of the resource.
       derived_from:
         range: File
         description: A File from which this File is derived.  A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.
     slots:
       - identity
+      - associated_participant
+
+  ImagingFile:
+    is_a: File
+    description: A file that contains diagnostic imaging data, such as a DICOM file, or a JPEG or PNG image.
+    attributes:
+      imaging_modality:
+        range: string
+        description: The modality of the imaging data contained in the file (e.g. CT, MRI, etc.)
+      anatomical_site:
+        range: BodySite
+        description: The anatomical site from which the imaging data was acquired (e.g. Chest, Abdomen, etc.)
+      series_number:
+        range: integer
+        description: The Series Instance Number for the imaging data contained in the file, if applicable.
+      series_uid:
+        range: string
+        description: (0020, 000e) Series Instance UID. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. 
+      series_description:
+        range: string
+        description: (0008, 103e) Series Description. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. 
+      related_imaging_study:
+        range: ImagingStudy
+        description: The ImagingStudy with which this ImagingFile is associated.
+      manufacturer:
+        range: string
+        description: (0008, 0070) Manufacturer. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.
+      manufacturer_model:
+        range: string
+        description: (0008, 1090) Manufacturer's Model Name. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.
 
   Document:
     is_a: Entity
@@ -1280,11 +1298,6 @@ classes:
         inlined_as_list: true
         range: Entity
         required: false
-      associated_participant:
-        description: The Participant that the observation is about (if not the direct focus).  Observations are often made on specimens derived from a patient, or other entities related to a patient, that ultimately tell us something about the patient of interest.
-        multivalued: false
-        range: Participant
-        required: false
       method_type:
         description: The type of method used in generating the ObservationSet
         comments:
@@ -1301,6 +1314,7 @@ classes:
     slots:
       - observations
       - associated_visit
+      - associated_participant
       
   Observation:
     is_a: Entity
@@ -1338,11 +1352,6 @@ classes:
         multivalued: false
         range: Entity
         required: false
-      associated_participant:
-        description: The patient that the observation is about (if not the direct focus).  e.g. observations are often made on specimens derived from a patient, or other entities related to a patient, that ultimately tell us something about the patient of interest.
-        multivalued: false
-        range: Participant
-        required: false
       performed_by:
         description: The organization or group that performed the observation activity.
         multivalued: false
@@ -1378,6 +1387,7 @@ classes:
         range: BaseEnum
     slots:
       - associated_visit
+      - associated_participant
 
   MeasurementObservationSet:
     is_a: ObservationSet
