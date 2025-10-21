@@ -129,57 +129,57 @@ classes:
     description: >-
       A process where a researcher or organization plans and then executes a series of steps intended to increase the field of healthcare-related knowledge. This includes studies of safety, efficacy, comparative effectiveness and other information about medications, devices, therapies and other interventional and investigative techniques. A ResearchStudy involves the gathering of information about human or animal subjects.
     attributes:
-      - name:
-          range: string
-          description: An unabridged name of a research program, project, or study.
-      - name_shortened:
-          range: string
-          description: An abbreviated name of a research program, project, or study.
-      - description:
-          range: string
-          description: An unabridged description of a research program, project, or study.
-      - description_shortened:
-          range: string
-          description: An abbreviated description of a research program, project, or study.
-      - sponsor:
-          range: string
-          description: An entity that is responsible for the initiation, management, and/or financing of a research project.
-      - date_started:
-          range: TimePoint
-          description: The date when the research project began.
-      - date_ended:
-          range: TimePoint
-          description: The date when the research project ended.
-      - accession_number:
-          range: string
-          description: The accession number of the research study with the accession authority
-      - accession_authority:
-          range: string
-          description: The accession authority for the research study.
-      - version:
-          range: string
-          description: The version number of the ResearchStudy
-      - url:
-          range: uriorcurie
-          description: A URL address for a resource that provides information about a research program, project, or study.
-      - part_of:
-          range: ResearchStudy
-          description: A reference to a parent ResearchStudy (e.g. a link to the overarching CPTAC ResearchStudy from a substudy of CPTAC)
-      - research_project_type:
-          range: string
-          description: The 'type' of ResearchStudy represented (e.g. a broad-based Program like 'CPTAC' or a more focused Project like 'CPTAC PDAC Discovery Study')
-      - associated_timepoint:
-          range: TimePoint
-          multivalued: true
-          description: A collection of timepoint observations that are relevant to research projects (e.g. date of IACUC approval, date of IRB approval, date of embargo end, etc.)
-      - principal_investigator:
-          range: string
-          multivalued: true
-          description: The investigator or investigators leading a project.
-      - consents:
-          range: Consent
-          description: 'Data Use Restrictions that are used to indicate permissions/restrictions for datasets and/or materials, and relates to the purposes for which datasets and/or material might be removed, stored or used. Based on the Data Use Ontology : see http://www.obofoundry.org/ontology/duo.html'
-          multivalued: true
+      name:
+        range: string
+        description: An unabridged name of a research program, project, or study.
+      name_shortened:
+        range: string
+        description: An abbreviated name of a research program, project, or study.
+      description:
+        range: string
+        description: An unabridged description of a research program, project, or study.
+      description_shortened:
+        range: string
+        description: An abbreviated description of a research program, project, or study.
+      sponsor:
+        range: string
+        description: An entity that is responsible for the initiation, management, and/or financing of a research project.
+      date_started:
+        range: TimePoint
+        description: The date when the research project began.
+      date_ended:
+        range: TimePoint
+        description: The date when the research project ended.
+      accession_number:
+        range: string
+        description: The accession number of the research study with the accession authority
+      accession_authority:
+        range: string
+        description: The accession authority for the research study.
+      version:
+        range: string
+        description: The version number of the ResearchStudy
+      url:
+        range: uriorcurie
+        description: A URL address for a resource that provides information about a research program, project, or study.
+      part_of:
+        range: ResearchStudy
+        description: A reference to a parent ResearchStudy (e.g. a link to the overarching CPTAC ResearchStudy from a substudy of CPTAC)
+      research_project_type:
+        range: string
+        description: The 'type' of ResearchStudy represented (e.g. a broad-based Program like 'CPTAC' or a more focused Project like 'CPTAC PDAC Discovery Study')
+      associated_timepoint:
+        range: TimePoint
+        multivalued: true
+        description: A collection of timepoint observations that are relevant to research projects (e.g. date of IACUC approval, date of IRB approval, date of embargo end, etc.)
+      principal_investigator:
+        range: string
+        multivalued: true
+        description: The investigator or investigators leading a project.
+      consents:
+        range: Consent
+        description: 'Data Use Restrictions that are used to indicate permissions/restrictions for datasets and/or materials, and relates to the purposes for which datasets and/or material might be removed, stored or used. Based on the Data Use Ontology : see http://www.obofoundry.org/ontology/duo.html'
+        multivalued: true
     slots:
       - identity
 
@@ -188,38 +188,38 @@ classes:
     description: >-
       An entity that can be used to capture consent code and other relevant data about consent for a study.
     attributes:
-      - consent_code:
-          range: DataUseEnum
-          description: 'Data Use Restrictions that are used to indicate permissions/restrictions for datasets and/or materials, and relates to the purposes for which datasets and/or material might be removed, stored or used. Based on the Data Use Ontology : see http://www.obofoundry.org/ontology/duo.html'
-          multivalued: false
-      - valid_from:
-          range: TimePoint
-          description: The point in time from which the consent record is valid.
-      - valid_to:
-          range: TimePoint
-          description: The point in time after which the consent record is invalid.
+      consent_code:
+        range: DataUseEnum
+        description: 'Data Use Restrictions that are used to indicate permissions/restrictions for datasets and/or materials, and relates to the purposes for which datasets and/or material might be removed, stored or used. Based on the Data Use Ontology : see http://www.obofoundry.org/ontology/duo.html'
+        multivalued: false
+      valid_from:
+        range: TimePoint
+        description: The point in time from which the consent record is valid.
+      valid_to:
+        range: TimePoint
+        description: The point in time after which the consent record is invalid.
 
   Visit:
     is_a: Entity
     description: >-
       Events where Persons engage with the healthcare system for a duration of time. They are often also called “Encounters”. Visits are defined by a configuration of circumstances under which they occur, such as (i) whether the patient comes to a healthcare institution, the other way around, or the interaction is remote, (ii) whether and what kind of trained medical staff is delivering the service during the Visit, and (iii) whether the Visit is transient or for a longer period involving a stay in bed. (OMOP)
     attributes:
-      - visit_category:
-          range: VisitCategoryEnum
-          description: A value representing the kind (or category) of visit, like inpatient or outpatient.
-      - age_at_visit_start:
-          range: integer
-          description: The age of the Participant (in days) at the start of the Visit.
-          unit:
-            ucum_code: d
-      - age_at_visit_end:
-          range: integer
-          description: The age of the Participant (in days) at the end of the Visit.
-          unit:
-            ucum_code: d
-      - visit_provenance:
-          range: VisitProvenanceEnum
-          description: A value representing the provenance of the visit record, or where the record comes from.
+      visit_category:
+        range: VisitCategoryEnum
+        description: A value representing the kind (or category) of visit, like inpatient or outpatient.
+      age_at_visit_start:
+        range: integer
+        description: The age of the Participant (in days) at the start of the Visit.
+        unit:
+          ucum_code: d
+      age_at_visit_end:
+        range: integer
+        description: The age of the Participant (in days) at the end of the Visit.
+        unit:
+          ucum_code: d
+      visit_provenance:
+        range: VisitProvenanceEnum
+        description: A value representing the provenance of the visit record, or where the record comes from.
     slots:    
       - associated_participant
 
@@ -245,30 +245,30 @@ classes:
     description: >-
       A structured representation of a single point in time that allows direct/explicit declaration as a dateTime, specification in terms of offset from a defined index, or description of an event type as a proxy for the time point when it occurred.
     attributes:
-      - date_time:
-          range: datetime
-          description: An explicitly specified timepoint described in terms of a date and optionally a time on that date.
-      - index_time_point:
-          range: TimePoint
-          description: Another TimePoint from which this point is offset.
-      - offset_from_index:
-          range: integer
-          description: A quantity of time that, together with the index date or event, can be used to derive a specific timepoint.
-      - event_type:
-          range: string
-          description: An event that occurred at the point in time specified by this TimePoint.
+      date_time:
+        range: datetime
+        description: An explicitly specified timepoint described in terms of a date and optionally a time on that date.
+      index_time_point:
+        range: TimePoint
+        description: Another TimePoint from which this point is offset.
+      offset_from_index:
+        range: integer
+        description: A quantity of time that, together with the index date or event, can be used to derive a specific timepoint.
+      event_type:
+        range: string
+        description: An event that occurred at the point in time specified by this TimePoint.
 
   TimePeriod:
     is_a: Entity
     description: >-
       A period of time between a start and end time point.
     attributes:
-      - period_start:
-          range: TimePoint
-          description: When a period of time started.
-      - period_end:
-          range: TimePoint
-          description: When a period of time ended.
+      period_start:
+        range: TimePoint
+        description: When a period of time started.
+      period_end:
+        range: TimePoint
+        description: When a period of time ended.
 
   ResearchStudyCollection:
     tree_root: true
