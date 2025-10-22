@@ -173,7 +173,7 @@
                     ]
                 },
                 "associated_participant": {
-                    "description": "A reference to the Participant to which the Condition is attributed.",
+                    "description": "A reference to the Participant that is associated with this record.",
                     "type": [
                         "string",
                         "null"
@@ -357,7 +357,7 @@
                     ]
                 },
                 "associated_participant": {
-                    "description": "A reference to the Participant to which the exposure is attributed.",
+                    "description": "A reference to the Participant that is associated with this record.",
                     "type": [
                         "string",
                         "null"
@@ -514,7 +514,7 @@
                     ]
                 },
                 "associated_participant": {
-                    "description": "The patient that the observation is about (if not the direct focus).  e.g. observations are often made on specimens derived from a patient, or other entities related to a patient, that ultimately tell us something about the patient of interest.",
+                    "description": "A reference to the Participant that is associated with this record.",
                     "type": [
                         "string",
                         "null"
@@ -601,7 +601,7 @@
             "description": "A set of one or more discrete observations about the physical dimensions of an object (e.g. length, width, area).",
             "properties": {
                 "associated_participant": {
-                    "description": "The Participant that the observation is about (if not the direct focus).  Observations are often made on specimens derived from a patient, or other entities related to a patient, that ultimately tell us something about the patient of interest.",
+                    "description": "A reference to the Participant that is associated with this record.",
                     "type": [
                         "string",
                         "null"
@@ -742,7 +742,7 @@
                     ]
                 },
                 "associated_participant": {
-                    "description": "A reference to the Participant to which the exposure is attributed.",
+                    "description": "A reference to the Participant that is associated with this record.",
                     "type": [
                         "string",
                         "null"
@@ -1061,7 +1061,7 @@
                     ]
                 },
                 "associated_participant": {
-                    "description": "A reference to the Participant to which the exposure is attributed.",
+                    "description": "A reference to the Participant that is associated with this record.",
                     "type": [
                         "string",
                         "null"
@@ -1120,7 +1120,7 @@
             "description": "Abstract class for various kinds of files. Subclasses may be defined for specific file types.",
             "properties": {
                 "associated_participant": {
-                    "description": "A reference to the Participant to which this file relates.",
+                    "description": "A reference to the Participant that is associated with this record.",
                     "type": [
                         "string",
                         "null"
@@ -1148,7 +1148,7 @@
                     ]
                 },
                 "description": {
-                    "description": "An account of the resource. Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.",
+                    "description": "An account of the resource. Description may include but is not limited to an abstract, a table of contents, a graphical representation, or a free-text account of the resource.",
                     "type": [
                         "string",
                         "null"
@@ -1250,6 +1250,238 @@
             "title": "HpoPhenotypicAbnormalityEnum",
             "type": "string"
         },
+        "ImagingFile": {
+            "additionalProperties": false,
+            "description": "A file that contains diagnostic imaging data, such as a DICOM file, or a JPEG or PNG image.",
+            "properties": {
+                "anatomical_site": {
+                    "description": "The anatomical site from which the imaging data was acquired (e.g. Chest, Abdomen, etc.)",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "associated_participant": {
+                    "description": "A reference to the Participant that is associated with this record.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "data_category": {
+                    "description": "A broad categorization of the contents of the data file.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "data_type": {
+                    "description": "The nature or genre of the resource. Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMI-TYPE](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7). To describe the file format, physical medium, or dimensions of the resource, use the Format element.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "derived_from": {
+                    "description": "A File from which this File is derived.  A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "description": {
+                    "description": "An account of the resource. Description may include but is not limited to an abstract, a table of contents, a graphical representation, or a free-text account of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "file_location": {
+                    "description": "A unique identifier or url for identifying or locating the file.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "file_name": {
+                    "description": "The name (or part of a name) of a file (of any type).",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "file_size": {
+                    "description": "The size of the data file (object) in bytes.",
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "format": {
+                    "description": "The file format, physical medium, or dimensions of the resource. Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME] (http://www.iana.org/assignments/media-types/).",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
+                    "type": "string"
+                },
+                "identity": {
+                    "description": "A 'business' identifier or accession number for the entity, typically as provided by an external system or authority, that are globally unique and persist across implementing systems. Also, since these identifiers are created outside the information system through a specific business process, the Identifier type has additional attributes to capture this additional metadata so the actual identifier values are qualified by the context that created those values. This additional context allows \"identifier\" instances to be transmitted as business data across systems while still being able to trace them back to the system of origin.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "imaging_modality": {
+                    "description": "The modality of the imaging data contained in the file (e.g. CT, MRI, etc.)",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "manufacturer": {
+                    "description": "(0008, 0070) Manufacturer. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "manufacturer_model": {
+                    "description": "(0008, 1090) Manufacturer's Model Name. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "md5sum": {
+                    "description": "The 128-bit hash value expressed as a 32 digit hexadecimal number used as a file's digital fingerprint.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "related_imaging_study": {
+                    "description": "The ImagingStudy with which this ImagingFile is associated.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "series_description": {
+                    "description": "(0008, 103e) Series Description. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "series_number": {
+                    "description": "The Series Instance Number for the imaging data contained in the file, if applicable.",
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "series_uid": {
+                    "description": "(0020, 000e) Series Instance UID. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "ImagingFile",
+            "type": "object"
+        },
+        "ImagingStudy": {
+            "additionalProperties": false,
+            "description": "An ImagingStudy is a set of images produced in a single study (one or more series of references images).  It may include images from different modalities (e.g. CT, MR, Ultrasound) and from different instances in time.  The ImagingStudy may be linked to other information such as the clinical context in which the images were acquired.",
+            "properties": {
+                "age_at_imaging_study": {
+                    "description": "The Participant's age (expressed in days) when the ImagingStudy was performed.",
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "associated_participant": {
+                    "description": "A reference to the Participant that is associated with this record.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "associated_visit": {
+                    "description": "A reference to the Visit that is associated with this record.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "body_part_examined": {
+                    "description": "(0018, 0015) Body Part Examined. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
+                    "type": "string"
+                },
+                "number_of_instances": {
+                    "description": "Number of SOP Instances in Study.",
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "number_of_series": {
+                    "description": "Number of Series in the Study.",
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "study_description": {
+                    "description": "(0008, 1030) Study Description. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "study_modality": {
+                    "description": "The modalities of the imaging study; derived from (0008, 0060) Modality. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "study_uid": {
+                    "description": "(0020, 000d) Study Instance UID. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "ImagingStudy",
+            "type": "object"
+        },
         "MeasurementObservation": {
             "additionalProperties": false,
             "description": "A data structure with key (observation_type) and value (value) attributes that represents a single observation, such as the hematocrit component of a complete blood count panel.",
@@ -1262,7 +1494,7 @@
                     ]
                 },
                 "associated_participant": {
-                    "description": "The patient that the observation is about (if not the direct focus).  e.g. observations are often made on specimens derived from a patient, or other entities related to a patient, that ultimately tell us something about the patient of interest.",
+                    "description": "A reference to the Participant that is associated with this record.",
                     "type": [
                         "string",
                         "null"
@@ -1362,7 +1594,7 @@
             "description": "A structured object to hold related Observations in a set.",
             "properties": {
                 "associated_participant": {
-                    "description": "The Participant that the observation is about (if not the direct focus).  Observations are often made on specimens derived from a patient, or other entities related to a patient, that ultimately tell us something about the patient of interest.",
+                    "description": "A reference to the Participant that is associated with this record.",
                     "type": [
                         "string",
                         "null"
@@ -1562,7 +1794,7 @@
                     ]
                 },
                 "associated_participant": {
-                    "description": "The patient that the observation is about (if not the direct focus).  e.g. observations are often made on specimens derived from a patient, or other entities related to a patient, that ultimately tell us something about the patient of interest.",
+                    "description": "A reference to the Participant that is associated with this record.",
                     "type": [
                         "string",
                         "null"
@@ -1649,7 +1881,7 @@
             "description": "A structured object to hold related Observations in a set.",
             "properties": {
                 "associated_participant": {
-                    "description": "The Participant that the observation is about (if not the direct focus).  Observations are often made on specimens derived from a patient, or other entities related to a patient, that ultimately tell us something about the patient of interest.",
+                    "description": "A reference to the Participant that is associated with this record.",
                     "type": [
                         "string",
                         "null"
@@ -1933,7 +2165,7 @@
                     ]
                 },
                 "associated_participant": {
-                    "description": "A reference to the Participant on which the Procedure was performed.",
+                    "description": "A reference to the Participant that is associated with this record.",
                     "type": [
                         "string",
                         "null"
@@ -2220,7 +2452,7 @@
                 "items": {
                     "description": "A collection of QuestionnaireResponseItem objects which encapsulate the question being asked and the response.",
                     "items": {
-                        "$ref": "#/$defs/QuestionnaireResponseItem"
+                        "type": "string"
                     },
                     "type": "array"
                 }
@@ -2243,24 +2475,12 @@
                         "null"
                     ]
                 },
+                "id": {
+                    "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
+                    "type": "string"
+                },
                 "response_value": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/QuestionnaireResponseValueDecimal"
-                        },
-                        {
-                            "$ref": "#/$defs/QuestionnaireResponseValueBoolean"
-                        },
-                        {
-                            "$ref": "#/$defs/QuestionnaireResponseValueInteger"
-                        },
-                        {
-                            "$ref": "#/$defs/QuestionnaireResponseValueTimePoint"
-                        },
-                        {
-                            "$ref": "#/$defs/QuestionnaireResponseValueString"
-                        }
-                    ]
+                    "type": "string"
                 },
                 "text": {
                     "description": "Name for group or question text",
@@ -2271,7 +2491,8 @@
                 }
             },
             "required": [
-                "response_value"
+                "response_value",
+                "id"
             ],
             "title": "QuestionnaireResponseItem",
             "type": "object"
@@ -2280,6 +2501,10 @@
             "additionalProperties": false,
             "description": "Single-valued boolean answer to the question",
             "properties": {
+                "id": {
+                    "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
+                    "type": "string"
+                },
                 "name": {
                     "type": [
                         "string",
@@ -2301,7 +2526,8 @@
                 }
             },
             "required": [
-                "value"
+                "value",
+                "id"
             ],
             "title": "QuestionnaireResponseValueBoolean",
             "type": "object"
@@ -2310,6 +2536,10 @@
             "additionalProperties": false,
             "description": "Single-valued decimal answer to the question",
             "properties": {
+                "id": {
+                    "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
+                    "type": "string"
+                },
                 "name": {
                     "type": [
                         "string",
@@ -2331,7 +2561,8 @@
                 }
             },
             "required": [
-                "value"
+                "value",
+                "id"
             ],
             "title": "QuestionnaireResponseValueDecimal",
             "type": "object"
@@ -2340,6 +2571,10 @@
             "additionalProperties": false,
             "description": "Single-valued integer answer to the question",
             "properties": {
+                "id": {
+                    "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
+                    "type": "string"
+                },
                 "name": {
                     "type": [
                         "string",
@@ -2361,7 +2596,8 @@
                 }
             },
             "required": [
-                "value"
+                "value",
+                "id"
             ],
             "title": "QuestionnaireResponseValueInteger",
             "type": "object"
@@ -2370,6 +2606,10 @@
             "additionalProperties": false,
             "description": "Single-valued string answer to the question",
             "properties": {
+                "id": {
+                    "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
+                    "type": "string"
+                },
                 "name": {
                     "type": [
                         "string",
@@ -2391,7 +2631,8 @@
                 }
             },
             "required": [
-                "value"
+                "value",
+                "id"
             ],
             "title": "QuestionnaireResponseValueString",
             "type": "object"
@@ -2400,6 +2641,10 @@
             "additionalProperties": false,
             "description": "Single-valued TimePoint answer to the question",
             "properties": {
+                "id": {
+                    "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
+                    "type": "string"
+                },
                 "name": {
                     "type": [
                         "string",
@@ -2421,7 +2666,8 @@
                 }
             },
             "required": [
-                "value"
+                "value",
+                "id"
             ],
             "title": "QuestionnaireResponseValueTimePoint",
             "type": "object"
@@ -2766,7 +3012,7 @@
                     ]
                 },
                 "associated_participant": {
-                    "description": "The patient that the observation is about (if not the direct focus).  e.g. observations are often made on specimens derived from a patient, or other entities related to a patient, that ultimately tell us something about the patient of interest.",
+                    "description": "A reference to the Participant that is associated with this record.",
                     "type": [
                         "string",
                         "null"
@@ -2857,7 +3103,7 @@
             "description": "A structured object to hold related Observations in a set.",
             "properties": {
                 "associated_participant": {
-                    "description": "The Participant that the observation is about (if not the direct focus).  Observations are often made on specimens derived from a patient, or other entities related to a patient, that ultimately tell us something about the patient of interest.",
+                    "description": "A reference to the Participant that is associated with this record.",
                     "type": [
                         "string",
                         "null"
@@ -3500,7 +3746,7 @@
                     ]
                 },
                 "associated_participant": {
-                    "description": "The patient that the observation is about (if not the direct focus).  e.g. observations are often made on specimens derived from a patient, or other entities related to a patient, that ultimately tell us something about the patient of interest.",
+                    "description": "A reference to the Participant that is associated with this record.",
                     "type": [
                         "string",
                         "null"
@@ -3612,7 +3858,7 @@
                     ]
                 },
                 "associated_participant": {
-                    "description": "The patient that the observation is about (if not the direct focus).  e.g. observations are often made on specimens derived from a patient, or other entities related to a patient, that ultimately tell us something about the patient of interest.",
+                    "description": "A reference to the Participant that is associated with this record.",
                     "type": [
                         "string",
                         "null"
@@ -3875,6 +4121,10 @@
             "additionalProperties": false,
             "description": "A period of time between a start and end time point.",
             "properties": {
+                "id": {
+                    "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
+                    "type": "string"
+                },
                 "period_end": {
                     "description": "When a period of time ended.",
                     "type": [
@@ -3890,6 +4140,9 @@
                     ]
                 }
             },
+            "required": [
+                "id"
+            ],
             "title": "TimePeriod",
             "type": "object"
         },
@@ -3966,7 +4219,7 @@
                     ]
                 },
                 "associated_participant": {
-                    "description": "A reference to the Participant for whom this Visit occurred.",
+                    "description": "A reference to the Participant that is associated with this record.",
                     "type": [
                         "string",
                         "null"
