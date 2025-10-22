@@ -7,17 +7,27 @@ export type ConsentId = string;
 export type VisitId = string;
 export type OrganizationId = string;
 export type TimePointId = string;
+export type TimePeriodId = string;
 export type QuestionnaireId = string;
 export type QuestionnaireItemId = string;
 export type QuestionnaireResponseId = string;
+export type QuestionnaireResponseItemId = string;
+export type QuestionnaireResponseValueId = string;
+export type QuestionnaireResponseValueDecimalId = string;
+export type QuestionnaireResponseValueBooleanId = string;
+export type QuestionnaireResponseValueIntegerId = string;
+export type QuestionnaireResponseValueTimePointId = string;
+export type QuestionnaireResponseValueStringId = string;
 export type ConditionId = string;
 export type ProcedureId = string;
+export type ImagingStudyId = string;
 export type ExposureId = string;
 export type DrugExposureId = string;
 export type DeviceExposureId = string;
 export type DimensionalObservationId = string;
 export type DimensionalObservationSetId = string;
 export type FileId = string;
+export type ImagingFileId = string;
 export type DocumentId = string;
 export type SpecimenId = string;
 export type SpecimenContainerId = string;
@@ -1555,6 +1565,8 @@ export interface Consent extends Entity {
  * Events where Persons engage with the healthcare system for a duration of time. They are often also called “Encounters”. Visits are defined by a configuration of circumstances under which they occur, such as (i) whether the patient comes to a healthcare institution, the other way around, or the interaction is remote, (ii) whether and what kind of trained medical staff is delivering the service during the Visit, and (iii) whether the Visit is transient or for a longer period involving a stay in bed. (OMOP)
  */
 export interface Visit extends Entity {
+    /** A reference to the Participant that is associated with this record. */
+    associated_participant?: ParticipantId,
     /** A value representing the kind (or category) of visit, like inpatient or outpatient. */
     visit_category?: string,
     /** The age of the Participant (in days) at the start of the Visit. */
@@ -1563,8 +1575,6 @@ export interface Visit extends Entity {
     age_at_visit_end?: number,
     /** A value representing the provenance of the visit record, or where the record comes from. */
     visit_provenance?: string,
-    /** A reference to the Participant for whom this Visit occurred. */
-    associated_participant?: ParticipantId,
 }
 
 
@@ -1601,7 +1611,7 @@ export interface TimePoint extends Entity {
 /**
  * A period of time between a start and end time point.
  */
-export interface TimePeriod {
+export interface TimePeriod extends Entity {
     /** When a period of time started. */
     period_start?: TimePointId,
     /** When a period of time ended. */
@@ -1670,26 +1680,26 @@ export interface QuestionnaireResponse extends Entity {
     /** The age (in days) of the Participant when the QuestionnaireResponse was captured. */
     age_at_response?: number,
     /** A collection of QuestionnaireResponseItem objects which encapsulate the question being asked and the response. */
-    items: QuestionnaireResponseItem[],
+    items: QuestionnaireResponseItemId[],
 }
 
 
 /**
  * QuestionnaireResponseItem provides a complete or partial list of answers to a set of questions filled when responding to a questionnaire. (FHIR)
  */
-export interface QuestionnaireResponseItem {
+export interface QuestionnaireResponseItem extends Entity {
     /** A reference to the QuestionnaireItem that this QuestionnaireResponseItem responds to. */
     has_questionnaire_item?: QuestionnaireItemId,
     /** Name for group or question text */
     text?: string,
-    response_value: QuestionnaireResponseValue,
+    response_value: QuestionnaireResponseValueId,
 }
 
 
 /**
  * Single-valued answer to the question. (FHIR)
  */
-export interface QuestionnaireResponseValue {
+export interface QuestionnaireResponseValue extends Entity {
     /** A general slot to hold a value. */
     value?: string,
     type?: string,
@@ -1740,6 +1750,8 @@ export interface Condition extends Entity {
     identity?: string[],
     /** A reference to the Visit that is associated with this record. */
     associated_visit?: VisitId,
+    /** A reference to the Participant that is associated with this record. */
+    associated_participant?: ParticipantId,
     /** The coded value for the presence of a disease or medical condition stated as a diagnosis, a sign or a symptom, coded to the Human Phenotype Ontology or MONDO. */
     condition_concept?: string,
     /** The Participant's age (expressed in days) when the condition was first recorded. */
@@ -1754,8 +1766,6 @@ export interface Condition extends Entity {
     condition_severity?: string,
     /** A value indicating the relationship between the Participant to which the Condition is attributed and the individual who had the reported Condition.  If the Condition is affecting the participant themselves, then 'Self' is the appropriate relationship.  If the Condition is affecting a family member (e.g. a parent of the Participant) then an appropriate relationship should be provided (e.g. 'Parent') */
     relationship_to_participant?: string,
-    /** A reference to the Participant to which the Condition is attributed. */
-    associated_participant?: ParticipantId,
 }
 
 
@@ -1767,6 +1777,8 @@ export interface Procedure extends Entity {
     identity?: string[],
     /** A reference to the Visit that is associated with this record. */
     associated_visit?: VisitId,
+    /** A reference to the Participant that is associated with this record. */
+    associated_participant?: ParticipantId,
     /** The coded value that describes the procedure, derived from OMOP codes. */
     procedure_concept?: string,
     /** The Participant's age (expressed in days) when the procedure was performed. */
@@ -1777,8 +1789,31 @@ export interface Procedure extends Entity {
     procedure_status?: string,
     /** The quantity of procedures ordered or administered. */
     quantity?: QuantityId,
-    /** A reference to the Participant on which the Procedure was performed. */
+}
+
+
+/**
+ * An ImagingStudy is a set of images produced in a single study (one or more series of references images).  It may include images from different modalities (e.g. CT, MR, Ultrasound) and from different instances in time.  The ImagingStudy may be linked to other information such as the clinical context in which the images were acquired.
+ */
+export interface ImagingStudy extends Entity {
+    /** A reference to the Visit that is associated with this record. */
+    associated_visit?: VisitId,
+    /** A reference to the Participant that is associated with this record. */
     associated_participant?: ParticipantId,
+    /** The Participant's age (expressed in days) when the ImagingStudy was performed. */
+    age_at_imaging_study?: number,
+    /** Number of Series in the Study. */
+    number_of_series?: number,
+    /** Number of SOP Instances in Study. */
+    number_of_instances?: number,
+    /** (0008, 1030) Study Description. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. */
+    study_description?: string,
+    /** The modalities of the imaging study; derived from (0008, 0060) Modality. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. */
+    study_modality?: string,
+    /** (0020, 000d) Study Instance UID. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. */
+    study_uid?: string,
+    /** (0018, 0015) Body Part Examined. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. */
+    body_part_examined?: BodySiteId,
 }
 
 
@@ -1790,12 +1825,12 @@ export interface Exposure extends Entity {
     identity?: string[],
     /** A reference to the Visit that is associated with this record. */
     associated_visit?: VisitId,
+    /** A reference to the Participant that is associated with this record. */
+    associated_participant?: ParticipantId,
     /** The Participant's age (expressed in days) at the exposure start date. */
     age_at_exposure_start?: number,
     /** The Participant's age (expressed in days) at the exposure end date, if available. Otherwise equal to age_at_exposure_start. */
     age_at_exposure_end?: number,
-    /** A reference to the Participant to which the exposure is attributed. */
-    associated_participant?: ParticipantId,
     /** A value indicating whether the exposure described in this record is present, absent, historically present, or unknown for this individual patient. */
     exposure_status?: string,
 }
@@ -1855,6 +1890,8 @@ export interface DimensionalObservationSet extends ObservationSet {
 export interface File extends Entity {
     /** A 'business' identifier or accession number for the entity, typically as provided by an external system or authority, that are globally unique and persist across implementing systems. Also, since these identifiers are created outside the information system through a specific business process, the Identifier type has additional attributes to capture this additional metadata so the actual identifier values are qualified by the context that created those values. This additional context allows "identifier" instances to be transmitted as business data across systems while still being able to trace them back to the system of origin. */
     identity?: string[],
+    /** A reference to the Participant that is associated with this record. */
+    associated_participant?: ParticipantId,
     /** The name (or part of a name) of a file (of any type). */
     file_name?: string,
     /** The size of the data file (object) in bytes. */
@@ -1869,12 +1906,33 @@ export interface File extends Entity {
     data_category?: string,
     /** The file format, physical medium, or dimensions of the resource. Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME] (http://www.iana.org/assignments/media-types/). */
     format?: string,
-    /** An account of the resource. Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource. */
+    /** An account of the resource. Description may include but is not limited to an abstract, a table of contents, a graphical representation, or a free-text account of the resource. */
     description?: string,
-    /** A reference to the Participant to which this file relates. */
-    associated_participant?: ParticipantId,
     /** A File from which this File is derived.  A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity. */
     derived_from?: FileId,
+}
+
+
+/**
+ * A file that contains diagnostic imaging data, such as a DICOM file, or a JPEG or PNG image.
+ */
+export interface ImagingFile extends File {
+    /** The modality of the imaging data contained in the file (e.g. CT, MRI, etc.) */
+    imaging_modality?: string,
+    /** The anatomical site from which the imaging data was acquired (e.g. Chest, Abdomen, etc.) */
+    anatomical_site?: BodySiteId,
+    /** The Series Instance Number for the imaging data contained in the file, if applicable. */
+    series_number?: number,
+    /** (0020, 000e) Series Instance UID. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. */
+    series_uid?: string,
+    /** (0008, 103e) Series Description. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. */
+    series_description?: string,
+    /** The ImagingStudy with which this ImagingFile is associated. */
+    related_imaging_study?: ImagingStudyId,
+    /** (0008, 0070) Manufacturer. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. */
+    manufacturer?: string,
+    /** (0008, 1090) Manufacturer's Model Name. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. */
+    manufacturer_model?: string,
 }
 
 
@@ -2113,12 +2171,12 @@ export interface ObservationSet extends Entity {
     observations?: ObservationId[],
     /** A reference to the Visit that is associated with this record. */
     associated_visit?: VisitId,
+    /** A reference to the Participant that is associated with this record. */
+    associated_participant?: ParticipantId,
     /** The general category of observation set described */
     category?: string,
     /** The entity or entities directly observed/measured in generating an observation result. */
     focus?: Entity[],
-    /** The Participant that the observation is about (if not the direct focus).  Observations are often made on specimens derived from a patient, or other entities related to a patient, that ultimately tell us something about the patient of interest. */
-    associated_participant?: ParticipantId,
     /** The type of method used in generating the ObservationSet */
     method_type?: string[],
     /** The organization or group that performed the observation activity. */
@@ -2132,6 +2190,8 @@ export interface ObservationSet extends Entity {
 export interface Observation extends Entity {
     /** A reference to the Visit that is associated with this record. */
     associated_visit?: VisitId,
+    /** A reference to the Participant that is associated with this record. */
+    associated_participant?: ParticipantId,
     /** The Participant's age (expressed in days) when the Observation was made. */
     age_at_observation?: number,
     /** The general category of observation described */
@@ -2142,8 +2202,6 @@ export interface Observation extends Entity {
     method_type?: string,
     /** The entity or entities directly observed/measured in generating an observation result. */
     focus?: EntityId,
-    /** The patient that the observation is about (if not the direct focus).  e.g. observations are often made on specimens derived from a patient, or other entities related to a patient, that ultimately tell us something about the patient of interest. */
-    associated_participant?: ParticipantId,
     /** The organization or group that performed the observation activity. */
     performed_by?: OrganizationId,
     /** A slot to hold a string value for an Observation. */
