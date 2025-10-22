@@ -344,6 +344,12 @@
 <td><a href="../Exposure/">Exposure</a></td>
 </tr>
 <tr>
+<td><a href="../associated_participant/">associated_participant</a></td>
+<td>0..1 <br/> <a href="../Participant/">Participant</a></td>
+<td>A reference to the Participant that is associated with this record</td>
+<td><a href="../Exposure/">Exposure</a></td>
+</tr>
+<tr>
 <td><a href="../age_at_exposure_start/">age_at_exposure_start</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>The Participant's age (expressed in days) at the exposure start date</td>
@@ -353,12 +359,6 @@
 <td><a href="../age_at_exposure_end/">age_at_exposure_end</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>The Participant's age (expressed in days) at the exposure end date, if availa...</td>
-<td><a href="../Exposure/">Exposure</a></td>
-</tr>
-<tr>
-<td><a href="../associated_participant/">associated_participant</a></td>
-<td>0..1 <br/> <a href="../Participant/">Participant</a></td>
-<td>A reference to the Participant to which the exposure is attributed</td>
 <td><a href="../Exposure/">Exposure</a></td>
 </tr>
 <tr>
@@ -529,10 +529,29 @@ attributes:
     - QuestionnaireResponse
     - Condition
     - Procedure
+    - ImagingStudy
     - Exposure
     - ObservationSet
     - Observation
     range: Visit
+  associated_participant:
+    name: associated_participant
+    description: A reference to the Participant that is associated with this record.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: associated_participant
+    owner: DeviceExposure
+    domain_of:
+    - Demography
+    - Visit
+    - Condition
+    - Procedure
+    - ImagingStudy
+    - Exposure
+    - File
+    - ObservationSet
+    - Observation
+    range: Participant
   age_at_exposure_start:
     name: age_at_exposure_start
     description: The Participant's age (expressed in days) at the exposure start date.
@@ -558,22 +577,6 @@ attributes:
     range: integer
     unit:
       ucum_code: d
-  associated_participant:
-    name: associated_participant
-    description: A reference to the Participant to which the exposure is attributed.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    alias: associated_participant
-    owner: DeviceExposure
-    domain_of:
-    - Demography
-    - Visit
-    - Condition
-    - Procedure
-    - Exposure
-    - File
-    - ObservationSet
-    - Observation
-    range: Participant
   exposure_status:
     name: exposure_status
     description: A value indicating whether the exposure described in this record

@@ -314,15 +314,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#comments" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comments
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#identifier-and-mapping-information" class="md-nav__link">
     <span class="md-ellipsis">
       Identifier and Mapping Information
@@ -399,6 +390,11 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="../ImagingFile/">ImagingFile</a></td>
+<td>A file that contains diagnostic imaging data, such as a DICOM file, or a JPEG...</td>
+<td>no</td>
+</tr>
+<tr>
 <td><a href="../File/">File</a></td>
 <td>Abstract class for various kinds of files</td>
 <td>no</td>
@@ -408,10 +404,6 @@
 <h2 id="properties">Properties</h2>
 <ul>
 <li>Range: <a href="../String/">String</a></li>
-</ul>
-<h2 id="comments">Comments</h2>
-<ul>
-<li>Called 'type' in Dublin Core.</li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
@@ -445,8 +437,6 @@ description: The nature or genre of the resource. Recommended best practice is t
   use a controlled vocabulary such as the DCMI Type Vocabulary [DCMI-TYPE](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7).
   To describe the file format, physical medium, or dimensions of the resource, use
   the Format element.
-comments:
-- Called 'type' in Dublin Core.
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 rank: 1000
 alias: data_type

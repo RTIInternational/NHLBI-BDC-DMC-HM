@@ -329,6 +329,12 @@
 <td><a href="../ObservationSet/">ObservationSet</a></td>
 </tr>
 <tr>
+<td><a href="../associated_participant/">associated_participant</a></td>
+<td>0..1 <br/> <a href="../Participant/">Participant</a></td>
+<td>A reference to the Participant that is associated with this record</td>
+<td><a href="../ObservationSet/">ObservationSet</a></td>
+</tr>
+<tr>
 <td><a href="../category/">category</a></td>
 <td>0..1 <br/> <a href="../GravityDomainEnum/">GravityDomainEnum</a></td>
 <td>The general category of observation set described</td>
@@ -338,12 +344,6 @@
 <td><a href="../focus/">focus</a></td>
 <td>* <br/> <a href="../Entity/">Entity</a></td>
 <td>The entity or entities directly observed/measured in generating an observatio...</td>
-<td><a href="../ObservationSet/">ObservationSet</a></td>
-</tr>
-<tr>
-<td><a href="../associated_participant/">associated_participant</a></td>
-<td>0..1 <br/> <a href="../Participant/">Participant</a></td>
-<td>The Participant that the observation is about (if not the direct focus)</td>
 <td><a href="../ObservationSet/">ObservationSet</a></td>
 </tr>
 <tr>
@@ -448,10 +448,29 @@ attributes:
     - QuestionnaireResponse
     - Condition
     - Procedure
+    - ImagingStudy
     - Exposure
     - ObservationSet
     - Observation
     range: Visit
+  associated_participant:
+    name: associated_participant
+    description: A reference to the Participant that is associated with this record.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: associated_participant
+    owner: SdohObservationSet
+    domain_of:
+    - Demography
+    - Visit
+    - Condition
+    - Procedure
+    - ImagingStudy
+    - Exposure
+    - File
+    - ObservationSet
+    - Observation
+    range: Participant
   category:
     name: category
     description: The general category of observation set described
@@ -488,27 +507,6 @@ attributes:
     multivalued: true
     inlined: true
     inlined_as_list: true
-  associated_participant:
-    name: associated_participant
-    description: The Participant that the observation is about (if not the direct
-      focus).  Observations are often made on specimens derived from a patient, or
-      other entities related to a patient, that ultimately tell us something about
-      the patient of interest.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    alias: associated_participant
-    owner: SdohObservationSet
-    domain_of:
-    - Demography
-    - Visit
-    - Condition
-    - Procedure
-    - Exposure
-    - File
-    - ObservationSet
-    - Observation
-    range: Participant
-    required: false
-    multivalued: false
   method_type:
     name: method_type
     description: The type of method used in generating the ObservationSet

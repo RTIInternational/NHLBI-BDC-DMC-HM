@@ -156,6 +156,13 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#inheritance">
+<span class="md-ellipsis">
+      Inheritance
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#slots">
 <span class="md-ellipsis">
       Slots
@@ -232,6 +239,9 @@
 <div class="mermaid"> classDiagram
     class QuestionnaireResponseItem
     click QuestionnaireResponseItem href "../QuestionnaireResponseItem"
+      Entity &lt;|-- QuestionnaireResponseItem
+        click Entity href "../Entity"
+
       QuestionnaireResponseItem : has_questionnaire_item
 
 
@@ -240,6 +250,8 @@
     QuestionnaireResponseItem --&gt; "0..1" QuestionnaireItem : has_questionnaire_item
     click QuestionnaireItem href "../QuestionnaireItem"
 
+
+      QuestionnaireResponseItem : id
 
       QuestionnaireResponseItem : response_value
 
@@ -254,7 +266,13 @@
 
 
 </div>
-<!-- no inheritance hierarchy -->
+<h2 id="inheritance">Inheritance</h2>
+<ul>
+<li><a href="../Entity/">Entity</a><ul>
+<li><strong>QuestionnaireResponseItem</strong></li>
+</ul>
+</li>
+</ul>
 <h2 id="slots">Slots</h2>
 <table>
 <thead>
@@ -283,6 +301,12 @@
 <td>1 <br/> <a href="../QuestionnaireResponseValue/">QuestionnaireResponseValue</a></td>
 <td></td>
 <td>direct</td>
+</tr>
+<tr>
+<td><a href="../id/">id</a></td>
+<td>1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
+<td>The 'logical' identifier of the entity within the system of record</td>
+<td><a href="../Entity/">Entity</a></td>
 </tr>
 </tbody>
 </table>
@@ -337,6 +361,7 @@
 description: QuestionnaireResponseItem provides a complete or partial list of answers
   to a set of questions filled when responding to a questionnaire. (FHIR)
 from_schema: https://w3id.org/nhlbidatastage/bdchm
+is_a: Entity
 attributes:
   has_questionnaire_item:
     name: has_questionnaire_item
@@ -372,6 +397,7 @@ attributes:
 description: QuestionnaireResponseItem provides a complete or partial list of answers
   to a set of questions filled when responding to a questionnaire. (FHIR)
 from_schema: https://w3id.org/nhlbidatastage/bdchm
+is_a: Entity
 attributes:
   has_questionnaire_item:
     name: has_questionnaire_item
@@ -403,6 +429,28 @@ attributes:
     domain_of:
     - QuestionnaireResponseItem
     range: QuestionnaireResponseValue
+    required: true
+  id:
+    name: id
+    description: The 'logical' identifier of the entity within the system of record.  The
+      simple value of this attribute stands for an identifier of this data object
+      within the system, it can be used as a reference from other objects within the
+      same system (i.e. primary and foreign keys), and it should be unique per type
+      of object. The same data object copied to a different system will likely have
+      a different "id" in the new system since "id" values are system specific and
+      do not represent persistent business identifiers. Business identifiers are assigned
+      outside the information system and are captured in the "identifier" field. The
+      "id" field is more likely to be a serially or randomly generated value that
+      is assigned to the data object as it is created in a system.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    slot_uri: schema:identifier
+    identifier: true
+    alias: id
+    owner: QuestionnaireResponseItem
+    domain_of:
+    - Entity
+    range: uriorcurie
     required: true
 
 </code></pre>

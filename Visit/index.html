@@ -296,6 +296,12 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="../associated_participant/">associated_participant</a></td>
+<td>0..1 <br/> <a href="../Participant/">Participant</a></td>
+<td>A reference to the Participant that is associated with this record</td>
+<td>direct</td>
+</tr>
+<tr>
 <td><a href="../visit_category/">visit_category</a></td>
 <td>0..1 <br/> <a href="../VisitCategoryEnum/">VisitCategoryEnum</a></td>
 <td>A value representing the kind (or category) of visit, like inpatient or outpa...</td>
@@ -317,12 +323,6 @@
 <td><a href="../visit_provenance/">visit_provenance</a></td>
 <td>0..1 <br/> <a href="../VisitProvenanceEnum/">VisitProvenanceEnum</a></td>
 <td>A value representing the provenance of the visit record, or where the record ...</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../associated_participant/">associated_participant</a></td>
-<td>0..1 <br/> <a href="../Participant/">Participant</a></td>
-<td>A reference to the Participant for whom this Visit occurred</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -364,6 +364,12 @@
 </tr>
 <tr>
 <td><a href="../Procedure/">Procedure</a></td>
+<td><a href="../associated_visit/">associated_visit</a></td>
+<td>range</td>
+<td><a href="./">Visit</a></td>
+</tr>
+<tr>
+<td><a href="../ImagingStudy/">ImagingStudy</a></td>
 <td><a href="../associated_visit/">associated_visit</a></td>
 <td>range</td>
 <td><a href="./">Visit</a></td>
@@ -486,6 +492,8 @@ description: Events where Persons engage with the healthcare system for a durati
   a stay in bed. (OMOP)
 from_schema: https://w3id.org/nhlbidatastage/bdchm
 is_a: Entity
+slots:
+- associated_participant
 attributes:
   visit_category:
     name: visit_category
@@ -525,20 +533,6 @@ attributes:
     domain_of:
     - Visit
     range: VisitProvenanceEnum
-  associated_participant:
-    name: associated_participant
-    description: A reference to the Participant for whom this Visit occurred.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    domain_of:
-    - Demography
-    - Visit
-    - Condition
-    - Procedure
-    - Exposure
-    - File
-    - ObservationSet
-    - Observation
-    range: Participant
 
 </code></pre>
 </details>
@@ -603,8 +597,9 @@ attributes:
     range: VisitProvenanceEnum
   associated_participant:
     name: associated_participant
-    description: A reference to the Participant for whom this Visit occurred.
+    description: A reference to the Participant that is associated with this record.
     from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
     alias: associated_participant
     owner: Visit
     domain_of:
@@ -612,6 +607,7 @@ attributes:
     - Visit
     - Condition
     - Procedure
+    - ImagingStudy
     - Exposure
     - File
     - ObservationSet

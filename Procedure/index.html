@@ -328,6 +328,12 @@
 <td>direct</td>
 </tr>
 <tr>
+<td><a href="../associated_participant/">associated_participant</a></td>
+<td>0..1 <br/> <a href="../Participant/">Participant</a></td>
+<td>A reference to the Participant that is associated with this record</td>
+<td>direct</td>
+</tr>
+<tr>
 <td><a href="../procedure_concept/">procedure_concept</a></td>
 <td>0..1 <br/> <a href="../ProcedureConceptEnum/">ProcedureConceptEnum</a></td>
 <td>The coded value that describes the procedure, derived from OMOP codes</td>
@@ -355,12 +361,6 @@
 <td><a href="../quantity/">quantity</a></td>
 <td>0..1 <br/> <a href="../Quantity/">Quantity</a></td>
 <td>The quantity of procedures ordered or administered</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../associated_participant/">associated_participant</a></td>
-<td>0..1 <br/> <a href="../Participant/">Participant</a></td>
-<td>A reference to the Participant on which the Procedure was performed</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -409,6 +409,7 @@ is_a: Entity
 slots:
 - identity
 - associated_visit
+- associated_participant
 attributes:
   procedure_concept:
     name: procedure_concept
@@ -456,20 +457,6 @@ attributes:
     - DrugExposure
     - DeviceExposure
     range: Quantity
-  associated_participant:
-    name: associated_participant
-    description: A reference to the Participant on which the Procedure was performed.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    domain_of:
-    - Demography
-    - Visit
-    - Condition
-    - Procedure
-    - Exposure
-    - File
-    - ObservationSet
-    - Observation
-    range: Participant
 
 </code></pre>
 </details>
@@ -539,22 +526,6 @@ attributes:
     - DrugExposure
     - DeviceExposure
     range: Quantity
-  associated_participant:
-    name: associated_participant
-    description: A reference to the Participant on which the Procedure was performed.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
-    alias: associated_participant
-    owner: Procedure
-    domain_of:
-    - Demography
-    - Visit
-    - Condition
-    - Procedure
-    - Exposure
-    - File
-    - ObservationSet
-    - Observation
-    range: Participant
   identity:
     name: identity
     description: A 'business' identifier or accession number for the entity, typically
@@ -600,10 +571,29 @@ attributes:
     - QuestionnaireResponse
     - Condition
     - Procedure
+    - ImagingStudy
     - Exposure
     - ObservationSet
     - Observation
     range: Visit
+  associated_participant:
+    name: associated_participant
+    description: A reference to the Participant that is associated with this record.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    alias: associated_participant
+    owner: Procedure
+    domain_of:
+    - Demography
+    - Visit
+    - Condition
+    - Procedure
+    - ImagingStudy
+    - Exposure
+    - File
+    - ObservationSet
+    - Observation
+    range: Participant
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The

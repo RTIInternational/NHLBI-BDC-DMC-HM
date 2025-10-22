@@ -511,6 +511,14 @@ This line is junk just to test json generation on push. Will delete it after
 <td>Abstract class for various kinds of files. Subclasses may be defined for specific file types.</td>
 </tr>
 <tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ImagingFile/">ImagingFile</a></td>
+<td>A file that contains diagnostic imaging data, such as a DICOM file, or a JPEG or PNG image.</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ImagingStudy/">ImagingStudy</a></td>
+<td>An ImagingStudy is a set of images produced in a single study (one or more series of references images).  It may include images from different modalities (e.g. CT, MR, Ultrasound) and from different instances in time.  The ImagingStudy may be linked to other information such as the clinical context in which the images were acquired.</td>
+</tr>
+<tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Observation/">Observation</a></td>
 <td>A data structure with key (observation_type) and value (value) attributes that represents a single observation, such as the hematocrit component of a complete blood count panel.</td>
 </tr>
@@ -583,6 +591,34 @@ This line is junk just to test json generation on push. Will delete it after
 <td>QuestionnaireResponse provides a complete or partial list of answers to a set of questions filled when responding to a questionnaire. (FHIR)</td>
 </tr>
 <tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="QuestionnaireResponseItem/">QuestionnaireResponseItem</a></td>
+<td>QuestionnaireResponseItem provides a complete or partial list of answers to a set of questions filled when responding to a questionnaire. (FHIR)</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="QuestionnaireResponseValue/">QuestionnaireResponseValue</a></td>
+<td>Single-valued answer to the question. (FHIR)</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="QuestionnaireResponseValueBoolean/">QuestionnaireResponseValueBoolean</a></td>
+<td>Single-valued boolean answer to the question</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="QuestionnaireResponseValueDecimal/">QuestionnaireResponseValueDecimal</a></td>
+<td>Single-valued decimal answer to the question</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="QuestionnaireResponseValueInteger/">QuestionnaireResponseValueInteger</a></td>
+<td>Single-valued integer answer to the question</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="QuestionnaireResponseValueString/">QuestionnaireResponseValueString</a></td>
+<td>Single-valued string answer to the question</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="QuestionnaireResponseValueTimePoint/">QuestionnaireResponseValueTimePoint</a></td>
+<td>Single-valued TimePoint answer to the question</td>
+</tr>
+<tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ResearchStudy/">ResearchStudy</a></td>
 <td>A process where a researcher or organization plans and then executes a series of steps intended to increase the field of healthcare-related knowledge. This includes studies of safety, efficacy, comparative effectiveness and other information about medications, devices, therapies and other interventional and investigative techniques. A ResearchStudy involves the gathering of information about human or animal subjects.</td>
 </tr>
@@ -615,6 +651,10 @@ This line is junk just to test json generation on push. Will delete it after
 <td>A type of material substance, or instance thereof, as used in a particular application. May include information about the role the substance played in a particular application.</td>
 </tr>
 <tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="TimePeriod/">TimePeriod</a></td>
+<td>A period of time between a start and end time point.</td>
+</tr>
+<tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="TimePoint/">TimePoint</a></td>
 <td>A structured representation of a single point in time that allows direct/explicit declaration as a dateTime, specification in terms of offset from a defined index, or description of an event type as a proxy for the time point when it occurred.</td>
 </tr>
@@ -623,40 +663,8 @@ This line is junk just to test json generation on push. Will delete it after
 <td>Events where Persons engage with the healthcare system for a duration of time. They are often also called “Encounters”. Visits are defined by a configuration of circumstances under which they occur, such as (i) whether the patient comes to a healthcare institution, the other way around, or the interaction is remote, (ii) whether and what kind of trained medical staff is delivering the service during the Visit, and (iii) whether the Visit is transient or for a longer period involving a stay in bed. (OMOP)</td>
 </tr>
 <tr>
-<td><a href="QuestionnaireResponseItem/">QuestionnaireResponseItem</a></td>
-<td>QuestionnaireResponseItem provides a complete or partial list of answers to a set of questions filled when responding to a questionnaire. (FHIR)</td>
-</tr>
-<tr>
-<td><a href="QuestionnaireResponseValue/">QuestionnaireResponseValue</a></td>
-<td>Single-valued answer to the question. (FHIR)</td>
-</tr>
-<tr>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="QuestionnaireResponseValueBoolean/">QuestionnaireResponseValueBoolean</a></td>
-<td>Single-valued boolean answer to the question</td>
-</tr>
-<tr>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="QuestionnaireResponseValueDecimal/">QuestionnaireResponseValueDecimal</a></td>
-<td>Single-valued decimal answer to the question</td>
-</tr>
-<tr>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="QuestionnaireResponseValueInteger/">QuestionnaireResponseValueInteger</a></td>
-<td>Single-valued integer answer to the question</td>
-</tr>
-<tr>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="QuestionnaireResponseValueString/">QuestionnaireResponseValueString</a></td>
-<td>Single-valued string answer to the question</td>
-</tr>
-<tr>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="QuestionnaireResponseValueTimePoint/">QuestionnaireResponseValueTimePoint</a></td>
-<td>Single-valued TimePoint answer to the question</td>
-</tr>
-<tr>
 <td><a href="ResearchStudyCollection/">ResearchStudyCollection</a></td>
 <td>A holder for ResearchStudy objects</td>
-</tr>
-<tr>
-<td><a href="TimePeriod/">TimePeriod</a></td>
-<td>A period of time between a start and end time point.</td>
 </tr>
 </tbody>
 </table>
@@ -706,6 +714,10 @@ This line is junk just to test json generation on push. Will delete it after
 <td>The Participant's age (expressed in days) at the exposure start date</td>
 </tr>
 <tr>
+<td><a href="age_at_imaging_study/">age_at_imaging_study</a></td>
+<td>The Participant's age (expressed in days) when the ImagingStudy was performed</td>
+</tr>
+<tr>
 <td><a href="age_at_index/">age_at_index</a></td>
 <td>The age in days of the Participant at the index_timepoint</td>
 </tr>
@@ -738,6 +750,10 @@ This line is junk just to test json generation on push. Will delete it after
 <td>For specimens of type 'analyte' (or an 'aliquot' derived from an analyte), th...</td>
 </tr>
 <tr>
+<td><a href="anatomical_site/">anatomical_site</a></td>
+<td>The anatomical site from which the imaging data was acquired (e</td>
+</tr>
+<tr>
 <td><a href="associated_participant/">associated_participant</a></td>
 <td>A reference to the Participant that is associated with this record</td>
 </tr>
@@ -752,6 +768,10 @@ This line is junk just to test json generation on push. Will delete it after
 <tr>
 <td><a href="associated_visit/">associated_visit</a></td>
 <td>A reference to the Visit that is associated with this record</td>
+</tr>
+<tr>
+<td><a href="body_part_examined/">body_part_examined</a></td>
+<td>(0018, 0015) Body Part Examined</td>
 </tr>
 <tr>
 <td><a href="breed/">breed</a></td>
@@ -958,6 +978,10 @@ This line is junk just to test json generation on push. Will delete it after
 <td>A 'business' identifier or accession number for the entity, typically as prov...</td>
 </tr>
 <tr>
+<td><a href="imaging_modality/">imaging_modality</a></td>
+<td>The modality of the imaging data contained in the file (e</td>
+</tr>
+<tr>
 <td><a href="index_time_point/">index_time_point</a></td>
 <td>Another TimePoint from which this point is offset</td>
 </tr>
@@ -972,6 +996,14 @@ This line is junk just to test json generation on push. Will delete it after
 <tr>
 <td><a href="language/">language</a></td>
 <td>The language(s) in which questions are presented</td>
+</tr>
+<tr>
+<td><a href="manufacturer/">manufacturer</a></td>
+<td>(0008, 0070) Manufacturer</td>
+</tr>
+<tr>
+<td><a href="manufacturer_model/">manufacturer_model</a></td>
+<td>(0008, 1090) Manufacturer's Model Name</td>
 </tr>
 <tr>
 <td><a href="md5sum/">md5sum</a></td>
@@ -992,6 +1024,14 @@ This line is junk just to test json generation on push. Will delete it after
 <tr>
 <td><a href="name_shortened/">name_shortened</a></td>
 <td>An abbreviated name of a research program, project, or study</td>
+</tr>
+<tr>
+<td><a href="number_of_instances/">number_of_instances</a></td>
+<td>Number of SOP Instances in Study</td>
+</tr>
+<tr>
+<td><a href="number_of_series/">number_of_series</a></td>
+<td>Number of Series in the Study</td>
 </tr>
 <tr>
 <td><a href="observation_type/">observation_type</a></td>
@@ -1114,6 +1154,10 @@ This line is junk just to test json generation on push. Will delete it after
 <td>A reference to an external document that is about or related to the specimen ...</td>
 </tr>
 <tr>
+<td><a href="related_imaging_study/">related_imaging_study</a></td>
+<td>The ImagingStudy with which this ImagingFile is associated</td>
+</tr>
+<tr>
 <td><a href="related_questionnaire_item/">related_questionnaire_item</a></td>
 <td>An optional attribute that captures the QuestionnaireItem to which this SdohO...</td>
 </tr>
@@ -1140,6 +1184,18 @@ This line is junk just to test json generation on push. Will delete it after
 <tr>
 <td><a href="section_location/">section_location</a></td>
 <td>The location in a parent specimen from which a section/portion was excised (e</td>
+</tr>
+<tr>
+<td><a href="series_description/">series_description</a></td>
+<td>(0008, 103e) Series Description</td>
+</tr>
+<tr>
+<td><a href="series_number/">series_number</a></td>
+<td>The Series Instance Number for the imaging data contained in the file, if app...</td>
+</tr>
+<tr>
+<td><a href="series_uid/">series_uid</a></td>
+<td>(0020, 000e) Series Instance UID</td>
 </tr>
 <tr>
 <td><a href="sex/">sex</a></td>
@@ -1184,6 +1240,18 @@ This line is junk just to test json generation on push. Will delete it after
 <tr>
 <td><a href="study_arm/">study_arm</a></td>
 <td>The arm(s) of the study on which the Participant is enrolled</td>
+</tr>
+<tr>
+<td><a href="study_description/">study_description</a></td>
+<td>(0008, 1030) Study Description</td>
+</tr>
+<tr>
+<td><a href="study_modality/">study_modality</a></td>
+<td>The modalities of the imaging study; derived from (0008, 0060) Modality</td>
+</tr>
+<tr>
+<td><a href="study_uid/">study_uid</a></td>
+<td>(0020, 000d) Study Instance UID</td>
 </tr>
 <tr>
 <td><a href="substance_quantity/">substance_quantity</a></td>

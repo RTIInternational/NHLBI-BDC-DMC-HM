@@ -235,6 +235,8 @@
       QuestionnaireResponseValue &lt;|-- QuestionnaireResponseValueDecimal
         click QuestionnaireResponseValue href "../QuestionnaireResponseValue"
 
+      QuestionnaireResponseValueDecimal : id
+
       QuestionnaireResponseValueDecimal : name
 
       QuestionnaireResponseValueDecimal : type
@@ -245,8 +247,11 @@
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
+<li><a href="../Entity/">Entity</a><ul>
 <li><a href="../QuestionnaireResponseValue/">QuestionnaireResponseValue</a><ul>
 <li><strong>QuestionnaireResponseValueDecimal</strong></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -278,6 +283,12 @@
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td></td>
 <td><a href="../QuestionnaireResponseValue/">QuestionnaireResponseValue</a></td>
+</tr>
+<tr>
+<td><a href="../id/">id</a></td>
+<td>1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
+<td>The 'logical' identifier of the entity within the system of record</td>
+<td><a href="../Entity/">Entity</a></td>
 </tr>
 </tbody>
 </table>
@@ -365,6 +376,28 @@ attributes:
     - Questionnaire
     - QuestionnaireResponseValue
     range: string
+  id:
+    name: id
+    description: The 'logical' identifier of the entity within the system of record.  The
+      simple value of this attribute stands for an identifier of this data object
+      within the system, it can be used as a reference from other objects within the
+      same system (i.e. primary and foreign keys), and it should be unique per type
+      of object. The same data object copied to a different system will likely have
+      a different "id" in the new system since "id" values are system specific and
+      do not represent persistent business identifiers. Business identifiers are assigned
+      outside the information system and are captured in the "identifier" field. The
+      "id" field is more likely to be a serially or randomly generated value that
+      is assigned to the data object as it is created in a system.
+    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    rank: 1000
+    slot_uri: schema:identifier
+    identifier: true
+    alias: id
+    owner: QuestionnaireResponseValueDecimal
+    domain_of:
+    - Entity
+    range: uriorcurie
+    required: true
 
 </code></pre>
 </details>
