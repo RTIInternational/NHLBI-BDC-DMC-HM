@@ -1,5 +1,5 @@
 ---
-id: https://w3id.org/nhlbidatastage/bdchm
+id: https://w3id.org/bdchm
 name: bdchm
 title: BioData Catalyst Harmonized Model (bdchm)
 description: |-
@@ -11,7 +11,7 @@ see_also:
   - https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/
 
 prefixes:
-  bdchm: https://w3id.org/nhlbidatastage/bdchm/
+  bdchm: https://w3id.org/bdchm/
   linkml: https://w3id.org/linkml/
   schema: http://schema.org/
   OMOP: https://athena.ohdsi.org/search-terms/terms/
