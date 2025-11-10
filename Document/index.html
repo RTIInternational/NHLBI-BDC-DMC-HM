@@ -235,7 +235,7 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-document">Class: Document</h1>
 <p><em>A collection of information intented to be understood together as a whole, and codified in human-readable form.</em></p>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/Document">bdchm:Document</a></p>
+<p>URI: <a href="https://w3id.org/bdchm/Document">bdchm:Document</a></p>
 <div class="mermaid"> classDiagram
     class Document
     click Document href "../Document"
@@ -341,7 +341,7 @@
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
-<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+<li>from schema: https://w3id.org/bdchm</li>
 </ul>
 <h2 id="mappings">Mappings</h2>
 <table>
@@ -369,7 +369,7 @@
 <pre><code class="language-yaml">name: Document
 description: A collection of information intented to be understood together as a whole,
   and codified in human-readable form.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 slots:
 - identity
@@ -378,7 +378,7 @@ attributes:
     name: document_type
     description: The high-level type of the document (e.g.  'publication', 'pathology
       report')
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     values_from:
     - crdch:enum_CRDCH_Document_document_type
@@ -390,7 +390,7 @@ attributes:
   description:
     name: description
     description: A free text description or summary of the report.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     domain_of:
     - Participant
     - ResearchStudy
@@ -405,7 +405,7 @@ attributes:
   focus:
     name: focus
     description: The entity that the report is primarily about
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Document
@@ -417,7 +417,7 @@ attributes:
   url:
     name: url
     description: A URL/web address where the document can be accessed.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     domain_of:
     - ResearchStudy
     - Questionnaire
@@ -435,14 +435,14 @@ attributes:
 <pre><code class="language-yaml">name: Document
 description: A collection of information intented to be understood together as a whole,
   and codified in human-readable form.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 attributes:
   document_type:
     name: document_type
     description: The high-level type of the document (e.g.  'publication', 'pathology
       report')
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     values_from:
     - crdch:enum_CRDCH_Document_document_type
@@ -456,7 +456,7 @@ attributes:
   description:
     name: description
     description: A free text description or summary of the report.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: description
     owner: Document
     domain_of:
@@ -473,7 +473,7 @@ attributes:
   focus:
     name: focus
     description: The entity that the report is primarily about
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: focus
     owner: Document
@@ -487,7 +487,7 @@ attributes:
   url:
     name: url
     description: A URL/web address where the document can be accessed.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: url
     owner: Document
     domain_of:
@@ -510,7 +510,7 @@ attributes:
       additional context allows "identifier" instances to be transmitted as business
       data across systems while still being able to trace them back to the system
       of origin.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     alias: identity
@@ -544,7 +544,7 @@ attributes:
       outside the information system and are captured in the "identifier" field. The
       "id" field is more likely to be a serially or randomly generated value that
       is assigned to the data object as it is created in a system.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     identifier: true

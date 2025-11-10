@@ -228,7 +228,7 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-procedure">Class: Procedure</h1>
 <p><em>Procedure contains records of activities or processes ordered by, or carried out by, a healthcare provider on the patient to have a diagnostic or therapeutic purpose. Procedures are present in various data sources in different forms with varying levels of standardization. [Derived from OMOP]</em></p>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/Procedure">bdchm:Procedure</a></p>
+<p>URI: <a href="https://w3id.org/bdchm/Procedure">bdchm:Procedure</a></p>
 <div class="mermaid"> classDiagram
     class Procedure
     click Procedure href "../Procedure"
@@ -374,7 +374,7 @@
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
-<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+<li>from schema: https://w3id.org/bdchm</li>
 </ul>
 <h2 id="mappings">Mappings</h2>
 <table>
@@ -404,7 +404,7 @@ description: Procedure contains records of activities or processes ordered by, o
   carried out by, a healthcare provider on the patient to have a diagnostic or therapeutic
   purpose. Procedures are present in various data sources in different forms with
   varying levels of standardization. [Derived from OMOP]
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 slots:
 - identity
@@ -414,7 +414,7 @@ attributes:
   procedure_concept:
     name: procedure_concept
     description: The coded value that describes the procedure, derived from OMOP codes.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Procedure
@@ -423,7 +423,7 @@ attributes:
     name: age_at_procedure
     description: The Participant's age (expressed in days) when the procedure was
       performed.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Procedure
@@ -433,7 +433,7 @@ attributes:
   procedure_provenance:
     name: procedure_provenance
     description: A value representing the provenance of the Procedure record
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Procedure
@@ -442,7 +442,7 @@ attributes:
     name: procedure_status
     description: A value indicating whether the medical procedure described in this
       record is present, absent, or unknown for this individual patient.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Procedure
@@ -450,7 +450,7 @@ attributes:
   quantity:
     name: quantity
     description: The quantity of procedures ordered or administered.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Procedure
@@ -467,13 +467,13 @@ description: Procedure contains records of activities or processes ordered by, o
   carried out by, a healthcare provider on the patient to have a diagnostic or therapeutic
   purpose. Procedures are present in various data sources in different forms with
   varying levels of standardization. [Derived from OMOP]
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 attributes:
   procedure_concept:
     name: procedure_concept
     description: The coded value that describes the procedure, derived from OMOP codes.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: procedure_concept
     owner: Procedure
@@ -484,7 +484,7 @@ attributes:
     name: age_at_procedure
     description: The Participant's age (expressed in days) when the procedure was
       performed.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: age_at_procedure
     owner: Procedure
@@ -496,7 +496,7 @@ attributes:
   procedure_provenance:
     name: procedure_provenance
     description: A value representing the provenance of the Procedure record
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: procedure_provenance
     owner: Procedure
@@ -507,7 +507,7 @@ attributes:
     name: procedure_status
     description: A value indicating whether the medical procedure described in this
       record is present, absent, or unknown for this individual patient.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: procedure_status
     owner: Procedure
@@ -517,7 +517,7 @@ attributes:
   quantity:
     name: quantity
     description: The quantity of procedures ordered or administered.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: quantity
     owner: Procedure
@@ -537,7 +537,7 @@ attributes:
       additional context allows "identifier" instances to be transmitted as business
       data across systems while still being able to trace them back to the system
       of origin.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     alias: identity
@@ -562,7 +562,7 @@ attributes:
   associated_visit:
     name: associated_visit
     description: A reference to the Visit that is associated with this record.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: associated_visit
     owner: Procedure
@@ -579,7 +579,7 @@ attributes:
   associated_participant:
     name: associated_participant
     description: A reference to the Participant that is associated with this record.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: associated_participant
     owner: Procedure
@@ -606,7 +606,7 @@ attributes:
       outside the information system and are captured in the "identifier" field. The
       "id" field is more likely to be a serially or randomly generated value that
       is assigned to the data object as it is created in a system.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     identifier: true

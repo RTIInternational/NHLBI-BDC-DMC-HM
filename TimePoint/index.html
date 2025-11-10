@@ -235,7 +235,7 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-timepoint">Class: TimePoint</h1>
 <p><em>A structured representation of a single point in time that allows direct/explicit declaration as a dateTime, specification in terms of offset from a defined index, or description of an event type as a proxy for the time point when it occurred.</em></p>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/TimePoint">bdchm:TimePoint</a></p>
+<p>URI: <a href="https://w3id.org/bdchm/TimePoint">bdchm:TimePoint</a></p>
 <div class="mermaid"> classDiagram
     class TimePoint
     click TimePoint href "../TimePoint"
@@ -429,7 +429,7 @@
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
-<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+<li>from schema: https://w3id.org/bdchm</li>
 </ul>
 <h2 id="mappings">Mappings</h2>
 <table>
@@ -458,14 +458,14 @@
 description: A structured representation of a single point in time that allows direct/explicit
   declaration as a dateTime, specification in terms of offset from a defined index,
   or description of an event type as a proxy for the time point when it occurred.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 attributes:
   date_time:
     name: date_time
     description: An explicitly specified timepoint described in terms of a date and
       optionally a time on that date.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - TimePoint
@@ -473,7 +473,7 @@ attributes:
   index_time_point:
     name: index_time_point
     description: Another TimePoint from which this point is offset.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - TimePoint
@@ -482,7 +482,7 @@ attributes:
     name: offset_from_index
     description: A quantity of time that, together with the index date or event, can
       be used to derive a specific timepoint.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - TimePoint
@@ -490,7 +490,7 @@ attributes:
   event_type:
     name: event_type
     description: An event that occurred at the point in time specified by this TimePoint.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - TimePoint
@@ -504,14 +504,14 @@ attributes:
 description: A structured representation of a single point in time that allows direct/explicit
   declaration as a dateTime, specification in terms of offset from a defined index,
   or description of an event type as a proxy for the time point when it occurred.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 attributes:
   date_time:
     name: date_time
     description: An explicitly specified timepoint described in terms of a date and
       optionally a time on that date.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: date_time
     owner: TimePoint
@@ -521,7 +521,7 @@ attributes:
   index_time_point:
     name: index_time_point
     description: Another TimePoint from which this point is offset.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: index_time_point
     owner: TimePoint
@@ -532,7 +532,7 @@ attributes:
     name: offset_from_index
     description: A quantity of time that, together with the index date or event, can
       be used to derive a specific timepoint.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: offset_from_index
     owner: TimePoint
@@ -542,7 +542,7 @@ attributes:
   event_type:
     name: event_type
     description: An event that occurred at the point in time specified by this TimePoint.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: event_type
     owner: TimePoint
@@ -561,7 +561,7 @@ attributes:
       outside the information system and are captured in the "identifier" field. The
       "id" field is more likely to be a serially or randomly generated value that
       is assigned to the data object as it is created in a system.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     identifier: true

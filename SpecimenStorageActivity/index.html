@@ -242,7 +242,7 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-specimenstorageactivity">Class: SpecimenStorageActivity</h1>
 <p><em>An activity in which a specimen is stored or maintained in a particular location, container, or state. Unlike 'processing' activities, storage does not alter the \nintrinsic physical nature of a specimen.</em></p>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/SpecimenStorageActivity">bdchm:SpecimenStorageActivity</a></p>
+<p>URI: <a href="https://w3id.org/bdchm/SpecimenStorageActivity">bdchm:SpecimenStorageActivity</a></p>
 <div class="mermaid"> classDiagram
     class SpecimenStorageActivity
     click SpecimenStorageActivity href "../SpecimenStorageActivity"
@@ -373,7 +373,7 @@
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
-<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+<li>from schema: https://w3id.org/bdchm</li>
 </ul>
 <h2 id="mappings">Mappings</h2>
 <table>
@@ -406,7 +406,7 @@ comments:
 - Think of the StorageActivity as being one of many possible periods when the specimen
   was stored at some location and in some state or condition.  We may want to capture
   storage dates and conditions for each.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 attributes:
   date_started:
@@ -416,7 +416,7 @@ attributes:
     - To allow for more precise specification of dates when an activity was performed,
       we provide date_started and date_ended attributes.  If source data only provides
       a single date, it SHOULD be entered as both the date_started and date_ended.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     domain_of:
     - ResearchStudy
     - SpecimenCreationActivity
@@ -433,7 +433,7 @@ attributes:
     - To allow for more precise specification of dates when an activity was performed,
       we provide date_started and date_ended attributes.  If source data only provides
       a single date, it SHOULD be entered as both the date_started and date_ended.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     domain_of:
     - ResearchStudy
     - SpecimenCreationActivity
@@ -448,7 +448,7 @@ attributes:
     description: The length of time over which the activity was performed.
     comments:
     - 'Quantity.unit MUST be a unit of time. '
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     domain_of:
     - SpecimenProcessingActivity
     - SpecimenStorageActivity
@@ -469,7 +469,7 @@ attributes:
     - value: frozen in vapor phase
     - value: paraffin block
     - value: RNAlater at 4C
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     values_from:
     - crdch:enum_CRDCH_SpecimenStorageActivity_method_type
     domain_of:
@@ -483,7 +483,7 @@ attributes:
   container:
     name: container
     description: A container in which the specimen is held or affixed during its storage.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - SpecimenStorageActivity
@@ -505,7 +505,7 @@ comments:
 - Think of the StorageActivity as being one of many possible periods when the specimen
   was stored at some location and in some state or condition.  We may want to capture
   storage dates and conditions for each.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 attributes:
   date_started:
@@ -515,7 +515,7 @@ attributes:
     - To allow for more precise specification of dates when an activity was performed,
       we provide date_started and date_ended attributes.  If source data only provides
       a single date, it SHOULD be entered as both the date_started and date_ended.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: date_started
     owner: SpecimenStorageActivity
     domain_of:
@@ -534,7 +534,7 @@ attributes:
     - To allow for more precise specification of dates when an activity was performed,
       we provide date_started and date_ended attributes.  If source data only provides
       a single date, it SHOULD be entered as both the date_started and date_ended.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: date_ended
     owner: SpecimenStorageActivity
     domain_of:
@@ -551,7 +551,7 @@ attributes:
     description: The length of time over which the activity was performed.
     comments:
     - 'Quantity.unit MUST be a unit of time. '
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: duration
     owner: SpecimenStorageActivity
     domain_of:
@@ -574,7 +574,7 @@ attributes:
     - value: frozen in vapor phase
     - value: paraffin block
     - value: RNAlater at 4C
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     values_from:
     - crdch:enum_CRDCH_SpecimenStorageActivity_method_type
     alias: method_type
@@ -590,7 +590,7 @@ attributes:
   container:
     name: container
     description: A container in which the specimen is held or affixed during its storage.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: container
     owner: SpecimenStorageActivity
@@ -613,7 +613,7 @@ attributes:
       outside the information system and are captured in the "identifier" field. The
       "id" field is more likely to be a serially or randomly generated value that
       is assigned to the data object as it is created in a system.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     identifier: true

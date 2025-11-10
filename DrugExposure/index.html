@@ -228,7 +228,7 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-drugexposure">Class: DrugExposure</h1>
 <p><em>DrugExposures are records of a Person suggesting exposure to a medication. The source could be prescription, dispensing, medication administration records (MARs), or patient medication list.</em></p>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/DrugExposure">bdchm:DrugExposure</a></p>
+<p>URI: <a href="https://w3id.org/bdchm/DrugExposure">bdchm:DrugExposure</a></p>
 <div class="mermaid"> classDiagram
     class DrugExposure
     click DrugExposure href "../DrugExposure"
@@ -417,7 +417,7 @@
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
-<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+<li>from schema: https://w3id.org/bdchm</li>
 </ul>
 <h2 id="mappings">Mappings</h2>
 <table>
@@ -446,14 +446,14 @@
 description: DrugExposures are records of a Person suggesting exposure to a medication.
   The source could be prescription, dispensing, medication administration records
   (MARs), or patient medication list.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Exposure
 attributes:
   drug_concept:
     name: drug_concept
     description: The coded value for a drug. From RxNorm. The syntax for the enum
       may need work.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - DrugExposure
@@ -462,7 +462,7 @@ attributes:
     name: exposure_provenance
     description: A value representing the provenance of the DrugExposure record. From
       OMOP Drug Types.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - DrugExposure
@@ -471,7 +471,7 @@ attributes:
   refills:
     name: refills
     description: Intended refills at time of the prescription.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - DrugExposure
@@ -493,7 +493,7 @@ attributes:
       syringes), the quantity is the amount of ingredient similar to clinical drugs.
       Please see [how to calculate drug dose](https://ohdsi.github.io/CommonDataModel/drug_dose.html)
       for more information.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     domain_of:
     - Procedure
     - DrugExposure
@@ -515,7 +515,7 @@ attributes:
       with other record (e.g. reversal of prescription). High values (&gt;365 days) should
       be investigated. If considered an error in the source data (e.g. typo), the
       value needs to be excluded to prevent creation of unrealistic long eras.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - DrugExposure
@@ -527,7 +527,7 @@ attributes:
     comments:
     - Put the written out instructions for the drug as it is verbatim in the source,
       if available.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - DrugExposure
@@ -536,7 +536,7 @@ attributes:
   route_concept:
     name: route_concept
     description: Route of drug administration.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - DrugExposure
@@ -550,14 +550,14 @@ attributes:
 description: DrugExposures are records of a Person suggesting exposure to a medication.
   The source could be prescription, dispensing, medication administration records
   (MARs), or patient medication list.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Exposure
 attributes:
   drug_concept:
     name: drug_concept
     description: The coded value for a drug. From RxNorm. The syntax for the enum
       may need work.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: drug_concept
     owner: DrugExposure
@@ -568,7 +568,7 @@ attributes:
     name: exposure_provenance
     description: A value representing the provenance of the DrugExposure record. From
       OMOP Drug Types.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: exposure_provenance
     owner: DrugExposure
@@ -579,7 +579,7 @@ attributes:
   refills:
     name: refills
     description: Intended refills at time of the prescription.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: refills
     owner: DrugExposure
@@ -603,7 +603,7 @@ attributes:
       syringes), the quantity is the amount of ingredient similar to clinical drugs.
       Please see [how to calculate drug dose](https://ohdsi.github.io/CommonDataModel/drug_dose.html)
       for more information.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: quantity
     owner: DrugExposure
     domain_of:
@@ -627,7 +627,7 @@ attributes:
       with other record (e.g. reversal of prescription). High values (&gt;365 days) should
       be investigated. If considered an error in the source data (e.g. typo), the
       value needs to be excluded to prevent creation of unrealistic long eras.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: days_supply
     owner: DrugExposure
@@ -641,7 +641,7 @@ attributes:
     comments:
     - Put the written out instructions for the drug as it is verbatim in the source,
       if available.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: sig
     owner: DrugExposure
@@ -652,7 +652,7 @@ attributes:
   route_concept:
     name: route_concept
     description: Route of drug administration.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: route_concept
     owner: DrugExposure
@@ -670,7 +670,7 @@ attributes:
       additional context allows "identifier" instances to be transmitted as business
       data across systems while still being able to trace them back to the system
       of origin.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     alias: identity
@@ -695,7 +695,7 @@ attributes:
   associated_visit:
     name: associated_visit
     description: A reference to the Visit that is associated with this record.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: associated_visit
     owner: DrugExposure
@@ -712,7 +712,7 @@ attributes:
   associated_participant:
     name: associated_participant
     description: A reference to the Participant that is associated with this record.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: associated_participant
     owner: DrugExposure
@@ -730,7 +730,7 @@ attributes:
   age_at_exposure_start:
     name: age_at_exposure_start
     description: The Participant's age (expressed in days) at the exposure start date.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: age_at_exposure_start
     owner: DrugExposure
@@ -743,7 +743,7 @@ attributes:
     name: age_at_exposure_end
     description: The Participant's age (expressed in days) at the exposure end date,
       if available. Otherwise equal to age_at_exposure_start.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: age_at_exposure_end
     owner: DrugExposure
@@ -756,7 +756,7 @@ attributes:
     name: exposure_status
     description: A value indicating whether the exposure described in this record
       is present, absent, historically present, or unknown for this individual patient.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: exposure_status
     owner: DrugExposure
@@ -775,7 +775,7 @@ attributes:
       outside the information system and are captured in the "identifier" field. The
       "id" field is more likely to be a serially or randomly generated value that
       is assigned to the data object as it is created in a system.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     identifier: true

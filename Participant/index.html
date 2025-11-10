@@ -235,7 +235,7 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-participant">Class: Participant</h1>
 <p><em>A Participant is the entity of interest in a research study, typically a human being or an animal, but can also be a device, group of humans or animals, or a tissue sample. Human research subjects are usually not traceable to a particular person to protect the subject’s privacy.</em></p>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/Participant">bdchm:Participant</a></p>
+<p>URI: <a href="https://w3id.org/bdchm/Participant">bdchm:Participant</a></p>
 <div class="mermaid"> classDiagram
     class Participant
     click Participant href "../Participant"
@@ -514,7 +514,7 @@
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
-<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+<li>from schema: https://w3id.org/bdchm</li>
 </ul>
 <h2 id="mappings">Mappings</h2>
 <table>
@@ -544,7 +544,7 @@ description: A Participant is the entity of interest in a research study, typica
   a human being or an animal, but can also be a device, group of humans or animals,
   or a tissue sample. Human research subjects are usually not traceable to a particular
   person to protect the subject’s privacy.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 slots:
 - associated_person
@@ -554,7 +554,7 @@ attributes:
     name: description
     description: A free text field to capture additional info/explanation about the
       research subject.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Participant
@@ -568,7 +568,7 @@ attributes:
   member_of_research_study:
     name: member_of_research_study
     description: A reference to the Study(s) of which this Participant is a member
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Participant
@@ -576,7 +576,7 @@ attributes:
   age_at_index:
     name: age_at_index
     description: The age in days of the Participant at the index_timepoint
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Participant
@@ -588,7 +588,7 @@ attributes:
     description: The text term used to describe the reference or anchor date used
       for date obfuscation, where a single date is obscured by creating one or more
       date ranges in relation to this date.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Participant
@@ -596,7 +596,7 @@ attributes:
   originating_site:
     name: originating_site
     description: The Organization through which a subject was enrolled on a ResearchStudy.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Participant
@@ -604,7 +604,7 @@ attributes:
   study_arm:
     name: study_arm
     description: The arm(s) of the study on which the Participant is enrolled
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Participant
@@ -616,7 +616,7 @@ attributes:
       for datasets and/or materials, and relates to the purposes for which datasets
       and/or material might be removed, stored or used. Based on the Data Use Ontology
       : see http://www.obofoundry.org/ontology/duo.html'
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Participant
@@ -633,14 +633,14 @@ description: A Participant is the entity of interest in a research study, typica
   a human being or an animal, but can also be a device, group of humans or animals,
   or a tissue sample. Human research subjects are usually not traceable to a particular
   person to protect the subject’s privacy.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 attributes:
   description:
     name: description
     description: A free text field to capture additional info/explanation about the
       research subject.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: description
     owner: Participant
@@ -656,7 +656,7 @@ attributes:
   member_of_research_study:
     name: member_of_research_study
     description: A reference to the Study(s) of which this Participant is a member
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: member_of_research_study
     owner: Participant
@@ -666,7 +666,7 @@ attributes:
   age_at_index:
     name: age_at_index
     description: The age in days of the Participant at the index_timepoint
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: age_at_index
     owner: Participant
@@ -680,7 +680,7 @@ attributes:
     description: The text term used to describe the reference or anchor date used
       for date obfuscation, where a single date is obscured by creating one or more
       date ranges in relation to this date.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: index_timepoint
     owner: Participant
@@ -690,7 +690,7 @@ attributes:
   originating_site:
     name: originating_site
     description: The Organization through which a subject was enrolled on a ResearchStudy.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: originating_site
     owner: Participant
@@ -700,7 +700,7 @@ attributes:
   study_arm:
     name: study_arm
     description: The arm(s) of the study on which the Participant is enrolled
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: study_arm
     owner: Participant
@@ -714,7 +714,7 @@ attributes:
       for datasets and/or materials, and relates to the purposes for which datasets
       and/or material might be removed, stored or used. Based on the Data Use Ontology
       : see http://www.obofoundry.org/ontology/duo.html'
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: consents
     owner: Participant
@@ -726,7 +726,7 @@ attributes:
   associated_person:
     name: associated_person
     description: A reference to the Person that is associated with this record.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: associated_person
     owner: Participant
@@ -744,7 +744,7 @@ attributes:
       additional context allows "identifier" instances to be transmitted as business
       data across systems while still being able to trace them back to the system
       of origin.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     alias: identity
@@ -778,7 +778,7 @@ attributes:
       outside the information system and are captured in the "identifier" field. The
       "id" field is more likely to be a serially or randomly generated value that
       is assigned to the data object as it is created in a system.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     identifier: true

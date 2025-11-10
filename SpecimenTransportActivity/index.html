@@ -242,7 +242,7 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-specimentransportactivity">Class: SpecimenTransportActivity</h1>
 <p><em>An activity through which a specimen is transported between locations or organizations.</em></p>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/SpecimenTransportActivity">bdchm:SpecimenTransportActivity</a></p>
+<p>URI: <a href="https://w3id.org/bdchm/SpecimenTransportActivity">bdchm:SpecimenTransportActivity</a></p>
 <div class="mermaid"> classDiagram
     class SpecimenTransportActivity
     click SpecimenTransportActivity href "../SpecimenTransportActivity"
@@ -373,7 +373,7 @@
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
-<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+<li>from schema: https://w3id.org/bdchm</li>
 </ul>
 <h2 id="mappings">Mappings</h2>
 <table>
@@ -405,7 +405,7 @@ comments:
 - Think of the TransportActivity as being one of many possible occasions when the
   specimen was moved from one location to another, in some state or condition.  We
   may want to capture dates and conditions for each.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 attributes:
   date_started:
@@ -415,7 +415,7 @@ attributes:
     - To allow for more precise specification of dates when an activity was performed,
       we provide date_started and date_ended attributes.  If source data only provides
       a single date, it SHOULD be entered as both the date_started and date_ended.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     domain_of:
     - ResearchStudy
     - SpecimenCreationActivity
@@ -432,7 +432,7 @@ attributes:
     - To allow for more precise specification of dates when an activity was performed,
       we provide date_started and date_ended attributes.  If source data only provides
       a single date, it SHOULD be entered as both the date_started and date_ended.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     domain_of:
     - ResearchStudy
     - SpecimenCreationActivity
@@ -445,7 +445,7 @@ attributes:
   duration:
     name: duration
     description: The length of time over which the activity was performed.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     domain_of:
     - SpecimenProcessingActivity
     - SpecimenStorageActivity
@@ -459,7 +459,7 @@ attributes:
     name: transport_origin
     description: An organization (facility, site, lab, etc) from which the specimen
       was transported as a result of the activity.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - SpecimenTransportActivity
@@ -470,7 +470,7 @@ attributes:
     name: transport_destination
     description: An organization (facility, site, lab, etc) to which the specimen
       is delivered as a result of the activity.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - SpecimenTransportActivity
@@ -489,7 +489,7 @@ comments:
 - Think of the TransportActivity as being one of many possible occasions when the
   specimen was moved from one location to another, in some state or condition.  We
   may want to capture dates and conditions for each.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 attributes:
   date_started:
@@ -499,7 +499,7 @@ attributes:
     - To allow for more precise specification of dates when an activity was performed,
       we provide date_started and date_ended attributes.  If source data only provides
       a single date, it SHOULD be entered as both the date_started and date_ended.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: date_started
     owner: SpecimenTransportActivity
     domain_of:
@@ -518,7 +518,7 @@ attributes:
     - To allow for more precise specification of dates when an activity was performed,
       we provide date_started and date_ended attributes.  If source data only provides
       a single date, it SHOULD be entered as both the date_started and date_ended.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: date_ended
     owner: SpecimenTransportActivity
     domain_of:
@@ -533,7 +533,7 @@ attributes:
   duration:
     name: duration
     description: The length of time over which the activity was performed.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: duration
     owner: SpecimenTransportActivity
     domain_of:
@@ -549,7 +549,7 @@ attributes:
     name: transport_origin
     description: An organization (facility, site, lab, etc) from which the specimen
       was transported as a result of the activity.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: transport_origin
     owner: SpecimenTransportActivity
@@ -562,7 +562,7 @@ attributes:
     name: transport_destination
     description: An organization (facility, site, lab, etc) to which the specimen
       is delivered as a result of the activity.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: transport_destination
     owner: SpecimenTransportActivity
@@ -583,7 +583,7 @@ attributes:
       outside the information system and are captured in the "identifier" field. The
       "id" field is more likely to be a serially or randomly generated value that
       is assigned to the data object as it is created in a system.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     identifier: true

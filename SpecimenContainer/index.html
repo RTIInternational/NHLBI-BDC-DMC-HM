@@ -235,7 +235,7 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-specimencontainer">Class: SpecimenContainer</h1>
 <p><em>A vessel in which a specimen is held or to which it is attached - for storage or as a substrate for growth (e.g. a cell culture dish) or analysis (e.g. a microscope slide or 96-well plate)</em></p>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/SpecimenContainer">bdchm:SpecimenContainer</a></p>
+<p>URI: <a href="https://w3id.org/bdchm/SpecimenContainer">bdchm:SpecimenContainer</a></p>
 <div class="mermaid"> classDiagram
     class SpecimenContainer
     click SpecimenContainer href "../SpecimenContainer"
@@ -352,7 +352,7 @@
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
-<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+<li>from schema: https://w3id.org/bdchm</li>
 </ul>
 <h2 id="mappings">Mappings</h2>
 <table>
@@ -381,7 +381,7 @@
 description: A vessel in which a specimen is held or to which it is attached - for
   storage or as a substrate for growth (e.g. a cell culture dish) or analysis (e.g.
   a microscope slide or 96-well plate)
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 attributes:
   container_type:
@@ -392,7 +392,7 @@ attributes:
     - value: Sputum specimen container
     - value: Cell culture flask
     - value: Glass slide
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     values_from:
     - crdch:enum_CRDCH_SpecimenContainer_container_type
@@ -405,7 +405,7 @@ attributes:
     name: container_number
     description: Informal number by which the container is referenced  or identified
       (e.g. a slide number, or a well number in a plate)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - SpecimenContainer
@@ -421,7 +421,7 @@ attributes:
     - value: DMEM+Serum
     - value: RPMI
     - value: RPMI+Serum
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - SpecimenContainer
@@ -434,7 +434,7 @@ attributes:
     name: parent_container
     description: A larger container of which this container is a part (e.g. the complete
       96-well plate of which a single well is a part)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - SpecimenContainer
@@ -450,7 +450,7 @@ attributes:
 description: A vessel in which a specimen is held or to which it is attached - for
   storage or as a substrate for growth (e.g. a cell culture dish) or analysis (e.g.
   a microscope slide or 96-well plate)
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 attributes:
   container_type:
@@ -461,7 +461,7 @@ attributes:
     - value: Sputum specimen container
     - value: Cell culture flask
     - value: Glass slide
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     values_from:
     - crdch:enum_CRDCH_SpecimenContainer_container_type
@@ -476,7 +476,7 @@ attributes:
     name: container_number
     description: Informal number by which the container is referenced  or identified
       (e.g. a slide number, or a well number in a plate)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: container_number
     owner: SpecimenContainer
@@ -494,7 +494,7 @@ attributes:
     - value: DMEM+Serum
     - value: RPMI
     - value: RPMI+Serum
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: additive
     owner: SpecimenContainer
@@ -509,7 +509,7 @@ attributes:
     name: parent_container
     description: A larger container of which this container is a part (e.g. the complete
       96-well plate of which a single well is a part)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: parent_container
     owner: SpecimenContainer
@@ -530,7 +530,7 @@ attributes:
       outside the information system and are captured in the "identifier" field. The
       "id" field is more likely to be a serially or randomly generated value that
       is assigned to the data object as it is created in a system.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     identifier: true

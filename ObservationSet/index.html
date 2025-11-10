@@ -228,7 +228,7 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-observationset">Class: ObservationSet</h1>
 <p><em>A structured object to hold related Observations in a set.</em></p>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/ObservationSet">bdchm:ObservationSet</a></p>
+<p>URI: <a href="https://w3id.org/bdchm/ObservationSet">bdchm:ObservationSet</a></p>
 <div class="mermaid"> classDiagram
     class ObservationSet
     click ObservationSet href "../ObservationSet"
@@ -373,7 +373,7 @@
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
-<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+<li>from schema: https://w3id.org/bdchm</li>
 </ul>
 <h2 id="mappings">Mappings</h2>
 <table>
@@ -400,7 +400,7 @@
 <details>
 <pre><code class="language-yaml">name: ObservationSet
 description: A structured object to hold related Observations in a set.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 slots:
 - observations
@@ -410,7 +410,7 @@ attributes:
   category:
     name: category
     description: The general category of observation set described
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     values_from:
     - crdch:enum_CRDCH_ObservationSet_category
@@ -429,7 +429,7 @@ attributes:
       want an Observation object to stand on its own, so it can point back to the
       entities it is about. These fields are not needed when an Observation is embedded
       in an entity, where focus, subject, and specimen can be determined from context.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     domain_of:
     - Document
     - ObservationSet
@@ -449,7 +449,7 @@ attributes:
       encode the result of an  Observation (e.g. a Cancer Staging system such as that
       defined by the AJCC, or variant interpretation guideline such as that provided
       by the ACMG).
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     values_from:
     - crdch:enum_CRDCH_ObservationSet_method_type
     domain_of:
@@ -463,7 +463,7 @@ attributes:
   performed_by:
     name: performed_by
     description: The organization or group that performed the observation activity.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     domain_of:
     - SpecimenCreationActivity
     - ObservationSet
@@ -478,13 +478,13 @@ attributes:
 <details>
 <pre><code class="language-yaml">name: ObservationSet
 description: A structured object to hold related Observations in a set.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 attributes:
   category:
     name: category
     description: The general category of observation set described
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     values_from:
     - crdch:enum_CRDCH_ObservationSet_category
@@ -505,7 +505,7 @@ attributes:
       want an Observation object to stand on its own, so it can point back to the
       entities it is about. These fields are not needed when an Observation is embedded
       in an entity, where focus, subject, and specimen can be determined from context.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: focus
     owner: ObservationSet
     domain_of:
@@ -527,7 +527,7 @@ attributes:
       encode the result of an  Observation (e.g. a Cancer Staging system such as that
       defined by the AJCC, or variant interpretation guideline such as that provided
       by the ACMG).
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     values_from:
     - crdch:enum_CRDCH_ObservationSet_method_type
     alias: method_type
@@ -543,7 +543,7 @@ attributes:
   performed_by:
     name: performed_by
     description: The organization or group that performed the observation activity.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: performed_by
     owner: ObservationSet
     domain_of:
@@ -556,7 +556,7 @@ attributes:
   observations:
     name: observations
     description: A set of one or more observations.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: observations
     owner: ObservationSet
@@ -567,7 +567,7 @@ attributes:
   associated_visit:
     name: associated_visit
     description: A reference to the Visit that is associated with this record.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: associated_visit
     owner: ObservationSet
@@ -584,7 +584,7 @@ attributes:
   associated_participant:
     name: associated_participant
     description: A reference to the Participant that is associated with this record.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: associated_participant
     owner: ObservationSet
@@ -611,7 +611,7 @@ attributes:
       outside the information system and are captured in the "identifier" field. The
       "id" field is more likely to be a serially or randomly generated value that
       is assigned to the data object as it is created in a system.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     identifier: true

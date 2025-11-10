@@ -235,7 +235,7 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-causeofdeath">Class: CauseOfDeath</h1>
 <p><em>A class / complex datatype for handling both values and ordinality for causes of death.</em></p>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/CauseOfDeath">bdchm:CauseOfDeath</a></p>
+<p>URI: <a href="https://w3id.org/bdchm/CauseOfDeath">bdchm:CauseOfDeath</a></p>
 <div class="mermaid"> classDiagram
     class CauseOfDeath
     click CauseOfDeath href "../CauseOfDeath"
@@ -317,7 +317,7 @@
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
-<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+<li>from schema: https://w3id.org/bdchm</li>
 </ul>
 <h2 id="mappings">Mappings</h2>
 <table>
@@ -345,14 +345,14 @@
 <pre><code class="language-yaml">name: CauseOfDeath
 description: A class / complex datatype for handling both values and ordinality for
   causes of death.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 attributes:
   cause:
     name: cause
     description: The value for the cause of death (e.g., myocardial infarction, chronic
       obstructive pulmonary disorder).
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - CauseOfDeath
@@ -364,7 +364,7 @@ attributes:
     description: The ordinality of a given cause of death record recorded in integers.  Primary
       cause of death should have order equal to 1 and additional causes should be
       recorded starting from 2 and iterating up from there.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - CauseOfDeath
@@ -379,14 +379,14 @@ attributes:
 <pre><code class="language-yaml">name: CauseOfDeath
 description: A class / complex datatype for handling both values and ordinality for
   causes of death.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 attributes:
   cause:
     name: cause
     description: The value for the cause of death (e.g., myocardial infarction, chronic
       obstructive pulmonary disorder).
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: cause
     owner: CauseOfDeath
@@ -400,7 +400,7 @@ attributes:
     description: The ordinality of a given cause of death record recorded in integers.  Primary
       cause of death should have order equal to 1 and additional causes should be
       recorded starting from 2 and iterating up from there.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: order
     owner: CauseOfDeath
@@ -421,7 +421,7 @@ attributes:
       outside the information system and are captured in the "identifier" field. The
       "id" field is more likely to be a serially or randomly generated value that
       is assigned to the data object as it is created in a system.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     identifier: true

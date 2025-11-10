@@ -228,7 +228,7 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-condition">Class: Condition</h1>
 <p>_Conditions are records of a Person suggesting the presence of a disease or medical condition stated as a diagnosis, a sign or a symptom, which is either observed by a Provider or reported by the patient. Conditions are recorded in different sources and levels of standardization. _</p>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/Condition">bdchm:Condition</a></p>
+<p>URI: <a href="https://w3id.org/bdchm/Condition">bdchm:Condition</a></p>
 <div class="mermaid"> classDiagram
     class Condition
     click Condition href "../Condition"
@@ -397,7 +397,7 @@
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
-<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+<li>from schema: https://w3id.org/bdchm</li>
 </ul>
 <h2 id="mappings">Mappings</h2>
 <table>
@@ -427,7 +427,7 @@ description: 'Conditions are records of a Person suggesting the presence of a di
   or medical condition stated as a diagnosis, a sign or a symptom, which is either
   observed by a Provider or reported by the patient. Conditions are recorded in different
   sources and levels of standardization. '
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 slots:
 - identity
@@ -439,7 +439,7 @@ attributes:
     description: The coded value for the presence of a disease or medical condition
       stated as a diagnosis, a sign or a symptom, coded to the Human Phenotype Ontology
       or MONDO.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Condition
@@ -448,7 +448,7 @@ attributes:
     name: age_at_condition_start
     description: The Participant's age (expressed in days) when the condition was
       first recorded.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Condition
@@ -459,7 +459,7 @@ attributes:
     name: age_at_condition_end
     description: The Participant's age (expressed in days) when the condition was
       recorded as having been resolved.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Condition
@@ -469,7 +469,7 @@ attributes:
   condition_provenance:
     name: condition_provenance
     description: A value representing the provenance of the Condition record
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Condition
@@ -479,7 +479,7 @@ attributes:
     description: A value indicating whether the medical condition described in this
       record is present, absent, historically present, or unknown for this individual
       patient.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Condition
@@ -487,7 +487,7 @@ attributes:
   condition_severity:
     name: condition_severity
     description: A subjective assessment of the severity of the condition
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Condition
@@ -500,7 +500,7 @@ attributes:
       relationship.  If the Condition is affecting a family member (e.g. a parent
       of the Participant) then an appropriate relationship should be provided (e.g.
       'Parent')
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Condition
@@ -515,7 +515,7 @@ description: 'Conditions are records of a Person suggesting the presence of a di
   or medical condition stated as a diagnosis, a sign or a symptom, which is either
   observed by a Provider or reported by the patient. Conditions are recorded in different
   sources and levels of standardization. '
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 attributes:
   condition_concept:
@@ -523,7 +523,7 @@ attributes:
     description: The coded value for the presence of a disease or medical condition
       stated as a diagnosis, a sign or a symptom, coded to the Human Phenotype Ontology
       or MONDO.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: condition_concept
     owner: Condition
@@ -534,7 +534,7 @@ attributes:
     name: age_at_condition_start
     description: The Participant's age (expressed in days) when the condition was
       first recorded.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: age_at_condition_start
     owner: Condition
@@ -547,7 +547,7 @@ attributes:
     name: age_at_condition_end
     description: The Participant's age (expressed in days) when the condition was
       recorded as having been resolved.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: age_at_condition_end
     owner: Condition
@@ -559,7 +559,7 @@ attributes:
   condition_provenance:
     name: condition_provenance
     description: A value representing the provenance of the Condition record
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: condition_provenance
     owner: Condition
@@ -571,7 +571,7 @@ attributes:
     description: A value indicating whether the medical condition described in this
       record is present, absent, historically present, or unknown for this individual
       patient.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: condition_status
     owner: Condition
@@ -581,7 +581,7 @@ attributes:
   condition_severity:
     name: condition_severity
     description: A subjective assessment of the severity of the condition
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: condition_severity
     owner: Condition
@@ -596,7 +596,7 @@ attributes:
       relationship.  If the Condition is affecting a family member (e.g. a parent
       of the Participant) then an appropriate relationship should be provided (e.g.
       'Parent')
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: relationship_to_participant
     owner: Condition
@@ -614,7 +614,7 @@ attributes:
       additional context allows "identifier" instances to be transmitted as business
       data across systems while still being able to trace them back to the system
       of origin.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     alias: identity
@@ -639,7 +639,7 @@ attributes:
   associated_visit:
     name: associated_visit
     description: A reference to the Visit that is associated with this record.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: associated_visit
     owner: Condition
@@ -656,7 +656,7 @@ attributes:
   associated_participant:
     name: associated_participant
     description: A reference to the Participant that is associated with this record.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: associated_participant
     owner: Condition
@@ -683,7 +683,7 @@ attributes:
       outside the information system and are captured in the "identifier" field. The
       "id" field is more likely to be a serially or randomly generated value that
       is assigned to the data object as it is created in a system.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     identifier: true

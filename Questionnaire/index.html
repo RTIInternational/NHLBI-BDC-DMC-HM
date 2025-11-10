@@ -228,7 +228,7 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-questionnaire">Class: Questionnaire</h1>
 <p><em>A Questionnaire is an organized collection of questions intended to solicit information from patients, providers or other individuals involved in the healthcare domain. They may be simple flat lists of questions or can be hierarchically organized in groups and sub-groups, each containing questions. The Questionnaire defines the questions to be asked, how they are ordered and grouped, any intervening instructional text and what the constraints are on the allowed answers. The results of a Questionnaire can be communicated using the QuestionnaireResponse. (FHIR)</em></p>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/Questionnaire">bdchm:Questionnaire</a></p>
+<p>URI: <a href="https://w3id.org/bdchm/Questionnaire">bdchm:Questionnaire</a></p>
 <div class="mermaid"> classDiagram
     class Questionnaire
     click Questionnaire href "../Questionnaire"
@@ -363,7 +363,7 @@
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
-<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+<li>from schema: https://w3id.org/bdchm</li>
 </ul>
 <h2 id="mappings">Mappings</h2>
 <table>
@@ -396,7 +396,7 @@ description: A Questionnaire is an organized collection of questions intended to
   questions to be asked, how they are ordered and grouped, any intervening instructional
   text and what the constraints are on the allowed answers. The results of a Questionnaire
   can be communicated using the QuestionnaireResponse. (FHIR)
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 slots:
 - identity
@@ -404,7 +404,7 @@ attributes:
   name:
     name: name
     description: Name for this Questionnaire (computer friendly)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     domain_of:
     - ResearchStudy
     - Organization
@@ -414,7 +414,7 @@ attributes:
   title:
     name: title
     description: Name for this Questionnaire (human friendly)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Questionnaire
@@ -422,7 +422,7 @@ attributes:
   description:
     name: description
     description: Natural language description of the Questionnaire
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     domain_of:
     - Participant
     - ResearchStudy
@@ -436,7 +436,7 @@ attributes:
     name: url
     description: Canonical identifier for this Questionnaire, represented as an absolute
       URI (globally unique)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     domain_of:
     - ResearchStudy
     - Questionnaire
@@ -450,7 +450,7 @@ attributes:
       be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if
       a managed version is not available. There is also no expectation that versions
       can be placed in a lexicographical sequence.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     domain_of:
     - ResearchStudy
     - Questionnaire
@@ -459,7 +459,7 @@ attributes:
     name: publisher
     description: Name of the publisher/steward (organization or individual) of this
       Questionnaire
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Questionnaire
@@ -467,7 +467,7 @@ attributes:
   copyright:
     name: copyright
     description: Textual description of any use and/or publishing restrictions
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Questionnaire
@@ -475,7 +475,7 @@ attributes:
   copyright_label:
     name: copyright_label
     description: Copyright holder and year(s)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Questionnaire
@@ -483,7 +483,7 @@ attributes:
   language:
     name: language
     description: The language(s) in which questions are presented.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Questionnaire
@@ -493,7 +493,7 @@ attributes:
     name: items
     description: A collection of QuestionnaireItem objects which encapsulate the question
       being asked.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Questionnaire
@@ -514,13 +514,13 @@ description: A Questionnaire is an organized collection of questions intended to
   questions to be asked, how they are ordered and grouped, any intervening instructional
   text and what the constraints are on the allowed answers. The results of a Questionnaire
   can be communicated using the QuestionnaireResponse. (FHIR)
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 attributes:
   name:
     name: name
     description: Name for this Questionnaire (computer friendly)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: name
     owner: Questionnaire
     domain_of:
@@ -532,7 +532,7 @@ attributes:
   title:
     name: title
     description: Name for this Questionnaire (human friendly)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: title
     owner: Questionnaire
@@ -542,7 +542,7 @@ attributes:
   description:
     name: description
     description: Natural language description of the Questionnaire
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: description
     owner: Questionnaire
     domain_of:
@@ -558,7 +558,7 @@ attributes:
     name: url
     description: Canonical identifier for this Questionnaire, represented as an absolute
       URI (globally unique)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: url
     owner: Questionnaire
     domain_of:
@@ -574,7 +574,7 @@ attributes:
       be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if
       a managed version is not available. There is also no expectation that versions
       can be placed in a lexicographical sequence.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: version
     owner: Questionnaire
     domain_of:
@@ -585,7 +585,7 @@ attributes:
     name: publisher
     description: Name of the publisher/steward (organization or individual) of this
       Questionnaire
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: publisher
     owner: Questionnaire
@@ -595,7 +595,7 @@ attributes:
   copyright:
     name: copyright
     description: Textual description of any use and/or publishing restrictions
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: copyright
     owner: Questionnaire
@@ -605,7 +605,7 @@ attributes:
   copyright_label:
     name: copyright_label
     description: Copyright holder and year(s)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: copyright_label
     owner: Questionnaire
@@ -615,7 +615,7 @@ attributes:
   language:
     name: language
     description: The language(s) in which questions are presented.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: language
     owner: Questionnaire
@@ -627,7 +627,7 @@ attributes:
     name: items
     description: A collection of QuestionnaireItem objects which encapsulate the question
       being asked.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: items
     owner: Questionnaire
@@ -648,7 +648,7 @@ attributes:
       additional context allows "identifier" instances to be transmitted as business
       data across systems while still being able to trace them back to the system
       of origin.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     alias: identity
@@ -682,7 +682,7 @@ attributes:
       outside the information system and are captured in the "identifier" field. The
       "id" field is more likely to be a serially or randomly generated value that
       is assigned to the data object as it is created in a system.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     identifier: true

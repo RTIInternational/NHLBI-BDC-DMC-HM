@@ -242,7 +242,7 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-specimencreationactivity">Class: SpecimenCreationActivity</h1>
 <p><em>The process of creating a specimen. This may occur through observing and/or collecting material from an biological source or natural setting, or through derivation from an existing specimen (e.g. via portioning or aliquoting).</em></p>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/SpecimenCreationActivity">bdchm:SpecimenCreationActivity</a></p>
+<p>URI: <a href="https://w3id.org/bdchm/SpecimenCreationActivity">bdchm:SpecimenCreationActivity</a></p>
 <div class="mermaid"> classDiagram
     class SpecimenCreationActivity
     click SpecimenCreationActivity href "../SpecimenCreationActivity"
@@ -441,7 +441,7 @@
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
-<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+<li>from schema: https://w3id.org/bdchm</li>
 </ul>
 <h2 id="mappings">Mappings</h2>
 <table>
@@ -473,7 +473,7 @@ description: The process of creating a specimen. This may occur through observin
 comments:
 - A creation activity represents the entire process up to the point where the specimen
   is physically modified, stored, or transported.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 attributes:
   activity_type:
@@ -488,7 +488,7 @@ attributes:
     examples:
     - value: Collection from Source
     - value: Derivation from Specimen
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - SpecimenCreationActivity
@@ -504,7 +504,7 @@ attributes:
     - To allow for more precise specification of dates when an activity was performed,
       we provide date_started and date_ended attributes.  If source data only provides
       a single date, it SHOULD be entered as both the date_started and date_ended.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     domain_of:
     - ResearchStudy
     - SpecimenCreationActivity
@@ -522,7 +522,7 @@ attributes:
     - To allow for more precise specification of dates when an activity was performed,
       we provide date_started and date_ended attributes.  If source data only provides
       a single date, it SHOULD be entered as both the date_started and date_ended.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     domain_of:
     - ResearchStudy
     - SpecimenCreationActivity
@@ -535,7 +535,7 @@ attributes:
   performed_by:
     name: performed_by
     description: The organization or group that performed the activity.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - SpecimenCreationActivity
@@ -555,7 +555,7 @@ attributes:
     - value: Ascites Drainage
     - value: Excisional Biopsy
     - value: Specimen Pooling
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - SpecimenCreationActivity
@@ -578,7 +578,7 @@ attributes:
     - value: Other
     - value: Unknown
     - value: NotReported
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     values_from:
     - crdch:enum_CRDCH_SpecimenCreationActivity_derivation_method_type
@@ -591,7 +591,7 @@ attributes:
     name: additive
     description: A type of material or reagent used applied as input when creating
       a specimen.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     domain_of:
     - SpecimenContainer
     - SpecimenCreationActivity
@@ -609,7 +609,7 @@ attributes:
     - value: Abdomen
     - value: Abdominal Wall
     - value: Acetabulum
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - SpecimenCreationActivity
@@ -622,7 +622,7 @@ attributes:
       from its original source material (prior to downstream portioning or processing)
     comments:
     - This attribute applies only when Specimen.category='initial sample'.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - SpecimenCreationActivity
@@ -634,7 +634,7 @@ attributes:
     description: A numeric value that represents the sequential order of this creation
       activity relative to those producing other specimens from the same source material
       or parent specimen.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - SpecimenCreationActivity
@@ -653,7 +653,7 @@ description: The process of creating a specimen. This may occur through observin
 comments:
 - A creation activity represents the entire process up to the point where the specimen
   is physically modified, stored, or transported.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 attributes:
   activity_type:
@@ -668,7 +668,7 @@ attributes:
     examples:
     - value: Collection from Source
     - value: Derivation from Specimen
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: activity_type
     owner: SpecimenCreationActivity
@@ -686,7 +686,7 @@ attributes:
     - To allow for more precise specification of dates when an activity was performed,
       we provide date_started and date_ended attributes.  If source data only provides
       a single date, it SHOULD be entered as both the date_started and date_ended.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: date_started
     owner: SpecimenCreationActivity
     domain_of:
@@ -706,7 +706,7 @@ attributes:
     - To allow for more precise specification of dates when an activity was performed,
       we provide date_started and date_ended attributes.  If source data only provides
       a single date, it SHOULD be entered as both the date_started and date_ended.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: date_ended
     owner: SpecimenCreationActivity
     domain_of:
@@ -721,7 +721,7 @@ attributes:
   performed_by:
     name: performed_by
     description: The organization or group that performed the activity.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: performed_by
     owner: SpecimenCreationActivity
@@ -743,7 +743,7 @@ attributes:
     - value: Ascites Drainage
     - value: Excisional Biopsy
     - value: Specimen Pooling
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: collection_method_type
     owner: SpecimenCreationActivity
@@ -768,7 +768,7 @@ attributes:
     - value: Other
     - value: Unknown
     - value: NotReported
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     values_from:
     - crdch:enum_CRDCH_SpecimenCreationActivity_derivation_method_type
@@ -783,7 +783,7 @@ attributes:
     name: additive
     description: A type of material or reagent used applied as input when creating
       a specimen.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: additive
     owner: SpecimenCreationActivity
     domain_of:
@@ -803,7 +803,7 @@ attributes:
     - value: Abdomen
     - value: Abdominal Wall
     - value: Acetabulum
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: collection_site
     owner: SpecimenCreationActivity
@@ -818,7 +818,7 @@ attributes:
       from its original source material (prior to downstream portioning or processing)
     comments:
     - This attribute applies only when Specimen.category='initial sample'.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: quantity_collected
     owner: SpecimenCreationActivity
@@ -832,7 +832,7 @@ attributes:
     description: A numeric value that represents the sequential order of this creation
       activity relative to those producing other specimens from the same source material
       or parent specimen.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: specimen_order
     owner: SpecimenCreationActivity
@@ -853,7 +853,7 @@ attributes:
       outside the information system and are captured in the "identifier" field. The
       "id" field is more likely to be a serially or randomly generated value that
       is assigned to the data object as it is created in a system.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     identifier: true

@@ -235,7 +235,7 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-specimen">Class: Specimen</h1>
 <p><em>Any material taken as a sample from a biological entity (living or dead), or from a physical object or the environment. Specimens are usually collected as an example of their kind, often for use in some investigation.</em></p>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/Specimen">bdchm:Specimen</a></p>
+<p>URI: <a href="https://w3id.org/bdchm/Specimen">bdchm:Specimen</a></p>
 <div class="mermaid"> classDiagram
     class Specimen
     click Specimen href "../Specimen"
@@ -558,7 +558,7 @@
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
-<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+<li>from schema: https://w3id.org/bdchm</li>
 </ul>
 <h2 id="mappings">Mappings</h2>
 <table>
@@ -587,7 +587,7 @@
 description: Any material taken as a sample from a biological entity (living or dead),
   or from a physical object or the environment. Specimens are usually collected as
   an example of their kind, often for use in some investigation.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 slots:
 - identity
@@ -596,7 +596,7 @@ attributes:
     name: description
     description: A free text field to capture additional information or explanation
       about the specimen.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     domain_of:
     - Participant
     - ResearchStudy
@@ -618,7 +618,7 @@ attributes:
     - value: Aliquot
     - value: Analyte
     - value: Slide
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     values_from:
     - crdch:enum_CRDCH_Specimen_specimen_type
@@ -639,7 +639,7 @@ attributes:
     - value: Repli-G (Qiagen) DNA
     - value: RNA
     - value: FFPE RNA
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     values_from:
     - crdch:enum_CRDCH_Specimen_analyte_type
@@ -663,7 +663,7 @@ attributes:
     - value: Expanded Next Generation Cancer Model
     - value: Pleural Effusion
     - value: Xenograft Tissue
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Specimen
@@ -677,7 +677,7 @@ attributes:
     comments:
     - This property indicates only the direct parent specimen(s).  Cardinality is
       0..m to account for specimens derived from pooling of multiple specimens.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Specimen
@@ -690,7 +690,7 @@ attributes:
     name: source_participant
     description: A specific Subject from which the specimen was directly or indirectly
       derived.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Specimen
@@ -705,7 +705,7 @@ attributes:
     - Note that a given specimen is the result of only one and only one SpecimenCreationActivity,
       but may be subject to many processing events that subsequently modify or derive
       new specimens from it.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Specimen
@@ -721,7 +721,7 @@ attributes:
       through application of different methodologies that modify its physical state.
       However, if an activity generates a new specimen (e.g. via portioning, slicing)
       it is considered a SpeciemnCreationActivity.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Specimen
@@ -736,7 +736,7 @@ attributes:
     - The 0..m cardinality of this attribute reflects the fact that a given specimen
       may undergo many separate periods of storage, in different locations and/or
       under different conditions
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Specimen
@@ -749,7 +749,7 @@ attributes:
     comments:
     - The 0..m cardinality of this attribute reflects the fact that a given specimen
       may undergo many separate transport processes at different periods of time.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Specimen
@@ -765,7 +765,7 @@ attributes:
     - The 0..1 cardinality on this attribute means that you cannot directly references
       multiple nested containers holding a sample. To capture this scenario, use the
       "parent_container" attribute of the Container entity.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Specimen
@@ -780,7 +780,7 @@ attributes:
     - Observations are flexible containers for capturing a specific type of observation/measurement
       data about an object, along with metadata about how it was generated. The specific
       type of observation made is captured as data in the Observation object.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Specimen
@@ -795,7 +795,7 @@ attributes:
     - Observations are flexible containers for capturing a specific type of observation/measurement
       data about an object, along with metadata about how it was generated. The specific
       type of observation made is captured as data in the Observation object.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Specimen
@@ -810,7 +810,7 @@ attributes:
     - Observations are flexible containers for capturing a specific type of observation/measurement
       data about an object, along with metadata about how it was generated. The specific
       type of observation made is captured as data in the Observation object.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Specimen
@@ -832,7 +832,7 @@ attributes:
     - value: Pleural Effusion
     - value: Human Original Cells
     - value: Liquid Suspension Cell Line
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     values_from:
     - crdch:enum_CRDCH_Specimen_cellular_composition_type
@@ -847,7 +847,7 @@ attributes:
       specimen (e.g. a publication related to the study it is a part of, pathology
       report containing additional details about it, protocol describing how it was
       collected)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Specimen
@@ -864,7 +864,7 @@ attributes:
     - value: Top
     - value: Bottom
     - value: Unknown
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     values_from:
     - crdch:enum_CRDCH_Specimen_section_location
@@ -877,7 +877,7 @@ attributes:
     name: derived_product
     description: A 'living' biologically active product that was derived from the
       specimen (e.g. a cell culture, tissue culture, or organoid)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Specimen
@@ -895,14 +895,14 @@ attributes:
 description: Any material taken as a sample from a biological entity (living or dead),
   or from a physical object or the environment. Specimens are usually collected as
   an example of their kind, often for use in some investigation.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 attributes:
   description:
     name: description
     description: A free text field to capture additional information or explanation
       about the specimen.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: description
     owner: Specimen
     domain_of:
@@ -926,7 +926,7 @@ attributes:
     - value: Aliquot
     - value: Analyte
     - value: Slide
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     values_from:
     - crdch:enum_CRDCH_Specimen_specimen_type
@@ -949,7 +949,7 @@ attributes:
     - value: Repli-G (Qiagen) DNA
     - value: RNA
     - value: FFPE RNA
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     values_from:
     - crdch:enum_CRDCH_Specimen_analyte_type
@@ -975,7 +975,7 @@ attributes:
     - value: Expanded Next Generation Cancer Model
     - value: Pleural Effusion
     - value: Xenograft Tissue
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: source_material_type
     owner: Specimen
@@ -991,7 +991,7 @@ attributes:
     comments:
     - This property indicates only the direct parent specimen(s).  Cardinality is
       0..m to account for specimens derived from pooling of multiple specimens.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: parent_specimen
     owner: Specimen
@@ -1006,7 +1006,7 @@ attributes:
     name: source_participant
     description: A specific Subject from which the specimen was directly or indirectly
       derived.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: source_participant
     owner: Specimen
@@ -1023,7 +1023,7 @@ attributes:
     - Note that a given specimen is the result of only one and only one SpecimenCreationActivity,
       but may be subject to many processing events that subsequently modify or derive
       new specimens from it.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: creation_activity
     owner: Specimen
@@ -1041,7 +1041,7 @@ attributes:
       through application of different methodologies that modify its physical state.
       However, if an activity generates a new specimen (e.g. via portioning, slicing)
       it is considered a SpeciemnCreationActivity.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: processing_activity
     owner: Specimen
@@ -1058,7 +1058,7 @@ attributes:
     - The 0..m cardinality of this attribute reflects the fact that a given specimen
       may undergo many separate periods of storage, in different locations and/or
       under different conditions
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: storage_activity
     owner: Specimen
@@ -1073,7 +1073,7 @@ attributes:
     comments:
     - The 0..m cardinality of this attribute reflects the fact that a given specimen
       may undergo many separate transport processes at different periods of time.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: transport_activity
     owner: Specimen
@@ -1091,7 +1091,7 @@ attributes:
     - The 0..1 cardinality on this attribute means that you cannot directly references
       multiple nested containers holding a sample. To capture this scenario, use the
       "parent_container" attribute of the Container entity.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: contained_in
     owner: Specimen
@@ -1108,7 +1108,7 @@ attributes:
     - Observations are flexible containers for capturing a specific type of observation/measurement
       data about an object, along with metadata about how it was generated. The specific
       type of observation made is captured as data in the Observation object.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: dimensional_measures
     owner: Specimen
@@ -1125,7 +1125,7 @@ attributes:
     - Observations are flexible containers for capturing a specific type of observation/measurement
       data about an object, along with metadata about how it was generated. The specific
       type of observation made is captured as data in the Observation object.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: quantity_measure
     owner: Specimen
@@ -1142,7 +1142,7 @@ attributes:
     - Observations are flexible containers for capturing a specific type of observation/measurement
       data about an object, along with metadata about how it was generated. The specific
       type of observation made is captured as data in the Observation object.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: quality_measure
     owner: Specimen
@@ -1166,7 +1166,7 @@ attributes:
     - value: Pleural Effusion
     - value: Human Original Cells
     - value: Liquid Suspension Cell Line
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     values_from:
     - crdch:enum_CRDCH_Specimen_cellular_composition_type
@@ -1183,7 +1183,7 @@ attributes:
       specimen (e.g. a publication related to the study it is a part of, pathology
       report containing additional details about it, protocol describing how it was
       collected)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: related_document
     owner: Specimen
@@ -1202,7 +1202,7 @@ attributes:
     - value: Top
     - value: Bottom
     - value: Unknown
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     values_from:
     - crdch:enum_CRDCH_Specimen_section_location
@@ -1217,7 +1217,7 @@ attributes:
     name: derived_product
     description: A 'living' biologically active product that was derived from the
       specimen (e.g. a cell culture, tissue culture, or organoid)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: derived_product
     owner: Specimen
@@ -1239,7 +1239,7 @@ attributes:
       additional context allows "identifier" instances to be transmitted as business
       data across systems while still being able to trace them back to the system
       of origin.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     alias: identity
@@ -1273,7 +1273,7 @@ attributes:
       outside the information system and are captured in the "identifier" field. The
       "id" field is more likely to be a serially or randomly generated value that
       is assigned to the data object as it is created in a system.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     identifier: true

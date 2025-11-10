@@ -228,7 +228,7 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-imagingfile">Class: ImagingFile</h1>
 <p><em>A file that contains diagnostic imaging data, such as a DICOM file, or a JPEG or PNG image.</em></p>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/ImagingFile">bdchm:ImagingFile</a></p>
+<p>URI: <a href="https://w3id.org/bdchm/ImagingFile">bdchm:ImagingFile</a></p>
 <div class="mermaid"> classDiagram
     class ImagingFile
     click ImagingFile href "../ImagingFile"
@@ -451,7 +451,7 @@
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
-<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+<li>from schema: https://w3id.org/bdchm</li>
 </ul>
 <h2 id="mappings">Mappings</h2>
 <table>
@@ -479,14 +479,14 @@
 <pre><code class="language-yaml">name: ImagingFile
 description: A file that contains diagnostic imaging data, such as a DICOM file, or
   a JPEG or PNG image.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: File
 attributes:
   imaging_modality:
     name: imaging_modality
     description: The modality of the imaging data contained in the file (e.g. CT,
       MRI, etc.)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - ImagingFile
@@ -495,7 +495,7 @@ attributes:
     name: anatomical_site
     description: The anatomical site from which the imaging data was acquired (e.g.
       Chest, Abdomen, etc.)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - ImagingFile
@@ -504,7 +504,7 @@ attributes:
     name: series_number
     description: The Series Instance Number for the imaging data contained in the
       file, if applicable.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - ImagingFile
@@ -514,7 +514,7 @@ attributes:
     description: (0020, 000e) Series Instance UID. The Digital Imaging and Communications
       in Medicine (DICOM) standard is the international standard to transmit, store,
       retrieve, print, process, and display medical imaging information.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - ImagingFile
@@ -524,7 +524,7 @@ attributes:
     description: (0008, 103e) Series Description. The Digital Imaging and Communications
       in Medicine (DICOM) standard is the international standard to transmit, store,
       retrieve, print, process, and display medical imaging information.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - ImagingFile
@@ -532,7 +532,7 @@ attributes:
   related_imaging_study:
     name: related_imaging_study
     description: The ImagingStudy with which this ImagingFile is associated.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - ImagingFile
@@ -542,7 +542,7 @@ attributes:
     description: (0008, 0070) Manufacturer. The Digital Imaging and Communications
       in Medicine (DICOM) standard is the international standard to transmit, store,
       retrieve, print, process, and display medical imaging information.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - ImagingFile
@@ -552,7 +552,7 @@ attributes:
     description: (0008, 1090) Manufacturer's Model Name. The Digital Imaging and Communications
       in Medicine (DICOM) standard is the international standard to transmit, store,
       retrieve, print, process, and display medical imaging information.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - ImagingFile
@@ -565,14 +565,14 @@ attributes:
 <pre><code class="language-yaml">name: ImagingFile
 description: A file that contains diagnostic imaging data, such as a DICOM file, or
   a JPEG or PNG image.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: File
 attributes:
   imaging_modality:
     name: imaging_modality
     description: The modality of the imaging data contained in the file (e.g. CT,
       MRI, etc.)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: imaging_modality
     owner: ImagingFile
@@ -583,7 +583,7 @@ attributes:
     name: anatomical_site
     description: The anatomical site from which the imaging data was acquired (e.g.
       Chest, Abdomen, etc.)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: anatomical_site
     owner: ImagingFile
@@ -594,7 +594,7 @@ attributes:
     name: series_number
     description: The Series Instance Number for the imaging data contained in the
       file, if applicable.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: series_number
     owner: ImagingFile
@@ -606,7 +606,7 @@ attributes:
     description: (0020, 000e) Series Instance UID. The Digital Imaging and Communications
       in Medicine (DICOM) standard is the international standard to transmit, store,
       retrieve, print, process, and display medical imaging information.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: series_uid
     owner: ImagingFile
@@ -618,7 +618,7 @@ attributes:
     description: (0008, 103e) Series Description. The Digital Imaging and Communications
       in Medicine (DICOM) standard is the international standard to transmit, store,
       retrieve, print, process, and display medical imaging information.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: series_description
     owner: ImagingFile
@@ -628,7 +628,7 @@ attributes:
   related_imaging_study:
     name: related_imaging_study
     description: The ImagingStudy with which this ImagingFile is associated.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: related_imaging_study
     owner: ImagingFile
@@ -640,7 +640,7 @@ attributes:
     description: (0008, 0070) Manufacturer. The Digital Imaging and Communications
       in Medicine (DICOM) standard is the international standard to transmit, store,
       retrieve, print, process, and display medical imaging information.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: manufacturer
     owner: ImagingFile
@@ -652,7 +652,7 @@ attributes:
     description: (0008, 1090) Manufacturer's Model Name. The Digital Imaging and Communications
       in Medicine (DICOM) standard is the international standard to transmit, store,
       retrieve, print, process, and display medical imaging information.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: manufacturer_model
     owner: ImagingFile
@@ -670,7 +670,7 @@ attributes:
       additional context allows "identifier" instances to be transmitted as business
       data across systems while still being able to trace them back to the system
       of origin.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     alias: identity
@@ -695,7 +695,7 @@ attributes:
   associated_participant:
     name: associated_participant
     description: A reference to the Participant that is associated with this record.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: associated_participant
     owner: ImagingFile
@@ -713,7 +713,7 @@ attributes:
   file_name:
     name: file_name
     description: The name (or part of a name) of a file (of any type).
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: file_name
     owner: ImagingFile
@@ -723,7 +723,7 @@ attributes:
   file_size:
     name: file_size
     description: The size of the data file (object) in bytes.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: file_size
     owner: ImagingFile
@@ -733,7 +733,7 @@ attributes:
   file_location:
     name: file_location
     description: A unique identifier or url for identifying or locating the file.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: file_location
     owner: ImagingFile
@@ -745,7 +745,7 @@ attributes:
     name: md5sum
     description: The 128-bit hash value expressed as a 32 digit hexadecimal number
       used as a file's digital fingerprint.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: md5sum
     owner: ImagingFile
@@ -758,7 +758,7 @@ attributes:
       to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMI-TYPE](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7).
       To describe the file format, physical medium, or dimensions of the resource,
       use the Format element.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: data_type
     owner: ImagingFile
@@ -768,7 +768,7 @@ attributes:
   data_category:
     name: data_category
     description: A broad categorization of the contents of the data file.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: data_category
     owner: ImagingFile
@@ -781,7 +781,7 @@ attributes:
       Examples of dimensions include size and duration. Recommended best practice
       is to use a controlled vocabulary such as the list of Internet Media Types [MIME]
       (http://www.iana.org/assignments/media-types/).
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: format
     owner: ImagingFile
@@ -793,7 +793,7 @@ attributes:
     description: An account of the resource. Description may include but is not limited
       to an abstract, a table of contents, a graphical representation, or a free-text
       account of the resource.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: description
     owner: ImagingFile
     domain_of:
@@ -810,7 +810,7 @@ attributes:
     description: A File from which this File is derived.  A derivation is a transformation
       of an entity into another, an update of an entity resulting in a new one, or
       the construction of a new entity based on a pre-existing entity.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: derived_from
     owner: ImagingFile
@@ -829,7 +829,7 @@ attributes:
       outside the information system and are captured in the "identifier" field. The
       "id" field is more likely to be a serially or randomly generated value that
       is assigned to the data object as it is created in a system.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     identifier: true

@@ -228,7 +228,7 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-deviceexposure">Class: DeviceExposure</h1>
 <p><em>DeviceExposures are records of a Person suggesting exposure to a foreign object. The source is typically physical objects used in procedures, measurements, or observations.</em></p>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/DeviceExposure">bdchm:DeviceExposure</a></p>
+<p>URI: <a href="https://w3id.org/bdchm/DeviceExposure">bdchm:DeviceExposure</a></p>
 <div class="mermaid"> classDiagram
     class DeviceExposure
     click DeviceExposure href "../DeviceExposure"
@@ -378,7 +378,7 @@
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
-<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+<li>from schema: https://w3id.org/bdchm</li>
 </ul>
 <h2 id="mappings">Mappings</h2>
 <table>
@@ -407,14 +407,14 @@
 description: DeviceExposures are records of a Person suggesting exposure to a foreign
   object. The source is typically physical objects used in procedures, measurements,
   or observations.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Exposure
 attributes:
   device_concept:
     name: device_concept
     description: The coded value for a device. Primarily SNOMED. The syntax for the
       enum may need work.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - DeviceExposure
@@ -423,7 +423,7 @@ attributes:
     name: exposure_provenance
     description: A value representing the provenance of the DeviceExposure record.
       From OMOP Device Types.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     domain_of:
     - DrugExposure
     - DeviceExposure
@@ -431,7 +431,7 @@ attributes:
   quantity:
     name: quantity
     description: Amount of device used. If not present in source, default to 1.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     domain_of:
     - Procedure
     - DrugExposure
@@ -447,14 +447,14 @@ attributes:
 description: DeviceExposures are records of a Person suggesting exposure to a foreign
   object. The source is typically physical objects used in procedures, measurements,
   or observations.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Exposure
 attributes:
   device_concept:
     name: device_concept
     description: The coded value for a device. Primarily SNOMED. The syntax for the
       enum may need work.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: device_concept
     owner: DeviceExposure
@@ -465,7 +465,7 @@ attributes:
     name: exposure_provenance
     description: A value representing the provenance of the DeviceExposure record.
       From OMOP Device Types.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: exposure_provenance
     owner: DeviceExposure
     domain_of:
@@ -475,7 +475,7 @@ attributes:
   quantity:
     name: quantity
     description: Amount of device used. If not present in source, default to 1.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: quantity
     owner: DeviceExposure
     domain_of:
@@ -495,7 +495,7 @@ attributes:
       additional context allows "identifier" instances to be transmitted as business
       data across systems while still being able to trace them back to the system
       of origin.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     alias: identity
@@ -520,7 +520,7 @@ attributes:
   associated_visit:
     name: associated_visit
     description: A reference to the Visit that is associated with this record.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: associated_visit
     owner: DeviceExposure
@@ -537,7 +537,7 @@ attributes:
   associated_participant:
     name: associated_participant
     description: A reference to the Participant that is associated with this record.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: associated_participant
     owner: DeviceExposure
@@ -555,7 +555,7 @@ attributes:
   age_at_exposure_start:
     name: age_at_exposure_start
     description: The Participant's age (expressed in days) at the exposure start date.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: age_at_exposure_start
     owner: DeviceExposure
@@ -568,7 +568,7 @@ attributes:
     name: age_at_exposure_end
     description: The Participant's age (expressed in days) at the exposure end date,
       if available. Otherwise equal to age_at_exposure_start.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: age_at_exposure_end
     owner: DeviceExposure
@@ -581,7 +581,7 @@ attributes:
     name: exposure_status
     description: A value indicating whether the exposure described in this record
       is present, absent, historically present, or unknown for this individual patient.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: exposure_status
     owner: DeviceExposure
@@ -600,7 +600,7 @@ attributes:
       outside the information system and are captured in the "identifier" field. The
       "id" field is more likely to be a serially or randomly generated value that
       is assigned to the data object as it is created in a system.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     identifier: true

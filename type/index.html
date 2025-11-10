@@ -375,7 +375,7 @@
 
 
 <h1 id="slot-type">Slot: type</h1>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/type">bdchm:type</a></p>
+<p>URI: <a href="https://w3id.org/bdchm/type">bdchm:type</a></p>
 <!-- no inheritance hierarchy -->
 
 <h2 id="applicable-classes">Applicable Classes</h2>
@@ -389,8 +389,13 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../QuestionnaireResponseValueInteger/">QuestionnaireResponseValueInteger</a></td>
-<td>Single-valued integer answer to the question</td>
+<td><a href="../QuestionnaireResponseValueString/">QuestionnaireResponseValueString</a></td>
+<td>Single-valued string answer to the question</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../QuestionnaireResponseValueDecimal/">QuestionnaireResponseValueDecimal</a></td>
+<td>Single-valued decimal answer to the question</td>
 <td>no</td>
 </tr>
 <tr>
@@ -409,13 +414,8 @@
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../QuestionnaireResponseValueString/">QuestionnaireResponseValueString</a></td>
-<td>Single-valued string answer to the question</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../QuestionnaireResponseValueDecimal/">QuestionnaireResponseValueDecimal</a></td>
-<td>Single-valued decimal answer to the question</td>
+<td><a href="../QuestionnaireResponseValueInteger/">QuestionnaireResponseValueInteger</a></td>
+<td>Single-valued integer answer to the question</td>
 <td>no</td>
 </tr>
 </tbody>
@@ -427,7 +427,7 @@
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
-<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+<li>from schema: https://w3id.org/bdchm</li>
 </ul>
 <h2 id="mappings">Mappings</h2>
 <table>
@@ -452,7 +452,7 @@
 <details>
 
 <pre><code class="language-yaml">name: type
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 rank: 1000
 designates_type: true
 alias: type

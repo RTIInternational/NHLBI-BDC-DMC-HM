@@ -235,7 +235,7 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-visit">Class: Visit</h1>
 <p><em>Events where Persons engage with the healthcare system for a duration of time. They are often also called “Encounters”. Visits are defined by a configuration of circumstances under which they occur, such as (i) whether the patient comes to a healthcare institution, the other way around, or the interaction is remote, (ii) whether and what kind of trained medical staff is delivering the service during the Visit, and (iii) whether the Visit is transient or for a longer period involving a stay in bed. (OMOP)</em></p>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/Visit">bdchm:Visit</a></p>
+<p>URI: <a href="https://w3id.org/bdchm/Visit">bdchm:Visit</a></p>
 <div class="mermaid"> classDiagram
     class Visit
     click Visit href "../Visit"
@@ -457,7 +457,7 @@
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
-<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+<li>from schema: https://w3id.org/bdchm</li>
 </ul>
 <h2 id="mappings">Mappings</h2>
 <table>
@@ -490,7 +490,7 @@ description: Events where Persons engage with the healthcare system for a durati
   whether and what kind of trained medical staff is delivering the service during
   the Visit, and (iii) whether the Visit is transient or for a longer period involving
   a stay in bed. (OMOP)
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 slots:
 - associated_participant
@@ -499,7 +499,7 @@ attributes:
     name: visit_category
     description: A value representing the kind (or category) of visit, like inpatient
       or outpatient.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Visit
@@ -507,7 +507,7 @@ attributes:
   age_at_visit_start:
     name: age_at_visit_start
     description: The age of the Participant (in days) at the start of the Visit.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Visit
@@ -517,7 +517,7 @@ attributes:
   age_at_visit_end:
     name: age_at_visit_end
     description: The age of the Participant (in days) at the end of the Visit.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Visit
@@ -528,7 +528,7 @@ attributes:
     name: visit_provenance
     description: A value representing the provenance of the visit record, or where
       the record comes from.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - Visit
@@ -546,14 +546,14 @@ description: Events where Persons engage with the healthcare system for a durati
   whether and what kind of trained medical staff is delivering the service during
   the Visit, and (iii) whether the Visit is transient or for a longer period involving
   a stay in bed. (OMOP)
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 attributes:
   visit_category:
     name: visit_category
     description: A value representing the kind (or category) of visit, like inpatient
       or outpatient.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: visit_category
     owner: Visit
@@ -563,7 +563,7 @@ attributes:
   age_at_visit_start:
     name: age_at_visit_start
     description: The age of the Participant (in days) at the start of the Visit.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: age_at_visit_start
     owner: Visit
@@ -575,7 +575,7 @@ attributes:
   age_at_visit_end:
     name: age_at_visit_end
     description: The age of the Participant (in days) at the end of the Visit.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: age_at_visit_end
     owner: Visit
@@ -588,7 +588,7 @@ attributes:
     name: visit_provenance
     description: A value representing the provenance of the visit record, or where
       the record comes from.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: visit_provenance
     owner: Visit
@@ -598,7 +598,7 @@ attributes:
   associated_participant:
     name: associated_participant
     description: A reference to the Participant that is associated with this record.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: associated_participant
     owner: Visit
@@ -625,7 +625,7 @@ attributes:
       outside the information system and are captured in the "identifier" field. The
       "id" field is more likely to be a serially or randomly generated value that
       is assigned to the data object as it is created in a system.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     identifier: true

@@ -235,7 +235,7 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-researchstudy">Class: ResearchStudy</h1>
 <p><em>A process where a researcher or organization plans and then executes a series of steps intended to increase the field of healthcare-related knowledge. This includes studies of safety, efficacy, comparative effectiveness and other information about medications, devices, therapies and other interventional and investigative techniques. A ResearchStudy involves the gathering of information about human or animal subjects.</em></p>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/ResearchStudy">bdchm:ResearchStudy</a></p>
+<p>URI: <a href="https://w3id.org/bdchm/ResearchStudy">bdchm:ResearchStudy</a></p>
 <div class="mermaid"> classDiagram
     class ResearchStudy
     click ResearchStudy href "../ResearchStudy"
@@ -477,7 +477,7 @@
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
-<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+<li>from schema: https://w3id.org/bdchm</li>
 </ul>
 <h2 id="mappings">Mappings</h2>
 <table>
@@ -509,7 +509,7 @@ description: A process where a researcher or organization plans and then execute
   about medications, devices, therapies and other interventional and investigative
   techniques. A ResearchStudy involves the gathering of information about human or
   animal subjects.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 slots:
 - identity
@@ -517,7 +517,7 @@ attributes:
   name:
     name: name
     description: An unabridged name of a research program, project, or study.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - ResearchStudy
@@ -528,7 +528,7 @@ attributes:
   name_shortened:
     name: name_shortened
     description: An abbreviated name of a research program, project, or study.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - ResearchStudy
@@ -536,7 +536,7 @@ attributes:
   description:
     name: description
     description: An unabridged description of a research program, project, or study.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     domain_of:
     - Participant
     - ResearchStudy
@@ -549,7 +549,7 @@ attributes:
   description_shortened:
     name: description_shortened
     description: An abbreviated description of a research program, project, or study.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - ResearchStudy
@@ -558,7 +558,7 @@ attributes:
     name: sponsor
     description: An entity that is responsible for the initiation, management, and/or
       financing of a research project.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - ResearchStudy
@@ -566,7 +566,7 @@ attributes:
   date_started:
     name: date_started
     description: The date when the research project began.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - ResearchStudy
@@ -578,7 +578,7 @@ attributes:
   date_ended:
     name: date_ended
     description: The date when the research project ended.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - ResearchStudy
@@ -590,7 +590,7 @@ attributes:
   accession_number:
     name: accession_number
     description: The accession number of the research study with the accession authority
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - ResearchStudy
@@ -598,7 +598,7 @@ attributes:
   accession_authority:
     name: accession_authority
     description: The accession authority for the research study.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - ResearchStudy
@@ -606,7 +606,7 @@ attributes:
   version:
     name: version
     description: The version number of the ResearchStudy
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - ResearchStudy
@@ -616,7 +616,7 @@ attributes:
     name: url
     description: A URL address for a resource that provides information about a research
       program, project, or study.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - ResearchStudy
@@ -627,7 +627,7 @@ attributes:
     name: part_of
     description: A reference to a parent ResearchStudy (e.g. a link to the overarching
       CPTAC ResearchStudy from a substudy of CPTAC)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - ResearchStudy
@@ -637,7 +637,7 @@ attributes:
     name: research_project_type
     description: The 'type' of ResearchStudy represented (e.g. a broad-based Program
       like 'CPTAC' or a more focused Project like 'CPTAC PDAC Discovery Study')
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - ResearchStudy
@@ -647,7 +647,7 @@ attributes:
     description: A collection of timepoint observations that are relevant to research
       projects (e.g. date of IACUC approval, date of IRB approval, date of embargo
       end, etc.)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - ResearchStudy
@@ -656,7 +656,7 @@ attributes:
   principal_investigator:
     name: principal_investigator
     description: The investigator or investigators leading a project.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - ResearchStudy
@@ -668,7 +668,7 @@ attributes:
       for datasets and/or materials, and relates to the purposes for which datasets
       and/or material might be removed, stored or used. Based on the Data Use Ontology
       : see http://www.obofoundry.org/ontology/duo.html'
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     domain_of:
     - Participant
     - ResearchStudy
@@ -686,13 +686,13 @@ description: A process where a researcher or organization plans and then execute
   about medications, devices, therapies and other interventional and investigative
   techniques. A ResearchStudy involves the gathering of information about human or
   animal subjects.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Entity
 attributes:
   name:
     name: name
     description: An unabridged name of a research program, project, or study.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: name
     owner: ResearchStudy
@@ -705,7 +705,7 @@ attributes:
   name_shortened:
     name: name_shortened
     description: An abbreviated name of a research program, project, or study.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: name_shortened
     owner: ResearchStudy
@@ -715,7 +715,7 @@ attributes:
   description:
     name: description
     description: An unabridged description of a research program, project, or study.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: description
     owner: ResearchStudy
     domain_of:
@@ -730,7 +730,7 @@ attributes:
   description_shortened:
     name: description_shortened
     description: An abbreviated description of a research program, project, or study.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: description_shortened
     owner: ResearchStudy
@@ -741,7 +741,7 @@ attributes:
     name: sponsor
     description: An entity that is responsible for the initiation, management, and/or
       financing of a research project.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: sponsor
     owner: ResearchStudy
@@ -751,7 +751,7 @@ attributes:
   date_started:
     name: date_started
     description: The date when the research project began.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: date_started
     owner: ResearchStudy
@@ -765,7 +765,7 @@ attributes:
   date_ended:
     name: date_ended
     description: The date when the research project ended.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: date_ended
     owner: ResearchStudy
@@ -779,7 +779,7 @@ attributes:
   accession_number:
     name: accession_number
     description: The accession number of the research study with the accession authority
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: accession_number
     owner: ResearchStudy
@@ -789,7 +789,7 @@ attributes:
   accession_authority:
     name: accession_authority
     description: The accession authority for the research study.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: accession_authority
     owner: ResearchStudy
@@ -799,7 +799,7 @@ attributes:
   version:
     name: version
     description: The version number of the ResearchStudy
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: version
     owner: ResearchStudy
@@ -811,7 +811,7 @@ attributes:
     name: url
     description: A URL address for a resource that provides information about a research
       program, project, or study.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: url
     owner: ResearchStudy
@@ -824,7 +824,7 @@ attributes:
     name: part_of
     description: A reference to a parent ResearchStudy (e.g. a link to the overarching
       CPTAC ResearchStudy from a substudy of CPTAC)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: part_of
     owner: ResearchStudy
@@ -836,7 +836,7 @@ attributes:
     name: research_project_type
     description: The 'type' of ResearchStudy represented (e.g. a broad-based Program
       like 'CPTAC' or a more focused Project like 'CPTAC PDAC Discovery Study')
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: research_project_type
     owner: ResearchStudy
@@ -848,7 +848,7 @@ attributes:
     description: A collection of timepoint observations that are relevant to research
       projects (e.g. date of IACUC approval, date of IRB approval, date of embargo
       end, etc.)
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: associated_timepoint
     owner: ResearchStudy
@@ -859,7 +859,7 @@ attributes:
   principal_investigator:
     name: principal_investigator
     description: The investigator or investigators leading a project.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: principal_investigator
     owner: ResearchStudy
@@ -873,7 +873,7 @@ attributes:
       for datasets and/or materials, and relates to the purposes for which datasets
       and/or material might be removed, stored or used. Based on the Data Use Ontology
       : see http://www.obofoundry.org/ontology/duo.html'
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: consents
     owner: ResearchStudy
     domain_of:
@@ -892,7 +892,7 @@ attributes:
       additional context allows "identifier" instances to be transmitted as business
       data across systems while still being able to trace them back to the system
       of origin.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     alias: identity
@@ -926,7 +926,7 @@ attributes:
       outside the information system and are captured in the "identifier" field. The
       "id" field is more likely to be a serially or randomly generated value that
       is assigned to the data object as it is created in a system.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     identifier: true

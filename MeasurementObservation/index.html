@@ -235,7 +235,7 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-measurementobservation">Class: MeasurementObservation</h1>
 <p><em>A data structure with key (observation_type) and value (value) attributes that represents a single observation, such as the hematocrit component of a complete blood count panel.</em></p>
-<p>URI: <a href="https://w3id.org/nhlbidatastage/bdchm/MeasurementObservation">bdchm:MeasurementObservation</a></p>
+<p>URI: <a href="https://w3id.org/bdchm/MeasurementObservation">bdchm:MeasurementObservation</a></p>
 <div class="mermaid"> classDiagram
     class MeasurementObservation
     click MeasurementObservation href "../MeasurementObservation"
@@ -472,7 +472,7 @@
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
-<li>from schema: https://w3id.org/nhlbidatastage/bdchm</li>
+<li>from schema: https://w3id.org/bdchm</li>
 </ul>
 <h2 id="mappings">Mappings</h2>
 <table>
@@ -501,7 +501,7 @@
 description: A data structure with key (observation_type) and value (value) attributes
   that represents a single observation, such as the hematocrit component of a complete
   blood count panel.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Observation
 attributes:
   range_low:
@@ -509,7 +509,7 @@ attributes:
     description: If reference ranges for upper and lower limit of normal as provided
       (typically by a laboratory) these are stored in the range_high and range_low
       fields. This should be set to NULL if not provided.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - MeasurementObservation
@@ -519,7 +519,7 @@ attributes:
     description: If reference ranges for upper and lower limit of normal as provided
       (typically by a laboratory) these are stored in the range_high and range_low
       fields. This should be set to NULL if not provided.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - MeasurementObservation
@@ -531,7 +531,7 @@ attributes:
     comments:
     - This field holds the "key" in the core key-value pair comprised of the observation_type
       field and the relevant value(s) field.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     domain_of:
     - Observation
     - MeasurementObservation
@@ -545,7 +545,7 @@ attributes:
 description: A data structure with key (observation_type) and value (value) attributes
   that represents a single observation, such as the hematocrit component of a complete
   blood count panel.
-from_schema: https://w3id.org/nhlbidatastage/bdchm
+from_schema: https://w3id.org/bdchm
 is_a: Observation
 attributes:
   range_low:
@@ -553,7 +553,7 @@ attributes:
     description: If reference ranges for upper and lower limit of normal as provided
       (typically by a laboratory) these are stored in the range_high and range_low
       fields. This should be set to NULL if not provided.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: range_low
     owner: MeasurementObservation
@@ -565,7 +565,7 @@ attributes:
     description: If reference ranges for upper and lower limit of normal as provided
       (typically by a laboratory) these are stored in the range_high and range_low
       fields. This should be set to NULL if not provided.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: range_high
     owner: MeasurementObservation
@@ -579,7 +579,7 @@ attributes:
     comments:
     - This field holds the "key" in the core key-value pair comprised of the observation_type
       field and the relevant value(s) field.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: observation_type
     owner: MeasurementObservation
     domain_of:
@@ -589,7 +589,7 @@ attributes:
   associated_visit:
     name: associated_visit
     description: A reference to the Visit that is associated with this record.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: associated_visit
     owner: MeasurementObservation
@@ -606,7 +606,7 @@ attributes:
   associated_participant:
     name: associated_participant
     description: A reference to the Participant that is associated with this record.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: associated_participant
     owner: MeasurementObservation
@@ -625,7 +625,7 @@ attributes:
     name: age_at_observation
     description: The Participant's age (expressed in days) when the Observation was
       made.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: age_at_observation
     owner: MeasurementObservation
@@ -637,7 +637,7 @@ attributes:
   category:
     name: category
     description: The general category of observation described
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     values_from:
     - crdch:enum_CRDCH_Observation_category
     alias: category
@@ -658,7 +658,7 @@ attributes:
       encode the result of an  Observation (e.g. a Cancer Staging system such as that
       defined by the AJCC, or variant interpretation guideline such as that provided
       by the ACMG).
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     values_from:
     - crdch:enum_CRDCH_Observation_method_type
     alias: method_type
@@ -681,7 +681,7 @@ attributes:
       entities it is about.  These fields are not needed when an Observation is embedded
       in a Specimen or other entity, where focus, subject, and specimen can be determined
       from context.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: focus
     owner: MeasurementObservation
     domain_of:
@@ -694,7 +694,7 @@ attributes:
   performed_by:
     name: performed_by
     description: The organization or group that performed the observation activity.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     alias: performed_by
     owner: MeasurementObservation
     domain_of:
@@ -709,7 +709,7 @@ attributes:
     description: A slot to hold a string value for an Observation.
     comments:
     - One and only one of the value(x) fields must be populated.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: value_string
     owner: MeasurementObservation
@@ -723,7 +723,7 @@ attributes:
     description: A slot to hold a boolean value for an Observation.
     comments:
     - One and only one of the value(x) fields must be populated.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: value_boolean
     owner: MeasurementObservation
@@ -737,7 +737,7 @@ attributes:
     description: A slot to hold a Quantity value for an Observation.
     comments:
     - One and only one of the value(x) fields must be populated.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: value_quantity
     owner: MeasurementObservation
@@ -751,7 +751,7 @@ attributes:
     description: A slot to hold an enumerated value for an Observation.
     comments:
     - One and only one of the value(x) fields must be populated.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: value_enum
     owner: MeasurementObservation
@@ -772,7 +772,7 @@ attributes:
       outside the information system and are captured in the "identifier" field. The
       "id" field is more likely to be a serially or randomly generated value that
       is assigned to the data object as it is created in a system.
-    from_schema: https://w3id.org/nhlbidatastage/bdchm
+    from_schema: https://w3id.org/bdchm
     rank: 1000
     slot_uri: schema:identifier
     identifier: true
