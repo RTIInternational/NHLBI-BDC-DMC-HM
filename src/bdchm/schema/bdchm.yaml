@@ -4,8 +4,6 @@ name: bdchm
 title: BioData Catalyst Harmonized Model (bdchm)
 description: |-
   This is the harmonized data model for use in the BioData Catalyst project.
-  This line is junk just to test json generation on push. Will delete it after 
-  .github/workflows/deploy_bdchm_docs.yml is working.
 license: MIT
 see_also:
   - https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/
@@ -672,7 +670,6 @@ classes:
     attributes:
       document_type:
         description: The high-level type of the document (e.g.  'publication', 'pathology report')
-        values_from: crdch:enum_CRDCH_Document_document_type
         multivalued: false
         range: string
         required: false
@@ -712,7 +709,6 @@ classes:
         - value: Aliquot
         - value: Analyte
         - value: Slide
-        values_from: crdch:enum_CRDCH_Specimen_specimen_type
         multivalued: false
         range: SpecimenTypeEnum
         required: false
@@ -725,7 +721,6 @@ classes:
         - value: Repli-G (Qiagen) DNA
         - value: RNA
         - value: FFPE RNA
-        values_from: crdch:enum_CRDCH_Specimen_analyte_type
         multivalued: false
         range: AnalyteTypeEnum
         required: false
@@ -826,7 +821,6 @@ classes:
         - value: Pleural Effusion
         - value: Human Original Cells
         - value: Liquid Suspension Cell Line
-        values_from: crdch:enum_CRDCH_Specimen_cellular_composition_type
         multivalued: false
         range: string
         required: false
@@ -843,7 +837,6 @@ classes:
         - value: Top
         - value: Bottom
         - value: Unknown
-        values_from: crdch:enum_CRDCH_Specimen_section_location
         multivalued: false
         range: SectionLocationEnum
         required: false
@@ -867,7 +860,6 @@ classes:
         - value: Sputum specimen container
         - value: Cell culture flask
         - value: Glass slide
-        values_from: crdch:enum_CRDCH_SpecimenContainer_container_type
         multivalued: false
         range: string
         required: false
@@ -952,7 +944,6 @@ classes:
         - value: Other
         - value: Unknown
         - value: NotReported
-        values_from: crdch:enum_CRDCH_SpecimenCreationActivity_derivation_method_type
         multivalued: false
         range: string
         required: false
@@ -1047,7 +1038,6 @@ classes:
         - value: Formalin fixed-unbuffered
         - value: Formalin fixed-buffered
         - value: OCT
-        values_from: crdch:enum_CRDCH_SpecimenProcessingActivity_method_type
         multivalued: false
         range: string
         required: false
@@ -1105,7 +1095,6 @@ classes:
         - value: frozen in vapor phase
         - value: paraffin block
         - value: RNAlater at 4C
-        values_from: crdch:enum_CRDCH_SpecimenStorageActivity_method_type
         multivalued: false
         range: string
         required: false
@@ -1179,7 +1168,6 @@ classes:
         - value: cell culture
         - value: tissue culture
         - value: organoid
-        values_from: crdch:enum_CRDCH_BiologicProduct_product_type
         multivalued: false
         range: string
         required: false
@@ -1210,7 +1198,6 @@ classes:
         - value: toluene
         - value: formalin
         - value: DMEM
-        values_from: crdch:enum_CRDCH_Substance_substance_type
         multivalued: false
         range: string
         required: false
@@ -1222,7 +1209,6 @@ classes:
         - value: fixative
         - value: mounting medium
         - value: collection media
-        values_from: crdch:enum_CRDCH_Substance_role
         multivalued: true
         range: string
         required: false
@@ -1270,7 +1256,6 @@ classes:
         - value: Adenoid
         - value: Adipose
         - value: Adrenal
-        values_from: crdch:enum_CRDCH_BodySite_site
         multivalued: false
         range: string
         required: true
@@ -1280,7 +1265,6 @@ classes:
         - value: left
         - value: right
         - value: bilateral
-        values_from: crdch:enum_CRDCH_BodySite_qualifier
         multivalued: true
         range: string
         required: false
@@ -1291,7 +1275,6 @@ classes:
     attributes:
       category:
         description: The general category of observation set described
-        values_from: crdch:enum_CRDCH_ObservationSet_category
         multivalued: false
         range: string
         required: false
@@ -1307,7 +1290,6 @@ classes:
         description: The type of method used in generating the ObservationSet
         comments:
         - This may be a type of observational, measurement, experimental, or computational method specifying how to generate data (e.g. "manual counting", "bright field microscopy"). Or a Guideline or SOP specifying how to interpret data and/or encode the result of an  Observation (e.g. a Cancer Staging system such as that defined by the AJCC, or variant interpretation guideline such as that provided by the ACMG).
-        values_from: crdch:enum_CRDCH_ObservationSet_method_type
         multivalued: true
         range: string
         required: false
@@ -1332,7 +1314,6 @@ classes:
           ucum_code: d
       category:
         description: The general category of observation described
-        values_from: crdch:enum_CRDCH_Observation_category
         multivalued: false
         range: string
         required: false
@@ -1346,7 +1327,6 @@ classes:
         description: A type of method used in generating the Observation result.
         comments:
         - This may be a type of observational, measurement, experimental, or computational method specifying how to generate data (e.g. "manual counting", "bright field microscopy",). Or a Guideline or SOP specifying how to interpret data and/or encode the result of an  Observation (e.g. a Cancer Staging system such as that defined by the AJCC, or variant interpretation guideline such as that provided by the ACMG).
-        values_from: crdch:enum_CRDCH_Observation_method_type
         multivalued: false
         range: string
         required: false
@@ -1480,7 +1460,6 @@ slots:
     range: Observation
     description: A set of one or more observations.
     multivalued: true
-
 
 enums:
   BaseEnum:
