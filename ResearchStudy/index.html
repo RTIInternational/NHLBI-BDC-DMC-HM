@@ -305,7 +305,16 @@
 
       ResearchStudy : principal_investigator
 
+      ResearchStudy : program
+
       ResearchStudy : research_project_type
+
+
+
+
+    ResearchStudy --&gt; "0..1" ResearchProjectTypeEnum : research_project_type
+    click ResearchProjectTypeEnum href "../ResearchProjectTypeEnum"
+
 
       ResearchStudy : sponsor
 
@@ -413,8 +422,14 @@
 </tr>
 <tr>
 <td><a href="../research_project_type/">research_project_type</a></td>
+<td>0..1 <br/> <a href="../ResearchProjectTypeEnum/">ResearchProjectTypeEnum</a></td>
+<td>The 'type' of ResearchStudy represented by this object (e</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../program/">program</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td>The 'type' of ResearchStudy represented (e</td>
+<td>The name of the overarching research program under which this ResearchStudy i...</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -635,8 +650,17 @@ attributes:
     range: ResearchStudy
   research_project_type:
     name: research_project_type
-    description: The 'type' of ResearchStudy represented (e.g. a broad-based Program
-      like 'CPTAC' or a more focused Project like 'CPTAC PDAC Discovery Study')
+    description: The 'type' of ResearchStudy represented by this object (e.g. 'Consortium',
+      'Study')
+    from_schema: https://w3id.org/bdchm
+    rank: 1000
+    domain_of:
+    - ResearchStudy
+    range: ResearchProjectTypeEnum
+  program:
+    name: program
+    description: The name of the overarching research program under which this ResearchStudy
+      is conducted (e.g. 'Heartshare', 'TOPMed', etc.)
     from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
@@ -834,11 +858,22 @@ attributes:
     range: ResearchStudy
   research_project_type:
     name: research_project_type
-    description: The 'type' of ResearchStudy represented (e.g. a broad-based Program
-      like 'CPTAC' or a more focused Project like 'CPTAC PDAC Discovery Study')
+    description: The 'type' of ResearchStudy represented by this object (e.g. 'Consortium',
+      'Study')
     from_schema: https://w3id.org/bdchm
     rank: 1000
     alias: research_project_type
+    owner: ResearchStudy
+    domain_of:
+    - ResearchStudy
+    range: ResearchProjectTypeEnum
+  program:
+    name: program
+    description: The name of the overarching research program under which this ResearchStudy
+      is conducted (e.g. 'Heartshare', 'TOPMed', etc.)
+    from_schema: https://w3id.org/bdchm
+    rank: 1000
+    alias: program
     owner: ResearchStudy
     domain_of:
     - ResearchStudy
