@@ -1424,6 +1424,16 @@ export enum CauseOfDeathEnum {
     
 };
 /**
+* Values describing types of research projects.
+*/
+export enum ResearchProjectTypeEnum {
+    
+    /** Consortium */
+    CONSORTIUM = "CONSORTIUM",
+    /** Study */
+    Study = "Study",
+};
+/**
 * Values describing the types of an Observation.
 */
 export enum BaseObservationTypeEnum {
@@ -1537,8 +1547,10 @@ export interface ResearchStudy extends Entity {
     url?: string,
     /** A reference to a parent ResearchStudy (e.g. a link to the overarching CPTAC ResearchStudy from a substudy of CPTAC) */
     part_of?: ResearchStudyId,
-    /** The 'type' of ResearchStudy represented (e.g. a broad-based Program like 'CPTAC' or a more focused Project like 'CPTAC PDAC Discovery Study') */
+    /** The 'type' of ResearchStudy represented by this object (e.g. 'Consortium', 'Study') */
     research_project_type?: string,
+    /** The name of the overarching research program under which this ResearchStudy is conducted (e.g. 'Heartshare', 'TOPMed', etc.) */
+    program?: string,
     /** A collection of timepoint observations that are relevant to research projects (e.g. date of IACUC approval, date of IRB approval, date of embargo end, etc.) */
     associated_timepoint?: TimePointId[],
     /** The investigator or investigators leading a project. */
