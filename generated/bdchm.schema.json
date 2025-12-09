@@ -2686,6 +2686,15 @@
             "title": "RaceEnum",
             "type": "string"
         },
+        "ResearchProjectTypeEnum": {
+            "description": "Values describing types of research projects.",
+            "enum": [
+                "CONSORTIUM",
+                "Study"
+            ],
+            "title": "ResearchProjectTypeEnum",
+            "type": "string"
+        },
         "ResearchStudy": {
             "additionalProperties": false,
             "description": "A process where a researcher or organization plans and then executes a series of steps intended to increase the field of healthcare-related knowledge. This includes studies of safety, efficacy, comparative effectiveness and other information about medications, devices, therapies and other interventional and investigative techniques. A ResearchStudy involves the gathering of information about human or animal subjects.",
@@ -2797,12 +2806,16 @@
                         "null"
                     ]
                 },
-                "research_project_type": {
-                    "description": "The 'type' of ResearchStudy represented (e.g. a broad-based Program like 'CPTAC' or a more focused Project like 'CPTAC PDAC Discovery Study')",
+                "program": {
+                    "description": "The name of the overarching research program under which this ResearchStudy is conducted (e.g. 'Heartshare', 'TOPMed', etc.)",
                     "type": [
                         "string",
                         "null"
                     ]
+                },
+                "research_project_type": {
+                    "$ref": "#/$defs/ResearchProjectTypeEnum",
+                    "description": "The 'type' of ResearchStudy represented by this object (e.g. 'Consortium', 'Study')"
                 },
                 "sponsor": {
                     "description": "An entity that is responsible for the initiation, management, and/or financing of a research project.",
@@ -2967,12 +2980,16 @@
                         "null"
                     ]
                 },
-                "research_project_type": {
-                    "description": "The 'type' of ResearchStudy represented (e.g. a broad-based Program like 'CPTAC' or a more focused Project like 'CPTAC PDAC Discovery Study')",
+                "program": {
+                    "description": "The name of the overarching research program under which this ResearchStudy is conducted (e.g. 'Heartshare', 'TOPMed', etc.)",
                     "type": [
                         "string",
                         "null"
                     ]
+                },
+                "research_project_type": {
+                    "$ref": "#/$defs/ResearchProjectTypeEnum",
+                    "description": "The 'type' of ResearchStudy represented by this object (e.g. 'Consortium', 'Study')"
                 },
                 "sponsor": {
                     "description": "An entity that is responsible for the initiation, management, and/or financing of a research project.",
