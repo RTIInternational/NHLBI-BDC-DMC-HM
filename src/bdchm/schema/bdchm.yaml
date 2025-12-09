@@ -166,8 +166,11 @@ classes:
         range: ResearchStudy
         description: A reference to a parent ResearchStudy (e.g. a link to the overarching CPTAC ResearchStudy from a substudy of CPTAC)
       research_project_type:
+        range: ResearchProjectTypeEnum
+        description: The 'type' of ResearchStudy represented by this object (e.g. 'Consortium', 'Study')
+      program:
         range: string
-        description: The 'type' of ResearchStudy represented (e.g. a broad-based Program like 'CPTAC' or a more focused Project like 'CPTAC PDAC Discovery Study')
+        description: The name of the overarching research program under which this ResearchStudy is conducted (e.g. 'Heartshare', 'TOPMed', etc.)
       associated_timepoint:
         range: TimePoint
         multivalued: true
@@ -3581,6 +3584,14 @@ enums:
       A constrained set of enumerative values containing the ICD-10 diagnoses.
     reachable_from:
       source_ontology: bioregistry:icd10cm
+
+  ResearchProjectTypeEnum:
+    description: Values describing types of research projects.
+    permissible_values:
+      CONSORTIUM:
+        description: Consortium
+      Study:
+        description: Study
 
   BaseObservationTypeEnum:
     description: Values describing the types of an Observation.
