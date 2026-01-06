@@ -1932,7 +1932,6 @@ enums:
         description: was of unknown status in the patient at observation time.
 
   HistoricalStatusEnum:
-    is_a: StatusEnum
     description: >-
       A constrained set of enumerative values indicating whether something is present, absent, historical, or its status is unknown.
     inherits:
