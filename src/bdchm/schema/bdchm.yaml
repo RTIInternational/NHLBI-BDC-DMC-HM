@@ -207,6 +207,9 @@ classes:
     description: >-
       Events where Persons engage with the healthcare system for a duration of time. They are often also called “Encounters”. Visits are defined by a configuration of circumstances under which they occur, such as (i) whether the patient comes to a healthcare institution, the other way around, or the interaction is remote, (ii) whether and what kind of trained medical staff is delivering the service during the Visit, and (iii) whether the Visit is transient or for a longer period involving a stay in bed. (OMOP)
     attributes:
+      name:
+        range: string
+        description: A free text field or label used to refer to the visit.
       visit_category:
         range: VisitCategoryEnum
         description: A value representing the kind (or category) of visit, like inpatient or outpatient.
