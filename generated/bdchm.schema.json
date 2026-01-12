@@ -4246,6 +4246,13 @@
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
                     "type": "string"
                 },
+                "name": {
+                    "description": "A free text field or label used to refer to the visit.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "visit_category": {
                     "$ref": "#/$defs/VisitCategoryEnum",
                     "description": "A value representing the kind (or category) of visit, like inpatient or outpatient."
