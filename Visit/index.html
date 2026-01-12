@@ -257,6 +257,8 @@
 
       Visit : id
 
+      Visit : name
+
       Visit : visit_category
 
 
@@ -299,6 +301,12 @@
 <td><a href="../associated_participant/">associated_participant</a></td>
 <td>0..1 <br/> <a href="../Participant/">Participant</a></td>
 <td>A reference to the Participant that is associated with this record</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../name/">name</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>A free text field or label used to refer to the visit</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -495,6 +503,17 @@ is_a: Entity
 slots:
 - associated_participant
 attributes:
+  name:
+    name: name
+    description: A free text field or label used to refer to the visit.
+    from_schema: https://w3id.org/bdchm
+    domain_of:
+    - ResearchStudy
+    - Visit
+    - Organization
+    - Questionnaire
+    - QuestionnaireResponseValue
+    range: string
   visit_category:
     name: visit_category
     description: A value representing the kind (or category) of visit, like inpatient
@@ -549,6 +568,19 @@ description: Events where Persons engage with the healthcare system for a durati
 from_schema: https://w3id.org/bdchm
 is_a: Entity
 attributes:
+  name:
+    name: name
+    description: A free text field or label used to refer to the visit.
+    from_schema: https://w3id.org/bdchm
+    alias: name
+    owner: Visit
+    domain_of:
+    - ResearchStudy
+    - Visit
+    - Organization
+    - Questionnaire
+    - QuestionnaireResponseValue
+    range: string
   visit_category:
     name: visit_category
     description: A value representing the kind (or category) of visit, like inpatient
