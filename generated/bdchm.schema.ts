@@ -1579,6 +1579,8 @@ export interface Consent extends Entity {
 export interface Visit extends Entity {
     /** A reference to the Participant that is associated with this record. */
     associated_participant?: ParticipantId,
+    /** A free text field or label used to refer to the visit. */
+    name?: string,
     /** A value representing the kind (or category) of visit, like inpatient or outpatient. */
     visit_category?: string,
     /** The age of the Participant (in days) at the start of the Visit. */
