@@ -239,6 +239,15 @@
 
       Condition : age_at_condition_start
 
+      Condition : associated_evidence
+
+
+
+
+    Condition --&gt; "*" Entity : associated_evidence
+    click Entity href "../Entity"
+
+
       Condition : associated_participant
 
 
@@ -387,6 +396,12 @@
 <td>direct</td>
 </tr>
 <tr>
+<td><a href="../associated_evidence/">associated_evidence</a></td>
+<td>* <br/> <a href="../Entity/">Entity</a></td>
+<td>Evidence supporting the assertion of the condition (e</td>
+<td>direct</td>
+</tr>
+<tr>
 <td><a href="../id/">id</a></td>
 <td>1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
 <td>The 'logical' identifier of the entity within the system of record</td>
@@ -505,6 +520,16 @@ attributes:
     domain_of:
     - Condition
     range: FamilyRelationshipEnum
+  associated_evidence:
+    name: associated_evidence
+    description: Evidence supporting the assertion of the condition (e.g., an ImagingStudy,
+      Procedure, Observation)
+    from_schema: https://w3id.org/bdchm
+    rank: 1000
+    domain_of:
+    - Condition
+    range: Entity
+    multivalued: true
 
 </code></pre>
 </details>
@@ -603,6 +628,18 @@ attributes:
     domain_of:
     - Condition
     range: FamilyRelationshipEnum
+  associated_evidence:
+    name: associated_evidence
+    description: Evidence supporting the assertion of the condition (e.g., an ImagingStudy,
+      Procedure, Observation)
+    from_schema: https://w3id.org/bdchm
+    rank: 1000
+    alias: associated_evidence
+    owner: Condition
+    domain_of:
+    - Condition
+    range: Entity
+    multivalued: true
   identity:
     name: identity
     description: A 'business' identifier or accession number for the entity, typically

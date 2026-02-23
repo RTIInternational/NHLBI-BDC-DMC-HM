@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/associated_participant/">
+        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/associated_evidence/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>Slot: associated_participant - BioData Catalyst Harmonized Model</title>
+        <title>Slot: associated_evidence - BioData Catalyst Harmonized Model</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-associated_participant" class="md-skip">
+        <a href="#slot-associated_evidence" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: associated_participant
+              Slot: associated_evidence
             
           </span>
         </div>
@@ -374,9 +374,9 @@
   
 
 
-<h1 id="slot-associated_participant">Slot: associated_participant</h1>
-<p><em>A reference to the Participant that is associated with this record.</em></p>
-<p>URI: <a href="https://w3id.org/bdchm/associated_participant">bdchm:associated_participant</a></p>
+<h1 id="slot-associated_evidence">Slot: associated_evidence</h1>
+<p><em>Evidence supporting the assertion of the condition (e.g., an ImagingStudy, Procedure, Observation)</em></p>
+<p>URI: <a href="https://w3id.org/bdchm/associated_evidence">bdchm:associated_evidence</a></p>
 <!-- no inheritance hierarchy -->
 
 <h2 id="applicable-classes">Applicable Classes</h2>
@@ -390,110 +390,20 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../ObservationSet/">ObservationSet</a></td>
-<td>A structured object to hold related Observations in a set</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../SdohObservation/">SdohObservation</a></td>
-<td>A data structure with key (observation_type) and value (value) attributes tha...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Exposure/">Exposure</a></td>
-<td>Exposures are records of a Person suggesting exposure to a medication, device...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../File/">File</a></td>
-<td>Abstract class for various kinds of files</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../DrugExposure/">DrugExposure</a></td>
-<td>DrugExposures are records of a Person suggesting exposure to a medication</td>
-<td>no</td>
-</tr>
-<tr>
 <td><a href="../Condition/">Condition</a></td>
 <td>Conditions are records of a Person suggesting the presence of a disease or me...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Visit/">Visit</a></td>
-<td>Events where Persons engage with the healthcare system for a duration of time</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Procedure/">Procedure</a></td>
-<td>Procedure contains records of activities or processes ordered by, or carried ...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Demography/">Demography</a></td>
-<td>Demographics about an individual or animal receiving care or other health-rel...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../SpecimenQualityObservation/">SpecimenQualityObservation</a></td>
-<td>A structured object that describes a characteristic of a specimen indicative ...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../MeasurementObservationSet/">MeasurementObservationSet</a></td>
-<td>A structured object to hold related Observations in a set</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../SpecimenQuantityObservation/">SpecimenQuantityObservation</a></td>
-<td>A structured object that describes a single data item about the quantity of a...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../MeasurementObservation/">MeasurementObservation</a></td>
-<td>A data structure with key (observation_type) and value (value) attributes tha...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../SdohObservationSet/">SdohObservationSet</a></td>
-<td>A structured object to hold related Observations in a set</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../ImagingFile/">ImagingFile</a></td>
-<td>A file that contains diagnostic imaging data, such as a DICOM file, or a JPEG...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Observation/">Observation</a></td>
-<td>A data structure with key (observation_type) and value (value) attributes tha...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../ImagingStudy/">ImagingStudy</a></td>
-<td>An ImagingStudy is a set of images produced in a single study (one or more se...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../DeviceExposure/">DeviceExposure</a></td>
-<td>DeviceExposures are records of a Person suggesting exposure to a foreign obje...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../DimensionalObservationSet/">DimensionalObservationSet</a></td>
-<td>A set of one or more discrete observations about the physical dimensions of a...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../DimensionalObservation/">DimensionalObservation</a></td>
-<td>A structured object that describes a single data item about the physical dime...</td>
 <td>no</td>
 </tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../Participant/">Participant</a></li>
+<li>
+<p>Range: <a href="../Entity/">Entity</a></p>
+</li>
+<li>
+<p>Multivalued: True</p>
+</li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
@@ -511,33 +421,28 @@
 <tbody>
 <tr>
 <td>self</td>
-<td>bdchm:associated_participant</td>
+<td>bdchm:associated_evidence</td>
 </tr>
 <tr>
 <td>native</td>
-<td>bdchm:associated_participant</td>
+<td>bdchm:associated_evidence</td>
 </tr>
 </tbody>
 </table>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: associated_participant
-description: A reference to the Participant that is associated with this record.
+<pre><code class="language-yaml">name: associated_evidence
+description: Evidence supporting the assertion of the condition (e.g., an ImagingStudy,
+  Procedure, Observation)
 from_schema: https://w3id.org/bdchm
 rank: 1000
-alias: associated_participant
+alias: associated_evidence
+owner: Condition
 domain_of:
-- Demography
-- Visit
 - Condition
-- Procedure
-- ImagingStudy
-- Exposure
-- File
-- ObservationSet
-- Observation
-range: Participant
+range: Entity
+multivalued: true
 
 </code></pre>
 
