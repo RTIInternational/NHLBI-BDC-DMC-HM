@@ -1780,6 +1780,8 @@ export interface Condition extends Entity {
     condition_severity?: string,
     /** A value indicating the relationship between the Participant to which the Condition is attributed and the individual who had the reported Condition.  If the Condition is affecting the participant themselves, then 'Self' is the appropriate relationship.  If the Condition is affecting a family member (e.g. a parent of the Participant) then an appropriate relationship should be provided (e.g. 'Parent') */
     relationship_to_participant?: string,
+    /** Evidence supporting the assertion of the condition (e.g., an ImagingStudy, Procedure, Observation) */
+    associated_evidence?: EntityId[],
 }
 
 

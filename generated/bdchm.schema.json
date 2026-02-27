@@ -172,6 +172,16 @@
                         "null"
                     ]
                 },
+                "associated_evidence": {
+                    "description": "Evidence supporting the assertion of the condition (e.g., an ImagingStudy, Procedure, Observation)",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
                     "type": [
