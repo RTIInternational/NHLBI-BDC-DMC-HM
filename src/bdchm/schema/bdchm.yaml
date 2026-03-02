@@ -1967,52 +1967,52 @@ enums:
     description: Source of drug exposure record
     comments: Taken from OMOP Drug Type values; "select * from concept where vocabulary_id = 'Drug Type';" Do we need descriptions beyond the name?
     permissible_values:
-      RANDOMIZED DRUG:
+      RANDOMIZED_DRUG:
         description: Randomized Drug
         meaning: OMOP:44777970                                                                                              
-      PATIENT SELF-REPORTED MEDICATION:
+      PATIENT_SELF_REPORTED_MEDICATION:
         description: Patient Self-Reported Medication
         meaning: OMOP:44787730                                                            
-      NLP DERIVED:
+      NLP_DERIVED:
         description: NLP derived
         meaning: OMOP:32426                                                                                                         
-      PRESCRIPTION DISPENSED IN PHARMACY:
+      PRESCRIPTION_DISPENSED_IN_PHARMACY:
         description: Prescription dispensed in pharmacy
         meaning: OMOP:38000175                                                        
-      PHYSICIAN ADMINISTERED DRUG (IDENTIFIED FROM EHR ORDER):
+      PHYSICIAN_ADMINISTERED_DRUG_IDENTIFIED_FROM_EHR_ORDER:
         description: Physician administered drug (identified from EHR order)
         meaning: OMOP:581373                
-      DISPENSED IN OUTPATIENT OFFICE:
+      DISPENSED_IN_OUTPATIENT_OFFICE:
         description: Dispensed in Outpatient office
         meaning: OMOP:581452                                                                  
-      PRESCRIPTION DISPENSED THROUGH MAIL ORDER:
+      PRESCRIPTION_DISPENSED_THROUGH_MAIL_ORDER:
         description: Prescription dispensed through mail order
         meaning: OMOP:38000176                                          
-      PRESCRIPTION WRITTEN:
+      PRESCRIPTION_WRITTEN:
         description: Prescription written
         meaning: OMOP:38000177                                                                                    
-      MEDICATION LIST ENTRY:
+      MEDICATION_LIST_ENTRY:
         description: Medication list entry
         meaning: OMOP:38000178                                                                                  
-      PHYSICIAN ADMINISTERED DRUG (IDENTIFIED AS PROCEDURE):
+      PHYSICIAN_ADMINISTERED_DRUG_IDENTIFIED_AS_PROCEDURE:
         description: Physician administered drug (identified as procedure)
         meaning: OMOP:38000179                  
-      INPATIENT ADMINISTRATION:
+      INPATIENT_ADMINISTRATION:
         description: Inpatient administration
         meaning: OMOP:38000180                                                                            
-      DRUG ERA - 0 DAYS PERSISTENCE WINDOW:
+      DRUG_ERA_0_DAYS_PERSISTENCE_WINDOW:
         description: Drug era - 0 days persistence window
         meaning: OMOP:38000181                                                    
-      DRUG ERA - 30 DAYS PERSISTENCE WINDOW:
+      DRUG_ERA_30_DAYS_PERSISTENCE_WINDOW:
         description: Drug era - 30 days persistence window
         meaning: OMOP:38000182                                                  
-      PHYSICIAN ADMINISTERED DRUG (IDENTIFIED FROM EHR PROBLEM LIST):
+      PHYSICIAN_ADMINISTERED_DRUG_IDENTIFIED_FROM_EHR_PROBLEM_LIST:
         description: Physician administered drug (identified from EHR problem list)
         meaning: OMOP:43542356
-      PHYSICIAN ADMINISTERED DRUG (IDENTIFIED FROM REFERRAL RECORD):
+      PHYSICIAN_ADMINISTERED_DRUG_IDENTIFIED_FROM_REFERRAL_RECORD:
         description: Physician administered drug (identified from referral record)
         meaning: OMOP:43542357  
-      PHYSICIAN ADMINISTERED DRUG (IDENTIFIED FROM EHR OBSERVATION):
+      PHYSICIAN_ADMINISTERED_DRUG_IDENTIFIED_FROM_EHR_OBSERVATION:
         description: Physician administered drug (identified from EHR observation)
         meaning: OMOP:43542358  
 
@@ -2020,7 +2020,7 @@ enums:
     description: Routes of drug administration.
     comments: OMOP contains 165 standard values; `select * from concept where domain_id = 'Route' and invalid_reason is null and standard_concept is not null;` from SNOMED. Do we need descriptions beyond the name?
     permissible_values:
-      ARTERIOVENOUS FISTULA:
+      ARTERIOVENOUS_FISTULA:
         description: Arteriovenous fistula
         meaning: OMOP:44783786                     
       HAEMODIAFILTRATION:
@@ -2035,19 +2035,19 @@ enums:
       INTRAMURAL:
         description: Intramural
         meaning: OMOP:46272926                                           
-      INTRACATHETER INSTILLATION:
+      INTRACATHETER_INSTILLATION:
         description: Intracatheter instillation
         meaning: OMOP:605428             
       SUBLABIAL:
         description: Sublabial
         meaning: OMOP:600817                                               
-      INTRA-ARTICULAR:
+      INTRA_ARTICULAR:
         description: Intra-articular
         meaning: OMOP:4006860                                  
       INTRADIALYTIC:
         description: Intradialytic
         meaning: OMOP:618805                                       
-      ARTERIOVENOUS GRAFT:
+      ARTERIOVENOUS_GRAFT:
         description: Arteriovenous graft
         meaning: OMOP:762840                           
       OTIC:
@@ -2059,7 +2059,7 @@ enums:
       VAGINAL:
         description: Vaginal
         meaning: OMOP:4057765                                                  
-      ROUTE OF ADMINISTRATION VALUE:
+      ROUTE_OF_ADMINISTRATION_VALUE:
         description: Route of administration value
         meaning: OMOP:4106215      
       GASTROSTOMY:
@@ -2125,13 +2125,13 @@ enums:
       SUBCONJUNCTIVAL:
         description: Subconjunctival
         meaning: OMOP:4163770                                  
-      MUCOUS FISTULA:
+      MUCOUS_FISTULA:
         description: Mucous fistula
         meaning: OMOP:4171243                                    
       INTRAPROSTATIC:
         description: Intraprostatic
         meaning: OMOP:4171725                                    
-      INTRAVENOUS PERIPHERAL:
+      INTRAVENOUS_PERIPHERAL:
         description: Intravenous peripheral
         meaning: OMOP:4171884                    
       PERIOSTEAL:
@@ -2164,7 +2164,7 @@ enums:
       INTRATYMPANIC:
         description: Intratympanic
         meaning: OMOP:4168656                                      
-      GASTRO-INTESTINAL STOMA:
+      GASTRO_INTESTINAL_STOMA:
         description: Gastro-intestinal stoma
         meaning: OMOP:4168665                  
       INTRAPULMONARY:
@@ -2173,7 +2173,7 @@ enums:
       INTRASINAL:
         description: Intrasinal
         meaning: OMOP:4169440                                            
-      TUMOR CAVITY:
+      TUMOR_CAVITY:
         description: Tumor cavity
         meaning: OMOP:4169472                                        
       SUBMUCOSAL:
@@ -2182,7 +2182,7 @@ enums:
       INTRADUCTAL:
         description: Intraductal
         meaning: OMOP:4170083                                          
-      INTRAVENOUS CENTRAL:
+      INTRAVENOUS_CENTRAL:
         description: Intravenous central
         meaning: OMOP:4170113                          
       PARAVERTEBRAL:
@@ -2194,7 +2194,7 @@ enums:
       LARYNGEAL:
         description: Laryngeal
         meaning: OMOP:4170440                                              
-      SURGICAL CAVITY:
+      SURGICAL_CAVITY:
         description: Surgical cavity
         meaning: OMOP:4170771                                  
       INTRAVENOUS:
@@ -2209,7 +2209,7 @@ enums:
       ENDOTRACHEOPULMONARY:
         description: Endotracheopulmonary
         meaning: OMOP:4186832                        
-      EXTRA-AMNIOTIC:
+      EXTRA_AMNIOTIC:
         description: Extra-amniotic
         meaning: OMOP:4186833                                    
       GASTROENTERAL:
@@ -2239,13 +2239,13 @@ enums:
       OPHTHALMIC:
         description: Ophthalmic
         meaning: OMOP:4184451                                            
-      BODY CAVITY:
+      BODY_CAVITY:
         description: Body cavity
         meaning: OMOP:4222254                                          
       INTRAOSSEOUS:
         description: Intraosseous
         meaning: OMOP:4213522                                        
-      INTRAVENTRICULAR ROUTE - CARDIAC:
+      INTRAVENTRICULAR_ROUTE_CARDIAC:
         description: Intraventricular route - cardiac
         meaning: OMOP:4222259
       INTRABILIARY:
@@ -2272,7 +2272,7 @@ enums:
       TRANSDERMAL:
         description: Transdermal
         meaning: OMOP:4262099                                          
-      INTRA-ARTERIAL:
+      INTRA_ARTERIAL:
         description: Intra-arterial
         meaning: OMOP:4240824                                    
       INTRAPERITONEAL:
@@ -2386,7 +2386,7 @@ enums:
       FISTULA:
         description: Fistula
         meaning: OMOP:4304277                                                  
-      SURGICAL DRAIN:
+      SURGICAL_DRAIN:
         description: Surgical drain
         meaning: OMOP:4304412                                    
       URETERAL:
@@ -2395,7 +2395,7 @@ enums:
       EPILESIONAL:
         description: Epilesional
         meaning: OMOP:35608078                                         
-      EXTRACORPOREAL HEMODIALYSIS:
+      EXTRACORPOREAL_HEMODIALYSIS:
         description: Extracorporeal hemodialysis
         meaning: OMOP:35624178         
       SUPRACHOROIDAL:
@@ -2404,7 +2404,7 @@ enums:
       EXTRACORPOREAL:
         description: Extracorporeal
         meaning: OMOP:37018288                                   
-      INTRACORPORUS CAVERNOSUM:
+      INTRACORPORUS_CAVERNOSUM:
         description: Intracorporus cavernosum
         meaning: OMOP:37174549               
       INTRAGLANDULAR:
@@ -2419,7 +2419,7 @@ enums:
       PERITUMORAL:
         description: Peritumoral
         meaning: OMOP:37207463                                         
-      POSTERIOR JUXTASCLERAL:
+      POSTERIOR_JUXTASCLERAL:
         description: Posterior juxtascleral
         meaning: OMOP:37207464                   
       SUBRETINAL:
@@ -2458,7 +2458,7 @@ enums:
       PERIDURAL:
         description: Peridural
         meaning: OMOP:40490896                                             
-      LOWER RESPIRATORY TRACT:
+      LOWER_RESPIRATORY_TRACT:
         description: Lower respiratory tract
         meaning: OMOP:40490898                 
       INTRAMAMMARY:
@@ -2497,7 +2497,7 @@ enums:
       INTRALINGUAL:
         description: Intralingual
         meaning: OMOP:40493227                                       
-      RESPIRATORY TRACT:
+      RESPIRATORY_TRACT:
         description: Respiratory tract
         meaning: OMOP:40486069                             
       INTRAHEPATIC:
@@ -2509,7 +2509,7 @@ enums:
       INTRAEPICARDIAL:
         description: Intraepicardial
         meaning: OMOP:40487473                                 
-      DIGESTIVE TRACT:
+      DIGESTIVE_TRACT:
         description: Digestive tract
         meaning: OMOP:40487501                                 
       OCULAR:
@@ -2530,244 +2530,244 @@ enums:
     description: Source of device exposure record
     comments: Taken from OMOP Type Concept Domain
     permissible_values:
-      CASE REPORT FORM:
+      CASE_REPORT_FORM:
         description: Case Report Form
         meaning: OMOP:32809
       CLAIM:
         description: Claim
         meaning: OMOP:32810
-      CLAIM AUTHORIZATION:
+      CLAIM_AUTHORIZATION:
         description: Claim authorization
         meaning: OMOP:32811
-      CLAIM DISCHARGE RECORD:
+      CLAIM_DISCHARGE_RECORD:
         description: Claim discharge record
         meaning: OMOP:32812
-      CLAIM ENROLMENT RECORD:
+      CLAIM_ENROLMENT_RECORD:
         description: Claim enrolment record
         meaning: OMOP:32813
-      COST RECORD:
+      COST_RECORD:
         description: Cost record
         meaning: OMOP:32814
-      DEATH CERTIFICATE:
+      DEATH_CERTIFICATE:
         description: Death Certificate
         meaning: OMOP:32815
-      DENTAL CLAIM:
+      DENTAL_CLAIM:
         description: Dental claim
         meaning: OMOP:32816
       EHR:
         description: EHR
         meaning: OMOP:32817
-      EHR ADMINISTRATION RECORD:
+      EHR_ADMINISTRATION_RECORD:
         description: EHR administration record
         meaning: OMOP:32818
-      EHR ADMISSION NOTE:
+      EHR_ADMISSION_NOTE:
         description: EHR admission note
         meaning: OMOP:32819
-      EHR ANCILLARY REPORT:
+      EHR_ANCILLARY_REPORT:
         description: EHR ancillary report
         meaning: OMOP:32820
-      EHR BILLING RECORD:
+      EHR_BILLING_RECORD:
         description: EHR billing record
         meaning: OMOP:32821
-      EHR CHIEF COMPLAINT:
+      EHR_CHIEF_COMPLAINT:
         description: EHR chief complaint
         meaning: OMOP:32822
-      EHR DISCHARGE RECORD:
+      EHR_DISCHARGE_RECORD:
         description: EHR discharge record
         meaning: OMOP:32823
-      EHR DISCHARGE SUMMARY:
+      EHR_DISCHARGE_SUMMARY:
         description: EHR discharge summary
         meaning: OMOP:32824
-      EHR DISPENSING RECORD:
+      EHR_DISPENSING_RECORD:
         description: EHR dispensing record
         meaning: OMOP:32825
-      EHR EMERGENCY ROOM NOTE:
+      EHR_EMERGENCY_ROOM_NOTE:
         description: EHR emergency room note
         meaning: OMOP:32826
-      EHR ENCOUNTER RECORD:
+      EHR_ENCOUNTER_RECORD:
         description: EHR encounter record
         meaning: OMOP:32827
-      EHR EPISODE RECORD:
+      EHR_EPISODE_RECORD:
         description: EHR episode record
         meaning: OMOP:32828
-      EHR INPATIENT NOTE:
+      EHR_INPATIENT_NOTE:
         description: EHR inpatient note
         meaning: OMOP:32829
-      EHR MEDICATION LIST:
+      EHR_MEDICATION_LIST:
         description: EHR medication list
         meaning: OMOP:32830
-      EHR NOTE:
+      EHR_NOTE:
         description: EHR note
         meaning: OMOP:32831
-      EHR NURSING REPORT:
+      EHR_NURSING_REPORT:
         description: EHR nursing report
         meaning: OMOP:32832
-      EHR ORDER:
+      EHR_ORDER:
         description: EHR order
         meaning: OMOP:32833
-      EHR OUTPATIENT NOTE:
+      EHR_OUTPATIENT_NOTE:
         description: EHR outpatient note
         meaning: OMOP:32834
-      EHR PATHOLOGY REPORT:
+      EHR_PATHOLOGY_REPORT:
         description: EHR Pathology report
         meaning: OMOP:32835
-      EHR PHYSICAL EXAMINATION:
+      EHR_PHYSICAL_EXAMINATION:
         description: EHR physical examination
         meaning: OMOP:32836
-      EHR PLANNED DISPENSING RECORD:
+      EHR_PLANNED_DISPENSING_RECORD:
         description: EHR planned dispensing record
         meaning: OMOP:32837
-      EHR PERSCRIPTION:
+      EHR_PERSCRIPTION:
         description: EHR prescription
         meaning: OMOP:32838
-      EHR PERSCRIPTION ISSUE RECORD:
+      EHR_PRESCRIPTION_ISSUE_RECORD:
         description: EHR prescription issue record
         meaning: OMOP:32839
-      EHR PROBLEM LIST:
+      EHR_PROBLEM_LIST:
         description: EHR problem list
         meaning: OMOP:32840
-      EHR RADIOLOGY REPORT:
+      EHR_RADIOLOGY_REPORT:
         description: EHR radiology report
         meaning: OMOP:32841
-      EHR REFERRAL RECORD:
+      EHR_REFERRAL_RECORD:
         description: EHR referral record
         meaning: OMOP:32842
-      EXTERNAL CDM INSTANCE:
+      EXTERNAL_CDM_INSTANCE:
         description: External CDM instance
         meaning: OMOP:32843
-      FACILITY CLAIM:
+      FACILITY_CLAIM:
         description: Facility claim
         meaning: OMOP:32844
-      FACILITY CLAIM DETAIL:
+      FACILITY_CLAIM_DETAIL:
         description: Facility claim detail
         meaning: OMOP:32845
-      FACILITY CLAIM HEADER:
+      FACILITY_CLAIM_HEADER:
         description: Facility claim header
         meaning: OMOP:32846
-      GEOGRAPHIC ISOLATION RECORD:
+      GEOGRAPHIC_ISOLATION_RECORD:
         description: Geographic isolation record
         meaning: OMOP:32847
-      GOVERNMENT REPORT:
+      GOVERNMENT_REPORT:
         description: Government report
         meaning: OMOP:32848
-      HEALTH INFORMATION EXCHANGE RECORD:
+      HEALTH_INFORMATION_EXCHANGE_RECORD:
         description: Health Information Exchange record
         meaning: OMOP:32849
-      HEALTH RISK ASSESSMENT:
+      HEALTH_RISK_ASSESSMENT:
         description: Health Risk Assessment
         meaning: OMOP:32850
-      HEALTHCARE PROFESSIONAL FILLED SURVEY:
+      HEALTHCARE_PROFESSIONAL_FILLED_SURVEY:
         description: Healthcare professional filled survey
         meaning: OMOP:32851
-      HOSPITAL COST:
+      HOSPITAL_COST:
         description: Hospital cost
         meaning: OMOP:32852
-      INPATIENT CLAIM:
+      INPATIENT_CLAIM:
         description: Inpatient claim
         meaning: OMOP:32853
-      INPATIENT CLAIM DETAIL:
+      INPATIENT_CLAIM_DETAIL:
         description: Inpatient claim detail
         meaning: OMOP:32854
-      INPATIENT CLAIM HEADER:
+      INPATIENT_CLAIM_HEADER:
         description: Inpatient claim header
         meaning: OMOP:32855
       LAB:
         description: Lab
         meaning: OMOP:32856
-      MAIL ORDER RECORD:
+      MAIL_ORDER_RECORD:
         description: Mail order record
         meaning: OMOP:32857
       NLP:
         description: NLP
         meaning: OMOP:32858
-      OUTPATIENT CLAIM:
+      OUTPATIENT_CLAIM:
         description: Outpatient claim
         meaning: OMOP:32859
-      OUTPATIENT CLAIM DETAIL:
+      OUTPATIENT_CLAIM_DETAIL:
         description: Outpatient claim detail
         meaning: OMOP:32860
-      OUTPATIENT CLAIM HEADER:
+      OUTPATIENT_CLAIM_HEADER:
         description: Outpatient claim header
         meaning: OMOP:32861
-      PATIENT FILLED SURVEY:
+      PATIENT_FILLED_SURVEY:
         description: Patient filled survey
         meaning: OMOP:32862
-      PATIENT OR PAYER PAID RECORD:
+      PATIENT_OR_PAYER_PAID_RECORD:
         description: Patient or payer paid record
         meaning: OMOP:32863
-      PATIENT REPORTED COST:
+      PATIENT_REPORTED_COST:
         description: Patient reported cost
         meaning: OMOP:32864
-      PATIENT SELF-REPORT:
+      PATIENT_SELF-REPORT:
         description: Patient self-report
         meaning: OMOP:32865
-      PATIENT SELF-TESTED:
+      PATIENT_SELF_TESTED:
         description: Patient self-tested
         meaning: OMOP:705183
-      PAYER SYSTEM RECORD (PAID PREMIUM):
+      PAYER_SYSTEM_RECORD_PAID_PREMIUM:
         description: Payer system record (paid premium)
         meaning: OMOP:32866
-      PAYER SYSTEM RECORD (PRIMARY PAYER):
+      PAYER_SYSTEM_RECORD_PRIMARY_PAYER:
         description: Payer system record (primary payer)
         meaning: OMOP:32867
-      PAYER SYSTEM RECORD (SECONDARY PAYER):
+      PAYER_SYSTEM_RECORD_SECONDARY_PAYER:
         description: Payer system record (secondary payer)
         meaning: OMOP:32868
-      PHARMACY CLAIM:
+      PHARMACY_CLAIM:
         description: Pharmacy claim
         meaning: OMOP:32869
-      POINT OF CARE/EXPRESS LAB:
+      POINT_OF_CARE_EXPRESS_LAB:
         description: Point of care/express lab
         meaning: OMOP:703249
-      PRE-QUALIFICATION TIME PERIOD:
+      PRE_QUALIFICATION_TIME_PERIOD:
         description: Pre-qualification time period
         meaning: OMOP:32870
-      PROFESSIONAL CLAIM:
+      PROFESSIONAL_CLAIM:
         description: Professional claim
         meaning: OMOP:32871
-      PROFESSIONAL CLAIM DETAIL:
+      PROFESSIONAL_CLAIM_DETAIL:
         description: Professional claim detail
         meaning: OMOP:32872
-      PROFESSIONAL CLAIM HEADER:
+      PROFESSIONAL_CLAIM_HEADER:
         description: Professional claim header
         meaning: OMOP:32873
-      PROVIDER CHARGE LIST PRICE:
+      PROVIDER_CHARGE_LIST_PRICE:
         description: Provider charge list price
         meaning: OMOP:32874
-      PROVIDER FINANCIAL SYSTEM:
+      PROVIDER_FINANCIAL_SYSTEM:
         description: Provider financial system
         meaning: OMOP:32875
-      PROVIDER INCURRED COST RECORD:
+      PROVIDER_INCURRED_COST_RECORD:
         description: Provider incurred cost record
         meaning: OMOP:32876
-      RANDOMIZATION RECORD:
+      RANDOMIZATION_RECORD:
         description: Randomization record
         meaning: OMOP:32877
-      REFERENCE LAB:
+      REFERENCE_LAB:
         description: Reference lab
         meaning: OMOP:32878
       REGISTRY:
         description: Registry
         meaning: OMOP:32879
-      STANDARD ALGORITHM:
+      STANDARD_ALGORITHM:
         description: Standard algorithm
         meaning: OMOP:32880
-      STANDARD ALGORITHM FROM CLAIMS:
+      STANDARD_ALGORITHM_FROM_CLAIMS:
         description: Standard algorithm from claims
         meaning: OMOP:32881
-      STANDARD ALGORITHM FROM EHR:
+      STANDARD_ALGORITHM_FROM_EHR:
         description: Standard algorithm from EHR
         meaning: OMOP:32882
       SURVEY:
         description: Survey
         meaning: OMOP:32883
-      URGENT LAB:
+      URGENT_LAB:
         description: Urgent lab
         meaning: OMOP:32884
-      US SOCIAL SECURITY DEATH MASTER FILE:
+      US_SOCIAL_SECURITY_DEATH_MASTER_FILE:
         description: US Social Security Death Master File
         meaning: OMOP:32885
-      VISION CLAIM:
+      VISION_CLAIM:
         description: Vision claim
         meaning: OMOP:32886
 
@@ -2794,41 +2794,41 @@ enums:
   AnalyteTypeEnum:
     name: AnalyteTypeEnum
     permissible_values:
-      FFPE DNA:
+      FFPE_DNA:
         text: FFPE DNA
         description: Formalin-Fixed Paraffin-Embedded DNA
-      Repli-G (Qiagen) DNA:
+      REPLI_G_QIAGEN_DNA:
         text: Repli-G (Qiagen) DNA
         description: Repli-G (Qiagen) DNA
-      GenomePlex (Rubicon) Amplified DNA:
+      GENOME_PLEX_RUBICON_AMPLIFIED_DNA:
         text: GenomePlex (Rubicon) Amplified DNA
-      Total RNA:
+      TOTAL_RNA:
         text: Total RNA
         description: Total Ribonucleic Acid
-      Repli-G X (Qiagen) DNA:
+      REPLI_G_X_QIAGEN_DNA:
         text: Repli-G X (Qiagen) DNA
         description: Repli-G X (Qiagen) DNA
       RNA:
         text: RNA
         description: Ribonucleic Acid
-      Repli-G Pooled (Qiagen) DNA:
+      REPLI_G_POOLED_QIAGEN_DNA:
         text: Repli-G Pooled (Qiagen) DNA
         description: REPLI-g Pooled DNA
       DNA:
         text: DNA
         description: DNA
-      EBV Immortalized Normal:
+      EBV_IMMORTALIZED_NORMAL:
         text: EBV Immortalized Normal
         description: Normal Epstein-Barr Virus Immortalization
-      FFPE RNA:
+      FFPE_RNA:
         text: FFPE RNA
         description: Formalin-Fixed Paraffin-Embedded RNA
-      Protein:
+      PROTEIN:
         text: Protein
         description: Protein
-      Nuclei RNA:
+      NUCLEI_RNA:
         text: Nuclei RNA
-      cfDNA:
+      CFDNA:
         text: cfDNA
 
   SourceMaterialTypeEnum:
