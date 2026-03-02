@@ -2927,41 +2927,43 @@ enums:
     name: AnalyteTypeEnum
     permissible_values:
       FFPE_DNA:
-        text: FFPE DNA
+        text: FFPE_DNA
         description: Formalin-Fixed Paraffin-Embedded DNA
       REPLI_G_QIAGEN_DNA:
-        text: Repli-G (Qiagen) DNA
+        text: REPLI_G_QIAGEN_DNA
         description: Repli-G (Qiagen) DNA
       GENOME_PLEX_RUBICON_AMPLIFIED_DNA:
-        text: GenomePlex (Rubicon) Amplified DNA
+        text: GENOME_PLEX_RUBICON_AMPLIFIED_DNA
       TOTAL_RNA:
-        text: Total RNA
+        text: TOTAL_RNA
         description: Total Ribonucleic Acid
       REPLI_G_X_QIAGEN_DNA:
-        text: Repli-G X (Qiagen) DNA
+        text: REPLI_G_X_QIAGEN_DNA
         description: Repli-G X (Qiagen) DNA
       RNA:
         text: RNA
         description: Ribonucleic Acid
       REPLI_G_POOLED_QIAGEN_DNA:
-        text: Repli-G Pooled (Qiagen) DNA
-        description: REPLI-g Pooled DNA
+        text: REPLI_G_POOLED_QIAGEN_DNA
+        description: Repli-G Pooled (Qiagen) DNA
       DNA:
         text: DNA
         description: DNA
       EBV_IMMORTALIZED_NORMAL:
-        text: EBV Immortalized Normal
+        text: EBV_IMMORTALIZED_NORMAL
         description: Normal Epstein-Barr Virus Immortalization
       FFPE_RNA:
-        text: FFPE RNA
+        text: FFPE_RNA
         description: Formalin-Fixed Paraffin-Embedded RNA
       PROTEIN:
         text: Protein
         description: Protein
       NUCLEI_RNA:
-        text: Nuclei RNA
+        text: NUCLEI_RNA
+        description: Nuclei RNA
       CFDNA:
-        text: cfDNA
+        text: CFDNA
+        description: Cell-free DNA
 
   SourceMaterialTypeEnum:
     name: SourceMaterialTypeEnum
