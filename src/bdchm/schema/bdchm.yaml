@@ -2749,7 +2749,7 @@ enums:
       EHR_PLANNED_DISPENSING_RECORD:
         description: EHR planned dispensing record
         meaning: OMOP:32837
-      EHR_PERSCRIPTION:
+      EHR_PRESCRIPTION:
         description: EHR prescription
         meaning: OMOP:32838
       EHR_PRESCRIPTION_ISSUE_RECORD:
@@ -2908,179 +2908,159 @@ enums:
     description: A high-level type of specimen, based on its derivation provenance (i.e. how far removed it is from the original sample extracted from a source).
     permissible_values:
       ALIQUOT:
-        text: ALIQUOT
         description: A specimen that results from the division of some parent specimen into equal amounts for downstream analysis.
       ANALYTE:
-        text: ANALYTE
         description: A specimen generated through the extraction of a specified class of substance/chemical (e.g. DNA, RNA, protein) from a parent specimen, which is stored in solution as an analyte.
       FRESH_SPECIMEN:
-        text: FRESH_SPECIMEN
         description: A specimen representing the material that was directly collected from a subject (i.e. not generated through portioning, aliquoting, or analyte extraction from an existing specimen).
       PORTION:
-        text: PORTION
         description: A physical sub-part taken from an existing specimen.
       SLIDE:
-        text: SLIDE
         description: A specimen that is mounted on a slide or coverslip for microscopic analysis.
 
   AnalyteTypeEnum:
     name: AnalyteTypeEnum
     permissible_values:
       FFPE_DNA:
-        text: FFPE_DNA
         description: Formalin-Fixed Paraffin-Embedded DNA
       REPLI_G_QIAGEN_DNA:
-        text: REPLI_G_QIAGEN_DNA
         description: Repli-G (Qiagen) DNA
       GENOME_PLEX_RUBICON_AMPLIFIED_DNA:
-        text: GENOME_PLEX_RUBICON_AMPLIFIED_DNA
+        description: GenomePlex Rubicon Amplified DNA
       TOTAL_RNA:
-        text: TOTAL_RNA
         description: Total Ribonucleic Acid
       REPLI_G_X_QIAGEN_DNA:
-        text: REPLI_G_X_QIAGEN_DNA
         description: Repli-G X (Qiagen) DNA
       RNA:
-        text: RNA
         description: Ribonucleic Acid
       REPLI_G_POOLED_QIAGEN_DNA:
-        text: REPLI_G_POOLED_QIAGEN_DNA
         description: Repli-G Pooled (Qiagen) DNA
       DNA:
-        text: DNA
         description: DNA
       EBV_IMMORTALIZED_NORMAL:
-        text: EBV_IMMORTALIZED_NORMAL
         description: Normal Epstein-Barr Virus Immortalization
       FFPE_RNA:
-        text: FFPE_RNA
         description: Formalin-Fixed Paraffin-Embedded RNA
       PROTEIN:
-        text: Protein
         description: Protein
       NUCLEI_RNA:
-        text: NUCLEI_RNA
         description: Nuclei RNA
       CFDNA:
-        text: CFDNA
         description: Cell-free DNA
 
   SourceMaterialTypeEnum:
     name: SourceMaterialTypeEnum
     permissible_values:
       ADDITIONAL_METASTATIC:
-        text: ADDITIONAL_METASTATIC
+        description: A metastatic tumor sample collected in addition to a previously collected metastatic specimen.
       ADDITIONAL_NEW_PRIMARY:
-        text: ADDITIONAL_NEW_PRIMARY
+        description: A new primary tumor sample collected in addition to a previously collected primary specimen.
       BENIGN_NEOPLASMS:
-        text: BENIGN_NEOPLASMS
+        description: Tissue derived from a non-cancerous tumor that does not invade nearby tissue or metastasize.
       BLOOD_DERIVED_CANCER_BONE_MARROW:
-        text: BLOOD_DERIVED_CANCER_BONE_MARROW
+        description: Cancerous cells isolated from bone marrow as part of a blood-derived cancer sample.
       BLOOD_DERIVED_CANCER_BONE_MARROW_POST_TREATMENT:
-        text: BLOOD_DERIVED_CANCER_BONE_MARROW_POST_TREATMENT
+        description: Cancerous cells isolated from bone marrow following therapeutic intervention.
       BLOOD_DERIVED_CANCER_PERIPHERAL_BLOOD:
-        text: BLOOD_DERIVED_CANCER_PERIPHERAL_BLOOD
+        description: Cancerous cells isolated from peripheral blood as part of a blood-derived cancer sample.
       BLOOD_DERIVED_CANCER_PERIPHERAL_BLOOD_POST_TREATMENT:
-        text: BLOOD_DERIVED_CANCER_PERIPHERAL_BLOOD_POST_TREATMENT
+        description: Cancerous cells isolated from peripheral blood following therapeutic intervention.
       BLOOD_DERIVED_LIQUID_BIOPSY:
-        text: BLOOD_DERIVED_LIQUID_BIOPSY
+        description: Tumor-derived material, such as circulating tumor DNA or cells, extracted from a blood sample.
       BLOOD_DERIVED_NORMAL:
-        text: BLOOD_DERIVED_NORMAL
+        description: Non-cancerous blood sample used as a normal reference for genomic or molecular analyses.
       BONE_MARROW_NORMAL:
-        text: BONE_MARROW_NORMAL
+        description: Non-cancerous bone marrow sample used as a normal reference for genomic or molecular analyses.
       BUCCAL_CELL_NORMAL:
-        text: BUCCAL_CELL_NORMAL
+        description: Normal cells collected from the inner cheek mucosa, typically used as a germline reference.
       CELL_LINE_DERIVED_XENOGRAFT_TISSUE:
-        text: CELL_LINE_DERIVED_XENOGRAFT_TISSUE
+        description: Tumor tissue derived from a xenograft model that was originally established from a cultured cell line.
       CELL_LINES:
-        text: CELL_LINES
+        description: Immortalized cells grown in culture, derived from tumor or normal tissue for experimental use.
       CONTROL_ANALYTE:
-        text: CONTROL_ANALYTE
+        description: A reference material used to validate or calibrate laboratory assays and analytical processes.
       DNA:
-        text: DNA
+        description: Deoxyribonucleic acid extracted from a biological sample for genomic analysis.
       EBV_IMMORTALIZED_NORMAL:
-        text: EBV_IMMORTALIZED_NORMAL
+        description: Normal B-lymphocytes immortalized by Epstein-Barr virus transformation, used as a germline reference.
       EXPANDED_NEXT_GENERATION_CANCER_MODEL:
-        text: EXPANDED_NEXT_GENERATION_CANCER_MODEL
+        description: A cancer model, such as an organoid or cell line, that has been propagated or expanded from a next-generation model system.
       FFPE_RECURRENT:
-        text: FFPE_RECURRENT
+        description: Formalin-fixed paraffin-embedded tissue from a recurrent tumor, preserved for histological or molecular analysis.
       FFPE_SCROLLS:
-        text: FFPE_SCROLLS
+        description: Thin sections cut from formalin-fixed paraffin-embedded tissue blocks for nucleic acid or protein extraction.
       FIBROBLASTS_FROM_BONE_MARROW_NORMAL:
-        text: FIBROBLASTS_FROM_BONE_MARROW_NORMAL
+        description: Normal fibroblast cells isolated from bone marrow, used as a non-cancerous reference.
       GRANULOCYTES:
-        text: GRANULOCYTES
+        description: White blood cells of the granulocyte lineage isolated from blood, often used as a normal germline reference.
       HUMAN_TUMOR_ORIGINAL_CELLS:
-        text: HUMAN_TUMOR_ORIGINAL_CELLS
+        description: Primary tumor cells taken directly from a human subject without prior in vitro expansion.
       IN_SITU_NEOPLASMS:
-        text: IN_SITU_NEOPLASMS
+        description: Tissue from a neoplasm that has not yet invaded surrounding tissue, representing an early-stage malignancy.
       LYMPHOID_NORMAL:
-        text: LYMPHOID_NORMAL
+        description: Non-cancerous lymphoid tissue used as a normal reference for genomic or molecular analyses.
       METASTATIC:
-        text: METASTATIC
+        description: Tumor tissue collected from a site distant from the primary tumor, representing metastatic disease.
       MIXED_ADHERENT_SUSPENSION:
-        text: MIXED_ADHERENT_SUSPENSION
+        description: A cell culture sample containing both adherent and suspension cell populations.
       MONONUCLEAR_CELLS_FROM_BONE_MARROW_NORMAL:
-        text: MONONUCLEAR_CELLS_FROM_BONE_MARROW_NORMAL
+        description: Normal mononuclear cells isolated from bone marrow, used as a non-cancerous reference.
       NEOPLASMS_OF_UNCERTAIN_AND_UNKNOWN_BEHAVIOR:
-        text: NEOPLASMS_OF_UNCERTAIN_AND_UNKNOWN_BEHAVIOR
+        description: Tissue from a neoplasm whose malignant potential cannot be determined based on available information.
       NEXT_GENERATION_CANCER_MODEL:
-        text: NEXT_GENERATION_CANCER_MODEL
+        description: A modern in vitro or in vivo cancer model, such as a patient-derived organoid or xenograft, that recapitulates tumor biology.
       NORMAL_ADJACENT_TISSUE:
-        text: NORMAL_ADJACENT_TISSUE
-      PLEURAL_EFFUSION:
-        text: PLEURAL_EFFUSION
-      POST_NEOADJUVANT_THERAPY:
-        text: POST_NEOADJUVANT_THERAPY
-      PRIMARY_BLOOD_DERIVED_CANCER_BONE_MARROW:
-        text: PRIMARY_BLOOD_DERIVED_CANCER_BONE_MARROW
-      PRIMARY_BLOOD_DERIVED_CANCER_PERIPHERAL_BLOOD:
-        text: PRIMARY_BLOOD_DERIVED_CANCER_PERIPHERAL_BLOOD
-      PRIMARY_TUMOR:
-        text: PRIMARY_TUMOR
-      PRIMARY_XENOGRAFT_TISSUE:
-        text: PRIMARY_XENOGRAFT_TISSUE
-      RECURRENT_BLOOD_DERIVED_CANCER_BONE_MARROW:
-        text: RECURRENT_BLOOD_DERIVED_CANCER_BONE_MARROW
-      RECURRENT_BLOOD_DERIVED_CANCER_PERIPHERAL_BLOOD:
-        text: RECURRENT_BLOOD_DERIVED_CANCER_PERIPHERAL_BLOOD
-      RECURRENT_TUMOR:
-        text: RECURRENT_TUMOR
-      RNA:
-        text: RNA
-      SALIVA:
-        text: SALIVA
-      SLIDES:
-        text: SLIDES
-      SOLID_TISSUE_NORMAL:
-        text: SOLID_TISSUE_NORMAL
-      TOTAL_RNA:
-        text: TOTAL_RNA
-      TUMOR:
-        text: TUMOR
-      TUMOR_ADJACENT_NORMAL_POST_NEOADJUVANT_THERAPY:
-        text: TUMOR_ADJACENT_NORMAL_POST_NEOADJUVANT_THERAPY
-      XENOGRAFT_TISSUE:
-        text: XENOGRAFT_TISSUE
+        description: Histologically normal tissue collected from a site adjacent to a tumor, used as a local reference.
       NOT_ALLOWED_TO_COLLECT:
-        text: NOT_ALLOWED_TO_COLLECT
+        description: A sample that was not obtained because collection was prohibited by consent, regulation, or protocol.
       NOT_REPORTED:
-        text: NOT_REPORTED
+        description: The source material type was not documented or reported for this sample.
+      PLEURAL_EFFUSION:
+        description: Fluid collected from the pleural cavity, which may contain tumor cells in the context of malignancy.
+      POST_NEOADJUVANT_THERAPY:
+        description: Tumor tissue collected after the administration of neoadjuvant (pre-surgical) therapy.
+      PRIMARY_BLOOD_DERIVED_CANCER_BONE_MARROW:
+        description: The initial cancerous bone marrow sample collected from a patient with a blood-derived malignancy.
+      PRIMARY_BLOOD_DERIVED_CANCER_PERIPHERAL_BLOOD:
+        description: The initial cancerous peripheral blood sample collected from a patient with a blood-derived malignancy.
+      PRIMARY_TUMOR:
+        description: Tissue collected from the original site of tumor origin, prior to any metastatic spread.
+      PRIMARY_XENOGRAFT_TISSUE:
+        description: Tumor tissue derived from a first-generation xenograft established directly from a patient sample.
+      RECURRENT_BLOOD_DERIVED_CANCER_BONE_MARROW:
+        description: Cancerous bone marrow sample collected at the time of disease recurrence in a blood-derived malignancy.
+      RECURRENT_BLOOD_DERIVED_CANCER_PERIPHERAL_BLOOD:
+        description: Cancerous peripheral blood sample collected at the time of disease recurrence in a blood-derived malignancy.
+      RECURRENT_TUMOR:
+        description: Tumor tissue collected following disease recurrence after prior treatment or remission.
+      RNA:
+        description: Ribonucleic acid extracted from a biological sample for transcriptomic or gene expression analysis.
+      SALIVA:
+        description: Saliva collected as a non-invasive source of DNA or other biological material, typically for germline analysis.
+      SLIDES:
+        description: Prepared microscopy slides containing tissue or cell specimens for histological or molecular examination.
+      SOLID_TISSUE_NORMAL:
+        description: Non-cancerous solid tissue used as a normal reference for genomic or molecular analyses.
+      TOTAL_RNA:
+        description: The complete RNA complement extracted from a sample, including messenger, ribosomal, and non-coding RNA species.
+      TUMOR:
+        description: Tissue derived from a malignant neoplasm, used broadly when more specific tumor classification is not specified.
+      TUMOR_ADJACENT_NORMAL_POST_NEOADJUVANT_THERAPY:
+        description: Histologically normal tissue adjacent to a tumor, collected after completion of neoadjuvant therapy.
       UNKNOWN:
-        text: UNKNOWN
+        description: The source material type is not known or could not be determined for this sample.
+      XENOGRAFT_TISSUE:
+        description: Tumor tissue derived from a xenograft model in which human tumor cells are propagated in an animal host.
 
   SectionLocationEnum:
     name: SectionLocationEnum
     description: The location in a parent specimen from which a section/portion was excised.
     permissible_values:
       BOTTOM:
-        text: BOTTOM
         description: The part of a specimen designated as its 'bottom' based on specified orientation criteria.
       TOP:
-        text: TOP
         description: The part of a specimen designated as its 'top' based on specified orientation criteria.
       UNKNOWN:
-        text: UNKNOWN
         description: An unknown location on a specimen.
 
   SpecimenCreationActivityTypeEnum:
@@ -3088,229 +3068,225 @@ enums:
     description: The high-level type of activity through which the specimen was generated (i.e. via collection from the original source, or via derivation from an existing specimen)
     permissible_values:
       COLLECTION_FROM_SOURCE:
-        text: COLLECTION_FROM_SOURCE
         description: An activity that collects an initial sample directly from a subject / source.
       DERIVATION_FROM_SPECIMEN:
-        text: DERIVATION_FROM_SPECIMEN
         description: An activity that derives a new specimen from an existing one.
 
   SpecimenCollectionMethodType:
     name: SpecimenCollectionMethodType
     permissible_values:
       ORCHIECTOMY:
-        text: ORCHIECTOMY
+        description: Surgical removal of one or both testicles, typically performed to treat testicular cancer or as part of prostate cancer management.
       METASTASECTOMY:
-        text: METASTASECTOMY
+        description: Surgical removal of one or more metastatic tumor deposits that have spread from a primary cancer site to distant organs or tissues.
       AUTOPSY:
-        text: AUTOPSY
+        description: Post-mortem surgical examination of a body to determine cause of death and collect tissue specimens for pathological analysis.
       UNKNOWN:
-        text: UNKNOWN
+        description: The method of specimen collection performed is not known.
       ASPIRATE:
-        text: ASPIRATE
+        description: Collection of fluid or semi-solid material by suction through a needle or syringe from a body cavity or tissue mass.
       RIGHT_HEMICOLECTOMY:
-        text: RIGHT_HEMICOLECTOMY
+        description: Surgical removal of the right portion of the colon, including the cecum, ascending colon, and part of the transverse colon.
       INCISIONAL_BIOPSY:
-        text: INCISIONAL_BIOPSY
+        description: Surgical procedure in which a portion of a suspicious lesion or tumor is cut out for pathological examination, leaving the remainder in place.
       BLOOD_DRAW:
-        text: BLOOD_DRAW
+        description: Collection of a blood sample via venipuncture for laboratory analysis or biospecimen banking.
       PERITONEAL_LAVAGE:
-        text: PERITONEAL_LAVAGE
+        description: Washing of the peritoneal cavity with fluid, which is then collected and analyzed for the presence of malignant cells or other diagnostic information.
       OPEN_RADICAL_PROSTATECTOMY:
-        text: OPEN_RADICAL_PROSTATECTOMY
+        description: Complete surgical removal of the prostate gland and surrounding tissues through a traditional open abdominal or perineal incision.
       ABDOMINO_PERINEAL_RESECTION_OF_RECTUM:
-        text: ABDOMINO_PERINEAL_RESECTION_OF_RECTUM
+        description: Surgical removal of the rectum, anus, and surrounding tissue via both abdominal and perineal incisions, typically resulting in a permanent colostomy.
       SALPINGECTOMY:
-        text: SALPINGECTOMY
+        description: Surgical removal of one or both fallopian tubes, often performed to treat or reduce risk of ovarian or tubal cancer.
       ENDO_RECTAL_TUMOR_RESECTION:
-        text: ENDO_RECTAL_TUMOR_RESECTION
+        description: Surgical excision of a rectal tumor through an endoscopic or transanal approach without requiring an external incision.
       BIOPSY:
-        text: BIOPSY
+        description: Removal of a small sample of tissue or cells from the body for microscopic examination and pathological diagnosis.
       SALPINGO_OOPHORECTOMY:
-        text: SALPINGO_OOPHORECTOMY
+        description: Surgical removal of one or both ovaries along with the corresponding fallopian tube(s), performed to treat or prevent gynecologic cancers.
       NOT_ALLOWED_TO_COLLECT:
-        text: NOT_ALLOWED_TO_COLLECT
+        description: Specimen collection was not permitted due to regulatory, ethical, institutional, or patient consent restrictions.
       WHIPPLE_PROCEDURE:
-        text: WHIPPLE_PROCEDURE
+        description: A complex surgical procedure (pancreaticoduodenectomy) involving removal of the head of the pancreas, duodenum, gallbladder, and part of the bile duct, typically performed for pancreatic cancer.
       ENUCLEATION:
-        text: ENUCLEATION
+        description: Surgical removal of a tumor or organ intact and in its entirety without cutting into the mass.
       MODIFIED_RADICAL_MASTECTOMY:
-        text: MODIFIED_RADICAL_MASTECTOMY
+        description: Surgical removal of the entire breast along with most or all of the axillary lymph nodes, while preserving the chest wall muscles.
       PARACENTESIS:
-        text: PARACENTESIS
+        description: A minimally invasive procedure in which a needle is inserted into the peritoneal cavity to drain ascitic fluid for diagnostic or therapeutic purposes.
       OPEN_CRANIOTOMY:
-        text: OPEN_CRANIOTOMY
+        description: Surgical procedure involving the removal of a portion of the skull to access the brain for tumor resection or biopsy.
       WEDGE_RESECTION:
-        text: WEDGE_RESECTION
+        description: Surgical removal of a wedge-shaped section of an organ, most commonly the lung, to excise a tumor or lesion.
       LAPAROSCOPIC_RADICAL_NEPHRECTOMY:
-        text: LAPAROSCOPIC_RADICAL_NEPHRECTOMY
+        description: Minimally invasive surgical removal of an entire kidney and surrounding tissue using a laparoscope, performed to treat renal cell carcinoma.
       OPEN_PARTIAL_NEPHRECTOMY:
-        text: OPEN_PARTIAL_NEPHRECTOMY
+        description: Surgical removal of a tumor-bearing portion of the kidney through an open incision while preserving the remaining healthy kidney tissue.
       TRANSURETHRAL_RESECTION:
-        text: TRANSURETHRAL_RESECTION
+        description: Endoscopic surgical procedure performed through the urethra to remove tumors or tissue from the bladder or prostate without external incision.
       SIGMOID_COLECTOMY:
-        text: SIGMOID_COLECTOMY
+        description: Surgical removal of the sigmoid colon, the S-shaped final section of the large intestine before the rectum.
       OOPHORECTOMY:
-        text: OOPHORECTOMY
+        description: Surgical removal of one or both ovaries, performed to treat ovarian cancer or as a risk-reducing measure in high-risk individuals.
       TOTAL_HEPATECTOMY:
-        text: TOTAL_HEPATECTOMY
+        description: Complete surgical removal of the liver, typically performed in preparation for liver transplantation.
       INDETERMINANT:
-        text: INDETERMINANT
+        description: The method of specimen collection could not be definitively determined from available information.
       SUBTOTAL_RESECTION:
-        text: SUBTOTAL_RESECTION
+        description: Surgical removal of the majority but not all of a tumor or organ, leaving behind a remnant due to technical or safety constraints.
       LEFT_HEMICOLECTOMY:
-        text: LEFT_HEMICOLECTOMY
+        description: Surgical removal of the left portion of the colon, including the descending colon and part of the transverse colon.
       NEEDLE_BIOPSY:
-        text: NEEDLE_BIOPSY
+        description: Minimally invasive collection of tissue or fluid using a hollow needle inserted into a lesion or mass for pathological analysis.
       OTHER:
-        text: OTHER
+        description: A specimen collection method that does not correspond to any of the other specifically defined permissible values.
       PANCREATECTOMY:
-        text: PANCREATECTOMY
+        description: Surgical removal of all or part of the pancreas, performed to treat pancreatic cancer or other pancreatic neoplasms.
       THORACOSCOPIC_BIOPSY:
-        text: THORACOSCOPIC_BIOPSY
+        description: Minimally invasive biopsy of thoracic structures performed using a thoracoscope inserted through small chest wall incisions.
       TOTAL_MASTECTOMY:
-        text: TOTAL_MASTECTOMY
+        description: Surgical removal of the entire breast tissue including the nipple and areola, without removal of the underlying chest muscles or axillary lymph nodes.
       EXCISIONAL_BIOPSY:
-        text: EXCISIONAL_BIOPSY
+        description: Surgical removal of an entire suspicious lesion or lymph node for pathological examination, intending complete excision of the abnormal tissue.
       BONE_MARROW_ASPIRATE:
-        text: BONE_MARROW_ASPIRATE
+        description: Collection of a liquid bone marrow sample via needle aspiration, typically from the iliac crest, for hematologic diagnosis and analysis.
       LOCAL_RESECTION:
-        text: LOCAL_RESECTION
+        description: Surgical removal of a tumor and a small margin of surrounding tissue, limited to the immediate area of the lesion.
       LOBECTOMY:
-        text: LOBECTOMY
+        description: Surgical removal of a lobe of an organ, most commonly a lobe of the lung, to treat malignancies confined to that lobe.
       FINE_NEEDLE_ASPIRATION:
-        text: FINE_NEEDLE_ASPIRATION
+        description: Minimally invasive diagnostic procedure using a thin needle and syringe to extract cells or fluid from a suspicious lesion for cytological analysis.
       OMENTECTOMY:
-        text: OMENTECTOMY
+        description: Surgical removal of all or part of the omentum, the fatty tissue covering the abdominal organs, often performed during cytoreductive surgery for ovarian cancer.
       TUMOR_RESECTION:
-        text: TUMOR_RESECTION
+        description: Surgical excision of a tumor mass, with the extent of surrounding tissue removal depending on tumor type, location, and surgical intent.
       CYSTECTOMY:
-        text: CYSTECTOMY
+        description: Surgical removal of the urinary bladder, either in part (partial) or entirety (radical), typically performed to treat bladder cancer.
       GROSS_TOTAL_RESECTION:
-        text: GROSS_TOTAL_RESECTION
+        description: Surgical removal of all visually and grossly identifiable tumor tissue, as determined by the operating surgeon at the time of surgery.
       THORACENTESIS:
-        text: THORACENTESIS
+        description: Minimally invasive procedure in which a needle is inserted into the pleural space to aspirate fluid for diagnostic analysis or therapeutic relief.
       ANTERIOR_RESECTION_OF_RECTUM:
-        text: ANTERIOR_RESECTION_OF_RECTUM
+        description: Surgical removal of the upper rectum through an abdominal approach with restoration of bowel continuity, used to treat rectal cancer.
       TRANSPLANT:
-        text: TRANSPLANT
+        description: Surgical procedure involving the transfer of an organ or tissue from a donor to a recipient, with specimen collection occurring at the time of organ procurement or implantation.
       LAPAROSCOPIC_PARTIAL_NEPHRECTOMY:
-        text: LAPAROSCOPIC_PARTIAL_NEPHRECTOMY
+        description: Minimally invasive removal of a tumor-bearing portion of the kidney using laparoscopic techniques, preserving the remaining renal tissue.
       LAPAROSCOPIC_RADICAL_PROSTATECTOMY_WITH_ROBOTICS:
-        text: LAPAROSCOPIC_RADICAL_PROSTATECTOMY_WITH_ROBOTICS
+        description: Complete removal of the prostate gland performed using robot-assisted laparoscopic surgery, offering enhanced precision and minimal invasiveness.
       PNEUMONECTOMY:
-        text: PNEUMONECTOMY
+        description: Surgical removal of an entire lung, typically performed to treat lung cancer confined to one lung that is not amenable to lesser resection.
       PAN_PROCTO_COLECTOMY:
-        text: PAN_PROCTO_COLECTOMY
+        description: Surgical removal of the entire colon and rectum, typically performed for colorectal cancer or inflammatory bowel disease with dysplasia.
       HYSTERECTOMY_NOS:
-        text: HYSTERECTOMY_NOS
+        description: Surgical removal of the uterus by an unspecified or not otherwise specified technique or extent.
       CORE_BIOPSY:
-        text: CORE_BIOPSY
+        description: Removal of a cylindrical core of tissue using a large-bore needle to obtain a histologically intact sample for pathological diagnosis.
       SIMPLE_MASTECTOMY:
-        text: SIMPLE_MASTECTOMY
+        description: Surgical removal of the entire breast tissue including the nipple-areola complex, without removing axillary lymph nodes or chest wall muscles.
       LUMPECTOMY:
-        text: LUMPECTOMY
+        description: Breast-conserving surgery in which only the tumor and a margin of surrounding normal tissue are removed, leaving the remaining breast intact.
       ENDOSCOPIC_BIOPSY:
-        text: ENDOSCOPIC_BIOPSY
+        description: Tissue sampling performed through an endoscope inserted into a body cavity, allowing direct visualization and targeted biopsy of suspicious lesions.
       SIMPLE_HYSTERECTOMY:
-        text: SIMPLE_HYSTERECTOMY
+        description: Surgical removal of the uterus and cervix without removing the parametria, upper vagina, or lymph nodes, used for benign or early-stage disease.
       LYMPHADENECTOMY:
-        text: LYMPHADENECTOMY
+        description: Surgical removal of one or more lymph nodes for pathological examination or as part of cancer staging and treatment.
       LAPAROSCOPIC_BIOPSY:
-        text: LAPAROSCOPIC_BIOPSY
+        description: Tissue sampling performed using a laparoscope introduced through small abdominal incisions, allowing visualization and biopsy of intraperitoneal structures.
       TUMOR_DEBULKING:
-        text: TUMOR_DEBULKING
+        description: Cytoreductive surgery aimed at removing as much tumor mass as possible when complete resection is not feasible, to reduce tumor burden and improve treatment response.
       ASCITES_DRAINAGE:
-        text: ASCITES_DRAINAGE
+        description: Therapeutic or diagnostic removal of accumulated fluid from the peritoneal cavity, which may be examined for malignant cells.
       ENDOSCOPIC_MUCOSAL_RESECTION:
-        text: ENDOSCOPIC_MUCOSAL_RESECTION
+        description: Endoscopic technique for removing superficial tumors or lesions confined to the mucosal layer of the gastrointestinal tract.
       LAPAROSCOPIC_RADICAL_PROSTATECTOMY_WITHOUT_ROBOTICS:
-        text: LAPAROSCOPIC_RADICAL_PROSTATECTOMY_WITHOUT_ROBOTICS
+        description: Complete removal of the prostate gland using standard laparoscopic techniques without robotic assistance.
       TOTAL_COLECTOMY:
-        text: TOTAL_COLECTOMY
+        description: Surgical removal of the entire large intestine (colon) while preserving the rectum, typically performed for colorectal cancer or hereditary polyposis syndromes.
       LIQUID_BIOPSY:
-        text: LIQUID_BIOPSY
+        description: Non-invasive sampling of circulating tumor cells, cell-free DNA, or other cancer biomarkers from a body fluid, most commonly blood.
       RADICAL_HYSTERECTOMY:
-        text: RADICAL_HYSTERECTOMY
+        description: Extensive surgical removal of the uterus, cervix, upper vagina, parametria, and regional lymph nodes, performed for gynecologic malignancies such as cervical cancer.
       SURGICAL_RESECTION:
-        text: SURGICAL_RESECTION
+        description: Surgical removal of a tumor or diseased tissue, used as a general term when the specific resection type is not further specified.
       OPEN_RADICAL_NEPHRECTOMY:
-        text: OPEN_RADICAL_NEPHRECTOMY
+        description: Complete removal of a kidney, adrenal gland, and surrounding fatty tissue through a traditional open incision, performed to treat renal cell carcinoma.
       TRANSVERSE_COLECTOMY:
-        text: TRANSVERSE_COLECTOMY
+        description: Surgical removal of the transverse colon, the middle horizontal portion of the large intestine connecting the ascending and descending colon.
       HAND_ASSISTED_LAPAROSCOPIC_RADICAL_NEPHRECTOMY:
-        text: HAND_ASSISTED_LAPAROSCOPIC_RADICAL_NEPHRECTOMY
+        description: Laparoscopic radical nephrectomy performed with the aid of a hand port that allows direct manual assistance during the minimally invasive procedure.
       PUNCH_BIOPSY:
-        text: PUNCH_BIOPSY
+        description: Removal of a small cylindrical core of skin or mucosal tissue using a circular cutting instrument for dermatological or mucosal pathological diagnosis.
       PARTIAL_HEPATECTOMY:
-        text: PARTIAL_HEPATECTOMY
+        description: Surgical removal of a portion of the liver, performed to resect primary liver tumors or metastatic deposits while preserving adequate hepatic function.
       SUPRACERVICAL_HYSTERECTOMY:
-        text: SUPRACERVICAL_HYSTERECTOMY
+        description: Surgical removal of the uterine body while leaving the cervix in place, also known as a subtotal hysterectomy.
       OTHER_SURGICAL_RESECTION:
-        text: OTHER_SURGICAL_RESECTION
+        description: A surgical resection procedure that does not correspond to any of the other specifically defined resection types.
       NOT_REPORTED:
-        text: NOT_REPORTED
+        description: The method of specimen collection was not documented or reported in the available records.
       FULL_HYSTERECTOMY:
-        text: FULL_HYSTERECTOMY
+        description: Complete surgical removal of the uterus and cervix, sometimes also including the ovaries and fallopian tubes, to treat uterine or cervical malignancies.
       TONSILLECTOMY:
-        text: TONSILLECTOMY
+        description: Surgical removal of the palatine tonsils, performed for tonsillar tumors or as part of treatment for oropharyngeal cancer.
       SUPRAGLOTTIC_LARYNGECTOMY:
-        text: SUPRAGLOTTIC_LARYNGECTOMY
+        description: Partial removal of the larynx above the vocal cords (glottis), used to treat supraglottic laryngeal cancer while preserving voice function.
       SUPERFICIAL_PAROTIDECTOMY:
-        text: SUPERFICIAL_PAROTIDECTOMY
+        description: Surgical removal of the superficial lobe of the parotid gland, typically performed to excise parotid tumors located superficial to the facial nerve.
       LARYNGOPHARYNGECTOMY:
-        text: LARYNGOPHARYNGECTOMY
+        description: Surgical removal of the larynx and part or all of the pharynx, performed for advanced cancers involving both structures.
       MAXILLECTOMY:
-        text: MAXILLECTOMY
+        description: Surgical removal of all or part of the maxilla (upper jaw), performed to treat malignant tumors of the hard palate, maxillary sinus, or upper jaw.
       PARTIAL_NEPHRECTOMY:
-        text: PARTIAL_NEPHRECTOMY
+        description: Nephron-sparing surgery in which only the tumor-bearing portion of the kidney is removed, preserving the remaining healthy renal parenchyma.
       MANDIBULECTOMY:
-        text: MANDIBULECTOMY
+        description: Surgical removal of all or part of the mandible (lower jaw), performed to treat malignant tumors involving the mandible or adjacent oral cavity.
       BUCCAL_MUCOSAL_RESECTION:
-        text: BUCCAL_MUCOSAL_RESECTION
+        description: Surgical excision of tumor-bearing tissue from the buccal mucosa (inner lining of the cheek), performed to treat oral cavity cancers.
       VERTICAL_HEMILARYNGECTOMY:
-        text: VERTICAL_HEMILARYNGECTOMY
+        description: Partial laryngectomy involving vertical removal of one side of the larynx, used to treat glottic cancers while preserving voice and swallowing function.
       TOTAL_NEPHRECTOMY:
-        text: TOTAL_NEPHRECTOMY
+        description: Complete surgical removal of an entire kidney, performed to treat renal malignancies or other kidney diseases.
       TOTAL_LARYNGECTOMY:
-        text: TOTAL_LARYNGECTOMY
+        description: Complete surgical removal of the larynx, resulting in permanent loss of natural voice, performed for advanced laryngeal cancer.
       TRANSORAL_LASER_EXCISION:
-        text: TRANSORAL_LASER_EXCISION
+        description: Minimally invasive surgical technique using a laser delivered through the mouth to precisely excise laryngeal or pharyngeal tumors without external incision.
       PAROTIDECTOMY_NOS:
-        text: PAROTIDECTOMY_NOS
+        description: Surgical removal of the parotid gland by an unspecified or not otherwise specified extent or technique.
       RADICAL_MAXILLECTOMY:
-        text: RADICAL_MAXILLECTOMY
+        description: Extensive surgical removal of the entire maxilla along with surrounding structures, performed for aggressive or extensive malignant tumors of the upper jaw.
       ENDOLARYNGEAL_EXCISION:
-        text: ENDOLARYNGEAL_EXCISION
+        description: Surgical removal of a laryngeal lesion performed entirely through the mouth using endoscopic instruments, without external neck incision.
       PALATECTOMY:
-        text: PALATECTOMY
+        description: Surgical removal of all or part of the palate, performed to treat malignant tumors involving the hard or soft palate.
       GLOSSECTOMY:
-        text: GLOSSECTOMY
+        description: Surgical removal of all or part of the tongue, performed to treat oral tongue or base of tongue malignancies.
       PARTIAL_LARYNGECTOMY:
-        text: PARTIAL_LARYNGECTOMY
+        description: Surgical removal of a portion of the larynx while preserving remaining laryngeal function, used for early to intermediate-stage laryngeal cancers.
       LYMPH_NODE_DISSECTION:
-        text: LYMPH_NODE_DISSECTION
+        description: Systematic surgical removal of a group of regional lymph nodes for pathological staging or therapeutic management of cancer spread.
       RADICAL_PROSTATECTOMY:
-        text: RADICAL_PROSTATECTOMY
+        description: Complete surgical removal of the prostate gland, seminal vesicles, and surrounding tissue, performed to treat localized prostate cancer.
       DEEP_PAROTIDECTOMY:
-        text: DEEP_PAROTIDECTOMY
+        description: Surgical removal of the deep lobe of the parotid gland, performed for tumors located deep to the facial nerve.
       SUBTOTAL_PROSTATECTOMY:
-        text: SUBTOTAL_PROSTATECTOMY
+        description: Partial surgical removal of the prostate gland, in which only a portion of the gland is excised rather than the complete organ.
       RADICAL_NEPHRECTOMY:
-        text: RADICAL_NEPHRECTOMY
+        description: Complete surgical removal of the kidney along with the adrenal gland, surrounding fatty tissue, and regional lymph nodes, performed for renal cell carcinoma.
       SUPRACRICOID_LARYNGECTOMY:
-        text: SUPRACRICOID_LARYNGECTOMY
+        description: Partial laryngectomy involving removal of the supracricoid structures while preserving the cricoid cartilage, used for select intermediate-stage laryngeal cancers.
       PARTIAL_MAXILLECTOMY:
-        text: PARTIAL_MAXILLECTOMY
+        description: Surgical removal of a portion of the maxilla, performed for localized malignant or benign tumors that do not require total maxillary resection.
 
   SpecimenQualityObservationTypeEnum:
     name: SpecimenQualityObservationTypeEnum
     description: Types of measurements that reflect the quality of a specimen or its suitability for use.
     permissible_values:
       A260_A280_RATIO:
-        text: A260_A280_RATIO
         description: Ratio of absorbance measured at a wavelength of 260 over that at a wavelength of 280.
       RIBOSOMAL_RNA_28S_16S_RATIO:
-        text: RIBOSOMAL_RNA_28S_16S_RATIO
         description: Ratio of quantity of 28s RNA over that of 16s RNA.
 
   SpecimenQualityObservationMethodEnum:
@@ -3318,10 +3294,8 @@ enums:
     description: A type of method used in determining the quantity of a specimen.
     permissible_values:
       UV_SPEC:
-        text: UV_SPEC
         description: A technique used to measure light absorbance across the ultraviolet and visible ranges of the electromagnetic spectrum.
       PICO_GREEN:
-        text: PICO_GREEN
         description: A technique applying the Pico488 fluorescent sensor dye that is used for quantifying the amount of double-stranded DNA (dsDNA) present in a given sample.
 
   SpecimenQuantityObservationTypeEnum:
@@ -3329,13 +3303,10 @@ enums:
     description: Measures related to the quantity of a specimen or analyte it currently contains - e.g. its weight, volume, or concentration.
     permissible_values:
       WEIGHT:
-        text: WEIGHT
         description: The current weight of the specimen, at the time of recording (as opposed to an initial weight before its processing or portioning).
       VOLUME:
-        text: VOLUME
         description: The current total volume of the specimen, at the time of recording.
       CONCENTRATION:
-        text: CONCENTRATION
         description: The concentration of an extracted analyte that is present in a specimen (specifically, in a specimen of type 'analyte', or an 'aliquot' derived from an analyte). For example, the concentration of DNA in a specimen created through extracting DNA from a blood sample.
 
   SpecimenProcessingActivityTypeEnum:
@@ -3343,16 +3314,12 @@ enums:
     description: The high-level type of processing activity performed.
     permissible_values:
       FIXATION:
-        text: FIXATION
         description: A processing activity that applies chemicals to preserve biological tissues from decay due to autolysis or putrefaction
       FREEZING:
-        text: FREEZING
         description: A processing activity that aims to freeze a specimen.
       MOUNTING:
-        text: MOUNTING
         description: A processing activity that aims to secure a specimen or slide in place in preparation for further examination (usually via microscopy)
       PRESERVATION:
-        text: PRESERVATION
         description: A processing activity that aims to preserve a specimen.
         
   UnitOfMeasurementEnum:
@@ -3363,80 +3330,60 @@ enums:
   GravityDomainEnum:
     description: Social Determinants of Health domains as defined in the Gravity Project
     permissible_values:
-      FOOD_INSECURITY:
-        text: FOOD_INSECURITY
-        description:
-      HOUSING_INSTABILITY:
-        text: HOUSING_INSTABILITY
-        description:
-      HOMELESSNESS:
-        text: HOMELESSNESS
-        description:
-      INADEQUATE_HOUSING:
-        text: INADEQUATE_HOUSING
-        description:
-      TRANSPORTATION_INSECURITY:
-        text: TRANSPORTATION_INSECURITY
-        description:
-      FINANCIAL_INSECURITY:
-        text: FINANCIAL_INSECURITY
-        description:
-      MATERIAL_HARDSHIP:
-        text: MATERIAL_HARDSHIP
-        description:
-      EMPLOYMENT_STATUS:
-        text: EMPLOYMENT_STATUS
-        description:
-      EDUCATIONAL_ATTAINMENT:
-        text: EDUCATIONAL_ATTAINMENT
-        description:
-      VETERAN_STATUS:
-        text: VETERAN_STATUS
-        description:
-      STRESS:
-        text: STRESS
-        description:
-      SOCIAL_CONNECTION:
-        text: SOCIAL_CONNECTION
-        description:
-      INTIMATE_PARTNER_VIOLENCE_IPV:
-        text: INTIMATE_PARTNER_VIOLENCE_IPV
-        description:
-      ELDER_ABUSE:
-        text: ELDER_ABUSE
-        description:
-      HEALTH_LITERACY:
-        text: HEALTH_LITERACY
-        description:
-      MEDICAL_COST_BURDEN:
-        text: MEDICAL_COST_BURDEN
-        description:
-      HEALTH_INSURANCE_COVERAGE_STATUS:
-        text: HEALTH_INSURANCE_COVERAGE_STATUS
-        description:
-      DIGITAL_LITERACY:
-        text: DIGITAL_LITERACY
-        description:
       DIGITAL_ACCESS:
-        text: DIGITAL_ACCESS
-        description:
+        description: The ability to access and use digital technologies, including internet connectivity and devices.
+      DIGITAL_LITERACY:
+        description: The capacity to find, evaluate, and communicate information using digital technology.
+      EDUCATIONAL_ATTAINMENT:
+        description: The highest level of formal education an individual has completed.
+      ELDER_ABUSE:
+        description: Physical, emotional, financial, or other mistreatment or neglect of older adults.
+      EMPLOYMENT_STATUS:
+        description: An individual's current relationship to the workforce, including employment, unemployment, or underemployment.
+      FINANCIAL_INSECURITY:
+        description: Inadequate financial resources to meet basic needs and maintain economic stability.
+      FOOD_INSECURITY:
+        description: Limited or uncertain access to adequate, nutritious food due to financial or other constraints.
+      HEALTH_INSURANCE_COVERAGE_STATUS:
+        description: Whether an individual has health insurance and the type or adequacy of that coverage.
+      HEALTH_LITERACY:
+        description: The degree to which individuals can obtain, process, and understand basic health information to make appropriate health decisions.
+      HOMELESSNESS:
+        description: The condition of lacking a fixed, regular, and adequate nighttime residence.
+      HOUSING_INSTABILITY:
+        description: Difficulty maintaining stable housing, including risk of eviction, frequent moves, or inability to pay rent or mortgage.
+      INADEQUATE_HOUSING:
+        description: Living conditions that are unsafe, overcrowded, or otherwise fail to meet basic habitability standards.
+      INTIMATE_PARTNER_VIOLENCE_IPV:
+        description: Physical, sexual, psychological, or economic abuse perpetrated by a current or former intimate partner.
+      MATERIAL_HARDSHIP:
+        description: Inability to meet basic material needs such as food, housing, clothing, or medical care.
+      MEDICAL_COST_BURDEN:
+        description: The financial strain caused by out-of-pocket medical expenses relative to an individual's or household's income.
+      SOCIAL_CONNECTION:
+        description: The degree to which an individual has relationships and social support networks that promote well-being.
+      STRESS:
+        description: Psychological or physical tension arising from adverse or demanding circumstances that affects health and well-being.
+      TRANSPORTATION_INSECURITY:
+        description: Lack of reliable, safe, or affordable transportation needed to meet daily needs and access services.
       UTILITY_INSECURITY:
-        text: UTILITY_INSECURITY
-        description:
+        description: Inability to reliably afford or access essential utilities such as electricity, heat, or water.
+      VETERAN_STATUS:
+        description: Whether an individual has served in the military, which may affect eligibility for benefits and expose them to unique health risks.
   
   ConditionSeverityEnum:
-    description: Social Determinants of Health domains as defined in the Gravity Project
+    description: The clinical severity level assigned to a condition or diagnosis.
     permissible_values:
       MILD:
-        text: MILD
+        description: A condition that causes minimal symptoms or functional impairment and typically does not require intensive intervention.
         meaning: OMOP:4116992
       MODERATE:
-        text: MODERATE
+        description: A condition that causes noticeable symptoms or functional impairment and may require active treatment or monitoring.
         meaning: OMOP:3272197
       SEVERE:
-        text: SEVERE
+        description: A condition that causes significant symptoms or functional impairment, often requiring urgent or intensive intervention.
         meaning: OMOP:4087703
-
+  
   FamilyRelationshipEnum:
     description: Values describing the relationship between an individual and family members.
     permissible_values:
@@ -3730,7 +3677,7 @@ enums:
     permissible_values:
       CONSORTIUM:
         description: Consortium
-      Study:
+      STUDY:
         description: Study
 
   BaseObservationTypeEnum:
