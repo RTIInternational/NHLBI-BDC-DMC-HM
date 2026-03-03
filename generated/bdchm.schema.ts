@@ -351,21 +351,87 @@ export enum ConditionConceptEnum {
 */
 export enum ProvenanceEnum {
     
-    EHR_BILLING_DIAGNOSIS = "EHR_BILLING_DIAGNOSIS",
+    CASE_REPORT_FORM = "CASE_REPORT_FORM",
+    CLAIM = "CLAIM",
+    CLAIM_AUTHORIZATION = "CLAIM_AUTHORIZATION",
+    CLAIM_DISCHARGE_RECORD = "CLAIM_DISCHARGE_RECORD",
+    CLAIM_ENROLMENT_RECORD = "CLAIM_ENROLMENT_RECORD",
+    COST_RECORD = "COST_RECORD",
+    DEATH_CERTIFICATE = "DEATH_CERTIFICATE",
+    DENTAL_CLAIM = "DENTAL_CLAIM",
+    EHR = "EHR",
+    EHR_ADMINISTRATION_RECORD = "EHR_ADMINISTRATION_RECORD",
+    EHR_ADMISSION_NOTE = "EHR_ADMISSION_NOTE",
+    EHR_ANCILLARY_REPORT = "EHR_ANCILLARY_REPORT",
+    EHR_BILLING_RECORD = "EHR_BILLING_RECORD",
     EHR_CHIEF_COMPLAINT = "EHR_CHIEF_COMPLAINT",
-    EHR_ENCOUNTER_DIAGNOSIS = "EHR_ENCOUNTER_DIAGNOSIS",
-    EHR_EPISODE_ENTRY = "EHR_EPISODE_ENTRY",
-    EHR_PROBLEM_LIST_ENTRY = "EHR_PROBLEM_LIST_ENTRY",
-    FIRST_POSITION_CONDITION = "FIRST_POSITION_CONDITION",
-    NLP_DERIVED = "NLP_DERIVED",
-    OBSERVATION_RECORDED_FROM_EHR = "OBSERVATION_RECORDED_FROM_EHR",
-    PATIENT_SELF_REPORTED_CONDITION = "PATIENT_SELF-REPORTED_CONDITION",
-    PRIMARY_CONDITION = "PRIMARY_CONDITION",
-    REFERRAL_RECORD = "REFERRAL_RECORD",
-    SECONDARY_CONDITION = "SECONDARY_CONDITION",
-    TUMOR_REGISTRY = "TUMOR_REGISTRY",
-    WORKING_DIAGNOSIS = "WORKING_DIAGNOSIS",
-    CLINICAL_DIAGNOSIS = "CLINICAL_DIAGNOSIS",
+    EHR_DISCHARGE_RECORD = "EHR_DISCHARGE_RECORD",
+    EHR_DISCHARGE_SUMMARY = "EHR_DISCHARGE_SUMMARY",
+    EHR_DISPENSING_RECORD = "EHR_DISPENSING_RECORD",
+    EHR_EMERGENCY_ROOM_NOTE = "EHR_EMERGENCY_ROOM_NOTE",
+    EHR_ENCOUNTER_RECORD = "EHR_ENCOUNTER_RECORD",
+    EHR_EPISODE_RECORD = "EHR_EPISODE_RECORD",
+    EHR_INPATIENT_NOTE = "EHR_INPATIENT_NOTE",
+    EHR_MEDICATION_LIST = "EHR_MEDICATION_LIST",
+    EHR_NOTE = "EHR_NOTE",
+    EHR_NURSING_REPORT = "EHR_NURSING_REPORT",
+    EHR_ORDER = "EHR_ORDER",
+    EHR_OUTPATIENT_NOTE = "EHR_OUTPATIENT_NOTE",
+    EHR_PATHOLOGY_REPORT = "EHR_PATHOLOGY_REPORT",
+    EHR_PHYSICAL_EXAMINATION = "EHR_PHYSICAL_EXAMINATION",
+    EHR_PLANNED_DISPENSING_RECORD = "EHR_PLANNED_DISPENSING_RECORD",
+    EHR_PRESCRIPTION = "EHR_PRESCRIPTION",
+    EHR_PRESCRIPTION_ISSUE_RECORD = "EHR_PRESCRIPTION_ISSUE_RECORD",
+    EHR_PROBLEM_LIST = "EHR_PROBLEM_LIST",
+    EHR_RADIOLOGY_REPORT = "EHR_RADIOLOGY_REPORT",
+    EHR_REFERRAL_RECORD = "EHR_REFERRAL_RECORD",
+    EXTERNAL_CDM_INSTANCE = "EXTERNAL_CDM_INSTANCE",
+    FACILITY_CLAIM = "FACILITY_CLAIM",
+    FACILITY_CLAIM_DETAIL = "FACILITY_CLAIM_DETAIL",
+    FACILITY_CLAIM_HEADER = "FACILITY_CLAIM_HEADER",
+    GEOGRAPHIC_ISOLATION_RECORD = "GEOGRAPHIC_ISOLATION_RECORD",
+    GOVERNMENT_REPORT = "GOVERNMENT_REPORT",
+    HEALTH_INFORMATION_EXCHANGE_RECORD = "HEALTH_INFORMATION_EXCHANGE_RECORD",
+    HEALTH_RISK_ASSESSMENT = "HEALTH_RISK_ASSESSMENT",
+    HEALTHCARE_PROFESSIONAL_FILLED_SURVEY = "HEALTHCARE_PROFESSIONAL_FILLED_SURVEY",
+    HOSPITAL_COST = "HOSPITAL_COST",
+    INPATIENT_CLAIM = "INPATIENT_CLAIM",
+    INPATIENT_CLAIM_DETAIL = "INPATIENT_CLAIM_DETAIL",
+    INPATIENT_CLAIM_HEADER = "INPATIENT_CLAIM_HEADER",
+    LAB = "LAB",
+    MAIL_ORDER_RECORD = "MAIL_ORDER_RECORD",
+    NLP = "NLP",
+    OBITUARY = "OBITUARY",
+    OUTPATIENT_CLAIM = "OUTPATIENT_CLAIM",
+    OUTPATIENT_CLAIM_DETAIL = "OUTPATIENT_CLAIM_DETAIL",
+    OUTPATIENT_CLAIM_HEADER = "OUTPATIENT_CLAIM_HEADER",
+    PATIENT_FILLED_SURVEY = "PATIENT_FILLED_SURVEY",
+    PATIENT_OR_PAYER_PAID_RECORD = "PATIENT_OR_PAYER_PAID_RECORD",
+    PATIENT_REPORTED_COST = "PATIENT_REPORTED_COST",
+    PATIENT_SELF_REPORT = "PATIENT_SELF_REPORT",
+    PATIENT_SELF_TESTED = "PATIENT_SELF_TESTED",
+    PAYER_SYSTEM_RECORD_PAID_PREMIUM = "PAYER_SYSTEM_RECORD_PAID_PREMIUM",
+    PAYER_SYSTEM_RECORD_PRIMARY_PAYER = "PAYER_SYSTEM_RECORD_PRIMARY_PAYER",
+    PAYER_SYSTEM_RECORD_SECONDARY_PAYER = "PAYER_SYSTEM_RECORD_SECONDARY_PAYER",
+    PHARMACY_CLAIM = "PHARMACY_CLAIM",
+    POINT_OF_CARESOLIDUSEXPRESS_LAB = "POINT_OF_CARE/EXPRESS_LAB",
+    PRE_QUALIFICATION_TIME_PERIOD = "PRE_QUALIFICATION_TIME_PERIOD",
+    PROFESSIONAL_CLAIM = "PROFESSIONAL_CLAIM",
+    PROFESSIONAL_CLAIM_DETAIL = "PROFESSIONAL_CLAIM_DETAIL",
+    PROFESSIONAL_CLAIM_HEADER = "PROFESSIONAL_CLAIM_HEADER",
+    PROVIDER_CHARGE_LIST_PRICE = "PROVIDER_CHARGE_LIST_PRICE",
+    PROVIDER_FINANCIAL_SYSTEM = "PROVIDER_FINANCIAL_SYSTEM",
+    PROVIDER_INCURRED_COST_RECORD = "PROVIDER_INCURRED_COST_RECORD",
+    RANDOMIZATION_RECORD = "RANDOMIZATION_RECORD",
+    REFERENCE_LAB = "REFERENCE_LAB",
+    REGISTRY = "REGISTRY",
+    STANDARD_ALGORITHM = "STANDARD_ALGORITHM",
+    STANDARD_ALGORITHM_FROM_CLAIMS = "STANDARD_ALGORITHM_FROM_CLAIMS",
+    STANDARD_ALGORITHM_FROM_EHR = "STANDARD_ALGORITHM_FROM_EHR",
+    SURVEY = "SURVEY",
+    URGENT_LAB = "URGENT_LAB",
+    US_SOCIAL_SECURITY_DEATH_MASTER_FILE = "US_SOCIAL_SECURITY_DEATH_MASTER_FILE",
+    VISION_CLAIM = "VISION_CLAIM",
 };
 /**
 * A constrained set of enumerative values indicating whether something is present, absent, or its status is unknown.
@@ -403,37 +469,37 @@ export enum DrugExposureConceptEnum {
 export enum DrugExposureProvenanceEnum {
     
     /** Randomized Drug */
-    RANDOMIZED_DRUG = "RANDOMIZED DRUG",
+    RANDOMIZED_DRUG = "RANDOMIZED_DRUG",
     /** Patient Self-Reported Medication */
-    PATIENT_SELF_REPORTED_MEDICATION = "PATIENT SELF-REPORTED MEDICATION",
+    PATIENT_SELF_REPORTED_MEDICATION = "PATIENT_SELF_REPORTED_MEDICATION",
     /** NLP derived */
-    NLP_DERIVED = "NLP DERIVED",
+    NLP_DERIVED = "NLP_DERIVED",
     /** Prescription dispensed in pharmacy */
-    PRESCRIPTION_DISPENSED_IN_PHARMACY = "PRESCRIPTION DISPENSED IN PHARMACY",
+    PRESCRIPTION_DISPENSED_IN_PHARMACY = "PRESCRIPTION_DISPENSED_IN_PHARMACY",
     /** Physician administered drug (identified from EHR order) */
-    PHYSICIAN_ADMINISTERED_DRUG_LEFT_PARENTHESISIDENTIFIED_FROM_EHR_ORDERRIGHT_PARENTHESIS = "PHYSICIAN ADMINISTERED DRUG (IDENTIFIED FROM EHR ORDER)",
+    PHYSICIAN_ADMINISTERED_DRUG_IDENTIFIED_FROM_EHR_ORDER = "PHYSICIAN_ADMINISTERED_DRUG_IDENTIFIED_FROM_EHR_ORDER",
     /** Dispensed in Outpatient office */
-    DISPENSED_IN_OUTPATIENT_OFFICE = "DISPENSED IN OUTPATIENT OFFICE",
+    DISPENSED_IN_OUTPATIENT_OFFICE = "DISPENSED_IN_OUTPATIENT_OFFICE",
     /** Prescription dispensed through mail order */
-    PRESCRIPTION_DISPENSED_THROUGH_MAIL_ORDER = "PRESCRIPTION DISPENSED THROUGH MAIL ORDER",
+    PRESCRIPTION_DISPENSED_THROUGH_MAIL_ORDER = "PRESCRIPTION_DISPENSED_THROUGH_MAIL_ORDER",
     /** Prescription written */
-    PRESCRIPTION_WRITTEN = "PRESCRIPTION WRITTEN",
+    PRESCRIPTION_WRITTEN = "PRESCRIPTION_WRITTEN",
     /** Medication list entry */
-    MEDICATION_LIST_ENTRY = "MEDICATION LIST ENTRY",
+    MEDICATION_LIST_ENTRY = "MEDICATION_LIST_ENTRY",
     /** Physician administered drug (identified as procedure) */
-    PHYSICIAN_ADMINISTERED_DRUG_LEFT_PARENTHESISIDENTIFIED_AS_PROCEDURERIGHT_PARENTHESIS = "PHYSICIAN ADMINISTERED DRUG (IDENTIFIED AS PROCEDURE)",
+    PHYSICIAN_ADMINISTERED_DRUG_IDENTIFIED_AS_PROCEDURE = "PHYSICIAN_ADMINISTERED_DRUG_IDENTIFIED_AS_PROCEDURE",
     /** Inpatient administration */
-    INPATIENT_ADMINISTRATION = "INPATIENT ADMINISTRATION",
+    INPATIENT_ADMINISTRATION = "INPATIENT_ADMINISTRATION",
     /** Drug era - 0 days persistence window */
-    DRUG_ERA___0_DAYS_PERSISTENCE_WINDOW = "DRUG ERA - 0 DAYS PERSISTENCE WINDOW",
+    DRUG_ERA_0_DAYS_PERSISTENCE_WINDOW = "DRUG_ERA_0_DAYS_PERSISTENCE_WINDOW",
     /** Drug era - 30 days persistence window */
-    DRUG_ERA___30_DAYS_PERSISTENCE_WINDOW = "DRUG ERA - 30 DAYS PERSISTENCE WINDOW",
+    DRUG_ERA_30_DAYS_PERSISTENCE_WINDOW = "DRUG_ERA_30_DAYS_PERSISTENCE_WINDOW",
     /** Physician administered drug (identified from EHR problem list) */
-    PHYSICIAN_ADMINISTERED_DRUG_LEFT_PARENTHESISIDENTIFIED_FROM_EHR_PROBLEM_LISTRIGHT_PARENTHESIS = "PHYSICIAN ADMINISTERED DRUG (IDENTIFIED FROM EHR PROBLEM LIST)",
+    PHYSICIAN_ADMINISTERED_DRUG_IDENTIFIED_FROM_EHR_PROBLEM_LIST = "PHYSICIAN_ADMINISTERED_DRUG_IDENTIFIED_FROM_EHR_PROBLEM_LIST",
     /** Physician administered drug (identified from referral record) */
-    PHYSICIAN_ADMINISTERED_DRUG_LEFT_PARENTHESISIDENTIFIED_FROM_REFERRAL_RECORDRIGHT_PARENTHESIS = "PHYSICIAN ADMINISTERED DRUG (IDENTIFIED FROM REFERRAL RECORD)",
+    PHYSICIAN_ADMINISTERED_DRUG_IDENTIFIED_FROM_REFERRAL_RECORD = "PHYSICIAN_ADMINISTERED_DRUG_IDENTIFIED_FROM_REFERRAL_RECORD",
     /** Physician administered drug (identified from EHR observation) */
-    PHYSICIAN_ADMINISTERED_DRUG_LEFT_PARENTHESISIDENTIFIED_FROM_EHR_OBSERVATIONRIGHT_PARENTHESIS = "PHYSICIAN ADMINISTERED DRUG (IDENTIFIED FROM EHR OBSERVATION)",
+    PHYSICIAN_ADMINISTERED_DRUG_IDENTIFIED_FROM_EHR_OBSERVATION = "PHYSICIAN_ADMINISTERED_DRUG_IDENTIFIED_FROM_EHR_OBSERVATION",
 };
 /**
 * Routes of drug administration.
@@ -441,7 +507,7 @@ export enum DrugExposureProvenanceEnum {
 export enum DrugRouteEnum {
     
     /** Arteriovenous fistula */
-    ARTERIOVENOUS_FISTULA = "ARTERIOVENOUS FISTULA",
+    ARTERIOVENOUS_FISTULA = "ARTERIOVENOUS_FISTULA",
     /** Haemodiafiltration */
     HAEMODIAFILTRATION = "HAEMODIAFILTRATION",
     /** Sublesional */
@@ -451,15 +517,15 @@ export enum DrugRouteEnum {
     /** Intramural */
     INTRAMURAL = "INTRAMURAL",
     /** Intracatheter instillation */
-    INTRACATHETER_INSTILLATION = "INTRACATHETER INSTILLATION",
+    INTRACATHETER_INSTILLATION = "INTRACATHETER_INSTILLATION",
     /** Sublabial */
     SUBLABIAL = "SUBLABIAL",
     /** Intra-articular */
-    INTRA_ARTICULAR = "INTRA-ARTICULAR",
+    INTRA_ARTICULAR = "INTRA_ARTICULAR",
     /** Intradialytic */
     INTRADIALYTIC = "INTRADIALYTIC",
     /** Arteriovenous graft */
-    ARTERIOVENOUS_GRAFT = "ARTERIOVENOUS GRAFT",
+    ARTERIOVENOUS_GRAFT = "ARTERIOVENOUS_GRAFT",
     /** Otic */
     OTIC = "OTIC",
     /** Oral */
@@ -467,7 +533,7 @@ export enum DrugRouteEnum {
     /** Vaginal */
     VAGINAL = "VAGINAL",
     /** Route of administration value */
-    ROUTE_OF_ADMINISTRATION_VALUE = "ROUTE OF ADMINISTRATION VALUE",
+    ROUTE_OF_ADMINISTRATION_VALUE = "ROUTE_OF_ADMINISTRATION_VALUE",
     /** Gastrostomy */
     GASTROSTOMY = "GASTROSTOMY",
     /** Nasogastric */
@@ -511,11 +577,11 @@ export enum DrugRouteEnum {
     /** Subconjunctival */
     SUBCONJUNCTIVAL = "SUBCONJUNCTIVAL",
     /** Mucous fistula */
-    MUCOUS_FISTULA = "MUCOUS FISTULA",
+    MUCOUS_FISTULA = "MUCOUS_FISTULA",
     /** Intraprostatic */
     INTRAPROSTATIC = "INTRAPROSTATIC",
     /** Intravenous peripheral */
-    INTRAVENOUS_PERIPHERAL = "INTRAVENOUS PERIPHERAL",
+    INTRAVENOUS_PERIPHERAL = "INTRAVENOUS_PERIPHERAL",
     /** Periosteal */
     PERIOSTEAL = "PERIOSTEAL",
     /** Esophagostomy */
@@ -537,19 +603,19 @@ export enum DrugRouteEnum {
     /** Intratympanic */
     INTRATYMPANIC = "INTRATYMPANIC",
     /** Gastro-intestinal stoma */
-    GASTRO_INTESTINAL_STOMA = "GASTRO-INTESTINAL STOMA",
+    GASTRO_INTESTINAL_STOMA = "GASTRO_INTESTINAL_STOMA",
     /** Intrapulmonary */
     INTRAPULMONARY = "INTRAPULMONARY",
     /** Intrasinal */
     INTRASINAL = "INTRASINAL",
     /** Tumor cavity */
-    TUMOR_CAVITY = "TUMOR CAVITY",
+    TUMOR_CAVITY = "TUMOR_CAVITY",
     /** Submucosal */
     SUBMUCOSAL = "SUBMUCOSAL",
     /** Intraductal */
     INTRADUCTAL = "INTRADUCTAL",
     /** Intravenous central */
-    INTRAVENOUS_CENTRAL = "INTRAVENOUS CENTRAL",
+    INTRAVENOUS_CENTRAL = "INTRAVENOUS_CENTRAL",
     /** Paravertebral */
     PARAVERTEBRAL = "PARAVERTEBRAL",
     /** Urostomy */
@@ -557,7 +623,7 @@ export enum DrugRouteEnum {
     /** Laryngeal */
     LARYNGEAL = "LARYNGEAL",
     /** Surgical cavity */
-    SURGICAL_CAVITY = "SURGICAL CAVITY",
+    SURGICAL_CAVITY = "SURGICAL_CAVITY",
     /** Intravenous */
     INTRAVENOUS = "INTRAVENOUS",
     /** Intratesticular */
@@ -567,7 +633,7 @@ export enum DrugRouteEnum {
     /** Endotracheopulmonary */
     ENDOTRACHEOPULMONARY = "ENDOTRACHEOPULMONARY",
     /** Extra-amniotic */
-    EXTRA_AMNIOTIC = "EXTRA-AMNIOTIC",
+    EXTRA_AMNIOTIC = "EXTRA_AMNIOTIC",
     /** Gastroenteral */
     GASTROENTERAL = "GASTROENTERAL",
     /** Intracervical */
@@ -587,11 +653,11 @@ export enum DrugRouteEnum {
     /** Ophthalmic */
     OPHTHALMIC = "OPHTHALMIC",
     /** Body cavity */
-    BODY_CAVITY = "BODY CAVITY",
+    BODY_CAVITY = "BODY_CAVITY",
     /** Intraosseous */
     INTRAOSSEOUS = "INTRAOSSEOUS",
     /** Intraventricular route - cardiac */
-    INTRAVENTRICULAR_ROUTE___CARDIAC = "INTRAVENTRICULAR ROUTE - CARDIAC",
+    INTRAVENTRICULAR_ROUTE_CARDIAC = "INTRAVENTRICULAR_ROUTE_CARDIAC",
     /** Intrabiliary */
     INTRABILIARY = "INTRABILIARY",
     /** Intracerebroventricular */
@@ -609,7 +675,7 @@ export enum DrugRouteEnum {
     /** Transdermal */
     TRANSDERMAL = "TRANSDERMAL",
     /** Intra-arterial */
-    INTRA_ARTERIAL = "INTRA-ARTERIAL",
+    INTRA_ARTERIAL = "INTRA_ARTERIAL",
     /** Intraperitoneal */
     INTRAPERITONEAL = "INTRAPERITONEAL",
     /** Intramedullary */
@@ -685,19 +751,19 @@ export enum DrugRouteEnum {
     /** Fistula */
     FISTULA = "FISTULA",
     /** Surgical drain */
-    SURGICAL_DRAIN = "SURGICAL DRAIN",
+    SURGICAL_DRAIN = "SURGICAL_DRAIN",
     /** Ureteral */
     URETERAL = "URETERAL",
     /** Epilesional */
     EPILESIONAL = "EPILESIONAL",
     /** Extracorporeal hemodialysis */
-    EXTRACORPOREAL_HEMODIALYSIS = "EXTRACORPOREAL HEMODIALYSIS",
+    EXTRACORPOREAL_HEMODIALYSIS = "EXTRACORPOREAL_HEMODIALYSIS",
     /** Suprachoroidal */
     SUPRACHOROIDAL = "SUPRACHOROIDAL",
     /** Extracorporeal */
     EXTRACORPOREAL = "EXTRACORPOREAL",
     /** Intracorporus cavernosum */
-    INTRACORPORUS_CAVERNOSUM = "INTRACORPORUS CAVERNOSUM",
+    INTRACORPORUS_CAVERNOSUM = "INTRACORPORUS_CAVERNOSUM",
     /** Intraglandular */
     INTRAGLANDULAR = "INTRAGLANDULAR",
     /** Intracholangiopancreatic */
@@ -707,7 +773,7 @@ export enum DrugRouteEnum {
     /** Peritumoral */
     PERITUMORAL = "PERITUMORAL",
     /** Posterior juxtascleral */
-    POSTERIOR_JUXTASCLERAL = "POSTERIOR JUXTASCLERAL",
+    POSTERIOR_JUXTASCLERAL = "POSTERIOR_JUXTASCLERAL",
     /** Subretinal */
     SUBRETINAL = "SUBRETINAL",
     /** Infiltration */
@@ -733,7 +799,7 @@ export enum DrugRouteEnum {
     /** Peridural */
     PERIDURAL = "PERIDURAL",
     /** Lower respiratory tract */
-    LOWER_RESPIRATORY_TRACT = "LOWER RESPIRATORY TRACT",
+    LOWER_RESPIRATORY_TRACT = "LOWER_RESPIRATORY_TRACT",
     /** Intramammary */
     INTRAMAMMARY = "INTRAMAMMARY",
     /** Intratumor */
@@ -759,7 +825,7 @@ export enum DrugRouteEnum {
     /** Intralingual */
     INTRALINGUAL = "INTRALINGUAL",
     /** Respiratory tract */
-    RESPIRATORY_TRACT = "RESPIRATORY TRACT",
+    RESPIRATORY_TRACT = "RESPIRATORY_TRACT",
     /** Intrahepatic */
     INTRAHEPATIC = "INTRAHEPATIC",
     /** Conjunctival */
@@ -767,7 +833,7 @@ export enum DrugRouteEnum {
     /** Intraepicardial */
     INTRAEPICARDIAL = "INTRAEPICARDIAL",
     /** Digestive tract */
-    DIGESTIVE_TRACT = "DIGESTIVE TRACT",
+    DIGESTIVE_TRACT = "DIGESTIVE_TRACT",
     /** Ocular */
     OCULAR = "OCULAR",
 };
@@ -783,165 +849,165 @@ export enum DeviceExposureConceptEnum {
 export enum DeviceExposureProvenanceEnum {
     
     /** Case Report Form */
-    CASE_REPORT_FORM = "CASE REPORT FORM",
+    CASE_REPORT_FORM = "CASE_REPORT_FORM",
     /** Claim */
     CLAIM = "CLAIM",
     /** Claim authorization */
-    CLAIM_AUTHORIZATION = "CLAIM AUTHORIZATION",
+    CLAIM_AUTHORIZATION = "CLAIM_AUTHORIZATION",
     /** Claim discharge record */
-    CLAIM_DISCHARGE_RECORD = "CLAIM DISCHARGE RECORD",
+    CLAIM_DISCHARGE_RECORD = "CLAIM_DISCHARGE_RECORD",
     /** Claim enrolment record */
-    CLAIM_ENROLMENT_RECORD = "CLAIM ENROLMENT RECORD",
+    CLAIM_ENROLMENT_RECORD = "CLAIM_ENROLMENT_RECORD",
     /** Cost record */
-    COST_RECORD = "COST RECORD",
+    COST_RECORD = "COST_RECORD",
     /** Death Certificate */
-    DEATH_CERTIFICATE = "DEATH CERTIFICATE",
+    DEATH_CERTIFICATE = "DEATH_CERTIFICATE",
     /** Dental claim */
-    DENTAL_CLAIM = "DENTAL CLAIM",
+    DENTAL_CLAIM = "DENTAL_CLAIM",
     /** EHR */
     EHR = "EHR",
     /** EHR administration record */
-    EHR_ADMINISTRATION_RECORD = "EHR ADMINISTRATION RECORD",
+    EHR_ADMINISTRATION_RECORD = "EHR_ADMINISTRATION_RECORD",
     /** EHR admission note */
-    EHR_ADMISSION_NOTE = "EHR ADMISSION NOTE",
+    EHR_ADMISSION_NOTE = "EHR_ADMISSION_NOTE",
     /** EHR ancillary report */
-    EHR_ANCILLARY_REPORT = "EHR ANCILLARY REPORT",
+    EHR_ANCILLARY_REPORT = "EHR_ANCILLARY_REPORT",
     /** EHR billing record */
-    EHR_BILLING_RECORD = "EHR BILLING RECORD",
+    EHR_BILLING_RECORD = "EHR_BILLING_RECORD",
     /** EHR chief complaint */
-    EHR_CHIEF_COMPLAINT = "EHR CHIEF COMPLAINT",
+    EHR_CHIEF_COMPLAINT = "EHR_CHIEF_COMPLAINT",
     /** EHR discharge record */
-    EHR_DISCHARGE_RECORD = "EHR DISCHARGE RECORD",
+    EHR_DISCHARGE_RECORD = "EHR_DISCHARGE_RECORD",
     /** EHR discharge summary */
-    EHR_DISCHARGE_SUMMARY = "EHR DISCHARGE SUMMARY",
+    EHR_DISCHARGE_SUMMARY = "EHR_DISCHARGE_SUMMARY",
     /** EHR dispensing record */
-    EHR_DISPENSING_RECORD = "EHR DISPENSING RECORD",
+    EHR_DISPENSING_RECORD = "EHR_DISPENSING_RECORD",
     /** EHR emergency room note */
-    EHR_EMERGENCY_ROOM_NOTE = "EHR EMERGENCY ROOM NOTE",
+    EHR_EMERGENCY_ROOM_NOTE = "EHR_EMERGENCY_ROOM_NOTE",
     /** EHR encounter record */
-    EHR_ENCOUNTER_RECORD = "EHR ENCOUNTER RECORD",
+    EHR_ENCOUNTER_RECORD = "EHR_ENCOUNTER_RECORD",
     /** EHR episode record */
-    EHR_EPISODE_RECORD = "EHR EPISODE RECORD",
+    EHR_EPISODE_RECORD = "EHR_EPISODE_RECORD",
     /** EHR inpatient note */
-    EHR_INPATIENT_NOTE = "EHR INPATIENT NOTE",
+    EHR_INPATIENT_NOTE = "EHR_INPATIENT_NOTE",
     /** EHR medication list */
-    EHR_MEDICATION_LIST = "EHR MEDICATION LIST",
+    EHR_MEDICATION_LIST = "EHR_MEDICATION_LIST",
     /** EHR note */
-    EHR_NOTE = "EHR NOTE",
+    EHR_NOTE = "EHR_NOTE",
     /** EHR nursing report */
-    EHR_NURSING_REPORT = "EHR NURSING REPORT",
+    EHR_NURSING_REPORT = "EHR_NURSING_REPORT",
     /** EHR order */
-    EHR_ORDER = "EHR ORDER",
+    EHR_ORDER = "EHR_ORDER",
     /** EHR outpatient note */
-    EHR_OUTPATIENT_NOTE = "EHR OUTPATIENT NOTE",
+    EHR_OUTPATIENT_NOTE = "EHR_OUTPATIENT_NOTE",
     /** EHR Pathology report */
-    EHR_PATHOLOGY_REPORT = "EHR PATHOLOGY REPORT",
+    EHR_PATHOLOGY_REPORT = "EHR_PATHOLOGY_REPORT",
     /** EHR physical examination */
-    EHR_PHYSICAL_EXAMINATION = "EHR PHYSICAL EXAMINATION",
+    EHR_PHYSICAL_EXAMINATION = "EHR_PHYSICAL_EXAMINATION",
     /** EHR planned dispensing record */
-    EHR_PLANNED_DISPENSING_RECORD = "EHR PLANNED DISPENSING RECORD",
+    EHR_PLANNED_DISPENSING_RECORD = "EHR_PLANNED_DISPENSING_RECORD",
     /** EHR prescription */
-    EHR_PERSCRIPTION = "EHR PERSCRIPTION",
+    EHR_PRESCRIPTION = "EHR_PRESCRIPTION",
     /** EHR prescription issue record */
-    EHR_PERSCRIPTION_ISSUE_RECORD = "EHR PERSCRIPTION ISSUE RECORD",
+    EHR_PRESCRIPTION_ISSUE_RECORD = "EHR_PRESCRIPTION_ISSUE_RECORD",
     /** EHR problem list */
-    EHR_PROBLEM_LIST = "EHR PROBLEM LIST",
+    EHR_PROBLEM_LIST = "EHR_PROBLEM_LIST",
     /** EHR radiology report */
-    EHR_RADIOLOGY_REPORT = "EHR RADIOLOGY REPORT",
+    EHR_RADIOLOGY_REPORT = "EHR_RADIOLOGY_REPORT",
     /** EHR referral record */
-    EHR_REFERRAL_RECORD = "EHR REFERRAL RECORD",
+    EHR_REFERRAL_RECORD = "EHR_REFERRAL_RECORD",
     /** External CDM instance */
-    EXTERNAL_CDM_INSTANCE = "EXTERNAL CDM INSTANCE",
+    EXTERNAL_CDM_INSTANCE = "EXTERNAL_CDM_INSTANCE",
     /** Facility claim */
-    FACILITY_CLAIM = "FACILITY CLAIM",
+    FACILITY_CLAIM = "FACILITY_CLAIM",
     /** Facility claim detail */
-    FACILITY_CLAIM_DETAIL = "FACILITY CLAIM DETAIL",
+    FACILITY_CLAIM_DETAIL = "FACILITY_CLAIM_DETAIL",
     /** Facility claim header */
-    FACILITY_CLAIM_HEADER = "FACILITY CLAIM HEADER",
+    FACILITY_CLAIM_HEADER = "FACILITY_CLAIM_HEADER",
     /** Geographic isolation record */
-    GEOGRAPHIC_ISOLATION_RECORD = "GEOGRAPHIC ISOLATION RECORD",
+    GEOGRAPHIC_ISOLATION_RECORD = "GEOGRAPHIC_ISOLATION_RECORD",
     /** Government report */
-    GOVERNMENT_REPORT = "GOVERNMENT REPORT",
+    GOVERNMENT_REPORT = "GOVERNMENT_REPORT",
     /** Health Information Exchange record */
-    HEALTH_INFORMATION_EXCHANGE_RECORD = "HEALTH INFORMATION EXCHANGE RECORD",
+    HEALTH_INFORMATION_EXCHANGE_RECORD = "HEALTH_INFORMATION_EXCHANGE_RECORD",
     /** Health Risk Assessment */
-    HEALTH_RISK_ASSESSMENT = "HEALTH RISK ASSESSMENT",
+    HEALTH_RISK_ASSESSMENT = "HEALTH_RISK_ASSESSMENT",
     /** Healthcare professional filled survey */
-    HEALTHCARE_PROFESSIONAL_FILLED_SURVEY = "HEALTHCARE PROFESSIONAL FILLED SURVEY",
+    HEALTHCARE_PROFESSIONAL_FILLED_SURVEY = "HEALTHCARE_PROFESSIONAL_FILLED_SURVEY",
     /** Hospital cost */
-    HOSPITAL_COST = "HOSPITAL COST",
+    HOSPITAL_COST = "HOSPITAL_COST",
     /** Inpatient claim */
-    INPATIENT_CLAIM = "INPATIENT CLAIM",
+    INPATIENT_CLAIM = "INPATIENT_CLAIM",
     /** Inpatient claim detail */
-    INPATIENT_CLAIM_DETAIL = "INPATIENT CLAIM DETAIL",
+    INPATIENT_CLAIM_DETAIL = "INPATIENT_CLAIM_DETAIL",
     /** Inpatient claim header */
-    INPATIENT_CLAIM_HEADER = "INPATIENT CLAIM HEADER",
+    INPATIENT_CLAIM_HEADER = "INPATIENT_CLAIM_HEADER",
     /** Lab */
     LAB = "LAB",
     /** Mail order record */
-    MAIL_ORDER_RECORD = "MAIL ORDER RECORD",
+    MAIL_ORDER_RECORD = "MAIL_ORDER_RECORD",
     /** NLP */
     NLP = "NLP",
     /** Outpatient claim */
-    OUTPATIENT_CLAIM = "OUTPATIENT CLAIM",
+    OUTPATIENT_CLAIM = "OUTPATIENT_CLAIM",
     /** Outpatient claim detail */
-    OUTPATIENT_CLAIM_DETAIL = "OUTPATIENT CLAIM DETAIL",
+    OUTPATIENT_CLAIM_DETAIL = "OUTPATIENT_CLAIM_DETAIL",
     /** Outpatient claim header */
-    OUTPATIENT_CLAIM_HEADER = "OUTPATIENT CLAIM HEADER",
+    OUTPATIENT_CLAIM_HEADER = "OUTPATIENT_CLAIM_HEADER",
     /** Patient filled survey */
-    PATIENT_FILLED_SURVEY = "PATIENT FILLED SURVEY",
+    PATIENT_FILLED_SURVEY = "PATIENT_FILLED_SURVEY",
     /** Patient or payer paid record */
-    PATIENT_OR_PAYER_PAID_RECORD = "PATIENT OR PAYER PAID RECORD",
+    PATIENT_OR_PAYER_PAID_RECORD = "PATIENT_OR_PAYER_PAID_RECORD",
     /** Patient reported cost */
-    PATIENT_REPORTED_COST = "PATIENT REPORTED COST",
+    PATIENT_REPORTED_COST = "PATIENT_REPORTED_COST",
     /** Patient self-report */
-    PATIENT_SELF_REPORT = "PATIENT SELF-REPORT",
+    PATIENT_SELF_REPORT = "PATIENT_SELF-REPORT",
     /** Patient self-tested */
-    PATIENT_SELF_TESTED = "PATIENT SELF-TESTED",
+    PATIENT_SELF_TESTED = "PATIENT_SELF_TESTED",
     /** Payer system record (paid premium) */
-    PAYER_SYSTEM_RECORD_LEFT_PARENTHESISPAID_PREMIUMRIGHT_PARENTHESIS = "PAYER SYSTEM RECORD (PAID PREMIUM)",
+    PAYER_SYSTEM_RECORD_PAID_PREMIUM = "PAYER_SYSTEM_RECORD_PAID_PREMIUM",
     /** Payer system record (primary payer) */
-    PAYER_SYSTEM_RECORD_LEFT_PARENTHESISPRIMARY_PAYERRIGHT_PARENTHESIS = "PAYER SYSTEM RECORD (PRIMARY PAYER)",
+    PAYER_SYSTEM_RECORD_PRIMARY_PAYER = "PAYER_SYSTEM_RECORD_PRIMARY_PAYER",
     /** Payer system record (secondary payer) */
-    PAYER_SYSTEM_RECORD_LEFT_PARENTHESISSECONDARY_PAYERRIGHT_PARENTHESIS = "PAYER SYSTEM RECORD (SECONDARY PAYER)",
+    PAYER_SYSTEM_RECORD_SECONDARY_PAYER = "PAYER_SYSTEM_RECORD_SECONDARY_PAYER",
     /** Pharmacy claim */
-    PHARMACY_CLAIM = "PHARMACY CLAIM",
+    PHARMACY_CLAIM = "PHARMACY_CLAIM",
     /** Point of care/express lab */
-    POINT_OF_CARESOLIDUSEXPRESS_LAB = "POINT OF CARE/EXPRESS LAB",
+    POINT_OF_CARE_EXPRESS_LAB = "POINT_OF_CARE_EXPRESS_LAB",
     /** Pre-qualification time period */
-    PRE_QUALIFICATION_TIME_PERIOD = "PRE-QUALIFICATION TIME PERIOD",
+    PRE_QUALIFICATION_TIME_PERIOD = "PRE_QUALIFICATION_TIME_PERIOD",
     /** Professional claim */
-    PROFESSIONAL_CLAIM = "PROFESSIONAL CLAIM",
+    PROFESSIONAL_CLAIM = "PROFESSIONAL_CLAIM",
     /** Professional claim detail */
-    PROFESSIONAL_CLAIM_DETAIL = "PROFESSIONAL CLAIM DETAIL",
+    PROFESSIONAL_CLAIM_DETAIL = "PROFESSIONAL_CLAIM_DETAIL",
     /** Professional claim header */
-    PROFESSIONAL_CLAIM_HEADER = "PROFESSIONAL CLAIM HEADER",
+    PROFESSIONAL_CLAIM_HEADER = "PROFESSIONAL_CLAIM_HEADER",
     /** Provider charge list price */
-    PROVIDER_CHARGE_LIST_PRICE = "PROVIDER CHARGE LIST PRICE",
+    PROVIDER_CHARGE_LIST_PRICE = "PROVIDER_CHARGE_LIST_PRICE",
     /** Provider financial system */
-    PROVIDER_FINANCIAL_SYSTEM = "PROVIDER FINANCIAL SYSTEM",
+    PROVIDER_FINANCIAL_SYSTEM = "PROVIDER_FINANCIAL_SYSTEM",
     /** Provider incurred cost record */
-    PROVIDER_INCURRED_COST_RECORD = "PROVIDER INCURRED COST RECORD",
+    PROVIDER_INCURRED_COST_RECORD = "PROVIDER_INCURRED_COST_RECORD",
     /** Randomization record */
-    RANDOMIZATION_RECORD = "RANDOMIZATION RECORD",
+    RANDOMIZATION_RECORD = "RANDOMIZATION_RECORD",
     /** Reference lab */
-    REFERENCE_LAB = "REFERENCE LAB",
+    REFERENCE_LAB = "REFERENCE_LAB",
     /** Registry */
     REGISTRY = "REGISTRY",
     /** Standard algorithm */
-    STANDARD_ALGORITHM = "STANDARD ALGORITHM",
+    STANDARD_ALGORITHM = "STANDARD_ALGORITHM",
     /** Standard algorithm from claims */
-    STANDARD_ALGORITHM_FROM_CLAIMS = "STANDARD ALGORITHM FROM CLAIMS",
+    STANDARD_ALGORITHM_FROM_CLAIMS = "STANDARD_ALGORITHM_FROM_CLAIMS",
     /** Standard algorithm from EHR */
-    STANDARD_ALGORITHM_FROM_EHR = "STANDARD ALGORITHM FROM EHR",
+    STANDARD_ALGORITHM_FROM_EHR = "STANDARD_ALGORITHM_FROM_EHR",
     /** Survey */
     SURVEY = "SURVEY",
     /** Urgent lab */
-    URGENT_LAB = "URGENT LAB",
+    URGENT_LAB = "URGENT_LAB",
     /** US Social Security Death Master File */
-    US_SOCIAL_SECURITY_DEATH_MASTER_FILE = "US SOCIAL SECURITY DEATH MASTER FILE",
+    US_SOCIAL_SECURITY_DEATH_MASTER_FILE = "US_SOCIAL_SECURITY_DEATH_MASTER_FILE",
     /** Vision claim */
-    VISION_CLAIM = "VISION CLAIM",
+    VISION_CLAIM = "VISION_CLAIM",
 };
 /**
 * A high-level type of specimen, based on its derivation provenance (i.e. how far removed it is from the original sample extracted from a source).
@@ -963,82 +1029,135 @@ export enum SpecimenTypeEnum {
 export enum AnalyteTypeEnum {
     
     /** Formalin-Fixed Paraffin-Embedded DNA */
-    FFPE_DNA = "FFPE DNA",
+    FFPE_DNA = "FFPE_DNA",
     /** Repli-G (Qiagen) DNA */
-    Repli_G_LEFT_PARENTHESISQiagenRIGHT_PARENTHESIS_DNA = "Repli-G (Qiagen) DNA",
-    GenomePlex_LEFT_PARENTHESISRubiconRIGHT_PARENTHESIS_Amplified_DNA = "GenomePlex (Rubicon) Amplified DNA",
+    REPLI_G_QIAGEN_DNA = "REPLI_G_QIAGEN_DNA",
+    /** GenomePlex Rubicon Amplified DNA */
+    GENOME_PLEX_RUBICON_AMPLIFIED_DNA = "GENOME_PLEX_RUBICON_AMPLIFIED_DNA",
     /** Total Ribonucleic Acid */
-    Total_RNA = "Total RNA",
+    TOTAL_RNA = "TOTAL_RNA",
     /** Repli-G X (Qiagen) DNA */
-    Repli_G_X_LEFT_PARENTHESISQiagenRIGHT_PARENTHESIS_DNA = "Repli-G X (Qiagen) DNA",
+    REPLI_G_X_QIAGEN_DNA = "REPLI_G_X_QIAGEN_DNA",
     /** Ribonucleic Acid */
     RNA = "RNA",
-    /** REPLI-g Pooled DNA */
-    Repli_G_Pooled_LEFT_PARENTHESISQiagenRIGHT_PARENTHESIS_DNA = "Repli-G Pooled (Qiagen) DNA",
+    /** Repli-G Pooled (Qiagen) DNA */
+    REPLI_G_POOLED_QIAGEN_DNA = "REPLI_G_POOLED_QIAGEN_DNA",
     /** DNA */
     DNA = "DNA",
     /** Normal Epstein-Barr Virus Immortalization */
-    EBV_Immortalized_Normal = "EBV Immortalized Normal",
+    EBV_IMMORTALIZED_NORMAL = "EBV_IMMORTALIZED_NORMAL",
     /** Formalin-Fixed Paraffin-Embedded RNA */
-    FFPE_RNA = "FFPE RNA",
+    FFPE_RNA = "FFPE_RNA",
     /** Protein */
-    Protein = "Protein",
-    Nuclei_RNA = "Nuclei RNA",
-    cfDNA = "cfDNA",
+    PROTEIN = "PROTEIN",
+    /** Nuclei RNA */
+    NUCLEI_RNA = "NUCLEI_RNA",
+    /** Cell-free DNA */
+    CFDNA = "CFDNA",
 };
 
 export enum SourceMaterialTypeEnum {
     
+    /** A metastatic tumor sample collected in addition to a previously collected metastatic specimen. */
     ADDITIONAL_METASTATIC = "ADDITIONAL_METASTATIC",
+    /** A new primary tumor sample collected in addition to a previously collected primary specimen. */
     ADDITIONAL_NEW_PRIMARY = "ADDITIONAL_NEW_PRIMARY",
+    /** Tissue derived from a non-cancerous tumor that does not invade nearby tissue or metastasize. */
     BENIGN_NEOPLASMS = "BENIGN_NEOPLASMS",
+    /** Cancerous cells isolated from bone marrow as part of a blood-derived cancer sample. */
     BLOOD_DERIVED_CANCER_BONE_MARROW = "BLOOD_DERIVED_CANCER_BONE_MARROW",
+    /** Cancerous cells isolated from bone marrow following therapeutic intervention. */
     BLOOD_DERIVED_CANCER_BONE_MARROW_POST_TREATMENT = "BLOOD_DERIVED_CANCER_BONE_MARROW_POST_TREATMENT",
+    /** Cancerous cells isolated from peripheral blood as part of a blood-derived cancer sample. */
     BLOOD_DERIVED_CANCER_PERIPHERAL_BLOOD = "BLOOD_DERIVED_CANCER_PERIPHERAL_BLOOD",
+    /** Cancerous cells isolated from peripheral blood following therapeutic intervention. */
     BLOOD_DERIVED_CANCER_PERIPHERAL_BLOOD_POST_TREATMENT = "BLOOD_DERIVED_CANCER_PERIPHERAL_BLOOD_POST_TREATMENT",
+    /** Tumor-derived material, such as circulating tumor DNA or cells, extracted from a blood sample. */
     BLOOD_DERIVED_LIQUID_BIOPSY = "BLOOD_DERIVED_LIQUID_BIOPSY",
+    /** Non-cancerous blood sample used as a normal reference for genomic or molecular analyses. */
     BLOOD_DERIVED_NORMAL = "BLOOD_DERIVED_NORMAL",
+    /** Non-cancerous bone marrow sample used as a normal reference for genomic or molecular analyses. */
     BONE_MARROW_NORMAL = "BONE_MARROW_NORMAL",
+    /** Normal cells collected from the inner cheek mucosa, typically used as a germline reference. */
     BUCCAL_CELL_NORMAL = "BUCCAL_CELL_NORMAL",
+    /** Tumor tissue derived from a xenograft model that was originally established from a cultured cell line. */
     CELL_LINE_DERIVED_XENOGRAFT_TISSUE = "CELL_LINE_DERIVED_XENOGRAFT_TISSUE",
+    /** Immortalized cells grown in culture, derived from tumor or normal tissue for experimental use. */
     CELL_LINES = "CELL_LINES",
+    /** A reference material used to validate or calibrate laboratory assays and analytical processes. */
     CONTROL_ANALYTE = "CONTROL_ANALYTE",
+    /** Deoxyribonucleic acid extracted from a biological sample for genomic analysis. */
     DNA = "DNA",
+    /** Normal B-lymphocytes immortalized by Epstein-Barr virus transformation, used as a germline reference. */
     EBV_IMMORTALIZED_NORMAL = "EBV_IMMORTALIZED_NORMAL",
+    /** A cancer model, such as an organoid or cell line, that has been propagated or expanded from a next-generation model system. */
     EXPANDED_NEXT_GENERATION_CANCER_MODEL = "EXPANDED_NEXT_GENERATION_CANCER_MODEL",
+    /** Formalin-fixed paraffin-embedded tissue from a recurrent tumor, preserved for histological or molecular analysis. */
     FFPE_RECURRENT = "FFPE_RECURRENT",
+    /** Thin sections cut from formalin-fixed paraffin-embedded tissue blocks for nucleic acid or protein extraction. */
     FFPE_SCROLLS = "FFPE_SCROLLS",
+    /** Normal fibroblast cells isolated from bone marrow, used as a non-cancerous reference. */
     FIBROBLASTS_FROM_BONE_MARROW_NORMAL = "FIBROBLASTS_FROM_BONE_MARROW_NORMAL",
+    /** White blood cells of the granulocyte lineage isolated from blood, often used as a normal germline reference. */
     GRANULOCYTES = "GRANULOCYTES",
+    /** Primary tumor cells taken directly from a human subject without prior in vitro expansion. */
     HUMAN_TUMOR_ORIGINAL_CELLS = "HUMAN_TUMOR_ORIGINAL_CELLS",
+    /** Tissue from a neoplasm that has not yet invaded surrounding tissue, representing an early-stage malignancy. */
     IN_SITU_NEOPLASMS = "IN_SITU_NEOPLASMS",
+    /** Non-cancerous lymphoid tissue used as a normal reference for genomic or molecular analyses. */
     LYMPHOID_NORMAL = "LYMPHOID_NORMAL",
+    /** Tumor tissue collected from a site distant from the primary tumor, representing metastatic disease. */
     METASTATIC = "METASTATIC",
+    /** A cell culture sample containing both adherent and suspension cell populations. */
     MIXED_ADHERENT_SUSPENSION = "MIXED_ADHERENT_SUSPENSION",
+    /** Normal mononuclear cells isolated from bone marrow, used as a non-cancerous reference. */
     MONONUCLEAR_CELLS_FROM_BONE_MARROW_NORMAL = "MONONUCLEAR_CELLS_FROM_BONE_MARROW_NORMAL",
+    /** Tissue from a neoplasm whose malignant potential cannot be determined based on available information. */
     NEOPLASMS_OF_UNCERTAIN_AND_UNKNOWN_BEHAVIOR = "NEOPLASMS_OF_UNCERTAIN_AND_UNKNOWN_BEHAVIOR",
+    /** A modern in vitro or in vivo cancer model, such as a patient-derived organoid or xenograft, that recapitulates tumor biology. */
     NEXT_GENERATION_CANCER_MODEL = "NEXT_GENERATION_CANCER_MODEL",
+    /** Histologically normal tissue collected from a site adjacent to a tumor, used as a local reference. */
     NORMAL_ADJACENT_TISSUE = "NORMAL_ADJACENT_TISSUE",
-    PLEURAL_EFFUSION = "PLEURAL_EFFUSION",
-    POST_NEOADJUVANT_THERAPY = "POST_NEOADJUVANT_THERAPY",
-    PRIMARY_BLOOD_DERIVED_CANCER_BONE_MARROW = "PRIMARY_BLOOD_DERIVED_CANCER_BONE_MARROW",
-    PRIMARY_BLOOD_DERIVED_CANCER_PERIPHERAL_BLOOD = "PRIMARY_BLOOD_DERIVED_CANCER_PERIPHERAL_BLOOD",
-    PRIMARY_TUMOR = "PRIMARY_TUMOR",
-    PRIMARY_XENOGRAFT_TISSUE = "PRIMARY_XENOGRAFT_TISSUE",
-    RECURRENT_BLOOD_DERIVED_CANCER_BONE_MARROW = "RECURRENT_BLOOD_DERIVED_CANCER_BONE_MARROW",
-    RECURRENT_BLOOD_DERIVED_CANCER_PERIPHERAL_BLOOD = "RECURRENT_BLOOD_DERIVED_CANCER_PERIPHERAL_BLOOD",
-    RECURRENT_TUMOR = "RECURRENT_TUMOR",
-    RNA = "RNA",
-    SALIVA = "SALIVA",
-    SLIDES = "SLIDES",
-    SOLID_TISSUE_NORMAL = "SOLID_TISSUE_NORMAL",
-    TOTAL_RNA = "TOTAL_RNA",
-    TUMOR = "TUMOR",
-    TUMOR_ADJACENT_NORMAL_POST_NEOADJUVANT_THERAPY = "TUMOR_ADJACENT_NORMAL_POST_NEOADJUVANT_THERAPY",
-    XENOGRAFT_TISSUE = "XENOGRAFT_TISSUE",
+    /** A sample that was not obtained because collection was prohibited by consent, regulation, or protocol. */
     NOT_ALLOWED_TO_COLLECT = "NOT_ALLOWED_TO_COLLECT",
+    /** The source material type was not documented or reported for this sample. */
     NOT_REPORTED = "NOT_REPORTED",
+    /** Fluid collected from the pleural cavity, which may contain tumor cells in the context of malignancy. */
+    PLEURAL_EFFUSION = "PLEURAL_EFFUSION",
+    /** Tumor tissue collected after the administration of neoadjuvant (pre-surgical) therapy. */
+    POST_NEOADJUVANT_THERAPY = "POST_NEOADJUVANT_THERAPY",
+    /** The initial cancerous bone marrow sample collected from a patient with a blood-derived malignancy. */
+    PRIMARY_BLOOD_DERIVED_CANCER_BONE_MARROW = "PRIMARY_BLOOD_DERIVED_CANCER_BONE_MARROW",
+    /** The initial cancerous peripheral blood sample collected from a patient with a blood-derived malignancy. */
+    PRIMARY_BLOOD_DERIVED_CANCER_PERIPHERAL_BLOOD = "PRIMARY_BLOOD_DERIVED_CANCER_PERIPHERAL_BLOOD",
+    /** Tissue collected from the original site of tumor origin, prior to any metastatic spread. */
+    PRIMARY_TUMOR = "PRIMARY_TUMOR",
+    /** Tumor tissue derived from a first-generation xenograft established directly from a patient sample. */
+    PRIMARY_XENOGRAFT_TISSUE = "PRIMARY_XENOGRAFT_TISSUE",
+    /** Cancerous bone marrow sample collected at the time of disease recurrence in a blood-derived malignancy. */
+    RECURRENT_BLOOD_DERIVED_CANCER_BONE_MARROW = "RECURRENT_BLOOD_DERIVED_CANCER_BONE_MARROW",
+    /** Cancerous peripheral blood sample collected at the time of disease recurrence in a blood-derived malignancy. */
+    RECURRENT_BLOOD_DERIVED_CANCER_PERIPHERAL_BLOOD = "RECURRENT_BLOOD_DERIVED_CANCER_PERIPHERAL_BLOOD",
+    /** Tumor tissue collected following disease recurrence after prior treatment or remission. */
+    RECURRENT_TUMOR = "RECURRENT_TUMOR",
+    /** Ribonucleic acid extracted from a biological sample for transcriptomic or gene expression analysis. */
+    RNA = "RNA",
+    /** Saliva collected as a non-invasive source of DNA or other biological material, typically for germline analysis. */
+    SALIVA = "SALIVA",
+    /** Prepared microscopy slides containing tissue or cell specimens for histological or molecular examination. */
+    SLIDES = "SLIDES",
+    /** Non-cancerous solid tissue used as a normal reference for genomic or molecular analyses. */
+    SOLID_TISSUE_NORMAL = "SOLID_TISSUE_NORMAL",
+    /** The complete RNA complement extracted from a sample, including messenger, ribosomal, and non-coding RNA species. */
+    TOTAL_RNA = "TOTAL_RNA",
+    /** Tissue derived from a malignant neoplasm, used broadly when more specific tumor classification is not specified. */
+    TUMOR = "TUMOR",
+    /** Histologically normal tissue adjacent to a tumor, collected after completion of neoadjuvant therapy. */
+    TUMOR_ADJACENT_NORMAL_POST_NEOADJUVANT_THERAPY = "TUMOR_ADJACENT_NORMAL_POST_NEOADJUVANT_THERAPY",
+    /** The source material type is not known or could not be determined for this sample. */
     UNKNOWN = "UNKNOWN",
+    /** Tumor tissue derived from a xenograft model in which human tumor cells are propagated in an animal host. */
+    XENOGRAFT_TISSUE = "XENOGRAFT_TISSUE",
 };
 /**
 * The location in a parent specimen from which a section/portion was excised.
@@ -1065,107 +1184,209 @@ export enum SpecimenCreationActivityTypeEnum {
 
 export enum SpecimenCollectionMethodType {
     
+    /** Surgical removal of one or both testicles, typically performed to treat testicular cancer or as part of prostate cancer management. */
     ORCHIECTOMY = "ORCHIECTOMY",
+    /** Surgical removal of one or more metastatic tumor deposits that have spread from a primary cancer site to distant organs or tissues. */
     METASTASECTOMY = "METASTASECTOMY",
+    /** Post-mortem surgical examination of a body to determine cause of death and collect tissue specimens for pathological analysis. */
     AUTOPSY = "AUTOPSY",
+    /** The method of specimen collection performed is not known. */
     UNKNOWN = "UNKNOWN",
+    /** Collection of fluid or semi-solid material by suction through a needle or syringe from a body cavity or tissue mass. */
     ASPIRATE = "ASPIRATE",
+    /** Surgical removal of the right portion of the colon, including the cecum, ascending colon, and part of the transverse colon. */
     RIGHT_HEMICOLECTOMY = "RIGHT_HEMICOLECTOMY",
+    /** Surgical procedure in which a portion of a suspicious lesion or tumor is cut out for pathological examination, leaving the remainder in place. */
     INCISIONAL_BIOPSY = "INCISIONAL_BIOPSY",
+    /** Collection of a blood sample via venipuncture for laboratory analysis or biospecimen banking. */
     BLOOD_DRAW = "BLOOD_DRAW",
+    /** Washing of the peritoneal cavity with fluid, which is then collected and analyzed for the presence of malignant cells or other diagnostic information. */
     PERITONEAL_LAVAGE = "PERITONEAL_LAVAGE",
+    /** Complete surgical removal of the prostate gland and surrounding tissues through a traditional open abdominal or perineal incision. */
     OPEN_RADICAL_PROSTATECTOMY = "OPEN_RADICAL_PROSTATECTOMY",
+    /** Surgical removal of the rectum, anus, and surrounding tissue via both abdominal and perineal incisions, typically resulting in a permanent colostomy. */
     ABDOMINO_PERINEAL_RESECTION_OF_RECTUM = "ABDOMINO_PERINEAL_RESECTION_OF_RECTUM",
+    /** Surgical removal of one or both fallopian tubes, often performed to treat or reduce risk of ovarian or tubal cancer. */
     SALPINGECTOMY = "SALPINGECTOMY",
+    /** Surgical excision of a rectal tumor through an endoscopic or transanal approach without requiring an external incision. */
     ENDO_RECTAL_TUMOR_RESECTION = "ENDO_RECTAL_TUMOR_RESECTION",
+    /** Removal of a small sample of tissue or cells from the body for microscopic examination and pathological diagnosis. */
     BIOPSY = "BIOPSY",
+    /** Surgical removal of one or both ovaries along with the corresponding fallopian tube(s), performed to treat or prevent gynecologic cancers. */
     SALPINGO_OOPHORECTOMY = "SALPINGO_OOPHORECTOMY",
+    /** Specimen collection was not permitted due to regulatory, ethical, institutional, or patient consent restrictions. */
     NOT_ALLOWED_TO_COLLECT = "NOT_ALLOWED_TO_COLLECT",
+    /** A complex surgical procedure (pancreaticoduodenectomy) involving removal of the head of the pancreas, duodenum, gallbladder, and part of the bile duct, typically performed for pancreatic cancer. */
     WHIPPLE_PROCEDURE = "WHIPPLE_PROCEDURE",
+    /** Surgical removal of a tumor or organ intact and in its entirety without cutting into the mass. */
     ENUCLEATION = "ENUCLEATION",
+    /** Surgical removal of the entire breast along with most or all of the axillary lymph nodes, while preserving the chest wall muscles. */
     MODIFIED_RADICAL_MASTECTOMY = "MODIFIED_RADICAL_MASTECTOMY",
+    /** A minimally invasive procedure in which a needle is inserted into the peritoneal cavity to drain ascitic fluid for diagnostic or therapeutic purposes. */
     PARACENTESIS = "PARACENTESIS",
+    /** Surgical procedure involving the removal of a portion of the skull to access the brain for tumor resection or biopsy. */
     OPEN_CRANIOTOMY = "OPEN_CRANIOTOMY",
+    /** Surgical removal of a wedge-shaped section of an organ, most commonly the lung, to excise a tumor or lesion. */
     WEDGE_RESECTION = "WEDGE_RESECTION",
+    /** Minimally invasive surgical removal of an entire kidney and surrounding tissue using a laparoscope, performed to treat renal cell carcinoma. */
     LAPAROSCOPIC_RADICAL_NEPHRECTOMY = "LAPAROSCOPIC_RADICAL_NEPHRECTOMY",
+    /** Surgical removal of a tumor-bearing portion of the kidney through an open incision while preserving the remaining healthy kidney tissue. */
     OPEN_PARTIAL_NEPHRECTOMY = "OPEN_PARTIAL_NEPHRECTOMY",
+    /** Endoscopic surgical procedure performed through the urethra to remove tumors or tissue from the bladder or prostate without external incision. */
     TRANSURETHRAL_RESECTION = "TRANSURETHRAL_RESECTION",
+    /** Surgical removal of the sigmoid colon, the S-shaped final section of the large intestine before the rectum. */
     SIGMOID_COLECTOMY = "SIGMOID_COLECTOMY",
+    /** Surgical removal of one or both ovaries, performed to treat ovarian cancer or as a risk-reducing measure in high-risk individuals. */
     OOPHORECTOMY = "OOPHORECTOMY",
+    /** Complete surgical removal of the liver, typically performed in preparation for liver transplantation. */
     TOTAL_HEPATECTOMY = "TOTAL_HEPATECTOMY",
+    /** The method of specimen collection could not be definitively determined from available information. */
     INDETERMINANT = "INDETERMINANT",
+    /** Surgical removal of the majority but not all of a tumor or organ, leaving behind a remnant due to technical or safety constraints. */
     SUBTOTAL_RESECTION = "SUBTOTAL_RESECTION",
+    /** Surgical removal of the left portion of the colon, including the descending colon and part of the transverse colon. */
     LEFT_HEMICOLECTOMY = "LEFT_HEMICOLECTOMY",
+    /** Minimally invasive collection of tissue or fluid using a hollow needle inserted into a lesion or mass for pathological analysis. */
     NEEDLE_BIOPSY = "NEEDLE_BIOPSY",
+    /** A specimen collection method that does not correspond to any of the other specifically defined permissible values. */
     OTHER = "OTHER",
+    /** Surgical removal of all or part of the pancreas, performed to treat pancreatic cancer or other pancreatic neoplasms. */
     PANCREATECTOMY = "PANCREATECTOMY",
+    /** Minimally invasive biopsy of thoracic structures performed using a thoracoscope inserted through small chest wall incisions. */
     THORACOSCOPIC_BIOPSY = "THORACOSCOPIC_BIOPSY",
+    /** Surgical removal of the entire breast tissue including the nipple and areola, without removal of the underlying chest muscles or axillary lymph nodes. */
     TOTAL_MASTECTOMY = "TOTAL_MASTECTOMY",
+    /** Surgical removal of an entire suspicious lesion or lymph node for pathological examination, intending complete excision of the abnormal tissue. */
     EXCISIONAL_BIOPSY = "EXCISIONAL_BIOPSY",
+    /** Collection of a liquid bone marrow sample via needle aspiration, typically from the iliac crest, for hematologic diagnosis and analysis. */
     BONE_MARROW_ASPIRATE = "BONE_MARROW_ASPIRATE",
+    /** Surgical removal of a tumor and a small margin of surrounding tissue, limited to the immediate area of the lesion. */
     LOCAL_RESECTION = "LOCAL_RESECTION",
+    /** Surgical removal of a lobe of an organ, most commonly a lobe of the lung, to treat malignancies confined to that lobe. */
     LOBECTOMY = "LOBECTOMY",
+    /** Minimally invasive diagnostic procedure using a thin needle and syringe to extract cells or fluid from a suspicious lesion for cytological analysis. */
     FINE_NEEDLE_ASPIRATION = "FINE_NEEDLE_ASPIRATION",
+    /** Surgical removal of all or part of the omentum, the fatty tissue covering the abdominal organs, often performed during cytoreductive surgery for ovarian cancer. */
     OMENTECTOMY = "OMENTECTOMY",
+    /** Surgical excision of a tumor mass, with the extent of surrounding tissue removal depending on tumor type, location, and surgical intent. */
     TUMOR_RESECTION = "TUMOR_RESECTION",
+    /** Surgical removal of the urinary bladder, either in part (partial) or entirety (radical), typically performed to treat bladder cancer. */
     CYSTECTOMY = "CYSTECTOMY",
+    /** Surgical removal of all visually and grossly identifiable tumor tissue, as determined by the operating surgeon at the time of surgery. */
     GROSS_TOTAL_RESECTION = "GROSS_TOTAL_RESECTION",
+    /** Minimally invasive procedure in which a needle is inserted into the pleural space to aspirate fluid for diagnostic analysis or therapeutic relief. */
     THORACENTESIS = "THORACENTESIS",
+    /** Surgical removal of the upper rectum through an abdominal approach with restoration of bowel continuity, used to treat rectal cancer. */
     ANTERIOR_RESECTION_OF_RECTUM = "ANTERIOR_RESECTION_OF_RECTUM",
+    /** Surgical procedure involving the transfer of an organ or tissue from a donor to a recipient, with specimen collection occurring at the time of organ procurement or implantation. */
     TRANSPLANT = "TRANSPLANT",
+    /** Minimally invasive removal of a tumor-bearing portion of the kidney using laparoscopic techniques, preserving the remaining renal tissue. */
     LAPAROSCOPIC_PARTIAL_NEPHRECTOMY = "LAPAROSCOPIC_PARTIAL_NEPHRECTOMY",
+    /** Complete removal of the prostate gland performed using robot-assisted laparoscopic surgery, offering enhanced precision and minimal invasiveness. */
     LAPAROSCOPIC_RADICAL_PROSTATECTOMY_WITH_ROBOTICS = "LAPAROSCOPIC_RADICAL_PROSTATECTOMY_WITH_ROBOTICS",
+    /** Surgical removal of an entire lung, typically performed to treat lung cancer confined to one lung that is not amenable to lesser resection. */
     PNEUMONECTOMY = "PNEUMONECTOMY",
+    /** Surgical removal of the entire colon and rectum, typically performed for colorectal cancer or inflammatory bowel disease with dysplasia. */
     PAN_PROCTO_COLECTOMY = "PAN_PROCTO_COLECTOMY",
+    /** Surgical removal of the uterus by an unspecified or not otherwise specified technique or extent. */
     HYSTERECTOMY_NOS = "HYSTERECTOMY_NOS",
+    /** Removal of a cylindrical core of tissue using a large-bore needle to obtain a histologically intact sample for pathological diagnosis. */
     CORE_BIOPSY = "CORE_BIOPSY",
+    /** Surgical removal of the entire breast tissue including the nipple-areola complex, without removing axillary lymph nodes or chest wall muscles. */
     SIMPLE_MASTECTOMY = "SIMPLE_MASTECTOMY",
+    /** Breast-conserving surgery in which only the tumor and a margin of surrounding normal tissue are removed, leaving the remaining breast intact. */
     LUMPECTOMY = "LUMPECTOMY",
+    /** Tissue sampling performed through an endoscope inserted into a body cavity, allowing direct visualization and targeted biopsy of suspicious lesions. */
     ENDOSCOPIC_BIOPSY = "ENDOSCOPIC_BIOPSY",
+    /** Surgical removal of the uterus and cervix without removing the parametria, upper vagina, or lymph nodes, used for benign or early-stage disease. */
     SIMPLE_HYSTERECTOMY = "SIMPLE_HYSTERECTOMY",
+    /** Surgical removal of one or more lymph nodes for pathological examination or as part of cancer staging and treatment. */
     LYMPHADENECTOMY = "LYMPHADENECTOMY",
+    /** Tissue sampling performed using a laparoscope introduced through small abdominal incisions, allowing visualization and biopsy of intraperitoneal structures. */
     LAPAROSCOPIC_BIOPSY = "LAPAROSCOPIC_BIOPSY",
+    /** Cytoreductive surgery aimed at removing as much tumor mass as possible when complete resection is not feasible, to reduce tumor burden and improve treatment response. */
     TUMOR_DEBULKING = "TUMOR_DEBULKING",
+    /** Therapeutic or diagnostic removal of accumulated fluid from the peritoneal cavity, which may be examined for malignant cells. */
     ASCITES_DRAINAGE = "ASCITES_DRAINAGE",
+    /** Endoscopic technique for removing superficial tumors or lesions confined to the mucosal layer of the gastrointestinal tract. */
     ENDOSCOPIC_MUCOSAL_RESECTION = "ENDOSCOPIC_MUCOSAL_RESECTION",
+    /** Complete removal of the prostate gland using standard laparoscopic techniques without robotic assistance. */
     LAPAROSCOPIC_RADICAL_PROSTATECTOMY_WITHOUT_ROBOTICS = "LAPAROSCOPIC_RADICAL_PROSTATECTOMY_WITHOUT_ROBOTICS",
+    /** Surgical removal of the entire large intestine (colon) while preserving the rectum, typically performed for colorectal cancer or hereditary polyposis syndromes. */
     TOTAL_COLECTOMY = "TOTAL_COLECTOMY",
+    /** Non-invasive sampling of circulating tumor cells, cell-free DNA, or other cancer biomarkers from a body fluid, most commonly blood. */
     LIQUID_BIOPSY = "LIQUID_BIOPSY",
+    /** Extensive surgical removal of the uterus, cervix, upper vagina, parametria, and regional lymph nodes, performed for gynecologic malignancies such as cervical cancer. */
     RADICAL_HYSTERECTOMY = "RADICAL_HYSTERECTOMY",
+    /** Surgical removal of a tumor or diseased tissue, used as a general term when the specific resection type is not further specified. */
     SURGICAL_RESECTION = "SURGICAL_RESECTION",
+    /** Complete removal of a kidney, adrenal gland, and surrounding fatty tissue through a traditional open incision, performed to treat renal cell carcinoma. */
     OPEN_RADICAL_NEPHRECTOMY = "OPEN_RADICAL_NEPHRECTOMY",
+    /** Surgical removal of the transverse colon, the middle horizontal portion of the large intestine connecting the ascending and descending colon. */
     TRANSVERSE_COLECTOMY = "TRANSVERSE_COLECTOMY",
+    /** Laparoscopic radical nephrectomy performed with the aid of a hand port that allows direct manual assistance during the minimally invasive procedure. */
     HAND_ASSISTED_LAPAROSCOPIC_RADICAL_NEPHRECTOMY = "HAND_ASSISTED_LAPAROSCOPIC_RADICAL_NEPHRECTOMY",
+    /** Removal of a small cylindrical core of skin or mucosal tissue using a circular cutting instrument for dermatological or mucosal pathological diagnosis. */
     PUNCH_BIOPSY = "PUNCH_BIOPSY",
+    /** Surgical removal of a portion of the liver, performed to resect primary liver tumors or metastatic deposits while preserving adequate hepatic function. */
     PARTIAL_HEPATECTOMY = "PARTIAL_HEPATECTOMY",
+    /** Surgical removal of the uterine body while leaving the cervix in place, also known as a subtotal hysterectomy. */
     SUPRACERVICAL_HYSTERECTOMY = "SUPRACERVICAL_HYSTERECTOMY",
+    /** A surgical resection procedure that does not correspond to any of the other specifically defined resection types. */
     OTHER_SURGICAL_RESECTION = "OTHER_SURGICAL_RESECTION",
+    /** The method of specimen collection was not documented or reported in the available records. */
     NOT_REPORTED = "NOT_REPORTED",
+    /** Complete surgical removal of the uterus and cervix, sometimes also including the ovaries and fallopian tubes, to treat uterine or cervical malignancies. */
     FULL_HYSTERECTOMY = "FULL_HYSTERECTOMY",
+    /** Surgical removal of the palatine tonsils, performed for tonsillar tumors or as part of treatment for oropharyngeal cancer. */
     TONSILLECTOMY = "TONSILLECTOMY",
+    /** Partial removal of the larynx above the vocal cords (glottis), used to treat supraglottic laryngeal cancer while preserving voice function. */
     SUPRAGLOTTIC_LARYNGECTOMY = "SUPRAGLOTTIC_LARYNGECTOMY",
+    /** Surgical removal of the superficial lobe of the parotid gland, typically performed to excise parotid tumors located superficial to the facial nerve. */
     SUPERFICIAL_PAROTIDECTOMY = "SUPERFICIAL_PAROTIDECTOMY",
+    /** Surgical removal of the larynx and part or all of the pharynx, performed for advanced cancers involving both structures. */
     LARYNGOPHARYNGECTOMY = "LARYNGOPHARYNGECTOMY",
+    /** Surgical removal of all or part of the maxilla (upper jaw), performed to treat malignant tumors of the hard palate, maxillary sinus, or upper jaw. */
     MAXILLECTOMY = "MAXILLECTOMY",
+    /** Nephron-sparing surgery in which only the tumor-bearing portion of the kidney is removed, preserving the remaining healthy renal parenchyma. */
     PARTIAL_NEPHRECTOMY = "PARTIAL_NEPHRECTOMY",
+    /** Surgical removal of all or part of the mandible (lower jaw), performed to treat malignant tumors involving the mandible or adjacent oral cavity. */
     MANDIBULECTOMY = "MANDIBULECTOMY",
+    /** Surgical excision of tumor-bearing tissue from the buccal mucosa (inner lining of the cheek), performed to treat oral cavity cancers. */
     BUCCAL_MUCOSAL_RESECTION = "BUCCAL_MUCOSAL_RESECTION",
+    /** Partial laryngectomy involving vertical removal of one side of the larynx, used to treat glottic cancers while preserving voice and swallowing function. */
     VERTICAL_HEMILARYNGECTOMY = "VERTICAL_HEMILARYNGECTOMY",
+    /** Complete surgical removal of an entire kidney, performed to treat renal malignancies or other kidney diseases. */
     TOTAL_NEPHRECTOMY = "TOTAL_NEPHRECTOMY",
+    /** Complete surgical removal of the larynx, resulting in permanent loss of natural voice, performed for advanced laryngeal cancer. */
     TOTAL_LARYNGECTOMY = "TOTAL_LARYNGECTOMY",
+    /** Minimally invasive surgical technique using a laser delivered through the mouth to precisely excise laryngeal or pharyngeal tumors without external incision. */
     TRANSORAL_LASER_EXCISION = "TRANSORAL_LASER_EXCISION",
+    /** Surgical removal of the parotid gland by an unspecified or not otherwise specified extent or technique. */
     PAROTIDECTOMY_NOS = "PAROTIDECTOMY_NOS",
+    /** Extensive surgical removal of the entire maxilla along with surrounding structures, performed for aggressive or extensive malignant tumors of the upper jaw. */
     RADICAL_MAXILLECTOMY = "RADICAL_MAXILLECTOMY",
+    /** Surgical removal of a laryngeal lesion performed entirely through the mouth using endoscopic instruments, without external neck incision. */
     ENDOLARYNGEAL_EXCISION = "ENDOLARYNGEAL_EXCISION",
+    /** Surgical removal of all or part of the palate, performed to treat malignant tumors involving the hard or soft palate. */
     PALATECTOMY = "PALATECTOMY",
+    /** Surgical removal of all or part of the tongue, performed to treat oral tongue or base of tongue malignancies. */
     GLOSSECTOMY = "GLOSSECTOMY",
+    /** Surgical removal of a portion of the larynx while preserving remaining laryngeal function, used for early to intermediate-stage laryngeal cancers. */
     PARTIAL_LARYNGECTOMY = "PARTIAL_LARYNGECTOMY",
+    /** Systematic surgical removal of a group of regional lymph nodes for pathological staging or therapeutic management of cancer spread. */
     LYMPH_NODE_DISSECTION = "LYMPH_NODE_DISSECTION",
+    /** Complete surgical removal of the prostate gland, seminal vesicles, and surrounding tissue, performed to treat localized prostate cancer. */
     RADICAL_PROSTATECTOMY = "RADICAL_PROSTATECTOMY",
+    /** Surgical removal of the deep lobe of the parotid gland, performed for tumors located deep to the facial nerve. */
     DEEP_PAROTIDECTOMY = "DEEP_PAROTIDECTOMY",
+    /** Partial surgical removal of the prostate gland, in which only a portion of the gland is excised rather than the complete organ. */
     SUBTOTAL_PROSTATECTOMY = "SUBTOTAL_PROSTATECTOMY",
+    /** Complete surgical removal of the kidney along with the adrenal gland, surrounding fatty tissue, and regional lymph nodes, performed for renal cell carcinoma. */
     RADICAL_NEPHRECTOMY = "RADICAL_NEPHRECTOMY",
+    /** Partial laryngectomy involving removal of the supracricoid structures while preserving the cricoid cartilage, used for select intermediate-stage laryngeal cancers. */
     SUPRACRICOID_LARYNGECTOMY = "SUPRACRICOID_LARYNGECTOMY",
+    /** Surgical removal of a portion of the maxilla, performed for localized malignant or benign tumors that do not require total maxillary resection. */
     PARTIAL_MAXILLECTOMY = "PARTIAL_MAXILLECTOMY",
 };
 /**
@@ -1225,34 +1446,57 @@ export enum UnitOfMeasurementEnum {
 */
 export enum GravityDomainEnum {
     
-    FOOD_INSECURITY = "FOOD_INSECURITY",
-    HOUSING_INSTABILITY = "HOUSING_INSTABILITY",
-    HOMELESSNESS = "HOMELESSNESS",
-    INADEQUATE_HOUSING = "INADEQUATE_HOUSING",
-    TRANSPORTATION_INSECURITY = "TRANSPORTATION_INSECURITY",
-    FINANCIAL_INSECURITY = "FINANCIAL_INSECURITY",
-    MATERIAL_HARDSHIP = "MATERIAL_HARDSHIP",
-    EMPLOYMENT_STATUS = "EMPLOYMENT_STATUS",
-    EDUCATIONAL_ATTAINMENT = "EDUCATIONAL_ATTAINMENT",
-    VETERAN_STATUS = "VETERAN_STATUS",
-    STRESS = "STRESS",
-    SOCIAL_CONNECTION = "SOCIAL_CONNECTION",
-    INTIMATE_PARTNER_VIOLENCE_IPV = "INTIMATE_PARTNER_VIOLENCE_IPV",
-    ELDER_ABUSE = "ELDER_ABUSE",
-    HEALTH_LITERACY = "HEALTH_LITERACY",
-    MEDICAL_COST_BURDEN = "MEDICAL_COST_BURDEN",
-    HEALTH_INSURANCE_COVERAGE_STATUS = "HEALTH_INSURANCE_COVERAGE_STATUS",
-    DIGITAL_LITERACY = "DIGITAL_LITERACY",
+    /** The ability to access and use digital technologies, including internet connectivity and devices. */
     DIGITAL_ACCESS = "DIGITAL_ACCESS",
+    /** The capacity to find, evaluate, and communicate information using digital technology. */
+    DIGITAL_LITERACY = "DIGITAL_LITERACY",
+    /** The highest level of formal education an individual has completed. */
+    EDUCATIONAL_ATTAINMENT = "EDUCATIONAL_ATTAINMENT",
+    /** Physical, emotional, financial, or other mistreatment or neglect of older adults. */
+    ELDER_ABUSE = "ELDER_ABUSE",
+    /** An individual's current relationship to the workforce, including employment, unemployment, or underemployment. */
+    EMPLOYMENT_STATUS = "EMPLOYMENT_STATUS",
+    /** Inadequate financial resources to meet basic needs and maintain economic stability. */
+    FINANCIAL_INSECURITY = "FINANCIAL_INSECURITY",
+    /** Limited or uncertain access to adequate, nutritious food due to financial or other constraints. */
+    FOOD_INSECURITY = "FOOD_INSECURITY",
+    /** Whether an individual has health insurance and the type or adequacy of that coverage. */
+    HEALTH_INSURANCE_COVERAGE_STATUS = "HEALTH_INSURANCE_COVERAGE_STATUS",
+    /** The degree to which individuals can obtain, process, and understand basic health information to make appropriate health decisions. */
+    HEALTH_LITERACY = "HEALTH_LITERACY",
+    /** The condition of lacking a fixed, regular, and adequate nighttime residence. */
+    HOMELESSNESS = "HOMELESSNESS",
+    /** Difficulty maintaining stable housing, including risk of eviction, frequent moves, or inability to pay rent or mortgage. */
+    HOUSING_INSTABILITY = "HOUSING_INSTABILITY",
+    /** Living conditions that are unsafe, overcrowded, or otherwise fail to meet basic habitability standards. */
+    INADEQUATE_HOUSING = "INADEQUATE_HOUSING",
+    /** Physical, sexual, psychological, or economic abuse perpetrated by a current or former intimate partner. */
+    INTIMATE_PARTNER_VIOLENCE_IPV = "INTIMATE_PARTNER_VIOLENCE_IPV",
+    /** Inability to meet basic material needs such as food, housing, clothing, or medical care. */
+    MATERIAL_HARDSHIP = "MATERIAL_HARDSHIP",
+    /** The financial strain caused by out-of-pocket medical expenses relative to an individual's or household's income. */
+    MEDICAL_COST_BURDEN = "MEDICAL_COST_BURDEN",
+    /** The degree to which an individual has relationships and social support networks that promote well-being. */
+    SOCIAL_CONNECTION = "SOCIAL_CONNECTION",
+    /** Psychological or physical tension arising from adverse or demanding circumstances that affects health and well-being. */
+    STRESS = "STRESS",
+    /** Lack of reliable, safe, or affordable transportation needed to meet daily needs and access services. */
+    TRANSPORTATION_INSECURITY = "TRANSPORTATION_INSECURITY",
+    /** Inability to reliably afford or access essential utilities such as electricity, heat, or water. */
     UTILITY_INSECURITY = "UTILITY_INSECURITY",
+    /** Whether an individual has served in the military, which may affect eligibility for benefits and expose them to unique health risks. */
+    VETERAN_STATUS = "VETERAN_STATUS",
 };
 /**
-* Social Determinants of Health domains as defined in the Gravity Project
+* The clinical severity level assigned to a condition or diagnosis.
 */
 export enum ConditionSeverityEnum {
     
+    /** A condition that causes minimal symptoms or functional impairment and typically does not require intensive intervention. */
     MILD = "MILD",
+    /** A condition that causes noticeable symptoms or functional impairment and may require active treatment or monitoring. */
     MODERATE = "MODERATE",
+    /** A condition that causes significant symptoms or functional impairment, often requiring urgent or intensive intervention. */
     SEVERE = "SEVERE",
 };
 /**
@@ -1413,7 +1657,7 @@ export enum EducationalAttainmentObservationTypeEnum {
 export enum SmokingStatusObservationTypeEnum {
     
     CURRENT_SMOKER = "CURRENT_SMOKER",
-    FORMER_SOMKER = "FORMER_SOMKER",
+    FORMER_SMOKER = "FORMER_SMOKER",
     NEVER_SMOKED = "NEVER_SMOKED",
     UNKNOWN_IF_EVER_SMOKED = "UNKNOWN_IF_EVER_SMOKED",
 };
@@ -1431,7 +1675,7 @@ export enum ResearchProjectTypeEnum {
     /** Consortium */
     CONSORTIUM = "CONSORTIUM",
     /** Study */
-    Study = "Study",
+    STUDY = "STUDY",
 };
 /**
 * Values describing the types of an Observation.
