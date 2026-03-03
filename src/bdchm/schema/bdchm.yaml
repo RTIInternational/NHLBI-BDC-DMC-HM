@@ -1896,36 +1896,168 @@ enums:
     description: >-
       A constrained set of enumerative values containing the OMOP values for provenance.
     permissible_values:
-      EHR_BILLING_DIAGNOSIS:
-        meaning: OMOP:4822159
+      CASE_REPORT_FORM:
+        meaning: OMOP:4976882
+      CLAIM:
+        meaning: OMOP:4976883
+      CLAIM_AUTHORIZATION:
+        meaning: OMOP:4976884
+      CLAIM_DISCHARGE_RECORD:
+        meaning: OMOP:4976885
+      CLAIM_ENROLMENT_RECORD:
+        meaning: OMOP:4976886
+      COST_RECORD:
+        meaning: OMOP:4976887
+      DEATH_CERTIFICATE:
+        meaning: OMOP:4976888
+      DENTAL_CLAIM:
+        meaning: OMOP:4976889
+      EHR:
+        meaning: OMOP:4976890
+      EHR_ADMINISTRATION_RECORD:
+        meaning: OMOP:4976891
+      EHR_ADMISSION_NOTE:
+        meaning: OMOP:4976892
+      EHR_ANCILLARY_REPORT:
+        meaning: OMOP:4976893
+      EHR_BILLING_RECORD:
+        meaning: OMOP:4976894
       EHR_CHIEF_COMPLAINT:
-        meaning: OMOP:4822124
-      EHR_ENCOUNTER_DIAGNOSIS:
-        meaning: OMOP:4822160
-      EHR_EPISODE_ENTRY:
-        meaning: OMOP:4822135
-      EHR_PROBLEM_LIST_ENTRY:
-        meaning: OMOP:4822121
-      FIRST_POSITION_CONDITION:
-        meaning: OMOP:4822128
-      NLP_DERIVED:
-        meaning: OMOP:4822058
-      OBSERVATION_RECORDED_FROM_EHR:
-        meaning: OMOP:4822126
-      PATIENT_SELF-REPORTED_CONDITION:
-        meaning: OMOP:4822157
-      PRIMARY_CONDITION:
-        meaning: OMOP:4822127
-      REFERRAL_RECORD:
-        meaning: OMOP:4822125
-      SECONDARY_CONDITION:
-        meaning: OMOP:4822129
-      TUMOR_REGISTRY:
-        meaning: OMOP:4822266
-      WORKING_DIAGNOSIS:
-        meaning: OMOP:4208085
-      CLINICAL_DIAGNOSIS:
-        meaning: OMOP:4309119
+        meaning: OMOP:4976895
+      EHR_DISCHARGE_RECORD:
+        meaning: OMOP:4976896
+      EHR_DISCHARGE_SUMMARY:
+        meaning: OMOP:4976897
+      EHR_DISPENSING_RECORD:
+        meaning: OMOP:4976898
+      EHR_EMERGENCY_ROOM_NOTE:
+        meaning: OMOP:4976899
+      EHR_ENCOUNTER_RECORD:
+        meaning: OMOP:4976900
+      EHR_EPISODE_RECORD:
+        meaning: OMOP:4976901
+      EHR_INPATIENT_NOTE:
+        meaning: OMOP:4976902
+      EHR_MEDICATION_LIST:
+        meaning: OMOP:4976903
+      EHR_NOTE:
+        meaning: OMOP:4976904
+      EHR_NURSING_REPORT:
+        meaning: OMOP:4976905
+      EHR_ORDER:
+        meaning: OMOP:4976906
+      EHR_OUTPATIENT_NOTE:
+        meaning: OMOP:4976907
+      EHR_PATHOLOGY_REPORT:
+        meaning: OMOP:4976908
+      EHR_PHYSICAL_EXAMINATION:
+        meaning: OMOP:4976909
+      EHR_PLANNED_DISPENSING_RECORD:
+        meaning: OMOP:4976910
+      EHR_PRESCRIPTION:
+        meaning: OMOP:4976911
+      EHR_PRESCRIPTION_ISSUE_RECORD:
+        meaning: OMOP:4976912
+      EHR_PROBLEM_LIST:
+        meaning: OMOP:4976913
+      EHR_RADIOLOGY_REPORT:
+        meaning: OMOP:4976914
+      EHR_REFERRAL_RECORD:
+        meaning: OMOP:4976915
+      EXTERNAL_CDM_INSTANCE:
+        meaning: OMOP:4976916
+      FACILITY_CLAIM:
+        meaning: OMOP:4976917
+      FACILITY_CLAIM_DETAIL:
+        meaning: OMOP:4976918
+      FACILITY_CLAIM_HEADER:
+        meaning: OMOP:4976919
+      GEOGRAPHIC_ISOLATION_RECORD:
+        meaning: OMOP:4976920
+      GOVERNMENT_REPORT:
+        meaning: OMOP:4976921
+      HEALTH_INFORMATION_EXCHANGE_RECORD:
+        meaning: OMOP:4976922
+      HEALTH_RISK_ASSESSMENT:
+        meaning: OMOP:4976923
+      HEALTHCARE_PROFESSIONAL_FILLED_SURVEY:
+        meaning: OMOP:4976924
+      HOSPITAL_COST:
+        meaning: OMOP:4976925
+      INPATIENT_CLAIM:
+        meaning: OMOP:4976926
+      INPATIENT_CLAIM_DETAIL:
+        meaning: OMOP:4976927
+      INPATIENT_CLAIM_HEADER:
+        meaning: OMOP:4976928
+      LAB:
+        meaning: OMOP:4976929
+      MAIL_ORDER_RECORD:
+        meaning: OMOP:4976930
+      NLP:
+        meaning: OMOP:4976931
+      OBITUARY:
+        meaning: OMOP:5584804
+      OUTPATIENT_CLAIM:
+        meaning: OMOP:4976932
+      OUTPATIENT_CLAIM_DETAIL:
+        meaning: OMOP:4976933
+      OUTPATIENT_CLAIM_HEADER:
+        meaning: OMOP:4976934
+      PATIENT_FILLED_SURVEY:
+        meaning: OMOP:4976935
+      PATIENT_OR_PAYER_PAID_RECORD:
+        meaning: OMOP:4976936
+      PATIENT_REPORTED_COST:
+        meaning: OMOP:4976937
+      PATIENT_SELF_REPORT:
+        meaning: OMOP:4976938
+      PATIENT_SELF_TESTED:
+        meaning: OMOP:5181830
+      PAYER_SYSTEM_RECORD_PAID_PREMIUM:
+        meaning: OMOP:4976939
+      PAYER_SYSTEM_RECORD_PRIMARY_PAYER:
+        meaning: OMOP:4976940
+      PAYER_SYSTEM_RECORD_SECONDARY_PAYER:
+        meaning: OMOP:4976941
+      PHARMACY_CLAIM:
+        meaning: OMOP:4976942
+      POINT_OF_CARE/EXPRESS_LAB:
+        meaning: OMOP:5042951
+      PRE_QUALIFICATION_TIME_PERIOD:
+        meaning: OMOP:4976943
+      PROFESSIONAL_CLAIM:
+        meaning: OMOP:4976944
+      PROFESSIONAL_CLAIM_DETAIL:
+        meaning: OMOP:4976945
+      PROFESSIONAL_CLAIM_HEADER:
+        meaning: OMOP:4976946
+      PROVIDER_CHARGE_LIST_PRICE:
+        meaning: OMOP:4976947
+      PROVIDER_FINANCIAL_SYSTEM:
+        meaning: OMOP:4976948
+      PROVIDER_INCURRED_COST_RECORD:
+        meaning: OMOP:4976949
+      RANDOMIZATION_RECORD:
+        meaning: OMOP:4976950
+      REFERENCE_LAB:
+        meaning: OMOP:4976951
+      REGISTRY:
+        meaning: OMOP:4976952
+      STANDARD_ALGORITHM:
+        meaning: OMOP:4976953
+      STANDARD_ALGORITHM_FROM_CLAIMS:
+        meaning: OMOP:4976954
+      STANDARD_ALGORITHM_FROM_EHR:
+        meaning: OMOP:4976955
+      SURVEY:
+        meaning: OMOP:4976956
+      URGENT_LAB:
+        meaning: OMOP:4976957
+      US_SOCIAL_SECURITY_DEATH_MASTER_FILE:
+        meaning: OMOP:4976958  
+      VISION_CLAIM:
+        meaning: OMOP:4976959
 
   StatusEnum:
     description: >-
@@ -2795,41 +2927,43 @@ enums:
     name: AnalyteTypeEnum
     permissible_values:
       FFPE_DNA:
-        text: FFPE DNA
+        text: FFPE_DNA
         description: Formalin-Fixed Paraffin-Embedded DNA
       REPLI_G_QIAGEN_DNA:
-        text: Repli-G (Qiagen) DNA
+        text: REPLI_G_QIAGEN_DNA
         description: Repli-G (Qiagen) DNA
       GENOME_PLEX_RUBICON_AMPLIFIED_DNA:
-        text: GenomePlex (Rubicon) Amplified DNA
+        text: GENOME_PLEX_RUBICON_AMPLIFIED_DNA
       TOTAL_RNA:
-        text: Total RNA
+        text: TOTAL_RNA
         description: Total Ribonucleic Acid
       REPLI_G_X_QIAGEN_DNA:
-        text: Repli-G X (Qiagen) DNA
+        text: REPLI_G_X_QIAGEN_DNA
         description: Repli-G X (Qiagen) DNA
       RNA:
         text: RNA
         description: Ribonucleic Acid
       REPLI_G_POOLED_QIAGEN_DNA:
-        text: Repli-G Pooled (Qiagen) DNA
-        description: REPLI-g Pooled DNA
+        text: REPLI_G_POOLED_QIAGEN_DNA
+        description: Repli-G Pooled (Qiagen) DNA
       DNA:
         text: DNA
         description: DNA
       EBV_IMMORTALIZED_NORMAL:
-        text: EBV Immortalized Normal
+        text: EBV_IMMORTALIZED_NORMAL
         description: Normal Epstein-Barr Virus Immortalization
       FFPE_RNA:
-        text: FFPE RNA
+        text: FFPE_RNA
         description: Formalin-Fixed Paraffin-Embedded RNA
       PROTEIN:
         text: Protein
         description: Protein
       NUCLEI_RNA:
-        text: Nuclei RNA
+        text: NUCLEI_RNA
+        description: Nuclei RNA
       CFDNA:
-        text: cfDNA
+        text: CFDNA
+        description: Cell-free DNA
 
   SourceMaterialTypeEnum:
     name: SourceMaterialTypeEnum
@@ -3578,7 +3712,7 @@ enums:
     permissible_values:
       CURRENT_SMOKER:
         meaning: OMOP:40766945
-      FORMER_SOMKER:
+      FORMER_SMOKER:
         meaning: OMOP:45883458
       NEVER_SMOKED:
         meaning: OMOP:45883537
