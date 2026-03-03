@@ -366,7 +366,7 @@
 
 
 <h1 id="enum-conditionseverityenum">Enum: ConditionSeverityEnum</h1>
-<p><em>Social Determinants of Health domains as defined in the Gravity Project</em></p>
+<p><em>The clinical severity level assigned to a condition or diagnosis.</em></p>
 <p>URI: <a href="./">ConditionSeverityEnum</a></p>
 <h2 id="permissible-values">Permissible Values</h2>
 <table>
@@ -381,17 +381,17 @@
 <tr>
 <td>MILD</td>
 <td>OMOP:4116992</td>
-<td></td>
+<td>A condition that causes minimal symptoms or functional impairment and typical...</td>
 </tr>
 <tr>
 <td>MODERATE</td>
 <td>OMOP:3272197</td>
-<td></td>
+<td>A condition that causes noticeable symptoms or functional impairment and may ...</td>
 </tr>
 <tr>
 <td>SEVERE</td>
 <td>OMOP:4087703</td>
-<td></td>
+<td>A condition that causes significant symptoms or functional impairment, often ...</td>
 </tr>
 </tbody>
 </table>
@@ -419,18 +419,24 @@
 <details>
 
 <pre><code class="language-yaml">name: ConditionSeverityEnum
-description: Social Determinants of Health domains as defined in the Gravity Project
+description: The clinical severity level assigned to a condition or diagnosis.
 from_schema: https://w3id.org/bdchm
 rank: 1000
 permissible_values:
   MILD:
     text: MILD
+    description: A condition that causes minimal symptoms or functional impairment
+      and typically does not require intensive intervention.
     meaning: OMOP:4116992
   MODERATE:
     text: MODERATE
+    description: A condition that causes noticeable symptoms or functional impairment
+      and may require active treatment or monitoring.
     meaning: OMOP:3272197
   SEVERE:
     text: SEVERE
+    description: A condition that causes significant symptoms or functional impairment,
+      often requiring urgent or intensive intervention.
     meaning: OMOP:4087703
 
 </code></pre>
