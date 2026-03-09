@@ -375,7 +375,7 @@
 
 
 <h1 id="slot-race">Slot: race</h1>
-<p><em>An arbitrary classification of a taxonomic group that is a division of a species. It usually arises as a consequence of geographical isolation within a species and is characterized by shared heredity, physical attributes and behavior, and in the case of humans, by common history, nationality, or geographic distribution. The provided values are based on the categories defined by the U.S. Office of Management and Business and used by the U.S. Census Bureau.</em></p>
+<p><em>A sociopolitically constructed system for classifying human beings according to subjective beliefs about shared ancestry based on perceived innate biological similarities; the system varies globally. The provided values are based on the categories defined by the U.S. Office of Management and Business and used by the U.S. Census Bureau.</em></p>
 <p>URI: <a href="https://w3id.org/bdchm/race">bdchm:race</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -398,7 +398,12 @@
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../RaceEnum/">RaceEnum</a></li>
+<li>
+<p>Range: <a href="../RaceEnum/">RaceEnum</a></p>
+</li>
+<li>
+<p>Multivalued: True</p>
+</li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
@@ -428,12 +433,11 @@
 <details>
 
 <pre><code class="language-yaml">name: race
-description: An arbitrary classification of a taxonomic group that is a division of
-  a species. It usually arises as a consequence of geographical isolation within a
-  species and is characterized by shared heredity, physical attributes and behavior,
-  and in the case of humans, by common history, nationality, or geographic distribution.
-  The provided values are based on the categories defined by the U.S. Office of Management
-  and Business and used by the U.S. Census Bureau.
+description: A sociopolitically constructed system for classifying human beings according
+  to subjective beliefs about shared ancestry based on perceived innate biological
+  similarities; the system varies globally. The provided values are based on the categories
+  defined by the U.S. Office of Management and Business and used by the U.S. Census
+  Bureau.
 from_schema: https://w3id.org/bdchm
 rank: 1000
 alias: race
@@ -441,6 +445,7 @@ owner: Demography
 domain_of:
 - Demography
 range: RaceEnum
+multivalued: true
 
 </code></pre>
 
