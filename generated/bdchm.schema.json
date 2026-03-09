@@ -317,7 +317,7 @@
                 },
                 "ethnicity": {
                     "$ref": "#/$defs/EthnicityEnum",
-                    "description": "An individual's self-described social and cultural grouping, specifically whether an individual describes themselves as Hispanic or Latino. The provided values are based on the categories defined by the U.S. Office of Management and Business and used by the U.S. Census Bureau"
+                    "description": "A sociopolitically constructed system for classifying human beings according to claims of shared heritage often based on perceived cultural similarities (e.g., language, religion, beliefs); the system varies globally. The provided values are based on the categories defined by the U.S. Office of Management and Business and used by the U.S. Census Bureau and include only the options \u201cHispanic or Latino\u201d and \u201cNot Hispanic or Latino.\u201d"
                 },
                 "id": {
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
@@ -334,12 +334,18 @@
                     ]
                 },
                 "race": {
-                    "$ref": "#/$defs/RaceEnum",
-                    "description": "An arbitrary classification of a taxonomic group that is a division of a species. It usually arises as a consequence of geographical isolation within a species and is characterized by shared heredity, physical attributes and behavior, and in the case of humans, by common history, nationality, or geographic distribution. The provided values are based on the categories defined by the U.S. Office of Management and Business and used by the U.S. Census Bureau."
+                    "description": "A sociopolitically constructed system for classifying human beings according to subjective beliefs about shared ancestry based on perceived innate biological similarities; the system varies globally. The provided values are based on the categories defined by the U.S. Office of Management and Business and used by the U.S. Census Bureau.",
+                    "items": {
+                        "$ref": "#/$defs/RaceEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "sex": {
                     "$ref": "#/$defs/SexEnum",
-                    "description": "The biologic character or quality that distinguishes male and female from one another as expressed by analysis of the person's gonadal, morphologic (internal and external), chromosomal, and hormonal characteristics."
+                    "description": "The biologic character or quality that distinguishes male and female from one another as expressed by analysis of the person's gonadal, morphologic (internal and external), chromosomal, and hormonal characteristics. Individuals where these characteristics do not all clearly align with either male or female are often considered intersex."
                 }
             },
             "required": [
