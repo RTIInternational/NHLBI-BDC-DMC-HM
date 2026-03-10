@@ -465,6 +465,10 @@
 <td>Any resource that has its own identifier</td>
 </tr>
 <tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Assay/">Assay</a></td>
+<td>A class for representing metadata about an assay performed on a specimen, including the method and instrument used.</td>
+</tr>
+<tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="BiologicProduct/">BiologicProduct</a></td>
 <td>A living organism, or a metabolically active biological system such as a cell culture, tissue culture, or organoid that is maintained or propagated in vitro.</td>
 </tr>
@@ -752,6 +756,10 @@
 <td>The anatomical site from which the imaging data was acquired (e</td>
 </tr>
 <tr>
+<td><a href="associated_assay/">associated_assay</a></td>
+<td>A reference to the assay that was used in generating this observation</td>
+</tr>
+<tr>
 <td><a href="associated_evidence/">associated_evidence</a></td>
 <td>Evidence supporting the assertion of the condition (e</td>
 </tr>
@@ -992,12 +1000,20 @@
 <td>The text term used to describe the reference or anchor date used for date obf...</td>
 </tr>
 <tr>
+<td><a href="instrument/">instrument</a></td>
+<td>The instrument(s) used to perform the assay</td>
+</tr>
+<tr>
 <td><a href="items/">items</a></td>
 <td>A collection of QuestionnaireItem objects which encapsulate the question bein...</td>
 </tr>
 <tr>
 <td><a href="language/">language</a></td>
 <td>The language(s) in which questions are presented</td>
+</tr>
+<tr>
+<td><a href="lower_limit_of_detection/">lower_limit_of_detection</a></td>
+<td>The lower limit of detection for the assay, if applicable</td>
 </tr>
 <tr>
 <td><a href="manufacturer/">manufacturer</a></td>
@@ -1014,6 +1030,10 @@
 <tr>
 <td><a href="member_of_research_study/">member_of_research_study</a></td>
 <td>A reference to the Study(s) of which this Participant is a member</td>
+</tr>
+<tr>
+<td><a href="method/">method</a></td>
+<td>The type of assay performed (e</td>
 </tr>
 <tr>
 <td><a href="method_type/">method_type</a></td>
@@ -1150,6 +1170,10 @@
 <tr>
 <td><a href="range_low/">range_low</a></td>
 <td>If reference ranges for upper and lower limit of normal as provided (typicall...</td>
+</tr>
+<tr>
+<td><a href="reagent/">reagent</a></td>
+<td>The reagent(s) used to perform the assay</td>
 </tr>
 <tr>
 <td><a href="refills/">refills</a></td>
@@ -1296,6 +1320,10 @@
 <td>A coded or free text (in the</td>
 </tr>
 <tr>
+<td><a href="upper_limit_of_detection/">upper_limit_of_detection</a></td>
+<td>The upper limit of detection for the assay, if applicable</td>
+</tr>
+<tr>
 <td><a href="url/">url</a></td>
 <td>A URL address for a resource that provides information about a research progr...</td>
 </tr>
@@ -1379,6 +1407,10 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="AssayMethodEnum/">AssayMethodEnum</a></td>
+<td>A constrained set of enumerative values containing the Measurement Method Ont...</td>
+</tr>
+<tr>
 <td><a href="BaseEnum/">BaseEnum</a></td>
 <td>A base constrained set of enumerative values that can be used as a placeholde...</td>
 </tr>
@@ -1449,6 +1481,10 @@
 <tr>
 <td><a href="HpoPhenotypicAbnormalityEnum/">HpoPhenotypicAbnormalityEnum</a></td>
 <td>A constrained set of enumerative values containing the HPO values for phenoty...</td>
+</tr>
+<tr>
+<td><a href="InstrumentEnum/">InstrumentEnum</a></td>
+<td>A constrained set of enumerative values containing the BioAssay Ontology (BAO...</td>
 </tr>
 <tr>
 <td><a href="MeasurementObservationTypeEnum/">MeasurementObservationTypeEnum</a></td>

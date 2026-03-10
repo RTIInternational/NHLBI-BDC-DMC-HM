@@ -244,6 +244,15 @@
 
       MeasurementObservation : age_at_observation
 
+      MeasurementObservation : associated_assay
+
+
+
+
+    MeasurementObservation --&gt; "0..1" Assay : associated_assay
+    click Assay href "../Assay"
+
+
       MeasurementObservation : associated_participant
 
 
@@ -374,6 +383,12 @@
 <td><a href="../observation_type/">observation_type</a></td>
 <td>0..1 <br/> <a href="../MeasurementObservationTypeEnum/">MeasurementObservationTypeEnum</a></td>
 <td>The type of Observation being represented (e</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../associated_assay/">associated_assay</a></td>
+<td>0..1 <br/> <a href="../Assay/">Assay</a></td>
+<td>A reference to the assay that was used in generating this observation</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -536,6 +551,14 @@ attributes:
     - Observation
     - MeasurementObservation
     range: MeasurementObservationTypeEnum
+  associated_assay:
+    name: associated_assay
+    description: A reference to the assay that was used in generating this observation.
+    from_schema: https://w3id.org/bdchm
+    rank: 1000
+    domain_of:
+    - MeasurementObservation
+    range: Assay
 
 </code></pre>
 </details>
@@ -586,6 +609,16 @@ attributes:
     - Observation
     - MeasurementObservation
     range: MeasurementObservationTypeEnum
+  associated_assay:
+    name: associated_assay
+    description: A reference to the assay that was used in generating this observation.
+    from_schema: https://w3id.org/bdchm
+    rank: 1000
+    alias: associated_assay
+    owner: MeasurementObservation
+    domain_of:
+    - MeasurementObservation
+    range: Assay
   associated_visit:
     name: associated_visit
     description: A reference to the Visit that is associated with this record.
