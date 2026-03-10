@@ -20,6 +20,65 @@
             "title": "AnalyteTypeEnum",
             "type": "string"
         },
+        "Assay": {
+            "additionalProperties": false,
+            "description": "A class for representing metadata about an assay performed on a specimen, including the method and instrument used.",
+            "properties": {
+                "id": {
+                    "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
+                    "type": "string"
+                },
+                "instrument": {
+                    "description": "The instrument(s) used to perform the assay.",
+                    "items": {
+                        "$ref": "#/$defs/InstrumentEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "lower_limit_of_detection": {
+                    "description": "The lower limit of detection for the assay, if applicable.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "method": {
+                    "$ref": "#/$defs/AssayMethodEnum",
+                    "description": "The type of assay performed (e.g. \"immunohistochemistry\", \"RNA-seq\", \"mass spectrometry\")"
+                },
+                "reagent": {
+                    "description": "The reagent(s) used to perform the assay.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "upper_limit_of_detection": {
+                    "description": "The upper limit of detection for the assay, if applicable.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "method",
+                "id"
+            ],
+            "title": "Assay",
+            "type": "object"
+        },
+        "AssayMethodEnum": {
+            "description": "A constrained set of enumerative values containing the Measurement Method Ontology (MMO) values for assay methods.",
+            "title": "AssayMethodEnum",
+            "type": "string"
+        },
         "BaseEnum": {
             "description": "A base constrained set of enumerative values that can be used as a placeholder in a class expected to be further constrained in a subclass.",
             "title": "BaseEnum",
@@ -1498,6 +1557,11 @@
             "title": "ImagingStudy",
             "type": "object"
         },
+        "InstrumentEnum": {
+            "description": "A constrained set of enumerative values containing the BioAssay Ontology (BAO) values for instruments.",
+            "title": "InstrumentEnum",
+            "type": "string"
+        },
         "MeasurementObservation": {
             "additionalProperties": false,
             "description": "A data structure with key (observation_type) and value (value) attributes that represents a single observation, such as the hematocrit component of a complete blood count panel.",
@@ -1506,6 +1570,13 @@
                     "description": "The Participant's age (expressed in days) when the Observation was made.",
                     "type": [
                         "integer",
+                        "null"
+                    ]
+                },
+                "associated_assay": {
+                    "description": "A reference to the assay that was used in generating this observation.",
+                    "type": [
+                        "string",
                         "null"
                     ]
                 },
