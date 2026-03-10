@@ -22,6 +22,8 @@ prefixes:
   UOM: https://units-of-measurement.org/
   OBA: http://purl.obolibrary.org/obo/OBA_
   ICD10CM: http://purl.bioontology.org/ontology/ICD10CM/
+  MMO: http://purl.obolibrary.org/obo/MMO_
+  BAO: http://www.bioassayontology.org/bao#BAO_
 
 default_prefix: bdchm
 default_range: string
@@ -1229,6 +1231,7 @@ classes:
         multivalued: false
         range: Quantity
         required: false
+      
 
   Quantity:
     is_a: Entity
@@ -1407,6 +1410,9 @@ classes:
         description: The type of Observation being represented (e.g. 'diastolic blood pressure')
         comments: This field holds the "key" in the core key-value pair comprised of the observation_type field and the relevant value(s) field.  
         range: MeasurementObservationTypeEnum
+      associated_assay:
+        description: A reference to the assay that was used in generating this observation.
+        range: Assay
 
   SdohObservationSet:
     is_a: ObservationSet
@@ -1443,6 +1449,33 @@ classes:
         range: integer
         multivalued: false
         required: true
+
+  Assay:
+    is_a: Entity
+    description: A class for representing metadata about an assay performed on a specimen, including the method and instrument used.
+    attributes:
+      method:
+        description: The type of assay performed (e.g. "immunohistochemistry", "RNA-seq", "mass spectrometry")
+        range: AssayMethodEnum
+        multivalued: false
+        required: true
+      instrument:
+        description: The instrument(s) used to perform the assay.
+        range: InstrumentEnum
+        multivalued: true
+      reagent:
+        description: The reagent(s) used to perform the assay.
+        range: Substance
+        multivalued: true
+      lower_limit_of_detection:
+        description: The lower limit of detection for the assay, if applicable.
+        range: Quantity
+        multivalued: false
+      upper_limit_of_detection:
+        description: The upper limit of detection for the assay, if applicable.
+        range: Quantity
+        multivalued: false
+
 
 slots:
   id:
@@ -1555,6 +1588,28 @@ enums:
       source_ontology: obo:ncbitaxon
       source_nodes:
         - ncbitaxon:131567 ## Cellular Organisms
+      include_self: false
+      relationship_types:
+        - rdfs:subClassOf
+
+  AssayMethodEnum:
+    description: >-
+      A constrained set of enumerative values containing the Measurement Method Ontology (MMO) values for assay methods.
+    reachable_from:
+      source_ontology: obo:mmo
+      source_nodes:
+        - MMO:0000000 ## Measurement Method
+      include_self: false
+      relationship_types:
+        - rdfs:subClassOf
+
+  InstrumentEnum:
+    description: >-
+      A constrained set of enumerative values containing the BioAssay Ontology (BAO) values for instruments.
+    reachable_from:
+      source_ontology: BAO
+      source_nodes:
+        - BAO:0003118 ## Instrument
       include_self: false
       relationship_types:
         - rdfs:subClassOf
