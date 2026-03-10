@@ -48,6 +48,7 @@ export type MeasurementObservationId = string;
 export type SdohObservationSetId = string;
 export type SdohObservationId = string;
 export type CauseOfDeathId = string;
+export type AssayId = string;
 /**
 * A base constrained set of enumerative values that can be used as a placeholder in a class expected to be further constrained in a subclass.
 */
@@ -116,6 +117,18 @@ export enum SexEnum {
 * A constrained set of enumerative values containing the NCBITaxon values for cellular organisms.
 */
 export enum CellularOrganismSpeciesEnum {
+    
+};
+/**
+* A constrained set of enumerative values containing the Measurement Method Ontology (MMO) values for assay methods.
+*/
+export enum AssayMethodEnum {
+    
+};
+/**
+* A constrained set of enumerative values containing the BioAssay Ontology (BAO) values for instruments.
+*/
+export enum InstrumentEnum {
     
 };
 /**
@@ -2492,6 +2505,8 @@ export interface MeasurementObservation extends Observation {
     range_high?: QuantityId,
     /** The type of Observation being represented (e.g. 'diastolic blood pressure') */
     observation_type?: string,
+    /** A reference to the assay that was used in generating this observation. */
+    associated_assay?: AssayId,
 }
 
 
@@ -2519,6 +2534,23 @@ export interface CauseOfDeath extends Entity {
     cause: string,
     /** The ordinality of a given cause of death record recorded in integers.  Primary cause of death should have order equal to 1 and additional causes should be recorded starting from 2 and iterating up from there. */
     order: number,
+}
+
+
+/**
+ * A class for representing metadata about an assay performed on a specimen, including the method and instrument used.
+ */
+export interface Assay extends Entity {
+    /** The type of assay performed (e.g. "immunohistochemistry", "RNA-seq", "mass spectrometry") */
+    method: string,
+    /** The instrument(s) used to perform the assay. */
+    instrument?: string,
+    /** The reagent(s) used to perform the assay. */
+    reagent?: SubstanceId[],
+    /** The lower limit of detection for the assay, if applicable. */
+    lower_limit_of_detection?: QuantityId,
+    /** The upper limit of detection for the assay, if applicable. */
+    upper_limit_of_detection?: QuantityId,
 }
 
 
