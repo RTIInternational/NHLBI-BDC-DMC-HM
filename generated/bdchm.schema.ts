@@ -152,28 +152,48 @@ export enum VertebrateBreedEnum {
 */
 export enum VisitCategoryEnum {
     
-    /** Person visiting hospital, at a care stie, in bed, for duration of more than one day, with physicians and other Providers permanently available to deliver service around the clock */
-    INPATIENT = "INPATIENT",
-    /** Person visiting dedicated healthcare institution for treating emergencies, at a Care Site, within one day, with physicians and Providers permanently available to deliver service around the clock */
-    EMERGENCY_ROOM = "EMERGENCY_ROOM",
+    /** Person receiving care at a temporary or non-traditional care site established to expand capacity, such as during a public health emergency */
+    ALTERNATE_CARE_SITE_ACS = "ALTERNATE_CARE_SITE_ACS",
+    /** Person using transportation service for the purpose of initiating one of the other Visits, without a Care Site, within one day, potentially with Providers accompanying the Visit and delivering service */
+    AMBULANCE_VISIT = "AMBULANCE_VISIT",
+    /** Person visiting a specialized outpatient clinic dedicated to the assessment and management of persistent post-COVID-19 symptoms */
+    AMBULATORY_LONG_COVID_CLINIC = "AMBULATORY_LONG_COVID_CLINIC",
+    /** Person visiting a Care Site within one day for the purpose of receiving rehabilitative therapy services without overnight admission */
+    AMBULATORY_REHABILITATION_VISIT = "AMBULATORY_REHABILITATION_VISIT",
     /** Person visiting ER followed by a subsequent Inpatient Visit, where Emergency department is part of hospital, and transition from the ER to other hospital departments is undefined */
-    EMERGENCY_ROOM_AND_INPATIENT = "EMERGENCY_ROOM_AND_INPATIENT",
-    /** Person visiting dedicated institution for reasons of poor health, at a Care Site, long-term or permanently, with no physician but possibly other Providers permanently available to deliver service around the clock */
-    NON_HOSPITAL_INSTITUTION = "NON_HOSPITAL_INSTITUTION",
-    /** Person visiting dedicated ambulatory healthcare institution, at a Care Site, within one day, without bed, with physicians or medical Providers delivering service during Visit */
-    OUTPATIENT = "OUTPATIENT",
+    EMERGENCY_ROOM_AND_INPATIENT_VISIT = "EMERGENCY_ROOM_AND_INPATIENT_VISIT",
+    /** Person visiting dedicated healthcare institution for treating emergencies, at a Care Site, within one day, with physicians and Providers permanently available to deliver service around the clock */
+    EMERGENCY_ROOM_VISIT = "EMERGENCY_ROOM_VISIT",
+    /** Person visiting a Care Site within one day for a routine or preventive health assessment, without an acute presenting complaint */
+    HEALTH_EXAMINATION = "HEALTH_EXAMINATION",
+    /** Person remaining at home and separated from others for the purpose of containing or managing an infectious or potentially infectious condition */
+    HOME_ISOLATION = "HOME_ISOLATION",
     /** Provider visiting Person, without a Care Site, within one day, delivering service */
-    HOME = "HOME",
+    HOME_VISIT = "HOME_VISIT",
+    /** Person visiting hospital, at a care site, in bed, for duration of more than one day, with physicians and other Providers permanently available to deliver service around the clock */
+    INPATIENT_VISIT = "INPATIENT_VISIT",
+    /** Person admitted to a specialized hospital unit for more than one day, receiving continuous monitoring and advanced life-support from dedicated Providers */
+    INTENSIVE_CARE = "INTENSIVE_CARE",
+    /** Person admitted to a hospital and physically separated from other patients to prevent transmission of an infectious or potentially infectious condition */
+    ISOLATION_IN_INPATIENT_SETTING = "ISOLATION_IN_INPATIENT_SETTING",
+    /** Patient visiting dedicated institution, at a Care Site, within one day, for the purpose of a Measurement. */
+    LABORATORY_VISIT = "LABORATORY_VISIT",
+    /** Person visiting dedicated institution for reasons of poor health, at a Care Site, long-term or permanently, with no physician but possibly other Providers permanently available to deliver service around the clock */
+    NON_HOSPITAL_INSTITUTION_VISIT = "NON_HOSPITAL_INSTITUTION_VISIT",
+    /** Person visiting a Provider at a Care Site within one day for evaluation or management of a health concern, without bed or overnight stay */
+    OFFICE_VISIT = "OFFICE_VISIT",
+    /** Person visiting dedicated ambulatory healthcare institution, at a Care Site, within one day, without bed, with physicians or medical Providers delivering service during Visit */
+    OUTPATIENT_VISIT = "OUTPATIENT_VISIT",
+    /** Person being monitored or assessed at a Care Site due to potential exposure to or symptoms of a reportable or emerging infectious disease */
+    PERSON_UNDER_INVESTIGATION_PUI = "PERSON_UNDER_INVESTIGATION_PUI",
+    /** Person visiting pharmacy for dispensing of Drug, at a Care Site, within one day */
+    PHARMACY_VISIT = "PHARMACY_VISIT",
+    /** Person receiving goods or services from a non-clinical supplier or durable medical equipment provider, outside of a traditional Care Site encounter */
+    SUPPLIER_SERVICE_PROVIDER = "SUPPLIER_SERVICE_PROVIDER",
     /** Patient engages with Provider through communication media */
     TELEHEALTH = "TELEHEALTH",
-    /** Person visiting pharmacy for dispensing of Drug, at a Care Site, within one day */
-    PHARMACY = "PHARMACY",
-    /** Patient visiting dedicated institution, at a Care Site, within one day, for the purpose of a Measurement. */
-    LABORATORY = "LABORATORY",
-    /** Person using transportation service for the purpose of initiating one of the other Visits, without a Care Site, within one day, potentially with Providers accompanying the Visit and delivering service */
-    AMBULANCE = "AMBULANCE",
-    /** Person interacting with healthcare system, without a Care Site, within a day, with no Providers involved, for administrative purposes */
-    CASE_MANAGEMENT = "CASE_MANAGEMENT",
+    /** Visit category is not known, not observed, not recorded, or refused. */
+    UNKNOWN = "UNKNOWN",
 };
 /**
 * A constrained set of enumerative values containing the OMOP values for visit provenance.
