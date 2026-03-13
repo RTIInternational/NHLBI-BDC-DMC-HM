@@ -1711,6 +1711,20 @@ export enum ResearchProjectTypeEnum {
     STUDY = "STUDY",
 };
 /**
+* Values describing the body position of a patient during a measurement or observation.
+*/
+export enum BodyPositionEnum {
+    
+    /** The patient is in a sitting position during the measurement or observation. */
+    SITTING_POSITION = "SITTING_POSITION",
+    /** The patient is in a standing position during the measurement or observation. */
+    ORTHOSTATIC_BODY_POSITION = "ORTHOSTATIC_BODY_POSITION",
+    /** The patient is lying on their back during the measurement or observation. */
+    SUPINE_BODY_POSITION = "SUPINE_BODY_POSITION",
+    /** The patient is lying on their stomach during the measurement or observation. */
+    PRONE_BODY_POSITION = "PRONE_BODY_POSITION",
+};
+/**
 * Values describing the types of an Observation.
 */
 export enum BaseObservationTypeEnum {
@@ -2527,6 +2541,10 @@ export interface MeasurementObservation extends Observation {
     observation_type?: string,
     /** A reference to the assay that was used in generating this observation. */
     associated_assay?: AssayId,
+    /** The body site that is the focus of this observation, if applicable. */
+    body_site?: BodySiteId,
+    /** The position of the body that is the focus of this observation, if applicable. */
+    body_position?: string,
 }
 
 

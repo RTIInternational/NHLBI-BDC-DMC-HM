@@ -148,6 +148,17 @@
             "title": "BiologicProduct",
             "type": "object"
         },
+        "BodyPositionEnum": {
+            "description": "Values describing the body position of a patient during a measurement or observation.",
+            "enum": [
+                "SITTING_POSITION",
+                "ORTHOSTATIC_BODY_POSITION",
+                "SUPINE_BODY_POSITION",
+                "PRONE_BODY_POSITION"
+            ],
+            "title": "BodyPositionEnum",
+            "type": "string"
+        },
         "BodySite": {
             "additionalProperties": false,
             "description": "A site in the body of an organism, typically described in terms of an anatomical concept and optional qualifiers (e.g. left/right, upper/lower). But body sites as defined here may include non-canonical sites, such as an implanted medical device.",
@@ -1589,6 +1600,17 @@
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "body_position": {
+                    "$ref": "#/$defs/BodyPositionEnum",
+                    "description": "The position of the body that is the focus of this observation, if applicable."
+                },
+                "body_site": {
+                    "description": "The body site that is the focus of this observation, if applicable.",
                     "type": [
                         "string",
                         "null"
