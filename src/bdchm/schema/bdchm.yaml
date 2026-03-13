@@ -1413,6 +1413,15 @@ classes:
       associated_assay:
         description: A reference to the assay that was used in generating this observation.
         range: Assay
+      body_site:
+        description: The body site that is the focus of this observation, if applicable.
+        range: BodySite
+      body_position:
+        description: The position of the body that is the focus of this observation, if applicable.
+        range: BodyPositionEnum
+      measured_by:
+        description: The type of individual that performed the measurement activity.
+        range: MeasurementPerformerEnum
 
   SdohObservationSet:
     is_a: ObservationSet
@@ -3765,7 +3774,38 @@ enums:
         description: Consortium
       STUDY:
         description: Study
+  
+  BodyPositionEnum:
+    description: Values describing the body position of a patient during a measurement or observation.
+    permissible_values:
+      SITTING_POSITION:
+        description: The patient is in a sitting position during the measurement or observation.
+        meaning: OMOP:4142787
+      ORTHOSTATIC_BODY_POSITION:
+        description: The patient is in a standing position during the measurement or observation.
+        meaning: OMOP:4033753
+      SUPINE_BODY_POSITION:
+        description: The patient is lying on their back during the measurement or observation.
+        meaning: OMOP:4221822
+      PRONE_BODY_POSITION:
+        description: The patient is lying on their stomach during the measurement or observation.
+        meaning: OMOP:4050473
 
+  MeasurementPerformerEnum:
+    description: Values describing the performer of a measurement or observation.
+    permissible_values:
+      SELF_REPORTED:
+        description: The measurement or observation is self-reported by the patient.
+        meaning: OMOP:603082
+      DOCTOR_REPORTED:
+        description: The measurement or observation is reported by a doctor based on their assessment or examination of the patient.
+      NURSE_REPORTED:
+        description: The measurement or observation is reported by a nurse based on their assessment or examination of the patient.
+      TECHNICIAN_REPORTED:
+        description: The measurement or observation is reported by a technician based on their assessment or examination of the patient.
+      EXAMINER_REPORTED:
+        description: The measurement or observation is reported by an examiner based on their assessment or examination of the patient.
+        
   BaseObservationTypeEnum:
     description: Values describing the types of an Observation.
     inherits:
