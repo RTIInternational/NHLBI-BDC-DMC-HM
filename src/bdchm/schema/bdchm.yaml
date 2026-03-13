@@ -1413,6 +1413,12 @@ classes:
       associated_assay:
         description: A reference to the assay that was used in generating this observation.
         range: Assay
+      body_site:
+        description: The body site that is the focus of this observation, if applicable.
+        range: BodySite
+      body_position:
+        description: The position of the body that is the focus of this observation, if applicable.
+        range: BodyPositionEnum
 
   SdohObservationSet:
     is_a: ObservationSet
@@ -3765,6 +3771,22 @@ enums:
         description: Consortium
       STUDY:
         description: Study
+  
+  BodyPositionEnum:
+    description: Values describing the body position of a patient during a measurement or observation.
+    permissible_values:
+      SITTING_POSITION:
+        description: The patient is in a sitting position during the measurement or observation.
+        meaning: OMOP:4142787
+      ORTHOSTATIC_BODY_POSITION:
+        description: The patient is in a standing position during the measurement or observation.
+        meaning: OMOP:4033753
+      SUPINE_BODY_POSITION:
+        description: The patient is lying on their back during the measurement or observation.
+        meaning: OMOP:4221822
+      PRONE_BODY_POSITION:
+        description: The patient is lying on their stomach during the measurement or observation.
+        meaning: OMOP:4050473
 
   BaseObservationTypeEnum:
     description: Values describing the types of an Observation.
