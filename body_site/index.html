@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/derived_from/">
+        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/body_site/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>Slot: derived_from - BioData Catalyst Harmonized Model</title>
+        <title>Slot: body_site - BioData Catalyst Harmonized Model</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-derived_from" class="md-skip">
+        <a href="#slot-body_site" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: derived_from
+              Slot: body_site
             
           </span>
         </div>
@@ -374,9 +374,9 @@
   
 
 
-<h1 id="slot-derived_from">Slot: derived_from</h1>
-<p><em>A File from which this File is derived.  A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.</em></p>
-<p>URI: <a href="https://w3id.org/bdchm/derived_from">bdchm:derived_from</a></p>
+<h1 id="slot-body_site">Slot: body_site</h1>
+<p><em>The body site that is the focus of this observation, if applicable.</em></p>
+<p>URI: <a href="https://w3id.org/bdchm/body_site">bdchm:body_site</a></p>
 <!-- no inheritance hierarchy -->
 
 <h2 id="applicable-classes">Applicable Classes</h2>
@@ -390,20 +390,15 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../File/">File</a></td>
-<td>Abstract class for various kinds of files</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../ImagingFile/">ImagingFile</a></td>
-<td>A file that contains diagnostic imaging data, such as a DICOM file, or a JPEG...</td>
+<td><a href="../MeasurementObservation/">MeasurementObservation</a></td>
+<td>A data structure with key (observation_type) and value (value) attributes tha...</td>
 <td>no</td>
 </tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../File/">File</a></li>
+<li>Range: <a href="../BodySite/">BodySite</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
@@ -421,28 +416,26 @@
 <tbody>
 <tr>
 <td>self</td>
-<td>bdchm:derived_from</td>
+<td>bdchm:body_site</td>
 </tr>
 <tr>
 <td>native</td>
-<td>bdchm:derived_from</td>
+<td>bdchm:body_site</td>
 </tr>
 </tbody>
 </table>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: derived_from
-description: A File from which this File is derived.  A derivation is a transformation
-  of an entity into another, an update of an entity resulting in a new one, or the
-  construction of a new entity based on a pre-existing entity.
+<pre><code class="language-yaml">name: body_site
+description: The body site that is the focus of this observation, if applicable.
 from_schema: https://w3id.org/bdchm
 rank: 1000
-alias: derived_from
-owner: File
+alias: body_site
+owner: MeasurementObservation
 domain_of:
-- File
-range: File
+- MeasurementObservation
+range: BodySite
 
 </code></pre>
 

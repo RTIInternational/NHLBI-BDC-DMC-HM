@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/derived_from/">
+        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/BodyPositionEnum/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>Slot: derived_from - BioData Catalyst Harmonized Model</title>
+        <title>Enum: BodyPositionEnum - BioData Catalyst Harmonized Model</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-derived_from" class="md-skip">
+        <a href="#enum-bodypositionenum" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: derived_from
+              Enum: BodyPositionEnum
             
           </span>
         </div>
@@ -296,18 +296,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#applicable-classes" class="md-nav__link">
+  <a href="#permissible-values" class="md-nav__link">
     <span class="md-ellipsis">
-      Applicable Classes
+      Permissible Values
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
+  <a href="#slots" class="md-nav__link">
     <span class="md-ellipsis">
-      Properties
+      Slots
     </span>
   </a>
   
@@ -334,15 +334,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mappings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Mappings
-    </span>
-  </a>
   
 </li>
       
@@ -374,75 +365,86 @@
   
 
 
-<h1 id="slot-derived_from">Slot: derived_from</h1>
-<p><em>A File from which this File is derived.  A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.</em></p>
-<p>URI: <a href="https://w3id.org/bdchm/derived_from">bdchm:derived_from</a></p>
-<!-- no inheritance hierarchy -->
-
-<h2 id="applicable-classes">Applicable Classes</h2>
+<h1 id="enum-bodypositionenum">Enum: BodyPositionEnum</h1>
+<p><em>Values describing the body position of a patient during a measurement or observation.</em></p>
+<p>URI: <a href="./">BodyPositionEnum</a></p>
+<h2 id="permissible-values">Permissible Values</h2>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SITTING_POSITION</td>
+<td>OMOP:4142787</td>
+<td>The patient is in a sitting position during the measurement or observation</td>
+</tr>
+<tr>
+<td>ORTHOSTATIC_BODY_POSITION</td>
+<td>OMOP:4033753</td>
+<td>The patient is in a standing position during the measurement or observation</td>
+</tr>
+<tr>
+<td>SUPINE_BODY_POSITION</td>
+<td>OMOP:4221822</td>
+<td>The patient is lying on their back during the measurement or observation</td>
+</tr>
+<tr>
+<td>PRONE_BODY_POSITION</td>
+<td>OMOP:4050473</td>
+<td>The patient is lying on their stomach during the measurement or observation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="slots">Slots</h2>
 <table>
 <thead>
 <tr>
 <th>Name</th>
 <th>Description</th>
-<th>Modifies Slot</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="../File/">File</a></td>
-<td>Abstract class for various kinds of files</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../ImagingFile/">ImagingFile</a></td>
-<td>A file that contains diagnostic imaging data, such as a DICOM file, or a JPEG...</td>
-<td>no</td>
+<td><a href="../body_position/">body_position</a></td>
+<td>The position of the body that is the focus of this observation, if applicable</td>
 </tr>
 </tbody>
 </table>
-<h2 id="properties">Properties</h2>
-<ul>
-<li>Range: <a href="../File/">File</a></li>
-</ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
 <li>from schema: https://w3id.org/bdchm</li>
 </ul>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>bdchm:derived_from</td>
-</tr>
-<tr>
-<td>native</td>
-<td>bdchm:derived_from</td>
-</tr>
-</tbody>
-</table>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: derived_from
-description: A File from which this File is derived.  A derivation is a transformation
-  of an entity into another, an update of an entity resulting in a new one, or the
-  construction of a new entity based on a pre-existing entity.
+<pre><code class="language-yaml">name: BodyPositionEnum
+description: Values describing the body position of a patient during a measurement
+  or observation.
 from_schema: https://w3id.org/bdchm
 rank: 1000
-alias: derived_from
-owner: File
-domain_of:
-- File
-range: File
+permissible_values:
+  SITTING_POSITION:
+    text: SITTING_POSITION
+    description: The patient is in a sitting position during the measurement or observation.
+    meaning: OMOP:4142787
+  ORTHOSTATIC_BODY_POSITION:
+    text: ORTHOSTATIC_BODY_POSITION
+    description: The patient is in a standing position during the measurement or observation.
+    meaning: OMOP:4033753
+  SUPINE_BODY_POSITION:
+    text: SUPINE_BODY_POSITION
+    description: The patient is lying on their back during the measurement or observation.
+    meaning: OMOP:4221822
+  PRONE_BODY_POSITION:
+    text: PRONE_BODY_POSITION
+    description: The patient is lying on their stomach during the measurement or observation.
+    meaning: OMOP:4050473
 
 </code></pre>
 
