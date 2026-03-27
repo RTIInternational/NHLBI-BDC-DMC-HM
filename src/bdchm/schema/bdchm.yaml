@@ -463,6 +463,9 @@ classes:
         range: Entity
         description: Evidence supporting the assertion of the condition (e.g., an ImagingStudy, Procedure, Observation)
         multivalued: true
+      affected_body_site:
+        range: BodySite
+        description: The anatomical site affected by the condition.
     slots:
       - identity
       - associated_visit
@@ -490,6 +493,9 @@ classes:
       quantity:
         range: Quantity
         description: The quantity of procedures ordered or administered.
+      affected_body_site:
+        range: BodySite
+        description: The anatomical site affected by the procedure.
     slots:
       - identity
       - associated_visit
