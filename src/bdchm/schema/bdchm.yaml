@@ -1470,7 +1470,7 @@ classes:
       - observations
       - associated_visit
       - associated_participant
-    slots_usage:
+    slot_usage:
       observations:
         required: true
       associated_visit:
@@ -1549,7 +1549,7 @@ classes:
     slots:
       - associated_visit
       - associated_participant
-    slots_usage:
+    slot_usage:
       associated_visit:
         required: false
       associated_participant:
