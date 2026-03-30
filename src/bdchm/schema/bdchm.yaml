@@ -49,12 +49,15 @@ classes:
       species:
         range: CellularOrganismSpeciesEnum
         description: The scientific binomial name for the species of the Person (e.g. Homo sapiens, Mus musculus, etc.). Values should be derived from the NCBI organismal taxonomy (http://purl.obolibrary.org/obo/ncbitaxon.owl).
+        required: false
       breed:
         range: VertebrateBreedEnum
         description: A label given to a group of animals homogeneous in appearance and other characteristics that distinguish it from other animals of the same species. Values should be derived from the Vertebrate Breed Ontology (http://purl.obolibrary.org/obo/vbo.owl).
+        required: false
       year_of_birth:
         range: integer
         description: Numeric value to represent the calendar year in which an individual was born.
+        required: false
       vital_status:
         range: VitalStatusEnum
         description: Coded value indicating the state or condition of being living or deceased; also includes the case where the vital status is unknown.
@@ -63,13 +66,16 @@ classes:
         description: The age of an individual at the time of death, expressed in days since birth
         unit:
           ucum_code: d
+        required: false
       year_of_death:
         range: integer
         description: Numeric value to represent the calendar year in which an individual died.
+        required: false
       cause_of_death:
         range: CauseOfDeath
         description: Coded value indicating the circumstance or condition that results in the death of the individual.
         multivalued: true
+        required: false
     slots:
       - identity
 
@@ -81,17 +87,25 @@ classes:
       sex:
         range: SexEnum
         description: The biologic character or quality that distinguishes male and female from one another as expressed by analysis of the person's gonadal, morphologic (internal and external), chromosomal, and hormonal characteristics. Individuals where these characteristics do not all clearly align with either male or female are often considered intersex.
+        required: true
       ethnicity:
         range: EthnicityEnum
         description: A sociopolitically constructed system for classifying human beings according to claims of shared heritage often based on perceived cultural similarities (e.g., language, religion, beliefs); the system varies globally. The provided values are based on the categories defined by the U.S. Office of Management and Business and used by the U.S. Census Bureau and include only the options “Hispanic or Latino” and “Not Hispanic or Latino.”
+        required: false
       race:
         range: RaceEnum
         description: A sociopolitically constructed system for classifying human beings according to subjective beliefs about shared ancestry based on perceived innate biological similarities; the system varies globally. The provided values are based on the categories defined by the U.S. Office of Management and Business and used by the U.S. Census Bureau.
         multivalued: true
+        required: false
     slots:
       - identity
       - associated_participant
       - associated_visit
+    slot_usage:
+      associated_participant:
+        required: true
+      associated_visit:
+        required: false
 
   Participant:
     is_a: Entity
@@ -101,31 +115,41 @@ classes:
       description:
         range: string
         description: A free text field to capture additional info/explanation about the research subject.
+        required: false
       member_of_research_study:
         range: ResearchStudy
         description: A reference to the Study(s) of which this Participant is a member
+        required: true
       age_at_index:
         range: integer
         description: The age in days of the Participant at the index_timepoint
         unit:
           ucum_code: d
+        required: false
       index_timepoint:
         range: string
         description: The text term used to describe the reference or anchor date used for date obfuscation, where a single date is obscured by creating one or more date ranges in relation to this date.
+        required: false
       originating_site:
         range: Organization
         description: The Organization through which a subject was enrolled on a ResearchStudy.
+        required: false
       study_arm:
         range: string
         description: The arm(s) of the study on which the Participant is enrolled
         multivalued: true
+        required: false
       consents:
         range: Consent
         description: 'Data Use Restrictions that are used to indicate permissions/restrictions for datasets and/or materials, and relates to the purposes for which datasets and/or material might be removed, stored or used. Based on the Data Use Ontology : see http://www.obofoundry.org/ontology/duo.html'
         multivalued: true
+        required: false
     slots:
       - associated_person
       - identity
+    slot_usage:
+      associated_person:
+        required: true
 
   ResearchStudy:
     is_a: Entity
@@ -135,57 +159,74 @@ classes:
       name:
         range: string
         description: An unabridged name of a research program, project, or study.
+        required: true
       name_shortened:
         range: string
         description: An abbreviated name of a research program, project, or study.
+        required: false
       description:
         range: string
         description: An unabridged description of a research program, project, or study.
+        required: false
       description_shortened:
         range: string
         description: An abbreviated description of a research program, project, or study.
+        required: false
       sponsor:
         range: string
         description: An entity that is responsible for the initiation, management, and/or financing of a research project.
+        required: false
       date_started:
         range: TimePoint
         description: The date when the research project began.
+        required: false
       date_ended:
         range: TimePoint
         description: The date when the research project ended.
+        required: false
       accession_number:
         range: string
         description: The accession number of the research study with the accession authority
+        required: false
       accession_authority:
         range: string
         description: The accession authority for the research study.
+        required: false
       version:
         range: string
         description: The version number of the ResearchStudy
+        required: false
       url:
         range: uriorcurie
         description: A URL address for a resource that provides information about a research program, project, or study.
+        required: false
       part_of:
         range: ResearchStudy
         description: A reference to a parent ResearchStudy (e.g. a link to the overarching CPTAC ResearchStudy from a substudy of CPTAC)
+        required: false
       research_project_type:
         range: ResearchProjectTypeEnum
         description: The 'type' of ResearchStudy represented by this object (e.g. 'Consortium', 'Study')
+        required: true
       program:
         range: string
         description: The name of the overarching research program under which this ResearchStudy is conducted (e.g. 'Heartshare', 'TOPMed', etc.)
+        required: true
       associated_timepoint:
         range: TimePoint
         multivalued: true
         description: A collection of timepoint observations that are relevant to research projects (e.g. date of IACUC approval, date of IRB approval, date of embargo end, etc.)
+        required: false
       principal_investigator:
         range: string
         multivalued: true
         description: The investigator or investigators leading a project.
+        required: true
       consents:
         range: Consent
         description: 'Data Use Restrictions that are used to indicate permissions/restrictions for datasets and/or materials, and relates to the purposes for which datasets and/or material might be removed, stored or used. Based on the Data Use Ontology : see http://www.obofoundry.org/ontology/duo.html'
         multivalued: true
+        required: false
     slots:
       - identity
 
@@ -198,12 +239,15 @@ classes:
         range: DataUseEnum
         description: 'Data Use Restrictions that are used to indicate permissions/restrictions for datasets and/or materials, and relates to the purposes for which datasets and/or material might be removed, stored or used. Based on the Data Use Ontology : see http://www.obofoundry.org/ontology/duo.html'
         multivalued: false
+        required: true
       valid_from:
         range: TimePoint
         description: The point in time from which the consent record is valid.
+        required: false
       valid_to:
         range: TimePoint
         description: The point in time after which the consent record is invalid.
+        required: false
 
   Visit:
     is_a: Entity
@@ -213,24 +257,32 @@ classes:
       name:
         range: string
         description: A free text field or label used to refer to the visit.
+        required: false
       visit_category:
         range: VisitCategoryEnum
         description: A value representing the kind (or category) of visit, like inpatient or outpatient.
+        required: true
       age_at_visit_start:
         range: integer
         description: The age of the Participant (in days) at the start of the Visit.
         unit:
           ucum_code: d
+        required: false
       age_at_visit_end:
         range: integer
         description: The age of the Participant (in days) at the end of the Visit.
         unit:
           ucum_code: d
+        required: false
       visit_provenance:
         range: VisitProvenanceEnum
         description: A value representing the provenance of the visit record, or where the record comes from.
+        required: true
     slots:    
       - associated_participant
+    slot_usage:
+      associated_participant:
+        required: true
 
   Organization:
     is_a: Entity
@@ -240,12 +292,15 @@ classes:
       name:
         range: string
         description: The full legal name by which the organization is known (e.g. 'National Cancer Institute')
+        required: true
       alias:
         range: string
         description: A secondary name for the organization such as a short name or abbreviation (e.g. 'NCI')
+        required: false
       organization_type:
         range: string
         description: The type of the organization (e.g. 'Cancer Genome Characterization Center')
+        required: false
     slots:
       - identity
 
@@ -257,15 +312,19 @@ classes:
       date_time:
         range: datetime
         description: An explicitly specified timepoint described in terms of a date and optionally a time on that date.
+        required: false
       index_time_point:
         range: TimePoint
         description: Another TimePoint from which this point is offset.
+        required: false
       offset_from_index:
         range: integer
         description: A quantity of time that, together with the index date or event, can be used to derive a specific timepoint.
+        required: false
       event_type:
         range: string
         description: An event that occurred at the point in time specified by this TimePoint.
+        required: false
 
   TimePeriod:
     is_a: Entity
@@ -275,9 +334,11 @@ classes:
       period_start:
         range: TimePoint
         description: When a period of time started.
+        required: true
       period_end:
         range: TimePoint
         description: When a period of time ended.
+        required: true
 
   ResearchStudyCollection:
     tree_root: true
@@ -288,6 +349,7 @@ classes:
         range: ResearchStudy
         multivalued: true
         inlined: true
+        required: true
 
   Questionnaire:
     is_a: Entity
@@ -296,31 +358,40 @@ classes:
       name:
         description: Name for this Questionnaire (computer friendly)
         range: string
+        required: false
       title:
         description: Name for this Questionnaire (human friendly)
         range: string
+        required: false
       description:
         description: Natural language description of the Questionnaire
         range: string
+        required: false
       url:
         description: Canonical identifier for this Questionnaire, represented as an absolute URI (globally unique)
         range: uriorcurie
+        required: false
       version:
         description: The identifier that is used to identify this version of the questionnaire when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the questionnaire author and is not expected to be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if a managed version is not available. There is also no expectation that versions can be placed in a lexicographical sequence.
         range: string
+        required: false
       publisher:
         description: Name of the publisher/steward (organization or individual) of this Questionnaire
         range: string
+        required: false
       copyright:
         description: Textual description of any use and/or publishing restrictions
         range: string
+        required: false
       copyright_label:
         description: Copyright holder and year(s)
         range: string
+        required: false
       language:
         description: The language(s) in which questions are presented.
         range: string
         multivalued: true
+        required: false
       items:
         description: A collection of QuestionnaireItem objects which encapsulate the question being asked.
         range: QuestionnaireItem
@@ -336,12 +407,15 @@ classes:
       text:
         range: string
         description: Name for group or question text
+        required: true
       code:
         range: string
         description: Corresponding concept for this item in a terminology
+        required: false
       part_of:
         range: QuestionnaireItem
         description: A reference to a parent QuestionnaireItem.
+        required: false
     slots:
       - identity
 
@@ -354,6 +428,7 @@ classes:
         range: integer
         unit:
           ucum_code: d
+        required: false
       items:
         description: A collection of QuestionnaireResponseItem objects which encapsulate the question being asked and the response.
         range: QuestionnaireResponseItem
@@ -361,6 +436,9 @@ classes:
         required: true
     slots:
       - associated_visit
+    slot_usage:
+      associated_visit:
+        required: true
 
   QuestionnaireResponseItem:
     is_a: Entity
@@ -369,9 +447,11 @@ classes:
       has_questionnaire_item:
         range: QuestionnaireItem
         description: A reference to the QuestionnaireItem that this QuestionnaireResponseItem responds to.
+        required: false
       text:
         range: string
         description: Name for group or question text
+        required: true
       response_value:
         range: QuestionnaireResponseValue
         required: true
@@ -384,10 +464,15 @@ classes:
       type:
         range: string
         designates_type: true
+        required: true
       name:
         range: string
+        required: true
     slots:
       - value
+    slot_usage:
+      value:
+        required: true
 
   QuestionnaireResponseValueDecimal:
     is_a: QuestionnaireResponseValue
@@ -437,36 +522,49 @@ classes:
       condition_concept:
         range: ConditionConceptEnum
         description: The coded value for the presence of a disease or medical condition stated as a diagnosis, a sign or a symptom, coded to the Human Phenotype Ontology or MONDO.
+        required: true
       age_at_condition_start:
         range: integer
         description: The Participant's age (expressed in days) when the condition was first recorded.
         unit:
           ucum_code: d
+        required: false
       age_at_condition_end:
         range: integer
         description: The Participant's age (expressed in days) when the condition was recorded as having been resolved.
         unit:
           ucum_code: d
+        required: false
       condition_provenance:
         range: ProvenanceEnum
         description: A value representing the provenance of the Condition record
+        required: true
       condition_status:
         range: HistoricalStatusEnum
         description: A value indicating whether the medical condition described in this record is present, absent, historically present, or unknown for this individual patient.
+        required: true
       condition_severity:
         range: ConditionSeverityEnum
         description: A subjective assessment of the severity of the condition
+        required: false
       relationship_to_participant:
         range: FamilyRelationshipEnum
         description: A value indicating the relationship between the Participant to which the Condition is attributed and the individual who had the reported Condition.  If the Condition is affecting the participant themselves, then 'Self' is the appropriate relationship.  If the Condition is affecting a family member (e.g. a parent of the Participant) then an appropriate relationship should be provided (e.g. 'Parent')
+        required: true
       associated_evidence:
         range: Entity
         description: Evidence supporting the assertion of the condition (e.g., an ImagingStudy, Procedure, Observation)
         multivalued: true
+        required: false
     slots:
       - identity
       - associated_visit
       - associated_participant
+    slot_usage:
+      associated_visit:
+        required: false
+      associated_participant:
+        required: true
 
   Procedure:
     is_a: Entity
@@ -476,24 +574,34 @@ classes:
       procedure_concept:
         range: ProcedureConceptEnum
         description: The coded value that describes the procedure, derived from OMOP codes.
+        required: true
       age_at_procedure:
         range: integer
         description: The Participant's age (expressed in days) when the procedure was performed.
         unit:
           ucum_code: d
+        required: false
       procedure_provenance:
         range: ProvenanceEnum
         description: A value representing the provenance of the Procedure record
+        required: true
       procedure_status:
         range: StatusEnum
         description: A value indicating whether the medical procedure described in this record is present, absent, or unknown for this individual patient.
+        required: true
       quantity:
         range: Quantity
         description: The quantity of procedures ordered or administered.
+        required: false
     slots:
       - identity
       - associated_visit
       - associated_participant
+    slot_usage:
+      associated_visit:
+        required: false
+      associated_participant:
+        required: true
 
   ImagingStudy:
     is_a: Entity
@@ -504,27 +612,39 @@ classes:
         description: The Participant's age (expressed in days) when the ImagingStudy was performed.
         unit:
           ucum_code: d
+        required: false
       number_of_series:
         range: integer
         description: Number of Series in the Study.
+        required: true
       number_of_instances:
         range: integer
         description: Number of SOP Instances in Study.
+        required: true
       study_description:
         range: string
-        description: (0008, 1030) Study Description. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. 
+        description: (0008, 1030) Study Description. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.
+        required: false
       study_modality:
         range: string
         description: The modalities of the imaging study; derived from (0008, 0060) Modality. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. 
+        required: true
       study_uid:
         range: string
         description: (0020, 000d) Study Instance UID. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.
+        required: true
       body_part_examined:
         range: BodySite
         description: (0018, 0015) Body Part Examined. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. 
+        required: false
     slots:
       - associated_visit
       - associated_participant
+    slot_usage:
+      associated_visit:
+        required: false
+      associated_participant:
+        required: true
 
   Exposure:
     is_a: Entity
@@ -536,18 +656,26 @@ classes:
         description: The Participant's age (expressed in days) at the exposure start date.
         unit:
           ucum_code: d
+        required: false
       age_at_exposure_end:
         range: integer
         description: The Participant's age (expressed in days) at the exposure end date, if available. Otherwise equal to age_at_exposure_start.
         unit:
           ucum_code: d
+        required: false
       exposure_status:
         range: HistoricalStatusEnum
         description: A value indicating whether the exposure described in this record is present, absent, historically present, or unknown for this individual patient.
+        required: true
     slots:
       - identity
       - associated_visit
       - associated_participant
+    slot_usage:
+      associated_visit:
+        required: false
+      associated_participant:
+        required: true
 
   DrugExposure:
     is_a: Exposure
@@ -557,9 +685,11 @@ classes:
       drug_concept:
         range: DrugExposureConceptEnum
         description: The coded value for a drug. From RxNorm. The syntax for the enum may need work.
+        required: true
       exposure_provenance:
         range: DrugExposureProvenanceEnum
         description: A value representing the provenance of the DrugExposure record. From OMOP Drug Types.
+        required: true
       refills:
         range: integer
         description: Intended refills at time of the prescription.
@@ -581,6 +711,7 @@ classes:
       route_concept:
         range: DrugRouteEnum
         description: Route of drug administration.
+        required: false
 
   DeviceExposure:
     is_a: Exposure
@@ -590,9 +721,11 @@ classes:
       device_concept:
         range: DeviceExposureConceptEnum
         description: The coded value for a device. Primarily SNOMED. The syntax for the enum may need work.
+        required: true
       exposure_provenance:
         range: DeviceExposureProvenanceEnum
         description: A value representing the provenance of the DeviceExposure record. From OMOP Device Types.
+        required: true
       quantity:
         range: float
         description: Amount of device used. If not present in source, default to 1.
@@ -619,34 +752,47 @@ classes:
       file_name:
         range: string
         description: The name (or part of a name) of a file (of any type).
+        required: true
       file_size:
         range: integer
         description: The size of the data file (object) in bytes.
+        required: false
       file_location:
         range: uriorcurie
         description: A unique identifier or url for identifying or locating the file.
         multivalued: true
+        required: true
       md5sum:
         range: string
         description: The 128-bit hash value expressed as a 32 digit hexadecimal number used as a file's digital fingerprint.
+        required: false
       data_type:
         range: string
         description: The nature or genre of the resource. Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMI-TYPE](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7). To describe the file format, physical medium, or dimensions of the resource, use the Format element.
+        required: false
       data_category:
         range: string
         description: A broad categorization of the contents of the data file.
+        required: false
       format:
         range: string
         description: The file format, physical medium, or dimensions of the resource. Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME] (http://www.iana.org/assignments/media-types/).
+        required: false
       description:
         range: string
         description: An account of the resource. Description may include but is not limited to an abstract, a table of contents, a graphical representation, or a free-text account of the resource.
+        required: false
       derived_from:
         range: File
         description: A File from which this File is derived.  A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.
+        multivalued: true
+        required: false
     slots:
       - identity
       - associated_participant
+    slot_usage:
+      associated_participant:
+        required: true
 
   ImagingFile:
     is_a: File
@@ -655,27 +801,35 @@ classes:
       imaging_modality:
         range: string
         description: The modality of the imaging data contained in the file (e.g. CT, MRI, etc.)
+        required: true
       anatomical_site:
         range: BodySite
         description: The anatomical site from which the imaging data was acquired (e.g. Chest, Abdomen, etc.)
+        required: false
       series_number:
         range: integer
         description: The Series Instance Number for the imaging data contained in the file, if applicable.
+        required: true
       series_uid:
         range: string
         description: (0020, 000e) Series Instance UID. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. 
+        required: true
       series_description:
         range: string
         description: (0008, 103e) Series Description. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. 
+        required: false
       related_imaging_study:
         range: ImagingStudy
         description: The ImagingStudy with which this ImagingFile is associated.
+        required: true
       manufacturer:
         range: string
         description: (0008, 0070) Manufacturer. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.
+        required: false
       manufacturer_model:
         range: string
         description: (0008, 1090) Manufacturer's Model Name. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.
+        required: false
 
   Document:
     is_a: Entity
@@ -701,7 +855,7 @@ classes:
         multivalued: true
         inlined_as_list: true
         range: string
-        required: false
+        required: true
     slots:
       - identity
 
@@ -1316,6 +1470,13 @@ classes:
       - observations
       - associated_visit
       - associated_participant
+    slots_usage:
+      observations:
+        required: true
+      associated_visit:
+        required: false
+      associated_participant:
+        required: true
       
   Observation:
     is_a: Entity
@@ -1326,6 +1487,7 @@ classes:
         description: The Participant's age (expressed in days) when the Observation was made.
         unit:
           ucum_code: d
+        required: false
       category:
         description: The general category of observation described
         multivalued: false
@@ -1387,6 +1549,11 @@ classes:
     slots:
       - associated_visit
       - associated_participant
+    slots_usage:
+      associated_visit:
+        required: false
+      associated_participant:
+        required: true
 
   MeasurementObservationSet:
     is_a: ObservationSet
@@ -1403,22 +1570,28 @@ classes:
       range_low:
         description: If reference ranges for upper and lower limit of normal as provided (typically by a laboratory) these are stored in the range_high and range_low fields. This should be set to NULL if not provided.
         range: Quantity
+        required: false
       range_high:
         description: If reference ranges for upper and lower limit of normal as provided (typically by a laboratory) these are stored in the range_high and range_low fields. This should be set to NULL if not provided.
         range: Quantity
+        required: false
       observation_type:
         description: The type of Observation being represented (e.g. 'diastolic blood pressure')
         comments: This field holds the "key" in the core key-value pair comprised of the observation_type field and the relevant value(s) field.  
         range: MeasurementObservationTypeEnum
+        required: true
       associated_assay:
         description: A reference to the assay that was used in generating this observation.
         range: Assay
+        required: false
       body_site:
         description: The body site that is the focus of this observation, if applicable.
         range: BodySite
+        required: false
       body_position:
         description: The position of the body that is the focus of this observation, if applicable.
         range: BodyPositionEnum
+        required: false
 
   SdohObservationSet:
     is_a: ObservationSet
@@ -1469,18 +1642,22 @@ classes:
         description: The instrument(s) used to perform the assay.
         range: InstrumentEnum
         multivalued: true
+        required: false
       reagent:
         description: The reagent(s) used to perform the assay.
         range: Substance
         multivalued: true
+        required: false
       lower_limit_of_detection:
         description: The lower limit of detection for the assay, if applicable.
         range: Quantity
         multivalued: false
+        required: false
       upper_limit_of_detection:
         description: The upper limit of detection for the assay, if applicable.
         range: Quantity
         multivalued: false
+        required: false
 
 
 slots:
