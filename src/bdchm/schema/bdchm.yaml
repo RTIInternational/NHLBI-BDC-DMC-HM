@@ -24,6 +24,7 @@ prefixes:
   ICD10CM: http://purl.bioontology.org/ontology/ICD10CM/
   MMO: http://purl.obolibrary.org/obo/MMO_
   BAO: http://www.bioassayontology.org/bao#BAO_
+  UBERON: http://purl.obolibrary.org/obo/UBERON_
 
 default_prefix: bdchm
 default_range: string
@@ -463,6 +464,9 @@ classes:
         range: Entity
         description: Evidence supporting the assertion of the condition (e.g., an ImagingStudy, Procedure, Observation)
         multivalued: true
+      affected_body_site:
+        range: BodySite
+        description: The anatomical site affected by the condition.
     slots:
       - identity
       - associated_visit
@@ -490,6 +494,9 @@ classes:
       quantity:
         range: Quantity
         description: The quantity of procedures ordered or administered.
+      affected_body_site:
+        range: BodySite
+        description: The anatomical site affected by the procedure.
     slots:
       - identity
       - associated_visit
@@ -1271,7 +1278,7 @@ classes:
         - value: Adipose
         - value: Adrenal
         multivalued: false
-        range: string
+        range: AnatomicalSiteEnum
         required: true
       qualifier:
         description: A qualifier that further refines or specifies the location of the body site - e.g. to indicate laterality, upper v. lower, containment in some other anatomical structure (e.g. 'blood' contained in the 'hepatic vein')
@@ -1973,6 +1980,17 @@ enums:
       source_ontology: obo:hp
       source_nodes:
         - HP:0000118 ## Phenotypic Abnormality
+      include_self: false
+      relationship_types:
+        - rdfs:subClassOf
+
+  AnatomicSiteEnum:
+    description: >-
+      A constrained set of enumerative values containing the Uberon values for anatomic sites.
+    reachable_from:
+      source_ontology: obo:uberon
+      source_nodes:
+        - UBERON:0001062 ## anatomic site
       include_self: false
       relationship_types:
         - rdfs:subClassOf
