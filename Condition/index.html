@@ -235,6 +235,15 @@
       Entity &lt;|-- Condition
         click Entity href "../Entity"
 
+      Condition : affected_body_site
+
+
+
+
+    Condition --&gt; "0..1" BodySite : affected_body_site
+    click BodySite href "../BodySite"
+
+
       Condition : age_at_condition_end
 
       Condition : age_at_condition_start
@@ -402,6 +411,12 @@
 <td>direct</td>
 </tr>
 <tr>
+<td><a href="../affected_body_site/">affected_body_site</a></td>
+<td>0..1 <br/> <a href="../BodySite/">BodySite</a></td>
+<td>The anatomical site affected by the condition</td>
+<td>direct</td>
+</tr>
+<tr>
 <td><a href="../id/">id</a></td>
 <td>1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
 <td>The 'logical' identifier of the entity within the system of record</td>
@@ -530,6 +545,15 @@ attributes:
     - Condition
     range: Entity
     multivalued: true
+  affected_body_site:
+    name: affected_body_site
+    description: The anatomical site affected by the condition.
+    from_schema: https://w3id.org/bdchm
+    rank: 1000
+    domain_of:
+    - Condition
+    - Procedure
+    range: BodySite
 
 </code></pre>
 </details>
@@ -640,6 +664,17 @@ attributes:
     - Condition
     range: Entity
     multivalued: true
+  affected_body_site:
+    name: affected_body_site
+    description: The anatomical site affected by the condition.
+    from_schema: https://w3id.org/bdchm
+    rank: 1000
+    alias: affected_body_site
+    owner: Condition
+    domain_of:
+    - Condition
+    - Procedure
+    range: BodySite
   identity:
     name: identity
     description: A 'business' identifier or accession number for the entity, typically

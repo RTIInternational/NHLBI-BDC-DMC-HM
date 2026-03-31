@@ -249,6 +249,13 @@
       BodySite : site
 
 
+
+
+    BodySite --&gt; "1" AnatomicSiteEnum : site
+    click AnatomicSiteEnum href "../AnatomicSiteEnum"
+
+
+
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
@@ -270,7 +277,7 @@
 <tbody>
 <tr>
 <td><a href="../site/">site</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../AnatomicSiteEnum/">AnatomicSiteEnum</a></td>
 <td>A term describing any site in the body</td>
 <td>direct</td>
 </tr>
@@ -299,6 +306,18 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><a href="../Condition/">Condition</a></td>
+<td><a href="../affected_body_site/">affected_body_site</a></td>
+<td>range</td>
+<td><a href="./">BodySite</a></td>
+</tr>
+<tr>
+<td><a href="../Procedure/">Procedure</a></td>
+<td><a href="../affected_body_site/">affected_body_site</a></td>
+<td>range</td>
+<td><a href="./">BodySite</a></td>
+</tr>
 <tr>
 <td><a href="../ImagingStudy/">ImagingStudy</a></td>
 <td><a href="../body_part_examined/">body_part_examined</a></td>
@@ -372,7 +391,7 @@ attributes:
     rank: 1000
     domain_of:
     - BodySite
-    range: string
+    range: AnatomicSiteEnum
     required: true
     multivalued: false
   qualifier:
@@ -417,7 +436,7 @@ attributes:
     owner: BodySite
     domain_of:
     - BodySite
-    range: string
+    range: AnatomicSiteEnum
     required: true
     multivalued: false
   qualifier:

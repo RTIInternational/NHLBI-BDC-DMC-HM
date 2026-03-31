@@ -235,6 +235,15 @@
       Entity &lt;|-- Procedure
         click Entity href "../Entity"
 
+      Procedure : affected_body_site
+
+
+
+
+    Procedure --&gt; "0..1" BodySite : affected_body_site
+    click BodySite href "../BodySite"
+
+
       Procedure : age_at_procedure
 
       Procedure : associated_participant
@@ -364,6 +373,12 @@
 <td>direct</td>
 </tr>
 <tr>
+<td><a href="../affected_body_site/">affected_body_site</a></td>
+<td>0..1 <br/> <a href="../BodySite/">BodySite</a></td>
+<td>The anatomical site affected by the procedure</td>
+<td>direct</td>
+</tr>
+<tr>
 <td><a href="../id/">id</a></td>
 <td>1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
 <td>The 'logical' identifier of the entity within the system of record</td>
@@ -457,6 +472,14 @@ attributes:
     - DrugExposure
     - DeviceExposure
     range: Quantity
+  affected_body_site:
+    name: affected_body_site
+    description: The anatomical site affected by the procedure.
+    from_schema: https://w3id.org/bdchm
+    domain_of:
+    - Condition
+    - Procedure
+    range: BodySite
 
 </code></pre>
 </details>
@@ -526,6 +549,16 @@ attributes:
     - DrugExposure
     - DeviceExposure
     range: Quantity
+  affected_body_site:
+    name: affected_body_site
+    description: The anatomical site affected by the procedure.
+    from_schema: https://w3id.org/bdchm
+    alias: affected_body_site
+    owner: Procedure
+    domain_of:
+    - Condition
+    - Procedure
+    range: BodySite
   identity:
     name: identity
     description: A 'business' identifier or accession number for the entity, typically
