@@ -374,6 +374,12 @@ export enum HpoPhenotypicAbnormalityEnum {
     
 };
 /**
+* A constrained set of enumerative values containing the Uberon values for anatomic sites.
+*/
+export enum AnatomicSiteEnum {
+    
+};
+/**
 * A constrained set of enumerative values containing both the MONDO values for human diseases and the HPO values for phenotypic abnormalities.
 */
 export enum ConditionConceptEnum {
@@ -2073,6 +2079,8 @@ export interface Condition extends Entity {
     relationship_to_participant?: string,
     /** Evidence supporting the assertion of the condition (e.g., an ImagingStudy, Procedure, Observation) */
     associated_evidence?: EntityId[],
+    /** The anatomical site affected by the condition. */
+    affected_body_site?: BodySiteId,
 }
 
 
@@ -2096,6 +2104,8 @@ export interface Procedure extends Entity {
     procedure_status?: string,
     /** The quantity of procedures ordered or administered. */
     quantity?: QuantityId,
+    /** The anatomical site affected by the procedure. */
+    affected_body_site?: BodySiteId,
 }
 
 
