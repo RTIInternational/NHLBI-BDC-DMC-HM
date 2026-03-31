@@ -1278,7 +1278,7 @@ classes:
         - value: Adipose
         - value: Adrenal
         multivalued: false
-        range: AnatomicalSiteEnum
+        range: AnatomicSiteEnum
         required: true
       qualifier:
         description: A qualifier that further refines or specifies the location of the body site - e.g. to indicate laterality, upper v. lower, containment in some other anatomical structure (e.g. 'blood' contained in the 'hepatic vein')
