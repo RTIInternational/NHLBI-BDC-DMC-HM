@@ -281,7 +281,7 @@ classes:
         description: When a period of time ended.
 
   ResearchStudyCollection:
-    tree_root: true
+    is_a: Entity
     description: >-
       A holder for ResearchStudy objects
     attributes:
