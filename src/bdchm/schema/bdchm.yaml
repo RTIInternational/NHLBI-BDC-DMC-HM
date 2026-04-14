@@ -88,7 +88,7 @@ classes:
       sex:
         range: SexEnum
         description: The biologic character or quality that distinguishes male and female from one another as expressed by analysis of the person's gonadal, morphologic (internal and external), chromosomal, and hormonal characteristics. Individuals where these characteristics do not all clearly align with either male or female are often considered intersex.
-        required: true
+        required: false
       ethnicity:
         range: EthnicityEnum
         description: A sociopolitically constructed system for classifying human beings according to claims of shared heritage often based on perceived cultural similarities (e.g., language, religion, beliefs); the system varies globally. The provided values are based on the categories defined by the U.S. Office of Management and Business and used by the U.S. Census Bureau and include only the options “Hispanic or Latino” and “Not Hispanic or Latino.”
