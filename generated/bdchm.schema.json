@@ -20,6 +20,11 @@
             "title": "AnalyteTypeEnum",
             "type": "string"
         },
+        "AnatomicSiteEnum": {
+            "description": "A constrained set of enumerative values containing the Uberon values for anatomic sites.",
+            "title": "AnatomicSiteEnum",
+            "type": "string"
+        },
         "Assay": {
             "additionalProperties": false,
             "description": "A class for representing metadata about an assay performed on a specimen, including the method and instrument used.",
@@ -178,8 +183,8 @@
                     ]
                 },
                 "site": {
-                    "description": "A term describing any site in the body.",
-                    "type": "string"
+                    "$ref": "#/$defs/AnatomicSiteEnum",
+                    "description": "A term describing any site in the body."
                 }
             },
             "required": [
@@ -228,6 +233,13 @@
             "additionalProperties": false,
             "description": "Conditions are records of a Person suggesting the presence of a disease or medical condition stated as a diagnosis, a sign or a symptom, which is either observed by a Provider or reported by the patient. Conditions are recorded in different sources and levels of standardization.",
             "properties": {
+                "affected_body_site": {
+                    "description": "The anatomical site affected by the condition.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "age_at_condition_end": {
                     "description": "The Participant's age (expressed in days) when the condition was recorded as having been resolved.",
                     "type": [
@@ -2266,6 +2278,13 @@
             "additionalProperties": false,
             "description": "Procedure contains records of activities or processes ordered by, or carried out by, a healthcare provider on the patient to have a diagnostic or therapeutic purpose. Procedures are present in various data sources in different forms with varying levels of standardization. [Derived from OMOP]",
             "properties": {
+                "affected_body_site": {
+                    "description": "The anatomical site affected by the procedure.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "age_at_procedure": {
                     "description": "The Participant's age (expressed in days) when the procedure was performed.",
                     "type": [
