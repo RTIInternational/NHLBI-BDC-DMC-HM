@@ -342,6 +342,7 @@ classes:
         required: true
 
   ResearchStudyCollection:
+    is_a: Entity
     tree_root: true
     description: >-
       A holder for ResearchStudy objects
