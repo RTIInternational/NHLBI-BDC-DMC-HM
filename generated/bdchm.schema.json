@@ -266,10 +266,7 @@
                 },
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
@@ -314,6 +311,11 @@
                 }
             },
             "required": [
+                "associated_participant",
+                "condition_concept",
+                "condition_provenance",
+                "condition_status",
+                "relationship_to_participant",
                 "id"
             ],
             "title": "Condition",
@@ -362,6 +364,7 @@
                 }
             },
             "required": [
+                "consent_code",
                 "id"
             ],
             "title": "Consent",
@@ -385,10 +388,7 @@
             "properties": {
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
@@ -431,6 +431,7 @@
                 }
             },
             "required": [
+                "associated_participant",
                 "id"
             ],
             "title": "Demography",
@@ -456,10 +457,7 @@
                 },
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
@@ -503,6 +501,10 @@
                 }
             },
             "required": [
+                "device_concept",
+                "exposure_provenance",
+                "associated_participant",
+                "exposure_status",
                 "id"
             ],
             "title": "DeviceExposure",
@@ -613,10 +615,7 @@
                 },
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
@@ -688,6 +687,7 @@
                 }
             },
             "required": [
+                "associated_participant",
                 "observation_type",
                 "id"
             ],
@@ -700,10 +700,7 @@
             "properties": {
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
@@ -760,6 +757,7 @@
             },
             "required": [
                 "observations",
+                "associated_participant",
                 "id"
             ],
             "title": "DimensionalObservationSet",
@@ -809,13 +807,11 @@
                     "items": {
                         "type": "string"
                     },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
+                    "type": "array"
                 }
             },
             "required": [
+                "url",
                 "id"
             ],
             "title": "Document",
@@ -841,10 +837,7 @@
                 },
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
@@ -913,6 +906,10 @@
                 }
             },
             "required": [
+                "drug_concept",
+                "exposure_provenance",
+                "associated_participant",
+                "exposure_status",
                 "id"
             ],
             "title": "DrugExposure",
@@ -1160,10 +1157,7 @@
                 },
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
@@ -1192,6 +1186,8 @@
                 }
             },
             "required": [
+                "associated_participant",
+                "exposure_status",
                 "id"
             ],
             "title": "Exposure",
@@ -1219,10 +1215,7 @@
             "properties": {
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "data_category": {
                     "description": "A broad categorization of the contents of the data file.",
@@ -1240,8 +1233,11 @@
                 },
                 "derived_from": {
                     "description": "A File from which this File is derived.  A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.",
+                    "items": {
+                        "type": "string"
+                    },
                     "type": [
-                        "string",
+                        "array",
                         "null"
                     ]
                 },
@@ -1257,17 +1253,11 @@
                     "items": {
                         "type": "string"
                     },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
+                    "type": "array"
                 },
                 "file_name": {
                     "description": "The name (or part of a name) of a file (of any type).",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "file_size": {
                     "description": "The size of the data file (object) in bytes.",
@@ -1306,6 +1296,9 @@
                 }
             },
             "required": [
+                "associated_participant",
+                "file_name",
+                "file_location",
                 "id"
             ],
             "title": "File",
@@ -1361,10 +1354,7 @@
                 },
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "data_category": {
                     "description": "A broad categorization of the contents of the data file.",
@@ -1382,8 +1372,11 @@
                 },
                 "derived_from": {
                     "description": "A File from which this File is derived.  A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.",
+                    "items": {
+                        "type": "string"
+                    },
                     "type": [
-                        "string",
+                        "array",
                         "null"
                     ]
                 },
@@ -1399,17 +1392,11 @@
                     "items": {
                         "type": "string"
                     },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
+                    "type": "array"
                 },
                 "file_name": {
                     "description": "The name (or part of a name) of a file (of any type).",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "file_size": {
                     "description": "The size of the data file (object) in bytes.",
@@ -1441,10 +1428,7 @@
                 },
                 "imaging_modality": {
                     "description": "The modality of the imaging data contained in the file (e.g. CT, MRI, etc.)",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "manufacturer": {
                     "description": "(0008, 0070) Manufacturer. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.",
@@ -1469,10 +1453,7 @@
                 },
                 "related_imaging_study": {
                     "description": "The ImagingStudy with which this ImagingFile is associated.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "series_description": {
                     "description": "(0008, 103e) Series Description. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.",
@@ -1483,20 +1464,21 @@
                 },
                 "series_number": {
                     "description": "The Series Instance Number for the imaging data contained in the file, if applicable.",
-                    "type": [
-                        "integer",
-                        "null"
-                    ]
+                    "type": "integer"
                 },
                 "series_uid": {
                     "description": "(0020, 000e) Series Instance UID. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 }
             },
             "required": [
+                "imaging_modality",
+                "series_number",
+                "series_uid",
+                "related_imaging_study",
+                "associated_participant",
+                "file_name",
+                "file_location",
                 "id"
             ],
             "title": "ImagingFile",
@@ -1515,10 +1497,7 @@
                 },
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
@@ -1540,17 +1519,11 @@
                 },
                 "number_of_instances": {
                     "description": "Number of SOP Instances in Study.",
-                    "type": [
-                        "integer",
-                        "null"
-                    ]
+                    "type": "integer"
                 },
                 "number_of_series": {
                     "description": "Number of Series in the Study.",
-                    "type": [
-                        "integer",
-                        "null"
-                    ]
+                    "type": "integer"
                 },
                 "study_description": {
                     "description": "(0008, 1030) Study Description. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.",
@@ -1561,20 +1534,19 @@
                 },
                 "study_modality": {
                     "description": "The modalities of the imaging study; derived from (0008, 0060) Modality. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "study_uid": {
                     "description": "(0020, 000d) Study Instance UID. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 }
             },
             "required": [
+                "associated_participant",
+                "number_of_series",
+                "number_of_instances",
+                "study_modality",
+                "study_uid",
                 "id"
             ],
             "title": "ImagingStudy",
@@ -1605,10 +1577,7 @@
                 },
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
@@ -1705,6 +1674,8 @@
                 }
             },
             "required": [
+                "observation_type",
+                "associated_participant",
                 "id"
             ],
             "title": "MeasurementObservation",
@@ -1716,10 +1687,7 @@
             "properties": {
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
@@ -1776,6 +1744,7 @@
             },
             "required": [
                 "observations",
+                "associated_participant",
                 "id"
             ],
             "title": "MeasurementObservationSet",
@@ -1916,10 +1885,7 @@
                 },
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
@@ -1991,6 +1957,7 @@
                 }
             },
             "required": [
+                "associated_participant",
                 "observation_type",
                 "id"
             ],
@@ -2003,10 +1970,7 @@
             "properties": {
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
@@ -2051,10 +2015,7 @@
                     "items": {
                         "type": "string"
                     },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
+                    "type": "array"
                 },
                 "performed_by": {
                     "description": "The organization or group that performed the observation activity.",
@@ -2065,6 +2026,8 @@
                 }
             },
             "required": [
+                "observations",
+                "associated_participant",
                 "id"
             ],
             "title": "ObservationSet",
@@ -2097,10 +2060,7 @@
                 },
                 "name": {
                     "description": "The full legal name by which the organization is known (e.g. 'National Cancer Institute')",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "organization_type": {
                     "description": "The type of the organization (e.g. 'Cancer Genome Characterization Center')",
@@ -2111,6 +2071,7 @@
                 }
             },
             "required": [
+                "name",
                 "id"
             ],
             "title": "Organization",
@@ -2129,10 +2090,7 @@
                 },
                 "associated_person": {
                     "description": "A reference to the Person that is associated with this record.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "consents": {
                     "description": "Data Use Restrictions that are used to indicate permissions/restrictions for datasets and/or materials, and relates to the purposes for which datasets and/or material might be removed, stored or used. Based on the Data Use Ontology : see http://www.obofoundry.org/ontology/duo.html",
@@ -2174,10 +2132,7 @@
                 },
                 "member_of_research_study": {
                     "description": "A reference to the Study(s) of which this Participant is a member",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "originating_site": {
                     "description": "The Organization through which a subject was enrolled on a ResearchStudy.",
@@ -2198,6 +2153,8 @@
                 }
             },
             "required": [
+                "associated_person",
+                "member_of_research_study",
                 "id"
             ],
             "title": "Participant",
@@ -2294,10 +2251,7 @@
                 },
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
@@ -2341,6 +2295,10 @@
                 }
             },
             "required": [
+                "associated_participant",
+                "procedure_concept",
+                "procedure_provenance",
+                "procedure_status",
                 "id"
             ],
             "title": "Procedure",
@@ -2609,13 +2567,11 @@
                 },
                 "text": {
                     "description": "Name for group or question text",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 }
             },
             "required": [
+                "text",
                 "id"
             ],
             "title": "QuestionnaireItem",
@@ -2634,10 +2590,7 @@
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "id": {
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
@@ -2652,6 +2605,7 @@
                 }
             },
             "required": [
+                "associated_visit",
                 "items",
                 "id"
             ],
@@ -2678,13 +2632,11 @@
                 },
                 "text": {
                     "description": "Name for group or question text",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 }
             },
             "required": [
+                "text",
                 "response_value",
                 "id"
             ],
@@ -2700,19 +2652,13 @@
                     "type": "string"
                 },
                 "name": {
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "type": {
                     "enum": [
                         "QuestionnaireResponseValueBoolean"
                     ],
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "value": {
                     "description": "A general slot to hold a value.",
@@ -2721,6 +2667,8 @@
             },
             "required": [
                 "value",
+                "type",
+                "name",
                 "id"
             ],
             "title": "QuestionnaireResponseValueBoolean",
@@ -2735,19 +2683,13 @@
                     "type": "string"
                 },
                 "name": {
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "type": {
                     "enum": [
                         "QuestionnaireResponseValueDecimal"
                     ],
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "value": {
                     "description": "A general slot to hold a value.",
@@ -2756,6 +2698,8 @@
             },
             "required": [
                 "value",
+                "type",
+                "name",
                 "id"
             ],
             "title": "QuestionnaireResponseValueDecimal",
@@ -2770,19 +2714,13 @@
                     "type": "string"
                 },
                 "name": {
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "type": {
                     "enum": [
                         "QuestionnaireResponseValueInteger"
                     ],
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "value": {
                     "description": "A general slot to hold a value.",
@@ -2791,6 +2729,8 @@
             },
             "required": [
                 "value",
+                "type",
+                "name",
                 "id"
             ],
             "title": "QuestionnaireResponseValueInteger",
@@ -2805,19 +2745,13 @@
                     "type": "string"
                 },
                 "name": {
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "type": {
                     "enum": [
                         "QuestionnaireResponseValueString"
                     ],
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "value": {
                     "description": "A general slot to hold a value.",
@@ -2826,6 +2760,8 @@
             },
             "required": [
                 "value",
+                "type",
+                "name",
                 "id"
             ],
             "title": "QuestionnaireResponseValueString",
@@ -2840,19 +2776,13 @@
                     "type": "string"
                 },
                 "name": {
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "type": {
                     "enum": [
                         "QuestionnaireResponseValueTimePoint"
                     ],
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "value": {
                     "description": "A general slot to hold a value.",
@@ -2861,6 +2791,8 @@
             },
             "required": [
                 "value",
+                "type",
+                "name",
                 "id"
             ],
             "title": "QuestionnaireResponseValueTimePoint",
@@ -2971,10 +2903,7 @@
                 },
                 "name": {
                     "description": "An unabridged name of a research program, project, or study.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "name_shortened": {
                     "description": "An abbreviated name of a research program, project, or study.",
@@ -2995,17 +2924,11 @@
                     "items": {
                         "type": "string"
                     },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
+                    "type": "array"
                 },
                 "program": {
                     "description": "The name of the overarching research program under which this ResearchStudy is conducted (e.g. 'Heartshare', 'TOPMed', etc.)",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "research_project_type": {
                     "$ref": "#/$defs/ResearchProjectTypeEnum",
@@ -3034,6 +2957,10 @@
                 }
             },
             "required": [
+                "name",
+                "research_project_type",
+                "program",
+                "principal_investigator",
                 "id"
             ],
             "title": "ResearchStudy",
@@ -3045,21 +2972,14 @@
             "properties": {
                 "entries": {
                     "additionalProperties": {
-                        "anyOf": [
-                            {
-                                "$ref": "#/$defs/ResearchStudy__identifier_optional"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ]
+                        "$ref": "#/$defs/ResearchStudy__identifier_optional"
                     },
-                    "type": [
-                        "object",
-                        "null"
-                    ]
+                    "type": "object"
                 }
             },
+            "required": [
+                "entries"
+            ],
             "title": "ResearchStudyCollection",
             "type": "object"
         },
@@ -3145,10 +3065,7 @@
                 },
                 "name": {
                     "description": "An unabridged name of a research program, project, or study.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "name_shortened": {
                     "description": "An abbreviated name of a research program, project, or study.",
@@ -3169,17 +3086,11 @@
                     "items": {
                         "type": "string"
                     },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
+                    "type": "array"
                 },
                 "program": {
                     "description": "The name of the overarching research program under which this ResearchStudy is conducted (e.g. 'Heartshare', 'TOPMed', etc.)",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "research_project_type": {
                     "$ref": "#/$defs/ResearchProjectTypeEnum",
@@ -3207,7 +3118,12 @@
                     ]
                 }
             },
-            "required": [],
+            "required": [
+                "name",
+                "research_project_type",
+                "program",
+                "principal_investigator"
+            ],
             "title": "ResearchStudy",
             "type": "object"
         },
@@ -3224,10 +3140,7 @@
                 },
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
@@ -3303,6 +3216,7 @@
                 }
             },
             "required": [
+                "associated_participant",
                 "observation_type",
                 "id"
             ],
@@ -3315,10 +3229,7 @@
             "properties": {
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
@@ -3372,6 +3283,7 @@
             },
             "required": [
                 "observations",
+                "associated_participant",
                 "id"
             ],
             "title": "SdohObservationSet",
@@ -3958,10 +3870,7 @@
                 },
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
@@ -4033,6 +3942,7 @@
                 }
             },
             "required": [
+                "associated_participant",
                 "observation_type",
                 "id"
             ],
@@ -4070,10 +3980,7 @@
                 },
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
@@ -4145,6 +4052,7 @@
                 }
             },
             "required": [
+                "associated_participant",
                 "observation_type",
                 "id"
             ],
@@ -4338,20 +4246,16 @@
                 },
                 "period_end": {
                     "description": "When a period of time ended.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "period_start": {
                     "description": "When a period of time started.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 }
             },
             "required": [
+                "period_start",
+                "period_end",
                 "id"
             ],
             "title": "TimePeriod",
@@ -4431,10 +4335,7 @@
                 },
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "id": {
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
@@ -4457,6 +4358,9 @@
                 }
             },
             "required": [
+                "associated_participant",
+                "visit_category",
+                "visit_provenance",
                 "id"
             ],
             "title": "Visit",
@@ -4595,21 +4499,14 @@
     "properties": {
         "entries": {
             "additionalProperties": {
-                "anyOf": [
-                    {
-                        "$ref": "#/$defs/ResearchStudy__identifier_optional"
-                    },
-                    {
-                        "type": "null"
-                    }
-                ]
+                "$ref": "#/$defs/ResearchStudy__identifier_optional"
             },
-            "type": [
-                "object",
-                "null"
-            ]
+            "type": "object"
         }
     },
+    "required": [
+        "entries"
+    ],
     "title": "bdchm",
     "type": "object",
     "version": null
