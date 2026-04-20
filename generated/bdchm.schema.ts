@@ -1777,7 +1777,7 @@ export interface Demography extends Entity {
     /** A 'business' identifier or accession number for the entity, typically as provided by an external system or authority, that are globally unique and persist across implementing systems. Also, since these identifiers are created outside the information system through a specific business process, the Identifier type has additional attributes to capture this additional metadata so the actual identifier values are qualified by the context that created those values. This additional context allows "identifier" instances to be transmitted as business data across systems while still being able to trace them back to the system of origin. */
     identity?: string[],
     /** A reference to the Participant that is associated with this record. */
-    associated_participant?: ParticipantId,
+    associated_participant: ParticipantId,
     /** A reference to the Visit that is associated with this record. */
     associated_visit?: VisitId,
     /** The biologic character or quality that distinguishes male and female from one another as expressed by analysis of the person's gonadal, morphologic (internal and external), chromosomal, and hormonal characteristics. Individuals where these characteristics do not all clearly align with either male or female are often considered intersex. */
@@ -1794,13 +1794,13 @@ export interface Demography extends Entity {
  */
 export interface Participant extends Entity {
     /** A reference to the Person that is associated with this record. */
-    associated_person?: PersonId,
+    associated_person: PersonId,
     /** A 'business' identifier or accession number for the entity, typically as provided by an external system or authority, that are globally unique and persist across implementing systems. Also, since these identifiers are created outside the information system through a specific business process, the Identifier type has additional attributes to capture this additional metadata so the actual identifier values are qualified by the context that created those values. This additional context allows "identifier" instances to be transmitted as business data across systems while still being able to trace them back to the system of origin. */
     identity?: string[],
     /** A free text field to capture additional info/explanation about the research subject. */
     description?: string,
     /** A reference to the Study(s) of which this Participant is a member */
-    member_of_research_study?: ResearchStudyId,
+    member_of_research_study: ResearchStudyId,
     /** The age in days of the Participant at the index_timepoint */
     age_at_index?: number,
     /** The text term used to describe the reference or anchor date used for date obfuscation, where a single date is obscured by creating one or more date ranges in relation to this date. */
@@ -1821,7 +1821,7 @@ export interface ResearchStudy extends Entity {
     /** A 'business' identifier or accession number for the entity, typically as provided by an external system or authority, that are globally unique and persist across implementing systems. Also, since these identifiers are created outside the information system through a specific business process, the Identifier type has additional attributes to capture this additional metadata so the actual identifier values are qualified by the context that created those values. This additional context allows "identifier" instances to be transmitted as business data across systems while still being able to trace them back to the system of origin. */
     identity?: string[],
     /** An unabridged name of a research program, project, or study. */
-    name?: string,
+    name: string,
     /** An abbreviated name of a research program, project, or study. */
     name_shortened?: string,
     /** An unabridged description of a research program, project, or study. */
@@ -1845,13 +1845,13 @@ export interface ResearchStudy extends Entity {
     /** A reference to a parent ResearchStudy (e.g. a link to the overarching CPTAC ResearchStudy from a substudy of CPTAC) */
     part_of?: ResearchStudyId,
     /** The 'type' of ResearchStudy represented by this object (e.g. 'Consortium', 'Study') */
-    research_project_type?: string,
+    research_project_type: string,
     /** The name of the overarching research program under which this ResearchStudy is conducted (e.g. 'Heartshare', 'TOPMed', etc.) */
-    program?: string,
+    program: string,
     /** A collection of timepoint observations that are relevant to research projects (e.g. date of IACUC approval, date of IRB approval, date of embargo end, etc.) */
     associated_timepoint?: TimePointId[],
     /** The investigator or investigators leading a project. */
-    principal_investigator?: string[],
+    principal_investigator: string[],
     /** Data Use Restrictions that are used to indicate permissions/restrictions for datasets and/or materials, and relates to the purposes for which datasets and/or material might be removed, stored or used. Based on the Data Use Ontology : see http://www.obofoundry.org/ontology/duo.html */
     consents?: ConsentId[],
 }
@@ -1862,7 +1862,7 @@ export interface ResearchStudy extends Entity {
  */
 export interface Consent extends Entity {
     /** Data Use Restrictions that are used to indicate permissions/restrictions for datasets and/or materials, and relates to the purposes for which datasets and/or material might be removed, stored or used. Based on the Data Use Ontology : see http://www.obofoundry.org/ontology/duo.html */
-    consent_code?: string,
+    consent_code: string,
     /** The point in time from which the consent record is valid. */
     valid_from?: TimePointId,
     /** The point in time after which the consent record is invalid. */
@@ -1875,17 +1875,17 @@ export interface Consent extends Entity {
  */
 export interface Visit extends Entity {
     /** A reference to the Participant that is associated with this record. */
-    associated_participant?: ParticipantId,
+    associated_participant: ParticipantId,
     /** A free text field or label used to refer to the visit. */
     name?: string,
     /** A value representing the kind (or category) of visit, like inpatient or outpatient. */
-    visit_category?: string,
+    visit_category: string,
     /** The age of the Participant (in days) at the start of the Visit. */
     age_at_visit_start?: number,
     /** The age of the Participant (in days) at the end of the Visit. */
     age_at_visit_end?: number,
     /** A value representing the provenance of the visit record, or where the record comes from. */
-    visit_provenance?: string,
+    visit_provenance: string,
 }
 
 
@@ -1896,7 +1896,7 @@ export interface Organization extends Entity {
     /** A 'business' identifier or accession number for the entity, typically as provided by an external system or authority, that are globally unique and persist across implementing systems. Also, since these identifiers are created outside the information system through a specific business process, the Identifier type has additional attributes to capture this additional metadata so the actual identifier values are qualified by the context that created those values. This additional context allows "identifier" instances to be transmitted as business data across systems while still being able to trace them back to the system of origin. */
     identity?: string[],
     /** The full legal name by which the organization is known (e.g. 'National Cancer Institute') */
-    name?: string,
+    name: string,
     /** A secondary name for the organization such as a short name or abbreviation (e.g. 'NCI') */
     alias?: string,
     /** The type of the organization (e.g. 'Cancer Genome Characterization Center') */
@@ -1924,9 +1924,9 @@ export interface TimePoint extends Entity {
  */
 export interface TimePeriod extends Entity {
     /** When a period of time started. */
-    period_start?: TimePointId,
+    period_start: TimePointId,
     /** When a period of time ended. */
-    period_end?: TimePointId,
+    period_end: TimePointId,
 }
 
 
@@ -1934,7 +1934,7 @@ export interface TimePeriod extends Entity {
  * A holder for ResearchStudy objects
  */
 export interface ResearchStudyCollection {
-    entries?: {[index: ResearchStudyId]: ResearchStudy },
+    entries: {[index: ResearchStudyId]: ResearchStudy },
 }
 
 
@@ -1974,7 +1974,7 @@ export interface QuestionnaireItem extends Entity {
     /** A 'business' identifier or accession number for the entity, typically as provided by an external system or authority, that are globally unique and persist across implementing systems. Also, since these identifiers are created outside the information system through a specific business process, the Identifier type has additional attributes to capture this additional metadata so the actual identifier values are qualified by the context that created those values. This additional context allows "identifier" instances to be transmitted as business data across systems while still being able to trace them back to the system of origin. */
     identity?: string[],
     /** Name for group or question text */
-    text?: string,
+    text: string,
     /** Corresponding concept for this item in a terminology */
     code?: string,
     /** A reference to a parent QuestionnaireItem. */
@@ -1987,7 +1987,7 @@ export interface QuestionnaireItem extends Entity {
  */
 export interface QuestionnaireResponse extends Entity {
     /** A reference to the Visit that is associated with this record. */
-    associated_visit?: VisitId,
+    associated_visit: VisitId,
     /** The age (in days) of the Participant when the QuestionnaireResponse was captured. */
     age_at_response?: number,
     /** A collection of QuestionnaireResponseItem objects which encapsulate the question being asked and the response. */
@@ -2002,7 +2002,7 @@ export interface QuestionnaireResponseItem extends Entity {
     /** A reference to the QuestionnaireItem that this QuestionnaireResponseItem responds to. */
     has_questionnaire_item?: QuestionnaireItemId,
     /** Name for group or question text */
-    text?: string,
+    text: string,
     response_value: QuestionnaireResponseValueId,
 }
 
@@ -2012,9 +2012,9 @@ export interface QuestionnaireResponseItem extends Entity {
  */
 export interface QuestionnaireResponseValue extends Entity {
     /** A general slot to hold a value. */
-    value?: string,
-    type?: string,
-    name?: string,
+    value: string,
+    type: string,
+    name: string,
 }
 
 
@@ -2062,21 +2062,21 @@ export interface Condition extends Entity {
     /** A reference to the Visit that is associated with this record. */
     associated_visit?: VisitId,
     /** A reference to the Participant that is associated with this record. */
-    associated_participant?: ParticipantId,
+    associated_participant: ParticipantId,
     /** The coded value for the presence of a disease or medical condition stated as a diagnosis, a sign or a symptom, coded to the Human Phenotype Ontology or MONDO. */
-    condition_concept?: string,
+    condition_concept: string,
     /** The Participant's age (expressed in days) when the condition was first recorded. */
     age_at_condition_start?: number,
     /** The Participant's age (expressed in days) when the condition was recorded as having been resolved. */
     age_at_condition_end?: number,
     /** A value representing the provenance of the Condition record */
-    condition_provenance?: string,
+    condition_provenance: string,
     /** A value indicating whether the medical condition described in this record is present, absent, historically present, or unknown for this individual patient. */
-    condition_status?: string,
+    condition_status: string,
     /** A subjective assessment of the severity of the condition */
     condition_severity?: string,
     /** A value indicating the relationship between the Participant to which the Condition is attributed and the individual who had the reported Condition.  If the Condition is affecting the participant themselves, then 'Self' is the appropriate relationship.  If the Condition is affecting a family member (e.g. a parent of the Participant) then an appropriate relationship should be provided (e.g. 'Parent') */
-    relationship_to_participant?: string,
+    relationship_to_participant: string,
     /** Evidence supporting the assertion of the condition (e.g., an ImagingStudy, Procedure, Observation) */
     associated_evidence?: EntityId[],
     /** The anatomical site affected by the condition. */
@@ -2093,15 +2093,15 @@ export interface Procedure extends Entity {
     /** A reference to the Visit that is associated with this record. */
     associated_visit?: VisitId,
     /** A reference to the Participant that is associated with this record. */
-    associated_participant?: ParticipantId,
+    associated_participant: ParticipantId,
     /** The coded value that describes the procedure, derived from OMOP codes. */
-    procedure_concept?: string,
+    procedure_concept: string,
     /** The Participant's age (expressed in days) when the procedure was performed. */
     age_at_procedure?: number,
     /** A value representing the provenance of the Procedure record */
-    procedure_provenance?: string,
+    procedure_provenance: string,
     /** A value indicating whether the medical procedure described in this record is present, absent, or unknown for this individual patient. */
-    procedure_status?: string,
+    procedure_status: string,
     /** The quantity of procedures ordered or administered. */
     quantity?: QuantityId,
     /** The anatomical site affected by the procedure. */
@@ -2116,19 +2116,19 @@ export interface ImagingStudy extends Entity {
     /** A reference to the Visit that is associated with this record. */
     associated_visit?: VisitId,
     /** A reference to the Participant that is associated with this record. */
-    associated_participant?: ParticipantId,
+    associated_participant: ParticipantId,
     /** The Participant's age (expressed in days) when the ImagingStudy was performed. */
     age_at_imaging_study?: number,
     /** Number of Series in the Study. */
-    number_of_series?: number,
+    number_of_series: number,
     /** Number of SOP Instances in Study. */
-    number_of_instances?: number,
+    number_of_instances: number,
     /** (0008, 1030) Study Description. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. */
     study_description?: string,
     /** The modalities of the imaging study; derived from (0008, 0060) Modality. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. */
-    study_modality?: string,
+    study_modality: string,
     /** (0020, 000d) Study Instance UID. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. */
-    study_uid?: string,
+    study_uid: string,
     /** (0018, 0015) Body Part Examined. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. */
     body_part_examined?: BodySiteId,
 }
@@ -2143,13 +2143,13 @@ export interface Exposure extends Entity {
     /** A reference to the Visit that is associated with this record. */
     associated_visit?: VisitId,
     /** A reference to the Participant that is associated with this record. */
-    associated_participant?: ParticipantId,
+    associated_participant: ParticipantId,
     /** The Participant's age (expressed in days) at the exposure start date. */
     age_at_exposure_start?: number,
     /** The Participant's age (expressed in days) at the exposure end date, if available. Otherwise equal to age_at_exposure_start. */
     age_at_exposure_end?: number,
     /** A value indicating whether the exposure described in this record is present, absent, historically present, or unknown for this individual patient. */
-    exposure_status?: string,
+    exposure_status: string,
 }
 
 
@@ -2158,9 +2158,9 @@ export interface Exposure extends Entity {
  */
 export interface DrugExposure extends Exposure {
     /** The coded value for a drug. From RxNorm. The syntax for the enum may need work. */
-    drug_concept?: string,
+    drug_concept: string,
     /** A value representing the provenance of the DrugExposure record. From OMOP Drug Types. */
-    exposure_provenance?: string,
+    exposure_provenance: string,
     /** Intended refills at time of the prescription. */
     refills?: number,
     /** To find the dose form of a drug the RELATIONSHIP table can be used where the relationship_id is ‘Has dose form’. If liquid, quantity stands for the total amount dispensed or ordered of ingredient in the units given by the drug_strength table. If the unit from the source data does not align with the unit in the DRUG_STRENGTH table the quantity should be converted to the correct unit given in DRUG_STRENGTH. For clinical drugs with fixed dose forms (tablets etc.) the quantity is the number of units/tablets/capsules prescribed or dispensed (can be partial, but then only 1/2 or 1/3, not 0.01). Clinical drugs with divisible dose forms (injections) the quantity is the amount of ingredient the patient got. For example, if the injection is 2mg/mL but the patient got 80mL then quantity is reported as 160. Quantified clinical drugs with divisible dose forms (prefilled syringes), the quantity is the amount of ingredient similar to clinical drugs. Please see [how to calculate drug dose](https://ohdsi.github.io/CommonDataModel/drug_dose.html) for more information. */
@@ -2179,9 +2179,9 @@ export interface DrugExposure extends Exposure {
  */
 export interface DeviceExposure extends Exposure {
     /** The coded value for a device. Primarily SNOMED. The syntax for the enum may need work. */
-    device_concept?: string,
+    device_concept: string,
     /** A value representing the provenance of the DeviceExposure record. From OMOP Device Types. */
-    exposure_provenance?: string,
+    exposure_provenance: string,
     /** Amount of device used. If not present in source, default to 1. */
     quantity?: number,
 }
@@ -2208,13 +2208,13 @@ export interface File extends Entity {
     /** A 'business' identifier or accession number for the entity, typically as provided by an external system or authority, that are globally unique and persist across implementing systems. Also, since these identifiers are created outside the information system through a specific business process, the Identifier type has additional attributes to capture this additional metadata so the actual identifier values are qualified by the context that created those values. This additional context allows "identifier" instances to be transmitted as business data across systems while still being able to trace them back to the system of origin. */
     identity?: string[],
     /** A reference to the Participant that is associated with this record. */
-    associated_participant?: ParticipantId,
+    associated_participant: ParticipantId,
     /** The name (or part of a name) of a file (of any type). */
-    file_name?: string,
+    file_name: string,
     /** The size of the data file (object) in bytes. */
     file_size?: number,
     /** A unique identifier or url for identifying or locating the file. */
-    file_location?: string[],
+    file_location: string[],
     /** The 128-bit hash value expressed as a 32 digit hexadecimal number used as a file's digital fingerprint. */
     md5sum?: string,
     /** The nature or genre of the resource. Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMI-TYPE](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7). To describe the file format, physical medium, or dimensions of the resource, use the Format element. */
@@ -2226,7 +2226,7 @@ export interface File extends Entity {
     /** An account of the resource. Description may include but is not limited to an abstract, a table of contents, a graphical representation, or a free-text account of the resource. */
     description?: string,
     /** A File from which this File is derived.  A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity. */
-    derived_from?: FileId,
+    derived_from?: FileId[],
 }
 
 
@@ -2235,17 +2235,17 @@ export interface File extends Entity {
  */
 export interface ImagingFile extends File {
     /** The modality of the imaging data contained in the file (e.g. CT, MRI, etc.) */
-    imaging_modality?: string,
+    imaging_modality: string,
     /** The anatomical site from which the imaging data was acquired (e.g. Chest, Abdomen, etc.) */
     anatomical_site?: BodySiteId,
     /** The Series Instance Number for the imaging data contained in the file, if applicable. */
-    series_number?: number,
+    series_number: number,
     /** (0020, 000e) Series Instance UID. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. */
-    series_uid?: string,
+    series_uid: string,
     /** (0008, 103e) Series Description. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. */
     series_description?: string,
     /** The ImagingStudy with which this ImagingFile is associated. */
-    related_imaging_study?: ImagingStudyId,
+    related_imaging_study: ImagingStudyId,
     /** (0008, 0070) Manufacturer. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. */
     manufacturer?: string,
     /** (0008, 1090) Manufacturer's Model Name. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. */
@@ -2266,7 +2266,7 @@ export interface Document extends Entity {
     /** The entity that the report is primarily about */
     focus?: EntityId,
     /** A URL/web address where the document can be accessed. */
-    url?: string[],
+    url: string[],
 }
 
 
@@ -2485,11 +2485,11 @@ export interface BodySite extends Entity {
  */
 export interface ObservationSet extends Entity {
     /** A set of one or more observations. */
-    observations?: ObservationId[],
+    observations: ObservationId[],
     /** A reference to the Visit that is associated with this record. */
     associated_visit?: VisitId,
     /** A reference to the Participant that is associated with this record. */
-    associated_participant?: ParticipantId,
+    associated_participant: ParticipantId,
     /** The general category of observation set described */
     category?: string,
     /** The entity or entities directly observed/measured in generating an observation result. */
@@ -2508,7 +2508,7 @@ export interface Observation extends Entity {
     /** A reference to the Visit that is associated with this record. */
     associated_visit?: VisitId,
     /** A reference to the Participant that is associated with this record. */
-    associated_participant?: ParticipantId,
+    associated_participant: ParticipantId,
     /** The Participant's age (expressed in days) when the Observation was made. */
     age_at_observation?: number,
     /** The general category of observation described */
@@ -2548,7 +2548,7 @@ export interface MeasurementObservation extends Observation {
     /** If reference ranges for upper and lower limit of normal as provided (typically by a laboratory) these are stored in the range_high and range_low fields. This should be set to NULL if not provided. */
     range_high?: QuantityId,
     /** The type of Observation being represented (e.g. 'diastolic blood pressure') */
-    observation_type?: string,
+    observation_type: string,
     /** A reference to the assay that was used in generating this observation. */
     associated_assay?: AssayId,
     /** The body site that is the focus of this observation, if applicable. */
