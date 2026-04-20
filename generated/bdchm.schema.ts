@@ -8,6 +8,7 @@ export type VisitId = string;
 export type OrganizationId = string;
 export type TimePointId = string;
 export type TimePeriodId = string;
+export type ResearchStudyCollectionId = string;
 export type QuestionnaireId = string;
 export type QuestionnaireItemId = string;
 export type QuestionnaireResponseId = string;
@@ -1933,7 +1934,7 @@ export interface TimePeriod extends Entity {
 /**
  * A holder for ResearchStudy objects
  */
-export interface ResearchStudyCollection {
+export interface ResearchStudyCollection extends Entity {
     entries: {[index: ResearchStudyId]: ResearchStudy },
 }
 
