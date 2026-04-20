@@ -292,7 +292,7 @@
 </tr>
 <tr>
 <td><a href="../text/">text</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../String/">String</a></td>
 <td>Name for group or question text</td>
 <td>direct</td>
 </tr>
@@ -372,6 +372,7 @@ attributes:
     domain_of:
     - QuestionnaireResponseItem
     range: QuestionnaireItem
+    required: false
   text:
     name: text
     description: Name for group or question text
@@ -380,6 +381,7 @@ attributes:
     - QuestionnaireItem
     - QuestionnaireResponseItem
     range: string
+    required: true
   response_value:
     name: response_value
     from_schema: https://w3id.org/bdchm
@@ -410,6 +412,7 @@ attributes:
     domain_of:
     - QuestionnaireResponseItem
     range: QuestionnaireItem
+    required: false
   text:
     name: text
     description: Name for group or question text
@@ -420,6 +423,7 @@ attributes:
     - QuestionnaireItem
     - QuestionnaireResponseItem
     range: string
+    required: true
   response_value:
     name: response_value
     from_schema: https://w3id.org/bdchm

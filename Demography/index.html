@@ -240,7 +240,7 @@
 
 
 
-    Demography --&gt; "0..1" Participant : associated_participant
+    Demography --&gt; "1" Participant : associated_participant
     click Participant href "../Participant"
 
 
@@ -312,7 +312,7 @@
 </tr>
 <tr>
 <td><a href="../associated_participant/">associated_participant</a></td>
-<td>0..1 <br/> <a href="../Participant/">Participant</a></td>
+<td>1 <br/> <a href="../Participant/">Participant</a></td>
 <td>A reference to the Participant that is associated with this record</td>
 <td>direct</td>
 </tr>
@@ -385,6 +385,13 @@ slots:
 - identity
 - associated_participant
 - associated_visit
+slot_usage:
+  associated_participant:
+    name: associated_participant
+    required: true
+  associated_visit:
+    name: associated_visit
+    required: false
 attributes:
   sex:
     name: sex
@@ -398,6 +405,7 @@ attributes:
     domain_of:
     - Demography
     range: SexEnum
+    required: false
   ethnicity:
     name: ethnicity
     description: A sociopolitically constructed system for classifying human beings
@@ -411,6 +419,7 @@ attributes:
     domain_of:
     - Demography
     range: EthnicityEnum
+    required: false
   race:
     name: race
     description: A sociopolitically constructed system for classifying human beings
@@ -423,6 +432,7 @@ attributes:
     domain_of:
     - Demography
     range: RaceEnum
+    required: false
     multivalued: true
 
 </code></pre>
@@ -434,6 +444,13 @@ description: Demographics about an individual or animal receiving care or other 
   services.
 from_schema: https://w3id.org/bdchm
 is_a: Entity
+slot_usage:
+  associated_participant:
+    name: associated_participant
+    required: true
+  associated_visit:
+    name: associated_visit
+    required: false
 attributes:
   sex:
     name: sex
@@ -449,6 +466,7 @@ attributes:
     domain_of:
     - Demography
     range: SexEnum
+    required: false
   ethnicity:
     name: ethnicity
     description: A sociopolitically constructed system for classifying human beings
@@ -464,6 +482,7 @@ attributes:
     domain_of:
     - Demography
     range: EthnicityEnum
+    required: false
   race:
     name: race
     description: A sociopolitically constructed system for classifying human beings
@@ -478,6 +497,7 @@ attributes:
     domain_of:
     - Demography
     range: RaceEnum
+    required: false
     multivalued: true
   identity:
     name: identity
@@ -530,6 +550,7 @@ attributes:
     - ObservationSet
     - Observation
     range: Participant
+    required: true
   associated_visit:
     name: associated_visit
     description: A reference to the Visit that is associated with this record.
@@ -547,6 +568,7 @@ attributes:
     - ObservationSet
     - Observation
     range: Visit
+    required: false
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The

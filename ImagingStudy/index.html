@@ -249,7 +249,7 @@
 
 
 
-    ImagingStudy --&gt; "0..1" Participant : associated_participant
+    ImagingStudy --&gt; "1" Participant : associated_participant
     click Participant href "../Participant"
 
 
@@ -311,7 +311,7 @@
 </tr>
 <tr>
 <td><a href="../associated_participant/">associated_participant</a></td>
-<td>0..1 <br/> <a href="../Participant/">Participant</a></td>
+<td>1 <br/> <a href="../Participant/">Participant</a></td>
 <td>A reference to the Participant that is associated with this record</td>
 <td>direct</td>
 </tr>
@@ -323,13 +323,13 @@
 </tr>
 <tr>
 <td><a href="../number_of_series/">number_of_series</a></td>
-<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>1 <br/> <a href="../Integer/">Integer</a></td>
 <td>Number of Series in the Study</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../number_of_instances/">number_of_instances</a></td>
-<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>1 <br/> <a href="../Integer/">Integer</a></td>
 <td>Number of SOP Instances in Study</td>
 <td>direct</td>
 </tr>
@@ -341,13 +341,13 @@
 </tr>
 <tr>
 <td><a href="../study_modality/">study_modality</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../String/">String</a></td>
 <td>The modalities of the imaging study; derived from (0008, 0060) Modality</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../study_uid/">study_uid</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../String/">String</a></td>
 <td>(0020, 000d) Study Instance UID</td>
 <td>direct</td>
 </tr>
@@ -423,6 +423,13 @@ is_a: Entity
 slots:
 - associated_visit
 - associated_participant
+slot_usage:
+  associated_visit:
+    name: associated_visit
+    required: false
+  associated_participant:
+    name: associated_participant
+    required: true
 attributes:
   age_at_imaging_study:
     name: age_at_imaging_study
@@ -433,6 +440,7 @@ attributes:
     domain_of:
     - ImagingStudy
     range: integer
+    required: false
     unit:
       ucum_code: d
   number_of_series:
@@ -443,6 +451,7 @@ attributes:
     domain_of:
     - ImagingStudy
     range: integer
+    required: true
   number_of_instances:
     name: number_of_instances
     description: Number of SOP Instances in Study.
@@ -451,6 +460,7 @@ attributes:
     domain_of:
     - ImagingStudy
     range: integer
+    required: true
   study_description:
     name: study_description
     description: (0008, 1030) Study Description. The Digital Imaging and Communications
@@ -461,6 +471,7 @@ attributes:
     domain_of:
     - ImagingStudy
     range: string
+    required: false
   study_modality:
     name: study_modality
     description: The modalities of the imaging study; derived from (0008, 0060) Modality.
@@ -472,6 +483,7 @@ attributes:
     domain_of:
     - ImagingStudy
     range: string
+    required: true
   study_uid:
     name: study_uid
     description: (0020, 000d) Study Instance UID. The Digital Imaging and Communications
@@ -482,6 +494,7 @@ attributes:
     domain_of:
     - ImagingStudy
     range: string
+    required: true
   body_part_examined:
     name: body_part_examined
     description: (0018, 0015) Body Part Examined. The Digital Imaging and Communications
@@ -492,6 +505,7 @@ attributes:
     domain_of:
     - ImagingStudy
     range: BodySite
+    required: false
 
 </code></pre>
 </details>
@@ -505,6 +519,13 @@ description: An ImagingStudy is a set of images produced in a single study (one 
   were acquired.
 from_schema: https://w3id.org/bdchm
 is_a: Entity
+slot_usage:
+  associated_visit:
+    name: associated_visit
+    required: false
+  associated_participant:
+    name: associated_participant
+    required: true
 attributes:
   age_at_imaging_study:
     name: age_at_imaging_study
@@ -517,6 +538,7 @@ attributes:
     domain_of:
     - ImagingStudy
     range: integer
+    required: false
     unit:
       ucum_code: d
   number_of_series:
@@ -529,6 +551,7 @@ attributes:
     domain_of:
     - ImagingStudy
     range: integer
+    required: true
   number_of_instances:
     name: number_of_instances
     description: Number of SOP Instances in Study.
@@ -539,6 +562,7 @@ attributes:
     domain_of:
     - ImagingStudy
     range: integer
+    required: true
   study_description:
     name: study_description
     description: (0008, 1030) Study Description. The Digital Imaging and Communications
@@ -551,6 +575,7 @@ attributes:
     domain_of:
     - ImagingStudy
     range: string
+    required: false
   study_modality:
     name: study_modality
     description: The modalities of the imaging study; derived from (0008, 0060) Modality.
@@ -564,6 +589,7 @@ attributes:
     domain_of:
     - ImagingStudy
     range: string
+    required: true
   study_uid:
     name: study_uid
     description: (0020, 000d) Study Instance UID. The Digital Imaging and Communications
@@ -576,6 +602,7 @@ attributes:
     domain_of:
     - ImagingStudy
     range: string
+    required: true
   body_part_examined:
     name: body_part_examined
     description: (0018, 0015) Body Part Examined. The Digital Imaging and Communications
@@ -588,6 +615,7 @@ attributes:
     domain_of:
     - ImagingStudy
     range: BodySite
+    required: false
   associated_visit:
     name: associated_visit
     description: A reference to the Visit that is associated with this record.
@@ -605,6 +633,7 @@ attributes:
     - ObservationSet
     - Observation
     range: Visit
+    required: false
   associated_participant:
     name: associated_participant
     description: A reference to the Participant that is associated with this record.
@@ -623,6 +652,7 @@ attributes:
     - ObservationSet
     - Observation
     range: Participant
+    required: true
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The

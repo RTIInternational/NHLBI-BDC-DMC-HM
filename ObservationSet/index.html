@@ -249,7 +249,7 @@
 
 
 
-    ObservationSet --&gt; "0..1" Participant : associated_participant
+    ObservationSet --&gt; "1" Participant : associated_participant
     click Participant href "../Participant"
 
 
@@ -282,7 +282,7 @@
 
 
 
-    ObservationSet --&gt; "*" Observation : observations
+    ObservationSet --&gt; "1..*" Observation : observations
     click Observation href "../Observation"
 
 
@@ -322,7 +322,7 @@
 <tbody>
 <tr>
 <td><a href="../observations/">observations</a></td>
-<td>* <br/> <a href="../Observation/">Observation</a></td>
+<td>1..* <br/> <a href="../Observation/">Observation</a></td>
 <td>A set of one or more observations</td>
 <td>direct</td>
 </tr>
@@ -334,7 +334,7 @@
 </tr>
 <tr>
 <td><a href="../associated_participant/">associated_participant</a></td>
-<td>0..1 <br/> <a href="../Participant/">Participant</a></td>
+<td>1 <br/> <a href="../Participant/">Participant</a></td>
 <td>A reference to the Participant that is associated with this record</td>
 <td>direct</td>
 </tr>
@@ -406,6 +406,16 @@ slots:
 - observations
 - associated_visit
 - associated_participant
+slot_usage:
+  observations:
+    name: observations
+    required: true
+  associated_visit:
+    name: associated_visit
+    required: false
+  associated_participant:
+    name: associated_participant
+    required: true
 attributes:
   category:
     name: category
@@ -476,6 +486,16 @@ attributes:
 description: A structured object to hold related Observations in a set.
 from_schema: https://w3id.org/bdchm
 is_a: Entity
+slot_usage:
+  observations:
+    name: observations
+    required: true
+  associated_visit:
+    name: associated_visit
+    required: false
+  associated_participant:
+    name: associated_participant
+    required: true
 attributes:
   category:
     name: category
@@ -555,6 +575,7 @@ attributes:
     domain_of:
     - ObservationSet
     range: Observation
+    required: true
     multivalued: true
   associated_visit:
     name: associated_visit
@@ -573,6 +594,7 @@ attributes:
     - ObservationSet
     - Observation
     range: Visit
+    required: false
   associated_participant:
     name: associated_participant
     description: A reference to the Participant that is associated with this record.
@@ -591,6 +613,7 @@ attributes:
     - ObservationSet
     - Observation
     range: Participant
+    required: true
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The

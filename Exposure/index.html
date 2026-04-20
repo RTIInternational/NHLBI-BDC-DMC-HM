@@ -251,7 +251,7 @@
 
 
 
-    Exposure --&gt; "0..1" Participant : associated_participant
+    Exposure --&gt; "1" Participant : associated_participant
     click Participant href "../Participant"
 
 
@@ -269,7 +269,7 @@
 
 
 
-    Exposure --&gt; "0..1" HistoricalStatusEnum : exposure_status
+    Exposure --&gt; "1" HistoricalStatusEnum : exposure_status
     click HistoricalStatusEnum href "../HistoricalStatusEnum"
 
 
@@ -315,7 +315,7 @@
 </tr>
 <tr>
 <td><a href="../associated_participant/">associated_participant</a></td>
-<td>0..1 <br/> <a href="../Participant/">Participant</a></td>
+<td>1 <br/> <a href="../Participant/">Participant</a></td>
 <td>A reference to the Participant that is associated with this record</td>
 <td>direct</td>
 </tr>
@@ -333,7 +333,7 @@
 </tr>
 <tr>
 <td><a href="../exposure_status/">exposure_status</a></td>
-<td>0..1 <br/> <a href="../HistoricalStatusEnum/">HistoricalStatusEnum</a></td>
+<td>1 <br/> <a href="../HistoricalStatusEnum/">HistoricalStatusEnum</a></td>
 <td>A value indicating whether the exposure described in this record is present, ...</td>
 <td>direct</td>
 </tr>
@@ -382,6 +382,13 @@ slots:
 - identity
 - associated_visit
 - associated_participant
+slot_usage:
+  associated_visit:
+    name: associated_visit
+    required: false
+  associated_participant:
+    name: associated_participant
+    required: true
 attributes:
   age_at_exposure_start:
     name: age_at_exposure_start
@@ -391,6 +398,7 @@ attributes:
     domain_of:
     - Exposure
     range: integer
+    required: false
     unit:
       ucum_code: d
   age_at_exposure_end:
@@ -402,6 +410,7 @@ attributes:
     domain_of:
     - Exposure
     range: integer
+    required: false
     unit:
       ucum_code: d
   exposure_status:
@@ -413,6 +422,7 @@ attributes:
     domain_of:
     - Exposure
     range: HistoricalStatusEnum
+    required: true
 
 </code></pre>
 </details>
@@ -423,6 +433,13 @@ description: Exposures are records of a Person suggesting exposure to a medicati
   device, environmental material.
 from_schema: https://w3id.org/bdchm
 is_a: Entity
+slot_usage:
+  associated_visit:
+    name: associated_visit
+    required: false
+  associated_participant:
+    name: associated_participant
+    required: true
 attributes:
   age_at_exposure_start:
     name: age_at_exposure_start
@@ -434,6 +451,7 @@ attributes:
     domain_of:
     - Exposure
     range: integer
+    required: false
     unit:
       ucum_code: d
   age_at_exposure_end:
@@ -447,6 +465,7 @@ attributes:
     domain_of:
     - Exposure
     range: integer
+    required: false
     unit:
       ucum_code: d
   exposure_status:
@@ -460,6 +479,7 @@ attributes:
     domain_of:
     - Exposure
     range: HistoricalStatusEnum
+    required: true
   identity:
     name: identity
     description: A 'business' identifier or accession number for the entity, typically
@@ -510,6 +530,7 @@ attributes:
     - ObservationSet
     - Observation
     range: Visit
+    required: false
   associated_participant:
     name: associated_participant
     description: A reference to the Participant that is associated with this record.
@@ -528,6 +549,7 @@ attributes:
     - ObservationSet
     - Observation
     range: Participant
+    required: true
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The

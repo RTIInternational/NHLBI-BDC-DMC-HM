@@ -470,6 +470,7 @@ attributes:
     domain_of:
     - TimePoint
     range: datetime
+    required: false
   index_time_point:
     name: index_time_point
     description: Another TimePoint from which this point is offset.
@@ -478,6 +479,7 @@ attributes:
     domain_of:
     - TimePoint
     range: TimePoint
+    required: false
   offset_from_index:
     name: offset_from_index
     description: A quantity of time that, together with the index date or event, can
@@ -487,6 +489,7 @@ attributes:
     domain_of:
     - TimePoint
     range: integer
+    required: false
   event_type:
     name: event_type
     description: An event that occurred at the point in time specified by this TimePoint.
@@ -495,6 +498,7 @@ attributes:
     domain_of:
     - TimePoint
     range: string
+    required: false
 
 </code></pre>
 </details>
@@ -518,6 +522,7 @@ attributes:
     domain_of:
     - TimePoint
     range: datetime
+    required: false
   index_time_point:
     name: index_time_point
     description: Another TimePoint from which this point is offset.
@@ -528,6 +533,7 @@ attributes:
     domain_of:
     - TimePoint
     range: TimePoint
+    required: false
   offset_from_index:
     name: offset_from_index
     description: A quantity of time that, together with the index date or event, can
@@ -539,6 +545,7 @@ attributes:
     domain_of:
     - TimePoint
     range: integer
+    required: false
   event_type:
     name: event_type
     description: An event that occurred at the point in time specified by this TimePoint.
@@ -549,6 +556,7 @@ attributes:
     domain_of:
     - TimePoint
     range: string
+    required: false
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The

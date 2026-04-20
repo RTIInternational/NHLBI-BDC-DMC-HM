@@ -390,13 +390,13 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../File/">File</a></td>
-<td>Abstract class for various kinds of files</td>
+<td><a href="../ImagingFile/">ImagingFile</a></td>
+<td>A file that contains diagnostic imaging data, such as a DICOM file, or a JPEG...</td>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../ImagingFile/">ImagingFile</a></td>
-<td>A file that contains diagnostic imaging data, such as a DICOM file, or a JPEG...</td>
+<td><a href="../File/">File</a></td>
+<td>Abstract class for various kinds of files</td>
 <td>no</td>
 </tr>
 </tbody>
@@ -408,6 +408,9 @@
 </li>
 <li>
 <p>Multivalued: True</p>
+</li>
+<li>
+<p>Required: True</p>
 </li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
@@ -446,6 +449,7 @@ owner: File
 domain_of:
 - File
 range: uriorcurie
+required: true
 multivalued: true
 
 </code></pre>

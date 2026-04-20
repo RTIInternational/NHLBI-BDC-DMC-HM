@@ -244,7 +244,7 @@
 
 
 
-    DrugExposure --&gt; "0..1" Participant : associated_participant
+    DrugExposure --&gt; "1" Participant : associated_participant
     click Participant href "../Participant"
 
 
@@ -264,7 +264,7 @@
 
 
 
-    DrugExposure --&gt; "0..1" DrugExposureConceptEnum : drug_concept
+    DrugExposure --&gt; "1" DrugExposureConceptEnum : drug_concept
     click DrugExposureConceptEnum href "../DrugExposureConceptEnum"
 
 
@@ -273,7 +273,7 @@
 
 
 
-    DrugExposure --&gt; "0..1" DrugExposureProvenanceEnum : exposure_provenance
+    DrugExposure --&gt; "1" DrugExposureProvenanceEnum : exposure_provenance
     click DrugExposureProvenanceEnum href "../DrugExposureProvenanceEnum"
 
 
@@ -282,7 +282,7 @@
 
 
 
-    DrugExposure --&gt; "0..1" HistoricalStatusEnum : exposure_status
+    DrugExposure --&gt; "1" HistoricalStatusEnum : exposure_status
     click HistoricalStatusEnum href "../HistoricalStatusEnum"
 
 
@@ -330,13 +330,13 @@
 <tbody>
 <tr>
 <td><a href="../drug_concept/">drug_concept</a></td>
-<td>0..1 <br/> <a href="../DrugExposureConceptEnum/">DrugExposureConceptEnum</a></td>
+<td>1 <br/> <a href="../DrugExposureConceptEnum/">DrugExposureConceptEnum</a></td>
 <td>The coded value for a drug</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../exposure_provenance/">exposure_provenance</a></td>
-<td>0..1 <br/> <a href="../DrugExposureProvenanceEnum/">DrugExposureProvenanceEnum</a></td>
+<td>1 <br/> <a href="../DrugExposureProvenanceEnum/">DrugExposureProvenanceEnum</a></td>
 <td>A value representing the provenance of the DrugExposure record</td>
 <td>direct</td>
 </tr>
@@ -384,7 +384,7 @@
 </tr>
 <tr>
 <td><a href="../associated_participant/">associated_participant</a></td>
-<td>0..1 <br/> <a href="../Participant/">Participant</a></td>
+<td>1 <br/> <a href="../Participant/">Participant</a></td>
 <td>A reference to the Participant that is associated with this record</td>
 <td><a href="../Exposure/">Exposure</a></td>
 </tr>
@@ -402,7 +402,7 @@
 </tr>
 <tr>
 <td><a href="../exposure_status/">exposure_status</a></td>
-<td>0..1 <br/> <a href="../HistoricalStatusEnum/">HistoricalStatusEnum</a></td>
+<td>1 <br/> <a href="../HistoricalStatusEnum/">HistoricalStatusEnum</a></td>
 <td>A value indicating whether the exposure described in this record is present, ...</td>
 <td><a href="../Exposure/">Exposure</a></td>
 </tr>
@@ -458,6 +458,7 @@ attributes:
     domain_of:
     - DrugExposure
     range: DrugExposureConceptEnum
+    required: true
   exposure_provenance:
     name: exposure_provenance
     description: A value representing the provenance of the DrugExposure record. From
@@ -468,6 +469,7 @@ attributes:
     - DrugExposure
     - DeviceExposure
     range: DrugExposureProvenanceEnum
+    required: true
   refills:
     name: refills
     description: Intended refills at time of the prescription.
@@ -541,6 +543,7 @@ attributes:
     domain_of:
     - DrugExposure
     range: DrugRouteEnum
+    required: false
 
 </code></pre>
 </details>
@@ -564,6 +567,7 @@ attributes:
     domain_of:
     - DrugExposure
     range: DrugExposureConceptEnum
+    required: true
   exposure_provenance:
     name: exposure_provenance
     description: A value representing the provenance of the DrugExposure record. From
@@ -576,6 +580,7 @@ attributes:
     - DrugExposure
     - DeviceExposure
     range: DrugExposureProvenanceEnum
+    required: true
   refills:
     name: refills
     description: Intended refills at time of the prescription.
@@ -659,6 +664,7 @@ attributes:
     domain_of:
     - DrugExposure
     range: DrugRouteEnum
+    required: false
   identity:
     name: identity
     description: A 'business' identifier or accession number for the entity, typically
@@ -709,6 +715,7 @@ attributes:
     - ObservationSet
     - Observation
     range: Visit
+    required: false
   associated_participant:
     name: associated_participant
     description: A reference to the Participant that is associated with this record.
@@ -727,6 +734,7 @@ attributes:
     - ObservationSet
     - Observation
     range: Participant
+    required: true
   age_at_exposure_start:
     name: age_at_exposure_start
     description: The Participant's age (expressed in days) at the exposure start date.
@@ -737,6 +745,7 @@ attributes:
     domain_of:
     - Exposure
     range: integer
+    required: false
     unit:
       ucum_code: d
   age_at_exposure_end:
@@ -750,6 +759,7 @@ attributes:
     domain_of:
     - Exposure
     range: integer
+    required: false
     unit:
       ucum_code: d
   exposure_status:
@@ -763,6 +773,7 @@ attributes:
     domain_of:
     - Exposure
     range: HistoricalStatusEnum
+    required: true
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The

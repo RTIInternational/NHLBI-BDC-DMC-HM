@@ -280,7 +280,7 @@
 </tr>
 <tr>
 <td><a href="../name/">name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../String/">String</a></td>
 <td>The full legal name by which the organization is known (e</td>
 <td>direct</td>
 </tr>
@@ -449,6 +449,7 @@ attributes:
     - Questionnaire
     - QuestionnaireResponseValue
     range: string
+    required: true
   alias:
     name: alias
     description: A secondary name for the organization such as a short name or abbreviation
@@ -458,6 +459,7 @@ attributes:
     domain_of:
     - Organization
     range: string
+    required: false
   organization_type:
     name: organization_type
     description: The type of the organization (e.g. 'Cancer Genome Characterization
@@ -467,6 +469,7 @@ attributes:
     domain_of:
     - Organization
     range: string
+    required: false
 
 </code></pre>
 </details>
@@ -492,6 +495,7 @@ attributes:
     - Questionnaire
     - QuestionnaireResponseValue
     range: string
+    required: true
   alias:
     name: alias
     description: A secondary name for the organization such as a short name or abbreviation
@@ -503,6 +507,7 @@ attributes:
     domain_of:
     - Organization
     range: string
+    required: false
   organization_type:
     name: organization_type
     description: The type of the organization (e.g. 'Cancer Genome Characterization
@@ -514,6 +519,7 @@ attributes:
     domain_of:
     - Organization
     range: string
+    required: false
   identity:
     name: identity
     description: A 'business' identifier or accession number for the entity, typically

@@ -262,7 +262,7 @@
 
 
 
-    Observation --&gt; "0..1" Participant : associated_participant
+    Observation --&gt; "1" Participant : associated_participant
     click Participant href "../Participant"
 
 
@@ -365,7 +365,7 @@
 </tr>
 <tr>
 <td><a href="../associated_participant/">associated_participant</a></td>
-<td>0..1 <br/> <a href="../Participant/">Participant</a></td>
+<td>1 <br/> <a href="../Participant/">Participant</a></td>
 <td>A reference to the Participant that is associated with this record</td>
 <td>direct</td>
 </tr>
@@ -493,6 +493,13 @@ is_a: Entity
 slots:
 - associated_visit
 - associated_participant
+slot_usage:
+  associated_visit:
+    name: associated_visit
+    required: false
+  associated_participant:
+    name: associated_participant
+    required: true
 attributes:
   age_at_observation:
     name: age_at_observation
@@ -503,6 +510,7 @@ attributes:
     domain_of:
     - Observation
     range: integer
+    required: false
     unit:
       ucum_code: d
   category:
@@ -637,6 +645,13 @@ description: A data structure with key (observation_type) and value (value) attr
   blood count panel.
 from_schema: https://w3id.org/bdchm
 is_a: Entity
+slot_usage:
+  associated_visit:
+    name: associated_visit
+    required: false
+  associated_participant:
+    name: associated_participant
+    required: true
 attributes:
   age_at_observation:
     name: age_at_observation
@@ -649,6 +664,7 @@ attributes:
     domain_of:
     - Observation
     range: integer
+    required: false
     unit:
       ucum_code: d
   category:
@@ -807,6 +823,7 @@ attributes:
     - ObservationSet
     - Observation
     range: Visit
+    required: false
   associated_participant:
     name: associated_participant
     description: A reference to the Participant that is associated with this record.
@@ -825,6 +842,7 @@ attributes:
     - ObservationSet
     - Observation
     range: Participant
+    required: true
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The

@@ -287,7 +287,7 @@
 </tr>
 <tr>
 <td><a href="../text/">text</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../String/">String</a></td>
 <td>Name for group or question text</td>
 <td>direct</td>
 </tr>
@@ -392,6 +392,7 @@ attributes:
     - QuestionnaireItem
     - QuestionnaireResponseItem
     range: string
+    required: true
   code:
     name: code
     description: Corresponding concept for this item in a terminology
@@ -400,6 +401,7 @@ attributes:
     domain_of:
     - QuestionnaireItem
     range: string
+    required: false
   part_of:
     name: part_of
     description: A reference to a parent QuestionnaireItem.
@@ -408,6 +410,7 @@ attributes:
     - ResearchStudy
     - QuestionnaireItem
     range: QuestionnaireItem
+    required: false
 
 </code></pre>
 </details>
@@ -429,6 +432,7 @@ attributes:
     - QuestionnaireItem
     - QuestionnaireResponseItem
     range: string
+    required: true
   code:
     name: code
     description: Corresponding concept for this item in a terminology
@@ -439,6 +443,7 @@ attributes:
     domain_of:
     - QuestionnaireItem
     range: string
+    required: false
   part_of:
     name: part_of
     description: A reference to a parent QuestionnaireItem.
@@ -449,6 +454,7 @@ attributes:
     - ResearchStudy
     - QuestionnaireItem
     range: QuestionnaireItem
+    required: false
   identity:
     name: identity
     description: A 'business' identifier or accession number for the entity, typically

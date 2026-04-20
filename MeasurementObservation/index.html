@@ -258,7 +258,7 @@
 
 
 
-    MeasurementObservation --&gt; "0..1" Participant : associated_participant
+    MeasurementObservation --&gt; "1" Participant : associated_participant
     click Participant href "../Participant"
 
 
@@ -309,7 +309,7 @@
 
 
 
-    MeasurementObservation --&gt; "0..1" MeasurementObservationTypeEnum : observation_type
+    MeasurementObservation --&gt; "1" MeasurementObservationTypeEnum : observation_type
     click MeasurementObservationTypeEnum href "../MeasurementObservationTypeEnum"
 
 
@@ -399,7 +399,7 @@
 </tr>
 <tr>
 <td><a href="../observation_type/">observation_type</a></td>
-<td>0..1 <br/> <a href="../MeasurementObservationTypeEnum/">MeasurementObservationTypeEnum</a></td>
+<td>1 <br/> <a href="../MeasurementObservationTypeEnum/">MeasurementObservationTypeEnum</a></td>
 <td>The type of Observation being represented (e</td>
 <td>direct</td>
 </tr>
@@ -429,7 +429,7 @@
 </tr>
 <tr>
 <td><a href="../associated_participant/">associated_participant</a></td>
-<td>0..1 <br/> <a href="../Participant/">Participant</a></td>
+<td>1 <br/> <a href="../Participant/">Participant</a></td>
 <td>A reference to the Participant that is associated with this record</td>
 <td><a href="../Observation/">Observation</a></td>
 </tr>
@@ -559,6 +559,7 @@ attributes:
     domain_of:
     - MeasurementObservation
     range: Quantity
+    required: false
   range_high:
     name: range_high
     description: If reference ranges for upper and lower limit of normal as provided
@@ -569,6 +570,7 @@ attributes:
     domain_of:
     - MeasurementObservation
     range: Quantity
+    required: false
   observation_type:
     name: observation_type
     description: The type of Observation being represented (e.g. 'diastolic blood
@@ -581,6 +583,7 @@ attributes:
     - Observation
     - MeasurementObservation
     range: MeasurementObservationTypeEnum
+    required: true
   associated_assay:
     name: associated_assay
     description: A reference to the assay that was used in generating this observation.
@@ -589,6 +592,7 @@ attributes:
     domain_of:
     - MeasurementObservation
     range: Assay
+    required: false
   body_site:
     name: body_site
     description: The body site that is the focus of this observation, if applicable.
@@ -597,6 +601,7 @@ attributes:
     domain_of:
     - MeasurementObservation
     range: BodySite
+    required: false
   body_position:
     name: body_position
     description: The position of the body that is the focus of this observation, if
@@ -606,6 +611,7 @@ attributes:
     domain_of:
     - MeasurementObservation
     range: BodyPositionEnum
+    required: false
 
 </code></pre>
 </details>
@@ -630,6 +636,7 @@ attributes:
     domain_of:
     - MeasurementObservation
     range: Quantity
+    required: false
   range_high:
     name: range_high
     description: If reference ranges for upper and lower limit of normal as provided
@@ -642,6 +649,7 @@ attributes:
     domain_of:
     - MeasurementObservation
     range: Quantity
+    required: false
   observation_type:
     name: observation_type
     description: The type of Observation being represented (e.g. 'diastolic blood
@@ -656,6 +664,7 @@ attributes:
     - Observation
     - MeasurementObservation
     range: MeasurementObservationTypeEnum
+    required: true
   associated_assay:
     name: associated_assay
     description: A reference to the assay that was used in generating this observation.
@@ -666,6 +675,7 @@ attributes:
     domain_of:
     - MeasurementObservation
     range: Assay
+    required: false
   body_site:
     name: body_site
     description: The body site that is the focus of this observation, if applicable.
@@ -676,6 +686,7 @@ attributes:
     domain_of:
     - MeasurementObservation
     range: BodySite
+    required: false
   body_position:
     name: body_position
     description: The position of the body that is the focus of this observation, if
@@ -687,6 +698,7 @@ attributes:
     domain_of:
     - MeasurementObservation
     range: BodyPositionEnum
+    required: false
   associated_visit:
     name: associated_visit
     description: A reference to the Visit that is associated with this record.
@@ -704,6 +716,7 @@ attributes:
     - ObservationSet
     - Observation
     range: Visit
+    required: false
   associated_participant:
     name: associated_participant
     description: A reference to the Participant that is associated with this record.
@@ -722,6 +735,7 @@ attributes:
     - ObservationSet
     - Observation
     range: Participant
+    required: true
   age_at_observation:
     name: age_at_observation
     description: The Participant's age (expressed in days) when the Observation was
@@ -733,6 +747,7 @@ attributes:
     domain_of:
     - Observation
     range: integer
+    required: false
     unit:
       ucum_code: d
   category:

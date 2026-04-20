@@ -312,7 +312,7 @@
 
 
 
-    ResearchStudy --&gt; "0..1" ResearchProjectTypeEnum : research_project_type
+    ResearchStudy --&gt; "1" ResearchProjectTypeEnum : research_project_type
     click ResearchProjectTypeEnum href "../ResearchProjectTypeEnum"
 
 
@@ -350,7 +350,7 @@
 </tr>
 <tr>
 <td><a href="../name/">name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../String/">String</a></td>
 <td>An unabridged name of a research program, project, or study</td>
 <td>direct</td>
 </tr>
@@ -422,13 +422,13 @@
 </tr>
 <tr>
 <td><a href="../research_project_type/">research_project_type</a></td>
-<td>0..1 <br/> <a href="../ResearchProjectTypeEnum/">ResearchProjectTypeEnum</a></td>
+<td>1 <br/> <a href="../ResearchProjectTypeEnum/">ResearchProjectTypeEnum</a></td>
 <td>The 'type' of ResearchStudy represented by this object (e</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../program/">program</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../String/">String</a></td>
 <td>The name of the overarching research program under which this ResearchStudy i...</td>
 <td>direct</td>
 </tr>
@@ -440,7 +440,7 @@
 </tr>
 <tr>
 <td><a href="../principal_investigator/">principal_investigator</a></td>
-<td>* <br/> <a href="../String/">String</a></td>
+<td>1..* <br/> <a href="../String/">String</a></td>
 <td>The investigator or investigators leading a project</td>
 <td>direct</td>
 </tr>
@@ -541,6 +541,7 @@ attributes:
     - Questionnaire
     - QuestionnaireResponseValue
     range: string
+    required: true
   name_shortened:
     name: name_shortened
     description: An abbreviated name of a research program, project, or study.
@@ -549,6 +550,7 @@ attributes:
     domain_of:
     - ResearchStudy
     range: string
+    required: false
   description:
     name: description
     description: An unabridged description of a research program, project, or study.
@@ -562,6 +564,7 @@ attributes:
     - Specimen
     - BiologicProduct
     range: string
+    required: false
   description_shortened:
     name: description_shortened
     description: An abbreviated description of a research program, project, or study.
@@ -570,6 +573,7 @@ attributes:
     domain_of:
     - ResearchStudy
     range: string
+    required: false
   sponsor:
     name: sponsor
     description: An entity that is responsible for the initiation, management, and/or
@@ -579,6 +583,7 @@ attributes:
     domain_of:
     - ResearchStudy
     range: string
+    required: false
   date_started:
     name: date_started
     description: The date when the research project began.
@@ -591,6 +596,7 @@ attributes:
     - SpecimenStorageActivity
     - SpecimenTransportActivity
     range: TimePoint
+    required: false
   date_ended:
     name: date_ended
     description: The date when the research project ended.
@@ -603,6 +609,7 @@ attributes:
     - SpecimenStorageActivity
     - SpecimenTransportActivity
     range: TimePoint
+    required: false
   accession_number:
     name: accession_number
     description: The accession number of the research study with the accession authority
@@ -611,6 +618,7 @@ attributes:
     domain_of:
     - ResearchStudy
     range: string
+    required: false
   accession_authority:
     name: accession_authority
     description: The accession authority for the research study.
@@ -619,6 +627,7 @@ attributes:
     domain_of:
     - ResearchStudy
     range: string
+    required: false
   version:
     name: version
     description: The version number of the ResearchStudy
@@ -628,6 +637,7 @@ attributes:
     - ResearchStudy
     - Questionnaire
     range: string
+    required: false
   url:
     name: url
     description: A URL address for a resource that provides information about a research
@@ -639,6 +649,7 @@ attributes:
     - Questionnaire
     - Document
     range: uriorcurie
+    required: false
   part_of:
     name: part_of
     description: A reference to a parent ResearchStudy (e.g. a link to the overarching
@@ -649,6 +660,7 @@ attributes:
     - ResearchStudy
     - QuestionnaireItem
     range: ResearchStudy
+    required: false
   research_project_type:
     name: research_project_type
     description: The 'type' of ResearchStudy represented by this object (e.g. 'Consortium',
@@ -658,6 +670,7 @@ attributes:
     domain_of:
     - ResearchStudy
     range: ResearchProjectTypeEnum
+    required: true
   program:
     name: program
     description: The name of the overarching research program under which this ResearchStudy
@@ -667,6 +680,7 @@ attributes:
     domain_of:
     - ResearchStudy
     range: string
+    required: true
   associated_timepoint:
     name: associated_timepoint
     description: A collection of timepoint observations that are relevant to research
@@ -677,6 +691,7 @@ attributes:
     domain_of:
     - ResearchStudy
     range: TimePoint
+    required: false
     multivalued: true
   principal_investigator:
     name: principal_investigator
@@ -686,6 +701,7 @@ attributes:
     domain_of:
     - ResearchStudy
     range: string
+    required: true
     multivalued: true
   consents:
     name: consents
@@ -698,6 +714,7 @@ attributes:
     - Participant
     - ResearchStudy
     range: Consent
+    required: false
     multivalued: true
 
 </code></pre>
@@ -728,6 +745,7 @@ attributes:
     - Questionnaire
     - QuestionnaireResponseValue
     range: string
+    required: true
   name_shortened:
     name: name_shortened
     description: An abbreviated name of a research program, project, or study.
@@ -738,6 +756,7 @@ attributes:
     domain_of:
     - ResearchStudy
     range: string
+    required: false
   description:
     name: description
     description: An unabridged description of a research program, project, or study.
@@ -753,6 +772,7 @@ attributes:
     - Specimen
     - BiologicProduct
     range: string
+    required: false
   description_shortened:
     name: description_shortened
     description: An abbreviated description of a research program, project, or study.
@@ -763,6 +783,7 @@ attributes:
     domain_of:
     - ResearchStudy
     range: string
+    required: false
   sponsor:
     name: sponsor
     description: An entity that is responsible for the initiation, management, and/or
@@ -774,6 +795,7 @@ attributes:
     domain_of:
     - ResearchStudy
     range: string
+    required: false
   date_started:
     name: date_started
     description: The date when the research project began.
@@ -788,6 +810,7 @@ attributes:
     - SpecimenStorageActivity
     - SpecimenTransportActivity
     range: TimePoint
+    required: false
   date_ended:
     name: date_ended
     description: The date when the research project ended.
@@ -802,6 +825,7 @@ attributes:
     - SpecimenStorageActivity
     - SpecimenTransportActivity
     range: TimePoint
+    required: false
   accession_number:
     name: accession_number
     description: The accession number of the research study with the accession authority
@@ -812,6 +836,7 @@ attributes:
     domain_of:
     - ResearchStudy
     range: string
+    required: false
   accession_authority:
     name: accession_authority
     description: The accession authority for the research study.
@@ -822,6 +847,7 @@ attributes:
     domain_of:
     - ResearchStudy
     range: string
+    required: false
   version:
     name: version
     description: The version number of the ResearchStudy
@@ -833,6 +859,7 @@ attributes:
     - ResearchStudy
     - Questionnaire
     range: string
+    required: false
   url:
     name: url
     description: A URL address for a resource that provides information about a research
@@ -846,6 +873,7 @@ attributes:
     - Questionnaire
     - Document
     range: uriorcurie
+    required: false
   part_of:
     name: part_of
     description: A reference to a parent ResearchStudy (e.g. a link to the overarching
@@ -858,6 +886,7 @@ attributes:
     - ResearchStudy
     - QuestionnaireItem
     range: ResearchStudy
+    required: false
   research_project_type:
     name: research_project_type
     description: The 'type' of ResearchStudy represented by this object (e.g. 'Consortium',
@@ -869,6 +898,7 @@ attributes:
     domain_of:
     - ResearchStudy
     range: ResearchProjectTypeEnum
+    required: true
   program:
     name: program
     description: The name of the overarching research program under which this ResearchStudy
@@ -880,6 +910,7 @@ attributes:
     domain_of:
     - ResearchStudy
     range: string
+    required: true
   associated_timepoint:
     name: associated_timepoint
     description: A collection of timepoint observations that are relevant to research
@@ -892,6 +923,7 @@ attributes:
     domain_of:
     - ResearchStudy
     range: TimePoint
+    required: false
     multivalued: true
   principal_investigator:
     name: principal_investigator
@@ -903,6 +935,7 @@ attributes:
     domain_of:
     - ResearchStudy
     range: string
+    required: true
     multivalued: true
   consents:
     name: consents
@@ -917,6 +950,7 @@ attributes:
     - Participant
     - ResearchStudy
     range: Consent
+    required: false
     multivalued: true
   identity:
     name: identity

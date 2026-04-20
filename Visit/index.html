@@ -251,7 +251,7 @@
 
 
 
-    Visit --&gt; "0..1" Participant : associated_participant
+    Visit --&gt; "1" Participant : associated_participant
     click Participant href "../Participant"
 
 
@@ -264,7 +264,7 @@
 
 
 
-    Visit --&gt; "0..1" VisitCategoryEnum : visit_category
+    Visit --&gt; "1" VisitCategoryEnum : visit_category
     click VisitCategoryEnum href "../VisitCategoryEnum"
 
 
@@ -273,7 +273,7 @@
 
 
 
-    Visit --&gt; "0..1" VisitProvenanceEnum : visit_provenance
+    Visit --&gt; "1" VisitProvenanceEnum : visit_provenance
     click VisitProvenanceEnum href "../VisitProvenanceEnum"
 
 
@@ -299,7 +299,7 @@
 <tbody>
 <tr>
 <td><a href="../associated_participant/">associated_participant</a></td>
-<td>0..1 <br/> <a href="../Participant/">Participant</a></td>
+<td>1 <br/> <a href="../Participant/">Participant</a></td>
 <td>A reference to the Participant that is associated with this record</td>
 <td>direct</td>
 </tr>
@@ -311,7 +311,7 @@
 </tr>
 <tr>
 <td><a href="../visit_category/">visit_category</a></td>
-<td>0..1 <br/> <a href="../VisitCategoryEnum/">VisitCategoryEnum</a></td>
+<td>1 <br/> <a href="../VisitCategoryEnum/">VisitCategoryEnum</a></td>
 <td>A value representing the kind (or category) of visit, like inpatient or outpa...</td>
 <td>direct</td>
 </tr>
@@ -329,7 +329,7 @@
 </tr>
 <tr>
 <td><a href="../visit_provenance/">visit_provenance</a></td>
-<td>0..1 <br/> <a href="../VisitProvenanceEnum/">VisitProvenanceEnum</a></td>
+<td>1 <br/> <a href="../VisitProvenanceEnum/">VisitProvenanceEnum</a></td>
 <td>A value representing the provenance of the visit record, or where the record ...</td>
 <td>direct</td>
 </tr>
@@ -502,6 +502,10 @@ from_schema: https://w3id.org/bdchm
 is_a: Entity
 slots:
 - associated_participant
+slot_usage:
+  associated_participant:
+    name: associated_participant
+    required: true
 attributes:
   name:
     name: name
@@ -514,6 +518,7 @@ attributes:
     - Questionnaire
     - QuestionnaireResponseValue
     range: string
+    required: false
   visit_category:
     name: visit_category
     description: A value representing the kind (or category) of visit, like inpatient
@@ -523,6 +528,7 @@ attributes:
     domain_of:
     - Visit
     range: VisitCategoryEnum
+    required: true
   age_at_visit_start:
     name: age_at_visit_start
     description: The age of the Participant (in days) at the start of the Visit.
@@ -531,6 +537,7 @@ attributes:
     domain_of:
     - Visit
     range: integer
+    required: false
     unit:
       ucum_code: d
   age_at_visit_end:
@@ -541,6 +548,7 @@ attributes:
     domain_of:
     - Visit
     range: integer
+    required: false
     unit:
       ucum_code: d
   visit_provenance:
@@ -552,6 +560,7 @@ attributes:
     domain_of:
     - Visit
     range: VisitProvenanceEnum
+    required: true
 
 </code></pre>
 </details>
@@ -567,6 +576,10 @@ description: Events where Persons engage with the healthcare system for a durati
   a stay in bed. (OMOP)
 from_schema: https://w3id.org/bdchm
 is_a: Entity
+slot_usage:
+  associated_participant:
+    name: associated_participant
+    required: true
 attributes:
   name:
     name: name
@@ -581,6 +594,7 @@ attributes:
     - Questionnaire
     - QuestionnaireResponseValue
     range: string
+    required: false
   visit_category:
     name: visit_category
     description: A value representing the kind (or category) of visit, like inpatient
@@ -592,6 +606,7 @@ attributes:
     domain_of:
     - Visit
     range: VisitCategoryEnum
+    required: true
   age_at_visit_start:
     name: age_at_visit_start
     description: The age of the Participant (in days) at the start of the Visit.
@@ -602,6 +617,7 @@ attributes:
     domain_of:
     - Visit
     range: integer
+    required: false
     unit:
       ucum_code: d
   age_at_visit_end:
@@ -614,6 +630,7 @@ attributes:
     domain_of:
     - Visit
     range: integer
+    required: false
     unit:
       ucum_code: d
   visit_provenance:
@@ -627,6 +644,7 @@ attributes:
     domain_of:
     - Visit
     range: VisitProvenanceEnum
+    required: true
   associated_participant:
     name: associated_participant
     description: A reference to the Participant that is associated with this record.
@@ -645,6 +663,7 @@ attributes:
     - ObservationSet
     - Observation
     range: Participant
+    required: true
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The

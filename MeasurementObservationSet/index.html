@@ -240,7 +240,7 @@
 
 
 
-    MeasurementObservationSet --&gt; "0..1" Participant : associated_participant
+    MeasurementObservationSet --&gt; "1" Participant : associated_participant
     click Participant href "../Participant"
 
 
@@ -323,7 +323,7 @@
 </tr>
 <tr>
 <td><a href="../associated_participant/">associated_participant</a></td>
-<td>0..1 <br/> <a href="../Participant/">Participant</a></td>
+<td>1 <br/> <a href="../Participant/">Participant</a></td>
 <td>A reference to the Participant that is associated with this record</td>
 <td><a href="../ObservationSet/">ObservationSet</a></td>
 </tr>
@@ -440,6 +440,7 @@ attributes:
     - ObservationSet
     - Observation
     range: Visit
+    required: false
   associated_participant:
     name: associated_participant
     description: A reference to the Participant that is associated with this record.
@@ -458,6 +459,7 @@ attributes:
     - ObservationSet
     - Observation
     range: Participant
+    required: true
   category:
     name: category
     description: The general category of observation set described

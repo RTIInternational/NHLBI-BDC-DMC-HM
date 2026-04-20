@@ -281,13 +281,13 @@
 </tr>
 <tr>
 <td><a href="../type/">type</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../String/">String</a></td>
 <td></td>
 <td><a href="../QuestionnaireResponseValue/">QuestionnaireResponseValue</a></td>
 </tr>
 <tr>
 <td><a href="../name/">name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../String/">String</a></td>
 <td></td>
 <td><a href="../QuestionnaireResponseValue/">QuestionnaireResponseValue</a></td>
 </tr>
@@ -372,6 +372,7 @@ attributes:
     domain_of:
     - QuestionnaireResponseValue
     range: string
+    required: true
   name:
     name: name
     from_schema: https://w3id.org/bdchm
@@ -384,6 +385,7 @@ attributes:
     - Questionnaire
     - QuestionnaireResponseValue
     range: string
+    required: true
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The

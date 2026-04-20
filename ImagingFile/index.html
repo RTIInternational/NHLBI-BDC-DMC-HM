@@ -249,7 +249,7 @@
 
 
 
-    ImagingFile --&gt; "0..1" Participant : associated_participant
+    ImagingFile --&gt; "1" Participant : associated_participant
     click Participant href "../Participant"
 
 
@@ -262,7 +262,7 @@
 
 
 
-    ImagingFile --&gt; "0..1" File : derived_from
+    ImagingFile --&gt; "*" File : derived_from
     click File href "../File"
 
 
@@ -293,7 +293,7 @@
 
 
 
-    ImagingFile --&gt; "0..1" ImagingStudy : related_imaging_study
+    ImagingFile --&gt; "1" ImagingStudy : related_imaging_study
     click ImagingStudy href "../ImagingStudy"
 
 
@@ -328,7 +328,7 @@
 <tbody>
 <tr>
 <td><a href="../imaging_modality/">imaging_modality</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../String/">String</a></td>
 <td>The modality of the imaging data contained in the file (e</td>
 <td>direct</td>
 </tr>
@@ -340,13 +340,13 @@
 </tr>
 <tr>
 <td><a href="../series_number/">series_number</a></td>
-<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>1 <br/> <a href="../Integer/">Integer</a></td>
 <td>The Series Instance Number for the imaging data contained in the file, if app...</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../series_uid/">series_uid</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../String/">String</a></td>
 <td>(0020, 000e) Series Instance UID</td>
 <td>direct</td>
 </tr>
@@ -358,7 +358,7 @@
 </tr>
 <tr>
 <td><a href="../related_imaging_study/">related_imaging_study</a></td>
-<td>0..1 <br/> <a href="../ImagingStudy/">ImagingStudy</a></td>
+<td>1 <br/> <a href="../ImagingStudy/">ImagingStudy</a></td>
 <td>The ImagingStudy with which this ImagingFile is associated</td>
 <td>direct</td>
 </tr>
@@ -382,13 +382,13 @@
 </tr>
 <tr>
 <td><a href="../associated_participant/">associated_participant</a></td>
-<td>0..1 <br/> <a href="../Participant/">Participant</a></td>
+<td>1 <br/> <a href="../Participant/">Participant</a></td>
 <td>A reference to the Participant that is associated with this record</td>
 <td><a href="../File/">File</a></td>
 </tr>
 <tr>
 <td><a href="../file_name/">file_name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../String/">String</a></td>
 <td>The name (or part of a name) of a file (of any type)</td>
 <td><a href="../File/">File</a></td>
 </tr>
@@ -400,7 +400,7 @@
 </tr>
 <tr>
 <td><a href="../file_location/">file_location</a></td>
-<td>* <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
+<td>1..* <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
 <td>A unique identifier or url for identifying or locating the file</td>
 <td><a href="../File/">File</a></td>
 </tr>
@@ -436,7 +436,7 @@
 </tr>
 <tr>
 <td><a href="../derived_from/">derived_from</a></td>
-<td>0..1 <br/> <a href="../File/">File</a></td>
+<td>* <br/> <a href="../File/">File</a></td>
 <td>A File from which this File is derived</td>
 <td><a href="../File/">File</a></td>
 </tr>
@@ -491,6 +491,7 @@ attributes:
     domain_of:
     - ImagingFile
     range: string
+    required: true
   anatomical_site:
     name: anatomical_site
     description: The anatomical site from which the imaging data was acquired (e.g.
@@ -500,6 +501,7 @@ attributes:
     domain_of:
     - ImagingFile
     range: BodySite
+    required: false
   series_number:
     name: series_number
     description: The Series Instance Number for the imaging data contained in the
@@ -509,6 +511,7 @@ attributes:
     domain_of:
     - ImagingFile
     range: integer
+    required: true
   series_uid:
     name: series_uid
     description: (0020, 000e) Series Instance UID. The Digital Imaging and Communications
@@ -519,6 +522,7 @@ attributes:
     domain_of:
     - ImagingFile
     range: string
+    required: true
   series_description:
     name: series_description
     description: (0008, 103e) Series Description. The Digital Imaging and Communications
@@ -529,6 +533,7 @@ attributes:
     domain_of:
     - ImagingFile
     range: string
+    required: false
   related_imaging_study:
     name: related_imaging_study
     description: The ImagingStudy with which this ImagingFile is associated.
@@ -537,6 +542,7 @@ attributes:
     domain_of:
     - ImagingFile
     range: ImagingStudy
+    required: true
   manufacturer:
     name: manufacturer
     description: (0008, 0070) Manufacturer. The Digital Imaging and Communications
@@ -547,6 +553,7 @@ attributes:
     domain_of:
     - ImagingFile
     range: string
+    required: false
   manufacturer_model:
     name: manufacturer_model
     description: (0008, 1090) Manufacturer's Model Name. The Digital Imaging and Communications
@@ -557,6 +564,7 @@ attributes:
     domain_of:
     - ImagingFile
     range: string
+    required: false
 
 </code></pre>
 </details>
@@ -579,6 +587,7 @@ attributes:
     domain_of:
     - ImagingFile
     range: string
+    required: true
   anatomical_site:
     name: anatomical_site
     description: The anatomical site from which the imaging data was acquired (e.g.
@@ -590,6 +599,7 @@ attributes:
     domain_of:
     - ImagingFile
     range: BodySite
+    required: false
   series_number:
     name: series_number
     description: The Series Instance Number for the imaging data contained in the
@@ -601,6 +611,7 @@ attributes:
     domain_of:
     - ImagingFile
     range: integer
+    required: true
   series_uid:
     name: series_uid
     description: (0020, 000e) Series Instance UID. The Digital Imaging and Communications
@@ -613,6 +624,7 @@ attributes:
     domain_of:
     - ImagingFile
     range: string
+    required: true
   series_description:
     name: series_description
     description: (0008, 103e) Series Description. The Digital Imaging and Communications
@@ -625,6 +637,7 @@ attributes:
     domain_of:
     - ImagingFile
     range: string
+    required: false
   related_imaging_study:
     name: related_imaging_study
     description: The ImagingStudy with which this ImagingFile is associated.
@@ -635,6 +648,7 @@ attributes:
     domain_of:
     - ImagingFile
     range: ImagingStudy
+    required: true
   manufacturer:
     name: manufacturer
     description: (0008, 0070) Manufacturer. The Digital Imaging and Communications
@@ -647,6 +661,7 @@ attributes:
     domain_of:
     - ImagingFile
     range: string
+    required: false
   manufacturer_model:
     name: manufacturer_model
     description: (0008, 1090) Manufacturer's Model Name. The Digital Imaging and Communications
@@ -659,6 +674,7 @@ attributes:
     domain_of:
     - ImagingFile
     range: string
+    required: false
   identity:
     name: identity
     description: A 'business' identifier or accession number for the entity, typically
@@ -710,6 +726,7 @@ attributes:
     - ObservationSet
     - Observation
     range: Participant
+    required: true
   file_name:
     name: file_name
     description: The name (or part of a name) of a file (of any type).
@@ -720,6 +737,7 @@ attributes:
     domain_of:
     - File
     range: string
+    required: true
   file_size:
     name: file_size
     description: The size of the data file (object) in bytes.
@@ -730,6 +748,7 @@ attributes:
     domain_of:
     - File
     range: integer
+    required: false
   file_location:
     name: file_location
     description: A unique identifier or url for identifying or locating the file.
@@ -740,6 +759,7 @@ attributes:
     domain_of:
     - File
     range: uriorcurie
+    required: true
     multivalued: true
   md5sum:
     name: md5sum
@@ -752,6 +772,7 @@ attributes:
     domain_of:
     - File
     range: string
+    required: false
   data_type:
     name: data_type
     description: The nature or genre of the resource. Recommended best practice is
@@ -765,6 +786,7 @@ attributes:
     domain_of:
     - File
     range: string
+    required: false
   data_category:
     name: data_category
     description: A broad categorization of the contents of the data file.
@@ -775,6 +797,7 @@ attributes:
     domain_of:
     - File
     range: string
+    required: false
   format:
     name: format
     description: The file format, physical medium, or dimensions of the resource.
@@ -788,6 +811,7 @@ attributes:
     domain_of:
     - File
     range: string
+    required: false
   description:
     name: description
     description: An account of the resource. Description may include but is not limited
@@ -805,6 +829,7 @@ attributes:
     - Specimen
     - BiologicProduct
     range: string
+    required: false
   derived_from:
     name: derived_from
     description: A File from which this File is derived.  A derivation is a transformation
@@ -817,6 +842,8 @@ attributes:
     domain_of:
     - File
     range: File
+    required: false
+    multivalued: true
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The

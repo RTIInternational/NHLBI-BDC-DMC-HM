@@ -230,7 +230,7 @@
 
 
 
-    ResearchStudyCollection --&gt; "*" ResearchStudy : entries
+    ResearchStudyCollection --&gt; "1..*" ResearchStudy : entries
     click ResearchStudy href "../ResearchStudy"
 
 
@@ -250,7 +250,7 @@
 <tbody>
 <tr>
 <td><a href="../entries/">entries</a></td>
-<td>* <br/> <a href="../ResearchStudy/">ResearchStudy</a></td>
+<td>1..* <br/> <a href="../ResearchStudy/">ResearchStudy</a></td>
 <td></td>
 <td>direct</td>
 </tr>
@@ -295,6 +295,7 @@ attributes:
     domain_of:
     - ResearchStudyCollection
     range: ResearchStudy
+    required: true
     multivalued: true
     inlined: true
 tree_root: true
@@ -316,6 +317,7 @@ attributes:
     domain_of:
     - ResearchStudyCollection
     range: ResearchStudy
+    required: true
     multivalued: true
     inlined: true
 tree_root: true

@@ -249,7 +249,7 @@
 
 
 
-    Participant --&gt; "0..1" Person : associated_person
+    Participant --&gt; "1" Person : associated_person
     click Person href "../Person"
 
 
@@ -275,7 +275,7 @@
 
 
 
-    Participant --&gt; "0..1" ResearchStudy : member_of_research_study
+    Participant --&gt; "1" ResearchStudy : member_of_research_study
     click ResearchStudy href "../ResearchStudy"
 
 
@@ -312,7 +312,7 @@
 <tbody>
 <tr>
 <td><a href="../associated_person/">associated_person</a></td>
-<td>0..1 <br/> <a href="../Person/">Person</a></td>
+<td>1 <br/> <a href="../Person/">Person</a></td>
 <td>A reference to the Person that is associated with this record</td>
 <td>direct</td>
 </tr>
@@ -330,7 +330,7 @@
 </tr>
 <tr>
 <td><a href="../member_of_research_study/">member_of_research_study</a></td>
-<td>0..1 <br/> <a href="../ResearchStudy/">ResearchStudy</a></td>
+<td>1 <br/> <a href="../ResearchStudy/">ResearchStudy</a></td>
 <td>A reference to the Study(s) of which this Participant is a member</td>
 <td>direct</td>
 </tr>
@@ -549,6 +549,10 @@ is_a: Entity
 slots:
 - associated_person
 - identity
+slot_usage:
+  associated_person:
+    name: associated_person
+    required: true
 attributes:
   description:
     name: description
@@ -565,6 +569,7 @@ attributes:
     - Specimen
     - BiologicProduct
     range: string
+    required: false
   member_of_research_study:
     name: member_of_research_study
     description: A reference to the Study(s) of which this Participant is a member
@@ -573,6 +578,7 @@ attributes:
     domain_of:
     - Participant
     range: ResearchStudy
+    required: true
   age_at_index:
     name: age_at_index
     description: The age in days of the Participant at the index_timepoint
@@ -581,6 +587,7 @@ attributes:
     domain_of:
     - Participant
     range: integer
+    required: false
     unit:
       ucum_code: d
   index_timepoint:
@@ -593,6 +600,7 @@ attributes:
     domain_of:
     - Participant
     range: string
+    required: false
   originating_site:
     name: originating_site
     description: The Organization through which a subject was enrolled on a ResearchStudy.
@@ -601,6 +609,7 @@ attributes:
     domain_of:
     - Participant
     range: Organization
+    required: false
   study_arm:
     name: study_arm
     description: The arm(s) of the study on which the Participant is enrolled
@@ -609,6 +618,7 @@ attributes:
     domain_of:
     - Participant
     range: string
+    required: false
     multivalued: true
   consents:
     name: consents
@@ -622,6 +632,7 @@ attributes:
     - Participant
     - ResearchStudy
     range: Consent
+    required: false
     multivalued: true
 
 </code></pre>
@@ -635,6 +646,10 @@ description: A Participant is the entity of interest in a research study, typica
   person to protect the subject’s privacy.
 from_schema: https://w3id.org/bdchm
 is_a: Entity
+slot_usage:
+  associated_person:
+    name: associated_person
+    required: true
 attributes:
   description:
     name: description
@@ -653,6 +668,7 @@ attributes:
     - Specimen
     - BiologicProduct
     range: string
+    required: false
   member_of_research_study:
     name: member_of_research_study
     description: A reference to the Study(s) of which this Participant is a member
@@ -663,6 +679,7 @@ attributes:
     domain_of:
     - Participant
     range: ResearchStudy
+    required: true
   age_at_index:
     name: age_at_index
     description: The age in days of the Participant at the index_timepoint
@@ -673,6 +690,7 @@ attributes:
     domain_of:
     - Participant
     range: integer
+    required: false
     unit:
       ucum_code: d
   index_timepoint:
@@ -687,6 +705,7 @@ attributes:
     domain_of:
     - Participant
     range: string
+    required: false
   originating_site:
     name: originating_site
     description: The Organization through which a subject was enrolled on a ResearchStudy.
@@ -697,6 +716,7 @@ attributes:
     domain_of:
     - Participant
     range: Organization
+    required: false
   study_arm:
     name: study_arm
     description: The arm(s) of the study on which the Participant is enrolled
@@ -707,6 +727,7 @@ attributes:
     domain_of:
     - Participant
     range: string
+    required: false
     multivalued: true
   consents:
     name: consents
@@ -722,6 +743,7 @@ attributes:
     - Participant
     - ResearchStudy
     range: Consent
+    required: false
     multivalued: true
   associated_person:
     name: associated_person
@@ -733,6 +755,7 @@ attributes:
     domain_of:
     - Participant
     range: Person
+    required: true
   identity:
     name: identity
     description: A 'business' identifier or accession number for the entity, typically

@@ -242,7 +242,7 @@
 
 
 
-    QuestionnaireResponse --&gt; "0..1" Visit : associated_visit
+    QuestionnaireResponse --&gt; "1" Visit : associated_visit
     click Visit href "../Visit"
 
 
@@ -279,7 +279,7 @@
 <tbody>
 <tr>
 <td><a href="../associated_visit/">associated_visit</a></td>
-<td>0..1 <br/> <a href="../Visit/">Visit</a></td>
+<td>1 <br/> <a href="../Visit/">Visit</a></td>
 <td>A reference to the Visit that is associated with this record</td>
 <td>direct</td>
 </tr>
@@ -338,6 +338,10 @@ from_schema: https://w3id.org/bdchm
 is_a: Entity
 slots:
 - associated_visit
+slot_usage:
+  associated_visit:
+    name: associated_visit
+    required: true
 attributes:
   age_at_response:
     name: age_at_response
@@ -348,6 +352,7 @@ attributes:
     domain_of:
     - QuestionnaireResponse
     range: integer
+    required: false
     unit:
       ucum_code: d
   items:
@@ -371,6 +376,10 @@ description: QuestionnaireResponse provides a complete or partial list of answer
   to a set of questions filled when responding to a questionnaire. (FHIR)
 from_schema: https://w3id.org/bdchm
 is_a: Entity
+slot_usage:
+  associated_visit:
+    name: associated_visit
+    required: true
 attributes:
   age_at_response:
     name: age_at_response
@@ -383,6 +392,7 @@ attributes:
     domain_of:
     - QuestionnaireResponse
     range: integer
+    required: false
     unit:
       ucum_code: d
   items:
@@ -415,6 +425,7 @@ attributes:
     - ObservationSet
     - Observation
     range: Visit
+    required: true
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The

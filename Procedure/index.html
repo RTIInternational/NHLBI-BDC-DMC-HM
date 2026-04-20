@@ -251,7 +251,7 @@
 
 
 
-    Procedure --&gt; "0..1" Participant : associated_participant
+    Procedure --&gt; "1" Participant : associated_participant
     click Participant href "../Participant"
 
 
@@ -273,7 +273,7 @@
 
 
 
-    Procedure --&gt; "0..1" ProcedureConceptEnum : procedure_concept
+    Procedure --&gt; "1" ProcedureConceptEnum : procedure_concept
     click ProcedureConceptEnum href "../ProcedureConceptEnum"
 
 
@@ -282,7 +282,7 @@
 
 
 
-    Procedure --&gt; "0..1" ProvenanceEnum : procedure_provenance
+    Procedure --&gt; "1" ProvenanceEnum : procedure_provenance
     click ProvenanceEnum href "../ProvenanceEnum"
 
 
@@ -291,7 +291,7 @@
 
 
 
-    Procedure --&gt; "0..1" StatusEnum : procedure_status
+    Procedure --&gt; "1" StatusEnum : procedure_status
     click StatusEnum href "../StatusEnum"
 
 
@@ -338,13 +338,13 @@
 </tr>
 <tr>
 <td><a href="../associated_participant/">associated_participant</a></td>
-<td>0..1 <br/> <a href="../Participant/">Participant</a></td>
+<td>1 <br/> <a href="../Participant/">Participant</a></td>
 <td>A reference to the Participant that is associated with this record</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../procedure_concept/">procedure_concept</a></td>
-<td>0..1 <br/> <a href="../ProcedureConceptEnum/">ProcedureConceptEnum</a></td>
+<td>1 <br/> <a href="../ProcedureConceptEnum/">ProcedureConceptEnum</a></td>
 <td>The coded value that describes the procedure, derived from OMOP codes</td>
 <td>direct</td>
 </tr>
@@ -356,13 +356,13 @@
 </tr>
 <tr>
 <td><a href="../procedure_provenance/">procedure_provenance</a></td>
-<td>0..1 <br/> <a href="../ProvenanceEnum/">ProvenanceEnum</a></td>
+<td>1 <br/> <a href="../ProvenanceEnum/">ProvenanceEnum</a></td>
 <td>A value representing the provenance of the Procedure record</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../procedure_status/">procedure_status</a></td>
-<td>0..1 <br/> <a href="../StatusEnum/">StatusEnum</a></td>
+<td>1 <br/> <a href="../StatusEnum/">StatusEnum</a></td>
 <td>A value indicating whether the medical procedure described in this record is ...</td>
 <td>direct</td>
 </tr>
@@ -425,6 +425,13 @@ slots:
 - identity
 - associated_visit
 - associated_participant
+slot_usage:
+  associated_visit:
+    name: associated_visit
+    required: false
+  associated_participant:
+    name: associated_participant
+    required: true
 attributes:
   procedure_concept:
     name: procedure_concept
@@ -434,6 +441,7 @@ attributes:
     domain_of:
     - Procedure
     range: ProcedureConceptEnum
+    required: true
   age_at_procedure:
     name: age_at_procedure
     description: The Participant's age (expressed in days) when the procedure was
@@ -443,6 +451,7 @@ attributes:
     domain_of:
     - Procedure
     range: integer
+    required: false
     unit:
       ucum_code: d
   procedure_provenance:
@@ -453,6 +462,7 @@ attributes:
     domain_of:
     - Procedure
     range: ProvenanceEnum
+    required: true
   procedure_status:
     name: procedure_status
     description: A value indicating whether the medical procedure described in this
@@ -462,6 +472,7 @@ attributes:
     domain_of:
     - Procedure
     range: StatusEnum
+    required: true
   quantity:
     name: quantity
     description: The quantity of procedures ordered or administered.
@@ -472,6 +483,7 @@ attributes:
     - DrugExposure
     - DeviceExposure
     range: Quantity
+    required: false
   affected_body_site:
     name: affected_body_site
     description: The anatomical site affected by the procedure.
@@ -480,6 +492,7 @@ attributes:
     - Condition
     - Procedure
     range: BodySite
+    required: false
 
 </code></pre>
 </details>
@@ -492,6 +505,13 @@ description: Procedure contains records of activities or processes ordered by, o
   varying levels of standardization. [Derived from OMOP]
 from_schema: https://w3id.org/bdchm
 is_a: Entity
+slot_usage:
+  associated_visit:
+    name: associated_visit
+    required: false
+  associated_participant:
+    name: associated_participant
+    required: true
 attributes:
   procedure_concept:
     name: procedure_concept
@@ -503,6 +523,7 @@ attributes:
     domain_of:
     - Procedure
     range: ProcedureConceptEnum
+    required: true
   age_at_procedure:
     name: age_at_procedure
     description: The Participant's age (expressed in days) when the procedure was
@@ -514,6 +535,7 @@ attributes:
     domain_of:
     - Procedure
     range: integer
+    required: false
     unit:
       ucum_code: d
   procedure_provenance:
@@ -526,6 +548,7 @@ attributes:
     domain_of:
     - Procedure
     range: ProvenanceEnum
+    required: true
   procedure_status:
     name: procedure_status
     description: A value indicating whether the medical procedure described in this
@@ -537,6 +560,7 @@ attributes:
     domain_of:
     - Procedure
     range: StatusEnum
+    required: true
   quantity:
     name: quantity
     description: The quantity of procedures ordered or administered.
@@ -549,6 +573,7 @@ attributes:
     - DrugExposure
     - DeviceExposure
     range: Quantity
+    required: false
   affected_body_site:
     name: affected_body_site
     description: The anatomical site affected by the procedure.
@@ -559,6 +584,7 @@ attributes:
     - Condition
     - Procedure
     range: BodySite
+    required: false
   identity:
     name: identity
     description: A 'business' identifier or accession number for the entity, typically
@@ -609,6 +635,7 @@ attributes:
     - ObservationSet
     - Observation
     range: Visit
+    required: false
   associated_participant:
     name: associated_participant
     description: A reference to the Participant that is associated with this record.
@@ -627,6 +654,7 @@ attributes:
     - ObservationSet
     - Observation
     range: Participant
+    required: true
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The

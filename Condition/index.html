@@ -262,7 +262,7 @@
 
 
 
-    Condition --&gt; "0..1" Participant : associated_participant
+    Condition --&gt; "1" Participant : associated_participant
     click Participant href "../Participant"
 
 
@@ -280,7 +280,7 @@
 
 
 
-    Condition --&gt; "0..1" ConditionConceptEnum : condition_concept
+    Condition --&gt; "1" ConditionConceptEnum : condition_concept
     click ConditionConceptEnum href "../ConditionConceptEnum"
 
 
@@ -289,7 +289,7 @@
 
 
 
-    Condition --&gt; "0..1" ProvenanceEnum : condition_provenance
+    Condition --&gt; "1" ProvenanceEnum : condition_provenance
     click ProvenanceEnum href "../ProvenanceEnum"
 
 
@@ -307,7 +307,7 @@
 
 
 
-    Condition --&gt; "0..1" HistoricalStatusEnum : condition_status
+    Condition --&gt; "1" HistoricalStatusEnum : condition_status
     click HistoricalStatusEnum href "../HistoricalStatusEnum"
 
 
@@ -320,7 +320,7 @@
 
 
 
-    Condition --&gt; "0..1" FamilyRelationshipEnum : relationship_to_participant
+    Condition --&gt; "1" FamilyRelationshipEnum : relationship_to_participant
     click FamilyRelationshipEnum href "../FamilyRelationshipEnum"
 
 
@@ -358,13 +358,13 @@
 </tr>
 <tr>
 <td><a href="../associated_participant/">associated_participant</a></td>
-<td>0..1 <br/> <a href="../Participant/">Participant</a></td>
+<td>1 <br/> <a href="../Participant/">Participant</a></td>
 <td>A reference to the Participant that is associated with this record</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../condition_concept/">condition_concept</a></td>
-<td>0..1 <br/> <a href="../ConditionConceptEnum/">ConditionConceptEnum</a></td>
+<td>1 <br/> <a href="../ConditionConceptEnum/">ConditionConceptEnum</a></td>
 <td>The coded value for the presence of a disease or medical condition stated as ...</td>
 <td>direct</td>
 </tr>
@@ -382,13 +382,13 @@
 </tr>
 <tr>
 <td><a href="../condition_provenance/">condition_provenance</a></td>
-<td>0..1 <br/> <a href="../ProvenanceEnum/">ProvenanceEnum</a></td>
+<td>1 <br/> <a href="../ProvenanceEnum/">ProvenanceEnum</a></td>
 <td>A value representing the provenance of the Condition record</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../condition_status/">condition_status</a></td>
-<td>0..1 <br/> <a href="../HistoricalStatusEnum/">HistoricalStatusEnum</a></td>
+<td>1 <br/> <a href="../HistoricalStatusEnum/">HistoricalStatusEnum</a></td>
 <td>A value indicating whether the medical condition described in this record is ...</td>
 <td>direct</td>
 </tr>
@@ -400,7 +400,7 @@
 </tr>
 <tr>
 <td><a href="../relationship_to_participant/">relationship_to_participant</a></td>
-<td>0..1 <br/> <a href="../FamilyRelationshipEnum/">FamilyRelationshipEnum</a></td>
+<td>1 <br/> <a href="../FamilyRelationshipEnum/">FamilyRelationshipEnum</a></td>
 <td>A value indicating the relationship between the Participant to which the Cond...</td>
 <td>direct</td>
 </tr>
@@ -463,6 +463,13 @@ slots:
 - identity
 - associated_visit
 - associated_participant
+slot_usage:
+  associated_visit:
+    name: associated_visit
+    required: false
+  associated_participant:
+    name: associated_participant
+    required: true
 attributes:
   condition_concept:
     name: condition_concept
@@ -474,6 +481,7 @@ attributes:
     domain_of:
     - Condition
     range: ConditionConceptEnum
+    required: true
   age_at_condition_start:
     name: age_at_condition_start
     description: The Participant's age (expressed in days) when the condition was
@@ -483,6 +491,7 @@ attributes:
     domain_of:
     - Condition
     range: integer
+    required: false
     unit:
       ucum_code: d
   age_at_condition_end:
@@ -494,6 +503,7 @@ attributes:
     domain_of:
     - Condition
     range: integer
+    required: false
     unit:
       ucum_code: d
   condition_provenance:
@@ -504,6 +514,7 @@ attributes:
     domain_of:
     - Condition
     range: ProvenanceEnum
+    required: true
   condition_status:
     name: condition_status
     description: A value indicating whether the medical condition described in this
@@ -514,6 +525,7 @@ attributes:
     domain_of:
     - Condition
     range: HistoricalStatusEnum
+    required: true
   condition_severity:
     name: condition_severity
     description: A subjective assessment of the severity of the condition
@@ -522,6 +534,7 @@ attributes:
     domain_of:
     - Condition
     range: ConditionSeverityEnum
+    required: false
   relationship_to_participant:
     name: relationship_to_participant
     description: A value indicating the relationship between the Participant to which
@@ -535,6 +548,7 @@ attributes:
     domain_of:
     - Condition
     range: FamilyRelationshipEnum
+    required: true
   associated_evidence:
     name: associated_evidence
     description: Evidence supporting the assertion of the condition (e.g., an ImagingStudy,
@@ -544,6 +558,7 @@ attributes:
     domain_of:
     - Condition
     range: Entity
+    required: false
     multivalued: true
   affected_body_site:
     name: affected_body_site
@@ -554,6 +569,7 @@ attributes:
     - Condition
     - Procedure
     range: BodySite
+    required: false
 
 </code></pre>
 </details>
@@ -566,6 +582,13 @@ description: 'Conditions are records of a Person suggesting the presence of a di
   sources and levels of standardization. '
 from_schema: https://w3id.org/bdchm
 is_a: Entity
+slot_usage:
+  associated_visit:
+    name: associated_visit
+    required: false
+  associated_participant:
+    name: associated_participant
+    required: true
 attributes:
   condition_concept:
     name: condition_concept
@@ -579,6 +602,7 @@ attributes:
     domain_of:
     - Condition
     range: ConditionConceptEnum
+    required: true
   age_at_condition_start:
     name: age_at_condition_start
     description: The Participant's age (expressed in days) when the condition was
@@ -590,6 +614,7 @@ attributes:
     domain_of:
     - Condition
     range: integer
+    required: false
     unit:
       ucum_code: d
   age_at_condition_end:
@@ -603,6 +628,7 @@ attributes:
     domain_of:
     - Condition
     range: integer
+    required: false
     unit:
       ucum_code: d
   condition_provenance:
@@ -615,6 +641,7 @@ attributes:
     domain_of:
     - Condition
     range: ProvenanceEnum
+    required: true
   condition_status:
     name: condition_status
     description: A value indicating whether the medical condition described in this
@@ -627,6 +654,7 @@ attributes:
     domain_of:
     - Condition
     range: HistoricalStatusEnum
+    required: true
   condition_severity:
     name: condition_severity
     description: A subjective assessment of the severity of the condition
@@ -637,6 +665,7 @@ attributes:
     domain_of:
     - Condition
     range: ConditionSeverityEnum
+    required: false
   relationship_to_participant:
     name: relationship_to_participant
     description: A value indicating the relationship between the Participant to which
@@ -652,6 +681,7 @@ attributes:
     domain_of:
     - Condition
     range: FamilyRelationshipEnum
+    required: true
   associated_evidence:
     name: associated_evidence
     description: Evidence supporting the assertion of the condition (e.g., an ImagingStudy,
@@ -663,6 +693,7 @@ attributes:
     domain_of:
     - Condition
     range: Entity
+    required: false
     multivalued: true
   affected_body_site:
     name: affected_body_site
@@ -675,6 +706,7 @@ attributes:
     - Condition
     - Procedure
     range: BodySite
+    required: false
   identity:
     name: identity
     description: A 'business' identifier or accession number for the entity, typically
@@ -725,6 +757,7 @@ attributes:
     - ObservationSet
     - Observation
     range: Visit
+    required: false
   associated_participant:
     name: associated_participant
     description: A reference to the Participant that is associated with this record.
@@ -743,6 +776,7 @@ attributes:
     - ObservationSet
     - Observation
     range: Participant
+    required: true
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The
