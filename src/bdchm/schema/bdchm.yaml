@@ -1556,6 +1556,11 @@ classes:
         multivalued: false
         required: false
         range: BaseEnum
+      context:
+        description: The context within which an observation was made.
+        multivalued: true
+        range: Context
+        required: false
     slots:
       - associated_visit
       - associated_participant
@@ -1668,6 +1673,28 @@ classes:
         range: Quantity
         multivalued: false
         required: false
+
+  Context:
+    is_a: Entity
+    description: The context within which an observation was made.
+    attributes:
+      activity:
+        description: The activity that provides context to the observation (e.g. "fasting", "bronchodilator use")
+        range: Activity
+      relative_timing:
+        description: The timing of the observation relative to the observation (e.g., "before", "concurrent with")
+        range: RelativeTimingEnum
+
+  Activity:
+    is_a: Entity
+    description: An activity that provides context to an observation.
+    attributes:
+      activity_type:
+        description: The type of activity being recorded (e.g. "fasting", "bronchodilator use")
+        range: ActivityTypeEnum
+      time_duration:
+        description: The quantity of time over which the activity occurred (e.g. "8 hours", "1 week")
+        range: Quantity
 
 
 slots:
@@ -3991,3 +4018,31 @@ enums:
     inherits:
       - EducationalAttainmentObservationTypeEnum
       - SmokingStatusObservationTypeEnum
+
+  RelativeTimingEnum:
+    description: A constrained set of enumerative values describing the relative timing of an activity.
+    permissible_values:
+      AFTER:
+        description: Occurring later than
+      BEFORE:
+        description: Occurring prior to
+      CONCURRENT_WITH:
+        description: Occurring simultaneous to
+
+
+
+  ActivityTypeEnum:
+    description: A constrained set of enumerative values describing types of activities.
+    permissible_values:
+      FASTING:
+        description: Abstaining from intake of food or liquid
+      BRONCHODILATOR_MEDICATION_USE:
+        description: The act of taking one or more medication in the class of "bronchodilators"
+      DIABETES_MEDICATION_USE:
+        description: The act of taking one or more medication used in control of diabetes
+      ANTIHYPERLIPIDEMICS_MEDICATION_USE:
+        description: The act of taking one or more medication in the class of "antihyperlipidemics"
+      PHYSICAL_ACTIVITY:
+        description: The act of engaging in aerobic movement (e.g., brisk walking, running)
+      MEDICAL_PROCEDURE:
+        description: A therapeutic or diagnostic procedure undertaken in the context of healthcare or research
