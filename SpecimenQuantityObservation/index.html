@@ -271,6 +271,15 @@
 
       SpecimenQuantityObservation : category
 
+      SpecimenQuantityObservation : context
+
+
+
+
+    SpecimenQuantityObservation --&gt; "*" Context : context
+    click Context href "../Context"
+
+
       SpecimenQuantityObservation : focus
 
 
@@ -417,6 +426,12 @@
 <td><a href="../value_enum/">value_enum</a></td>
 <td>0..1 <br/> <a href="../BaseEnum/">BaseEnum</a></td>
 <td>A slot to hold an enumerated value for an Observation</td>
+<td><a href="../Observation/">Observation</a></td>
+</tr>
+<tr>
+<td><a href="../context/">context</a></td>
+<td>* <br/> <a href="../Context/">Context</a></td>
+<td>The context within which an observation was made</td>
 <td><a href="../Observation/">Observation</a></td>
 </tr>
 <tr>
@@ -696,6 +711,18 @@ attributes:
     range: BaseEnum
     required: false
     multivalued: false
+  context:
+    name: context
+    description: The context within which an observation was made.
+    from_schema: https://w3id.org/bdchm
+    rank: 1000
+    alias: context
+    owner: SpecimenQuantityObservation
+    domain_of:
+    - Observation
+    range: Context
+    required: false
+    multivalued: true
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The

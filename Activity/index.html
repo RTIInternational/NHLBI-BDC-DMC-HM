@@ -5,10 +5,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/DimensionalObservation/" rel="canonical"/>
+<link href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/Activity/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.6.1" name="generator"/>
-<title>Class: DimensionalObservation - BioData Catalyst Harmonized Model</title>
+<title>Class: Activity - BioData Catalyst Harmonized Model</title>
 <link href="../assets/stylesheets/main.a40c8224.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
@@ -20,7 +20,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#class-dimensionalobservation">
+<a class="md-skip" href="#class-activity">
           Skip to content
         </a>
 </div>
@@ -44,7 +44,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Class: DimensionalObservation
+              Class: Activity
             
           </span>
 </div>
@@ -177,13 +177,6 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#comments">
-<span class="md-ellipsis">
-      Comments
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#identifier-and-mapping-information">
 <span class="md-ellipsis">
       Identifier and Mapping Information
@@ -240,108 +233,41 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="class-dimensionalobservation">Class: DimensionalObservation</h1>
-<p><em>A structured object that describes a single data item about the physical dimensions of an entity (e.g. length width, area), as generated through a point-in-time observation or measurement.</em></p>
-<p>URI: <a href="https://w3id.org/bdchm/DimensionalObservation">bdchm:DimensionalObservation</a></p>
+<h1 id="class-activity">Class: Activity</h1>
+<p><em>An activity that provides context to an observation.</em></p>
+<p>URI: <a href="https://w3id.org/bdchm/Activity">bdchm:Activity</a></p>
 <div class="mermaid"> classDiagram
-    class DimensionalObservation
-    click DimensionalObservation href "../DimensionalObservation"
-      Observation &lt;|-- DimensionalObservation
-        click Observation href "../Observation"
+    class Activity
+    click Activity href "../Activity"
+      Entity &lt;|-- Activity
+        click Entity href "../Entity"
 
-      DimensionalObservation : age_at_observation
-
-      DimensionalObservation : associated_participant
+      Activity : activity_type
 
 
 
 
-    DimensionalObservation --&gt; "1" Participant : associated_participant
-    click Participant href "../Participant"
+    Activity --&gt; "0..1" ActivityTypeEnum : activity_type
+    click ActivityTypeEnum href "../ActivityTypeEnum"
 
 
-      DimensionalObservation : associated_visit
+      Activity : id
 
-
-
-
-    DimensionalObservation --&gt; "0..1" Visit : associated_visit
-    click Visit href "../Visit"
-
-
-      DimensionalObservation : category
-
-      DimensionalObservation : context
+      Activity : time_duration
 
 
 
 
-    DimensionalObservation --&gt; "*" Context : context
-    click Context href "../Context"
-
-
-      DimensionalObservation : focus
-
-
-
-
-    DimensionalObservation --&gt; "0..1" Entity : focus
-    click Entity href "../Entity"
-
-
-      DimensionalObservation : id
-
-      DimensionalObservation : method_type
-
-      DimensionalObservation : observation_type
-
-
-
-
-    DimensionalObservation --&gt; "1" BaseObservationTypeEnum : observation_type
-    click BaseObservationTypeEnum href "../BaseObservationTypeEnum"
-
-
-      DimensionalObservation : performed_by
-
-
-
-
-    DimensionalObservation --&gt; "0..1" Organization : performed_by
-    click Organization href "../Organization"
-
-
-      DimensionalObservation : value_boolean
-
-      DimensionalObservation : value_enum
-
-
-
-
-    DimensionalObservation --&gt; "0..1" BaseEnum : value_enum
-    click BaseEnum href "../BaseEnum"
-
-
-      DimensionalObservation : value_quantity
-
-
-
-
-    DimensionalObservation --&gt; "0..1" Quantity : value_quantity
+    Activity --&gt; "0..1" Quantity : time_duration
     click Quantity href "../Quantity"
 
-
-      DimensionalObservation : value_string
 
 
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
 <li><a href="../Entity/">Entity</a><ul>
-<li><a href="../Observation/">Observation</a><ul>
-<li><strong>DimensionalObservation</strong></li>
-</ul>
-</li>
+<li><strong>Activity</strong></li>
 </ul>
 </li>
 </ul>
@@ -357,82 +283,16 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../associated_visit/">associated_visit</a></td>
-<td>0..1 <br/> <a href="../Visit/">Visit</a></td>
-<td>A reference to the Visit that is associated with this record</td>
-<td><a href="../Observation/">Observation</a></td>
+<td><a href="../activity_type/">activity_type</a></td>
+<td>0..1 <br/> <a href="../ActivityTypeEnum/">ActivityTypeEnum</a></td>
+<td>The type of activity being recorded (e</td>
+<td>direct</td>
 </tr>
 <tr>
-<td><a href="../associated_participant/">associated_participant</a></td>
-<td>1 <br/> <a href="../Participant/">Participant</a></td>
-<td>A reference to the Participant that is associated with this record</td>
-<td><a href="../Observation/">Observation</a></td>
-</tr>
-<tr>
-<td><a href="../age_at_observation/">age_at_observation</a></td>
-<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
-<td>The Participant's age (expressed in days) when the Observation was made</td>
-<td><a href="../Observation/">Observation</a></td>
-</tr>
-<tr>
-<td><a href="../category/">category</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>The general category of observation described</td>
-<td><a href="../Observation/">Observation</a></td>
-</tr>
-<tr>
-<td><a href="../observation_type/">observation_type</a></td>
-<td>1 <br/> <a href="../BaseObservationTypeEnum/">BaseObservationTypeEnum</a></td>
-<td>The type of Observation being represented (e</td>
-<td><a href="../Observation/">Observation</a></td>
-</tr>
-<tr>
-<td><a href="../method_type/">method_type</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>A type of method used in generating the Observation result</td>
-<td><a href="../Observation/">Observation</a></td>
-</tr>
-<tr>
-<td><a href="../focus/">focus</a></td>
-<td>0..1 <br/> <a href="../Entity/">Entity</a></td>
-<td>The entity or entities directly observed/measured in generating an observatio...</td>
-<td><a href="../Observation/">Observation</a></td>
-</tr>
-<tr>
-<td><a href="../performed_by/">performed_by</a></td>
-<td>0..1 <br/> <a href="../Organization/">Organization</a></td>
-<td>The organization or group that performed the observation activity</td>
-<td><a href="../Observation/">Observation</a></td>
-</tr>
-<tr>
-<td><a href="../value_string/">value_string</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>A slot to hold a string value for an Observation</td>
-<td><a href="../Observation/">Observation</a></td>
-</tr>
-<tr>
-<td><a href="../value_boolean/">value_boolean</a></td>
-<td>0..1 <br/> <a href="../Boolean/">Boolean</a></td>
-<td>A slot to hold a boolean value for an Observation</td>
-<td><a href="../Observation/">Observation</a></td>
-</tr>
-<tr>
-<td><a href="../value_quantity/">value_quantity</a></td>
+<td><a href="../time_duration/">time_duration</a></td>
 <td>0..1 <br/> <a href="../Quantity/">Quantity</a></td>
-<td>A slot to hold a Quantity value for an Observation</td>
-<td><a href="../Observation/">Observation</a></td>
-</tr>
-<tr>
-<td><a href="../value_enum/">value_enum</a></td>
-<td>0..1 <br/> <a href="../BaseEnum/">BaseEnum</a></td>
-<td>A slot to hold an enumerated value for an Observation</td>
-<td><a href="../Observation/">Observation</a></td>
-</tr>
-<tr>
-<td><a href="../context/">context</a></td>
-<td>* <br/> <a href="../Context/">Context</a></td>
-<td>The context within which an observation was made</td>
-<td><a href="../Observation/">Observation</a></td>
+<td>The quantity of time over which the activity occurred (e</td>
+<td>direct</td>
 </tr>
 <tr>
 <td><a href="../id/">id</a></td>
@@ -454,17 +314,13 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../DimensionalObservationSet/">DimensionalObservationSet</a></td>
-<td><a href="../observations/">observations</a></td>
+<td><a href="../Context/">Context</a></td>
+<td><a href="../activity/">activity</a></td>
 <td>range</td>
-<td><a href="./">DimensionalObservation</a></td>
+<td><a href="./">Activity</a></td>
 </tr>
 </tbody>
 </table>
-<h2 id="comments">Comments</h2>
-<ul>
-<li>At the core of an Observation is a flexible key-value pair (or a structured collection of key-value pairs), where a "key" field defines the type of observation made, and the "value" field describes the value or outcome of the observation. The fact that the type of observation captured is defined in the data allow Observation to convey a broad range of observation data.</li>
-</ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
@@ -481,11 +337,11 @@
 <tbody>
 <tr>
 <td>self</td>
-<td>bdchm:DimensionalObservation</td>
+<td>bdchm:Activity</td>
 </tr>
 <tr>
 <td>native</td>
-<td>bdchm:DimensionalObservation</td>
+<td>bdchm:Activity</td>
 </tr>
 </tbody>
 </table>
@@ -493,238 +349,63 @@
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
 <h3 id="direct">Direct</h3>
 <details>
-<pre><code class="language-yaml">name: DimensionalObservation
-description: A structured object that describes a single data item about the physical
-  dimensions of an entity (e.g. length width, area), as generated through a point-in-time
-  observation or measurement.
-comments:
-- At the core of an Observation is a flexible key-value pair (or a structured collection
-  of key-value pairs), where a "key" field defines the type of observation made, and
-  the "value" field describes the value or outcome of the observation. The fact that
-  the type of observation captured is defined in the data allow Observation to convey
-  a broad range of observation data.
+<pre><code class="language-yaml">name: Activity
+description: An activity that provides context to an observation.
 from_schema: https://w3id.org/bdchm
-is_a: Observation
+is_a: Entity
+attributes:
+  activity_type:
+    name: activity_type
+    description: The type of activity being recorded (e.g. "fasting", "bronchodilator
+      use")
+    from_schema: https://w3id.org/bdchm
+    domain_of:
+    - SpecimenCreationActivity
+    - SpecimenProcessingActivity
+    - Activity
+    range: ActivityTypeEnum
+  time_duration:
+    name: time_duration
+    description: The quantity of time over which the activity occurred (e.g. "8 hours",
+      "1 week")
+    from_schema: https://w3id.org/bdchm
+    rank: 1000
+    domain_of:
+    - Activity
+    range: Quantity
 
 </code></pre>
 </details>
 <h3 id="induced">Induced</h3>
 <details>
-<pre><code class="language-yaml">name: DimensionalObservation
-description: A structured object that describes a single data item about the physical
-  dimensions of an entity (e.g. length width, area), as generated through a point-in-time
-  observation or measurement.
-comments:
-- At the core of an Observation is a flexible key-value pair (or a structured collection
-  of key-value pairs), where a "key" field defines the type of observation made, and
-  the "value" field describes the value or outcome of the observation. The fact that
-  the type of observation captured is defined in the data allow Observation to convey
-  a broad range of observation data.
+<pre><code class="language-yaml">name: Activity
+description: An activity that provides context to an observation.
 from_schema: https://w3id.org/bdchm
-is_a: Observation
+is_a: Entity
 attributes:
-  associated_visit:
-    name: associated_visit
-    description: A reference to the Visit that is associated with this record.
+  activity_type:
+    name: activity_type
+    description: The type of activity being recorded (e.g. "fasting", "bronchodilator
+      use")
     from_schema: https://w3id.org/bdchm
-    rank: 1000
-    alias: associated_visit
-    owner: DimensionalObservation
-    domain_of:
-    - Demography
-    - QuestionnaireResponse
-    - Condition
-    - Procedure
-    - ImagingStudy
-    - Exposure
-    - ObservationSet
-    - Observation
-    range: Visit
-    required: false
-  associated_participant:
-    name: associated_participant
-    description: A reference to the Participant that is associated with this record.
-    from_schema: https://w3id.org/bdchm
-    rank: 1000
-    alias: associated_participant
-    owner: DimensionalObservation
-    domain_of:
-    - Demography
-    - Visit
-    - Condition
-    - Procedure
-    - ImagingStudy
-    - Exposure
-    - File
-    - ObservationSet
-    - Observation
-    range: Participant
-    required: true
-  age_at_observation:
-    name: age_at_observation
-    description: The Participant's age (expressed in days) when the Observation was
-      made.
-    from_schema: https://w3id.org/bdchm
-    rank: 1000
-    alias: age_at_observation
-    owner: DimensionalObservation
-    domain_of:
-    - Observation
-    range: integer
-    required: false
-    unit:
-      ucum_code: d
-  category:
-    name: category
-    description: The general category of observation described
-    from_schema: https://w3id.org/bdchm
-    alias: category
-    owner: DimensionalObservation
-    domain_of:
-    - ObservationSet
-    - Observation
-    range: string
-    required: false
-    multivalued: false
-  observation_type:
-    name: observation_type
-    description: The type of Observation being represented (e.g. 'diastolic blood
-      pressure')
-    comments:
-    - This field holds the "key" in the core key-value pair comprised of the observation_type
-      field and the relevant value(s) field.
-    from_schema: https://w3id.org/bdchm
-    rank: 1000
-    alias: observation_type
-    owner: DimensionalObservation
-    domain_of:
-    - Observation
-    - MeasurementObservation
-    range: BaseObservationTypeEnum
-    required: true
-    multivalued: false
-  method_type:
-    name: method_type
-    description: A type of method used in generating the Observation result.
-    comments:
-    - This may be a type of observational, measurement, experimental, or computational
-      method specifying how to generate data (e.g. "manual counting", "bright field
-      microscopy",). Or a Guideline or SOP specifying how to interpret data and/or
-      encode the result of an  Observation (e.g. a Cancer Staging system such as that
-      defined by the AJCC, or variant interpretation guideline such as that provided
-      by the ACMG).
-    from_schema: https://w3id.org/bdchm
-    alias: method_type
-    owner: DimensionalObservation
-    domain_of:
-    - SpecimenProcessingActivity
-    - SpecimenStorageActivity
-    - ObservationSet
-    - Observation
-    range: string
-    required: false
-    multivalued: false
-  focus:
-    name: focus
-    description: The entity or entities directly observed/measured in generating an
-      observation result.
-    comments:
-    - The "focus", "subject", and "specimen" fields are useful when data creators
-      want an Observation object to stand on its own, so it can point back to the
-      entities it is about.  These fields are not needed when an Observation is embedded
-      in a Specimen or other entity, where focus, subject, and specimen can be determined
-      from context.
-    from_schema: https://w3id.org/bdchm
-    alias: focus
-    owner: DimensionalObservation
-    domain_of:
-    - Document
-    - ObservationSet
-    - Observation
-    range: Entity
-    required: false
-    multivalued: false
-  performed_by:
-    name: performed_by
-    description: The organization or group that performed the observation activity.
-    from_schema: https://w3id.org/bdchm
-    alias: performed_by
-    owner: DimensionalObservation
+    alias: activity_type
+    owner: Activity
     domain_of:
     - SpecimenCreationActivity
-    - ObservationSet
-    - Observation
-    range: Organization
-    required: false
-    multivalued: false
-  value_string:
-    name: value_string
-    description: A slot to hold a string value for an Observation.
-    comments:
-    - One and only one of the value(x) fields must be populated.
+    - SpecimenProcessingActivity
+    - Activity
+    range: ActivityTypeEnum
+  time_duration:
+    name: time_duration
+    description: The quantity of time over which the activity occurred (e.g. "8 hours",
+      "1 week")
     from_schema: https://w3id.org/bdchm
     rank: 1000
-    alias: value_string
-    owner: DimensionalObservation
+    alias: time_duration
+    owner: Activity
     domain_of:
-    - Observation
-    range: string
-    required: false
-    multivalued: false
-  value_boolean:
-    name: value_boolean
-    description: A slot to hold a boolean value for an Observation.
-    comments:
-    - One and only one of the value(x) fields must be populated.
-    from_schema: https://w3id.org/bdchm
-    rank: 1000
-    alias: value_boolean
-    owner: DimensionalObservation
-    domain_of:
-    - Observation
-    range: boolean
-    required: false
-    multivalued: false
-  value_quantity:
-    name: value_quantity
-    description: A slot to hold a Quantity value for an Observation.
-    comments:
-    - One and only one of the value(x) fields must be populated.
-    from_schema: https://w3id.org/bdchm
-    rank: 1000
-    alias: value_quantity
-    owner: DimensionalObservation
-    domain_of:
-    - Observation
+    - Activity
     range: Quantity
-    required: false
-    multivalued: false
-  value_enum:
-    name: value_enum
-    description: A slot to hold an enumerated value for an Observation.
-    comments:
-    - One and only one of the value(x) fields must be populated.
-    from_schema: https://w3id.org/bdchm
-    rank: 1000
-    alias: value_enum
-    owner: DimensionalObservation
-    domain_of:
-    - Observation
-    range: BaseEnum
-    required: false
-    multivalued: false
-  context:
-    name: context
-    description: The context within which an observation was made.
-    from_schema: https://w3id.org/bdchm
-    rank: 1000
-    alias: context
-    owner: DimensionalObservation
-    domain_of:
-    - Observation
-    range: Context
-    required: false
-    multivalued: true
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The
@@ -742,7 +423,7 @@ attributes:
     slot_uri: schema:identifier
     identifier: true
     alias: id
-    owner: DimensionalObservation
+    owner: Activity
     domain_of:
     - Entity
     range: uriorcurie

@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/quantity/">
+        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/RelativeTimingEnum/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>Slot: quantity - BioData Catalyst Harmonized Model</title>
+        <title>Enum: RelativeTimingEnum - BioData Catalyst Harmonized Model</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-quantity" class="md-skip">
+        <a href="#enum-relativetimingenum" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: quantity
+              Enum: RelativeTimingEnum
             
           </span>
         </div>
@@ -296,18 +296,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#applicable-classes" class="md-nav__link">
+  <a href="#permissible-values" class="md-nav__link">
     <span class="md-ellipsis">
-      Applicable Classes
+      Permissible Values
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
+  <a href="#slots" class="md-nav__link">
     <span class="md-ellipsis">
-      Properties
+      Slots
     </span>
   </a>
   
@@ -320,14 +320,20 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mappings" class="md-nav__link">
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
     <span class="md-ellipsis">
-      Mappings
+      Schema Source
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -359,71 +365,74 @@
   
 
 
-<h1 id="slot-quantity">Slot: quantity</h1>
-<p>URI: <a href="https://w3id.org/bdchm/quantity">bdchm:quantity</a></p>
-<!-- no inheritance hierarchy -->
-
-<h2 id="applicable-classes">Applicable Classes</h2>
+<h1 id="enum-relativetimingenum">Enum: RelativeTimingEnum</h1>
+<p><em>A constrained set of enumerative values describing the relative timing of an activity.</em></p>
+<p>URI: <a href="./">RelativeTimingEnum</a></p>
+<h2 id="permissible-values">Permissible Values</h2>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AFTER</td>
+<td>None</td>
+<td>Occurring later than</td>
+</tr>
+<tr>
+<td>BEFORE</td>
+<td>None</td>
+<td>Occurring prior to</td>
+</tr>
+<tr>
+<td>CONCURRENT_WITH</td>
+<td>None</td>
+<td>Occurring simultaneous to</td>
+</tr>
+</tbody>
+</table>
+<h2 id="slots">Slots</h2>
 <table>
 <thead>
 <tr>
 <th>Name</th>
 <th>Description</th>
-<th>Modifies Slot</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="../Procedure/">Procedure</a></td>
-<td>Procedure contains records of activities or processes ordered by, or carried ...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../DrugExposure/">DrugExposure</a></td>
-<td>DrugExposures are records of a Person suggesting exposure to a medication</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../DeviceExposure/">DeviceExposure</a></td>
-<td>DeviceExposures are records of a Person suggesting exposure to a foreign obje...</td>
-<td>no</td>
+<td><a href="../relative_timing/">relative_timing</a></td>
+<td>The timing of the observation relative to the observation (e</td>
 </tr>
 </tbody>
 </table>
-<h2 id="properties">Properties</h2>
-<ul>
-<li>Range: <a href="../String/">String</a></li>
-</ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>bdchm:quantity</td>
-</tr>
-<tr>
-<td>native</td>
-<td>bdchm:quantity</td>
-</tr>
-</tbody>
-</table>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: https://w3id.org/bdchm</li>
+</ul>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: quantity
-alias: quantity
-domain_of:
-- Procedure
-- DrugExposure
-- DeviceExposure
-range: string
+<pre><code class="language-yaml">name: RelativeTimingEnum
+description: A constrained set of enumerative values describing the relative timing
+  of an activity.
+from_schema: https://w3id.org/bdchm
+rank: 1000
+permissible_values:
+  AFTER:
+    text: AFTER
+    description: Occurring later than
+  BEFORE:
+    text: BEFORE
+    description: Occurring prior to
+  CONCURRENT_WITH:
+    text: CONCURRENT_WITH
+    description: Occurring simultaneous to
 
 </code></pre>
 

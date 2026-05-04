@@ -277,6 +277,15 @@
 
       Observation : category
 
+      Observation : context
+
+
+
+
+    Observation --&gt; "*" Context : context
+    click Context href "../Context"
+
+
       Observation : focus
 
 
@@ -427,6 +436,12 @@
 <td><a href="../value_enum/">value_enum</a></td>
 <td>0..1 <br/> <a href="../BaseEnum/">BaseEnum</a></td>
 <td>A slot to hold an enumerated value for an Observation</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../context/">context</a></td>
+<td>* <br/> <a href="../Context/">Context</a></td>
+<td>The context within which an observation was made</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -634,6 +649,16 @@ attributes:
     range: BaseEnum
     required: false
     multivalued: false
+  context:
+    name: context
+    description: The context within which an observation was made.
+    from_schema: https://w3id.org/bdchm
+    rank: 1000
+    domain_of:
+    - Observation
+    range: Context
+    required: false
+    multivalued: true
 
 </code></pre>
 </details>
@@ -806,6 +831,18 @@ attributes:
     range: BaseEnum
     required: false
     multivalued: false
+  context:
+    name: context
+    description: The context within which an observation was made.
+    from_schema: https://w3id.org/bdchm
+    rank: 1000
+    alias: context
+    owner: Observation
+    domain_of:
+    - Observation
+    range: Context
+    required: false
+    multivalued: true
   associated_visit:
     name: associated_visit
     description: A reference to the Visit that is associated with this record.
