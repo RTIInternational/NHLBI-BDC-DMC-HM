@@ -50,6 +50,8 @@ export type SdohObservationSetId = string;
 export type SdohObservationId = string;
 export type CauseOfDeathId = string;
 export type AssayId = string;
+export type ContextId = string;
+export type ActivityId = string;
 /**
 * A base constrained set of enumerative values that can be used as a placeholder in a class expected to be further constrained in a subclass.
 */
@@ -1737,6 +1739,36 @@ export enum BodyPositionEnum {
 export enum BaseObservationTypeEnum {
     
 };
+/**
+* A constrained set of enumerative values describing the relative timing of an activity.
+*/
+export enum RelativeTimingEnum {
+    
+    /** Occurring later than */
+    AFTER = "AFTER",
+    /** Occurring prior to */
+    BEFORE = "BEFORE",
+    /** Occurring simultaneous to */
+    CONCURRENT_WITH = "CONCURRENT_WITH",
+};
+/**
+* A constrained set of enumerative values describing types of activities.
+*/
+export enum ActivityTypeEnum {
+    
+    /** Abstaining from intake of food or liquid */
+    FASTING = "FASTING",
+    /** The act of taking one or more medication in the class of "bronchodilators" */
+    BRONCHODILATOR_MEDICATION_USE = "BRONCHODILATOR_MEDICATION_USE",
+    /** The act of taking one or more medication used in control of diabetes */
+    DIABETES_MEDICATION_USE = "DIABETES_MEDICATION_USE",
+    /** The act of taking one or more medication in the class of "antihyperlipidemics" */
+    ANTIHYPERLIPIDEMICS_MEDICATION_USE = "ANTIHYPERLIPIDEMICS_MEDICATION_USE",
+    /** The act of engaging in aerobic movement (e.g., brisk walking, running) */
+    PHYSICAL_ACTIVITY = "PHYSICAL_ACTIVITY",
+    /** A therapeutic or diagnostic procedure undertaken in the context of healthcare or research */
+    MEDICAL_PROCEDURE = "MEDICAL_PROCEDURE",
+};
 
 
 /**
@@ -2530,6 +2562,8 @@ export interface Observation extends Entity {
     value_quantity?: QuantityId,
     /** A slot to hold an enumerated value for an Observation. */
     value_enum?: string,
+    /** The context within which an observation was made. */
+    context?: ContextId[],
 }
 
 
@@ -2600,6 +2634,28 @@ export interface Assay extends Entity {
     lower_limit_of_detection?: QuantityId,
     /** The upper limit of detection for the assay, if applicable. */
     upper_limit_of_detection?: QuantityId,
+}
+
+
+/**
+ * The context within which an observation was made.
+ */
+export interface Context extends Entity {
+    /** The activity that provides context to the observation (e.g. "fasting", "bronchodilator use") */
+    activity?: ActivityId,
+    /** The timing of the observation relative to the observation (e.g., "before", "concurrent with") */
+    relative_timing?: string,
+}
+
+
+/**
+ * An activity that provides context to an observation.
+ */
+export interface Activity extends Entity {
+    /** The type of activity being recorded (e.g. "fasting", "bronchodilator use") */
+    activity_type?: string,
+    /** The quantity of time over which the activity occurred (e.g. "8 hours", "1 week") */
+    time_duration?: QuantityId,
 }
 
 
