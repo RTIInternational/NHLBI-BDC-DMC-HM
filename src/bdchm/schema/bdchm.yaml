@@ -3736,6 +3736,8 @@ enums:
     permissible_values:
       ALBUMIN_IN_BLOOD: 
         meaning: OBA:2050068 #Albumin in blood
+      ALPHA-1_ANTITRYPSIN_IN_SERUM:
+        meaning: OBA:2050075 #Alpha-1 antitrypsin in serum
       ALT_SGPT:   
         meaning: OBA:2050062 #ALT SGPT
       BASOPHILS_COUNT:  
@@ -3799,7 +3801,7 @@ enums:
       LDL:  
         meaning: OBA:VT0000181  #LDL
       LYMPHOCYTES_COUNT:   
-        meaning: OBA:VT0000217  #Lymphocytes count
+        meaning: OBA:VT0000717  #Lymphocytes count
       MCP1_IN_BLOOD: 
         meaning: OBA:2052436 #MCP1 in blood
       MEAN_ARTERIAL_PRESSURE: 
@@ -3830,6 +3832,8 @@ enums:
         meaning: OBA:VT0001586  #Red blood cell count
       SLEEP_HOURS:   
         meaning: OBA:2040171 #Sleep hours
+      SMOKING_STATUS: 
+        meaning: OMOP:4282779 #Smoking status
       SODIUM_IN_BLOOD:  
         meaning: OBA:VT0001776  #Sodium in blood
       SPO2: 
