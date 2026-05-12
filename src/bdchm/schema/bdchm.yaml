@@ -1423,6 +1423,11 @@ classes:
         multivalued: false
         range: UnitOfMeasurementEnum
         required: false
+      operator:
+        description: An operator to apply when interpreting the value of the quantity (e.g. ">", "<", ">=", "<=")
+        multivalued: false
+        range: QuantityOperatorEnum
+        required: false
 
   BodySite:
     is_a: Entity
@@ -1606,6 +1611,15 @@ classes:
       body_position:
         description: The position of the body that is the focus of this observation, if applicable.
         range: BodyPositionEnum
+        required: false
+      measured_by:
+        description: The type of personnel that performed the measurement activity (e.g., "physician", "nurse", "technician").
+        range: MeasuredByPersonnelTypeEnum
+        required: false
+      qualifier:
+        description: A qualifier that further refines or specifies the measurement method (e.g. to indicate the measurement was an average, sum, best, worst, first, last).
+        multivalued: false
+        range: MeasurementQualifierEnum
         required: false
 
   SdohObservationSet:
@@ -4033,7 +4047,17 @@ enums:
       CONCURRENT_WITH:
         description: Occurring simultaneous to
 
-
+  MeasuredByPersonnelTypeEnum:
+    description: A constrained set of enumerative values describing the type of personnel performing a measurement.
+    permissible_values:
+      PHYSICIAN:
+        description: A medical doctor (MD) or doctor of osteopathic medicine (DO) who is licensed to practice medicine and provide healthcare services.
+      NURSE:
+        description: A registered nurse (RN), licensed practical nurse (LPN), or other nursing professional who provides patient care and support under the supervision of a physician or independently within their scope of practice.
+      TECHNICIAN:
+        description: A healthcare worker trained to perform specific technical tasks, such as laboratory tests, imaging procedures, or medical equipment operation, but who does not have the full scope of practice of a physician or nurse.
+      OTHER_HEALTHCARE_PROFESSIONAL:
+        description: Any other type of healthcare professional involved in performing an activity, such as a physical therapist, occupational therapist, pharmacist, or social worker.
 
   ActivityTypeEnum:
     description: A constrained set of enumerative values describing types of activities.
@@ -4050,3 +4074,38 @@ enums:
         description: The act of engaging in aerobic movement (e.g., brisk walking, running)
       MEDICAL_PROCEDURE:
         description: A therapeutic or diagnostic procedure undertaken in the context of healthcare or research
+  
+  MeasurementQualifierEnum:
+    description: A constrained set of enumerative values describing qualifiers of a measurement.
+    permissible_values:
+      AVERAGE:
+        description: An average of measurements taken across a time period or under specific conditions
+      MINIMUM:
+        description: The minimum value among measurements taken across a time period or under specific conditions
+      MAXIMUM:
+        description: The maximum value among measurements taken across a time period or under specific conditions
+      SUM:
+        description: The sum of measurements taken across a time period or under specific conditions
+      FIRST_MEASUREMENT:
+        description: The first measurement taken in a series of measurements across a time period or under specific conditions
+      LAST_MEASUREMENT:
+        description: The last measurement taken in a series of measurements across a time period or under specific conditions
+
+  QuantityOperatorEnum:
+    description: A constrained set of enumerative values describing operators that can be applied to a quantity.
+    permissible_values:
+      LESS_THAN:
+        description: The quantity is less than a specified value
+        meaning: OMOP:4171756
+      LESS_THAN_OR_EQUAL_TO:
+        description: The quantity is less than or equal to a specified value
+        meaning: OMOP:4171754
+      EQUAL_TO:
+        description: The quantity is equal to a specified value
+        meaning: OMOP:4172703
+      GREATER_THAN_OR_EQUAL_TO:
+        description: The quantity is greater than or equal to a specified value
+        meaning: OMOP:4171755
+      GREATER_THAN:
+        description: The quantity is greater than a specified value
+        meaning: OMOP:4172704
