@@ -1839,6 +1839,7 @@
             "description": "Values describing the types of MeasurementObservations.",
             "enum": [
                 "ALBUMIN_IN_BLOOD",
+                "ALPHA-1_ANTITRYPSIN_IN_SERUM",
                 "ALT_SGPT",
                 "BASOPHILS_COUNT",
                 "BILIRUBIN_UNCONJUGATED_INDIRECT",
@@ -1886,6 +1887,7 @@
                 "QRS_INTERVAL",
                 "RED_BLOOD_CELL_COUNT",
                 "SLEEP_HOURS",
+                "SMOKING_STATUS",
                 "SODIUM_IN_BLOOD",
                 "SPO2",
                 "TEMPERATURE",
