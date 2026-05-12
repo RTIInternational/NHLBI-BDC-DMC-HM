@@ -311,6 +311,15 @@
 
       MeasurementObservation : id
 
+      MeasurementObservation : measured_by
+
+
+
+
+    MeasurementObservation --&gt; "0..1" MeasuredByPersonnelTypeEnum : measured_by
+    click MeasuredByPersonnelTypeEnum href "../MeasuredByPersonnelTypeEnum"
+
+
       MeasurementObservation : method_type
 
       MeasurementObservation : observation_type
@@ -329,6 +338,15 @@
 
     MeasurementObservation --&gt; "0..1" Organization : performed_by
     click Organization href "../Organization"
+
+
+      MeasurementObservation : qualifier
+
+
+
+
+    MeasurementObservation --&gt; "0..1" MeasurementQualifierEnum : qualifier
+    click MeasurementQualifierEnum href "../MeasurementQualifierEnum"
 
 
       MeasurementObservation : range_high
@@ -428,6 +446,18 @@
 <td><a href="../body_position/">body_position</a></td>
 <td>0..1 <br/> <a href="../BodyPositionEnum/">BodyPositionEnum</a></td>
 <td>The position of the body that is the focus of this observation, if applicable</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../measured_by/">measured_by</a></td>
+<td>0..1 <br/> <a href="../MeasuredByPersonnelTypeEnum/">MeasuredByPersonnelTypeEnum</a></td>
+<td>The type of personnel that performed the measurement activity (e</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../qualifier/">qualifier</a></td>
+<td>0..1 <br/> <a href="../MeasurementQualifierEnum/">MeasurementQualifierEnum</a></td>
+<td>A qualifier that further refines or specifies the measurement method (e</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -627,6 +657,27 @@ attributes:
     - MeasurementObservation
     range: BodyPositionEnum
     required: false
+  measured_by:
+    name: measured_by
+    description: The type of personnel that performed the measurement activity (e.g.,
+      "physician", "nurse", "technician").
+    from_schema: https://w3id.org/bdchm
+    rank: 1000
+    domain_of:
+    - MeasurementObservation
+    range: MeasuredByPersonnelTypeEnum
+    required: false
+  qualifier:
+    name: qualifier
+    description: A qualifier that further refines or specifies the measurement method
+      (e.g. to indicate the measurement was an average, sum, best, worst, first, last).
+    from_schema: https://w3id.org/bdchm
+    domain_of:
+    - BodySite
+    - MeasurementObservation
+    range: MeasurementQualifierEnum
+    required: false
+    multivalued: false
 
 </code></pre>
 </details>
@@ -714,6 +765,31 @@ attributes:
     - MeasurementObservation
     range: BodyPositionEnum
     required: false
+  measured_by:
+    name: measured_by
+    description: The type of personnel that performed the measurement activity (e.g.,
+      "physician", "nurse", "technician").
+    from_schema: https://w3id.org/bdchm
+    rank: 1000
+    alias: measured_by
+    owner: MeasurementObservation
+    domain_of:
+    - MeasurementObservation
+    range: MeasuredByPersonnelTypeEnum
+    required: false
+  qualifier:
+    name: qualifier
+    description: A qualifier that further refines or specifies the measurement method
+      (e.g. to indicate the measurement was an average, sum, best, worst, first, last).
+    from_schema: https://w3id.org/bdchm
+    alias: qualifier
+    owner: MeasurementObservation
+    domain_of:
+    - BodySite
+    - MeasurementObservation
+    range: MeasurementQualifierEnum
+    required: false
+    multivalued: false
   associated_visit:
     name: associated_visit
     description: A reference to the Visit that is associated with this record.

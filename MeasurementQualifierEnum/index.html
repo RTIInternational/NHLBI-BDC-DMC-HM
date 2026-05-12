@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/age_at_exposure_start/">
+        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/MeasurementQualifierEnum/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>Slot: age_at_exposure_start - BioData Catalyst Harmonized Model</title>
+        <title>Enum: MeasurementQualifierEnum - BioData Catalyst Harmonized Model</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-age_at_exposure_start" class="md-skip">
+        <a href="#enum-measurementqualifierenum" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: age_at_exposure_start
+              Enum: MeasurementQualifierEnum
             
           </span>
         </div>
@@ -296,18 +296,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#applicable-classes" class="md-nav__link">
+  <a href="#permissible-values" class="md-nav__link">
     <span class="md-ellipsis">
-      Applicable Classes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      Properties
+      Permissible Values
     </span>
   </a>
   
@@ -334,15 +325,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mappings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Mappings
-    </span>
-  </a>
   
 </li>
       
@@ -374,81 +356,88 @@
   
 
 
-<h1 id="slot-age_at_exposure_start">Slot: age_at_exposure_start</h1>
-<p><em>The Participant's age (expressed in days) at the exposure start date.</em></p>
-<p>URI: <a href="https://w3id.org/bdchm/age_at_exposure_start">bdchm:age_at_exposure_start</a></p>
-<!-- no inheritance hierarchy -->
-
-<h2 id="applicable-classes">Applicable Classes</h2>
+<h1 id="enum-measurementqualifierenum">Enum: MeasurementQualifierEnum</h1>
+<p><em>A constrained set of enumerative values describing qualifiers of a measurement.</em></p>
+<p>URI: <a href="./">MeasurementQualifierEnum</a></p>
+<h2 id="permissible-values">Permissible Values</h2>
 <table>
 <thead>
 <tr>
-<th>Name</th>
+<th>Value</th>
+<th>Meaning</th>
 <th>Description</th>
-<th>Modifies Slot</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="../DeviceExposure/">DeviceExposure</a></td>
-<td>DeviceExposures are records of a Person suggesting exposure to a foreign obje...</td>
-<td>no</td>
+<td>AVERAGE</td>
+<td>None</td>
+<td>An average of measurements taken across a time period or under specific condi...</td>
 </tr>
 <tr>
-<td><a href="../Exposure/">Exposure</a></td>
-<td>Exposures are records of a Person suggesting exposure to a medication, device...</td>
-<td>no</td>
+<td>MINIMUM</td>
+<td>None</td>
+<td>The minimum value among measurements taken across a time period or under spec...</td>
 </tr>
 <tr>
-<td><a href="../DrugExposure/">DrugExposure</a></td>
-<td>DrugExposures are records of a Person suggesting exposure to a medication</td>
-<td>no</td>
+<td>MAXIMUM</td>
+<td>None</td>
+<td>The maximum value among measurements taken across a time period or under spec...</td>
+</tr>
+<tr>
+<td>SUM</td>
+<td>None</td>
+<td>The sum of measurements taken across a time period or under specific conditio...</td>
+</tr>
+<tr>
+<td>FIRST_MEASUREMENT</td>
+<td>None</td>
+<td>The first measurement taken in a series of measurements across a time period ...</td>
+</tr>
+<tr>
+<td>LAST_MEASUREMENT</td>
+<td>None</td>
+<td>The last measurement taken in a series of measurements across a time period o...</td>
 </tr>
 </tbody>
 </table>
-<h2 id="properties">Properties</h2>
-<ul>
-<li>Range: <a href="../Integer/">Integer</a></li>
-</ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
 <li>from schema: https://w3id.org/bdchm</li>
 </ul>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>bdchm:age_at_exposure_start</td>
-</tr>
-<tr>
-<td>native</td>
-<td>bdchm:age_at_exposure_start</td>
-</tr>
-</tbody>
-</table>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: age_at_exposure_start
-description: The Participant's age (expressed in days) at the exposure start date.
+<pre><code class="language-yaml">name: MeasurementQualifierEnum
+description: A constrained set of enumerative values describing qualifiers of a measurement.
 from_schema: https://w3id.org/bdchm
 rank: 1000
-alias: age_at_exposure_start
-owner: Exposure
-domain_of:
-- Exposure
-range: integer
-required: false
-unit:
-  ucum_code: d
+permissible_values:
+  AVERAGE:
+    text: AVERAGE
+    description: An average of measurements taken across a time period or under specific
+      conditions
+  MINIMUM:
+    text: MINIMUM
+    description: The minimum value among measurements taken across a time period or
+      under specific conditions
+  MAXIMUM:
+    text: MAXIMUM
+    description: The maximum value among measurements taken across a time period or
+      under specific conditions
+  SUM:
+    text: SUM
+    description: The sum of measurements taken across a time period or under specific
+      conditions
+  FIRST_MEASUREMENT:
+    text: FIRST_MEASUREMENT
+    description: The first measurement taken in a series of measurements across a
+      time period or under specific conditions
+  LAST_MEASUREMENT:
+    text: LAST_MEASUREMENT
+    description: The last measurement taken in a series of measurements across a time
+      period or under specific conditions
 
 </code></pre>
 

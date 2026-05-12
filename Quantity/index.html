@@ -251,6 +251,15 @@
 
       Quantity : id
 
+      Quantity : operator
+
+
+
+
+    Quantity --&gt; "0..1" QuantityOperatorEnum : operator
+    click QuantityOperatorEnum href "../QuantityOperatorEnum"
+
+
       Quantity : unit
 
 
@@ -315,6 +324,12 @@
 <td><a href="../unit/">unit</a></td>
 <td>0..1 <br/> <a href="../UnitOfMeasurementEnum/">UnitOfMeasurementEnum</a></td>
 <td>A coded or free text (in the</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../operator/">operator</a></td>
+<td>0..1 <br/> <a href="../QuantityOperatorEnum/">QuantityOperatorEnum</a></td>
+<td>An operator to apply when interpreting the value of the quantity (e</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -524,6 +539,17 @@ attributes:
     range: UnitOfMeasurementEnum
     required: false
     multivalued: false
+  operator:
+    name: operator
+    description: An operator to apply when interpreting the value of the quantity
+      (e.g. "&gt;", "&lt;", "&gt;=", "&lt;=")
+    from_schema: https://w3id.org/bdchm
+    rank: 1000
+    domain_of:
+    - Quantity
+    range: QuantityOperatorEnum
+    required: false
+    multivalued: false
 
 </code></pre>
 </details>
@@ -593,6 +619,19 @@ attributes:
     domain_of:
     - Quantity
     range: UnitOfMeasurementEnum
+    required: false
+    multivalued: false
+  operator:
+    name: operator
+    description: An operator to apply when interpreting the value of the quantity
+      (e.g. "&gt;", "&lt;", "&gt;=", "&lt;=")
+    from_schema: https://w3id.org/bdchm
+    rank: 1000
+    alias: operator
+    owner: Quantity
+    domain_of:
+    - Quantity
+    range: QuantityOperatorEnum
     required: false
     multivalued: false
   id:

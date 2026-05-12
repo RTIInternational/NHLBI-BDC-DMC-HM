@@ -221,6 +221,10 @@
          <lastmod>2026-05-12</lastmod>
     </url>
     <url>
+         <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/MeasuredByPersonnelTypeEnum/</loc>
+         <lastmod>2026-05-12</lastmod>
+    </url>
+    <url>
          <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/MeasurementObservation/</loc>
          <lastmod>2026-05-12</lastmod>
     </url>
@@ -230,6 +234,10 @@
     </url>
     <url>
          <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/MeasurementObservationTypeEnum/</loc>
+         <lastmod>2026-05-12</lastmod>
+    </url>
+    <url>
+         <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/MeasurementQualifierEnum/</loc>
          <lastmod>2026-05-12</lastmod>
     </url>
     <url>
@@ -282,6 +290,10 @@
     </url>
     <url>
          <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/Quantity/</loc>
+         <lastmod>2026-05-12</lastmod>
+    </url>
+    <url>
+         <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/QuantityOperatorEnum/</loc>
          <lastmod>2026-05-12</lastmod>
     </url>
     <url>
@@ -869,6 +881,10 @@
          <lastmod>2026-05-12</lastmod>
     </url>
     <url>
+         <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/measured_by/</loc>
+         <lastmod>2026-05-12</lastmod>
+    </url>
+    <url>
          <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/member_of_research_study/</loc>
          <lastmod>2026-05-12</lastmod>
     </url>
@@ -910,6 +926,10 @@
     </url>
     <url>
          <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/offset_from_index/</loc>
+         <lastmod>2026-05-12</lastmod>
+    </url>
+    <url>
+         <loc>https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/operator/</loc>
          <lastmod>2026-05-12</lastmod>
     </url>
     <url>
