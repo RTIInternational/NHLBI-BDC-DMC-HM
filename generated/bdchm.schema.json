@@ -1632,6 +1632,17 @@
             "title": "InstrumentEnum",
             "type": "string"
         },
+        "MeasuredByPersonnelTypeEnum": {
+            "description": "A constrained set of enumerative values describing the type of personnel performing a measurement.",
+            "enum": [
+                "PHYSICIAN",
+                "NURSE",
+                "TECHNICIAN",
+                "OTHER_HEALTHCARE_PROFESSIONAL"
+            ],
+            "title": "MeasuredByPersonnelTypeEnum",
+            "type": "string"
+        },
         "MeasurementObservation": {
             "additionalProperties": false,
             "description": "A data structure with key (observation_type) and value (value) attributes that represents a single observation, such as the hematocrit component of a complete blood count panel.",
@@ -1700,6 +1711,10 @@
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
                     "type": "string"
                 },
+                "measured_by": {
+                    "$ref": "#/$defs/MeasuredByPersonnelTypeEnum",
+                    "description": "The type of personnel that performed the measurement activity (e.g., \"physician\", \"nurse\", \"technician\")."
+                },
                 "method_type": {
                     "description": "A type of method used in generating the Observation result.",
                     "type": [
@@ -1717,6 +1732,10 @@
                         "string",
                         "null"
                     ]
+                },
+                "qualifier": {
+                    "$ref": "#/$defs/MeasurementQualifierEnum",
+                    "description": "A qualifier that further refines or specifies the measurement method (e.g. to indicate the measurement was an average, sum, best, worst, first, last)."
                 },
                 "range_high": {
                     "description": "If reference ranges for upper and lower limit of normal as provided (typically by a laboratory) these are stored in the range_high and range_low fields. This should be set to NULL if not provided.",
@@ -1952,6 +1971,19 @@
                 "BP_SYSTOLIC"
             ],
             "title": "MeasurementObservationTypeEnum",
+            "type": "string"
+        },
+        "MeasurementQualifierEnum": {
+            "description": "A constrained set of enumerative values describing qualifiers of a measurement.",
+            "enum": [
+                "AVERAGE",
+                "MINIMUM",
+                "MAXIMUM",
+                "SUM",
+                "FIRST_MEASUREMENT",
+                "LAST_MEASUREMENT"
+            ],
+            "title": "MeasurementQualifierEnum",
             "type": "string"
         },
         "MondoHumanDiseaseEnum": {
@@ -2502,6 +2534,10 @@
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
                     "type": "string"
                 },
+                "operator": {
+                    "$ref": "#/$defs/QuantityOperatorEnum",
+                    "description": "An operator to apply when interpreting the value of the quantity (e.g. \">\", \"<\", \">=\", \"<=\")"
+                },
                 "unit": {
                     "$ref": "#/$defs/UnitOfMeasurementEnum",
                     "description": "A coded or free text (in the .text field) representation of the unit."
@@ -2530,6 +2566,18 @@
             ],
             "title": "Quantity",
             "type": "object"
+        },
+        "QuantityOperatorEnum": {
+            "description": "A constrained set of enumerative values describing operators that can be applied to a quantity.",
+            "enum": [
+                "LESS_THAN",
+                "LESS_THAN_OR_EQUAL_TO",
+                "EQUAL_TO",
+                "GREATER_THAN_OR_EQUAL_TO",
+                "GREATER_THAN"
+            ],
+            "title": "QuantityOperatorEnum",
+            "type": "string"
         },
         "Questionnaire": {
             "additionalProperties": false,

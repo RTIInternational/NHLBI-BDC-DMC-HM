@@ -1754,6 +1754,20 @@ export enum RelativeTimingEnum {
     CONCURRENT_WITH = "CONCURRENT_WITH",
 };
 /**
+* A constrained set of enumerative values describing the type of personnel performing a measurement.
+*/
+export enum MeasuredByPersonnelTypeEnum {
+    
+    /** A medical doctor (MD) or doctor of osteopathic medicine (DO) who is licensed to practice medicine and provide healthcare services. */
+    PHYSICIAN = "PHYSICIAN",
+    /** A registered nurse (RN), licensed practical nurse (LPN), or other nursing professional who provides patient care and support under the supervision of a physician or independently within their scope of practice. */
+    NURSE = "NURSE",
+    /** A healthcare worker trained to perform specific technical tasks, such as laboratory tests, imaging procedures, or medical equipment operation, but who does not have the full scope of practice of a physician or nurse. */
+    TECHNICIAN = "TECHNICIAN",
+    /** Any other type of healthcare professional involved in performing an activity, such as a physical therapist, occupational therapist, pharmacist, or social worker. */
+    OTHER_HEALTHCARE_PROFESSIONAL = "OTHER_HEALTHCARE_PROFESSIONAL",
+};
+/**
 * A constrained set of enumerative values describing types of activities.
 */
 export enum ActivityTypeEnum {
@@ -1770,6 +1784,40 @@ export enum ActivityTypeEnum {
     PHYSICAL_ACTIVITY = "PHYSICAL_ACTIVITY",
     /** A therapeutic or diagnostic procedure undertaken in the context of healthcare or research */
     MEDICAL_PROCEDURE = "MEDICAL_PROCEDURE",
+};
+/**
+* A constrained set of enumerative values describing qualifiers of a measurement.
+*/
+export enum MeasurementQualifierEnum {
+    
+    /** An average of measurements taken across a time period or under specific conditions */
+    AVERAGE = "AVERAGE",
+    /** The minimum value among measurements taken across a time period or under specific conditions */
+    MINIMUM = "MINIMUM",
+    /** The maximum value among measurements taken across a time period or under specific conditions */
+    MAXIMUM = "MAXIMUM",
+    /** The sum of measurements taken across a time period or under specific conditions */
+    SUM = "SUM",
+    /** The first measurement taken in a series of measurements across a time period or under specific conditions */
+    FIRST_MEASUREMENT = "FIRST_MEASUREMENT",
+    /** The last measurement taken in a series of measurements across a time period or under specific conditions */
+    LAST_MEASUREMENT = "LAST_MEASUREMENT",
+};
+/**
+* A constrained set of enumerative values describing operators that can be applied to a quantity.
+*/
+export enum QuantityOperatorEnum {
+    
+    /** The quantity is less than a specified value */
+    LESS_THAN = "LESS_THAN",
+    /** The quantity is less than or equal to a specified value */
+    LESS_THAN_OR_EQUAL_TO = "LESS_THAN_OR_EQUAL_TO",
+    /** The quantity is equal to a specified value */
+    EQUAL_TO = "EQUAL_TO",
+    /** The quantity is greater than or equal to a specified value */
+    GREATER_THAN_OR_EQUAL_TO = "GREATER_THAN_OR_EQUAL_TO",
+    /** The quantity is greater than a specified value */
+    GREATER_THAN = "GREATER_THAN",
 };
 
 
@@ -2501,6 +2549,8 @@ export interface Quantity extends Entity {
     value_concept?: string,
     /** A coded or free text (in the .text field) representation of the unit. */
     unit?: string,
+    /** An operator to apply when interpreting the value of the quantity (e.g. ">", "<", ">=", "<=") */
+    operator?: string,
 }
 
 
@@ -2592,6 +2642,10 @@ export interface MeasurementObservation extends Observation {
     body_site?: BodySiteId,
     /** The position of the body that is the focus of this observation, if applicable. */
     body_position?: string,
+    /** The type of personnel that performed the measurement activity (e.g., "physician", "nurse", "technician"). */
+    measured_by?: string,
+    /** A qualifier that further refines or specifies the measurement method (e.g. to indicate the measurement was an average, sum, best, worst, first, last). */
+    qualifier?: string,
 }
 
 
