@@ -1,31 +1,40 @@
-[tool.poetry]
+[project]
 name = "bdchm"
-version = "0.1.0"
-description = "This is the project description."
-authors = ["Brian Furner <bfurner@uchicago.edu>"]
-license = "MIT"
+description = "BiomeData Catalog Harmonized Model (BDCHM) LinkML schema."
 readme = "README.md"
-include = ["README.md", "src/bdchm/schema", "project"]
+authors = [
+    {name = "Brian Furner", email = "bfurner@uchicago.edu"},
+]
+license = "MIT"
+requires-python = ">=3.10,<3.14"
+dynamic = ["version"]
 
-[tool.poetry.dependencies]
-python = "^3.9"
-linkml-runtime = "^1.1.24"
+dependencies = [
+    "linkml-runtime>=1.11.0",
+]
 
-[tool.poetry-dynamic-versioning]
-enable = true
+[dependency-groups]
+dev = [
+    "linkml>=1.11.0",
+    "schemasheets>=0.1.14",
+    "mkdocs>=1.4.2",
+    "mkdocs-material>=9.5.17",
+    "mkdocs-mermaid2-plugin>=1.1.1",
+]
+
+# See https://hatch.pypa.io/latest/config/build/#file-selection
+[build-system]
+requires = ["hatchling", "uv-dynamic-versioning"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/bdchm"]
+
+[tool.hatch.version]
+source = "uv-dynamic-versioning"
+
+# Ref.: https://github.com/ninoseki/uv-dynamic-versioning/
+[tool.uv-dynamic-versioning]
 vcs = "git"
 style = "pep440"
-
-[tool.poetry.group.dev.dependencies]
-linkml = "^1.3.5"
-schemasheets = "^0.1.14"
-mkdocs = "^1.4.2"
-mkdocs-material = "^9.5.17"
-mkdocs-mermaid2-plugin = "^1.1.1"
-
-[build-system]
-requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
-build-backend = "poetry_dynamic_versioning.backend"
-
-[tool.poetry.extras]
-docs = ["linkml", "mkdocs-material"]
+fallback-version = "0.0.0"
