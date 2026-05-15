@@ -39,7 +39,7 @@ classes:
     description: >-
       Any resource that has its own identifier
     slots:
-      id
+      - id
     class_uri: schema:Thing
 
   Person:
@@ -711,12 +711,14 @@ classes:
       days_supply:
         range: integer
         description: The number of days of supply of the medication as recorded in the original prescription or dispensing record. Days supply can differ from actual drug duration (i.e. prescribed days supply vs actual exposure).
-        comments: The field should be left empty if the source data does not contain a verbatim days_supply, and should not be calculated from other fields.  Negative values are not allowed. If the source has negative days supply the record should be dropped as it is unknown if the patient actually took the drug. Several actions are possible -- record is not trustworthy and we remove the record entirely; we trust the record and leave days_supply empty; or record needs to be combined with other record (e.g. reversal of prescription). High values (>365 days) should be investigated. If considered an error in the source data (e.g. typo), the value needs to be excluded to prevent creation of unrealistic long eras.
+        comments:
+          - The field should be left empty if the source data does not contain a verbatim days_supply, and should not be calculated from other fields.  Negative values are not allowed. If the source has negative days supply the record should be dropped as it is unknown if the patient actually took the drug. Several actions are possible -- record is not trustworthy and we remove the record entirely; we trust the record and leave days_supply empty; or record needs to be combined with other record (e.g. reversal of prescription). High values (>365 days) should be investigated. If considered an error in the source data (e.g. typo), the value needs to be excluded to prevent creation of unrealistic long eras.
         required: false
       sig:
         range: string
         description: This is the verbatim instruction for the drug as written by the provider.
-        comments: Put the written out instructions for the drug as it is verbatim in the source, if available.
+        comments:
+          - Put the written out instructions for the drug as it is verbatim in the source, if available.
         required: false
       route_concept:
         range: DrugRouteEnum
@@ -1510,7 +1512,8 @@ classes:
         required: false
       observation_type:
         description: The type of Observation being represented (e.g. 'diastolic blood pressure')
-        comments: This field holds the "key" in the core key-value pair comprised of the observation_type field and the relevant value(s) field.  
+        comments:
+          - This field holds the "key" in the core key-value pair comprised of the observation_type field and the relevant value(s) field.
         multivalued: false
         range: BaseObservationTypeEnum
         required: true
@@ -1597,7 +1600,8 @@ classes:
         required: false
       observation_type:
         description: The type of Observation being represented (e.g. 'diastolic blood pressure')
-        comments: This field holds the "key" in the core key-value pair comprised of the observation_type field and the relevant value(s) field.  
+        comments:
+          - This field holds the "key" in the core key-value pair comprised of the observation_type field and the relevant value(s) field.
         range: MeasurementObservationTypeEnum
         required: true
       associated_assay:
@@ -2407,9 +2411,9 @@ enums:
     inherits:
       - StatusEnum
     include:
-      permissible_values:
-        HISTORICAL:
-          description: was present in the patient historically.
+      - permissible_values:
+          HISTORICAL:
+            description: was present in the patient historically.
 
   ProcedureConceptEnum:
     description: Procedure codes from OMOP.
@@ -2428,7 +2432,8 @@ enums:
 
   DrugExposureProvenanceEnum:
     description: Source of drug exposure record
-    comments: Taken from OMOP Drug Type values; "select * from concept where vocabulary_id = 'Drug Type';" Do we need descriptions beyond the name?
+    comments:
+      - Taken from OMOP Drug Type values; "select * from concept where vocabulary_id = 'Drug Type';" Do we need descriptions beyond the name?
     permissible_values:
       RANDOMIZED_DRUG:
         description: Randomized Drug
@@ -2481,7 +2486,8 @@ enums:
 
   DrugRouteEnum:
     description: Routes of drug administration.
-    comments: OMOP contains 165 standard values; `select * from concept where domain_id = 'Route' and invalid_reason is null and standard_concept is not null;` from SNOMED. Do we need descriptions beyond the name?
+    comments:
+      - OMOP contains 165 standard values; `select * from concept where domain_id = 'Route' and invalid_reason is null and standard_concept is not null;` from SNOMED. Do we need descriptions beyond the name?
     permissible_values:
       ARTERIOVENOUS_FISTULA:
         description: Arteriovenous fistula
@@ -2991,7 +2997,8 @@ enums:
 
   DeviceExposureProvenanceEnum:
     description: Source of device exposure record
-    comments: Taken from OMOP Type Concept Domain
+    comments:
+      - Taken from OMOP Type Concept Domain
     permissible_values:
       CASE_REPORT_FORM:
         description: Case Report Form
