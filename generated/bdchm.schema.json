@@ -180,6 +180,12 @@
                 },
                 "product_type": {
                     "description": "The high level type of model system (e.g. cell line, cell culture, tissue culture, organoid)",
+                    "examples": [
+                        "cell line",
+                        "cell culture",
+                        "tissue culture",
+                        "organoid"
+                    ],
                     "type": [
                         "string",
                         "null"
@@ -213,6 +219,13 @@
                 },
                 "qualifier": {
                     "description": "A qualifier that further refines or specifies the location of the body site - e.g. to indicate laterality, upper v. lower, containment in some other anatomical structure (e.g. 'blood' contained in the 'hepatic vein')",
+                    "examples": [
+                        [
+                            "left",
+                            "right",
+                            "bilateral"
+                        ]
+                    ],
                     "items": {
                         "type": "string"
                     },
@@ -223,7 +236,12 @@
                 },
                 "site": {
                     "$ref": "#/$defs/AnatomicSiteEnum",
-                    "description": "A term describing any site in the body."
+                    "description": "A term describing any site in the body.",
+                    "examples": [
+                        "Adenoid",
+                        "Adipose",
+                        "Adrenal"
+                    ]
                 }
             },
             "required": [
@@ -1202,6 +1220,21 @@
             ],
             "title": "EducationalAttainmentObservationTypeEnum",
             "type": "string"
+        },
+        "Entity": {
+            "additionalProperties": false,
+            "description": "Any resource that has its own identifier",
+            "properties": {
+                "id": {
+                    "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "Entity",
+            "type": "object"
         },
         "EthnicityEnum": {
             "description": "A constrained set of enumerative values containing the United States Office of Management and Budget (OMB) values for ethnicity.",
@@ -2316,10 +2349,7 @@
                 },
                 "id": {
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "identity": {
                     "description": "A 'business' identifier or accession number for the entity, typically as provided by an external system or authority, that are globally unique and persist across implementing systems. Also, since these identifiers are created outside the information system through a specific business process, the Identifier type has additional attributes to capture this additional metadata so the actual identifier values are qualified by the context that created those values. This additional context allows \"identifier\" instances to be transmitted as business data across systems while still being able to trace them back to the system of origin.",
@@ -2786,6 +2816,37 @@
                 "id"
             ],
             "title": "QuestionnaireResponseItem",
+            "type": "object"
+        },
+        "QuestionnaireResponseValue": {
+            "additionalProperties": false,
+            "description": "Single-valued answer to the question. (FHIR)",
+            "properties": {
+                "id": {
+                    "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "type": {
+                    "enum": [
+                        "QuestionnaireResponseValue"
+                    ],
+                    "type": "string"
+                },
+                "value": {
+                    "description": "A general slot to hold a value.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "value",
+                "type",
+                "name",
+                "id"
+            ],
+            "title": "QuestionnaireResponseValue",
             "type": "object"
         },
         "QuestionnaireResponseValueBoolean": {
@@ -3553,10 +3614,30 @@
             "properties": {
                 "analyte_type": {
                     "$ref": "#/$defs/AnalyteTypeEnum",
-                    "description": "For specimens of type 'analyte' (or an 'aliquot' derived from an analyte), this is the category of chemcial the analyte of interest represents (e.g. DNA, RNA)"
+                    "description": "For specimens of type 'analyte' (or an 'aliquot' derived from an analyte), this is the category of chemcial the analyte of interest represents (e.g. DNA, RNA)",
+                    "examples": [
+                        "DNA",
+                        "FFPE DNA",
+                        "GenomePlex (Rubicon) Amplified DNA",
+                        "Repli-G (Qiagen) DNA",
+                        "RNA",
+                        "FFPE RNA"
+                    ]
                 },
                 "cellular_composition_type": {
                     "description": "A term describing the type of cell or cellular material comprising a specimen.",
+                    "examples": [
+                        "2D Classical Conditionally Reprogrammed Cells",
+                        "Adherent Cell Line",
+                        "Bone Marrow Components",
+                        "Buccal Cells",
+                        "Buffy Coat",
+                        "Derived Cell Line",
+                        "Granulocytes",
+                        "Pleural Effusion",
+                        "Human Original Cells",
+                        "Liquid Suspension Cell Line"
+                    ],
                     "type": [
                         "string",
                         "null"
@@ -3666,11 +3747,25 @@
                 },
                 "section_location": {
                     "$ref": "#/$defs/SectionLocationEnum",
-                    "description": "The location in a parent specimen from which a section/portion was excised (e.g. top, middle, bottom)"
+                    "description": "The location in a parent specimen from which a section/portion was excised (e.g. top, middle, bottom)",
+                    "examples": [
+                        "Top",
+                        "Bottom",
+                        "Unknown"
+                    ]
                 },
                 "source_material_type": {
                     "$ref": "#/$defs/SourceMaterialTypeEnum",
-                    "description": "The general kind of material from which the specimen was derived."
+                    "description": "The general kind of material from which the specimen was derived.",
+                    "examples": [
+                        "Tissue",
+                        "Blood",
+                        "Tumor Aspirate",
+                        "Cell Line",
+                        "Expanded Next Generation Cancer Model",
+                        "Pleural Effusion",
+                        "Xenograft Tissue"
+                    ]
                 },
                 "source_participant": {
                     "description": "A specific Subject from which the specimen was directly or indirectly derived.",
@@ -3681,7 +3776,14 @@
                 },
                 "specimen_type": {
                     "$ref": "#/$defs/SpecimenTypeEnum",
-                    "description": "The high-level type of the specimen, based on its derivation provenance (i.e. how far removed it is from the original sample extracted from a source)."
+                    "description": "The high-level type of the specimen, based on its derivation provenance (i.e. how far removed it is from the original sample extracted from a source).",
+                    "examples": [
+                        "Fresh Specimen",
+                        "Portion",
+                        "Aliquot",
+                        "Analyte",
+                        "Slide"
+                    ]
                 },
                 "storage_activity": {
                     "description": "An activity that results in the storage or maintenance of a specimen in a particular location, container, or state.",
@@ -3825,6 +3927,14 @@
             "properties": {
                 "additive": {
                     "description": "A material substance added to the container (typically to support the primary contained object - e.g. culture media to support cell growth)",
+                    "examples": [
+                        [
+                            "DMEM",
+                            "DMEM+Serum",
+                            "RPMI",
+                            "RPMI+Serum"
+                        ]
+                    ],
                     "items": {
                         "type": "string"
                     },
@@ -3842,6 +3952,12 @@
                 },
                 "container_type": {
                     "description": "The kind of the container.",
+                    "examples": [
+                        "Capillary blood collection tube",
+                        "Sputum specimen container",
+                        "Cell culture flask",
+                        "Glass slide"
+                    ],
                     "type": [
                         "string",
                         "null"
@@ -3871,7 +3987,11 @@
             "properties": {
                 "activity_type": {
                     "$ref": "#/$defs/SpecimenCreationActivityTypeEnum",
-                    "description": "The high-level type of creation activity."
+                    "description": "The high-level type of creation activity.",
+                    "examples": [
+                        "Collection from Source",
+                        "Derivation from Specimen"
+                    ]
                 },
                 "additive": {
                     "description": "A type of material or reagent used applied as input when creating a specimen.",
@@ -3885,10 +4005,21 @@
                 },
                 "collection_method_type": {
                     "$ref": "#/$defs/SpecimenCollectionMethodType",
-                    "description": "The type of method applied in collecting a sample from its original source."
+                    "description": "The type of method applied in collecting a sample from its original source.",
+                    "examples": [
+                        "Anterior Resection of Rectum",
+                        "Ascites Drainage",
+                        "Excisional Biopsy",
+                        "Specimen Pooling"
+                    ]
                 },
                 "collection_site": {
                     "description": "The anatomic site from which a specimen was collected.",
+                    "examples": [
+                        "Abdomen",
+                        "Abdominal Wall",
+                        "Acetabulum"
+                    ],
                     "type": [
                         "string",
                         "null"
@@ -3910,6 +4041,16 @@
                 },
                 "derivation_method_type": {
                     "description": "The type of method applied to derive a new specimen from an existing one.",
+                    "examples": [
+                        "Vibratome",
+                        "Cryosectioning",
+                        "Tissuemolds",
+                        "Slidingmicrotome",
+                        "Sectioning",
+                        "Other",
+                        "Unknown",
+                        "NotReported"
+                    ],
                     "type": [
                         "string",
                         "null"
@@ -3962,10 +4103,21 @@
             "properties": {
                 "activity_type": {
                     "$ref": "#/$defs/SpecimenProcessingActivityTypeEnum",
-                    "description": "The high-level type of processing activity"
+                    "description": "The high-level type of processing activity",
+                    "examples": [
+                        "Fixation",
+                        "Freezing",
+                        "Mounting",
+                        "Preservation"
+                    ]
                 },
                 "additive": {
                     "description": "A type of material or reagent used as input when processing the specimen",
+                    "examples": [
+                        [
+                            "Formalin"
+                        ]
+                    ],
                     "items": {
                         "$ref": "#/$defs/Substance"
                     },
@@ -4004,6 +4156,15 @@
                 },
                 "method_type": {
                     "description": "A specific type of method or procedure performed to process the specimen",
+                    "examples": [
+                        "Snap Freezing",
+                        "Cryopreservation in liquid nitrogen (dead tissue)",
+                        "Cryopreservation in dry ice (dead tissue)",
+                        "Formalin fixed paraffin embedded (FFPE)",
+                        "Formalin fixed-unbuffered",
+                        "Formalin fixed-buffered",
+                        "OCT"
+                    ],
                     "type": [
                         "string",
                         "null"
@@ -4300,6 +4461,17 @@
                 },
                 "method_type": {
                     "description": "A specific type of method or procedure performed to store the specimen",
+                    "examples": [
+                        "ambient temperature",
+                        "cut slide",
+                        "fresh",
+                        "frozen at -70C",
+                        "frozen at -150C",
+                        "frozen in liquid nitrogen",
+                        "frozen in vapor phase",
+                        "paraffin block",
+                        "RNAlater at 4C"
+                    ],
                     "type": [
                         "string",
                         "null"
@@ -4397,6 +4569,14 @@
                 },
                 "role": {
                     "description": "A role played by the substance in a particular application (e.g. the role of a lysis buffer when applied in a specimen creation activity, or the role of fixative when applied in specimen processing)",
+                    "examples": [
+                        [
+                            "lysis buffer",
+                            "fixative",
+                            "mounting medium",
+                            "collection media"
+                        ]
+                    ],
                     "items": {
                         "type": "string"
                     },
@@ -4414,6 +4594,11 @@
                 },
                 "substance_type": {
                     "description": "The specific type of the substance - at as granular a level as possible. May be a specific chemical compound, or the name of a formulation/preparation made up of many compounds.",
+                    "examples": [
+                        "toluene",
+                        "formalin",
+                        "DMEM"
+                    ],
                     "type": [
                         "string",
                         "null"
@@ -4685,7 +4870,7 @@
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "additionalProperties": true,
     "description": "A holder for ResearchStudy objects",
-    "metamodel_version": "1.7.0",
+    "metamodel_version": "1.11.0",
     "properties": {
         "entries": {
             "additionalProperties": {
@@ -4706,3 +4891,4 @@
     "type": "object",
     "version": null
 }
+
