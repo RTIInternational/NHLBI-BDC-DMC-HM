@@ -20,7 +20,40 @@ dev = [
     "mkdocs>=1.4.2",
     "mkdocs-material>=9.5.17",
     "mkdocs-mermaid2-plugin>=1.1.1",
+    "pytest>=8",
+    "pyyaml>=6",
+    "ruff>=0.11",
+    "pre-commit>=4",
 ]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+# Scoped to first-party test/tooling code. The pre-existing resources/
+# tree and generated artifacts are intentionally out of scope.
+extend-exclude = [
+    "docs/",
+    "project/",
+    "generated/",
+    "generate-diagrams/",
+    "resources/",
+    "src/",
+]
+force-exclude = true
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle errors
+    "F",  # Pyflakes
+    "I",  # isort
+    "UP", # pyupgrade
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["bdchm"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
 
 # See https://hatch.pypa.io/latest/config/build/#file-selection
 [build-system]

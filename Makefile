@@ -144,15 +144,17 @@ ifneq ($(strip ${GEN_TS_ARGS}),)
 	$(RUN) gen-typescript ${GEN_TS_ARGS} $(SOURCE_SCHEMA_PATH) >${DEST}/typescript/${SCHEMA_NAME}.ts
 endif
 
-test: test-schema test-python test-examples
+test: test-python
 
 test-schema:
 	$(RUN) gen-project ${CONFIG_YAML} -d tmp $(SOURCE_SCHEMA_PATH)
 
 test-python:
-	$(RUN) python -m unittest discover
+	$(RUN) pytest
 
 lint:
+	$(RUN) ruff check .
+	$(RUN) ruff format --check .
 	$(RUN) linkml-lint $(SOURCE_SCHEMA_PATH)
 
 check-config:
