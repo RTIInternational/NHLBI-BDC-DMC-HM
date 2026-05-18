@@ -153,6 +153,8 @@ test-python:
 	$(RUN) pytest
 
 lint:
+	$(RUN) ruff check .
+	$(RUN) ruff format --check .
 	$(RUN) linkml-lint $(SOURCE_SCHEMA_PATH)
 
 check-config:
