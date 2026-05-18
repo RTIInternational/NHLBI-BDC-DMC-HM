@@ -56,7 +56,7 @@ jobs:
           title: "Auto-update generated JSON schema"
           body: |
             Automated changes from the documentation build workflow.
-            
+
             - Updated `generated/bdchm.schema.json`
           labels: |
             automated
