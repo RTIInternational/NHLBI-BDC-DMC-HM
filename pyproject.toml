@@ -20,7 +20,12 @@ dev = [
     "mkdocs>=1.4.2",
     "mkdocs-material>=9.5.17",
     "mkdocs-mermaid2-plugin>=1.1.1",
+    "pytest>=8",
+    "pyyaml>=6",
 ]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
 
 # See https://hatch.pypa.io/latest/config/build/#file-selection
 [build-system]

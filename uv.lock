@@ -88,6 +88,8 @@ dev = [
     { name = "mkdocs" },
     { name = "mkdocs-material" },
     { name = "mkdocs-mermaid2-plugin" },
+    { name = "pytest" },
+    { name = "pyyaml" },
     { name = "schemasheets" },
 ]
 
@@ -100,6 +102,8 @@ dev = [
     { name = "mkdocs", specifier = ">=1.4.2" },
     { name = "mkdocs-material", specifier = ">=9.5.17" },
     { name = "mkdocs-mermaid2-plugin", specifier = ">=1.1.1" },
+    { name = "pytest", specifier = ">=8" },
+    { name = "pyyaml", specifier = ">=6" },
     { name = "schemasheets", specifier = ">=0.1.14" },
 ]
 
