@@ -15,15 +15,15 @@ prefixes:
   OMOP: https://athena.ohdsi.org/search-terms/terms/
   DUO: http://purl.obolibrary.org/obo/DUO_
   VBO: http://purl.obolibrary.org/obo/VBO_
-  ncbitaxon: http://purl.obolibrary.org/obo/NCBITaxon_
+  NCBITaxon: http://purl.obolibrary.org/obo/NCBITaxon_
   MONDO: http://purl.obolibrary.org/obo/MONDO_
   HP: http://purl.obolibrary.org/obo/HP_
   rxnorm: https://bioregistry.io/rxnorm:/
-  UOM: https://units-of-measurement.org/
+  UCUM: https://units-of-measurement.org/
   OBA: http://purl.obolibrary.org/obo/OBA_
-  ICD10CM: http://purl.bioontology.org/ontology/ICD10CM/
+  ICD10CM: https://icd.codes/icd10cm/
   MMO: http://purl.obolibrary.org/obo/MMO_
-  BAO: http://www.bioassayontology.org/bao#BAO_
+  BAO: http://identifiers.org/bao/
   UBERON: http://purl.obolibrary.org/obo/UBERON_
 
 default_prefix: bdchm
@@ -348,6 +348,7 @@ classes:
       A holder for ResearchStudy objects
     attributes:
       entries:
+        description: The ResearchStudy records held by this collection.
         range: ResearchStudy
         multivalued: true
         inlined: true
@@ -455,6 +456,7 @@ classes:
         description: Name for group or question text
         required: true
       response_value:
+        description: The value captured for this questionnaire response item.
         range: QuestionnaireResponseValue
         required: true
 
@@ -464,6 +466,7 @@ classes:
     abstract: true
     attributes:
       type:
+        description: Type designator identifying the specific QuestionnaireResponseValue subtype.
         range: string
         designates_type: true
         required: true
@@ -1825,7 +1828,7 @@ enums:
     reachable_from:
       source_ontology: obo:ncbitaxon
       source_nodes:
-        - ncbitaxon:131567 ## Cellular Organisms
+        - NCBITaxon:131567 ## Cellular Organisms
       include_self: false
       relationship_types:
         - rdfs:subClassOf
@@ -3258,6 +3261,7 @@ enums:
 
   AnalyteTypeEnum:
     name: AnalyteTypeEnum
+    description: The type of molecular analyte extracted or derived from a specimen.
     permissible_values:
       FFPE_DNA:
         description: Formalin-Fixed Paraffin-Embedded DNA
@@ -3288,6 +3292,7 @@ enums:
 
   SourceMaterialTypeEnum:
     name: SourceMaterialTypeEnum
+    description: The type of biological source material a specimen represents.
     permissible_values:
       ADDITIONAL_METASTATIC:
         description: A metastatic tumor sample collected in addition to a previously collected metastatic specimen.
@@ -3412,6 +3417,7 @@ enums:
 
   SpecimenCollectionMethodType:
     name: SpecimenCollectionMethodType
+    description: The method or procedure by which a specimen was collected.
     permissible_values:
       ORCHIECTOMY:
         description: Surgical removal of one or both testicles, typically performed to treat testicular cancer or as part of prostate cancer management.
