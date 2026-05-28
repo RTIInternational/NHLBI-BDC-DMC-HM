@@ -16,14 +16,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
         with:
           python-version: '3.12'
+
+      - name: Install dependencies
+        run: uv sync --locked
 
       - name: Run pre-commit checks
         uses: pre-commit/action@v3.0.1
         with:
           extra_args: --all-files
+
+      - name: Run linkml-lint
+        run: uv run linkml-lint src/bdchm/schema/bdchm.yaml
 
   test:
     needs: [quality-checks]
