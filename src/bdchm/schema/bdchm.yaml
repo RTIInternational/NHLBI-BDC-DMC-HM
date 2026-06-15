@@ -2458,8 +2458,10 @@ enums:
   DrugExposureProvenanceEnum:
     description: Source of drug exposure record
     comments:
-      - Taken from OMOP Drug Type values; "select * from concept where vocabulary_id = 'Drug Type';" Do we need descriptions beyond the name?
+      - Taken from OMOP Drug Type values; "select * from concept where vocabulary_id = 'Drug Type';"
     permissible_values:
+      AT_DISCHARGE:
+        description: Participant is discharged from an inpatient facility either with the medication or a prescription for the medication
       RANDOMIZED_DRUG:
         description: Randomized Drug
         meaning: OMOP:44777970                                                                                              
@@ -2483,7 +2485,9 @@ enums:
         meaning: OMOP:38000176                                          
       PRESCRIPTION_WRITTEN:
         description: Prescription written
-        meaning: OMOP:38000177                                                                                    
+        meaning: OMOP:38000177          
+      PRESCIPTION_LABEL:
+        description: For use when a Participant brings in their medications and an investigator makes a list of medications using the labels                                                                          
       MEDICATION_LIST_ENTRY:
         description: Medication list entry
         meaning: OMOP:38000178                                                                                  
