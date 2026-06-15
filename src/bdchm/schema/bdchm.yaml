@@ -4018,6 +4018,8 @@ enums:
         meaning: OMOP:45884846
       MASTERS_OR_DOCTORAL_DEGREE:
         meaning: OMOP:45880652
+      UNKNOWN:
+        description: Educational attainment is unknown or not reported.
 
   SmokingStatusObservationTypeEnum:
     description: Values describing the types of Smoking Status observed in an Observation.
