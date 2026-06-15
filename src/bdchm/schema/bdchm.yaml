@@ -2321,6 +2321,8 @@ enums:
         meaning: OMOP:4976921
       HEALTH_INFORMATION_EXCHANGE_RECORD:
         meaning: OMOP:4976922
+      HEALTH_RECORD:
+        description: The condition was recorded in a patient's health record.
       HEALTH_RISK_ASSESSMENT:
         meaning: OMOP:4976923
       HEALTHCARE_PROFESSIONAL_FILLED_SURVEY:
@@ -2349,12 +2351,16 @@ enums:
         meaning: OMOP:4976934
       PATIENT_FILLED_SURVEY:
         meaning: OMOP:4976935
+      PATIENT_MEDICATION_REPORT:
+        description: The condition was recorded based on a patient-provided medication report.
       PATIENT_OR_PAYER_PAID_RECORD:
         meaning: OMOP:4976936
       PATIENT_REPORTED_COST:
         meaning: OMOP:4976937
       PATIENT_SELF_REPORT:
         meaning: OMOP:4976938
+      PATIENT_SELF_REPORT_DR_CONFIRMED:
+        description: The condition was recorded based on a patient self-report that was confirmed by a doctor.
       PATIENT_SELF_TESTED:
         meaning: OMOP:5181830
       PAYER_SYSTEM_RECORD_PAID_PREMIUM:
@@ -2365,6 +2371,8 @@ enums:
         meaning: OMOP:4976941
       PHARMACY_CLAIM:
         meaning: OMOP:4976942
+      PHYSICIAN_ADJUDICATION:
+        description: The condition was recorded following adjudication by one or more physicians.
       POINT_OF_CARE/EXPRESS_LAB:
         meaning: OMOP:5042951
       PRE_QUALIFICATION_TIME_PERIOD:
@@ -2393,6 +2401,8 @@ enums:
         meaning: OMOP:4976954
       STANDARD_ALGORITHM_FROM_EHR:
         meaning: OMOP:4976955
+      STUDY_RECORD:
+        description: The condition was recorded in a study-related record.
       SURVEY:
         meaning: OMOP:4976956
       URGENT_LAB:
@@ -2401,6 +2411,8 @@ enums:
         meaning: OMOP:4976958  
       VISION_CLAIM:
         meaning: OMOP:4976959
+      WORKING_DIAGNOSIS:
+        description: The condition was recorded as a working diagnosis.
 
   StatusEnum:
     description: >-
