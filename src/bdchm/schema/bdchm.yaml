@@ -2256,6 +2256,8 @@ enums:
         meaning: OMOP:4976887
       DEATH_CERTIFICATE:
         meaning: OMOP:4976888
+      DEATH_RECORD:
+        description: The condition was recorded in a death record, a more general category that includes death certificates but also other types of records of death (e.g. autopsy record, medical examiner report
       DENTAL_CLAIM:
         meaning: OMOP:4976889
       EHR:
