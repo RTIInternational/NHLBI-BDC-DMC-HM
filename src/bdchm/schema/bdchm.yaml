@@ -269,11 +269,19 @@ classes:
         unit:
           ucum_code: d
         required: false
+      year_at_visit_start:
+        range: integer
+        description: The calendar year in which the Visit started.
+        required: false
       age_at_visit_end:
         range: integer
         description: The age of the Participant (in days) at the end of the Visit.
         unit:
           ucum_code: d
+        required: false
+      year_at_visit_end:
+        range: integer
+        description: The calendar year in which the Visit ended.
         required: false
       visit_provenance:
         range: VisitProvenanceEnum
