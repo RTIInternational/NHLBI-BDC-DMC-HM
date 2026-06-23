@@ -269,19 +269,16 @@ classes:
         unit:
           ucum_code: d
         required: false
-      year_at_visit_start:
-        range: integer
-        description: The calendar year in which the Visit started.
-        required: false
       age_at_visit_end:
         range: integer
         description: The age of the Participant (in days) at the end of the Visit.
         unit:
           ucum_code: d
         required: false
-      year_at_visit_end:
-        range: integer
-        description: The calendar year in which the Visit ended.
+      year_range:
+        range: TimePeriod
+        description: The time period demarcating the years between the start and end of the Visit (e.g., 2020-2021).
+        comments: The TimePoint defining the start of the year range should be set to 'January 1' of the year in question and the TimePoint defining the end of the year range should be set to 'December 31' of the year in question.
         required: false
       visit_provenance:
         range: VisitProvenanceEnum
