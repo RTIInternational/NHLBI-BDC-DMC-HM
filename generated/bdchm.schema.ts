@@ -95,6 +95,8 @@ export enum RaceEnum {
     ASIAN = "ASIAN",
     /** A person having origins in any of the Black racial groups of Africa. Terms such as "Haitian" or "Negro" can be used in addition to "Black or African American". (OMB) */
     BLACK_OR_AFRICAN_AMERICAN = "BLACK_OR_AFRICAN_AMERICAN",
+    /** A person having origins in any of the original peoples of the Middle East or North Africa, including, for example, Lebanese, Iranian, Egyptian, Syrian, Iraqi, and Israeli. (OMB) */
+    MIDDLE_EASTERN_OR_NORTH_AFRICAN = "MIDDLE_EASTERN_OR_NORTH_AFRICAN",
     /** Denotes a person having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands. The term covers particularly people who identify themselves as part-Hawaiian, Native Hawaiian, Guamanian or Chamorro, Carolinian, Samoan, Chuukese (Trukese), Fijian, Kosraean, Melanesian, Micronesian, Northern Mariana Islander, Palauan, Papua New Guinean, Pohnpeian, Polynesian, Solomon Islander, Tahitian, Tokelauan, Tongan, Yapese, or Pacific Islander, not specified. */
     NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER = "NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER",
     /** Not known, not observed, not recorded, or refused. */
@@ -400,6 +402,8 @@ export enum ProvenanceEnum {
     CLAIM_ENROLMENT_RECORD = "CLAIM_ENROLMENT_RECORD",
     COST_RECORD = "COST_RECORD",
     DEATH_CERTIFICATE = "DEATH_CERTIFICATE",
+    /** The condition was recorded in a death record, a more general category that includes death certificates but also other types of records of death (e.g. autopsy record, medical examiner report */
+    DEATH_RECORD = "DEATH_RECORD",
     DENTAL_CLAIM = "DENTAL_CLAIM",
     EHR = "EHR",
     EHR_ADMINISTRATION_RECORD = "EHR_ADMINISTRATION_RECORD",
@@ -434,6 +438,8 @@ export enum ProvenanceEnum {
     GEOGRAPHIC_ISOLATION_RECORD = "GEOGRAPHIC_ISOLATION_RECORD",
     GOVERNMENT_REPORT = "GOVERNMENT_REPORT",
     HEALTH_INFORMATION_EXCHANGE_RECORD = "HEALTH_INFORMATION_EXCHANGE_RECORD",
+    /** The condition was recorded in a patient's health record. */
+    HEALTH_RECORD = "HEALTH_RECORD",
     HEALTH_RISK_ASSESSMENT = "HEALTH_RISK_ASSESSMENT",
     HEALTHCARE_PROFESSIONAL_FILLED_SURVEY = "HEALTHCARE_PROFESSIONAL_FILLED_SURVEY",
     HOSPITAL_COST = "HOSPITAL_COST",
@@ -448,14 +454,20 @@ export enum ProvenanceEnum {
     OUTPATIENT_CLAIM_DETAIL = "OUTPATIENT_CLAIM_DETAIL",
     OUTPATIENT_CLAIM_HEADER = "OUTPATIENT_CLAIM_HEADER",
     PATIENT_FILLED_SURVEY = "PATIENT_FILLED_SURVEY",
+    /** The condition was recorded based on a patient-provided medication report. */
+    PATIENT_MEDICATION_REPORT = "PATIENT_MEDICATION_REPORT",
     PATIENT_OR_PAYER_PAID_RECORD = "PATIENT_OR_PAYER_PAID_RECORD",
     PATIENT_REPORTED_COST = "PATIENT_REPORTED_COST",
     PATIENT_SELF_REPORT = "PATIENT_SELF_REPORT",
+    /** The condition was recorded based on a patient self-report that was confirmed by a doctor. */
+    PATIENT_SELF_REPORT_DR_CONFIRMED = "PATIENT_SELF_REPORT_DR_CONFIRMED",
     PATIENT_SELF_TESTED = "PATIENT_SELF_TESTED",
     PAYER_SYSTEM_RECORD_PAID_PREMIUM = "PAYER_SYSTEM_RECORD_PAID_PREMIUM",
     PAYER_SYSTEM_RECORD_PRIMARY_PAYER = "PAYER_SYSTEM_RECORD_PRIMARY_PAYER",
     PAYER_SYSTEM_RECORD_SECONDARY_PAYER = "PAYER_SYSTEM_RECORD_SECONDARY_PAYER",
     PHARMACY_CLAIM = "PHARMACY_CLAIM",
+    /** The condition was recorded following adjudication by one or more physicians. */
+    PHYSICIAN_ADJUDICATION = "PHYSICIAN_ADJUDICATION",
     POINT_OF_CARESOLIDUSEXPRESS_LAB = "POINT_OF_CARE/EXPRESS_LAB",
     PRE_QUALIFICATION_TIME_PERIOD = "PRE_QUALIFICATION_TIME_PERIOD",
     PROFESSIONAL_CLAIM = "PROFESSIONAL_CLAIM",
@@ -470,10 +482,14 @@ export enum ProvenanceEnum {
     STANDARD_ALGORITHM = "STANDARD_ALGORITHM",
     STANDARD_ALGORITHM_FROM_CLAIMS = "STANDARD_ALGORITHM_FROM_CLAIMS",
     STANDARD_ALGORITHM_FROM_EHR = "STANDARD_ALGORITHM_FROM_EHR",
+    /** The condition was recorded in a study-related record. */
+    STUDY_RECORD = "STUDY_RECORD",
     SURVEY = "SURVEY",
     URGENT_LAB = "URGENT_LAB",
     US_SOCIAL_SECURITY_DEATH_MASTER_FILE = "US_SOCIAL_SECURITY_DEATH_MASTER_FILE",
     VISION_CLAIM = "VISION_CLAIM",
+    /** The condition was recorded as a working diagnosis. */
+    WORKING_DIAGNOSIS = "WORKING_DIAGNOSIS",
 };
 /**
 * A constrained set of enumerative values indicating whether something is present, absent, or its status is unknown.
@@ -510,6 +526,8 @@ export enum DrugExposureConceptEnum {
 */
 export enum DrugExposureProvenanceEnum {
     
+    /** Participant is discharged from an inpatient facility either with the medication or a prescription for the medication */
+    AT_DISCHARGE = "AT_DISCHARGE",
     /** Randomized Drug */
     RANDOMIZED_DRUG = "RANDOMIZED_DRUG",
     /** Patient Self-Reported Medication */
@@ -526,6 +544,8 @@ export enum DrugExposureProvenanceEnum {
     PRESCRIPTION_DISPENSED_THROUGH_MAIL_ORDER = "PRESCRIPTION_DISPENSED_THROUGH_MAIL_ORDER",
     /** Prescription written */
     PRESCRIPTION_WRITTEN = "PRESCRIPTION_WRITTEN",
+    /** For use when a Participant brings in their medications and an investigator makes a list of medications using the labels */
+    PRESCIPTION_LABEL = "PRESCIPTION_LABEL",
     /** Medication list entry */
     MEDICATION_LIST_ENTRY = "MEDICATION_LIST_ENTRY",
     /** Physician administered drug (identified as procedure) */
@@ -1694,6 +1714,8 @@ export enum EducationalAttainmentObservationTypeEnum {
     SOME_COLLEGE_OR_TECH_NO_DEGREE = "SOME_COLLEGE_OR_TECH_NO_DEGREE",
     COLLEGE_OR_TECH_WITH_DEGREE = "COLLEGE_OR_TECH_WITH_DEGREE",
     MASTERS_OR_DOCTORAL_DEGREE = "MASTERS_OR_DOCTORAL_DEGREE",
+    /** Educational attainment is unknown or not reported. */
+    UNKNOWN = "UNKNOWN",
 };
 /**
 * Values describing the types of Smoking Status observed in an Observation.
@@ -1967,6 +1989,8 @@ export interface Visit extends Entity {
     age_at_visit_start?: number,
     /** The age of the Participant (in days) at the end of the Visit. */
     age_at_visit_end?: number,
+    /** The time period demarcating the years between the start and end of the Visit (e.g., 2020-2021). */
+    year_range?: TimePeriodId,
     /** A value representing the provenance of the visit record, or where the record comes from. */
     visit_provenance: string,
 }

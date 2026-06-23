@@ -1016,6 +1016,7 @@
         "DrugExposureProvenanceEnum": {
             "description": "Source of drug exposure record",
             "enum": [
+                "AT_DISCHARGE",
                 "RANDOMIZED_DRUG",
                 "PATIENT_SELF_REPORTED_MEDICATION",
                 "NLP_DERIVED",
@@ -1024,6 +1025,7 @@
                 "DISPENSED_IN_OUTPATIENT_OFFICE",
                 "PRESCRIPTION_DISPENSED_THROUGH_MAIL_ORDER",
                 "PRESCRIPTION_WRITTEN",
+                "PRESCIPTION_LABEL",
                 "MEDICATION_LIST_ENTRY",
                 "PHYSICIAN_ADMINISTERED_DRUG_IDENTIFIED_AS_PROCEDURE",
                 "INPATIENT_ADMINISTRATION",
@@ -1216,7 +1218,8 @@
                 "HIGH_SCHOOL_GRADUATE_GED",
                 "SOME_COLLEGE_OR_TECH_NO_DEGREE",
                 "COLLEGE_OR_TECH_WITH_DEGREE",
-                "MASTERS_OR_DOCTORAL_DEGREE"
+                "MASTERS_OR_DOCTORAL_DEGREE",
+                "UNKNOWN"
             ],
             "title": "EducationalAttainmentObservationTypeEnum",
             "type": "string"
@@ -2478,6 +2481,7 @@
                 "CLAIM_ENROLMENT_RECORD",
                 "COST_RECORD",
                 "DEATH_CERTIFICATE",
+                "DEATH_RECORD",
                 "DENTAL_CLAIM",
                 "EHR",
                 "EHR_ADMINISTRATION_RECORD",
@@ -2512,6 +2516,7 @@
                 "GEOGRAPHIC_ISOLATION_RECORD",
                 "GOVERNMENT_REPORT",
                 "HEALTH_INFORMATION_EXCHANGE_RECORD",
+                "HEALTH_RECORD",
                 "HEALTH_RISK_ASSESSMENT",
                 "HEALTHCARE_PROFESSIONAL_FILLED_SURVEY",
                 "HOSPITAL_COST",
@@ -2526,14 +2531,17 @@
                 "OUTPATIENT_CLAIM_DETAIL",
                 "OUTPATIENT_CLAIM_HEADER",
                 "PATIENT_FILLED_SURVEY",
+                "PATIENT_MEDICATION_REPORT",
                 "PATIENT_OR_PAYER_PAID_RECORD",
                 "PATIENT_REPORTED_COST",
                 "PATIENT_SELF_REPORT",
+                "PATIENT_SELF_REPORT_DR_CONFIRMED",
                 "PATIENT_SELF_TESTED",
                 "PAYER_SYSTEM_RECORD_PAID_PREMIUM",
                 "PAYER_SYSTEM_RECORD_PRIMARY_PAYER",
                 "PAYER_SYSTEM_RECORD_SECONDARY_PAYER",
                 "PHARMACY_CLAIM",
+                "PHYSICIAN_ADJUDICATION",
                 "POINT_OF_CARE/EXPRESS_LAB",
                 "PRE_QUALIFICATION_TIME_PERIOD",
                 "PROFESSIONAL_CLAIM",
@@ -2548,10 +2556,12 @@
                 "STANDARD_ALGORITHM",
                 "STANDARD_ALGORITHM_FROM_CLAIMS",
                 "STANDARD_ALGORITHM_FROM_EHR",
+                "STUDY_RECORD",
                 "SURVEY",
                 "URGENT_LAB",
                 "US_SOCIAL_SECURITY_DEATH_MASTER_FILE",
-                "VISION_CLAIM"
+                "VISION_CLAIM",
+                "WORKING_DIAGNOSIS"
             ],
             "title": "ProvenanceEnum",
             "type": "string"
@@ -3010,6 +3020,7 @@
                 "AMERICAN_INDIAN_OR_ALASKA_NATIVE",
                 "ASIAN",
                 "BLACK_OR_AFRICAN_AMERICAN",
+                "MIDDLE_EASTERN_OR_NORTH_AFRICAN",
                 "NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER",
                 "UNKNOWN",
                 "WHITE",
@@ -4730,6 +4741,13 @@
                 "visit_provenance": {
                     "$ref": "#/$defs/VisitProvenanceEnum",
                     "description": "A value representing the provenance of the visit record, or where the record comes from."
+                },
+                "year_range": {
+                    "description": "The time period demarcating the years between the start and end of the Visit (e.g., 2020-2021).",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 }
             },
             "required": [
