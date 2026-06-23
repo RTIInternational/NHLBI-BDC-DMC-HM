@@ -275,6 +275,11 @@ classes:
         unit:
           ucum_code: d
         required: false
+      year_range:
+        range: TimePeriod
+        description: The time period demarcating the years between the start and end of the Visit (e.g., 2020-2021).
+        comments: The TimePoint defining the start of the year range should be set to 'January 1' of the year in question and the TimePoint defining the end of the year range should be set to 'December 31' of the year in question.
+        required: false
       visit_provenance:
         range: VisitProvenanceEnum
         description: A value representing the provenance of the visit record, or where the record comes from.
@@ -1792,6 +1797,9 @@ enums:
       BLACK_OR_AFRICAN_AMERICAN:
         description: 'A person having origins in any of the Black racial groups of Africa. Terms such as "Haitian" or "Negro" can be used in addition to "Black or African American". (OMB)'
         meaning: OMOP:8516
+      MIDDLE_EASTERN_OR_NORTH_AFRICAN:
+        description: 'A person having origins in any of the original peoples of the Middle East or North Africa, including, for example, Lebanese, Iranian, Egyptian, Syrian, Iraqi, and Israeli. (OMB)'
+        meaning: OMOP:38003615
       NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER:
         description: 'Denotes a person having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands. The term covers particularly people who identify themselves as part-Hawaiian, Native Hawaiian, Guamanian or Chamorro, Carolinian, Samoan, Chuukese (Trukese), Fijian, Kosraean, Melanesian, Micronesian, Northern Mariana Islander, Palauan, Papua New Guinean, Pohnpeian, Polynesian, Solomon Islander, Tahitian, Tokelauan, Tongan, Yapese, or Pacific Islander, not specified.'
         meaning: OMOP:8557
@@ -2245,6 +2253,8 @@ enums:
         meaning: OMOP:4976887
       DEATH_CERTIFICATE:
         meaning: OMOP:4976888
+      DEATH_RECORD:
+        description: The condition was recorded in a death record, a more general category that includes death certificates but also other types of records of death (e.g. autopsy record, medical examiner report
       DENTAL_CLAIM:
         meaning: OMOP:4976889
       EHR:
@@ -2313,6 +2323,8 @@ enums:
         meaning: OMOP:4976921
       HEALTH_INFORMATION_EXCHANGE_RECORD:
         meaning: OMOP:4976922
+      HEALTH_RECORD:
+        description: The condition was recorded in a patient's health record.
       HEALTH_RISK_ASSESSMENT:
         meaning: OMOP:4976923
       HEALTHCARE_PROFESSIONAL_FILLED_SURVEY:
@@ -2341,12 +2353,16 @@ enums:
         meaning: OMOP:4976934
       PATIENT_FILLED_SURVEY:
         meaning: OMOP:4976935
+      PATIENT_MEDICATION_REPORT:
+        description: The condition was recorded based on a patient-provided medication report.
       PATIENT_OR_PAYER_PAID_RECORD:
         meaning: OMOP:4976936
       PATIENT_REPORTED_COST:
         meaning: OMOP:4976937
       PATIENT_SELF_REPORT:
         meaning: OMOP:4976938
+      PATIENT_SELF_REPORT_DR_CONFIRMED:
+        description: The condition was recorded based on a patient self-report that was confirmed by a doctor.
       PATIENT_SELF_TESTED:
         meaning: OMOP:5181830
       PAYER_SYSTEM_RECORD_PAID_PREMIUM:
@@ -2357,6 +2373,8 @@ enums:
         meaning: OMOP:4976941
       PHARMACY_CLAIM:
         meaning: OMOP:4976942
+      PHYSICIAN_ADJUDICATION:
+        description: The condition was recorded following adjudication by one or more physicians.
       POINT_OF_CARE/EXPRESS_LAB:
         meaning: OMOP:5042951
       PRE_QUALIFICATION_TIME_PERIOD:
@@ -2385,6 +2403,8 @@ enums:
         meaning: OMOP:4976954
       STANDARD_ALGORITHM_FROM_EHR:
         meaning: OMOP:4976955
+      STUDY_RECORD:
+        description: The condition was recorded in a study-related record.
       SURVEY:
         meaning: OMOP:4976956
       URGENT_LAB:
@@ -2393,6 +2413,8 @@ enums:
         meaning: OMOP:4976958  
       VISION_CLAIM:
         meaning: OMOP:4976959
+      WORKING_DIAGNOSIS:
+        description: The condition was recorded as a working diagnosis.
 
   StatusEnum:
     description: >-
@@ -2433,8 +2455,10 @@ enums:
   DrugExposureProvenanceEnum:
     description: Source of drug exposure record
     comments:
-      - Taken from OMOP Drug Type values; "select * from concept where vocabulary_id = 'Drug Type';" Do we need descriptions beyond the name?
+      - Taken from OMOP Drug Type values; "select * from concept where vocabulary_id = 'Drug Type';"
     permissible_values:
+      AT_DISCHARGE:
+        description: Participant is discharged from an inpatient facility either with the medication or a prescription for the medication
       RANDOMIZED_DRUG:
         description: Randomized Drug
         meaning: OMOP:44777970                                                                                              
@@ -2458,7 +2482,9 @@ enums:
         meaning: OMOP:38000176                                          
       PRESCRIPTION_WRITTEN:
         description: Prescription written
-        meaning: OMOP:38000177                                                                                    
+        meaning: OMOP:38000177          
+      PRESCIPTION_LABEL:
+        description: For use when a Participant brings in their medications and an investigator makes a list of medications using the labels                                                                          
       MEDICATION_LIST_ENTRY:
         description: Medication list entry
         meaning: OMOP:38000178                                                                                  
@@ -3995,6 +4021,8 @@ enums:
         meaning: OMOP:45884846
       MASTERS_OR_DOCTORAL_DEGREE:
         meaning: OMOP:45880652
+      UNKNOWN:
+        description: Educational attainment is unknown or not reported.
 
   SmokingStatusObservationTypeEnum:
     description: Values describing the types of Smoking Status observed in an Observation.
