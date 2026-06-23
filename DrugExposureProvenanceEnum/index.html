@@ -424,6 +424,11 @@
 </thead>
 <tbody>
 <tr>
+<td>AT_DISCHARGE</td>
+<td>None</td>
+<td>Participant is discharged from an inpatient facility either with the medicati...</td>
+</tr>
+<tr>
 <td>RANDOMIZED_DRUG</td>
 <td>OMOP:44777970</td>
 <td>Randomized Drug</td>
@@ -462,6 +467,11 @@
 <td>PRESCRIPTION_WRITTEN</td>
 <td>OMOP:38000177</td>
 <td>Prescription written</td>
+</tr>
+<tr>
+<td>PRESCIPTION_LABEL</td>
+<td>None</td>
+<td>For use when a Participant brings in their medications and an investigator ma...</td>
 </tr>
 <tr>
 <td>MEDICATION_LIST_ENTRY</td>
@@ -522,7 +532,7 @@
 </table>
 <h2 id="comments">Comments</h2>
 <ul>
-<li>Taken from OMOP Drug Type values; "select * from concept where vocabulary_id = 'Drug Type';" Do we need descriptions beyond the name?</li>
+<li>Taken from OMOP Drug Type values; "select * from concept where vocabulary_id = 'Drug Type';"</li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
@@ -536,10 +546,14 @@
 description: Source of drug exposure record
 comments:
 - Taken from OMOP Drug Type values; &quot;select * from concept where vocabulary_id = 'Drug
-  Type';&quot; Do we need descriptions beyond the name?
+  Type';&quot;
 from_schema: https://w3id.org/bdchm
 rank: 1000
 permissible_values:
+  AT_DISCHARGE:
+    text: AT_DISCHARGE
+    description: Participant is discharged from an inpatient facility either with
+      the medication or a prescription for the medication
   RANDOMIZED_DRUG:
     text: RANDOMIZED_DRUG
     description: Randomized Drug
@@ -572,6 +586,10 @@ permissible_values:
     text: PRESCRIPTION_WRITTEN
     description: Prescription written
     meaning: OMOP:38000177
+  PRESCIPTION_LABEL:
+    text: PRESCIPTION_LABEL
+    description: For use when a Participant brings in their medications and an investigator
+      makes a list of medications using the labels
   MEDICATION_LIST_ENTRY:
     text: MEDICATION_LIST_ENTRY
     description: Medication list entry

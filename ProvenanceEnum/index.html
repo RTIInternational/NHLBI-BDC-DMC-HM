@@ -448,6 +448,11 @@
 <td></td>
 </tr>
 <tr>
+<td>DEATH_RECORD</td>
+<td>None</td>
+<td>The condition was recorded in a death record, a more general category that in...</td>
+</tr>
+<tr>
 <td>DENTAL_CLAIM</td>
 <td>OMOP:4976889</td>
 <td></td>
@@ -618,6 +623,11 @@
 <td></td>
 </tr>
 <tr>
+<td>HEALTH_RECORD</td>
+<td>None</td>
+<td>The condition was recorded in a patient's health record</td>
+</tr>
+<tr>
 <td>HEALTH_RISK_ASSESSMENT</td>
 <td>OMOP:4976923</td>
 <td></td>
@@ -688,6 +698,11 @@
 <td></td>
 </tr>
 <tr>
+<td>PATIENT_MEDICATION_REPORT</td>
+<td>None</td>
+<td>The condition was recorded based on a patient-provided medication report</td>
+</tr>
+<tr>
 <td>PATIENT_OR_PAYER_PAID_RECORD</td>
 <td>OMOP:4976936</td>
 <td></td>
@@ -701,6 +716,11 @@
 <td>PATIENT_SELF_REPORT</td>
 <td>OMOP:4976938</td>
 <td></td>
+</tr>
+<tr>
+<td>PATIENT_SELF_REPORT_DR_CONFIRMED</td>
+<td>None</td>
+<td>The condition was recorded based on a patient self-report that was confirmed ...</td>
 </tr>
 <tr>
 <td>PATIENT_SELF_TESTED</td>
@@ -726,6 +746,11 @@
 <td>PHARMACY_CLAIM</td>
 <td>OMOP:4976942</td>
 <td></td>
+</tr>
+<tr>
+<td>PHYSICIAN_ADJUDICATION</td>
+<td>None</td>
+<td>The condition was recorded following adjudication by one or more physicians</td>
 </tr>
 <tr>
 <td>POINT_OF_CARE/EXPRESS_LAB</td>
@@ -798,6 +823,11 @@
 <td></td>
 </tr>
 <tr>
+<td>STUDY_RECORD</td>
+<td>None</td>
+<td>The condition was recorded in a study-related record</td>
+</tr>
+<tr>
 <td>SURVEY</td>
 <td>OMOP:4976956</td>
 <td></td>
@@ -816,6 +846,11 @@
 <td>VISION_CLAIM</td>
 <td>OMOP:4976959</td>
 <td></td>
+</tr>
+<tr>
+<td>WORKING_DIAGNOSIS</td>
+<td>None</td>
+<td>The condition was recorded as a working diagnosis</td>
 </tr>
 </tbody>
 </table>
@@ -873,6 +908,11 @@ permissible_values:
   DEATH_CERTIFICATE:
     text: DEATH_CERTIFICATE
     meaning: OMOP:4976888
+  DEATH_RECORD:
+    text: DEATH_RECORD
+    description: The condition was recorded in a death record, a more general category
+      that includes death certificates but also other types of records of death (e.g.
+      autopsy record, medical examiner report
   DENTAL_CLAIM:
     text: DENTAL_CLAIM
     meaning: OMOP:4976889
@@ -975,6 +1015,9 @@ permissible_values:
   HEALTH_INFORMATION_EXCHANGE_RECORD:
     text: HEALTH_INFORMATION_EXCHANGE_RECORD
     meaning: OMOP:4976922
+  HEALTH_RECORD:
+    text: HEALTH_RECORD
+    description: The condition was recorded in a patient's health record.
   HEALTH_RISK_ASSESSMENT:
     text: HEALTH_RISK_ASSESSMENT
     meaning: OMOP:4976923
@@ -1017,6 +1060,10 @@ permissible_values:
   PATIENT_FILLED_SURVEY:
     text: PATIENT_FILLED_SURVEY
     meaning: OMOP:4976935
+  PATIENT_MEDICATION_REPORT:
+    text: PATIENT_MEDICATION_REPORT
+    description: The condition was recorded based on a patient-provided medication
+      report.
   PATIENT_OR_PAYER_PAID_RECORD:
     text: PATIENT_OR_PAYER_PAID_RECORD
     meaning: OMOP:4976936
@@ -1026,6 +1073,10 @@ permissible_values:
   PATIENT_SELF_REPORT:
     text: PATIENT_SELF_REPORT
     meaning: OMOP:4976938
+  PATIENT_SELF_REPORT_DR_CONFIRMED:
+    text: PATIENT_SELF_REPORT_DR_CONFIRMED
+    description: The condition was recorded based on a patient self-report that was
+      confirmed by a doctor.
   PATIENT_SELF_TESTED:
     text: PATIENT_SELF_TESTED
     meaning: OMOP:5181830
@@ -1041,6 +1092,10 @@ permissible_values:
   PHARMACY_CLAIM:
     text: PHARMACY_CLAIM
     meaning: OMOP:4976942
+  PHYSICIAN_ADJUDICATION:
+    text: PHYSICIAN_ADJUDICATION
+    description: The condition was recorded following adjudication by one or more
+      physicians.
   POINT_OF_CARE/EXPRESS_LAB:
     text: POINT_OF_CARE/EXPRESS_LAB
     meaning: OMOP:5042951
@@ -1083,6 +1138,9 @@ permissible_values:
   STANDARD_ALGORITHM_FROM_EHR:
     text: STANDARD_ALGORITHM_FROM_EHR
     meaning: OMOP:4976955
+  STUDY_RECORD:
+    text: STUDY_RECORD
+    description: The condition was recorded in a study-related record.
   SURVEY:
     text: SURVEY
     meaning: OMOP:4976956
@@ -1095,6 +1153,9 @@ permissible_values:
   VISION_CLAIM:
     text: VISION_CLAIM
     meaning: OMOP:4976959
+  WORKING_DIAGNOSIS:
+    text: WORKING_DIAGNOSIS
+    description: The condition was recorded as a working diagnosis.
 
 </code></pre>
 

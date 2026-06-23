@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/EducationalAttainmentObservationTypeEnum/">
+        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/year_range/">
       
       
       
@@ -21,7 +21,7 @@
     
     
       
-        <title>Enum: EducationalAttainmentObservationTypeEnum - BioData Catalyst Harmonized Model</title>
+        <title>Slot: year_range - BioData Catalyst Harmonized Model</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#enum-educationalattainmentobservationtypeenum" class="md-skip">
+        <a href="#slot-year_range" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Enum: EducationalAttainmentObservationTypeEnum
+              Slot: year_range
             
           </span>
         </div>
@@ -319,10 +319,32 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#permissible-values" class="md-nav__link">
+  <a href="#applicable-classes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Permissible Values
+        Applicable Classes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comments
       
     </span>
   </a>
@@ -358,6 +380,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#mappings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mappings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#linkml-source" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -388,90 +421,77 @@
   
 
 
-<h1 id="enum-educationalattainmentobservationtypeenum">Enum: EducationalAttainmentObservationTypeEnum</h1>
-<p><em>Values describing the types of Education Attainment observed in an Observation.</em></p>
-<p>URI: <a href="./">EducationalAttainmentObservationTypeEnum</a></p>
-<h2 id="permissible-values">Permissible Values</h2>
+<h1 id="slot-year_range">Slot: year_range</h1>
+<p><em>The time period demarcating the years between the start and end of the Visit (e.g., 2020-2021).</em></p>
+<p>URI: <a href="https://w3id.org/bdchm/year_range">bdchm:year_range</a></p>
+<!-- no inheritance hierarchy -->
+
+<h2 id="applicable-classes">Applicable Classes</h2>
 <table>
 <thead>
 <tr>
-<th>Value</th>
-<th>Meaning</th>
+<th>Name</th>
 <th>Description</th>
+<th>Modifies Slot</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>8TH_GRADE_OR_LESS</td>
-<td>OMOP:1990362</td>
-<td></td>
-</tr>
-<tr>
-<td>HIGH_SCHOOL_NO_DIPLOMA</td>
-<td>OMOP:1990281</td>
-<td></td>
-</tr>
-<tr>
-<td>HIGH_SCHOOL_GRADUATE_GED</td>
-<td>OMOP:37079292</td>
-<td></td>
-</tr>
-<tr>
-<td>SOME_COLLEGE_OR_TECH_NO_DEGREE</td>
-<td>OMOP:45882538</td>
-<td></td>
-</tr>
-<tr>
-<td>COLLEGE_OR_TECH_WITH_DEGREE</td>
-<td>OMOP:45884846</td>
-<td></td>
-</tr>
-<tr>
-<td>MASTERS_OR_DOCTORAL_DEGREE</td>
-<td>OMOP:45880652</td>
-<td></td>
-</tr>
-<tr>
-<td>UNKNOWN</td>
-<td>None</td>
-<td>Educational attainment is unknown or not reported</td>
+<td><a href="../Visit/">Visit</a></td>
+<td>Events where Persons engage with the healthcare system for a duration of time</td>
+<td>no</td>
 </tr>
 </tbody>
 </table>
+<h2 id="properties">Properties</h2>
+<ul>
+<li>Range: <a href="../TimePeriod/">TimePeriod</a></li>
+</ul>
+<h2 id="comments">Comments</h2>
+<ul>
+<li>The TimePoint defining the start of the year range should be set to 'January 1' of the year in question and the TimePoint defining the end of the year range should be set to 'December 31' of the year in question.</li>
+</ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
 <li>from schema: https://w3id.org/bdchm</li>
 </ul>
+<h2 id="mappings">Mappings</h2>
+<table>
+<thead>
+<tr>
+<th>Mapping Type</th>
+<th>Mapped Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>self</td>
+<td>bdchm:year_range</td>
+</tr>
+<tr>
+<td>native</td>
+<td>bdchm:year_range</td>
+</tr>
+</tbody>
+</table>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: EducationalAttainmentObservationTypeEnum
-description: Values describing the types of Education Attainment observed in an Observation.
+<pre><code class="language-yaml">name: year_range
+description: The time period demarcating the years between the start and end of the
+  Visit (e.g., 2020-2021).
+comments:
+- The TimePoint defining the start of the year range should be set to 'January 1'
+  of the year in question and the TimePoint defining the end of the year range should
+  be set to 'December 31' of the year in question.
 from_schema: https://w3id.org/bdchm
 rank: 1000
-permissible_values:
-  8TH_GRADE_OR_LESS:
-    text: 8TH_GRADE_OR_LESS
-    meaning: OMOP:1990362
-  HIGH_SCHOOL_NO_DIPLOMA:
-    text: HIGH_SCHOOL_NO_DIPLOMA
-    meaning: OMOP:1990281
-  HIGH_SCHOOL_GRADUATE_GED:
-    text: HIGH_SCHOOL_GRADUATE_GED
-    meaning: OMOP:37079292
-  SOME_COLLEGE_OR_TECH_NO_DEGREE:
-    text: SOME_COLLEGE_OR_TECH_NO_DEGREE
-    meaning: OMOP:45882538
-  COLLEGE_OR_TECH_WITH_DEGREE:
-    text: COLLEGE_OR_TECH_WITH_DEGREE
-    meaning: OMOP:45884846
-  MASTERS_OR_DOCTORAL_DEGREE:
-    text: MASTERS_OR_DOCTORAL_DEGREE
-    meaning: OMOP:45880652
-  UNKNOWN:
-    text: UNKNOWN
-    description: Educational attainment is unknown or not reported.
+owner: Visit
+domain_of:
+- Visit
+range: TimePeriod
+required: false
 
 </code></pre>
 

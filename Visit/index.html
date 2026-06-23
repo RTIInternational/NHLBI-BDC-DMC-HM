@@ -307,6 +307,15 @@
     click VisitProvenanceEnum href "../VisitProvenanceEnum"
 
 
+      Visit : year_range
+
+
+
+
+    Visit --&gt; "0..1" TimePeriod : year_range
+    click TimePeriod href "../TimePeriod"
+
+
 
 </div>
 <h2 id="inheritance">Inheritance</h2>
@@ -355,6 +364,12 @@
 <td><a href="../age_at_visit_end/">age_at_visit_end</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>The age of the Participant (in days) at the end of the Visit</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../year_range/">year_range</a></td>
+<td>0..1 <br/> <a href="../TimePeriod/">TimePeriod</a></td>
+<td>The time period demarcating the years between the start and end of the Visit ...</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -581,6 +596,20 @@ attributes:
     required: false
     unit:
       ucum_code: d
+  year_range:
+    name: year_range
+    description: The time period demarcating the years between the start and end of
+      the Visit (e.g., 2020-2021).
+    comments:
+    - The TimePoint defining the start of the year range should be set to 'January
+      1' of the year in question and the TimePoint defining the end of the year range
+      should be set to 'December 31' of the year in question.
+    from_schema: https://w3id.org/bdchm
+    rank: 1000
+    domain_of:
+    - Visit
+    range: TimePeriod
+    required: false
   visit_provenance:
     name: visit_provenance
     description: A value representing the provenance of the visit record, or where
@@ -659,6 +688,21 @@ attributes:
     required: false
     unit:
       ucum_code: d
+  year_range:
+    name: year_range
+    description: The time period demarcating the years between the start and end of
+      the Visit (e.g., 2020-2021).
+    comments:
+    - The TimePoint defining the start of the year range should be set to 'January
+      1' of the year in question and the TimePoint defining the end of the year range
+      should be set to 'December 31' of the year in question.
+    from_schema: https://w3id.org/bdchm
+    rank: 1000
+    owner: Visit
+    domain_of:
+    - Visit
+    range: TimePeriod
+    required: false
   visit_provenance:
     name: visit_provenance
     description: A value representing the provenance of the visit record, or where
