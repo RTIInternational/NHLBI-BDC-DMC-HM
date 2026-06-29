@@ -2135,19 +2135,10 @@ enums:
       PATIENT_SELF-TESTED:
         description: Patient self-tested
         meaning: OMOP:705183
-      PAYER_SYSTEM_RECORD_(PAID_PREMIUM):
-        description: Payer system record (paid premium)
-        meaning: OMOP:32866
-      PAYER_SYSTEM_RECORD_(PRIMARY_PAYER):
-        description: Payer system record (primary payer)
-        meaning: OMOP:32867
-      PAYER_SYSTEM_RECORD_(SECONDARY_PAYER):
-        description: Payer system record (secondary payer)
-        meaning: OMOP:32868
       PHARMACY_CLAIM:
         description: Pharmacy claim
         meaning: OMOP:32869
-      POINT_OF_CARE/EXPRESS_LAB:
+      POINT_OF_CARE_OR_EXPRESS_LAB:
         description: Point of care/express lab
         meaning: OMOP:703249
       PRE-QUALIFICATION_TIME_PERIOD:
@@ -2382,7 +2373,7 @@ enums:
         meaning: OMOP:4976942
       PHYSICIAN_ADJUDICATION:
         description: The condition was recorded following adjudication by one or more physicians.
-      POINT_OF_CARE/EXPRESS_LAB:
+      POINT_OF_CARE_OR_EXPRESS_LAB:
         meaning: OMOP:5042951
       PRE_QUALIFICATION_TIME_PERIOD:
         meaning: OMOP:4976943
