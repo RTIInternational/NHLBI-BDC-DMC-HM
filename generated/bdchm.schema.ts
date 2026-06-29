@@ -193,6 +193,8 @@ export enum VisitCategoryEnum {
     PERSON_UNDER_INVESTIGATION_PUI = "PERSON_UNDER_INVESTIGATION_PUI",
     /** Person visiting pharmacy for dispensing of Drug, at a Care Site, within one day */
     PHARMACY_VISIT = "PHARMACY_VISIT",
+    /** Person visiting a clinic for study-specific data collection or other reasons */
+    STUDY_SITE_VISIT = "STUDY_SITE_VISIT",
     /** Person receiving goods or services from a non-clinical supplier or durable medical equipment provider, outside of a traditional Care Site encounter */
     SUPPLIER_SERVICE_PROVIDER = "SUPPLIER_SERVICE_PROVIDER",
     /** Patient engages with Provider through communication media */
