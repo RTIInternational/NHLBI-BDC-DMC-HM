@@ -1630,6 +1630,11 @@ classes:
         multivalued: false
         range: MeasurementQualifierEnum
         required: false
+      instrument:
+        description: The instrument(s) used to perform the measurement.
+        range: InstrumentEnum
+        multivalued: true
+        required: false
 
   SdohObservationSet:
     is_a: ObservationSet
