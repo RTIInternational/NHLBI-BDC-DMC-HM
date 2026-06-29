@@ -25,6 +25,7 @@ prefixes:
   MMO: http://purl.obolibrary.org/obo/MMO_
   BAO: http://www.bioassayontology.org/bao#BAO_
   UBERON: http://purl.obolibrary.org/obo/UBERON_
+  th: https://w3id.org/bdc/trust-hierarchy/
 
 default_prefix: bdchm
 default_range: string
@@ -1820,6 +1821,12 @@ enums:
         meaning: OMOP:8552
 
   CellularOrganismSpeciesEnum:
+    instantiates:
+      - th:TrustHierarchyBinding
+    annotations:
+      prefer: "NCBITaxon"
+      via: "reachable_from"
+      validation_source: OLS4
     description: >-
       A constrained set of enumerative values containing the NCBITaxon values for cellular organisms.
     reachable_from:
@@ -1831,6 +1838,12 @@ enums:
         - rdfs:subClassOf
 
   AssayMethodEnum:
+    instantiates:
+      - th:TrustHierarchyBinding
+    annotations:
+      prefer: "MMO"
+      via: "reachable_from"
+      validation_source: OLS4
     description: >-
       A constrained set of enumerative values containing the Measurement Method Ontology (MMO) values for assay methods.
     reachable_from:
@@ -1842,6 +1855,12 @@ enums:
         - rdfs:subClassOf
 
   InstrumentEnum:
+    instantiates:
+      - th:TrustHierarchyBinding
+    annotations:
+      prefer: "BAO"
+      via: "reachable_from"
+      validation_source: OLS4
     description: >-
       A constrained set of enumerative values containing the BioAssay Ontology (BAO) values for instruments.
     reachable_from:
@@ -1864,6 +1883,12 @@ enums:
         meaning: OMOP:434489
 
   VertebrateBreedEnum:
+    instantiates:
+      - th:TrustHierarchyBinding
+    annotations:
+      prefer: "VBO"
+      via: "reachable_from"
+      validation_source: OLS4
     description: >-
       A constrained set of enumerative values containing the VBO values for vertebrate breeds.
     reachable_from:
@@ -2210,6 +2235,12 @@ enums:
         - rdfs:subClassOf
 
   AnatomicSiteEnum:
+    instantiates:
+      - th:TrustHierarchyBinding
+    annotations:
+      prefer: "UBERON"
+      via: "reachable_from"
+      validation_source: OLS4
     description: >-
       A constrained set of enumerative values containing the Uberon values for anatomic sites.
     reachable_from:
@@ -2221,6 +2252,13 @@ enums:
         - rdfs:subClassOf
 
   ConditionConceptEnum:
+    instantiates:
+      - th:TrustHierarchyBinding
+    annotations:
+      prefer: "MONDO, HP"
+      fallback: "OMOP:permitted, SNOMED:permitted"
+      via: "inherits, reachable_from"
+      validation_source: OLS4
     description: >-
       A constrained set of enumerative values containing both the MONDO values for human diseases and the HPO values for phenotypic abnormalities.
     inherits:
@@ -2416,11 +2454,26 @@ enums:
             description: was present in the patient historically.
 
   ProcedureConceptEnum:
+    instantiates:
+      - th:TrustHierarchyBinding
+    annotations:
+      prefer: "OMOP"
+      via: "reachable_from"
+      validation_source: OMOP_WebAPI
+      flag: "No procedure ontology in use; OMOP is the sole source. SNOMED floated - curator call."
     description: Procedure codes from OMOP.
     reachable_from:
       source_ontology: OMOP
 
   DrugExposureConceptEnum:
+    instantiates:
+      - th:TrustHierarchyBinding
+    annotations:
+      prefer: "RXNORM"
+      fallback: "OMOP:observed"
+      via: "reachable_from"
+      validation_source: RxNav
+      flag: "USAGE DIVERGES - schema prefers RxNorm but trans-spec drug_concept is OMOP 102 / RxNorm 6. ATC resolves within RxNorm."
     description: Drug codes from RxNorm.
     see_also:
       - https://bioregistry.io/registry/rxnorm
@@ -2986,6 +3039,13 @@ enums:
         meaning: OMOP:40549429                                                   
 
   DeviceExposureConceptEnum:
+    instantiates:
+      - th:TrustHierarchyBinding
+    annotations:
+      prefer: "SNOMED"
+      fallback: "OMOP:permitted"
+      via: "reachable_from"
+      validation_source: OMOP_WebAPI
     description: Device codes from SNOMED.
     see_also:
       - https://bioregistry.io/registry/snomedct
@@ -3661,6 +3721,12 @@ enums:
         description: A processing activity that aims to preserve a specimen.
         
   UnitOfMeasurementEnum:
+    instantiates:
+      - th:TrustHierarchyBinding
+    annotations:
+      prefer: "UOM"
+      via: "reachable_from"
+      validation_source: OLS4
     description: Standard units of measurement from the [Units of Measurement (UOM) ontology](https://units-of-measurement.org/). Units-of-measurement (UOM) provides URLs for Unified Code for Units of Measure (UCUM) codes, and mappings to a number of units ontologies and systems, in human- and machine-readable linked data formats.
     reachable_from:
       source_ontology: UOM
@@ -3753,6 +3819,14 @@ enums:
         meaning: OMOP:4053608
 
   MeasurementObservationTypeEnum:
+    instantiates:
+      - th:TrustHierarchyBinding
+    annotations:
+      prefer: "OBA"
+      fallback: "OMOP:observed"
+      via: "static_pv"
+      validation_source: OLS4
+      flag: "UNRESOLVED - enum is 62 OBA / 50 OMOP and trans-specs are OMOP-heavy (OMOP 592 / OBA 209). Is OBA the intended primary? Curator call."
     description: Values describing the types of MeasurementObservations.
     permissible_values:
       ALBUMIN_IN_BLOOD: 
@@ -4009,6 +4083,13 @@ enums:
         meaning: OMOP:45885135
 
   CauseOfDeathEnum:
+    instantiates:
+      - th:TrustHierarchyBinding
+    annotations:
+      prefer: "ICD10CM"
+      via: "reachable_from"
+      validation_source: OMOP_WebAPI
+      flag: "Terminology, not an ontology. Prefer MONDO (consistent with condition_concept)? Curator call."
     description: >-
       A constrained set of enumerative values containing the ICD-10 diagnoses.
     reachable_from:

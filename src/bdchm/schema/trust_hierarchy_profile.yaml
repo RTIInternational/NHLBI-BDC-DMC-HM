@@ -1,0 +1,37 @@
+id: https://w3id.org/bdc/trust-hierarchy
+name: trust-hierarchy-profile
+title: Vocabulary Trust Hierarchy — LinkML microschema profile
+description: >-
+  A LinkML microschema profile. `TrustHierarchyBinding` is a METACLASS that governs the
+  trust-hierarchy annotations on a concept-binding enum. A binding enum declares
+  `instantiates: [th:TrustHierarchyBinding]` and carries annotations whose keys are this
+  metaclass's attributes. Semantics: ranked preference with permissive fallback; DESCRIPTIVE
+  (records what the host schema already encoded, plus flags). Values are comma-separated
+  strings (the LinkML metamodel disallows array-valued annotations).
+license: MIT
+prefixes:
+  linkml: https://w3id.org/linkml/
+  th: https://w3id.org/bdc/trust-hierarchy/
+default_prefix: th
+default_range: string
+imports:
+  - linkml:types
+classes:
+  TrustHierarchyBinding:
+    class_uri: th:TrustHierarchyBinding
+    description: >-
+      Metaclass governing the trust-hierarchy annotations on a concept-binding enum; its
+      attributes are the valid annotation keys on the instantiating enum.
+    attributes:
+      prefer:
+        description: Comma-separated, ranked preferred source prefixes; first with an apt term wins.
+      fallback:
+        description: >-
+          Comma-separated permitted-not-forbidden fallbacks, each "PREFIX:status"
+          (status = observed | permitted).
+      via:
+        description: Comma-separated provenance of the policy (reachable_from | inherits | static_pv).
+      validation_source:
+        description: Service/authority used to resolve and validate a CURIE for this binding.
+      flag:
+        description: Observed misalignment / unresolved point for curator follow-up.
