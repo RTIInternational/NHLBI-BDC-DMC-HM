@@ -4780,6 +4780,7 @@
                 "OUTPATIENT_VISIT",
                 "PERSON_UNDER_INVESTIGATION_PUI",
                 "PHARMACY_VISIT",
+                "STUDY_SITE_VISIT",
                 "SUPPLIER_SERVICE_PROVIDER",
                 "TELEHEALTH",
                 "UNKNOWN"
