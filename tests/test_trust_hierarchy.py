@@ -4,7 +4,9 @@ This is the self-consistency check co-located as CI: every enum that declares
 `instantiates: th:TrustHierarchyBinding` must carry a well-formed trust_hierarchy
 annotation (governed by the trust-hierarchy microschema profile).
 """
+
 from pathlib import Path
+
 import pytest
 from linkml_runtime import SchemaView
 
@@ -29,7 +31,7 @@ def test_annotation_shape(th_enums):
     for name, e in th_enums.items():
         ann = {k: v.value for k, v in e.annotations.items()}
         assert set(ann) <= ALLOWED, f"{name}: unexpected keys {set(ann) - ALLOWED}"
-        assert (ann.get("prefer", "").strip() or "flag" in ann), f"{name}: empty prefer and no flag"
+        assert ann.get("prefer", "").strip() or "flag" in ann, f"{name}: empty prefer and no flag"
         for v in [x.strip() for x in ann.get("via", "").split(",") if x.strip()]:
             assert v in VIA, f"{name}: bad via token '{v}'"
         for fb in [x.strip() for x in ann.get("fallback", "").split(",") if x.strip()]:
