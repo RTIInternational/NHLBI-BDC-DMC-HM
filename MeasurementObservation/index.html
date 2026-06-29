@@ -341,6 +341,15 @@
 
       MeasurementObservation : id
 
+      MeasurementObservation : instrument
+
+
+
+
+    MeasurementObservation --&gt; "*" InstrumentEnum : instrument
+    click InstrumentEnum href "../InstrumentEnum"
+
+
       MeasurementObservation : measured_by
 
 
@@ -488,6 +497,12 @@
 <td><a href="../qualifier/">qualifier</a></td>
 <td>0..1 <br/> <a href="../MeasurementQualifierEnum/">MeasurementQualifierEnum</a></td>
 <td>A qualifier that further refines or specifies the measurement method (e</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../instrument/">instrument</a></td>
+<td>* <br/> <a href="../InstrumentEnum/">InstrumentEnum</a></td>
+<td>The instrument(s) used to perform the measurement</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -708,6 +723,17 @@ attributes:
     range: MeasurementQualifierEnum
     required: false
     multivalued: false
+  instrument:
+    name: instrument
+    description: The instrument(s) used to perform the measurement.
+    from_schema: https://w3id.org/bdchm
+    rank: 1000
+    domain_of:
+    - MeasurementObservation
+    - Assay
+    range: InstrumentEnum
+    required: false
+    multivalued: true
 
 </code></pre>
 </details>
@@ -812,6 +838,18 @@ attributes:
     range: MeasurementQualifierEnum
     required: false
     multivalued: false
+  instrument:
+    name: instrument
+    description: The instrument(s) used to perform the measurement.
+    from_schema: https://w3id.org/bdchm
+    rank: 1000
+    owner: MeasurementObservation
+    domain_of:
+    - MeasurementObservation
+    - Assay
+    range: InstrumentEnum
+    required: false
+    multivalued: true
   associated_visit:
     name: associated_visit
     description: A reference to the Visit that is associated with this record.

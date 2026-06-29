@@ -349,23 +349,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schema Source
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -411,7 +394,6 @@
 
 
 <h1 id="slot-instrument">Slot: instrument</h1>
-<p><em>The instrument(s) used to perform the assay.</em></p>
 <p>URI: <a href="https://w3id.org/bdchm/instrument">bdchm:instrument</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -426,6 +408,11 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="../MeasurementObservation/">MeasurementObservation</a></td>
+<td>A data structure with key (observation_type) and value (value) attributes tha...</td>
+<td>no</td>
+</tr>
+<tr>
 <td><a href="../Assay/">Assay</a></td>
 <td>A class for representing metadata about an assay performed on a specimen, inc...</td>
 <td>no</td>
@@ -434,18 +421,9 @@
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>
-<p>Range: <a href="../InstrumentEnum/">InstrumentEnum</a></p>
-</li>
-<li>
-<p>Multivalued: True</p>
-</li>
+<li>Range: <a href="../String/">String</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://w3id.org/bdchm</li>
-</ul>
 <h2 id="mappings">Mappings</h2>
 <table>
 <thead>
@@ -469,15 +447,10 @@
 <details>
 
 <pre><code class="language-yaml">name: instrument
-description: The instrument(s) used to perform the assay.
-from_schema: https://w3id.org/bdchm
-rank: 1000
-owner: Assay
 domain_of:
+- MeasurementObservation
 - Assay
-range: InstrumentEnum
-required: false
-multivalued: true
+range: string
 
 </code></pre>
 
