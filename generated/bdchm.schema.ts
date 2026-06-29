@@ -323,16 +323,10 @@ export enum VisitProvenanceEnum {
     PATIENT_SELF_REPORT = "PATIENT_SELF-REPORT",
     /** Patient self-tested */
     PATIENT_SELF_TESTED = "PATIENT_SELF-TESTED",
-    /** Payer system record (paid premium) */
-    PAYER_SYSTEM_RECORD_LEFT_PARENTHESISPAID_PREMIUMRIGHT_PARENTHESIS = "PAYER_SYSTEM_RECORD_(PAID_PREMIUM)",
-    /** Payer system record (primary payer) */
-    PAYER_SYSTEM_RECORD_LEFT_PARENTHESISPRIMARY_PAYERRIGHT_PARENTHESIS = "PAYER_SYSTEM_RECORD_(PRIMARY_PAYER)",
-    /** Payer system record (secondary payer) */
-    PAYER_SYSTEM_RECORD_LEFT_PARENTHESISSECONDARY_PAYERRIGHT_PARENTHESIS = "PAYER_SYSTEM_RECORD_(SECONDARY_PAYER)",
     /** Pharmacy claim */
     PHARMACY_CLAIM = "PHARMACY_CLAIM",
     /** Point of care/express lab */
-    POINT_OF_CARESOLIDUSEXPRESS_LAB = "POINT_OF_CARE/EXPRESS_LAB",
+    POINT_OF_CARE_OR_EXPRESS_LAB = "POINT_OF_CARE_OR_EXPRESS_LAB",
     /** Pre-qualification time period */
     PRE_QUALIFICATION_TIME_PERIOD = "PRE-QUALIFICATION_TIME_PERIOD",
     /** Professional claim */
@@ -470,7 +464,7 @@ export enum ProvenanceEnum {
     PHARMACY_CLAIM = "PHARMACY_CLAIM",
     /** The condition was recorded following adjudication by one or more physicians. */
     PHYSICIAN_ADJUDICATION = "PHYSICIAN_ADJUDICATION",
-    POINT_OF_CARESOLIDUSEXPRESS_LAB = "POINT_OF_CARE/EXPRESS_LAB",
+    POINT_OF_CARE_OR_EXPRESS_LAB = "POINT_OF_CARE_OR_EXPRESS_LAB",
     PRE_QUALIFICATION_TIME_PERIOD = "PRE_QUALIFICATION_TIME_PERIOD",
     PROFESSIONAL_CLAIM = "PROFESSIONAL_CLAIM",
     PROFESSIONAL_CLAIM_DETAIL = "PROFESSIONAL_CLAIM_DETAIL",
@@ -2672,6 +2666,8 @@ export interface MeasurementObservation extends Observation {
     measured_by?: string,
     /** A qualifier that further refines or specifies the measurement method (e.g. to indicate the measurement was an average, sum, best, worst, first, last). */
     qualifier?: string,
+    /** The instrument(s) used to perform the measurement. */
+    instrument?: string,
 }
 
 
