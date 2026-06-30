@@ -64,12 +64,14 @@ bindings:
     slot_name: method
     prefer: [MMO]
     validation_source: OLS4
+    flag: "We hold MMO (a purpose-built measurement-method ontology, per bdchm's encoding); Stephanie's wiki prefers LOINC. Reconcile."
 
   - id: Assay.instrument
     class_name: Assay
     slot_name: instrument
     prefer: [BAO]
     validation_source: OLS4
+    flag: "We hold BAO (BioAssay Ontology, per bdchm's encoding); Stephanie's wiki prefers LOINC. Reconcile."
 
   - id: Person.species
     class_name: Person
@@ -87,4 +89,11 @@ bindings:
     class_name: Quantity
     slot_name: unit
     prefer: [UOM]
+    validation_source: OLS4
+
+  # From Stephanie (on merit): DUO is ontology-backed; closes a real gap.
+  - id: Consent.consent_code
+    class_name: Consent
+    slot_name: consent_code
+    prefer: [DUO]
     validation_source: OLS4
