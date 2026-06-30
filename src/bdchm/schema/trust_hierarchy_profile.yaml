@@ -1,13 +1,15 @@
 id: https://w3id.org/bdc/trust-hierarchy
 name: trust-hierarchy-profile
-title: Vocabulary Trust Hierarchy — LinkML microschema profile
+title: Vocabulary Trust Hierarchy - LinkML microschema profile
 description: >-
   A LinkML microschema profile. `TrustHierarchyBinding` is a METACLASS that governs the
   trust-hierarchy annotations on a concept-binding enum. A binding enum declares
   `instantiates: [th:TrustHierarchyBinding]` and carries annotations whose keys are this
   metaclass's attributes. Semantics: ranked preference with permissive fallback; DESCRIPTIVE
   (records what the host schema already encoded, plus flags). Values are comma-separated
-  strings (the LinkML metamodel disallows array-valued annotations).
+  strings (the LinkML metamodel disallows array-valued annotations). Resolved locally by
+  relative path for now (no w3id registration yet); the id URI is an identifier, not relied
+  upon for HTTP resolution.
 license: MIT
 prefixes:
   linkml: https://w3id.org/linkml/
@@ -27,11 +29,23 @@ classes:
         description: Comma-separated, ranked preferred source prefixes; first with an apt term wins.
       fallback:
         description: >-
-          Comma-separated permitted-not-forbidden fallbacks, each "PREFIX:status"
-          (status = observed | permitted).
+          Comma-separated permitted-not-forbidden fallbacks, each "PREFIX:status" where status
+          is a FallbackStatusEnum value.
       via:
-        description: Comma-separated provenance of the policy (reachable_from | inherits | static_pv).
+        description: Comma-separated provenance of the policy; each token a EncodingEnum value.
       validation_source:
         description: Service/authority used to resolve and validate a CURIE for this binding.
       flag:
         description: Observed misalignment / unresolved point for curator follow-up.
+enums:
+  EncodingEnum:
+    description: How a binding's preference is declared in the host schema.
+    permissible_values:
+      reachable_from:
+      inherits:
+      static_pv:
+  FallbackStatusEnum:
+    description: Whether a fallback is actually observed in data, or merely permitted.
+    permissible_values:
+      observed:
+      permitted:
