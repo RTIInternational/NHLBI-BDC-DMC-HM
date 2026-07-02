@@ -97,3 +97,22 @@ bindings:
     slot_name: consent_code
     prefer: [DUO]
     validation_source: OLS4
+
+  # Race/ethnicity: adopt Stephanie's call (OMB = US federal standard); bdchm currently encodes OMOP.
+  - id: Demography.race
+    class_name: Demography
+    slot_name: race
+    prefer: [OMB]
+    fallback:
+      - {prefix: OMOP, status: observed}
+    validation_source: OMB
+    flag: "bdchm encodes OMOP; OMB (US federal standard) preferred per Stephanie -- model may need to move to OMB."
+
+  - id: Demography.ethnicity
+    class_name: Demography
+    slot_name: ethnicity
+    prefer: [OMB]
+    fallback:
+      - {prefix: OMOP, status: observed}
+    validation_source: OMB
+    flag: "bdchm encodes OMOP; OMB (US federal standard) preferred per Stephanie -- model may need to move to OMB."
