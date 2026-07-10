@@ -21,15 +21,24 @@ Please read the [Collaboration Guide](CONTRIBUTING.md) before contributing.
 
 <details>
 
+This project uses [uv](https://docs.astral.sh/uv/) for dependency
+management and requires Python >= 3.10.
+
 To setup a local development environment:
 
 * clone the repository
 * change directories to the model repository using `cd bdchm`
-* install all of the dependencies using `poetry install`
-* enter the poetry environment using `poetry shell`
-* use the `make` command to generate project artefacts:
+* install all dependencies (including dev tooling) with `uv sync`
+* use the `make` command to generate project artefacts (targets run
+  inside the uv environment automatically):
   * `make gendoc`: generates documentation
   * `make serve`: starts a local webserver to allow for browsing of documentation
+  * `make test`: runs the validation test suite
+  * `make lint`: runs ruff and linkml-lint
+
+> **Note:** the previous `bdchm[docs]` install extra has been removed.
+> Documentation tooling now lives in the dev dependency group and is
+> installed by `uv sync`.
 
 </details>
 
