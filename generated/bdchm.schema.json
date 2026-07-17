@@ -2813,10 +2813,7 @@
             "properties": {
                 "has_questionnaire_item": {
                     "description": "A reference to the QuestionnaireItem that this QuestionnaireResponseItem responds to.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "id": {
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
@@ -2831,6 +2828,7 @@
                 }
             },
             "required": [
+                "has_questionnaire_item",
                 "text",
                 "response_value",
                 "id"
@@ -2842,17 +2840,15 @@
             "additionalProperties": false,
             "description": "Single-valued answer to the question. (FHIR)",
             "properties": {
+                "code": {
+                    "description": "Corresponding code for this value in an external terminology, if applicable, or as defined in the questionnaire itself.  For example, if the question is \"What is your sex?\" and the answer is \"Female\", the code might \"1\" for a custom-defined questionnaire, or \"loinc:LA3-6\" for a standard terminology.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
-                    "type": "string"
-                },
-                "name": {
-                    "type": "string"
-                },
-                "type": {
-                    "enum": [
-                        "QuestionnaireResponseValue"
-                    ],
                     "type": "string"
                 },
                 "value": {
@@ -2862,8 +2858,6 @@
             },
             "required": [
                 "value",
-                "type",
-                "name",
                 "id"
             ],
             "title": "QuestionnaireResponseValue",
@@ -2873,17 +2867,15 @@
             "additionalProperties": false,
             "description": "Single-valued boolean answer to the question",
             "properties": {
+                "code": {
+                    "description": "Corresponding code for this value in an external terminology, if applicable, or as defined in the questionnaire itself.  For example, if the question is \"What is your sex?\" and the answer is \"Female\", the code might \"1\" for a custom-defined questionnaire, or \"loinc:LA3-6\" for a standard terminology.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
-                    "type": "string"
-                },
-                "name": {
-                    "type": "string"
-                },
-                "type": {
-                    "enum": [
-                        "QuestionnaireResponseValueBoolean"
-                    ],
                     "type": "string"
                 },
                 "value": {
@@ -2893,8 +2885,6 @@
             },
             "required": [
                 "value",
-                "type",
-                "name",
                 "id"
             ],
             "title": "QuestionnaireResponseValueBoolean",
@@ -2904,17 +2894,15 @@
             "additionalProperties": false,
             "description": "Single-valued decimal answer to the question",
             "properties": {
+                "code": {
+                    "description": "Corresponding code for this value in an external terminology, if applicable, or as defined in the questionnaire itself.  For example, if the question is \"What is your sex?\" and the answer is \"Female\", the code might \"1\" for a custom-defined questionnaire, or \"loinc:LA3-6\" for a standard terminology.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
-                    "type": "string"
-                },
-                "name": {
-                    "type": "string"
-                },
-                "type": {
-                    "enum": [
-                        "QuestionnaireResponseValueDecimal"
-                    ],
                     "type": "string"
                 },
                 "value": {
@@ -2924,8 +2912,6 @@
             },
             "required": [
                 "value",
-                "type",
-                "name",
                 "id"
             ],
             "title": "QuestionnaireResponseValueDecimal",
@@ -2935,17 +2921,15 @@
             "additionalProperties": false,
             "description": "Single-valued integer answer to the question",
             "properties": {
+                "code": {
+                    "description": "Corresponding code for this value in an external terminology, if applicable, or as defined in the questionnaire itself.  For example, if the question is \"What is your sex?\" and the answer is \"Female\", the code might \"1\" for a custom-defined questionnaire, or \"loinc:LA3-6\" for a standard terminology.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
-                    "type": "string"
-                },
-                "name": {
-                    "type": "string"
-                },
-                "type": {
-                    "enum": [
-                        "QuestionnaireResponseValueInteger"
-                    ],
                     "type": "string"
                 },
                 "value": {
@@ -2955,8 +2939,6 @@
             },
             "required": [
                 "value",
-                "type",
-                "name",
                 "id"
             ],
             "title": "QuestionnaireResponseValueInteger",
@@ -2966,17 +2948,15 @@
             "additionalProperties": false,
             "description": "Single-valued string answer to the question",
             "properties": {
+                "code": {
+                    "description": "Corresponding code for this value in an external terminology, if applicable, or as defined in the questionnaire itself.  For example, if the question is \"What is your sex?\" and the answer is \"Female\", the code might \"1\" for a custom-defined questionnaire, or \"loinc:LA3-6\" for a standard terminology.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
-                    "type": "string"
-                },
-                "name": {
-                    "type": "string"
-                },
-                "type": {
-                    "enum": [
-                        "QuestionnaireResponseValueString"
-                    ],
                     "type": "string"
                 },
                 "value": {
@@ -2986,8 +2966,6 @@
             },
             "required": [
                 "value",
-                "type",
-                "name",
                 "id"
             ],
             "title": "QuestionnaireResponseValueString",
@@ -2997,17 +2975,15 @@
             "additionalProperties": false,
             "description": "Single-valued TimePoint answer to the question",
             "properties": {
+                "code": {
+                    "description": "Corresponding code for this value in an external terminology, if applicable, or as defined in the questionnaire itself.  For example, if the question is \"What is your sex?\" and the answer is \"Female\", the code might \"1\" for a custom-defined questionnaire, or \"loinc:LA3-6\" for a standard terminology.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
-                    "type": "string"
-                },
-                "name": {
-                    "type": "string"
-                },
-                "type": {
-                    "enum": [
-                        "QuestionnaireResponseValueTimePoint"
-                    ],
                     "type": "string"
                 },
                 "value": {
@@ -3017,8 +2993,6 @@
             },
             "required": [
                 "value",
-                "type",
-                "name",
                 "id"
             ],
             "title": "QuestionnaireResponseValueTimePoint",

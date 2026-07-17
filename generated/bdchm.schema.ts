@@ -2103,7 +2103,7 @@ export interface QuestionnaireResponse extends Entity {
  */
 export interface QuestionnaireResponseItem extends Entity {
     /** A reference to the QuestionnaireItem that this QuestionnaireResponseItem responds to. */
-    has_questionnaire_item?: QuestionnaireItemId,
+    has_questionnaire_item: QuestionnaireItemId,
     /** Name for group or question text */
     text: string,
     response_value: QuestionnaireResponseValueId,
@@ -2116,8 +2116,8 @@ export interface QuestionnaireResponseItem extends Entity {
 export interface QuestionnaireResponseValue extends Entity {
     /** A general slot to hold a value. */
     value: string,
-    type: string,
-    name: string,
+    /** Corresponding code for this value in an external terminology, if applicable, or as defined in the questionnaire itself.  For example, if the question is "What is your sex?" and the answer is "Female", the code might "1" for a custom-defined questionnaire, or "loinc:LA3-6" for a standard terminology. */
+    code?: string,
 }
 
 
