@@ -288,11 +288,9 @@
         click QuestionnaireResponseValueString href "../QuestionnaireResponseValueString"
 
 
+      QuestionnaireResponseValue : code
+
       QuestionnaireResponseValue : id
-
-      QuestionnaireResponseValue : name
-
-      QuestionnaireResponseValue : type
 
       QuestionnaireResponseValue : value
 
@@ -330,15 +328,9 @@
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../type/">type</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../name/">name</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td><a href="../code/">code</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Corresponding code for this value in an external terminology, if applicable, ...</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -408,26 +400,18 @@ slot_usage:
     name: value
     required: true
 attributes:
-  type:
-    name: type
-    from_schema: https://w3id.org/bdchm
-    rank: 1000
-    designates_type: true
-    domain_of:
-    - QuestionnaireResponseValue
-    range: string
-    required: true
-  name:
-    name: name
+  code:
+    name: code
+    description: Corresponding code for this value in an external terminology, if
+      applicable, or as defined in the questionnaire itself.  For example, if the
+      question is "What is your sex?" and the answer is "Female", the code might "1"
+      for a custom-defined questionnaire, or "loinc:LA3-6" for a standard terminology.
     from_schema: https://w3id.org/bdchm
     domain_of:
-    - ResearchStudy
-    - Visit
-    - Organization
-    - Questionnaire
+    - QuestionnaireItem
     - QuestionnaireResponseValue
     range: string
-    required: true
+    required: false
 
 </code></pre>
 </details>
@@ -443,28 +427,19 @@ slot_usage:
     name: value
     required: true
 attributes:
-  type:
-    name: type
-    from_schema: https://w3id.org/bdchm
-    rank: 1000
-    designates_type: true
-    owner: QuestionnaireResponseValue
-    domain_of:
-    - QuestionnaireResponseValue
-    range: string
-    required: true
-  name:
-    name: name
+  code:
+    name: code
+    description: Corresponding code for this value in an external terminology, if
+      applicable, or as defined in the questionnaire itself.  For example, if the
+      question is "What is your sex?" and the answer is "Female", the code might "1"
+      for a custom-defined questionnaire, or "loinc:LA3-6" for a standard terminology.
     from_schema: https://w3id.org/bdchm
     owner: QuestionnaireResponseValue
     domain_of:
-    - ResearchStudy
-    - Visit
-    - Organization
-    - Questionnaire
+    - QuestionnaireItem
     - QuestionnaireResponseValue
     range: string
-    required: true
+    required: false
   value:
     name: value
     description: A general slot to hold a value.

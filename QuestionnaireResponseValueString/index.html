@@ -263,11 +263,9 @@
       QuestionnaireResponseValue &lt;|-- QuestionnaireResponseValueString
         click QuestionnaireResponseValue href "../QuestionnaireResponseValue"
 
+      QuestionnaireResponseValueString : code
+
       QuestionnaireResponseValueString : id
-
-      QuestionnaireResponseValueString : name
-
-      QuestionnaireResponseValueString : type
 
       QuestionnaireResponseValueString : value
 
@@ -301,15 +299,9 @@
 <td><a href="../QuestionnaireResponseValue/">QuestionnaireResponseValue</a></td>
 </tr>
 <tr>
-<td><a href="../type/">type</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../QuestionnaireResponseValue/">QuestionnaireResponseValue</a></td>
-</tr>
-<tr>
-<td><a href="../name/">name</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td><a href="../code/">code</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Corresponding code for this value in an external terminology, if applicable, ...</td>
 <td><a href="../QuestionnaireResponseValue/">QuestionnaireResponseValue</a></td>
 </tr>
 <tr>
@@ -382,28 +374,19 @@ attributes:
     - QuestionnaireResponseValue
     range: string
     required: true
-  type:
-    name: type
-    from_schema: https://w3id.org/bdchm
-    rank: 1000
-    designates_type: true
-    owner: QuestionnaireResponseValueString
-    domain_of:
-    - QuestionnaireResponseValue
-    range: string
-    required: true
-  name:
-    name: name
+  code:
+    name: code
+    description: Corresponding code for this value in an external terminology, if
+      applicable, or as defined in the questionnaire itself.  For example, if the
+      question is "What is your sex?" and the answer is "Female", the code might "1"
+      for a custom-defined questionnaire, or "loinc:LA3-6" for a standard terminology.
     from_schema: https://w3id.org/bdchm
     owner: QuestionnaireResponseValueString
     domain_of:
-    - ResearchStudy
-    - Visit
-    - Organization
-    - Questionnaire
+    - QuestionnaireItem
     - QuestionnaireResponseValue
     range: string
-    required: true
+    required: false
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The

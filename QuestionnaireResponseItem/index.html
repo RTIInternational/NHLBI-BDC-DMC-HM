@@ -277,7 +277,7 @@
 
 
 
-    QuestionnaireResponseItem --&gt; "0..1" QuestionnaireItem : has_questionnaire_item
+    QuestionnaireResponseItem --&gt; "1" QuestionnaireItem : has_questionnaire_item
     click QuestionnaireItem href "../QuestionnaireItem"
 
 
@@ -316,7 +316,7 @@
 <tbody>
 <tr>
 <td><a href="../has_questionnaire_item/">has_questionnaire_item</a></td>
-<td>0..1 <br/> <a href="../QuestionnaireItem/">QuestionnaireItem</a></td>
+<td>1 <br/> <a href="../QuestionnaireItem/">QuestionnaireItem</a></td>
 <td>A reference to the QuestionnaireItem that this QuestionnaireResponseItem resp...</td>
 <td>direct</td>
 </tr>
@@ -402,7 +402,7 @@ attributes:
     domain_of:
     - QuestionnaireResponseItem
     range: QuestionnaireItem
-    required: false
+    required: true
   text:
     name: text
     description: Name for group or question text
@@ -441,7 +441,7 @@ attributes:
     domain_of:
     - QuestionnaireResponseItem
     range: QuestionnaireItem
-    required: false
+    required: true
   text:
     name: text
     description: Name for group or question text
