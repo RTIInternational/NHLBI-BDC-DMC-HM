@@ -454,7 +454,7 @@ classes:
       has_questionnaire_item:
         range: QuestionnaireItem
         description: A reference to the QuestionnaireItem that this QuestionnaireResponseItem responds to.
-        required: false
+        required: true
       text:
         range: string
         description: Name for group or question text
@@ -468,13 +468,10 @@ classes:
     description: Single-valued answer to the question. (FHIR)
     abstract: true
     attributes:
-      type:
+      code:
         range: string
-        designates_type: true
-        required: true
-      name:
-        range: string
-        required: true
+        description: Corresponding code for this value in an external terminology, if applicable, or as defined in the questionnaire itself.  For example, if the question is "What is your sex?" and the answer is "Female", the code might "1" for a custom-defined questionnaire, or "loinc:LA3-6" for a standard terminology.
+        required: false
     slots:
       - value
     slot_usage:
