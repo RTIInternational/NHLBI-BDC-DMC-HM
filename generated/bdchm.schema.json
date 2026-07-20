@@ -2753,6 +2753,13 @@
                         "null"
                     ]
                 },
+                "ordinality": {
+                    "description": "The order of the item within the Questionnaire",
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
                 "part_of": {
                     "description": "A reference to a parent QuestionnaireItem.",
                     "type": [
@@ -2821,15 +2828,10 @@
                 },
                 "response_value": {
                     "type": "string"
-                },
-                "text": {
-                    "description": "Name for group or question text",
-                    "type": "string"
                 }
             },
             "required": [
                 "has_questionnaire_item",
-                "text",
                 "response_value",
                 "id"
             ],
@@ -2840,7 +2842,7 @@
             "additionalProperties": false,
             "description": "Single-valued answer to the question. (FHIR)",
             "properties": {
-                "code": {
+                "code_concept": {
                     "description": "Corresponding code for this value in an external terminology, if applicable, or as defined in the questionnaire itself.  For example, if the question is \"What is your sex?\" and the answer is \"Female\", the code might \"1\" for a custom-defined questionnaire, or \"loinc:LA3-6\" for a standard terminology.",
                     "type": [
                         "string",
@@ -2867,7 +2869,7 @@
             "additionalProperties": false,
             "description": "Single-valued boolean answer to the question",
             "properties": {
-                "code": {
+                "code_concept": {
                     "description": "Corresponding code for this value in an external terminology, if applicable, or as defined in the questionnaire itself.  For example, if the question is \"What is your sex?\" and the answer is \"Female\", the code might \"1\" for a custom-defined questionnaire, or \"loinc:LA3-6\" for a standard terminology.",
                     "type": [
                         "string",
@@ -2894,7 +2896,7 @@
             "additionalProperties": false,
             "description": "Single-valued decimal answer to the question",
             "properties": {
-                "code": {
+                "code_concept": {
                     "description": "Corresponding code for this value in an external terminology, if applicable, or as defined in the questionnaire itself.  For example, if the question is \"What is your sex?\" and the answer is \"Female\", the code might \"1\" for a custom-defined questionnaire, or \"loinc:LA3-6\" for a standard terminology.",
                     "type": [
                         "string",
@@ -2921,7 +2923,7 @@
             "additionalProperties": false,
             "description": "Single-valued integer answer to the question",
             "properties": {
-                "code": {
+                "code_concept": {
                     "description": "Corresponding code for this value in an external terminology, if applicable, or as defined in the questionnaire itself.  For example, if the question is \"What is your sex?\" and the answer is \"Female\", the code might \"1\" for a custom-defined questionnaire, or \"loinc:LA3-6\" for a standard terminology.",
                     "type": [
                         "string",
@@ -2948,7 +2950,7 @@
             "additionalProperties": false,
             "description": "Single-valued string answer to the question",
             "properties": {
-                "code": {
+                "code_concept": {
                     "description": "Corresponding code for this value in an external terminology, if applicable, or as defined in the questionnaire itself.  For example, if the question is \"What is your sex?\" and the answer is \"Female\", the code might \"1\" for a custom-defined questionnaire, or \"loinc:LA3-6\" for a standard terminology.",
                     "type": [
                         "string",
@@ -2975,7 +2977,7 @@
             "additionalProperties": false,
             "description": "Single-valued TimePoint answer to the question",
             "properties": {
-                "code": {
+                "code_concept": {
                     "description": "Corresponding code for this value in an external terminology, if applicable, or as defined in the questionnaire itself.  For example, if the question is \"What is your sex?\" and the answer is \"Female\", the code might \"1\" for a custom-defined questionnaire, or \"loinc:LA3-6\" for a standard terminology.",
                     "type": [
                         "string",

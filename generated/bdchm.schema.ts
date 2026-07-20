@@ -2076,6 +2076,8 @@ export interface Questionnaire extends Entity {
 export interface QuestionnaireItem extends Entity {
     /** A 'business' identifier or accession number for the entity, typically as provided by an external system or authority, that are globally unique and persist across implementing systems. Also, since these identifiers are created outside the information system through a specific business process, the Identifier type has additional attributes to capture this additional metadata so the actual identifier values are qualified by the context that created those values. This additional context allows "identifier" instances to be transmitted as business data across systems while still being able to trace them back to the system of origin. */
     identity?: string[],
+    /** The order of the item within the Questionnaire */
+    ordinality?: number,
     /** Name for group or question text */
     text: string,
     /** Corresponding concept for this item in a terminology */
@@ -2104,8 +2106,6 @@ export interface QuestionnaireResponse extends Entity {
 export interface QuestionnaireResponseItem extends Entity {
     /** A reference to the QuestionnaireItem that this QuestionnaireResponseItem responds to. */
     has_questionnaire_item: QuestionnaireItemId,
-    /** Name for group or question text */
-    text: string,
     response_value: QuestionnaireResponseValueId,
 }
 
@@ -2117,7 +2117,7 @@ export interface QuestionnaireResponseValue extends Entity {
     /** A general slot to hold a value. */
     value: string,
     /** Corresponding code for this value in an external terminology, if applicable, or as defined in the questionnaire itself.  For example, if the question is "What is your sex?" and the answer is "Female", the code might "1" for a custom-defined questionnaire, or "loinc:LA3-6" for a standard terminology. */
-    code?: string,
+    code_concept?: string,
 }
 
 
