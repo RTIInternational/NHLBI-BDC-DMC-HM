@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/text/">
+        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/code_concept/">
       
       
       
@@ -21,7 +21,7 @@
     
     
       
-        <title>Slot: text - BioData Catalyst Harmonized Model</title>
+        <title>Slot: code_concept - BioData Catalyst Harmonized Model</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-text" class="md-skip">
+        <a href="#slot-code_concept" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: text
+              Slot: code_concept
             
           </span>
         </div>
@@ -410,9 +410,9 @@
   
 
 
-<h1 id="slot-text">Slot: text</h1>
-<p><em>Name for group or question text</em></p>
-<p>URI: <a href="https://w3id.org/bdchm/text">bdchm:text</a></p>
+<h1 id="slot-code_concept">Slot: code_concept</h1>
+<p><em>Corresponding code for this value in an external terminology, if applicable, or as defined in the questionnaire itself.  For example, if the question is "What is your sex?" and the answer is "Female", the code might "1" for a custom-defined questionnaire, or "loinc:LA3-6" for a standard terminology.</em></p>
+<p>URI: <a href="https://w3id.org/bdchm/code_concept">bdchm:code_concept</a></p>
 <!-- no inheritance hierarchy -->
 
 <h2 id="applicable-classes">Applicable Classes</h2>
@@ -426,20 +426,40 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../QuestionnaireItem/">QuestionnaireItem</a></td>
-<td>QuestionnaireItem defines a question or section within the Questionnaire</td>
+<td><a href="../QuestionnaireResponseValue/">QuestionnaireResponseValue</a></td>
+<td>Single-valued answer to the question</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../QuestionnaireResponseValueDecimal/">QuestionnaireResponseValueDecimal</a></td>
+<td>Single-valued decimal answer to the question</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../QuestionnaireResponseValueBoolean/">QuestionnaireResponseValueBoolean</a></td>
+<td>Single-valued boolean answer to the question</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../QuestionnaireResponseValueInteger/">QuestionnaireResponseValueInteger</a></td>
+<td>Single-valued integer answer to the question</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../QuestionnaireResponseValueTimePoint/">QuestionnaireResponseValueTimePoint</a></td>
+<td>Single-valued TimePoint answer to the question</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../QuestionnaireResponseValueString/">QuestionnaireResponseValueString</a></td>
+<td>Single-valued string answer to the question</td>
 <td>no</td>
 </tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>
-<p>Range: <a href="../String/">String</a></p>
-</li>
-<li>
-<p>Required: True</p>
-</li>
+<li>Range: <a href="../String/">String</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
@@ -457,26 +477,29 @@
 <tbody>
 <tr>
 <td>self</td>
-<td>bdchm:text</td>
+<td>bdchm:code_concept</td>
 </tr>
 <tr>
 <td>native</td>
-<td>bdchm:text</td>
+<td>bdchm:code_concept</td>
 </tr>
 </tbody>
 </table>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: text
-description: Name for group or question text
+<pre><code class="language-yaml">name: code_concept
+description: Corresponding code for this value in an external terminology, if applicable,
+  or as defined in the questionnaire itself.  For example, if the question is &quot;What
+  is your sex?&quot; and the answer is &quot;Female&quot;, the code might &quot;1&quot; for a custom-defined
+  questionnaire, or &quot;loinc:LA3-6&quot; for a standard terminology.
 from_schema: https://w3id.org/bdchm
 rank: 1000
-owner: QuestionnaireItem
+owner: QuestionnaireResponseValue
 domain_of:
-- QuestionnaireItem
+- QuestionnaireResponseValue
 range: string
-required: true
+required: false
 
 </code></pre>
 

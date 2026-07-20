@@ -263,7 +263,7 @@
       QuestionnaireResponseValue &lt;|-- QuestionnaireResponseValueBoolean
         click QuestionnaireResponseValue href "../QuestionnaireResponseValue"
 
-      QuestionnaireResponseValueBoolean : code
+      QuestionnaireResponseValueBoolean : code_concept
 
       QuestionnaireResponseValueBoolean : id
 
@@ -299,7 +299,7 @@
 <td><a href="../QuestionnaireResponseValue/">QuestionnaireResponseValue</a></td>
 </tr>
 <tr>
-<td><a href="../code/">code</a></td>
+<td><a href="../code_concept/">code_concept</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Corresponding code for this value in an external terminology, if applicable, ...</td>
 <td><a href="../QuestionnaireResponseValue/">QuestionnaireResponseValue</a></td>
@@ -374,16 +374,16 @@ attributes:
     - QuestionnaireResponseValue
     range: boolean
     required: true
-  code:
-    name: code
+  code_concept:
+    name: code_concept
     description: Corresponding code for this value in an external terminology, if
       applicable, or as defined in the questionnaire itself.  For example, if the
       question is "What is your sex?" and the answer is "Female", the code might "1"
       for a custom-defined questionnaire, or "loinc:LA3-6" for a standard terminology.
     from_schema: https://w3id.org/bdchm
+    rank: 1000
     owner: QuestionnaireResponseValueBoolean
     domain_of:
-    - QuestionnaireItem
     - QuestionnaireResponseValue
     range: string
     required: false

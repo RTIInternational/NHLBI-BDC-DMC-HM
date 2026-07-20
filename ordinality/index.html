@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/text/">
+        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/ordinality/">
       
       
       
@@ -21,7 +21,7 @@
     
     
       
-        <title>Slot: text - BioData Catalyst Harmonized Model</title>
+        <title>Slot: ordinality - BioData Catalyst Harmonized Model</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-text" class="md-skip">
+        <a href="#slot-ordinality" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: text
+              Slot: ordinality
             
           </span>
         </div>
@@ -410,9 +410,9 @@
   
 
 
-<h1 id="slot-text">Slot: text</h1>
-<p><em>Name for group or question text</em></p>
-<p>URI: <a href="https://w3id.org/bdchm/text">bdchm:text</a></p>
+<h1 id="slot-ordinality">Slot: ordinality</h1>
+<p><em>The order of the item within the Questionnaire</em></p>
+<p>URI: <a href="https://w3id.org/bdchm/ordinality">bdchm:ordinality</a></p>
 <!-- no inheritance hierarchy -->
 
 <h2 id="applicable-classes">Applicable Classes</h2>
@@ -434,12 +434,7 @@
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>
-<p>Range: <a href="../String/">String</a></p>
-</li>
-<li>
-<p>Required: True</p>
-</li>
+<li>Range: <a href="../Integer/">Integer</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
@@ -457,26 +452,26 @@
 <tbody>
 <tr>
 <td>self</td>
-<td>bdchm:text</td>
+<td>bdchm:ordinality</td>
 </tr>
 <tr>
 <td>native</td>
-<td>bdchm:text</td>
+<td>bdchm:ordinality</td>
 </tr>
 </tbody>
 </table>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: text
-description: Name for group or question text
+<pre><code class="language-yaml">name: ordinality
+description: The order of the item within the Questionnaire
 from_schema: https://w3id.org/bdchm
 rank: 1000
 owner: QuestionnaireItem
 domain_of:
 - QuestionnaireItem
-range: string
-required: true
+range: integer
+required: false
 
 </code></pre>
 

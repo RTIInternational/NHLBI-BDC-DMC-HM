@@ -278,6 +278,8 @@
 
       QuestionnaireItem : identity
 
+      QuestionnaireItem : ordinality
+
       QuestionnaireItem : part_of
 
 
@@ -313,6 +315,12 @@
 <td><a href="../identity/">identity</a></td>
 <td>* <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
 <td>A 'business' identifier or accession number for the entity, typically as prov...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ordinality/">ordinality</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>The order of the item within the Questionnaire</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -413,6 +421,15 @@ is_a: Entity
 slots:
 - identity
 attributes:
+  ordinality:
+    name: ordinality
+    description: The order of the item within the Questionnaire
+    from_schema: https://w3id.org/bdchm
+    rank: 1000
+    domain_of:
+    - QuestionnaireItem
+    range: integer
+    required: false
   text:
     name: text
     description: Name for group or question text
@@ -420,7 +437,6 @@ attributes:
     rank: 1000
     domain_of:
     - QuestionnaireItem
-    - QuestionnaireResponseItem
     range: string
     required: true
   code:
@@ -430,7 +446,6 @@ attributes:
     rank: 1000
     domain_of:
     - QuestionnaireItem
-    - QuestionnaireResponseValue
     range: string
     required: false
   part_of:
@@ -452,6 +467,16 @@ description: QuestionnaireItem defines a question or section within the Question
 from_schema: https://w3id.org/bdchm
 is_a: Entity
 attributes:
+  ordinality:
+    name: ordinality
+    description: The order of the item within the Questionnaire
+    from_schema: https://w3id.org/bdchm
+    rank: 1000
+    owner: QuestionnaireItem
+    domain_of:
+    - QuestionnaireItem
+    range: integer
+    required: false
   text:
     name: text
     description: Name for group or question text
@@ -460,7 +485,6 @@ attributes:
     owner: QuestionnaireItem
     domain_of:
     - QuestionnaireItem
-    - QuestionnaireResponseItem
     range: string
     required: true
   code:
@@ -471,7 +495,6 @@ attributes:
     owner: QuestionnaireItem
     domain_of:
     - QuestionnaireItem
-    - QuestionnaireResponseValue
     range: string
     required: false
   part_of:

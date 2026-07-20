@@ -349,6 +349,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema Source
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -394,6 +411,7 @@
 
 
 <h1 id="slot-code">Slot: code</h1>
+<p><em>Corresponding concept for this item in a terminology</em></p>
 <p>URI: <a href="https://w3id.org/bdchm/code">bdchm:code</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -412,36 +430,6 @@
 <td>QuestionnaireItem defines a question or section within the Questionnaire</td>
 <td>no</td>
 </tr>
-<tr>
-<td><a href="../QuestionnaireResponseValue/">QuestionnaireResponseValue</a></td>
-<td>Single-valued answer to the question</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../QuestionnaireResponseValueDecimal/">QuestionnaireResponseValueDecimal</a></td>
-<td>Single-valued decimal answer to the question</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../QuestionnaireResponseValueBoolean/">QuestionnaireResponseValueBoolean</a></td>
-<td>Single-valued boolean answer to the question</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../QuestionnaireResponseValueInteger/">QuestionnaireResponseValueInteger</a></td>
-<td>Single-valued integer answer to the question</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../QuestionnaireResponseValueTimePoint/">QuestionnaireResponseValueTimePoint</a></td>
-<td>Single-valued TimePoint answer to the question</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../QuestionnaireResponseValueString/">QuestionnaireResponseValueString</a></td>
-<td>Single-valued string answer to the question</td>
-<td>no</td>
-</tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
@@ -449,6 +437,10 @@
 <li>Range: <a href="../String/">String</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: https://w3id.org/bdchm</li>
+</ul>
 <h2 id="mappings">Mappings</h2>
 <table>
 <thead>
@@ -472,10 +464,14 @@
 <details>
 
 <pre><code class="language-yaml">name: code
+description: Corresponding concept for this item in a terminology
+from_schema: https://w3id.org/bdchm
+rank: 1000
+owner: QuestionnaireItem
 domain_of:
 - QuestionnaireItem
-- QuestionnaireResponseValue
 range: string
+required: false
 
 </code></pre>
 

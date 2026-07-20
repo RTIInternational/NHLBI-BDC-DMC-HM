@@ -292,8 +292,6 @@
     click QuestionnaireResponseValue href "../QuestionnaireResponseValue"
 
 
-      QuestionnaireResponseItem : text
-
 
 </div>
 <h2 id="inheritance">Inheritance</h2>
@@ -318,12 +316,6 @@
 <td><a href="../has_questionnaire_item/">has_questionnaire_item</a></td>
 <td>1 <br/> <a href="../QuestionnaireItem/">QuestionnaireItem</a></td>
 <td>A reference to the QuestionnaireItem that this QuestionnaireResponseItem resp...</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../text/">text</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
-<td>Name for group or question text</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -403,15 +395,6 @@ attributes:
     - QuestionnaireResponseItem
     range: QuestionnaireItem
     required: true
-  text:
-    name: text
-    description: Name for group or question text
-    from_schema: https://w3id.org/bdchm
-    domain_of:
-    - QuestionnaireItem
-    - QuestionnaireResponseItem
-    range: string
-    required: true
   response_value:
     name: response_value
     from_schema: https://w3id.org/bdchm
@@ -441,16 +424,6 @@ attributes:
     domain_of:
     - QuestionnaireResponseItem
     range: QuestionnaireItem
-    required: true
-  text:
-    name: text
-    description: Name for group or question text
-    from_schema: https://w3id.org/bdchm
-    owner: QuestionnaireResponseItem
-    domain_of:
-    - QuestionnaireItem
-    - QuestionnaireResponseItem
-    range: string
     required: true
   response_value:
     name: response_value
