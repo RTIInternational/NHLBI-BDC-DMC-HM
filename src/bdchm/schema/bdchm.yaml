@@ -411,6 +411,10 @@ classes:
     is_a: Entity
     description: QuestionnaireItem defines a question or section within the Questionnaire
     attributes:
+      ordinalilty:
+        range: integer
+        description: The order of the item within the Questionnaire
+        required: false
       text:
         range: string
         description: Name for group or question text
@@ -455,10 +459,6 @@ classes:
         range: QuestionnaireItem
         description: A reference to the QuestionnaireItem that this QuestionnaireResponseItem responds to.
         required: true
-      text:
-        range: string
-        description: Name for group or question text
-        required: true
       response_value:
         range: QuestionnaireResponseValue
         required: true
@@ -468,7 +468,7 @@ classes:
     description: Single-valued answer to the question. (FHIR)
     abstract: true
     attributes:
-      code:
+      code_concept:
         range: string
         description: Corresponding code for this value in an external terminology, if applicable, or as defined in the questionnaire itself.  For example, if the question is "What is your sex?" and the answer is "Female", the code might "1" for a custom-defined questionnaire, or "loinc:LA3-6" for a standard terminology.
         required: false
