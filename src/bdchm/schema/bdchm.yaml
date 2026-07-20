@@ -411,7 +411,7 @@ classes:
     is_a: Entity
     description: QuestionnaireItem defines a question or section within the Questionnaire
     attributes:
-      ordinalilty:
+      ordinality:
         range: integer
         description: The order of the item within the Questionnaire
         required: false
