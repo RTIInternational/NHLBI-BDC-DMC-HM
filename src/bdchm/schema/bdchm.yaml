@@ -1495,7 +1495,7 @@ classes:
       associated_visit:
         required: false
       associated_participant:
-        required: true
+        required: false
       
   Observation:
     is_a: Entity
@@ -2179,6 +2179,8 @@ enums:
       STANDARD_ALGORITHM_FROM_CLAIMS:
         description: Standard algorithm from claims
         meaning: OMOP:32881
+      STUDY_RECORD:
+        description: The condition was recorded in a study-related record.
       SURVEY:
         description: Survey
         meaning: OMOP:32883
