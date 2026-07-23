@@ -4154,11 +4154,11 @@ enums:
         description: The quantity is greater than a specified value
         meaning: OMOP:4172704
 
-SdohEnum:
-  description: A constrained set of enumerative values describing social determinants of health measurement variables.
-  permissible_values:
-    FAMILY_INCOME:
-      description: The sum of the income of all family members 15 years and older living in the household over 12 months, before taxes
-      meaning: OMOP:4076114
-    EDUCATIONAL_ATTAINMENT:
-      description: The highest level of education that an individual has completed
+  SdohEnum:
+    description: A constrained set of enumerative values describing social determinants of health measurement variables.
+    permissible_values:
+      FAMILY_INCOME:
+        description: The sum of the income of all family members 15 years and older living in the household over 12 months, before taxes
+        meaning: OMOP:4076114
+      EDUCATIONAL_ATTAINMENT:
+        description: The highest level of education that an individual has completed
