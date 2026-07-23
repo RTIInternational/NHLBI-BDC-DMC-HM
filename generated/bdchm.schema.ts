@@ -1698,6 +1698,12 @@ export enum MeasurementObservationTypeEnum {
     PACEM_STAT = "PACEM_STAT",
     SLP_AP_STAT = "SLP_AP_STAT",
     BP_SYSTOLIC = "BP_SYSTOLIC",
+    FVC_PRED = "FVC_PRED",
+    FEV1_PRED = "FEV1_PRED",
+    FEV1_FVC_PRED = "FEV1_FVC_PRED",
+    FEV1_PCT_PRED = "FEV1_PCT_PRED",
+    FVC_PCT_PRED = "FVC_PCT_PRED",
+    FEV1_FVC_PCT_PRED = "FEV1_FVC_PCT_PRED",
 };
 /**
 * Values describing the types of Education Attainment observed in an Observation.
