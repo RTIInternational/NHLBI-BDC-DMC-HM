@@ -328,8 +328,8 @@
 
 
 
-    SdohObservation --&gt; "1" BaseObservationTypeEnum : observation_type
-    click BaseObservationTypeEnum href "../BaseObservationTypeEnum"
+    SdohObservation --&gt; "1" SdohEnum : observation_type
+    click SdohEnum href "../SdohEnum"
 
 
       SdohObservation : performed_by
@@ -427,7 +427,7 @@
 </tr>
 <tr>
 <td><a href="../observation_type/">observation_type</a></td>
-<td>1 <br/> <a href="../BaseObservationTypeEnum/">BaseObservationTypeEnum</a></td>
+<td>1 <br/> <a href="../SdohEnum/">SdohEnum</a></td>
 <td>The type of Observation being represented (e</td>
 <td><a href="../Observation/">Observation</a></td>
 </tr>
@@ -544,6 +544,9 @@ slot_usage:
   category:
     name: category
     range: GravityDomainEnum
+  observation_type:
+    name: observation_type
+    range: SdohEnum
 attributes:
   related_questionnaire_item:
     name: related_questionnaire_item
@@ -569,6 +572,9 @@ slot_usage:
   category:
     name: category
     range: GravityDomainEnum
+  observation_type:
+    name: observation_type
+    range: SdohEnum
 attributes:
   related_questionnaire_item:
     name: related_questionnaire_item
@@ -652,7 +658,7 @@ attributes:
     domain_of:
     - Observation
     - MeasurementObservation
-    range: BaseObservationTypeEnum
+    range: SdohEnum
     required: true
     multivalued: false
   method_type:
