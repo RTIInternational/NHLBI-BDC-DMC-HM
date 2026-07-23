@@ -3351,6 +3351,15 @@
             "title": "ResearchStudy",
             "type": "object"
         },
+        "SdohEnum": {
+            "description": "A constrained set of enumerative values describing social determinants of health measurement variables.",
+            "enum": [
+                "FAMILY_INCOME",
+                "EDUCATIONAL_ATTAINMENT"
+            ],
+            "title": "SdohEnum",
+            "type": "string"
+        },
         "SdohObservation": {
             "additionalProperties": false,
             "description": "A data structure with key (observation_type) and value (value) attributes that represents a single observation, such as the hematocrit component of a complete blood count panel.",
@@ -3406,7 +3415,7 @@
                     ]
                 },
                 "observation_type": {
-                    "$ref": "#/$defs/BaseObservationTypeEnum",
+                    "$ref": "#/$defs/SdohEnum",
                     "description": "The type of Observation being represented (e.g. 'diastolic blood pressure')"
                 },
                 "performed_by": {
