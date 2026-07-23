@@ -1843,6 +1843,16 @@ export enum QuantityOperatorEnum {
     /** The quantity is greater than a specified value */
     GREATER_THAN = "GREATER_THAN",
 };
+/**
+* A constrained set of enumerative values describing social determinants of health measurement variables.
+*/
+export enum SdohEnum {
+    
+    /** The sum of the income of all family members 15 years and older living in the household over 12 months, before taxes */
+    FAMILY_INCOME = "FAMILY_INCOME",
+    /** The highest level of education that an individual has completed */
+    EDUCATIONAL_ATTAINMENT = "EDUCATIONAL_ATTAINMENT",
+};
 
 
 /**
