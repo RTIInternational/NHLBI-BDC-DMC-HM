@@ -1565,7 +1565,7 @@ classes:
         - One and only one of the value(x) fields must be populated.
         multivalued: false
         required: false
-        range: BaseEnum
+        range: BaseObservationValueEnum
       context:
         description: The context within which an observation was made.
         multivalued: true
@@ -4077,8 +4077,8 @@ enums:
         description: The patient is lying on their stomach during the measurement or observation.
         meaning: OMOP:4050473
 
-  BaseObservationTypeEnum:
-    description: Values describing the types of an Observation.
+  BaseObservationValueEnum:
+    description: Constrainted values to be used in value_enums for Observations 
     inherits:
       - EducationalAttainmentObservationTypeEnum
       - SmokingStatusObservationTypeEnum
