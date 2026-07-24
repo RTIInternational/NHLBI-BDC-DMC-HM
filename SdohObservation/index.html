@@ -357,8 +357,8 @@
 
 
 
-    SdohObservation --&gt; "0..1" BaseEnum : value_enum
-    click BaseEnum href "../BaseEnum"
+    SdohObservation --&gt; "0..1" BaseObservationValueEnum : value_enum
+    click BaseObservationValueEnum href "../BaseObservationValueEnum"
 
 
       SdohObservation : value_quantity
@@ -469,7 +469,7 @@
 </tr>
 <tr>
 <td><a href="../value_enum/">value_enum</a></td>
-<td>0..1 <br/> <a href="../BaseEnum/">BaseEnum</a></td>
+<td>0..1 <br/> <a href="../BaseObservationValueEnum/">BaseObservationValueEnum</a></td>
 <td>A slot to hold an enumerated value for an Observation</td>
 <td><a href="../Observation/">Observation</a></td>
 </tr>
@@ -761,7 +761,7 @@ attributes:
     owner: SdohObservation
     domain_of:
     - Observation
-    range: BaseEnum
+    range: BaseObservationValueEnum
     required: false
     multivalued: false
   context:

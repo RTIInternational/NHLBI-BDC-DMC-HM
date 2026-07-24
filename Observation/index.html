@@ -334,8 +334,8 @@
 
 
 
-    Observation --&gt; "1" BaseObservationTypeEnum : observation_type
-    click BaseObservationTypeEnum href "../BaseObservationTypeEnum"
+    Observation --&gt; "1"  : observation_type
+    click  href "../"
 
 
       Observation : performed_by
@@ -354,8 +354,8 @@
 
 
 
-    Observation --&gt; "0..1" BaseEnum : value_enum
-    click BaseEnum href "../BaseEnum"
+    Observation --&gt; "0..1" BaseObservationValueEnum : value_enum
+    click BaseObservationValueEnum href "../BaseObservationValueEnum"
 
 
       Observation : value_quantity
@@ -422,7 +422,7 @@
 </tr>
 <tr>
 <td><a href="../observation_type/">observation_type</a></td>
-<td>1 <br/> <a href="../BaseObservationTypeEnum/">BaseObservationTypeEnum</a></td>
+<td>1 <br/> NONE</td>
 <td>The type of Observation being represented (e</td>
 <td>direct</td>
 </tr>
@@ -464,7 +464,7 @@
 </tr>
 <tr>
 <td><a href="../value_enum/">value_enum</a></td>
-<td>0..1 <br/> <a href="../BaseEnum/">BaseEnum</a></td>
+<td>0..1 <br/> <a href="../BaseObservationValueEnum/">BaseObservationValueEnum</a></td>
 <td>A slot to hold an enumerated value for an Observation</td>
 <td>direct</td>
 </tr>
@@ -676,7 +676,7 @@ attributes:
     rank: 1000
     domain_of:
     - Observation
-    range: BaseEnum
+    range: BaseObservationValueEnum
     required: false
     multivalued: false
   context:
@@ -848,7 +848,7 @@ attributes:
     owner: Observation
     domain_of:
     - Observation
-    range: BaseEnum
+    range: BaseObservationValueEnum
     required: false
     multivalued: false
   context:
