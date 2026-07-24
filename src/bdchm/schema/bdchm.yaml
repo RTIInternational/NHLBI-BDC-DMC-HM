@@ -1495,7 +1495,7 @@ classes:
       associated_visit:
         required: false
       associated_participant:
-        required: true
+        required: false
       
   Observation:
     is_a: Entity
@@ -1565,7 +1565,7 @@ classes:
         - One and only one of the value(x) fields must be populated.
         multivalued: false
         required: false
-        range: BaseEnum
+        range: BaseObservationValueEnum
       context:
         description: The context within which an observation was made.
         multivalued: true
@@ -2179,6 +2179,8 @@ enums:
       STANDARD_ALGORITHM_FROM_CLAIMS:
         description: Standard algorithm from claims
         meaning: OMOP:32881
+      STUDY_RECORD:
+        description: The condition was recorded in a study-related record.
       SURVEY:
         description: Survey
         meaning: OMOP:32883
@@ -4075,8 +4077,8 @@ enums:
         description: The patient is lying on their stomach during the measurement or observation.
         meaning: OMOP:4050473
 
-  BaseObservationTypeEnum:
-    description: Values describing the types of an Observation.
+  BaseObservationValueEnum:
+    description: Constrainted values to be used in value_enums for Observations 
     inherits:
       - EducationalAttainmentObservationTypeEnum
       - SmokingStatusObservationTypeEnum
