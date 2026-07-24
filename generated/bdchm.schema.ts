@@ -353,6 +353,8 @@ export enum VisitProvenanceEnum {
     STANDARD_ALGORITHM_FROM_EHR = "STANDARD_ALGORITHM_FROM_EHR",
     /** Standard algorithm from claims */
     STANDARD_ALGORITHM_FROM_CLAIMS = "STANDARD_ALGORITHM_FROM_CLAIMS",
+    /** The condition was recorded in a study-related record. */
+    STUDY_RECORD = "STUDY_RECORD",
     /** Survey */
     SURVEY = "SURVEY",
     /** US Social Security Death Master File */
@@ -1760,9 +1762,9 @@ export enum BodyPositionEnum {
     PRONE_BODY_POSITION = "PRONE_BODY_POSITION",
 };
 /**
-* Values describing the types of an Observation.
+* Constrainted values to be used in value_enums for Observations
 */
-export enum BaseObservationTypeEnum {
+export enum BaseObservationValueEnum {
     
 };
 /**
@@ -2610,7 +2612,7 @@ export interface ObservationSet extends Entity {
     /** A reference to the Visit that is associated with this record. */
     associated_visit?: VisitId,
     /** A reference to the Participant that is associated with this record. */
-    associated_participant: ParticipantId,
+    associated_participant?: ParticipantId,
     /** The general category of observation set described */
     category?: string,
     /** The entity or entities directly observed/measured in generating an observation result. */
