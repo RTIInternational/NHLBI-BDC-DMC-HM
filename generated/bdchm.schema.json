@@ -128,9 +128,9 @@
             "title": "BaseEnum",
             "type": "string"
         },
-        "BaseObservationTypeEnum": {
-            "description": "Values describing the types of an Observation.",
-            "title": "BaseObservationTypeEnum",
+        "BaseObservationValueEnum": {
+            "description": "Constrainted values to be used in value_enums for Observations",
+            "title": "BaseObservationValueEnum",
             "type": "string"
         },
         "BiologicProduct": {
@@ -743,7 +743,6 @@
                     ]
                 },
                 "observation_type": {
-                    "$ref": "#/$defs/BaseObservationTypeEnum",
                     "description": "The type of Observation being represented (e.g. 'diastolic blood pressure')"
                 },
                 "performed_by": {
@@ -761,7 +760,7 @@
                     ]
                 },
                 "value_enum": {
-                    "$ref": "#/$defs/BaseEnum",
+                    "$ref": "#/$defs/BaseObservationValueEnum",
                     "description": "A slot to hold an enumerated value for an Observation."
                 },
                 "value_quantity": {
@@ -793,7 +792,10 @@
             "properties": {
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
@@ -850,7 +852,6 @@
             },
             "required": [
                 "observations",
-                "associated_participant",
                 "id"
             ],
             "title": "DimensionalObservationSet",
@@ -1805,7 +1806,7 @@
                     ]
                 },
                 "value_enum": {
-                    "$ref": "#/$defs/BaseEnum",
+                    "$ref": "#/$defs/BaseObservationValueEnum",
                     "description": "A slot to hold an enumerated value for an Observation."
                 },
                 "value_quantity": {
@@ -1837,7 +1838,10 @@
             "properties": {
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
@@ -1894,7 +1898,6 @@
             },
             "required": [
                 "observations",
-                "associated_participant",
                 "id"
             ],
             "title": "MeasurementObservationSet",
@@ -2101,7 +2104,6 @@
                     ]
                 },
                 "observation_type": {
-                    "$ref": "#/$defs/BaseObservationTypeEnum",
                     "description": "The type of Observation being represented (e.g. 'diastolic blood pressure')"
                 },
                 "performed_by": {
@@ -2119,7 +2121,7 @@
                     ]
                 },
                 "value_enum": {
-                    "$ref": "#/$defs/BaseEnum",
+                    "$ref": "#/$defs/BaseObservationValueEnum",
                     "description": "A slot to hold an enumerated value for an Observation."
                 },
                 "value_quantity": {
@@ -2151,7 +2153,10 @@
             "properties": {
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
@@ -2208,7 +2213,6 @@
             },
             "required": [
                 "observations",
-                "associated_participant",
                 "id"
             ],
             "title": "ObservationSet",
@@ -3440,7 +3444,7 @@
                     ]
                 },
                 "value_enum": {
-                    "$ref": "#/$defs/BaseEnum",
+                    "$ref": "#/$defs/BaseObservationValueEnum",
                     "description": "A slot to hold an enumerated value for an Observation."
                 },
                 "value_quantity": {
@@ -3472,7 +3476,10 @@
             "properties": {
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
@@ -3526,7 +3533,6 @@
             },
             "required": [
                 "observations",
-                "associated_participant",
                 "id"
             ],
             "title": "SdohObservationSet",
@@ -4258,7 +4264,6 @@
                     ]
                 },
                 "observation_type": {
-                    "$ref": "#/$defs/BaseObservationTypeEnum",
                     "description": "The type of Observation being represented (e.g. 'diastolic blood pressure')"
                 },
                 "performed_by": {
@@ -4276,7 +4281,7 @@
                     ]
                 },
                 "value_enum": {
-                    "$ref": "#/$defs/BaseEnum",
+                    "$ref": "#/$defs/BaseObservationValueEnum",
                     "description": "A slot to hold an enumerated value for an Observation."
                 },
                 "value_quantity": {
@@ -4378,7 +4383,6 @@
                     ]
                 },
                 "observation_type": {
-                    "$ref": "#/$defs/BaseObservationTypeEnum",
                     "description": "The type of Observation being represented (e.g. 'diastolic blood pressure')"
                 },
                 "performed_by": {
@@ -4396,7 +4400,7 @@
                     ]
                 },
                 "value_enum": {
-                    "$ref": "#/$defs/BaseEnum",
+                    "$ref": "#/$defs/BaseObservationValueEnum",
                     "description": "A slot to hold an enumerated value for an Observation."
                 },
                 "value_quantity": {
@@ -4865,6 +4869,7 @@
                 "STANDARD_ALGORITHM",
                 "STANDARD_ALGORITHM_FROM_EHR",
                 "STANDARD_ALGORITHM_FROM_CLAIMS",
+                "STUDY_RECORD",
                 "SURVEY",
                 "US_SOCIAL_SECURITY_DEATH_MASTER_FILE",
                 "URGENT_LAB",
