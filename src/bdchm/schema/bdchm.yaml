@@ -2482,7 +2482,7 @@ enums:
       PRESCRIPTION_WRITTEN:
         description: Prescription written
         meaning: OMOP:38000177          
-      PRESCIPTION_LABEL:
+      PRESCRIPTION_LABEL:
         description: For use when a Participant brings in their medications and an investigator makes a list of medications using the labels                                                                          
       MEDICATION_LIST_ENTRY:
         description: Medication list entry
@@ -3944,6 +3944,8 @@ enums:
         meaning: OMOP:4241837      #fev1
       FEV1_FVC:
         meaning: OMOP:3011505      #fev1_fvc
+      FEV1_PERCENT_CHANGE:
+        meaning: OMOP:44813037      #fev1_percent_change
       FRUIT_SERVING:
         meaning: OMOP:21493059     #fruit_serving
       FVC:
@@ -4015,7 +4017,7 @@ enums:
       FVC_PCT_PRED:
         meaning: OMOP:3005600
       FEV1_FVC_PCT_PRED:
-        meaning: OMOP::4196583
+        meaning: OMOP:4196583
 
   EducationalAttainmentObservationTypeEnum:
     description: Values describing the types of Education Attainment observed in an Observation.
