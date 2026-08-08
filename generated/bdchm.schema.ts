@@ -543,7 +543,7 @@ export enum DrugExposureProvenanceEnum {
     /** Prescription written */
     PRESCRIPTION_WRITTEN = "PRESCRIPTION_WRITTEN",
     /** For use when a Participant brings in their medications and an investigator makes a list of medications using the labels */
-    PRESCIPTION_LABEL = "PRESCIPTION_LABEL",
+    PRESCRIPTION_LABEL = "PRESCRIPTION_LABEL",
     /** Medication list entry */
     MEDICATION_LIST_ENTRY = "MEDICATION_LIST_ENTRY",
     /** Physician administered drug (identified as procedure) */
@@ -1670,6 +1670,7 @@ export enum MeasurementObservationTypeEnum {
     FAST_GLUC_BLD = "FAST_GLUC_BLD",
     FEV1 = "FEV1",
     FEV1_FVC = "FEV1_FVC",
+    FEV1_PERCENT_CHANGE = "FEV1_PERCENT_CHANGE",
     FRUIT_SERVING = "FRUIT_SERVING",
     FVC = "FVC",
     HEMO_A1C = "HEMO_A1C",
