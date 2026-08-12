@@ -43,10 +43,6 @@ def _example_params():
         yield pytest.param(path, id=path.name, marks=marks)
 
 
-@pytest.mark.xfail(
-    reason="schema metamodel fixes land in PR #190; passes once merged",
-    strict=False,
-)
 def test_schema_validates_against_metamodel():
     result = subprocess.run(
         [sys.executable, "-m", "linkml.validator.cli", str(SCHEMA)],
