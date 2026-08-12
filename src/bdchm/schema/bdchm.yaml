@@ -1517,7 +1517,7 @@ classes:
         comments:
           - This field holds the "key" in the core key-value pair comprised of the observation_type field and the relevant value(s) field.
         multivalued: false
-        range: BaseObservationTypeEnum
+        range: BaseEnum
         required: true
       method_type:
         description: A type of method used in generating the Observation result.
