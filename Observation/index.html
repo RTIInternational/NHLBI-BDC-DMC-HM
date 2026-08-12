@@ -334,8 +334,8 @@
 
 
 
-    Observation --&gt; "1"  : observation_type
-    click  href "../"
+    Observation --&gt; "1" BaseEnum : observation_type
+    click BaseEnum href "../BaseEnum"
 
 
       Observation : performed_by
@@ -422,7 +422,7 @@
 </tr>
 <tr>
 <td><a href="../observation_type/">observation_type</a></td>
-<td>1 <br/> NONE</td>
+<td>1 <br/> <a href="../BaseEnum/">BaseEnum</a></td>
 <td>The type of Observation being represented (e</td>
 <td>direct</td>
 </tr>
@@ -580,7 +580,7 @@ attributes:
     domain_of:
     - Observation
     - MeasurementObservation
-    range: BaseObservationTypeEnum
+    range: BaseEnum
     required: true
     multivalued: false
   method_type:
@@ -745,7 +745,7 @@ attributes:
     domain_of:
     - Observation
     - MeasurementObservation
-    range: BaseObservationTypeEnum
+    range: BaseEnum
     required: true
     multivalued: false
   method_type:
