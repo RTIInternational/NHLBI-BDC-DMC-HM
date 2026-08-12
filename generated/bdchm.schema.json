@@ -743,6 +743,7 @@
                     ]
                 },
                 "observation_type": {
+                    "$ref": "#/$defs/BaseEnum",
                     "description": "The type of Observation being represented (e.g. 'diastolic blood pressure')"
                 },
                 "performed_by": {
@@ -2105,6 +2106,7 @@
                     ]
                 },
                 "observation_type": {
+                    "$ref": "#/$defs/BaseEnum",
                     "description": "The type of Observation being represented (e.g. 'diastolic blood pressure')"
                 },
                 "performed_by": {
@@ -4265,6 +4267,7 @@
                     ]
                 },
                 "observation_type": {
+                    "$ref": "#/$defs/BaseEnum",
                     "description": "The type of Observation being represented (e.g. 'diastolic blood pressure')"
                 },
                 "performed_by": {
@@ -4384,6 +4387,7 @@
                     ]
                 },
                 "observation_type": {
+                    "$ref": "#/$defs/BaseEnum",
                     "description": "The type of Observation being represented (e.g. 'diastolic blood pressure')"
                 },
                 "performed_by": {
