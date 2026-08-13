@@ -1707,6 +1707,9 @@ export enum MeasurementObservationTypeEnum {
     FEV1_PCT_PRED = "FEV1_PCT_PRED",
     FVC_PCT_PRED = "FVC_PCT_PRED",
     FEV1_FVC_PCT_PRED = "FEV1_FVC_PCT_PRED",
+    CAC_VOLUME = "CAC_VOLUME",
+    CAROTID_STEN_LEFT = "CAROTID_STEN_LEFT",
+    CAROTID_STEN_RIGHT = "CAROTID_STEN_RIGHT",
 };
 /**
 * Values describing the types of Education Attainment observed in an Observation.
@@ -1721,6 +1724,7 @@ export enum EducationalAttainmentObservationTypeEnum {
     MASTERS_OR_DOCTORAL_DEGREE = "MASTERS_OR_DOCTORAL_DEGREE",
     /** Educational attainment is unknown or not reported. */
     UNKNOWN = "UNKNOWN",
+    GREATER_THAN_HIGH_SCHOOL_OR_EQUIVALENT = "GREATER_THAN_HIGH_SCHOOL_OR_EQUIVALENT",
 };
 /**
 * Values describing the types of Smoking Status observed in an Observation.
