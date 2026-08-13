@@ -4043,6 +4043,8 @@ enums:
         meaning: OMOP:45880652
       UNKNOWN:
         description: Educational attainment is unknown or not reported.
+      GREATER_THAN_HIGH_SCHOOL_OR_EQUIVALENT:
+        meaning: OMOP:37079441 
 
   SmokingStatusObservationTypeEnum:
     description: Values describing the types of Smoking Status observed in an Observation.
