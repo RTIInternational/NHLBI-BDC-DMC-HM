@@ -3989,7 +3989,7 @@ enums:
       TROPONIN:
         meaning: OMOP:4021291      #troponin
       VEGE_SERVING:
-        meaning: OMOP:4042886      #vege_serving
+        meaning: OMOP:37311566      #vege_serving
       WAIST_HIP:
         meaning: OMOP:4087501      #waist_hip
       CESD_SCORE:
@@ -4018,6 +4018,13 @@ enums:
         meaning: OMOP:3005600
       FEV1_FVC_PCT_PRED:
         meaning: OMOP:4196583
+      CAC_VOLUME:
+        meaning: OMOP:4166120
+      CAROTID_STEN_LEFT:
+        meaning: OMOP:43020498
+      CAROTID_STEN_RIGHT:
+        meaning: OMOP:43021859
+      
 
   EducationalAttainmentObservationTypeEnum:
     description: Values describing the types of Education Attainment observed in an Observation.
@@ -4036,6 +4043,8 @@ enums:
         meaning: OMOP:45880652
       UNKNOWN:
         description: Educational attainment is unknown or not reported.
+      GREATER_THAN_HIGH_SCHOOL_OR_EQUIVALENT:
+        meaning: OMOP:37079441 
 
   SmokingStatusObservationTypeEnum:
     description: Values describing the types of Smoking Status observed in an Observation.
