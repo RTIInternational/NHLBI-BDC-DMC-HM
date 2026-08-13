@@ -1221,7 +1221,8 @@
                 "SOME_COLLEGE_OR_TECH_NO_DEGREE",
                 "COLLEGE_OR_TECH_WITH_DEGREE",
                 "MASTERS_OR_DOCTORAL_DEGREE",
-                "UNKNOWN"
+                "UNKNOWN",
+                "GREATER_THAN_HIGH_SCHOOL_OR_EQUIVALENT"
             ],
             "title": "EducationalAttainmentObservationTypeEnum",
             "type": "string"
@@ -2025,7 +2026,10 @@
                 "FEV1_FVC_PRED",
                 "FEV1_PCT_PRED",
                 "FVC_PCT_PRED",
-                "FEV1_FVC_PCT_PRED"
+                "FEV1_FVC_PCT_PRED",
+                "CAC_VOLUME",
+                "CAROTID_STEN_LEFT",
+                "CAROTID_STEN_RIGHT"
             ],
             "title": "MeasurementObservationTypeEnum",
             "type": "string"
