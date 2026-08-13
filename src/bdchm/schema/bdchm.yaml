@@ -4020,8 +4020,6 @@ enums:
         meaning: OMOP:4196583
       CAC_VOLUME:
         meaning: OMOP:4166120
-      QRS_INTERVAL:
-        meaning: OMOP:4273021
       CAROTID_STEN_LEFT:
         meaning: OMOP:43020498
       CAROTID_STEN_RIGHT:
