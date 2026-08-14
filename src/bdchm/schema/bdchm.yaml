@@ -3830,6 +3830,8 @@ enums:
         meaning: OBA:1001087 #Heart rate
       HEIGHT:  
         meaning: OBA:VT0001253  #Height
+        exact_mappings:
+          - OMOP:607590
       HEMATOCRIT: 
         meaning: OBA:2045381 #Hematocrit
       HEMOGLOBIN: 
@@ -3870,6 +3872,9 @@ enums:
         meaning: OBA:2052701 #P-selectin in blood
       PH_OF_BLOOD:   
         meaning: OBA:2045409 #pH of blood
+        narrow_mappings:
+          - OMOP:4097822 #pH measurement, arterial
+          - OMOP:4315792 #pH measurement, venous
       POTASSIUM_IN_BLOOD:  
         meaning: OBA:VT0002668  #Potassium in blood
       QRS_INTERVAL:  
@@ -3930,6 +3935,10 @@ enums:
         meaning: OMOP:42872742     #cac_score
       CAROTID_IMT:
         meaning: OMOP:4138462      #carotid_imt
+        exact_mappings:
+          - OBA:2090004
+        broad_mappings:
+          - OBA:2050108 #carotid artery thickness
       SMOKING:
         meaning: OMOP:43054909     #smoking
       D_DIMER:
