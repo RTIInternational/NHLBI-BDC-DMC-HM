@@ -2743,7 +2743,7 @@ export interface Assay extends Entity {
  */
 export interface Context extends Entity {
     /** The activity that provides context to the observation (e.g. "fasting", "bronchodilator use") */
-    activity?: ActivityId,
+    activity: ActivityId,
     /** The timing of the observation relative to the observation (e.g., "before", "concurrent with") */
     relative_timing?: string,
 }
