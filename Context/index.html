@@ -277,7 +277,7 @@
 
 
 
-    Context --&gt; "0..1" Activity : activity
+    Context --&gt; "1" Activity : activity
     click Activity href "../Activity"
 
 
@@ -314,7 +314,7 @@
 <tbody>
 <tr>
 <td><a href="../activity/">activity</a></td>
-<td>0..1 <br/> <a href="../Activity/">Activity</a></td>
+<td>1 <br/> <a href="../Activity/">Activity</a></td>
 <td>The activity that provides context to the observation (e</td>
 <td>direct</td>
 </tr>
@@ -423,6 +423,7 @@ attributes:
     domain_of:
     - Context
     range: Activity
+    required: true
   relative_timing:
     name: relative_timing
     description: The timing of the observation relative to the observation (e.g.,
@@ -452,6 +453,7 @@ attributes:
     domain_of:
     - Context
     range: Activity
+    required: true
   relative_timing:
     name: relative_timing
     description: The timing of the observation relative to the observation (e.g.,
