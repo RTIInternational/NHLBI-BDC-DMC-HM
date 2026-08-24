@@ -1708,6 +1708,7 @@ classes:
       activity:
         description: The activity that provides context to the observation (e.g. "fasting", "bronchodilator use")
         range: Activity
+        required: true
       relative_timing:
         description: The timing of the observation relative to the observation (e.g., "before", "concurrent with")
         range: RelativeTimingEnum
