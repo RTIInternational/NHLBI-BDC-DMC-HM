@@ -1692,11 +1692,22 @@
                     ]
                 },
                 "associated_artifact": {
-                    "description": "A reference to the assay, file, or questionnaire response that was used in generating this observation.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "A reference to the assay, file, or questionnaire that was used in generating this observation.",
+                    "type": "string"
                 },
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
