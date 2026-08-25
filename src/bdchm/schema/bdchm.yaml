@@ -1608,7 +1608,7 @@ classes:
         required: true
       associated_artifact:
         description: A reference to the assay, file, or questionnaire that was used in generating this observation.
-        range: Any
+        range: Entity
         any_of:
           - range: Assay
           - range: File
