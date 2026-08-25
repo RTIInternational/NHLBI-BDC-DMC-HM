@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/associated_assay/">
+        <link rel="canonical" href="https://rtiinternational.github.io/NHLBI-BDC-DMC-HM/associated_artifact/">
       
       
       
@@ -21,7 +21,7 @@
     
     
       
-        <title>Slot: associated_assay - BioData Catalyst Harmonized Model</title>
+        <title>Slot: associated_artifact - BioData Catalyst Harmonized Model</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-associated_assay" class="md-skip">
+        <a href="#slot-associated_artifact" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: associated_assay
+              Slot: associated_artifact
             
           </span>
         </div>
@@ -410,9 +410,9 @@
   
 
 
-<h1 id="slot-associated_assay">Slot: associated_assay</h1>
-<p><em>A reference to the assay that was used in generating this observation.</em></p>
-<p>URI: <a href="https://w3id.org/bdchm/associated_assay">bdchm:associated_assay</a></p>
+<h1 id="slot-associated_artifact">Slot: associated_artifact</h1>
+<p><em>A reference to the assay, file, or questionnaire that was used in generating this observation.</em></p>
+<p>URI: <a href="https://w3id.org/bdchm/associated_artifact">bdchm:associated_artifact</a></p>
 <!-- no inheritance hierarchy -->
 
 <h2 id="applicable-classes">Applicable Classes</h2>
@@ -434,7 +434,7 @@
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../Assay/">Assay</a></li>
+<li>Range: <a href="../Entity/">Entity</a>&nbsp;or&nbsp;<br /><a href="../Assay/">Assay</a>&nbsp;or&nbsp;<br /><a href="../File/">File</a>&nbsp;or&nbsp;<br /><a href="../QuestionnaireResponse/">QuestionnaireResponse</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
@@ -452,26 +452,31 @@
 <tbody>
 <tr>
 <td>self</td>
-<td>bdchm:associated_assay</td>
+<td>bdchm:associated_artifact</td>
 </tr>
 <tr>
 <td>native</td>
-<td>bdchm:associated_assay</td>
+<td>bdchm:associated_artifact</td>
 </tr>
 </tbody>
 </table>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: associated_assay
-description: A reference to the assay that was used in generating this observation.
+<pre><code class="language-yaml">name: associated_artifact
+description: A reference to the assay, file, or questionnaire that was used in generating
+  this observation.
 from_schema: https://w3id.org/bdchm
 rank: 1000
 owner: MeasurementObservation
 domain_of:
 - MeasurementObservation
-range: Assay
+range: Entity
 required: false
+any_of:
+- range: Assay
+- range: File
+- range: QuestionnaireResponse
 
 </code></pre>
 

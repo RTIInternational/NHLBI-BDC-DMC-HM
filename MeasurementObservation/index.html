@@ -274,13 +274,13 @@
 
       MeasurementObservation : age_at_observation
 
-      MeasurementObservation : associated_assay
+      MeasurementObservation : associated_artifact
 
 
 
 
-    MeasurementObservation --&gt; "0..1" Assay : associated_assay
-    click Assay href "../Assay"
+    MeasurementObservation --&gt; "0..1" Entity : associated_artifact
+    click Entity href "../Entity"
 
 
       MeasurementObservation : associated_participant
@@ -470,9 +470,9 @@
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../associated_assay/">associated_assay</a></td>
-<td>0..1 <br/> <a href="../Assay/">Assay</a></td>
-<td>A reference to the assay that was used in generating this observation</td>
+<td><a href="../associated_artifact/">associated_artifact</a></td>
+<td>0..1 <br/> <a href="../Entity/">Entity</a> or <br/><a href="../Assay/">Assay</a> or <br/><a href="../File/">File</a> or <br/><a href="../QuestionnaireResponse/">QuestionnaireResponse</a></td>
+<td>A reference to the assay, file, or questionnaire that was used in generating ...</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -674,15 +674,20 @@ attributes:
     - MeasurementObservation
     range: MeasurementObservationTypeEnum
     required: true
-  associated_assay:
-    name: associated_assay
-    description: A reference to the assay that was used in generating this observation.
+  associated_artifact:
+    name: associated_artifact
+    description: A reference to the assay, file, or questionnaire that was used in
+      generating this observation.
     from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - MeasurementObservation
-    range: Assay
+    range: Entity
     required: false
+    any_of:
+    - range: Assay
+    - range: File
+    - range: QuestionnaireResponse
   body_site:
     name: body_site
     description: The body site that is the focus of this observation, if applicable.
@@ -784,16 +789,21 @@ attributes:
     - MeasurementObservation
     range: MeasurementObservationTypeEnum
     required: true
-  associated_assay:
-    name: associated_assay
-    description: A reference to the assay that was used in generating this observation.
+  associated_artifact:
+    name: associated_artifact
+    description: A reference to the assay, file, or questionnaire that was used in
+      generating this observation.
     from_schema: https://w3id.org/bdchm
     rank: 1000
     owner: MeasurementObservation
     domain_of:
     - MeasurementObservation
-    range: Assay
+    range: Entity
     required: false
+    any_of:
+    - range: Assay
+    - range: File
+    - range: QuestionnaireResponse
   body_site:
     name: body_site
     description: The body site that is the focus of this observation, if applicable.
