@@ -2679,8 +2679,8 @@ export interface MeasurementObservation extends Observation {
     range_high?: QuantityId,
     /** The type of Observation being represented (e.g. 'diastolic blood pressure') */
     observation_type: string,
-    /** A reference to the assay that was used in generating this observation. */
-    associated_assay?: AssayId,
+    /** A reference to the assay, file, or questionnaire response that was used in generating this observation. */
+    associated_artifact?: AssayId,
     /** The body site that is the focus of this observation, if applicable. */
     body_site?: BodySiteId,
     /** The position of the body that is the focus of this observation, if applicable. */

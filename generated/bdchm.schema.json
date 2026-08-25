@@ -1691,8 +1691,8 @@
                         "null"
                     ]
                 },
-                "associated_assay": {
-                    "description": "A reference to the assay that was used in generating this observation.",
+                "associated_artifact": {
+                    "description": "A reference to the assay, file, or questionnaire response that was used in generating this observation.",
                     "type": [
                         "string",
                         "null"
