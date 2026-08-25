@@ -1606,9 +1606,13 @@ classes:
           - This field holds the "key" in the core key-value pair comprised of the observation_type field and the relevant value(s) field.
         range: MeasurementObservationTypeEnum
         required: true
-      associated_assay:
-        description: A reference to the assay that was used in generating this observation.
-        range: Assay
+      associated_artifact:
+        description: A reference to the assay, file, or questionnaire that was used in generating this observation.
+        range: Any
+        any_of:
+          - range: Assay
+          - range: File
+          - range: QuestionnaireResponse
         required: false
       body_site:
         description: The body site that is the focus of this observation, if applicable.
