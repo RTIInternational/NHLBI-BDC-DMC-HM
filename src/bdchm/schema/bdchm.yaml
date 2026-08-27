@@ -4530,6 +4530,43 @@ enums:
         description: "waist to hip ratio | A compound attribute that is the ratio of waist circumference to hip circumference."
         meaning: OBA:2100052
 
+      "OMOP:3013682":
+        description: "LOINC Urea nitrogen [Mass/volume] in Serum or Plasma | Urea nitrogen [Mass/volume] in Serum or Plasma"
+        meaning: OMOP:3013682
+      "OMOP:3003205":
+        description: "LOINC Brachial artery Systolic blood pressure | Brachial artery Systolic blood pressure"
+        meaning: OMOP:3003205
+      "OMOP:3010404":
+        description: "LOINC Brachial artery Diastolic blood pressure | Brachial artery Diastolic blood pressure"
+        meaning: OMOP:3010404
+      "OMOP:3016205":
+        description: "LOINC Systolic blood pressure Posterior tibial artery/Brachial artery | Systolic blood pressure Posterior tibial artery/Brachial artery"
+        meaning: OMOP:3016205
+      "OMOP:3010175":
+        description: "LOINC Systolic blood pressure Posterior tibial artery - right/Brachial artery | Systolic blood pressure Posterior tibial artery - right/Brachial artery"
+        meaning: OMOP:3010175
+      "OMOP:3000848":
+        description: "LOINC Systolic blood pressure Posterior tibial artery - left/Brachial artery | Systolic blood pressure Posterior tibial artery - left/Brachial artery"
+        meaning: OMOP:3000848
+      "OMOP:3021627":
+        description: "LOINC Systolic blood pressure Brachial artery - right/Brachial artery | Systolic blood pressure Brachial artery - right/Brachial artery"
+        meaning: OMOP:3021627
+      "OMOP:3018586":
+        description: "LOINC Systolic blood pressure--sitting | Systolic blood pressure--sitting"
+        meaning: OMOP:3018586
+      "OMOP:3035856":
+        description: "LOINC Systolic blood pressure--standing | Systolic blood pressure--standing"
+        meaning: OMOP:3035856
+      "OMOP:3009395":
+        description: "LOINC Systolic blood pressure--supine | Systolic blood pressure--supine"
+        meaning: OMOP:3009395
+      "OBA:VT0000199":
+        description: "blood albumin amount | The amount of a albumin type when measured in blood."
+        meaning: OBA:VT0000199
+      "OMOP:3014111":
+        description: "LOINC Lactate [Moles/volume] in Serum or Plasma | Lactate [Moles/volume] in Serum or Plasma"
+        meaning: OMOP:3014111
+
   EducationalAttainmentObservationTypeEnum:
     description: Values describing the types of Education Attainment observed in an Observation.
     permissible_values:
