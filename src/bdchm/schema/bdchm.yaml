@@ -4386,10 +4386,10 @@ enums:
         description: "LOINC Erythrocyte sedimentation rate [Velocity] in Red Blood Cells | Erythrocyte sedimentation rate"
         meaning: OMOP:3015183
       "OMOP:4097822":
-        description: "SNOMED "pH measurement, arterial" | pH measurement, arterial"
+        description: "SNOMED pH measurement, arterial | pH measurement, arterial"
         meaning: OMOP:4097822
       "OMOP:4315792":
-        description: "SNOMED "pH measurement, venous" | pH measurement, venous"
+        description: "SNOMED pH measurement, venous | pH measurement, venous"
         meaning: OMOP:4315792
       "OMOP:4041720":
         description: "SNOMED Plasma fasting HDL cholesterol measurement | Plasma fasting HDL cholesterol measurement"
