@@ -3230,20 +3230,6 @@
                         "null"
                     ]
                 },
-                "date_ended": {
-                    "description": "The date when the research project ended.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "date_started": {
-                    "description": "The date when the research project began.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
                 "description": {
                     "description": "An unabridged description of a research program, project, or study.",
                     "type": [
@@ -3321,6 +3307,13 @@
                 },
                 "version": {
                     "description": "The version number of the ResearchStudy",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "year_range": {
+                    "description": "The time period demarcating the years between the start and end of the ResearchStudy (e.g., 2020-2021).",
                     "type": [
                         "string",
                         "null"
@@ -3397,20 +3390,6 @@
                         "null"
                     ]
                 },
-                "date_ended": {
-                    "description": "The date when the research project ended.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "date_started": {
-                    "description": "The date when the research project began.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
                 "description": {
                     "description": "An unabridged description of a research program, project, or study.",
                     "type": [
@@ -3488,6 +3467,13 @@
                 },
                 "version": {
                     "description": "The version number of the ResearchStudy",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "year_range": {
+                    "description": "The time period demarcating the years between the start and end of the ResearchStudy (e.g., 2020-2021).",
                     "type": [
                         "string",
                         "null"
@@ -4787,16 +4773,20 @@
                 },
                 "period_end": {
                     "description": "When a period of time ended.",
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "period_start": {
                     "description": "When a period of time started.",
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 }
             },
             "required": [
-                "period_start",
-                "period_end",
                 "id"
             ],
             "title": "TimePeriod",

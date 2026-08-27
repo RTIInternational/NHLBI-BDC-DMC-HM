@@ -2340,10 +2340,8 @@ export interface ResearchStudy extends Entity {
     description_shortened?: string,
     /** An entity that is responsible for the initiation, management, and/or financing of a research project. */
     sponsor?: string,
-    /** The date when the research project began. */
-    date_started?: TimePointId,
-    /** The date when the research project ended. */
-    date_ended?: TimePointId,
+    /** The time period demarcating the years between the start and end of the ResearchStudy (e.g., 2020-2021). */
+    year_range?: TimePeriodId,
     /** The accession number of the research study with the accession authority */
     accession_number?: string,
     /** The accession authority for the research study. */
@@ -2436,9 +2434,9 @@ export interface TimePoint extends Entity {
  */
 export interface TimePeriod extends Entity {
     /** When a period of time started. */
-    period_start: TimePointId,
+    period_start?: TimePointId,
     /** When a period of time ended. */
-    period_end: TimePointId,
+    period_end?: TimePointId,
 }
 
 
