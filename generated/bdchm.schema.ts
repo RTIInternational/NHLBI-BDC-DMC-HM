@@ -83,6 +83,8 @@ export enum EthnicityEnum {
     HISPANIC_OR_LATINO = "HISPANIC_OR_LATINO",
     /** A person not of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race. */
     NOT_HISPANIC_OR_LATINO = "NOT_HISPANIC_OR_LATINO",
+    /** Not known, not observed, not recorded, or refused. */
+    UNKNOWN = "UNKNOWN",
 };
 /**
 * A constrained set of enumerative values containing the United States Office of Management and Budget (OMB) values for race.
@@ -512,6 +514,12 @@ export enum HistoricalStatusEnum {
 */
 export enum ProcedureConceptEnum {
     
+    /** SNOMED coronary angioplasty | Percutaneous transluminal angioplasty of coronary artery using imaging guidance with contrast */
+    OMOPCOLON4184832 = "OMOP:4184832",
+    /** SNOMED Coronary artery bypass graft */
+    OMOPCOLON4336464 = "OMOP:4336464",
+    /** SNOMED implantable cardiac pacemaker */
+    OMOPCOLON45772840 = "OMOP:45772840",
 };
 /**
 * Drug codes from RxNorm.

@@ -1244,7 +1244,8 @@
             "description": "A constrained set of enumerative values containing the United States Office of Management and Budget (OMB) values for ethnicity.",
             "enum": [
                 "HISPANIC_OR_LATINO",
-                "NOT_HISPANIC_OR_LATINO"
+                "NOT_HISPANIC_OR_LATINO",
+                "UNKNOWN"
             ],
             "title": "EthnicityEnum",
             "type": "string"
@@ -2636,6 +2637,11 @@
         },
         "ProcedureConceptEnum": {
             "description": "Procedure codes from OMOP.",
+            "enum": [
+                "OMOP:4184832",
+                "OMOP:4336464",
+                "OMOP:45772840"
+            ],
             "title": "ProcedureConceptEnum",
             "type": "string"
         },
