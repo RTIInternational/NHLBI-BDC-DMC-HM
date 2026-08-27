@@ -4310,10 +4310,10 @@ enums:
         description: "SNOMED N terminal pro-brain natriuretic peptide level"
         meaning: OMOP:4189511
       "OMOP:44812009":
-        description: "SNOMED Plasma N-terminal pro B-type natriuretic peptide concentration measurement"
+        description: "SNOMED Plasma N-terminal pro B-type natriuretic peptide concentration measurement | NT pro BNP"
         meaning: OMOP:44812009
       "OMOP:44812008":
-        description: "SNOMED Serum N-terminal pro B-type natriuretic peptide concentration measurement"
+        description: "SNOMED Serum N-terminal pro B-type natriuretic peptide concentration measurement | NT pro BNP"
         meaning: OMOP:44812008
       "OMOP:3007356":
         description: "LOINC CD62P cells/cells in Blood | CD62P cells/100 cells in Blood"
@@ -4328,7 +4328,7 @@ enums:
         description: "SNOMED QRS complex - finding"
         meaning: OMOP:4273021
       "OMOP:4030871":
-        description: "SNOMED Red blood cell count"
+        description: "SNOMED Red blood cell count | RBC"
         meaning: OMOP:4030871
       "OMOP:40768653":
         description: "LOINC How many hours do you normally sleep [DI-PAD]"
@@ -4340,16 +4340,16 @@ enums:
         description: "LOINC Sodium [Mass/volume] in Specimen"
         meaning: OMOP:36303745
       "OMOP:4020553":
-        description: "SNOMED Oxygen saturation measurement"
+        description: "SNOMED Oxygen saturation measurement | SpO2"
         meaning: OMOP:4020553
       "OMOP:4302666":
         description: "SNOMED Body temperature"
         meaning: OMOP:4302666
       "OMOP:3004282":
-        description: "LOINC Tumor necrosis factor alpha [Mass/volume] in Serum or Plasma | Tumor necrosis factor.alpha [Mass/volume] in Serum or Plasma"
+        description: "LOINC Tumor necrosis factor alpha [Mass/volume] in Serum or Plasma | Tumor necrosis factor.alpha [Mass/volume] in Serum or Plasma | TNFa"
         meaning: OMOP:3004282
       "OMOP:46235360":
-        description: "LOINC Tumor necrosis factor receptor superfamily member 1A [Mass/volume] in Serum or Plasma"
+        description: "LOINC Tumor necrosis factor receptor superfamily member 1A [Mass/volume] in Serum or Plasma | TNFa-R1"
         meaning: OMOP:46235360
       "OMOP:4008265":
         description: "SNOMED Total cholesterol measurement"
@@ -4367,7 +4367,7 @@ enums:
         description: "SNOMED Waist circumference"
         meaning: OMOP:4172830
       "OMOP:4298431":
-        description: "SNOMED White blood cell count"
+        description: "SNOMED White blood cell count | WBC"
         meaning: OMOP:4298431
       "OMOP:3015183":
         description: "LOINC Erythrocyte sedimentation rate [Velocity] in Red Blood Cells | Erythrocyte sedimentation rate"
@@ -4403,46 +4403,46 @@ enums:
         description: "SNOMED Plasma total cholesterol level"
         meaning: OMOP:4190897
       "OMOP:46235897":
-        description: "LOINC Albumin/Creatinine [Ratio] in 24 hour Urine"
+        description: "LOINC Albumin/Creatinine [Ratio] in 24 hour Urine | uACR"
         meaning: OMOP:46235897
       "OMOP:44811087":
         description: "SNOMED FVC post bronchodilator percentage change | FVC (forced vital capacity) post bronchodilator percentage change"
         meaning: OMOP:44811087
       "OMOP:44813037":
-        description: "SNOMED Forced expired volume in 1 second percentage change"
+        description: "SNOMED Forced expired volume in 1 second percentage change post bronchodilator | FEV1"
         meaning: OMOP:44813037
       "OMOP:42868473":
-        description: "LOINC FEV1/FVC percent change"
+        description: "LOINC FEV1/FVC percent change post bronchodilator"
         meaning: OMOP:42868473
       "OBA:2100046":
-        description: "8-epi-prostaglandin F2alpha amount in urine | The amount of a 8-epi-prostaglandin F2alpha when measured in urine."
+        description: "8-epi-prostaglandin F2alpha amount in urine | The amount of a 8-epi-prostaglandin F2alpha when measured in urine. | 8-epi-PGF2a"
         meaning: OBA:2100046
       "OBA:2100055":
-        description: "amount of 1-alkyl-2-acetylglycerophosphocholine esterase activity in blood | The amount of a 1-alkyl-2-acetylglycerophosphocholine esterase activity when measured in blood."
+        description: "amount of 1-alkyl-2-acetylglycerophosphocholine esterase activity in blood | The amount of a 1-alkyl-2-acetylglycerophosphocholine esterase activity when measured in blood. | LP-PLA2"
         meaning: OBA:2100055
       "OBA:2100053":
-        description: "albumin to creatinine ratio in urine | A compound attribute that is the ratio of urine albumin amount to urine creatinine amount."
+        description: "albumin to creatinine ratio in urine | A compound attribute that is the ratio of urine albumin amount to urine creatinine amount. | uACR"
         meaning: OBA:2100053
       "OBA:2060178":
         description: "amount of albumin in blood | The amount of a albumin when measured in blood."
         meaning: OBA:2060178
       "OBA:VT0001573":
-        description: "blood alanine transaminase amount | The amount of a alanine aminotransferase when measured in blood."
+        description: "blood alanine transaminase amount | The amount of a alanine aminotransferase when measured in blood. | ALT SGPT"
         meaning: OBA:VT0001573
       "OBA:2100047":
-        description: "aspartate aminotransferase (human) amount in blood | The amount of a aspartate aminotransferase (human) when measured in blood."
+        description: "aspartate aminotransferase (human) amount in blood | The amount of a aspartate aminotransferase (human) when measured in blood. | AST SGOT"
         meaning: OBA:2100047
       "OBA:2100274":
-        description: "natriuretic peptides B amount in blood | The amount of a natriuretic peptides B when measured in blood."
+        description: "natriuretic peptides B amount in blood | The amount of a natriuretic peptides B when measured in blood. | BNP"
         meaning: OBA:2100274
       "OBA:2100054":
-        description: "urea nitrogen to creatinine ratio in blood | A compound attribute that is the ratio of blood urea nitrogen amount to blood creatinine amount."
+        description: "urea nitrogen to creatinine ratio in blood | A compound attribute that is the ratio of blood urea nitrogen amount to blood creatinine amount. | BUN creatinine ratio"
         meaning: OBA:2100054
       "NCIT:C80425":
-        description: "Coronary Calcium Score | A quantitative value that is the compilation of assessed size and densities of calcium deposits throughout the coronary tree."
+        description: "Coronary Calcium Score | A quantitative value that is the compilation of assessed size and densities of calcium deposits throughout the coronary tree. | CAC score"
         meaning: NCIT:C80425
       "OBA:2090004":
-        description: "carotid artery intima-media region thickness | The thickness of a carotid artery intima-media region."
+        description: "carotid artery intima-media region thickness | The thickness of a carotid artery intima-media region. | Carotid IMT"
         meaning: OBA:2090004
       "OBA:2050108":
         description: "carotid artery thickness | The thickness of a carotid artery segment."
@@ -4454,7 +4454,7 @@ enums:
         description: "D-dimer (human) amount in blood | The amount of a D-dimer (human) when measured in blood."
         meaning: OBA:2100048
       "NCIT:C110935":
-        description: "Estimated Glomerular Filtration Rate | A laboratory test that estimates kidney function. It is calculated using an individual's serum creatinine measurement, age, sex, and race. Actual results are reported when the estimated glomerular filtration rate is less than 60 ml/min."
+        description: "Estimated Glomerular Filtration Rate | A laboratory test that estimates kidney function. It is calculated using an individual's serum creatinine measurement, age, sex, and race. Actual results are reported when the estimated glomerular filtration rate is less than 60 ml/min. | eGFR"
         meaning: NCIT:C110935
       "OBA:2050626":
         description: "level of coagulation factor VII in blood | The amount of a coagulation factor VII when measured in blood."
@@ -4463,37 +4463,37 @@ enums:
         description: "level of glucose in blood during fasting | The amount of a glucose when measured in blood during fasting."
         meaning: OBA:2090000
       "CMO:0000241":
-        description: "forced expiratory volume to forced vital capacity ratio | The comparison of forced expiratory volume to forced vital capacity expressed as ratio or percentage."
+        description: "forced expiratory volume to forced vital capacity ratio | The comparison of forced expiratory volume to forced vital capacity expressed as ratio or percentage. | FEV1/FVC"
         meaning: CMO:0000241
       "CMO:0000251":
         description: "forced vital capacity (FVC) | The volume of air that can be forcibly expelled from a maximally inflated lung."
         meaning: CMO:0000251
       "OBA:2045397":
-        description: "serum high-density lipoprotein cholesterol level | The amount of a high-density lipoprotein cholesterol when measured in blood serum."
+        description: "serum high-density lipoprotein cholesterol level | The amount of a high-density lipoprotein (HDL) cholesterol when measured in blood serum."
         meaning: OBA:2045397
       "OBA:2100049":
-        description: "hemoglobin A1c amount in blood | The amount of a hemoglobin A1c when measured in blood."
+        description: "hemoglobin A1c amount in blood | The amount of a hemoglobin A1c when measured in blood. | HbA1c"
         meaning: OBA:2100049
       "OBA:2090001":
         description: "level of insulin in blood during fasting | The amount of a insulin when measured in blood during fasting."
         meaning: OBA:2090001
       "OBA:VT0008640":
-        description: "blood interleukin-1 beta amount | The amount of a interleukin-1 beta when measured in blood."
+        description: "blood interleukin-1 beta amount | The amount of a interleukin-1 beta when measured in blood. | IL1b"
         meaning: OBA:VT0008640
       "OBA:VT0008590":
-        description: "blood interleukin-10 amount | The amount of a interleukin-10 when measured in blood."
+        description: "blood interleukin-10 amount | The amount of a interleukin-10 when measured in blood. | IL10"
         meaning: OBA:VT0008590
       "OBA:2045398":
-        description: "serum low-density lipoprotein cholesterol level | The amount of a low-density lipoprotein cholesterol when measured in blood serum."
+        description: "serum low-density lipoprotein cholesterol level | The amount of a low-density lipoprotein (LDL) cholesterol when measured in blood serum."
         meaning: OBA:2045398
       "OBA:2045349":
         description: "NT pro BNP | natriuretic peptides B proteolytic cleavage product level | The amount of a natriuretic peptides B proteolytic cleavage product when measured in anatomical entity."
         meaning: OBA:2045349
       "OBA:2050271":
-        description: "tumor necrosis factor receptor superfamily member 11B amount | The amount of a tumor necrosis factor receptor superfamily member 11B when measured in anatomical entity."
+        description: "tumor necrosis factor receptor superfamily member 11B amount | The amount of a tumor necrosis factor receptor superfamily member 11B when measured in anatomical entity. | OPG osteoprotegerin | TNFRSF11B"
         meaning: OBA:2050271
       "OBA:VT0003179":
-        description: "platelet quantity | The amount of a platelet."
+        description: "platelet quantity | The amount of platelets."
         meaning: OBA:VT0003179
       "CMO:0000233":
         description: "PR interval | Time between the beginning of the P wave to the beginning of the QRS complex, reflects the time the electrical impulse takes to travel from the sinus node through the AV node and entering the ventricles, used as an estimate of AV node function."
@@ -4508,17 +4508,16 @@ enums:
         description: "dietary sodium intake measurement | Quantification of dietary sodium intake."
         meaning: EFO:0020080
       "OBA:VT0000183":
-        description: "blood pressure trait | The pressure of a blood."
+        description: "blood pressure trait | The pressure of blood."
         meaning: OBA:VT0000183
       "OBA:2100051":
-        description: "troponin complex amount in blood | The amount of a troponin complex when measured in blood."
+        description: "troponin complex amount in blood | The amount of a troponin complex when measured in blood. | troponin all types"
         meaning: OBA:2100051
       "OBA:2100052":
         description: "waist to hip ratio | A compound attribute that is the ratio of waist circumference to hip circumference."
         meaning: OBA:2100052
-
       "OMOP:3013682":
-        description: "LOINC Urea nitrogen [Mass/volume] in Serum or Plasma"
+        description: "LOINC Urea nitrogen [Mass/volume] in Serum or Plasma | BUN"
         meaning: OMOP:3013682
       "OMOP:3003205":
         description: "LOINC Brachial artery Systolic blood pressure"
