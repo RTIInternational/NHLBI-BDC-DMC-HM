@@ -319,6 +319,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#permissible-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Permissible Values
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#slots" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -391,7 +402,33 @@
 <h1 id="enum-procedureconceptenum">Enum: ProcedureConceptEnum</h1>
 <p><em>Procedure codes from OMOP.</em></p>
 <p>URI: <a href="./">ProcedureConceptEnum</a></p>
-<p><em>This is a dynamic enum</em></p>
+<h2 id="permissible-values">Permissible Values</h2>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OMOP:4184832</td>
+<td>OMOP:4184832</td>
+<td>SNOMED coronary angioplasty</td>
+</tr>
+<tr>
+<td>OMOP:4336464</td>
+<td>OMOP:4336464</td>
+<td>SNOMED Coronary artery bypass graft</td>
+</tr>
+<tr>
+<td>OMOP:45772840</td>
+<td>OMOP:45772840</td>
+<td>SNOMED implantable cardiac pacemaker</td>
+</tr>
+</tbody>
+</table>
 <h2 id="slots">Slots</h2>
 <table>
 <thead>
@@ -419,8 +456,21 @@
 description: Procedure codes from OMOP.
 from_schema: https://w3id.org/bdchm
 rank: 1000
-reachable_from:
-  source_ontology: OMOP
+pv_formula: CURIE
+permissible_values:
+  OMOP:4184832:
+    text: OMOP:4184832
+    description: SNOMED coronary angioplasty | Percutaneous transluminal angioplasty
+      of coronary artery using imaging guidance with contrast
+    meaning: OMOP:4184832
+  OMOP:4336464:
+    text: OMOP:4336464
+    description: SNOMED Coronary artery bypass graft
+    meaning: OMOP:4336464
+  OMOP:45772840:
+    text: OMOP:45772840
+    description: SNOMED implantable cardiac pacemaker
+    meaning: OMOP:45772840
 
 </code></pre>
 

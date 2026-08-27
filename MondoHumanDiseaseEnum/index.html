@@ -394,13 +394,17 @@ description: A constrained set of enumerative values containing the MONDO values
   human diseases.
 from_schema: https://w3id.org/bdchm
 rank: 1000
-reachable_from:
-  source_ontology: obo:mondo
-  source_nodes:
-  - MONDO:0700096
-  relationship_types:
-  - rdfs:subClassOf
-  include_self: false
+pv_formula: CURIE
+include:
+- concepts:
+  - OMOP:4102124
+  - OMOP:433736
+- reachable_from:
+    source_ontology: obo:mondo
+    source_nodes:
+    - MONDO:0004981
+    relationship_types:
+    - rdfs:subClassOf
 
 </code></pre>
 
