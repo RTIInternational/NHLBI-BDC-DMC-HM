@@ -1795,6 +1795,9 @@ enums:
       NOT_HISPANIC_OR_LATINO:
         description: 'A person not of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race.'
         meaning: OMOP:38003564
+      UNKNOWN:
+        description: 'Not known, not observed, not recorded, or refused.'
+        meaning: OMOP:8552
 
   RaceEnum:
     description: >-
@@ -2205,17 +2208,22 @@ enums:
   MondoHumanDiseaseEnum:
     description: >-
       A constrained set of enumerative values containing the MONDO values for human diseases.
-    reachable_from:
-      source_ontology: obo:mondo
-      source_nodes:
-        - MONDO:0700096 ## Human Disease
-      include_self: false
-      relationship_types:
-        - rdfs:subClassOf
+    pv_formula: CURIE
+    include:
+      - concepts:
+          - OMOP:4102124
+          - OMOP:433736
+      - reachable_from:
+          source_ontology: obo:mondo
+          source_nodes:
+            - MONDO:0004981
+          relationship_types:
+            - rdfs:subClassOf        
 
   HpoPhenotypicAbnormalityEnum:
     description: >-
       A constrained set of enumerative values containing the HPO values for phenotypic abnormalities.
+    pv_formula: CURIE
     reachable_from:
       source_ontology: obo:hp
       source_nodes:
@@ -2227,6 +2235,7 @@ enums:
   AnatomicSiteEnum:
     description: >-
       A constrained set of enumerative values containing the Uberon values for anatomic sites.
+    pv_formula: CURIE
     reachable_from:
       source_ontology: obo:uberon
       source_nodes:
@@ -2446,11 +2455,21 @@ enums:
 
   ProcedureConceptEnum:
     description: Procedure codes from OMOP.
-    reachable_from:
-      source_ontology: OMOP
+    pv_formula: CURIE
+    permissible_values:
+      "OMOP:4184832":
+        description: "SNOMED coronary angioplasty | Percutaneous transluminal angioplasty of coronary artery using imaging guidance with contrast"
+        meaning: OMOP:4184832
+      "OMOP:4336464":
+        description: "SNOMED Coronary artery bypass graft"
+        meaning: OMOP:4336464
+      "OMOP:45772840":
+        description: "SNOMED implantable cardiac pacemaker"
+        meaning: OMOP:45772840
 
   DrugExposureConceptEnum:
     description: Drug codes from RxNorm.
+    pv_formula: CURIE
     see_also:
       - https://bioregistry.io/registry/rxnorm
       - https://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html
