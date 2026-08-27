@@ -1588,128 +1588,514 @@ export enum FamilyRelationshipEnum {
 */
 export enum MeasurementObservationTypeEnum {
     
-    ALBUMIN_IN_BLOOD = "ALBUMIN_IN_BLOOD",
-    ALPHA_1_ANTITRYPSIN_IN_SERUM = "ALPHA-1_ANTITRYPSIN_IN_SERUM",
-    ALT_SGPT = "ALT_SGPT",
-    BASOPHILS_COUNT = "BASOPHILS_COUNT",
-    BILIRUBIN_UNCONJUGATED_INDIRECT = "BILIRUBIN_UNCONJUGATED_INDIRECT",
-    BMI = "BMI",
-    BNP = "BNP",
-    BODY_WEIGHT = "BODY_WEIGHT",
-    BUN = "BUN",
-    CD40_IN_BLOOD = "CD40_IN_BLOOD",
-    CHLORIDE_IN_BLOOD = "CHLORIDE_IN_BLOOD",
-    CREATININE_IN_BLOOD = "CREATININE_IN_BLOOD",
-    CREATININE_IN_URINE = "CREATININE_IN_URINE",
-    CYSTATIN_C_IN_BLOOD = "CYSTATIN_C_IN_BLOOD",
-    E_SELECTIN_IN_BLOOD = "E-SELECTIN_IN_BLOOD",
-    EOSINOPHILS_COUNT = "EOSINOPHILS_COUNT",
-    ERYTHROCYTE_SED_RATE = "ERYTHROCYTE_SED_RATE",
-    FACTOR_VII = "FACTOR_VII",
-    FERRITIN = "FERRITIN",
-    FIBRINOGEN = "FIBRINOGEN",
-    GFR = "GFR",
-    GLUCOSE_IN_BLOOD = "GLUCOSE_IN_BLOOD",
-    HDL = "HDL",
-    HEART_RATE = "HEART_RATE",
-    HEIGHT = "HEIGHT",
-    HEMATOCRIT = "HEMATOCRIT",
-    HEMOGLOBIN = "HEMOGLOBIN",
-    HIP_CIRCUMFERENCE = "HIP_CIRCUMFERENCE",
-    INSULIN_IN_BLOOD = "INSULIN_IN_BLOOD",
-    INTERLEUKIN_6_IN_BLOOD = "INTERLEUKIN_6_IN_BLOOD",
-    LACTATE_DEHYDROGENASE_LDH = "LACTATE_DEHYDROGENASE_LDH",
-    LACTATE_IN_BLOOD = "LACTATE_IN_BLOOD",
-    LDL = "LDL",
-    LYMPHOCYTES_COUNT = "LYMPHOCYTES_COUNT",
-    MCP1_IN_BLOOD = "MCP1_IN_BLOOD",
-    MEAN_ARTERIAL_PRESSURE = "MEAN_ARTERIAL_PRESSURE",
-    MEAN_CORPUSCULAR_HEMOGLOBIN = "MEAN_CORPUSCULAR_HEMOGLOBIN",
-    MEAN_CORPUSCULAR_VOLUME = "MEAN_CORPUSCULAR_VOLUME",
-    MEAN_PLATELET_VOLUME = "MEAN_PLATELET_VOLUME",
-    MMP9_IN_BLOOD = "MMP9_IN_BLOOD",
-    MYELOPEROXIDASE_IN_BLOOD = "MYELOPEROXIDASE_IN_BLOOD",
-    NEUTROPHILS_COUNT = "NEUTROPHILS_COUNT",
-    NT_PRO_BNP = "NT_PRO_BNP",
-    P_SELECTIN_IN_BLOOD = "P-SELECTIN_IN_BLOOD",
-    PH_OF_BLOOD = "PH_OF_BLOOD",
-    POTASSIUM_IN_BLOOD = "POTASSIUM_IN_BLOOD",
-    QRS_INTERVAL = "QRS_INTERVAL",
-    RED_BLOOD_CELL_COUNT = "RED_BLOOD_CELL_COUNT",
-    SLEEP_HOURS = "SLEEP_HOURS",
-    SMOKING_STATUS = "SMOKING_STATUS",
-    SODIUM_IN_BLOOD = "SODIUM_IN_BLOOD",
-    SPO2 = "SPO2",
-    TEMPERATURE = "TEMPERATURE",
-    TNFA_IN_BLOOD = "TNFA_IN_BLOOD",
-    TNFA_R1_IN_BLOOD = "TNFA-R1_IN_BLOOD",
-    TOTAL_CHOLESTEROL_IN_BLOOD = "TOTAL_CHOLESTEROL_IN_BLOOD",
-    TRIGLYCERIDES_IN_BLOOD = "TRIGLYCERIDES_IN_BLOOD",
-    VON_WILLEBRAND_FACTOR = "VON_WILLEBRAND_FACTOR",
-    WAIST_CIRCUMFERENCE = "WAIST_CIRCUMFERENCE",
-    WHITE_BLOOD_CELL_COUNT = "WHITE_BLOOD_CELL_COUNT",
-    ALBUMIN_IN_URINE = "ALBUMIN_IN_URINE",
-    FACTOR_VIII = "FACTOR_VIII",
-    MONOCYTES_COUNT = "MONOCYTES_COUNT",
-    ISOPROSTANE_8_EPI_PGF2A = "ISOPROSTANE_8_EPI_PGF2A",
-    LPPLA2_ACT = "LPPLA2_ACT",
-    APNEA_HYPOP_INDEX = "APNEA_HYPOP_INDEX",
-    ALBUMIN_CREATININE = "ALBUMIN_CREATININE",
-    ALCOHOL_SERVINGS = "ALCOHOL_SERVINGS",
-    AST_SGOT = "AST_SGOT",
-    BILIRUBIN_CON = "BILIRUBIN_CON",
-    BILIRUBIN_TOT = "BILIRUBIN_TOT",
-    BUN_CREATININE = "BUN_CREATININE",
-    CRP = "CRP",
-    CAC_SCORE = "CAC_SCORE",
-    CAROTID_IMT = "CAROTID_IMT",
-    SMOKING = "SMOKING",
-    D_DIMER = "D_DIMER",
-    BP_DIASTOLIC = "BP_DIASTOLIC",
-    EGFR = "EGFR",
-    FAST_GLUC_BLD = "FAST_GLUC_BLD",
-    FEV1 = "FEV1",
-    FEV1_FVC = "FEV1_FVC",
-    FEV1_PERCENT_CHANGE = "FEV1_PERCENT_CHANGE",
-    FRUIT_SERVING = "FRUIT_SERVING",
-    FVC = "FVC",
-    HEMO_A1C = "HEMO_A1C",
-    ICAM = "ICAM",
-    IL1_BETA = "IL1_BETA",
-    IL10 = "IL10",
-    IL18 = "IL18",
-    LYMPHO_PCT = "LYMPHO_PCT",
-    LPPLA2_MASS = "LPPLA2_MASS",
-    MCHC = "MCHC",
-    NEUTRO_PCT = "NEUTRO_PCT",
-    OPG = "OPG",
-    PLATELET_CT = "PLATELET_CT",
-    PR_EKG = "PR_EKG",
-    PROCAL = "PROCAL",
-    QT_EKG = "QT_EKG",
-    RDW = "RDW",
-    RESP_RT = "RESP_RT",
-    SODIUM_INTAK = "SODIUM_INTAK",
-    TNFR2 = "TNFR2",
-    TROPONIN = "TROPONIN",
-    VEGE_SERVING = "VEGE_SERVING",
-    WAIST_HIP = "WAIST_HIP",
-    CESD_SCORE = "CESD_SCORE",
-    FAST_LIPIDS = "FAST_LIPIDS",
-    MED_ADHER = "MED_ADHER",
-    MED_USE = "MED_USE",
-    PACEM_STAT = "PACEM_STAT",
-    SLP_AP_STAT = "SLP_AP_STAT",
-    BP_SYSTOLIC = "BP_SYSTOLIC",
-    FVC_PRED = "FVC_PRED",
-    FEV1_PRED = "FEV1_PRED",
-    FEV1_FVC_PRED = "FEV1_FVC_PRED",
-    FEV1_PCT_PRED = "FEV1_PCT_PRED",
-    FVC_PCT_PRED = "FVC_PCT_PRED",
-    FEV1_FVC_PCT_PRED = "FEV1_FVC_PCT_PRED",
-    CAC_VOLUME = "CAC_VOLUME",
-    CAROTID_STEN_LEFT = "CAROTID_STEN_LEFT",
-    CAROTID_STEN_RIGHT = "CAROTID_STEN_RIGHT",
+    /** Albumin in blood | The amount of albumin when measured in blood serum. */
+    OBACOLON2050068 = "OBA:2050068",
+    /** Alpha-1 antitrypsin in serum | The amount of alpha-1-antitrypsin when measured in blood serum. */
+    OBACOLON2050075 = "OBA:2050075",
+    /** ALT SGPT | The amount of alanine aminotransferase when measured in blood serum. */
+    OBACOLON2050062 = "OBA:2050062",
+    /** basophils count | The amount of a basophil. */
+    OBACOLONVT0002607 = "OBA:VT0002607",
+    /** Bilirubin Unconjugated Indirect | The amount of bilirubin IXalpha when measured in blood. */
+    OBACOLONVT0001569 = "OBA:VT0001569",
+    /** BMI | A compound attribute that is the ratio of body mass to body height. */
+    OBACOLON2045455 = "OBA:2045455",
+    /** BNP | The amount of natriuretic peptides B when measured in anatomical entity. */
+    OBACOLON2045303 = "OBA:2045303",
+    /** Body weight | The mass of a multicellular organism. */
+    OBACOLONVT0001259 = "OBA:VT0001259",
+    /** BUN | The amount of urea when measured in blood. */
+    OBACOLONVT0005265 = "OBA:VT0005265",
+    /** CD40 in blood | The amount of CD40 ligand (human) when measured in blood. */
+    OBACOLON2052305 = "OBA:2052305",
+    /** Chloride in blood | The amount of chloride when measured in blood. */
+    OBACOLONVT0003018 = "OBA:VT0003018",
+    /** Creatinine in blood | The amount of creatinine when measured in blood serum. */
+    OBACOLON2050096 = "OBA:2050096",
+    /** Creatinine in urine | The amount of creatinine when measured in urine. */
+    OBACOLONVT0010540 = "OBA:VT0010540",
+    /** Cystatin C in blood | The amount of cystatin-C (human) when measured in blood. */
+    OBACOLON2052375 = "OBA:2052375",
+    /** E-selectin in blood | The amount of E-selectin (human) when measured in blood. */
+    OBACOLON2052778 = "OBA:2052778",
+    /** Eosinophils count | The amount of a eosinophil. */
+    OBACOLONVT0002602 = "OBA:VT0002602",
+    /** Erythrocyte Sed Rate | The buoyancy of an erythrocyte. */
+    OBACOLON2045235 = "OBA:2045235",
+    /** Factor VII | The amount of coagulation factor VII when measured in blood serum. */
+    OBACOLON2041535 = "OBA:2041535",
+    /** Ferritin | The amount of ferritin complex when measured in blood. */
+    OBACOLONVT0010513 = "OBA:VT0010513",
+    /** Fibrinogen | The amount of fibrinogen complex. */
+    OBACOLON0000061 = "OBA:0000061",
+    /** GFR | The rate of glomerular filtration. */
+    OBACOLON0003747 = "OBA:0003747",
+    /** Glucose in blood | The amount of glucose when measured in blood. */
+    OBACOLONVT0000188 = "OBA:VT0000188",
+    /** HDL | The amount of high-density lipoprotein cholesterol when measured in blood. */
+    OBACOLONVT0000184 = "OBA:VT0000184",
+    /** Heart rate | The rate of a heart contraction. */
+    OBACOLON1001087 = "OBA:1001087",
+    /** Height | The height of a multicellular organism. */
+    OBACOLONVT0001253 = "OBA:VT0001253",
+    /** Hematocrit | The volume of an erythrocyte when measured in blood. */
+    OBACOLON2045381 = "OBA:2045381",
+    /** Hemoglobin | The amount of hemoglobin when measured in blood. */
+    OBACOLON2060175 = "OBA:2060175",
+    /** Hip circumference | The circumference of a hip. */
+    OBACOLON1000032 = "OBA:1000032",
+    /** Insulin in blood | The amount of insulin when measured in blood. */
+    OBACOLON2060174 = "OBA:2060174",
+    /** IL6 | interleukin 6 in blood | The amount of interleukin-6 (human) when measured in blood. */
+    OBACOLON2052890 = "OBA:2052890",
+    /** Lactate Dehydrogenase LDH | The amount of lactate dehydrogenase complex when measured in blood. */
+    OBACOLONVT0010477 = "OBA:VT0010477",
+    /** Lactate in blood | The amount of lactate when measured in blood. */
+    OBACOLONVT0010616 = "OBA:VT0010616",
+    /** LDL | The amount of low-density lipoprotein cholesterol when measured in blood. */
+    OBACOLONVT0000181 = "OBA:VT0000181",
+    /** Lymphocytes count | The number of lymphocytes. */
+    OBACOLONVT0000717 = "OBA:VT0000717",
+    /** MCP1 in blood | The amount of C-C motif chemokine 2 (CCL2)(human) when measured in blood. */
+    OBACOLON2052436 = "OBA:2052436",
+    /** Mean arterial pressure | The pressure of arterial blood. */
+    OBACOLONVT2000000 = "OBA:VT2000000",
+    /** mean corpuscular hemoglobin | The amount of hemoglobin when measured in an erythrocyte. */
+    OBACOLON2045301 = "OBA:2045301",
+    /** mean corpuscular volume | The volume of an erythrocyte. */
+    OBACOLON0003460 = "OBA:0003460",
+    /** mean platelet volume | The volume of a platelet. */
+    OBACOLON0003277 = "OBA:0003277",
+    /** MMP9 in blood | The amount of a matrix metalloproteinase-9 (human) when measured in blood. */
+    OBACOLON2052397 = "OBA:2052397",
+    /** Myeloperoxidase in blood | The amount of a myeloperoxidase (human) when measured in blood. */
+    OBACOLON2052389 = "OBA:2052389",
+    /** Neutrophils count | The amount of a neutrophil. */
+    OBACOLONVT0000222 = "OBA:VT0000222",
+    /** P-selectin in blood | The amount of a P-selectin (human) when measured in blood. */
+    OBACOLON2052701 = "OBA:2052701",
+    /** pH of blood | The acidity of blood. */
+    OBACOLON2045409 = "OBA:2045409",
+    /** Potassium in blood | The amount of potassium when measured in blood. */
+    OBACOLONVT0002668 = "OBA:VT0002668",
+    /** QRS interval | See also EFO_0005054 */
+    OBACOLON1001086 = "OBA:1001086",
+    /** Red blood cell count | The amount of erythrocytes. | RBC */
+    OBACOLONVT0001586 = "OBA:VT0001586",
+    /** Sleep hours | The duration of sleep. */
+    OBACOLON2040171 = "OBA:2040171",
+    /** Sodium in blood | The amount of sodium when measured in blood. */
+    OBACOLONVT0001776 = "OBA:VT0001776",
+    /** SpO2 | The concentration of oxygen when measured in blood. */
+    OBACOLON2045443 = "OBA:2045443",
+    /** Temperature | The temperature of a multicellular organism. */
+    OBACOLONVT0005535 = "OBA:VT0005535",
+    /** TNFa in blood | The amount of tumor necrosis factor (human) when measured in blood. */
+    OBACOLON2051979 = "OBA:2051979",
+    /** TNFa-R1 in blood | The amount of tumor necrosis factor receptor superfamily member 1A (human) when measured in blood. */
+    OBACOLON2051975 = "OBA:2051975",
+    /** Total cholesterol in blood | The amount of cholesterol when measured in blood. */
+    OBACOLONVT0000180 = "OBA:VT0000180",
+    /** Triglycerides in blood | The amount of triglycerides when measured in blood. */
+    OBACOLONVT0002644 = "OBA:VT0002644",
+    /** von Willebrand factor | The amount of von Willebrand factor (human) when measured in blood. */
+    OBACOLON2052741 = "OBA:2052741",
+    /** Waist circumference | The circumference of an abdominal segment of trunk. */
+    OBACOLON1001085 = "OBA:1001085",
+    /** White blood cell count | The amount of leukocytes. */
+    OBACOLONVT0000217 = "OBA:VT0000217",
+    /** Albumin in urine | The amount of albumin when measured in urine. */
+    OBACOLONVT0002871 = "OBA:VT0002871",
+    /** Factor VIII | The amount of coagulation factor VIII when measured in blood serum. */
+    OBACOLON2041536 = "OBA:2041536",
+    /** monocytes count | The amount of monocytes. */
+    OBACOLONVT0000223 = "OBA:VT0000223",
+    /** SNOMED | Cigarette smoking tobacco */
+    OMOPCOLON4282779 = "OMOP:4282779",
+    /** LOINC isoprostane_8_epi_pgf2a | Prostaglandin F2 alpha [Mass/volume] in Urine | 8-epi-PGF2 */
+    OMOPCOLON3011888 = "OMOP:3011888",
+    /** LOINC lppla2_act | Lipoprotein associated phospholipase A2 [Enzymatic activity/volume] in Serum or Plasma | LP-PLA2 */
+    OMOPCOLON36305170 = "OMOP:36305170",
+    /** SNOMED apnea_hypop_index | Apnea Hypopnea Index | AHI */
+    OMOPCOLON37396400 = "OMOP:37396400",
+    /** SNOMED albumin_creatinine | Urine albumin/creatinine ratio measurement | uACR */
+    OMOPCOLON4154347 = "OMOP:4154347",
+    /** SNOMED alcohol_servings | Alcohol units consumed per week */
+    OMOPCOLON35609491 = "OMOP:35609491",
+    /** SNOMED ast_sgot | Aspartate aminotransferase measurement | AST SGOT */
+    OMOPCOLON4263457 = "OMOP:4263457",
+    /** SNOMED bilirubin_con | Conjugated bilirubin measurement */
+    OMOPCOLON44805650 = "OMOP:44805650",
+    /** SNOMED bilirubin_tot | Bilirubin, total measurement */
+    OMOPCOLON4230543 = "OMOP:4230543",
+    /** SNOMED bun_creatinine | BUN/Creatinine ratio */
+    OMOPCOLON4112223 = "OMOP:4112223",
+    /** SNOMED crp | C-reactive protein measurement */
+    OMOPCOLON4208414 = "OMOP:4208414",
+    /** SNOMED cac_score | Coronary artery calcium score */
+    OMOPCOLON42872742 = "OMOP:42872742",
+    /** SNOMED carotid_imt | Carotid intima media thickness */
+    OMOPCOLON4138462 = "OMOP:4138462",
+    /** LOINC | Tobacco smoking status */
+    OMOPCOLON43054909 = "OMOP:43054909",
+    /** SNOMED d_dimer | D-dimer level */
+    OMOPCOLON37393605 = "OMOP:37393605",
+    /** SNOMED bp_diastolic | Diastolic blood pressure */
+    OMOPCOLON4154790 = "OMOP:4154790",
+    /** SNOMED egfr | Estimated glomerular filtration rate by laboratory calculation */
+    OMOPCOLON37208635 = "OMOP:37208635",
+    /** SNOMED fast_gluc_bld | Fasting blood glucose measurement */
+    OMOPCOLON4156660 = "OMOP:4156660",
+    /** SNOMED fev1 | Forced expired volume in 1 second */
+    OMOPCOLON4241837 = "OMOP:4241837",
+    /** LOINC fev1_fvc | FEV1/FVC */
+    OMOPCOLON3011505 = "OMOP:3011505",
+    /** LOINC fruit_serving | Fruit servings 24 hour Estimated */
+    OMOPCOLON21493059 = "OMOP:21493059",
+    /** SNOMED fvc | Forced vital capacity */
+    OMOPCOLON4176265 = "OMOP:4176265",
+    /** SNOMED hemo_a1c | Hemoglobin A1c measurement */
+    OMOPCOLON4184637 = "OMOP:4184637",
+    /** SNOMED icam | Lymphocyte antigen CD54 */
+    OMOPCOLON4284103 = "OMOP:4284103",
+    /** LOINC il1_beta | Interleukin 1 beta [Mass/volume] in Serum or Plasma */
+    OMOPCOLON3001804 = "OMOP:3001804",
+    /** LOINC il10 | Interleukin 10 [Mass/volume] in Serum or Plasma */
+    OMOPCOLON3004578 = "OMOP:3004578",
+    /** LOINC il18 | Interleukin 18 [Mass/volume] in Serum or Plasma */
+    OMOPCOLON3043144 = "OMOP:3043144",
+    /** SNOMED lympho_pct | Lymphocyte percent count in blood */
+    OMOPCOLON37208690 = "OMOP:37208690",
+    /** LOINC lppla2_mass | Lipoprotein associated phospholipase A2 [Mass/volume] in Serum or Plasma | LP-PLA2 */
+    OMOPCOLON3041450 = "OMOP:3041450",
+    /** SNOMED mchc | MCHC - Mean corpuscular haemoglobin concentration */
+    OMOPCOLON37393850 = "OMOP:37393850",
+    /** SNOMED neutro_pct | Neutrophil percent count in blood */
+    OMOPCOLON37208698 = "OMOP:37208698",
+    /** CPT4 opg | Oncology (pancreatic cancer), multiplex immunoassay of C5, C4, cystatin C, factor B, osteoprotegerin (OPG), gelsolin, IGFBP3, CA125 and multiplex electrochemiluminescent immunoassay (ECLIA) for CA19-9, serum, diagnostic algorithm reported qualitatively... */
+    OMOPCOLON1552124 = "OMOP:1552124",
+    /** SNOMED platelet_ct | Platelet count */
+    OMOPCOLON4267147 = "OMOP:4267147",
+    /** SNOMED pr_ekg | PR interval - finding */
+    OMOPCOLON4274406 = "OMOP:4274406",
+    /** SNOMED procal | Procalcitonin measurement */
+    OMOPCOLON44791466 = "OMOP:44791466",
+    /** SNOMED qt_ekg | QT interval - finding */
+    OMOPCOLON4273023 = "OMOP:4273023",
+    /** SNOMED rdw | Red blood cell distribution width */
+    OMOPCOLON37397924 = "OMOP:37397924",
+    /** SNOMED resp_rt | Respiratory rate */
+    OMOPCOLON4313591 = "OMOP:4313591",
+    /** SNOMED sodium_intak | Sodium intake */
+    OMOPCOLON606729 = "OMOP:606729",
+    /** CDISC | TNF Receptor 1B | tnfr2 */
+    OMOPCOLON37543055 = "OMOP:37543055",
+    /** SNOMED troponin | Troponin measurement */
+    OMOPCOLON4021291 = "OMOP:4021291",
+    /** SNOMED vege_serving | Vegetable */
+    OMOPCOLON4042886 = "OMOP:4042886",
+    /** SNOMED waist_hip | Waist/hip ratio */
+    OMOPCOLON4087501 = "OMOP:4087501",
+    /** LOINC cesd_score | Center for Epidemiologic Studies Depression Scale-Revised total score [CESD-R] */
+    OMOPCOLON36303297 = "OMOP:36303297",
+    /** SNOMED fast_lipids | Fasting blood lipids */
+    OMOPCOLON4150326 = "OMOP:4150326",
+    /** SNOMED pacemaker status | Implantation of cardiac pacemaker */
+    OMOPCOLON4144921 = "OMOP:4144921",
+    /** SNOMED bp_systolic | Systolic blood pressure */
+    OMOPCOLON4152194 = "OMOP:4152194",
+    /** LOINC FVC predicted | Forced vital capacity [Volume] Respiratory system Predicted */
+    OMOPCOLON3002094 = "OMOP:3002094",
+    /** LOINC FEV1 predicted | FEV1 Predicted */
+    OMOPCOLON3022891 = "OMOP:3022891",
+    /** LOINC FEV1/FVC predicted | FEV1/FVC Predicted */
+    OMOPCOLON3024594 = "OMOP:3024594",
+    /** LOINC FEV1 percent predicted | FEV1 measured/predicted */
+    OMOPCOLON3011708 = "OMOP:3011708",
+    /** LOINC FVC percent predicted | FVC measured/predicted */
+    OMOPCOLON3005600 = "OMOP:3005600",
+    /** SNOMED FEV1/FVC percent predicted | FEV1/FVC measured/predicted */
+    OMOPCOLON4196583 = "OMOP:4196583",
+    /** CPT4 Albumin; serum, plasma or whole blood */
+    OMOPCOLON2212186 = "OMOP:2212186",
+    /** CPT4 Albumin; urine (eg, microalbumin), quantitative */
+    OMOPCOLON2212188 = "OMOP:2212188",
+    /** SNOMED Alanine aminotransferase measurement */
+    OMOPCOLON4146380 = "OMOP:4146380",
+    /** LOINC Aspartate aminotransferase [Presence] in Serum or Plasma */
+    OMOPCOLON3010587 = "OMOP:3010587",
+    /** LOINC Basophils [#/volume] in Blood */
+    OMOPCOLON3006315 = "OMOP:3006315",
+    /** LOINC Body mass index (BMI) [Ratio] */
+    OMOPCOLON3038553 = "OMOP:3038553",
+    /** SNOMED Brain natriuretic peptide measurement | BNP */
+    OMOPCOLON4307029 = "OMOP:4307029",
+    /** LOINC Natriuretic peptide B [Mass/volume] in Blood | BNP */
+    OMOPCOLON3031569 = "OMOP:3031569",
+    /** SNOMED Body weight */
+    OMOPCOLON4099154 = "OMOP:4099154",
+    /** SNOMED Blood urea nitrogen measurement | BUN */
+    OMOPCOLON4017361 = "OMOP:4017361",
+    /** SNOMED Calcium volume */
+    OMOPCOLON4166120 = "OMOP:4166120",
+    /** SNOMED Left carotid artery stenosis */
+    OMOPCOLON43020498 = "OMOP:43020498",
+    /** SNOMED Right carotid artery stenosis */
+    OMOPCOLON43021859 = "OMOP:43021859",
+    /** SNOMED Lymphocyte antigen CD40 */
+    OMOPCOLON4209737 = "OMOP:4209737",
+    /** SNOMED Chloride measurement */
+    OMOPCOLON4188066 = "OMOP:4188066",
+    /** LOINC Chloride [Moles/volume] in Specimen */
+    OMOPCOLON3009024 = "OMOP:3009024",
+    /** CPT4 Creatinine; blood */
+    OMOPCOLON2212294 = "OMOP:2212294",
+    /** LOINC Creatinine [Mass/volume] in Blood */
+    OMOPCOLON3051825 = "OMOP:3051825",
+    /** LOINC Creatinine [Mass/volume] in Serum or Plasma */
+    OMOPCOLON3016723 = "OMOP:3016723",
+    /** LOINC Creatinine [Interpretation] in Urine */
+    OMOPCOLON3007081 = "OMOP:3007081",
+    /** SNOMED Blood cystatin C measurement */
+    OMOPCOLON4136584 = "OMOP:4136584",
+    /** SNOMED D-dimer mass concentration in plasma */
+    OMOPCOLON37172928 = "OMOP:37172928",
+    /** LOINC E selectin [Mass/volume] in Blood */
+    OMOPCOLON3010372 = "OMOP:3010372",
+    /** SNOMED Educational achievement */
+    OMOPCOLON4022643 = "OMOP:4022643",
+    /** LOINC Eosinophils [#/volume] in Blood */
+    OMOPCOLON3013115 = "OMOP:3013115",
+    /** SNOMED Clotting factor VII assay  */
+    OMOPCOLON4217630 = "OMOP:4217630",
+    /** SNOMED Factor VIII assay */
+    OMOPCOLON4148587 = "OMOP:4148587",
+    /** SNOMED Household income */
+    OMOPCOLON4076114 = "OMOP:4076114",
+    /** SNOMED Ferritin measurement */
+    OMOPCOLON4176561 = "OMOP:4176561",
+    /** LOINC Ferritin [Mass/volume] in Blood */
+    OMOPCOLON3011961 = "OMOP:3011961",
+    /** LOINC Ferritin [Mass/volume] in Serum or Plasma */
+    OMOPCOLON3001122 = "OMOP:3001122",
+    /** SNOMED Fibrinogen measurement */
+    OMOPCOLON4094436 = "OMOP:4094436",
+    /** SNOMED Glomerular filtration rate */
+    OMOPCOLON4213477 = "OMOP:4213477",
+    /** SNOMED Glucose measurement */
+    OMOPCOLON4149519 = "OMOP:4149519",
+    /** SNOMED High density lipoprotein measurement | HDL */
+    OMOPCOLON4076704 = "OMOP:4076704",
+    /** LOINC Heart rate */
+    OMOPCOLON3027018 = "OMOP:3027018",
+    /** SNOMED Body height */
+    OMOPCOLON607590 = "OMOP:607590",
+    /** SNOMED Hematocrit determination */
+    OMOPCOLON4151358 = "OMOP:4151358",
+    /** SNOMED Hemoglobin finding */
+    OMOPCOLON4094758 = "OMOP:4094758",
+    /** SNOMED Hip circumference */
+    OMOPCOLON4111665 = "OMOP:4111665",
+    /** SNOMED Insulin measurement */
+    OMOPCOLON4060873 = "OMOP:4060873",
+    /** LOINC Insulin [Mass/volume] in Serum or Plasma */
+    OMOPCOLON3022466 = "OMOP:3022466",
+    /** LOINC Insulin [Mass/volume] in Serum or Plasma --12 hours fasting */
+    OMOPCOLON3011670 = "OMOP:3011670",
+    /** SNOMED IL-6 assay | IL-6 assay | Interleukin 6 */
+    OMOPCOLON4332015 = "OMOP:4332015",
+    /** SNOMED Lactate dehydrogenase measurement */
+    OMOPCOLON4012918 = "OMOP:4012918",
+    /** SNOMED Lactate in blood */
+    OMOPCOLON1246795 = "OMOP:1246795",
+    /** SNOMED Low density lipoprotein measurement | LDL */
+    OMOPCOLON4331302 = "OMOP:4331302",
+    /** SNOMED Lymphocyte count in blood */
+    OMOPCOLON37208689 = "OMOP:37208689",
+    /** SNOMED Lymphocyte count */
+    OMOPCOLON4254663 = "OMOP:4254663",
+    /** LOINC Chemokine (C-C motif) ligand 2 [Mass/volume] in Serum or Plasma | CCL2 */
+    OMOPCOLON1617307 = "OMOP:1617307",
+    /** SNOMED Mean arterial pressure */
+    OMOPCOLON37168599 = "OMOP:37168599",
+    /** SNOMED MCH - Mean corpuscular haemoglobin */
+    OMOPCOLON37398674 = "OMOP:37398674",
+    /** SNOMED MCV - Mean corpuscular volume */
+    OMOPCOLON37393851 = "OMOP:37393851",
+    /** SNOMED Mean platelet volume */
+    OMOPCOLON37397923 = "OMOP:37397923",
+    /** LOINC Matrix metallopeptidase 9 [Mass/volume] in Blood | MMP9 */
+    OMOPCOLON40761106 = "OMOP:40761106",
+    /** LOINC Monocytes [#/volume] in Blood */
+    OMOPCOLON3001604 = "OMOP:3001604",
+    /** LOINC Myeloperoxidase [Mass/volume] in Serum by Immunoassay */
+    OMOPCOLON1988928 = "OMOP:1988928",
+    /** SNOMED Neutrophil count in blood */
+    OMOPCOLON37208699 = "OMOP:37208699",
+    /** SNOMED N terminal pro-brain natriuretic peptide level */
+    OMOPCOLON4189511 = "OMOP:4189511",
+    /** SNOMED Plasma N-terminal pro B-type natriuretic peptide concentration measurement | NT pro BNP */
+    OMOPCOLON44812009 = "OMOP:44812009",
+    /** SNOMED Serum N-terminal pro B-type natriuretic peptide concentration measurement | NT pro BNP */
+    OMOPCOLON44812008 = "OMOP:44812008",
+    /** LOINC CD62P cells/cells in Blood | CD62P cells/100 cells in Blood */
+    OMOPCOLON3007356 = "OMOP:3007356",
+    /** SNOMED Potassium measurement */
+    OMOPCOLON4245152 = "OMOP:4245152",
+    /** LOINC Potassium [Mass/volume] in Blood */
+    OMOPCOLON21490733 = "OMOP:21490733",
+    /** SNOMED QRS complex - finding */
+    OMOPCOLON4273021 = "OMOP:4273021",
+    /** SNOMED Red blood cell count | RBC */
+    OMOPCOLON4030871 = "OMOP:4030871",
+    /** LOINC How many hours do you normally sleep [DI-PAD] */
+    OMOPCOLON40768653 = "OMOP:40768653",
+    /** SNOMED Sodium measurement */
+    OMOPCOLON4097430 = "OMOP:4097430",
+    /** LOINC Sodium [Mass/volume] in Specimen */
+    OMOPCOLON36303745 = "OMOP:36303745",
+    /** SNOMED Oxygen saturation measurement | SpO2 */
+    OMOPCOLON4020553 = "OMOP:4020553",
+    /** SNOMED Body temperature */
+    OMOPCOLON4302666 = "OMOP:4302666",
+    /** LOINC Tumor necrosis factor alpha [Mass/volume] in Serum or Plasma | Tumor necrosis factor.alpha [Mass/volume] in Serum or Plasma | TNFa */
+    OMOPCOLON3004282 = "OMOP:3004282",
+    /** LOINC Tumor necrosis factor receptor superfamily member 1A [Mass/volume] in Serum or Plasma | TNFa-R1 */
+    OMOPCOLON46235360 = "OMOP:46235360",
+    /** SNOMED Total cholesterol measurement */
+    OMOPCOLON4008265 = "OMOP:4008265",
+    /** SNOMED Triglycerides measurement */
+    OMOPCOLON4032789 = "OMOP:4032789",
+    /** SNOMED Estimated intake of vegetable servings in 24 hours */
+    OMOPCOLON37311566 = "OMOP:37311566",
+    /** SNOMED von Willebrand factor antigen level */
+    OMOPCOLON4252203 = "OMOP:4252203",
+    /** SNOMED Waist circumference */
+    OMOPCOLON4172830 = "OMOP:4172830",
+    /** SNOMED White blood cell count | WBC */
+    OMOPCOLON4298431 = "OMOP:4298431",
+    /** LOINC Erythrocyte sedimentation rate [Velocity] in Red Blood Cells | Erythrocyte sedimentation rate */
+    OMOPCOLON3015183 = "OMOP:3015183",
+    /** SNOMED pH measurement, arterial */
+    OMOPCOLON4097822 = "OMOP:4097822",
+    /** SNOMED pH measurement, venous */
+    OMOPCOLON4315792 = "OMOP:4315792",
+    /** SNOMED Plasma fasting HDL cholesterol measurement */
+    OMOPCOLON4041720 = "OMOP:4041720",
+    /** SNOMED Plasma fasting LDL cholesterol measurement */
+    OMOPCOLON4041721 = "OMOP:4041721",
+    /** SNOMED Plasma fasting triglyceride measurement */
+    OMOPCOLON4041722 = "OMOP:4041722",
+    /** SNOMED Serum fasting HDL cholesterol measurement */
+    OMOPCOLON4041557 = "OMOP:4041557",
+    /** SNOMED Serum fasting LDL cholesterol measurement */
+    OMOPCOLON4042061 = "OMOP:4042061",
+    /** SNOMED Serum fasting total cholesterol */
+    OMOPCOLON44791053 = "OMOP:44791053",
+    /** SNOMED Serum fasting triglyceride measurement */
+    OMOPCOLON4042590 = "OMOP:4042590",
+    /** SNOMED Plasma total cholesterol level */
+    OMOPCOLON4190897 = "OMOP:4190897",
+    /** LOINC Albumin/Creatinine [Ratio] in 24 hour Urine | uACR */
+    OMOPCOLON46235897 = "OMOP:46235897",
+    /** SNOMED FVC post bronchodilator percentage change | FVC (forced vital capacity) post bronchodilator percentage change */
+    OMOPCOLON44811087 = "OMOP:44811087",
+    /** SNOMED Forced expired volume in 1 second percentage change post bronchodilator | FEV1 */
+    OMOPCOLON44813037 = "OMOP:44813037",
+    /** LOINC FEV1/FVC percent change post bronchodilator */
+    OMOPCOLON42868473 = "OMOP:42868473",
+    /** 8-epi-prostaglandin F2alpha amount in urine | The amount of a 8-epi-prostaglandin F2alpha when measured in urine. | 8-epi-PGF2a */
+    OBACOLON2100046 = "OBA:2100046",
+    /** amount of 1-alkyl-2-acetylglycerophosphocholine esterase activity in blood | The amount of a 1-alkyl-2-acetylglycerophosphocholine esterase activity when measured in blood. | LP-PLA2 */
+    OBACOLON2100055 = "OBA:2100055",
+    /** albumin to creatinine ratio in urine | A compound attribute that is the ratio of urine albumin amount to urine creatinine amount. | uACR */
+    OBACOLON2100053 = "OBA:2100053",
+    /** amount of albumin in blood | The amount of a albumin when measured in blood. */
+    OBACOLON2060178 = "OBA:2060178",
+    /** blood alanine transaminase amount | The amount of a alanine aminotransferase when measured in blood. | ALT SGPT */
+    OBACOLONVT0001573 = "OBA:VT0001573",
+    /** aspartate aminotransferase (human) amount in blood | The amount of a aspartate aminotransferase (human) when measured in blood. | AST SGOT */
+    OBACOLON2100047 = "OBA:2100047",
+    /** natriuretic peptides B amount in blood | The amount of a natriuretic peptides B when measured in blood. | BNP */
+    OBACOLON2100274 = "OBA:2100274",
+    /** urea nitrogen to creatinine ratio in blood | A compound attribute that is the ratio of blood urea nitrogen amount to blood creatinine amount. | BUN creatinine ratio */
+    OBACOLON2100054 = "OBA:2100054",
+    /** Coronary Calcium Score | A quantitative value that is the compilation of assessed size and densities of calcium deposits throughout the coronary tree. | CAC score */
+    NCITCOLONC80425 = "NCIT:C80425",
+    /** carotid artery intima-media region thickness | The thickness of a carotid artery intima-media region. | Carotid IMT */
+    OBACOLON2090004 = "OBA:2090004",
+    /** carotid artery thickness | The thickness of a carotid artery segment. */
+    OBACOLON2050108 = "OBA:2050108",
+    /** blood creatinine amount | The amount of a creatinine when measured in blood. */
+    OBACOLONVT0005328 = "OBA:VT0005328",
+    /** D-dimer (human) amount in blood | The amount of a D-dimer (human) when measured in blood. */
+    OBACOLON2100048 = "OBA:2100048",
+    /** Estimated Glomerular Filtration Rate | A laboratory test that estimates kidney function. It is calculated using an individual's serum creatinine measurement, age, sex, and race. Actual results are reported when the estimated glomerular filtration rate is less than 60 ml/min. | eGFR */
+    NCITCOLONC110935 = "NCIT:C110935",
+    /** level of coagulation factor VII in blood | The amount of a coagulation factor VII when measured in blood. */
+    OBACOLON2050626 = "OBA:2050626",
+    /** level of glucose in blood during fasting | The amount of a glucose when measured in blood during fasting. */
+    OBACOLON2090000 = "OBA:2090000",
+    /** forced expiratory volume to forced vital capacity ratio | The comparison of forced expiratory volume to forced vital capacity expressed as ratio or percentage. | FEV1/FVC */
+    CMOCOLON0000241 = "CMO:0000241",
+    /** forced vital capacity (FVC) | The volume of air that can be forcibly expelled from a maximally inflated lung. */
+    CMOCOLON0000251 = "CMO:0000251",
+    /** serum high-density lipoprotein cholesterol level | The amount of a high-density lipoprotein (HDL) cholesterol when measured in blood serum. */
+    OBACOLON2045397 = "OBA:2045397",
+    /** hemoglobin A1c amount in blood | The amount of a hemoglobin A1c when measured in blood. | HbA1c */
+    OBACOLON2100049 = "OBA:2100049",
+    /** level of insulin in blood during fasting | The amount of a insulin when measured in blood during fasting. */
+    OBACOLON2090001 = "OBA:2090001",
+    /** blood interleukin-1 beta amount | The amount of a interleukin-1 beta when measured in blood. | IL1b */
+    OBACOLONVT0008640 = "OBA:VT0008640",
+    /** blood interleukin-10 amount | The amount of a interleukin-10 when measured in blood. | IL10 */
+    OBACOLONVT0008590 = "OBA:VT0008590",
+    /** serum low-density lipoprotein cholesterol level | The amount of a low-density lipoprotein (LDL) cholesterol when measured in blood serum. */
+    OBACOLON2045398 = "OBA:2045398",
+    /** NT pro BNP | natriuretic peptides B proteolytic cleavage product level | The amount of a natriuretic peptides B proteolytic cleavage product when measured in anatomical entity. */
+    OBACOLON2045349 = "OBA:2045349",
+    /** tumor necrosis factor receptor superfamily member 11B amount | The amount of a tumor necrosis factor receptor superfamily member 11B when measured in anatomical entity. | OPG osteoprotegerin | TNFRSF11B */
+    OBACOLON2050271 = "OBA:2050271",
+    /** platelet quantity | The amount of platelets. */
+    OBACOLONVT0003179 = "OBA:VT0003179",
+    /** PR interval | Time between the beginning of the P wave to the beginning of the QRS complex, reflects the time the electrical impulse takes to travel from the sinus node through the AV node and entering the ventricles, used as an estimate of AV node function. */
+    CMOCOLON0000233 = "CMO:0000233",
+    /** QT interval | An interval measured from the onset of the QRS wave complex to the offset of the T wave. */
+    CMOCOLON0000235 = "CMO:0000235",
+    /** Red cell distribution width | Red blood cell distribution width (RDW or RDW-CV or RCDW and RDW-SD) is a measure of the range of variation of red blood cell (RBC) volume that is reported as part of a standard complete blood count. Usually red blood cells are a standard size of about 6-8 μm in diameter. Certain disorders, however, cause a significant variation in cell size. Higher RDW values indicate greater variation in size. Normal reference range of RDW-CV in human red blood cells is 11.5-14.5%.[1] If anemia is observed, RDW test results are often used together with mean corpuscular volume (MCV) results to determine the possible causes of the anemia. It is mainly used to differentiate an anemia of mixed causes from an anemia of a single cause. */
+    EFOCOLON0009188 = "EFO:0009188",
+    /** dietary sodium intake measurement | Quantification of dietary sodium intake. */
+    EFOCOLON0020080 = "EFO:0020080",
+    /** blood pressure trait | The pressure of blood. */
+    OBACOLONVT0000183 = "OBA:VT0000183",
+    /** troponin complex amount in blood | The amount of a troponin complex when measured in blood. | troponin all types */
+    OBACOLON2100051 = "OBA:2100051",
+    /** waist to hip ratio | A compound attribute that is the ratio of waist circumference to hip circumference. */
+    OBACOLON2100052 = "OBA:2100052",
+    /** LOINC Urea nitrogen [Mass/volume] in Serum or Plasma | BUN */
+    OMOPCOLON3013682 = "OMOP:3013682",
+    /** LOINC Brachial artery Systolic blood pressure */
+    OMOPCOLON3003205 = "OMOP:3003205",
+    /** LOINC Brachial artery Diastolic blood pressure */
+    OMOPCOLON3010404 = "OMOP:3010404",
+    /** LOINC Systolic blood pressure Posterior tibial artery/Brachial artery */
+    OMOPCOLON3016205 = "OMOP:3016205",
+    /** LOINC Systolic blood pressure Posterior tibial artery - right/Brachial artery */
+    OMOPCOLON3010175 = "OMOP:3010175",
+    /** LOINC Systolic blood pressure Posterior tibial artery - left/Brachial artery */
+    OMOPCOLON3000848 = "OMOP:3000848",
+    /** LOINC Systolic blood pressure Brachial artery - right/Brachial artery */
+    OMOPCOLON3021627 = "OMOP:3021627",
+    /** LOINC Systolic blood pressure--sitting */
+    OMOPCOLON3018586 = "OMOP:3018586",
+    /** LOINC Systolic blood pressure--standing */
+    OMOPCOLON3035856 = "OMOP:3035856",
+    /** LOINC Systolic blood pressure--supine */
+    OMOPCOLON3009395 = "OMOP:3009395",
+    /** blood albumin amount | The amount of a albumin type when measured in blood. */
+    OBACOLONVT0000199 = "OBA:VT0000199",
+    /** LOINC Lactate [Moles/volume] in Serum or Plasma */
+    OMOPCOLON3014111 = "OMOP:3014111",
 };
 /**
 * Values describing the types of Education Attainment observed in an Observation.
