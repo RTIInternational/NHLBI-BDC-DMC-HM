@@ -341,17 +341,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#comments" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Comments
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#identifier-and-mapping-information" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -359,23 +348,6 @@
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schema Source
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -422,7 +394,6 @@
 
 
 <h1 id="slot-year_range">Slot: year_range</h1>
-<p><em>The time period demarcating the years between the start and end of the Visit (e.g., 2020-2021).</em></p>
 <p>URI: <a href="https://w3id.org/bdchm/year_range">bdchm:year_range</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -437,6 +408,11 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="../ResearchStudy/">ResearchStudy</a></td>
+<td>A process where a researcher or organization plans and then executes a series...</td>
+<td>no</td>
+</tr>
+<tr>
 <td><a href="../Visit/">Visit</a></td>
 <td>Events where Persons engage with the healthcare system for a duration of time</td>
 <td>no</td>
@@ -445,17 +421,9 @@
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../TimePeriod/">TimePeriod</a></li>
-</ul>
-<h2 id="comments">Comments</h2>
-<ul>
-<li>The TimePoint defining the start of the year range should be set to 'January 1' of the year in question and the TimePoint defining the end of the year range should be set to 'December 31' of the year in question.</li>
+<li>Range: <a href="../String/">String</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://w3id.org/bdchm</li>
-</ul>
 <h2 id="mappings">Mappings</h2>
 <table>
 <thead>
@@ -479,19 +447,10 @@
 <details>
 
 <pre><code class="language-yaml">name: year_range
-description: The time period demarcating the years between the start and end of the
-  Visit (e.g., 2020-2021).
-comments:
-- The TimePoint defining the start of the year range should be set to 'January 1'
-  of the year in question and the TimePoint defining the end of the year range should
-  be set to 'December 31' of the year in question.
-from_schema: https://w3id.org/bdchm
-rank: 1000
-owner: Visit
 domain_of:
+- ResearchStudy
 - Visit
-range: TimePeriod
-required: false
+range: string
 
 </code></pre>
 

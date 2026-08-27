@@ -279,7 +279,7 @@
 
 
 
-    TimePeriod --&gt; "1" TimePoint : period_end
+    TimePeriod --&gt; "0..1" TimePoint : period_end
     click TimePoint href "../TimePoint"
 
 
@@ -288,7 +288,7 @@
 
 
 
-    TimePeriod --&gt; "1" TimePoint : period_start
+    TimePeriod --&gt; "0..1" TimePoint : period_start
     click TimePoint href "../TimePoint"
 
 
@@ -314,13 +314,13 @@
 <tbody>
 <tr>
 <td><a href="../period_start/">period_start</a></td>
-<td>1 <br/> <a href="../TimePoint/">TimePoint</a></td>
+<td>0..1 <br/> <a href="../TimePoint/">TimePoint</a></td>
 <td>When a period of time started</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../period_end/">period_end</a></td>
-<td>1 <br/> <a href="../TimePoint/">TimePoint</a></td>
+<td>0..1 <br/> <a href="../TimePoint/">TimePoint</a></td>
 <td>When a period of time ended</td>
 <td>direct</td>
 </tr>
@@ -343,6 +343,12 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><a href="../ResearchStudy/">ResearchStudy</a></td>
+<td><a href="../year_range/">year_range</a></td>
+<td>range</td>
+<td><a href="./">TimePeriod</a></td>
+</tr>
 <tr>
 <td><a href="../Visit/">Visit</a></td>
 <td><a href="../year_range/">year_range</a></td>
@@ -392,7 +398,7 @@ attributes:
     domain_of:
     - TimePeriod
     range: TimePoint
-    required: true
+    required: false
   period_end:
     name: period_end
     description: When a period of time ended.
@@ -401,7 +407,7 @@ attributes:
     domain_of:
     - TimePeriod
     range: TimePoint
-    required: true
+    required: false
 
 </code></pre>
 </details>
@@ -421,7 +427,7 @@ attributes:
     domain_of:
     - TimePeriod
     range: TimePoint
-    required: true
+    required: false
   period_end:
     name: period_end
     description: When a period of time ended.
@@ -431,7 +437,7 @@ attributes:
     domain_of:
     - TimePeriod
     range: TimePoint
-    required: true
+    required: false
   id:
     name: id
     description: The 'logical' identifier of the entity within the system of record.  The

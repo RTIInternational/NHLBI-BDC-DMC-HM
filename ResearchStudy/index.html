@@ -294,24 +294,6 @@
     click Consent href "../Consent"
 
 
-      ResearchStudy : date_ended
-
-
-
-
-    ResearchStudy --&gt; "0..1" TimePoint : date_ended
-    click TimePoint href "../TimePoint"
-
-
-      ResearchStudy : date_started
-
-
-
-
-    ResearchStudy --&gt; "0..1" TimePoint : date_started
-    click TimePoint href "../TimePoint"
-
-
       ResearchStudy : description
 
       ResearchStudy : description_shortened
@@ -351,6 +333,15 @@
       ResearchStudy : url
 
       ResearchStudy : version
+
+      ResearchStudy : year_range
+
+
+
+
+    ResearchStudy --&gt; "0..1" TimePeriod : year_range
+    click TimePeriod href "../TimePeriod"
+
 
 
 </div>
@@ -409,15 +400,9 @@
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../date_started/">date_started</a></td>
-<td>0..1 <br/> <a href="../TimePoint/">TimePoint</a></td>
-<td>The date when the research project began</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../date_ended/">date_ended</a></td>
-<td>0..1 <br/> <a href="../TimePoint/">TimePoint</a></td>
-<td>The date when the research project ended</td>
+<td><a href="../year_range/">year_range</a></td>
+<td>0..1 <br/> <a href="../TimePeriod/">TimePeriod</a></td>
+<td>The time period demarcating the years between the start and end of the Resear...</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -613,31 +598,20 @@ attributes:
     - ResearchStudy
     range: string
     required: false
-  date_started:
-    name: date_started
-    description: The date when the research project began.
+  year_range:
+    name: year_range
+    description: The time period demarcating the years between the start and end of
+      the ResearchStudy (e.g., 2020-2021).
+    comments:
+    - The TimePoint defining the start of the year range should be set to 'January
+      1' of the year in question and the TimePoint defining the end of the year range
+      should be set to 'December 31' of the year in question.
     from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
     - ResearchStudy
-    - SpecimenCreationActivity
-    - SpecimenProcessingActivity
-    - SpecimenStorageActivity
-    - SpecimenTransportActivity
-    range: TimePoint
-    required: false
-  date_ended:
-    name: date_ended
-    description: The date when the research project ended.
-    from_schema: https://w3id.org/bdchm
-    rank: 1000
-    domain_of:
-    - ResearchStudy
-    - SpecimenCreationActivity
-    - SpecimenProcessingActivity
-    - SpecimenStorageActivity
-    - SpecimenTransportActivity
-    range: TimePoint
+    - Visit
+    range: TimePeriod
     required: false
   accession_number:
     name: accession_number
@@ -819,33 +793,21 @@ attributes:
     - ResearchStudy
     range: string
     required: false
-  date_started:
-    name: date_started
-    description: The date when the research project began.
+  year_range:
+    name: year_range
+    description: The time period demarcating the years between the start and end of
+      the ResearchStudy (e.g., 2020-2021).
+    comments:
+    - The TimePoint defining the start of the year range should be set to 'January
+      1' of the year in question and the TimePoint defining the end of the year range
+      should be set to 'December 31' of the year in question.
     from_schema: https://w3id.org/bdchm
     rank: 1000
     owner: ResearchStudy
     domain_of:
     - ResearchStudy
-    - SpecimenCreationActivity
-    - SpecimenProcessingActivity
-    - SpecimenStorageActivity
-    - SpecimenTransportActivity
-    range: TimePoint
-    required: false
-  date_ended:
-    name: date_ended
-    description: The date when the research project ended.
-    from_schema: https://w3id.org/bdchm
-    rank: 1000
-    owner: ResearchStudy
-    domain_of:
-    - ResearchStudy
-    - SpecimenCreationActivity
-    - SpecimenProcessingActivity
-    - SpecimenStorageActivity
-    - SpecimenTransportActivity
-    range: TimePoint
+    - Visit
+    range: TimePeriod
     required: false
   accession_number:
     name: accession_number
