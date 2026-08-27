@@ -180,13 +180,10 @@ classes:
         range: string
         description: An entity that is responsible for the initiation, management, and/or financing of a research project.
         required: false
-      date_started:
-        range: TimePoint
-        description: The date when the research project began.
-        required: false
-      date_ended:
-        range: TimePoint
-        description: The date when the research project ended.
+      year_range:
+        range: TimePeriod
+        description: The time period demarcating the years between the start and end of the ResearchStudy (e.g., 2020-2021).
+        comments: The TimePoint defining the start of the year range should be set to 'January 1' of the year in question and the TimePoint defining the end of the year range should be set to 'December 31' of the year in question.
         required: false
       accession_number:
         range: string
@@ -343,11 +340,11 @@ classes:
       period_start:
         range: TimePoint
         description: When a period of time started.
-        required: true
+        required: false
       period_end:
         range: TimePoint
         description: When a period of time ended.
-        required: true
+        required: false
 
   ResearchStudyCollection:
     is_a: Entity
