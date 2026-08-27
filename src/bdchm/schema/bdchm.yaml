@@ -4568,6 +4568,9 @@ enums:
       "OMOP:3014111":
         description: "LOINC Lactate [Moles/volume] in Serum or Plasma"
         meaning: OMOP:3014111
+      "OMOP:37208543":
+        description: "SNOMED Cardiac troponin I mass concentration in plasma"
+        meaning: OMOP:37208543
 
   EducationalAttainmentObservationTypeEnum:
     description: Values describing the types of Education Attainment observed in an Observation.
