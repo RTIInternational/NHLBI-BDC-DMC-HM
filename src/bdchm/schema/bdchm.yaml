@@ -3791,73 +3791,73 @@ enums:
     permissible_values:
 
       "OBA:2050068":
-        description: "Albumin in blood | The amount of a albumin when measured in blood serum."
+        description: "Albumin in blood | The amount of albumin when measured in blood serum."
         meaning: OBA:2050068
       "OBA:2050075":
-        description: "Alpha-1 antitrypsin in serum | The amount of a alpha-1-antitrypsin when measured in blood serum."
+        description: "Alpha-1 antitrypsin in serum | The amount of alpha-1-antitrypsin when measured in blood serum."
         meaning: OBA:2050075
       "OBA:2050062":
-        description: "ALT SGPT | The amount of a alanine aminotransferase when measured in blood serum."
+        description: "ALT SGPT | The amount of alanine aminotransferase when measured in blood serum."
         meaning: OBA:2050062
       "OBA:VT0002607":
         description: "basophils count | The amount of a basophil."
         meaning: OBA:VT0002607
       "OBA:VT0001569":
-        description: "Bilirubin Unconjugated Indirect | The amount of a bilirubin IXalpha when measured in blood."
+        description: "Bilirubin Unconjugated Indirect | The amount of bilirubin IXalpha when measured in blood."
         meaning: OBA:VT0001569
       "OBA:2045455":
         description: "BMI | A compound attribute that is the ratio of body mass to body height."
         meaning: OBA:2045455
       "OBA:2045303":
-        description: "BNP | The amount of a natriuretic peptides B when measured in anatomical entity."
+        description: "BNP | The amount of natriuretic peptides B when measured in anatomical entity."
         meaning: OBA:2045303
       "OBA:VT0001259":
         description: "Body weight | The mass of a multicellular organism."
         meaning: OBA:VT0001259
       "OBA:VT0005265":
-        description: "BUN | The amount of a urea when measured in blood."
+        description: "BUN | The amount of urea when measured in blood."
         meaning: OBA:VT0005265
       "OBA:2052305":
-        description: "CD40 in blood | The amount of a CD40 ligand (human) when measured in blood."
+        description: "CD40 in blood | The amount of CD40 ligand (human) when measured in blood."
         meaning: OBA:2052305
       "OBA:VT0003018":
-        description: "Chloride in blood | The amount of a chloride when measured in blood."
+        description: "Chloride in blood | The amount of chloride when measured in blood."
         meaning: OBA:VT0003018
       "OBA:2050096":
-        description: "Creatinine in blood | The amount of a creatinine when measured in blood serum."
+        description: "Creatinine in blood | The amount of creatinine when measured in blood serum."
         meaning: OBA:2050096
       "OBA:VT0010540":
-        description: "Creatinine in urine | The amount of a creatinine when measured in urine."
+        description: "Creatinine in urine | The amount of creatinine when measured in urine."
         meaning: OBA:VT0010540
       "OBA:2052375":
-        description: "Cystatin C in blood | The amount of a cystatin-C (human) when measured in blood."
+        description: "Cystatin C in blood | The amount of cystatin-C (human) when measured in blood."
         meaning: OBA:2052375
       "OBA:2052778":
-        description: "E-selectin in blood | The amount of a E-selectin (human) when measured in blood."
+        description: "E-selectin in blood | The amount of E-selectin (human) when measured in blood."
         meaning: OBA:2052778
       "OBA:VT0002602":
         description: "Eosinophils count | The amount of a eosinophil."
         meaning: OBA:VT0002602
       "OBA:2045235":
-        description: "Erythrocyte Sed Rate | The buoyancy of a erythrocyte."
+        description: "Erythrocyte Sed Rate | The buoyancy of an erythrocyte."
         meaning: OBA:2045235
       "OBA:2041535":
-        description: "Factor VII | The amount of a coagulation factor VII when measured in blood serum."
+        description: "Factor VII | The amount of coagulation factor VII when measured in blood serum."
         meaning: OBA:2041535
       "OBA:VT0010513":
-        description: "Ferritin | The amount of a ferritin complex when measured in blood."
+        description: "Ferritin | The amount of ferritin complex when measured in blood."
         meaning: OBA:VT0010513
       "OBA:0000061":
-        description: "Fibrinogen | The amount of a fibrinogen complex."
+        description: "Fibrinogen | The amount of fibrinogen complex."
         meaning: OBA:0000061
       "OBA:0003747":
-        description: "GFR | The rate of a glomerular filtration."
+        description: "GFR | The rate of glomerular filtration."
         meaning: OBA:0003747
       "OBA:VT0000188":
-        description: "Glucose in blood | The amount of a glucose when measured in blood."
+        description: "Glucose in blood | The amount of glucose when measured in blood."
         meaning: OBA:VT0000188
       "OBA:VT0000184":
-        description: "HDL | The amount of a high-density lipoprotein cholesterol when measured in blood."
+        description: "HDL | The amount of high-density lipoprotein cholesterol when measured in blood."
         meaning: OBA:VT0000184
       "OBA:1001087":
         description: "Heart rate | The rate of a heart contraction."
@@ -3866,43 +3866,43 @@ enums:
         description: "Height | The height of a multicellular organism."
         meaning: OBA:VT0001253
       "OBA:2045381":
-        description: "Hematocrit | The volume of a erythrocyte when measured in blood."
+        description: "Hematocrit | The volume of an erythrocyte when measured in blood."
         meaning: OBA:2045381
       "OBA:2060175":
-        description: "Hemoglobin | The amount of a hemoglobin when measured in blood."
+        description: "Hemoglobin | The amount of hemoglobin when measured in blood."
         meaning: OBA:2060175
       "OBA:1000032":
         description: "Hip circumference | The circumference of a hip."
         meaning: OBA:1000032
       "OBA:2060174":
-        description: "Insulin in blood | The amount of a insulin when measured in blood."
+        description: "Insulin in blood | The amount of insulin when measured in blood."
         meaning: OBA:2060174
       "OBA:2052890":
-        description: "interleukin 6 in blood | The amount of a interleukin-6 (human) when measured in blood."
+        description: "IL6 | interleukin 6 in blood | The amount of interleukin-6 (human) when measured in blood."
         meaning: OBA:2052890
       "OBA:VT0010477":
-        description: "Lactate Dehydrogenase LDH | The amount of a lactate dehydrogenase complex when measured in blood."
+        description: "Lactate Dehydrogenase LDH | The amount of lactate dehydrogenase complex when measured in blood."
         meaning: OBA:VT0010477
       "OBA:VT0010616":
-        description: "Lactate in blood | The amount of a lactate when measured in blood."
+        description: "Lactate in blood | The amount of lactate when measured in blood."
         meaning: OBA:VT0010616
       "OBA:VT0000181":
-        description: "LDL | The amount of a low-density lipoprotein cholesterol when measured in blood."
+        description: "LDL | The amount of low-density lipoprotein cholesterol when measured in blood."
         meaning: OBA:VT0000181
       "OBA:VT0000717":
-        description: "Lymphocytes count | The has number of of a lymphocyte."
+        description: "Lymphocytes count | The number of lymphocytes."
         meaning: OBA:VT0000717
       "OBA:2052436":
-        description: "MCP1 in blood | The amount of a C-C motif chemokine 2 (human) when measured in blood."
+        description: "MCP1 in blood | The amount of C-C motif chemokine 2 (CCL2)(human) when measured in blood."
         meaning: OBA:2052436
       "OBA:VT2000000":
-        description: "Mean arterial pressure | The pressure of a arterial blood."
+        description: "Mean arterial pressure | The pressure of arterial blood."
         meaning: OBA:VT2000000
       "OBA:2045301":
-        description: "mean corpuscular hemoglobin | The amount of a hemoglobin when measured in erythrocyte."
+        description: "mean corpuscular hemoglobin | The amount of hemoglobin when measured in an erythrocyte."
         meaning: OBA:2045301
       "OBA:0003460":
-        description: "mean corpuscular volume | The volume of a erythrocyte."
+        description: "mean corpuscular volume | The volume of an erythrocyte."
         meaning: OBA:0003460
       "OBA:0003277":
         description: "mean platelet volume | The volume of a platelet."
@@ -3920,79 +3920,79 @@ enums:
         description: "P-selectin in blood | The amount of a P-selectin (human) when measured in blood."
         meaning: OBA:2052701
       "OBA:2045409":
-        description: "pH of blood | The acidity of a blood."
+        description: "pH of blood | The acidity of blood."
         meaning: OBA:2045409
       "OBA:VT0002668":
-        description: "Potassium in blood | The amount of a potassium atom when measured in blood."
+        description: "Potassium in blood | The amount of potassium when measured in blood."
         meaning: OBA:VT0002668
       "OBA:1001086":
         description: "QRS interval | See also EFO_0005054"
         meaning: OBA:1001086
       "OBA:VT0001586":
-        description: "Red blood cell count | The amount of a erythrocyte."
+        description: "Red blood cell count | The amount of erythrocytes. | RBC"
         meaning: OBA:VT0001586
       "OBA:2040171":
-        description: "Sleep hours | The duration of a sleep."
+        description: "Sleep hours | The duration of sleep."
         meaning: OBA:2040171
       "OBA:VT0001776":
-        description: "Sodium in blood | The amount of a sodium atom when measured in blood."
+        description: "Sodium in blood | The amount of sodium when measured in blood."
         meaning: OBA:VT0001776
       "OBA:2045443":
-        description: "SpO2 | The concentration of of a oxygen atom when measured in blood."
+        description: "SpO2 | The concentration of oxygen when measured in blood."
         meaning: OBA:2045443
       "OBA:VT0005535":
         description: "Temperature | The temperature of a multicellular organism."
         meaning: OBA:VT0005535
       "OBA:2051979":
-        description: "TNFa in blood | The amount of a tumor necrosis factor (human) when measured in blood."
+        description: "TNFa in blood | The amount of tumor necrosis factor (human) when measured in blood."
         meaning: OBA:2051979
       "OBA:2051975":
-        description: "TNFa-R1 in blood | The amount of a tumor necrosis factor receptor superfamily member 1A (human) when measured in blood."
+        description: "TNFa-R1 in blood | The amount of tumor necrosis factor receptor superfamily member 1A (human) when measured in blood."
         meaning: OBA:2051975
       "OBA:VT0000180":
-        description: "Total cholesterol in blood | The amount of a cholesterol when measured in blood."
+        description: "Total cholesterol in blood | The amount of cholesterol when measured in blood."
         meaning: OBA:VT0000180
       "OBA:VT0002644":
-        description: "Triglycerides in blood | The amount of a triglyceride when measured in blood."
+        description: "Triglycerides in blood | The amount of triglycerides when measured in blood."
         meaning: OBA:VT0002644
       "OBA:2052741":
-        description: "von Willebrand factor | The amount of a von Willebrand factor (human) when measured in blood."
+        description: "von Willebrand factor | The amount of von Willebrand factor (human) when measured in blood."
         meaning: OBA:2052741
       "OBA:1001085":
-        description: "Waist circumference | The circumference of a abdominal segment of trunk."
+        description: "Waist circumference | The circumference of an abdominal segment of trunk."
         meaning: OBA:1001085
       "OBA:VT0000217":
-        description: "White blood cell count | The amount of a leukocyte."
+        description: "White blood cell count | The amount of leukocytes."
         meaning: OBA:VT0000217
       "OBA:VT0002871":
-        description: "Albumin in urine | The amount of a albumin type when measured in urine."
+        description: "Albumin in urine | The amount of albumin when measured in urine."
         meaning: OBA:VT0002871
       "OBA:2041536":
-        description: "Factor VIII | The amount of a coagulation factor VIII when measured in blood serum."
+        description: "Factor VIII | The amount of coagulation factor VIII when measured in blood serum."
         meaning: OBA:2041536
       "OBA:VT0000223":
-        description: "monocytes count | The amount of a monocyte."
+        description: "monocytes count | The amount of monocytes."
         meaning: OBA:VT0000223
       "OMOP:4282779":
-        description: "SNOMED Smoking status | Cigarette smoking tobacco"
+        description: "SNOMED | Cigarette smoking tobacco"
         meaning: OMOP:4282779
       "OMOP:3011888":
-        description: "LOINC isoprostane_8_epi_pgf2a | Prostaglandin F2 alpha [Mass/volume] in Urine"
+        description: "LOINC isoprostane_8_epi_pgf2a | Prostaglandin F2 alpha [Mass/volume] in Urine | 8-epi-PGF2"
         meaning: OMOP:3011888
       "OMOP:36305170":
-        description: "LOINC lppla2_act | Lipoprotein associated phospholipase A2 [Enzymatic activity/volume] in Serum or Plasma"
+        description: "LOINC lppla2_act | Lipoprotein associated phospholipase A2 [Enzymatic activity/volume] in Serum or Plasma | LP-PLA2"
         meaning: OMOP:36305170
       "OMOP:37396400":
-        description: "SNOMED apnea_hypop_index | Apnea Hypopnea Index"
+        description: "SNOMED apnea_hypop_index | Apnea Hypopnea Index | AHI"
         meaning: OMOP:37396400
       "OMOP:4154347":
-        description: "SNOMED albumin_creatinine | Urine albumin/creatinine ratio measurement"
+        description: "SNOMED albumin_creatinine | Urine albumin/creatinine ratio measurement | uACR"
         meaning: OMOP:4154347
       "OMOP:35609491":
         description: "SNOMED alcohol_servings | Alcohol units consumed per week"
         meaning: OMOP:35609491
       "OMOP:4263457":
-        description: "SNOMED ast_sgot | Aspartate aminotransferase measurement"
+        description: "SNOMED ast_sgot | Aspartate aminotransferase measurement | AST SGOT"
         meaning: OMOP:4263457
       "OMOP:44805650":
         description: "SNOMED bilirubin_con | Conjugated bilirubin measurement"
@@ -4013,7 +4013,7 @@ enums:
         description: "SNOMED carotid_imt | Carotid intima media thickness"
         meaning: OMOP:4138462
       "OMOP:43054909":
-        description: "LOINC smoking | Tobacco smoking status"
+        description: "LOINC | Tobacco smoking status"
         meaning: OMOP:43054909
       "OMOP:37393605":
         description: "SNOMED d_dimer | D-dimer level"
@@ -4058,7 +4058,7 @@ enums:
         description: "SNOMED lympho_pct | Lymphocyte percent count in blood"
         meaning: OMOP:37208690
       "OMOP:3041450":
-        description: "LOINC lppla2_mass | Lipoprotein associated phospholipase A2 [Mass/volume] in Serum or Plasma"
+        description: "LOINC lppla2_mass | Lipoprotein associated phospholipase A2 [Mass/volume] in Serum or Plasma | LP-PLA2"
         meaning: OMOP:3041450
       "OMOP:37393850":
         description: "SNOMED mchc | MCHC - Mean corpuscular haemoglobin concentration"
@@ -4091,7 +4091,7 @@ enums:
         description: "SNOMED sodium_intak | Sodium intake"
         meaning: OMOP:606729
       "OMOP:37543055":
-        description: tnfr2
+        description: "CDISC | TNF Receptor 1B | tnfr2"
         meaning: OMOP:37543055
       "OMOP:4021291":
         description: "SNOMED troponin | Troponin measurement"
@@ -4108,18 +4108,9 @@ enums:
       "OMOP:4150326":
         description: "SNOMED fast_lipids | Fasting blood lipids"
         meaning: OMOP:4150326
-      "OMOP:4056965":
-        description: "SNOMED med_adher | Drug compliance good"
-        meaning: OMOP:4056965
-      "OMOP:3021806":
-        description: "LOINC med_use | History of Medication use"
-        meaning: OMOP:3021806
-      "OMOP:45772840":
-        description: "SNOMED pacem_stat | Implantable cardiac pacemaker"
-        meaning: OMOP:45772840
-      "OMOP:313459":
-        description: "SNOMED slp_ap_stat | Sleep apnea"
-        meaning: OMOP:313459
+      "OMOP:4144921":
+        description: "SNOMED pacemaker status | Implantation of cardiac pacemaker"
+        meaning: OMOP:4144921
       "OMOP:4152194":
         description: "SNOMED bp_systolic | Systolic blood pressure"
         meaning: OMOP:4152194
@@ -4138,294 +4129,290 @@ enums:
       "OMOP:3005600":
         description: "LOINC FVC percent predicted | FVC measured/predicted"
         meaning: OMOP:3005600
-
       "OMOP:4196583":
-        description: "SNOMED FEV1/FVC percent predicted | FEV1/FVC percent"
+        description: "SNOMED FEV1/FVC percent predicted | FEV1/FVC measured/predicted"
         meaning: OMOP:4196583
       "OMOP:2212186":
-        description: "CPT4 Albumin; serum, plasma or whole blood | Albumin; serum, plasma or whole blood"
+        description: "CPT4 Albumin; serum, plasma or whole blood"
         meaning: OMOP:2212186
       "OMOP:2212188":
-        description: "CPT4 Albumin; urine (eg, microalbumin), quantitative | Albumin; urine (eg, microalbumin), quantitative"
+        description: "CPT4 Albumin; urine (eg, microalbumin), quantitative"
         meaning: OMOP:2212188
       "OMOP:4146380":
-        description: "SNOMED Alanine aminotransferase measurement | Alanine aminotransferase measurement"
+        description: "SNOMED Alanine aminotransferase measurement"
         meaning: OMOP:4146380
       "OMOP:3010587":
-        description: "LOINC Aspartate aminotransferase [Presence] in Serum or Plasma | Aspartate aminotransferase [Presence] in Serum or Plasma"
+        description: "LOINC Aspartate aminotransferase [Presence] in Serum or Plasma"
         meaning: OMOP:3010587
       "OMOP:3006315":
-        description: "LOINC Basophils [#/volume] in Blood | Basophils [#/volume] in Blood"
+        description: "LOINC Basophils [#/volume] in Blood"
         meaning: OMOP:3006315
       "OMOP:3038553":
-        description: "LOINC Body mass index (BMI) [Ratio] | Body mass index (BMI) [Ratio]"
+        description: "LOINC Body mass index (BMI) [Ratio]"
         meaning: OMOP:3038553
       "OMOP:4307029":
-        description: "SNOMED Brain natriuretic peptide measurement | Brain natriuretic peptide measurement"
+        description: "SNOMED Brain natriuretic peptide measurement | BNP"
         meaning: OMOP:4307029
       "OMOP:3031569":
-        description: "LOINC Natriuretic peptide B [Mass/volume] in Blood | Natriuretic peptide B [Mass/volume] in Blood"
+        description: "LOINC Natriuretic peptide B [Mass/volume] in Blood | BNP"
         meaning: OMOP:3031569
       "OMOP:4099154":
-        description: "SNOMED Body weight | Body weight"
+        description: "SNOMED Body weight"
         meaning: OMOP:4099154
       "OMOP:4017361":
-        description: "SNOMED Blood urea nitrogen measurement | Blood urea nitrogen measurement"
+        description: "SNOMED Blood urea nitrogen measurement | BUN"
         meaning: OMOP:4017361
       "OMOP:4166120":
-        description: "SNOMED Calcium volume | Calcium volume"
+        description: "SNOMED Calcium volume"
         meaning: OMOP:4166120
       "OMOP:43020498":
-        description: "SNOMED Left carotid artery stenosis | Left carotid artery stenosis"
+        description: "SNOMED Left carotid artery stenosis"
         meaning: OMOP:43020498
       "OMOP:43021859":
-        description: "SNOMED Right carotid artery stenosis | Right carotid artery stenosis"
+        description: "SNOMED Right carotid artery stenosis"
         meaning: OMOP:43021859
       "OMOP:4209737":
-        description: "SNOMED Lymphocyte antigen CD40 | Lymphocyte antigen CD40"
+        description: "SNOMED Lymphocyte antigen CD40"
         meaning: OMOP:4209737
       "OMOP:4188066":
-        description: "SNOMED Chloride measurement | Chloride measurement"
+        description: "SNOMED Chloride measurement"
         meaning: OMOP:4188066
       "OMOP:3009024":
-        description: "LOINC Chloride [Moles/volume] in Specimen | Chloride [Moles/volume] in Specimen"
+        description: "LOINC Chloride [Moles/volume] in Specimen"
         meaning: OMOP:3009024
-      "OMOP:35811013":
-        description: Smoking status
-        meaning: OMOP:35811013
       "OMOP:2212294":
-        description: "CPT4 Creatinine; blood | Creatinine; blood"
+        description: "CPT4 Creatinine; blood"
         meaning: OMOP:2212294
       "OMOP:3051825":
-        description: "LOINC Creatinine [Mass/volume] in Blood | Creatinine [Mass/volume] in Blood"
+        description: "LOINC Creatinine [Mass/volume] in Blood"
         meaning: OMOP:3051825
       "OMOP:3016723":
-        description: "LOINC Creatinine [Mass/volume] in Serum or Plasma | Creatinine [Mass/volume] in Serum or Plasma"
+        description: "LOINC Creatinine [Mass/volume] in Serum or Plasma"
         meaning: OMOP:3016723
       "OMOP:3007081":
-        description: "LOINC Creatinine [Interpretation] in Urine | Creatinine [Interpretation] in Urine"
+        description: "LOINC Creatinine [Interpretation] in Urine"
         meaning: OMOP:3007081
       "OMOP:4136584":
-        description: "SNOMED Blood cystatin C measurement | Blood cystatin C measurement"
+        description: "SNOMED Blood cystatin C measurement"
         meaning: OMOP:4136584
       "OMOP:37172928":
-        description: "SNOMED D-dimer mass concentration in plasma | D-dimer mass concentration in plasma"
+        description: "SNOMED D-dimer mass concentration in plasma"
         meaning: OMOP:37172928
       "OMOP:3010372":
-        description: "LOINC E selectin [Mass/volume] in Blood | E selectin [Mass/volume] in Blood"
+        description: "LOINC E selectin [Mass/volume] in Blood"
         meaning: OMOP:3010372
       "OMOP:4022643":
-        description: "SNOMED Educational achievement | Educational achievement"
+        description: "SNOMED Educational achievement"
         meaning: OMOP:4022643
       "OMOP:3013115":
-        description: "LOINC Eosinophils [#/volume] in Blood | Eosinophils [#/volume] in Blood"
+        description: "LOINC Eosinophils [#/volume] in Blood"
         meaning: OMOP:3013115
       "OMOP:4217630":
-        description: "SNOMED Clotting factor VII assay | Clotting factor VII assay"
+        description: "SNOMED Clotting factor VII assay "
         meaning: OMOP:4217630
       "OMOP:4148587":
-        description: "SNOMED Factor VIII assay | Factor VIII assay"
+        description: "SNOMED Factor VIII assay"
         meaning: OMOP:4148587
       "OMOP:4076114":
-        description: "SNOMED Household income | Household income"
+        description: "SNOMED Household income"
         meaning: OMOP:4076114
       "OMOP:4176561":
-        description: "SNOMED Ferritin measurement | Ferritin measurement"
+        description: "SNOMED Ferritin measurement"
         meaning: OMOP:4176561
       "OMOP:3011961":
-        description: "LOINC Ferritin [Mass/volume] in Blood | Ferritin [Mass/volume] in Blood"
+        description: "LOINC Ferritin [Mass/volume] in Blood"
         meaning: OMOP:3011961
       "OMOP:3001122":
-        description: "LOINC Ferritin [Mass/volume] in Serum or Plasma | Ferritin [Mass/volume] in Serum or Plasma"
+        description: "LOINC Ferritin [Mass/volume] in Serum or Plasma"
         meaning: OMOP:3001122
       "OMOP:4094436":
-        description: "SNOMED Fibrinogen measurement | Fibrinogen measurement"
+        description: "SNOMED Fibrinogen measurement"
         meaning: OMOP:4094436
       "OMOP:4213477":
-        description: "SNOMED Glomerular filtration rate | Glomerular filtration rate"
+        description: "SNOMED Glomerular filtration rate"
         meaning: OMOP:4213477
       "OMOP:4149519":
-        description: "SNOMED Glucose measurement | Glucose measurement"
+        description: "SNOMED Glucose measurement"
         meaning: OMOP:4149519
       "OMOP:4076704":
-        description: "SNOMED High density lipoprotein measurement | High density lipoprotein measurement"
+        description: "SNOMED High density lipoprotein measurement | HDL"
         meaning: OMOP:4076704
       "OMOP:3027018":
-        description: "LOINC Heart rate | Heart rate"
+        description: "LOINC Heart rate"
         meaning: OMOP:3027018
       "OMOP:607590":
-        description: "SNOMED Body height | Body height"
+        description: "SNOMED Body height"
         meaning: OMOP:607590
       "OMOP:4151358":
-        description: "SNOMED Hematocrit determination | Hematocrit determination"
+        description: "SNOMED Hematocrit determination"
         meaning: OMOP:4151358
       "OMOP:4094758":
-        description: "SNOMED Hemoglobin finding | Hemoglobin finding"
+        description: "SNOMED Hemoglobin finding"
         meaning: OMOP:4094758
       "OMOP:4111665":
-        description: "SNOMED Hip circumference | Hip circumference"
+        description: "SNOMED Hip circumference"
         meaning: OMOP:4111665
       "OMOP:4060873":
-        description: "SNOMED Insulin measurement | Insulin measurement"
+        description: "SNOMED Insulin measurement"
         meaning: OMOP:4060873
       "OMOP:3022466":
-        description: "LOINC Insulin [Mass/volume] in Serum or Plasma | Insulin [Mass/volume] in Serum or Plasma"
+        description: "LOINC Insulin [Mass/volume] in Serum or Plasma"
         meaning: OMOP:3022466
       "OMOP:3011670":
-        description: "LOINC Insulin [Mass/volume] in Serum or Plasma --12 hours fasting | Insulin [Mass/volume] in Serum or Plasma --12 hours fasting"
+        description: "LOINC Insulin [Mass/volume] in Serum or Plasma --12 hours fasting"
         meaning: OMOP:3011670
       "OMOP:4332015":
-        description: "SNOMED IL-6 assay | IL-6 assay"
+        description: "SNOMED IL-6 assay | IL-6 assay | Interleukin 6"
         meaning: OMOP:4332015
       "OMOP:4012918":
-        description: "SNOMED Lactate dehydrogenase measurement | Lactate dehydrogenase measurement"
+        description: "SNOMED Lactate dehydrogenase measurement"
         meaning: OMOP:4012918
       "OMOP:1246795":
-        description: "SNOMED Lactate in blood | Lactate in blood"
+        description: "SNOMED Lactate in blood"
         meaning: OMOP:1246795
       "OMOP:4331302":
-        description: "SNOMED Low density lipoprotein measurement | Low density lipoprotein measurement"
+        description: "SNOMED Low density lipoprotein measurement | LDL"
         meaning: OMOP:4331302
       "OMOP:37208689":
-        description: "SNOMED Lymphocyte count in blood | Lymphocyte count in blood"
+        description: "SNOMED Lymphocyte count in blood"
         meaning: OMOP:37208689
       "OMOP:4254663":
-        description: "SNOMED Lymphocyte count | Lymphocyte count"
+        description: "SNOMED Lymphocyte count"
         meaning: OMOP:4254663
       "OMOP:1617307":
-        description: "LOINC Chemokine (C-C motif) ligand 2 [Mass/volume] in Serum or Plasma | Chemokine (C-C motif) ligand 2 [Mass/volume] in Serum or Plasma"
+        description: "LOINC Chemokine (C-C motif) ligand 2 [Mass/volume] in Serum or Plasma | CCL2"
         meaning: OMOP:1617307
       "OMOP:37168599":
-        description: "SNOMED Mean arterial pressure | Mean arterial pressure"
+        description: "SNOMED Mean arterial pressure"
         meaning: OMOP:37168599
       "OMOP:37398674":
-        description: "SNOMED MCH - Mean corpuscular haemoglobin | MCH - Mean corpuscular haemoglobin"
+        description: "SNOMED MCH - Mean corpuscular haemoglobin"
         meaning: OMOP:37398674
       "OMOP:37393851":
-        description: "SNOMED MCV - Mean corpuscular volume | MCV - Mean corpuscular volume"
+        description: "SNOMED MCV - Mean corpuscular volume"
         meaning: OMOP:37393851
       "OMOP:37397923":
-        description: "SNOMED Mean platelet volume | Mean platelet volume"
+        description: "SNOMED Mean platelet volume"
         meaning: OMOP:37397923
       "OMOP:40761106":
-        description: "LOINC Matrix metallopeptidase 9 [Mass/volume] in Blood | Matrix metallopeptidase 9 [Mass/volume] in Blood"
+        description: "LOINC Matrix metallopeptidase 9 [Mass/volume] in Blood | MMP9"
         meaning: OMOP:40761106
       "OMOP:3001604":
-        description: "LOINC Monocytes [#/volume] in Blood | Monocytes [#/volume] in Blood"
+        description: "LOINC Monocytes [#/volume] in Blood"
         meaning: OMOP:3001604
       "OMOP:1988928":
-        description: "LOINC Myeloperoxidase [Mass/volume] in Serum by Immunoassay | Myeloperoxidase [Mass/volume] in Serum by Immunoassay"
+        description: "LOINC Myeloperoxidase [Mass/volume] in Serum by Immunoassay"
         meaning: OMOP:1988928
       "OMOP:37208699":
-        description: "SNOMED Neutrophil count in blood | Neutrophil count in blood"
+        description: "SNOMED Neutrophil count in blood"
         meaning: OMOP:37208699
       "OMOP:4189511":
-        description: "SNOMED N terminal pro-brain natriuretic peptide level | N terminal pro-brain natriuretic peptide level"
+        description: "SNOMED N terminal pro-brain natriuretic peptide level"
         meaning: OMOP:4189511
       "OMOP:44812009":
-        description: "SNOMED Plasma N-terminal pro B-type natriuretic peptide concentration measurement | Plasma N-terminal pro B-type natriuretic peptide concentration measurement"
+        description: "SNOMED Plasma N-terminal pro B-type natriuretic peptide concentration measurement"
         meaning: OMOP:44812009
       "OMOP:44812008":
-        description: "SNOMED Serum N-terminal pro B-type natriuretic peptide concentration measurement | Serum N-terminal pro B-type natriuretic peptide concentration measurement"
+        description: "SNOMED Serum N-terminal pro B-type natriuretic peptide concentration measurement"
         meaning: OMOP:44812008
       "OMOP:3007356":
         description: "LOINC CD62P cells/cells in Blood | CD62P cells/100 cells in Blood"
         meaning: OMOP:3007356
       "OMOP:4245152":
-        description: "SNOMED Potassium measurement | Potassium measurement"
+        description: "SNOMED Potassium measurement"
         meaning: OMOP:4245152
       "OMOP:21490733":
-        description: "LOINC Potassium [Mass/volume] in Blood | Potassium [Mass/volume] in Blood"
+        description: "LOINC Potassium [Mass/volume] in Blood"
         meaning: OMOP:21490733
       "OMOP:4273021":
-        description: "SNOMED QRS complex - finding | QRS complex - finding"
+        description: "SNOMED QRS complex - finding"
         meaning: OMOP:4273021
       "OMOP:4030871":
-        description: "SNOMED Red blood cell count | Red blood cell count"
+        description: "SNOMED Red blood cell count"
         meaning: OMOP:4030871
       "OMOP:40768653":
-        description: "LOINC How many hours do you normally sleep [DI-PAD] | How many hours do you normally sleep [DI-PAD]"
+        description: "LOINC How many hours do you normally sleep [DI-PAD]"
         meaning: OMOP:40768653
       "OMOP:4097430":
-        description: "SNOMED Sodium measurement | Sodium measurement"
+        description: "SNOMED Sodium measurement"
         meaning: OMOP:4097430
       "OMOP:36303745":
-        description: "LOINC Sodium [Mass/volume] in Specimen | Sodium [Mass/volume] in Specimen"
+        description: "LOINC Sodium [Mass/volume] in Specimen"
         meaning: OMOP:36303745
       "OMOP:4020553":
-        description: "SNOMED Oxygen saturation measurement | Oxygen saturation measurement"
+        description: "SNOMED Oxygen saturation measurement"
         meaning: OMOP:4020553
       "OMOP:4302666":
-        description: "SNOMED Body temperature | Body temperature"
+        description: "SNOMED Body temperature"
         meaning: OMOP:4302666
       "OMOP:3004282":
         description: "LOINC Tumor necrosis factor alpha [Mass/volume] in Serum or Plasma | Tumor necrosis factor.alpha [Mass/volume] in Serum or Plasma"
         meaning: OMOP:3004282
       "OMOP:46235360":
-        description: "LOINC Tumor necrosis factor receptor superfamily member 1A [Mass/volume] in Serum or Plasma | Tumor necrosis factor receptor superfamily member 1A [Mass/volume] in Serum or Plasma"
+        description: "LOINC Tumor necrosis factor receptor superfamily member 1A [Mass/volume] in Serum or Plasma"
         meaning: OMOP:46235360
       "OMOP:4008265":
-        description: "SNOMED Total cholesterol measurement | Total cholesterol measurement"
+        description: "SNOMED Total cholesterol measurement"
         meaning: OMOP:4008265
       "OMOP:4032789":
-        description: "SNOMED Triglycerides measurement | Triglycerides measurement"
+        description: "SNOMED Triglycerides measurement"
         meaning: OMOP:4032789
       "OMOP:37311566":
-        description: "SNOMED Estimated intake of vegetable servings in 24 hours | Estimated intake of vegetable servings in 24 hours"
+        description: "SNOMED Estimated intake of vegetable servings in 24 hours"
         meaning: OMOP:37311566
       "OMOP:4252203":
-        description: "SNOMED von Willebrand factor antigen level | von Willebrand factor antigen level"
+        description: "SNOMED von Willebrand factor antigen level"
         meaning: OMOP:4252203
       "OMOP:4172830":
-        description: "SNOMED Waist circumference | Waist circumference"
+        description: "SNOMED Waist circumference"
         meaning: OMOP:4172830
       "OMOP:4298431":
-        description: "SNOMED White blood cell count | White blood cell count"
+        description: "SNOMED White blood cell count"
         meaning: OMOP:4298431
       "OMOP:3015183":
         description: "LOINC Erythrocyte sedimentation rate [Velocity] in Red Blood Cells | Erythrocyte sedimentation rate"
         meaning: OMOP:3015183
       "OMOP:4097822":
-        description: "SNOMED pH measurement, arterial | pH measurement, arterial"
+        description: "SNOMED pH measurement, arterial"
         meaning: OMOP:4097822
       "OMOP:4315792":
-        description: "SNOMED pH measurement, venous | pH measurement, venous"
+        description: "SNOMED pH measurement, venous"
         meaning: OMOP:4315792
       "OMOP:4041720":
-        description: "SNOMED Plasma fasting HDL cholesterol measurement | Plasma fasting HDL cholesterol measurement"
+        description: "SNOMED Plasma fasting HDL cholesterol measurement"
         meaning: OMOP:4041720
       "OMOP:4041721":
-        description: "SNOMED Plasma fasting LDL cholesterol measurement | Plasma fasting LDL cholesterol measurement"
+        description: "SNOMED Plasma fasting LDL cholesterol measurement"
         meaning: OMOP:4041721
       "OMOP:4041722":
-        description: "SNOMED Plasma fasting triglyceride measurement | Plasma fasting triglyceride measurement"
+        description: "SNOMED Plasma fasting triglyceride measurement"
         meaning: OMOP:4041722
       "OMOP:4041557":
-        description: "SNOMED Serum fasting HDL cholesterol measurement | Serum fasting HDL cholesterol measurement"
+        description: "SNOMED Serum fasting HDL cholesterol measurement"
         meaning: OMOP:4041557
       "OMOP:4042061":
-        description: "SNOMED Serum fasting LDL cholesterol measurement | Serum fasting LDL cholesterol measurement"
+        description: "SNOMED Serum fasting LDL cholesterol measurement"
         meaning: OMOP:4042061
       "OMOP:44791053":
-        description: "SNOMED Serum fasting total cholesterol | Serum fasting total cholesterol"
+        description: "SNOMED Serum fasting total cholesterol"
         meaning: OMOP:44791053
       "OMOP:4042590":
-        description: "SNOMED Serum fasting triglyceride measurement | Serum fasting triglyceride measurement"
+        description: "SNOMED Serum fasting triglyceride measurement"
         meaning: OMOP:4042590
       "OMOP:4190897":
-        description: "SNOMED Plasma total cholesterol level | Plasma total cholesterol level"
+        description: "SNOMED Plasma total cholesterol level"
         meaning: OMOP:4190897
       "OMOP:46235897":
-        description: "LOINC Albumin/Creatinine [Ratio] in 24 hour Urine | Albumin/Creatinine [Ratio] in 24 hour Urine"
+        description: "LOINC Albumin/Creatinine [Ratio] in 24 hour Urine"
         meaning: OMOP:46235897
       "OMOP:44811087":
         description: "SNOMED FVC post bronchodilator percentage change | FVC (forced vital capacity) post bronchodilator percentage change"
         meaning: OMOP:44811087
       "OMOP:44813037":
-        description: "SNOMED Forced expired volume in 1 second percentage change | Forced expired volume in 1 second percentage change"
+        description: "SNOMED Forced expired volume in 1 second percentage change"
         meaning: OMOP:44813037
       "OMOP:42868473":
-        description: "LOINC FEV1/FVC percent change | FEV1/FVC percent change"
+        description: "LOINC FEV1/FVC percent change"
         meaning: OMOP:42868473
       "OBA:2100046":
         description: "8-epi-prostaglandin F2alpha amount in urine | The amount of a 8-epi-prostaglandin F2alpha when measured in urine."
@@ -4500,7 +4487,7 @@ enums:
         description: "serum low-density lipoprotein cholesterol level | The amount of a low-density lipoprotein cholesterol when measured in blood serum."
         meaning: OBA:2045398
       "OBA:2045349":
-        description: "natriuretic peptides B proteolytic cleavage product level | The amount of a natriuretic peptides B proteolytic cleavage product when measured in anatomical entity."
+        description: "NT pro BNP | natriuretic peptides B proteolytic cleavage product level | The amount of a natriuretic peptides B proteolytic cleavage product when measured in anatomical entity."
         meaning: OBA:2045349
       "OBA:2050271":
         description: "tumor necrosis factor receptor superfamily member 11B amount | The amount of a tumor necrosis factor receptor superfamily member 11B when measured in anatomical entity."
@@ -4531,40 +4518,40 @@ enums:
         meaning: OBA:2100052
 
       "OMOP:3013682":
-        description: "LOINC Urea nitrogen [Mass/volume] in Serum or Plasma | Urea nitrogen [Mass/volume] in Serum or Plasma"
+        description: "LOINC Urea nitrogen [Mass/volume] in Serum or Plasma"
         meaning: OMOP:3013682
       "OMOP:3003205":
-        description: "LOINC Brachial artery Systolic blood pressure | Brachial artery Systolic blood pressure"
+        description: "LOINC Brachial artery Systolic blood pressure"
         meaning: OMOP:3003205
       "OMOP:3010404":
-        description: "LOINC Brachial artery Diastolic blood pressure | Brachial artery Diastolic blood pressure"
+        description: "LOINC Brachial artery Diastolic blood pressure"
         meaning: OMOP:3010404
       "OMOP:3016205":
-        description: "LOINC Systolic blood pressure Posterior tibial artery/Brachial artery | Systolic blood pressure Posterior tibial artery/Brachial artery"
+        description: "LOINC Systolic blood pressure Posterior tibial artery/Brachial artery"
         meaning: OMOP:3016205
       "OMOP:3010175":
-        description: "LOINC Systolic blood pressure Posterior tibial artery - right/Brachial artery | Systolic blood pressure Posterior tibial artery - right/Brachial artery"
+        description: "LOINC Systolic blood pressure Posterior tibial artery - right/Brachial artery"
         meaning: OMOP:3010175
       "OMOP:3000848":
-        description: "LOINC Systolic blood pressure Posterior tibial artery - left/Brachial artery | Systolic blood pressure Posterior tibial artery - left/Brachial artery"
+        description: "LOINC Systolic blood pressure Posterior tibial artery - left/Brachial artery"
         meaning: OMOP:3000848
       "OMOP:3021627":
-        description: "LOINC Systolic blood pressure Brachial artery - right/Brachial artery | Systolic blood pressure Brachial artery - right/Brachial artery"
+        description: "LOINC Systolic blood pressure Brachial artery - right/Brachial artery"
         meaning: OMOP:3021627
       "OMOP:3018586":
-        description: "LOINC Systolic blood pressure--sitting | Systolic blood pressure--sitting"
+        description: "LOINC Systolic blood pressure--sitting"
         meaning: OMOP:3018586
       "OMOP:3035856":
-        description: "LOINC Systolic blood pressure--standing | Systolic blood pressure--standing"
+        description: "LOINC Systolic blood pressure--standing"
         meaning: OMOP:3035856
       "OMOP:3009395":
-        description: "LOINC Systolic blood pressure--supine | Systolic blood pressure--supine"
+        description: "LOINC Systolic blood pressure--supine"
         meaning: OMOP:3009395
       "OBA:VT0000199":
         description: "blood albumin amount | The amount of a albumin type when measured in blood."
         meaning: OBA:VT0000199
       "OMOP:3014111":
-        description: "LOINC Lactate [Moles/volume] in Serum or Plasma | Lactate [Moles/volume] in Serum or Plasma"
+        description: "LOINC Lactate [Moles/volume] in Serum or Plasma"
         meaning: OMOP:3014111
 
   EducationalAttainmentObservationTypeEnum:
