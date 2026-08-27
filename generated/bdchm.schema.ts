@@ -2104,6 +2104,8 @@ export enum MeasurementObservationTypeEnum {
     OBACOLONVT0000199 = "OBA:VT0000199",
     /** LOINC Lactate [Moles/volume] in Serum or Plasma */
     OMOPCOLON3014111 = "OMOP:3014111",
+    /** SNOMED Cardiac troponin I mass concentration in plasma */
+    OMOPCOLON37208543 = "OMOP:37208543",
 };
 /**
 * Values describing the types of Education Attainment observed in an Observation.
