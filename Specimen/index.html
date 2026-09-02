@@ -523,15 +523,15 @@
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../quantity_measure/">quantity_measure</a></td>
-<td>* <br/> <a href="../SpecimenQuantityObservation/">SpecimenQuantityObservation</a></td>
-<td>An observation related to the present quantity of a specimen - e</td>
-<td>direct</td>
-</tr>
-<tr>
 <td><a href="../quality_measure/">quality_measure</a></td>
 <td>* <br/> <a href="../SpecimenQualityObservation/">SpecimenQualityObservation</a></td>
 <td>An observation about characteristics of a specimen that are indicative of its...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../quantity_measure/">quantity_measure</a></td>
+<td>* <br/> <a href="../SpecimenQuantityObservation/">SpecimenQuantityObservation</a></td>
+<td>An observation related to the present quantity of a specimen - e</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -812,21 +812,6 @@ attributes:
     range: DimensionalObservationSet
     required: false
     multivalued: false
-  quantity_measure:
-    name: quantity_measure
-    description: An observation related to the present quantity of a specimen - e.g.
-      its weight, volume, or analyte concentration.
-    comments:
-    - Observations are flexible containers for capturing a specific type of observation/measurement
-      data about an object, along with metadata about how it was generated. The specific
-      type of observation made is captured as data in the Observation object.
-    from_schema: https://w3id.org/bdchm
-    rank: 1000
-    domain_of:
-    - Specimen
-    range: SpecimenQuantityObservation
-    required: false
-    multivalued: true
   quality_measure:
     name: quality_measure
     description: An observation about characteristics of a specimen that are indicative
@@ -840,6 +825,21 @@ attributes:
     domain_of:
     - Specimen
     range: SpecimenQualityObservation
+    required: false
+    multivalued: true
+  quantity_measure:
+    name: quantity_measure
+    description: An observation related to the present quantity of a specimen - e.g.
+      its weight, volume, or analyte concentration.
+    comments:
+    - Observations are flexible containers for capturing a specific type of observation/measurement
+      data about an object, along with metadata about how it was generated. The specific
+      type of observation made is captured as data in the Observation object.
+    from_schema: https://w3id.org/bdchm
+    rank: 1000
+    domain_of:
+    - Specimen
+    range: SpecimenQuantityObservation
     required: false
     multivalued: true
   cellular_composition_type:
@@ -1121,22 +1121,6 @@ attributes:
     range: DimensionalObservationSet
     required: false
     multivalued: false
-  quantity_measure:
-    name: quantity_measure
-    description: An observation related to the present quantity of a specimen - e.g.
-      its weight, volume, or analyte concentration.
-    comments:
-    - Observations are flexible containers for capturing a specific type of observation/measurement
-      data about an object, along with metadata about how it was generated. The specific
-      type of observation made is captured as data in the Observation object.
-    from_schema: https://w3id.org/bdchm
-    rank: 1000
-    owner: Specimen
-    domain_of:
-    - Specimen
-    range: SpecimenQuantityObservation
-    required: false
-    multivalued: true
   quality_measure:
     name: quality_measure
     description: An observation about characteristics of a specimen that are indicative
@@ -1151,6 +1135,22 @@ attributes:
     domain_of:
     - Specimen
     range: SpecimenQualityObservation
+    required: false
+    multivalued: true
+  quantity_measure:
+    name: quantity_measure
+    description: An observation related to the present quantity of a specimen - e.g.
+      its weight, volume, or analyte concentration.
+    comments:
+    - Observations are flexible containers for capturing a specific type of observation/measurement
+      data about an object, along with metadata about how it was generated. The specific
+      type of observation made is captured as data in the Observation object.
+    from_schema: https://w3id.org/bdchm
+    rank: 1000
+    owner: Specimen
+    domain_of:
+    - Specimen
+    range: SpecimenQuantityObservation
     required: false
     multivalued: true
   cellular_composition_type:
