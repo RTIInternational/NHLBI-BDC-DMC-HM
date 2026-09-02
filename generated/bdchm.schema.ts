@@ -2820,10 +2820,10 @@ export interface Specimen extends Entity {
     contained_in?: SpecimenContainerId,
     /** Observations about the current physical dimensions of an object (e.g. length, width, area). */
     dimensional_measures?: DimensionalObservationSetId,
-    /** An observation related to the present quantity of a specimen - e.g. its weight, volume, or analyte concentration. */
-    quantity_measure?: SpecimenQuantityObservationId[],
     /** An observation about characteristics of a specimen that are indicative of its quality or suitability for use. */
     quality_measure?: SpecimenQualityObservationId[],
+    /** An observation related to the present quantity of a specimen - e.g. its weight, volume, or analyte concentration. */
+    quantity_measure?: SpecimenQuantityObservationId[],
     /** A term describing the type of cell or cellular material comprising a specimen. */
     cellular_composition_type?: string,
     /** A reference to an external document that is about or related to the specimen (e.g. a publication related to the study it is a part of, pathology report containing additional details about it, protocol describing how it was collected) */
