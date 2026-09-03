@@ -1,0 +1,71 @@
+id: https://w3id.org/bdc/trust-hierarchy
+name: trust-hierarchy
+title: Vocabulary Trust Hierarchy
+description: >-
+  Declares, per (class, slot) binding in a target LinkML model, a ranked vocabulary
+  preference with permissive fallback for the CURIEs that fill that slot. The unit of use
+  is the class.slot ("in this class.slot we maintain this trust hierarchy"). The slot's range
+  enums and their sources are read from the target model itself and are not re-encoded here;
+  this artifact adds only the prescriptive policy the model lacks.
+license: MIT
+prefixes:
+  linkml: https://w3id.org/linkml/
+  th: https://w3id.org/bdc/trust-hierarchy/
+default_prefix: th
+default_range: string
+imports:
+  - linkml:types
+
+classes:
+  TrustHierarchy:
+    tree_root: true
+    description: A set of slot bindings — the policy for a target model.
+    attributes:
+      target_schema:
+        description: The LinkML model these bindings govern (e.g. "bdchm @ <commit/version>").
+      bindings:
+        description: One policy per governed (class, slot).
+        range: SlotBinding
+        multivalued: true
+        inlined_as_list: true
+
+  SlotBinding:
+    description: >-
+      "In this class.slot we maintain this trust hierarchy." The unit of use.
+    attributes:
+      id:
+        identifier: true
+        description: ClassName.slot_name, e.g. Condition.condition_concept.
+      class_name:
+        required: true
+      slot_name:
+        required: true
+      prefer:
+        description: Ranked preferred source prefixes; first with an apt, specific term wins.
+        multivalued: true
+      fallback:
+        description: Permitted-not-forbidden fallback sources.
+        range: Fallback
+        multivalued: true
+        inlined_as_list: true
+      validation_source:
+        description: Service/authority used to resolve and validate a CURIE for this slot.
+      rationale:
+      flag:
+        description: Observed misalignment / unresolved point for curator follow-up.
+
+  Fallback:
+    description: A permitted fallback source and whether it is actually observed in data.
+    attributes:
+      prefix:
+        key: true
+      status:
+        range: FallbackStatusEnum
+      note:
+
+enums:
+  FallbackStatusEnum:
+    description: Whether a fallback actually appears in data, or is merely permitted.
+    permissible_values:
+      observed:
+      permitted:
