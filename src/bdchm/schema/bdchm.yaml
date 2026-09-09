@@ -45,18 +45,15 @@ classes:
       - id
     class_uri: schema:Thing
 
-  Person:
+  Metazoan:
     is_a: Entity
+    abstract: true
     description: >-
-      Administrative information about an individual or animal receiving care or other health-related services.
+      Any multi-cellular animal
     attributes:
       species:
         range: CellularOrganismSpeciesEnum
         description: The scientific binomial name for the species of the Person (e.g. Homo sapiens, Mus musculus, etc.). Values should be derived from the NCBI organismal taxonomy (http://purl.obolibrary.org/obo/ncbitaxon.owl).
-        required: false
-      breed:
-        range: VertebrateBreedEnum
-        description: A label given to a group of animals homogeneous in appearance and other characteristics that distinguish it from other animals of the same species. Values should be derived from the Vertebrate Breed Ontology (http://purl.obolibrary.org/obo/vbo.owl).
         required: false
       year_of_birth:
         range: integer
@@ -80,6 +77,14 @@ classes:
         description: Coded value indicating the circumstance or condition that results in the death of the individual.
         multivalued: true
         required: false
+
+  Person:
+    is_a: Metazoan
+    description: >-
+      A human individual providing data by participating in a research study or receiving healthcare
+    slot_usage:
+      species:
+      range: 'NCIT:9606'
     slots:
       - identity
 
@@ -112,9 +117,9 @@ classes:
         required: false
 
   Participant:
-    is_a: Entity
+    is_a: Person
     description: >-
-       A Participant is the entity of interest in a research study, typically a human being or an animal, but can also be a device, group of humans or animals, or a tissue sample. Human research subjects are usually not traceable to a particular person to protect the subject’s privacy.
+       A Participant is the entity of interest in a research study, typically a human being. The same Person can be a Participant in multiple studies. Human research subjects are usually not traceable to a particular person to protect the subject’s privacy.
     attributes:
       description:
         range: string
@@ -150,10 +155,88 @@ classes:
         required: false
     slots:
       - associated_person
-      - identity
     slot_usage:
       associated_person:
         required: true
+
+  Patient:
+    is_a: Person
+    description: >-
+      A patient is an instance of a Person whose data were collected via healthcare-seeking behaviors. A single Person can be a Participant and a Patient.
+    slots:
+      - associated_person
+    slot_usage:
+      associated_person:
+        required: true
+
+  NonhumanAnimal:
+    is_a: Metazoan
+    description: >-
+      A non-human individual providing data by being the subject of an experiment (in the case of laboratory animals), participating in a study (in the case of veterinary clinical trials), or receiving health care (in the case of livestock or companion animals).
+    attributes:
+      breed:
+        range: VertebrateBreedEnum
+        description: A label given to a group of animals homogeneous in appearance and other characteristics that distinguish it from other animals of the same species. Values should be derived from the Vertebrate Breed Ontology (http://purl.obolibrary.org/obo/vbo.owl).
+        required: false
+      strain:
+        description: A group of animals with a known, uniform, and reproducible genetic background.
+        requred: false
+      life_stage:
+        range: LifeStageEnum
+        description: A distinct phase of growth and development defined by specific physical characteristics
+        required: false
+      owner:
+        range: Person
+        description: Human who owns the non-human animal. To be used for pets and livestock.
+        required: false
+
+  NonhumanParticipant:
+    is_a: NonhumanAnimal
+    description: Any non-human animal participating in an experiment or clinical trial. 
+    slots:
+      - member_of_research_study
+      - associated_nonhuman_animal
+
+  NonhumanPatient:
+    is_a: NonhumanAnimal
+    description: Any non-human animal receiving health care in a veterinary setting
+    slots:
+      - associated_nonhuman_animal
+
+  CellCulture:
+    is_a: Entity
+    description: Cells that have been grown and maintained in an artificial, controlled laboratory environment outside of a living organism
+    attributes:
+      donor:
+        description: The organism that provided the material to start the cell culture
+        range: Any
+        any_of:
+          - Person
+          - NonhumanAnimal
+      tissue_origin:
+        range: AnatomicSiteEnum
+      derivation_method:
+        range: ExtractEnum
+      procurement:
+      growth_protocol:
+      differentiation_protocol:
+      differentiation_status:
+      purification_protocol:
+      purity_markers:
+      purity:
+        range: integer
+      population_doubling_level:
+        range: decimal
+      passage_number:
+        range: integer
+      genotypes:
+      biomarker_protocol:
+      biomarker_expression:
+      morphology:
+        range: CellMorphologyEnum
+      karyotype:
+    slots:
+      - identity
 
   ResearchStudy:
     is_a: Entity
