@@ -2106,6 +2106,146 @@ export enum MeasurementObservationTypeEnum {
     OMOPCOLON3014111 = "OMOP:3014111",
     /** SNOMED Cardiac troponin I mass concentration in plasma */
     OMOPCOLON37208543 = "OMOP:37208543",
+    /** LOINC | % Change FVC | FVC percent change Respiratory system */
+    OMOPCOLON42868471 = "OMOP:42868471",
+    /** SNOMED | ankle brachial index | Ankle brachial pressure index */
+    OMOPCOLON40489833 = "OMOP:40489833",
+    /** basophil percentage | Basophils/100 leukocytes in Blood */
+    OMOPCOLON3022096 = "OMOP:3022096",
+    /** LOINC | Deceleration time | Blood flow deceleration time during diastole */
+    OMOPCOLON37057122 = "OMOP:37057122",
+    /** SNOMED | DLCO | Carbon monoxide diffusing capacity measurement */
+    OMOPCOLON4265529 = "OMOP:4265529",
+    /** LOINC | E/A ratios | Left ventricular E-wave/A-wave by US */
+    OMOPCOLON40762222 = "OMOP:40762222",
+    /** SNOMED | Ejection fraction | Left ventricular ejection fraction */
+    OMOPCOLON4108582 = "OMOP:4108582",
+    /** LOINC | eosinophil percentage | Eosinophils/100 leukocytes in Blood */
+    OMOPCOLON3006504 = "OMOP:3006504",
+    /** FEV0.5 | FEV.5 */
+    OMOPCOLON3021930 = "OMOP:3021930",
+    /** SNOMED | FEV0.75 | Forced expired volume in 0.75 seconds */
+    OMOPCOLON4089936 = "OMOP:4089936",
+    /** SNOMED | FEV1/FEV6 | Forced expiratory volume in one second/Forced expiratory volume in six seconds ratio */
+    OMOPCOLON45765566 = "OMOP:45765566",
+    /** SNOMED | FEV1/FVC, post-bronchodilator | Forced vital capacity (FVC) after bronchodilation */
+    OMOPCOLON4248526 = "OMOP:4248526",
+    /** FEV3 */
+    OMOPCOLON37072486 = "OMOP:37072486",
+    /** FEV6 */
+    OMOPCOLON40768346 = "OMOP:40768346",
+    /** Forced Expiratory Flow 25% | FEF 25% */
+    OMOPCOLON37060340 = "OMOP:37060340",
+    /** LOINC | Forced Expiratory Flow 25%-75% | Gas flow FEV 25%-75% */
+    OMOPCOLON3011417 = "OMOP:3011417",
+    /** Forced Expiratory Flow 50% | FEF 50% */
+    OMOPCOLON37043929 = "OMOP:37043929",
+    /** SNOMED | Forced Expiratory Flow 75% | Maximum expiratory flow rate at 75 percent of vital capacity */
+    OMOPCOLON4089939 = "OMOP:4089939",
+    /** LOINC | Forced Expiratory Time FET */
+    OMOPCOLON40768506 = "OMOP:40768506",
+    /** Forced Expiratory Volume in 1 sec, post-bronchodilator | Post-bronchodilator forced expiratory volume in 1 second (FEV1) attempt */
+    OMOPCOLON1006339 = "OMOP:1006339",
+    /** Fractional shortening */
+    OMOPCOLON37057590 = "OMOP:37057590",
+    /** GCS Eye | Glasgow coma score eye opening */
+    OMOPCOLON3016335 = "OMOP:3016335",
+    /** GCS Motor | Glasgow coma score motor */
+    OMOPCOLON3008223 = "OMOP:3008223",
+    /** GCS Verbal | Glasgow coma score verbal */
+    OMOPCOLON3009094 = "OMOP:3009094",
+    /** hdl2 | Cholesterol in HDL 2 [Mass/volume] in Serum or Plasma */
+    OMOPCOLON3009718 = "OMOP:3009718",
+    /** hdl3 | Cholesterol in HDL 3 [Mass/volume] in Serum or Plasma */
+    OMOPCOLON3023574 = "OMOP:3023574",
+    /** LOINC | Left Atrial Volume Index | Left atrial End-systolic volume (by US.2D+Calculated by biplane area-length method)/Body surface area */
+    OMOPCOLON21494019 = "OMOP:21494019",
+    /** LVEDD | Internal diameter minor axis diastole | Heart ventricle - left | Cardiac ultrasound */
+    OMOPCOLON37076446 = "OMOP:37076446",
+    /** LVESD | Internal diameter minor axis systole | Heart ventricle - left | Cardiac ultrasound */
+    OMOPCOLON37050322 = "OMOP:37050322",
+    /** LOINC | LVEDV | Left ventricular End diastolic volume */
+    OMOPCOLON21490770 = "OMOP:21490770",
+    /** LOINC | LVESV | Left ventricular End systolic volume */
+    OMOPCOLON21490771 = "OMOP:21490771",
+    /** LOINC | monocyte percentage | Monocytes/100 leukocytes in Blood */
+    OMOPCOLON3019069 = "OMOP:3019069",
+    /** SNOMED | Pack years */
+    OMOPCOLON4151768 = "OMOP:4151768",
+    /** SNOMED | Peak Expiratory Flow Rate */
+    OMOPCOLON4087260 = "OMOP:4087260",
+    /** LOINC | pH of blood */
+    OMOPCOLON3010421 = "OMOP:3010421",
+    /** LOINC | Predicted FEV0.5 | FEV.5 Predicted */
+    OMOPCOLON3016527 = "OMOP:3016527",
+    /** LOINC | Predicted FEV3 | FEV3 Predicted */
+    OMOPCOLON3040436 = "OMOP:3040436",
+    /** LOINC | Predicted FEV6 | FEV6 Predicted */
+    OMOPCOLON40768347 = "OMOP:40768347",
+    /** LOINC | Procalcitonin | Procalcitonin [Mass/volume] in Serum or Plasma */
+    OMOPCOLON3046279 = "OMOP:3046279",
+    /** LOINC | RDI Respiratory Disturbance Index */
+    OMOPCOLON1175351 = "OMOP:1175351",
+    /** SNOMED | RER | Respiratory quotient */
+    OMOPCOLON4253820 = "OMOP:4253820",
+    /** SNOMED | RVSP | Right ventricular systolic pressure */
+    OMOPCOLON4081030 = "OMOP:4081030",
+    /** LOINC | SHBG | Sex hormone binding globulin [Moles/volume] in Serum or Plasma */
+    OMOPCOLON3004248 = "OMOP:3004248",
+    /** LOINC | Six minute walk test */
+    OMOPCOLON40766814 = "OMOP:40766814",
+    /** SNOMED | Slow Vital Capacity SVC */
+    OMOPCOLON4308122 = "OMOP:4308122",
+    /** SNOMED | Stroke volume */
+    OMOPCOLON4231869 = "OMOP:4231869",
+    /** LOINC | TAPSE | Tricuspid valve annulus Excursion distance during systole by US.M-mode */
+    OMOPCOLON46236797 = "OMOP:46236797",
+    /** SNOMED | VCO2 | Carbon dioxide output */
+    OMOPCOLON4089153 = "OMOP:4089153",
+    /** SNOMED | VE | Minute volume */
+    OMOPCOLON4353621 = "OMOP:4353621",
+    /** LOINC | VE/VCO2 | Ventilatory equivalent for carbon dioxide --W exercise */
+    OMOPCOLON1002430 = "OMOP:1002430",
+    /** LOINC | VLDL | Cholesterol in VLDL [Mass/volume] in Serum or Plasma */
+    OMOPCOLON3007352 = "OMOP:3007352",
+    /** LOINC | VO2 max | Oxygen consumption (VO2) --peak */
+    OMOPCOLON1259612 = "OMOP:1259612",
+    /** SNOMED | VO2 | Oxygen uptake */
+    OMOPCOLON4090647 = "OMOP:4090647",
+    /** SNOMED | MVV | Maximum voluntary ventilation */
+    OMOPCOLON4089932 = "OMOP:4089932",
+    /** LOINC | E | Blood flow velocity E-wave */
+    OMOPCOLON37065791 = "OMOP:37065791",
+    /** LOINC | HR max | Maximum heart rate */
+    OMOPCOLON3966129 = "OMOP:3966129",
+    /** SNOMED | RHR | Resting heart rate */
+    OMOPCOLON40481601 = "OMOP:40481601",
+    /** DLCO | Diffusing Capacity of the Lungs for Carbon Monoxide | Carbon Monoxide Diffusing Capability Test */
+    NCITCOLONC38083 = "NCIT:C38083",
+    /** eosinophil percentage | Percentage of WBC that is eosinophils | eosinophil ratio */
+    OBACOLON2045391 = "OBA:2045391",
+    /** FEV1/FVC, post-bronchodilator | FEV1/FVC Post-Bronchodilator */
+    NCITCOLONC159318 = "NCIT:C159318",
+    /** Forced Expiratory Flow 25%-75% | airflow in L/s for the exhalation between 25% to 75% completed | Forced Expiratory Flow at 25-75 Percent */
+    NCITCOLONC119545 = "NCIT:C119545",
+    /** Forced Expiratory Time FET | Time to fully exhale a breath */
+    NCITCOLONC201471 = "NCIT:C201471",
+    /** Interleukin 18 in blood | blood interleukin-18 amount */
+    OBACOLONVT0008634 = "OBA:VT0008634",
+    /** Peak Expiratory Flow Rate | at maximal exhalation, peak flow in L/s */
+    NCITCOLONC41372 = "NCIT:C41372",
+    /** Percent Predicted Forced Expiratory Volume in 1 sec | Percent Predicted Forced Expiratory Volume in 1 Second */
+    NCITCOLONC112376 = "NCIT:C112376",
+    /** Percent Predicted Forced Vital Capacity */
+    NCITCOLONC112381 = "NCIT:C112381",
+    /** Respiratory rate | number of breaths a person takes per minute | respiratory gaseous exchange by respiratory system frequency */
+    OBACOLON0004159 = "OBA:0004159",
+    /** TNFR2 in blood | amount of tumor necrosis factor receptor superfamily member 1B (human) in blood */
+    OBACOLON2052724 = "OBA:2052724",
+    /** VLDL | very low density lipoprotein | blood VLDL cholesterol amount */
+    OBACOLONVT0005144 = "OBA:VT0005144",
+    /** Heart wall thickness */
+    OBACOLON2050102 = "OBA:2050102",
 };
 /**
 * Values describing the types of Education Attainment observed in an Observation.
