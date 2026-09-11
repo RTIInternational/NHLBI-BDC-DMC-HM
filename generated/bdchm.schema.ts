@@ -1870,8 +1870,6 @@ export enum MeasurementObservationTypeEnum {
     OMOPCOLON37172928 = "OMOP:37172928",
     /** LOINC E selectin [Mass/volume] in Blood */
     OMOPCOLON3010372 = "OMOP:3010372",
-    /** SNOMED Educational achievement */
-    OMOPCOLON4022643 = "OMOP:4022643",
     /** LOINC Eosinophils [#/volume] in Blood */
     OMOPCOLON3013115 = "OMOP:3013115",
     /** SNOMED Clotting factor VII assay  */
@@ -2273,6 +2271,60 @@ export enum SmokingStatusObservationTypeEnum {
     UNKNOWN_IF_EVER_SMOKED = "UNKNOWN_IF_EVER_SMOKED",
 };
 /**
+* Values describing occupation types.
+*/
+export enum OccupationTypeEnum {
+    
+    /** LOINC | Architecture and Engineering Occupations */
+    OMOPCOLON36311194 = "OMOP:36311194",
+    /** LOINC | Arts, Design, Entertainment, Sports, and Media */
+    OMOPCOLON36309675 = "OMOP:36309675",
+    /** LOINC | Building and Grounds Cleaning and Maintenance */
+    OMOPCOLON36310459 = "OMOP:36310459",
+    /** LOINC | Business and Financial Operations Occupations */
+    OMOPCOLON36308234 = "OMOP:36308234",
+    /** LOINC | Community and Social Services Occupations */
+    OMOPCOLON36308579 = "OMOP:36308579",
+    /** LOINC | Computer and Mathematical Occupations */
+    OMOPCOLON36309431 = "OMOP:36309431",
+    /** LOINC | Construction and Extraction Occupations */
+    OMOPCOLON36307566 = "OMOP:36307566",
+    /** LOINC | Education, Training, and Library Occupations */
+    OMOPCOLON36310455 = "OMOP:36310455",
+    /** LOINC | Farming, Fishing, and Forestry Occupations */
+    OMOPCOLON36307977 = "OMOP:36307977",
+    /** LOINC | Food Preparation and Serving Related */
+    OMOPCOLON36307878 = "OMOP:36307878",
+    /** LOINC | Healthcare Practititioners and Technical Occupations */
+    OMOPCOLON36308137 = "OMOP:36308137",
+    /** LOINC | Healthcare Support Occupations */
+    OMOPCOLON36307824 = "OMOP:36307824",
+    /** LOINC | Installation, Maintenance, and Repair Occupations */
+    OMOPCOLON36308876 = "OMOP:36308876",
+    /** LOINC | Legal Occupations */
+    OMOPCOLON36307876 = "OMOP:36307876",
+    /** LOINC | Life, Physical, and Social Science Occupations */
+    OMOPCOLON36308008 = "OMOP:36308008",
+    /** LOINC | Management Occupations */
+    OMOPCOLON36310392 = "OMOP:36310392",
+    /** LOINC | Military Specific Occupations */
+    OMOPCOLON36309362 = "OMOP:36309362",
+    /** LOINC | Office and Administrative Support Occupations */
+    OMOPCOLON36307554 = "OMOP:36307554",
+    /** LOINC | Personal Care and Service Occupations */
+    OMOPCOLON36309317 = "OMOP:36309317",
+    /** LOINC | Production Occupations */
+    OMOPCOLON36310607 = "OMOP:36310607",
+    /** LOINC | Protective Service Occupations */
+    OMOPCOLON36309614 = "OMOP:36309614",
+    /** LOINC | Sales and Related Occupations */
+    OMOPCOLON36310875 = "OMOP:36310875",
+    /** LOINC | Transportation and Material Moving Occupations */
+    OMOPCOLON36309959 = "OMOP:36309959",
+    /** Unknown | Not known, not observed, not recorded, or refused. */
+    OMOPCOLON8552 = "OMOP:8552",
+};
+/**
 * A constrained set of enumerative values containing the ICD-10 diagnoses.
 */
 export enum CauseOfDeathEnum {
@@ -2395,6 +2447,8 @@ export enum SdohEnum {
     FAMILY_INCOME = "FAMILY_INCOME",
     /** The highest level of education that an individual has completed */
     EDUCATIONAL_ATTAINMENT = "EDUCATIONAL_ATTAINMENT",
+    /** Current type of work participant does to make money */
+    OCCUPATION = "OCCUPATION",
 };
 
 

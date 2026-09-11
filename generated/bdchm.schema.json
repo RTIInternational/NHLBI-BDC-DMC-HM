@@ -2055,7 +2055,6 @@
                 "OMOP:4136584",
                 "OMOP:37172928",
                 "OMOP:3010372",
-                "OMOP:4022643",
                 "OMOP:3013115",
                 "OMOP:4217630",
                 "OMOP:4148587",
@@ -2437,6 +2436,37 @@
             ],
             "title": "ObservationSet",
             "type": "object"
+        },
+        "OccupationTypeEnum": {
+            "description": "Values describing occupation types.",
+            "enum": [
+                "OMOP:36311194",
+                "OMOP:36309675",
+                "OMOP:36310459",
+                "OMOP:36308234",
+                "OMOP:36308579",
+                "OMOP:36309431",
+                "OMOP:36307566",
+                "OMOP:36310455",
+                "OMOP:36307977",
+                "OMOP:36307878",
+                "OMOP:36308137",
+                "OMOP:36307824",
+                "OMOP:36308876",
+                "OMOP:36307876",
+                "OMOP:36308008",
+                "OMOP:36310392",
+                "OMOP:36309362",
+                "OMOP:36307554",
+                "OMOP:36309317",
+                "OMOP:36310607",
+                "OMOP:36309614",
+                "OMOP:36310875",
+                "OMOP:36309959",
+                "OMOP:8552"
+            ],
+            "title": "OccupationTypeEnum",
+            "type": "string"
         },
         "Organization": {
             "additionalProperties": false,
@@ -3570,7 +3600,8 @@
             "description": "A constrained set of enumerative values describing social determinants of health measurement variables.",
             "enum": [
                 "FAMILY_INCOME",
-                "EDUCATIONAL_ATTAINMENT"
+                "EDUCATIONAL_ATTAINMENT",
+                "OCCUPATION"
             ],
             "title": "SdohEnum",
             "type": "string"
