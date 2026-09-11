@@ -105,7 +105,8 @@ update-template:
 
 # todo: consider pinning to template
 update-linkml:
-	uv add --dev linkml@latest
+	uv lock --upgrade-package linkml
+	uv sync
 
 # EXPERIMENTAL
 create-data-harmonizer:
