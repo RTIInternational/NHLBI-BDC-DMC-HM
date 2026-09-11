@@ -4887,6 +4887,9 @@ enums:
       "OMOP:36309959":
         description: "LOINC | Transportation and Material Moving Occupations"
         meaning: OMOP:36309959
+      "OMOP:8552":
+        description: 'Unknown | Not known, not observed, not recorded, or refused.'
+        meaning: OMOP:8552        
 
   CauseOfDeathEnum:
     description: >-
