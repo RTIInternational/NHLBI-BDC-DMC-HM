@@ -4571,6 +4571,216 @@ enums:
       "OMOP:37208543":
         description: "SNOMED Cardiac troponin I mass concentration in plasma"
         meaning: OMOP:37208543
+      "OMOP:42868471":
+        description: "LOINC | % Change FVC | FVC percent change Respiratory system"
+        meaning: OMOP:42868471
+      "OMOP:40489833":
+        description: "SNOMED | ankle brachial index | Ankle brachial pressure index"
+        meaning: OMOP:40489833
+      "OMOP:3022096":
+        description: "basophil percentage | Basophils/100 leukocytes in Blood"
+        meaning: OMOP:3022096
+      "OMOP:37057122":
+        description: "LOINC | Deceleration time | Blood flow deceleration time during diastole"
+        meaning: OMOP:37057122
+      "OMOP:4265529":
+        description: "SNOMED | DLCO | Carbon monoxide diffusing capacity measurement"
+        meaning: OMOP:4265529
+      "OMOP:40762222":
+        description: "LOINC | E/A ratios | Left ventricular E-wave/A-wave by US"
+        meaning: OMOP:40762222
+      "OMOP:4108582":
+        description: "SNOMED | Ejection fraction | Left ventricular ejection fraction"
+        meaning: OMOP:4108582
+      "OMOP:3006504":
+        description: "LOINC | eosinophil percentage | Eosinophils/100 leukocytes in Blood"
+        meaning: OMOP:3006504
+      "OMOP:3021930":
+        description: "FEV0.5 | FEV.5"
+        meaning: OMOP:3021930
+      "OMOP:4089936":
+        description: "SNOMED | FEV0.75 | Forced expired volume in 0.75 seconds"
+        meaning: OMOP:4089936
+      "OMOP:45765566":
+        description: "SNOMED | FEV1/FEV6 | Forced expiratory volume in one second/Forced expiratory volume in six seconds ratio"
+        meaning: OMOP:45765566
+      "OMOP:4248526":
+        description: "SNOMED | FEV1/FVC, post-bronchodilator | Forced vital capacity (FVC) after bronchodilation"
+        meaning: OMOP:4248526
+      "OMOP:37072486":
+        description: "FEV3"
+        meaning: OMOP:37072486
+      "OMOP:40768346":
+        description: "FEV6"
+        meaning: OMOP:40768346
+      "OMOP:37060340":
+        description: "Forced Expiratory Flow 25% | FEF 25%"
+        meaning: OMOP:37060340
+      "OMOP:3011417":
+        description: "LOINC | Forced Expiratory Flow 25%-75% | Gas flow FEV 25%-75%"
+        meaning: OMOP:3011417
+      "OMOP:37043929":
+        description: "Forced Expiratory Flow 50% | FEF 50%"
+        meaning: OMOP:37043929
+      "OMOP:4089939":
+        description: "SNOMED | Forced Expiratory Flow 75% | Maximum expiratory flow rate at 75 percent of vital capacity"
+        meaning: OMOP:4089939
+      "OMOP:40768506":
+        description: "LOINC | Forced Expiratory Time FET"
+        meaning: OMOP:40768506
+      "OMOP:1006339":
+        description: "Forced Expiratory Volume in 1 sec, post-bronchodilator | Post-bronchodilator forced expiratory volume in 1 second (FEV1) attempt"
+        meaning: OMOP:1006339
+      "OMOP:37057590":
+        description: "Fractional shortening"
+        meaning: OMOP:37057590
+      "OMOP:3016335":
+        description: "GCS Eye | Glasgow coma score eye opening"
+        meaning: OMOP:3016335
+      "OMOP:3008223":
+        description: "GCS Motor | Glasgow coma score motor"
+        meaning: OMOP:3008223
+      "OMOP:3009094":
+        description: "GCS Verbal | Glasgow coma score verbal"
+        meaning: OMOP:3009094
+      "OMOP:3009718":
+        description: "hdl2 | Cholesterol in HDL 2 [Mass/volume] in Serum or Plasma"
+        meaning: OMOP:3009718
+      "OMOP:3023574":
+        description: "hdl3 | Cholesterol in HDL 3 [Mass/volume] in Serum or Plasma"
+        meaning: OMOP:3023574
+      "OMOP:21494019":
+        description: "LOINC | Left Atrial Volume Index | Left atrial End-systolic volume (by US.2D+Calculated by biplane area-length method)/Body surface area"
+        meaning: OMOP:21494019
+      "OMOP:37076446":
+        description: "LVEDD | Internal diameter minor axis diastole | Heart ventricle - left | Cardiac ultrasound"
+        meaning: OMOP:37076446
+      "OMOP:37050322":
+        description: "LVESD | Internal diameter minor axis systole | Heart ventricle - left | Cardiac ultrasound"
+        meaning: OMOP:37050322
+      "OMOP:21490770":
+        description: "LOINC | LVEDV | Left ventricular End diastolic volume"
+        meaning: OMOP:21490770
+      "OMOP:21490771":
+        description: "LOINC | LVESV | Left ventricular End systolic volume"
+        meaning: OMOP:21490771
+      "OMOP:3019069":
+        description: "LOINC | monocyte percentage | Monocytes/100 leukocytes in Blood"
+        meaning: OMOP:3019069
+      "OMOP:4151768":
+        description: "SNOMED | Pack years"
+        meaning: OMOP:4151768
+      "OMOP:4087260":
+        description: "SNOMED | Peak Expiratory Flow Rate"
+        meaning: OMOP:4087260
+      "OMOP:3010421":
+        description: "LOINC | pH of blood"
+        meaning: OMOP:3010421
+      "OMOP:3016527":
+        description: "LOINC | Predicted FEV0.5 | FEV.5 Predicted"
+        meaning: OMOP:3016527
+      "OMOP:3040436":
+        description: "LOINC | Predicted FEV3 | FEV3 Predicted"
+        meaning: OMOP:3040436
+      "OMOP:40768347":
+        description: "LOINC | Predicted FEV6 | FEV6 Predicted"
+        meaning: OMOP:40768347
+      "OMOP:3046279":
+        description: "LOINC | Procalcitonin | Procalcitonin [Mass/volume] in Serum or Plasma"
+        meaning: OMOP:3046279
+      "OMOP:1175351":
+        description: "LOINC | RDI Respiratory Disturbance Index"
+        meaning: OMOP:1175351
+      "OMOP:4253820":
+        description: "SNOMED | RER | Respiratory quotient"
+        meaning: OMOP:4253820
+      "OMOP:4081030":
+        description: "SNOMED | RVSP | Right ventricular systolic pressure"
+        meaning: OMOP:4081030
+      "OMOP:3004248":
+        description: "LOINC | SHBG | Sex hormone binding globulin [Moles/volume] in Serum or Plasma"
+        meaning: OMOP:3004248
+      "OMOP:40766814":
+        description: "LOINC | Six minute walk test"
+        meaning: OMOP:40766814
+      "OMOP:4308122":
+        description: "SNOMED | Slow Vital Capacity SVC"
+        meaning: OMOP:4308122
+      "OMOP:4231869":
+        description: "SNOMED | Stroke volume"
+        meaning: OMOP:4231869
+      "OMOP:46236797":
+        description: "LOINC | TAPSE | Tricuspid valve annulus Excursion distance during systole by US.M-mode"
+        meaning: OMOP:46236797
+      "OMOP:4089153":
+        description: "SNOMED | VCO2 | Carbon dioxide output"
+        meaning: OMOP:4089153
+      "OMOP:4353621":
+        description: "SNOMED | VE | Minute volume"
+        meaning: OMOP:4353621
+      "OMOP:1002430":
+        description: "LOINC | VE/VCO2 | Ventilatory equivalent for carbon dioxide --W exercise"
+        meaning: OMOP:1002430
+      "OMOP:3007352":
+        description: "LOINC | VLDL | Cholesterol in VLDL [Mass/volume] in Serum or Plasma"
+        meaning: OMOP:3007352
+      "OMOP:1259612":
+        description: "LOINC | VO2 max | Oxygen consumption (VO2) --peak"
+        meaning: OMOP:1259612
+      "OMOP:4090647":
+        description: "SNOMED | VO2 | Oxygen uptake"
+        meaning: OMOP:4090647
+      "OMOP:4089932":
+        description: "SNOMED | MVV | Maximum voluntary ventilation"
+        meaning: OMOP:4089932
+      "OMOP:37065791":
+        description: "LOINC | E | Blood flow velocity E-wave"
+        meaning: OMOP:37065791
+      "OMOP:3966129":
+        description: "LOINC | HR max | Maximum heart rate"
+        meaning: OMOP:3966129
+      "OMOP:40481601":
+        description: "SNOMED | RHR | Resting heart rate"
+        meaning: OMOP:40481601
+      "NCIT:C38083":
+        description: "DLCO | Diffusing Capacity of the Lungs for Carbon Monoxide | Carbon Monoxide Diffusing Capability Test"
+        meaning: NCIT:C38083
+      "OBA:2045391":
+        description: "eosinophil percentage | Percentage of WBC that is eosinophils | eosinophil ratio"
+        meaning: OBA:2045391
+      "NCIT:C159318":
+        description: "FEV1/FVC, post-bronchodilator | FEV1/FVC Post-Bronchodilator"
+        meaning: NCIT:C159318
+      "NCIT:C119545":
+        description: "Forced Expiratory Flow 25%-75% | airflow in L/s for the exhalation between 25% to 75% completed | Forced Expiratory Flow at 25-75 Percent"
+        meaning: NCIT:C119545
+      "NCIT:C201471":
+        description: "Forced Expiratory Time FET | Time to fully exhale a breath"
+        meaning: NCIT:C201471
+      "OBA:VT0008634":
+        description: "Interleukin 18 in blood | blood interleukin-18 amount"
+        meaning: OBA:VT0008634
+      "NCIT:C41372":
+        description: "Peak Expiratory Flow Rate | at maximal exhalation, peak flow in L/s"
+        meaning: NCIT:C41372
+      "NCIT:C112376":
+        description: "Percent Predicted Forced Expiratory Volume in 1 sec | Percent Predicted Forced Expiratory Volume in 1 Second"
+        meaning: NCIT:C112376
+      "NCIT:C112381":
+        description: "Percent Predicted Forced Vital Capacity"
+        meaning: NCIT:C112381
+      "OBA:0004159":
+        description: "Respiratory rate | number of breaths a person takes per minute | respiratory gaseous exchange by respiratory system frequency"
+        meaning: OBA:0004159
+      "OBA:2052724":
+        description: "TNFR2 in blood | amount of tumor necrosis factor receptor superfamily member 1B (human) in blood"
+        meaning: OBA:2052724
+      "OBA:VT0005144":
+        description: "VLDL | very low density lipoprotein | blood VLDL cholesterol amount"
+        meaning: OBA:VT0005144
+      "OBA:2050102":
+        description: "Heart wall thickness"
+        meaning: OBA:2050102
 
   EducationalAttainmentObservationTypeEnum:
     description: Values describing the types of Education Attainment observed in an Observation.
