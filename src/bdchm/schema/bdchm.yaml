@@ -4923,6 +4923,7 @@ enums:
     inherits:
       - EducationalAttainmentObservationTypeEnum
       - SmokingStatusObservationTypeEnum
+      - OccupationTypeEnum
 
   RelativeTimingEnum:
     description: A constrained set of enumerative values describing the relative timing of an activity.
