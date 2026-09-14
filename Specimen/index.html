@@ -702,7 +702,7 @@ attributes:
       derived (i.e its immediate parent specimen).
     comments:
     - This property indicates only the direct parent specimen(s).  Cardinality is
-      0..m to account for specimens derived from pooling of multiple specimens.
+      0..n to account for specimens derived from pooling of multiple specimens.
     from_schema: https://w3id.org/bdchm
     rank: 1000
     domain_of:
@@ -727,7 +727,7 @@ attributes:
     description: The activity through which a specimen was created, by removing material
       from an biological subject, or deriving material from an existing specimen.
     comments:
-    - Note that a given specimen is the result of only one and only one SpecimenCreationActivity,
+    - Note that a given specimen is the result of one and only one SpecimenCreationActivity
       but may be subject to many processing events that subsequently modify or derive
       new specimens from it.
     from_schema: https://w3id.org/bdchm
@@ -1002,7 +1002,7 @@ attributes:
       derived (i.e its immediate parent specimen).
     comments:
     - This property indicates only the direct parent specimen(s).  Cardinality is
-      0..m to account for specimens derived from pooling of multiple specimens.
+      0..n to account for specimens derived from pooling of multiple specimens.
     from_schema: https://w3id.org/bdchm
     rank: 1000
     owner: Specimen
@@ -1030,7 +1030,7 @@ attributes:
     description: The activity through which a specimen was created, by removing material
       from an biological subject, or deriving material from an existing specimen.
     comments:
-    - Note that a given specimen is the result of only one and only one SpecimenCreationActivity,
+    - Note that a given specimen is the result of one and only one SpecimenCreationActivity
       but may be subject to many processing events that subsequently modify or derive
       new specimens from it.
     from_schema: https://w3id.org/bdchm
