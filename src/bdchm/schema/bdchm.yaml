@@ -923,7 +923,7 @@ classes:
       parent_specimen:
         description: An existing specimen from which the specimen of interest was directly derived (i.e its immediate parent specimen).
         comments:
-        - This property indicates only the direct parent specimen(s).  Cardinality is 0..m to account for specimens derived from pooling of multiple specimens.
+        - This property indicates only the direct parent specimen(s).  Cardinality is 0..n to account for specimens derived from pooling of multiple specimens.
         multivalued: true
         inlined_as_list: true
         range: Specimen
@@ -936,7 +936,7 @@ classes:
       creation_activity:
         description: The activity through which a specimen was created, by removing material from an biological subject, or deriving material from an existing specimen.
         comments:
-        - Note that a given specimen is the result of only one and only one SpecimenCreationActivity, but may be subject to many processing events that subsequently modify or derive new specimens from it.
+        - Note that a given specimen is the result of one and only one SpecimenCreationActivity but may be subject to many processing events that subsequently modify or derive new specimens from it.
         multivalued: false
         range: SpecimenCreationActivity
         required: false
