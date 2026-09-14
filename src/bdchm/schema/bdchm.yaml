@@ -2463,6 +2463,18 @@ enums:
       "OMOP:45772840":
         description: "SNOMED implantable cardiac pacemaker"
         meaning: OMOP:45772840
+      "OMOP:1242799":
+        description: "SNOMED operation on carotid artery"
+        meaning: OMOP:1242799
+      "OMOP:4044550":
+        description: "SNOMED dilation - action"
+        meaning: OMOP:4044550
+      "OMOP:4178405":
+        description: "SNOMED revascularization - action"
+        meaning: OMOP:4178405
+      "OMOP:4223020":
+        description: "SNOMED cardiac catheterization"
+        meaning: OMOP:4223020
 
   DrugExposureConceptEnum:
     description: Drug codes from RxNorm.
