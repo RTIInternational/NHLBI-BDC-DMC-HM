@@ -520,6 +520,14 @@ export enum ProcedureConceptEnum {
     OMOPCOLON4336464 = "OMOP:4336464",
     /** SNOMED implantable cardiac pacemaker */
     OMOPCOLON45772840 = "OMOP:45772840",
+    /** SNOMED operation on carotid artery */
+    OMOPCOLON1242799 = "OMOP:1242799",
+    /** SNOMED dilation - action */
+    OMOPCOLON4044550 = "OMOP:4044550",
+    /** SNOMED revascularization - action */
+    OMOPCOLON4178405 = "OMOP:4178405",
+    /** SNOMED cardiac catheterization */
+    OMOPCOLON4223020 = "OMOP:4223020",
 };
 /**
 * Drug codes from RxNorm.

@@ -2741,7 +2741,11 @@
             "enum": [
                 "OMOP:4184832",
                 "OMOP:4336464",
-                "OMOP:45772840"
+                "OMOP:45772840",
+                "OMOP:1242799",
+                "OMOP:4044550",
+                "OMOP:4178405",
+                "OMOP:4223020"
             ],
             "title": "ProcedureConceptEnum",
             "type": "string"
