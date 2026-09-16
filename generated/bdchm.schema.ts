@@ -40,7 +40,6 @@ export type SpecimenStorageActivityId = string;
 export type SpecimenTransportActivityId = string;
 export type BiologicProductId = string;
 export type SubstanceId = string;
-export type QuantityId = string;
 export type BodySiteId = string;
 export type ObservationSetId = string;
 export type ObservationId = string;
@@ -2825,7 +2824,7 @@ export interface Procedure extends Entity {
     /** A value indicating whether the medical procedure described in this record is present, absent, or unknown for this individual patient. */
     procedure_status: string,
     /** The quantity of procedures ordered or administered. */
-    quantity?: QuantityId,
+    quantity?: Quantity,
     /** The anatomical site affected by the procedure. */
     affected_body_site?: BodySiteId,
 }
@@ -3073,7 +3072,7 @@ export interface SpecimenCreationActivity extends Entity {
     /** The anatomic site from which a specimen was collected. */
     collection_site?: BodySiteId,
     /** The quantity of material in the specimen as originally collected from its original source material (prior to downstream portioning or processing) */
-    quantity_collected?: QuantityId,
+    quantity_collected?: Quantity,
     /** A numeric value that represents the sequential order of this creation activity relative to those producing other specimens from the same source material or parent specimen. */
     specimen_order?: number,
 }
@@ -3121,7 +3120,7 @@ export interface SpecimenStorageActivity extends Entity {
     /** The date when the activity ended (in this case, a storage event). */
     date_ended?: TimePointId,
     /** The length of time over which the activity was performed. */
-    duration?: QuantityId,
+    duration?: Quantity,
     /** A specific type of method or procedure performed to store the specimen */
     method_type?: string,
     /** A container in which the specimen is held or affixed during its storage. */
@@ -3172,14 +3171,14 @@ export interface Substance extends Entity {
     /** A role played by the substance in a particular application (e.g. the role of a lysis buffer when applied in a specimen creation activity, or the role of fixative when applied in specimen processing) */
     role?: string[],
     /** The quantity of substance this instance stands for. */
-    substance_quantity?: QuantityId,
+    substance_quantity?: Quantity,
 }
 
 
 /**
  * A structured object to represent an amount of something (e.g., weight, mass, length, duration of time) - including a value and unit.
  */
-export interface Quantity extends Entity {
+export interface Quantity {
     /** A decimal amount, in the given units (if specified) */
     value_decimal?: string,
     /** An integer amount, in the given units (if specified) */
@@ -3250,7 +3249,7 @@ export interface Observation extends Entity {
     /** A slot to hold a boolean value for an Observation. */
     value_boolean?: boolean,
     /** A slot to hold a Quantity value for an Observation. */
-    value_quantity?: QuantityId,
+    value_quantity?: Quantity,
     /** A slot to hold an enumerated value for an Observation. */
     value_enum?: string,
     /** The context within which an observation was made. */
@@ -3270,9 +3269,9 @@ export interface MeasurementObservationSet extends ObservationSet {
  */
 export interface MeasurementObservation extends Observation {
     /** If reference ranges for upper and lower limit of normal as provided (typically by a laboratory) these are stored in the range_high and range_low fields. This should be set to NULL if not provided. */
-    range_low?: QuantityId,
+    range_low?: Quantity,
     /** If reference ranges for upper and lower limit of normal as provided (typically by a laboratory) these are stored in the range_high and range_low fields. This should be set to NULL if not provided. */
-    range_high?: QuantityId,
+    range_high?: Quantity,
     /** The type of Observation being represented (e.g. 'diastolic blood pressure') */
     observation_type: string,
     /** A reference to the assay, file, or questionnaire that was used in generating this observation. */
@@ -3328,9 +3327,9 @@ export interface Assay extends Entity {
     /** The reagent(s) used to perform the assay. */
     reagent?: SubstanceId[],
     /** The lower limit of detection for the assay, if applicable. */
-    lower_limit_of_detection?: QuantityId,
+    lower_limit_of_detection?: Quantity,
     /** The upper limit of detection for the assay, if applicable. */
-    upper_limit_of_detection?: QuantityId,
+    upper_limit_of_detection?: Quantity,
 }
 
 
@@ -3352,7 +3351,7 @@ export interface Activity extends Entity {
     /** The type of activity being recorded (e.g. "fasting", "bronchodilator use") */
     activity_type?: string,
     /** The quantity of time over which the activity occurred (e.g. "8 hours", "1 week") */
-    time_duration?: QuantityId,
+    time_duration?: Quantity,
 }
 
 

@@ -13,11 +13,15 @@
                     "type": "string"
                 },
                 "time_duration": {
-                    "description": "The quantity of time over which the activity occurred (e.g. \"8 hours\", \"1 week\")",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The quantity of time over which the activity occurred (e.g. \"8 hours\", \"1 week\")"
                 }
             },
             "required": [
@@ -83,11 +87,15 @@
                     ]
                 },
                 "lower_limit_of_detection": {
-                    "description": "The lower limit of detection for the assay, if applicable.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The lower limit of detection for the assay, if applicable."
                 },
                 "method": {
                     "$ref": "#/$defs/AssayMethodEnum",
@@ -104,11 +112,15 @@
                     ]
                 },
                 "upper_limit_of_detection": {
-                    "description": "The upper limit of detection for the assay, if applicable.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The upper limit of detection for the assay, if applicable."
                 }
             },
             "required": [
@@ -763,11 +775,15 @@
                     "description": "A slot to hold an enumerated value for an Observation."
                 },
                 "value_quantity": {
-                    "description": "A slot to hold a Quantity value for an Observation.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "A slot to hold a Quantity value for an Observation."
                 },
                 "value_string": {
                     "description": "A slot to hold a string value for an Observation.",
@@ -1797,18 +1813,26 @@
                     "description": "A qualifier that further refines or specifies the measurement method (e.g. to indicate the measurement was an average, sum, best, worst, first, last)."
                 },
                 "range_high": {
-                    "description": "If reference ranges for upper and lower limit of normal as provided (typically by a laboratory) these are stored in the range_high and range_low fields. This should be set to NULL if not provided.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "If reference ranges for upper and lower limit of normal as provided (typically by a laboratory) these are stored in the range_high and range_low fields. This should be set to NULL if not provided."
                 },
                 "range_low": {
-                    "description": "If reference ranges for upper and lower limit of normal as provided (typically by a laboratory) these are stored in the range_high and range_low fields. This should be set to NULL if not provided.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "If reference ranges for upper and lower limit of normal as provided (typically by a laboratory) these are stored in the range_high and range_low fields. This should be set to NULL if not provided."
                 },
                 "value_boolean": {
                     "description": "A slot to hold a boolean value for an Observation.",
@@ -1822,11 +1846,15 @@
                     "description": "A slot to hold an enumerated value for an Observation."
                 },
                 "value_quantity": {
-                    "description": "A slot to hold a Quantity value for an Observation.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "A slot to hold a Quantity value for an Observation."
                 },
                 "value_string": {
                     "description": "A slot to hold a string value for an Observation.",
@@ -2344,11 +2372,15 @@
                     "description": "A slot to hold an enumerated value for an Observation."
                 },
                 "value_quantity": {
-                    "description": "A slot to hold a Quantity value for an Observation.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "A slot to hold a Quantity value for an Observation."
                 },
                 "value_string": {
                     "description": "A slot to hold a string value for an Observation.",
@@ -2719,11 +2751,15 @@
                     "description": "A value indicating whether the medical procedure described in this record is present, absent, or unknown for this individual patient."
                 },
                 "quantity": {
-                    "description": "The quantity of procedures ordered or administered.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The quantity of procedures ordered or administered."
                 }
             },
             "required": [
@@ -2849,10 +2885,6 @@
             "additionalProperties": false,
             "description": "A structured object to represent an amount of something (e.g., weight, mass, length, duration of time) - including a value and unit.",
             "properties": {
-                "id": {
-                    "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
-                    "type": "string"
-                },
                 "operator": {
                     "$ref": "#/$defs/QuantityOperatorEnum",
                     "description": "An operator to apply when interpreting the value of the quantity (e.g. \">\", \"<\", \">=\", \"<=\")"
@@ -2880,9 +2912,6 @@
                     ]
                 }
             },
-            "required": [
-                "id"
-            ],
             "title": "Quantity",
             "type": "object"
         },
@@ -3694,11 +3723,15 @@
                     "description": "A slot to hold an enumerated value for an Observation."
                 },
                 "value_quantity": {
-                    "description": "A slot to hold a Quantity value for an Observation.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "A slot to hold a Quantity value for an Observation."
                 },
                 "value_string": {
                     "description": "A slot to hold a string value for an Observation.",
@@ -4332,11 +4365,15 @@
                     ]
                 },
                 "quantity_collected": {
-                    "description": "The quantity of material in the specimen as originally collected from its original source material (prior to downstream portioning or processing)",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The quantity of material in the specimen as originally collected from its original source material (prior to downstream portioning or processing)"
                 },
                 "specimen_order": {
                     "description": "A numeric value that represents the sequential order of this creation activity relative to those producing other specimens from the same source material or parent specimen.",
@@ -4532,11 +4569,15 @@
                     "description": "A slot to hold an enumerated value for an Observation."
                 },
                 "value_quantity": {
-                    "description": "A slot to hold a Quantity value for an Observation.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "A slot to hold a Quantity value for an Observation."
                 },
                 "value_string": {
                     "description": "A slot to hold a string value for an Observation.",
@@ -4652,11 +4693,15 @@
                     "description": "A slot to hold an enumerated value for an Observation."
                 },
                 "value_quantity": {
-                    "description": "A slot to hold a Quantity value for an Observation.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "A slot to hold a Quantity value for an Observation."
                 },
                 "value_string": {
                     "description": "A slot to hold a string value for an Observation.",
@@ -4713,11 +4758,15 @@
                     ]
                 },
                 "duration": {
-                    "description": "The length of time over which the activity was performed.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The length of time over which the activity was performed."
                 },
                 "id": {
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
@@ -4850,11 +4899,15 @@
                     ]
                 },
                 "substance_quantity": {
-                    "description": "The quantity of substance this instance stands for.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The quantity of substance this instance stands for."
                 },
                 "substance_type": {
                     "description": "The specific type of the substance - at as granular a level as possible. May be a specific chemical compound, or the name of a formulation/preparation made up of many compounds.",
