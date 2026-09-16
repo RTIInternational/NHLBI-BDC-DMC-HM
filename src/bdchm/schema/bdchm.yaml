@@ -1402,7 +1402,6 @@ classes:
       
 
   Quantity:
-    is_a: Entity
     description: A structured object to represent an amount of something (e.g., weight, mass, length, duration of time) - including a value and unit.
     comments:
     - QuantityMeasure may be implemented as an Observation-like object that will let us capture any type of measure of the amount of some substance (e.g. "weight", "volume"), with distinct timestamps and methods associated.  It could be implemented as a "simple" observation (one measurement per instance, where the "code" fields is bound to a value set describing the different types of quantity measures allowed -  e.g. "weight", "volume", "concentration"),  or as "composite" observation (multiple measurements possible in a single instance, each captured as a component defined to hold a specific type of quantity measure - e.g.  "weight", "volume", "concentration").  The number of different quantity measures we anticipate needed to support, and the potential for data sparseness, are factors that determine whether a simple or composite Observation would be most appropriate.
