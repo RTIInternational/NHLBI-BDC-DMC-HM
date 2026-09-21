@@ -527,6 +527,12 @@ classes:
         range: ConditionConceptEnum
         description: The coded value for the presence of a disease or medical condition stated as a diagnosis, a sign or a symptom, coded to the Human Phenotype Ontology or MONDO.
         required: true
+      age_at_condition_report:
+        range: integer
+        description: The Participant's age (expressed in days) when the condition was reported, not necessarily when it was first recorded.
+        unit:
+          ucum_code: d
+        required: false
       age_at_condition_start:
         range: integer
         description: The Participant's age (expressed in days) when the condition was first recorded.
@@ -2321,6 +2327,8 @@ enums:
         meaning: OMOP:4976914
       EHR_REFERRAL_RECORD:
         meaning: OMOP:4976915
+      EVENT_REVIEW:
+        description: A review of clinical event information that describes a suspected clinical occurrence without applying standardized case-definition criteria or independent physician review. It does not reflect a validated determination of whether the event meets a formal clinical definition.
       EXTERNAL_CDM_INSTANCE:
         meaning: OMOP:4976916
       FACILITY_CLAIM:
@@ -2343,6 +2351,8 @@ enums:
         meaning: OMOP:4976924
       HOSPITAL_COST:
         meaning: OMOP:4976925
+      INFORMANT_INTERVIEW:
+        meaning: OMOP:45881752
       INPATIENT_CLAIM:
         meaning: OMOP:4976926
       INPATIENT_CLAIM_DETAIL:
