@@ -430,6 +430,8 @@ export enum ProvenanceEnum {
     EHR_PROBLEM_LIST = "EHR_PROBLEM_LIST",
     EHR_RADIOLOGY_REPORT = "EHR_RADIOLOGY_REPORT",
     EHR_REFERRAL_RECORD = "EHR_REFERRAL_RECORD",
+    /** A review of clinical event information that describes a suspected clinical occurrence without applying standardized case-definition criteria or independent physician review. It does not reflect a validated determination of whether the event meets a formal clinical definition. */
+    EVENT_REVIEW = "EVENT_REVIEW",
     EXTERNAL_CDM_INSTANCE = "EXTERNAL_CDM_INSTANCE",
     FACILITY_CLAIM = "FACILITY_CLAIM",
     FACILITY_CLAIM_DETAIL = "FACILITY_CLAIM_DETAIL",
@@ -442,6 +444,7 @@ export enum ProvenanceEnum {
     HEALTH_RISK_ASSESSMENT = "HEALTH_RISK_ASSESSMENT",
     HEALTHCARE_PROFESSIONAL_FILLED_SURVEY = "HEALTHCARE_PROFESSIONAL_FILLED_SURVEY",
     HOSPITAL_COST = "HOSPITAL_COST",
+    INFORMANT_INTERVIEW = "INFORMANT_INTERVIEW",
     INPATIENT_CLAIM = "INPATIENT_CLAIM",
     INPATIENT_CLAIM_DETAIL = "INPATIENT_CLAIM_DETAIL",
     INPATIENT_CLAIM_HEADER = "INPATIENT_CLAIM_HEADER",
@@ -2786,6 +2789,8 @@ export interface Condition extends Entity {
     associated_participant: ParticipantId,
     /** The coded value for the presence of a disease or medical condition stated as a diagnosis, a sign or a symptom, coded to the Human Phenotype Ontology or MONDO. */
     condition_concept: string,
+    /** The Participant's age (expressed in days) when the condition was reported, not necessarily when it was first recorded. */
+    age_at_condition_report?: number,
     /** The Participant's age (expressed in days) when the condition was first recorded. */
     age_at_condition_start?: number,
     /** The Participant's age (expressed in days) when the condition was recorded as having been resolved. */
