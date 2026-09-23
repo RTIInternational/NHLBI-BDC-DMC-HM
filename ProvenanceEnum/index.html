@@ -588,6 +588,11 @@
 <td></td>
 </tr>
 <tr>
+<td>EVENT_REVIEW</td>
+<td>None</td>
+<td>A review of clinical event information that describes a suspected clinical oc...</td>
+</tr>
+<tr>
 <td>EXTERNAL_CDM_INSTANCE</td>
 <td>OMOP:4976916</td>
 <td></td>
@@ -640,6 +645,11 @@
 <tr>
 <td>HOSPITAL_COST</td>
 <td>OMOP:4976925</td>
+<td></td>
+</tr>
+<tr>
+<td>INFORMANT_INTERVIEW</td>
+<td>OMOP:45881752</td>
 <td></td>
 </tr>
 <tr>
@@ -994,6 +1004,12 @@ permissible_values:
   EHR_REFERRAL_RECORD:
     text: EHR_REFERRAL_RECORD
     meaning: OMOP:4976915
+  EVENT_REVIEW:
+    text: EVENT_REVIEW
+    description: A review of clinical event information that describes a suspected
+      clinical occurrence without applying standardized case-definition criteria or
+      independent physician review. It does not reflect a validated determination
+      of whether the event meets a formal clinical definition.
   EXTERNAL_CDM_INSTANCE:
     text: EXTERNAL_CDM_INSTANCE
     meaning: OMOP:4976916
@@ -1027,6 +1043,9 @@ permissible_values:
   HOSPITAL_COST:
     text: HOSPITAL_COST
     meaning: OMOP:4976925
+  INFORMANT_INTERVIEW:
+    text: INFORMANT_INTERVIEW
+    meaning: OMOP:45881752
   INPATIENT_CLAIM:
     text: INPATIENT_CLAIM
     meaning: OMOP:4976926

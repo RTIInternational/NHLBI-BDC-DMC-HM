@@ -274,6 +274,8 @@
 
       Condition : age_at_condition_end
 
+      Condition : age_at_condition_report
+
       Condition : age_at_condition_start
 
       Condition : associated_evidence
@@ -397,6 +399,12 @@
 <td>direct</td>
 </tr>
 <tr>
+<td><a href="../age_at_condition_report/">age_at_condition_report</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>The Participant's age (expressed in days) when the condition was reported, no...</td>
+<td>direct</td>
+</tr>
+<tr>
 <td><a href="../age_at_condition_start/">age_at_condition_start</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
 <td>The Participant's age (expressed in days) when the condition was first record...</td>
@@ -510,6 +518,18 @@ attributes:
     - Condition
     range: ConditionConceptEnum
     required: true
+  age_at_condition_report:
+    name: age_at_condition_report
+    description: The Participant's age (expressed in days) when the condition was
+      reported, not necessarily when it was first recorded.
+    from_schema: https://w3id.org/bdchm
+    rank: 1000
+    domain_of:
+    - Condition
+    range: integer
+    required: false
+    unit:
+      ucum_code: d
   age_at_condition_start:
     name: age_at_condition_start
     description: The Participant's age (expressed in days) when the condition was
@@ -630,6 +650,19 @@ attributes:
     - Condition
     range: ConditionConceptEnum
     required: true
+  age_at_condition_report:
+    name: age_at_condition_report
+    description: The Participant's age (expressed in days) when the condition was
+      reported, not necessarily when it was first recorded.
+    from_schema: https://w3id.org/bdchm
+    rank: 1000
+    owner: Condition
+    domain_of:
+    - Condition
+    range: integer
+    required: false
+    unit:
+      ucum_code: d
   age_at_condition_start:
     name: age_at_condition_start
     description: The Participant's age (expressed in days) when the condition was
