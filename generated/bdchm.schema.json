@@ -316,6 +316,13 @@
                         "null"
                     ]
                 },
+                "age_at_condition_report": {
+                    "description": "The Participant's age (expressed in days) when the condition was reported, not necessarily when it was first recorded.",
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
                 "age_at_condition_start": {
                     "description": "The Participant's age (expressed in days) when the condition was first recorded.",
                     "type": [
@@ -2824,6 +2831,7 @@
                 "EHR_PROBLEM_LIST",
                 "EHR_RADIOLOGY_REPORT",
                 "EHR_REFERRAL_RECORD",
+                "EVENT_REVIEW",
                 "EXTERNAL_CDM_INSTANCE",
                 "FACILITY_CLAIM",
                 "FACILITY_CLAIM_DETAIL",
@@ -2835,6 +2843,7 @@
                 "HEALTH_RISK_ASSESSMENT",
                 "HEALTHCARE_PROFESSIONAL_FILLED_SURVEY",
                 "HOSPITAL_COST",
+                "INFORMANT_INTERVIEW",
                 "INPATIENT_CLAIM",
                 "INPATIENT_CLAIM_DETAIL",
                 "INPATIENT_CLAIM_HEADER",
