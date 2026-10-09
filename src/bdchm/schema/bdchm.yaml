@@ -1790,59 +1790,76 @@ enums:
   EthnicityEnum:
     description: >-
       A constrained set of enumerative values containing the United States Office of Management and Budget (OMB) values for ethnicity.
+    pv_formula: CURIE
     permissible_values:
-      HISPANIC_OR_LATINO:
+      "OMOP:38003563":
+        title: HISPANIC_OR_LATINO
         description: 'A person of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race. The term, "Spanish origin" can be used in addition to "Hispanic or Latino". (OMB)'
         meaning: OMOP:38003563
-      NOT_HISPANIC_OR_LATINO:
+      "OMOP:38003564":
+        title: NOT_HISPANIC_OR_LATINO
         description: 'A person not of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race.'
         meaning: OMOP:38003564
-      UNKNOWN:
+      "OMOP:45877986":
+        title: UNKNOWN
         description: 'Not known, not observed, not recorded, or refused.'
-        meaning: OMOP:8552
+        meaning: OMOP:45877986
 
   RaceEnum:
     description: >-
       A constrained set of enumerative values containing the United States Office of Management and Budget (OMB) values for race.
+    pv_formula: CURIE
     permissible_values:
-      AMERICAN_INDIAN_OR_ALASKA_NATIVE:
+      "OMOP:8657":
+        title: AMERICAN_INDIAN_OR_ALASKA_NATIVE
         description: 'A person having origins in any of the original peoples of North and South America (including Central America) and who maintains tribal affiliation or community attachment. (OMB)'
         meaning: OMOP:8657
-      ASIAN:
+      "OMOP:8515":
+        title: ASIAN
         description: 'A person having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent, including for example, Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam. (OMB)'
         meaning: OMOP:8515
-      BLACK_OR_AFRICAN_AMERICAN:
+      "OMOP:8516":
+        title: BLACK_OR_AFRICAN_AMERICAN
         description: 'A person having origins in any of the Black racial groups of Africa. Terms such as "Haitian" or "Negro" can be used in addition to "Black or African American". (OMB)'
         meaning: OMOP:8516
-      MIDDLE_EASTERN_OR_NORTH_AFRICAN:
+      "OMOP:38003615":
+        title: MIDDLE_EASTERN_OR_NORTH_AFRICAN
         description: 'A person having origins in any of the original peoples of the Middle East or North Africa, including, for example, Lebanese, Iranian, Egyptian, Syrian, Iraqi, and Israeli. (OMB)'
         meaning: OMOP:38003615
-      NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER:
+      "OMOP:8557":
+        title: NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER
         description: 'Denotes a person having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands. The term covers particularly people who identify themselves as part-Hawaiian, Native Hawaiian, Guamanian or Chamorro, Carolinian, Samoan, Chuukese (Trukese), Fijian, Kosraean, Melanesian, Micronesian, Northern Mariana Islander, Palauan, Papua New Guinean, Pohnpeian, Polynesian, Solomon Islander, Tahitian, Tokelauan, Tongan, Yapese, or Pacific Islander, not specified.'
         meaning: OMOP:8557
-      UNKNOWN:
+      "OMOP:45877986":
+        title: UNKNOWN
         description: 'Not known, not observed, not recorded, or refused.'
-        meaning: OMOP:8552
-      WHITE:
+        meaning: OMOP:45877986
+      "OMOP:8527":
+        title: WHITE
         description: 'Denotes person with European, Middle Eastern, or North African ancestral origin who identifies, or is identified, as White.'
         meaning: OMOP:8527
-      MORE_THAN_ONE_RACE:
+      "OMOP:45880900":
+        title: MORE_THAN_ONE_RACE
         description: 'A person having more than one race.'
         meaning: OMOP:45880900
 
   SexEnum:
     description: >-
       A constrained set of enumerative values containing the OMOP values for sex.
+    pv_formula: CURIE
     permissible_values:
-      MALE:
+      "OMOP:8507":
+        title: MALE
         description: A person who belongs to the sex that normally produces sperm.
         meaning: OMOP:8507
-      FEMALE:
+      "OMOP:8532":
+        title: FEMALE
         description: A person who belongs to the sex that normally produces ova.
         meaning: OMOP:8532
-      UNKNOWN:
+      "OMOP:45877986":
+        title: UNKNOWN
         description: 'Not known, not observed, not recorded, or refused.'
-        meaning: OMOP:8552
+        meaning: OMOP:45877986
 
   CellularOrganismSpeciesEnum:
     description: >-
@@ -1880,11 +1897,14 @@ enums:
   VitalStatusEnum:
     description: >-
       A constrained set of enumerative values containing the OMOP values for vital status.
+    pv_formula: CURIE
     permissible_values:
-      ALIVE:
+      "OMOP:4230556":
+        title: ALIVE
         description: 'Showing characteristics of life; displaying signs of life. (NCIt)'
         meaning: OMOP:4230556
-      DEAD:
+      "OMOP:434489":
+        title: DEAD
         description: 'The cessation of life. (NCIt)'
         meaning: OMOP:434489
 
@@ -2558,500 +2578,666 @@ enums:
     description: Routes of drug administration.
     comments:
       - OMOP contains 165 standard values; `select * from concept where domain_id = 'Route' and invalid_reason is null and standard_concept is not null;` from SNOMED. Do we need descriptions beyond the name?
+    pv_formula: CURIE
     permissible_values:
-      ARTERIOVENOUS_FISTULA:
+      "OMOP:44783786":
+        title: ARTERIOVENOUS_FISTULA
         description: Arteriovenous fistula
         meaning: OMOP:44783786                     
-      HAEMODIAFILTRATION:
+      "OMOP:44801748":
+        title: HAEMODIAFILTRATION
         description: Haemodiafiltration
         meaning: OMOP:44801748                           
-      SUBLESIONAL:
+      "OMOP:46270168":
+        title: SUBLESIONAL
         description: Sublesional
         meaning: OMOP:46270168                                         
-      INTRANEURAL:
+      "OMOP:46272911":
+        title: INTRANEURAL
         description: Intraneural
         meaning: OMOP:46272911                                         
-      INTRAMURAL:
+      "OMOP:46272926":
+        title: INTRAMURAL
         description: Intramural
         meaning: OMOP:46272926                                           
-      INTRACATHETER_INSTILLATION:
+      "OMOP:605428":
+        title: INTRACATHETER_INSTILLATION
         description: Intracatheter instillation
         meaning: OMOP:605428             
-      SUBLABIAL:
+      "OMOP:600817":
+        title: SUBLABIAL
         description: Sublabial
         meaning: OMOP:600817                                               
-      INTRA_ARTICULAR:
+      "OMOP:4006860":
+        title: INTRA_ARTICULAR
         description: Intra-articular
         meaning: OMOP:4006860                                  
-      INTRADIALYTIC:
+      "OMOP:618805":
+        title: INTRADIALYTIC
         description: Intradialytic
         meaning: OMOP:618805                                       
-      ARTERIOVENOUS_GRAFT:
+      "OMOP:762840":
+        title: ARTERIOVENOUS_GRAFT
         description: Arteriovenous graft
         meaning: OMOP:762840                           
-      OTIC:
+      "OMOP:4023156":
+        title: OTIC
         description: Otic
         meaning: OMOP:4023156                                                        
-      ORAL:
+      "OMOP:4132161":
+        title: ORAL
         description: Oral
         meaning: OMOP:4132161                                                        
-      VAGINAL:
+      "OMOP:4057765":
+        title: VAGINAL
         description: Vaginal
         meaning: OMOP:4057765                                                  
-      ROUTE_OF_ADMINISTRATION_VALUE:
+      "OMOP:4106215":
+        title: ROUTE_OF_ADMINISTRATION_VALUE
         description: Route of administration value
         meaning: OMOP:4106215      
-      GASTROSTOMY:
+      "OMOP:4132254":
+        title: GASTROSTOMY
         description: Gastrostomy
         meaning: OMOP:4132254                                          
-      NASOGASTRIC:
+      "OMOP:4132711":
+        title: NASOGASTRIC
         description: Nasogastric
         meaning: OMOP:4132711                                          
-      JEJUNOSTOMY:
+      "OMOP:4133177":
+        title: JEJUNOSTOMY
         description: Jejunostomy
         meaning: OMOP:4133177                                          
-      SUBCUTANEOUS:
+      "OMOP:4142048":
+        title: SUBCUTANEOUS
         description: Subcutaneous
         meaning: OMOP:4142048                                        
-      GINGIVAL:
+      "OMOP:4156704":
+        title: GINGIVAL
         description: Gingival
         meaning: OMOP:4156704                                                
-      INTRACARDIAC:
+      "OMOP:4156705":
+        title: INTRACARDIAC
         description: Intracardiac
         meaning: OMOP:4156705                                        
-      INTRADERMAL:
+      "OMOP:4156706":
+        title: INTRADERMAL
         description: Intradermal
         meaning: OMOP:4156706                                          
-      INTRAPLEURAL:
+      "OMOP:4156707":
+        title: INTRAPLEURAL
         description: Intrapleural
         meaning: OMOP:4156707                                        
-      PERIARTICULAR:
+      "OMOP:4156708":
+        title: PERIARTICULAR
         description: Periarticular
         meaning: OMOP:4156708                                      
-      ENDOSINUSIAL:
+      "OMOP:4157756":
+        title: ENDOSINUSIAL
         description: Endosinusial
         meaning: OMOP:4157756                                        
-      INTRACAVERNOUS:
+      "OMOP:4157757":
+        title: INTRACAVERNOUS
         description: Intracavernous
         meaning: OMOP:4157757                                    
-      INTRALESIONAL:
+      "OMOP:4157758":
+        title: INTRALESIONAL
         description: Intralesional
         meaning: OMOP:4157758                                      
-      INTRALYMPHATIC:
+      "OMOP:4157759":
+        title: INTRALYMPHATIC
         description: Intralymphatic
         meaning: OMOP:4157759                                    
-      INTRAOCULAR:
+      "OMOP:4157760":
+        title: INTRAOCULAR
         description: Intraocular
         meaning: OMOP:4157760                                          
-      PERINEURAL:
+      "OMOP:4157761":
+        title: PERINEURAL
         description: Perineural
         meaning: OMOP:4157761                                            
-      INTRACRANIAL:
+      "OMOP:4171079":
+        title: INTRACRANIAL
         description: Intracranial
         meaning: OMOP:4171079                                        
-      DENTAL:
+      "OMOP:4163765":
+        title: DENTAL
         description: Dental
         meaning: OMOP:4163765                                                    
-      INTRAAMNIOTIC:
+      "OMOP:4163767":
+        title: INTRAAMNIOTIC
         description: Intraamniotic
         meaning: OMOP:4163767                                      
-      INTRABURSAL:
+      "OMOP:4163768":
+        title: INTRABURSAL
         description: Intrabursal
         meaning: OMOP:4163768                                          
-      INTRADISCAL:
+      "OMOP:4163769":
+        title: INTRADISCAL
         description: Intradiscal
         meaning: OMOP:4163769                                          
-      SUBCONJUNCTIVAL:
+      "OMOP:4163770":
+        title: SUBCONJUNCTIVAL
         description: Subconjunctival
         meaning: OMOP:4163770                                  
-      MUCOUS_FISTULA:
+      "OMOP:4171243":
+        title: MUCOUS_FISTULA
         description: Mucous fistula
         meaning: OMOP:4171243                                    
-      INTRAPROSTATIC:
+      "OMOP:4171725":
+        title: INTRAPROSTATIC
         description: Intraprostatic
         meaning: OMOP:4171725                                    
-      INTRAVENOUS_PERIPHERAL:
+      "OMOP:4171884":
+        title: INTRAVENOUS_PERIPHERAL
         description: Intravenous peripheral
         meaning: OMOP:4171884                    
-      PERIOSTEAL:
+      "OMOP:4171893":
+        title: PERIOSTEAL
         description: Periosteal
         meaning: OMOP:4171893                                            
-      ESOPHAGOSTOMY:
+      "OMOP:4172191":
+        title: ESOPHAGOSTOMY
         description: Esophagostomy
         meaning: OMOP:4172191                                      
-      NASODUODENAL:
+      "OMOP:4172316":
+        title: NASODUODENAL
         description: Nasoduodenal
         meaning: OMOP:4172316                                        
-      PERCUTANEOUS:
+      "OMOP:4177987":
+        title: PERCUTANEOUS
         description: Percutaneous
         meaning: OMOP:4177987                                        
-      SUBORBITAL:
+      "OMOP:4166865":
+        title: SUBORBITAL
         description: Suborbital
         meaning: OMOP:4166865                                            
-      INTRATHORACIC:
+      "OMOP:4167393":
+        title: INTRATHORACIC
         description: Intrathoracic
         meaning: OMOP:4167393                                      
-      ENTERAL:
+      "OMOP:4167540":
+        title: ENTERAL
         description: Enteral
         meaning: OMOP:4167540                                                  
-      INTRAMYOMETRIAL:
+      "OMOP:4168038":
+        title: INTRAMYOMETRIAL
         description: Intramyometrial
         meaning: OMOP:4168038                                  
-      COLOSTOMY:
+      "OMOP:4168047":
+        title: COLOSTOMY
         description: Colostomy
         meaning: OMOP:4168047                                              
-      INTRATYMPANIC:
+      "OMOP:4168656":
+        title: INTRATYMPANIC
         description: Intratympanic
         meaning: OMOP:4168656                                      
-      GASTRO_INTESTINAL_STOMA:
+      "OMOP:4168665":
+        title: GASTRO_INTESTINAL_STOMA
         description: Gastro-intestinal stoma
         meaning: OMOP:4168665                  
-      INTRAPULMONARY:
+      "OMOP:4169270":
+        title: INTRAPULMONARY
         description: Intrapulmonary
         meaning: OMOP:4169270                                    
-      INTRASINAL:
+      "OMOP:4169440":
+        title: INTRASINAL
         description: Intrasinal
         meaning: OMOP:4169440                                            
-      TUMOR_CAVITY:
+      "OMOP:4169472":
+        title: TUMOR_CAVITY
         description: Tumor cavity
         meaning: OMOP:4169472                                        
-      SUBMUCOSAL:
+      "OMOP:4169634":
+        title: SUBMUCOSAL
         description: Submucosal
         meaning: OMOP:4169634                                            
-      INTRADUCTAL:
+      "OMOP:4170083":
+        title: INTRADUCTAL
         description: Intraductal
         meaning: OMOP:4170083                                          
-      INTRAVENOUS_CENTRAL:
+      "OMOP:4170113":
+        title: INTRAVENOUS_CENTRAL
         description: Intravenous central
         meaning: OMOP:4170113                          
-      PARAVERTEBRAL:
+      "OMOP:4170267":
+        title: PARAVERTEBRAL
         description: Paravertebral
         meaning: OMOP:4170267                                      
-      UROSTOMY:
+      "OMOP:4170435":
+        title: UROSTOMY
         description: Urostomy
         meaning: OMOP:4170435                                                
-      LARYNGEAL:
+      "OMOP:4170440":
+        title: LARYNGEAL
         description: Laryngeal
         meaning: OMOP:4170440                                              
-      SURGICAL_CAVITY:
+      "OMOP:4170771":
+        title: SURGICAL_CAVITY
         description: Surgical cavity
         meaning: OMOP:4170771                                  
-      INTRAVENOUS:
+      "OMOP:4171047":
+        title: INTRAVENOUS
         description: Intravenous
         meaning: OMOP:4171047                                          
-      INTRATESTICULAR:
+      "OMOP:4171067":
+        title: INTRATESTICULAR
         description: Intratesticular
         meaning: OMOP:4171067                                  
-      ENDOCERVICAL:
+      "OMOP:4186831":
+        title: ENDOCERVICAL
         description: Endocervical
         meaning: OMOP:4186831                                        
-      ENDOTRACHEOPULMONARY:
+      "OMOP:4186832":
+        title: ENDOTRACHEOPULMONARY
         description: Endotracheopulmonary
         meaning: OMOP:4186832                        
-      EXTRA_AMNIOTIC:
+      "OMOP:4186833":
+        title: EXTRA_AMNIOTIC
         description: Extra-amniotic
         meaning: OMOP:4186833                                    
-      GASTROENTERAL:
+      "OMOP:4186834":
+        title: GASTROENTERAL
         description: Gastroenteral
         meaning: OMOP:4186834                                      
-      INTRACERVICAL:
+      "OMOP:4186835":
+        title: INTRACERVICAL
         description: Intracervical
         meaning: OMOP:4186835                                      
-      INTRACORONARY:
+      "OMOP:4186836":
+        title: INTRACORONARY
         description: Intracoronary
         meaning: OMOP:4186836                                      
-      INTRASTERNAL:
+      "OMOP:4186837":
+        title: INTRASTERNAL
         description: Intrasternal
         meaning: OMOP:4186837                                        
-      INTRAVESICAL:
+      "OMOP:4186838":
+        title: INTRAVESICAL
         description: Intravesical
         meaning: OMOP:4186838                                        
-      OROMUCOSAL:
+      "OMOP:4186839":
+        title: OROMUCOSAL
         description: Oromucosal
         meaning: OMOP:4186839                                            
-      CAUDAL:
+      "OMOP:4220455":
+        title: CAUDAL
         description: Caudal
         meaning: OMOP:4220455                                                    
-      BUCCAL:
+      "OMOP:4181897":
+        title: BUCCAL
         description: Buccal
         meaning: OMOP:4181897                                                    
-      OPHTHALMIC:
+      "OMOP:4184451":
+        title: OPHTHALMIC
         description: Ophthalmic
         meaning: OMOP:4184451                                            
-      BODY_CAVITY:
+      "OMOP:4222254":
+        title: BODY_CAVITY
         description: Body cavity
         meaning: OMOP:4222254                                          
-      INTRAOSSEOUS:
+      "OMOP:4213522":
+        title: INTRAOSSEOUS
         description: Intraosseous
         meaning: OMOP:4213522                                        
-      INTRAVENTRICULAR_ROUTE_CARDIAC:
+      "OMOP:4222259":
+        title: INTRAVENTRICULAR_ROUTE_CARDIAC
         description: Intraventricular route - cardiac
         meaning: OMOP:4222259
-      INTRABILIARY:
+      "OMOP:4223965":
+        title: INTRABILIARY
         description: Intrabiliary
         meaning: OMOP:4223965                                        
-      INTRACEREBROVENTRICULAR:
+      "OMOP:4224886":
+        title: INTRACEREBROVENTRICULAR
         description: Intracerebroventricular
         meaning: OMOP:4224886                  
-      INTRATHECAL:
+      "OMOP:4217202":
+        title: INTRATHECAL
         description: Intrathecal
         meaning: OMOP:4217202                                          
-      EPIDURAL:
+      "OMOP:4225555":
+        title: EPIDURAL
         description: Epidural
         meaning: OMOP:4225555                                                
-      INTRATRACHEAL:
+      "OMOP:4229543":
+        title: INTRATRACHEAL
         description: Intratracheal
         meaning: OMOP:4229543                                      
-      URETHRAL:
+      "OMOP:4233974":
+        title: URETHRAL
         description: Urethral
         meaning: OMOP:4233974                                                
-      TRANSMUCOSAL:
+      "OMOP:4232601":
+        title: TRANSMUCOSAL
         description: Transmucosal
         meaning: OMOP:4232601                                        
-      TRANSDERMAL:
+      "OMOP:4262099":
+        title: TRANSDERMAL
         description: Transdermal
         meaning: OMOP:4262099                                          
-      INTRA_ARTERIAL:
+      "OMOP:4240824":
+        title: INTRA_ARTERIAL
         description: Intra-arterial
         meaning: OMOP:4240824                                    
-      INTRAPERITONEAL:
+      "OMOP:4243022":
+        title: INTRAPERITONEAL
         description: Intraperitoneal
         meaning: OMOP:4243022                                  
-      INTRAMEDULLARY:
+      "OMOP:4246511":
+        title: INTRAMEDULLARY
         description: Intramedullary
         meaning: OMOP:4246511                                    
-      INTRAUTERINE:
+      "OMOP:4269621":
+        title: INTRAUTERINE
         description: Intrauterine
         meaning: OMOP:4269621                                        
-      NASAL:
+      "OMOP:4262914":
+        title: NASAL
         description: Nasal
         meaning: OMOP:4262914                                                      
-      TOPICAL:
+      "OMOP:4263689":
+        title: TOPICAL
         description: Topical
         meaning: OMOP:4263689                                                  
-      RECTAL:
+      "OMOP:4290759":
+        title: RECTAL
         description: Rectal
         meaning: OMOP:4290759                                                    
-      SUBLINGUAL:
+      "OMOP:4292110":
+        title: SUBLINGUAL
         description: Sublingual
         meaning: OMOP:4292110                                            
-      INTRALUMINAL:
+      "OMOP:4292410":
+        title: INTRALUMINAL
         description: Intraluminal
         meaning: OMOP:4292410                                        
-      TRANSCERVICAL:
+      "OMOP:4304730":
+        title: TRANSCERVICAL
         description: Transcervical
         meaning: OMOP:4304730                                      
-      INTRAABDOMINAL:
+      "OMOP:4304882":
+        title: INTRAABDOMINAL
         description: Intraabdominal
         meaning: OMOP:4304882                                    
-      TRANSURETHRAL:
+      "OMOP:4305382":
+        title: TRANSURETHRAL
         description: Transurethral
         meaning: OMOP:4305382                                      
-      PERITENDINOUS:
+      "OMOP:4305564":
+        title: PERITENDINOUS
         description: Peritendinous
         meaning: OMOP:4305564                                      
-      ILEOSTOMY:
+      "OMOP:4305679":
+        title: ILEOSTOMY
         description: Ileostomy
         meaning: OMOP:4305679                                              
-      INTRACORNEAL:
+      "OMOP:4305690":
+        title: INTRACORNEAL
         description: Intracorneal
         meaning: OMOP:4305690                                        
-      NASOJEJUNAL:
+      "OMOP:4305834":
+        title: NASOJEJUNAL
         description: Nasojejunal
         meaning: OMOP:4305834                                          
-      INTRACISTERNAL:
+      "OMOP:4305993":
+        title: INTRACISTERNAL
         description: Intracisternal
         meaning: OMOP:4305993                                    
-      SUBGINGIVAL:
+      "OMOP:4306649":
+        title: SUBGINGIVAL
         description: Subgingival
         meaning: OMOP:4306649                                          
-      INTRAOVARIAN:
+      "OMOP:4306657":
+        title: INTRAOVARIAN
         description: Intraovarian
         meaning: OMOP:4306657                                        
-      INTERSTITIAL:
+      "OMOP:4327128":
+        title: INTERSTITIAL
         description: Interstitial
         meaning: OMOP:4327128                                        
-      INTRASYNOVIAL:
+      "OMOP:4302352":
+        title: INTRASYNOVIAL
         description: Intrasynovial
         meaning: OMOP:4302352                                      
-      INTRADUODENAL:
+      "OMOP:4302354":
+        title: INTRADUODENAL
         description: Intraduodenal
         meaning: OMOP:4302354                                      
-      SUBTENDINOUS:
+      "OMOP:4302493":
+        title: SUBTENDINOUS
         description: Subtendinous
         meaning: OMOP:4302493                                        
-      INTRAMUSCULAR:
+      "OMOP:4302612":
+        title: INTRAMUSCULAR
         description: Intramuscular
         meaning: OMOP:4302612                                      
-      INTRAVITREAL:
+      "OMOP:4302785":
+        title: INTRAVITREAL
         description: Intravitreal
         meaning: OMOP:4302785                                        
-      INTRASPINAL:
+      "OMOP:4302788":
+        title: INTRASPINAL
         description: Intraspinal
         meaning: OMOP:4302788                                          
-      INTRABRONCHIAL:
+      "OMOP:4303263":
+        title: INTRABRONCHIAL
         description: Intrabronchial
         meaning: OMOP:4303263                                    
-      OROPHARYNGEAL:
+      "OMOP:4303277":
+        title: OROPHARYNGEAL
         description: Oropharyngeal
         meaning: OMOP:4303277                                      
-      INTRACAMERAL:
+      "OMOP:4303409":
+        title: INTRACAMERAL
         description: Intracameral
         meaning: OMOP:4303409                                        
-      PARACERVICAL:
+      "OMOP:4303515":
+        title: PARACERVICAL
         description: Paracervical
         meaning: OMOP:4303515                                        
-      PERIURETHRAL:
+      "OMOP:4303646":
+        title: PERIURETHRAL
         description: Periurethral
         meaning: OMOP:4303646                                        
-      INTRACORONAL:
+      "OMOP:4303667":
+        title: INTRACORONAL
         description: Intracoronal
         meaning: OMOP:4303667                                        
-      RETROBULBAR:
+      "OMOP:4303673":
+        title: RETROBULBAR
         description: Retrobulbar
         meaning: OMOP:4303673                                          
-      INTRACARTILAGINOUS:
+      "OMOP:4303676":
+        title: INTRACARTILAGINOUS
         description: Intracartilaginous
         meaning: OMOP:4303676                            
-      OROGASTRIC:
+      "OMOP:4303795":
+        title: OROGASTRIC
         description: Orogastric
         meaning: OMOP:4303795                                            
-      INTRATENDINOUS:
+      "OMOP:4303939":
+        title: INTRATENDINOUS
         description: Intratendinous
         meaning: OMOP:4303939                                    
-      PERIBULBAR:
+      "OMOP:4304274":
+        title: PERIBULBAR
         description: Peribulbar
         meaning: OMOP:4304274                                            
-      FISTULA:
+      "OMOP:4304277":
+        title: FISTULA
         description: Fistula
         meaning: OMOP:4304277                                                  
-      SURGICAL_DRAIN:
+      "OMOP:4304412":
+        title: SURGICAL_DRAIN
         description: Surgical drain
         meaning: OMOP:4304412                                    
-      URETERAL:
+      "OMOP:4304571":
+        title: URETERAL
         description: Ureteral
         meaning: OMOP:4304571                                                
-      EPILESIONAL:
+      "OMOP:35608078":
+        title: EPILESIONAL
         description: Epilesional
         meaning: OMOP:35608078                                         
-      EXTRACORPOREAL_HEMODIALYSIS:
+      "OMOP:35624178":
+        title: EXTRACORPOREAL_HEMODIALYSIS
         description: Extracorporeal hemodialysis
         meaning: OMOP:35624178         
-      SUPRACHOROIDAL:
+      "OMOP:37174548":
+        title: SUPRACHOROIDAL
         description: Suprachoroidal
         meaning: OMOP:37174548                                   
-      EXTRACORPOREAL:
+      "OMOP:37018288":
+        title: EXTRACORPOREAL
         description: Extracorporeal
         meaning: OMOP:37018288                                   
-      INTRACORPORUS_CAVERNOSUM:
+      "OMOP:37174549":
+        title: INTRACORPORUS_CAVERNOSUM
         description: Intracorporus cavernosum
         meaning: OMOP:37174549               
-      INTRAGLANDULAR:
+      "OMOP:37207460":
+        title: INTRAGLANDULAR
         description: Intraglandular
         meaning: OMOP:37207460                                   
-      INTRACHOLANGIOPANCREATIC:
+      "OMOP:37207461":
+        title: INTRACHOLANGIOPANCREATIC
         description: Intracholangiopancreatic
         meaning: OMOP:37207461               
-      INTRAPORTAL:
+      "OMOP:37207462":
+        title: INTRAPORTAL
         description: Intraportal
         meaning: OMOP:37207462                                         
-      PERITUMORAL:
+      "OMOP:37207463":
+        title: PERITUMORAL
         description: Peritumoral
         meaning: OMOP:37207463                                         
-      POSTERIOR_JUXTASCLERAL:
+      "OMOP:37207464":
+        title: POSTERIOR_JUXTASCLERAL
         description: Posterior juxtascleral
         meaning: OMOP:37207464                   
-      SUBRETINAL:
+      "OMOP:37207465":
+        title: SUBRETINAL
         description: Subretinal
         meaning: OMOP:37207465                                           
-      INFILTRATION:
+      "OMOP:37397638":
+        title: INFILTRATION
         description: Infiltration
         meaning: OMOP:37397638                                       
-      TRANSENDOCARDIAL:
+      "OMOP:40487850":
+        title: TRANSENDOCARDIAL
         description: Transendocardial
         meaning: OMOP:40487850                               
-      TRANSPLACENTAL:
+      "OMOP:40487858":
+        title: TRANSPLACENTAL
         description: Transplacental
         meaning: OMOP:40487858                                   
-      INTRAEPIDERMAL:
+      "OMOP:40487983":
+        title: INTRAEPIDERMAL
         description: Intraepidermal
         meaning: OMOP:40487983                                   
-      INTRACEREBRAL:
+      "OMOP:40488317":
+        title: INTRACEREBRAL
         description: Intracerebral
         meaning: OMOP:40488317                                     
-      INTRAJEJUNAL:
+      "OMOP:40489989":
+        title: INTRAJEJUNAL
         description: Intrajejunal
         meaning: OMOP:40489989                                       
-      INTRACOLONIC:
+      "OMOP:40489990":
+        title: INTRACOLONIC
         description: Intracolonic
         meaning: OMOP:40489990                                       
-      CUTANEOUS:
+      "OMOP:40490507":
+        title: CUTANEOUS
         description: Cutaneous
         meaning: OMOP:40490507                                             
-      INTRAILEAL:
+      "OMOP:40490837":
+        title: INTRAILEAL
         description: Intraileal
         meaning: OMOP:40490837                                           
-      PERIODONTAL:
+      "OMOP:40490866":
+        title: PERIODONTAL
         description: Periodontal
         meaning: OMOP:40490866                                         
-      PERIDURAL:
+      "OMOP:40490896":
+        title: PERIDURAL
         description: Peridural
         meaning: OMOP:40490896                                             
-      LOWER_RESPIRATORY_TRACT:
+      "OMOP:40490898":
+        title: LOWER_RESPIRATORY_TRACT
         description: Lower respiratory tract
         meaning: OMOP:40490898                 
-      INTRAMAMMARY:
+      "OMOP:40491321":
+        title: INTRAMAMMARY
         description: Intramammary
         meaning: OMOP:40491321                                       
-      INTRATUMOR:
+      "OMOP:40491322":
+        title: INTRATUMOR
         description: Intratumor
         meaning: OMOP:40491322                                           
-      TRANSTYMPANIC:
+      "OMOP:40491830":
+        title: TRANSTYMPANIC
         description: Transtympanic
         meaning: OMOP:40491830                                     
-      TRANSTRACHEAL:
+      "OMOP:40491832":
+        title: TRANSTRACHEAL
         description: Transtracheal
         meaning: OMOP:40491832                                     
-      INTRAESOPHAGEAL:
+      "OMOP:40492284":
+        title: INTRAESOPHAGEAL
         description: Intraesophageal
         meaning: OMOP:40492284                                 
-      INTRAGINGIVAL:
+      "OMOP:40492286":
+        title: INTRAGINGIVAL
         description: Intragingival
         meaning: OMOP:40492286                                     
-      INTRAVASCULAR:
+      "OMOP:40492287":
+        title: INTRAVASCULAR
         description: Intravascular
         meaning: OMOP:40492287                                     
-      INTRADURAL:
+      "OMOP:40492288":
+        title: INTRADURAL
         description: Intradural
         meaning: OMOP:40492288                                           
-      INTRAMENINGEAL:
+      "OMOP:40492300":
+        title: INTRAMENINGEAL
         description: Intrameningeal
         meaning: OMOP:40492300                                   
-      INTRAGASTRIC:
+      "OMOP:40492301":
+        title: INTRAGASTRIC
         description: Intragastric
         meaning: OMOP:40492301                                       
-      INTRAPERICARDIAL:
+      "OMOP:40492305":
+        title: INTRAPERICARDIAL
         description: Intrapericardial
         meaning: OMOP:40492305                               
-      INTRALINGUAL:
+      "OMOP:40493227":
+        title: INTRALINGUAL
         description: Intralingual
         meaning: OMOP:40493227                                       
-      RESPIRATORY_TRACT:
+      "OMOP:40486069":
+        title: RESPIRATORY_TRACT
         description: Respiratory tract
         meaning: OMOP:40486069                             
-      INTRAHEPATIC:
+      "OMOP:40493258":
+        title: INTRAHEPATIC
         description: Intrahepatic
         meaning: OMOP:40493258                                       
-      CONJUNCTIVAL:
+      "OMOP:40486444":
+        title: CONJUNCTIVAL
         description: Conjunctival
         meaning: OMOP:40486444                                       
-      INTRAEPICARDIAL:
+      "OMOP:40487473":
+        title: INTRAEPICARDIAL
         description: Intraepicardial
         meaning: OMOP:40487473                                 
-      DIGESTIVE_TRACT:
+      "OMOP:40487501":
+        title: DIGESTIVE_TRACT
         description: Digestive tract
         meaning: OMOP:40487501                                 
-      OCULAR:
+      "OMOP:40549429":
+        title: OCULAR
         description: Ocular
         meaning: OMOP:40549429                                                   
 
@@ -3781,44 +3967,59 @@ enums:
   
   ConditionSeverityEnum:
     description: The clinical severity level assigned to a condition or diagnosis.
+    pv_formula: CURIE
     permissible_values:
-      MILD:
+      "OMOP:4116992":
+        title: MILD
         description: A condition that causes minimal symptoms or functional impairment and typically does not require intensive intervention.
         meaning: OMOP:4116992
-      MODERATE:
+      "OMOP:4285732":
+        title: MODERATE
         description: A condition that causes noticeable symptoms or functional impairment and may require active treatment or monitoring.
-        meaning: OMOP:3272197
-      SEVERE:
+        meaning: OMOP:4285732
+      "OMOP:4087703":
+        title: SEVERE
         description: A condition that causes significant symptoms or functional impairment, often requiring urgent or intensive intervention.
         meaning: OMOP:4087703
   
   FamilyRelationshipEnum:
     description: Values describing the relationship between an individual and family members.
+    pv_formula: CURIE
     permissible_values:
-      ONESELF:
+      "OMOP:45884467":
+        title: ONESELF
         description: A relation to one's self.
-      NATURAL_PARENT:
+        meaning: OMOP:45884467
+      "OMOP:4029630":
+        title: NATURAL_PARENT
         description: A relation to a natural parent (mother or father) when otherwise not specified.
         meaning: OMOP:4029630
-      NATURAL_FATHER:
+      "OMOP:4321888":
+        title: NATURAL_FATHER
         description: A relation to a natural father.
         meaning: OMOP:4321888
-      NATURAL_MOTHER:
+      "OMOP:4277283":
+        title: NATURAL_MOTHER
         description: A relation to a natural mother.
         meaning: OMOP:4277283
-      NATURAL_SIBLING:
+      "OMOP:4218412":
+        title: NATURAL_SIBLING
         description: A relation to a natural sibling (sister or brother) when otherwise not specified.
         meaning: OMOP:4218412
-      NATURAL_BROTHER:
+      "OMOP:4263682":
+        title: NATURAL_BROTHER
         description: A relation to a natural brother.
         meaning: OMOP:4263682
-      NATURAL_SISTER:
+      "OMOP:4251326":
+        title: NATURAL_SISTER
         description: A relation to a natural sister.
         meaning: OMOP:4251326
-      NATURAL_CHILD:
+      "OMOP:4326600":
+        title: NATURAL_CHILD
         description: A relation to a natural child.
         meaning: OMOP:4326600
-      BLOOD_RELATIVE:
+      "OMOP:4053608":
+        title: BLOOD_RELATIVE
         description: A generic blood relation.
         meaning: OMOP:4053608
 
@@ -4802,34 +5003,49 @@ enums:
 
   EducationalAttainmentObservationTypeEnum:
     description: Values describing the types of Education Attainment observed in an Observation.
+    pv_formula: CURIE
     permissible_values:
-      8TH_GRADE_OR_LESS:
+      "OMOP:1990362":
+        title: 8TH_GRADE_OR_LESS
         meaning: OMOP:1990362
-      HIGH_SCHOOL_NO_DIPLOMA:
+      "OMOP:1990281":
+        title: HIGH_SCHOOL_NO_DIPLOMA
         meaning: OMOP:1990281
-      HIGH_SCHOOL_GRADUATE_GED:
+      "OMOP:37079292":
+        title: HIGH_SCHOOL_GRADUATE_GED
         meaning: OMOP:37079292
-      SOME_COLLEGE_OR_TECH_NO_DEGREE:
+      "OMOP:45882538":
+        title: SOME_COLLEGE_OR_TECH_NO_DEGREE
         meaning: OMOP:45882538
-      COLLEGE_OR_TECH_WITH_DEGREE:
+      "OMOP:45884846":
+        title: COLLEGE_OR_TECH_WITH_DEGREE
         meaning: OMOP:45884846
-      MASTERS_OR_DOCTORAL_DEGREE:
+      "OMOP:45880652":
+        title: MASTERS_OR_DOCTORAL_DEGREE
         meaning: OMOP:45880652
-      UNKNOWN:
+      "OMOP:45877986":
+        title: UNKNOWN
         description: Educational attainment is unknown or not reported.
-      GREATER_THAN_HIGH_SCHOOL_OR_EQUIVALENT:
+        meaning: OMOP:45877986
+      "OMOP:37079441":
+        title: GREATER_THAN_HIGH_SCHOOL_OR_EQUIVALENT
         meaning: OMOP:37079441 
 
   SmokingStatusObservationTypeEnum:
     description: Values describing the types of Smoking Status observed in an Observation.
+    pv_formula: CURIE
     permissible_values:
-      CURRENT_SMOKER:
+      "OMOP:40766945":
+        title: CURRENT_SMOKER
         meaning: OMOP:40766945
-      FORMER_SMOKER:
+      "OMOP:45883458":
+        title: FORMER_SMOKER
         meaning: OMOP:45883458
-      NEVER_SMOKED:
+      "OMOP:45883537":
+        title: NEVER_SMOKED
         meaning: OMOP:45883537
-      UNKNOWN_IF_EVER_SMOKED:
+      "OMOP:45885135":
+        title: UNKNOWN_IF_EVER_SMOKED
         meaning: OMOP:45885135
 
   OccupationTypeEnum:
@@ -5021,13 +5237,17 @@ enums:
 
   SdohEnum:
     description: A constrained set of enumerative values describing social determinants of health measurement variables.
+    pv_formula: CURIE
     permissible_values:
-      FAMILY_INCOME:
+      "OMOP:4076114":
+        title: FAMILY_INCOME
         description: The sum of the income of all family members 15 years and older living in the household over 12 months, before taxes
         meaning: OMOP:4076114
-      EDUCATIONAL_ATTAINMENT:
+      "OMOP:4022643":
+        title: EDUCATIONAL_ATTAINMENT
         description: The highest level of education that an individual has completed
         meaning: OMOP:4022643
-      OCCUPATION:
+      "OMOP:36203487":
+        title: OCCUPATION
         description: Current type of work participant does to make money
         meaning: OMOP:36203487
