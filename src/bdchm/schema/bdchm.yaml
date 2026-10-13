@@ -446,6 +446,7 @@ classes:
         multivalued: true
         required: true
     slots:
+      - identity
       - associated_visit
     slot_usage:
       associated_visit:
@@ -666,6 +667,7 @@ classes:
         description: (0018, 0015) Body Part Examined. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. 
         required: false
     slots:
+      - identity
       - associated_visit
       - associated_participant
     slot_usage:
