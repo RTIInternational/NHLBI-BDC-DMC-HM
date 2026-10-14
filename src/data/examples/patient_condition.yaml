@@ -10,4 +10,4 @@ Condition:
   condition_provenance: EHR_PROBLEM_LIST_ENTRY
   condition_status: PRESENT
   condition_severity:
-  relationship_to_participant: ONESELF
+  relationship_to_participant: OMOP:45884467 # ONESELF
