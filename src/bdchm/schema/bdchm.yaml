@@ -446,6 +446,7 @@ classes:
         multivalued: true
         required: true
     slots:
+      - identity
       - associated_visit
     slot_usage:
       associated_visit:
@@ -563,8 +564,18 @@ classes:
         required: true
       associated_evidence:
         range: Entity
-        description: Evidence supporting the assertion of the condition (e.g., an ImagingStudy, Procedure, Observation)
+        any_of:
+          - range: Observation
+          - range: Procedure
+          - range: ImagingStudy
+          - range: QuestionnaireResponse
+          - range: Exposure
+        description: The specific records for this Participant that support the assertion of the condition (e.g., the BMI MeasurementObservation an obesity determination was based on). To describe how a study determines a condition in general, use condition_method.
         multivalued: true
+        required: false
+      condition_method:
+        range: Method
+        description: The Method used to determine the condition, such as the criteria a study applied or the kind of procedure it relied on.
         required: false
       affected_body_site:
         range: BodySite
@@ -656,6 +667,7 @@ classes:
         description: (0018, 0015) Body Part Examined. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. 
         required: false
     slots:
+      - identity
       - associated_visit
       - associated_participant
     slot_usage:
@@ -1577,6 +1589,7 @@ classes:
         range: Context
         required: false
     slots:
+      - identity
       - associated_visit
       - associated_participant
     slot_usage:
@@ -1732,6 +1745,35 @@ classes:
       time_duration:
         description: The quantity of time over which the activity occurred (e.g. "8 hours", "1 week")
         range: Quantity
+
+  Method:
+    is_a: Entity
+    description: >-
+      A description of how something was determined, such as the criteria a study applied to assert a Condition (e.g. fasting glucose >= 126 mg/dL or use of diabetes medication) or the kind of procedure it relied on (e.g. 12-lead electrocardiogram). A Method is not tied to a Participant; one Method is shared by every record that used it.
+    attributes:
+      name:
+        description: A human-readable name for the Method.
+        range: string
+        required: true
+      description:
+        description: A natural language description of the Method, such as the criteria applied.
+        range: string
+        required: false
+      method_concept:
+        description: A coded concept for the kind of Method (e.g. a procedure or assay code).
+        range: uriorcurie
+        required: false
+      research_study:
+        description: The ResearchStudy that defined this Method. Leave empty for a Method shared across studies, such as a published instrument or standard procedure.
+        range: ResearchStudy
+        required: false
+      url:
+        description: A URL for documentation of the Method.
+        range: uriorcurie
+        multivalued: true
+        required: false
+    slots:
+      - identity
 
 
 slots:
