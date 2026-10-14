@@ -413,42 +413,42 @@
 </thead>
 <tbody>
 <tr>
-<td>AMERICAN_INDIAN_OR_ALASKA_NATIVE</td>
+<td>OMOP:8657</td>
 <td>OMOP:8657</td>
 <td>A person having origins in any of the original peoples of North and South Ame...</td>
 </tr>
 <tr>
-<td>ASIAN</td>
+<td>OMOP:8515</td>
 <td>OMOP:8515</td>
 <td>A person having origins in any of the original peoples of the Far East, South...</td>
 </tr>
 <tr>
-<td>BLACK_OR_AFRICAN_AMERICAN</td>
+<td>OMOP:8516</td>
 <td>OMOP:8516</td>
 <td>A person having origins in any of the Black racial groups of Africa</td>
 </tr>
 <tr>
-<td>MIDDLE_EASTERN_OR_NORTH_AFRICAN</td>
+<td>OMOP:38003615</td>
 <td>OMOP:38003615</td>
 <td>A person having origins in any of the original peoples of the Middle East or ...</td>
 </tr>
 <tr>
-<td>NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER</td>
+<td>OMOP:8557</td>
 <td>OMOP:8557</td>
 <td>Denotes a person having origins in any of the original peoples of Hawaii, Gua...</td>
 </tr>
 <tr>
-<td>UNKNOWN</td>
-<td>OMOP:8552</td>
+<td>OMOP:45877986</td>
+<td>OMOP:45877986</td>
 <td>Not known, not observed, not recorded, or refused</td>
 </tr>
 <tr>
-<td>WHITE</td>
+<td>OMOP:8527</td>
 <td>OMOP:8527</td>
 <td>Denotes person with European, Middle Eastern, or North African ancestral orig...</td>
 </tr>
 <tr>
-<td>MORE_THAN_ONE_RACE</td>
+<td>OMOP:45880900</td>
 <td>OMOP:45880900</td>
 <td>A person having more than one race</td>
 </tr>
@@ -482,34 +482,39 @@ description: A constrained set of enumerative values containing the United State
   Office of Management and Budget (OMB) values for race.
 from_schema: https://w3id.org/bdchm
 rank: 1000
+pv_formula: CURIE
 permissible_values:
-  AMERICAN_INDIAN_OR_ALASKA_NATIVE:
-    text: AMERICAN_INDIAN_OR_ALASKA_NATIVE
+  OMOP:8657:
+    text: OMOP:8657
     description: A person having origins in any of the original peoples of North and
       South America (including Central America) and who maintains tribal affiliation
       or community attachment. (OMB)
     meaning: OMOP:8657
-  ASIAN:
-    text: ASIAN
+    title: AMERICAN_INDIAN_OR_ALASKA_NATIVE
+  OMOP:8515:
+    text: OMOP:8515
     description: A person having origins in any of the original peoples of the Far
       East, Southeast Asia, or the Indian subcontinent, including for example, Cambodia,
       China, India, Japan, Korea, Malaysia, Pakistan, the Philippine Islands, Thailand,
       and Vietnam. (OMB)
     meaning: OMOP:8515
-  BLACK_OR_AFRICAN_AMERICAN:
-    text: BLACK_OR_AFRICAN_AMERICAN
+    title: ASIAN
+  OMOP:8516:
+    text: OMOP:8516
     description: A person having origins in any of the Black racial groups of Africa.
       Terms such as &quot;Haitian&quot; or &quot;Negro&quot; can be used in addition to &quot;Black or African
       American&quot;. (OMB)
     meaning: OMOP:8516
-  MIDDLE_EASTERN_OR_NORTH_AFRICAN:
-    text: MIDDLE_EASTERN_OR_NORTH_AFRICAN
+    title: BLACK_OR_AFRICAN_AMERICAN
+  OMOP:38003615:
+    text: OMOP:38003615
     description: A person having origins in any of the original peoples of the Middle
       East or North Africa, including, for example, Lebanese, Iranian, Egyptian, Syrian,
       Iraqi, and Israeli. (OMB)
     meaning: OMOP:38003615
-  NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER:
-    text: NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER
+    title: MIDDLE_EASTERN_OR_NORTH_AFRICAN
+  OMOP:8557:
+    text: OMOP:8557
     description: Denotes a person having origins in any of the original peoples of
       Hawaii, Guam, Samoa, or other Pacific Islands. The term covers particularly
       people who identify themselves as part-Hawaiian, Native Hawaiian, Guamanian
@@ -518,19 +523,23 @@ permissible_values:
       Polynesian, Solomon Islander, Tahitian, Tokelauan, Tongan, Yapese, or Pacific
       Islander, not specified.
     meaning: OMOP:8557
-  UNKNOWN:
-    text: UNKNOWN
+    title: NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER
+  OMOP:45877986:
+    text: OMOP:45877986
     description: Not known, not observed, not recorded, or refused.
-    meaning: OMOP:8552
-  WHITE:
-    text: WHITE
+    meaning: OMOP:45877986
+    title: UNKNOWN
+  OMOP:8527:
+    text: OMOP:8527
     description: Denotes person with European, Middle Eastern, or North African ancestral
       origin who identifies, or is identified, as White.
     meaning: OMOP:8527
-  MORE_THAN_ONE_RACE:
-    text: MORE_THAN_ONE_RACE
+    title: WHITE
+  OMOP:45880900:
+    text: OMOP:45880900
     description: A person having more than one race.
     meaning: OMOP:45880900
+    title: MORE_THAN_ONE_RACE
 
 </code></pre>
 

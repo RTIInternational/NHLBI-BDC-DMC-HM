@@ -413,17 +413,17 @@
 </thead>
 <tbody>
 <tr>
-<td>MILD</td>
+<td>OMOP:4116992</td>
 <td>OMOP:4116992</td>
 <td>A condition that causes minimal symptoms or functional impairment and typical...</td>
 </tr>
 <tr>
-<td>MODERATE</td>
-<td>OMOP:3272197</td>
+<td>OMOP:4285732</td>
+<td>OMOP:4285732</td>
 <td>A condition that causes noticeable symptoms or functional impairment and may ...</td>
 </tr>
 <tr>
-<td>SEVERE</td>
+<td>OMOP:4087703</td>
 <td>OMOP:4087703</td>
 <td>A condition that causes significant symptoms or functional impairment, often ...</td>
 </tr>
@@ -456,22 +456,26 @@
 description: The clinical severity level assigned to a condition or diagnosis.
 from_schema: https://w3id.org/bdchm
 rank: 1000
+pv_formula: CURIE
 permissible_values:
-  MILD:
-    text: MILD
+  OMOP:4116992:
+    text: OMOP:4116992
     description: A condition that causes minimal symptoms or functional impairment
       and typically does not require intensive intervention.
     meaning: OMOP:4116992
-  MODERATE:
-    text: MODERATE
+    title: MILD
+  OMOP:4285732:
+    text: OMOP:4285732
     description: A condition that causes noticeable symptoms or functional impairment
       and may require active treatment or monitoring.
-    meaning: OMOP:3272197
-  SEVERE:
-    text: SEVERE
+    meaning: OMOP:4285732
+    title: MODERATE
+  OMOP:4087703:
+    text: OMOP:4087703
     description: A condition that causes significant symptoms or functional impairment,
       often requiring urgent or intensive intervention.
     meaning: OMOP:4087703
+    title: SEVERE
 
 </code></pre>
 

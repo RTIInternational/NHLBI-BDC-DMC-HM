@@ -413,17 +413,17 @@
 </thead>
 <tbody>
 <tr>
-<td>FAMILY_INCOME</td>
+<td>OMOP:4076114</td>
 <td>OMOP:4076114</td>
 <td>The sum of the income of all family members 15 years and older living in the ...</td>
 </tr>
 <tr>
-<td>EDUCATIONAL_ATTAINMENT</td>
+<td>OMOP:4022643</td>
 <td>OMOP:4022643</td>
 <td>The highest level of education that an individual has completed</td>
 </tr>
 <tr>
-<td>OCCUPATION</td>
+<td>OMOP:36203487</td>
 <td>OMOP:36203487</td>
 <td>Current type of work participant does to make money</td>
 </tr>
@@ -457,20 +457,24 @@ description: A constrained set of enumerative values describing social determina
   of health measurement variables.
 from_schema: https://w3id.org/bdchm
 rank: 1000
+pv_formula: CURIE
 permissible_values:
-  FAMILY_INCOME:
-    text: FAMILY_INCOME
+  OMOP:4076114:
+    text: OMOP:4076114
     description: The sum of the income of all family members 15 years and older living
       in the household over 12 months, before taxes
     meaning: OMOP:4076114
-  EDUCATIONAL_ATTAINMENT:
-    text: EDUCATIONAL_ATTAINMENT
+    title: FAMILY_INCOME
+  OMOP:4022643:
+    text: OMOP:4022643
     description: The highest level of education that an individual has completed
     meaning: OMOP:4022643
-  OCCUPATION:
-    text: OCCUPATION
+    title: EDUCATIONAL_ATTAINMENT
+  OMOP:36203487:
+    text: OMOP:36203487
     description: Current type of work participant does to make money
     meaning: OMOP:36203487
+    title: OCCUPATION
 
 </code></pre>
 

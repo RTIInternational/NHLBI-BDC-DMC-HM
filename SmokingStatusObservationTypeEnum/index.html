@@ -402,22 +402,22 @@
 </thead>
 <tbody>
 <tr>
-<td>CURRENT_SMOKER</td>
+<td>OMOP:40766945</td>
 <td>OMOP:40766945</td>
 <td></td>
 </tr>
 <tr>
-<td>FORMER_SMOKER</td>
+<td>OMOP:45883458</td>
 <td>OMOP:45883458</td>
 <td></td>
 </tr>
 <tr>
-<td>NEVER_SMOKED</td>
+<td>OMOP:45883537</td>
 <td>OMOP:45883537</td>
 <td></td>
 </tr>
 <tr>
-<td>UNKNOWN_IF_EVER_SMOKED</td>
+<td>OMOP:45885135</td>
 <td>OMOP:45885135</td>
 <td></td>
 </tr>
@@ -435,19 +435,24 @@
 description: Values describing the types of Smoking Status observed in an Observation.
 from_schema: https://w3id.org/bdchm
 rank: 1000
+pv_formula: CURIE
 permissible_values:
-  CURRENT_SMOKER:
-    text: CURRENT_SMOKER
+  OMOP:40766945:
+    text: OMOP:40766945
     meaning: OMOP:40766945
-  FORMER_SMOKER:
-    text: FORMER_SMOKER
+    title: CURRENT_SMOKER
+  OMOP:45883458:
+    text: OMOP:45883458
     meaning: OMOP:45883458
-  NEVER_SMOKED:
-    text: NEVER_SMOKED
+    title: FORMER_SMOKER
+  OMOP:45883537:
+    text: OMOP:45883537
     meaning: OMOP:45883537
-  UNKNOWN_IF_EVER_SMOKED:
-    text: UNKNOWN_IF_EVER_SMOKED
+    title: NEVER_SMOKED
+  OMOP:45885135:
+    text: OMOP:45885135
     meaning: OMOP:45885135
+    title: UNKNOWN_IF_EVER_SMOKED
 
 </code></pre>
 

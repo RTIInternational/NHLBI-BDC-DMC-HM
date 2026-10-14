@@ -413,18 +413,18 @@
 </thead>
 <tbody>
 <tr>
-<td>MALE</td>
+<td>OMOP:8507</td>
 <td>OMOP:8507</td>
 <td>A person who belongs to the sex that normally produces sperm</td>
 </tr>
 <tr>
-<td>FEMALE</td>
+<td>OMOP:8532</td>
 <td>OMOP:8532</td>
 <td>A person who belongs to the sex that normally produces ova</td>
 </tr>
 <tr>
-<td>UNKNOWN</td>
-<td>OMOP:8552</td>
+<td>OMOP:45877986</td>
+<td>OMOP:45877986</td>
 <td>Not known, not observed, not recorded, or refused</td>
 </tr>
 </tbody>
@@ -457,19 +457,23 @@ description: A constrained set of enumerative values containing the OMOP values 
   sex.
 from_schema: https://w3id.org/bdchm
 rank: 1000
+pv_formula: CURIE
 permissible_values:
-  MALE:
-    text: MALE
+  OMOP:8507:
+    text: OMOP:8507
     description: A person who belongs to the sex that normally produces sperm.
     meaning: OMOP:8507
-  FEMALE:
-    text: FEMALE
+    title: MALE
+  OMOP:8532:
+    text: OMOP:8532
     description: A person who belongs to the sex that normally produces ova.
     meaning: OMOP:8532
-  UNKNOWN:
-    text: UNKNOWN
+    title: FEMALE
+  OMOP:45877986:
+    text: OMOP:45877986
     description: Not known, not observed, not recorded, or refused.
-    meaning: OMOP:8552
+    meaning: OMOP:45877986
+    title: UNKNOWN
 
 </code></pre>
 

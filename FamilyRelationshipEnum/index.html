@@ -413,47 +413,47 @@
 </thead>
 <tbody>
 <tr>
-<td>ONESELF</td>
-<td>None</td>
+<td>OMOP:45884467</td>
+<td>OMOP:45884467</td>
 <td>A relation to one's self</td>
 </tr>
 <tr>
-<td>NATURAL_PARENT</td>
+<td>OMOP:4029630</td>
 <td>OMOP:4029630</td>
 <td>A relation to a natural parent (mother or father) when otherwise not specifie...</td>
 </tr>
 <tr>
-<td>NATURAL_FATHER</td>
+<td>OMOP:4321888</td>
 <td>OMOP:4321888</td>
 <td>A relation to a natural father</td>
 </tr>
 <tr>
-<td>NATURAL_MOTHER</td>
+<td>OMOP:4277283</td>
 <td>OMOP:4277283</td>
 <td>A relation to a natural mother</td>
 </tr>
 <tr>
-<td>NATURAL_SIBLING</td>
+<td>OMOP:4218412</td>
 <td>OMOP:4218412</td>
 <td>A relation to a natural sibling (sister or brother) when otherwise not specif...</td>
 </tr>
 <tr>
-<td>NATURAL_BROTHER</td>
+<td>OMOP:4263682</td>
 <td>OMOP:4263682</td>
 <td>A relation to a natural brother</td>
 </tr>
 <tr>
-<td>NATURAL_SISTER</td>
+<td>OMOP:4251326</td>
 <td>OMOP:4251326</td>
 <td>A relation to a natural sister</td>
 </tr>
 <tr>
-<td>NATURAL_CHILD</td>
+<td>OMOP:4326600</td>
 <td>OMOP:4326600</td>
 <td>A relation to a natural child</td>
 </tr>
 <tr>
-<td>BLOOD_RELATIVE</td>
+<td>OMOP:4053608</td>
 <td>OMOP:4053608</td>
 <td>A generic blood relation</td>
 </tr>
@@ -486,44 +486,55 @@
 description: Values describing the relationship between an individual and family members.
 from_schema: https://w3id.org/bdchm
 rank: 1000
+pv_formula: CURIE
 permissible_values:
-  ONESELF:
-    text: ONESELF
+  OMOP:45884467:
+    text: OMOP:45884467
     description: A relation to one's self.
-  NATURAL_PARENT:
-    text: NATURAL_PARENT
+    meaning: OMOP:45884467
+    title: ONESELF
+  OMOP:4029630:
+    text: OMOP:4029630
     description: A relation to a natural parent (mother or father) when otherwise
       not specified.
     meaning: OMOP:4029630
-  NATURAL_FATHER:
-    text: NATURAL_FATHER
+    title: NATURAL_PARENT
+  OMOP:4321888:
+    text: OMOP:4321888
     description: A relation to a natural father.
     meaning: OMOP:4321888
-  NATURAL_MOTHER:
-    text: NATURAL_MOTHER
+    title: NATURAL_FATHER
+  OMOP:4277283:
+    text: OMOP:4277283
     description: A relation to a natural mother.
     meaning: OMOP:4277283
-  NATURAL_SIBLING:
-    text: NATURAL_SIBLING
+    title: NATURAL_MOTHER
+  OMOP:4218412:
+    text: OMOP:4218412
     description: A relation to a natural sibling (sister or brother) when otherwise
       not specified.
     meaning: OMOP:4218412
-  NATURAL_BROTHER:
-    text: NATURAL_BROTHER
+    title: NATURAL_SIBLING
+  OMOP:4263682:
+    text: OMOP:4263682
     description: A relation to a natural brother.
     meaning: OMOP:4263682
-  NATURAL_SISTER:
-    text: NATURAL_SISTER
+    title: NATURAL_BROTHER
+  OMOP:4251326:
+    text: OMOP:4251326
     description: A relation to a natural sister.
     meaning: OMOP:4251326
-  NATURAL_CHILD:
-    text: NATURAL_CHILD
+    title: NATURAL_SISTER
+  OMOP:4326600:
+    text: OMOP:4326600
     description: A relation to a natural child.
     meaning: OMOP:4326600
-  BLOOD_RELATIVE:
-    text: BLOOD_RELATIVE
+    title: NATURAL_CHILD
+  OMOP:4053608:
+    text: OMOP:4053608
     description: A generic blood relation.
     meaning: OMOP:4053608
+    title: BLOOD_RELATIVE
 
 </code></pre>
 

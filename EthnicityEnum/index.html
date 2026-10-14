@@ -413,18 +413,18 @@
 </thead>
 <tbody>
 <tr>
-<td>HISPANIC_OR_LATINO</td>
+<td>OMOP:38003563</td>
 <td>OMOP:38003563</td>
 <td>A person of Cuban, Mexican, Puerto Rican, South or Central American, or other...</td>
 </tr>
 <tr>
-<td>NOT_HISPANIC_OR_LATINO</td>
+<td>OMOP:38003564</td>
 <td>OMOP:38003564</td>
 <td>A person not of Cuban, Mexican, Puerto Rican, South or Central American, or o...</td>
 </tr>
 <tr>
-<td>UNKNOWN</td>
-<td>OMOP:8552</td>
+<td>OMOP:45877986</td>
+<td>OMOP:45877986</td>
 <td>Not known, not observed, not recorded, or refused</td>
 </tr>
 </tbody>
@@ -457,22 +457,26 @@ description: A constrained set of enumerative values containing the United State
   Office of Management and Budget (OMB) values for ethnicity.
 from_schema: https://w3id.org/bdchm
 rank: 1000
+pv_formula: CURIE
 permissible_values:
-  HISPANIC_OR_LATINO:
-    text: HISPANIC_OR_LATINO
+  OMOP:38003563:
+    text: OMOP:38003563
     description: A person of Cuban, Mexican, Puerto Rican, South or Central American,
       or other Spanish culture or origin, regardless of race. The term, &quot;Spanish origin&quot;
       can be used in addition to &quot;Hispanic or Latino&quot;. (OMB)
     meaning: OMOP:38003563
-  NOT_HISPANIC_OR_LATINO:
-    text: NOT_HISPANIC_OR_LATINO
+    title: HISPANIC_OR_LATINO
+  OMOP:38003564:
+    text: OMOP:38003564
     description: A person not of Cuban, Mexican, Puerto Rican, South or Central American,
       or other Spanish culture or origin, regardless of race.
     meaning: OMOP:38003564
-  UNKNOWN:
-    text: UNKNOWN
+    title: NOT_HISPANIC_OR_LATINO
+  OMOP:45877986:
+    text: OMOP:45877986
     description: Not known, not observed, not recorded, or refused.
-    meaning: OMOP:8552
+    meaning: OMOP:45877986
+    title: UNKNOWN
 
 </code></pre>
 
