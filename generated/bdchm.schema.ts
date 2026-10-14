@@ -79,11 +79,11 @@ export enum DataUseEnum {
 export enum EthnicityEnum {
     
     /** A person of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race. The term, "Spanish origin" can be used in addition to "Hispanic or Latino". (OMB) */
-    HISPANIC_OR_LATINO = "HISPANIC_OR_LATINO",
+    HISPANIC_OR_LATINO = "OMOP:38003563",
     /** A person not of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race. */
-    NOT_HISPANIC_OR_LATINO = "NOT_HISPANIC_OR_LATINO",
+    NOT_HISPANIC_OR_LATINO = "OMOP:38003564",
     /** Not known, not observed, not recorded, or refused. */
-    UNKNOWN = "UNKNOWN",
+    UNKNOWN = "OMOP:45877986",
 };
 /**
 * A constrained set of enumerative values containing the United States Office of Management and Budget (OMB) values for race.
@@ -91,21 +91,21 @@ export enum EthnicityEnum {
 export enum RaceEnum {
     
     /** A person having origins in any of the original peoples of North and South America (including Central America) and who maintains tribal affiliation or community attachment. (OMB) */
-    AMERICAN_INDIAN_OR_ALASKA_NATIVE = "AMERICAN_INDIAN_OR_ALASKA_NATIVE",
+    AMERICAN_INDIAN_OR_ALASKA_NATIVE = "OMOP:8657",
     /** A person having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent, including for example, Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam. (OMB) */
-    ASIAN = "ASIAN",
+    ASIAN = "OMOP:8515",
     /** A person having origins in any of the Black racial groups of Africa. Terms such as "Haitian" or "Negro" can be used in addition to "Black or African American". (OMB) */
-    BLACK_OR_AFRICAN_AMERICAN = "BLACK_OR_AFRICAN_AMERICAN",
+    BLACK_OR_AFRICAN_AMERICAN = "OMOP:8516",
     /** A person having origins in any of the original peoples of the Middle East or North Africa, including, for example, Lebanese, Iranian, Egyptian, Syrian, Iraqi, and Israeli. (OMB) */
-    MIDDLE_EASTERN_OR_NORTH_AFRICAN = "MIDDLE_EASTERN_OR_NORTH_AFRICAN",
+    MIDDLE_EASTERN_OR_NORTH_AFRICAN = "OMOP:38003615",
     /** Denotes a person having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands. The term covers particularly people who identify themselves as part-Hawaiian, Native Hawaiian, Guamanian or Chamorro, Carolinian, Samoan, Chuukese (Trukese), Fijian, Kosraean, Melanesian, Micronesian, Northern Mariana Islander, Palauan, Papua New Guinean, Pohnpeian, Polynesian, Solomon Islander, Tahitian, Tokelauan, Tongan, Yapese, or Pacific Islander, not specified. */
-    NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER = "NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER",
+    NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER = "OMOP:8557",
     /** Not known, not observed, not recorded, or refused. */
-    UNKNOWN = "UNKNOWN",
+    UNKNOWN = "OMOP:45877986",
     /** Denotes person with European, Middle Eastern, or North African ancestral origin who identifies, or is identified, as White. */
-    WHITE = "WHITE",
+    WHITE = "OMOP:8527",
     /** A person having more than one race. */
-    MORE_THAN_ONE_RACE = "MORE_THAN_ONE_RACE",
+    MORE_THAN_ONE_RACE = "OMOP:45880900",
 };
 /**
 * A constrained set of enumerative values containing the OMOP values for sex.
@@ -113,11 +113,11 @@ export enum RaceEnum {
 export enum SexEnum {
     
     /** A person who belongs to the sex that normally produces sperm. */
-    MALE = "MALE",
+    MALE = "OMOP:8507",
     /** A person who belongs to the sex that normally produces ova. */
-    FEMALE = "FEMALE",
+    FEMALE = "OMOP:8532",
     /** Not known, not observed, not recorded, or refused. */
-    UNKNOWN = "UNKNOWN",
+    UNKNOWN = "OMOP:45877986",
 };
 /**
 * A constrained set of enumerative values containing the NCBITaxon values for cellular organisms.
@@ -143,9 +143,9 @@ export enum InstrumentEnum {
 export enum VitalStatusEnum {
     
     /** Showing characteristics of life; displaying signs of life. (NCIt) */
-    ALIVE = "ALIVE",
+    ALIVE = "OMOP:4230556",
     /** The cessation of life. (NCIt) */
-    DEAD = "DEAD",
+    DEAD = "OMOP:434489",
 };
 /**
 * A constrained set of enumerative values containing the VBO values for vertebrate breeds.
@@ -585,335 +585,335 @@ export enum DrugExposureProvenanceEnum {
 export enum DrugRouteEnum {
     
     /** Arteriovenous fistula */
-    ARTERIOVENOUS_FISTULA = "ARTERIOVENOUS_FISTULA",
+    ARTERIOVENOUS_FISTULA = "OMOP:44783786",
     /** Haemodiafiltration */
-    HAEMODIAFILTRATION = "HAEMODIAFILTRATION",
+    HAEMODIAFILTRATION = "OMOP:44801748",
     /** Sublesional */
-    SUBLESIONAL = "SUBLESIONAL",
+    SUBLESIONAL = "OMOP:46270168",
     /** Intraneural */
-    INTRANEURAL = "INTRANEURAL",
+    INTRANEURAL = "OMOP:46272911",
     /** Intramural */
-    INTRAMURAL = "INTRAMURAL",
+    INTRAMURAL = "OMOP:46272926",
     /** Intracatheter instillation */
-    INTRACATHETER_INSTILLATION = "INTRACATHETER_INSTILLATION",
+    INTRACATHETER_INSTILLATION = "OMOP:605428",
     /** Sublabial */
-    SUBLABIAL = "SUBLABIAL",
+    SUBLABIAL = "OMOP:600817",
     /** Intra-articular */
-    INTRA_ARTICULAR = "INTRA_ARTICULAR",
+    INTRA_ARTICULAR = "OMOP:4006860",
     /** Intradialytic */
-    INTRADIALYTIC = "INTRADIALYTIC",
+    INTRADIALYTIC = "OMOP:618805",
     /** Arteriovenous graft */
-    ARTERIOVENOUS_GRAFT = "ARTERIOVENOUS_GRAFT",
+    ARTERIOVENOUS_GRAFT = "OMOP:762840",
     /** Otic */
-    OTIC = "OTIC",
+    OTIC = "OMOP:4023156",
     /** Oral */
-    ORAL = "ORAL",
+    ORAL = "OMOP:4132161",
     /** Vaginal */
-    VAGINAL = "VAGINAL",
+    VAGINAL = "OMOP:4057765",
     /** Route of administration value */
-    ROUTE_OF_ADMINISTRATION_VALUE = "ROUTE_OF_ADMINISTRATION_VALUE",
+    ROUTE_OF_ADMINISTRATION_VALUE = "OMOP:4106215",
     /** Gastrostomy */
-    GASTROSTOMY = "GASTROSTOMY",
+    GASTROSTOMY = "OMOP:4132254",
     /** Nasogastric */
-    NASOGASTRIC = "NASOGASTRIC",
+    NASOGASTRIC = "OMOP:4132711",
     /** Jejunostomy */
-    JEJUNOSTOMY = "JEJUNOSTOMY",
+    JEJUNOSTOMY = "OMOP:4133177",
     /** Subcutaneous */
-    SUBCUTANEOUS = "SUBCUTANEOUS",
+    SUBCUTANEOUS = "OMOP:4142048",
     /** Gingival */
-    GINGIVAL = "GINGIVAL",
+    GINGIVAL = "OMOP:4156704",
     /** Intracardiac */
-    INTRACARDIAC = "INTRACARDIAC",
+    INTRACARDIAC = "OMOP:4156705",
     /** Intradermal */
-    INTRADERMAL = "INTRADERMAL",
+    INTRADERMAL = "OMOP:4156706",
     /** Intrapleural */
-    INTRAPLEURAL = "INTRAPLEURAL",
+    INTRAPLEURAL = "OMOP:4156707",
     /** Periarticular */
-    PERIARTICULAR = "PERIARTICULAR",
+    PERIARTICULAR = "OMOP:4156708",
     /** Endosinusial */
-    ENDOSINUSIAL = "ENDOSINUSIAL",
+    ENDOSINUSIAL = "OMOP:4157756",
     /** Intracavernous */
-    INTRACAVERNOUS = "INTRACAVERNOUS",
+    INTRACAVERNOUS = "OMOP:4157757",
     /** Intralesional */
-    INTRALESIONAL = "INTRALESIONAL",
+    INTRALESIONAL = "OMOP:4157758",
     /** Intralymphatic */
-    INTRALYMPHATIC = "INTRALYMPHATIC",
+    INTRALYMPHATIC = "OMOP:4157759",
     /** Intraocular */
-    INTRAOCULAR = "INTRAOCULAR",
+    INTRAOCULAR = "OMOP:4157760",
     /** Perineural */
-    PERINEURAL = "PERINEURAL",
+    PERINEURAL = "OMOP:4157761",
     /** Intracranial */
-    INTRACRANIAL = "INTRACRANIAL",
+    INTRACRANIAL = "OMOP:4171079",
     /** Dental */
-    DENTAL = "DENTAL",
+    DENTAL = "OMOP:4163765",
     /** Intraamniotic */
-    INTRAAMNIOTIC = "INTRAAMNIOTIC",
+    INTRAAMNIOTIC = "OMOP:4163767",
     /** Intrabursal */
-    INTRABURSAL = "INTRABURSAL",
+    INTRABURSAL = "OMOP:4163768",
     /** Intradiscal */
-    INTRADISCAL = "INTRADISCAL",
+    INTRADISCAL = "OMOP:4163769",
     /** Subconjunctival */
-    SUBCONJUNCTIVAL = "SUBCONJUNCTIVAL",
+    SUBCONJUNCTIVAL = "OMOP:4163770",
     /** Mucous fistula */
-    MUCOUS_FISTULA = "MUCOUS_FISTULA",
+    MUCOUS_FISTULA = "OMOP:4171243",
     /** Intraprostatic */
-    INTRAPROSTATIC = "INTRAPROSTATIC",
+    INTRAPROSTATIC = "OMOP:4171725",
     /** Intravenous peripheral */
-    INTRAVENOUS_PERIPHERAL = "INTRAVENOUS_PERIPHERAL",
+    INTRAVENOUS_PERIPHERAL = "OMOP:4171884",
     /** Periosteal */
-    PERIOSTEAL = "PERIOSTEAL",
+    PERIOSTEAL = "OMOP:4171893",
     /** Esophagostomy */
-    ESOPHAGOSTOMY = "ESOPHAGOSTOMY",
+    ESOPHAGOSTOMY = "OMOP:4172191",
     /** Nasoduodenal */
-    NASODUODENAL = "NASODUODENAL",
+    NASODUODENAL = "OMOP:4172316",
     /** Percutaneous */
-    PERCUTANEOUS = "PERCUTANEOUS",
+    PERCUTANEOUS = "OMOP:4177987",
     /** Suborbital */
-    SUBORBITAL = "SUBORBITAL",
+    SUBORBITAL = "OMOP:4166865",
     /** Intrathoracic */
-    INTRATHORACIC = "INTRATHORACIC",
+    INTRATHORACIC = "OMOP:4167393",
     /** Enteral */
-    ENTERAL = "ENTERAL",
+    ENTERAL = "OMOP:4167540",
     /** Intramyometrial */
-    INTRAMYOMETRIAL = "INTRAMYOMETRIAL",
+    INTRAMYOMETRIAL = "OMOP:4168038",
     /** Colostomy */
-    COLOSTOMY = "COLOSTOMY",
+    COLOSTOMY = "OMOP:4168047",
     /** Intratympanic */
-    INTRATYMPANIC = "INTRATYMPANIC",
+    INTRATYMPANIC = "OMOP:4168656",
     /** Gastro-intestinal stoma */
-    GASTRO_INTESTINAL_STOMA = "GASTRO_INTESTINAL_STOMA",
+    GASTRO_INTESTINAL_STOMA = "OMOP:4168665",
     /** Intrapulmonary */
-    INTRAPULMONARY = "INTRAPULMONARY",
+    INTRAPULMONARY = "OMOP:4169270",
     /** Intrasinal */
-    INTRASINAL = "INTRASINAL",
+    INTRASINAL = "OMOP:4169440",
     /** Tumor cavity */
-    TUMOR_CAVITY = "TUMOR_CAVITY",
+    TUMOR_CAVITY = "OMOP:4169472",
     /** Submucosal */
-    SUBMUCOSAL = "SUBMUCOSAL",
+    SUBMUCOSAL = "OMOP:4169634",
     /** Intraductal */
-    INTRADUCTAL = "INTRADUCTAL",
+    INTRADUCTAL = "OMOP:4170083",
     /** Intravenous central */
-    INTRAVENOUS_CENTRAL = "INTRAVENOUS_CENTRAL",
+    INTRAVENOUS_CENTRAL = "OMOP:4170113",
     /** Paravertebral */
-    PARAVERTEBRAL = "PARAVERTEBRAL",
+    PARAVERTEBRAL = "OMOP:4170267",
     /** Urostomy */
-    UROSTOMY = "UROSTOMY",
+    UROSTOMY = "OMOP:4170435",
     /** Laryngeal */
-    LARYNGEAL = "LARYNGEAL",
+    LARYNGEAL = "OMOP:4170440",
     /** Surgical cavity */
-    SURGICAL_CAVITY = "SURGICAL_CAVITY",
+    SURGICAL_CAVITY = "OMOP:4170771",
     /** Intravenous */
-    INTRAVENOUS = "INTRAVENOUS",
+    INTRAVENOUS = "OMOP:4171047",
     /** Intratesticular */
-    INTRATESTICULAR = "INTRATESTICULAR",
+    INTRATESTICULAR = "OMOP:4171067",
     /** Endocervical */
-    ENDOCERVICAL = "ENDOCERVICAL",
+    ENDOCERVICAL = "OMOP:4186831",
     /** Endotracheopulmonary */
-    ENDOTRACHEOPULMONARY = "ENDOTRACHEOPULMONARY",
+    ENDOTRACHEOPULMONARY = "OMOP:4186832",
     /** Extra-amniotic */
-    EXTRA_AMNIOTIC = "EXTRA_AMNIOTIC",
+    EXTRA_AMNIOTIC = "OMOP:4186833",
     /** Gastroenteral */
-    GASTROENTERAL = "GASTROENTERAL",
+    GASTROENTERAL = "OMOP:4186834",
     /** Intracervical */
-    INTRACERVICAL = "INTRACERVICAL",
+    INTRACERVICAL = "OMOP:4186835",
     /** Intracoronary */
-    INTRACORONARY = "INTRACORONARY",
+    INTRACORONARY = "OMOP:4186836",
     /** Intrasternal */
-    INTRASTERNAL = "INTRASTERNAL",
+    INTRASTERNAL = "OMOP:4186837",
     /** Intravesical */
-    INTRAVESICAL = "INTRAVESICAL",
+    INTRAVESICAL = "OMOP:4186838",
     /** Oromucosal */
-    OROMUCOSAL = "OROMUCOSAL",
+    OROMUCOSAL = "OMOP:4186839",
     /** Caudal */
-    CAUDAL = "CAUDAL",
+    CAUDAL = "OMOP:4220455",
     /** Buccal */
-    BUCCAL = "BUCCAL",
+    BUCCAL = "OMOP:4181897",
     /** Ophthalmic */
-    OPHTHALMIC = "OPHTHALMIC",
+    OPHTHALMIC = "OMOP:4184451",
     /** Body cavity */
-    BODY_CAVITY = "BODY_CAVITY",
+    BODY_CAVITY = "OMOP:4222254",
     /** Intraosseous */
-    INTRAOSSEOUS = "INTRAOSSEOUS",
+    INTRAOSSEOUS = "OMOP:4213522",
     /** Intraventricular route - cardiac */
-    INTRAVENTRICULAR_ROUTE_CARDIAC = "INTRAVENTRICULAR_ROUTE_CARDIAC",
+    INTRAVENTRICULAR_ROUTE_CARDIAC = "OMOP:4222259",
     /** Intrabiliary */
-    INTRABILIARY = "INTRABILIARY",
+    INTRABILIARY = "OMOP:4223965",
     /** Intracerebroventricular */
-    INTRACEREBROVENTRICULAR = "INTRACEREBROVENTRICULAR",
+    INTRACEREBROVENTRICULAR = "OMOP:4224886",
     /** Intrathecal */
-    INTRATHECAL = "INTRATHECAL",
+    INTRATHECAL = "OMOP:4217202",
     /** Epidural */
-    EPIDURAL = "EPIDURAL",
+    EPIDURAL = "OMOP:4225555",
     /** Intratracheal */
-    INTRATRACHEAL = "INTRATRACHEAL",
+    INTRATRACHEAL = "OMOP:4229543",
     /** Urethral */
-    URETHRAL = "URETHRAL",
+    URETHRAL = "OMOP:4233974",
     /** Transmucosal */
-    TRANSMUCOSAL = "TRANSMUCOSAL",
+    TRANSMUCOSAL = "OMOP:4232601",
     /** Transdermal */
-    TRANSDERMAL = "TRANSDERMAL",
+    TRANSDERMAL = "OMOP:4262099",
     /** Intra-arterial */
-    INTRA_ARTERIAL = "INTRA_ARTERIAL",
+    INTRA_ARTERIAL = "OMOP:4240824",
     /** Intraperitoneal */
-    INTRAPERITONEAL = "INTRAPERITONEAL",
+    INTRAPERITONEAL = "OMOP:4243022",
     /** Intramedullary */
-    INTRAMEDULLARY = "INTRAMEDULLARY",
+    INTRAMEDULLARY = "OMOP:4246511",
     /** Intrauterine */
-    INTRAUTERINE = "INTRAUTERINE",
+    INTRAUTERINE = "OMOP:4269621",
     /** Nasal */
-    NASAL = "NASAL",
+    NASAL = "OMOP:4262914",
     /** Topical */
-    TOPICAL = "TOPICAL",
+    TOPICAL = "OMOP:4263689",
     /** Rectal */
-    RECTAL = "RECTAL",
+    RECTAL = "OMOP:4290759",
     /** Sublingual */
-    SUBLINGUAL = "SUBLINGUAL",
+    SUBLINGUAL = "OMOP:4292110",
     /** Intraluminal */
-    INTRALUMINAL = "INTRALUMINAL",
+    INTRALUMINAL = "OMOP:4292410",
     /** Transcervical */
-    TRANSCERVICAL = "TRANSCERVICAL",
+    TRANSCERVICAL = "OMOP:4304730",
     /** Intraabdominal */
-    INTRAABDOMINAL = "INTRAABDOMINAL",
+    INTRAABDOMINAL = "OMOP:4304882",
     /** Transurethral */
-    TRANSURETHRAL = "TRANSURETHRAL",
+    TRANSURETHRAL = "OMOP:4305382",
     /** Peritendinous */
-    PERITENDINOUS = "PERITENDINOUS",
+    PERITENDINOUS = "OMOP:4305564",
     /** Ileostomy */
-    ILEOSTOMY = "ILEOSTOMY",
+    ILEOSTOMY = "OMOP:4305679",
     /** Intracorneal */
-    INTRACORNEAL = "INTRACORNEAL",
+    INTRACORNEAL = "OMOP:4305690",
     /** Nasojejunal */
-    NASOJEJUNAL = "NASOJEJUNAL",
+    NASOJEJUNAL = "OMOP:4305834",
     /** Intracisternal */
-    INTRACISTERNAL = "INTRACISTERNAL",
+    INTRACISTERNAL = "OMOP:4305993",
     /** Subgingival */
-    SUBGINGIVAL = "SUBGINGIVAL",
+    SUBGINGIVAL = "OMOP:4306649",
     /** Intraovarian */
-    INTRAOVARIAN = "INTRAOVARIAN",
+    INTRAOVARIAN = "OMOP:4306657",
     /** Interstitial */
-    INTERSTITIAL = "INTERSTITIAL",
+    INTERSTITIAL = "OMOP:4327128",
     /** Intrasynovial */
-    INTRASYNOVIAL = "INTRASYNOVIAL",
+    INTRASYNOVIAL = "OMOP:4302352",
     /** Intraduodenal */
-    INTRADUODENAL = "INTRADUODENAL",
+    INTRADUODENAL = "OMOP:4302354",
     /** Subtendinous */
-    SUBTENDINOUS = "SUBTENDINOUS",
+    SUBTENDINOUS = "OMOP:4302493",
     /** Intramuscular */
-    INTRAMUSCULAR = "INTRAMUSCULAR",
+    INTRAMUSCULAR = "OMOP:4302612",
     /** Intravitreal */
-    INTRAVITREAL = "INTRAVITREAL",
+    INTRAVITREAL = "OMOP:4302785",
     /** Intraspinal */
-    INTRASPINAL = "INTRASPINAL",
+    INTRASPINAL = "OMOP:4302788",
     /** Intrabronchial */
-    INTRABRONCHIAL = "INTRABRONCHIAL",
+    INTRABRONCHIAL = "OMOP:4303263",
     /** Oropharyngeal */
-    OROPHARYNGEAL = "OROPHARYNGEAL",
+    OROPHARYNGEAL = "OMOP:4303277",
     /** Intracameral */
-    INTRACAMERAL = "INTRACAMERAL",
+    INTRACAMERAL = "OMOP:4303409",
     /** Paracervical */
-    PARACERVICAL = "PARACERVICAL",
+    PARACERVICAL = "OMOP:4303515",
     /** Periurethral */
-    PERIURETHRAL = "PERIURETHRAL",
+    PERIURETHRAL = "OMOP:4303646",
     /** Intracoronal */
-    INTRACORONAL = "INTRACORONAL",
+    INTRACORONAL = "OMOP:4303667",
     /** Retrobulbar */
-    RETROBULBAR = "RETROBULBAR",
+    RETROBULBAR = "OMOP:4303673",
     /** Intracartilaginous */
-    INTRACARTILAGINOUS = "INTRACARTILAGINOUS",
+    INTRACARTILAGINOUS = "OMOP:4303676",
     /** Orogastric */
-    OROGASTRIC = "OROGASTRIC",
+    OROGASTRIC = "OMOP:4303795",
     /** Intratendinous */
-    INTRATENDINOUS = "INTRATENDINOUS",
+    INTRATENDINOUS = "OMOP:4303939",
     /** Peribulbar */
-    PERIBULBAR = "PERIBULBAR",
+    PERIBULBAR = "OMOP:4304274",
     /** Fistula */
-    FISTULA = "FISTULA",
+    FISTULA = "OMOP:4304277",
     /** Surgical drain */
-    SURGICAL_DRAIN = "SURGICAL_DRAIN",
+    SURGICAL_DRAIN = "OMOP:4304412",
     /** Ureteral */
-    URETERAL = "URETERAL",
+    URETERAL = "OMOP:4304571",
     /** Epilesional */
-    EPILESIONAL = "EPILESIONAL",
+    EPILESIONAL = "OMOP:35608078",
     /** Extracorporeal hemodialysis */
-    EXTRACORPOREAL_HEMODIALYSIS = "EXTRACORPOREAL_HEMODIALYSIS",
+    EXTRACORPOREAL_HEMODIALYSIS = "OMOP:35624178",
     /** Suprachoroidal */
-    SUPRACHOROIDAL = "SUPRACHOROIDAL",
+    SUPRACHOROIDAL = "OMOP:37174548",
     /** Extracorporeal */
-    EXTRACORPOREAL = "EXTRACORPOREAL",
+    EXTRACORPOREAL = "OMOP:37018288",
     /** Intracorporus cavernosum */
-    INTRACORPORUS_CAVERNOSUM = "INTRACORPORUS_CAVERNOSUM",
+    INTRACORPORUS_CAVERNOSUM = "OMOP:37174549",
     /** Intraglandular */
-    INTRAGLANDULAR = "INTRAGLANDULAR",
+    INTRAGLANDULAR = "OMOP:37207460",
     /** Intracholangiopancreatic */
-    INTRACHOLANGIOPANCREATIC = "INTRACHOLANGIOPANCREATIC",
+    INTRACHOLANGIOPANCREATIC = "OMOP:37207461",
     /** Intraportal */
-    INTRAPORTAL = "INTRAPORTAL",
+    INTRAPORTAL = "OMOP:37207462",
     /** Peritumoral */
-    PERITUMORAL = "PERITUMORAL",
+    PERITUMORAL = "OMOP:37207463",
     /** Posterior juxtascleral */
-    POSTERIOR_JUXTASCLERAL = "POSTERIOR_JUXTASCLERAL",
+    POSTERIOR_JUXTASCLERAL = "OMOP:37207464",
     /** Subretinal */
-    SUBRETINAL = "SUBRETINAL",
+    SUBRETINAL = "OMOP:37207465",
     /** Infiltration */
-    INFILTRATION = "INFILTRATION",
+    INFILTRATION = "OMOP:37397638",
     /** Transendocardial */
-    TRANSENDOCARDIAL = "TRANSENDOCARDIAL",
+    TRANSENDOCARDIAL = "OMOP:40487850",
     /** Transplacental */
-    TRANSPLACENTAL = "TRANSPLACENTAL",
+    TRANSPLACENTAL = "OMOP:40487858",
     /** Intraepidermal */
-    INTRAEPIDERMAL = "INTRAEPIDERMAL",
+    INTRAEPIDERMAL = "OMOP:40487983",
     /** Intracerebral */
-    INTRACEREBRAL = "INTRACEREBRAL",
+    INTRACEREBRAL = "OMOP:40488317",
     /** Intrajejunal */
-    INTRAJEJUNAL = "INTRAJEJUNAL",
+    INTRAJEJUNAL = "OMOP:40489989",
     /** Intracolonic */
-    INTRACOLONIC = "INTRACOLONIC",
+    INTRACOLONIC = "OMOP:40489990",
     /** Cutaneous */
-    CUTANEOUS = "CUTANEOUS",
+    CUTANEOUS = "OMOP:40490507",
     /** Intraileal */
-    INTRAILEAL = "INTRAILEAL",
+    INTRAILEAL = "OMOP:40490837",
     /** Periodontal */
-    PERIODONTAL = "PERIODONTAL",
+    PERIODONTAL = "OMOP:40490866",
     /** Peridural */
-    PERIDURAL = "PERIDURAL",
+    PERIDURAL = "OMOP:40490896",
     /** Lower respiratory tract */
-    LOWER_RESPIRATORY_TRACT = "LOWER_RESPIRATORY_TRACT",
+    LOWER_RESPIRATORY_TRACT = "OMOP:40490898",
     /** Intramammary */
-    INTRAMAMMARY = "INTRAMAMMARY",
+    INTRAMAMMARY = "OMOP:40491321",
     /** Intratumor */
-    INTRATUMOR = "INTRATUMOR",
+    INTRATUMOR = "OMOP:40491322",
     /** Transtympanic */
-    TRANSTYMPANIC = "TRANSTYMPANIC",
+    TRANSTYMPANIC = "OMOP:40491830",
     /** Transtracheal */
-    TRANSTRACHEAL = "TRANSTRACHEAL",
+    TRANSTRACHEAL = "OMOP:40491832",
     /** Intraesophageal */
-    INTRAESOPHAGEAL = "INTRAESOPHAGEAL",
+    INTRAESOPHAGEAL = "OMOP:40492284",
     /** Intragingival */
-    INTRAGINGIVAL = "INTRAGINGIVAL",
+    INTRAGINGIVAL = "OMOP:40492286",
     /** Intravascular */
-    INTRAVASCULAR = "INTRAVASCULAR",
+    INTRAVASCULAR = "OMOP:40492287",
     /** Intradural */
-    INTRADURAL = "INTRADURAL",
+    INTRADURAL = "OMOP:40492288",
     /** Intrameningeal */
-    INTRAMENINGEAL = "INTRAMENINGEAL",
+    INTRAMENINGEAL = "OMOP:40492300",
     /** Intragastric */
-    INTRAGASTRIC = "INTRAGASTRIC",
+    INTRAGASTRIC = "OMOP:40492301",
     /** Intrapericardial */
-    INTRAPERICARDIAL = "INTRAPERICARDIAL",
+    INTRAPERICARDIAL = "OMOP:40492305",
     /** Intralingual */
-    INTRALINGUAL = "INTRALINGUAL",
+    INTRALINGUAL = "OMOP:40493227",
     /** Respiratory tract */
-    RESPIRATORY_TRACT = "RESPIRATORY_TRACT",
+    RESPIRATORY_TRACT = "OMOP:40486069",
     /** Intrahepatic */
-    INTRAHEPATIC = "INTRAHEPATIC",
+    INTRAHEPATIC = "OMOP:40493258",
     /** Conjunctival */
-    CONJUNCTIVAL = "CONJUNCTIVAL",
+    CONJUNCTIVAL = "OMOP:40486444",
     /** Intraepicardial */
-    INTRAEPICARDIAL = "INTRAEPICARDIAL",
+    INTRAEPICARDIAL = "OMOP:40487473",
     /** Digestive tract */
-    DIGESTIVE_TRACT = "DIGESTIVE_TRACT",
+    DIGESTIVE_TRACT = "OMOP:40487501",
     /** Ocular */
-    OCULAR = "OCULAR",
+    OCULAR = "OMOP:40549429",
 };
 /**
 * Device codes from SNOMED.
@@ -1571,11 +1571,11 @@ export enum GravityDomainEnum {
 export enum ConditionSeverityEnum {
     
     /** A condition that causes minimal symptoms or functional impairment and typically does not require intensive intervention. */
-    MILD = "MILD",
+    MILD = "OMOP:4116992",
     /** A condition that causes noticeable symptoms or functional impairment and may require active treatment or monitoring. */
-    MODERATE = "MODERATE",
+    MODERATE = "OMOP:4285732",
     /** A condition that causes significant symptoms or functional impairment, often requiring urgent or intensive intervention. */
-    SEVERE = "SEVERE",
+    SEVERE = "OMOP:4087703",
 };
 /**
 * Values describing the relationship between an individual and family members.
@@ -1583,23 +1583,23 @@ export enum ConditionSeverityEnum {
 export enum FamilyRelationshipEnum {
     
     /** A relation to one's self. */
-    ONESELF = "ONESELF",
+    ONESELF = "OMOP:45884467",
     /** A relation to a natural parent (mother or father) when otherwise not specified. */
-    NATURAL_PARENT = "NATURAL_PARENT",
+    NATURAL_PARENT = "OMOP:4029630",
     /** A relation to a natural father. */
-    NATURAL_FATHER = "NATURAL_FATHER",
+    NATURAL_FATHER = "OMOP:4321888",
     /** A relation to a natural mother. */
-    NATURAL_MOTHER = "NATURAL_MOTHER",
+    NATURAL_MOTHER = "OMOP:4277283",
     /** A relation to a natural sibling (sister or brother) when otherwise not specified. */
-    NATURAL_SIBLING = "NATURAL_SIBLING",
+    NATURAL_SIBLING = "OMOP:4218412",
     /** A relation to a natural brother. */
-    NATURAL_BROTHER = "NATURAL_BROTHER",
+    NATURAL_BROTHER = "OMOP:4263682",
     /** A relation to a natural sister. */
-    NATURAL_SISTER = "NATURAL_SISTER",
+    NATURAL_SISTER = "OMOP:4251326",
     /** A relation to a natural child. */
-    NATURAL_CHILD = "NATURAL_CHILD",
+    NATURAL_CHILD = "OMOP:4326600",
     /** A generic blood relation. */
-    BLOOD_RELATIVE = "BLOOD_RELATIVE",
+    BLOOD_RELATIVE = "OMOP:4053608",
 };
 /**
 * Values describing the types of MeasurementObservations.
@@ -2260,25 +2260,25 @@ export enum MeasurementObservationTypeEnum {
 */
 export enum EducationalAttainmentObservationTypeEnum {
     
-    number_8TH_GRADE_OR_LESS = "8TH_GRADE_OR_LESS",
-    HIGH_SCHOOL_NO_DIPLOMA = "HIGH_SCHOOL_NO_DIPLOMA",
-    HIGH_SCHOOL_GRADUATE_GED = "HIGH_SCHOOL_GRADUATE_GED",
-    SOME_COLLEGE_OR_TECH_NO_DEGREE = "SOME_COLLEGE_OR_TECH_NO_DEGREE",
-    COLLEGE_OR_TECH_WITH_DEGREE = "COLLEGE_OR_TECH_WITH_DEGREE",
-    MASTERS_OR_DOCTORAL_DEGREE = "MASTERS_OR_DOCTORAL_DEGREE",
+    number_8TH_GRADE_OR_LESS = "OMOP:1990362",
+    HIGH_SCHOOL_NO_DIPLOMA = "OMOP:1990281",
+    HIGH_SCHOOL_GRADUATE_GED = "OMOP:37079292",
+    SOME_COLLEGE_OR_TECH_NO_DEGREE = "OMOP:45882538",
+    COLLEGE_OR_TECH_WITH_DEGREE = "OMOP:45884846",
+    MASTERS_OR_DOCTORAL_DEGREE = "OMOP:45880652",
     /** Educational attainment is unknown or not reported. */
-    UNKNOWN = "UNKNOWN",
-    GREATER_THAN_HIGH_SCHOOL_OR_EQUIVALENT = "GREATER_THAN_HIGH_SCHOOL_OR_EQUIVALENT",
+    UNKNOWN = "OMOP:45877986",
+    GREATER_THAN_HIGH_SCHOOL_OR_EQUIVALENT = "OMOP:37079441",
 };
 /**
 * Values describing the types of Smoking Status observed in an Observation.
 */
 export enum SmokingStatusObservationTypeEnum {
     
-    CURRENT_SMOKER = "CURRENT_SMOKER",
-    FORMER_SMOKER = "FORMER_SMOKER",
-    NEVER_SMOKED = "NEVER_SMOKED",
-    UNKNOWN_IF_EVER_SMOKED = "UNKNOWN_IF_EVER_SMOKED",
+    CURRENT_SMOKER = "OMOP:40766945",
+    FORMER_SMOKER = "OMOP:45883458",
+    NEVER_SMOKED = "OMOP:45883537",
+    UNKNOWN_IF_EVER_SMOKED = "OMOP:45885135",
 };
 /**
 * Values describing occupation types.
@@ -2454,11 +2454,11 @@ export enum QuantityOperatorEnum {
 export enum SdohEnum {
     
     /** The sum of the income of all family members 15 years and older living in the household over 12 months, before taxes */
-    FAMILY_INCOME = "FAMILY_INCOME",
+    FAMILY_INCOME = "OMOP:4076114",
     /** The highest level of education that an individual has completed */
-    EDUCATIONAL_ATTAINMENT = "EDUCATIONAL_ATTAINMENT",
+    EDUCATIONAL_ATTAINMENT = "OMOP:4022643",
     /** Current type of work participant does to make money */
-    OCCUPATION = "OCCUPATION",
+    OCCUPATION = "OMOP:36203487",
 };
 
 
