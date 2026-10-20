@@ -2266,12 +2266,26 @@ enums:
       relationship_types:
         - rdfs:subClassOf
 
+  CustomConditionConceptEnum:
+    description: >-
+      A constrained set of custom enumerative values for conditions not present in HPO or MONDO.
+    permissible_values:
+      "OMOP:4102124":
+        title: Carotid plaque
+        description: Carotid plaque
+        meaning: OMOP:4102124
+      "OMOP:37472817":
+        title: Interstitial lung abnormality
+        description: Interstitial lung abnormality
+        meaning: OMOP:37472817
+
   ConditionConceptEnum:
     description: >-
-      A constrained set of enumerative values containing both the MONDO values for human diseases and the HPO values for phenotypic abnormalities.
+      A constrained set of enumerative values containing the MONDO values for human diseases, the HPO values for phenotypic abnormalities, and the custom condition concepts.
     inherits:
-      - MondoHumanDiseaseEnum
+      - CustomConditionConceptEnum
       - HpoPhenotypicAbnormalityEnum
+      - MondoHumanDiseaseEnum
   
   ProvenanceEnum:
     description: >-
@@ -5187,18 +5201,20 @@ enums:
   ActivityTypeEnum:
     description: A constrained set of enumerative values describing types of activities.
     permissible_values:
-      FASTING:
-        description: Abstaining from intake of food or liquid
+      ANTIHYPERLIPIDEMICS_MEDICATION_USE:
+        description: The act of taking one or more medication in the class of "antihyperlipidemics"
       BRONCHODILATOR_MEDICATION_USE:
         description: The act of taking one or more medication in the class of "bronchodilators"
       DIABETES_MEDICATION_USE:
         description: The act of taking one or more medication used in control of diabetes
-      ANTIHYPERLIPIDEMICS_MEDICATION_USE:
-        description: The act of taking one or more medication in the class of "antihyperlipidemics"
-      PHYSICAL_ACTIVITY:
-        description: The act of engaging in aerobic movement (e.g., brisk walking, running)
+      FASTING:
+        description: Abstaining from intake of food or liquid
       MEDICAL_PROCEDURE:
         description: A therapeutic or diagnostic procedure undertaken in the context of healthcare or research
+      PHYSICAL_ACTIVITY:
+        description: The act of engaging in aerobic movement (e.g., brisk walking, running)
+      SLEEP:
+        description: The act of sleeping or being in a state of rest
   
   MeasurementQualifierEnum:
     description: A constrained set of enumerative values describing qualifiers of a measurement.
