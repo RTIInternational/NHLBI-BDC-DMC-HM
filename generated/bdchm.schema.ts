@@ -384,7 +384,17 @@ export enum AnatomicSiteEnum {
     
 };
 /**
-* A constrained set of enumerative values containing both the MONDO values for human diseases and the HPO values for phenotypic abnormalities.
+* A constrained set of custom enumerative values for conditions not present in HPO or MONDO.
+*/
+export enum CustomConditionConceptEnum {
+    
+    /** Carotid plaque */
+    Carotid_plaque = "OMOP:4102124",
+    /** Interstitial lung abnormality */
+    Interstitial_lung_abnormality = "OMOP:37472817",
+};
+/**
+* A constrained set of enumerative values containing the MONDO values for human diseases, the HPO values for phenotypic abnormalities, and the custom condition concepts.
 */
 export enum ConditionConceptEnum {
     
@@ -2401,18 +2411,20 @@ export enum MeasuredByPersonnelTypeEnum {
 */
 export enum ActivityTypeEnum {
     
-    /** Abstaining from intake of food or liquid */
-    FASTING = "FASTING",
+    /** The act of taking one or more medication in the class of "antihyperlipidemics" */
+    ANTIHYPERLIPIDEMICS_MEDICATION_USE = "ANTIHYPERLIPIDEMICS_MEDICATION_USE",
     /** The act of taking one or more medication in the class of "bronchodilators" */
     BRONCHODILATOR_MEDICATION_USE = "BRONCHODILATOR_MEDICATION_USE",
     /** The act of taking one or more medication used in control of diabetes */
     DIABETES_MEDICATION_USE = "DIABETES_MEDICATION_USE",
-    /** The act of taking one or more medication in the class of "antihyperlipidemics" */
-    ANTIHYPERLIPIDEMICS_MEDICATION_USE = "ANTIHYPERLIPIDEMICS_MEDICATION_USE",
-    /** The act of engaging in aerobic movement (e.g., brisk walking, running) */
-    PHYSICAL_ACTIVITY = "PHYSICAL_ACTIVITY",
+    /** Abstaining from intake of food or liquid */
+    FASTING = "FASTING",
     /** A therapeutic or diagnostic procedure undertaken in the context of healthcare or research */
     MEDICAL_PROCEDURE = "MEDICAL_PROCEDURE",
+    /** The act of engaging in aerobic movement (e.g., brisk walking, running) */
+    PHYSICAL_ACTIVITY = "PHYSICAL_ACTIVITY",
+    /** The act of sleeping or being in a state of rest */
+    SLEEP = "SLEEP",
 };
 /**
 * A constrained set of enumerative values describing qualifiers of a measurement.
