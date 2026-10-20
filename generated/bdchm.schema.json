@@ -33,12 +33,13 @@
         "ActivityTypeEnum": {
             "description": "A constrained set of enumerative values describing types of activities.",
             "enum": [
-                "FASTING",
+                "ANTIHYPERLIPIDEMICS_MEDICATION_USE",
                 "BRONCHODILATOR_MEDICATION_USE",
                 "DIABETES_MEDICATION_USE",
-                "ANTIHYPERLIPIDEMICS_MEDICATION_USE",
+                "FASTING",
+                "MEDICAL_PROCEDURE",
                 "PHYSICAL_ACTIVITY",
-                "MEDICAL_PROCEDURE"
+                "SLEEP"
             ],
             "title": "ActivityTypeEnum",
             "type": "string"
@@ -398,7 +399,7 @@
             "type": "object"
         },
         "ConditionConceptEnum": {
-            "description": "A constrained set of enumerative values containing both the MONDO values for human diseases and the HPO values for phenotypic abnormalities.",
+            "description": "A constrained set of enumerative values containing the MONDO values for human diseases, the HPO values for phenotypic abnormalities, and the custom condition concepts.",
             "title": "ConditionConceptEnum",
             "type": "string"
         },
@@ -469,6 +470,15 @@
             ],
             "title": "Context",
             "type": "object"
+        },
+        "CustomConditionConceptEnum": {
+            "description": "A constrained set of custom enumerative values for conditions not present in HPO or MONDO.",
+            "enum": [
+                "OMOP:4102124",
+                "OMOP:37472817"
+            ],
+            "title": "CustomConditionConceptEnum",
+            "type": "string"
         },
         "DataUseEnum": {
             "description": "A constrained set of enumerative values drawn from the Data Use Ontology (DUO). The DUO is an ontology which represent data use conditions.",
