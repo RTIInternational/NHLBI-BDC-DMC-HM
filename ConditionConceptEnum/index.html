@@ -389,7 +389,7 @@
 
 
 <h1 id="enum-conditionconceptenum">Enum: ConditionConceptEnum</h1>
-<p><em>A constrained set of enumerative values containing both the MONDO values for human diseases and the HPO values for phenotypic abnormalities.</em></p>
+<p><em>A constrained set of enumerative values containing the MONDO values for human diseases, the HPO values for phenotypic abnormalities, and the custom condition concepts.</em></p>
 <p>URI: <a href="./">ConditionConceptEnum</a></p>
 <p><em>This is a dynamic enum</em></p>
 <h2 id="slots">Slots</h2>
@@ -416,13 +416,15 @@
 <details>
 
 <pre><code class="language-yaml">name: ConditionConceptEnum
-description: A constrained set of enumerative values containing both the MONDO values
-  for human diseases and the HPO values for phenotypic abnormalities.
+description: A constrained set of enumerative values containing the MONDO values for
+  human diseases, the HPO values for phenotypic abnormalities, and the custom condition
+  concepts.
 from_schema: https://w3id.org/bdchm
 rank: 1000
 inherits:
-- MondoHumanDiseaseEnum
+- CustomConditionConceptEnum
 - HpoPhenotypicAbnormalityEnum
+- MondoHumanDiseaseEnum
 
 </code></pre>
 
