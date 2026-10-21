@@ -1,0 +1,15 @@
+# Questionnaire Response
+QuestionnaireResponse:
+  id: 6f1c2a3e-8d4b-5e7f-9a0b-1c2d3e4f5a6b
+  has_questionnaire: 0b7e9f12-3c4d-5e6f-8a9b-0c1d2e3f4a5b # CES-D-10
+  associated_visit: 27c68f26-e702-4cc0-b78a-59eb8618d460
+  age_at_response: 18250
+  items:
+    - has_questionnaire_item: 1a2b3c4d-5e6f-5a7b-8c9d-0e1f2a3b4c5d # CES-D-10 item 1
+      response_value:
+        value: Rarely or none of the time (< 1 day)
+        code_concept: "1"
+    - has_questionnaire_item: 2b3c4d5e-6f7a-5b8c-9d0e-1f2a3b4c5d6e # CES-D-10 item 2
+      response_value:
+        value: Some or a little of the time (1-2 days)
+        code_concept: "2"
