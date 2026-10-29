@@ -25,9 +25,7 @@ jobs:
         run: uv sync --locked
 
       - name: Run pre-commit checks
-        uses: pre-commit/action@v3.0.1
-        with:
-          extra_args: --all-files
+        run: uv run pre-commit run --show-diff-on-failure --color=always --all-files
 
       - name: Run linkml-lint
         run: uv run linkml-lint src/bdchm/schema/bdchm.yaml
