@@ -21,14 +21,7 @@ EXAMPLE_DIR = REPO_ROOT / "src" / "data" / "examples"
 # remove an entry once its example (or the model) is fixed. strict=False
 # so a fixed example doesn't fail CI before its entry is removed here.
 KNOWN_NONCONFORMING = {
-    "alt_measurement_observation.yaml",
-    "alt_measurement_observation_qualitative.yaml",
-    "drug_exposure.yaml",
-    "family_medical_history.yaml",
     "measurement_observation.yaml",
-    "patient_condition.yaml",
-    "patient_medical_history.yaml",
-    "person_participant_demography.yaml",
 }
 
 
@@ -42,10 +35,6 @@ def _example_params():
         yield pytest.param(path, id=path.name, marks=marks)
 
 
-@pytest.mark.xfail(
-    reason="schema metamodel fixes land in PR #190; passes once merged",
-    strict=False,
-)
 def test_schema_validates_against_metamodel():
     result = subprocess.run(
         [sys.executable, "-m", "linkml.validator.cli", str(SCHEMA)],
