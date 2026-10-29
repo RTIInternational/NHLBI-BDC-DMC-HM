@@ -21,15 +21,8 @@ EXAMPLE_DIR = REPO_ROOT / "src" / "data" / "examples"
 # remove an entry once its example (or the model) is fixed. strict=False
 # so a fixed example doesn't fail CI before its entry is removed here.
 KNOWN_NONCONFORMING = {
-    "alt_measurement_observation.yaml",
-    "alt_measurement_observation_qualitative.yaml",
     "bp_measurement_observation_set.yaml",
-    "drug_exposure.yaml",
-    "family_medical_history.yaml",
     "measurement_observation.yaml",
-    "patient_condition.yaml",
-    "patient_medical_history.yaml",
-    "person_participant_demography.yaml",
 }
 
 
