@@ -10,4 +10,4 @@ Condition:
   condition_provenance: EHR_PROBLEM_LIST_ENTRY
   condition_status: HISTORICAL
   condition_severity:
-  relationship_to_participant: NATURAL_FATHER
+  relationship_to_participant: OMOP:4321888 # NATURAL_FATHER
