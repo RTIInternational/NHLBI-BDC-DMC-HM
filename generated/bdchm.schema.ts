@@ -40,7 +40,6 @@ export type SpecimenStorageActivityId = string;
 export type SpecimenTransportActivityId = string;
 export type BiologicProductId = string;
 export type SubstanceId = string;
-export type QuantityId = string;
 export type BodySiteId = string;
 export type ObservationSetId = string;
 export type ObservationId = string;
@@ -80,9 +79,11 @@ export enum DataUseEnum {
 export enum EthnicityEnum {
     
     /** A person of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race. The term, "Spanish origin" can be used in addition to "Hispanic or Latino". (OMB) */
-    HISPANIC_OR_LATINO = "HISPANIC_OR_LATINO",
+    HISPANIC_OR_LATINO = "OMOP:38003563",
     /** A person not of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race. */
-    NOT_HISPANIC_OR_LATINO = "NOT_HISPANIC_OR_LATINO",
+    NOT_HISPANIC_OR_LATINO = "OMOP:38003564",
+    /** Not known, not observed, not recorded, or refused. */
+    UNKNOWN = "OMOP:45877986",
 };
 /**
 * A constrained set of enumerative values containing the United States Office of Management and Budget (OMB) values for race.
@@ -90,19 +91,21 @@ export enum EthnicityEnum {
 export enum RaceEnum {
     
     /** A person having origins in any of the original peoples of North and South America (including Central America) and who maintains tribal affiliation or community attachment. (OMB) */
-    AMERICAN_INDIAN_OR_ALASKA_NATIVE = "AMERICAN_INDIAN_OR_ALASKA_NATIVE",
+    AMERICAN_INDIAN_OR_ALASKA_NATIVE = "OMOP:8657",
     /** A person having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent, including for example, Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam. (OMB) */
-    ASIAN = "ASIAN",
+    ASIAN = "OMOP:8515",
     /** A person having origins in any of the Black racial groups of Africa. Terms such as "Haitian" or "Negro" can be used in addition to "Black or African American". (OMB) */
-    BLACK_OR_AFRICAN_AMERICAN = "BLACK_OR_AFRICAN_AMERICAN",
+    BLACK_OR_AFRICAN_AMERICAN = "OMOP:8516",
+    /** A person having origins in any of the original peoples of the Middle East or North Africa, including, for example, Lebanese, Iranian, Egyptian, Syrian, Iraqi, and Israeli. (OMB) */
+    MIDDLE_EASTERN_OR_NORTH_AFRICAN = "OMOP:38003615",
     /** Denotes a person having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands. The term covers particularly people who identify themselves as part-Hawaiian, Native Hawaiian, Guamanian or Chamorro, Carolinian, Samoan, Chuukese (Trukese), Fijian, Kosraean, Melanesian, Micronesian, Northern Mariana Islander, Palauan, Papua New Guinean, Pohnpeian, Polynesian, Solomon Islander, Tahitian, Tokelauan, Tongan, Yapese, or Pacific Islander, not specified. */
-    NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER = "NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER",
+    NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER = "OMOP:8557",
     /** Not known, not observed, not recorded, or refused. */
-    UNKNOWN = "UNKNOWN",
+    UNKNOWN = "OMOP:45877986",
     /** Denotes person with European, Middle Eastern, or North African ancestral origin who identifies, or is identified, as White. */
-    WHITE = "WHITE",
+    WHITE = "OMOP:8527",
     /** A person having more than one race. */
-    MORE_THAN_ONE_RACE = "MORE_THAN_ONE_RACE",
+    MORE_THAN_ONE_RACE = "OMOP:45880900",
 };
 /**
 * A constrained set of enumerative values containing the OMOP values for sex.
@@ -110,11 +113,11 @@ export enum RaceEnum {
 export enum SexEnum {
     
     /** A person who belongs to the sex that normally produces sperm. */
-    MALE = "MALE",
+    MALE = "OMOP:8507",
     /** A person who belongs to the sex that normally produces ova. */
-    FEMALE = "FEMALE",
+    FEMALE = "OMOP:8532",
     /** Not known, not observed, not recorded, or refused. */
-    UNKNOWN = "UNKNOWN",
+    UNKNOWN = "OMOP:45877986",
 };
 /**
 * A constrained set of enumerative values containing the NCBITaxon values for cellular organisms.
@@ -140,9 +143,9 @@ export enum InstrumentEnum {
 export enum VitalStatusEnum {
     
     /** Showing characteristics of life; displaying signs of life. (NCIt) */
-    ALIVE = "ALIVE",
+    ALIVE = "OMOP:4230556",
     /** The cessation of life. (NCIt) */
-    DEAD = "DEAD",
+    DEAD = "OMOP:434489",
 };
 /**
 * A constrained set of enumerative values containing the VBO values for vertebrate breeds.
@@ -191,6 +194,8 @@ export enum VisitCategoryEnum {
     PERSON_UNDER_INVESTIGATION_PUI = "PERSON_UNDER_INVESTIGATION_PUI",
     /** Person visiting pharmacy for dispensing of Drug, at a Care Site, within one day */
     PHARMACY_VISIT = "PHARMACY_VISIT",
+    /** Person visiting a clinic for study-specific data collection or other reasons */
+    STUDY_SITE_VISIT = "STUDY_SITE_VISIT",
     /** Person receiving goods or services from a non-clinical supplier or durable medical equipment provider, outside of a traditional Care Site encounter */
     SUPPLIER_SERVICE_PROVIDER = "SUPPLIER_SERVICE_PROVIDER",
     /** Patient engages with Provider through communication media */
@@ -319,16 +324,10 @@ export enum VisitProvenanceEnum {
     PATIENT_SELF_REPORT = "PATIENT_SELF-REPORT",
     /** Patient self-tested */
     PATIENT_SELF_TESTED = "PATIENT_SELF-TESTED",
-    /** Payer system record (paid premium) */
-    PAYER_SYSTEM_RECORD_LEFT_PARENTHESISPAID_PREMIUMRIGHT_PARENTHESIS = "PAYER_SYSTEM_RECORD_(PAID_PREMIUM)",
-    /** Payer system record (primary payer) */
-    PAYER_SYSTEM_RECORD_LEFT_PARENTHESISPRIMARY_PAYERRIGHT_PARENTHESIS = "PAYER_SYSTEM_RECORD_(PRIMARY_PAYER)",
-    /** Payer system record (secondary payer) */
-    PAYER_SYSTEM_RECORD_LEFT_PARENTHESISSECONDARY_PAYERRIGHT_PARENTHESIS = "PAYER_SYSTEM_RECORD_(SECONDARY_PAYER)",
     /** Pharmacy claim */
     PHARMACY_CLAIM = "PHARMACY_CLAIM",
     /** Point of care/express lab */
-    POINT_OF_CARESOLIDUSEXPRESS_LAB = "POINT_OF_CARE/EXPRESS_LAB",
+    POINT_OF_CARE_OR_EXPRESS_LAB = "POINT_OF_CARE_OR_EXPRESS_LAB",
     /** Pre-qualification time period */
     PRE_QUALIFICATION_TIME_PERIOD = "PRE-QUALIFICATION_TIME_PERIOD",
     /** Professional claim */
@@ -355,6 +354,8 @@ export enum VisitProvenanceEnum {
     STANDARD_ALGORITHM_FROM_EHR = "STANDARD_ALGORITHM_FROM_EHR",
     /** Standard algorithm from claims */
     STANDARD_ALGORITHM_FROM_CLAIMS = "STANDARD_ALGORITHM_FROM_CLAIMS",
+    /** The condition was recorded in a study-related record. */
+    STUDY_RECORD = "STUDY_RECORD",
     /** Survey */
     SURVEY = "SURVEY",
     /** US Social Security Death Master File */
@@ -383,7 +384,17 @@ export enum AnatomicSiteEnum {
     
 };
 /**
-* A constrained set of enumerative values containing both the MONDO values for human diseases and the HPO values for phenotypic abnormalities.
+* A constrained set of custom enumerative values for conditions not present in HPO or MONDO.
+*/
+export enum CustomConditionConceptEnum {
+    
+    /** Carotid plaque */
+    Carotid_plaque = "OMOP:4102124",
+    /** Interstitial lung abnormality */
+    Interstitial_lung_abnormality = "OMOP:37472817",
+};
+/**
+* A constrained set of enumerative values containing the MONDO values for human diseases, the HPO values for phenotypic abnormalities, and the custom condition concepts.
 */
 export enum ConditionConceptEnum {
     
@@ -400,6 +411,8 @@ export enum ProvenanceEnum {
     CLAIM_ENROLMENT_RECORD = "CLAIM_ENROLMENT_RECORD",
     COST_RECORD = "COST_RECORD",
     DEATH_CERTIFICATE = "DEATH_CERTIFICATE",
+    /** The condition was recorded in a death record, a more general category that includes death certificates but also other types of records of death (e.g. autopsy record, medical examiner report */
+    DEATH_RECORD = "DEATH_RECORD",
     DENTAL_CLAIM = "DENTAL_CLAIM",
     EHR = "EHR",
     EHR_ADMINISTRATION_RECORD = "EHR_ADMINISTRATION_RECORD",
@@ -427,6 +440,8 @@ export enum ProvenanceEnum {
     EHR_PROBLEM_LIST = "EHR_PROBLEM_LIST",
     EHR_RADIOLOGY_REPORT = "EHR_RADIOLOGY_REPORT",
     EHR_REFERRAL_RECORD = "EHR_REFERRAL_RECORD",
+    /** A review of clinical event information that describes a suspected clinical occurrence without applying standardized case-definition criteria or independent physician review. It does not reflect a validated determination of whether the event meets a formal clinical definition. */
+    EVENT_REVIEW = "EVENT_REVIEW",
     EXTERNAL_CDM_INSTANCE = "EXTERNAL_CDM_INSTANCE",
     FACILITY_CLAIM = "FACILITY_CLAIM",
     FACILITY_CLAIM_DETAIL = "FACILITY_CLAIM_DETAIL",
@@ -434,9 +449,12 @@ export enum ProvenanceEnum {
     GEOGRAPHIC_ISOLATION_RECORD = "GEOGRAPHIC_ISOLATION_RECORD",
     GOVERNMENT_REPORT = "GOVERNMENT_REPORT",
     HEALTH_INFORMATION_EXCHANGE_RECORD = "HEALTH_INFORMATION_EXCHANGE_RECORD",
+    /** The condition was recorded in a patient's health record. */
+    HEALTH_RECORD = "HEALTH_RECORD",
     HEALTH_RISK_ASSESSMENT = "HEALTH_RISK_ASSESSMENT",
     HEALTHCARE_PROFESSIONAL_FILLED_SURVEY = "HEALTHCARE_PROFESSIONAL_FILLED_SURVEY",
     HOSPITAL_COST = "HOSPITAL_COST",
+    INFORMANT_INTERVIEW = "INFORMANT_INTERVIEW",
     INPATIENT_CLAIM = "INPATIENT_CLAIM",
     INPATIENT_CLAIM_DETAIL = "INPATIENT_CLAIM_DETAIL",
     INPATIENT_CLAIM_HEADER = "INPATIENT_CLAIM_HEADER",
@@ -448,15 +466,21 @@ export enum ProvenanceEnum {
     OUTPATIENT_CLAIM_DETAIL = "OUTPATIENT_CLAIM_DETAIL",
     OUTPATIENT_CLAIM_HEADER = "OUTPATIENT_CLAIM_HEADER",
     PATIENT_FILLED_SURVEY = "PATIENT_FILLED_SURVEY",
+    /** The condition was recorded based on a patient-provided medication report. */
+    PATIENT_MEDICATION_REPORT = "PATIENT_MEDICATION_REPORT",
     PATIENT_OR_PAYER_PAID_RECORD = "PATIENT_OR_PAYER_PAID_RECORD",
     PATIENT_REPORTED_COST = "PATIENT_REPORTED_COST",
     PATIENT_SELF_REPORT = "PATIENT_SELF_REPORT",
+    /** The condition was recorded based on a patient self-report that was confirmed by a doctor. */
+    PATIENT_SELF_REPORT_DR_CONFIRMED = "PATIENT_SELF_REPORT_DR_CONFIRMED",
     PATIENT_SELF_TESTED = "PATIENT_SELF_TESTED",
     PAYER_SYSTEM_RECORD_PAID_PREMIUM = "PAYER_SYSTEM_RECORD_PAID_PREMIUM",
     PAYER_SYSTEM_RECORD_PRIMARY_PAYER = "PAYER_SYSTEM_RECORD_PRIMARY_PAYER",
     PAYER_SYSTEM_RECORD_SECONDARY_PAYER = "PAYER_SYSTEM_RECORD_SECONDARY_PAYER",
     PHARMACY_CLAIM = "PHARMACY_CLAIM",
-    POINT_OF_CARESOLIDUSEXPRESS_LAB = "POINT_OF_CARE/EXPRESS_LAB",
+    /** The condition was recorded following adjudication by one or more physicians. */
+    PHYSICIAN_ADJUDICATION = "PHYSICIAN_ADJUDICATION",
+    POINT_OF_CARE_OR_EXPRESS_LAB = "POINT_OF_CARE_OR_EXPRESS_LAB",
     PRE_QUALIFICATION_TIME_PERIOD = "PRE_QUALIFICATION_TIME_PERIOD",
     PROFESSIONAL_CLAIM = "PROFESSIONAL_CLAIM",
     PROFESSIONAL_CLAIM_DETAIL = "PROFESSIONAL_CLAIM_DETAIL",
@@ -470,10 +494,14 @@ export enum ProvenanceEnum {
     STANDARD_ALGORITHM = "STANDARD_ALGORITHM",
     STANDARD_ALGORITHM_FROM_CLAIMS = "STANDARD_ALGORITHM_FROM_CLAIMS",
     STANDARD_ALGORITHM_FROM_EHR = "STANDARD_ALGORITHM_FROM_EHR",
+    /** The condition was recorded in a study-related record. */
+    STUDY_RECORD = "STUDY_RECORD",
     SURVEY = "SURVEY",
     URGENT_LAB = "URGENT_LAB",
     US_SOCIAL_SECURITY_DEATH_MASTER_FILE = "US_SOCIAL_SECURITY_DEATH_MASTER_FILE",
     VISION_CLAIM = "VISION_CLAIM",
+    /** The condition was recorded as a working diagnosis. */
+    WORKING_DIAGNOSIS = "WORKING_DIAGNOSIS",
 };
 /**
 * A constrained set of enumerative values indicating whether something is present, absent, or its status is unknown.
@@ -498,6 +526,20 @@ export enum HistoricalStatusEnum {
 */
 export enum ProcedureConceptEnum {
     
+    /** SNOMED coronary angioplasty | Percutaneous transluminal angioplasty of coronary artery using imaging guidance with contrast */
+    OMOPCOLON4184832 = "OMOP:4184832",
+    /** SNOMED Coronary artery bypass graft */
+    OMOPCOLON4336464 = "OMOP:4336464",
+    /** SNOMED implantable cardiac pacemaker */
+    OMOPCOLON45772840 = "OMOP:45772840",
+    /** SNOMED operation on carotid artery */
+    OMOPCOLON1242799 = "OMOP:1242799",
+    /** SNOMED dilation - action */
+    OMOPCOLON4044550 = "OMOP:4044550",
+    /** SNOMED revascularization - action */
+    OMOPCOLON4178405 = "OMOP:4178405",
+    /** SNOMED cardiac catheterization */
+    OMOPCOLON4223020 = "OMOP:4223020",
 };
 /**
 * Drug codes from RxNorm.
@@ -510,6 +552,8 @@ export enum DrugExposureConceptEnum {
 */
 export enum DrugExposureProvenanceEnum {
     
+    /** Participant is discharged from an inpatient facility either with the medication or a prescription for the medication */
+    AT_DISCHARGE = "AT_DISCHARGE",
     /** Randomized Drug */
     RANDOMIZED_DRUG = "RANDOMIZED_DRUG",
     /** Patient Self-Reported Medication */
@@ -526,6 +570,8 @@ export enum DrugExposureProvenanceEnum {
     PRESCRIPTION_DISPENSED_THROUGH_MAIL_ORDER = "PRESCRIPTION_DISPENSED_THROUGH_MAIL_ORDER",
     /** Prescription written */
     PRESCRIPTION_WRITTEN = "PRESCRIPTION_WRITTEN",
+    /** For use when a Participant brings in their medications and an investigator makes a list of medications using the labels */
+    PRESCRIPTION_LABEL = "PRESCRIPTION_LABEL",
     /** Medication list entry */
     MEDICATION_LIST_ENTRY = "MEDICATION_LIST_ENTRY",
     /** Physician administered drug (identified as procedure) */
@@ -549,335 +595,335 @@ export enum DrugExposureProvenanceEnum {
 export enum DrugRouteEnum {
     
     /** Arteriovenous fistula */
-    ARTERIOVENOUS_FISTULA = "ARTERIOVENOUS_FISTULA",
+    ARTERIOVENOUS_FISTULA = "OMOP:44783786",
     /** Haemodiafiltration */
-    HAEMODIAFILTRATION = "HAEMODIAFILTRATION",
+    HAEMODIAFILTRATION = "OMOP:44801748",
     /** Sublesional */
-    SUBLESIONAL = "SUBLESIONAL",
+    SUBLESIONAL = "OMOP:46270168",
     /** Intraneural */
-    INTRANEURAL = "INTRANEURAL",
+    INTRANEURAL = "OMOP:46272911",
     /** Intramural */
-    INTRAMURAL = "INTRAMURAL",
+    INTRAMURAL = "OMOP:46272926",
     /** Intracatheter instillation */
-    INTRACATHETER_INSTILLATION = "INTRACATHETER_INSTILLATION",
+    INTRACATHETER_INSTILLATION = "OMOP:605428",
     /** Sublabial */
-    SUBLABIAL = "SUBLABIAL",
+    SUBLABIAL = "OMOP:600817",
     /** Intra-articular */
-    INTRA_ARTICULAR = "INTRA_ARTICULAR",
+    INTRA_ARTICULAR = "OMOP:4006860",
     /** Intradialytic */
-    INTRADIALYTIC = "INTRADIALYTIC",
+    INTRADIALYTIC = "OMOP:618805",
     /** Arteriovenous graft */
-    ARTERIOVENOUS_GRAFT = "ARTERIOVENOUS_GRAFT",
+    ARTERIOVENOUS_GRAFT = "OMOP:762840",
     /** Otic */
-    OTIC = "OTIC",
+    OTIC = "OMOP:4023156",
     /** Oral */
-    ORAL = "ORAL",
+    ORAL = "OMOP:4132161",
     /** Vaginal */
-    VAGINAL = "VAGINAL",
+    VAGINAL = "OMOP:4057765",
     /** Route of administration value */
-    ROUTE_OF_ADMINISTRATION_VALUE = "ROUTE_OF_ADMINISTRATION_VALUE",
+    ROUTE_OF_ADMINISTRATION_VALUE = "OMOP:4106215",
     /** Gastrostomy */
-    GASTROSTOMY = "GASTROSTOMY",
+    GASTROSTOMY = "OMOP:4132254",
     /** Nasogastric */
-    NASOGASTRIC = "NASOGASTRIC",
+    NASOGASTRIC = "OMOP:4132711",
     /** Jejunostomy */
-    JEJUNOSTOMY = "JEJUNOSTOMY",
+    JEJUNOSTOMY = "OMOP:4133177",
     /** Subcutaneous */
-    SUBCUTANEOUS = "SUBCUTANEOUS",
+    SUBCUTANEOUS = "OMOP:4142048",
     /** Gingival */
-    GINGIVAL = "GINGIVAL",
+    GINGIVAL = "OMOP:4156704",
     /** Intracardiac */
-    INTRACARDIAC = "INTRACARDIAC",
+    INTRACARDIAC = "OMOP:4156705",
     /** Intradermal */
-    INTRADERMAL = "INTRADERMAL",
+    INTRADERMAL = "OMOP:4156706",
     /** Intrapleural */
-    INTRAPLEURAL = "INTRAPLEURAL",
+    INTRAPLEURAL = "OMOP:4156707",
     /** Periarticular */
-    PERIARTICULAR = "PERIARTICULAR",
+    PERIARTICULAR = "OMOP:4156708",
     /** Endosinusial */
-    ENDOSINUSIAL = "ENDOSINUSIAL",
+    ENDOSINUSIAL = "OMOP:4157756",
     /** Intracavernous */
-    INTRACAVERNOUS = "INTRACAVERNOUS",
+    INTRACAVERNOUS = "OMOP:4157757",
     /** Intralesional */
-    INTRALESIONAL = "INTRALESIONAL",
+    INTRALESIONAL = "OMOP:4157758",
     /** Intralymphatic */
-    INTRALYMPHATIC = "INTRALYMPHATIC",
+    INTRALYMPHATIC = "OMOP:4157759",
     /** Intraocular */
-    INTRAOCULAR = "INTRAOCULAR",
+    INTRAOCULAR = "OMOP:4157760",
     /** Perineural */
-    PERINEURAL = "PERINEURAL",
+    PERINEURAL = "OMOP:4157761",
     /** Intracranial */
-    INTRACRANIAL = "INTRACRANIAL",
+    INTRACRANIAL = "OMOP:4171079",
     /** Dental */
-    DENTAL = "DENTAL",
+    DENTAL = "OMOP:4163765",
     /** Intraamniotic */
-    INTRAAMNIOTIC = "INTRAAMNIOTIC",
+    INTRAAMNIOTIC = "OMOP:4163767",
     /** Intrabursal */
-    INTRABURSAL = "INTRABURSAL",
+    INTRABURSAL = "OMOP:4163768",
     /** Intradiscal */
-    INTRADISCAL = "INTRADISCAL",
+    INTRADISCAL = "OMOP:4163769",
     /** Subconjunctival */
-    SUBCONJUNCTIVAL = "SUBCONJUNCTIVAL",
+    SUBCONJUNCTIVAL = "OMOP:4163770",
     /** Mucous fistula */
-    MUCOUS_FISTULA = "MUCOUS_FISTULA",
+    MUCOUS_FISTULA = "OMOP:4171243",
     /** Intraprostatic */
-    INTRAPROSTATIC = "INTRAPROSTATIC",
+    INTRAPROSTATIC = "OMOP:4171725",
     /** Intravenous peripheral */
-    INTRAVENOUS_PERIPHERAL = "INTRAVENOUS_PERIPHERAL",
+    INTRAVENOUS_PERIPHERAL = "OMOP:4171884",
     /** Periosteal */
-    PERIOSTEAL = "PERIOSTEAL",
+    PERIOSTEAL = "OMOP:4171893",
     /** Esophagostomy */
-    ESOPHAGOSTOMY = "ESOPHAGOSTOMY",
+    ESOPHAGOSTOMY = "OMOP:4172191",
     /** Nasoduodenal */
-    NASODUODENAL = "NASODUODENAL",
+    NASODUODENAL = "OMOP:4172316",
     /** Percutaneous */
-    PERCUTANEOUS = "PERCUTANEOUS",
+    PERCUTANEOUS = "OMOP:4177987",
     /** Suborbital */
-    SUBORBITAL = "SUBORBITAL",
+    SUBORBITAL = "OMOP:4166865",
     /** Intrathoracic */
-    INTRATHORACIC = "INTRATHORACIC",
+    INTRATHORACIC = "OMOP:4167393",
     /** Enteral */
-    ENTERAL = "ENTERAL",
+    ENTERAL = "OMOP:4167540",
     /** Intramyometrial */
-    INTRAMYOMETRIAL = "INTRAMYOMETRIAL",
+    INTRAMYOMETRIAL = "OMOP:4168038",
     /** Colostomy */
-    COLOSTOMY = "COLOSTOMY",
+    COLOSTOMY = "OMOP:4168047",
     /** Intratympanic */
-    INTRATYMPANIC = "INTRATYMPANIC",
+    INTRATYMPANIC = "OMOP:4168656",
     /** Gastro-intestinal stoma */
-    GASTRO_INTESTINAL_STOMA = "GASTRO_INTESTINAL_STOMA",
+    GASTRO_INTESTINAL_STOMA = "OMOP:4168665",
     /** Intrapulmonary */
-    INTRAPULMONARY = "INTRAPULMONARY",
+    INTRAPULMONARY = "OMOP:4169270",
     /** Intrasinal */
-    INTRASINAL = "INTRASINAL",
+    INTRASINAL = "OMOP:4169440",
     /** Tumor cavity */
-    TUMOR_CAVITY = "TUMOR_CAVITY",
+    TUMOR_CAVITY = "OMOP:4169472",
     /** Submucosal */
-    SUBMUCOSAL = "SUBMUCOSAL",
+    SUBMUCOSAL = "OMOP:4169634",
     /** Intraductal */
-    INTRADUCTAL = "INTRADUCTAL",
+    INTRADUCTAL = "OMOP:4170083",
     /** Intravenous central */
-    INTRAVENOUS_CENTRAL = "INTRAVENOUS_CENTRAL",
+    INTRAVENOUS_CENTRAL = "OMOP:4170113",
     /** Paravertebral */
-    PARAVERTEBRAL = "PARAVERTEBRAL",
+    PARAVERTEBRAL = "OMOP:4170267",
     /** Urostomy */
-    UROSTOMY = "UROSTOMY",
+    UROSTOMY = "OMOP:4170435",
     /** Laryngeal */
-    LARYNGEAL = "LARYNGEAL",
+    LARYNGEAL = "OMOP:4170440",
     /** Surgical cavity */
-    SURGICAL_CAVITY = "SURGICAL_CAVITY",
+    SURGICAL_CAVITY = "OMOP:4170771",
     /** Intravenous */
-    INTRAVENOUS = "INTRAVENOUS",
+    INTRAVENOUS = "OMOP:4171047",
     /** Intratesticular */
-    INTRATESTICULAR = "INTRATESTICULAR",
+    INTRATESTICULAR = "OMOP:4171067",
     /** Endocervical */
-    ENDOCERVICAL = "ENDOCERVICAL",
+    ENDOCERVICAL = "OMOP:4186831",
     /** Endotracheopulmonary */
-    ENDOTRACHEOPULMONARY = "ENDOTRACHEOPULMONARY",
+    ENDOTRACHEOPULMONARY = "OMOP:4186832",
     /** Extra-amniotic */
-    EXTRA_AMNIOTIC = "EXTRA_AMNIOTIC",
+    EXTRA_AMNIOTIC = "OMOP:4186833",
     /** Gastroenteral */
-    GASTROENTERAL = "GASTROENTERAL",
+    GASTROENTERAL = "OMOP:4186834",
     /** Intracervical */
-    INTRACERVICAL = "INTRACERVICAL",
+    INTRACERVICAL = "OMOP:4186835",
     /** Intracoronary */
-    INTRACORONARY = "INTRACORONARY",
+    INTRACORONARY = "OMOP:4186836",
     /** Intrasternal */
-    INTRASTERNAL = "INTRASTERNAL",
+    INTRASTERNAL = "OMOP:4186837",
     /** Intravesical */
-    INTRAVESICAL = "INTRAVESICAL",
+    INTRAVESICAL = "OMOP:4186838",
     /** Oromucosal */
-    OROMUCOSAL = "OROMUCOSAL",
+    OROMUCOSAL = "OMOP:4186839",
     /** Caudal */
-    CAUDAL = "CAUDAL",
+    CAUDAL = "OMOP:4220455",
     /** Buccal */
-    BUCCAL = "BUCCAL",
+    BUCCAL = "OMOP:4181897",
     /** Ophthalmic */
-    OPHTHALMIC = "OPHTHALMIC",
+    OPHTHALMIC = "OMOP:4184451",
     /** Body cavity */
-    BODY_CAVITY = "BODY_CAVITY",
+    BODY_CAVITY = "OMOP:4222254",
     /** Intraosseous */
-    INTRAOSSEOUS = "INTRAOSSEOUS",
+    INTRAOSSEOUS = "OMOP:4213522",
     /** Intraventricular route - cardiac */
-    INTRAVENTRICULAR_ROUTE_CARDIAC = "INTRAVENTRICULAR_ROUTE_CARDIAC",
+    INTRAVENTRICULAR_ROUTE_CARDIAC = "OMOP:4222259",
     /** Intrabiliary */
-    INTRABILIARY = "INTRABILIARY",
+    INTRABILIARY = "OMOP:4223965",
     /** Intracerebroventricular */
-    INTRACEREBROVENTRICULAR = "INTRACEREBROVENTRICULAR",
+    INTRACEREBROVENTRICULAR = "OMOP:4224886",
     /** Intrathecal */
-    INTRATHECAL = "INTRATHECAL",
+    INTRATHECAL = "OMOP:4217202",
     /** Epidural */
-    EPIDURAL = "EPIDURAL",
+    EPIDURAL = "OMOP:4225555",
     /** Intratracheal */
-    INTRATRACHEAL = "INTRATRACHEAL",
+    INTRATRACHEAL = "OMOP:4229543",
     /** Urethral */
-    URETHRAL = "URETHRAL",
+    URETHRAL = "OMOP:4233974",
     /** Transmucosal */
-    TRANSMUCOSAL = "TRANSMUCOSAL",
+    TRANSMUCOSAL = "OMOP:4232601",
     /** Transdermal */
-    TRANSDERMAL = "TRANSDERMAL",
+    TRANSDERMAL = "OMOP:4262099",
     /** Intra-arterial */
-    INTRA_ARTERIAL = "INTRA_ARTERIAL",
+    INTRA_ARTERIAL = "OMOP:4240824",
     /** Intraperitoneal */
-    INTRAPERITONEAL = "INTRAPERITONEAL",
+    INTRAPERITONEAL = "OMOP:4243022",
     /** Intramedullary */
-    INTRAMEDULLARY = "INTRAMEDULLARY",
+    INTRAMEDULLARY = "OMOP:4246511",
     /** Intrauterine */
-    INTRAUTERINE = "INTRAUTERINE",
+    INTRAUTERINE = "OMOP:4269621",
     /** Nasal */
-    NASAL = "NASAL",
+    NASAL = "OMOP:4262914",
     /** Topical */
-    TOPICAL = "TOPICAL",
+    TOPICAL = "OMOP:4263689",
     /** Rectal */
-    RECTAL = "RECTAL",
+    RECTAL = "OMOP:4290759",
     /** Sublingual */
-    SUBLINGUAL = "SUBLINGUAL",
+    SUBLINGUAL = "OMOP:4292110",
     /** Intraluminal */
-    INTRALUMINAL = "INTRALUMINAL",
+    INTRALUMINAL = "OMOP:4292410",
     /** Transcervical */
-    TRANSCERVICAL = "TRANSCERVICAL",
+    TRANSCERVICAL = "OMOP:4304730",
     /** Intraabdominal */
-    INTRAABDOMINAL = "INTRAABDOMINAL",
+    INTRAABDOMINAL = "OMOP:4304882",
     /** Transurethral */
-    TRANSURETHRAL = "TRANSURETHRAL",
+    TRANSURETHRAL = "OMOP:4305382",
     /** Peritendinous */
-    PERITENDINOUS = "PERITENDINOUS",
+    PERITENDINOUS = "OMOP:4305564",
     /** Ileostomy */
-    ILEOSTOMY = "ILEOSTOMY",
+    ILEOSTOMY = "OMOP:4305679",
     /** Intracorneal */
-    INTRACORNEAL = "INTRACORNEAL",
+    INTRACORNEAL = "OMOP:4305690",
     /** Nasojejunal */
-    NASOJEJUNAL = "NASOJEJUNAL",
+    NASOJEJUNAL = "OMOP:4305834",
     /** Intracisternal */
-    INTRACISTERNAL = "INTRACISTERNAL",
+    INTRACISTERNAL = "OMOP:4305993",
     /** Subgingival */
-    SUBGINGIVAL = "SUBGINGIVAL",
+    SUBGINGIVAL = "OMOP:4306649",
     /** Intraovarian */
-    INTRAOVARIAN = "INTRAOVARIAN",
+    INTRAOVARIAN = "OMOP:4306657",
     /** Interstitial */
-    INTERSTITIAL = "INTERSTITIAL",
+    INTERSTITIAL = "OMOP:4327128",
     /** Intrasynovial */
-    INTRASYNOVIAL = "INTRASYNOVIAL",
+    INTRASYNOVIAL = "OMOP:4302352",
     /** Intraduodenal */
-    INTRADUODENAL = "INTRADUODENAL",
+    INTRADUODENAL = "OMOP:4302354",
     /** Subtendinous */
-    SUBTENDINOUS = "SUBTENDINOUS",
+    SUBTENDINOUS = "OMOP:4302493",
     /** Intramuscular */
-    INTRAMUSCULAR = "INTRAMUSCULAR",
+    INTRAMUSCULAR = "OMOP:4302612",
     /** Intravitreal */
-    INTRAVITREAL = "INTRAVITREAL",
+    INTRAVITREAL = "OMOP:4302785",
     /** Intraspinal */
-    INTRASPINAL = "INTRASPINAL",
+    INTRASPINAL = "OMOP:4302788",
     /** Intrabronchial */
-    INTRABRONCHIAL = "INTRABRONCHIAL",
+    INTRABRONCHIAL = "OMOP:4303263",
     /** Oropharyngeal */
-    OROPHARYNGEAL = "OROPHARYNGEAL",
+    OROPHARYNGEAL = "OMOP:4303277",
     /** Intracameral */
-    INTRACAMERAL = "INTRACAMERAL",
+    INTRACAMERAL = "OMOP:4303409",
     /** Paracervical */
-    PARACERVICAL = "PARACERVICAL",
+    PARACERVICAL = "OMOP:4303515",
     /** Periurethral */
-    PERIURETHRAL = "PERIURETHRAL",
+    PERIURETHRAL = "OMOP:4303646",
     /** Intracoronal */
-    INTRACORONAL = "INTRACORONAL",
+    INTRACORONAL = "OMOP:4303667",
     /** Retrobulbar */
-    RETROBULBAR = "RETROBULBAR",
+    RETROBULBAR = "OMOP:4303673",
     /** Intracartilaginous */
-    INTRACARTILAGINOUS = "INTRACARTILAGINOUS",
+    INTRACARTILAGINOUS = "OMOP:4303676",
     /** Orogastric */
-    OROGASTRIC = "OROGASTRIC",
+    OROGASTRIC = "OMOP:4303795",
     /** Intratendinous */
-    INTRATENDINOUS = "INTRATENDINOUS",
+    INTRATENDINOUS = "OMOP:4303939",
     /** Peribulbar */
-    PERIBULBAR = "PERIBULBAR",
+    PERIBULBAR = "OMOP:4304274",
     /** Fistula */
-    FISTULA = "FISTULA",
+    FISTULA = "OMOP:4304277",
     /** Surgical drain */
-    SURGICAL_DRAIN = "SURGICAL_DRAIN",
+    SURGICAL_DRAIN = "OMOP:4304412",
     /** Ureteral */
-    URETERAL = "URETERAL",
+    URETERAL = "OMOP:4304571",
     /** Epilesional */
-    EPILESIONAL = "EPILESIONAL",
+    EPILESIONAL = "OMOP:35608078",
     /** Extracorporeal hemodialysis */
-    EXTRACORPOREAL_HEMODIALYSIS = "EXTRACORPOREAL_HEMODIALYSIS",
+    EXTRACORPOREAL_HEMODIALYSIS = "OMOP:35624178",
     /** Suprachoroidal */
-    SUPRACHOROIDAL = "SUPRACHOROIDAL",
+    SUPRACHOROIDAL = "OMOP:37174548",
     /** Extracorporeal */
-    EXTRACORPOREAL = "EXTRACORPOREAL",
+    EXTRACORPOREAL = "OMOP:37018288",
     /** Intracorporus cavernosum */
-    INTRACORPORUS_CAVERNOSUM = "INTRACORPORUS_CAVERNOSUM",
+    INTRACORPORUS_CAVERNOSUM = "OMOP:37174549",
     /** Intraglandular */
-    INTRAGLANDULAR = "INTRAGLANDULAR",
+    INTRAGLANDULAR = "OMOP:37207460",
     /** Intracholangiopancreatic */
-    INTRACHOLANGIOPANCREATIC = "INTRACHOLANGIOPANCREATIC",
+    INTRACHOLANGIOPANCREATIC = "OMOP:37207461",
     /** Intraportal */
-    INTRAPORTAL = "INTRAPORTAL",
+    INTRAPORTAL = "OMOP:37207462",
     /** Peritumoral */
-    PERITUMORAL = "PERITUMORAL",
+    PERITUMORAL = "OMOP:37207463",
     /** Posterior juxtascleral */
-    POSTERIOR_JUXTASCLERAL = "POSTERIOR_JUXTASCLERAL",
+    POSTERIOR_JUXTASCLERAL = "OMOP:37207464",
     /** Subretinal */
-    SUBRETINAL = "SUBRETINAL",
+    SUBRETINAL = "OMOP:37207465",
     /** Infiltration */
-    INFILTRATION = "INFILTRATION",
+    INFILTRATION = "OMOP:37397638",
     /** Transendocardial */
-    TRANSENDOCARDIAL = "TRANSENDOCARDIAL",
+    TRANSENDOCARDIAL = "OMOP:40487850",
     /** Transplacental */
-    TRANSPLACENTAL = "TRANSPLACENTAL",
+    TRANSPLACENTAL = "OMOP:40487858",
     /** Intraepidermal */
-    INTRAEPIDERMAL = "INTRAEPIDERMAL",
+    INTRAEPIDERMAL = "OMOP:40487983",
     /** Intracerebral */
-    INTRACEREBRAL = "INTRACEREBRAL",
+    INTRACEREBRAL = "OMOP:40488317",
     /** Intrajejunal */
-    INTRAJEJUNAL = "INTRAJEJUNAL",
+    INTRAJEJUNAL = "OMOP:40489989",
     /** Intracolonic */
-    INTRACOLONIC = "INTRACOLONIC",
+    INTRACOLONIC = "OMOP:40489990",
     /** Cutaneous */
-    CUTANEOUS = "CUTANEOUS",
+    CUTANEOUS = "OMOP:40490507",
     /** Intraileal */
-    INTRAILEAL = "INTRAILEAL",
+    INTRAILEAL = "OMOP:40490837",
     /** Periodontal */
-    PERIODONTAL = "PERIODONTAL",
+    PERIODONTAL = "OMOP:40490866",
     /** Peridural */
-    PERIDURAL = "PERIDURAL",
+    PERIDURAL = "OMOP:40490896",
     /** Lower respiratory tract */
-    LOWER_RESPIRATORY_TRACT = "LOWER_RESPIRATORY_TRACT",
+    LOWER_RESPIRATORY_TRACT = "OMOP:40490898",
     /** Intramammary */
-    INTRAMAMMARY = "INTRAMAMMARY",
+    INTRAMAMMARY = "OMOP:40491321",
     /** Intratumor */
-    INTRATUMOR = "INTRATUMOR",
+    INTRATUMOR = "OMOP:40491322",
     /** Transtympanic */
-    TRANSTYMPANIC = "TRANSTYMPANIC",
+    TRANSTYMPANIC = "OMOP:40491830",
     /** Transtracheal */
-    TRANSTRACHEAL = "TRANSTRACHEAL",
+    TRANSTRACHEAL = "OMOP:40491832",
     /** Intraesophageal */
-    INTRAESOPHAGEAL = "INTRAESOPHAGEAL",
+    INTRAESOPHAGEAL = "OMOP:40492284",
     /** Intragingival */
-    INTRAGINGIVAL = "INTRAGINGIVAL",
+    INTRAGINGIVAL = "OMOP:40492286",
     /** Intravascular */
-    INTRAVASCULAR = "INTRAVASCULAR",
+    INTRAVASCULAR = "OMOP:40492287",
     /** Intradural */
-    INTRADURAL = "INTRADURAL",
+    INTRADURAL = "OMOP:40492288",
     /** Intrameningeal */
-    INTRAMENINGEAL = "INTRAMENINGEAL",
+    INTRAMENINGEAL = "OMOP:40492300",
     /** Intragastric */
-    INTRAGASTRIC = "INTRAGASTRIC",
+    INTRAGASTRIC = "OMOP:40492301",
     /** Intrapericardial */
-    INTRAPERICARDIAL = "INTRAPERICARDIAL",
+    INTRAPERICARDIAL = "OMOP:40492305",
     /** Intralingual */
-    INTRALINGUAL = "INTRALINGUAL",
+    INTRALINGUAL = "OMOP:40493227",
     /** Respiratory tract */
-    RESPIRATORY_TRACT = "RESPIRATORY_TRACT",
+    RESPIRATORY_TRACT = "OMOP:40486069",
     /** Intrahepatic */
-    INTRAHEPATIC = "INTRAHEPATIC",
+    INTRAHEPATIC = "OMOP:40493258",
     /** Conjunctival */
-    CONJUNCTIVAL = "CONJUNCTIVAL",
+    CONJUNCTIVAL = "OMOP:40486444",
     /** Intraepicardial */
-    INTRAEPICARDIAL = "INTRAEPICARDIAL",
+    INTRAEPICARDIAL = "OMOP:40487473",
     /** Digestive tract */
-    DIGESTIVE_TRACT = "DIGESTIVE_TRACT",
+    DIGESTIVE_TRACT = "OMOP:40487501",
     /** Ocular */
-    OCULAR = "OCULAR",
+    OCULAR = "OMOP:40549429",
 };
 /**
 * Device codes from SNOMED.
@@ -1535,11 +1581,11 @@ export enum GravityDomainEnum {
 export enum ConditionSeverityEnum {
     
     /** A condition that causes minimal symptoms or functional impairment and typically does not require intensive intervention. */
-    MILD = "MILD",
+    MILD = "OMOP:4116992",
     /** A condition that causes noticeable symptoms or functional impairment and may require active treatment or monitoring. */
-    MODERATE = "MODERATE",
+    MODERATE = "OMOP:4285732",
     /** A condition that causes significant symptoms or functional impairment, often requiring urgent or intensive intervention. */
-    SEVERE = "SEVERE",
+    SEVERE = "OMOP:4087703",
 };
 /**
 * Values describing the relationship between an individual and family members.
@@ -1547,163 +1593,756 @@ export enum ConditionSeverityEnum {
 export enum FamilyRelationshipEnum {
     
     /** A relation to one's self. */
-    ONESELF = "ONESELF",
+    ONESELF = "OMOP:45884467",
     /** A relation to a natural parent (mother or father) when otherwise not specified. */
-    NATURAL_PARENT = "NATURAL_PARENT",
+    NATURAL_PARENT = "OMOP:4029630",
     /** A relation to a natural father. */
-    NATURAL_FATHER = "NATURAL_FATHER",
+    NATURAL_FATHER = "OMOP:4321888",
     /** A relation to a natural mother. */
-    NATURAL_MOTHER = "NATURAL_MOTHER",
+    NATURAL_MOTHER = "OMOP:4277283",
     /** A relation to a natural sibling (sister or brother) when otherwise not specified. */
-    NATURAL_SIBLING = "NATURAL_SIBLING",
+    NATURAL_SIBLING = "OMOP:4218412",
     /** A relation to a natural brother. */
-    NATURAL_BROTHER = "NATURAL_BROTHER",
+    NATURAL_BROTHER = "OMOP:4263682",
     /** A relation to a natural sister. */
-    NATURAL_SISTER = "NATURAL_SISTER",
+    NATURAL_SISTER = "OMOP:4251326",
     /** A relation to a natural child. */
-    NATURAL_CHILD = "NATURAL_CHILD",
+    NATURAL_CHILD = "OMOP:4326600",
     /** A generic blood relation. */
-    BLOOD_RELATIVE = "BLOOD_RELATIVE",
+    BLOOD_RELATIVE = "OMOP:4053608",
 };
 /**
 * Values describing the types of MeasurementObservations.
 */
 export enum MeasurementObservationTypeEnum {
     
-    ALBUMIN_IN_BLOOD = "ALBUMIN_IN_BLOOD",
-    ALPHA_1_ANTITRYPSIN_IN_SERUM = "ALPHA-1_ANTITRYPSIN_IN_SERUM",
-    ALT_SGPT = "ALT_SGPT",
-    BASOPHILS_COUNT = "BASOPHILS_COUNT",
-    BILIRUBIN_UNCONJUGATED_INDIRECT = "BILIRUBIN_UNCONJUGATED_INDIRECT",
-    BMI = "BMI",
-    BNP = "BNP",
-    BODY_WEIGHT = "BODY_WEIGHT",
-    BUN = "BUN",
-    CD40_IN_BLOOD = "CD40_IN_BLOOD",
-    CHLORIDE_IN_BLOOD = "CHLORIDE_IN_BLOOD",
-    CREATININE_IN_BLOOD = "CREATININE_IN_BLOOD",
-    CREATININE_IN_URINE = "CREATININE_IN_URINE",
-    CYSTATIN_C_IN_BLOOD = "CYSTATIN_C_IN_BLOOD",
-    E_SELECTIN_IN_BLOOD = "E-SELECTIN_IN_BLOOD",
-    EOSINOPHILS_COUNT = "EOSINOPHILS_COUNT",
-    ERYTHROCYTE_SED_RATE = "ERYTHROCYTE_SED_RATE",
-    FACTOR_VII = "FACTOR_VII",
-    FERRITIN = "FERRITIN",
-    FIBRINOGEN = "FIBRINOGEN",
-    GFR = "GFR",
-    GLUCOSE_IN_BLOOD = "GLUCOSE_IN_BLOOD",
-    HDL = "HDL",
-    HEART_RATE = "HEART_RATE",
-    HEIGHT = "HEIGHT",
-    HEMATOCRIT = "HEMATOCRIT",
-    HEMOGLOBIN = "HEMOGLOBIN",
-    HIP_CIRCUMFERENCE = "HIP_CIRCUMFERENCE",
-    INSULIN_IN_BLOOD = "INSULIN_IN_BLOOD",
-    INTERLEUKIN_6_IN_BLOOD = "INTERLEUKIN_6_IN_BLOOD",
-    LACTATE_DEHYDROGENASE_LDH = "LACTATE_DEHYDROGENASE_LDH",
-    LACTATE_IN_BLOOD = "LACTATE_IN_BLOOD",
-    LDL = "LDL",
-    LYMPHOCYTES_COUNT = "LYMPHOCYTES_COUNT",
-    MCP1_IN_BLOOD = "MCP1_IN_BLOOD",
-    MEAN_ARTERIAL_PRESSURE = "MEAN_ARTERIAL_PRESSURE",
-    MEAN_CORPUSCULAR_HEMOGLOBIN = "MEAN_CORPUSCULAR_HEMOGLOBIN",
-    MEAN_CORPUSCULAR_VOLUME = "MEAN_CORPUSCULAR_VOLUME",
-    MEAN_PLATELET_VOLUME = "MEAN_PLATELET_VOLUME",
-    MMP9_IN_BLOOD = "MMP9_IN_BLOOD",
-    MYELOPEROXIDASE_IN_BLOOD = "MYELOPEROXIDASE_IN_BLOOD",
-    NEUTROPHILS_COUNT = "NEUTROPHILS_COUNT",
-    NT_PRO_BNP = "NT_PRO_BNP",
-    P_SELECTIN_IN_BLOOD = "P-SELECTIN_IN_BLOOD",
-    PH_OF_BLOOD = "PH_OF_BLOOD",
-    POTASSIUM_IN_BLOOD = "POTASSIUM_IN_BLOOD",
-    QRS_INTERVAL = "QRS_INTERVAL",
-    RED_BLOOD_CELL_COUNT = "RED_BLOOD_CELL_COUNT",
-    SLEEP_HOURS = "SLEEP_HOURS",
-    SMOKING_STATUS = "SMOKING_STATUS",
-    SODIUM_IN_BLOOD = "SODIUM_IN_BLOOD",
-    SPO2 = "SPO2",
-    TEMPERATURE = "TEMPERATURE",
-    TNFA_IN_BLOOD = "TNFA_IN_BLOOD",
-    TNFA_R1_IN_BLOOD = "TNFA-R1_IN_BLOOD",
-    TOTAL_CHOLESTEROL_IN_BLOOD = "TOTAL_CHOLESTEROL_IN_BLOOD",
-    TRIGLYCERIDES_IN_BLOOD = "TRIGLYCERIDES_IN_BLOOD",
-    VON_WILLEBRAND_FACTOR = "VON_WILLEBRAND_FACTOR",
-    WAIST_CIRCUMFERENCE = "WAIST_CIRCUMFERENCE",
-    WHITE_BLOOD_CELL_COUNT = "WHITE_BLOOD_CELL_COUNT",
-    ALBUMIN_IN_URINE = "ALBUMIN_IN_URINE",
-    FACTOR_VIII = "FACTOR_VIII",
-    MONOCYTES_COUNT = "MONOCYTES_COUNT",
-    ISOPROSTANE_8_EPI_PGF2A = "ISOPROSTANE_8_EPI_PGF2A",
-    LPPLA2_ACT = "LPPLA2_ACT",
-    APNEA_HYPOP_INDEX = "APNEA_HYPOP_INDEX",
-    ALBUMIN_CREATININE = "ALBUMIN_CREATININE",
-    ALCOHOL_SERVINGS = "ALCOHOL_SERVINGS",
-    AST_SGOT = "AST_SGOT",
-    BILIRUBIN_CON = "BILIRUBIN_CON",
-    BILIRUBIN_TOT = "BILIRUBIN_TOT",
-    BUN_CREATININE = "BUN_CREATININE",
-    CRP = "CRP",
-    CAC_SCORE = "CAC_SCORE",
-    CAROTID_IMT = "CAROTID_IMT",
-    SMOKING = "SMOKING",
-    D_DIMER = "D_DIMER",
-    BP_DIASTOLIC = "BP_DIASTOLIC",
-    EGFR = "EGFR",
-    FAST_GLUC_BLD = "FAST_GLUC_BLD",
-    FEV1 = "FEV1",
-    FEV1_FVC = "FEV1_FVC",
-    FRUIT_SERVING = "FRUIT_SERVING",
-    FVC = "FVC",
-    HEMO_A1C = "HEMO_A1C",
-    ICAM = "ICAM",
-    IL1_BETA = "IL1_BETA",
-    IL10 = "IL10",
-    IL18 = "IL18",
-    LYMPHO_PCT = "LYMPHO_PCT",
-    LPPLA2_MASS = "LPPLA2_MASS",
-    MCHC = "MCHC",
-    NEUTRO_PCT = "NEUTRO_PCT",
-    OPG = "OPG",
-    PLATELET_CT = "PLATELET_CT",
-    PR_EKG = "PR_EKG",
-    PROCAL = "PROCAL",
-    QT_EKG = "QT_EKG",
-    RDW = "RDW",
-    RESP_RT = "RESP_RT",
-    SODIUM_INTAK = "SODIUM_INTAK",
-    TNFR2 = "TNFR2",
-    TROPONIN = "TROPONIN",
-    VEGE_SERVING = "VEGE_SERVING",
-    WAIST_HIP = "WAIST_HIP",
-    CESD_SCORE = "CESD_SCORE",
-    FAST_LIPIDS = "FAST_LIPIDS",
-    MED_ADHER = "MED_ADHER",
-    MED_USE = "MED_USE",
-    PACEM_STAT = "PACEM_STAT",
-    SLP_AP_STAT = "SLP_AP_STAT",
-    BP_SYSTOLIC = "BP_SYSTOLIC",
+    /** Albumin in blood | The amount of albumin when measured in blood serum. */
+    OBACOLON2050068 = "OBA:2050068",
+    /** Alpha-1 antitrypsin in serum | The amount of alpha-1-antitrypsin when measured in blood serum. */
+    OBACOLON2050075 = "OBA:2050075",
+    /** ALT SGPT | The amount of alanine aminotransferase when measured in blood serum. */
+    OBACOLON2050062 = "OBA:2050062",
+    /** basophils count | The amount of a basophil. */
+    OBACOLONVT0002607 = "OBA:VT0002607",
+    /** Bilirubin Unconjugated Indirect | The amount of bilirubin IXalpha when measured in blood. */
+    OBACOLONVT0001569 = "OBA:VT0001569",
+    /** BMI | A compound attribute that is the ratio of body mass to body height. */
+    OBACOLON2045455 = "OBA:2045455",
+    /** BNP | The amount of natriuretic peptides B when measured in anatomical entity. */
+    OBACOLON2045303 = "OBA:2045303",
+    /** Body weight | The mass of a multicellular organism. */
+    OBACOLONVT0001259 = "OBA:VT0001259",
+    /** BUN | The amount of urea when measured in blood. */
+    OBACOLONVT0005265 = "OBA:VT0005265",
+    /** CD40 in blood | The amount of CD40 ligand (human) when measured in blood. */
+    OBACOLON2052305 = "OBA:2052305",
+    /** Chloride in blood | The amount of chloride when measured in blood. */
+    OBACOLONVT0003018 = "OBA:VT0003018",
+    /** Creatinine in blood | The amount of creatinine when measured in blood serum. */
+    OBACOLON2050096 = "OBA:2050096",
+    /** Creatinine in urine | The amount of creatinine when measured in urine. */
+    OBACOLONVT0010540 = "OBA:VT0010540",
+    /** Cystatin C in blood | The amount of cystatin-C (human) when measured in blood. */
+    OBACOLON2052375 = "OBA:2052375",
+    /** E-selectin in blood | The amount of E-selectin (human) when measured in blood. */
+    OBACOLON2052778 = "OBA:2052778",
+    /** Eosinophils count | The amount of a eosinophil. */
+    OBACOLONVT0002602 = "OBA:VT0002602",
+    /** Erythrocyte Sed Rate | The buoyancy of an erythrocyte. */
+    OBACOLON2045235 = "OBA:2045235",
+    /** Factor VII | The amount of coagulation factor VII when measured in blood serum. */
+    OBACOLON2041535 = "OBA:2041535",
+    /** Ferritin | The amount of ferritin complex when measured in blood. */
+    OBACOLONVT0010513 = "OBA:VT0010513",
+    /** Fibrinogen | The amount of fibrinogen complex. */
+    OBACOLON0000061 = "OBA:0000061",
+    /** GFR | The rate of glomerular filtration. */
+    OBACOLON0003747 = "OBA:0003747",
+    /** Glucose in blood | The amount of glucose when measured in blood. */
+    OBACOLONVT0000188 = "OBA:VT0000188",
+    /** HDL | The amount of high-density lipoprotein cholesterol when measured in blood. */
+    OBACOLONVT0000184 = "OBA:VT0000184",
+    /** Heart rate | The rate of a heart contraction. */
+    OBACOLON1001087 = "OBA:1001087",
+    /** Height | The height of a multicellular organism. */
+    OBACOLONVT0001253 = "OBA:VT0001253",
+    /** Hematocrit | The volume of an erythrocyte when measured in blood. */
+    OBACOLON2045381 = "OBA:2045381",
+    /** Hemoglobin | The amount of hemoglobin when measured in blood. */
+    OBACOLON2060175 = "OBA:2060175",
+    /** Hip circumference | The circumference of a hip. */
+    OBACOLON1000032 = "OBA:1000032",
+    /** Insulin in blood | The amount of insulin when measured in blood. */
+    OBACOLON2060174 = "OBA:2060174",
+    /** IL6 | interleukin 6 in blood | The amount of interleukin-6 (human) when measured in blood. */
+    OBACOLON2052890 = "OBA:2052890",
+    /** Lactate Dehydrogenase LDH | The amount of lactate dehydrogenase complex when measured in blood. */
+    OBACOLONVT0010477 = "OBA:VT0010477",
+    /** Lactate in blood | The amount of lactate when measured in blood. */
+    OBACOLONVT0010616 = "OBA:VT0010616",
+    /** LDL | The amount of low-density lipoprotein cholesterol when measured in blood. */
+    OBACOLONVT0000181 = "OBA:VT0000181",
+    /** Lymphocytes count | The number of lymphocytes. */
+    OBACOLONVT0000717 = "OBA:VT0000717",
+    /** MCP1 in blood | The amount of C-C motif chemokine 2 (CCL2)(human) when measured in blood. */
+    OBACOLON2052436 = "OBA:2052436",
+    /** Mean arterial pressure | The pressure of arterial blood. */
+    OBACOLONVT2000000 = "OBA:VT2000000",
+    /** mean corpuscular hemoglobin | The amount of hemoglobin when measured in an erythrocyte. */
+    OBACOLON2045301 = "OBA:2045301",
+    /** mean corpuscular volume | The volume of an erythrocyte. */
+    OBACOLON0003460 = "OBA:0003460",
+    /** mean platelet volume | The volume of a platelet. */
+    OBACOLON0003277 = "OBA:0003277",
+    /** MMP9 in blood | The amount of a matrix metalloproteinase-9 (human) when measured in blood. */
+    OBACOLON2052397 = "OBA:2052397",
+    /** Myeloperoxidase in blood | The amount of a myeloperoxidase (human) when measured in blood. */
+    OBACOLON2052389 = "OBA:2052389",
+    /** Neutrophils count | The amount of a neutrophil. */
+    OBACOLONVT0000222 = "OBA:VT0000222",
+    /** P-selectin in blood | The amount of a P-selectin (human) when measured in blood. */
+    OBACOLON2052701 = "OBA:2052701",
+    /** pH of blood | The acidity of blood. */
+    OBACOLON2045409 = "OBA:2045409",
+    /** Potassium in blood | The amount of potassium when measured in blood. */
+    OBACOLONVT0002668 = "OBA:VT0002668",
+    /** QRS interval | See also EFO_0005054 */
+    OBACOLON1001086 = "OBA:1001086",
+    /** Red blood cell count | The amount of erythrocytes. | RBC */
+    OBACOLONVT0001586 = "OBA:VT0001586",
+    /** Sleep hours | The duration of sleep. */
+    OBACOLON2040171 = "OBA:2040171",
+    /** Sodium in blood | The amount of sodium when measured in blood. */
+    OBACOLONVT0001776 = "OBA:VT0001776",
+    /** SpO2 | The concentration of oxygen when measured in blood. */
+    OBACOLON2045443 = "OBA:2045443",
+    /** Temperature | The temperature of a multicellular organism. */
+    OBACOLONVT0005535 = "OBA:VT0005535",
+    /** TNFa in blood | The amount of tumor necrosis factor (human) when measured in blood. */
+    OBACOLON2051979 = "OBA:2051979",
+    /** TNFa-R1 in blood | The amount of tumor necrosis factor receptor superfamily member 1A (human) when measured in blood. */
+    OBACOLON2051975 = "OBA:2051975",
+    /** Total cholesterol in blood | The amount of cholesterol when measured in blood. */
+    OBACOLONVT0000180 = "OBA:VT0000180",
+    /** Triglycerides in blood | The amount of triglycerides when measured in blood. */
+    OBACOLONVT0002644 = "OBA:VT0002644",
+    /** von Willebrand factor | The amount of von Willebrand factor (human) when measured in blood. */
+    OBACOLON2052741 = "OBA:2052741",
+    /** Waist circumference | The circumference of an abdominal segment of trunk. */
+    OBACOLON1001085 = "OBA:1001085",
+    /** White blood cell count | The amount of leukocytes. */
+    OBACOLONVT0000217 = "OBA:VT0000217",
+    /** Albumin in urine | The amount of albumin when measured in urine. */
+    OBACOLONVT0002871 = "OBA:VT0002871",
+    /** Factor VIII | The amount of coagulation factor VIII when measured in blood serum. */
+    OBACOLON2041536 = "OBA:2041536",
+    /** monocytes count | The amount of monocytes. */
+    OBACOLONVT0000223 = "OBA:VT0000223",
+    /** SNOMED | Cigarette smoking tobacco */
+    OMOPCOLON4282779 = "OMOP:4282779",
+    /** LOINC isoprostane_8_epi_pgf2a | Prostaglandin F2 alpha [Mass/volume] in Urine | 8-epi-PGF2 */
+    OMOPCOLON3011888 = "OMOP:3011888",
+    /** LOINC lppla2_act | Lipoprotein associated phospholipase A2 [Enzymatic activity/volume] in Serum or Plasma | LP-PLA2 */
+    OMOPCOLON36305170 = "OMOP:36305170",
+    /** SNOMED apnea_hypop_index | Apnea Hypopnea Index | AHI */
+    OMOPCOLON37396400 = "OMOP:37396400",
+    /** SNOMED albumin_creatinine | Urine albumin/creatinine ratio measurement | uACR */
+    OMOPCOLON4154347 = "OMOP:4154347",
+    /** SNOMED alcohol_servings | Alcohol units consumed per week */
+    OMOPCOLON35609491 = "OMOP:35609491",
+    /** SNOMED ast_sgot | Aspartate aminotransferase measurement | AST SGOT */
+    OMOPCOLON4263457 = "OMOP:4263457",
+    /** SNOMED bilirubin_con | Conjugated bilirubin measurement */
+    OMOPCOLON44805650 = "OMOP:44805650",
+    /** SNOMED bilirubin_tot | Bilirubin, total measurement */
+    OMOPCOLON4230543 = "OMOP:4230543",
+    /** SNOMED bun_creatinine | BUN/Creatinine ratio */
+    OMOPCOLON4112223 = "OMOP:4112223",
+    /** SNOMED crp | C-reactive protein measurement */
+    OMOPCOLON4208414 = "OMOP:4208414",
+    /** SNOMED cac_score | Coronary artery calcium score */
+    OMOPCOLON42872742 = "OMOP:42872742",
+    /** SNOMED carotid_imt | Carotid intima media thickness */
+    OMOPCOLON4138462 = "OMOP:4138462",
+    /** LOINC | Tobacco smoking status */
+    OMOPCOLON43054909 = "OMOP:43054909",
+    /** SNOMED d_dimer | D-dimer level */
+    OMOPCOLON37393605 = "OMOP:37393605",
+    /** SNOMED bp_diastolic | Diastolic blood pressure */
+    OMOPCOLON4154790 = "OMOP:4154790",
+    /** SNOMED egfr | Estimated glomerular filtration rate by laboratory calculation */
+    OMOPCOLON37208635 = "OMOP:37208635",
+    /** SNOMED fast_gluc_bld | Fasting blood glucose measurement */
+    OMOPCOLON4156660 = "OMOP:4156660",
+    /** SNOMED fev1 | Forced expired volume in 1 second */
+    OMOPCOLON4241837 = "OMOP:4241837",
+    /** LOINC fev1_fvc | FEV1/FVC */
+    OMOPCOLON3011505 = "OMOP:3011505",
+    /** LOINC fruit_serving | Fruit servings 24 hour Estimated */
+    OMOPCOLON21493059 = "OMOP:21493059",
+    /** SNOMED fvc | Forced vital capacity */
+    OMOPCOLON4176265 = "OMOP:4176265",
+    /** SNOMED hemo_a1c | Hemoglobin A1c measurement */
+    OMOPCOLON4184637 = "OMOP:4184637",
+    /** SNOMED icam | Lymphocyte antigen CD54 */
+    OMOPCOLON4284103 = "OMOP:4284103",
+    /** LOINC il1_beta | Interleukin 1 beta [Mass/volume] in Serum or Plasma */
+    OMOPCOLON3001804 = "OMOP:3001804",
+    /** LOINC il10 | Interleukin 10 [Mass/volume] in Serum or Plasma */
+    OMOPCOLON3004578 = "OMOP:3004578",
+    /** LOINC il18 | Interleukin 18 [Mass/volume] in Serum or Plasma */
+    OMOPCOLON3043144 = "OMOP:3043144",
+    /** SNOMED lympho_pct | Lymphocyte percent count in blood */
+    OMOPCOLON37208690 = "OMOP:37208690",
+    /** LOINC lppla2_mass | Lipoprotein associated phospholipase A2 [Mass/volume] in Serum or Plasma | LP-PLA2 */
+    OMOPCOLON3041450 = "OMOP:3041450",
+    /** SNOMED mchc | MCHC - Mean corpuscular haemoglobin concentration */
+    OMOPCOLON37393850 = "OMOP:37393850",
+    /** SNOMED neutro_pct | Neutrophil percent count in blood */
+    OMOPCOLON37208698 = "OMOP:37208698",
+    /** CPT4 opg | Oncology (pancreatic cancer), multiplex immunoassay of C5, C4, cystatin C, factor B, osteoprotegerin (OPG), gelsolin, IGFBP3, CA125 and multiplex electrochemiluminescent immunoassay (ECLIA) for CA19-9, serum, diagnostic algorithm reported qualitatively... */
+    OMOPCOLON1552124 = "OMOP:1552124",
+    /** SNOMED platelet_ct | Platelet count */
+    OMOPCOLON4267147 = "OMOP:4267147",
+    /** SNOMED pr_ekg | PR interval - finding */
+    OMOPCOLON4274406 = "OMOP:4274406",
+    /** SNOMED procal | Procalcitonin measurement */
+    OMOPCOLON44791466 = "OMOP:44791466",
+    /** SNOMED qt_ekg | QT interval - finding */
+    OMOPCOLON4273023 = "OMOP:4273023",
+    /** SNOMED rdw | Red blood cell distribution width */
+    OMOPCOLON37397924 = "OMOP:37397924",
+    /** SNOMED resp_rt | Respiratory rate */
+    OMOPCOLON4313591 = "OMOP:4313591",
+    /** SNOMED sodium_intak | Sodium intake */
+    OMOPCOLON606729 = "OMOP:606729",
+    /** CDISC | TNF Receptor 1B | tnfr2 */
+    OMOPCOLON37543055 = "OMOP:37543055",
+    /** SNOMED troponin | Troponin measurement */
+    OMOPCOLON4021291 = "OMOP:4021291",
+    /** SNOMED vege_serving | Vegetable */
+    OMOPCOLON4042886 = "OMOP:4042886",
+    /** SNOMED waist_hip | Waist/hip ratio */
+    OMOPCOLON4087501 = "OMOP:4087501",
+    /** LOINC cesd_score | Center for Epidemiologic Studies Depression Scale-Revised total score [CESD-R] */
+    OMOPCOLON36303297 = "OMOP:36303297",
+    /** SNOMED fast_lipids | Fasting blood lipids */
+    OMOPCOLON4150326 = "OMOP:4150326",
+    /** SNOMED pacemaker status | Implantation of cardiac pacemaker */
+    OMOPCOLON4144921 = "OMOP:4144921",
+    /** SNOMED bp_systolic | Systolic blood pressure */
+    OMOPCOLON4152194 = "OMOP:4152194",
+    /** LOINC FVC predicted | Forced vital capacity [Volume] Respiratory system Predicted */
+    OMOPCOLON3002094 = "OMOP:3002094",
+    /** LOINC FEV1 predicted | FEV1 Predicted */
+    OMOPCOLON3022891 = "OMOP:3022891",
+    /** LOINC FEV1/FVC predicted | FEV1/FVC Predicted */
+    OMOPCOLON3024594 = "OMOP:3024594",
+    /** LOINC FEV1 percent predicted | FEV1 measured/predicted */
+    OMOPCOLON3011708 = "OMOP:3011708",
+    /** LOINC FVC percent predicted | FVC measured/predicted */
+    OMOPCOLON3005600 = "OMOP:3005600",
+    /** SNOMED FEV1/FVC percent predicted | FEV1/FVC measured/predicted */
+    OMOPCOLON4196583 = "OMOP:4196583",
+    /** CPT4 Albumin; serum, plasma or whole blood */
+    OMOPCOLON2212186 = "OMOP:2212186",
+    /** CPT4 Albumin; urine (eg, microalbumin), quantitative */
+    OMOPCOLON2212188 = "OMOP:2212188",
+    /** SNOMED Alanine aminotransferase measurement */
+    OMOPCOLON4146380 = "OMOP:4146380",
+    /** LOINC Aspartate aminotransferase [Presence] in Serum or Plasma */
+    OMOPCOLON3010587 = "OMOP:3010587",
+    /** LOINC Basophils [#/volume] in Blood */
+    OMOPCOLON3006315 = "OMOP:3006315",
+    /** LOINC Body mass index (BMI) [Ratio] */
+    OMOPCOLON3038553 = "OMOP:3038553",
+    /** SNOMED Brain natriuretic peptide measurement | BNP */
+    OMOPCOLON4307029 = "OMOP:4307029",
+    /** LOINC Natriuretic peptide B [Mass/volume] in Blood | BNP */
+    OMOPCOLON3031569 = "OMOP:3031569",
+    /** SNOMED Body weight */
+    OMOPCOLON4099154 = "OMOP:4099154",
+    /** SNOMED Blood urea nitrogen measurement | BUN */
+    OMOPCOLON4017361 = "OMOP:4017361",
+    /** SNOMED Calcium volume */
+    OMOPCOLON4166120 = "OMOP:4166120",
+    /** SNOMED Left carotid artery stenosis */
+    OMOPCOLON43020498 = "OMOP:43020498",
+    /** SNOMED Right carotid artery stenosis */
+    OMOPCOLON43021859 = "OMOP:43021859",
+    /** SNOMED Lymphocyte antigen CD40 */
+    OMOPCOLON4209737 = "OMOP:4209737",
+    /** SNOMED Chloride measurement */
+    OMOPCOLON4188066 = "OMOP:4188066",
+    /** LOINC Chloride [Moles/volume] in Specimen */
+    OMOPCOLON3009024 = "OMOP:3009024",
+    /** CPT4 Creatinine; blood */
+    OMOPCOLON2212294 = "OMOP:2212294",
+    /** LOINC Creatinine [Mass/volume] in Blood */
+    OMOPCOLON3051825 = "OMOP:3051825",
+    /** LOINC Creatinine [Mass/volume] in Serum or Plasma */
+    OMOPCOLON3016723 = "OMOP:3016723",
+    /** LOINC Creatinine [Interpretation] in Urine */
+    OMOPCOLON3007081 = "OMOP:3007081",
+    /** SNOMED Blood cystatin C measurement */
+    OMOPCOLON4136584 = "OMOP:4136584",
+    /** SNOMED D-dimer mass concentration in plasma */
+    OMOPCOLON37172928 = "OMOP:37172928",
+    /** LOINC E selectin [Mass/volume] in Blood */
+    OMOPCOLON3010372 = "OMOP:3010372",
+    /** LOINC Eosinophils [#/volume] in Blood */
+    OMOPCOLON3013115 = "OMOP:3013115",
+    /** SNOMED Clotting factor VII assay  */
+    OMOPCOLON4217630 = "OMOP:4217630",
+    /** SNOMED Factor VIII assay */
+    OMOPCOLON4148587 = "OMOP:4148587",
+    /** SNOMED Household income */
+    OMOPCOLON4076114 = "OMOP:4076114",
+    /** SNOMED Ferritin measurement */
+    OMOPCOLON4176561 = "OMOP:4176561",
+    /** LOINC Ferritin [Mass/volume] in Blood */
+    OMOPCOLON3011961 = "OMOP:3011961",
+    /** LOINC Ferritin [Mass/volume] in Serum or Plasma */
+    OMOPCOLON3001122 = "OMOP:3001122",
+    /** SNOMED Fibrinogen measurement */
+    OMOPCOLON4094436 = "OMOP:4094436",
+    /** SNOMED Glomerular filtration rate */
+    OMOPCOLON4213477 = "OMOP:4213477",
+    /** SNOMED Glucose measurement */
+    OMOPCOLON4149519 = "OMOP:4149519",
+    /** SNOMED High density lipoprotein measurement | HDL */
+    OMOPCOLON4076704 = "OMOP:4076704",
+    /** LOINC Heart rate */
+    OMOPCOLON3027018 = "OMOP:3027018",
+    /** SNOMED Body height */
+    OMOPCOLON607590 = "OMOP:607590",
+    /** SNOMED Hematocrit determination */
+    OMOPCOLON4151358 = "OMOP:4151358",
+    /** SNOMED Hemoglobin finding */
+    OMOPCOLON4094758 = "OMOP:4094758",
+    /** SNOMED Hip circumference */
+    OMOPCOLON4111665 = "OMOP:4111665",
+    /** SNOMED Insulin measurement */
+    OMOPCOLON4060873 = "OMOP:4060873",
+    /** LOINC Insulin [Mass/volume] in Serum or Plasma */
+    OMOPCOLON3022466 = "OMOP:3022466",
+    /** LOINC Insulin [Mass/volume] in Serum or Plasma --12 hours fasting */
+    OMOPCOLON3011670 = "OMOP:3011670",
+    /** SNOMED IL-6 assay | IL-6 assay | Interleukin 6 */
+    OMOPCOLON4332015 = "OMOP:4332015",
+    /** SNOMED Lactate dehydrogenase measurement */
+    OMOPCOLON4012918 = "OMOP:4012918",
+    /** SNOMED Lactate in blood */
+    OMOPCOLON1246795 = "OMOP:1246795",
+    /** SNOMED Low density lipoprotein measurement | LDL */
+    OMOPCOLON4331302 = "OMOP:4331302",
+    /** SNOMED Lymphocyte count in blood */
+    OMOPCOLON37208689 = "OMOP:37208689",
+    /** SNOMED Lymphocyte count */
+    OMOPCOLON4254663 = "OMOP:4254663",
+    /** LOINC Chemokine (C-C motif) ligand 2 [Mass/volume] in Serum or Plasma | CCL2 */
+    OMOPCOLON1617307 = "OMOP:1617307",
+    /** SNOMED Mean arterial pressure */
+    OMOPCOLON37168599 = "OMOP:37168599",
+    /** SNOMED MCH - Mean corpuscular haemoglobin */
+    OMOPCOLON37398674 = "OMOP:37398674",
+    /** SNOMED MCV - Mean corpuscular volume */
+    OMOPCOLON37393851 = "OMOP:37393851",
+    /** SNOMED Mean platelet volume */
+    OMOPCOLON37397923 = "OMOP:37397923",
+    /** LOINC Matrix metallopeptidase 9 [Mass/volume] in Blood | MMP9 */
+    OMOPCOLON40761106 = "OMOP:40761106",
+    /** LOINC Monocytes [#/volume] in Blood */
+    OMOPCOLON3001604 = "OMOP:3001604",
+    /** LOINC Myeloperoxidase [Mass/volume] in Serum by Immunoassay */
+    OMOPCOLON1988928 = "OMOP:1988928",
+    /** SNOMED Neutrophil count in blood */
+    OMOPCOLON37208699 = "OMOP:37208699",
+    /** SNOMED N terminal pro-brain natriuretic peptide level */
+    OMOPCOLON4189511 = "OMOP:4189511",
+    /** SNOMED Plasma N-terminal pro B-type natriuretic peptide concentration measurement | NT pro BNP */
+    OMOPCOLON44812009 = "OMOP:44812009",
+    /** SNOMED Serum N-terminal pro B-type natriuretic peptide concentration measurement | NT pro BNP */
+    OMOPCOLON44812008 = "OMOP:44812008",
+    /** LOINC CD62P cells/cells in Blood | CD62P cells/100 cells in Blood */
+    OMOPCOLON3007356 = "OMOP:3007356",
+    /** SNOMED Potassium measurement */
+    OMOPCOLON4245152 = "OMOP:4245152",
+    /** LOINC Potassium [Mass/volume] in Blood */
+    OMOPCOLON21490733 = "OMOP:21490733",
+    /** SNOMED QRS complex - finding */
+    OMOPCOLON4273021 = "OMOP:4273021",
+    /** SNOMED Red blood cell count | RBC */
+    OMOPCOLON4030871 = "OMOP:4030871",
+    /** LOINC How many hours do you normally sleep [DI-PAD] */
+    OMOPCOLON40768653 = "OMOP:40768653",
+    /** SNOMED Sodium measurement */
+    OMOPCOLON4097430 = "OMOP:4097430",
+    /** LOINC Sodium [Mass/volume] in Specimen */
+    OMOPCOLON36303745 = "OMOP:36303745",
+    /** SNOMED Oxygen saturation measurement | SpO2 */
+    OMOPCOLON4020553 = "OMOP:4020553",
+    /** SNOMED Body temperature */
+    OMOPCOLON4302666 = "OMOP:4302666",
+    /** LOINC Tumor necrosis factor alpha [Mass/volume] in Serum or Plasma | Tumor necrosis factor.alpha [Mass/volume] in Serum or Plasma | TNFa */
+    OMOPCOLON3004282 = "OMOP:3004282",
+    /** LOINC Tumor necrosis factor receptor superfamily member 1A [Mass/volume] in Serum or Plasma | TNFa-R1 */
+    OMOPCOLON46235360 = "OMOP:46235360",
+    /** SNOMED Total cholesterol measurement */
+    OMOPCOLON4008265 = "OMOP:4008265",
+    /** SNOMED Triglycerides measurement */
+    OMOPCOLON4032789 = "OMOP:4032789",
+    /** SNOMED Estimated intake of vegetable servings in 24 hours */
+    OMOPCOLON37311566 = "OMOP:37311566",
+    /** SNOMED von Willebrand factor antigen level */
+    OMOPCOLON4252203 = "OMOP:4252203",
+    /** SNOMED Waist circumference */
+    OMOPCOLON4172830 = "OMOP:4172830",
+    /** SNOMED White blood cell count | WBC */
+    OMOPCOLON4298431 = "OMOP:4298431",
+    /** LOINC Erythrocyte sedimentation rate [Velocity] in Red Blood Cells | Erythrocyte sedimentation rate */
+    OMOPCOLON3015183 = "OMOP:3015183",
+    /** SNOMED pH measurement, arterial */
+    OMOPCOLON4097822 = "OMOP:4097822",
+    /** SNOMED pH measurement, venous */
+    OMOPCOLON4315792 = "OMOP:4315792",
+    /** SNOMED Plasma fasting HDL cholesterol measurement */
+    OMOPCOLON4041720 = "OMOP:4041720",
+    /** SNOMED Plasma fasting LDL cholesterol measurement */
+    OMOPCOLON4041721 = "OMOP:4041721",
+    /** SNOMED Plasma fasting triglyceride measurement */
+    OMOPCOLON4041722 = "OMOP:4041722",
+    /** SNOMED Serum fasting HDL cholesterol measurement */
+    OMOPCOLON4041557 = "OMOP:4041557",
+    /** SNOMED Serum fasting LDL cholesterol measurement */
+    OMOPCOLON4042061 = "OMOP:4042061",
+    /** SNOMED Serum fasting total cholesterol */
+    OMOPCOLON44791053 = "OMOP:44791053",
+    /** SNOMED Serum fasting triglyceride measurement */
+    OMOPCOLON4042590 = "OMOP:4042590",
+    /** SNOMED Plasma total cholesterol level */
+    OMOPCOLON4190897 = "OMOP:4190897",
+    /** LOINC Albumin/Creatinine [Ratio] in 24 hour Urine | uACR */
+    OMOPCOLON46235897 = "OMOP:46235897",
+    /** SNOMED FVC post bronchodilator percentage change | FVC (forced vital capacity) post bronchodilator percentage change */
+    OMOPCOLON44811087 = "OMOP:44811087",
+    /** SNOMED Forced expired volume in 1 second percentage change post bronchodilator | FEV1 */
+    OMOPCOLON44813037 = "OMOP:44813037",
+    /** LOINC FEV1/FVC percent change post bronchodilator */
+    OMOPCOLON42868473 = "OMOP:42868473",
+    /** 8-epi-prostaglandin F2alpha amount in urine | The amount of a 8-epi-prostaglandin F2alpha when measured in urine. | 8-epi-PGF2a */
+    OBACOLON2100046 = "OBA:2100046",
+    /** amount of 1-alkyl-2-acetylglycerophosphocholine esterase activity in blood | The amount of a 1-alkyl-2-acetylglycerophosphocholine esterase activity when measured in blood. | LP-PLA2 */
+    OBACOLON2100055 = "OBA:2100055",
+    /** albumin to creatinine ratio in urine | A compound attribute that is the ratio of urine albumin amount to urine creatinine amount. | uACR */
+    OBACOLON2100053 = "OBA:2100053",
+    /** amount of albumin in blood | The amount of a albumin when measured in blood. */
+    OBACOLON2060178 = "OBA:2060178",
+    /** blood alanine transaminase amount | The amount of a alanine aminotransferase when measured in blood. | ALT SGPT */
+    OBACOLONVT0001573 = "OBA:VT0001573",
+    /** aspartate aminotransferase (human) amount in blood | The amount of a aspartate aminotransferase (human) when measured in blood. | AST SGOT */
+    OBACOLON2100047 = "OBA:2100047",
+    /** natriuretic peptides B amount in blood | The amount of a natriuretic peptides B when measured in blood. | BNP */
+    OBACOLON2100274 = "OBA:2100274",
+    /** urea nitrogen to creatinine ratio in blood | A compound attribute that is the ratio of blood urea nitrogen amount to blood creatinine amount. | BUN creatinine ratio */
+    OBACOLON2100054 = "OBA:2100054",
+    /** Coronary Calcium Score | A quantitative value that is the compilation of assessed size and densities of calcium deposits throughout the coronary tree. | CAC score */
+    NCITCOLONC80425 = "NCIT:C80425",
+    /** carotid artery intima-media region thickness | The thickness of a carotid artery intima-media region. | Carotid IMT */
+    OBACOLON2090004 = "OBA:2090004",
+    /** carotid artery thickness | The thickness of a carotid artery segment. */
+    OBACOLON2050108 = "OBA:2050108",
+    /** blood creatinine amount | The amount of a creatinine when measured in blood. */
+    OBACOLONVT0005328 = "OBA:VT0005328",
+    /** D-dimer (human) amount in blood | The amount of a D-dimer (human) when measured in blood. */
+    OBACOLON2100048 = "OBA:2100048",
+    /** Estimated Glomerular Filtration Rate | A laboratory test that estimates kidney function. It is calculated using an individual's serum creatinine measurement, age, sex, and race. Actual results are reported when the estimated glomerular filtration rate is less than 60 ml/min. | eGFR */
+    NCITCOLONC110935 = "NCIT:C110935",
+    /** level of coagulation factor VII in blood | The amount of a coagulation factor VII when measured in blood. */
+    OBACOLON2050626 = "OBA:2050626",
+    /** level of glucose in blood during fasting | The amount of a glucose when measured in blood during fasting. */
+    OBACOLON2090000 = "OBA:2090000",
+    /** forced expiratory volume to forced vital capacity ratio | The comparison of forced expiratory volume to forced vital capacity expressed as ratio or percentage. | FEV1/FVC */
+    CMOCOLON0000241 = "CMO:0000241",
+    /** forced vital capacity (FVC) | The volume of air that can be forcibly expelled from a maximally inflated lung. */
+    CMOCOLON0000251 = "CMO:0000251",
+    /** serum high-density lipoprotein cholesterol level | The amount of a high-density lipoprotein (HDL) cholesterol when measured in blood serum. */
+    OBACOLON2045397 = "OBA:2045397",
+    /** hemoglobin A1c amount in blood | The amount of a hemoglobin A1c when measured in blood. | HbA1c */
+    OBACOLON2100049 = "OBA:2100049",
+    /** level of insulin in blood during fasting | The amount of a insulin when measured in blood during fasting. */
+    OBACOLON2090001 = "OBA:2090001",
+    /** blood interleukin-1 beta amount | The amount of a interleukin-1 beta when measured in blood. | IL1b */
+    OBACOLONVT0008640 = "OBA:VT0008640",
+    /** blood interleukin-10 amount | The amount of a interleukin-10 when measured in blood. | IL10 */
+    OBACOLONVT0008590 = "OBA:VT0008590",
+    /** serum low-density lipoprotein cholesterol level | The amount of a low-density lipoprotein (LDL) cholesterol when measured in blood serum. */
+    OBACOLON2045398 = "OBA:2045398",
+    /** NT pro BNP | natriuretic peptides B proteolytic cleavage product level | The amount of a natriuretic peptides B proteolytic cleavage product when measured in anatomical entity. */
+    OBACOLON2045349 = "OBA:2045349",
+    /** tumor necrosis factor receptor superfamily member 11B amount | The amount of a tumor necrosis factor receptor superfamily member 11B when measured in anatomical entity. | OPG osteoprotegerin | TNFRSF11B */
+    OBACOLON2050271 = "OBA:2050271",
+    /** platelet quantity | The amount of platelets. */
+    OBACOLONVT0003179 = "OBA:VT0003179",
+    /** PR interval | Time between the beginning of the P wave to the beginning of the QRS complex, reflects the time the electrical impulse takes to travel from the sinus node through the AV node and entering the ventricles, used as an estimate of AV node function. */
+    CMOCOLON0000233 = "CMO:0000233",
+    /** QT interval | An interval measured from the onset of the QRS wave complex to the offset of the T wave. */
+    CMOCOLON0000235 = "CMO:0000235",
+    /** Red cell distribution width | Red blood cell distribution width (RDW or RDW-CV or RCDW and RDW-SD) is a measure of the range of variation of red blood cell (RBC) volume that is reported as part of a standard complete blood count. Usually red blood cells are a standard size of about 6-8 μm in diameter. Certain disorders, however, cause a significant variation in cell size. Higher RDW values indicate greater variation in size. Normal reference range of RDW-CV in human red blood cells is 11.5-14.5%.[1] If anemia is observed, RDW test results are often used together with mean corpuscular volume (MCV) results to determine the possible causes of the anemia. It is mainly used to differentiate an anemia of mixed causes from an anemia of a single cause. */
+    EFOCOLON0009188 = "EFO:0009188",
+    /** dietary sodium intake measurement | Quantification of dietary sodium intake. */
+    EFOCOLON0020080 = "EFO:0020080",
+    /** blood pressure trait | The pressure of blood. */
+    OBACOLONVT0000183 = "OBA:VT0000183",
+    /** troponin complex amount in blood | The amount of a troponin complex when measured in blood. | troponin all types */
+    OBACOLON2100051 = "OBA:2100051",
+    /** waist to hip ratio | A compound attribute that is the ratio of waist circumference to hip circumference. */
+    OBACOLON2100052 = "OBA:2100052",
+    /** LOINC Urea nitrogen [Mass/volume] in Serum or Plasma | BUN */
+    OMOPCOLON3013682 = "OMOP:3013682",
+    /** LOINC Brachial artery Systolic blood pressure */
+    OMOPCOLON3003205 = "OMOP:3003205",
+    /** LOINC Brachial artery Diastolic blood pressure */
+    OMOPCOLON3010404 = "OMOP:3010404",
+    /** LOINC Systolic blood pressure Posterior tibial artery/Brachial artery */
+    OMOPCOLON3016205 = "OMOP:3016205",
+    /** LOINC Systolic blood pressure Posterior tibial artery - right/Brachial artery */
+    OMOPCOLON3010175 = "OMOP:3010175",
+    /** LOINC Systolic blood pressure Posterior tibial artery - left/Brachial artery */
+    OMOPCOLON3000848 = "OMOP:3000848",
+    /** LOINC Systolic blood pressure Brachial artery - right/Brachial artery */
+    OMOPCOLON3021627 = "OMOP:3021627",
+    /** LOINC Systolic blood pressure--sitting */
+    OMOPCOLON3018586 = "OMOP:3018586",
+    /** LOINC Systolic blood pressure--standing */
+    OMOPCOLON3035856 = "OMOP:3035856",
+    /** LOINC Systolic blood pressure--supine */
+    OMOPCOLON3009395 = "OMOP:3009395",
+    /** blood albumin amount | The amount of a albumin type when measured in blood. */
+    OBACOLONVT0000199 = "OBA:VT0000199",
+    /** LOINC Lactate [Moles/volume] in Serum or Plasma */
+    OMOPCOLON3014111 = "OMOP:3014111",
+    /** SNOMED Cardiac troponin I mass concentration in plasma */
+    OMOPCOLON37208543 = "OMOP:37208543",
+    /** LOINC | % Change FVC | FVC percent change Respiratory system */
+    OMOPCOLON42868471 = "OMOP:42868471",
+    /** SNOMED | ankle brachial index | Ankle brachial pressure index */
+    OMOPCOLON40489833 = "OMOP:40489833",
+    /** basophil percentage | Basophils/100 leukocytes in Blood */
+    OMOPCOLON3022096 = "OMOP:3022096",
+    /** LOINC | Deceleration time | Blood flow deceleration time during diastole */
+    OMOPCOLON37057122 = "OMOP:37057122",
+    /** SNOMED | DLCO | Carbon monoxide diffusing capacity measurement */
+    OMOPCOLON4265529 = "OMOP:4265529",
+    /** LOINC | E/A ratios | Left ventricular E-wave/A-wave by US */
+    OMOPCOLON40762222 = "OMOP:40762222",
+    /** SNOMED | Ejection fraction | Left ventricular ejection fraction */
+    OMOPCOLON4108582 = "OMOP:4108582",
+    /** LOINC | eosinophil percentage | Eosinophils/100 leukocytes in Blood */
+    OMOPCOLON3006504 = "OMOP:3006504",
+    /** FEV0.5 | FEV.5 */
+    OMOPCOLON3021930 = "OMOP:3021930",
+    /** SNOMED | FEV0.75 | Forced expired volume in 0.75 seconds */
+    OMOPCOLON4089936 = "OMOP:4089936",
+    /** SNOMED | FEV1/FEV6 | Forced expiratory volume in one second/Forced expiratory volume in six seconds ratio */
+    OMOPCOLON45765566 = "OMOP:45765566",
+    /** SNOMED | FEV1/FVC, post-bronchodilator | Forced vital capacity (FVC) after bronchodilation */
+    OMOPCOLON4248526 = "OMOP:4248526",
+    /** FEV3 */
+    OMOPCOLON37072486 = "OMOP:37072486",
+    /** FEV6 */
+    OMOPCOLON40768346 = "OMOP:40768346",
+    /** Forced Expiratory Flow 25% | FEF 25% */
+    OMOPCOLON37060340 = "OMOP:37060340",
+    /** LOINC | Forced Expiratory Flow 25%-75% | Gas flow FEV 25%-75% */
+    OMOPCOLON3011417 = "OMOP:3011417",
+    /** Forced Expiratory Flow 50% | FEF 50% */
+    OMOPCOLON37043929 = "OMOP:37043929",
+    /** SNOMED | Forced Expiratory Flow 75% | Maximum expiratory flow rate at 75 percent of vital capacity */
+    OMOPCOLON4089939 = "OMOP:4089939",
+    /** LOINC | Forced Expiratory Time FET */
+    OMOPCOLON40768506 = "OMOP:40768506",
+    /** Forced Expiratory Volume in 1 sec, post-bronchodilator | Post-bronchodilator forced expiratory volume in 1 second (FEV1) attempt */
+    OMOPCOLON1006339 = "OMOP:1006339",
+    /** Fractional shortening */
+    OMOPCOLON37057590 = "OMOP:37057590",
+    /** GCS Eye | Glasgow coma score eye opening */
+    OMOPCOLON3016335 = "OMOP:3016335",
+    /** GCS Motor | Glasgow coma score motor */
+    OMOPCOLON3008223 = "OMOP:3008223",
+    /** GCS Verbal | Glasgow coma score verbal */
+    OMOPCOLON3009094 = "OMOP:3009094",
+    /** hdl2 | Cholesterol in HDL 2 [Mass/volume] in Serum or Plasma */
+    OMOPCOLON3009718 = "OMOP:3009718",
+    /** hdl3 | Cholesterol in HDL 3 [Mass/volume] in Serum or Plasma */
+    OMOPCOLON3023574 = "OMOP:3023574",
+    /** LOINC | Left Atrial Volume Index | Left atrial End-systolic volume (by US.2D+Calculated by biplane area-length method)/Body surface area */
+    OMOPCOLON21494019 = "OMOP:21494019",
+    /** LVEDD | Internal diameter minor axis diastole | Heart ventricle - left | Cardiac ultrasound */
+    OMOPCOLON37076446 = "OMOP:37076446",
+    /** LVESD | Internal diameter minor axis systole | Heart ventricle - left | Cardiac ultrasound */
+    OMOPCOLON37050322 = "OMOP:37050322",
+    /** LOINC | LVEDV | Left ventricular End diastolic volume */
+    OMOPCOLON21490770 = "OMOP:21490770",
+    /** LOINC | LVESV | Left ventricular End systolic volume */
+    OMOPCOLON21490771 = "OMOP:21490771",
+    /** LOINC | monocyte percentage | Monocytes/100 leukocytes in Blood */
+    OMOPCOLON3019069 = "OMOP:3019069",
+    /** SNOMED | Pack years */
+    OMOPCOLON4151768 = "OMOP:4151768",
+    /** SNOMED | Peak Expiratory Flow Rate */
+    OMOPCOLON4087260 = "OMOP:4087260",
+    /** LOINC | pH of blood */
+    OMOPCOLON3010421 = "OMOP:3010421",
+    /** LOINC | Predicted FEV0.5 | FEV.5 Predicted */
+    OMOPCOLON3016527 = "OMOP:3016527",
+    /** LOINC | Predicted FEV3 | FEV3 Predicted */
+    OMOPCOLON3040436 = "OMOP:3040436",
+    /** LOINC | Predicted FEV6 | FEV6 Predicted */
+    OMOPCOLON40768347 = "OMOP:40768347",
+    /** LOINC | Procalcitonin | Procalcitonin [Mass/volume] in Serum or Plasma */
+    OMOPCOLON3046279 = "OMOP:3046279",
+    /** LOINC | RDI Respiratory Disturbance Index */
+    OMOPCOLON1175351 = "OMOP:1175351",
+    /** SNOMED | RER | Respiratory quotient */
+    OMOPCOLON4253820 = "OMOP:4253820",
+    /** SNOMED | RVSP | Right ventricular systolic pressure */
+    OMOPCOLON4081030 = "OMOP:4081030",
+    /** LOINC | SHBG | Sex hormone binding globulin [Moles/volume] in Serum or Plasma */
+    OMOPCOLON3004248 = "OMOP:3004248",
+    /** LOINC | Six minute walk test */
+    OMOPCOLON40766814 = "OMOP:40766814",
+    /** SNOMED | Slow Vital Capacity SVC */
+    OMOPCOLON4308122 = "OMOP:4308122",
+    /** SNOMED | Stroke volume */
+    OMOPCOLON4231869 = "OMOP:4231869",
+    /** LOINC | TAPSE | Tricuspid valve annulus Excursion distance during systole by US.M-mode */
+    OMOPCOLON46236797 = "OMOP:46236797",
+    /** SNOMED | VCO2 | Carbon dioxide output */
+    OMOPCOLON4089153 = "OMOP:4089153",
+    /** SNOMED | VE | Minute volume */
+    OMOPCOLON4353621 = "OMOP:4353621",
+    /** LOINC | VE/VCO2 | Ventilatory equivalent for carbon dioxide --W exercise */
+    OMOPCOLON1002430 = "OMOP:1002430",
+    /** LOINC | VLDL | Cholesterol in VLDL [Mass/volume] in Serum or Plasma */
+    OMOPCOLON3007352 = "OMOP:3007352",
+    /** LOINC | VO2 max | Oxygen consumption (VO2) --peak */
+    OMOPCOLON1259612 = "OMOP:1259612",
+    /** SNOMED | VO2 | Oxygen uptake */
+    OMOPCOLON4090647 = "OMOP:4090647",
+    /** SNOMED | MVV | Maximum voluntary ventilation */
+    OMOPCOLON4089932 = "OMOP:4089932",
+    /** LOINC | E | Blood flow velocity E-wave */
+    OMOPCOLON37065791 = "OMOP:37065791",
+    /** LOINC | HR max | Maximum heart rate */
+    OMOPCOLON3966129 = "OMOP:3966129",
+    /** SNOMED | RHR | Resting heart rate */
+    OMOPCOLON40481601 = "OMOP:40481601",
+    /** DLCO | Diffusing Capacity of the Lungs for Carbon Monoxide | Carbon Monoxide Diffusing Capability Test */
+    NCITCOLONC38083 = "NCIT:C38083",
+    /** eosinophil percentage | Percentage of WBC that is eosinophils | eosinophil ratio */
+    OBACOLON2045391 = "OBA:2045391",
+    /** FEV1/FVC, post-bronchodilator | FEV1/FVC Post-Bronchodilator */
+    NCITCOLONC159318 = "NCIT:C159318",
+    /** Forced Expiratory Flow 25%-75% | airflow in L/s for the exhalation between 25% to 75% completed | Forced Expiratory Flow at 25-75 Percent */
+    NCITCOLONC119545 = "NCIT:C119545",
+    /** Forced Expiratory Time FET | Time to fully exhale a breath */
+    NCITCOLONC201471 = "NCIT:C201471",
+    /** Interleukin 18 in blood | blood interleukin-18 amount */
+    OBACOLONVT0008634 = "OBA:VT0008634",
+    /** Peak Expiratory Flow Rate | at maximal exhalation, peak flow in L/s */
+    NCITCOLONC41372 = "NCIT:C41372",
+    /** Percent Predicted Forced Expiratory Volume in 1 sec | Percent Predicted Forced Expiratory Volume in 1 Second */
+    NCITCOLONC112376 = "NCIT:C112376",
+    /** Percent Predicted Forced Vital Capacity */
+    NCITCOLONC112381 = "NCIT:C112381",
+    /** Respiratory rate | number of breaths a person takes per minute | respiratory gaseous exchange by respiratory system frequency */
+    OBACOLON0004159 = "OBA:0004159",
+    /** TNFR2 in blood | amount of tumor necrosis factor receptor superfamily member 1B (human) in blood */
+    OBACOLON2052724 = "OBA:2052724",
+    /** VLDL | very low density lipoprotein | blood VLDL cholesterol amount */
+    OBACOLONVT0005144 = "OBA:VT0005144",
+    /** Heart wall thickness */
+    OBACOLON2050102 = "OBA:2050102",
 };
 /**
 * Values describing the types of Education Attainment observed in an Observation.
 */
 export enum EducationalAttainmentObservationTypeEnum {
     
-    number_8TH_GRADE_OR_LESS = "8TH_GRADE_OR_LESS",
-    HIGH_SCHOOL_NO_DIPLOMA = "HIGH_SCHOOL_NO_DIPLOMA",
-    HIGH_SCHOOL_GRADUATE_GED = "HIGH_SCHOOL_GRADUATE_GED",
-    SOME_COLLEGE_OR_TECH_NO_DEGREE = "SOME_COLLEGE_OR_TECH_NO_DEGREE",
-    COLLEGE_OR_TECH_WITH_DEGREE = "COLLEGE_OR_TECH_WITH_DEGREE",
-    MASTERS_OR_DOCTORAL_DEGREE = "MASTERS_OR_DOCTORAL_DEGREE",
+    number_8TH_GRADE_OR_LESS = "OMOP:1990362",
+    HIGH_SCHOOL_NO_DIPLOMA = "OMOP:1990281",
+    HIGH_SCHOOL_GRADUATE_GED = "OMOP:37079292",
+    SOME_COLLEGE_OR_TECH_NO_DEGREE = "OMOP:45882538",
+    COLLEGE_OR_TECH_WITH_DEGREE = "OMOP:45884846",
+    MASTERS_OR_DOCTORAL_DEGREE = "OMOP:45880652",
+    /** Educational attainment is unknown or not reported. */
+    UNKNOWN = "OMOP:45877986",
+    GREATER_THAN_HIGH_SCHOOL_OR_EQUIVALENT = "OMOP:37079441",
 };
 /**
 * Values describing the types of Smoking Status observed in an Observation.
 */
 export enum SmokingStatusObservationTypeEnum {
     
-    CURRENT_SMOKER = "CURRENT_SMOKER",
-    FORMER_SMOKER = "FORMER_SMOKER",
-    NEVER_SMOKED = "NEVER_SMOKED",
-    UNKNOWN_IF_EVER_SMOKED = "UNKNOWN_IF_EVER_SMOKED",
+    CURRENT_SMOKER = "OMOP:40766945",
+    FORMER_SMOKER = "OMOP:45883458",
+    NEVER_SMOKED = "OMOP:45883537",
+    UNKNOWN_IF_EVER_SMOKED = "OMOP:45885135",
+};
+/**
+* Values describing occupation types.
+*/
+export enum OccupationTypeEnum {
+    
+    /** LOINC | Architecture and Engineering Occupations */
+    OMOPCOLON36311194 = "OMOP:36311194",
+    /** LOINC | Arts, Design, Entertainment, Sports, and Media */
+    OMOPCOLON36309675 = "OMOP:36309675",
+    /** LOINC | Building and Grounds Cleaning and Maintenance */
+    OMOPCOLON36310459 = "OMOP:36310459",
+    /** LOINC | Business and Financial Operations Occupations */
+    OMOPCOLON36308234 = "OMOP:36308234",
+    /** LOINC | Community and Social Services Occupations */
+    OMOPCOLON36308579 = "OMOP:36308579",
+    /** LOINC | Computer and Mathematical Occupations */
+    OMOPCOLON36309431 = "OMOP:36309431",
+    /** LOINC | Construction and Extraction Occupations */
+    OMOPCOLON36307566 = "OMOP:36307566",
+    /** LOINC | Education, Training, and Library Occupations */
+    OMOPCOLON36310455 = "OMOP:36310455",
+    /** LOINC | Farming, Fishing, and Forestry Occupations */
+    OMOPCOLON36307977 = "OMOP:36307977",
+    /** LOINC | Food Preparation and Serving Related */
+    OMOPCOLON36307878 = "OMOP:36307878",
+    /** LOINC | Healthcare Practititioners and Technical Occupations */
+    OMOPCOLON36308137 = "OMOP:36308137",
+    /** LOINC | Healthcare Support Occupations */
+    OMOPCOLON36307824 = "OMOP:36307824",
+    /** LOINC | Installation, Maintenance, and Repair Occupations */
+    OMOPCOLON36308876 = "OMOP:36308876",
+    /** LOINC | Legal Occupations */
+    OMOPCOLON36307876 = "OMOP:36307876",
+    /** LOINC | Life, Physical, and Social Science Occupations */
+    OMOPCOLON36308008 = "OMOP:36308008",
+    /** LOINC | Management Occupations */
+    OMOPCOLON36310392 = "OMOP:36310392",
+    /** LOINC | Military Specific Occupations */
+    OMOPCOLON36309362 = "OMOP:36309362",
+    /** LOINC | Office and Administrative Support Occupations */
+    OMOPCOLON36307554 = "OMOP:36307554",
+    /** LOINC | Personal Care and Service Occupations */
+    OMOPCOLON36309317 = "OMOP:36309317",
+    /** LOINC | Production Occupations */
+    OMOPCOLON36310607 = "OMOP:36310607",
+    /** LOINC | Protective Service Occupations */
+    OMOPCOLON36309614 = "OMOP:36309614",
+    /** LOINC | Sales and Related Occupations */
+    OMOPCOLON36310875 = "OMOP:36310875",
+    /** LOINC | Transportation and Material Moving Occupations */
+    OMOPCOLON36309959 = "OMOP:36309959",
+    /** Unknown | Not known, not observed, not recorded, or refused. */
+    OMOPCOLON8552 = "OMOP:8552",
 };
 /**
 * A constrained set of enumerative values containing the ICD-10 diagnoses.
@@ -1736,9 +2375,9 @@ export enum BodyPositionEnum {
     PRONE_BODY_POSITION = "PRONE_BODY_POSITION",
 };
 /**
-* Values describing the types of an Observation.
+* Constrainted values to be used in value_enums for Observations
 */
-export enum BaseObservationTypeEnum {
+export enum BaseObservationValueEnum {
     
 };
 /**
@@ -1772,18 +2411,20 @@ export enum MeasuredByPersonnelTypeEnum {
 */
 export enum ActivityTypeEnum {
     
-    /** Abstaining from intake of food or liquid */
-    FASTING = "FASTING",
+    /** The act of taking one or more medication in the class of "antihyperlipidemics" */
+    ANTIHYPERLIPIDEMICS_MEDICATION_USE = "ANTIHYPERLIPIDEMICS_MEDICATION_USE",
     /** The act of taking one or more medication in the class of "bronchodilators" */
     BRONCHODILATOR_MEDICATION_USE = "BRONCHODILATOR_MEDICATION_USE",
     /** The act of taking one or more medication used in control of diabetes */
     DIABETES_MEDICATION_USE = "DIABETES_MEDICATION_USE",
-    /** The act of taking one or more medication in the class of "antihyperlipidemics" */
-    ANTIHYPERLIPIDEMICS_MEDICATION_USE = "ANTIHYPERLIPIDEMICS_MEDICATION_USE",
-    /** The act of engaging in aerobic movement (e.g., brisk walking, running) */
-    PHYSICAL_ACTIVITY = "PHYSICAL_ACTIVITY",
+    /** Abstaining from intake of food or liquid */
+    FASTING = "FASTING",
     /** A therapeutic or diagnostic procedure undertaken in the context of healthcare or research */
     MEDICAL_PROCEDURE = "MEDICAL_PROCEDURE",
+    /** The act of engaging in aerobic movement (e.g., brisk walking, running) */
+    PHYSICAL_ACTIVITY = "PHYSICAL_ACTIVITY",
+    /** The act of sleeping or being in a state of rest */
+    SLEEP = "SLEEP",
 };
 /**
 * A constrained set of enumerative values describing qualifiers of a measurement.
@@ -1818,6 +2459,18 @@ export enum QuantityOperatorEnum {
     GREATER_THAN_OR_EQUAL_TO = "GREATER_THAN_OR_EQUAL_TO",
     /** The quantity is greater than a specified value */
     GREATER_THAN = "GREATER_THAN",
+};
+/**
+* A constrained set of enumerative values describing social determinants of health measurement variables.
+*/
+export enum SdohEnum {
+    
+    /** The sum of the income of all family members 15 years and older living in the household over 12 months, before taxes */
+    FAMILY_INCOME = "OMOP:4076114",
+    /** The highest level of education that an individual has completed */
+    EDUCATIONAL_ATTAINMENT = "OMOP:4022643",
+    /** Current type of work participant does to make money */
+    OCCUPATION = "OMOP:36203487",
 };
 
 
@@ -1913,10 +2566,8 @@ export interface ResearchStudy extends Entity {
     description_shortened?: string,
     /** An entity that is responsible for the initiation, management, and/or financing of a research project. */
     sponsor?: string,
-    /** The date when the research project began. */
-    date_started?: TimePointId,
-    /** The date when the research project ended. */
-    date_ended?: TimePointId,
+    /** The time period demarcating the years between the start and end of the ResearchStudy (e.g., 2020-2021). */
+    year_range?: TimePeriodId,
     /** The accession number of the research study with the accession authority */
     accession_number?: string,
     /** The accession authority for the research study. */
@@ -1967,6 +2618,8 @@ export interface Visit extends Entity {
     age_at_visit_start?: number,
     /** The age of the Participant (in days) at the end of the Visit. */
     age_at_visit_end?: number,
+    /** The time period demarcating the years between the start and end of the Visit (e.g., 2020-2021). */
+    year_range?: TimePeriodId,
     /** A value representing the provenance of the visit record, or where the record comes from. */
     visit_provenance: string,
 }
@@ -2007,9 +2660,9 @@ export interface TimePoint extends Entity {
  */
 export interface TimePeriod extends Entity {
     /** When a period of time started. */
-    period_start: TimePointId,
+    period_start?: TimePointId,
     /** When a period of time ended. */
-    period_end: TimePointId,
+    period_end?: TimePointId,
 }
 
 
@@ -2056,6 +2709,8 @@ export interface Questionnaire extends Entity {
 export interface QuestionnaireItem extends Entity {
     /** A 'business' identifier or accession number for the entity, typically as provided by an external system or authority, that are globally unique and persist across implementing systems. Also, since these identifiers are created outside the information system through a specific business process, the Identifier type has additional attributes to capture this additional metadata so the actual identifier values are qualified by the context that created those values. This additional context allows "identifier" instances to be transmitted as business data across systems while still being able to trace them back to the system of origin. */
     identity?: string[],
+    /** The order of the item within the Questionnaire */
+    ordinality?: number,
     /** Name for group or question text */
     text: string,
     /** Corresponding concept for this item in a terminology */
@@ -2083,9 +2738,7 @@ export interface QuestionnaireResponse extends Entity {
  */
 export interface QuestionnaireResponseItem extends Entity {
     /** A reference to the QuestionnaireItem that this QuestionnaireResponseItem responds to. */
-    has_questionnaire_item?: QuestionnaireItemId,
-    /** Name for group or question text */
-    text: string,
+    has_questionnaire_item: QuestionnaireItemId,
     response_value: QuestionnaireResponseValueId,
 }
 
@@ -2096,8 +2749,8 @@ export interface QuestionnaireResponseItem extends Entity {
 export interface QuestionnaireResponseValue extends Entity {
     /** A general slot to hold a value. */
     value: string,
-    type: string,
-    name: string,
+    /** Corresponding code for this value in an external terminology, if applicable, or as defined in the questionnaire itself.  For example, if the question is "What is your sex?" and the answer is "Female", the code might "1" for a custom-defined questionnaire, or "loinc:LA3-6" for a standard terminology. */
+    code_concept?: string,
 }
 
 
@@ -2148,6 +2801,8 @@ export interface Condition extends Entity {
     associated_participant: ParticipantId,
     /** The coded value for the presence of a disease or medical condition stated as a diagnosis, a sign or a symptom, coded to the Human Phenotype Ontology or MONDO. */
     condition_concept: string,
+    /** The Participant's age (expressed in days) when the condition was reported, not necessarily when it was first recorded. */
+    age_at_condition_report?: number,
     /** The Participant's age (expressed in days) when the condition was first recorded. */
     age_at_condition_start?: number,
     /** The Participant's age (expressed in days) when the condition was recorded as having been resolved. */
@@ -2186,7 +2841,7 @@ export interface Procedure extends Entity {
     /** A value indicating whether the medical procedure described in this record is present, absent, or unknown for this individual patient. */
     procedure_status: string,
     /** The quantity of procedures ordered or administered. */
-    quantity?: QuantityId,
+    quantity?: Quantity,
     /** The anatomical site affected by the procedure. */
     affected_body_site?: BodySiteId,
 }
@@ -2383,10 +3038,10 @@ export interface Specimen extends Entity {
     contained_in?: SpecimenContainerId,
     /** Observations about the current physical dimensions of an object (e.g. length, width, area). */
     dimensional_measures?: DimensionalObservationSetId,
-    /** An observation related to the present quantity of a specimen - e.g. its weight, volume, or analyte concentration. */
-    quantity_measure?: SpecimenQuantityObservationId[],
     /** An observation about characteristics of a specimen that are indicative of its quality or suitability for use. */
     quality_measure?: SpecimenQualityObservationId[],
+    /** An observation related to the present quantity of a specimen - e.g. its weight, volume, or analyte concentration. */
+    quantity_measure?: SpecimenQuantityObservationId[],
     /** A term describing the type of cell or cellular material comprising a specimen. */
     cellular_composition_type?: string,
     /** A reference to an external document that is about or related to the specimen (e.g. a publication related to the study it is a part of, pathology report containing additional details about it, protocol describing how it was collected) */
@@ -2434,7 +3089,7 @@ export interface SpecimenCreationActivity extends Entity {
     /** The anatomic site from which a specimen was collected. */
     collection_site?: BodySiteId,
     /** The quantity of material in the specimen as originally collected from its original source material (prior to downstream portioning or processing) */
-    quantity_collected?: QuantityId,
+    quantity_collected?: Quantity,
     /** A numeric value that represents the sequential order of this creation activity relative to those producing other specimens from the same source material or parent specimen. */
     specimen_order?: number,
 }
@@ -2482,7 +3137,7 @@ export interface SpecimenStorageActivity extends Entity {
     /** The date when the activity ended (in this case, a storage event). */
     date_ended?: TimePointId,
     /** The length of time over which the activity was performed. */
-    duration?: QuantityId,
+    duration?: Quantity,
     /** A specific type of method or procedure performed to store the specimen */
     method_type?: string,
     /** A container in which the specimen is held or affixed during its storage. */
@@ -2533,14 +3188,14 @@ export interface Substance extends Entity {
     /** A role played by the substance in a particular application (e.g. the role of a lysis buffer when applied in a specimen creation activity, or the role of fixative when applied in specimen processing) */
     role?: string[],
     /** The quantity of substance this instance stands for. */
-    substance_quantity?: QuantityId,
+    substance_quantity?: Quantity,
 }
 
 
 /**
  * A structured object to represent an amount of something (e.g., weight, mass, length, duration of time) - including a value and unit.
  */
-export interface Quantity extends Entity {
+export interface Quantity {
     /** A decimal amount, in the given units (if specified) */
     value_decimal?: string,
     /** An integer amount, in the given units (if specified) */
@@ -2574,7 +3229,7 @@ export interface ObservationSet extends Entity {
     /** A reference to the Visit that is associated with this record. */
     associated_visit?: VisitId,
     /** A reference to the Participant that is associated with this record. */
-    associated_participant: ParticipantId,
+    associated_participant?: ParticipantId,
     /** The general category of observation set described */
     category?: string,
     /** The entity or entities directly observed/measured in generating an observation result. */
@@ -2611,7 +3266,7 @@ export interface Observation extends Entity {
     /** A slot to hold a boolean value for an Observation. */
     value_boolean?: boolean,
     /** A slot to hold a Quantity value for an Observation. */
-    value_quantity?: QuantityId,
+    value_quantity?: Quantity,
     /** A slot to hold an enumerated value for an Observation. */
     value_enum?: string,
     /** The context within which an observation was made. */
@@ -2631,13 +3286,13 @@ export interface MeasurementObservationSet extends ObservationSet {
  */
 export interface MeasurementObservation extends Observation {
     /** If reference ranges for upper and lower limit of normal as provided (typically by a laboratory) these are stored in the range_high and range_low fields. This should be set to NULL if not provided. */
-    range_low?: QuantityId,
+    range_low?: Quantity,
     /** If reference ranges for upper and lower limit of normal as provided (typically by a laboratory) these are stored in the range_high and range_low fields. This should be set to NULL if not provided. */
-    range_high?: QuantityId,
+    range_high?: Quantity,
     /** The type of Observation being represented (e.g. 'diastolic blood pressure') */
     observation_type: string,
-    /** A reference to the assay that was used in generating this observation. */
-    associated_assay?: AssayId,
+    /** A reference to the assay, file, or questionnaire that was used in generating this observation. */
+    associated_artifact?: EntityId,
     /** The body site that is the focus of this observation, if applicable. */
     body_site?: BodySiteId,
     /** The position of the body that is the focus of this observation, if applicable. */
@@ -2646,6 +3301,8 @@ export interface MeasurementObservation extends Observation {
     measured_by?: string,
     /** A qualifier that further refines or specifies the measurement method (e.g. to indicate the measurement was an average, sum, best, worst, first, last). */
     qualifier?: string,
+    /** The instrument(s) used to perform the measurement. */
+    instrument?: string,
 }
 
 
@@ -2687,9 +3344,9 @@ export interface Assay extends Entity {
     /** The reagent(s) used to perform the assay. */
     reagent?: SubstanceId[],
     /** The lower limit of detection for the assay, if applicable. */
-    lower_limit_of_detection?: QuantityId,
+    lower_limit_of_detection?: Quantity,
     /** The upper limit of detection for the assay, if applicable. */
-    upper_limit_of_detection?: QuantityId,
+    upper_limit_of_detection?: Quantity,
 }
 
 
@@ -2698,7 +3355,7 @@ export interface Assay extends Entity {
  */
 export interface Context extends Entity {
     /** The activity that provides context to the observation (e.g. "fasting", "bronchodilator use") */
-    activity?: ActivityId,
+    activity: ActivityId,
     /** The timing of the observation relative to the observation (e.g., "before", "concurrent with") */
     relative_timing?: string,
 }
@@ -2711,7 +3368,7 @@ export interface Activity extends Entity {
     /** The type of activity being recorded (e.g. "fasting", "bronchodilator use") */
     activity_type?: string,
     /** The quantity of time over which the activity occurred (e.g. "8 hours", "1 week") */
-    time_duration?: QuantityId,
+    time_duration?: Quantity,
 }
 
 

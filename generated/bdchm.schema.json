@@ -13,11 +13,15 @@
                     "type": "string"
                 },
                 "time_duration": {
-                    "description": "The quantity of time over which the activity occurred (e.g. \"8 hours\", \"1 week\")",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The quantity of time over which the activity occurred (e.g. \"8 hours\", \"1 week\")"
                 }
             },
             "required": [
@@ -29,12 +33,13 @@
         "ActivityTypeEnum": {
             "description": "A constrained set of enumerative values describing types of activities.",
             "enum": [
-                "FASTING",
+                "ANTIHYPERLIPIDEMICS_MEDICATION_USE",
                 "BRONCHODILATOR_MEDICATION_USE",
                 "DIABETES_MEDICATION_USE",
-                "ANTIHYPERLIPIDEMICS_MEDICATION_USE",
+                "FASTING",
+                "MEDICAL_PROCEDURE",
                 "PHYSICAL_ACTIVITY",
-                "MEDICAL_PROCEDURE"
+                "SLEEP"
             ],
             "title": "ActivityTypeEnum",
             "type": "string"
@@ -83,11 +88,15 @@
                     ]
                 },
                 "lower_limit_of_detection": {
-                    "description": "The lower limit of detection for the assay, if applicable.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The lower limit of detection for the assay, if applicable."
                 },
                 "method": {
                     "$ref": "#/$defs/AssayMethodEnum",
@@ -104,11 +113,15 @@
                     ]
                 },
                 "upper_limit_of_detection": {
-                    "description": "The upper limit of detection for the assay, if applicable.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The upper limit of detection for the assay, if applicable."
                 }
             },
             "required": [
@@ -128,9 +141,9 @@
             "title": "BaseEnum",
             "type": "string"
         },
-        "BaseObservationTypeEnum": {
-            "description": "Values describing the types of an Observation.",
-            "title": "BaseObservationTypeEnum",
+        "BaseObservationValueEnum": {
+            "description": "Constrainted values to be used in value_enums for Observations",
+            "title": "BaseObservationValueEnum",
             "type": "string"
         },
         "BiologicProduct": {
@@ -304,6 +317,13 @@
                         "null"
                     ]
                 },
+                "age_at_condition_report": {
+                    "description": "The Participant's age (expressed in days) when the condition was reported, not necessarily when it was first recorded.",
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
                 "age_at_condition_start": {
                     "description": "The Participant's age (expressed in days) when the condition was first recorded.",
                     "type": [
@@ -379,16 +399,16 @@
             "type": "object"
         },
         "ConditionConceptEnum": {
-            "description": "A constrained set of enumerative values containing both the MONDO values for human diseases and the HPO values for phenotypic abnormalities.",
+            "description": "A constrained set of enumerative values containing the MONDO values for human diseases, the HPO values for phenotypic abnormalities, and the custom condition concepts.",
             "title": "ConditionConceptEnum",
             "type": "string"
         },
         "ConditionSeverityEnum": {
             "description": "The clinical severity level assigned to a condition or diagnosis.",
             "enum": [
-                "MILD",
-                "MODERATE",
-                "SEVERE"
+                "OMOP:4116992",
+                "OMOP:4285732",
+                "OMOP:4087703"
             ],
             "title": "ConditionSeverityEnum",
             "type": "string"
@@ -433,10 +453,7 @@
             "properties": {
                 "activity": {
                     "description": "The activity that provides context to the observation (e.g. \"fasting\", \"bronchodilator use\")",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "id": {
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
@@ -448,10 +465,20 @@
                 }
             },
             "required": [
+                "activity",
                 "id"
             ],
             "title": "Context",
             "type": "object"
+        },
+        "CustomConditionConceptEnum": {
+            "description": "A constrained set of custom enumerative values for conditions not present in HPO or MONDO.",
+            "enum": [
+                "OMOP:4102124",
+                "OMOP:37472817"
+            ],
+            "title": "CustomConditionConceptEnum",
+            "type": "string"
         },
         "DataUseEnum": {
             "description": "A constrained set of enumerative values drawn from the Data Use Ontology (DUO). The DUO is an ontology which represent data use conditions.",
@@ -743,7 +770,7 @@
                     ]
                 },
                 "observation_type": {
-                    "$ref": "#/$defs/BaseObservationTypeEnum",
+                    "$ref": "#/$defs/BaseEnum",
                     "description": "The type of Observation being represented (e.g. 'diastolic blood pressure')"
                 },
                 "performed_by": {
@@ -761,15 +788,19 @@
                     ]
                 },
                 "value_enum": {
-                    "$ref": "#/$defs/BaseEnum",
+                    "$ref": "#/$defs/BaseObservationValueEnum",
                     "description": "A slot to hold an enumerated value for an Observation."
                 },
                 "value_quantity": {
-                    "description": "A slot to hold a Quantity value for an Observation.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "A slot to hold a Quantity value for an Observation."
                 },
                 "value_string": {
                     "description": "A slot to hold a string value for an Observation.",
@@ -793,7 +824,10 @@
             "properties": {
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
@@ -850,7 +884,6 @@
             },
             "required": [
                 "observations",
-                "associated_participant",
                 "id"
             ],
             "title": "DimensionalObservationSet",
@@ -1016,6 +1049,7 @@
         "DrugExposureProvenanceEnum": {
             "description": "Source of drug exposure record",
             "enum": [
+                "AT_DISCHARGE",
                 "RANDOMIZED_DRUG",
                 "PATIENT_SELF_REPORTED_MEDICATION",
                 "NLP_DERIVED",
@@ -1024,6 +1058,7 @@
                 "DISPENSED_IN_OUTPATIENT_OFFICE",
                 "PRESCRIPTION_DISPENSED_THROUGH_MAIL_ORDER",
                 "PRESCRIPTION_WRITTEN",
+                "PRESCRIPTION_LABEL",
                 "MEDICATION_LIST_ENTRY",
                 "PHYSICIAN_ADMINISTERED_DRUG_IDENTIFIED_AS_PROCEDURE",
                 "INPATIENT_ADMINISTRATION",
@@ -1039,171 +1074,171 @@
         "DrugRouteEnum": {
             "description": "Routes of drug administration.",
             "enum": [
-                "ARTERIOVENOUS_FISTULA",
-                "HAEMODIAFILTRATION",
-                "SUBLESIONAL",
-                "INTRANEURAL",
-                "INTRAMURAL",
-                "INTRACATHETER_INSTILLATION",
-                "SUBLABIAL",
-                "INTRA_ARTICULAR",
-                "INTRADIALYTIC",
-                "ARTERIOVENOUS_GRAFT",
-                "OTIC",
-                "ORAL",
-                "VAGINAL",
-                "ROUTE_OF_ADMINISTRATION_VALUE",
-                "GASTROSTOMY",
-                "NASOGASTRIC",
-                "JEJUNOSTOMY",
-                "SUBCUTANEOUS",
-                "GINGIVAL",
-                "INTRACARDIAC",
-                "INTRADERMAL",
-                "INTRAPLEURAL",
-                "PERIARTICULAR",
-                "ENDOSINUSIAL",
-                "INTRACAVERNOUS",
-                "INTRALESIONAL",
-                "INTRALYMPHATIC",
-                "INTRAOCULAR",
-                "PERINEURAL",
-                "INTRACRANIAL",
-                "DENTAL",
-                "INTRAAMNIOTIC",
-                "INTRABURSAL",
-                "INTRADISCAL",
-                "SUBCONJUNCTIVAL",
-                "MUCOUS_FISTULA",
-                "INTRAPROSTATIC",
-                "INTRAVENOUS_PERIPHERAL",
-                "PERIOSTEAL",
-                "ESOPHAGOSTOMY",
-                "NASODUODENAL",
-                "PERCUTANEOUS",
-                "SUBORBITAL",
-                "INTRATHORACIC",
-                "ENTERAL",
-                "INTRAMYOMETRIAL",
-                "COLOSTOMY",
-                "INTRATYMPANIC",
-                "GASTRO_INTESTINAL_STOMA",
-                "INTRAPULMONARY",
-                "INTRASINAL",
-                "TUMOR_CAVITY",
-                "SUBMUCOSAL",
-                "INTRADUCTAL",
-                "INTRAVENOUS_CENTRAL",
-                "PARAVERTEBRAL",
-                "UROSTOMY",
-                "LARYNGEAL",
-                "SURGICAL_CAVITY",
-                "INTRAVENOUS",
-                "INTRATESTICULAR",
-                "ENDOCERVICAL",
-                "ENDOTRACHEOPULMONARY",
-                "EXTRA_AMNIOTIC",
-                "GASTROENTERAL",
-                "INTRACERVICAL",
-                "INTRACORONARY",
-                "INTRASTERNAL",
-                "INTRAVESICAL",
-                "OROMUCOSAL",
-                "CAUDAL",
-                "BUCCAL",
-                "OPHTHALMIC",
-                "BODY_CAVITY",
-                "INTRAOSSEOUS",
-                "INTRAVENTRICULAR_ROUTE_CARDIAC",
-                "INTRABILIARY",
-                "INTRACEREBROVENTRICULAR",
-                "INTRATHECAL",
-                "EPIDURAL",
-                "INTRATRACHEAL",
-                "URETHRAL",
-                "TRANSMUCOSAL",
-                "TRANSDERMAL",
-                "INTRA_ARTERIAL",
-                "INTRAPERITONEAL",
-                "INTRAMEDULLARY",
-                "INTRAUTERINE",
-                "NASAL",
-                "TOPICAL",
-                "RECTAL",
-                "SUBLINGUAL",
-                "INTRALUMINAL",
-                "TRANSCERVICAL",
-                "INTRAABDOMINAL",
-                "TRANSURETHRAL",
-                "PERITENDINOUS",
-                "ILEOSTOMY",
-                "INTRACORNEAL",
-                "NASOJEJUNAL",
-                "INTRACISTERNAL",
-                "SUBGINGIVAL",
-                "INTRAOVARIAN",
-                "INTERSTITIAL",
-                "INTRASYNOVIAL",
-                "INTRADUODENAL",
-                "SUBTENDINOUS",
-                "INTRAMUSCULAR",
-                "INTRAVITREAL",
-                "INTRASPINAL",
-                "INTRABRONCHIAL",
-                "OROPHARYNGEAL",
-                "INTRACAMERAL",
-                "PARACERVICAL",
-                "PERIURETHRAL",
-                "INTRACORONAL",
-                "RETROBULBAR",
-                "INTRACARTILAGINOUS",
-                "OROGASTRIC",
-                "INTRATENDINOUS",
-                "PERIBULBAR",
-                "FISTULA",
-                "SURGICAL_DRAIN",
-                "URETERAL",
-                "EPILESIONAL",
-                "EXTRACORPOREAL_HEMODIALYSIS",
-                "SUPRACHOROIDAL",
-                "EXTRACORPOREAL",
-                "INTRACORPORUS_CAVERNOSUM",
-                "INTRAGLANDULAR",
-                "INTRACHOLANGIOPANCREATIC",
-                "INTRAPORTAL",
-                "PERITUMORAL",
-                "POSTERIOR_JUXTASCLERAL",
-                "SUBRETINAL",
-                "INFILTRATION",
-                "TRANSENDOCARDIAL",
-                "TRANSPLACENTAL",
-                "INTRAEPIDERMAL",
-                "INTRACEREBRAL",
-                "INTRAJEJUNAL",
-                "INTRACOLONIC",
-                "CUTANEOUS",
-                "INTRAILEAL",
-                "PERIODONTAL",
-                "PERIDURAL",
-                "LOWER_RESPIRATORY_TRACT",
-                "INTRAMAMMARY",
-                "INTRATUMOR",
-                "TRANSTYMPANIC",
-                "TRANSTRACHEAL",
-                "INTRAESOPHAGEAL",
-                "INTRAGINGIVAL",
-                "INTRAVASCULAR",
-                "INTRADURAL",
-                "INTRAMENINGEAL",
-                "INTRAGASTRIC",
-                "INTRAPERICARDIAL",
-                "INTRALINGUAL",
-                "RESPIRATORY_TRACT",
-                "INTRAHEPATIC",
-                "CONJUNCTIVAL",
-                "INTRAEPICARDIAL",
-                "DIGESTIVE_TRACT",
-                "OCULAR"
+                "OMOP:44783786",
+                "OMOP:44801748",
+                "OMOP:46270168",
+                "OMOP:46272911",
+                "OMOP:46272926",
+                "OMOP:605428",
+                "OMOP:600817",
+                "OMOP:4006860",
+                "OMOP:618805",
+                "OMOP:762840",
+                "OMOP:4023156",
+                "OMOP:4132161",
+                "OMOP:4057765",
+                "OMOP:4106215",
+                "OMOP:4132254",
+                "OMOP:4132711",
+                "OMOP:4133177",
+                "OMOP:4142048",
+                "OMOP:4156704",
+                "OMOP:4156705",
+                "OMOP:4156706",
+                "OMOP:4156707",
+                "OMOP:4156708",
+                "OMOP:4157756",
+                "OMOP:4157757",
+                "OMOP:4157758",
+                "OMOP:4157759",
+                "OMOP:4157760",
+                "OMOP:4157761",
+                "OMOP:4171079",
+                "OMOP:4163765",
+                "OMOP:4163767",
+                "OMOP:4163768",
+                "OMOP:4163769",
+                "OMOP:4163770",
+                "OMOP:4171243",
+                "OMOP:4171725",
+                "OMOP:4171884",
+                "OMOP:4171893",
+                "OMOP:4172191",
+                "OMOP:4172316",
+                "OMOP:4177987",
+                "OMOP:4166865",
+                "OMOP:4167393",
+                "OMOP:4167540",
+                "OMOP:4168038",
+                "OMOP:4168047",
+                "OMOP:4168656",
+                "OMOP:4168665",
+                "OMOP:4169270",
+                "OMOP:4169440",
+                "OMOP:4169472",
+                "OMOP:4169634",
+                "OMOP:4170083",
+                "OMOP:4170113",
+                "OMOP:4170267",
+                "OMOP:4170435",
+                "OMOP:4170440",
+                "OMOP:4170771",
+                "OMOP:4171047",
+                "OMOP:4171067",
+                "OMOP:4186831",
+                "OMOP:4186832",
+                "OMOP:4186833",
+                "OMOP:4186834",
+                "OMOP:4186835",
+                "OMOP:4186836",
+                "OMOP:4186837",
+                "OMOP:4186838",
+                "OMOP:4186839",
+                "OMOP:4220455",
+                "OMOP:4181897",
+                "OMOP:4184451",
+                "OMOP:4222254",
+                "OMOP:4213522",
+                "OMOP:4222259",
+                "OMOP:4223965",
+                "OMOP:4224886",
+                "OMOP:4217202",
+                "OMOP:4225555",
+                "OMOP:4229543",
+                "OMOP:4233974",
+                "OMOP:4232601",
+                "OMOP:4262099",
+                "OMOP:4240824",
+                "OMOP:4243022",
+                "OMOP:4246511",
+                "OMOP:4269621",
+                "OMOP:4262914",
+                "OMOP:4263689",
+                "OMOP:4290759",
+                "OMOP:4292110",
+                "OMOP:4292410",
+                "OMOP:4304730",
+                "OMOP:4304882",
+                "OMOP:4305382",
+                "OMOP:4305564",
+                "OMOP:4305679",
+                "OMOP:4305690",
+                "OMOP:4305834",
+                "OMOP:4305993",
+                "OMOP:4306649",
+                "OMOP:4306657",
+                "OMOP:4327128",
+                "OMOP:4302352",
+                "OMOP:4302354",
+                "OMOP:4302493",
+                "OMOP:4302612",
+                "OMOP:4302785",
+                "OMOP:4302788",
+                "OMOP:4303263",
+                "OMOP:4303277",
+                "OMOP:4303409",
+                "OMOP:4303515",
+                "OMOP:4303646",
+                "OMOP:4303667",
+                "OMOP:4303673",
+                "OMOP:4303676",
+                "OMOP:4303795",
+                "OMOP:4303939",
+                "OMOP:4304274",
+                "OMOP:4304277",
+                "OMOP:4304412",
+                "OMOP:4304571",
+                "OMOP:35608078",
+                "OMOP:35624178",
+                "OMOP:37174548",
+                "OMOP:37018288",
+                "OMOP:37174549",
+                "OMOP:37207460",
+                "OMOP:37207461",
+                "OMOP:37207462",
+                "OMOP:37207463",
+                "OMOP:37207464",
+                "OMOP:37207465",
+                "OMOP:37397638",
+                "OMOP:40487850",
+                "OMOP:40487858",
+                "OMOP:40487983",
+                "OMOP:40488317",
+                "OMOP:40489989",
+                "OMOP:40489990",
+                "OMOP:40490507",
+                "OMOP:40490837",
+                "OMOP:40490866",
+                "OMOP:40490896",
+                "OMOP:40490898",
+                "OMOP:40491321",
+                "OMOP:40491322",
+                "OMOP:40491830",
+                "OMOP:40491832",
+                "OMOP:40492284",
+                "OMOP:40492286",
+                "OMOP:40492287",
+                "OMOP:40492288",
+                "OMOP:40492300",
+                "OMOP:40492301",
+                "OMOP:40492305",
+                "OMOP:40493227",
+                "OMOP:40486069",
+                "OMOP:40493258",
+                "OMOP:40486444",
+                "OMOP:40487473",
+                "OMOP:40487501",
+                "OMOP:40549429"
             ],
             "title": "DrugRouteEnum",
             "type": "string"
@@ -1211,12 +1246,14 @@
         "EducationalAttainmentObservationTypeEnum": {
             "description": "Values describing the types of Education Attainment observed in an Observation.",
             "enum": [
-                "8TH_GRADE_OR_LESS",
-                "HIGH_SCHOOL_NO_DIPLOMA",
-                "HIGH_SCHOOL_GRADUATE_GED",
-                "SOME_COLLEGE_OR_TECH_NO_DEGREE",
-                "COLLEGE_OR_TECH_WITH_DEGREE",
-                "MASTERS_OR_DOCTORAL_DEGREE"
+                "OMOP:1990362",
+                "OMOP:1990281",
+                "OMOP:37079292",
+                "OMOP:45882538",
+                "OMOP:45884846",
+                "OMOP:45880652",
+                "OMOP:45877986",
+                "OMOP:37079441"
             ],
             "title": "EducationalAttainmentObservationTypeEnum",
             "type": "string"
@@ -1239,8 +1276,9 @@
         "EthnicityEnum": {
             "description": "A constrained set of enumerative values containing the United States Office of Management and Budget (OMB) values for ethnicity.",
             "enum": [
-                "HISPANIC_OR_LATINO",
-                "NOT_HISPANIC_OR_LATINO"
+                "OMOP:38003563",
+                "OMOP:38003564",
+                "OMOP:45877986"
             ],
             "title": "EthnicityEnum",
             "type": "string"
@@ -1304,15 +1342,15 @@
         "FamilyRelationshipEnum": {
             "description": "Values describing the relationship between an individual and family members.",
             "enum": [
-                "ONESELF",
-                "NATURAL_PARENT",
-                "NATURAL_FATHER",
-                "NATURAL_MOTHER",
-                "NATURAL_SIBLING",
-                "NATURAL_BROTHER",
-                "NATURAL_SISTER",
-                "NATURAL_CHILD",
-                "BLOOD_RELATIVE"
+                "OMOP:45884467",
+                "OMOP:4029630",
+                "OMOP:4321888",
+                "OMOP:4277283",
+                "OMOP:4218412",
+                "OMOP:4263682",
+                "OMOP:4251326",
+                "OMOP:4326600",
+                "OMOP:4053608"
             ],
             "title": "FamilyRelationshipEnum",
             "type": "string"
@@ -1687,12 +1725,23 @@
                         "null"
                     ]
                 },
-                "associated_assay": {
-                    "description": "A reference to the assay that was used in generating this observation.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                "associated_artifact": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "A reference to the assay, file, or questionnaire that was used in generating this observation.",
+                    "type": "string"
                 },
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
@@ -1744,6 +1793,16 @@
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
                     "type": "string"
                 },
+                "instrument": {
+                    "description": "The instrument(s) used to perform the measurement.",
+                    "items": {
+                        "$ref": "#/$defs/InstrumentEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "measured_by": {
                     "$ref": "#/$defs/MeasuredByPersonnelTypeEnum",
                     "description": "The type of personnel that performed the measurement activity (e.g., \"physician\", \"nurse\", \"technician\")."
@@ -1771,18 +1830,26 @@
                     "description": "A qualifier that further refines or specifies the measurement method (e.g. to indicate the measurement was an average, sum, best, worst, first, last)."
                 },
                 "range_high": {
-                    "description": "If reference ranges for upper and lower limit of normal as provided (typically by a laboratory) these are stored in the range_high and range_low fields. This should be set to NULL if not provided.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "If reference ranges for upper and lower limit of normal as provided (typically by a laboratory) these are stored in the range_high and range_low fields. This should be set to NULL if not provided."
                 },
                 "range_low": {
-                    "description": "If reference ranges for upper and lower limit of normal as provided (typically by a laboratory) these are stored in the range_high and range_low fields. This should be set to NULL if not provided.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "If reference ranges for upper and lower limit of normal as provided (typically by a laboratory) these are stored in the range_high and range_low fields. This should be set to NULL if not provided."
                 },
                 "value_boolean": {
                     "description": "A slot to hold a boolean value for an Observation.",
@@ -1792,15 +1859,19 @@
                     ]
                 },
                 "value_enum": {
-                    "$ref": "#/$defs/BaseEnum",
+                    "$ref": "#/$defs/BaseObservationValueEnum",
                     "description": "A slot to hold an enumerated value for an Observation."
                 },
                 "value_quantity": {
-                    "description": "A slot to hold a Quantity value for an Observation.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "A slot to hold a Quantity value for an Observation."
                 },
                 "value_string": {
                     "description": "A slot to hold a string value for an Observation.",
@@ -1824,7 +1895,10 @@
             "properties": {
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
@@ -1881,7 +1955,6 @@
             },
             "required": [
                 "observations",
-                "associated_participant",
                 "id"
             ],
             "title": "MeasurementObservationSet",
@@ -1890,118 +1963,330 @@
         "MeasurementObservationTypeEnum": {
             "description": "Values describing the types of MeasurementObservations.",
             "enum": [
-                "ALBUMIN_IN_BLOOD",
-                "ALPHA-1_ANTITRYPSIN_IN_SERUM",
-                "ALT_SGPT",
-                "BASOPHILS_COUNT",
-                "BILIRUBIN_UNCONJUGATED_INDIRECT",
-                "BMI",
-                "BNP",
-                "BODY_WEIGHT",
-                "BUN",
-                "CD40_IN_BLOOD",
-                "CHLORIDE_IN_BLOOD",
-                "CREATININE_IN_BLOOD",
-                "CREATININE_IN_URINE",
-                "CYSTATIN_C_IN_BLOOD",
-                "E-SELECTIN_IN_BLOOD",
-                "EOSINOPHILS_COUNT",
-                "ERYTHROCYTE_SED_RATE",
-                "FACTOR_VII",
-                "FERRITIN",
-                "FIBRINOGEN",
-                "GFR",
-                "GLUCOSE_IN_BLOOD",
-                "HDL",
-                "HEART_RATE",
-                "HEIGHT",
-                "HEMATOCRIT",
-                "HEMOGLOBIN",
-                "HIP_CIRCUMFERENCE",
-                "INSULIN_IN_BLOOD",
-                "INTERLEUKIN_6_IN_BLOOD",
-                "LACTATE_DEHYDROGENASE_LDH",
-                "LACTATE_IN_BLOOD",
-                "LDL",
-                "LYMPHOCYTES_COUNT",
-                "MCP1_IN_BLOOD",
-                "MEAN_ARTERIAL_PRESSURE",
-                "MEAN_CORPUSCULAR_HEMOGLOBIN",
-                "MEAN_CORPUSCULAR_VOLUME",
-                "MEAN_PLATELET_VOLUME",
-                "MMP9_IN_BLOOD",
-                "MYELOPEROXIDASE_IN_BLOOD",
-                "NEUTROPHILS_COUNT",
-                "NT_PRO_BNP",
-                "P-SELECTIN_IN_BLOOD",
-                "PH_OF_BLOOD",
-                "POTASSIUM_IN_BLOOD",
-                "QRS_INTERVAL",
-                "RED_BLOOD_CELL_COUNT",
-                "SLEEP_HOURS",
-                "SMOKING_STATUS",
-                "SODIUM_IN_BLOOD",
-                "SPO2",
-                "TEMPERATURE",
-                "TNFA_IN_BLOOD",
-                "TNFA-R1_IN_BLOOD",
-                "TOTAL_CHOLESTEROL_IN_BLOOD",
-                "TRIGLYCERIDES_IN_BLOOD",
-                "VON_WILLEBRAND_FACTOR",
-                "WAIST_CIRCUMFERENCE",
-                "WHITE_BLOOD_CELL_COUNT",
-                "ALBUMIN_IN_URINE",
-                "FACTOR_VIII",
-                "MONOCYTES_COUNT",
-                "ISOPROSTANE_8_EPI_PGF2A",
-                "LPPLA2_ACT",
-                "APNEA_HYPOP_INDEX",
-                "ALBUMIN_CREATININE",
-                "ALCOHOL_SERVINGS",
-                "AST_SGOT",
-                "BILIRUBIN_CON",
-                "BILIRUBIN_TOT",
-                "BUN_CREATININE",
-                "CRP",
-                "CAC_SCORE",
-                "CAROTID_IMT",
-                "SMOKING",
-                "D_DIMER",
-                "BP_DIASTOLIC",
-                "EGFR",
-                "FAST_GLUC_BLD",
-                "FEV1",
-                "FEV1_FVC",
-                "FRUIT_SERVING",
-                "FVC",
-                "HEMO_A1C",
-                "ICAM",
-                "IL1_BETA",
-                "IL10",
-                "IL18",
-                "LYMPHO_PCT",
-                "LPPLA2_MASS",
-                "MCHC",
-                "NEUTRO_PCT",
-                "OPG",
-                "PLATELET_CT",
-                "PR_EKG",
-                "PROCAL",
-                "QT_EKG",
-                "RDW",
-                "RESP_RT",
-                "SODIUM_INTAK",
-                "TNFR2",
-                "TROPONIN",
-                "VEGE_SERVING",
-                "WAIST_HIP",
-                "CESD_SCORE",
-                "FAST_LIPIDS",
-                "MED_ADHER",
-                "MED_USE",
-                "PACEM_STAT",
-                "SLP_AP_STAT",
-                "BP_SYSTOLIC"
+                "OBA:2050068",
+                "OBA:2050075",
+                "OBA:2050062",
+                "OBA:VT0002607",
+                "OBA:VT0001569",
+                "OBA:2045455",
+                "OBA:2045303",
+                "OBA:VT0001259",
+                "OBA:VT0005265",
+                "OBA:2052305",
+                "OBA:VT0003018",
+                "OBA:2050096",
+                "OBA:VT0010540",
+                "OBA:2052375",
+                "OBA:2052778",
+                "OBA:VT0002602",
+                "OBA:2045235",
+                "OBA:2041535",
+                "OBA:VT0010513",
+                "OBA:0000061",
+                "OBA:0003747",
+                "OBA:VT0000188",
+                "OBA:VT0000184",
+                "OBA:1001087",
+                "OBA:VT0001253",
+                "OBA:2045381",
+                "OBA:2060175",
+                "OBA:1000032",
+                "OBA:2060174",
+                "OBA:2052890",
+                "OBA:VT0010477",
+                "OBA:VT0010616",
+                "OBA:VT0000181",
+                "OBA:VT0000717",
+                "OBA:2052436",
+                "OBA:VT2000000",
+                "OBA:2045301",
+                "OBA:0003460",
+                "OBA:0003277",
+                "OBA:2052397",
+                "OBA:2052389",
+                "OBA:VT0000222",
+                "OBA:2052701",
+                "OBA:2045409",
+                "OBA:VT0002668",
+                "OBA:1001086",
+                "OBA:VT0001586",
+                "OBA:2040171",
+                "OBA:VT0001776",
+                "OBA:2045443",
+                "OBA:VT0005535",
+                "OBA:2051979",
+                "OBA:2051975",
+                "OBA:VT0000180",
+                "OBA:VT0002644",
+                "OBA:2052741",
+                "OBA:1001085",
+                "OBA:VT0000217",
+                "OBA:VT0002871",
+                "OBA:2041536",
+                "OBA:VT0000223",
+                "OMOP:4282779",
+                "OMOP:3011888",
+                "OMOP:36305170",
+                "OMOP:37396400",
+                "OMOP:4154347",
+                "OMOP:35609491",
+                "OMOP:4263457",
+                "OMOP:44805650",
+                "OMOP:4230543",
+                "OMOP:4112223",
+                "OMOP:4208414",
+                "OMOP:42872742",
+                "OMOP:4138462",
+                "OMOP:43054909",
+                "OMOP:37393605",
+                "OMOP:4154790",
+                "OMOP:37208635",
+                "OMOP:4156660",
+                "OMOP:4241837",
+                "OMOP:3011505",
+                "OMOP:21493059",
+                "OMOP:4176265",
+                "OMOP:4184637",
+                "OMOP:4284103",
+                "OMOP:3001804",
+                "OMOP:3004578",
+                "OMOP:3043144",
+                "OMOP:37208690",
+                "OMOP:3041450",
+                "OMOP:37393850",
+                "OMOP:37208698",
+                "OMOP:1552124",
+                "OMOP:4267147",
+                "OMOP:4274406",
+                "OMOP:44791466",
+                "OMOP:4273023",
+                "OMOP:37397924",
+                "OMOP:4313591",
+                "OMOP:606729",
+                "OMOP:37543055",
+                "OMOP:4021291",
+                "OMOP:4042886",
+                "OMOP:4087501",
+                "OMOP:36303297",
+                "OMOP:4150326",
+                "OMOP:4144921",
+                "OMOP:4152194",
+                "OMOP:3002094",
+                "OMOP:3022891",
+                "OMOP:3024594",
+                "OMOP:3011708",
+                "OMOP:3005600",
+                "OMOP:4196583",
+                "OMOP:2212186",
+                "OMOP:2212188",
+                "OMOP:4146380",
+                "OMOP:3010587",
+                "OMOP:3006315",
+                "OMOP:3038553",
+                "OMOP:4307029",
+                "OMOP:3031569",
+                "OMOP:4099154",
+                "OMOP:4017361",
+                "OMOP:4166120",
+                "OMOP:43020498",
+                "OMOP:43021859",
+                "OMOP:4209737",
+                "OMOP:4188066",
+                "OMOP:3009024",
+                "OMOP:2212294",
+                "OMOP:3051825",
+                "OMOP:3016723",
+                "OMOP:3007081",
+                "OMOP:4136584",
+                "OMOP:37172928",
+                "OMOP:3010372",
+                "OMOP:3013115",
+                "OMOP:4217630",
+                "OMOP:4148587",
+                "OMOP:4076114",
+                "OMOP:4176561",
+                "OMOP:3011961",
+                "OMOP:3001122",
+                "OMOP:4094436",
+                "OMOP:4213477",
+                "OMOP:4149519",
+                "OMOP:4076704",
+                "OMOP:3027018",
+                "OMOP:607590",
+                "OMOP:4151358",
+                "OMOP:4094758",
+                "OMOP:4111665",
+                "OMOP:4060873",
+                "OMOP:3022466",
+                "OMOP:3011670",
+                "OMOP:4332015",
+                "OMOP:4012918",
+                "OMOP:1246795",
+                "OMOP:4331302",
+                "OMOP:37208689",
+                "OMOP:4254663",
+                "OMOP:1617307",
+                "OMOP:37168599",
+                "OMOP:37398674",
+                "OMOP:37393851",
+                "OMOP:37397923",
+                "OMOP:40761106",
+                "OMOP:3001604",
+                "OMOP:1988928",
+                "OMOP:37208699",
+                "OMOP:4189511",
+                "OMOP:44812009",
+                "OMOP:44812008",
+                "OMOP:3007356",
+                "OMOP:4245152",
+                "OMOP:21490733",
+                "OMOP:4273021",
+                "OMOP:4030871",
+                "OMOP:40768653",
+                "OMOP:4097430",
+                "OMOP:36303745",
+                "OMOP:4020553",
+                "OMOP:4302666",
+                "OMOP:3004282",
+                "OMOP:46235360",
+                "OMOP:4008265",
+                "OMOP:4032789",
+                "OMOP:37311566",
+                "OMOP:4252203",
+                "OMOP:4172830",
+                "OMOP:4298431",
+                "OMOP:3015183",
+                "OMOP:4097822",
+                "OMOP:4315792",
+                "OMOP:4041720",
+                "OMOP:4041721",
+                "OMOP:4041722",
+                "OMOP:4041557",
+                "OMOP:4042061",
+                "OMOP:44791053",
+                "OMOP:4042590",
+                "OMOP:4190897",
+                "OMOP:46235897",
+                "OMOP:44811087",
+                "OMOP:44813037",
+                "OMOP:42868473",
+                "OBA:2100046",
+                "OBA:2100055",
+                "OBA:2100053",
+                "OBA:2060178",
+                "OBA:VT0001573",
+                "OBA:2100047",
+                "OBA:2100274",
+                "OBA:2100054",
+                "NCIT:C80425",
+                "OBA:2090004",
+                "OBA:2050108",
+                "OBA:VT0005328",
+                "OBA:2100048",
+                "NCIT:C110935",
+                "OBA:2050626",
+                "OBA:2090000",
+                "CMO:0000241",
+                "CMO:0000251",
+                "OBA:2045397",
+                "OBA:2100049",
+                "OBA:2090001",
+                "OBA:VT0008640",
+                "OBA:VT0008590",
+                "OBA:2045398",
+                "OBA:2045349",
+                "OBA:2050271",
+                "OBA:VT0003179",
+                "CMO:0000233",
+                "CMO:0000235",
+                "EFO:0009188",
+                "EFO:0020080",
+                "OBA:VT0000183",
+                "OBA:2100051",
+                "OBA:2100052",
+                "OMOP:3013682",
+                "OMOP:3003205",
+                "OMOP:3010404",
+                "OMOP:3016205",
+                "OMOP:3010175",
+                "OMOP:3000848",
+                "OMOP:3021627",
+                "OMOP:3018586",
+                "OMOP:3035856",
+                "OMOP:3009395",
+                "OBA:VT0000199",
+                "OMOP:3014111",
+                "OMOP:37208543",
+                "OMOP:42868471",
+                "OMOP:40489833",
+                "OMOP:3022096",
+                "OMOP:37057122",
+                "OMOP:4265529",
+                "OMOP:40762222",
+                "OMOP:4108582",
+                "OMOP:3006504",
+                "OMOP:3021930",
+                "OMOP:4089936",
+                "OMOP:45765566",
+                "OMOP:4248526",
+                "OMOP:37072486",
+                "OMOP:40768346",
+                "OMOP:37060340",
+                "OMOP:3011417",
+                "OMOP:37043929",
+                "OMOP:4089939",
+                "OMOP:40768506",
+                "OMOP:1006339",
+                "OMOP:37057590",
+                "OMOP:3016335",
+                "OMOP:3008223",
+                "OMOP:3009094",
+                "OMOP:3009718",
+                "OMOP:3023574",
+                "OMOP:21494019",
+                "OMOP:37076446",
+                "OMOP:37050322",
+                "OMOP:21490770",
+                "OMOP:21490771",
+                "OMOP:3019069",
+                "OMOP:4151768",
+                "OMOP:4087260",
+                "OMOP:3010421",
+                "OMOP:3016527",
+                "OMOP:3040436",
+                "OMOP:40768347",
+                "OMOP:3046279",
+                "OMOP:1175351",
+                "OMOP:4253820",
+                "OMOP:4081030",
+                "OMOP:3004248",
+                "OMOP:40766814",
+                "OMOP:4308122",
+                "OMOP:4231869",
+                "OMOP:46236797",
+                "OMOP:4089153",
+                "OMOP:4353621",
+                "OMOP:1002430",
+                "OMOP:3007352",
+                "OMOP:1259612",
+                "OMOP:4090647",
+                "OMOP:4089932",
+                "OMOP:37065791",
+                "OMOP:3966129",
+                "OMOP:40481601",
+                "NCIT:C38083",
+                "OBA:2045391",
+                "NCIT:C159318",
+                "NCIT:C119545",
+                "NCIT:C201471",
+                "OBA:VT0008634",
+                "NCIT:C41372",
+                "NCIT:C112376",
+                "NCIT:C112381",
+                "OBA:0004159",
+                "OBA:2052724",
+                "OBA:VT0005144",
+                "OBA:2050102"
             ],
             "title": "MeasurementObservationTypeEnum",
             "type": "string"
@@ -2082,7 +2367,7 @@
                     ]
                 },
                 "observation_type": {
-                    "$ref": "#/$defs/BaseObservationTypeEnum",
+                    "$ref": "#/$defs/BaseEnum",
                     "description": "The type of Observation being represented (e.g. 'diastolic blood pressure')"
                 },
                 "performed_by": {
@@ -2100,15 +2385,19 @@
                     ]
                 },
                 "value_enum": {
-                    "$ref": "#/$defs/BaseEnum",
+                    "$ref": "#/$defs/BaseObservationValueEnum",
                     "description": "A slot to hold an enumerated value for an Observation."
                 },
                 "value_quantity": {
-                    "description": "A slot to hold a Quantity value for an Observation.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "A slot to hold a Quantity value for an Observation."
                 },
                 "value_string": {
                     "description": "A slot to hold a string value for an Observation.",
@@ -2132,7 +2421,10 @@
             "properties": {
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
@@ -2189,11 +2481,41 @@
             },
             "required": [
                 "observations",
-                "associated_participant",
                 "id"
             ],
             "title": "ObservationSet",
             "type": "object"
+        },
+        "OccupationTypeEnum": {
+            "description": "Values describing occupation types.",
+            "enum": [
+                "OMOP:36311194",
+                "OMOP:36309675",
+                "OMOP:36310459",
+                "OMOP:36308234",
+                "OMOP:36308579",
+                "OMOP:36309431",
+                "OMOP:36307566",
+                "OMOP:36310455",
+                "OMOP:36307977",
+                "OMOP:36307878",
+                "OMOP:36308137",
+                "OMOP:36307824",
+                "OMOP:36308876",
+                "OMOP:36307876",
+                "OMOP:36308008",
+                "OMOP:36310392",
+                "OMOP:36309362",
+                "OMOP:36307554",
+                "OMOP:36309317",
+                "OMOP:36310607",
+                "OMOP:36309614",
+                "OMOP:36310875",
+                "OMOP:36309959",
+                "OMOP:8552"
+            ],
+            "title": "OccupationTypeEnum",
+            "type": "string"
         },
         "Organization": {
             "additionalProperties": false,
@@ -2446,11 +2768,15 @@
                     "description": "A value indicating whether the medical procedure described in this record is present, absent, or unknown for this individual patient."
                 },
                 "quantity": {
-                    "description": "The quantity of procedures ordered or administered.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The quantity of procedures ordered or administered."
                 }
             },
             "required": [
@@ -2465,6 +2791,15 @@
         },
         "ProcedureConceptEnum": {
             "description": "Procedure codes from OMOP.",
+            "enum": [
+                "OMOP:4184832",
+                "OMOP:4336464",
+                "OMOP:45772840",
+                "OMOP:1242799",
+                "OMOP:4044550",
+                "OMOP:4178405",
+                "OMOP:4223020"
+            ],
             "title": "ProcedureConceptEnum",
             "type": "string"
         },
@@ -2478,6 +2813,7 @@
                 "CLAIM_ENROLMENT_RECORD",
                 "COST_RECORD",
                 "DEATH_CERTIFICATE",
+                "DEATH_RECORD",
                 "DENTAL_CLAIM",
                 "EHR",
                 "EHR_ADMINISTRATION_RECORD",
@@ -2505,6 +2841,7 @@
                 "EHR_PROBLEM_LIST",
                 "EHR_RADIOLOGY_REPORT",
                 "EHR_REFERRAL_RECORD",
+                "EVENT_REVIEW",
                 "EXTERNAL_CDM_INSTANCE",
                 "FACILITY_CLAIM",
                 "FACILITY_CLAIM_DETAIL",
@@ -2512,9 +2849,11 @@
                 "GEOGRAPHIC_ISOLATION_RECORD",
                 "GOVERNMENT_REPORT",
                 "HEALTH_INFORMATION_EXCHANGE_RECORD",
+                "HEALTH_RECORD",
                 "HEALTH_RISK_ASSESSMENT",
                 "HEALTHCARE_PROFESSIONAL_FILLED_SURVEY",
                 "HOSPITAL_COST",
+                "INFORMANT_INTERVIEW",
                 "INPATIENT_CLAIM",
                 "INPATIENT_CLAIM_DETAIL",
                 "INPATIENT_CLAIM_HEADER",
@@ -2526,15 +2865,18 @@
                 "OUTPATIENT_CLAIM_DETAIL",
                 "OUTPATIENT_CLAIM_HEADER",
                 "PATIENT_FILLED_SURVEY",
+                "PATIENT_MEDICATION_REPORT",
                 "PATIENT_OR_PAYER_PAID_RECORD",
                 "PATIENT_REPORTED_COST",
                 "PATIENT_SELF_REPORT",
+                "PATIENT_SELF_REPORT_DR_CONFIRMED",
                 "PATIENT_SELF_TESTED",
                 "PAYER_SYSTEM_RECORD_PAID_PREMIUM",
                 "PAYER_SYSTEM_RECORD_PRIMARY_PAYER",
                 "PAYER_SYSTEM_RECORD_SECONDARY_PAYER",
                 "PHARMACY_CLAIM",
-                "POINT_OF_CARE/EXPRESS_LAB",
+                "PHYSICIAN_ADJUDICATION",
+                "POINT_OF_CARE_OR_EXPRESS_LAB",
                 "PRE_QUALIFICATION_TIME_PERIOD",
                 "PROFESSIONAL_CLAIM",
                 "PROFESSIONAL_CLAIM_DETAIL",
@@ -2548,10 +2890,12 @@
                 "STANDARD_ALGORITHM",
                 "STANDARD_ALGORITHM_FROM_CLAIMS",
                 "STANDARD_ALGORITHM_FROM_EHR",
+                "STUDY_RECORD",
                 "SURVEY",
                 "URGENT_LAB",
                 "US_SOCIAL_SECURITY_DEATH_MASTER_FILE",
-                "VISION_CLAIM"
+                "VISION_CLAIM",
+                "WORKING_DIAGNOSIS"
             ],
             "title": "ProvenanceEnum",
             "type": "string"
@@ -2560,10 +2904,6 @@
             "additionalProperties": false,
             "description": "A structured object to represent an amount of something (e.g., weight, mass, length, duration of time) - including a value and unit.",
             "properties": {
-                "id": {
-                    "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
-                    "type": "string"
-                },
                 "operator": {
                     "$ref": "#/$defs/QuantityOperatorEnum",
                     "description": "An operator to apply when interpreting the value of the quantity (e.g. \">\", \"<\", \">=\", \"<=\")"
@@ -2591,9 +2931,6 @@
                     ]
                 }
             },
-            "required": [
-                "id"
-            ],
             "title": "Quantity",
             "type": "object"
         },
@@ -2733,6 +3070,13 @@
                         "null"
                     ]
                 },
+                "ordinality": {
+                    "description": "The order of the item within the Questionnaire",
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
                 "part_of": {
                     "description": "A reference to a parent QuestionnaireItem.",
                     "type": [
@@ -2793,10 +3137,7 @@
             "properties": {
                 "has_questionnaire_item": {
                     "description": "A reference to the QuestionnaireItem that this QuestionnaireResponseItem responds to.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "type": "string"
                 },
                 "id": {
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
@@ -2804,14 +3145,10 @@
                 },
                 "response_value": {
                     "type": "string"
-                },
-                "text": {
-                    "description": "Name for group or question text",
-                    "type": "string"
                 }
             },
             "required": [
-                "text",
+                "has_questionnaire_item",
                 "response_value",
                 "id"
             ],
@@ -2822,17 +3159,15 @@
             "additionalProperties": false,
             "description": "Single-valued answer to the question. (FHIR)",
             "properties": {
+                "code_concept": {
+                    "description": "Corresponding code for this value in an external terminology, if applicable, or as defined in the questionnaire itself.  For example, if the question is \"What is your sex?\" and the answer is \"Female\", the code might \"1\" for a custom-defined questionnaire, or \"loinc:LA3-6\" for a standard terminology.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
-                    "type": "string"
-                },
-                "name": {
-                    "type": "string"
-                },
-                "type": {
-                    "enum": [
-                        "QuestionnaireResponseValue"
-                    ],
                     "type": "string"
                 },
                 "value": {
@@ -2842,8 +3177,6 @@
             },
             "required": [
                 "value",
-                "type",
-                "name",
                 "id"
             ],
             "title": "QuestionnaireResponseValue",
@@ -2853,17 +3186,15 @@
             "additionalProperties": false,
             "description": "Single-valued boolean answer to the question",
             "properties": {
+                "code_concept": {
+                    "description": "Corresponding code for this value in an external terminology, if applicable, or as defined in the questionnaire itself.  For example, if the question is \"What is your sex?\" and the answer is \"Female\", the code might \"1\" for a custom-defined questionnaire, or \"loinc:LA3-6\" for a standard terminology.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
-                    "type": "string"
-                },
-                "name": {
-                    "type": "string"
-                },
-                "type": {
-                    "enum": [
-                        "QuestionnaireResponseValueBoolean"
-                    ],
                     "type": "string"
                 },
                 "value": {
@@ -2873,8 +3204,6 @@
             },
             "required": [
                 "value",
-                "type",
-                "name",
                 "id"
             ],
             "title": "QuestionnaireResponseValueBoolean",
@@ -2884,17 +3213,15 @@
             "additionalProperties": false,
             "description": "Single-valued decimal answer to the question",
             "properties": {
+                "code_concept": {
+                    "description": "Corresponding code for this value in an external terminology, if applicable, or as defined in the questionnaire itself.  For example, if the question is \"What is your sex?\" and the answer is \"Female\", the code might \"1\" for a custom-defined questionnaire, or \"loinc:LA3-6\" for a standard terminology.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
-                    "type": "string"
-                },
-                "name": {
-                    "type": "string"
-                },
-                "type": {
-                    "enum": [
-                        "QuestionnaireResponseValueDecimal"
-                    ],
                     "type": "string"
                 },
                 "value": {
@@ -2904,8 +3231,6 @@
             },
             "required": [
                 "value",
-                "type",
-                "name",
                 "id"
             ],
             "title": "QuestionnaireResponseValueDecimal",
@@ -2915,17 +3240,15 @@
             "additionalProperties": false,
             "description": "Single-valued integer answer to the question",
             "properties": {
+                "code_concept": {
+                    "description": "Corresponding code for this value in an external terminology, if applicable, or as defined in the questionnaire itself.  For example, if the question is \"What is your sex?\" and the answer is \"Female\", the code might \"1\" for a custom-defined questionnaire, or \"loinc:LA3-6\" for a standard terminology.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
-                    "type": "string"
-                },
-                "name": {
-                    "type": "string"
-                },
-                "type": {
-                    "enum": [
-                        "QuestionnaireResponseValueInteger"
-                    ],
                     "type": "string"
                 },
                 "value": {
@@ -2935,8 +3258,6 @@
             },
             "required": [
                 "value",
-                "type",
-                "name",
                 "id"
             ],
             "title": "QuestionnaireResponseValueInteger",
@@ -2946,17 +3267,15 @@
             "additionalProperties": false,
             "description": "Single-valued string answer to the question",
             "properties": {
+                "code_concept": {
+                    "description": "Corresponding code for this value in an external terminology, if applicable, or as defined in the questionnaire itself.  For example, if the question is \"What is your sex?\" and the answer is \"Female\", the code might \"1\" for a custom-defined questionnaire, or \"loinc:LA3-6\" for a standard terminology.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
-                    "type": "string"
-                },
-                "name": {
-                    "type": "string"
-                },
-                "type": {
-                    "enum": [
-                        "QuestionnaireResponseValueString"
-                    ],
                     "type": "string"
                 },
                 "value": {
@@ -2966,8 +3285,6 @@
             },
             "required": [
                 "value",
-                "type",
-                "name",
                 "id"
             ],
             "title": "QuestionnaireResponseValueString",
@@ -2977,17 +3294,15 @@
             "additionalProperties": false,
             "description": "Single-valued TimePoint answer to the question",
             "properties": {
+                "code_concept": {
+                    "description": "Corresponding code for this value in an external terminology, if applicable, or as defined in the questionnaire itself.  For example, if the question is \"What is your sex?\" and the answer is \"Female\", the code might \"1\" for a custom-defined questionnaire, or \"loinc:LA3-6\" for a standard terminology.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
-                    "type": "string"
-                },
-                "name": {
-                    "type": "string"
-                },
-                "type": {
-                    "enum": [
-                        "QuestionnaireResponseValueTimePoint"
-                    ],
                     "type": "string"
                 },
                 "value": {
@@ -2997,8 +3312,6 @@
             },
             "required": [
                 "value",
-                "type",
-                "name",
                 "id"
             ],
             "title": "QuestionnaireResponseValueTimePoint",
@@ -3007,13 +3320,14 @@
         "RaceEnum": {
             "description": "A constrained set of enumerative values containing the United States Office of Management and Budget (OMB) values for race.",
             "enum": [
-                "AMERICAN_INDIAN_OR_ALASKA_NATIVE",
-                "ASIAN",
-                "BLACK_OR_AFRICAN_AMERICAN",
-                "NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER",
-                "UNKNOWN",
-                "WHITE",
-                "MORE_THAN_ONE_RACE"
+                "OMOP:8657",
+                "OMOP:8515",
+                "OMOP:8516",
+                "OMOP:38003615",
+                "OMOP:8557",
+                "OMOP:45877986",
+                "OMOP:8527",
+                "OMOP:45880900"
             ],
             "title": "RaceEnum",
             "type": "string"
@@ -3072,20 +3386,6 @@
                     },
                     "type": [
                         "array",
-                        "null"
-                    ]
-                },
-                "date_ended": {
-                    "description": "The date when the research project ended.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "date_started": {
-                    "description": "The date when the research project began.",
-                    "type": [
-                        "string",
                         "null"
                     ]
                 },
@@ -3166,6 +3466,13 @@
                 },
                 "version": {
                     "description": "The version number of the ResearchStudy",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "year_range": {
+                    "description": "The time period demarcating the years between the start and end of the ResearchStudy (e.g., 2020-2021).",
                     "type": [
                         "string",
                         "null"
@@ -3242,20 +3549,6 @@
                         "null"
                     ]
                 },
-                "date_ended": {
-                    "description": "The date when the research project ended.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "date_started": {
-                    "description": "The date when the research project began.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
                 "description": {
                     "description": "An unabridged description of a research program, project, or study.",
                     "type": [
@@ -3337,6 +3630,13 @@
                         "string",
                         "null"
                     ]
+                },
+                "year_range": {
+                    "description": "The time period demarcating the years between the start and end of the ResearchStudy (e.g., 2020-2021).",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 }
             },
             "required": [
@@ -3347,6 +3647,16 @@
             ],
             "title": "ResearchStudy",
             "type": "object"
+        },
+        "SdohEnum": {
+            "description": "A constrained set of enumerative values describing social determinants of health measurement variables.",
+            "enum": [
+                "OMOP:4076114",
+                "OMOP:4022643",
+                "OMOP:36203487"
+            ],
+            "title": "SdohEnum",
+            "type": "string"
         },
         "SdohObservation": {
             "additionalProperties": false,
@@ -3403,7 +3713,7 @@
                     ]
                 },
                 "observation_type": {
-                    "$ref": "#/$defs/BaseObservationTypeEnum",
+                    "$ref": "#/$defs/SdohEnum",
                     "description": "The type of Observation being represented (e.g. 'diastolic blood pressure')"
                 },
                 "performed_by": {
@@ -3428,15 +3738,19 @@
                     ]
                 },
                 "value_enum": {
-                    "$ref": "#/$defs/BaseEnum",
+                    "$ref": "#/$defs/BaseObservationValueEnum",
                     "description": "A slot to hold an enumerated value for an Observation."
                 },
                 "value_quantity": {
-                    "description": "A slot to hold a Quantity value for an Observation.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "A slot to hold a Quantity value for an Observation."
                 },
                 "value_string": {
                     "description": "A slot to hold a string value for an Observation.",
@@ -3460,7 +3774,10 @@
             "properties": {
                 "associated_participant": {
                     "description": "A reference to the Participant that is associated with this record.",
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "associated_visit": {
                     "description": "A reference to the Visit that is associated with this record.",
@@ -3514,7 +3831,6 @@
             },
             "required": [
                 "observations",
-                "associated_participant",
                 "id"
             ],
             "title": "SdohObservationSet",
@@ -3533,9 +3849,9 @@
         "SexEnum": {
             "description": "A constrained set of enumerative values containing the OMOP values for sex.",
             "enum": [
-                "MALE",
-                "FEMALE",
-                "UNKNOWN"
+                "OMOP:8507",
+                "OMOP:8532",
+                "OMOP:45877986"
             ],
             "title": "SexEnum",
             "type": "string"
@@ -3543,10 +3859,10 @@
         "SmokingStatusObservationTypeEnum": {
             "description": "Values describing the types of Smoking Status observed in an Observation.",
             "enum": [
-                "CURRENT_SMOKER",
-                "FORMER_SMOKER",
-                "NEVER_SMOKED",
-                "UNKNOWN_IF_EVER_SMOKED"
+                "OMOP:40766945",
+                "OMOP:45883458",
+                "OMOP:45883537",
+                "OMOP:45885135"
             ],
             "title": "SmokingStatusObservationTypeEnum",
             "type": "string"
@@ -4068,11 +4384,15 @@
                     ]
                 },
                 "quantity_collected": {
-                    "description": "The quantity of material in the specimen as originally collected from its original source material (prior to downstream portioning or processing)",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The quantity of material in the specimen as originally collected from its original source material (prior to downstream portioning or processing)"
                 },
                 "specimen_order": {
                     "description": "A numeric value that represents the sequential order of this creation activity relative to those producing other specimens from the same source material or parent specimen.",
@@ -4246,7 +4566,7 @@
                     ]
                 },
                 "observation_type": {
-                    "$ref": "#/$defs/BaseObservationTypeEnum",
+                    "$ref": "#/$defs/BaseEnum",
                     "description": "The type of Observation being represented (e.g. 'diastolic blood pressure')"
                 },
                 "performed_by": {
@@ -4264,15 +4584,19 @@
                     ]
                 },
                 "value_enum": {
-                    "$ref": "#/$defs/BaseEnum",
+                    "$ref": "#/$defs/BaseObservationValueEnum",
                     "description": "A slot to hold an enumerated value for an Observation."
                 },
                 "value_quantity": {
-                    "description": "A slot to hold a Quantity value for an Observation.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "A slot to hold a Quantity value for an Observation."
                 },
                 "value_string": {
                     "description": "A slot to hold a string value for an Observation.",
@@ -4366,7 +4690,7 @@
                     ]
                 },
                 "observation_type": {
-                    "$ref": "#/$defs/BaseObservationTypeEnum",
+                    "$ref": "#/$defs/BaseEnum",
                     "description": "The type of Observation being represented (e.g. 'diastolic blood pressure')"
                 },
                 "performed_by": {
@@ -4384,15 +4708,19 @@
                     ]
                 },
                 "value_enum": {
-                    "$ref": "#/$defs/BaseEnum",
+                    "$ref": "#/$defs/BaseObservationValueEnum",
                     "description": "A slot to hold an enumerated value for an Observation."
                 },
                 "value_quantity": {
-                    "description": "A slot to hold a Quantity value for an Observation.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "A slot to hold a Quantity value for an Observation."
                 },
                 "value_string": {
                     "description": "A slot to hold a string value for an Observation.",
@@ -4449,11 +4777,15 @@
                     ]
                 },
                 "duration": {
-                    "description": "The length of time over which the activity was performed.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The length of time over which the activity was performed."
                 },
                 "id": {
                     "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
@@ -4586,11 +4918,15 @@
                     ]
                 },
                 "substance_quantity": {
-                    "description": "The quantity of substance this instance stands for.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Quantity"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The quantity of substance this instance stands for."
                 },
                 "substance_type": {
                     "description": "The specific type of the substance - at as granular a level as possible. May be a specific chemical compound, or the name of a formulation/preparation made up of many compounds.",
@@ -4621,16 +4957,20 @@
                 },
                 "period_end": {
                     "description": "When a period of time ended.",
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "period_start": {
                     "description": "When a period of time started.",
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 }
             },
             "required": [
-                "period_start",
-                "period_end",
                 "id"
             ],
             "title": "TimePeriod",
@@ -4730,6 +5070,13 @@
                 "visit_provenance": {
                     "$ref": "#/$defs/VisitProvenanceEnum",
                     "description": "A value representing the provenance of the visit record, or where the record comes from."
+                },
+                "year_range": {
+                    "description": "The time period demarcating the years between the start and end of the Visit (e.g., 2020-2021).",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 }
             },
             "required": [
@@ -4762,6 +5109,7 @@
                 "OUTPATIENT_VISIT",
                 "PERSON_UNDER_INVESTIGATION_PUI",
                 "PHARMACY_VISIT",
+                "STUDY_SITE_VISIT",
                 "SUPPLIER_SERVICE_PROVIDER",
                 "TELEHEALTH",
                 "UNKNOWN"
@@ -4830,11 +5178,8 @@
                 "PATIENT_REPORTED_COST",
                 "PATIENT_SELF-REPORT",
                 "PATIENT_SELF-TESTED",
-                "PAYER_SYSTEM_RECORD_(PAID_PREMIUM)",
-                "PAYER_SYSTEM_RECORD_(PRIMARY_PAYER)",
-                "PAYER_SYSTEM_RECORD_(SECONDARY_PAYER)",
                 "PHARMACY_CLAIM",
-                "POINT_OF_CARE/EXPRESS_LAB",
+                "POINT_OF_CARE_OR_EXPRESS_LAB",
                 "PRE-QUALIFICATION_TIME_PERIOD",
                 "PROFESSIONAL_CLAIM",
                 "PROFESSIONAL_CLAIM_DETAIL",
@@ -4848,6 +5193,7 @@
                 "STANDARD_ALGORITHM",
                 "STANDARD_ALGORITHM_FROM_EHR",
                 "STANDARD_ALGORITHM_FROM_CLAIMS",
+                "STUDY_RECORD",
                 "SURVEY",
                 "US_SOCIAL_SECURITY_DEATH_MASTER_FILE",
                 "URGENT_LAB",
@@ -4859,8 +5205,8 @@
         "VitalStatusEnum": {
             "description": "A constrained set of enumerative values containing the OMOP values for vital status.",
             "enum": [
-                "ALIVE",
-                "DEAD"
+                "OMOP:4230556",
+                "OMOP:434489"
             ],
             "title": "VitalStatusEnum",
             "type": "string"

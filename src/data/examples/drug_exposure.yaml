@@ -8,7 +8,7 @@ DrugExposure:
   age_at_exposure_end: 2250
   drug_concept: rxnorm:221058   # ampicillin (anhydrous)
   refills: 0
-  route_concept: ORAL   # OMOP:4132161
+  route_concept: OMOP:4132161   # ORAL
   days_supply: 10
   quantity: 10
 
