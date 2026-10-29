@@ -29,15 +29,18 @@ dev = [
 [tool.ruff]
 line-length = 120
 target-version = "py310"
-# Scoped to first-party test/tooling code. The pre-existing resources/
-# tree and generated artifacts are intentionally out of scope.
+# Lint first-party code (tests/, src/bdchm/). The pre-existing
+# resources/ tree, generated artifacts, and non-code src subtrees
+# (schema data, docs, templates) are intentionally out of scope.
 extend-exclude = [
     "docs/",
     "project/",
     "generated/",
     "generate-diagrams/",
     "resources/",
-    "src/",
+    "src/data/",
+    "src/docs/",
+    "src/doc-templates/",
 ]
 force-exclude = true
 
