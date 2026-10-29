@@ -23,7 +23,6 @@ EXAMPLE_DIR = REPO_ROOT / "src" / "data" / "examples"
 KNOWN_NONCONFORMING = {
     "alt_measurement_observation.yaml",
     "alt_measurement_observation_qualitative.yaml",
-    "bp_measurement_observation_set.yaml",
     "drug_exposure.yaml",
     "family_medical_history.yaml",
     "measurement_observation.yaml",
