@@ -1,0 +1,118 @@
+# BDC vocabulary trust hierarchy (DATA) — conforms to trust_hierarchy.schema.yaml.
+# Ranked preference + permissive fallback per bdchm (class, slot). DESCRIPTIVE: prefer
+# records the decision bdchm already encodes; flags surface misalignments for curators.
+target_schema: "bdchm @ f3fc769"
+
+bindings:
+  - id: Condition.condition_concept
+    class_name: Condition
+    slot_name: condition_concept
+    prefer: [MONDO, HP]
+    fallback:
+      - {prefix: OMOP, status: permitted}
+      - {prefix: SNOMED, status: permitted}
+    validation_source: OLS4
+
+  - id: MeasurementObservation.observation_type
+    class_name: MeasurementObservation
+    slot_name: observation_type
+    prefer: [OBA]
+    fallback:
+      - {prefix: OMOP, status: observed}
+    validation_source: OLS4
+    flag: "OBA/OMOP split in the enum and trans-spec usage leans OMOP; preferred source unresolved (curator call)."
+
+  - id: DrugExposure.drug_concept
+    class_name: DrugExposure
+    slot_name: drug_concept
+    prefer: [RXNORM]
+    fallback:
+      - {prefix: OMOP, status: observed}
+    validation_source: RxNav
+    flag: "Schema prefers RxNorm but trans-spec usage leans OMOP. ATC resolves within RxNorm."
+
+  - id: Procedure.procedure_concept
+    class_name: Procedure
+    slot_name: procedure_concept
+    prefer: [OMOP]
+    validation_source: OMOP_WebAPI
+    flag: "No procedure ontology in use; OMOP is the sole source. SNOMED floated (curator call)."
+
+  - id: DeviceExposure.device_concept
+    class_name: DeviceExposure
+    slot_name: device_concept
+    prefer: [SNOMED]
+    fallback:
+      - {prefix: OMOP, status: permitted}
+    validation_source: OMOP_WebAPI
+
+  - id: CauseOfDeath.cause
+    class_name: CauseOfDeath
+    slot_name: cause
+    prefer: [ICD10CM]
+    validation_source: OMOP_WebAPI
+    flag: "Terminology, not an ontology. Prefer MONDO (consistent with condition_concept)? Curator call."
+
+  - id: BodySite.site
+    class_name: BodySite
+    slot_name: site
+    prefer: [UBERON]
+    validation_source: OLS4
+
+  - id: Assay.method
+    class_name: Assay
+    slot_name: method
+    prefer: [MMO]
+    validation_source: OLS4
+    flag: "We hold MMO (a purpose-built measurement-method ontology, per bdchm's encoding); Stephanie's wiki prefers LOINC. Reconcile."
+
+  - id: Assay.instrument
+    class_name: Assay
+    slot_name: instrument
+    prefer: [BAO]
+    validation_source: OLS4
+    flag: "We hold BAO (BioAssay Ontology, per bdchm's encoding); Stephanie's wiki prefers LOINC. Reconcile."
+
+  - id: Person.species
+    class_name: Person
+    slot_name: species
+    prefer: [NCBITaxon]
+    validation_source: OLS4
+
+  - id: Person.breed
+    class_name: Person
+    slot_name: breed
+    prefer: [VBO]
+    validation_source: OLS4
+
+  - id: Quantity.unit
+    class_name: Quantity
+    slot_name: unit
+    prefer: [UOM]
+    validation_source: OLS4
+
+  # From Stephanie (on merit): DUO is ontology-backed; closes a real gap.
+  - id: Consent.consent_code
+    class_name: Consent
+    slot_name: consent_code
+    prefer: [DUO]
+    validation_source: OLS4
+
+  # Race/ethnicity: adopt Stephanie's call (OMB = US federal standard); bdchm currently encodes OMOP.
+  - id: Demography.race
+    class_name: Demography
+    slot_name: race
+    prefer: [OMB]
+    fallback:
+      - {prefix: OMOP, status: observed}
+    validation_source: OMB
+    flag: "bdchm encodes OMOP; OMB (US federal standard) preferred per Stephanie -- model may need to move to OMB."
+
+  - id: Demography.ethnicity
+    class_name: Demography
+    slot_name: ethnicity
+    prefer: [OMB]
+    fallback:
+      - {prefix: OMOP, status: observed}
+    validation_source: OMB
+    flag: "bdchm encodes OMOP; OMB (US federal standard) preferred per Stephanie -- model may need to move to OMB."
