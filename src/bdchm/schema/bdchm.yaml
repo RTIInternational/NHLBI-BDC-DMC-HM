@@ -27,7 +27,7 @@ prefixes:
   UBERON: http://purl.obolibrary.org/obo/UBERON_
   NCIT: http://purl.obolibrary.org/obo/NCIT_
   CMO: http://purl.obolibrary.org/obo/CMO_
-  EFO: http://www.ebi.ac.uk/efo/EFO_
+  EFO: http://identifiers.org/efo/
 
 default_prefix: bdchm
 default_range: string
