@@ -1,5 +1,12 @@
-# Use the recommended rule set except for the standard_naming rule, checking for UPPER_SNAKE case of permissible values
+# Use the recommended rule set. standard_naming still enforces
+# class/slot/enum naming, but permissible-value naming is excluded for
+# now: many permissible values encode real-world clinical/payer terms
+# (hyphens, slashes, parentheses, leading digits) that don't conform to
+# UPPER_SNAKE. Renaming them is a breaking vocabulary change pending
+# design review -- tracked in a separate issue.
 extends: recommended
 rules:
   standard_naming:
     permissible_values_upper_case: true
+    exclude_type:
+      - permissible_value
