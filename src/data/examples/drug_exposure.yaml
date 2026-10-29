@@ -1,7 +1,8 @@
 # drug exposure
 DrugExposure:
   id: eca717bd-3904-4d00-ad9a-eb3c06640140
-  identity: cdd19dd0-a686-4328-ab08-a7fd7dc981b3
+  identity:
+    - cdd19dd0-a686-4328-ab08-a7fd7dc981b3
   associated_participant: 4a887f0e-4691-43d6-a521-d307f17558d7
   associated_visit: 27c68f26-e702-4cc0-b78a-59eb8618d460
   age_at_exposure_start: 2240
@@ -11,4 +12,6 @@ DrugExposure:
   route_concept: OMOP:4132161   # ORAL
   days_supply: 10
   quantity: 10
+  exposure_provenance: PRESCRIPTION_DISPENSED_IN_PHARMACY
+  exposure_status: PRESENT
 
