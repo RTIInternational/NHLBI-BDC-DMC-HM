@@ -313,7 +313,6 @@ classes:
       - identity
 
   TimePoint:
-    is_a: Entity
     description: >-
       A structured representation of a single point in time that allows direct/explicit declaration as a dateTime, specification in terms of offset from a defined index, or description of an event type as a proxy for the time point when it occurred.
     attributes:
@@ -335,7 +334,6 @@ classes:
         required: false
 
   TimePeriod:
-    is_a: Entity
     description: >-
       A period of time between a start and end time point.
     attributes:
@@ -1668,7 +1666,6 @@ classes:
         range: SdohEnum
 
   CauseOfDeath:
-    is_a: Entity
     description: A class / complex datatype for handling both values and ordinality for causes of death.
     attributes:
       cause:
@@ -1713,7 +1710,6 @@ classes:
         required: false
 
   Context:
-    is_a: Entity
     description: The context within which an observation was made.
     attributes:
       activity:
@@ -1725,7 +1721,6 @@ classes:
         range: RelativeTimingEnum
 
   Activity:
-    is_a: Entity
     description: An activity that provides context to an observation.
     attributes:
       activity_type:
@@ -1763,6 +1758,7 @@ slots:
     range: Observation
     description: A set of one or more observations.
     multivalued: true
+    inlined_as_list: true
 
 enums:
   BaseEnum:
