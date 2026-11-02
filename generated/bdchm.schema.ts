@@ -6,8 +6,6 @@ export type ResearchStudyId = string;
 export type ConsentId = string;
 export type VisitId = string;
 export type OrganizationId = string;
-export type TimePointId = string;
-export type TimePeriodId = string;
 export type ResearchStudyCollectionId = string;
 export type QuestionnaireId = string;
 export type QuestionnaireItemId = string;
@@ -47,10 +45,7 @@ export type MeasurementObservationSetId = string;
 export type MeasurementObservationId = string;
 export type SdohObservationSetId = string;
 export type SdohObservationId = string;
-export type CauseOfDeathId = string;
 export type AssayId = string;
-export type ContextId = string;
-export type ActivityId = string;
 /**
 * A base constrained set of enumerative values that can be used as a placeholder in a class expected to be further constrained in a subclass.
 */
@@ -2502,7 +2497,7 @@ export interface Person extends Entity {
     /** Numeric value to represent the calendar year in which an individual died. */
     year_of_death?: number,
     /** Coded value indicating the circumstance or condition that results in the death of the individual. */
-    cause_of_death?: CauseOfDeathId[],
+    cause_of_death?: CauseOfDeath[],
 }
 
 
@@ -2567,7 +2562,7 @@ export interface ResearchStudy extends Entity {
     /** An entity that is responsible for the initiation, management, and/or financing of a research project. */
     sponsor?: string,
     /** The time period demarcating the years between the start and end of the ResearchStudy (e.g., 2020-2021). */
-    year_range?: TimePeriodId,
+    year_range?: TimePeriod,
     /** The accession number of the research study with the accession authority */
     accession_number?: string,
     /** The accession authority for the research study. */
@@ -2583,7 +2578,7 @@ export interface ResearchStudy extends Entity {
     /** The name of the overarching research program under which this ResearchStudy is conducted (e.g. 'Heartshare', 'TOPMed', etc.) */
     program: string,
     /** A collection of timepoint observations that are relevant to research projects (e.g. date of IACUC approval, date of IRB approval, date of embargo end, etc.) */
-    associated_timepoint?: TimePointId[],
+    associated_timepoint?: TimePoint[],
     /** The investigator or investigators leading a project. */
     principal_investigator: string[],
     /** Data Use Restrictions that are used to indicate permissions/restrictions for datasets and/or materials, and relates to the purposes for which datasets and/or material might be removed, stored or used. Based on the Data Use Ontology : see http://www.obofoundry.org/ontology/duo.html */
@@ -2598,9 +2593,9 @@ export interface Consent extends Entity {
     /** Data Use Restrictions that are used to indicate permissions/restrictions for datasets and/or materials, and relates to the purposes for which datasets and/or material might be removed, stored or used. Based on the Data Use Ontology : see http://www.obofoundry.org/ontology/duo.html */
     consent_code: string,
     /** The point in time from which the consent record is valid. */
-    valid_from?: TimePointId,
+    valid_from?: TimePoint,
     /** The point in time after which the consent record is invalid. */
-    valid_to?: TimePointId,
+    valid_to?: TimePoint,
 }
 
 
@@ -2619,7 +2614,7 @@ export interface Visit extends Entity {
     /** The age of the Participant (in days) at the end of the Visit. */
     age_at_visit_end?: number,
     /** The time period demarcating the years between the start and end of the Visit (e.g., 2020-2021). */
-    year_range?: TimePeriodId,
+    year_range?: TimePeriod,
     /** A value representing the provenance of the visit record, or where the record comes from. */
     visit_provenance: string,
 }
@@ -2643,11 +2638,11 @@ export interface Organization extends Entity {
 /**
  * A structured representation of a single point in time that allows direct/explicit declaration as a dateTime, specification in terms of offset from a defined index, or description of an event type as a proxy for the time point when it occurred.
  */
-export interface TimePoint extends Entity {
+export interface TimePoint {
     /** An explicitly specified timepoint described in terms of a date and optionally a time on that date. */
     date_time?: string,
     /** Another TimePoint from which this point is offset. */
-    index_time_point?: TimePointId,
+    index_time_point?: TimePoint,
     /** A quantity of time that, together with the index date or event, can be used to derive a specific timepoint. */
     offset_from_index?: number,
     /** An event that occurred at the point in time specified by this TimePoint. */
@@ -2658,11 +2653,11 @@ export interface TimePoint extends Entity {
 /**
  * A period of time between a start and end time point.
  */
-export interface TimePeriod extends Entity {
+export interface TimePeriod {
     /** When a period of time started. */
-    period_start?: TimePointId,
+    period_start?: TimePoint,
     /** When a period of time ended. */
-    period_end?: TimePointId,
+    period_end?: TimePoint,
 }
 
 
@@ -3075,9 +3070,9 @@ export interface SpecimenCreationActivity extends Entity {
     /** The high-level type of creation activity. */
     activity_type?: string,
     /** The date when the activity began (in this case, a specimen creation event). */
-    date_started?: TimePointId,
+    date_started?: TimePoint,
     /** The date when the activity ended (in this case, a specimen creation event). */
-    date_ended?: TimePointId,
+    date_ended?: TimePoint,
     /** The organization or group that performed the activity. */
     performed_by?: OrganizationId,
     /** The type of method applied in collecting a sample from its original source. */
@@ -3116,9 +3111,9 @@ export interface SpecimenProcessingActivity extends Entity {
     /** The high-level type of processing activity */
     activity_type?: string,
     /** The date when the activity began (in this case, a specimen processing event). */
-    date_started?: TimePointId,
+    date_started?: TimePoint,
     /** The date when the activity began (in this case, a specimen processing event). */
-    date_ended?: TimePointId,
+    date_ended?: TimePoint,
     /** The length of time over which the activity was performed. */
     duration?: Quantity[],
     /** A specific type of method or procedure performed to process the specimen */
@@ -3133,9 +3128,9 @@ export interface SpecimenProcessingActivity extends Entity {
  */
 export interface SpecimenStorageActivity extends Entity {
     /** The date when the activity began (in this case, a storage event). */
-    date_started?: TimePointId,
+    date_started?: TimePoint,
     /** The date when the activity ended (in this case, a storage event). */
-    date_ended?: TimePointId,
+    date_ended?: TimePoint,
     /** The length of time over which the activity was performed. */
     duration?: Quantity,
     /** A specific type of method or procedure performed to store the specimen */
@@ -3150,9 +3145,9 @@ export interface SpecimenStorageActivity extends Entity {
  */
 export interface SpecimenTransportActivity extends Entity {
     /** The date when the activity began (in this case, a transport event). */
-    date_started?: TimePointId,
+    date_started?: TimePoint,
     /** The date when the activity ended (in this case, a transport event). */
-    date_ended?: TimePointId,
+    date_ended?: TimePoint,
     /** The length of time over which the activity was performed. */
     duration?: string[],
     /** An organization (facility, site, lab, etc) from which the specimen was transported as a result of the activity. */
@@ -3225,7 +3220,7 @@ export interface BodySite extends Entity {
  */
 export interface ObservationSet extends Entity {
     /** A set of one or more observations. */
-    observations: ObservationId[],
+    observations: Observation[],
     /** A reference to the Visit that is associated with this record. */
     associated_visit?: VisitId,
     /** A reference to the Participant that is associated with this record. */
@@ -3270,7 +3265,7 @@ export interface Observation extends Entity {
     /** A slot to hold an enumerated value for an Observation. */
     value_enum?: string,
     /** The context within which an observation was made. */
-    context?: ContextId[],
+    context?: Context[],
 }
 
 
@@ -3325,7 +3320,7 @@ export interface SdohObservation extends Observation {
 /**
  * A class / complex datatype for handling both values and ordinality for causes of death.
  */
-export interface CauseOfDeath extends Entity {
+export interface CauseOfDeath {
     /** The value for the cause of death (e.g., myocardial infarction, chronic obstructive pulmonary disorder). */
     cause: string,
     /** The ordinality of a given cause of death record recorded in integers.  Primary cause of death should have order equal to 1 and additional causes should be recorded starting from 2 and iterating up from there. */
@@ -3353,9 +3348,9 @@ export interface Assay extends Entity {
 /**
  * The context within which an observation was made.
  */
-export interface Context extends Entity {
+export interface Context {
     /** The activity that provides context to the observation (e.g. "fasting", "bronchodilator use") */
-    activity: ActivityId,
+    activity: Activity,
     /** The timing of the observation relative to the observation (e.g., "before", "concurrent with") */
     relative_timing?: string,
 }
@@ -3364,7 +3359,7 @@ export interface Context extends Entity {
 /**
  * An activity that provides context to an observation.
  */
-export interface Activity extends Entity {
+export interface Activity {
     /** The type of activity being recorded (e.g. "fasting", "bronchodilator use") */
     activity_type?: string,
     /** The quantity of time over which the activity occurred (e.g. "8 hours", "1 week") */

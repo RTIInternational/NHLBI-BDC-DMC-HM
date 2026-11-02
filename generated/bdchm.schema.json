@@ -8,10 +8,6 @@
                     "$ref": "#/$defs/ActivityTypeEnum",
                     "description": "The type of activity being recorded (e.g. \"fasting\", \"bronchodilator use\")"
                 },
-                "id": {
-                    "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
-                    "type": "string"
-                },
                 "time_duration": {
                     "anyOf": [
                         {
@@ -24,9 +20,6 @@
                     "description": "The quantity of time over which the activity occurred (e.g. \"8 hours\", \"1 week\")"
                 }
             },
-            "required": [
-                "id"
-            ],
             "title": "Activity",
             "type": "object"
         },
@@ -272,10 +265,6 @@
                     "$ref": "#/$defs/CauseOfDeathEnum",
                     "description": "The value for the cause of death (e.g., myocardial infarction, chronic obstructive pulmonary disorder)."
                 },
-                "id": {
-                    "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
-                    "type": "string"
-                },
                 "order": {
                     "description": "The ordinality of a given cause of death record recorded in integers.  Primary cause of death should have order equal to 1 and additional causes should be recorded starting from 2 and iterating up from there.",
                     "type": "integer"
@@ -283,8 +272,7 @@
             },
             "required": [
                 "cause",
-                "order",
-                "id"
+                "order"
             ],
             "title": "CauseOfDeath",
             "type": "object"
@@ -426,18 +414,26 @@
                     "type": "string"
                 },
                 "valid_from": {
-                    "description": "The point in time from which the consent record is valid.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/TimePoint"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The point in time from which the consent record is valid."
                 },
                 "valid_to": {
-                    "description": "The point in time after which the consent record is invalid.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/TimePoint"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The point in time after which the consent record is invalid."
                 }
             },
             "required": [
@@ -452,12 +448,8 @@
             "description": "The context within which an observation was made.",
             "properties": {
                 "activity": {
-                    "description": "The activity that provides context to the observation (e.g. \"fasting\", \"bronchodilator use\")",
-                    "type": "string"
-                },
-                "id": {
-                    "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
-                    "type": "string"
+                    "$ref": "#/$defs/Activity",
+                    "description": "The activity that provides context to the observation (e.g. \"fasting\", \"bronchodilator use\")"
                 },
                 "relative_timing": {
                     "$ref": "#/$defs/RelativeTimingEnum",
@@ -465,8 +457,7 @@
                 }
             },
             "required": [
-                "activity",
-                "id"
+                "activity"
             ],
             "title": "Context",
             "type": "object"
@@ -744,7 +735,7 @@
                 "context": {
                     "description": "The context within which an observation was made.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/Context"
                     },
                     "type": [
                         "array",
@@ -870,7 +861,7 @@
                 "observations": {
                     "description": "A set of one or more observations.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/DimensionalObservation"
                     },
                     "type": "array"
                 },
@@ -1775,7 +1766,7 @@
                 "context": {
                     "description": "The context within which an observation was made.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/Context"
                     },
                     "type": [
                         "array",
@@ -1941,7 +1932,7 @@
                 "observations": {
                     "description": "A set of one or more observations.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/MeasurementObservation"
                     },
                     "type": "array"
                 },
@@ -2341,7 +2332,7 @@
                 "context": {
                     "description": "The context within which an observation was made.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/Context"
                     },
                     "type": [
                         "array",
@@ -2467,7 +2458,7 @@
                 "observations": {
                     "description": "A set of one or more observations.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/Observation"
                     },
                     "type": "array"
                 },
@@ -2662,7 +2653,7 @@
                 "cause_of_death": {
                     "description": "Coded value indicating the circumstance or condition that results in the death of the individual.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/CauseOfDeath"
                     },
                     "type": [
                         "array",
@@ -3306,8 +3297,8 @@
                     "type": "string"
                 },
                 "value": {
-                    "description": "A general slot to hold a value.",
-                    "type": "string"
+                    "$ref": "#/$defs/TimePoint",
+                    "description": "A general slot to hold a value."
                 }
             },
             "required": [
@@ -3372,7 +3363,7 @@
                 "associated_timepoint": {
                     "description": "A collection of timepoint observations that are relevant to research projects (e.g. date of IACUC approval, date of IRB approval, date of embargo end, etc.)",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/TimePoint"
                     },
                     "type": [
                         "array",
@@ -3472,11 +3463,15 @@
                     ]
                 },
                 "year_range": {
-                    "description": "The time period demarcating the years between the start and end of the ResearchStudy (e.g., 2020-2021).",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/TimePeriod"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The time period demarcating the years between the start and end of the ResearchStudy (e.g., 2020-2021)."
                 }
             },
             "required": [
@@ -3532,7 +3527,7 @@
                 "associated_timepoint": {
                     "description": "A collection of timepoint observations that are relevant to research projects (e.g. date of IACUC approval, date of IRB approval, date of embargo end, etc.)",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/TimePoint"
                     },
                     "type": [
                         "array",
@@ -3632,11 +3627,15 @@
                     ]
                 },
                 "year_range": {
-                    "description": "The time period demarcating the years between the start and end of the ResearchStudy (e.g., 2020-2021).",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/TimePeriod"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The time period demarcating the years between the start and end of the ResearchStudy (e.g., 2020-2021)."
                 }
             },
             "required": [
@@ -3687,7 +3686,7 @@
                 "context": {
                     "description": "The context within which an observation was made.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/Context"
                     },
                     "type": [
                         "array",
@@ -3817,7 +3816,7 @@
                 "observations": {
                     "description": "A set of one or more observations.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/SdohObservation"
                     },
                     "type": "array"
                 },
@@ -4342,18 +4341,26 @@
                     ]
                 },
                 "date_ended": {
-                    "description": "The date when the activity ended (in this case, a specimen creation event).",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/TimePoint"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The date when the activity ended (in this case, a specimen creation event)."
                 },
                 "date_started": {
-                    "description": "The date when the activity began (in this case, a specimen creation event).",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/TimePoint"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The date when the activity began (in this case, a specimen creation event)."
                 },
                 "derivation_method_type": {
                     "description": "The type of method applied to derive a new specimen from an existing one.",
@@ -4447,18 +4454,26 @@
                     ]
                 },
                 "date_ended": {
-                    "description": "The date when the activity began (in this case, a specimen processing event).",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/TimePoint"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The date when the activity began (in this case, a specimen processing event)."
                 },
                 "date_started": {
-                    "description": "The date when the activity began (in this case, a specimen processing event).",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/TimePoint"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The date when the activity began (in this case, a specimen processing event)."
                 },
                 "duration": {
                     "description": "The length of time over which the activity was performed.",
@@ -4540,7 +4555,7 @@
                 "context": {
                     "description": "The context within which an observation was made.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/Context"
                     },
                     "type": [
                         "array",
@@ -4664,7 +4679,7 @@
                 "context": {
                     "description": "The context within which an observation was made.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/Context"
                     },
                     "type": [
                         "array",
@@ -4763,18 +4778,26 @@
                     ]
                 },
                 "date_ended": {
-                    "description": "The date when the activity ended (in this case, a storage event).",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/TimePoint"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The date when the activity ended (in this case, a storage event)."
                 },
                 "date_started": {
-                    "description": "The date when the activity began (in this case, a storage event).",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/TimePoint"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The date when the activity began (in this case, a storage event)."
                 },
                 "duration": {
                     "anyOf": [
@@ -4821,18 +4844,26 @@
             "description": "An activity through which a specimen is transported between locations or organizations.",
             "properties": {
                 "date_ended": {
-                    "description": "The date when the activity ended (in this case, a transport event).",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/TimePoint"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The date when the activity ended (in this case, a transport event)."
                 },
                 "date_started": {
-                    "description": "The date when the activity began (in this case, a transport event).",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/TimePoint"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The date when the activity began (in this case, a transport event)."
                 },
                 "duration": {
                     "description": "The length of time over which the activity was performed.",
@@ -4951,28 +4982,29 @@
             "additionalProperties": false,
             "description": "A period of time between a start and end time point.",
             "properties": {
-                "id": {
-                    "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
-                    "type": "string"
-                },
                 "period_end": {
-                    "description": "When a period of time ended.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/TimePoint"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "When a period of time ended."
                 },
                 "period_start": {
-                    "description": "When a period of time started.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/TimePoint"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "When a period of time started."
                 }
             },
-            "required": [
-                "id"
-            ],
             "title": "TimePeriod",
             "type": "object"
         },
@@ -4995,16 +5027,16 @@
                         "null"
                     ]
                 },
-                "id": {
-                    "description": "The 'logical' identifier of the entity within the system of record.  The simple value of this attribute stands for an identifier of this data object within the system, it can be used as a reference from other objects within the same system (i.e. primary and foreign keys), and it should be unique per type of object. The same data object copied to a different system will likely have a different \"id\" in the new system since \"id\" values are system specific and do not represent persistent business identifiers. Business identifiers are assigned outside the information system and are captured in the \"identifier\" field. The \"id\" field is more likely to be a serially or randomly generated value that is assigned to the data object as it is created in a system.",
-                    "type": "string"
-                },
                 "index_time_point": {
-                    "description": "Another TimePoint from which this point is offset.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/TimePoint"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Another TimePoint from which this point is offset."
                 },
                 "offset_from_index": {
                     "description": "A quantity of time that, together with the index date or event, can be used to derive a specific timepoint.",
@@ -5014,9 +5046,6 @@
                     ]
                 }
             },
-            "required": [
-                "id"
-            ],
             "title": "TimePoint",
             "type": "object"
         },
@@ -5072,11 +5101,15 @@
                     "description": "A value representing the provenance of the visit record, or where the record comes from."
                 },
                 "year_range": {
-                    "description": "The time period demarcating the years between the start and end of the Visit (e.g., 2020-2021).",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/TimePeriod"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The time period demarcating the years between the start and end of the Visit (e.g., 2020-2021)."
                 }
             },
             "required": [
