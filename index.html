@@ -511,12 +511,20 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="Entity/">Entity</a></td>
-<td>Any resource that has its own identifier</td>
+<td><a href="Activity/">Activity</a></td>
+<td>An activity that provides context to an observation.</td>
 </tr>
 <tr>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Activity/">Activity</a></td>
-<td>An activity that provides context to an observation.</td>
+<td><a href="CauseOfDeath/">CauseOfDeath</a></td>
+<td>A class / complex datatype for handling both values and ordinality for causes of death.</td>
+</tr>
+<tr>
+<td><a href="Context/">Context</a></td>
+<td>The context within which an observation was made.</td>
+</tr>
+<tr>
+<td><a href="Entity/">Entity</a></td>
+<td>Any resource that has its own identifier</td>
 </tr>
 <tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Assay/">Assay</a></td>
@@ -531,20 +539,12 @@
 <td>A site in the body of an organism, typically described in terms of an anatomical concept and optional qualifiers (e.g. left/right, upper/lower). But body sites as defined here may include non-canonical sites, such as an implanted medical device.</td>
 </tr>
 <tr>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="CauseOfDeath/">CauseOfDeath</a></td>
-<td>A class / complex datatype for handling both values and ordinality for causes of death.</td>
-</tr>
-<tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Condition/">Condition</a></td>
 <td>Conditions are records of a Person suggesting the presence of a disease or medical condition stated as a diagnosis, a sign or a symptom, which is either observed by a Provider or reported by the patient. Conditions are recorded in different sources and levels of standardization.</td>
 </tr>
 <tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Consent/">Consent</a></td>
 <td>An entity that can be used to capture consent code and other relevant data about consent for a study.</td>
-</tr>
-<tr>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Context/">Context</a></td>
-<td>The context within which an observation was made.</td>
 </tr>
 <tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Demography/">Demography</a></td>
@@ -711,20 +711,20 @@
 <td>A type of material substance, or instance thereof, as used in a particular application. May include information about the role the substance played in a particular application.</td>
 </tr>
 <tr>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="TimePeriod/">TimePeriod</a></td>
-<td>A period of time between a start and end time point.</td>
-</tr>
-<tr>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="TimePoint/">TimePoint</a></td>
-<td>A structured representation of a single point in time that allows direct/explicit declaration as a dateTime, specification in terms of offset from a defined index, or description of an event type as a proxy for the time point when it occurred.</td>
-</tr>
-<tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Visit/">Visit</a></td>
 <td>Events where Persons engage with the healthcare system for a duration of time. They are often also called “Encounters”. Visits are defined by a configuration of circumstances under which they occur, such as (i) whether the patient comes to a healthcare institution, the other way around, or the interaction is remote, (ii) whether and what kind of trained medical staff is delivering the service during the Visit, and (iii) whether the Visit is transient or for a longer period involving a stay in bed. (OMOP)</td>
 </tr>
 <tr>
 <td><a href="Quantity/">Quantity</a></td>
 <td>A structured object to represent an amount of something (e.g., weight, mass, length, duration of time) - including a value and unit.</td>
+</tr>
+<tr>
+<td><a href="TimePeriod/">TimePeriod</a></td>
+<td>A period of time between a start and end time point.</td>
+</tr>
+<tr>
+<td><a href="TimePoint/">TimePoint</a></td>
+<td>A structured representation of a single point in time that allows direct/explicit declaration as a dateTime, specification in terms of offset from a defined index, or description of an event type as a proxy for the time point when it occurred.</td>
 </tr>
 </tbody>
 </table>
