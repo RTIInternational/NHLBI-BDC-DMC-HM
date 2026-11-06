@@ -1108,7 +1108,9 @@ export enum SpecimenTypeEnum {
     /** A specimen that is mounted on a slide or coverslip for microscopic analysis. */
     SLIDE = "SLIDE",
 };
-
+/**
+* The type of molecular analyte extracted or derived from a specimen.
+*/
 export enum AnalyteTypeEnum {
     
     /** Formalin-Fixed Paraffin-Embedded DNA */
@@ -1138,7 +1140,9 @@ export enum AnalyteTypeEnum {
     /** Cell-free DNA */
     CFDNA = "CFDNA",
 };
-
+/**
+* The type of biological source material a specimen represents.
+*/
 export enum SourceMaterialTypeEnum {
     
     /** A metastatic tumor sample collected in addition to a previously collected metastatic specimen. */
@@ -1264,7 +1268,9 @@ export enum SpecimenCreationActivityTypeEnum {
     /** An activity that derives a new specimen from an existing one. */
     DERIVATION_FROM_SPECIMEN = "DERIVATION_FROM_SPECIMEN",
 };
-
+/**
+* The method or procedure by which a specimen was collected.
+*/
 export enum SpecimenCollectionMethodType {
     
     /** Surgical removal of one or both testicles, typically performed to treat testicular cancer or as part of prostate cancer management. */
@@ -2665,6 +2671,7 @@ export interface TimePeriod {
  * A holder for ResearchStudy objects
  */
 export interface ResearchStudyCollection extends Entity {
+    /** The ResearchStudy records held by this collection. */
     entries: {[index: ResearchStudyId]: ResearchStudy },
 }
 
@@ -2734,6 +2741,7 @@ export interface QuestionnaireResponse extends Entity {
 export interface QuestionnaireResponseItem extends Entity {
     /** A reference to the QuestionnaireItem that this QuestionnaireResponseItem responds to. */
     has_questionnaire_item: QuestionnaireItemId,
+    /** The value captured for this questionnaire response item. */
     response_value: QuestionnaireResponseValueId,
 }
 
