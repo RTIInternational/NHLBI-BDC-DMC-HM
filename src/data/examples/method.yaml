@@ -1,0 +1,6 @@
+# study-specific criteria a cohort used to assert a condition
+Method:
+  id: 7b1e4a52-9c3d-4f0e-8a61-2d5f3c9e0b74
+  name: Diabetes status (casual glucose threshold)
+  description: Diabetes is present if casual glucose is at or above 200 mg/dL, or the participant reports using diabetes medication.
+  research_study: 0d6e2a3f-5b8c-4e71-9f42-6a1c8d3b7e05
