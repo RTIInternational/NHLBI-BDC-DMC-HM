@@ -38,7 +38,7 @@
             "type": "string"
         },
         "AnalyteTypeEnum": {
-            "description": "",
+            "description": "The type of molecular analyte extracted or derived from a specimen.",
             "enum": [
                 "FFPE_DNA",
                 "REPLI_G_QIAGEN_DNA",
@@ -3135,6 +3135,7 @@
                     "type": "string"
                 },
                 "response_value": {
+                    "description": "The value captured for this questionnaire response item.",
                     "type": "string"
                 }
             },
@@ -3492,6 +3493,7 @@
                     "additionalProperties": {
                         "$ref": "#/$defs/ResearchStudy__identifier_optional"
                     },
+                    "description": "The ResearchStudy records held by this collection.",
                     "type": "object"
                 },
                 "id": {
@@ -3867,7 +3869,7 @@
             "type": "string"
         },
         "SourceMaterialTypeEnum": {
-            "description": "",
+            "description": "The type of biological source material a specimen represents.",
             "enum": [
                 "ADDITIONAL_METASTATIC",
                 "ADDITIONAL_NEW_PRIMARY",
@@ -4128,7 +4130,7 @@
             "type": "object"
         },
         "SpecimenCollectionMethodType": {
-            "description": "",
+            "description": "The method or procedure by which a specimen was collected.",
             "enum": [
                 "ORCHIECTOMY",
                 "METASTASECTOMY",
@@ -5255,6 +5257,7 @@
             "additionalProperties": {
                 "$ref": "#/$defs/ResearchStudy__identifier_optional"
             },
+            "description": "The ResearchStudy records held by this collection.",
             "type": "object"
         },
         "id": {
